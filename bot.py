@@ -71,9 +71,9 @@ async def on_raw_reaction_add(payload):
 @bot.command(name='insultjim')
 async def _insult_jim(ctx):
     """Generate and send an insult for Jim, and log the generated insult."""
-    insult = insult_jim()
-    logger.info(f"Generated insult: {insult} for Jim")
-    await ctx.send(insult)
+    result = insult_jim()
+    logger.info(f"Generated insult: {str(result)} for Jim")
+    await ctx.send(result['output'])
 
 
 @bot.event
@@ -88,5 +88,5 @@ async def on_command_error(ctx, error):
 
     await ctx.send(f"An error occurred: {error}")
 
-
+# Run Application
 bot.run(TOKEN)
