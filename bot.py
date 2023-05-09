@@ -4,6 +4,7 @@ from discord.ext import commands, tasks
 from dotenv import load_dotenv
 import datetime
 from random import randint
+from llm import insult_jim
 
 # Load environment variables
 load_dotenv()
@@ -74,10 +75,47 @@ async def my_scheduled_task():
     await channel.send('This is your scheduled message!')
 
 # Perform tasks on a loop
-@tasks.loop(seconds=5)
+@tasks.loop(seconds=15)
 async def my_loop():
     print('My looped message is running')
     channel = bot.get_channel(int('1105232705232322680'))
-    await channel.send('This is your looped message!')
+    insult = insult_jim()
+    await channel.send(insult)
+
+# async def openai_chat_reply(system_message, discord_messages):
+#     """
+#     Generate a response using OpenAI's Chat API given a custom system message and recent Discord messages.
+#     :param system_message: The custom system message to set the behavior of the assistant.
+#     :param discord_messages: The list of recent Discord messages to provide context for the assistant.
+#     :return: The assistant's response as a string.
+#     """
+#     messages = [{"role": "system", "content": system_message}]
+#     for msg in discord_messages:
+#         messages.append({"role": "user", "content": msg.content})
+
+#     response = openai.ChatCompletion.create(
+#         model="gpt-3.5-turbo",
+#         messages=messages
+#     )
+
+#     reply = response['choices'][0]['message']['content']
+#     return reply
+
+
+# @bot.event
+# async def on_message(message):
+#     if message.author == bot.user:
+#         return
+
+#     if bot.user in message.mentions or "🤖" in message.content:
+#         last_n_messages = []
+#         async for msg in message.channel.history(limit=5):  # Change the limit to desired N value
+#             if msg.id != message.id:
+#                 last_n_messages.append(msg)
+
+#         system_message = "You are a helpful assistant."
+#         reply = await openai_chat_reply(system_message, last_n_messages)
+#         await message.reply(reply)
+
 
 bot.run(TOKEN)
