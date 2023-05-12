@@ -160,4 +160,9 @@ cython_debug/
 #.idea/
 
 # Local dev files
-dev.py
+# dev/
+# dev/*
+dev/dev.py
+wcb_data
+dev/truax_best.txt
+dev/truax_messages.txt

@@ -4,7 +4,7 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import datetime
 from random import randint
-from llm import insult_jim
+from insult import insult_jim
 from loguru import logger
 
 # Load environment variables
