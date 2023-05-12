@@ -4,13 +4,15 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import datetime
 from random import randint
-from llm import insult_jim
+from insult import insult_jim
+from truax import generate_truax
 from loguru import logger
 
 # Load environment variables
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 EMOJI = '🏈'
+EMOJI_TJ = 'ThomasJones'
 DEFAULT_MESSAGE = ("Hello! My chat functionality is still under development, "
                    "but I can help you insult Jim if you want, just type `!insultjim` "
                    "into a new message and I'll get right on it!")
@@ -60,13 +62,13 @@ async def on_raw_reaction_add(payload):
     Log payload information and send a response when a specific emoji reaction is added to a message.
     """
     logger.debug(f"Reaction payload: {payload}")
-    if payload.emoji.name == EMOJI:
+    if payload.emoji.name == EMOJI_TJ:
         channel = bot.get_channel(payload.channel_id)
         message = await channel.fetch_message(payload.message_id)
-        logger.info(f"Emoji {EMOJI} reaction detected on message: {message.content} by {payload.member}")
-        response = "Go football! Woo"
-        await channel.send(response)
-
+        logger.info(f"Emoji {EMOJI_TJ} reaction detected on message: {message.content} by {payload.member}")
+        response = generate_truax(message)
+        output = f"> {message}\n\n{response}"
+        await channel.send(output)
 
 @bot.command(name='insultjim')
 async def _insult_jim(ctx):

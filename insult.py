@@ -9,7 +9,6 @@ from prompt import PROMPT_INSULT
 # Load environment variables
 load_dotenv()
 
-
 def insult_jim(type=None, temperature=None):
     """
     Generates an insult using the LLMChain.
