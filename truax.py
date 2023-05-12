@@ -1,7 +1,5 @@
 from typing import List
 import langchain.chat_models as chat_models
-import langchain.output_parsers as output_parsers
-from pydantic import BaseModel, Field
 from langchain.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 from loguru import logger
 
