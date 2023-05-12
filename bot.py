@@ -21,6 +21,8 @@ Hello! My chat functionality is still under development, but here are a few
 things I know how to do! 
   - I can help you insult Jim if you want, just type `!insultjim` into a new message and I'll get right on it!
   - Add {EMOJI_TJ} to a message, and I will provide you a classic Truax-Inspired one-liner response. Ussually about Thomas Jones.
+
+Want me to do other things?  If you include the word "feature" in your message to me, I will create a card on the Feature Request board (https://trello.com/b/Z1ksC5ke/wcb-discord-bot-feature-requests) for you.
 """
 
 # Specify intents
