@@ -13,9 +13,12 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 EMOJI = '🏈'
 EMOJI_TJ = 'ThomasJones'
-DEFAULT_MESSAGE = ("Hello! My chat functionality is still under development, "
-                   "but I can help you insult Jim if you want, just type `!insultjim` "
-                   "into a new message and I'll get right on it!")
+DEFAULT_MESSAGE = f"""
+Hello! My chat functionality is still under development, but here are a few
+things I know how to do! 
+  - I can help you insult Jim if you want, just type `!insultjim` into a new message and I'll get right on it!
+  - Add {EMOJI_TJ} to a message, and I will provide you a classic Truax-Inspired one-liner response. Ussually about Thomas Jones.
+"""
 
 # Specify intents
 intents = discord.Intents.all()
@@ -67,7 +70,7 @@ async def on_raw_reaction_add(payload):
         message = await channel.fetch_message(payload.message_id)
         logger.info(f"Emoji {EMOJI_TJ} reaction detected on message: {message.content} by {payload.member}")
         response = generate_truax(message.content)
-        output = f"> {message.content}\n\n{response}"
+        output = f"I see someone reacted with a {EMOJI_TJ} emoji! Here is a Truax-inspired one-liner!\n\n > {message.content}\n\n{response}"
         await channel.send(output)
 
 @bot.command(name='insultjim')
