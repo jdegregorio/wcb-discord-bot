@@ -74,6 +74,7 @@ async def on_message(message):
     if "feature" in message.content.lower():
         logger.info(f"Feature mentioned in message: {message.content} by {message.author}")
         await create_feature_request(message)
+        await message.reply("I've created a Trello card on the WCB Discord Bot Feature Request Board (https://trello.com/b/Z1ksC5ke/wcb-discord-bot-feature-requests)")
     elif bot.user in message.mentions or "🤖" in message.content:
         logger.info(f"Bot mentioned in message: {message.content} by {message.author}")
         await message.reply(DEFAULT_MESSAGE)
