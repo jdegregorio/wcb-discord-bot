@@ -2,15 +2,18 @@ import os
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
-import datetime
 from random import randint
 from insult import insult_jim
 from truax import generate_truax
 from loguru import logger
+from utils import create_trello_card
 
 # Load environment variables
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+TRELLO_KEY = os.getenv('TRELLO_KEY')
+TRELLO_TOKEN = os.getenv('TRELLO_TOKEN')
+TRELLO_FEATURE_REQUEST_LIST = os.getenv('TRELLO_FEATURE_REQUEST_LIST')
 EMOJI = '🏈'
 EMOJI_TJ = 'ThomasJones'
 DEFAULT_MESSAGE = f"""
@@ -39,12 +42,25 @@ async def on_ready():
     logger.info(f'{bot.user.name} has connected to Discord!')
     print(f'{bot.user.name} has connected to Discord!')
 
+async def create_feature_request(message):
+    """
+    Function to handle messages containing 'feature'.
+    This function is called when a message containing 'feature' is detected.
+    """
+    logger.info("Creating Trello Card with feature request")
+    card = create_trello_card(
+        list_id=TRELLO_FEATURE_REQUEST_LIST, 
+        name=f'{message.author} - {message.created_at}', 
+        desc=str(message.content), 
+        key=TRELLO_KEY, token=TRELLO_TOKEN
+    )
+    logger.info(str(card))
+
 
 @bot.event
 async def on_message(message):
     """
     Handle bot mentions or specific emoji in messages.
-
     If the bot is mentioned or the robot emoji appears in the message,
     reply with the default message and log the event.
     """
@@ -53,9 +69,13 @@ async def on_message(message):
 
     logger.debug(f"Received message: {message.content} from {message.author}")
 
-    if bot.user in message.mentions or "🤖" in message.content:
+    if "feature" in message.content.lower():
+        logger.info(f"Feature mentioned in message: {message.content} by {message.author}")
+        await create_feature_request(message)
+    elif bot.user in message.mentions or "🤖" in message.content:
         logger.info(f"Bot mentioned in message: {message.content} by {message.author}")
         await message.reply(DEFAULT_MESSAGE)
+    
     await bot.process_commands(message)
 
 
