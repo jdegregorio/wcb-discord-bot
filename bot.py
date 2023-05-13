@@ -88,7 +88,7 @@ async def on_raw_reaction_add(payload):
     Log payload information and send a response when a specific emoji reaction is added to a message.
     """
     logger.debug(f"Reaction payload: {payload}")
-    if payload.emoji.name == EMOJI_TJ:
+    if payload.emoji.name == EMOJI_TJ or payload.emoji.name == 🍆:
         channel = bot.get_channel(payload.channel_id)
         message = await channel.fetch_message(payload.message_id)
         logger.info(f"Emoji {EMOJI_TJ} reaction detected on message: {message.content} by {payload.member}")
