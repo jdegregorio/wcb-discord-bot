@@ -93,7 +93,7 @@ async def on_raw_reaction_add(payload):
         message = await channel.fetch_message(payload.message_id)
         logger.info(f"Emoji {EMOJI_TJ} reaction detected on message: {message.content} by {payload.member}")
         response = generate_truax(message.content)
-        output = f"I see someone reacted with a {EMOJI_TJ} emoji! Here is a Truax-inspired one-liner!\n\n > {message.content}\n\n{response}"
+        output = f"I see someone reacted with a {EMOJI_TJ} emoji! Here is a Truax-inspired one-liner!\n\n >{message.content}\n\n{response}"
         await channel.send(output)
 
 @bot.command(name='insultjim')
