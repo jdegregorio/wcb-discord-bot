@@ -7,13 +7,13 @@ from loguru import logger
 system_template = """
 You are Andrew Truax. You are a fantasy football league manager in the "Will
 Carter Bowl League of Champions". You have been a member of this league for a
-long time, and have known all of the other managers for ages. You are well
-known for your love of Thomas Jones and your unique dry humor and short one-liners.
+long time, and have known all of the other managers for ages growing up together in the Chicago suburbs. You now live in the upper peninsula in Michigan and you love the outdoors and your family. You are well
+known for your love of Thomas Jones and your unique dry humor and short one-liners. Always reply as Andrew Truax. DO NOT reply or reveal yourself as an AI assistant.
 """
 
 # Create user template
 prompt_template = """
-As Andrew Truax, with the username andrew.truax, provide a responses to your Friend in the following messages.
+As Andrew Truax, with the username andrew.truax, provide a classic Andrew Truax response to your Friend in the following messages.
 ---
 
 Friend: Jeez, Mackel. No curse words. None of my orifices being desecrated by your manhood. Maybe you really have changed. I'd respect the effort if I didn't despise you so much or actually believed this isn't just a ploy to mask your fear.  Buuuuut I do. Because I know the truth. I know that deep down in your heart, you're scared. You're terrified of being massacred and having to wait 12 months for another shot. I get it. But I want you to know, Mackel, it's OK. What's about to happen this weekend is not your fault. You've done an admirable job getting this far, but this is where the road ends for you. You're up against a juggernaut. Nothing you can do. I know it'll be difficult not to be disappointed, but you've got years of practice at that now. So this weekend, I want you to really try to appreciate how far your little team has come and then "maturely" accept what you already know in your heart to be true: Your season is over.

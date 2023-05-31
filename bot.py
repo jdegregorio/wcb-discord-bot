@@ -96,12 +96,12 @@ async def on_raw_reaction_add(payload):
     if payload.channel_id not in ALLOWED_CHANNELS:
         return
 
-    if payload.emoji.name == EMOJI_TJ:
+    if payload.emoji.name == EMOJI_TJ or payload.emoji.name == '🍆':
         channel = bot.get_channel(payload.channel_id)
         message = await channel.fetch_message(payload.message_id)
         logger.info(f"Emoji {EMOJI_TJ} reaction detected on message: {message.content} by {payload.member}")
         response = generate_truax(message.content)
-        output = f"I see someone reacted with a {EMOJI_TJ} emoji! Here is a Truax-inspired one-liner!\n\n > {message.content}\n\n{response}"
+        output = f"I see someone reacted with a {EMOJI_TJ} emoji! Here is a Truax-inspired one-liner!\n\n> {message.content}\n\n{response}"
         await channel.send(output)
 
 @bot.command(name='insultjim')
