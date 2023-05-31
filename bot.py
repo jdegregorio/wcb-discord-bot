@@ -16,6 +16,7 @@ TRELLO_TOKEN = os.getenv('TRELLO_TOKEN')
 TRELLO_FEATURE_REQUEST_LIST = os.getenv('TRELLO_FEATURE_REQUEST_LIST')
 EMOJI = '🏈'
 EMOJI_TJ = 'ThomasJones'
+ALLOWED_CHANNELS = [1042804140490883084, 1042804380354752592]
 DEFAULT_MESSAGE = f"""
 Hello! My chat functionality is still under development, but here are a few
 things I know how to do! 
@@ -68,6 +69,9 @@ async def on_message(message):
     """
     if message.author == bot.user:
         return
+    
+    if message.channel.id not in ALLOWED_CHANNELS:
+        return
 
     logger.debug(f"Received message: {message.content} from {message.author}")
 
@@ -88,6 +92,10 @@ async def on_raw_reaction_add(payload):
     Log payload information and send a response when a specific emoji reaction is added to a message.
     """
     logger.debug(f"Reaction payload: {payload}")
+
+    if payload.channel_id not in ALLOWED_CHANNELS:
+        return
+
     if payload.emoji.name == EMOJI_TJ:
         channel = bot.get_channel(payload.channel_id)
         message = await channel.fetch_message(payload.message_id)
@@ -99,6 +107,8 @@ async def on_raw_reaction_add(payload):
 @bot.command(name='insultjim')
 async def _insult_jim(ctx):
     """Generate and send an insult for Jim, and log the generated insult."""
+    if ctx.channel.id not in ALLOWED_CHANNELS:
+        return
     result = insult_jim()
     logger.info(f"Generated insult: {str(result)} for Jim")
     await ctx.send(result['output'])
