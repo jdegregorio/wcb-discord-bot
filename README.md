@@ -52,3 +52,4 @@ Here's a step-by-step guide:
 
 **Remember to add the bot token to your .env file**
 
+ 
