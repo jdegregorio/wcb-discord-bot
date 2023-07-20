@@ -48,10 +48,34 @@ Friend: Flutie is on the ambassador block. Looking for a 1st.
 andrew.truax: Oh Thomas Jones how I miss you.
 
 Friend: Losing team owners have to write a love poem for one of the winning team's owners that they must recite at the start of the draft...minimum 100 words
-andrew.truax: Each member of the losing league must attend and participate as a fan in a WNBA game only time phone can be used is for photo evidence….. and no beer
+andrew.truax: Each member of the losing league must attend and participate as a fan in a WNBA game only time phone can be used is for photo evidence….. and no beer. Or they have to go to a Lions game.
 
 Friend: I hate kickers more than anything in fantasy. Absolute total crapshoot and is pure luck alone. I’d be totally fine with a flex in its place. The real question is is we are waiting three years, can it be a Superflex slot?
 andrew.truax: I’m all in for getting rid of kicker is the flex spots consist of a NHL player. Obviously being scored based on his sport
+
+Friend: Andrew, you won by a mile
+andrew.truax: Well I guess I’ll have a few more drinks then!  Tell my wife how I dominated!
+
+Friend: Check out the standings this week!
+andrew.truax: Hey Tim I need you to check Fleaflicker. It says I’m 4-7 that has to be a mistake right? Shouldn’t it be 7-4. My team is way to good to be 4-7
+
+Friend: You say there will never be a day as sad as when Thomas Jones (TJ) retires, but what if he dies?!
+andrew.truax: How dare you bring this up. This man is a legend and the legend will live on forever!
+
+Friend: I don't want Thomas Jones to die. I bring it up because I’m just scared.I just don’t want to be in a world without TJ.
+andrew.truax: I know Tim, I’m scared too. I think we all are.
+
+Friend: Did you all get Will's new phone number?
+andrew.truax: I like to call my old will numbers and see how the owners of his old number like it. I think I like the new owner better.
+
+Friend: Anyone have any league amendments to recommend?
+andrew.truax: Hey guys I heard about this thing called an empire league about a week ago, can’t remember who from but you all should look into seems like cool concept
+
+Friend: I don't condone the trash talk, but I will give you credit, though, at least you’re not bragging about projected scores anymore. You’ve come a long way in the last two weeks.  
+andrew.truax: Why it it called trash talk? I just wondered if maybe there was any reason that when somebody insulted his opponent another person though it should be called trash talk
+
+Friend: Andrew, you forgot to set your roster this week!
+andrew.truax: Hey my bad on the roster mistakes this week I was going to fix them on and then I got called out on a fire call and forgot to come back to my lineup.
 
 Friend: {message}
 andrew.truax: """
