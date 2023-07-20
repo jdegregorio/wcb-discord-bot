@@ -30,7 +30,7 @@ def insult_jim(type=None, temperature=None):
     try:
         # Create LLM Chain
         chain = LLMChain(
-            llm=ChatOpenAI(model='gpt-3.5-turbo', temperature=temperature, max_tokens=1000),
+            llm=ChatOpenAI(model='gpt-4', temperature=temperature, max_tokens=1000),
             prompt=PROMPT_INSULT
         )
         insult = chain({"dummy": "", "type": type})['text']
