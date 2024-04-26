@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from random import randint
 from insult import insult_jim
 from truax import generate_truax
+from truaxbot import generate_truax_reply
 from loguru import logger
 from utils import create_trello_card
 
@@ -62,11 +63,6 @@ async def create_feature_request(message):
 
 @bot.event
 async def on_message(message):
-    """
-    Handle bot mentions or specific emoji in messages.
-    If the bot is mentioned or the robot emoji appears in the message,
-    reply with the default message and log the event.
-    """
     if message.author == bot.user:
         return
     
@@ -81,7 +77,21 @@ async def on_message(message):
         await message.reply("I've created a Trello card on the WCB Discord Bot Feature Request Board (https://trello.com/b/Z1ksC5ke/wcb-discord-bot-feature-requests)")
     elif bot.user in message.mentions or "🤖" in message.content:
         logger.info(f"Bot mentioned in message: {message.content} by {message.author}")
-        await message.reply(DEFAULT_MESSAGE)
+        
+        # Retrieve the last 10 messages in the channel
+        messages = []
+        async for msg in message.channel.history(limit=10):
+            if msg.author == bot.user:
+                messages.append({"role": "assistant", "content": f"{bot.user.display_name}: {msg.content}"})
+            else:
+                messages.append({"role": "user", "content": f"{msg.author.display_name}: {msg.content}"})
+        
+        # Reverse the order of messages to maintain chronological order
+        messages.reverse()
+        
+        # Generate Truax's response
+        response = generate_truax(messages)
+        await message.channel.send(response)
     
     await bot.process_commands(message)
 
