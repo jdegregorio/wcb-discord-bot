@@ -1,8 +1,12 @@
+import asyncio
 import os
+from collections import deque
+from datetime import datetime, timedelta, timezone
+
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
-from random import randint
+
 from insult import insult_jim
 from truax import generate_truax
 from truaxbot import generate_truax_reply
@@ -18,6 +22,143 @@ TRELLO_FEATURE_REQUEST_LIST = os.getenv('TRELLO_FEATURE_REQUEST_LIST')
 EMOJI = '🏈'
 EMOJI_TJ = 'ThomasJones'
 ALLOWED_CHANNELS = [1042804140490883084, 1042804380354752592, 1043023451482505229, 1171482001275093112]
+
+AUTO_MIN_INTERVAL_HOURS = float(os.getenv("TRUBOT_AUTO_MIN_INTERVAL_HOURS", "2"))
+AUTO_RESPONSE_MIN_INTERVAL = timedelta(hours=AUTO_MIN_INTERVAL_HOURS)
+AUTO_RESPONSE_DAILY_LIMIT = int(os.getenv("TRUBOT_AUTO_DAILY_LIMIT", "3"))
+AUTO_RESPONSE_ROLLING_WINDOW = timedelta(hours=1)
+AUTO_RESPONSE_DELAY = timedelta(minutes=10)
+AUTO_RESPONSE_HISTORY_LIMIT = 15
+
+_channel_states = {}
+
+
+def _ensure_utc(dt):
+    if dt.tzinfo is None:
+        return dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc)
+
+
+def _get_channel_state(channel_id):
+    state = _channel_states.get(channel_id)
+    if state is None:
+        state = {
+            "recent_messages": deque(),
+            "last_response_time": datetime.min.replace(tzinfo=timezone.utc),
+            "daily_count": 0,
+            "count_reset_date": datetime.now(timezone.utc).date(),
+            "pending_task": None,
+            "last_human_message_time": None,
+        }
+        _channel_states[channel_id] = state
+    return state
+
+
+def _trim_recent_messages(state, reference_time):
+    recent_messages = state["recent_messages"]
+    while recent_messages and reference_time - recent_messages[0][0] > AUTO_RESPONSE_ROLLING_WINDOW:
+        recent_messages.popleft()
+
+
+async def _schedule_auto_response(channel_id, channel):
+    state = _get_channel_state(channel_id)
+    expected_last_human = state["last_human_message_time"]
+    try:
+        await asyncio.sleep(AUTO_RESPONSE_DELAY.total_seconds())
+        state = _get_channel_state(channel_id)
+
+        if state["last_human_message_time"] != expected_last_human:
+            return
+
+        now = datetime.now(timezone.utc)
+        if state["count_reset_date"] != now.date():
+            state["daily_count"] = 0
+            state["count_reset_date"] = now.date()
+
+        _trim_recent_messages(state, now)
+
+        unique_users = {user_id for _, user_id in state["recent_messages"]}
+        if len(unique_users) < 2:
+            return
+
+        if now - state["last_response_time"] < AUTO_RESPONSE_MIN_INTERVAL:
+            return
+
+        if state["daily_count"] >= AUTO_RESPONSE_DAILY_LIMIT:
+            return
+
+        history = []
+        async for msg in channel.history(limit=AUTO_RESPONSE_HISTORY_LIMIT):
+            if msg.author == bot.user:
+                history.append({"role": "assistant", "content": f"{bot.user.display_name}: {msg.content}"})
+            else:
+                history.append({"role": "user", "content": f"{msg.author.display_name}: {msg.content}"})
+
+        history.reverse()
+
+        if not history:
+            return
+
+        response = generate_truax_reply(history)
+        await channel.send(response)
+
+        state["last_response_time"] = now
+        state["daily_count"] += 1
+        logger.info(
+            "Sent auto-response in channel {}. Count for the day: {}",
+            channel_id,
+            state["daily_count"],
+        )
+    except asyncio.CancelledError:
+        logger.debug("Auto-response task for channel {} cancelled", channel_id)
+        raise
+    except Exception as exc:
+        logger.exception("Error while preparing auto-response", exc_info=exc)
+    finally:
+        state = _get_channel_state(channel_id)
+        if state.get("pending_task") is asyncio.current_task():
+            state["pending_task"] = None
+
+
+async def _handle_auto_participation(message, *, allow_schedule=True):
+    channel_id = message.channel.id
+    state = _get_channel_state(channel_id)
+    message_time = _ensure_utc(message.created_at)
+
+    if state["count_reset_date"] != message_time.date():
+        state["daily_count"] = 0
+        state["count_reset_date"] = message_time.date()
+
+    state["last_human_message_time"] = message_time
+
+    state["recent_messages"].append((message_time, message.author.id))
+    _trim_recent_messages(state, message_time)
+
+    if not allow_schedule:
+        if state["pending_task"]:
+            state["pending_task"].cancel()
+            state["pending_task"] = None
+        return
+
+    unique_users = {user_id for _, user_id in state["recent_messages"]}
+    if len(unique_users) < 2:
+        if state["pending_task"]:
+            state["pending_task"].cancel()
+            state["pending_task"] = None
+        return
+
+    now = datetime.now(timezone.utc)
+    if now - state["last_response_time"] < AUTO_RESPONSE_MIN_INTERVAL:
+        return
+
+    if state["daily_count"] >= AUTO_RESPONSE_DAILY_LIMIT:
+        return
+
+    if state["pending_task"]:
+        state["pending_task"].cancel()
+
+    state["pending_task"] = asyncio.create_task(_schedule_auto_response(channel_id, message.channel))
+
 DEFAULT_MESSAGE = f"""
 Hello! My chat functionality is still under development, but here are a few
 things I know how to do! 
@@ -71,11 +212,15 @@ async def on_message(message):
 
     logger.debug(f"Received message: {message.content} from {message.author}")
 
+    is_direct_ping = bot.user in message.mentions or "🤖" in message.content
+
+    await _handle_auto_participation(message, allow_schedule=not is_direct_ping)
+
     if "feature" in message.content.lower():
         logger.info(f"Feature mentioned in message: {message.content} by {message.author}")
         await create_feature_request(message)
         await message.reply("I've created a Trello card on the WCB Discord Bot Feature Request Board (https://trello.com/b/Z1ksC5ke/wcb-discord-bot-feature-requests)")
-    elif bot.user in message.mentions or "🤖" in message.content:
+    elif is_direct_ping:
         logger.info(f"Bot mentioned in message: {message.content} by {message.author}")
         
         # Retrieve the last 10 messages in the channel
