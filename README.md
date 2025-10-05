@@ -9,7 +9,13 @@ Contents:
 ```
 DISCORD_TOKEN=<YOUR TOKEN GOES HERE>
 
+TRUBOT_AUTO_MIN_INTERVAL_HOURS=2  # Optional: hours between automated replies
+TRUBOT_AUTO_DAILY_LIMIT=3         # Optional: maximum automated replies per day
 ```
+
+The optional settings allow you to adjust how frequently TruBot joins ongoing conversations without
+affecting direct @mentions. If they are omitted, the bot defaults to one automated reply every two
+hours with a maximum of three per day.
 
 ### Installing on Discord
 
