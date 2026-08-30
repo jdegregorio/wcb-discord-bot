@@ -118,7 +118,7 @@ def generate_truax_reply(messages):
     logger.info("Generating Truax reply from %s messages", len(messages))
 
     try:
-        response = OpenAI().responses.create(
+        response = OpenAI(timeout=float(os.getenv("OPENAI_TIMEOUT_SECONDS", "60"))).responses.create(
             model=os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
             instructions=system_message,
             input=messages,

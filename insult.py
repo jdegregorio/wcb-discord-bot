@@ -26,7 +26,7 @@ def insult_jim(type=None, temperature=None):
         type = random.choice(["joke", "insult", "insulting pun", "witty one-liner insult", "insulting trolling comment"])
 
     try:
-        response = OpenAI().responses.create(
+        response = OpenAI(timeout=float(os.getenv("OPENAI_TIMEOUT_SECONDS", "60"))).responses.create(
             model=os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
             instructions=INSULT_INSTRUCTIONS.format(type=type),
             input=INSULT_PROMPT.format(type=type),

@@ -17,6 +17,7 @@ Required variables:
 Optional variables:
 
 - `OPENAI_MODEL` (default `gpt-4.1-mini`)
+- `OPENAI_TIMEOUT_SECONDS` (default `60`)
 - `TRUBOT_AUTO_MIN_INTERVAL_HOURS` (default `2`)
 - `TRUBOT_AUTO_DAILY_LIMIT` (default `3`)
 - `LOG_LEVEL` (default `INFO`)
