@@ -1,7 +1,9 @@
 import asyncio
+import logging
 import os
 from collections import deque
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 import discord
 from discord.ext import commands
@@ -10,7 +12,6 @@ from dotenv import load_dotenv
 from insult import insult_jim
 from truax import generate_truax
 from truaxbot import generate_truax_reply
-from loguru import logger
 from utils import create_trello_card
 
 # Load environment variables
@@ -31,6 +32,14 @@ AUTO_RESPONSE_DELAY = timedelta(minutes=10)
 AUTO_RESPONSE_HISTORY_LIMIT = 15
 
 _channel_states = {}
+READY_FILE = Path(os.getenv("HEALTH_READY_FILE", "/tmp/wcb-bot-ready"))
+_health_task = None
+
+logging.basicConfig(
+    level=os.getenv("LOG_LEVEL", "INFO").upper(),
+    format="%(asctime)s %(levelname)s %(name)s %(message)s",
+)
+logger = logging.getLogger("wcb_bot")
 
 
 def _ensure_utc(dt):
@@ -99,21 +108,17 @@ async def _schedule_auto_response(channel_id, channel):
         if not history:
             return
 
-        response = generate_truax_reply(history)
+        response = await asyncio.to_thread(generate_truax_reply, history)
         await channel.send(response)
 
         state["last_response_time"] = now
         state["daily_count"] += 1
-        logger.info(
-            "Sent auto-response in channel {}. Count for the day: {}",
-            channel_id,
-            state["daily_count"],
-        )
+        logger.info("Sent auto-response in channel %s; daily count=%s", channel_id, state["daily_count"])
     except asyncio.CancelledError:
-        logger.debug("Auto-response task for channel {} cancelled", channel_id)
+        logger.debug("Auto-response task for channel %s cancelled", channel_id)
         raise
     except Exception as exc:
-        logger.exception("Error while preparing auto-response", exc_info=exc)
+        logger.exception("Error while preparing auto-response: %s", exc)
     finally:
         state = _get_channel_state(channel_id)
         if state.get("pending_task") is asyncio.current_task():
@@ -174,18 +179,33 @@ intents = discord.Intents.all()
 # Initialize bot
 bot = commands.Bot(command_prefix='!', intents=intents)
 
-# Configure logging
-logger.add("bot.log", rotation="10 MB")
-
-
 @bot.event
 async def on_ready():
     """
     Print bot information when connected to Discord
     and log the connection.
     """
-    logger.info(f'{bot.user.name} has connected to Discord!')
-    print(f'{bot.user.name} has connected to Discord!')
+    global _health_task
+    READY_FILE.touch()
+    if _health_task is None or _health_task.done():
+        _health_task = asyncio.create_task(_refresh_health_file())
+    logger.info("%s has connected to Discord", bot.user.name)
+
+
+async def _refresh_health_file():
+    while True:
+        READY_FILE.touch()
+        await asyncio.sleep(60)
+
+
+@bot.event
+async def on_disconnect():
+    global _health_task
+    if _health_task is not None:
+        _health_task.cancel()
+        _health_task = None
+    READY_FILE.unlink(missing_ok=True)
+    logger.warning("Disconnected from Discord")
 
 async def create_feature_request(message):
     """
@@ -193,13 +213,15 @@ async def create_feature_request(message):
     This function is called when a message containing 'feature' is detected.
     """
     logger.info("Creating Trello Card with feature request")
-    card = create_trello_card(
-        list_id=TRELLO_FEATURE_REQUEST_LIST, 
-        name=f'{message.author} - {message.created_at}', 
-        desc=str(message.content), 
-        key=TRELLO_KEY, token=TRELLO_TOKEN
+    card = await asyncio.to_thread(
+        create_trello_card,
+        list_id=TRELLO_FEATURE_REQUEST_LIST,
+        name=f'{message.author} - {message.created_at}',
+        desc=str(message.content),
+        key=TRELLO_KEY,
+        token=TRELLO_TOKEN,
     )
-    logger.info(str(card))
+    logger.info("Created Trello feature request card id=%s", card.get("id", "unknown"))
 
 
 @bot.event
@@ -210,18 +232,18 @@ async def on_message(message):
     if message.channel.id not in ALLOWED_CHANNELS:
         return
 
-    logger.debug(f"Received message: {message.content} from {message.author}")
+    logger.debug("Received message metadata author=%s channel=%s", message.author, message.channel.id)
 
     is_direct_ping = bot.user in message.mentions or "🤖" in message.content
 
     await _handle_auto_participation(message, allow_schedule=not is_direct_ping)
 
     if "feature" in message.content.lower():
-        logger.info(f"Feature mentioned in message: {message.content} by {message.author}")
+        logger.info("Feature request received from %s", message.author)
         await create_feature_request(message)
         await message.reply("I've created a Trello card on the WCB Discord Bot Feature Request Board (https://trello.com/b/Z1ksC5ke/wcb-discord-bot-feature-requests)")
     elif is_direct_ping:
-        logger.info(f"Bot mentioned in message: {message.content} by {message.author}")
+        logger.info("Bot mentioned by %s", message.author)
         
         # Retrieve the last 10 messages in the channel
         messages = []
@@ -235,7 +257,7 @@ async def on_message(message):
         messages.reverse()
         
         # Generate Truax's response
-        response = generate_truax(messages)
+        response = await asyncio.to_thread(generate_truax, messages)
         await message.channel.send(response)
     
     await bot.process_commands(message)
@@ -246,7 +268,7 @@ async def on_raw_reaction_add(payload):
     """
     Log payload information and send a response when a specific emoji reaction is added to a message.
     """
-    logger.debug(f"Reaction payload: {payload}")
+    logger.debug("Reaction event channel=%s message=%s", payload.channel_id, payload.message_id)
 
     if payload.channel_id not in ALLOWED_CHANNELS:
         return
@@ -254,8 +276,8 @@ async def on_raw_reaction_add(payload):
     if payload.emoji.name == EMOJI_TJ or payload.emoji.name == '🍆':
         channel = bot.get_channel(payload.channel_id)
         message = await channel.fetch_message(payload.message_id)
-        logger.info(f"Emoji {EMOJI_TJ} reaction detected on message: {message.content} by {payload.member}")
-        response = generate_truax(message.content)
+        logger.info("Truax reaction received from %s", payload.member)
+        response = await asyncio.to_thread(generate_truax, message.content)
         output = f"I see someone reacted with a {EMOJI_TJ} emoji! Here is a Truax-inspired one-liner!\n\n> {message.content}\n\n{response}"
         await channel.send(output)
 
@@ -264,8 +286,8 @@ async def _insult_jim(ctx):
     """Generate and send an insult for Jim, and log the generated insult."""
     if ctx.channel.id not in ALLOWED_CHANNELS:
         return
-    result = insult_jim()
-    logger.info(f"Generated insult: {str(result)} for Jim")
+    result = await asyncio.to_thread(insult_jim)
+    logger.info("Generated requested Jim insult")
     await ctx.send(result['output'])
 
 
@@ -275,11 +297,14 @@ async def on_command_error(ctx, error):
     Handle command errors and log them.
     """
     if isinstance(error, commands.CommandNotFound):
-        logger.warning(f"Command not found: {ctx.message.content}")
+        logger.warning("Unknown command from %s", ctx.message.author)
     else:
-        logger.exception(f"Error occurred while executing command: {ctx.message.content}", exc_info=error)
+        logger.error("Command failed for %s: %s", ctx.message.author, error)
 
     await ctx.send(f"An error occurred: {error}")
 
-# Run Application
-bot.run(TOKEN)
+if not TOKEN:
+    raise RuntimeError("DISCORD_TOKEN is required")
+
+READY_FILE.unlink(missing_ok=True)
+bot.run(TOKEN, log_handler=None)

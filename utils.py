@@ -22,12 +22,11 @@ def create_trello_card(list_id, name, desc, key=TRELLO_KEY, token=TRELLO_TOKEN):
     response = requests.request(
         "POST",
         url,
-        params=query
+        params=query,
+        timeout=15,
     )
-    if response.status_code == 200:
-        print("Trello card created successfully!")
-    else:
-        print(f"Failed to create Trello card, status code: {response.status_code}, response: {response.text}")
+    response.raise_for_status()
+    return response.json()
 
 
 
@@ -47,7 +46,8 @@ def get_board_lists(board_id, key=TRELLO_KEY, token=TRELLO_TOKEN):
     response = requests.request(
         "GET",
         url,
-        params=query
+        params=query,
+        timeout=15,
     )
 
     if response.status_code == 200:
@@ -56,11 +56,6 @@ def get_board_lists(board_id, key=TRELLO_KEY, token=TRELLO_TOKEN):
             print(f"List Name: {list['name']}, List ID: {list['id']}")
     else:
         print(f"Failed to get Trello lists, status code: {response.status_code}, response: {response.text}")
-
-# replace 'your_key', 'your_token', 'board_id' with actual values
-get_board_lists('board_id', 'your_key', 'your_token')
-
-import requests
 
 def get_boards(key=TRELLO_KEY, token=TRELLO_TOKEN):
     url = "https://api.trello.com/1/members/me/boards"
@@ -73,7 +68,8 @@ def get_boards(key=TRELLO_KEY, token=TRELLO_TOKEN):
     response = requests.request(
         "GET",
         url,
-        params=query
+        params=query,
+        timeout=15,
     )
 
     if response.status_code == 200:
