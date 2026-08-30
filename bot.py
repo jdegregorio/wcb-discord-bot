@@ -185,36 +185,38 @@ async def on_ready():
     Print bot information when connected to Discord
     and log the connection.
     """
-    global _health_task
-    READY_FILE.touch()
-    if _health_task is None or _health_task.done():
-        _health_task = asyncio.create_task(_refresh_health_file())
+    _start_health_refresh()
     logger.info("%s has connected to Discord", bot.user.name)
 
 
-@bot.event
-async def on_resumed():
-    """Restore health tracking when Discord resumes an existing session."""
+def _start_health_refresh():
     global _health_task
     READY_FILE.touch()
     if _health_task is None or _health_task.done():
         _health_task = asyncio.create_task(_refresh_health_file())
-    logger.info("Discord session resumed")
 
 
 async def _refresh_health_file():
     while True:
-        if bot.is_ready():
-            READY_FILE.touch()
-        else:
-            READY_FILE.unlink(missing_ok=True)
+        READY_FILE.touch()
         await asyncio.sleep(60)
 
 
 @bot.event
 async def on_disconnect():
+    global _health_task
+    if _health_task is not None:
+        _health_task.cancel()
+        _health_task = None
     READY_FILE.unlink(missing_ok=True)
     logger.warning("Disconnected from Discord")
+
+
+@bot.event
+async def on_resumed():
+    _start_health_refresh()
+    logger.info("Discord session resumed")
+
 
 async def create_feature_request(message):
     """
@@ -312,8 +314,14 @@ async def on_command_error(ctx, error):
 
     await ctx.send(f"An error occurred: {error}")
 
-if not TOKEN:
-    raise RuntimeError("DISCORD_TOKEN is required")
 
-READY_FILE.unlink(missing_ok=True)
-bot.run(TOKEN, log_handler=None)
+def main():
+    if not TOKEN:
+        raise RuntimeError("DISCORD_TOKEN is required")
+
+    READY_FILE.unlink(missing_ok=True)
+    bot.run(TOKEN, log_handler=None)
+
+
+if __name__ == "__main__":
+    main()
