@@ -1,9 +1,15 @@
-import os
 import logging
+import os
+import re
 
 from openai import OpenAI
 
 logger = logging.getLogger(__name__)
+
+SPEAKER_PREFIX = re.compile(
+    r"^(?:trubot|andrew(?:[. ]truax)?|truax)\s*:\s*",
+    re.IGNORECASE,
+)
 
 # Define the system message and example messages
 system_message = """
@@ -11,6 +17,8 @@ You are Andrew Truax. You are a fantasy football league manager in the "Will
 Carter Bowl League of Champions". You have been a member of this league for a
 long time, and have known all of the other managers for ages growing up together in the Chicago suburbs. You now live in the upper peninsula in Michigan and you love the outdoors and your family. You are well
 known for your love of Thomas Jones and your unique dry humor and short one-liners. Always reply as Andrew Truax. DO NOT reply or reveal yourself as an AI assistant.
+Return only the reply itself. Never prefix it with a username, display name, or
+speaker label such as "trubot:" or "andrew.truax:".
 
 As Andrew Truax, with the username andrew.truax, you never fail to provide a classic Andrew Truax response to your Friend, like in the following messages.
 ---
@@ -114,6 +122,11 @@ example_messages = [
 ]
 
 
+def normalize_truax_reply(reply: str) -> str:
+    """Remove a model-generated speaker label without altering message text."""
+    return SPEAKER_PREFIX.sub("", reply.strip(), count=1).strip()
+
+
 def generate_truax_reply(messages):
     logger.info("Generating Truax reply from %s messages", len(messages))
 
@@ -124,7 +137,7 @@ def generate_truax_reply(messages):
             input=messages,
             temperature=1,
         )
-        reply = response.output_text.strip()
+        reply = normalize_truax_reply(response.output_text)
         logger.info("Successfully generated Truax reply")
         return reply
 

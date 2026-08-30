@@ -4,7 +4,7 @@ from types import SimpleNamespace
 from unittest.mock import patch
 
 from insult import insult_jim
-from truaxbot import generate_truax_reply
+from truaxbot import generate_truax_reply, normalize_truax_reply
 
 
 class OpenAICallTests(unittest.TestCase):
@@ -14,6 +14,13 @@ class OpenAICallTests(unittest.TestCase):
         with patch.dict(os.environ, {"OPENAI_TIMEOUT_SECONDS": "12"}):
             self.assertEqual(generate_truax_reply([{"role": "user", "content": "hello"}]), "Hot")
         client_class.assert_called_once_with(timeout=12.0)
+
+    def test_truax_reply_removes_bot_speaker_prefix(self):
+        self.assertEqual(normalize_truax_reply("trubot: Hot"), "Hot")
+        self.assertEqual(normalize_truax_reply("Andrew Truax: Hot"), "Hot")
+
+    def test_truax_reply_preserves_non_speaker_colon(self):
+        self.assertEqual(normalize_truax_reply("Hot take: Thomas Jones rules"), "Hot take: Thomas Jones rules")
 
     @patch("insult.OpenAI")
     def test_insult_uses_configured_timeout(self, client_class):

@@ -99,7 +99,7 @@ async def _schedule_auto_response(channel_id, channel):
         history = []
         async for msg in channel.history(limit=AUTO_RESPONSE_HISTORY_LIMIT):
             if msg.author == bot.user:
-                history.append({"role": "assistant", "content": f"{bot.user.display_name}: {msg.content}"})
+                history.append({"role": "assistant", "content": msg.content})
             else:
                 history.append({"role": "user", "content": f"{msg.author.display_name}: {msg.content}"})
 
@@ -260,7 +260,7 @@ async def on_message(message):
         messages = []
         async for msg in message.channel.history(limit=10):
             if msg.author == bot.user:
-                messages.append({"role": "assistant", "content": f"{bot.user.display_name}: {msg.content}"})
+                messages.append({"role": "assistant", "content": msg.content})
             else:
                 messages.append({"role": "user", "content": f"{msg.author.display_name}: {msg.content}"})
         
