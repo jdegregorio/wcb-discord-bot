@@ -1,7 +1,9 @@
 import os
-import openai
-from loguru import logger
-# from dotenv import load_dotenv
+import logging
+
+from openai import OpenAI
+
+logger = logging.getLogger(__name__)
 
 # Define the system message and example messages
 system_message = """
@@ -113,27 +115,22 @@ example_messages = [
 
 
 def generate_truax_reply(messages):
-    logger.info("Starting OpenAI API for this input:\n {}", messages)
+    logger.info("Generating Truax reply from %s messages", len(messages))
 
     try:
-        # Prepare the messages for the API call
-        api_messages = [{"role": "system", "content": system_message}] + messages
-
-        # Call the OpenAI API
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
-            messages=api_messages,
+        response = OpenAI().responses.create(
+            model=os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
+            instructions=system_message,
+            input=messages,
             temperature=1,
         )
-
-        # Get the assistant's reply
-        reply = response.choices[0].message['content']
-        logger.info(f"Successfully called OpenAI API. Reply: {reply}")
+        reply = response.output_text.strip()
+        logger.info("Successfully generated Truax reply")
         return reply
 
-    except Exception as e:
-        logger.error("Failed to generate with OpenAI API. Error: {}", e)
-        raise e
+    except Exception:
+        logger.exception("Failed to generate Truax reply")
+        raise
     
 # messages = [
 #     {"role": "user", "content": "Tim: Draft is coming up boyz!"},

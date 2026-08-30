@@ -1,13 +1,11 @@
+import logging
+import os
 import random
-from dotenv import load_dotenv
-from loguru import logger
 
-from langchain.chat_models import ChatOpenAI
-from langchain.chains import LLMChain
-from prompt import PROMPT_INSULT
+from openai import OpenAI
+from prompt import INSULT_INSTRUCTIONS, INSULT_PROMPT
 
-# Load environment variables
-load_dotenv()
+logger = logging.getLogger(__name__)
 
 def insult_jim(type=None, temperature=None):
     """
@@ -28,23 +26,22 @@ def insult_jim(type=None, temperature=None):
         type = random.choice(["joke", "insult", "insulting pun", "witty one-liner insult", "insulting trolling comment"])
 
     try:
-        # Create LLM Chain
-        chain = LLMChain(
-            llm=ChatOpenAI(model='gpt-4', temperature=temperature, max_tokens=1000),
-            prompt=PROMPT_INSULT
+        response = OpenAI().responses.create(
+            model=os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
+            instructions=INSULT_INSTRUCTIONS.format(type=type),
+            input=INSULT_PROMPT.format(type=type),
+            temperature=temperature,
+            max_output_tokens=300,
         )
-        insult = chain({"dummy": "", "type": type})['text']
-    except Exception as e:
-        logger.error(f"Error generating insult: {e}")
+        insult = response.output_text.strip()
+    except Exception:
+        logger.exception("Error generating insult")
         insult = "An error occurred while generating the insult."
 
     return {"output": insult, "type": type, "temperature": temperature}
 
 
 if __name__ == "__main__":
-    # Configure logging
-    logger.add("insult_generator.log", level="INFO")
-
     # Testing
     for temp in [0.7, 0.8, 0.9, 1.0]:
         print(f"\nTemperature: {temp}\n")

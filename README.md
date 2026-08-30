@@ -1,61 +1,48 @@
-# Discord Bot for Will Carter League of Champions
-Discord bot for our long-running fantasy football league discord server.
+# WCB Discord Bot
 
-### Setting up Environment Variables
+Discord bot for the Will Carter Bowl League of Champions.
 
-For this bot to run, you need to setup a `.env` file that contains all of the required tokens.
+## Runtime configuration
 
-Contents:
+Copy `.env.example` to `.env` for local development. Never commit `.env`; production secrets live in the deployment host's protected secrets directory.
+
+Required variables:
+
+- `DISCORD_TOKEN`
+- `OPENAI_API_KEY`
+- `TRELLO_KEY`
+- `TRELLO_TOKEN`
+- `TRELLO_FEATURE_REQUEST_LIST`
+
+Optional variables:
+
+- `OPENAI_MODEL` (default `gpt-4.1-mini`)
+- `TRUBOT_AUTO_MIN_INTERVAL_HOURS` (default `2`)
+- `TRUBOT_AUTO_DAILY_LIMIT` (default `3`)
+- `LOG_LEVEL` (default `INFO`)
+
+`TRELLO_BOARD` is retained for compatibility with the existing deployment but is not currently read by the bot. See `env.schema.json` for the machine-readable inventory.
+
+## Development
+
+```sh
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python bot.py
 ```
-DISCORD_TOKEN=<YOUR TOKEN GOES HERE>
 
-TRUBOT_AUTO_MIN_INTERVAL_HOURS=2  # Optional: hours between automated replies
-TRUBOT_AUTO_DAILY_LIMIT=3         # Optional: maximum automated replies per day
+## Container releases
+
+Pull requests and changes to `main` run the test workflow. Publishing a GitHub release triggers the container workflow, which builds an ARM64 image and publishes immutable semantic-version and commit-SHA tags to:
+
+```text
+ghcr.io/jdegregorio/wcb-discord-bot
 ```
 
-The optional settings allow you to adjust how frequently TruBot joins ongoing conversations without
-affecting direct @mentions. If they are omitted, the bot defaults to one automated reply every two
-hours with a maximum of three per day.
+The Raspberry Pi deployment platform detects a newer published GitHub release, pulls its versioned image, waits for the container health check to report a live Discord connection, and records that version as the rollback target.
 
-### Installing on Discord
+## Discord installation
 
-To install this bot on your discord server, use the following invite link:
-
-https://discord.com/oauth2/authorize?client_id=<YOUR_CLIENT_ID>&scope=bot&permissions=535261346880
-
-
-### General Instructions for Creating Discord App
-
-To set up the Discord bot, you need to create a bot account, get the token, and then invite the bot to your server. 
-
-Here's a step-by-step guide:
-
-1. Go to the Discord Developer Portal: https://discord.com/developers/applications
-
-1. Log in with your Discord account.
-
-1. Click on the "New Application" button in the top-right corner.
-
-1. Enter a name for your application, then click "Create."
-
-1. You will be redirected to the "General Information" page for your application. On the left sidebar, click on "Bot."
-
-1. Click on the "Add Bot" button, and then confirm by clicking "Yes, do it!".
-
-1. You should now see the bot's information. To get the bot token, click on the "Copy" button next to the "Token" field. This token will be used in your Python code to authorize your bot. Make sure not to share this token, as it allows full control of your bot.
-
-1. To invite the bot to your Discord server, go back to the "General Information" page by clicking on it in the left sidebar.
-
-1. Under the "Client ID" field, click on the "Copy" button.
-
-1. Replace YOUR_CLIENT_ID in the following URL with the copied client ID:
-
-`https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=8`
-
-1. Open the modified URL in your browser, and you will be prompted to select a server to invite the bot to. Choose the desired server and click "Authorize."
-
-1. You may need to complete a captcha to confirm the invitation. Once completed, your bot should be added to the server.
-
-**Remember to add the bot token to your .env file**
-
- 
+Create a bot application in the Discord Developer Portal, enable the intents used by this bot, copy its token into the runtime environment, and invite it using the application's OAuth2 URL. Treat the token like a password.
