@@ -99,7 +99,7 @@ async def _schedule_auto_response(channel_id, channel):
         history = []
         async for msg in channel.history(limit=AUTO_RESPONSE_HISTORY_LIMIT):
             if msg.author == bot.user:
-                history.append({"role": "assistant", "content": f"{bot.user.display_name}: {msg.content}"})
+                history.append({"role": "assistant", "content": msg.content})
             else:
                 history.append({"role": "user", "content": f"{msg.author.display_name}: {msg.content}"})
 
@@ -192,18 +192,27 @@ async def on_ready():
     logger.info("%s has connected to Discord", bot.user.name)
 
 
+@bot.event
+async def on_resumed():
+    """Restore health tracking when Discord resumes an existing session."""
+    global _health_task
+    READY_FILE.touch()
+    if _health_task is None or _health_task.done():
+        _health_task = asyncio.create_task(_refresh_health_file())
+    logger.info("Discord session resumed")
+
+
 async def _refresh_health_file():
     while True:
-        READY_FILE.touch()
+        if bot.is_ready():
+            READY_FILE.touch()
+        else:
+            READY_FILE.unlink(missing_ok=True)
         await asyncio.sleep(60)
 
 
 @bot.event
 async def on_disconnect():
-    global _health_task
-    if _health_task is not None:
-        _health_task.cancel()
-        _health_task = None
     READY_FILE.unlink(missing_ok=True)
     logger.warning("Disconnected from Discord")
 
@@ -249,7 +258,7 @@ async def on_message(message):
         messages = []
         async for msg in message.channel.history(limit=10):
             if msg.author == bot.user:
-                messages.append({"role": "assistant", "content": f"{bot.user.display_name}: {msg.content}"})
+                messages.append({"role": "assistant", "content": msg.content})
             else:
                 messages.append({"role": "user", "content": f"{msg.author.display_name}: {msg.content}"})
         
