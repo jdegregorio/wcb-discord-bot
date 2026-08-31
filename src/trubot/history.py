@@ -56,7 +56,9 @@ def convert_message(
     return ConversationMessage(role="user", content=f"{display_name}: {content}")
 
 
-def reaction_target(message: discord.Message) -> str:
+def message_target(message: discord.Message) -> str:
+    """Return a speaker-labelled Discord message for explicit model focus."""
+
     content = message.clean_content.strip() or "[message with no text]"
     display_name = message.author.display_name.strip() or "Friend"
     return f"{display_name}: {_truncate(content, MAX_HISTORY_MESSAGE_CHARS)}"

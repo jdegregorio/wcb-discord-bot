@@ -49,6 +49,7 @@ async def test_responses_request_uses_luna_with_no_reasoning() -> None:
         [ConversationMessage(role="user", content="Tim: Yeah its wet")],
         mode=ReplyMode.DIRECT,
         safety_id="safe-user",
+        target="Tim: Yeah its wet",
     )
 
     assert result == "Hot"
@@ -59,13 +60,21 @@ async def test_responses_request_uses_luna_with_no_reasoning() -> None:
     assert fake.responses.request["max_output_tokens"] == 180
     assert fake.responses.request["store"] is False
     assert fake.responses.request["safety_identifier"] == "safe-user"
-    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v2"
-    assert fake.responses.request["input"] == [{"role": "user", "content": "Tim: Yeah its wet"}]
+    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v3"
+    assert fake.responses.request["input"] == [
+        {
+            "role": "user",
+            "content": (
+                "CURRENT MESSAGE — answer this now; earlier messages are context only:\n"
+                "Tim: Yeah its wet"
+            ),
+        }
+    ]
     assert "addressed Trubot directly" in fake.responses.request["instructions"]
 
 
 @pytest.mark.asyncio
-async def test_reaction_focus_is_appended_to_context() -> None:
+async def test_reaction_target_is_appended_to_context() -> None:
     fake = FakeOpenAI()
     responder = make_responder(fake)
 
@@ -73,14 +82,55 @@ async def test_reaction_focus_is_appended_to_context() -> None:
         [ConversationMessage(role="user", content="Jim: trade offer")],
         mode=ReplyMode.REACTION,
         safety_id="safe-user",
-        focus="Jim: Thomas Jones for a third",
+        target="Jim: Thomas Jones for a third",
     )
 
     assert fake.responses.request is not None
     assert fake.responses.request["input"][-1] == {
         "role": "user",
-        "content": "Reaction target (respond to this):\nJim: Thomas Jones for a third",
+        "content": (
+            "REACTION TARGET — answer this now; earlier messages are context only:\n"
+            "Jim: Thomas Jones for a third"
+        ),
     }
+
+
+@pytest.mark.asyncio
+async def test_direct_target_replaces_latest_message_after_bad_assistant_history() -> None:
+    fake = FakeOpenAI()
+    responder = make_responder(fake)
+    latest = 'Joe: @trubot what are you talking about "response". Who is your favorite player?'
+    history = [
+        ConversationMessage(role="user", content="Joe: @trubot what is your mom like?"),
+        ConversationMessage(
+            role="assistant",
+            content="Joe, you have misspelled respond enough times.",
+        ),
+        ConversationMessage(role="user", content="Joe: @trubot what do you mean?"),
+        ConversationMessage(
+            role="assistant",
+            content="Joe, you have misspelled respond again.",
+        ),
+        ConversationMessage(role="user", content=latest),
+    ]
+
+    await responder.reply(
+        history,
+        mode=ReplyMode.DIRECT,
+        safety_id="safe-user",
+        target=latest,
+    )
+
+    assert fake.responses.request is not None
+    model_input = fake.responses.request["input"]
+    assert len(model_input) == len(history)
+    assert model_input[-1] == {
+        "role": "user",
+        "content": (
+            "CURRENT MESSAGE — answer this now; earlier messages are context only:\n" + latest
+        ),
+    }
+    assert "Earlier Trubot replies are fallible" in fake.responses.request["instructions"]
 
 
 @pytest.mark.asyncio

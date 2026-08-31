@@ -10,7 +10,7 @@ from trubot.history import (
     clamp_discord_message,
     collect_history,
     convert_message,
-    reaction_target,
+    message_target,
 )
 
 
@@ -89,9 +89,9 @@ async def test_collect_history_preserves_chronological_order() -> None:
     assert channel.request == (15, True)
 
 
-def test_reaction_target_includes_author_and_handles_no_text() -> None:
-    assert reaction_target(fake_message("trade this")) == "Tim: trade this"
-    assert reaction_target(fake_message(" ", display_name="")) == "Friend: [message with no text]"
+def test_message_target_includes_author_and_handles_no_text() -> None:
+    assert message_target(fake_message("trade this")) == "Tim: trade this"
+    assert message_target(fake_message(" ", display_name="")) == "Friend: [message with no text]"
 
 
 def test_discord_output_is_trimmed_at_a_word_boundary() -> None:

@@ -18,7 +18,12 @@ _SPEAKER_PREFIX = re.compile(
     r"^(?:trubot|andrew(?:[.\s]+truax)?|truax)\s*:\s*",
     flags=re.IGNORECASE,
 )
-_PROMPT_CACHE_KEY = "wcb-trubot-personality-v2"
+_PROMPT_CACHE_KEY = "wcb-trubot-personality-v3"
+
+_TARGET_LABELS = {
+    ReplyMode.DIRECT: "CURRENT MESSAGE",
+    ReplyMode.REACTION: "REACTION TARGET",
+}
 
 
 class ResponderError(RuntimeError):
@@ -47,19 +52,26 @@ class OpenAITruaxResponder:
         *,
         mode: ReplyMode,
         safety_id: str,
-        focus: str | None = None,
+        target: str | None = None,
     ) -> str:
         model_input: ResponseInputParam = [
             EasyInputMessageParam(role=message.role, content=message.content)
             for message in messages
         ]
-        if focus:
-            model_input.append(
-                EasyInputMessageParam(
-                    role="user",
-                    content=f"Reaction target (respond to this):\n{focus}",
-                )
+        if target:
+            focused_input = EasyInputMessageParam(
+                role="user",
+                content=_format_target(mode, target),
             )
+            if (
+                mode is ReplyMode.DIRECT
+                and messages
+                and messages[-1].role == "user"
+                and messages[-1].content == target
+            ):
+                model_input[-1] = focused_input
+            else:
+                model_input.append(focused_input)
         if not model_input:
             raise ResponderError("Cannot generate a reply without conversation context")
 
@@ -88,6 +100,11 @@ class OpenAITruaxResponder:
 
     async def close(self) -> None:
         await self._client.close()
+
+
+def _format_target(mode: ReplyMode, target: str) -> str:
+    label = _TARGET_LABELS.get(mode, "CURRENT MESSAGE")
+    return f"{label} — answer this now; earlier messages are context only:\n{target}"
 
 
 def normalize_reply(reply: str | None) -> str:
