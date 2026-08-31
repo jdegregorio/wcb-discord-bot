@@ -30,9 +30,9 @@ class FakeResponder:
         *,
         mode: ReplyMode,
         safety_id: str,
-        focus: str | None = None,
+        target: str | None = None,
     ) -> str:
-        self.calls.append((messages, mode, safety_id, focus))
+        self.calls.append((messages, mode, safety_id, target))
         if self.error is not None:
             raise self.error
         return self.output
@@ -156,11 +156,11 @@ async def test_direct_trigger_replies_with_context_and_records_cooldown() -> Non
     await client.on_message(message)
 
     assert len(responder.calls) == 1
-    context, mode, safety_id, focus = responder.calls[0]
+    context, mode, safety_id, target = responder.calls[0]
     assert [item.content for item in context] == ["Tim: 🤖 hello"]
     assert mode is ReplyMode.DIRECT
     assert len(safety_id) == 64
-    assert focus is None
+    assert target == "Tim: 🤖 hello"
     message.reply.assert_awaited_once_with("Hot", mention_author=False)
     assert participation.snapshot(10, NOW).last_reply_at == NOW
 

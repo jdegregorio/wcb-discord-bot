@@ -19,7 +19,7 @@ from trubot.history import (
     HistoryChannel,
     clamp_discord_message,
     collect_history,
-    reaction_target,
+    message_target,
 )
 from trubot.participation import (
     Observation,
@@ -44,7 +44,7 @@ class Responder(Protocol):
         *,
         mode: ReplyMode,
         safety_id: str,
-        focus: str | None = None,
+        target: str | None = None,
     ) -> str: ...
 
     async def close(self) -> None: ...
@@ -119,6 +119,7 @@ class TruBotClient(discord.Client):
                 mode=ReplyMode.DIRECT,
                 requester_user_id=message.author.id,
                 anchor=message,
+                target=message_target(message),
             )
 
     async def on_raw_reaction_add(self, payload: discord.RawReactionActionEvent) -> None:
@@ -161,7 +162,7 @@ class TruBotClient(discord.Client):
             mode=ReplyMode.REACTION,
             requester_user_id=payload.user_id,
             anchor=message,
-            focus=reaction_target(message),
+            target=message_target(message),
         )
 
     async def close(self) -> None:
@@ -247,7 +248,7 @@ class TruBotClient(discord.Client):
         mode: ReplyMode,
         requester_user_id: int,
         anchor: discord.Message | None = None,
-        focus: str | None = None,
+        target: str | None = None,
     ) -> bool:
         user = self.user
         if user is None:
@@ -260,7 +261,7 @@ class TruBotClient(discord.Client):
                     bot_user_id=user.id,
                     limit=self._settings.history_limit,
                 )
-                if not history and focus is None:
+                if not history and target is None:
                     logger.warning("No usable history for response channel_id=%d", channel.id)
                     return False
 
@@ -270,7 +271,7 @@ class TruBotClient(discord.Client):
                         history,
                         mode=mode,
                         safety_id=safety_identifier(guild_id, requester_user_id),
-                        focus=focus,
+                        target=target,
                     )
                 output = clamp_discord_message(reply)
                 if anchor is None:
