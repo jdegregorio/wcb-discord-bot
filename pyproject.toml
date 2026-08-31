@@ -22,11 +22,11 @@ trubot-healthcheck = "trubot.health:main"
 
 [dependency-groups]
 dev = [
-  "mypy>=1.19,<2",
+  "mypy>=1.19,<3",
   "pytest>=9,<10",
   "pytest-asyncio>=1.3,<2",
   "pytest-cov>=7,<8",
-  "ruff>=0.15,<0.16",
+  "ruff>=0.15,<0.17",
 ]
 
 [tool.hatch.build.targets.wheel]
