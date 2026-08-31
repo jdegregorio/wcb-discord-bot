@@ -7,11 +7,12 @@ import logging
 from collections import defaultdict
 from collections.abc import Awaitable, Callable, Sequence
 from contextlib import suppress
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from typing import Protocol, cast
 
 import discord
 
+from trubot.attention import AttentionTracker
 from trubot.config import Settings
 from trubot.conversation import ConversationMessage, ReplyMode, safety_identifier
 from trubot.health import ReadinessFile
@@ -45,7 +46,7 @@ class Responder(Protocol):
         mode: ReplyMode,
         safety_id: str,
         target: str | None = None,
-    ) -> str: ...
+    ) -> str | None: ...
 
     async def close(self) -> None: ...
 
@@ -57,6 +58,7 @@ class TruBotClient(discord.Client):
         settings: Settings,
         responder: Responder,
         participation: ParticipationTracker,
+        attention: AttentionTracker,
         readiness: ReadinessFile,
         intents: discord.Intents,
         allowed_mentions: discord.AllowedMentions | None = None,
@@ -67,6 +69,7 @@ class TruBotClient(discord.Client):
         self._settings = settings
         self._responder = responder
         self._participation = participation
+        self._attention = attention
         self._readiness = readiness
         self._clock = clock or (lambda: datetime.now(UTC))
         self._sleeper = sleeper
@@ -99,15 +102,17 @@ class TruBotClient(discord.Client):
         channel = cast(DiscordChannel, message.channel)
         now = self._clock()
         direct = self._is_direct_trigger(message)
+        followup = not direct and self._attention.is_active(channel.id, now)
         observation = self._participation.observe(
             channel.id,
             message.author.id,
             now,
-            allow_ambient=not direct,
+            allow_ambient=not (direct or followup),
         )
         self._apply_observation(channel.id, observation)
 
         if direct:
+            self._attention.activate(channel.id, now)
             logger.info(
                 "Direct Trubot trigger channel_id=%d guild_id=%s user_id=%d",
                 channel.id,
@@ -117,6 +122,20 @@ class TruBotClient(discord.Client):
             await self._respond(
                 channel,
                 mode=ReplyMode.DIRECT,
+                requester_user_id=message.author.id,
+                anchor=message,
+                target=message_target(message),
+            )
+        elif followup:
+            logger.info(
+                "Possible Trubot follow-up channel_id=%d guild_id=%s user_id=%d",
+                channel.id,
+                getattr(channel.guild, "id", "unknown"),
+                message.author.id,
+            )
+            await self._respond(
+                channel,
+                mode=ReplyMode.FOLLOW_UP,
                 requester_user_id=message.author.id,
                 anchor=message,
                 target=message_target(message),
@@ -157,6 +176,7 @@ class TruBotClient(discord.Client):
             payload.user_id,
             payload.emoji.name,
         )
+        self._attention.activate(channel.id, self._clock())
         await self._respond(
             channel,
             mode=ReplyMode.REACTION,
@@ -189,7 +209,14 @@ class TruBotClient(discord.Client):
     def _is_direct_trigger(self, message: discord.Message) -> bool:
         user = self.user
         mentioned = user is not None and any(mention.id == user.id for mention in message.mentions)
-        return mentioned or _DIRECT_EMOJI in message.content
+        return mentioned or _DIRECT_EMOJI in message.content or self._is_reply_to_trubot(message)
+
+    def _is_reply_to_trubot(self, message: discord.Message) -> bool:
+        user = self.user
+        reference = message.reference
+        resolved = getattr(reference, "resolved", None)
+        author = getattr(resolved, "author", None)
+        return user is not None and getattr(author, "id", None) == user.id
 
     def _apply_observation(self, channel_id: int, observation: Observation) -> None:
         if observation.action is SchedulingAction.SCHEDULE:
@@ -255,11 +282,14 @@ class TruBotClient(discord.Client):
             return False
 
         async with self._response_locks[channel.id]:
+            request_at = self._clock()
             try:
                 history = await collect_history(
                     cast(HistoryChannel, channel),
                     bot_user_id=user.id,
                     limit=self._settings.history_limit,
+                    before=anchor,
+                    after=request_at - timedelta(seconds=self._settings.history_window_seconds),
                 )
                 if not history and target is None:
                     logger.warning("No usable history for response channel_id=%d", channel.id)
@@ -273,11 +303,15 @@ class TruBotClient(discord.Client):
                         safety_id=safety_identifier(guild_id, requester_user_id),
                         target=target,
                     )
+                if reply is None:
+                    logger.info(
+                        "Skipped Trubot response channel_id=%d mode=%s",
+                        channel.id,
+                        mode.value,
+                    )
+                    return False
                 output = clamp_discord_message(reply)
-                if anchor is None:
-                    await channel.send(output)
-                else:
-                    await anchor.reply(output, mention_author=False)
+                await channel.send(output)
             except asyncio.CancelledError:
                 raise
             except Exception:
@@ -286,9 +320,9 @@ class TruBotClient(discord.Client):
                     channel.id,
                     mode.value,
                 )
-                if anchor is not None:
+                if mode in {ReplyMode.DIRECT, ReplyMode.REACTION}:
                     with suppress(discord.HTTPException):
-                        await anchor.reply(_VISIBLE_FAILURE, mention_author=False)
+                        await channel.send(_VISIBLE_FAILURE)
                 return False
 
             self._participation.record_reply(
@@ -296,6 +330,8 @@ class TruBotClient(discord.Client):
                 self._clock(),
                 ambient=mode is ReplyMode.AMBIENT,
             )
+            if mode is not ReplyMode.AMBIENT:
+                self._attention.activate(channel.id, self._clock())
             logger.info(
                 "Posted Trubot response channel_id=%d mode=%s characters=%d",
                 channel.id,

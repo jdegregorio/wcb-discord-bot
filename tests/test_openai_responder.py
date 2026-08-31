@@ -60,7 +60,7 @@ async def test_responses_request_uses_luna_with_no_reasoning() -> None:
     assert fake.responses.request["max_output_tokens"] == 180
     assert fake.responses.request["store"] is False
     assert fake.responses.request["safety_identifier"] == "safe-user"
-    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v3"
+    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v4"
     assert fake.responses.request["input"] == [
         {
             "role": "user",
@@ -93,6 +93,44 @@ async def test_reaction_target_is_appended_to_context() -> None:
             "Jim: Thomas Jones for a third"
         ),
     }
+
+
+@pytest.mark.asyncio
+async def test_follow_up_candidate_can_abstain() -> None:
+    fake = FakeOpenAI(" <NO_REPLY> ")
+    responder = make_responder(fake)
+
+    result = await responder.reply(
+        [ConversationMessage(role="assistant", content="Hot")],
+        mode=ReplyMode.FOLLOW_UP,
+        safety_id="safe-user",
+        target="Jim: Tim, are you making that trade?",
+    )
+
+    assert result is None
+    assert fake.responses.request is not None
+    assert fake.responses.request["input"][-1] == {
+        "role": "user",
+        "content": (
+            "LATEST MESSAGE — decide whether this is addressed to Trubot; "
+            "answer or abstain as instructed:\nJim: Tim, are you making that trade?"
+        ),
+    }
+    assert "return exactly <NO_REPLY>" in fake.responses.request["instructions"]
+
+
+@pytest.mark.asyncio
+async def test_follow_up_candidate_can_generate_a_reply() -> None:
+    responder = make_responder(FakeOpenAI("Obviously Thomas Jones."))
+
+    result = await responder.reply(
+        [ConversationMessage(role="assistant", content="Hot")],
+        mode=ReplyMode.FOLLOW_UP,
+        safety_id="safe-user",
+        target="Jim: Then who is your favorite player?",
+    )
+
+    assert result == "Obviously Thomas Jones."
 
 
 @pytest.mark.asyncio

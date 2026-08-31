@@ -19,13 +19,15 @@ def test_each_reply_mode_keeps_the_authentic_voice(mode: ReplyMode) -> None:
 
 def test_modes_have_distinct_situational_guidance() -> None:
     direct = instructions_for(ReplyMode.DIRECT)
+    follow_up = instructions_for(ReplyMode.FOLLOW_UP)
     ambient = instructions_for(ReplyMode.AMBIENT)
     reaction = instructions_for(ReplyMode.REACTION)
 
     assert "addressed Trubot directly" in direct
+    assert "return exactly <NO_REPLY>" in follow_up
     assert "naturally joining" in ambient
     assert "reaction target" in reaction
-    assert len({direct, ambient, reaction}) == 3
+    assert len({direct, follow_up, ambient, reaction}) == 4
 
 
 def test_complete_legacy_personality_corpus_is_preserved() -> None:

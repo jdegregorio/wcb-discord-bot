@@ -18,10 +18,12 @@ _SPEAKER_PREFIX = re.compile(
     r"^(?:trubot|andrew(?:[.\s]+truax)?|truax)\s*:\s*",
     flags=re.IGNORECASE,
 )
-_PROMPT_CACHE_KEY = "wcb-trubot-personality-v3"
+_PROMPT_CACHE_KEY = "wcb-trubot-personality-v4"
+_NO_REPLY = "<NO_REPLY>"
 
 _TARGET_LABELS = {
     ReplyMode.DIRECT: "CURRENT MESSAGE",
+    ReplyMode.FOLLOW_UP: "LATEST MESSAGE",
     ReplyMode.REACTION: "REACTION TARGET",
 }
 
@@ -53,7 +55,7 @@ class OpenAITruaxResponder:
         mode: ReplyMode,
         safety_id: str,
         target: str | None = None,
-    ) -> str:
+    ) -> str | None:
         model_input: ResponseInputParam = [
             EasyInputMessageParam(role=message.role, content=message.content)
             for message in messages
@@ -64,7 +66,7 @@ class OpenAITruaxResponder:
                 content=_format_target(mode, target),
             )
             if (
-                mode is ReplyMode.DIRECT
+                mode in {ReplyMode.DIRECT, ReplyMode.FOLLOW_UP}
                 and messages
                 and messages[-1].role == "user"
                 and messages[-1].content == target
@@ -93,6 +95,9 @@ class OpenAITruaxResponder:
             store=False,
         )
         reply = normalize_reply(response.output_text)
+        if mode is ReplyMode.FOLLOW_UP and reply.casefold() == _NO_REPLY.casefold():
+            logger.info("Trubot declined follow-up candidate")
+            return None
         if not reply:
             raise EmptyResponseError("OpenAI returned an empty text response")
         logger.info("Generated Trubot response mode=%s characters=%d", mode.value, len(reply))
@@ -104,6 +109,11 @@ class OpenAITruaxResponder:
 
 def _format_target(mode: ReplyMode, target: str) -> str:
     label = _TARGET_LABELS.get(mode, "CURRENT MESSAGE")
+    if mode is ReplyMode.FOLLOW_UP:
+        return (
+            f"{label} — decide whether this is addressed to Trubot; "
+            f"answer or abstain as instructed:\n{target}"
+        )
     return f"{label} — answer this now; earlier messages are context only:\n{target}"
 
 
