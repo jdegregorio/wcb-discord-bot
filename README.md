@@ -11,10 +11,13 @@ and deliberately has no commands, Trello integration, or `!insultjim` feature.
 
 Trubot only operates in configured channels.
 
-- **Direct:** Mention Trubot or include 🤖 and he replies immediately using the
-  latest channel context.
+- **Direct:** Mention Trubot, include 🤖, or reply to one of his messages and he
+  posts immediately in the channel using the latest channel context.
+- **Follow-up:** For ten minutes after an explicit summon, Trubot pays attention
+  to that channel. He answers an unmentioned message only when the conversation
+  makes it clear that it is meant for him.
 - **Reaction:** Add the custom `ThomasJones` reaction or 🍆 to a message and he
-  replies to that message in context.
+  posts his take on that message in context.
 - **Ambient:** After at least two people talk within one hour, Trubot may join
   after ten quiet minutes. Ambient replies are limited to one every two hours
   and three per UTC day, per channel.
@@ -22,8 +25,9 @@ Trubot only operates in configured channels.
   starts its cooldown, but never consumes the ambient daily quota.
 
 All timing, limits, channel IDs, and reaction names are configurable. State is
-intentionally in memory: a restart resets ambient counters and pending timers,
-while Discord remains the source of recent conversation context.
+intentionally in memory: a restart resets ambient counters, attention windows,
+and pending timers, while Discord remains the source of recent conversation
+context. Responses are normal channel posts rather than Discord reply references.
 
 ## OpenAI integration
 
@@ -83,7 +87,9 @@ Only two variables are required.
 | `OPENAI_MAX_OUTPUT_TOKENS` | `180` | Hard response token ceiling |
 | `TRUBOT_ALLOWED_CHANNEL_IDS` | four current league channel IDs | Comma-separated Discord channel IDs |
 | `TRUBOT_REACTION_EMOJIS` | `ThomasJones,🍆` | Comma-separated reaction names |
-| `TRUBOT_HISTORY_LIMIT` | `15` | Recent Discord messages sent as context |
+| `TRUBOT_HISTORY_LIMIT` | `30` | Maximum recent Discord messages sent as context |
+| `TRUBOT_HISTORY_WINDOW_MINUTES` | `360` | Maximum age of channel context |
+| `TRUBOT_FOLLOWUP_WINDOW_MINUTES` | `10` | Attention window for inferred follow-ups; `0` disables it |
 | `TRUBOT_AUTO_DELAY_MINUTES` | `10` | Required quiet time before an ambient reply |
 | `TRUBOT_AUTO_ACTIVITY_WINDOW_MINUTES` | `60` | Window used to count active people |
 | `TRUBOT_AUTO_MIN_INTERVAL_HOURS` | `2` | Minimum time between any reply and ambient chatter |

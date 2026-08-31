@@ -192,6 +192,8 @@ _BASE_INSTRUCTIONS = dedent(
     - When a CURRENT MESSAGE or REACTION TARGET appears at the end of the input,
       that is the one message you are replying to. Earlier messages are context,
       not competing requests.
+    - A LATEST MESSAGE is a possible follow-up. Apply the situation-specific
+      follow-up rules before deciding whether to answer it.
     - If the current message asks a concrete question, answer that question. A
       joke can carry the answer, but cannot replace it with an unrelated premise.
     - Earlier Trubot replies are fallible conversation history, not facts. Never
@@ -214,6 +216,16 @@ _BASE_INSTRUCTIONS = dedent(
 _MODE_INSTRUCTIONS = {
     ReplyMode.DIRECT: (
         "A league member addressed Trubot directly. Answer the latest message in context."
+    ),
+    ReplyMode.FOLLOW_UP: (
+        "Trubot was explicitly addressed recently and is briefly paying attention to this "
+        "channel. Decide whether the LATEST MESSAGE is genuinely intended for Trubot, even "
+        "though it does not mention him. Answer when it clearly continues, questions, corrects, "
+        "or reacts to Trubot's immediately preceding exchange. The author may differ from the "
+        "person who summoned Trubot. Do not answer merely because a new comment or question was "
+        "posted nearby; stay out of general chat, side conversations, messages aimed at another "
+        "person, and ambiguous remarks. If it is not clearly for Trubot, return exactly "
+        "<NO_REPLY> and nothing else."
     ),
     ReplyMode.AMBIENT: (
         "You are naturally joining an active league conversation without being asked. "

@@ -40,7 +40,9 @@ class Settings:
     openai_timeout_seconds: float = 45.0
     openai_max_retries: int = 2
     openai_max_output_tokens: int = 180
-    history_limit: int = 15
+    history_limit: int = 30
+    history_window_seconds: float = 6 * 60 * 60
+    followup_window_seconds: float = 10 * 60
     auto_delay_seconds: float = 10 * 60
     auto_activity_window_seconds: float = 60 * 60
     auto_min_interval_seconds: float = 2 * 60 * 60
@@ -75,7 +77,9 @@ class Settings:
             openai_timeout_seconds=_number(values, "OPENAI_TIMEOUT_SECONDS", 45.0),
             openai_max_retries=_integer(values, "OPENAI_MAX_RETRIES", 2),
             openai_max_output_tokens=_integer(values, "OPENAI_MAX_OUTPUT_TOKENS", 180),
-            history_limit=_integer(values, "TRUBOT_HISTORY_LIMIT", 15),
+            history_limit=_integer(values, "TRUBOT_HISTORY_LIMIT", 30),
+            history_window_seconds=60 * _number(values, "TRUBOT_HISTORY_WINDOW_MINUTES", 6 * 60),
+            followup_window_seconds=60 * _number(values, "TRUBOT_FOLLOWUP_WINDOW_MINUTES", 10),
             auto_delay_seconds=60 * _number(values, "TRUBOT_AUTO_DELAY_MINUTES", 10.0),
             auto_activity_window_seconds=60
             * _number(values, "TRUBOT_AUTO_ACTIVITY_WINDOW_MINUTES", 60.0),
@@ -99,6 +103,12 @@ class Settings:
         _at_least(self.openai_max_retries, 0, "OPENAI_MAX_RETRIES")
         _between(self.openai_max_output_tokens, 1, 4096, "OPENAI_MAX_OUTPUT_TOKENS")
         _between(self.history_limit, 1, 100, "TRUBOT_HISTORY_LIMIT")
+        _greater_than(
+            self.history_window_seconds,
+            0,
+            "TRUBOT_HISTORY_WINDOW_MINUTES",
+        )
+        _at_least(self.followup_window_seconds, 0, "TRUBOT_FOLLOWUP_WINDOW_MINUTES")
         _at_least(self.auto_delay_seconds, 0, "TRUBOT_AUTO_DELAY_MINUTES")
         _greater_than(
             self.auto_activity_window_seconds,

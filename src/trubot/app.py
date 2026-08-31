@@ -9,6 +9,7 @@ import discord
 from dotenv import load_dotenv
 from openai import AsyncOpenAI
 
+from trubot.attention import AttentionTracker
 from trubot.config import ConfigurationError, Settings
 from trubot.discord_client import TruBotClient
 from trubot.health import ReadinessFile
@@ -44,6 +45,7 @@ def build_client(settings: Settings) -> TruBotClient:
             min_participants=settings.auto_min_participants,
         )
     )
+    attention = AttentionTracker(timedelta(seconds=settings.followup_window_seconds))
     readiness = ReadinessFile(
         settings.ready_file,
         refresh_seconds=settings.health_refresh_seconds,
@@ -52,6 +54,7 @@ def build_client(settings: Settings) -> TruBotClient:
         settings=settings,
         responder=responder,
         participation=participation,
+        attention=attention,
         readiness=readiness,
         intents=intents,
         allowed_mentions=discord.AllowedMentions.none(),

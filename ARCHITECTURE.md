@@ -13,6 +13,7 @@ Discord event
 TruBotClient ── validates channel + trigger ──┐
     │                                         │
     │                                  ParticipationTracker
+    │                                  + AttentionTracker
     │                                  (pure per-channel policy)
     ▼                                         │
 recent Discord history ◄──────────────────────┘
@@ -39,8 +40,13 @@ bounded Discord reply
 - `participation.py` is a synchronous state machine. Given channel activity and
   time, it decides whether an ambient reply may be scheduled. It performs no
   sleeping, network access, or Discord calls.
-- `history.py` converts Discord objects into provider-neutral conversation
-  messages, ignores other bots, and bounds untrusted content.
+- `attention.py` retains a short-lived per-channel window after an explicit
+  summon. While active, the model can answer a clear follow-up or abstain without
+  posting.
+- `history.py` retrieves the newest messages inside both a count cap and an age
+  window, restores chronological order, converts Discord objects into
+  provider-neutral conversation messages, ignores other bots, and bounds
+  untrusted content.
 - `discord_client.py` is the orchestration shell. It owns pending tasks,
   per-channel response locks, reactions, replies, and graceful shutdown.
 - `health.py` ties container readiness to the live Discord session rather than
@@ -58,19 +64,22 @@ increasing revision.
    delay.
 3. At least the configured number of distinct humans must remain inside the
    activity window.
-4. A successful direct, reaction, or ambient reply starts the ambient cooldown.
+4. A successful direct, follow-up, reaction, or ambient reply starts the ambient
+   cooldown.
 5. Only ambient replies consume the daily quota.
 6. Restarting clears ephemeral state; it never manufactures historical state
    from Discord messages.
 
 The event loop serializes tracker mutations. A per-channel `asyncio.Lock`
-prevents direct, reaction, and ambient generations from posting concurrently.
+prevents direct, follow-up, reaction, and ambient generations from posting
+concurrently.
 
 ## Failure behavior
 
 - OpenAI timeouts and transient errors use the SDK retry budget.
-- Direct and reaction failures receive one short in-character fallback; ambient
-  failures are logged and stay silent to avoid unsolicited error spam.
+- Direct and reaction failures receive one short in-character fallback; inferred
+  follow-up and ambient failures are logged and stay silent to avoid unsolicited
+  error spam.
 - Failed generations do not consume the ambient quota.
 - Discord send/fetch failures are logged with IDs, never message contents or
   credentials.

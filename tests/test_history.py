@@ -1,4 +1,5 @@
 from collections.abc import AsyncIterator
+from datetime import UTC, datetime
 from types import SimpleNamespace
 from typing import cast
 
@@ -66,27 +67,42 @@ def test_long_history_items_are_bounded() -> None:
 class FakeChannel:
     def __init__(self, messages: list[discord.Message]) -> None:
         self.messages = messages
-        self.request: tuple[int, bool] | None = None
+        self.request: tuple[int, bool, discord.Message | None, datetime] | None = None
 
-    async def history(self, *, limit: int, oldest_first: bool) -> AsyncIterator[discord.Message]:
-        self.request = (limit, oldest_first)
+    async def history(
+        self,
+        *,
+        limit: int,
+        oldest_first: bool,
+        before: discord.Message | None,
+        after: datetime,
+    ) -> AsyncIterator[discord.Message]:
+        self.request = (limit, oldest_first, before, after)
         for message in self.messages:
             yield message
 
 
 @pytest.mark.asyncio
 async def test_collect_history_preserves_chronological_order() -> None:
+    anchor = fake_message("current", author_id=2, display_name="Jim")
+    cutoff = datetime(2026, 8, 30, 6, tzinfo=UTC)
     channel = FakeChannel(
         [
-            fake_message("first", author_id=1, display_name="Tim"),
             fake_message("reply", author_id=99, author_bot=True, display_name="Trubot"),
             fake_message("ignored", author_id=50, author_bot=True, display_name="OtherBot"),
+            fake_message("first", author_id=1, display_name="Tim"),
         ]
     )
-    result = await collect_history(cast(HistoryChannel, channel), bot_user_id=99, limit=15)
+    result = await collect_history(
+        cast(HistoryChannel, channel),
+        bot_user_id=99,
+        limit=15,
+        before=anchor,
+        after=cutoff,
+    )
 
     assert [message.content for message in result] == ["Tim: first", "reply"]
-    assert channel.request == (15, True)
+    assert channel.request == (15, False, anchor, cutoff)
 
 
 def test_message_target_includes_author_and_handles_no_text() -> None:

@@ -12,6 +12,7 @@ MessageRole = Literal["user", "assistant"]
 
 class ReplyMode(StrEnum):
     DIRECT = "direct"
+    FOLLOW_UP = "follow_up"
     AMBIENT = "ambient"
     REACTION = "reaction"
 

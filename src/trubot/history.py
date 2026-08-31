@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from collections.abc import AsyncIterator
+from datetime import datetime
 from typing import Protocol
 
 import discord
@@ -18,6 +19,8 @@ class HistoryChannel(Protocol):
         *,
         limit: int,
         oldest_first: bool,
+        before: discord.Message | None,
+        after: datetime,
     ) -> AsyncIterator[discord.Message]: ...
 
 
@@ -26,9 +29,23 @@ async def collect_history(
     *,
     bot_user_id: int,
     limit: int,
+    before: discord.Message | None,
+    after: datetime,
 ) -> list[ConversationMessage]:
+    # Discord returns the channel's oldest messages when oldest_first=True and
+    # no lower cursor is supplied. Fetch the newest bounded slice, then reverse
+    # it locally so the model still receives natural chronological context.
+    recent = [
+        message
+        async for message in channel.history(
+            limit=limit,
+            oldest_first=False,
+            before=before,
+            after=after,
+        )
+    ]
     messages: list[ConversationMessage] = []
-    async for message in channel.history(limit=limit, oldest_first=True):
+    for message in reversed(recent):
         converted = convert_message(message, bot_user_id=bot_user_id)
         if converted is not None:
             messages.append(converted)

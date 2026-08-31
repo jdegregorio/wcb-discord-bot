@@ -8,6 +8,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import discord
 import pytest
 
+from trubot.attention import AttentionTracker
 from trubot.config import Settings
 from trubot.conversation import ConversationMessage, ReplyMode
 from trubot.discord_client import Responder, TruBotClient
@@ -18,7 +19,7 @@ NOW = datetime(2026, 8, 30, 12, tzinfo=UTC)
 
 
 class FakeResponder:
-    def __init__(self, output: str = "Hot", error: Exception | None = None) -> None:
+    def __init__(self, output: str | None = "Hot", error: Exception | None = None) -> None:
         self.output = output
         self.error = error
         self.calls: list[tuple[Sequence[ConversationMessage], ReplyMode, str, str | None]] = []
@@ -31,7 +32,7 @@ class FakeResponder:
         mode: ReplyMode,
         safety_id: str,
         target: str | None = None,
-    ) -> str:
+    ) -> str | None:
         self.calls.append((messages, mode, safety_id, target))
         if self.error is not None:
             raise self.error
@@ -84,12 +85,20 @@ def fake_channel(channel_id: int = 10) -> MagicMock:
     channel.send = AsyncMock()
     channel.fetch_message = AsyncMock()
     channel.typing.return_value = TypingContext()
-    history_messages = [message_for_history("🤖 hello", author_id=1)]
+    history_messages = [message_for_history("Code 12346633", author_id=1, name="Joe")]
 
-    async def history(*, limit: int, oldest_first: bool) -> AsyncIterator[discord.Message]:
-        assert limit == 15
-        assert oldest_first
-        for item in history_messages:
+    async def history(
+        *,
+        limit: int,
+        oldest_first: bool,
+        before: discord.Message | None,
+        after: datetime,
+    ) -> AsyncIterator[discord.Message]:
+        assert limit == 30
+        assert not oldest_first
+        assert after == NOW - timedelta(hours=6)
+        channel.history_request = (before, after)
+        for item in reversed(history_messages):
             yield item
 
     channel.history = history
@@ -113,6 +122,7 @@ def make_client(
     responder: FakeResponder | None = None,
     readiness: FakeReadiness | None = None,
     sleeper: object = asyncio.sleep,
+    clock: object | None = None,
 ) -> tuple[TruBotClient, FakeResponder, FakeReadiness, ParticipationTracker]:
     settings = Settings(
         discord_token="discord-secret",
@@ -131,13 +141,15 @@ def make_client(
             min_participants=2,
         )
     )
+    attention = AttentionTracker(timedelta(minutes=10))
     client = TruBotClient(
         settings=settings,
         responder=cast(Responder, actual_responder),
         participation=participation,
+        attention=attention,
         readiness=cast(ReadinessFile, actual_readiness),
         intents=discord.Intents.default(),
-        clock=lambda: NOW,
+        clock=cast("object", clock or (lambda: NOW)),
         sleeper=cast("object", sleeper),
     )
     client._connection.user = cast(
@@ -157,11 +169,13 @@ async def test_direct_trigger_replies_with_context_and_records_cooldown() -> Non
 
     assert len(responder.calls) == 1
     context, mode, safety_id, target = responder.calls[0]
-    assert [item.content for item in context] == ["Tim: 🤖 hello"]
+    assert [item.content for item in context] == ["Joe: Code 12346633"]
     assert mode is ReplyMode.DIRECT
     assert len(safety_id) == 64
     assert target == "Tim: 🤖 hello"
-    message.reply.assert_awaited_once_with("Hot", mention_author=False)
+    assert channel.history_request[0] is message
+    channel.send.assert_awaited_once_with("Hot")
+    message.reply.assert_not_awaited()
     assert participation.snapshot(10, NOW).last_reply_at == NOW
 
 
@@ -175,10 +189,8 @@ async def test_model_failure_gets_a_safe_in_character_visible_error() -> None:
 
     await client.on_message(message)
 
-    message.reply.assert_awaited_once_with(
-        "Something broke. Probably Tim's fault.",
-        mention_author=False,
-    )
+    channel.send.assert_awaited_once_with("Something broke. Probably Tim's fault.")
+    message.reply.assert_not_awaited()
 
 
 @pytest.mark.asyncio
@@ -210,7 +222,7 @@ async def test_ambient_task_posts_only_for_the_current_eligible_revision() -> No
 
 
 @pytest.mark.asyncio
-async def test_reaction_trigger_replies_to_the_reacted_message() -> None:
+async def test_reaction_trigger_posts_to_the_channel_without_a_reply_reference() -> None:
     client, responder, _readiness, _participation = make_client()
     channel = fake_channel()
     source = fake_message(channel, direct=False)
@@ -231,9 +243,87 @@ async def test_reaction_trigger_replies_to_the_reacted_message() -> None:
     with patch.object(client, "get_channel", return_value=channel):
         await client.on_raw_reaction_add(payload)
 
-    source.reply.assert_awaited_once_with("Hot", mention_author=False)
+    channel.send.assert_awaited_once_with("Hot")
+    source.reply.assert_not_awaited()
     assert responder.calls[0][1] is ReplyMode.REACTION
     assert responder.calls[0][3] == "Jim: Thomas Jones for a third"
+
+
+@pytest.mark.asyncio
+async def test_recent_summon_allows_an_inferred_follow_up_from_someone_else() -> None:
+    client, responder, _readiness, _participation = make_client()
+    channel = fake_channel()
+    direct = fake_message(channel)
+
+    await client.on_message(direct)
+    channel.history_messages[:] = [
+        message_for_history("🤖 hello", author_id=1, name="Tim"),
+        message_for_history("Hot", author_id=999, bot=True, name="Trubot"),
+    ]
+    followup = fake_message(channel, user_id=2, direct=False)
+    followup.content = "What do you mean by that?"
+    followup.clean_content = followup.content
+
+    await client.on_message(followup)
+
+    assert len(responder.calls) == 2
+    context, mode, _safety_id, target = responder.calls[1]
+    assert [item.content for item in context] == ["Tim: 🤖 hello", "Hot"]
+    assert mode is ReplyMode.FOLLOW_UP
+    assert target == "Tim: What do you mean by that?"
+    assert channel.send.await_count == 2
+    followup.reply.assert_not_awaited()
+
+
+@pytest.mark.asyncio
+async def test_inferred_follow_up_can_abstain_without_posting() -> None:
+    client, responder, _readiness, _participation = make_client()
+    channel = fake_channel()
+
+    await client.on_message(fake_message(channel))
+    responder.output = None
+    unrelated = fake_message(channel, user_id=2, direct=False)
+    unrelated.content = "Jim, did you make that trade?"
+    unrelated.clean_content = unrelated.content
+
+    await client.on_message(unrelated)
+
+    assert responder.calls[-1][1] is ReplyMode.FOLLOW_UP
+    channel.send.assert_awaited_once_with("Hot")
+    unrelated.reply.assert_not_awaited()
+
+
+@pytest.mark.asyncio
+async def test_follow_up_attention_expires() -> None:
+    current = [NOW]
+    client, responder, _readiness, _participation = make_client(clock=lambda: current[0])
+    channel = fake_channel()
+
+    await client.on_message(fake_message(channel))
+    current[0] += timedelta(minutes=10)
+    later = fake_message(channel, user_id=1, direct=False)
+    later.content = "What about now?"
+    later.clean_content = later.content
+    await client.on_message(later)
+
+    assert len(responder.calls) == 1
+
+
+@pytest.mark.asyncio
+async def test_replying_to_a_trubot_message_is_an_explicit_trigger() -> None:
+    client, responder, _readiness, _participation = make_client()
+    channel = fake_channel()
+    message = fake_message(channel, direct=False)
+    message.content = "What did you mean?"
+    message.clean_content = message.content
+    message.reference = SimpleNamespace(
+        resolved=SimpleNamespace(author=SimpleNamespace(id=999, bot=True))
+    )
+
+    await client.on_message(message)
+
+    assert responder.calls[0][1] is ReplyMode.DIRECT
+    channel.send.assert_awaited_once_with("Hot")
 
 
 @pytest.mark.asyncio
