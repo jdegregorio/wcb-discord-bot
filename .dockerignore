@@ -3,7 +3,12 @@
 .env
 .env.*
 .venv
+.coverage
+.pytest_cache
+.mypy_cache
+.ruff_cache
 __pycache__
 *.pyc
 *.log
 tests
+ARCHITECTURE.md
