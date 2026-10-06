@@ -18,7 +18,7 @@ _SPEAKER_PREFIX = re.compile(
     r"^(?:trubot|andrew(?:[.\s]+truax)?|truax)\s*:\s*",
     flags=re.IGNORECASE,
 )
-_PROMPT_CACHE_KEY = "wcb-trubot-personality-v4"
+_PROMPT_CACHE_KEY = "wcb-trubot-personality-v5"
 _NO_REPLY = "<NO_REPLY>"
 
 _TARGET_LABELS = {
@@ -85,6 +85,7 @@ class OpenAITruaxResponder:
         )
         response = await self._client.responses.create(
             model=self._model,
+            service_tier="default",
             instructions=instructions_for(mode),
             input=model_input,
             reasoning={"effort": "none"},
@@ -111,10 +112,10 @@ def _format_target(mode: ReplyMode, target: str) -> str:
     label = _TARGET_LABELS.get(mode, "CURRENT MESSAGE")
     if mode is ReplyMode.FOLLOW_UP:
         return (
-            f"{label} — decide whether this is addressed to Trubot; "
+            f"{label} - decide whether this is addressed to Trubot; "
             f"answer or abstain as instructed:\n{target}"
         )
-    return f"{label} — answer this now; earlier messages are context only:\n{target}"
+    return f"{label} - answer this now; earlier messages are context only:\n{target}"
 
 
 def normalize_reply(reply: str | None) -> str:

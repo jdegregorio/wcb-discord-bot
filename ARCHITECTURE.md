@@ -21,7 +21,8 @@ recent Discord history ◄──────────────────
     ▼
 OpenAITruaxResponder
     ├── personality + mode contract
-    ├── Responses API / gpt-5.6-luna
+    ├── Responses API / gpt-6-luna
+    ├── service_tier = default (standard)
     ├── reasoning.effort = none
     └── store = false
     │
@@ -34,7 +35,8 @@ bounded Discord reply
 - `config.py` parses and validates the entire environment at startup. Secrets
   cannot appear in the settings representation.
 - `personality.py` is the only source of character instructions and authentic
-  examples. Prompt plumbing never owns character decisions.
+  examples. Fictional judgment illustrations are labelled separately and never
+  serve as personal evidence about Andrew. Prompt plumbing never owns character decisions.
 - `openai_responder.py` is the only OpenAI dependency. It produces a plain
   string through the Responses API and normalizes accidental speaker prefixes.
 - `participation.py` is a synchronous state machine. Given channel activity and

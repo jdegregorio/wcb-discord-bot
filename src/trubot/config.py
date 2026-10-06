@@ -36,7 +36,7 @@ class Settings:
     openai_api_key: str = field(repr=False)
     allowed_channel_ids: frozenset[int] = DEFAULT_ALLOWED_CHANNEL_IDS
     reaction_emoji_names: frozenset[str] = DEFAULT_REACTION_EMOJIS
-    openai_model: str = "gpt-5.6-luna"
+    openai_model: str = "gpt-6-luna"
     openai_timeout_seconds: float = 45.0
     openai_max_retries: int = 2
     openai_max_output_tokens: int = 180
@@ -73,7 +73,7 @@ class Settings:
             openai_api_key=_required(values, "OPENAI_API_KEY"),
             allowed_channel_ids=allowed_channels,
             reaction_emoji_names=reaction_emojis,
-            openai_model=_nonempty(values, "TRUBOT_OPENAI_MODEL", "gpt-5.6-luna"),
+            openai_model=_nonempty(values, "TRUBOT_OPENAI_MODEL", "gpt-6-luna"),
             openai_timeout_seconds=_number(values, "OPENAI_TIMEOUT_SECONDS", 45.0),
             openai_max_retries=_integer(values, "OPENAI_MAX_RETRIES", 2),
             openai_max_output_tokens=_integer(values, "OPENAI_MAX_OUTPUT_TOKENS", 180),

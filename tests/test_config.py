@@ -18,7 +18,7 @@ VALID_ENV = {
 def test_defaults_target_luna_responses_workload() -> None:
     settings = Settings.from_env(VALID_ENV)
 
-    assert settings.openai_model == "gpt-5.6-luna"
+    assert settings.openai_model == "gpt-6-luna"
     assert settings.allowed_channel_ids == DEFAULT_ALLOWED_CHANNEL_IDS
     assert settings.auto_daily_limit == 3
     assert settings.auto_delay_seconds == 600

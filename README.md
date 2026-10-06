@@ -34,16 +34,22 @@ context. Responses are normal channel posts rather than Discord reply references
 The bot uses the [OpenAI Responses API](https://developers.openai.com/api/docs/guides/migrate-to-responses)
 through the async Python SDK. The production defaults are explicit:
 
-- model: [`gpt-5.6-luna`](https://developers.openai.com/api/docs/models/gpt-5.6-luna)
+- model: [`gpt-6-luna`](https://developers.openai.com/api/docs/models/gpt-6-luna)
+- processing tier: `default` (standard)
 - reasoning effort: `none`
 - text verbosity: `low`
 - response storage: disabled
 - maximum output: 180 tokens
 
-The prompt combines a compact behavioral contract with curated, authentic
+The prompt combines emotional and contextual judgment with curated, authentic
 league exchanges. Channel messages are a rolling context window, not durable
 OpenAI conversation state. See [personality.py](src/trubot/personality.py) for
 the voice contract and [ARCHITECTURE.md](ARCHITECTURE.md) for the design.
+
+Trubot shares supported excitement, keeps jokes relevant, and responds to difficult
+news with care. It remains a fictional bot and does not invent Andrew's actions
+or current sports facts. The evolving roadmap and release evidence live in
+[docs/trubot-evolution](docs/trubot-evolution/plan.md).
 
 ## Local development
 
@@ -81,7 +87,7 @@ Only two variables are required.
 | --- | --- | --- |
 | `DISCORD_TOKEN` | required | Discord bot token |
 | `OPENAI_API_KEY` | required | OpenAI API key |
-| `TRUBOT_OPENAI_MODEL` | `gpt-5.6-luna` | API-compatible model override |
+| `TRUBOT_OPENAI_MODEL` | `gpt-6-luna` | API-compatible model override |
 | `OPENAI_TIMEOUT_SECONDS` | `45` | End-to-end SDK request timeout |
 | `OPENAI_MAX_RETRIES` | `2` | SDK retry count for transient failures |
 | `OPENAI_MAX_OUTPUT_TOKENS` | `180` | Hard response token ceiling |
@@ -117,3 +123,26 @@ linting, strict type checks, tests with branch coverage, and a package build.
 Publishing a GitHub release produces signed-metadata, SBOM-enabled AMD64 and
 ARM64 images at `ghcr.io/jdegregorio/wcb-discord-bot`, tagged by semantic
 version and commit SHA.
+
+## Character evaluation
+
+With existing app-scoped credentials available, run the opt-in live evaluation:
+
+```sh
+uv run python scripts/evaluate_personality.py \
+  --fixtures tests/fixtures/emotional_judgment.json --samples 2
+```
+
+Use only synthetic fixtures. The harness runs the real Discord event handlers
+and OpenAI adapter while capturing all posts in a mock channel. It never logs
+into Discord, sends a Discord message, or changes production learning state.
+Runs are limited to 12 cases and three samples each, with output capped at 180 tokens and SDK retries disabled.
+It reports actual API token usage and requires separate rubric review for
+enthusiasm, relevance, tone, and factual restraint. A zero exit code confirms
+transport checks only. CI tests the harness without making API calls.
+
+`emotional_judgment_holdout.json` provides two additional variation checks;
+`core_voice.json` checks the established Thomas Jones answer and recovery from
+an irrelevant earlier bot reply.
+Monthly runtime spend is not yet measured or capped; the persistent ledger and
+spending guard are the next roadmap item.

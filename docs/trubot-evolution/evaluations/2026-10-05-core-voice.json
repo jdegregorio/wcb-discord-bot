@@ -1,0 +1,67 @@
+{
+  "model": "gpt-6-luna",
+  "requests": 4,
+  "successful_responses": 4,
+  "missing_usage_responses": 0,
+  "usage": {
+    "input_tokens": 9448,
+    "cached_input_tokens": 9314,
+    "output_tokens": 63
+  },
+  "results": [
+    {
+      "id": "favorite_player",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Thomas Jones, and it\u2019s not particularly close."
+      ],
+      "transport_pass": true,
+      "rubric": "Answer Thomas Jones directly, in the established brief casual voice. Do not invent another favorite or turn the answer into generic assistant commentary."
+    },
+    {
+      "id": "favorite_player",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "Thomas Jones, and it\u2019s not particularly close. \ud83d\udc10"
+      ],
+      "transport_pass": true,
+      "rubric": "Answer Thomas Jones directly, in the established brief casual voice. Do not invent another favorite or turn the answer into generic assistant commentary."
+    },
+    {
+      "id": "recover_from_irrelevant_bot_premise",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Sorry, I got mixed up. Thomas Jones, obviously."
+      ],
+      "transport_pass": true,
+      "rubric": "Reset the unsupported spelling premise and answer Thomas Jones. Do not defend or repeat the bot's earlier error."
+    },
+    {
+      "id": "recover_from_irrelevant_bot_premise",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "Sorry, I got mixed up. Thomas Jones, obviously."
+      ],
+      "transport_pass": true,
+      "rubric": "Reset the unsupported spelling premise and answer Thomas Jones. Do not defend or repeat the bot's earlier error."
+    }
+  ],
+  "rubric_review_required": true,
+  "discord_writes": 0,
+  "phase": "core-voice",
+  "source_file_sha256": {
+    "src/trubot/config.py": "a9cc5fc18bc83a8534b7332aed688c4254a2ae484d117a308cedbd83aaaff595",
+    "src/trubot/personality.py": "a1729995bb3c68384a8a6d5ba74d735f6d0e8db3179a103b2822a6e5fb886aa3",
+    "src/trubot/openai_responder.py": "232d1549397a5147ff8ecce90651b750fb37e2ec46d7b7a53329113c3e72ede1"
+  },
+  "fixture_provenance": "All inputs and IDs are synthetic. No league message contents were used.",
+  "agent_rubric_review": {
+    "passed": 4,
+    "total": 4,
+    "reviewer": "Codex agent, unblinded rubric review; no human or LLM-judge validation"
+  }
+}
