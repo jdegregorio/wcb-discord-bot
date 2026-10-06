@@ -1,0 +1,82 @@
+{
+  "before_validation": {
+    "checked_at_utc": "2026-10-06T04:48:07.128673+00:00",
+    "hostname": "pi5",
+    "architecture": "aarch64",
+    "release_state": {
+      "CURRENT_IMAGE": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:c83b3963941684a0fd274b8488046a8153ed7369b72a619e666983588cf2cd11",
+      "PREVIOUS_IMAGE": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:0694bdcf0cda679dbda7a9229f23e88638729f13204cb1d124beccb38023d2e0",
+      "CURRENT_VERSION": "2.1.1",
+      "PREVIOUS_VERSION": "2.1.0"
+    },
+    "container": {
+      "image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:c83b3963941684a0fd274b8488046a8153ed7369b72a619e666983588cf2cd11",
+      "status": "running",
+      "health": "healthy",
+      "restarts": 0,
+      "started_at": "2026-10-06T04:45:33.663635606Z",
+      "revision": "ba8cefc4c70c0194808ba8a814261860eedc1a6d"
+    },
+    "runtime": {
+      "version": "2.1.1",
+      "model": "gpt-6-luna",
+      "allowed_channel_count": 4,
+      "readiness_age_seconds": 23.852,
+      "source_file_sha256": {
+        "trubot.config": "a9cc5fc18bc83a8534b7332aed688c4254a2ae484d117a308cedbd83aaaff595",
+        "trubot.personality": "a1729995bb3c68384a8a6d5ba74d735f6d0e8db3179a103b2822a6e5fb886aa3",
+        "trubot.openai_responder": "232d1549397a5147ff8ecce90651b750fb37e2ec46d7b7a53329113c3e72ede1"
+      }
+    },
+    "healthcheck_exit_code": 0,
+    "log_counts_since_start": {
+      "lines": 6,
+      "response_requests": 0,
+      "posted": 0,
+      "response_failures": 0,
+      "errors": 0,
+      "connected": 1,
+      "disconnects": 0
+    }
+  },
+  "after_validation": {
+    "checked_at_utc": "2026-10-06T04:48:54.316600+00:00",
+    "hostname": "pi5",
+    "architecture": "aarch64",
+    "release_state": {
+      "CURRENT_IMAGE": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:c83b3963941684a0fd274b8488046a8153ed7369b72a619e666983588cf2cd11",
+      "CURRENT_VERSION": "2.1.1",
+      "PREVIOUS_IMAGE": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:0694bdcf0cda679dbda7a9229f23e88638729f13204cb1d124beccb38023d2e0",
+      "PREVIOUS_VERSION": "2.1.0"
+    },
+    "container": {
+      "image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:c83b3963941684a0fd274b8488046a8153ed7369b72a619e666983588cf2cd11",
+      "status": "running",
+      "health": "healthy",
+      "restarts": 0,
+      "started_at": "2026-10-06T04:45:33.663635606Z",
+      "revision": "ba8cefc4c70c0194808ba8a814261860eedc1a6d"
+    },
+    "runtime": {
+      "version": "2.1.1",
+      "model": "gpt-6-luna",
+      "allowed_channel_count": 4,
+      "readiness_age_seconds": 11.055,
+      "source_file_sha256": {
+        "trubot.config": "a9cc5fc18bc83a8534b7332aed688c4254a2ae484d117a308cedbd83aaaff595",
+        "trubot.personality": "a1729995bb3c68384a8a6d5ba74d735f6d0e8db3179a103b2822a6e5fb886aa3",
+        "trubot.openai_responder": "232d1549397a5147ff8ecce90651b750fb37e2ec46d7b7a53329113c3e72ede1"
+      }
+    },
+    "healthcheck_exit_code": 0,
+    "log_counts_since_start": {
+      "lines": 6,
+      "response_requests": 0,
+      "posted": 0,
+      "response_failures": 0,
+      "errors": 0,
+      "connected": 1,
+      "disconnects": 0
+    }
+  }
+}

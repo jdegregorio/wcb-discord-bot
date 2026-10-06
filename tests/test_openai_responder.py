@@ -41,7 +41,7 @@ def make_responder(fake: FakeOpenAI) -> OpenAITruaxResponder:
 
 
 @pytest.mark.asyncio
-async def test_responses_request_uses_luna_with_no_reasoning() -> None:
+async def test_explicit_responses_use_luna_without_reasoning() -> None:
     fake = FakeOpenAI(" trubot: Hot ")
     responder = make_responder(fake)
 
@@ -61,7 +61,7 @@ async def test_responses_request_uses_luna_with_no_reasoning() -> None:
     assert fake.responses.request["max_output_tokens"] == 180
     assert fake.responses.request["store"] is False
     assert fake.responses.request["safety_identifier"] == "safe-user"
-    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v5"
+    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v6"
     assert fake.responses.request["input"] == [
         {
             "role": "user",
@@ -217,3 +217,31 @@ def test_normalize_reply_only_removes_known_speaker_labels(
     expected: str,
 ) -> None:
     assert normalize_reply(raw) == expected
+
+
+@pytest.mark.parametrize(
+    ("mode", "effort", "ceiling"),
+    [
+        (ReplyMode.DIRECT, "none", 180),
+        (ReplyMode.REACTION, "none", 180),
+        (ReplyMode.AMBIENT, "none", 180),
+        (ReplyMode.FOLLOW_UP, "low", 512),
+    ],
+)
+@pytest.mark.asyncio
+async def test_only_inferred_followups_receive_the_contextual_reasoning_budget(
+    mode: ReplyMode,
+    effort: str,
+    ceiling: int,
+) -> None:
+    fake = FakeOpenAI("Hot")
+    responder = OpenAITruaxResponder(
+        cast(AsyncOpenAI, fake), model="gpt-6-luna", max_output_tokens=512
+    )
+    await responder.reply(
+        [ConversationMessage(role="user", content="Casey: Good game")],
+        mode=mode,
+        safety_id="synthetic-user",
+    )
+    assert fake.responses.request["reasoning"] == {"effort": effort}
+    assert fake.responses.request["max_output_tokens"] == ceiling

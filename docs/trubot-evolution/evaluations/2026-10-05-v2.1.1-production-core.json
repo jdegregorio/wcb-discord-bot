@@ -1,0 +1,41 @@
+{
+  "model": "gpt-6-luna",
+  "requests": 2,
+  "successful_responses": 2,
+  "missing_usage_responses": 0,
+  "usage": {
+    "input_tokens": 4724,
+    "cached_input_tokens": 4718,
+    "output_tokens": 30
+  },
+  "results": [
+    {
+      "id": "favorite_player",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Thomas Jones. This was not a difficult investigation."
+      ],
+      "transport_pass": true,
+      "rubric": "Answer Thomas Jones directly, in the established brief casual voice. Do not invent another favorite or turn the answer into generic assistant commentary."
+    },
+    {
+      "id": "recover_from_irrelevant_bot_premise",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Sorry, I got crossed up. Thomas Jones, obviously."
+      ],
+      "transport_pass": true,
+      "rubric": "Reset the unsupported spelling premise and answer Thomas Jones. Do not defend or repeat the bot's earlier error."
+    }
+  ],
+  "rubric_review_required": true,
+  "discord_writes": 0,
+  "version": "2.1.1",
+  "agent_rubric_review": {
+    "passed": 2,
+    "total": 2,
+    "known_failure": null
+  }
+}

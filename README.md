@@ -36,10 +36,10 @@ through the async Python SDK. The production defaults are explicit:
 
 - model: [`gpt-6-luna`](https://developers.openai.com/api/docs/models/gpt-6-luna)
 - processing tier: `default` (standard)
-- reasoning effort: `none`
+- reasoning effort: `none` for explicit/ambient replies, `low` for inferred follow-ups
 - text verbosity: `low`
 - response storage: disabled
-- maximum output: 180 tokens
+- token ceiling: 180 for explicit/ambient replies; 512 for inferred follow-ups, including reasoning
 
 The prompt combines emotional and contextual judgment with curated, authentic
 league exchanges. Channel messages are a rolling context window, not durable
@@ -90,7 +90,7 @@ Only two variables are required.
 | `TRUBOT_OPENAI_MODEL` | `gpt-6-luna` | API-compatible model override |
 | `OPENAI_TIMEOUT_SECONDS` | `45` | End-to-end SDK request timeout |
 | `OPENAI_MAX_RETRIES` | `2` | SDK retry count for transient failures |
-| `OPENAI_MAX_OUTPUT_TOKENS` | `180` | Hard response token ceiling |
+| `OPENAI_MAX_OUTPUT_TOKENS` | `512` | Hard total token ceiling; explicit/ambient replies are also capped at 180 |
 | `TRUBOT_ALLOWED_CHANNEL_IDS` | four current league channel IDs | Comma-separated Discord channel IDs |
 | `TRUBOT_REACTION_EMOJIS` | `ThomasJones,🍆` | Comma-separated reaction names |
 | `TRUBOT_HISTORY_LIMIT` | `30` | Maximum recent Discord messages sent as context |
@@ -136,7 +136,7 @@ uv run python scripts/evaluate_personality.py \
 Use only synthetic fixtures. The harness runs the real Discord event handlers
 and OpenAI adapter while capturing all posts in a mock channel. It never logs
 into Discord, sends a Discord message, or changes production learning state.
-Runs are limited to 12 cases and three samples each, with output capped at 180 tokens and SDK retries disabled.
+Runs are limited to 12 cases and three samples each, with reasoning and output capped at 512 tokens and SDK retries disabled.
 It reports actual API token usage and requires separate rubric review for
 enthusiasm, relevance, tone, and factual restraint. A zero exit code confirms
 transport checks only. CI tests the harness without making API calls.
