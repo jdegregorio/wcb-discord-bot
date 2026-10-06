@@ -39,7 +39,7 @@ class Settings:
     openai_model: str = "gpt-6-luna"
     openai_timeout_seconds: float = 45.0
     openai_max_retries: int = 2
-    openai_max_output_tokens: int = 180
+    openai_max_output_tokens: int = 512
     history_limit: int = 30
     history_window_seconds: float = 6 * 60 * 60
     followup_window_seconds: float = 10 * 60
@@ -76,7 +76,7 @@ class Settings:
             openai_model=_nonempty(values, "TRUBOT_OPENAI_MODEL", "gpt-6-luna"),
             openai_timeout_seconds=_number(values, "OPENAI_TIMEOUT_SECONDS", 45.0),
             openai_max_retries=_integer(values, "OPENAI_MAX_RETRIES", 2),
-            openai_max_output_tokens=_integer(values, "OPENAI_MAX_OUTPUT_TOKENS", 180),
+            openai_max_output_tokens=_integer(values, "OPENAI_MAX_OUTPUT_TOKENS", 512),
             history_limit=_integer(values, "TRUBOT_HISTORY_LIMIT", 30),
             history_window_seconds=60 * _number(values, "TRUBOT_HISTORY_WINDOW_MINUTES", 6 * 60),
             followup_window_seconds=60 * _number(values, "TRUBOT_FOLLOWUP_WINDOW_MINUTES", 10),

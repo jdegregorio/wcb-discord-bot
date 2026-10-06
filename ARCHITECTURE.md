@@ -23,7 +23,7 @@ OpenAITruaxResponder
     ├── personality + mode contract
     ├── Responses API / gpt-6-luna
     ├── service_tier = default (standard)
-    ├── reasoning.effort = none
+    ├── reasoning.effort = low for inferred follow-ups, none otherwise
     └── store = false
     │
     ▼

@@ -18,7 +18,7 @@ _SPEAKER_PREFIX = re.compile(
     r"^(?:trubot|andrew(?:[.\s]+truax)?|truax)\s*:\s*",
     flags=re.IGNORECASE,
 )
-_PROMPT_CACHE_KEY = "wcb-trubot-personality-v5"
+_PROMPT_CACHE_KEY = "wcb-trubot-personality-v6"
 _NO_REPLY = "<NO_REPLY>"
 
 _TARGET_LABELS = {
@@ -88,9 +88,13 @@ class OpenAITruaxResponder:
             service_tier="default",
             instructions=instructions_for(mode),
             input=model_input,
-            reasoning={"effort": "none"},
+            reasoning={"effort": "low" if mode is ReplyMode.FOLLOW_UP else "none"},
             text={"verbosity": "low"},
-            max_output_tokens=self._max_output_tokens,
+            max_output_tokens=(
+                self._max_output_tokens
+                if mode is ReplyMode.FOLLOW_UP
+                else min(self._max_output_tokens, 180)
+            ),
             prompt_cache_key=_PROMPT_CACHE_KEY,
             safety_identifier=safety_id,
             store=False,

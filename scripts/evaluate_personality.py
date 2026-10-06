@@ -44,7 +44,7 @@ async def evaluate(fixtures: Path, samples: int) -> dict[str, object]:
         openai_model=settings.openai_model,
         openai_timeout_seconds=settings.openai_timeout_seconds,
         openai_max_retries=0,
-        openai_max_output_tokens=min(settings.openai_max_output_tokens, 180),
+        openai_max_output_tokens=min(settings.openai_max_output_tokens, 512),
         allowed_channel_ids=frozenset({10}),
         auto_daily_limit=0,
         ready_file=Path("/tmp/trubot-evaluation-ready"),  # noqa: S108 - isolated fixture heartbeat
@@ -52,6 +52,7 @@ async def evaluate(fixtures: Path, samples: int) -> dict[str, object]:
     results = []
     input_tokens = cached_tokens = output_tokens = requests = successful_responses = 0
     missing_usage_responses = 0
+    provider_errors: list[dict[str, object]] = []
     for case in cases:
         for sample in range(samples):
             client = build_client(settings)
@@ -100,7 +101,16 @@ async def evaluate(fixtures: Path, samples: int) -> dict[str, object]:
                 nonlocal input_tokens, cached_tokens, output_tokens, requests
                 nonlocal successful_responses, missing_usage_responses, generation_completed
                 requests += 1
-                response = await create(**kwargs)
+                try:
+                    response = await create(**kwargs)
+                except Exception as error:
+                    provider_errors.append(
+                        {
+                            "type": type(error).__name__,
+                            "status_code": getattr(error, "status_code", None),
+                        }
+                    )
+                    raise
                 generation_completed = True
                 successful_responses += 1
                 if response.usage:
@@ -151,6 +161,7 @@ async def evaluate(fixtures: Path, samples: int) -> dict[str, object]:
         "requests": requests,
         "successful_responses": successful_responses,
         "missing_usage_responses": missing_usage_responses,
+        "provider_errors": provider_errors,
         "usage": {
             "input_tokens": input_tokens,
             "cached_input_tokens": cached_tokens,

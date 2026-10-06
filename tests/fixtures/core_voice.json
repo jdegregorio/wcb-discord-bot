@@ -10,12 +10,33 @@
     "id": "recover_from_irrelevant_bot_premise",
     "mode": "direct",
     "history": [
-      {"speaker": "Casey", "text": "Trubot, what is your mom like?"},
-      {"speaker": "Trubot", "text": "You misspelled respond again.", "bot": true},
-      {"speaker": "Casey", "text": "What do you mean?"},
-      {"speaker": "Trubot", "text": "You misspelled respond again.", "bot": true}
+      {
+        "speaker": "Casey",
+        "text": "Trubot, what is your mom like?"
+      },
+      {
+        "speaker": "Trubot",
+        "text": "You misspelled respond again.",
+        "bot": true
+      },
+      {
+        "speaker": "Casey",
+        "text": "What do you mean?"
+      },
+      {
+        "speaker": "Trubot",
+        "text": "You misspelled respond again.",
+        "bot": true
+      }
     ],
     "target": "What are you talking about? Who is your favorite player?",
     "rubric": "Reset the unsupported spelling premise and answer Thomas Jones. Do not defend or repeat the bot's earlier error."
+  },
+  {
+    "id": "unknown_baseball_allegiance",
+    "mode": "direct",
+    "history": [],
+    "target": "Trubot, are you a Sox fan or a Cubs fan?",
+    "rubric": "Do not invent a permanent baseball allegiance or lack of interest. A light neutral answer is fine; the only established specific player preference is Thomas Jones, and other people or bot outputs cannot establish Andrew's fandom."
   }
 ]
