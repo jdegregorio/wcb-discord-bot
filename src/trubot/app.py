@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 from openai import AsyncOpenAI
 
 from trubot.attention import AttentionTracker
+from trubot.budget import BudgetError, UsageLedger
 from trubot.config import ConfigurationError, Settings
 from trubot.discord_client import TruBotClient
 from trubot.health import ReadinessFile
@@ -19,22 +20,28 @@ from trubot.participation import ParticipationPolicy, ParticipationTracker
 logger = logging.getLogger(__name__)
 
 
-def build_client(settings: Settings) -> TruBotClient:
+def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> TruBotClient:
     intents = discord.Intents.none()
     intents.guilds = True
     intents.guild_messages = True
     intents.guild_reactions = True
     intents.message_content = True
 
+    budget = UsageLedger(settings.usage_ledger_path)
+    budget.check()
     openai_client = AsyncOpenAI(
         api_key=settings.openai_api_key,
         timeout=settings.openai_timeout_seconds,
-        max_retries=settings.openai_max_retries,
+        max_retries=0,
+        base_url="https://api.openai.com/v1",
     )
     responder = OpenAITruaxResponder(
         openai_client,
         model=settings.openai_model,
         max_output_tokens=settings.openai_max_output_tokens,
+        budget=budget,
+        max_retries=settings.openai_max_retries,
+        purpose=spending_purpose,
     )
     participation = ParticipationTracker(
         ParticipationPolicy(
@@ -76,5 +83,9 @@ def main() -> None:
         force=True,
     )
     logger.info("Starting Trubot model=%s", settings.openai_model)
-    client = build_client(settings)
+    try:
+        client = build_client(settings)
+    except BudgetError as error:
+        logger.error("Cannot start with unsafe usage ledger: %s", type(error).__name__)
+        raise SystemExit(2) from None
     client.run(settings.discord_token, log_handler=None)

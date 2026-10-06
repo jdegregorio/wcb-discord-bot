@@ -1,9 +1,12 @@
+import os
+from pathlib import Path
 from types import SimpleNamespace
 from typing import Any, cast
 
 import pytest
 from openai import AsyncOpenAI
 
+from trubot.budget import UsageLedger
 from trubot.conversation import ConversationMessage, ReplyMode
 from trubot.openai_responder import (
     EmptyResponseError,
@@ -20,13 +23,23 @@ class FakeResponses:
 
     async def create(self, **request: Any) -> SimpleNamespace:
         self.request = request
-        return SimpleNamespace(output_text=self.output_text)
+        return SimpleNamespace(
+            output_text=self.output_text,
+            usage=SimpleNamespace(
+                input_tokens=1000,
+                input_tokens_details=SimpleNamespace(cached_tokens=800),
+                output_tokens=10,
+            ),
+        )
 
 
 class FakeOpenAI:
     def __init__(self, output_text: str | None = "Hot") -> None:
         self.responses = FakeResponses(output_text)
         self.closed = False
+
+    def with_options(self, **_kwargs: object) -> "FakeOpenAI":
+        return self
 
     async def close(self) -> None:
         self.closed = True
@@ -37,6 +50,7 @@ def make_responder(fake: FakeOpenAI) -> OpenAITruaxResponder:
         cast(AsyncOpenAI, fake),
         model="gpt-6-luna",
         max_output_tokens=180,
+        budget=UsageLedger(Path(os.environ["TRUBOT_USAGE_LEDGER_PATH"])),
     )
 
 
@@ -236,7 +250,10 @@ async def test_only_inferred_followups_receive_the_contextual_reasoning_budget(
 ) -> None:
     fake = FakeOpenAI("Hot")
     responder = OpenAITruaxResponder(
-        cast(AsyncOpenAI, fake), model="gpt-6-luna", max_output_tokens=512
+        cast(AsyncOpenAI, fake),
+        model="gpt-6-luna",
+        max_output_tokens=512,
+        budget=UsageLedger(Path(os.environ["TRUBOT_USAGE_LEDGER_PATH"])),
     )
     await responder.reply(
         [ConversationMessage(role="user", content="Casey: Good game")],

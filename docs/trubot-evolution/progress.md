@@ -91,3 +91,55 @@
   immutable release/digest, and rollback evidence are saved in Git. Archive the
   managed run worktree after the evidence PR passes CI and merges.
 - Follow-up: persistent spending guard, then private verified ingestion and retrieval.
+
+## 2026-10-06: persistent spending guard
+
+- Base: `f70363361862fdbb8dc50b5e4719ddbf0a63403e`, fetched from `origin/main`.
+- New managed worktree: `trubot-daily-20261006`; branch
+  `feature/trubot-daily-20261006-budget-01`. Joe's primary checkout was untouched.
+- Reconciled prior work: emotional-judgment/evidence PRs are merged and 2.1.2 is
+  healthy on verified pi5, aarch64, Ubuntu 24.04.4. Open PRs are dependency updates;
+  no unfinished evolution improvement overlaps this increment.
+- Selected increment: private persistent API usage accounting and a UTC monthly
+  spending guard, enabling reliable future ingestion and evaluation within budget.
+- Acceptance: every provider attempt reserves conservative cost atomically;
+  reservations survive restarts and concurrent channels. Tokens, cached input,
+  model, pricing version, and estimated dollars are recorded without content.
+  Retries, empty outputs, abstentions, evaluations, and ambiguous failures count.
+  Missing/unsafe state and unpriced models stop calls. Runtime gets USD 18 and
+  maintenance gets USD 2 of the USD 20 monthly allowance. Synthetic explicit
+  exhaustion explains the pause; inferred and ambient exhaustion remains silent.
+- Reproduction and fix evidence: `evaluations/2026-10-06-budget-before.json` and
+  `budget-after.json`; before two calls, after zero calls on depletion, no Discord
+  writes. Live candidate acceptance is 10/10 plus 2/2 held-out checks, reviewed
+  separately for warmth, relevance, factual restraint, and identity boundaries.
+- Implementation: version 2.2.0, SQLite schema 1, integer nanodollar estimates,
+  fail-closed `mode=rw` opening, bounded text input/output, disabled hidden SDK
+  retries, separately accounted adapter retries, retained uncertainty across
+  months, and 13-month settled-record retention. Personality/model unchanged.
+- Required local gates passed: locked all-group sync, format check, lint, strict
+  types, 123 tests (94.15% branch-inclusive coverage), and distribution build.
+- Storage: prepared `/srv/app-data/wcb-bot` as UID/GID 10001, mode 0700, with
+  an explicitly initialized private ledger at 0600. Current production root
+  filesystem is read-only; `/tmp` is ephemeral. No raw messages or derived personal
+  data are stored. The storage runbook defines backup, correction, deletion,
+  restoration, schema compatibility, and rollback limitations.
+- Platform prerequisite: [PR #8](https://github.com/jdegregorio/pi-platform/pull/8)
+  changes only wcb-bot Compose storage/environment. Base
+  `4d50c8591b700697d10dd14ae9d6bc9511e9c6df`; candidate
+  `55aa25ea11cc23a40f0c966c8ac9055d91f8f3f9`. Platform CI passed; live candidate
+  Compose configuration validated quietly without exposing secrets.
+- Baseline production: 2.1.2 at
+  `sha256:dd5b272b4d5b72b5eaf8dd2f967f8a284d8fb0291d9dc9a2c108d6776ecc7eb4`,
+  healthy, zero restarts. Last 24 hours: zero requests, posts, response failures,
+  or ERROR lines. No league test chatter or historical backfill occurred.
+- Cost: actual API tokens are measured. Dollar estimates are conservative and
+  source-backed, not provider billing. Earlier October app spending remains
+  unknown; the first fully covered month will be November. No paid infrastructure
+  is added. One initial staging cleanup failure retained its accounted charge.
+- Candidate source hashes and rubric review are saved under `evaluations/`.
+  Release, deployed digest, merged identifiers, backup/restore probe, and final
+  production health/evaluation evidence will be recorded after deployment.
+- Follow-up priorities: privately pin verified Andrew identity, bounded incremental
+  allowlisted ingestion, preference retrieval, billing reconciliation, and
+  off-device backup verification. No identity is guessed or publicly recorded.

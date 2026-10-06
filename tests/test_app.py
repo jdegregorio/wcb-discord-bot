@@ -3,14 +3,18 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 from trubot.app import build_client, main
+from trubot.budget import UsageLedger
 from trubot.config import ConfigurationError, Settings
 
 
-def test_build_client_wires_minimal_discord_intents_and_openai_settings() -> None:
+def test_build_client_wires_minimal_discord_intents_and_openai_settings(
+    private_test_ledger: UsageLedger,
+) -> None:
     settings = Settings(
         discord_token="discord-secret",
         openai_api_key="openai-secret",
         allowed_channel_ids=frozenset({10}),
+        usage_ledger_path=private_test_ledger.path,
     )
     with patch("trubot.app.AsyncOpenAI") as client_class:
         client = build_client(settings)
@@ -18,7 +22,8 @@ def test_build_client_wires_minimal_discord_intents_and_openai_settings() -> Non
     client_class.assert_called_once_with(
         api_key="openai-secret",
         timeout=45.0,
-        max_retries=2,
+        max_retries=0,
+        base_url="https://api.openai.com/v1",
     )
     assert client.intents.message_content
     assert client.intents.guilds
