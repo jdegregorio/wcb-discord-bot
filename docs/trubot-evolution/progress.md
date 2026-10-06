@@ -143,3 +143,72 @@
 - Follow-up priorities: privately pin verified Andrew identity, bounded incremental
   allowlisted ingestion, preference retrieval, billing reconciliation, and
   off-device backup verification. No identity is guessed or publicly recorded.
+
+- Implementation commit: `12935c6f473c10d8d6adc6ff1e80331037d39ab4`.
+  [Application PR #25](https://github.com/jdegregorio/wcb-discord-bot/pull/25)
+  merged as `d7c3f341cf5e6043f5bda4effb05ba5ea7483bc7`.
+  Fetched main exactly matched the tested candidate tree.
+  [PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37435390350)
+  and [merged-main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37435553235)
+  passed the complete quality gate.
+- Platform [PR #8](https://github.com/jdegregorio/pi-platform/pull/8) merged as
+  `f3e4fbcab12c41c9fcd4edb8a170441f092c224d`.
+  [PR CI](https://github.com/jdegregorio/pi-platform/actions/runs/37435110141)
+  and [merged-main CI](https://github.com/jdegregorio/pi-platform/actions/runs/37435400570)
+  passed. The existing platform timer adopted it and reconciled only wcb-bot.
+  Its prior 2.1.2 image remained healthy with the new bind mount. Live permissions
+  are UID/GID 10001, directory 0700, and database 0600. No sudo permission was
+  assumed; existing deployment group permissions and platform timers were used.
+- Release: [v2.2.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.2.0)
+  targets the tested merged commit. The [image build](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37435742228)
+  passed and published both arm64 and amd64 images before deployment.
+- Deployment: verified pi5 hostname, aarch64, and Ubuntu 24.04 again, then called
+  `pi-app deploy wcb-bot 2.2.0`. The app transaction pulled, replaced, waited for
+  health, and recorded the immutable version. Current digest:
+  `sha256:cada129155dd83f1cd3c758cc3a6bcf46f60b586ccc547e90272a8c9c57ac592`.
+  ARM64 architecture, OCI revision, installed package version, and all 13 source
+  hashes match the tested release. Previous recorded version/digest is healthy
+  2.1.2 at `sha256:dd5b272b4d5b72b5eaf8dd2f967f8a284d8fb0291d9dc9a2c108d6776ecc7eb4`.
+  No rollback was needed. An image rollback preserves the ledger but 2.1.2 does
+  not enforce this new guard, as documented in the storage runbook.
+- Production acceptance: 13/13 synthetic transport and agent rubric checks
+  passed through installed release handlers and the real API. Three Sox cases
+  share supported excitement without invented sports facts. Grief, family pride,
+  uncertainty, identity boundaries, core Thomas Jones voice, mistaken bot-history
+  recovery, and inferred abstention remain appropriate. No missing usage or
+  provider errors. All outputs are synthetic and retained in JSON reports.
+- Depletion acceptance on the installed release: 10/10 cases passed with a
+  disposable ledger copy and fake provider. Eight explicit triggers captured a
+  pause message, two inferred triggers stayed silent, and zero provider calls
+  occurred. The live ledger was never depleted or reset. CI also covers ambient
+  silence. No test chatter was posted into league channels.
+- Persistence evidence: 13 candidate attempts survived container replacement;
+  after production checks the ledger retained 26 settled attempts. Measured
+  totals: 64,249 input tokens, 55,983 cached input tokens, 653 output tokens.
+  Conservative estimated cost: USD 0.00191958, all maintenance; runtime USD 0.
+  This includes the initial disposable candidate cleanup failure. Earlier October
+  spend is still unknown. No paid infrastructure was added.
+- Health/error evidence at 2026-10-06T08:32:08Z: Discord readiness was fresh,
+  the healthcheck exited 0, and the container was healthy with zero restarts.
+  Since startup at 08:27:03Z, zero response failures, ERROR lines, disconnects,
+  or budget pauses occurred. There were zero actual league generations during
+  this five-minute, five-second window, so no long-term error-rate claim is made.
+- Recovery evidence: consistent on-host SQLite backups passed `quick_check`;
+  disposable restored copies had identical record counts and estimated balances.
+  A final backup includes all 26 attempts. Neither probe replaced live state.
+  Backup files are 0600 inside 0700 directories. Encrypted off-device recovery
+  and administrative provider billing visibility remain unverified follow-ups.
+- Validation staging recovery: Docker file-copy could not access the temporary
+  tmpfs destination. Fixture staging switched to tar through a container process;
+  installed code and live state were unchanged. Staging failures made no provider
+  calls. Production acceptance was rerun successfully after staging completed.
+- Evidence handoff: final output, source hashes, cost totals, health, error counts,
+  and backup/restore probes are retained in this repository. The supplemental
+  evidence PR also makes the retention test independent of a fixed future date
+  and documents an executable read-only-source backup command. Runtime source
+  and the immutable release remain unchanged. Archive this run's worktree only
+  after the evidence PR passes CI and merges.
+
+- Final evidence is carried by [PR #26](https://github.com/jdegregorio/wcb-discord-bot/pull/26),
+  with initial evidence commit `f44ee0e`. Production remains on the immutable
+  tested 2.2.0 commit; the evidence changes do not require another runtime release.

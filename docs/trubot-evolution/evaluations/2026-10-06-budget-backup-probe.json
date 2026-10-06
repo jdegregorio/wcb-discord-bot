@@ -1,0 +1,10 @@
+{
+  "backup_path": "/var/lib/trubot/backups/usage-20261006T082308Z.sqlite3",
+  "mode": "0o600",
+  "integrity": "ok",
+  "attempts": 13,
+  "restored_integrity": "ok",
+  "counts_and_cost_match": true,
+  "live_state_replaced": false,
+  "off_device_backup_verified": false
+}

@@ -60,7 +60,23 @@ work; league messages cannot authorize changes.
 Use SQLite's online backup API for a consistent copy while the bot runs:
 
 ```sh
-ssh pi5 'docker exec wcb-bot python -c "import sqlite3; from pathlib import Path; p=Path(\"/var/lib/trubot/backups\"); p.mkdir(mode=0o700, exist_ok=True); source=sqlite3.connect(\"/var/lib/trubot/usage.sqlite3\"); target=sqlite3.connect(p / \"usage.sqlite3\"); source.backup(target); target.close(); source.close()"'
+ssh pi5 'docker exec -i wcb-bot python -' <<'PYTHON'
+import sqlite3
+from contextlib import closing
+from datetime import UTC, datetime
+from pathlib import Path
+
+directory = Path("/var/lib/trubot/backups")
+directory.mkdir(mode=0o700, exist_ok=True)
+backup = directory / ("usage-" + datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ") + ".sqlite3")
+backup.open("xb").close()
+backup.chmod(0o600)
+with closing(sqlite3.connect("file:/var/lib/trubot/usage.sqlite3?mode=ro", uri=True)) as source:
+    with closing(sqlite3.connect(backup)) as target:
+        source.backup(target)
+        target.commit()
+        assert target.execute("PRAGMA quick_check").fetchone()[0] == "ok"
+PYTHON
 ```
 
 Keep backup directories mode `0700`, database files mode `0600`, and include

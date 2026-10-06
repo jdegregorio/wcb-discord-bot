@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-06T08:28:05.151331+00:00",
+  "version": "2.2.0",
+  "model": "gpt-6-luna",
+  "source_hashes": {
+    "src/trubot/__init__.py": "d730867ce06e58942a4813daa6c10ebafcdd849521fc49cbb11d05ed282d98ea",
+    "src/trubot/__main__.py": "0c9d86381a8107a5e0256d44c0c96d0b68a2239c161b2a88963982600fc3229a",
+    "src/trubot/app.py": "135fad6005479ca705358a93be8b68e9345badf683382d32417b5dee1d2bc6b6",
+    "src/trubot/attention.py": "cd1fd30039dd941ebcf7ccd95b273a0cf4d31d497a9dcb1551360974c161eb83",
+    "src/trubot/budget.py": "116cbc1bc3c7fe3ba9c1eaefc01565ce4ed04f06a18cc963f15057adaea5b97c",
+    "src/trubot/config.py": "dc2188dc8e73262c8dc8f7d94b7ea6f2f63340a0f54045f878d078751a775daf",
+    "src/trubot/conversation.py": "a66e05e87450363aba2d26a09b005915c92f11db672d55cb2e5c016716086d42",
+    "src/trubot/discord_client.py": "1a807090c7af607c9e47abe74daf60c9a2ba1fd926bd0a2531440d95fe995bce",
+    "src/trubot/health.py": "c0ba94160e7f4370e235a80026d00b5f72630cec06967cb2cc694ef61bccd711",
+    "src/trubot/history.py": "f342438d5187d3863be90b2d97dd6aada97ef6c753ee37db73d1cda2bfadc57d",
+    "src/trubot/openai_responder.py": "e9ee5dd57c7fe73f940455ebada06af78d15e6fdc725c4648680eb9229828b09",
+    "src/trubot/participation.py": "0460028feb606adfc1db27fa577624deab38bdc814be0c0ff32e65313d1070aa",
+    "src/trubot/personality.py": "a3eb8c368994e1b92333b2282573062e877cceaaa8d1d7de6d7daf44f3c6945a"
+  },
+  "healthcheck_exit": 0,
+  "readiness_age_seconds": 56.840723276138306,
+  "ledger": {
+    "month": "2026-10",
+    "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+    "timezone": "UTC",
+    "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+    "estimated_usd": 0.001411745,
+    "runtime_usd": 0.0,
+    "maintenance_usd": 0.001411745,
+    "monthly_limit_usd": 20,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "attempts": 13,
+    "input_tokens": 32131,
+    "cached_input_tokens": 24062,
+    "output_tokens": 325,
+    "unsettled_attempts": 0,
+    "pre_guard_spend": "unknown; not included"
+  },
+  "state_mode": "0o600",
+  "state_owner": [
+    10001,
+    10001
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-06T08:32:08.657169+00:00",
+  "scope": "current container startup to check time; excludes captured fixture processes",
+  "response_requests": 0,
+  "posted_responses": 0,
+  "response_failures": 0,
+  "errors": 0,
+  "disconnects": 0,
+  "budget_pauses": 0
+}
