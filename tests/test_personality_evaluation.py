@@ -35,6 +35,7 @@ async def test_evaluation_exercises_all_triggers_and_records_only_synthetic_post
         )
 
     api = SimpleNamespace(responses=SimpleNamespace(create=create), close=AsyncMock())
+    api.with_options = lambda **_kwargs: api
     with patch("trubot.app.AsyncOpenAI", return_value=api):
         report = await EVALUATE(FIXTURES, 1)
 
@@ -67,6 +68,7 @@ async def test_provider_failure_fails_evaluation_instead_of_scoring_fallback_as_
         responses=SimpleNamespace(create=AsyncMock(side_effect=TimeoutError)),
         close=AsyncMock(),
     )
+    api.with_options = lambda **_kwargs: api
     with patch("trubot.app.AsyncOpenAI", return_value=api):
         report = await EVALUATE(FIXTURES, 1)
 

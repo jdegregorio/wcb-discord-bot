@@ -54,8 +54,8 @@ infrastructure. Preserve low-cost runtime models, bounded context and output,
 caching, incremental learning, and small evaluations. Do not use Astra.
 The daily Codex session's model setting is independent of runtime model choice.
 
-The first priority after the emotional-judgment increment is a persistent usage
-ledger and enforceable spending guard. Until that ships, monthly spend is not
-measured or capped. Evaluation token counts are measured; dollar conversions
+Version 2.2.0 adds a persistent usage ledger and an enforceable UTC monthly
+spending guard. The first partially covered month retains an explicit unknown
+pre-guard-spend limitation. Next priority is verified private ingestion. Evaluation token counts are measured; dollar conversions
 are estimates, not billing records. Do not add a paid service or increase the
 runtime model cost without a budget-supported reason.

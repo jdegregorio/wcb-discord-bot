@@ -21,6 +21,7 @@ recent Discord history ◄──────────────────
     ▼
 OpenAITruaxResponder
     ├── personality + mode contract
+    ├── atomic persistent usage reservation per attempt
     ├── Responses API / gpt-6-luna
     ├── service_tier = default (standard)
     ├── reasoning.effort = low for inferred follow-ups, none otherwise
@@ -53,6 +54,9 @@ bounded Discord reply
   per-channel response locks, reactions, replies, and graceful shutdown.
 - `health.py` ties container readiness to the live Discord session rather than
   merely proving that a Python process exists.
+- `budget.py` owns the private SQLite ledger. Transactions serialize reservations
+  across channels and processes. Integer nanodollars avoid rounding drift. Runtime
+  opening uses SQLite `mode=rw` so lost storage cannot reset the allowance.
 - `app.py` is the composition root. Importing any module is side-effect free.
 
 ## Participation invariants
@@ -78,7 +82,8 @@ concurrently.
 
 ## Failure behavior
 
-- OpenAI timeouts and transient errors use the SDK retry budget.
+- SDK retries are disabled. The adapter reserves each bounded transient retry
+  separately and retains uncertain charges after errors or cancellation.
 - Direct and reaction failures receive one short in-character fallback; inferred
   follow-up and ambient failures are logged and stay silent to avoid unsolicited
   error spam.
@@ -94,3 +99,7 @@ Only the configured rolling Discord history is sent to OpenAI. Responses are
 requested with storage disabled. The API receives a stable SHA-256 identifier
 scoped to the Discord guild and requesting user, not their display name or raw
 Discord ID. Generated messages cannot create Discord mentions.
+
+The ledger stores only cost metadata, not conversation or personal data. Production
+mounts `/srv/app-data/wcb-bot` at `/var/lib/trubot`; the remaining root filesystem
+stays read-only. The storage runbook defines retention and recovery.

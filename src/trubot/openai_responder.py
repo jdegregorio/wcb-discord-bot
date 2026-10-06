@@ -2,13 +2,17 @@
 
 from __future__ import annotations
 
+import asyncio
+import json
 import logging
 import re
 from collections.abc import Sequence
 
-from openai import AsyncOpenAI
-from openai.types.responses import EasyInputMessageParam, ResponseInputParam
+from openai import APIConnectionError, APIStatusError, AsyncOpenAI, RateLimitError
+from openai.types.responses import EasyInputMessageParam, Response, ResponseInputParam
+from openai.types.responses.response_create_params import ResponseCreateParamsNonStreaming
 
+from trubot.budget import NANODOLLARS, BudgetUnavailable, UsageLedger
 from trubot.conversation import ConversationMessage, ReplyMode
 from trubot.personality import instructions_for
 
@@ -43,10 +47,16 @@ class OpenAITruaxResponder:
         *,
         model: str,
         max_output_tokens: int,
+        budget: UsageLedger,
+        max_retries: int = 0,
+        purpose: str = "runtime",
     ) -> None:
-        self._client = client
+        self._client = client.with_options(max_retries=0)
         self._model = model
         self._max_output_tokens = max_output_tokens
+        self._budget = budget
+        self._max_retries = max_retries
+        self._purpose = purpose
 
     async def reply(
         self,
@@ -83,21 +93,37 @@ class OpenAITruaxResponder:
             mode.value,
             len(messages),
         )
-        response = await self._client.responses.create(
-            model=self._model,
-            service_tier="default",
-            instructions=instructions_for(mode),
-            input=model_input,
-            reasoning={"effort": "low" if mode is ReplyMode.FOLLOW_UP else "none"},
-            text={"verbosity": "low"},
-            max_output_tokens=(
-                self._max_output_tokens
-                if mode is ReplyMode.FOLLOW_UP
-                else min(self._max_output_tokens, 180)
+        instructions = instructions_for(mode)
+        output_bound = (
+            self._max_output_tokens
+            if mode is ReplyMode.FOLLOW_UP
+            else min(self._max_output_tokens, 180)
+        )
+        # UTF-8 bytes bound text tokens; framing allowance also covers message metadata.
+        input_bound = (
+            len(
+                json.dumps(
+                    {"instructions": instructions, "input": model_input}, ensure_ascii=False
+                ).encode("utf-8")
+            )
+            + 4096
+        )
+        response = await self._generate(
+            input_bound=input_bound,
+            output_bound=output_bound,
+            mode=mode,
+            request=ResponseCreateParamsNonStreaming(
+                model=self._model,
+                service_tier="default",
+                instructions=instructions,
+                input=model_input,
+                reasoning={"effort": "low" if mode is ReplyMode.FOLLOW_UP else "none"},
+                text={"verbosity": "low"},
+                max_output_tokens=output_bound,
+                prompt_cache_key=_PROMPT_CACHE_KEY,
+                safety_identifier=safety_id,
+                store=False,
             ),
-            prompt_cache_key=_PROMPT_CACHE_KEY,
-            safety_identifier=safety_id,
-            store=False,
         )
         reply = normalize_reply(response.output_text)
         if mode is ReplyMode.FOLLOW_UP and reply.casefold() == _NO_REPLY.casefold():
@@ -107,6 +133,63 @@ class OpenAITruaxResponder:
             raise EmptyResponseError("OpenAI returned an empty text response")
         logger.info("Generated Trubot response mode=%s characters=%d", mode.value, len(reply))
         return reply
+
+    async def _generate(
+        self,
+        *,
+        input_bound: int,
+        output_bound: int,
+        mode: ReplyMode,
+        request: ResponseCreateParamsNonStreaming,
+    ) -> Response:
+        for attempt in range(self._max_retries + 1):
+            # Atomic commit completes before any provider I/O, across channels/processes.
+            reservation = await asyncio.to_thread(
+                self._budget.reserve,
+                model=self._model,
+                input_bound=input_bound,
+                output_bound=output_bound,
+                purpose=self._purpose,
+                mode=mode.value,
+            )
+            try:
+                response = await self._client.responses.create(**request)
+            except asyncio.CancelledError:
+                # A committed pending reservation survives cancellation and crashes.
+                raise
+            except Exception as error:
+                await asyncio.to_thread(self._budget.uncertain, reservation)
+                retryable = isinstance(error, APIConnectionError | RateLimitError) or (
+                    isinstance(error, APIStatusError) and error.status_code >= 500
+                )
+                if not retryable or attempt == self._max_retries:
+                    raise
+                await asyncio.sleep(min(0.5 * 2**attempt, 8))
+                continue
+            usage = response.usage
+            if usage is None:
+                await asyncio.to_thread(self._budget.uncertain, reservation)
+                logger.warning("Provider usage missing; full spending reservation retained")
+            else:
+                cost = await asyncio.to_thread(
+                    self._budget.settle,
+                    reservation,
+                    input_tokens=usage.input_tokens,
+                    cached_input_tokens=usage.input_tokens_details.cached_tokens,
+                    output_tokens=usage.output_tokens,
+                )
+                logger.info(
+                    "API usage model=%s input_tokens=%d cached_input_tokens=%d output_tokens=%d "
+                    "estimated_usd=%.9f purpose=%s",
+                    self._model,
+                    usage.input_tokens,
+                    usage.input_tokens_details.cached_tokens,
+                    usage.output_tokens,
+                    cost / NANODOLLARS,
+                    self._purpose,
+                )
+            return response
+        raise BudgetUnavailable("No accounted API attempt completed")
 
     async def close(self) -> None:
         await self._client.close()

@@ -40,6 +40,7 @@ class Settings:
     openai_timeout_seconds: float = 45.0
     openai_max_retries: int = 2
     openai_max_output_tokens: int = 512
+    usage_ledger_path: Path = Path("/var/lib/trubot/usage.sqlite3")
     history_limit: int = 30
     history_window_seconds: float = 6 * 60 * 60
     followup_window_seconds: float = 10 * 60
@@ -77,6 +78,9 @@ class Settings:
             openai_timeout_seconds=_number(values, "OPENAI_TIMEOUT_SECONDS", 45.0),
             openai_max_retries=_integer(values, "OPENAI_MAX_RETRIES", 2),
             openai_max_output_tokens=_integer(values, "OPENAI_MAX_OUTPUT_TOKENS", 512),
+            usage_ledger_path=Path(
+                _nonempty(values, "TRUBOT_USAGE_LEDGER_PATH", "/var/lib/trubot/usage.sqlite3")
+            ),
             history_limit=_integer(values, "TRUBOT_HISTORY_LIMIT", 30),
             history_window_seconds=60 * _number(values, "TRUBOT_HISTORY_WINDOW_MINUTES", 6 * 60),
             followup_window_seconds=60 * _number(values, "TRUBOT_FOLLOWUP_WINDOW_MINUTES", 10),
@@ -100,7 +104,7 @@ class Settings:
         _at_least_one(self.allowed_channel_ids, "TRUBOT_ALLOWED_CHANNEL_IDS")
         _at_least_one(self.reaction_emoji_names, "TRUBOT_REACTION_EMOJIS")
         _greater_than(self.openai_timeout_seconds, 0, "OPENAI_TIMEOUT_SECONDS")
-        _at_least(self.openai_max_retries, 0, "OPENAI_MAX_RETRIES")
+        _between(self.openai_max_retries, 0, 4, "OPENAI_MAX_RETRIES")
         _between(self.openai_max_output_tokens, 1, 4096, "OPENAI_MAX_OUTPUT_TOKENS")
         _between(self.history_limit, 1, 100, "TRUBOT_HISTORY_LIMIT")
         _greater_than(

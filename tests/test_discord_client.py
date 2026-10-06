@@ -358,3 +358,23 @@ async def test_connection_health_lifecycle_and_close() -> None:
     assert readiness.started == 2
     assert readiness.stopped >= 2
     assert responder.closed
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize("mode", list(ReplyMode))
+async def test_spending_guard_explains_explicit_pause_and_keeps_unsolicited_modes_silent(mode):
+    from trubot.budget import BudgetExceeded
+
+    client, _responder, _ready, tracker = make_client(
+        responder=FakeResponder(error=BudgetExceeded("Monthly API allowance exhausted"))
+    )
+    channel = fake_channel()
+    try:
+        assert not await client._respond(channel, mode=mode, requester_user_id=1, target="Go Sox.")
+        if mode in {ReplyMode.DIRECT, ReplyMode.REACTION}:
+            channel.send.assert_awaited_once_with("I'm taking a breather. Try me again later.")
+        else:
+            channel.send.assert_not_awaited()
+        assert not tracker._channels
+    finally:
+        await client.close()

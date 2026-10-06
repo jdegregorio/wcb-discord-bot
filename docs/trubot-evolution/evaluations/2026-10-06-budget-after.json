@@ -1,0 +1,33 @@
+{
+  "scenario": "Two synthetic direct events after maintenance allowance depletion through real Discord handlers and guarded adapter",
+  "api_attempts": 0,
+  "captured_posts": [
+    [
+      "I'm taking a breather. Try me again later."
+    ],
+    [
+      "I'm taking a breather. Try me again later."
+    ]
+  ],
+  "guard_pass": true,
+  "discord_writes": 0,
+  "live_api_calls": 0,
+  "ledger": {
+    "month": "2026-10",
+    "coverage_start": "2026-10-06T08:16:24.310454+00:00",
+    "timezone": "UTC",
+    "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+    "estimated_usd": 2.0,
+    "runtime_usd": 0.0,
+    "maintenance_usd": 2.0,
+    "monthly_limit_usd": 20,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "attempts": 1,
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "unsettled_attempts": 0,
+    "pre_guard_spend": "unknown; not included"
+  }
+}

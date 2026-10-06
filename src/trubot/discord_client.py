@@ -13,6 +13,7 @@ from typing import Protocol, cast
 import discord
 
 from trubot.attention import AttentionTracker
+from trubot.budget import BudgetError
 from trubot.config import Settings
 from trubot.conversation import ConversationMessage, ReplyMode, safety_identifier
 from trubot.health import ReadinessFile
@@ -314,6 +315,14 @@ class TruBotClient(discord.Client):
                 await channel.send(output)
             except asyncio.CancelledError:
                 raise
+            except BudgetError as error:
+                logger.warning(
+                    "Generation paused reason=%s mode=%s", type(error).__name__, mode.value
+                )
+                if mode in {ReplyMode.DIRECT, ReplyMode.REACTION}:
+                    with suppress(discord.HTTPException):
+                        await channel.send("I'm taking a breather. Try me again later.")
+                return False
             except Exception:
                 logger.exception(
                     "Trubot response failed channel_id=%d mode=%s",

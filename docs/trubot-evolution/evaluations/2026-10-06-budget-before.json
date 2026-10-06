@@ -1,0 +1,9 @@
+{
+  "base_sha": "f70363361862fdbb8dc50b5e4719ddbf0a63403e",
+  "scenario": "Two synthetic direct Discord events with a zero budget setting, no live API or Discord writes",
+  "api_attempts": 2,
+  "captured_posts": 2,
+  "result": "Both calls generated. No configuration or persistent guard enforces a spending allowance.",
+  "discord_writes": 0,
+  "live_api_calls": 0
+}

@@ -42,6 +42,7 @@ async def evaluate(fixtures: Path, samples: int) -> dict[str, object]:
         discord_token=settings.discord_token,
         openai_api_key=settings.openai_api_key,
         openai_model=settings.openai_model,
+        usage_ledger_path=settings.usage_ledger_path,
         openai_timeout_seconds=settings.openai_timeout_seconds,
         openai_max_retries=0,
         openai_max_output_tokens=min(settings.openai_max_output_tokens, 512),
@@ -55,7 +56,7 @@ async def evaluate(fixtures: Path, samples: int) -> dict[str, object]:
     provider_errors: list[dict[str, object]] = []
     for case in cases:
         for sample in range(samples):
-            client = build_client(settings)
+            client = build_client(settings, spending_purpose="maintenance")
             client._connection.user = SimpleNamespace(id=999, name="Trubot")
             channel = MagicMock(spec=discord.TextChannel)
             channel.id = 10

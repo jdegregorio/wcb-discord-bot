@@ -3,22 +3,7 @@
 Replenish this list as evidence arrives. Each run owns prioritization and carries
 one coherent increment through production verification.
 
-## 1. Persistent usage accounting and spending guard
-
-- Acceptance: record API input, cached input, output, model, pricing version,
-  and estimated cost without user content; enforce a USD 20 calendar-month
-  ceiling across restarts and concurrent channels. Reserve conservatively
-  before requests, reconcile actual usage, and retain uncertain charges on errors.
-- Include retries, failed/empty generations, abstentions, evaluations, and future
-  learning jobs. Define month timezone explicitly and reject unpriced models.
-- Dependencies: app-scoped persistent volume in the platform repository; verify
-  permissions and recovery. Reserve part of the budget for learning/evaluation.
-- Evidence: current responder logs no usage and has no durable state. Output and
-  history caps alone cannot guarantee a monthly spending ceiling.
-- Validation: concurrent reservations, month rollover, restarts, corrupt/unwritable
-  state, timeout ambiguity, unknown pricing, and depleted-budget Discord behavior.
-
-## 2. Verified identity and incremental private message ingestion
+## 1. Verified identity and incremental private message ingestion
 
 - Acceptance: pin the confirmed stable Discord ID privately with authenticated
   membership evidence; ingest only its messages from the existing channel allowlist,
@@ -33,7 +18,7 @@ one coherent increment through production verification.
   interrupted catch-up resumes, other users cannot contaminate attribution, and
   reconnects do not lose checkpoints or replay unbounded history.
 
-## 3. Evidence-backed preference retrieval
+## 2. Evidence-backed preference retrieval
 
 - Acceptance: derive a compact set of interests and style observations with source
   references, confidence, timestamps, and contradiction/expiry handling. Retrieve
@@ -44,7 +29,7 @@ one coherent increment through production verification.
   corrections, unsupported claims, and prompt injection. Compare against the
   emotional-judgment fixtures and add private held-out evidence evaluations.
 
-## 4. Participation and emotional continuity
+## 3. Participation and emotional continuity
 
 - Acceptance: respond naturally to clear contextual invitations and remember
   relevant emotional context, while abstaining from side conversations and grief
@@ -53,7 +38,25 @@ one coherent increment through production verification.
 - Validation: direct/reaction/follow-up/ambient scenarios, competing recipients,
   changing topics, bot mistakes, and held-out warm or difficult conversations.
 
+## 4. Cost reconciliation and off-device recovery
+
+- Acceptance: reconcile provider billing with conservative token estimates; verify
+  encrypted off-device backup and restoration without resetting current balances.
+- Dependencies: billing read access and the platform backup path. The app key
+  does not grant administrative billing visibility. First covered month has
+  unknown spending before the guard. No claim of a provider-enforced account cap.
+- Evidence: the SDK exposes cached tokens but no separate cache-write counts.
+  Current estimates use the higher cache-write rate for all noncached input.
+- Validation: pricing drift review, uncertain-request corrections based on billing,
+  recovery after a newer request, and no access expansion or credential leakage.
+
 ## Completed
+
+- 2026-10-06: persistent API token accounting, conservative reservations before
+  every attempt, accounted retries, UTC monthly allowance with maintenance reserve,
+  fail-closed storage/pricing, and bounded evaluation on the same private ledger.
+  Version 2.2.0. Release and deployment evidence is recorded in progress.md.
+
 
 - 2026-10-05: emotional judgment, topical enthusiasm, current-fact uncertainty,
   fictional identity boundaries, and grounded baseball allegiance. Version 2.1.2

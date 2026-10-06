@@ -58,10 +58,13 @@ Requirements:
 - Python 3.12 or newer
 - [uv](https://docs.astral.sh/uv/)
 - a Discord bot with the **Message Content Intent** enabled
+- a private, persistent directory for the API usage ledger
 
 ```sh
 uv sync --locked --all-groups
 cp .env.example .env
+export TRUBOT_USAGE_LEDGER_PATH="$PWD/.trubot-state/usage.sqlite3"
+uv run trubot-budget init --path "$TRUBOT_USAGE_LEDGER_PATH"  # once only
 uv run trubot
 ```
 
@@ -87,9 +90,10 @@ Only two variables are required.
 | --- | --- | --- |
 | `DISCORD_TOKEN` | required | Discord bot token |
 | `OPENAI_API_KEY` | required | OpenAI API key |
-| `TRUBOT_OPENAI_MODEL` | `gpt-6-luna` | API-compatible model override |
+| `TRUBOT_OPENAI_MODEL` | `gpt-6-luna` | Only this model has approved pricing; other models stop generation |
 | `OPENAI_TIMEOUT_SECONDS` | `45` | End-to-end SDK request timeout |
-| `OPENAI_MAX_RETRIES` | `2` | SDK retry count for transient failures |
+| `OPENAI_MAX_RETRIES` | `2` | Accounted adapter retries for transient failures, from 0 to 4 |
+| `TRUBOT_USAGE_LEDGER_PATH` | `/var/lib/trubot/usage.sqlite3` | Pre-initialized persistent API usage ledger |
 | `OPENAI_MAX_OUTPUT_TOKENS` | `512` | Hard total token ceiling; explicit/ambient replies are also capped at 180 |
 | `TRUBOT_ALLOWED_CHANNEL_IDS` | four current league channel IDs | Comma-separated Discord channel IDs |
 | `TRUBOT_REACTION_EMOJIS` | `ThomasJones,🍆` | Comma-separated reaction names |
@@ -114,10 +118,12 @@ a stale deployment override cannot silently keep the bot on `gpt-4.1-mini`.
 
 ```sh
 docker build --tag wcb-trubot:local .
-docker run --rm --env-file .env wcb-trubot:local
+docker run --rm --env-file .env \
+  --mount type=bind,src="$PWD/.trubot-state",dst=/var/lib/trubot wcb-trubot:local
 ```
 
-The image runs as an unprivileged user and reports healthy only while the
+Prepare the mounted directory for container UID/GID 10001 and initialize the
+ledger using that image before starting the bot. The image runs as an unprivileged user and reports healthy only while the
 Discord connection heartbeat is fresh. GitHub pull requests run formatting,
 linting, strict type checks, tests with branch coverage, and a package build.
 Publishing a GitHub release produces signed-metadata, SBOM-enabled AMD64 and
@@ -144,5 +150,28 @@ transport checks only. CI tests the harness without making API calls.
 `emotional_judgment_holdout.json` provides two additional variation checks;
 `core_voice.json` checks the established Thomas Jones answer and recovery from
 an irrelevant earlier bot reply.
-Monthly runtime spend is not yet measured or capped; the persistent ledger and
-spending guard are the next roadmap item.
+## API spending guard
+
+Every provider attempt reserves a conservative cost in a private SQLite ledger
+before network I/O. The UTC calendar-month allowance is USD 20: USD 18 for
+normal replies and USD 2 shared by evaluations and future learning. The adapter
+accounts for each retry separately; empty outputs and abstentions still count.
+Only GPT-6 Luna at the standard global endpoint has approved pricing.
+
+Actual token counts and a conservative dollar estimate are recorded without
+message text, user IDs, channel IDs, or credentials. Uncached input is estimated
+at the higher cache-write rate because the installed SDK does not report cache
+writes separately. These estimates are not provider billing records. Prices were
+verified on 2026-10-06 against [OpenAI's model documentation](https://developers.openai.com/api/docs/models/gpt-6-luna).
+
+Missing, corrupt, unwritable, or unsupported state stops generation. Exhaustion
+pauses explicit replies with a brief message and keeps inferred/ambient attempts
+silent. State is never recreated automatically. Uncertain requests retain their
+full reservation across restarts and subsequent months. Settled metadata is
+retained for 13 months. Spending before initial deployment is unknown and cannot
+be included retroactively; the first covered month reports that limitation.
+
+Use `uv run trubot-budget status --path "$TRUBOT_USAGE_LEDGER_PATH"` to inspect
+usage. Production storage, backup, correction, deletion, and recovery are covered
+in [the storage runbook](docs/trubot-evolution/storage.md). There is no added paid
+infrastructure. Keep all app-key API use, including evaluation, on this ledger.
