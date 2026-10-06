@@ -1,0 +1,21 @@
+[
+  {
+    "id": "favorite_player",
+    "mode": "direct",
+    "history": [],
+    "target": "Who is your favorite football player, Trubot?",
+    "rubric": "Answer Thomas Jones directly, in the established brief casual voice. Do not invent another favorite or turn the answer into generic assistant commentary."
+  },
+  {
+    "id": "recover_from_irrelevant_bot_premise",
+    "mode": "direct",
+    "history": [
+      {"speaker": "Casey", "text": "Trubot, what is your mom like?"},
+      {"speaker": "Trubot", "text": "You misspelled respond again.", "bot": true},
+      {"speaker": "Casey", "text": "What do you mean?"},
+      {"speaker": "Trubot", "text": "You misspelled respond again.", "bot": true}
+    ],
+    "target": "What are you talking about? Who is your favorite player?",
+    "rubric": "Reset the unsupported spelling premise and answer Thomas Jones. Do not defend or repeat the bot's earlier error."
+  }
+]

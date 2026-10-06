@@ -35,7 +35,7 @@ class FakeOpenAI:
 def make_responder(fake: FakeOpenAI) -> OpenAITruaxResponder:
     return OpenAITruaxResponder(
         cast(AsyncOpenAI, fake),
-        model="gpt-5.6-luna",
+        model="gpt-6-luna",
         max_output_tokens=180,
     )
 
@@ -54,18 +54,19 @@ async def test_responses_request_uses_luna_with_no_reasoning() -> None:
 
     assert result == "Hot"
     assert fake.responses.request is not None
-    assert fake.responses.request["model"] == "gpt-5.6-luna"
+    assert fake.responses.request["model"] == "gpt-6-luna"
+    assert fake.responses.request["service_tier"] == "default"
     assert fake.responses.request["reasoning"] == {"effort": "none"}
     assert fake.responses.request["text"] == {"verbosity": "low"}
     assert fake.responses.request["max_output_tokens"] == 180
     assert fake.responses.request["store"] is False
     assert fake.responses.request["safety_identifier"] == "safe-user"
-    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v4"
+    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v5"
     assert fake.responses.request["input"] == [
         {
             "role": "user",
             "content": (
-                "CURRENT MESSAGE — answer this now; earlier messages are context only:\n"
+                "CURRENT MESSAGE - answer this now; earlier messages are context only:\n"
                 "Tim: Yeah its wet"
             ),
         }
@@ -89,7 +90,7 @@ async def test_reaction_target_is_appended_to_context() -> None:
     assert fake.responses.request["input"][-1] == {
         "role": "user",
         "content": (
-            "REACTION TARGET — answer this now; earlier messages are context only:\n"
+            "REACTION TARGET - answer this now; earlier messages are context only:\n"
             "Jim: Thomas Jones for a third"
         ),
     }
@@ -112,7 +113,7 @@ async def test_follow_up_candidate_can_abstain() -> None:
     assert fake.responses.request["input"][-1] == {
         "role": "user",
         "content": (
-            "LATEST MESSAGE — decide whether this is addressed to Trubot; "
+            "LATEST MESSAGE - decide whether this is addressed to Trubot; "
             "answer or abstain as instructed:\nJim: Tim, are you making that trade?"
         ),
     }
@@ -165,7 +166,7 @@ async def test_direct_target_replaces_latest_message_after_bad_assistant_history
     assert model_input[-1] == {
         "role": "user",
         "content": (
-            "CURRENT MESSAGE — answer this now; earlier messages are context only:\n" + latest
+            "CURRENT MESSAGE - answer this now; earlier messages are context only:\n" + latest
         ),
     }
     assert "Earlier Trubot replies are fallible" in fake.responses.request["instructions"]

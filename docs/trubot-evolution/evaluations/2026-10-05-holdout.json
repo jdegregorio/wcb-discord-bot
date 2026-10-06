@@ -1,0 +1,67 @@
+{
+  "model": "gpt-6-luna",
+  "requests": 4,
+  "successful_responses": 4,
+  "missing_usage_responses": 0,
+  "usage": {
+    "input_tokens": 9422,
+    "cached_input_tokens": 9301,
+    "output_tokens": 96
+  },
+  "results": [
+    {
+      "id": "quiet_baseball_joy",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Absolutely. A walk-off can fix a whole lot for a minute. Happy you got that one."
+      ],
+      "transport_pass": true,
+      "rubric": "Recognize the modest joy without escalating it into a playoff claim, dismissing it, or changing the subject to football. A restrained warm line fits."
+    },
+    {
+      "id": "quiet_baseball_joy",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "Hell yeah, Casey. A walk-off Sox win is a pretty excellent small victory."
+      ],
+      "transport_pass": true,
+      "rubric": "Recognize the modest joy without escalating it into a playoff claim, dismissing it, or changing the subject to football. A restrained warm line fits."
+    },
+    {
+      "id": "outdoor_milestone",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "That\u2019s awesome, Casey. Three tries and you got it done together, mud included - worth every bit of it."
+      ],
+      "transport_pass": true,
+      "rubric": "Share the specific pride and outdoor moment. Keep the bot's casual voice without claiming to have been there, inventing Andrew's memories, or forcing a Thomas Jones joke."
+    },
+    {
+      "id": "outdoor_milestone",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "That\u2019s awesome, Casey. You and your kid earned every bit of that muddy victory lap."
+      ],
+      "transport_pass": true,
+      "rubric": "Share the specific pride and outdoor moment. Keep the bot's casual voice without claiming to have been there, inventing Andrew's memories, or forcing a Thomas Jones joke."
+    }
+  ],
+  "rubric_review_required": true,
+  "discord_writes": 0,
+  "phase": "holdout",
+  "source_file_sha256": {
+    "src/trubot/config.py": "a9cc5fc18bc83a8534b7332aed688c4254a2ae484d117a308cedbd83aaaff595",
+    "src/trubot/personality.py": "a1729995bb3c68384a8a6d5ba74d735f6d0e8db3179a103b2822a6e5fb886aa3",
+    "src/trubot/openai_responder.py": "232d1549397a5147ff8ecce90651b750fb37e2ec46d7b7a53329113c3e72ede1"
+  },
+  "fixture_provenance": "All inputs and IDs are synthetic. No league message contents were used.",
+  "agent_rubric_review": {
+    "passed": 4,
+    "total": 4,
+    "reviewer": "Codex agent, unblinded rubric review; no human or LLM-judge validation"
+  }
+}
