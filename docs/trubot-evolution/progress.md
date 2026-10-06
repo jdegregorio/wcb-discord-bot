@@ -18,7 +18,7 @@
   negative. One clear follow-up abstained. No Discord writes occurred.
 - Implementation: added emotional/contextual guidance and fictional identity
   boundaries while preserving all 20 curated legacy exchanges. The initial cache key was v5; the correction uses v6.
-  The corrective candidate version is 2.1.2. The runtime default is GPT-6 Luna. It passed
+  The final application version is 2.1.2. The runtime default is GPT-6 Luna. It passed
   the character rubric more reliably than GPT-5.6 Luna on the same candidate
   prompt and fixtures. Added explicitly fictional judgment examples, synthetic
   fixtures, and a bounded evaluator.
@@ -65,6 +65,29 @@
   93.22% branch-inclusive coverage. Agent review accepted 30/30 synthetic
   samples; all transport checks passed, with complete usage and no provider
   errors. Exact source hashes and usage are retained in the v2.1.2 review.
-- Corrective release: PR, release, and production verification will be recorded
-  after completion.
+- Corrective implementation commit: `883e10ae3dad60beea531b030c413311348ffffd`.
+- [PR #23](https://github.com/jdegregorio/wcb-discord-bot/pull/23) merged as
+  `c51a60da23c8580c61572e774ef097e67b05fa10`. Fetched main exactly matched
+  the tested candidate tree. [PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37417436388)
+  and [merged-main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37417538110)
+  passed the complete quality gate.
+- Corrective release: [v2.1.2](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.1.2)
+  targets the tested merged commit. [Image build](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37417601295)
+  passed for arm64 and amd64. Stable discovery selected 2.1.2 and the existing
+  release timer adopted it. The confirmed-host `pi-app deploy` call verified
+  the app was already running the same healthy version.
+- Final production image: `sha256:dd5b272b4d5b72b5eaf8dd2f967f8a284d8fb0291d9dc9a2c108d6776ecc7eb4`.
+  OCI revision, installed source hashes, GPT-6 Luna default, and app version
+  matched the tested candidate. The previous recorded image is healthy 2.1.0.
+- Final production validation: 15/15 synthetic transport checks and agent rubric
+  checks passed, including 3/3 Sox cases, grounded uncertainty/allegiance,
+  follow-up participation, core voice, grief, and abstention. Zero provider
+  errors and zero Discord writes. Fresh readiness and successful health check;
+  zero restarts, response failures, ERROR lines, or disconnects since startup.
+  The observation window was 2 minutes 40 seconds, with no live league
+  generation during that window. This verifies the released handlers and API
+  path, not long-term behavior or human character fidelity.
+- Handoff: the plan, prioritized backlog, outputs, usage, source hashes, CI links,
+  immutable release/digest, and rollback evidence are saved in Git. Archive the
+  managed run worktree after the evidence PR passes CI and merges.
 - Follow-up: persistent spending guard, then private verified ingestion and retrieval.

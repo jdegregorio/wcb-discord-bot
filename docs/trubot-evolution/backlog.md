@@ -56,6 +56,7 @@ one coherent increment through production verification.
 ## Completed
 
 - 2026-10-05: emotional judgment, topical enthusiasm, current-fact uncertainty,
-  and fictional identity boundaries. Release/production evidence is tracked in
+  fictional identity boundaries, and grounded baseball allegiance. Version 2.1.2
+  uses bounded contextual reasoning for inferred follow-ups. Release/production evidence is tracked in
   [progress.md](progress.md). Added bounded synthetic event-handler evaluation;
   it captures outputs without posting into Discord.
