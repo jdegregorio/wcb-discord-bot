@@ -1,0 +1,18 @@
+{
+  "month": "2026-10",
+  "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+  "timezone": "UTC",
+  "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+  "estimated_usd": 0.001411745,
+  "runtime_usd": 0.0,
+  "maintenance_usd": 0.001411745,
+  "monthly_limit_usd": 20,
+  "runtime_limit_usd": 18,
+  "maintenance_limit_usd": 2,
+  "attempts": 13,
+  "input_tokens": 32131,
+  "cached_input_tokens": 24062,
+  "output_tokens": 325,
+  "unsettled_attempts": 0,
+  "pre_guard_spend": "unknown; not included"
+}

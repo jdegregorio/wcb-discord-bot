@@ -11,7 +11,8 @@ actual words or actions.
 Complete one coherent, measurable improvement per run. Read this directory,
 README, architecture, current code, GitHub issues/PRs, and production state first.
 Reconcile unfinished evolution work before selecting the next backlog item.
-Use the provided managed worktree, fetch main, record its SHA, and create a unique
+Fetch current main without changing Joe's checkout, create a new managed worktree
+for this run from `origin/main`, record its SHA, and create a unique
 `feature/trubot-daily-<date-and-suffix>` branch. Never modify Joe's primary checkout.
 
 Reproduce behavior through Discord handlers where practical. Use synthetic or

@@ -3,7 +3,7 @@ import json
 import runpy
 import sqlite3
 from concurrent.futures import ThreadPoolExecutor
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from types import SimpleNamespace
 from typing import Any, cast
@@ -335,7 +335,7 @@ def test_retention_removes_old_settlements_but_keeps_unresolved_charges(
     paid = reserve(ledger)
     ledger.settle(paid, input_tokens=1000, cached_input_tokens=800, output_tokens=20)
     pending = reserve(ledger)
-    future = UsageLedger(ledger.path, clock=lambda: datetime(2028, 1, 1, tzinfo=UTC))
+    future = UsageLedger(ledger.path, clock=lambda: datetime.now(UTC) + timedelta(days=460))
     future.check()
     with sqlite3.connect(ledger.path) as db:
         assert db.execute("SELECT id FROM attempts").fetchall() == [(pending.id,)]

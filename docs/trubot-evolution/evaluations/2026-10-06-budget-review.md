@@ -31,3 +31,20 @@ standard GPT-6 Luna rates, with all noncached input charged conservatively at th
 higher cache-write rate. The first covered month's earlier app spending remains
 unknown. No paid infrastructure was added. Off-device backup coverage and billing
 reconciliation remain follow-up work.
+
+## Released-code review
+
+Production acceptance and core reports passed 13/13 transport and agent rubric
+checks. Sox enthusiasm stayed specific and positive in all three cases. Neutral
+allegiance responses did not invent a lasting preference, and current sports
+facts remained explicitly uncertain. All other rubric requirements passed,
+including care, fictional identity, core voice, recovery, and abstention.
+
+The installed-release depleted-budget probe passed all 10 cases with zero
+provider calls: eight explicit pauses and two inferred abstentions. It used an
+isolated copy of the ledger, with no mutations of live balances. Production
+source hashes match the candidate. Actual tokens and conservative cost are in
+the health report; usage survived container replacement. Healthy readiness and
+zero observed errors support rollout success within a short, quiet window.
+These small unblinded synthetic samples do not measure human character fidelity
+or establish long-term reliability. Off-device recovery is not yet verified.
