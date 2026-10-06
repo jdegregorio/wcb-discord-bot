@@ -208,3 +208,7 @@
   and documents an executable read-only-source backup command. Runtime source
   and the immutable release remain unchanged. Archive this run's worktree only
   after the evidence PR passes CI and merges.
+
+- Final evidence is carried by [PR #26](https://github.com/jdegregorio/wcb-discord-bot/pull/26),
+  with initial evidence commit `f44ee0e`. Production remains on the immutable
+  tested 2.2.0 commit; the evidence changes do not require another runtime release.
