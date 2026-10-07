@@ -23,6 +23,8 @@ from trubot.history import (
     collect_history,
     message_target,
 )
+from trubot.ingestion import MessageIngestor
+from trubot.learning import LearningUnavailable
 from trubot.participation import (
     Observation,
     ParticipationTracker,
@@ -65,6 +67,7 @@ class TruBotClient(discord.Client):
         allowed_mentions: discord.AllowedMentions | None = None,
         clock: Clock | None = None,
         sleeper: Sleeper = asyncio.sleep,
+        learning: MessageIngestor | None = None,
     ) -> None:
         super().__init__(intents=intents, allowed_mentions=allowed_mentions)
         self._settings = settings
@@ -77,9 +80,12 @@ class TruBotClient(discord.Client):
         self._ambient_tasks: dict[int, asyncio.Task[None]] = {}
         self._response_locks: defaultdict[int, asyncio.Lock] = defaultdict(asyncio.Lock)
         self._closing = False
+        self._learning = learning
+        self._learning_task: asyncio.Task[None] | None = None
 
     async def on_ready(self) -> None:
         await self._readiness.start()
+        self._start_learning()
         user = self.user
         logger.info(
             "Connected to Discord user=%s user_id=%s guilds=%d",
@@ -89,17 +95,24 @@ class TruBotClient(discord.Client):
         )
 
     async def on_disconnect(self) -> None:
+        await self._stop_learning()
         await self._readiness.stop()
         logger.warning("Disconnected from Discord")
 
     async def on_resumed(self) -> None:
         await self._readiness.start()
+        self._start_learning()
         logger.info("Discord session resumed")
 
     async def on_message(self, message: discord.Message) -> None:
         if not self._accept_message(message):
             return
 
+        if self._learning is not None:
+            try:
+                await self._learning.observe(message)
+            except LearningUnavailable:
+                logger.warning("Learning observation paused: private state unavailable")
         channel = cast(DiscordChannel, message.channel)
         now = self._clock()
         direct = self._is_direct_trigger(message)
@@ -190,6 +203,7 @@ class TruBotClient(discord.Client):
         if self._closing:
             return
         self._closing = True
+        await self._stop_learning()
         tasks = list(self._ambient_tasks.values())
         self._ambient_tasks.clear()
         for task in tasks:
@@ -199,6 +213,60 @@ class TruBotClient(discord.Client):
         await self._readiness.stop()
         await self._responder.close()
         await super().close()
+
+    def _start_learning(self) -> None:
+        if (
+            self._learning is not None
+            and not self._closing
+            and (self._learning_task is None or self._learning_task.done())
+        ):
+            self._learning_task = asyncio.create_task(self._run_learning(), name="private-learning")
+
+    async def _stop_learning(self) -> None:
+        task, self._learning_task = self._learning_task, None
+        if self._learning is not None:
+            self._learning.verified = False
+        if task is not None:
+            task.cancel()
+            with suppress(asyncio.CancelledError):
+                await task
+
+    async def _run_learning(self) -> None:
+        assert self._learning is not None  # noqa: S101 - guarded when creating the task
+        while True:
+            try:
+                await self._learning.cycle(self)
+            except Exception:
+                # Transport/library failures must pause and retry, never kill the worker
+                # or expose exception payloads containing private source data.
+                self._learning.verified = False
+                logger.warning("Learning paused: pinned membership or private state unavailable")
+            await asyncio.sleep(self._settings.learning_poll_seconds)
+
+    async def on_raw_message_edit(self, payload: discord.RawMessageUpdateEvent) -> None:
+        learning = self._learning
+        if learning is None or payload.channel_id not in learning.channel_ids:
+            return
+        try:
+            await learning.invalidate(payload.channel_id, [payload.message_id], deleted=False)
+            channel = self.get_channel(payload.channel_id)
+            if isinstance(channel, (discord.TextChannel, discord.Thread)):
+                await learning.refresh(channel, payload.message_id)
+        except (discord.HTTPException, LearningUnavailable):
+            logger.warning("Learning correction pending: source or private storage unavailable")
+
+    async def on_raw_message_delete(self, payload: discord.RawMessageDeleteEvent) -> None:
+        await self._delete_learning(payload.channel_id, [payload.message_id])
+
+    async def on_raw_bulk_message_delete(self, payload: discord.RawBulkMessageDeleteEvent) -> None:
+        await self._delete_learning(payload.channel_id, list(payload.message_ids))
+
+    async def _delete_learning(self, channel_id: int, ids: list[int]) -> None:
+        if self._learning is not None:
+            try:
+                await self._learning.invalidate(channel_id, ids, deleted=True)
+            except LearningUnavailable:
+                logger.warning("Learning deletion pending: private state unavailable")
 
     def _accept_message(self, message: discord.Message) -> bool:
         return (

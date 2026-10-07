@@ -212,3 +212,73 @@
 - Final evidence is carried by [PR #26](https://github.com/jdegregorio/wcb-discord-bot/pull/26),
   with initial evidence commit `f44ee0e`. Production remains on the immutable
   tested 2.2.0 commit; the evidence changes do not require another runtime release.
+
+## 2026-10-07 - verified private evidence intake (v2.3.0)
+
+- Run began at 2026-10-07 08:16 UTC. Base:
+  `9ac5f50ae2d753f36326d9582977f31859a9c923`. New managed worktree:
+  `/Users/jdegregorio/.codex/worktrees/trubot-daily-20261007/wcb-discord-bot`,
+  branch `feature/trubot-daily-20261007-0816`. Primary checkout was not changed.
+  No unfinished evolution PR exists; eight open dependency PRs are separate work.
+- Selected acceptance: uniquely corroborate and privately pin Andrew's stable
+  account, ingest only attributed text within the existing allowlist, preserve
+  timestamps/checkpoints across restarts, handle edits/deletions and interrupted
+  catch-up, and keep replies responsive. No preference inference in this increment.
+- Authenticated audit: 400 recent allowlisted messages inspected for metadata,
+  one exact-name candidate, 25 corroborating author records across three channels,
+  stable account username and guild-member identity agree. No raw text retained
+  by the audit and no account IDs published. Private audit and evidence database
+  are app-owned mode 0600 inside the existing 0700 volume directory.
+- Installed v2.2.0 baseline handler had no durable attributed intake path:
+  `evaluations/2026-10-07-ingestion-before.json`. Candidate handler acceptance
+  passes 8/8, covering capture, attribution exclusion, resumable catch-up,
+  uncached edits, failed correction, deletion, continued replies on storage
+  failure and retention: `2026-10-07-ingestion-candidate.json`. All posts captured
+  in synthetic channels; zero Discord writes and zero API calls by this harness.
+- Implementation: separate private schema-1 SQLite evidence store, explicit
+  initialization from the corroborated operator audit, fail-closed permissions
+  and identity, stable-member REST revalidation, approved/configured channel
+  intersection, one 50-message oldest-first page per channel per five-minute
+  cycle, atomic cursor/evidence transactions, and live captures that never skip
+  historical pages. Raw edit/delete hooks clear old text; fetch-start timestamps,
+  edit versions and deletion markers prevent stale-snapshot resurrection.
+- Retention: default 180 days, configurable 1-365; 4,000 text characters and
+  10,000 messages maximum, no attachments/other people's text. Two source rechecks
+  per channel per cycle repair missed offline changes. This is eventual repair,
+  not full-history freshness. Future extraction must revalidate source evidence.
+  Raw evidence does not enter prompts yet. Recovery/correction/deletion are
+  documented in storage.md; learning backups retained at most seven days.
+- Candidate live character regression: 10/10 main cases plus 2/2 held-out cases
+  passed separate agent rubric review. Sox excitement remains specific and warm;
+  uncertain sports facts, rivalry, grief, family pride, clear follow-up, abstention
+  and identity injection remain appropriate. Tone is casual and restrained; this
+  is a small sample, not proof of universal fidelity. Reports are synthetic JSON.
+- Measured candidate API usage: 29,694 input, 21,628 cached input, 353 output
+  tokens; 12 settled maintenance attempts, no provider errors or missing usage.
+  Conservative added estimate USD 0.00140103. Intake adds no API/infrastructure
+  cost. At 16:48 UTC the existing ledger reports USD 0.004058255 estimated total,
+  USD 0.00332061 maintenance and USD 0.000737645 runtime, 41 settled attempts.
+  Earlier October spending remains unknown; estimates are not billing records.
+- Bounded authenticated candidate intake: membership revalidated, seven source
+  messages captured privately, four configured channels considered, maximum 50
+  scanned per channel, two nonempty channel cursors advanced. Attribution query
+  confirms only the pinned human/guild. No model calls, Discord posts or new access.
+- On-host consistent learning backup passed `quick_check`; a disposable restored
+  copy preserves identity, counts and checkpoints. Off-device backup remains
+  unverified. Existing usage ledger was untouched by learning initialization.
+- Required gates passed before PR preparation. Fixture defects (missing display
+  name, mixed test clocks, incomplete policy constructor) were fixed before
+  accepting the harness. Background transport failures are retried without
+  exception payload logging. Final gate and release evidence follow below.
+- Previous healthy production image: v2.2.0,
+  `sha256:cada129155dd83f1cd3c758cc3a6bcf46f60b586ccc547e90272a8c9c57ac592`.
+  Target verified pi5/aarch64/Ubuntu 24.04.4. Docker/deploy group access is present;
+  passwordless sudo is unavailable and is not required by the app transaction.
+  Pre-release 24-hour log aggregates: zero ERROR lines, zero response failures,
+  15 Discord disconnect notices and three posts; readiness remains healthy.
+- Automatic review rejected broad printing of a production environment file.
+  No values were printed. A safer helper-source/status inspection succeeded,
+  so deployment review has no remaining permission blocker. Review-service
+  timeout/capacity failures earlier were successfully retried within policy.
+- Final pre-PR gates: locked all-group sync, formatting, lint, strict typing,
+  156 tests (96.43% branch-inclusive coverage), package build and diff checks pass.

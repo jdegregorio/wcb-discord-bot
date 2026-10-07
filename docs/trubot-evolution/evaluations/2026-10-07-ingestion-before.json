@@ -1,0 +1,8 @@
+{
+  "persistent_learning_available": false,
+  "captured_messages": 0,
+  "discord_writes": 0,
+  "api_calls": 0,
+  "acceptance_pass": false,
+  "observation": "Real handler has no durable attributed evidence path"
+}

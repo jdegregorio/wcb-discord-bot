@@ -1,0 +1,41 @@
+{
+  "persistent_learning_available": true,
+  "results": [
+    {
+      "case": "new_attributed_message",
+      "pass": true
+    },
+    {
+      "case": "other_author_excluded",
+      "pass": true
+    },
+    {
+      "case": "restart_checkpoint_no_skipped_history",
+      "pass": true
+    },
+    {
+      "case": "uncached_edit_refetched",
+      "pass": true
+    },
+    {
+      "case": "failed_edit_removes_stale_evidence",
+      "pass": true
+    },
+    {
+      "case": "deletion_erases_text",
+      "pass": true
+    },
+    {
+      "case": "learning_failure_keeps_direct_replies",
+      "pass": true
+    },
+    {
+      "case": "retention_erases_expired_evidence",
+      "pass": true
+    }
+  ],
+  "acceptance_pass": true,
+  "discord_writes": 0,
+  "captured_synthetic_posts": 1,
+  "api_calls": 0
+}

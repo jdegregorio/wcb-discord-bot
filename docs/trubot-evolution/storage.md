@@ -104,3 +104,93 @@ through `pi-app rollback wcb-bot` retains the volume and its accounting evidence
 The previous 2.1.2 image does not enforce the guard, so record that limitation
 and keep the rollback brief. Reject a regressed release from stable discovery
 before rollback so the release timer cannot reintroduce it.
+
+# Private Discord evidence state
+
+Version 2.3.0 adds `learning.sqlite3` beside the usage ledger on the same volume.
+No platform or paid infrastructure change is required. It is a separate schema-1
+store so an image rollback to 2.2.0 preserves spending enforcement and leaves
+learning data untouched. Rollback stops intake; restarting 2.3.0 resumes cursors.
+Directory and file permissions must remain 0700 and 0600, owned by UID/GID 10001.
+SQLite uses full synchronization, transactions and secure deletion. Runtime
+opens existing state only and rejects unsafe permissions, unsupported schema,
+missing identity and corrupt storage. Replies remain available when intake pauses.
+
+## Verified initialization
+
+A trusted operator authenticates with the existing app-scoped Discord token,
+inspects author metadata only in the configured league allowlist, and requires
+one unique exact-name account corroborated by the guild-member endpoint and
+stable account username. Never pin a display-name-only guess. Persist the audit
+privately at `/var/lib/trubot/identity-audit.json` with mode 0600. It contains the
+pinned user/guild, corroborating source channel/message references, observation
+time, matched account metadata, and the approved allowlist. It contains no raw
+message text. An ambiguous or failed audit must not initialize learning.
+
+Explicitly initialize once in the released image (or validated candidate code):
+
+```sh
+ssh pi5 'docker exec wcb-bot trubot-learning init --audit /var/lib/trubot/identity-audit.json'
+ssh pi5 'docker exec wcb-bot trubot-learning status'
+```
+
+Initialization refuses an existing file. The audit is copied into private state
+and is not reread from channel text. Runtime revalidates the stable ID's human
+membership each cycle and never repins by name. Names may change legitimately.
+Failure pauses intake until the same member can be validated again. Current
+allowlist and pinned approval are intersected; changing runtime configuration
+cannot silently expand learning access. No DMs, extra threads or Slack access.
+
+## Scope, retention and correction
+
+Only the pinned human's textual messages are archived. Preserve message,
+channel, guild and author IDs plus original, edit, observation and verification
+timestamps. No bot/webhook output, other participants' text or attachment files
+are persisted. Text is capped at 4,000 characters and records at 10,000; oldest
+records beyond that cap are removed. Default retention is 180 days, configurable
+from 1 to 365. Initial catch-up starts at that retention floor, never at guild
+creation. Each page advances its own checkpoint atomically, including gaps for
+other authors. Live capture does not advance scan cursors.
+
+Edits immediately clear old text before authenticated refetch; prior versions
+are not kept. Failed refetch leaves the source unavailable. Deletions erase text
+and retain a content-free marker until the original message falls outside the
+retention horizon. These markers block races and operator-suppressed evidence
+from being reimported. Rotating refetch repairs changes missed while offline,
+two stored messages per channel per cycle. This is eventual reconciliation, not
+instant full-history freshness. Future preference extraction must revalidate
+sources before treating them as evidence. This increment uses no archived text
+in replies, so stale archive records cannot currently shape the character.
+
+For a correction, edit the original Discord message or have the authorized
+operator invalidate/refetch the source with `MessageIngestor.refresh`. A local
+suppression uses `LearningStore.invalidate(..., deleted=True)` with the approved
+channel/message reference; it deletes content and blocks reimport. Never replace
+real source text with an invented observation. League messages cannot authorize
+identity, retention, access or administrative changes.
+
+Removing a channel from the runtime allowlist stops its intake; existing records
+remain private until retention or explicit deletion. Stop the app before scope
+revocation and purge that channel's private records/markers and copies if needed.
+Complete revocation requires removing the learning database, audit and learning
+backups after stopping the app. Startup then leaves learning disabled. Preserve
+the separate usage ledger so deletion cannot reset API spending.
+
+## Backup and recovery
+
+Use SQLite's online backup API, exactly as for the usage ledger, with source
+`/var/lib/trubot/learning.sqlite3` and a mode-0600 `learning-<UTC>.sqlite3` target
+under the private `backups` directory. Check `PRAGMA quick_check` on the copy.
+Retain learning backups for at most seven days; apply corrections/deletions to
+retained learning copies or remove them. Backups can extend physical retention
+by seven days. The audit remains until identity revocation; it holds attribution
+metadata, not message text. Off-device encrypted backup is still unverified.
+Never export raw data, IDs or derived preferences into Git, release notes or logs.
+
+Stop only this app using `pi-app stop wcb-bot`, restore a verified compatible copy
+as UID/GID 10001 with mode 0600, and start via `pi-app start wcb-bot`. Restored
+checkpoints may replay pages safely. Deletions/corrections since the backup must
+be reapplied; a stale backup must never resurrect revoked evidence. The usage
+ledger must not be replaced during learning recovery. Verify content-free status,
+Discord readiness and bounded resumed intake. Retain the pinned identity rather
+than guessing it from history after losing state.
