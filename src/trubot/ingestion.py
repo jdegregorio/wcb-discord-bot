@@ -102,6 +102,9 @@ class MessageIngestor:
             await self.refresh(channel, message_id)
 
     async def cycle(self, client: discord.Client) -> None:
+        if await asyncio.to_thread(self.store.is_withdrawn):
+            self.verified = False
+            return
         await self.verify_member(client)
         await asyncio.to_thread(self.store.prune, now=self.clock())
         for channel_id in sorted(self.channel_ids):
