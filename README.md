@@ -24,8 +24,8 @@ Trubot only operates in configured channels.
 - **Restraint:** A direct or reaction reply cancels pending ambient chatter and
   starts its cooldown, but never consumes the ambient daily quota.
 
-All timing, limits, channel IDs, and reaction names are configurable. State is
-intentionally in memory: a restart resets ambient counters, attention windows,
+All timing, limits, channel IDs, and reaction names are configurable. Participation
+state is in memory: a restart resets ambient counters, attention windows,
 and pending timers, while Discord remains the source of recent conversation
 context. Responses are normal channel posts rather than Discord reply references.
 
@@ -97,6 +97,10 @@ Only two variables are required.
 | `OPENAI_MAX_OUTPUT_TOKENS` | `512` | Hard total token ceiling; explicit/ambient replies are also capped at 180 |
 | `TRUBOT_ALLOWED_CHANNEL_IDS` | four current league channel IDs | Comma-separated Discord channel IDs |
 | `TRUBOT_REACTION_EMOJIS` | `ThomasJones,🍆` | Comma-separated reaction names |
+| `TRUBOT_LEARNING_STORE_PATH` | `/var/lib/trubot/learning.sqlite3` | Explicitly initialized private evidence store; unavailable state pauses learning |
+| `TRUBOT_LEARNING_RETENTION_DAYS` | `180` | Text retention and maximum catch-up age, from 1 to 365 days |
+| `TRUBOT_LEARNING_BATCH_SIZE` | `50` | Oldest messages scanned per channel per cycle, from 1 to 100 |
+| `TRUBOT_LEARNING_POLL_SECONDS` | `300` | Background cycle interval, at least 60 seconds |
 | `TRUBOT_HISTORY_LIMIT` | `30` | Maximum recent Discord messages sent as context |
 | `TRUBOT_HISTORY_WINDOW_MINUTES` | `360` | Maximum age of channel context |
 | `TRUBOT_FOLLOWUP_WINDOW_MINUTES` | `10` | Attention window for inferred follow-ups; `0` disables it |
@@ -175,3 +179,31 @@ Use `uv run trubot-budget status --path "$TRUBOT_USAGE_LEDGER_PATH"` to inspect
 usage. Production storage, backup, correction, deletion, and recovery are covered
 in [the storage runbook](docs/trubot-evolution/storage.md). There is no added paid
 infrastructure. Keep all app-key API use, including evaluation, on this ledger.
+
+## Private learning intake
+
+Version 2.3.0 starts a reliable evidence intake loop. A trusted operator must
+first corroborate Andrew's unique stable account with authenticated author and
+guild-member metadata, then initialize `learning.sqlite3` from that private audit.
+Runtime never guesses an identity, changes it from channel text, or creates lost
+state. An unavailable learning store pauses learning while normal replies continue.
+
+The existing client ingests only that pinned human's text in the intersection of
+the configured allowlist and the channels approved by the audit. A five-minute
+background cycle revalidates membership and scans one bounded page per channel,
+committing attribution, source timestamps, and checkpoints together. It also
+rechecks two stored messages per channel to repair edits or deletions missed
+while offline. Gateway edit/delete events remove stale text immediately.
+
+Text is capped at 4,000 characters, 10,000 records and 180 days by default.
+No attachment files or other participants' messages are archived. Deleted text
+is erased, with content-free markers preventing scan races from restoring it.
+The evidence remains private and does not enter prompts in this increment;
+preference derivation and relevant retrieval are the next roadmap step. Intake
+makes no OpenAI calls and adds no paid infrastructure. See the storage runbook
+for initialization, correction, retention, deletion and recovery.
+
+Run `uv run python scripts/evaluate_ingestion.py` for a synthetic acceptance
+check through the real handlers, using disposable storage and captured posts.
+It makes no external calls. Production content-free status is available through
+`docker exec wcb-bot trubot-learning status` on pi5.

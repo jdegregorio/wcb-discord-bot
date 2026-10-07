@@ -14,6 +14,8 @@ from trubot.budget import BudgetError, UsageLedger
 from trubot.config import ConfigurationError, Settings
 from trubot.discord_client import TruBotClient
 from trubot.health import ReadinessFile
+from trubot.ingestion import MessageIngestor
+from trubot.learning import LearningStore, LearningUnavailable
 from trubot.openai_responder import OpenAITruaxResponder
 from trubot.participation import ParticipationPolicy, ParticipationTracker
 
@@ -57,6 +59,17 @@ def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> Tr
         settings.ready_file,
         refresh_seconds=settings.health_refresh_seconds,
     )
+    learning = None
+    try:
+        learning = MessageIngestor(
+            LearningStore(
+                settings.learning_store_path, retention_days=settings.learning_retention_days
+            ),
+            settings.allowed_channel_ids,
+            batch_size=settings.learning_batch_size,
+        )
+    except LearningUnavailable:
+        logger.warning("Learning paused: verified private state unavailable")
     return TruBotClient(
         settings=settings,
         responder=responder,
@@ -64,6 +77,7 @@ def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> Tr
         attention=attention,
         readiness=readiness,
         intents=intents,
+        learning=learning,
         allowed_mentions=discord.AllowedMentions.none(),
     )
 

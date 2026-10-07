@@ -41,6 +41,10 @@ class Settings:
     openai_max_retries: int = 2
     openai_max_output_tokens: int = 512
     usage_ledger_path: Path = Path("/var/lib/trubot/usage.sqlite3")
+    learning_store_path: Path = Path("/var/lib/trubot/learning.sqlite3")
+    learning_retention_days: int = 180
+    learning_batch_size: int = 50
+    learning_poll_seconds: float = 300
     history_limit: int = 30
     history_window_seconds: float = 6 * 60 * 60
     followup_window_seconds: float = 10 * 60
@@ -81,6 +85,12 @@ class Settings:
             usage_ledger_path=Path(
                 _nonempty(values, "TRUBOT_USAGE_LEDGER_PATH", "/var/lib/trubot/usage.sqlite3")
             ),
+            learning_store_path=Path(
+                _nonempty(values, "TRUBOT_LEARNING_STORE_PATH", "/var/lib/trubot/learning.sqlite3")
+            ),
+            learning_retention_days=_integer(values, "TRUBOT_LEARNING_RETENTION_DAYS", 180),
+            learning_batch_size=_integer(values, "TRUBOT_LEARNING_BATCH_SIZE", 50),
+            learning_poll_seconds=_number(values, "TRUBOT_LEARNING_POLL_SECONDS", 300),
             history_limit=_integer(values, "TRUBOT_HISTORY_LIMIT", 30),
             history_window_seconds=60 * _number(values, "TRUBOT_HISTORY_WINDOW_MINUTES", 6 * 60),
             followup_window_seconds=60 * _number(values, "TRUBOT_FOLLOWUP_WINDOW_MINUTES", 10),
@@ -106,6 +116,9 @@ class Settings:
         _greater_than(self.openai_timeout_seconds, 0, "OPENAI_TIMEOUT_SECONDS")
         _between(self.openai_max_retries, 0, 4, "OPENAI_MAX_RETRIES")
         _between(self.openai_max_output_tokens, 1, 4096, "OPENAI_MAX_OUTPUT_TOKENS")
+        _between(self.learning_retention_days, 1, 365, "TRUBOT_LEARNING_RETENTION_DAYS")
+        _between(self.learning_batch_size, 1, 100, "TRUBOT_LEARNING_BATCH_SIZE")
+        _at_least(self.learning_poll_seconds, 60, "TRUBOT_LEARNING_POLL_SECONDS")
         _between(self.history_limit, 1, 100, "TRUBOT_HISTORY_LIMIT")
         _greater_than(
             self.history_window_seconds,

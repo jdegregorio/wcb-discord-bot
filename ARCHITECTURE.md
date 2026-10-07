@@ -57,6 +57,13 @@ bounded Discord reply
 - `budget.py` owns the private SQLite ledger. Transactions serialize reservations
   across channels and processes. Integer nanodollars avoid rounding drift. Runtime
   opening uses SQLite `mode=rw` so lost storage cannot reset the allowance.
+- `learning.py` owns the separate private evidence store, verified identity,
+  provenance, atomic scan checkpoints, edit invalidations, deletion markers,
+  retention and content-free operator status. It never calls a model.
+- `ingestion.py` revalidates the pinned member and coordinates bounded history
+  catch-up plus rotating source reconciliation. Live captures never advance
+  scan checkpoints. The worker runs beside response generation, with lifecycle
+  tied to Discord readiness, resume, disconnect and shutdown.
 - `app.py` is the composition root. Importing any module is side-effect free.
 
 ## Participation invariants
@@ -95,7 +102,8 @@ concurrently.
 
 ## Privacy and safety
 
-Only the configured rolling Discord history is sent to OpenAI. Responses are
+Only the configured rolling Discord history is sent to OpenAI. Private learned
+evidence is collected locally and is not sent to OpenAI in this increment. Responses are
 requested with storage disabled. The API receives a stable SHA-256 identifier
 scoped to the Discord guild and requesting user, not their display name or raw
 Discord ID. Generated messages cannot create Discord mentions.
@@ -103,3 +111,19 @@ Discord ID. Generated messages cannot create Discord mentions.
 The ledger stores only cost metadata, not conversation or personal data. Production
 mounts `/srv/app-data/wcb-bot` at `/var/lib/trubot`; the remaining root filesystem
 stays read-only. The storage runbook defines retention and recovery.
+
+Learning state uses a separate schema-1 SQLite database on the existing private
+volume. Runtime requires owner-only permissions and existing state; missing,
+corrupt or unsupported state pauses learning. It never invents a replacement
+identity. Background batches are bounded to 50 messages per allowed channel and
+separate from channel response locks. Every cycle validates the pinned human
+member through authenticated Discord REST without enabling privileged member
+intent. Other authors and bot/webhook messages never become Andrew's evidence.
+
+Edits blank old text before refetching; fetch-start timestamps and source edit
+versions prevent older snapshots from overwriting corrections. Deletion markers
+win over in-flight scans. History pages and cursors commit atomically, so failed
+or interrupted scans can resume without losing evidence. Offline changes are
+repaired by bounded rotating verification; until retrieval is implemented,
+these locally archived records cannot affect replies. Future derivation must
+verify source freshness before using archived evidence.

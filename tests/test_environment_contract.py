@@ -27,4 +27,10 @@ def test_machine_readable_environment_contract_matches_runtime_defaults() -> Non
     assert {
         int(value) for value in properties["TRUBOT_ALLOWED_CHANNEL_IDS"]["default"].split(",")
     } == DEFAULT_ALLOWED_CHANNEL_IDS
+    assert properties["TRUBOT_LEARNING_STORE_PATH"]["default"] == str(settings.learning_store_path)
+    assert (
+        properties["TRUBOT_LEARNING_RETENTION_DAYS"]["default"] == settings.learning_retention_days
+    )
+    assert properties["TRUBOT_LEARNING_BATCH_SIZE"]["default"] == settings.learning_batch_size
+    assert properties["TRUBOT_LEARNING_POLL_SECONDS"]["default"] == settings.learning_poll_seconds
     assert all("TRELLO" not in name for name in properties)
