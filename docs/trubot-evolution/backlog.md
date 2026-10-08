@@ -109,3 +109,18 @@ one coherent increment through production verification.
   loss, shrinking allowlists, retention and correction reflected in derived data.
 - Withdrawal markers must accompany disaster recovery. Validate encrypted
   off-device deletion and recovery; current command covers documented local copies.
+
+## User-reported recall failures, 2026-10-08
+
+- Reproduced: actual development-channel baseball replies lacked memory because
+  retrieval accepted only the pinned source guild. The development channel was
+  already allowed for replies. Owner-only development recall is the 2.7.1 repair.
+- Year questions discarded numeric years and retrieved unrelated keyword matches.
+  2.7.1 filters native timestamps and matching export period hints, explicitly
+  preserving unknown message dates. Existing imports include 2020-labeled sources.
+- Acceptance: actual human Discord direct and follow-up questions return supported
+  baseball preference; 2020 question gives a source-backed quote with date caveat;
+  other guilds/non-owners and withdrawn sources remain excluded. Real Discord
+  tests are required each run, separately from fixture and handler checks.
+- Follow-up: independently held-out broader recall, dated all-years native history,
+  contextual graph coverage and actual historical pixel studies remain priorities.

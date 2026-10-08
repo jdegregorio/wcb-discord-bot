@@ -20,6 +20,7 @@ def test_defaults_target_luna_responses_workload() -> None:
 
     assert settings.openai_model == "gpt-6-luna"
     assert settings.allowed_channel_ids == DEFAULT_ALLOWED_CHANNEL_IDS
+    assert settings.development_guild_id == 1043023451482505226
     assert settings.auto_daily_limit == 3
     assert settings.auto_delay_seconds == 600
     assert settings.history_limit == 30
@@ -35,6 +36,7 @@ def test_overrides_are_parsed_and_normalized() -> None:
         {
             **VALID_ENV,
             "TRUBOT_ALLOWED_CHANNEL_IDS": " 11, 22,11 ",
+            "TRUBOT_DEVELOPMENT_GUILD_ID": "0",
             "TRUBOT_REACTION_EMOJIS": "ThomasJones, 🏈 ",
             "TRUBOT_AUTO_DELAY_MINUTES": "0.5",
             "TRUBOT_AUTO_ACTIVITY_WINDOW_MINUTES": "15",
@@ -52,6 +54,7 @@ def test_overrides_are_parsed_and_normalized() -> None:
     )
 
     assert settings.allowed_channel_ids == frozenset({11, 22})
+    assert settings.development_guild_id == 0
     assert settings.reaction_emoji_names == frozenset({"ThomasJones", "🏈"})
     assert settings.auto_delay_seconds == 30
     assert settings.auto_activity_window_seconds == 900
@@ -77,6 +80,7 @@ def test_required_secrets_are_validated(missing: str) -> None:
     [
         ("TRUBOT_ALLOWED_CHANNEL_IDS", "abc", "comma-separated list of integers"),
         ("TRUBOT_ALLOWED_CHANNEL_IDS", "-1", "values must be positive"),
+        ("TRUBOT_DEVELOPMENT_GUILD_ID", "-1", "must be at least"),
         ("TRUBOT_REACTION_EMOJIS", "", "at least one value"),
         ("OPENAI_TIMEOUT_SECONDS", "nope", "must be a number"),
         ("OPENAI_MAX_RETRIES", "1.5", "must be an integer"),

@@ -95,7 +95,8 @@ Only two variables are required.
 | `OPENAI_MAX_RETRIES` | `2` | Accounted adapter retries for transient failures, from 0 to 4 |
 | `TRUBOT_USAGE_LEDGER_PATH` | `/var/lib/trubot/usage.sqlite3` | Pre-initialized persistent API usage ledger |
 | `OPENAI_MAX_OUTPUT_TOKENS` | `512` | Hard total token ceiling; explicit/ambient replies are also capped at 180 |
-| `TRUBOT_ALLOWED_CHANNEL_IDS` | four current league channel IDs | Comma-separated Discord channel IDs |
+| `TRUBOT_ALLOWED_CHANNEL_IDS` | existing league and development channels | Comma-separated Discord channel IDs |
+| `TRUBOT_DEVELOPMENT_GUILD_ID` | existing private development guild | Its owner can test league recall in an allowed channel; `0` disables access |
 | `TRUBOT_REACTION_EMOJIS` | `ThomasJones,🍆` | Comma-separated reaction names |
 | `TRUBOT_LEARNING_STORE_PATH` | `/var/lib/trubot/learning.sqlite3` | Explicitly initialized private evidence store; unavailable state pauses learning |
 | `TRUBOT_LEARNING_RETENTION_DAYS` | `180` | Text retention and maximum catch-up age, from 1 to 365 days |
@@ -293,3 +294,22 @@ ledger. Restart, failure or reconnect cannot reset its four-hour pacing. Missing
 or withdrawn graph/source state pauses studies while ordinary replies continue.
 It never posts a Discord message itself. See the storage runbook for operator
 retirement, correction and recovery, and progress.md for measured coverage.
+
+## Private development recall (2.7.1)
+
+The owner of the configured development guild can query the same verified league
+memory from an existing allowed channel. Other guilds and development users do
+not gain that access. Development messages never become Andrew's source evidence.
+Native support refresh, corrections, withdrawal and the persistent spending guard
+remain required. Set `TRUBOT_DEVELOPMENT_GUILD_ID=0` to disable this access.
+
+Year questions retrieve dated native sources or passages from matching historical
+export labels. A label such as 2020 is provenance, not a message timestamp. Trubot
+can give a supported quote from that labeled export while acknowledging its unknown
+exact date. Full all-years native Discord history remains incomplete.
+
+Release smoke tests must post actual human questions to the private development
+server and read the running bot's actual responses. Use the authenticated Discord
+UI for the owner account; never use a user token or pretend a bot probe is human.
+Check grounded baseball recall, a year-labeled historical quote with date uncertainty,
+and the changed acceptance scenario. Captured sends remain regression coverage.

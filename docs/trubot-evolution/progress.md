@@ -803,3 +803,31 @@ window, not a long-term error-rate guarantee. Private validation code and dispos
 studies were removed; only authoritative sources, the graph, documented private
 backups and the unchanged usage ledger remain. No routine permission blocker
 remains. The evidence-only follow-up preserves runtime source identical to v2.7.0.
+
+## 2026-10-08 user-reported development recall repair
+
+Base `e17574b157f967eebf2c3eeb7126d1a3d9cbeabf`; new managed worktree and unique
+feature branch. Primary checkout remains untouched. No evolution PR was open.
+Reverified pi5/aarch64/Ubuntu 24.04.4 and healthy v2.7.0, zero restarts, immutable
+image `sha256:880469ddabe26075d43daee59c5d698daac382c4365d0af5e4ea3a37722e4e35`.
+
+Authenticated Discord confirms the development guild has two members: its owner
+and Trubot. The owner reported baseball and 2020 misses there. A fresh human UI
+baseball question reproduced the failure through the running gateway and real send.
+Private WCB-scoped retrieval returned five relevant sources; development-scoped
+retrieval returned zero. Numeric years were discarded, so a 2020 question selected
+unrelated keyword evidence even in the source guild. Imported 2020-labeled exports
+exist, but their individual message dates are unknown.
+
+Version 2.7.1 adds owner-only recall in the configured development guild's already
+allowed channel and bounded year-aware retrieval. Source attribution, intake scope,
+freshness, corrections, withdrawal, graph and usage state remain unchanged. Dated
+native evidence outranks export labels; unknown-date graph claims cannot override
+the requested period. The daily task now requires actual Discord smoke tests in
+this private server, explicitly distinguishes captured-send fixtures, and carries
+both reported failures forward. Release and actual post-deploy results follow.
+
+All six candidate quality gates passed: 278 tests, 95.72% branch-inclusive coverage,
+locked sync, formatting, lint, strict typing and package build. Regression coverage
+includes all three Discord handler paths, owner/guild/channel isolation, unchanged
+learning counts, native timestamps, export labels and current-origin removal.

@@ -134,3 +134,15 @@ packet are separate evidence; a rejected corpus packet is not a fidelity gain.
 Next, evaluate contextual humor/style on genuine held-out exchanges and improve
 source coverage and contradiction discovery. Historical pixel interpretation and
 native peers/reply/thread relationships remain separate coherent increments.
+
+## Real Discord acceptance
+
+Joe confirmed the separate private development server on 2026-10-08. Its existing
+allowed channel is the smoke-test destination. Verify authenticated ownership and
+membership before posting through the owner's Discord UI. Read actual responses
+from the running release and check private source expectations. Never send test
+chatter into league channels. Captured handler sends do not satisfy this requirement.
+If authenticated human posting is unavailable, record that exact blocker rather
+than claiming a real Discord test. Development questions and bot answers are not
+Andrew's learning evidence. Record private message references outside Git and public
+pass/fail summaries in progress.md.

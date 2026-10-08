@@ -455,3 +455,114 @@ async def test_memory_is_verified_refreshed_and_attached_to_real_handler(tmp_pat
         store.forget(now=EVIDENCE_NOW)
         assert await client._memory_context(channel, query, []) == ""
     assert await client._reference_context(None, ImageCollector()) is None
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize(
+    ("guild_id", "owner_id", "requester_id", "configured", "allowed", "expected"),
+    [
+        (78, 1, 1, 78, True, True),
+        (78, 1, 2, 78, True, False),
+        (78, 1, None, 78, True, False),
+        (79, 1, 1, 78, True, False),
+        (78, None, 1, 78, True, False),
+        (78, 1, 1, 0, True, False),
+        (78, 1, 1, 78, False, False),
+    ],
+)
+async def test_development_recall_requires_configured_guild_allowed_channel_and_owner(
+    tmp_path, guild_id, owner_id, requester_id, configured, allowed, expected
+):
+    from dataclasses import replace
+
+    from test_learning import AUDIT, source
+    from test_learning import NOW as EVIDENCE_NOW
+
+    from trubot.ingestion import MessageIngestor
+    from trubot.learning import LearningStore
+    from trubot.memory import ContextMemory
+
+    store = LearningStore.initialize(tmp_path / "learning.sqlite3", AUDIT, now=EVIDENCE_NOW)
+    store.observe(source(content="White Sox forever"), now=EVIDENCE_NOW)
+    client, responder, _, _ = make_client(clock=lambda: EVIDENCE_NOW)
+    client._settings = replace(
+        client._settings,
+        development_guild_id=configured,
+        allowed_channel_ids=frozenset({10}) if allowed else frozenset({11}),
+    )
+    learning = MessageIngestor(store, frozenset({10}), clock=lambda: EVIDENCE_NOW)
+    learning.verified = True
+    client._learning, client._memory = learning, ContextMemory(store)
+    development, source_channel = fake_channel(), fake_channel()
+    development.guild = SimpleNamespace(id=guild_id, owner_id=owner_id)
+    assert not learning.accepts(development)
+    with (
+        patch.object(client, "get_channel", return_value=source_channel),
+        patch.object(learning, "refresh", new_callable=AsyncMock),
+    ):
+        result = await client._memory_context(
+            development, "Who is your baseball team?", [], requester_user_id=requester_id
+        )
+    assert bool(result) is expected
+    assert not responder.calls
+    assert store.status()["messages"] == 1
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize("mode", ["direct", "followup", "reaction"])
+async def test_development_owner_recall_reaches_discord_handlers_without_learning_tests(
+    tmp_path, mode
+):
+    from dataclasses import replace
+
+    from test_learning import AUDIT, source
+    from test_learning import NOW as EVIDENCE_NOW
+
+    from trubot.ingestion import MessageIngestor
+    from trubot.learning import LearningStore
+    from trubot.memory import ContextMemory
+
+    store = LearningStore.initialize(tmp_path / "learning.sqlite3", AUDIT, now=EVIDENCE_NOW)
+    store.observe(source(content="White Sox forever"), now=EVIDENCE_NOW)
+    client, responder, _, _ = make_client(clock=lambda: EVIDENCE_NOW)
+    client._settings = replace(
+        client._settings, development_guild_id=78, allowed_channel_ids=frozenset({10, 20})
+    )
+    learning = MessageIngestor(store, frozenset({10}), clock=lambda: EVIDENCE_NOW)
+    learning.verified = True
+    client._learning, client._memory = learning, ContextMemory(store)
+    development, source_channel = fake_channel(20), fake_channel()
+    development.guild = SimpleNamespace(id=78, owner_id=1)
+
+    async def empty_history(**_kwargs):
+        for item in []:
+            yield item
+
+    development.history = empty_history
+    message = fake_message(development, direct=mode == "direct")
+    message.content = message.clean_content = "🤖 Who is your baseball team?"
+    development.fetch_message.return_value = message
+    client._attention.activate(20, EVIDENCE_NOW)
+    with (
+        patch.object(client, "get_channel", side_effect={10: source_channel, 20: development}.get),
+        patch.object(learning, "refresh", new_callable=AsyncMock),
+    ):
+        if mode == "reaction":
+            await client.on_raw_reaction_add(
+                SimpleNamespace(
+                    channel_id=20,
+                    user_id=1,
+                    message_id=message.id,
+                    emoji=SimpleNamespace(name="🍆"),
+                    member=SimpleNamespace(bot=False),
+                )
+            )
+        else:
+            if mode == "followup":
+                message.content = message.clean_content = "Who is your baseball team?"
+                message.mentions = []
+            await client.on_message(message)
+    assert len(responder.calls) == 1
+    assert "White Sox forever" in responder.calls[0][0][0].content
+    development.send.assert_awaited_once_with("Hot")
+    assert store.status()["messages"] == 1

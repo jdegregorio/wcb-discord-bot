@@ -477,3 +477,19 @@ private study in a disposable graph clone, verifies pinned guild membership and
 refreshes selected native sources through authenticated Discord reads. It reports
 counts only and never sends a Discord message or copies/replaces usage state.
 Synthetic concept-selected questions test the flow, not independent human fidelity.
+
+## Development recall scope and year labels
+
+Version 2.7.1 permits the authenticated owner of the configured development guild
+to retrieve league memory from an existing allowed channel. The source guild,
+pinned Andrew account and intake intersection remain authoritative. Other guilds,
+non-owner requests, disabled scope and unlisted channels receive no cross-guild
+memory. `TRUBOT_DEVELOPMENT_GUILD_ID=0` disables this access. Withdrawal continues
+to block source transactions before any memory is rendered.
+
+Historical year retrieval uses current archive origin period hints. These label
+exports and never supply calendar dates for individual messages. Current origin
+hints are checked again during rendering, and removed documents cannot supply
+quotes. Native timestamps take priority for dated recall. Unknown-date graph
+observations cannot bypass a requested year. This does not backfill old native
+messages or interpret previously unstudied images.

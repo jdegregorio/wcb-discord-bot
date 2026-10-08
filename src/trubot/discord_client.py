@@ -27,7 +27,7 @@ from trubot.history import (
 )
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable
-from trubot.memory import ContextMemory, terms
+from trubot.memory import ContextMemory, terms, years
 from trubot.participation import (
     Observation,
     ParticipationTracker,
@@ -385,7 +385,9 @@ class TruBotClient(discord.Client):
                     # Keep the focus last so the adapter retains its image parts.
                     history.append(focused)
                     target = focused.content
-                memory = await self._memory_context(channel, target, history)
+                memory = await self._memory_context(
+                    channel, target, history, requester_user_id=requester_user_id
+                )
                 if memory:
                     history.insert(0, ConversationMessage("user", memory))
                 if not history and target is None:
@@ -474,23 +476,42 @@ class TruBotClient(discord.Client):
         return None
 
     async def _memory_context(
-        self, channel: DiscordChannel, target: str | None, history: list[ConversationMessage]
+        self,
+        channel: DiscordChannel,
+        target: str | None,
+        history: list[ConversationMessage],
+        *,
+        requester_user_id: int | None = None,
     ) -> str:
         learning, memory = self._learning, self._memory
         if learning is None or memory is None or not learning.verified:
             return ""
+        source_guild_id = channel.guild.id
+        if source_guild_id != learning.identity.guild_id:
+            # Joe's isolated development server may test the same private memory.
+            # Authenticated ownership and the existing channel allowlist gate access;
+            # this does not change learning.accepts or source attribution.
+            if (
+                not self._settings.development_guild_id
+                or source_guild_id != self._settings.development_guild_id
+                or channel.id not in self._settings.allowed_channel_ids
+                or requester_user_id is None
+                or requester_user_id != channel.guild.owner_id
+            ):
+                return ""
+            source_guild_id = learning.identity.guild_id
         # Use the focused topic. Only a context-dependent follow-up needs nearby
         # human messages; prior bot prose must not become evidence or query bait.
         query = target or ""
         # Speaker labels and earlier assistant prose are not topic evidence.
         query = query.split(": ", 1)[-1]
-        if not terms(query):
+        if not (terms(query) or years(query)):
             query += " " + " ".join(
                 m.content.split(": ", 1)[-1] for m in history[-4:] if m.role == "user"
             )
         try:
             candidates = await asyncio.to_thread(
-                memory.candidates, query, guild_id=channel.guild.id, now=self._clock()
+                memory.candidates, query, guild_id=source_guild_id, now=self._clock()
             )
             verified = []
             verification_started = self._clock()
