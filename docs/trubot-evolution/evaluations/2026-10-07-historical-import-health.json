@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-08T03:11:44.957213+00:00",
+  "image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:02b07f6c17117b708b0e704b514ca6c82012e7d4e8d0d6962995ba518dba9bbf",
+  "health": "healthy",
+  "restarts": 0,
+  "revision": "3b9fc24f5100c64f66f30a4aab2f518681480668",
+  "started_at": "2026-10-08T03:09:02.292539411Z",
+  "readiness_passed": true,
+  "window": "current container, up to 10 minutes",
+  "response_failures": 0,
+  "error_lines": 0,
+  "disconnects": 0,
+  "learning_pauses": 0,
+  "learning_batches": 4,
+  "api_usage_snapshot": {
+    "month": "2026-10",
+    "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+    "timezone": "UTC",
+    "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+    "estimated_usd": 0.00584832,
+    "runtime_usd": 0.001047145,
+    "maintenance_usd": 0.004801175,
+    "monthly_limit_usd": 20,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "attempts": 57,
+    "input_tokens": 141265,
+    "cached_input_tokens": 109007,
+    "output_tokens": 1452,
+    "unsettled_attempts": 0,
+    "pre_guard_spend": "unknown; not included"
+  }
+}

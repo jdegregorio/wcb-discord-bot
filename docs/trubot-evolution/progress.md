@@ -475,3 +475,55 @@ all-years native Discord backfill. No ingestion API cost or paid infrastructure.
 Next priority is source-backed contextual study and bounded retrieval, validated
 on held-out exchanges before runtime use; native peers/threads/backfill and
 unknown-date handling remain explicit roadmap work.
+
+### Verified historical import rollout
+
+- Runtime [PR #31](https://github.com/jdegregorio/wcb-discord-bot/pull/31) merged as
+  `3b9fc24f5100c64f66f30a4aab2f518681480668`. The tested candidate was
+  `a73301f9fca9030d7458ffa400a77517202bf88e`; merged main has the identical tree.
+  [PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37721030184),
+  [main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37721132173),
+  and all six repeated local merged gates passed (196 tests, 96.27% coverage).
+  Concurrent prior-run documentation was reconciled by preserving both records.
+- [v2.4.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.4.0) targets
+  that tested merged commit. [Container build](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37721140400)
+  passed for AMD64 and ARM64 before deploying through the existing app transaction
+  on reverified pi5/aarch64/Ubuntu 24.04.4. Running digest is
+  `sha256:02b07f6c17117b708b0e704b514ca6c82012e7d4e8d0d6962995ba518dba9bbf`,
+  with matching OCI revision, healthy readiness and zero restarts. Prior healthy
+  2.3.1 digest was
+  `sha256:f822b8fb80daa077d174d0b493928daa0dc56db19fb76d1e9bead4b094ec6990`.
+  No rollback was needed. Rollback retains corpus bytes; older images do not
+  implement its cleanup, so withdrawal must use a compatible version.
+- Installed CLI synthetic acceptance passes 6/6 without provider calls or Discord
+  writes. Real production import confirms 16 documents, 27 distinct origins,
+  4,299 speaker blocks, 412 exact-alias target blocks, 405 candidate voice blocks,
+  115 native visual episodes and 96 deduplicated original image assets. All
+  28 manifest text entries replay as duplicates, with unchanged corpus counts.
+  Native visual windows include 11 distinct target messages in 12 episodes.
+  This coverage is bounded early-channel development evidence, not full native
+  history or completed visual interpretation.
+- All ten production data checks pass: exact raw/pixel hashes, Slack attribution,
+  adjacent context, native pinned-human attribution and guild scope, source
+  timestamps, 0700/0600 permissions, consistent backup/restore, and preserved
+  native identity/evidence. The source and image corpus is private on the existing
+  app volume. An online archive backup and disposable restore preserve table
+  counts and all image hashes. Restore staging used the persistent volume because
+  the 62.6 MB image corpus exceeds the 16 MiB ephemeral `/tmp`. Off-device backup
+  remains unverified. Temporary production import/validation files were removed;
+  workspace originals and the production corpus remain private and available.
+- Health at `2026-10-08T03:11:44.957213+00:00` is healthy with fresh Discord
+  readiness and zero restarts. During 162 seconds since startup, no response
+  failures, ERROR lines, disconnects or learning pauses occurred; four bounded
+  learning batches completed. Native learning retains 34 target records.
+  Usage remains 57 settled attempts and estimated USD 0.00584832, identical to
+  the pre-deploy snapshot. This import made zero model calls and adds no paid
+  infrastructure; earlier October spending remains unknown.
+- [Installed acceptance](evaluations/2026-10-07-historical-import-installed.json),
+  [production data and recovery](evaluations/2026-10-07-historical-import-production.json),
+  and [health/usage snapshot](evaluations/2026-10-07-historical-import-health.json)
+  preserve content-free evidence. The daily evolution and weekly recap updates
+  are verified active with original schedule/model/notification settings.
+  They now prioritize contextual studies using actual image bytes, with source
+  uncertainty, bounded vision costs, held-out validation and explicit retrieval
+  before claims of improved character fidelity.
