@@ -172,3 +172,54 @@ def test_presentation_preserves_identical_grounding_and_unknown_dates(store):
     assert "asks for evidence" in rendered[2]
     archive.remove_document(candidates[0].source["document"], now=NOW)
     assert not memory.render(candidates, request=requests[2])
+
+
+def test_bot_quotation_is_only_a_lookup_key_for_current_attributed_sources(store):
+    archive = ArchiveStore.initialize(store)
+    archive.import_document(
+        b"peer\n  8:00 AM\nThe moon league always wins.\n"
+        b"legacy.target\n  8:01 AM\nDoes the waiver tool tell us when we are outbid?",
+        channel="general",
+        target_alias="legacy.target",
+        alias_basis="Synthetic operator audit",
+        origin={"kind": "synthetic"},
+        period_hint="general_2020.txt",
+        now=NOW,
+    )
+    memory = ContextMemory(store)
+    quote = "Does the waiver tool tell us when we are outbid?"
+    candidates = memory.candidates(
+        "What source supports that 2020 memory?", guild_id=77, now=NOW, quotation=quote
+    )
+    assert len(candidates) == 1
+    rendered = memory.render(candidates, request="Show that source", quotation=quote)
+    assert quote in rendered
+    assert "asks for evidence" in rendered
+    assert not memory.candidates("source", guild_id=78, now=NOW, quotation=quote)
+    assert not memory.candidates("source", guild_id=77, now=NOW, quotation="An invented bot quote")
+    assert not memory.candidates(
+        "source", guild_id=77, now=NOW, quotation="The moon league always wins."
+    )
+    assert not memory.candidates("source in 2019", guild_id=77, now=NOW, quotation=quote)
+    with archive._transaction() as db:
+        db.execute(
+            "UPDATE messages SET content='This corrected source says something different.' "
+            "WHERE target=1"
+        )
+    assert not memory.render(candidates, quotation=quote)
+    store.forget(now=NOW)
+    with pytest.raises(LearningUnavailable):
+        memory.candidates("source", guild_id=77, now=NOW, quotation=quote)
+
+
+def test_native_quotation_requires_current_fresh_source_after_lookup(store):
+    text = "That waiver change looks good to me."
+    store.observe(source(content=text), now=NOW)
+    memory = ContextMemory(store)
+    candidates = memory.candidates("source", guild_id=77, now=NOW, quotation=text)
+    assert len(candidates) == 1
+    assert memory.render(candidates, quotation=text)
+    assert not memory.render(candidates, quotation=text, verified_after=NOW + timedelta(seconds=1))
+    store.invalidate(10, [source().id], deleted=False, now=NOW)
+    store.observe(source(content="I changed my view.", authoritative=True), now=NOW)
+    assert not memory.render(candidates, quotation=text)

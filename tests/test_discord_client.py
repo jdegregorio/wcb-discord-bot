@@ -609,3 +609,51 @@ async def test_memory_presentation_uses_current_request_not_previous_date_discla
         assert "asks about timing" in exact
     finally:
         await client.close()
+
+
+@pytest.mark.asyncio
+async def test_source_followup_recovers_quote_from_current_human_evidence_only(tmp_path):
+    from test_learning import AUDIT
+    from test_learning import NOW as EVIDENCE_NOW
+
+    from trubot.archives import ArchiveStore
+    from trubot.ingestion import MessageIngestor
+    from trubot.learning import LearningStore
+    from trubot.memory import ContextMemory
+
+    store = LearningStore.initialize(tmp_path / "learning.sqlite3", AUDIT, now=EVIDENCE_NOW)
+    archive = ArchiveStore.initialize(store)
+    quote = "Does the waiver tool tell us when we are outbid?"
+    archive.import_document(
+        ("legacy.target\n  8:01 AM\n" + quote).encode(),
+        channel="general",
+        target_alias="legacy.target",
+        alias_basis="Synthetic operator audit",
+        origin={"kind": "synthetic"},
+        period_hint="general_2020.txt",
+        now=EVIDENCE_NOW,
+    )
+    client, _, _, _ = make_client(clock=lambda: EVIDENCE_NOW)
+    learning = MessageIngestor(store, frozenset({10}), clock=lambda: EVIDENCE_NOW)
+    learning.verified = True
+    client._learning, client._memory = learning, ContextMemory(store)
+    history = [
+        ConversationMessage("user", "Tim: Quote one thing from 2020"),
+        ConversationMessage("assistant", f"“{quote}”"),
+        ConversationMessage("user", "Tim: What exact day?"),
+        ConversationMessage("assistant", "I don't know the day."),
+    ]
+    try:
+        result = await client._memory_context(
+            fake_channel(), "Tim: What source supports that 2020 memory?", history
+        )
+        assert quote in result
+        assert "asks for evidence" in result
+        fabricated = await client._memory_context(
+            fake_channel(),
+            "Tim: What source supports that 2020 memory?",
+            [ConversationMessage("assistant", "“This bot quote is completely invented.”")],
+        )
+        assert fabricated == ""
+    finally:
+        await client.close()

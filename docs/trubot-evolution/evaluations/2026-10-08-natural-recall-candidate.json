@@ -17,8 +17,8 @@
     "unsolicited_metadata": true
   },
   "audit": {
-    "source_channels": 4,
-    "league_bot_replies": 20,
+    "source_channels": 3,
+    "league_bot_replies": 5,
     "league_target_messages": 7,
     "development_bot_replies": 15,
     "explicit_labeled_smoke_setups": 2,
@@ -28,7 +28,10 @@
     "human_metadata": 0,
     "development_metadata": 3,
     "unsolicited_development_metadata": 2,
-    "semantic_review": "not independently graded; automated privacy review rejected raw output and provider egress"
+    "semantic_review": "not independently graded; automated privacy review rejected raw output and provider egress",
+    "configured_channels": 4,
+    "scope_count_corrected": true,
+    "learning_overlap_ruled_out": false
   },
   "synthetic_live": {
     "covered_cases": 6,
@@ -36,5 +39,5 @@
     "readiness_isolated": true,
     "lexical_fixture_gap_then_explicit_query_term_pass": true
   },
-  "release_deployment": "pending"
+  "release_deployment": "2.7.2 deployed; five real acceptance cases pass; source follow-up correction in 2.7.3"
 }

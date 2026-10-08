@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import re
 from collections import defaultdict
 from collections.abc import Awaitable, Callable, Sequence
 from contextlib import suppress
@@ -27,7 +28,7 @@ from trubot.history import (
 )
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable
-from trubot.memory import ContextMemory, terms, years
+from trubot.memory import ContextMemory, RecallPresentation, recall_presentation, terms, years
 from trubot.participation import (
     Observation,
     ParticipationTracker,
@@ -500,18 +501,34 @@ class TruBotClient(discord.Client):
             ):
                 return ""
             source_guild_id = learning.identity.guild_id
-        # Use the focused topic. Only a context-dependent follow-up needs nearby
-        # human messages; prior bot prose must not become evidence or query bait.
+        # Use the focused topic. Bot prose cannot establish personal evidence.
+        # A referential timing/source request may look up an earlier exact quotation,
+        # but only current eligible authored source text can satisfy that lookup.
         # Strip the speaker label once, preserving punctuation in the actual request.
         request = (target or "").split(": ", 1)[-1]
         query = request
+        quotation = ""
+        if recall_presentation(request) is not RecallPresentation.CONTENT and re.search(
+            r"\b(?:that|this|it)\b", request, re.IGNORECASE
+        ):
+            for message in reversed(history[-8:]):
+                if message.role != "assistant":
+                    continue
+                quotes = re.findall(r'[“"]([^”"]{8,500})[”"]', message.content)
+                if quotes:
+                    quotation = quotes[0]
+                    break
         if not (terms(query) or years(query)):
             query += " " + " ".join(
                 m.content.split(": ", 1)[-1] for m in history[-4:] if m.role == "user"
             )
         try:
             candidates = await asyncio.to_thread(
-                memory.candidates, query, guild_id=source_guild_id, now=self._clock()
+                memory.candidates,
+                query,
+                guild_id=source_guild_id,
+                now=self._clock(),
+                quotation=quotation,
             )
             verified = []
             verification_started = self._clock()
@@ -542,6 +559,7 @@ class TruBotClient(discord.Client):
                     verified_after=verification_started,
                     now=self._clock(),
                     request=request,
+                    quotation=quotation,
                 )
             return ""
         except LearningUnavailable:
