@@ -327,3 +327,57 @@
   96.49% branch-inclusive coverage, package build and diff check all passed.
   Final ARM64 candidate probe is 7/7 after the directory-sync and runtime
   composition checks. Provider calls and Discord writes remain zero.
+
+### Final evidence for the 08:16 intake run
+
+- Implementation commit `938ff4ce3147fae63cb4cee75767017fd696816b`;
+  [PR #27](https://github.com/jdegregorio/wcb-discord-bot/pull/27) merged as
+  `37f15ed83954728e9a27451cb9d4ab218fdf5b9c`. The merged tree exactly matches
+  the tested candidate. [PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37655433932)
+  and [main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37657701466)
+  pass. All six gates rechecked on merged main, 156 tests/96.43% coverage.
+- GitHub squash, raw REST and auto-merge calls returned server/JSON errors.
+  The supported regular merge succeeded with normal protection and passing CI.
+  No direct main push, protection changes or check bypass was used.
+- Immutable [v2.3.0 release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.3.0)
+  targets that tested merge. [AMD64/ARM64 build](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37659974236)
+  succeeded. Existing pi-release-check discovered it and the locked app transaction
+  logged `wcb-bot: healthy on release 2.3.0`; no manual rebuild or platform change.
+- Verified deployed v2.3.0 digest:
+  `sha256:e54ef0e705df983c7c0b05e457162c8dae5953687e9d406e6374ce77aa84822a`.
+  OCI revision and installed learning/ingestion/client/app/config hashes match
+  release source. Discord readiness healthy, zero restarts, no rollback needed.
+- Installed v2.3.0 intake acceptance passes 8/8. Private state grew from seven
+  initial messages to 34, with four persistent scan checkpoints. Content-free
+  queries verify pinned author/guild, approved channels and aware source timestamps.
+  A one-hour observation has 48 successful channel batches, zero learning warnings,
+  zero ERROR lines, zero response failures and zero disconnects.
+- Installed character checks pass 15/15 after separate rubric review: ten main,
+  two held-out and three core voice cases. Sox warmth/relevance, factual restraint,
+  grief, family pride, outdoor pride, follow-up judgment, fictional identity and
+  Thomas Jones preference remain appropriate. Small samples do not prove universal
+  fidelity. Reports are `2026-10-07-character-*-production.json`; no Discord writes.
+  Contrary to the preliminary estimate of 13 scenarios, core_voice has three cases.
+- Installed evaluation measured 36,977 input, 28,744 cached input and 328 output
+  tokens across 15 settled attempts; conservative estimate USD 0.001480565.
+  This run's 27 character samples total USD 0.002881595 estimated maintenance cost.
+  Final ledger observation: 57 settled attempts, USD 0.00584832 total estimate,
+  USD 0.004801175 maintenance and USD 0.001047145 runtime, no uncertain attempts.
+  Earlier October spending and billing/off-device backup visibility remain unknown.
+- Final private learning backup/restore probe checks integrity, exact pinned audit,
+  all scan cursors and 34 source records. Backups stay mode 0600 with seven-day
+  retention. No IDs, source text or private derived preferences are exported.
+- Concurrent complementary [PR #28](https://github.com/jdegregorio/wcb-discord-bot/pull/28)
+  published v2.3.1 during final verification. It adds durable withdrawal to this
+  intake path. It was preserved, not rolled back or overwritten. Current healthy
+  revision is `d5369a7f7b228798095073807af6c34757112d5f`, current digest:
+  `sha256:f822b8fb80daa077d174d0b493928daa0dc56db19fb76d1e9bead4b094ec6990`.
+  Installed source hashes match current main. Rebased evidence-only branch passes
+  all six gates, 169 tests/96.49% coverage. Prompt/model/responder are unchanged.
+  Successor intake acceptance passes 8/8; readiness healthy, zero restarts and
+  zero errors/warnings in its first observed cycle. No real learning withdrawal
+  or deletion is performed. Fixture /tmp staging vanished on container replacement;
+  the self-contained successor probe was rerun through stdin successfully.
+- This run adds final evidence only after v2.3.0; it does not take credit for the
+  complementary withdrawal implementation. Next roadmap step remains grounded
+  preference derivation/retrieval with source freshness and correction propagation.
