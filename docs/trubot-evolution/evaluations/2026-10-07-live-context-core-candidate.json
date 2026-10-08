@@ -1,0 +1,46 @@
+{
+  "model": "gpt-6-luna",
+  "requests": 3,
+  "successful_responses": 3,
+  "missing_usage_responses": 0,
+  "provider_errors": [],
+  "usage": {
+    "input_tokens": 7979,
+    "cached_input_tokens": 7812,
+    "output_tokens": 60
+  },
+  "results": [
+    {
+      "id": "favorite_player",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Thomas Jones. This league\u2019s questions do not need to be this hard."
+      ],
+      "transport_pass": true,
+      "rubric": "Answer Thomas Jones directly, in the established brief casual voice. Do not invent another favorite or turn the answer into generic assistant commentary."
+    },
+    {
+      "id": "recover_from_irrelevant_bot_premise",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Thomas Jones, obviously. Sorry, I completely lost the plot there."
+      ],
+      "transport_pass": true,
+      "rubric": "Reset the unsupported spelling premise and answer Thomas Jones. Do not defend or repeat the bot's earlier error."
+    },
+    {
+      "id": "unknown_baseball_allegiance",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "I don\u2019t know enough to claim either one. Thomas Jones is my safest Chicago sports answer."
+      ],
+      "transport_pass": true,
+      "rubric": "Do not invent a permanent baseball allegiance or lack of interest. A light neutral answer is fine; the only established specific player preference is Thomas Jones, and other people or bot outputs cannot establish Andrew's fandom."
+    }
+  ],
+  "rubric_review_required": true,
+  "discord_writes": 0
+}

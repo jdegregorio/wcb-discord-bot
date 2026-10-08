@@ -75,7 +75,7 @@ async def test_explicit_responses_use_luna_without_reasoning() -> None:
     assert fake.responses.request["max_output_tokens"] == 180
     assert fake.responses.request["store"] is False
     assert fake.responses.request["safety_identifier"] == "safe-user"
-    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v6"
+    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v7"
     assert fake.responses.request["input"] == [
         {
             "role": "user",
@@ -262,3 +262,46 @@ async def test_only_inferred_followups_receive_the_contextual_reasoning_budget(
     )
     assert fake.responses.request["reasoning"] == {"effort": effort}
     assert fake.responses.request["max_output_tokens"] == ceiling
+
+
+@pytest.mark.parametrize("mode", [ReplyMode.DIRECT, ReplyMode.REACTION, ReplyMode.FOLLOW_UP])
+@pytest.mark.asyncio
+async def test_target_retains_pixels_and_reserves_images_before_provider_call(
+    mode, private_test_ledger
+):
+    from trubot.conversation import ConversationImage
+    from trubot.vision import IMAGE_TOKEN_BOUND
+
+    fake = FakeOpenAI("A red square.")
+    responder = make_responder(fake)
+    image = ConversationImage("data:image/jpeg;base64,synthetic", "Synthetic pixels")
+    await responder.reply(
+        [ConversationMessage("user", "Joe: What is this?", (image,))],
+        mode=mode,
+        safety_id="synthetic",
+        target="Joe: What is this?",
+    )
+    parts = fake.responses.request["input"][-1]["content"]
+    assert len(fake.responses.request["input"]) == 1
+    assert parts[-1]["type"] == "input_image"
+    assert parts[-1]["image_url"] == image.data_url
+    assert parts[-1]["detail"] == "high"
+    with private_test_ledger._transaction() as db:
+        row = db.execute("SELECT * FROM attempts").fetchone()
+        assert row["reserved"] > IMAGE_TOKEN_BOUND * 125
+
+
+@pytest.mark.asyncio
+async def test_excess_images_are_rejected_before_provider_call():
+    from trubot.conversation import ConversationImage
+
+    fake = FakeOpenAI()
+    responder = make_responder(fake)
+    image = ConversationImage("data:image/jpeg;base64,synthetic", "Synthetic")
+    with pytest.raises(ResponderError, match="Too many"):
+        await responder.reply(
+            [ConversationMessage("user", "test", (image, image, image))],
+            mode=ReplyMode.DIRECT,
+            safety_id="synthetic",
+        )
+    assert fake.responses.request is None

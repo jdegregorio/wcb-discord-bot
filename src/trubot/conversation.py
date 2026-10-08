@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import hashlib
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import StrEnum
 from typing import Literal
 
@@ -18,9 +18,16 @@ class ReplyMode(StrEnum):
 
 
 @dataclass(frozen=True, slots=True)
+class ConversationImage:
+    data_url: str = field(repr=False)
+    description: str
+
+
+@dataclass(frozen=True, slots=True)
 class ConversationMessage:
     role: MessageRole
     content: str
+    images: tuple[ConversationImage, ...] = field(default=(), repr=False)
 
     def as_input(self) -> dict[str, str]:
         return {"role": self.role, "content": self.content}

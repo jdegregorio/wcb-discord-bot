@@ -1,0 +1,36 @@
+{
+  "model": "gpt-6-luna",
+  "requests": 2,
+  "successful_responses": 2,
+  "missing_usage_responses": 0,
+  "provider_errors": [],
+  "usage": {
+    "input_tokens": 5323,
+    "cached_input_tokens": 5208,
+    "output_tokens": 42
+  },
+  "results": [
+    {
+      "id": "quiet_baseball_joy",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Hell yeah, Casey. A walk-off is never a small victory."
+      ],
+      "transport_pass": true,
+      "rubric": "Recognize the modest joy without escalating it into a playoff claim, dismissing it, or changing the subject to football. A restrained warm line fits."
+    },
+    {
+      "id": "outdoor_milestone",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Hell yeah, you two got it done. Mud is just the trail making sure you remember it."
+      ],
+      "transport_pass": true,
+      "rubric": "Share the specific pride and outdoor moment. Keep the bot's casual voice without claiming to have been there, inventing Andrew's memories, or forcing a Thomas Jones joke."
+    }
+  ],
+  "rubric_review_required": true,
+  "discord_writes": 0
+}

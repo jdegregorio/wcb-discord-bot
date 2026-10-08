@@ -3,8 +3,11 @@
 Replenish this list as evidence arrives. Each run owns prioritization and carries
 one coherent increment through production verification.
 
-## 1. Contextual evidence derivation and retrieval
+## 1. Contextual evidence derivation and richer retrieval
 
+- Delivered in 2.5.0: bounded source retrieval for live replies and ephemeral live
+  image understanding. Source removal/withdrawal and native freshness are enforced.
+  Continue beyond lexical/topic retrieval toward reviewed, compact beliefs.
 - Acceptance: study historical exchanges with setup, target response and peer
   reactions, including actual visual setup when images/memes carry meaning.
   Review captured image bytes and preserve missing-media uncertainty. Keep OCR or

@@ -527,3 +527,23 @@ unknown-date handling remain explicit roadmap work.
   They now prioritize contextual studies using actual image bytes, with source
   uncertainty, bounded vision costs, held-out validation and explicit retrieval
   before claims of improved character fidelity.
+
+### 2026-10-07 live memory and vision correction
+
+Joe's baseball test reproduced a real missing capability: the persona prompt
+forbade team allegiance, and stored history was not read during responses.
+Authenticated Andrew-authored native evidence supports a baseball allegiance.
+The 2.5.0 candidate replaces the blanket prohibition with grounded preferences,
+retrieves relevant private Slack/native evidence, revalidates native sources,
+and supplies image pixels from focus, reply references and recent conversation.
+Bot prose and peer preferences remain excluded as personal evidence.
+
+Candidate live acceptance through the real Discord handlers, Responses adapter
+and production maintenance ledger passes 5/5: direct and inferred follow-up both
+answer the source-supported team; direct and reaction images identify a red triangle, blue circle
+and printed label; a prior bot's invented team does not become memory. Sends are
+captured, with zero Discord message writes. Unit tests cover attribution, stale
+source removal, withdrawal, image bounds, CDN restriction, focus/reference pixels
+and image spending reservations. Complete historical interpretation, generated
+belief confidence/contradiction management and all-years native context remain
+roadmap work.

@@ -116,3 +116,33 @@ def test_discord_output_is_trimmed_at_a_word_boundary() -> None:
     assert len(output) <= 100
     assert output.endswith("…")
     assert clamp_discord_message("x" * 150, limit=100) == ("x" * 99) + "…"
+
+
+@pytest.mark.asyncio
+async def test_explicit_bot_image_target_is_visual_context_never_personal_evidence():
+    import io
+    from unittest.mock import AsyncMock
+
+    from PIL import Image
+
+    from trubot.history import visual_message
+    from trubot.vision import ImageCollector
+
+    message = fake_message("", author_id=50, author_bot=True, display_name="OtherBot")
+    message.attachments = [
+        SimpleNamespace(
+            url="https://cdn.discordapp.com/synthetic.png", size=100, content_type="image/png"
+        )
+    ]
+    message.embeds = []
+    raw = io.BytesIO()
+    Image.new("RGB", (20, 20), "red").save(raw, format="PNG")
+    result = await visual_message(
+        message,
+        bot_user_id=99,
+        images=ImageCollector(AsyncMock(return_value=raw.getvalue())),
+        target=True,
+    )
+    assert result is not None and result.images
+    assert "Bot source, not personal evidence" in result.content
+    assert convert_message(message, bot_user_id=99) is None

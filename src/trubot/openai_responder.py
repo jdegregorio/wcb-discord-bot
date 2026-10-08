@@ -9,12 +9,18 @@ import re
 from collections.abc import Sequence
 
 from openai import APIConnectionError, APIStatusError, AsyncOpenAI, RateLimitError
-from openai.types.responses import EasyInputMessageParam, Response, ResponseInputParam
+from openai.types.responses import (
+    EasyInputMessageParam,
+    Response,
+    ResponseInputMessageContentListParam,
+    ResponseInputParam,
+)
 from openai.types.responses.response_create_params import ResponseCreateParamsNonStreaming
 
 from trubot.budget import NANODOLLARS, BudgetUnavailable, UsageLedger
 from trubot.conversation import ConversationMessage, ReplyMode
 from trubot.personality import instructions_for
+from trubot.vision import IMAGE_TOKEN_BOUND, MAX_IMAGES
 
 logger = logging.getLogger(__name__)
 
@@ -22,7 +28,7 @@ _SPEAKER_PREFIX = re.compile(
     r"^(?:trubot|andrew(?:[.\s]+truax)?|truax)\s*:\s*",
     flags=re.IGNORECASE,
 )
-_PROMPT_CACHE_KEY = "wcb-trubot-personality-v6"
+_PROMPT_CACHE_KEY = "wcb-trubot-personality-v7"
 _NO_REPLY = "<NO_REPLY>"
 
 _TARGET_LABELS = {
@@ -66,21 +72,16 @@ class OpenAITruaxResponder:
         safety_id: str,
         target: str | None = None,
     ) -> str | None:
-        model_input: ResponseInputParam = [
-            EasyInputMessageParam(role=message.role, content=message.content)
-            for message in messages
-        ]
+        model_input: ResponseInputParam = [_message_input(message) for message in messages]
         if target:
-            focused_input = EasyInputMessageParam(
-                role="user",
-                content=_format_target(mode, target),
+            focused_input = _message_input(
+                ConversationMessage(
+                    "user",
+                    _format_target(mode, target),
+                    messages[-1].images if messages and messages[-1].content == target else (),
+                )
             )
-            if (
-                mode in {ReplyMode.DIRECT, ReplyMode.FOLLOW_UP}
-                and messages
-                and messages[-1].role == "user"
-                and messages[-1].content == target
-            ):
+            if messages and messages[-1].role == "user" and messages[-1].content == target:
                 model_input[-1] = focused_input
             else:
                 model_input.append(focused_input)
@@ -99,14 +100,22 @@ class OpenAITruaxResponder:
             if mode is ReplyMode.FOLLOW_UP
             else min(self._max_output_tokens, 180)
         )
-        # UTF-8 bytes bound text tokens; framing allowance also covers message metadata.
+        image_count = sum(len(message.images) for message in messages)
+        if image_count > MAX_IMAGES:
+            raise ResponderError("Too many response images")
+        # Base64 bytes are not text tokens. Reserve text framing separately and
+        # a deliberately conservative bound for each actual image input.
+        text_input = [{"role": m.role, "content": m.content} for m in messages]
+        if target:
+            text_input.append({"role": "user", "content": _format_target(mode, target)})
         input_bound = (
             len(
                 json.dumps(
-                    {"instructions": instructions, "input": model_input}, ensure_ascii=False
+                    {"instructions": instructions, "input": text_input}, ensure_ascii=False
                 ).encode("utf-8")
             )
             + 4096
+            + image_count * IMAGE_TOKEN_BOUND
         )
         response = await self._generate(
             input_bound=input_bound,
@@ -193,6 +202,16 @@ class OpenAITruaxResponder:
 
     async def close(self) -> None:
         await self._client.close()
+
+
+def _message_input(message: ConversationMessage) -> EasyInputMessageParam:
+    if not message.images:
+        return EasyInputMessageParam(role=message.role, content=message.content)
+    parts: ResponseInputMessageContentListParam = [{"type": "input_text", "text": message.content}]
+    for image in message.images:
+        parts.append({"type": "input_text", "text": image.description})
+        parts.append({"type": "input_image", "image_url": image.data_url, "detail": "high"})
+    return EasyInputMessageParam(role=message.role, content=parts)
 
 
 def _format_target(mode: ReplyMode, target: str) -> str:
