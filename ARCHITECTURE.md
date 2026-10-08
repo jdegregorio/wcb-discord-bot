@@ -16,7 +16,7 @@ TruBotClient ── validates channel + trigger ──┐
     │                                  + AttentionTracker
     │                                  (pure per-channel policy)
     ▼                                         │
-recent Discord history ◄──────────────────────┘
+recent Discord history + verified source/graph memory ◄──────────────────────┘
     │
     ▼
 OpenAITruaxResponder
@@ -64,6 +64,14 @@ bounded Discord reply
   catch-up plus rotating source reconciliation. Live captures never advance
   scan checkpoints. The worker runs beside response generation, with lifecycle
   tied to Discord readiness, resume, disconnect and shutdown.
+- `memory.py` combines bounded lexical source recall with reviewed graph traversal.
+  It materializes current raw evidence and qualified observations only after native
+  source verification, preserving attribution and unknown dates.
+- `graph.py` owns private typed nodes/edges and operator population checkpoints.
+  Sources, captured image hashes, episodes, the verified person and qualified
+  concepts/observations are connected on the existing volume. Runtime compares
+  evidence fingerprints; source mutations erase invalid derived state and backups.
+  Continuous model extraction and historical visual interpretation remain future work.
 - `app.py` is the composition root. Importing any module is side-effect free.
 
 Operator withdrawal writes and synchronizes a private marker beside the learning
@@ -108,9 +116,10 @@ concurrently.
 
 ## Privacy and safety
 
-Only the configured rolling Discord history is sent to OpenAI. Private learned
-evidence is collected locally and is not sent to OpenAI in this increment. Responses are
-requested with storage disabled. The API receives a stable SHA-256 identifier
+Configured rolling Discord history, bounded attributed source/graph evidence,
+and at most two live image inputs can be sent to OpenAI. Private raw stores and
+derived graph data stay on the existing volume; no full corpus is injected.
+Responses are requested with storage disabled. The API receives a stable SHA-256 identifier
 scoped to the Discord guild and requesting user, not their display name or raw
 Discord ID. Generated messages cannot create Discord mentions.
 
@@ -130,6 +139,6 @@ Edits blank old text before refetching; fetch-start timestamps and source edit
 versions prevent older snapshots from overwriting corrections. Deletion markers
 win over in-flight scans. History pages and cursors commit atomically, so failed
 or interrupted scans can resume without losing evidence. Offline changes are
-repaired by bounded rotating verification; until retrieval is implemented,
-these locally archived records cannot affect replies. Future derivation must
-verify source freshness before using archived evidence.
+repaired by bounded rotating verification; retrieval refreshes selected native sources before use. Graph derivations require
+all their native supports to refresh within a bounded verification budget, and
+retain unknown-date qualifications for operator-attributed Slack sources.

@@ -326,6 +326,13 @@ def instructions_for(mode: ReplyMode) -> str:
         "or plans outside the channel. Respect different opinions without inventing a game "
         "result or an unsupported team allegiance. Do not add circumstances or achievements "
         "that the friend did not supply; the examples' details belong only to those examples."
+        " When CONNECTED REVIEWED MEMORY is present, its status, dates and confidence "
+        "limit the conclusion. Tentative or unknown-date observations describe what Andrew "
+        "has said, not an eternal or necessarily current belief. Keep that scope in a natural "
+        "phrase such as 'I've cheered for them'. Do not turn repeated enthusiasm into 'always', "
+        "'never switching', 'for life' or 'lifelong' allegiance without explicit dated support. "
+        "For contested observations, acknowledge uncertainty instead of choosing a side; "
+        "unknown dates cannot identify which belief is newer."
         f"\n\n{_JUDGMENT_EXAMPLES}"
         f"\n\nSituation for this reply:\n{_MODE_INSTRUCTIONS[mode]}"
     )

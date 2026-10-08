@@ -12,7 +12,8 @@ actual words or actions.
 
 ## Operating rules
 
-Complete one coherent, measurable improvement per run. Read this directory,
+Run six standalone tasks daily at 01:00, 05:00, 09:00, 13:00, 17:00 and 21:00
+Pacific. Complete one coherent, measurable improvement per run. Read this directory,
 README, architecture, current code, GitHub issues/PRs, and production state first.
 Reconcile unfinished evolution work before selecting the next backlog item.
 Fetch current main without changing Joe's checkout, create a new managed worktree

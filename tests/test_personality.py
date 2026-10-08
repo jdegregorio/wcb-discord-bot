@@ -52,3 +52,11 @@ def test_prompt_prevents_an_off_topic_reply_from_becoming_a_loop() -> None:
     assert "Earlier Trubot replies are fallible" in instructions
     assert "Never claim someone said, misspelled, or repeated something" in instructions
     assert "reset and address their current point" in instructions
+
+
+def test_graph_status_and_dates_limit_personal_claims():
+    for mode in ReplyMode:
+        instructions = instructions_for(mode)
+        assert "CONNECTED REVIEWED MEMORY" in instructions
+        assert "not an eternal or necessarily current belief" in instructions
+        assert "unknown dates cannot identify which belief is newer" in instructions

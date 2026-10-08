@@ -320,7 +320,7 @@ with message references or export digest/line references. Slack adjacency is
 explicitly context only, with ambiguity flags and unknown dates. There is no
 separate generated fact database or unbounded transcript injection. Corrections,
 source removal and withdrawal are checked again during materialization. Native
-sources are fetched again before use, with a two-second timeout per source;
+sources are fetched again before use, with a four-second timeout per source and six seconds total per reply;
 failed fetches exclude the evidence. Membership verification and guild scope
 remain required. Missing memory never disables an ordinary reply.
 
@@ -342,3 +342,71 @@ reservation exceeds the documented patch rejection ceiling times the highest
 published multiplier. This is a conservative engineering bound, not a quoted
 Luna token formula. The two-image limit also preserves the existing 200,000-token
 pricing boundary. Text-heavy requests can still exceed that boundary and pause.
+
+
+## Private evidence graph (2.6.0)
+
+`memory-graph.sqlite3` is a separate schema-1 SQLite store on the existing volume,
+owned by UID/GID 10001 with mode 0600. It stores typed nodes/edges, references and
+fingerprints rather than copied raw text. Reviewed observations include qualified
+summaries, source dates/unknown dates, confidence basis, extraction provenance,
+status and expiry. Source stores remain authoritative. No new service is needed.
+
+Only a trusted operator can initialize/populate/import the graph. Channel messages
+cannot invoke these commands or authorize aliases, derivations or access:
+
+```sh
+ssh pi5 'docker exec wcb-bot trubot-graph init'
+ssh pi5 'docker exec wcb-bot trubot-graph populate --limit 200'
+ssh pi5 'docker exec wcb-bot trubot-graph import --manifest /var/lib/trubot/private-study/manifest.json'
+ssh pi5 'docker exec wcb-bot trubot-graph status'
+ssh pi5 'docker exec wcb-bot trubot-graph sweep'
+ssh pi5 'docker exec wcb-bot trubot-graph remove --id <reviewed-observation-id>'
+```
+
+Initialization is exclusive and never happens at runtime. Repeat bounded
+population batches until `remaining` is zero and visual processing is zero.
+Each batch and checkpoint commits atomically; interruption/replay is safe.
+The checkpoint is for an initial source snapshot. Later sources sorting before
+it need a future incremental population workflow. Do not mistake it for continuous
+extraction. Capacity is 30,000 nodes; lookup scans at most 1,000 entity/concept
+nodes. Reviewed manifests are private, at most 128 KB and 100 observations.
+Each observation has 1-3 distinct human supports, at most four entities/concepts,
+a summary of at most 600 characters, review/provenance, confidence basis, status
+and optional timezone-aware expiry. Duplicate source text is not corroboration.
+Actual model-assisted studies use the existing maintenance ledger. Exact support
+quote checks and a second contextual review reject unsupported interpretations;
+agent review is not human review. Source text and model output remain untrusted.
+
+Runtime follows matching entity/concept aliases through observations to source
+support. A neighborhood must fit four observations and five sources as a whole;
+both sides of a recorded contradiction are included or the neighborhood is
+omitted. Native supports are refreshed through authenticated Discord reads before
+derivations can be rendered. A failed refresh or changed fingerprint excludes the
+derivation. Slack support preserves digest, block/line references and unknown dates.
+Image nodes link captured hashes and native episodes but remain explicitly
+unstudied and cannot support a personal belief. Live image inputs still use pixels.
+
+Native observe/batch/edit/delete/prune and historical source removal sweep affected
+graph state after committing the source update. Invalid or expired observations
+and orphan concepts are erased; local graph backups are removed. Every read also
+checks current source fingerprints, so interrupted cleanup or stale graph restore
+cannot make a removed source valid. Missing/unwritable/corrupt graph state pauses
+graph use; it is never recreated. Ordinary replies still work. Native intake may
+report a graph cleanup failure after its source transaction has committed.
+
+`trubot-learning forget` removes the graph database, SQLite sidecars and documented
+`backups/memory-graph-*.sqlite3*` files. Loaded graph clients and stale restored
+copies are blocked by the independent withdrawal marker. The usage ledger is
+preserved. Private study staging, operator copies and off-device backups require
+their owning cleanup process; remove temporary studies after verification.
+
+Back up with SQLite's online backup API while holding the shared learning lock,
+using a mode-0600 `backups/memory-graph-<UTC>.sqlite3`. Retain at most seven days.
+Verify integrity, counts and disposable restore against authoritative sources.
+Source corrections since a backup still win during lookup. Reapply operator
+observation deletions after restoration; no external deletion registry exists.
+Preserve the withdrawal marker independently. Do not replace usage state.
+Image rollback retains graph bytes. Releases before 2.6.0 do not clean graph files
+on withdrawal, so use a compatible operator tool or explicitly erase those private
+files while preserving the marker. Off-device recovery/deletion remains unverified.

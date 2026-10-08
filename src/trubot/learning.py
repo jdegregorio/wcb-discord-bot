@@ -243,10 +243,20 @@ class LearningStore:
         )
         db.execute("DELETE FROM invalidations WHERE id=? AND deleted=0", (message.id,))
 
+    def _sweep_graph(self, *, now: datetime) -> None:
+        # Optional graph state never initializes itself. Its own source comparison
+        # still blocks stale restored derivations even if cleanup was interrupted.
+        from trubot.graph import GraphStore
+
+        graph = GraphStore(self)
+        if graph.path.exists() or graph.path.is_symlink():
+            graph.sweep(now=now)
+
     def observe(self, message: SourceMessage, *, now: datetime) -> None:
         with self._transaction() as db:
             self._upsert(db, message, now)
             self._prune(db, now)
+        self._sweep_graph(now=now)
 
     def commit_batch(
         self, channel_id: int, messages: Sequence[SourceMessage], *, now: datetime
@@ -269,6 +279,7 @@ class LearningStore:
                     (max(message.id for message in messages), channel_id),
                 )
             self._prune(db, now)
+        self._sweep_graph(now=now)
 
     def invalidate(
         self, channel_id: int, message_ids: Sequence[int], *, deleted: bool, now: datetime
@@ -298,6 +309,7 @@ class LearningStore:
                         (message_id, channel_id),
                     )
             self._prune(db, now)
+        self._sweep_graph(now=now)
 
     def verification_targets(self, channel_id: int, *, limit: int = 2) -> list[int]:
         with self._transaction() as db:
@@ -325,6 +337,7 @@ class LearningStore:
     def prune(self, *, now: datetime) -> None:
         with self._transaction() as db:
             self._prune(db, now)
+        self._sweep_graph(now=now)
 
     def forget(self, *, now: datetime) -> None:
         """Erase local learning evidence and durably block stale backup restoration.
@@ -361,12 +374,14 @@ class LearningStore:
         # Historical Slack sources share the same withdrawal boundary. These
         # fixed filenames never include the separate spending ledger.
         copies.extend(self.path.parent.glob("archives.sqlite3*"))
+        copies.extend(self.path.parent.glob("memory-graph.sqlite3*"))
         if backups.exists() or backups.is_symlink():
             _private(backups)
             if not backups.is_dir():
                 raise LearningUnavailable("Private backup directory required")
             copies.extend(backups.glob(self.path.stem + "-*.sqlite3*"))
             copies.extend(backups.glob("archives-*.sqlite3*"))
+            copies.extend(backups.glob("memory-graph-*.sqlite3*"))
         for copy in copies:
             _private(copy)
             if not stat.S_ISREG(copy.lstat().st_mode):

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "wcb-trubot"
-version = "2.5.0"
+version = "2.6.0"
 description = "A small, production-grade Discord home for Trubot."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -21,6 +21,7 @@ dependencies = [
 [project.scripts]
 trubot = "trubot.app:main"
 trubot-learning = "trubot.learning:main"
+trubot-graph = "trubot.graph:main"
 trubot-archives = "trubot.archives:main"
 trubot-budget = "trubot.budget:main"
 trubot-healthcheck = "trubot.health:main"
