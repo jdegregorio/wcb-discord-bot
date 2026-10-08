@@ -1,0 +1,57 @@
+{
+  "release": "2.7.1",
+  "commit": "602e44f9070ac9a089eb3fb6618beb75e4979d72",
+  "image_digest": "sha256:d5981cb774329af225d608575e5db684e4769c7ef539cdf2590ed931cdfca7b9",
+  "real_discord_gateway": true,
+  "actual_owner_authored_questions": true,
+  "actual_bot_channel_posts": true,
+  "private_development_membership_verified": true,
+  "league_test_posts": 0,
+  "before": {"fresh_baseball_direct_passed": false, "development_candidates": 0, "source_guild_candidates": 5},
+  "after": [
+    {"case": "baseball-direct", "passed": true, "response_seconds": 5.9},
+    {"case": "baseball-followup", "passed": true, "response_seconds": 4.708},
+    {"case": "year-2020-paraphrase", "passed": true, "response_seconds": 3.053},
+    {"case": "year-2020-verbatim", "passed": true, "response_seconds": 2.654}
+  ],
+  "support_review": {
+    "separate_same_model_maintenance_reviews": 3,
+    "checks_per_review": ["supported", "specific_recall", "scope_honest"],
+    "all_checks_passed": true,
+    "verbatim_source_substring_check": true,
+    "explicit_export_label_and_unknown_date_check": true,
+    "raw_source_or_derived_answer_text_in_report": false,
+    "private_message_references": "content-free app-volume operator audit"
+  },
+  "coverage": {"labeled_2020_documents": 1, "eligible_target_blocks_in_labeled_export": 75, "native_records": 34, "graph_claims": 1, "graph_human_sources": 439},
+  "quality": {"tests": 278, "branch_inclusive_coverage_percent": 95.72, "all_six_local_gates": true, "tested_tree_matches_merged_tree": true, "installed_changed_source_hashes_match": true},
+  "ci": {"pull_request": 37791681378, "merged_main": 37791860508, "image_publish_both_architectures": 37792028135},
+  "health": {
+    "started_at": "2026-10-08T14:26:26.770383433Z",
+    "healthy_after_validation": true,
+    "restarts": 0,
+    "response_errors": 0,
+    "disconnects": 0,
+    "learning_or_memory_warnings": 0,
+    "validation_helper_shared_heartbeat_incident": true,
+    "one_failed_health_probe_then_automatic_heartbeat_recovery": true,
+    "separate_validation_path_corrected": true
+  },
+  "cost": {
+    "tracked_month_usd_estimate": 0.030952825,
+    "runtime_usd_estimate": 0.00386242,
+    "maintenance_usd_estimate": 0.027090405,
+    "delta_since_first_measured_baseline_usd": 0.00147874,
+    "attempts": 165,
+    "unsettled_attempts": 0,
+    "pre_guard_spend": "unknown",
+    "provider_billing": "not reconciled",
+    "added_paid_infrastructure": false
+  },
+  "limitations": [
+    "Four sampled development exchanges establish the reported repair, not universal recall or general character fidelity.",
+    "The model reviewed its own runtime model's outputs in separate requests; no independent human grading is claimed.",
+    "Historical export labels are not individual message dates.",
+    "No new graph claim, complete native history or historical pixel interpretation was added."
+  ]
+}
