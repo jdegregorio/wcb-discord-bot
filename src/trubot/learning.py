@@ -358,11 +358,15 @@ class LearningStore:
         audit = self.path.parent / "identity-audit.json"
         backups = self.path.parent / "backups"
         copies = [audit] if audit.exists() or audit.is_symlink() else []
+        # Historical Slack sources share the same withdrawal boundary. These
+        # fixed filenames never include the separate spending ledger.
+        copies.extend(self.path.parent.glob("archives.sqlite3*"))
         if backups.exists() or backups.is_symlink():
             _private(backups)
             if not backups.is_dir():
                 raise LearningUnavailable("Private backup directory required")
             copies.extend(backups.glob(self.path.stem + "-*.sqlite3*"))
+            copies.extend(backups.glob("archives-*.sqlite3*"))
         for copy in copies:
             _private(copy)
             if not stat.S_ISREG(copy.lstat().st_mode):

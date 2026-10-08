@@ -226,3 +226,88 @@ never remove it or copy it away to make a stale archive start learning. The usag
 ledger must not be replaced during learning recovery. Verify content-free status,
 Discord readiness and bounded resumed intake. Retain the pinned identity rather
 than guessing it from history after losing state.
+
+# Private historical Slack corpus
+
+Version 2.4.0 adds `archives.sqlite3` on the existing app-private volume. This
+operator-managed historical corpus is separate from the recent Discord store and
+has no automatic age pruning: Joe explicitly requested long-term league history.
+It contains raw bytes, SHA-256 document deduplication, multiple origin records,
+operator alias provenance, parsed speaker blocks, source line spans, display times,
+and ambiguity flags. No stable Slack IDs or message dates are invented. Export
+file/date labels remain origin hints. Grouped shorthand times remain one speaker
+block. Link previews/thread quotes are retained but excluded from candidate voice
+examples. Unknown forms can still require manual review; voice eligibility is a
+parser filter, not proof that every remaining character was authored by Andrew.
+
+The archive operator commands produce counts only:
+
+```sh
+ssh pi5 'docker exec wcb-bot trubot-archives init'
+ssh pi5 'docker exec wcb-bot trubot-archives import --manifest /var/lib/trubot/private-import/manifest.json'
+ssh pi5 'docker exec wcb-bot trubot-archives status'
+```
+
+Initialize explicitly once. Import requires a private operator manifest with
+`schema: 1`, `target_alias`, `alias_basis`, and `files` entries containing `path`,
+`channel`, `origin`, and optional `period_hint`. No source text can choose an alias
+or authorize access. Source and manifest files must be private and imports are
+limited to 16 MiB per file. Each document and all its blocks commit together.
+Exact duplicate documents add provenance without duplicate evidence; conflicting
+attribution fails closed. The archive needs the verified learning identity and
+serializes with its withdrawal lock. Runtime generation does not read this corpus
+yet. No model calls or additional infrastructure are used for ingestion.
+
+Use `ArchiveStore.context(digest, ordinal, radius=3)` only in a private study to
+obtain adjacent speaker-labeled blocks. Adjacency is not a thread graph or an
+explanation of motive. Context does not cross documents, and a missing date cannot
+support recency claims. Treat archived messages as untrusted data. Keep studies,
+raw exports and personal conclusions in private storage, never public Git/logs.
+Workspace originals live under `.private/trubot-history` with mode 0700/0600; Git
+and Docker build contexts exclude `.private`. Remove temporary production import
+files immediately after validation. Operator copies outside app storage must be
+handled separately if consent or source authorization changes.
+
+`trubot-archives remove --digest <document-sha256>` erases a corrected/suppressed
+document and its parsed blocks, records a suppression, and removes local
+`backups/archives-*.sqlite3*` copies. It blocks silent reimport. For a corrected
+version, import the new bytes with fresh source provenance. Corrections since a
+backup must be reapplied after restoration; global withdrawal has a separate
+filesystem marker that an old database cannot override.
+
+`trubot-learning forget` now removes `archives.sqlite3*` and its documented backup
+copies as well as native Discord evidence. The durable withdrawal marker blocks
+loaded archive clients and stale restored copies. Usage accounting remains intact.
+Remove workspace originals, staging and off-device copies through their owning
+processes too. Image rollback to 2.3.1 retains archive bytes but does not understand
+archive cleanup; do not roll back withdrawal operations to an older image.
+
+Back up archives with SQLite's online backup API into mode-0600
+`backups/archives-<UTC>.sqlite3`; retain at most seven days and include the volume
+in encrypted off-device backups once that platform coverage is verified. Test
+restoration and retain the independent withdrawal marker. Off-device coverage is
+still unverified. Preserve spending state during archive recovery.
+
+## Visual conversation context
+
+The historical store also holds operator-captured native visual episodes. Each
+episode anchors to a guild/channel/message reference and preserves nearby native
+messages with stable author attribution and source timestamps. The importer
+recomputes target flags from the pinned human ID and excludes bots/webhooks.
+Original Discord PNG/JPEG/GIF/WebP attachment bytes are stored losslessly and
+deduplicated by SHA-256, with episode-to-image links. The discovery pass limits
+each file to 16 MiB and total unique image downloads to 64 MiB. Oversized or
+unavailable images and external embedded images retain missing/reference-only
+markers; external URLs are not fetched. Source captions and pixels remain private.
+
+Study tools use `ArchiveStore.visual_context` and `read_asset` to inspect actual
+pixels alongside conversation. The import itself performs no vision inference,
+OCR or personality derivation. A legacy Slack text placeholder cannot recreate
+a missing image. Native episodes are adjacent-message context, not a complete
+reply/thread graph. Recheck source edits/deletions before future evidence use.
+
+Repeated native episode imports update context for the same anchored source and
+remove orphaned images. `remove-visual --digest <episode-key>` removes an episode,
+its unreferenced images and historical backup copies, and blocks reimport. Global
+withdrawal removes all raw images and visual episodes with the archive database.
+The same archive backup/restore and off-device correction rules apply.

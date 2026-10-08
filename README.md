@@ -213,3 +213,14 @@ Run `uv run python scripts/evaluate_ingestion.py` for a synthetic acceptance
 check through the real handlers, using disposable storage and captured posts.
 It makes no external calls. Production content-free status is available through
 `docker exec wcb-bot trubot-learning status` on pi5.
+
+## Historical league archives
+
+Operator-imported Slack text exports extend Trubot's private learning corpus with
+other speakers' conversational context. `trubot-archives` preserves raw sources,
+deduplicates files, labels speaker blocks and flags missing dates or ambiguous
+quotes/previews. Accessible native image attachments are retained with nearby
+conversation, while missing or external-only media is marked explicitly. The corpus supports future evidence-backed studies and retrieval;
+archived text does not yet affect replies. See the [evolution plan](docs/trubot-evolution/plan.md)
+and [private storage contract](docs/trubot-evolution/storage.md) for scope, import,
+correction, withdrawal and recovery.
