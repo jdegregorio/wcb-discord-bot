@@ -1,0 +1,70 @@
+{
+  "time": "2026-10-08T02:44:19.703973+00:00",
+  "version": "2.3.1",
+  "source_hashes": {
+    "learning.py": "d73e4e10039d1597627d0e51c15c14fa430e32c1ee2f05ddc71e71e3a65865ac",
+    "ingestion.py": "228daefbe4f46c943775631e2d1e0a8f0a5f957456789fc53b14ac822e872653",
+    "app.py": "71da7881e25d569c7a64b2adaab4f694a7a80f132e2596b3ed761c5c47e4f782",
+    "discord_client.py": "304736a921b6728feeb25fff2c531c5ea6110e8899cbdf5d3e03a4aabb2b785e",
+    "budget.py": "116cbc1bc3c7fe3ba9c1eaefc01565ce4ed04f06a18cc963f15057adaea5b97c",
+    "personality.py": "a3eb8c368994e1b92333b2282573062e877cceaaa8d1d7de6d7daf44f3c6945a",
+    "openai_responder.py": "e9ee5dd57c7fe73f940455ebada06af78d15e6fdc725c4648680eb9229828b09"
+  },
+  "learning": {
+    "schema": 1,
+    "retention_days": 180,
+    "max_messages": 10000,
+    "messages": 34,
+    "pending_corrections": 0,
+    "deletion_markers": 0,
+    "channels": 4,
+    "identity": "privately verified and pinned"
+  },
+  "usage": {
+    "month": "2026-10",
+    "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+    "timezone": "UTC",
+    "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+    "estimated_usd": 0.00584832,
+    "runtime_usd": 0.001047145,
+    "maintenance_usd": 0.004801175,
+    "monthly_limit_usd": 20,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "attempts": 57,
+    "input_tokens": 141265,
+    "cached_input_tokens": 109007,
+    "output_tokens": 1452,
+    "unsettled_attempts": 0,
+    "pre_guard_spend": "unknown; not included"
+  },
+  "ready_age_seconds": 56.235703229904175,
+  "withdrawal_marker_present": false,
+  "storage_permissions": {
+    "trubot": {
+      "mode": "0o700",
+      "uid": 10001,
+      "gid": 10001
+    },
+    "learning.sqlite3": {
+      "mode": "0o600",
+      "uid": 10001,
+      "gid": 10001
+    },
+    "usage.sqlite3": {
+      "mode": "0o600",
+      "uid": 10001,
+      "gid": 10001
+    }
+  },
+  "validation": {
+    "version_matches": true,
+    "installed_hashes_match": true,
+    "live_learning_preserved": true,
+    "spending_attempts_preserved": true,
+    "spending_estimate_not_reset": true,
+    "real_identity_still_pinned": true,
+    "no_real_withdrawal": true,
+    "discord_readiness_fresh": true
+  }
+}

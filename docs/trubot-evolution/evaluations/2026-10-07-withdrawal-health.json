@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-08T02:48:06.071598+00:00",
+  "started_at": "2026-10-08T02:43:18.271851396Z",
+  "observation_seconds": 287,
+  "container_image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:f822b8fb80daa077d174d0b493928daa0dc56db19fb76d1e9bead4b094ec6990",
+  "architecture": "arm64",
+  "oci_revision": "d5369a7f7b228798095073807af6c34757112d5f",
+  "health": "healthy",
+  "restarts": 0,
+  "current_version": "2.3.1",
+  "previous_version": "2.3.0",
+  "previous_image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:e54ef0e705df983c7c0b05e457162c8dae5953687e9d406e6374ce77aa84822a",
+  "since_start": {
+    "responses_failed": 0,
+    "errors": 0,
+    "disconnects": 0,
+    "learning_pauses": 0,
+    "learning_batches": 4,
+    "posted": 0
+  }
+}

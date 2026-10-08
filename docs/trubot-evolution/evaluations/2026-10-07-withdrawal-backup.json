@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-08T02:45:37.089720+00:00",
+  "backup_integrity": "ok",
+  "restoration_matches": true,
+  "messages": 34,
+  "channels": 4,
+  "file_mode": "0o600",
+  "directory_mode": "0o700",
+  "live_state_replaced": false,
+  "off_device_coverage": "unverified"
+}
