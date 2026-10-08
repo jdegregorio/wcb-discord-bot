@@ -122,3 +122,15 @@ humor observations. Follow [living-memory.md](living-memory.md) and the updated
 backlog. Deliver the first operational graph recall increment in the next daily
 cycle, then continuously update/invalidate derived evidence and extend historical
 coverage. Do not equate 2.5.0's keyword/topic retrieval with a finished graph.
+
+
+## Continuous graph milestone (2.7.0)
+
+The next increment adds bounded incremental source population and two-pass text
+distillation through the existing learning lifecycle. It preserves the maintenance
+ledger, source-authoritative correction, withdrawal, operator retirement and
+qualified connected recall. Synthetic handler acceptance and one private corpus
+packet are separate evidence; a rejected corpus packet is not a fidelity gain.
+Next, evaluate contextual humor/style on genuine held-out exchanges and improve
+source coverage and contradiction discovery. Historical pixel interpretation and
+native peers/reply/thread relationships remain separate coherent increments.

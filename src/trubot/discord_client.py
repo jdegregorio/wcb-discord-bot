@@ -16,6 +16,7 @@ from trubot.attention import AttentionTracker
 from trubot.budget import BudgetError
 from trubot.config import Settings
 from trubot.conversation import ConversationMessage, ReplyMode, safety_identifier
+from trubot.distillation import GraphDistiller
 from trubot.health import ReadinessFile
 from trubot.history import (
     HistoryChannel,
@@ -71,6 +72,7 @@ class TruBotClient(discord.Client):
         clock: Clock | None = None,
         sleeper: Sleeper = asyncio.sleep,
         learning: MessageIngestor | None = None,
+        distiller: GraphDistiller | None = None,
     ) -> None:
         super().__init__(intents=intents, allowed_mentions=allowed_mentions)
         self._settings = settings
@@ -84,6 +86,7 @@ class TruBotClient(discord.Client):
         self._response_locks: defaultdict[int, asyncio.Lock] = defaultdict(asyncio.Lock)
         self._closing = False
         self._learning = learning
+        self._distiller = distiller
         self._memory = ContextMemory(learning.store) if learning is not None else None
         self._learning_task: asyncio.Task[None] | None = None
 
@@ -240,6 +243,8 @@ class TruBotClient(discord.Client):
         while True:
             try:
                 await self._learning.cycle(self)
+                if self._distiller is not None:
+                    await self._distiller.cycle(self)
             except Exception:
                 # Transport/library failures must pause and retry, never kill the worker
                 # or expose exception payloads containing private source data.

@@ -13,6 +13,7 @@ from trubot.attention import AttentionTracker
 from trubot.budget import BudgetError, UsageLedger
 from trubot.config import ConfigurationError, Settings
 from trubot.discord_client import TruBotClient
+from trubot.distillation import GraphDistiller
 from trubot.health import ReadinessFile
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningStore, LearningUnavailable
@@ -78,6 +79,7 @@ def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> Tr
         readiness=readiness,
         intents=intents,
         learning=learning,
+        distiller=GraphDistiller(learning, responder, clock=learning.clock) if learning else None,
         allowed_mentions=discord.AllowedMentions.none(),
     )
 

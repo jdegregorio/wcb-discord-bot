@@ -176,8 +176,6 @@ class GraphStore:
         if not 1 <= limit <= 200:
             raise LearningUnavailable("Graph batches must be bounded")
         with self._transaction() as (db, source):
-            row = db.execute("SELECT cursor FROM checkpoints WHERE stream='sources'").fetchone()
-            cursor = row[0] if row else ""
             refs = [
                 {"kind": "discord", "message_id": r[0]}
                 for r in source.execute(
@@ -196,7 +194,9 @@ class GraphStore:
                     ]
             except (LearningUnavailable, OSError):
                 pass
-            batch = sorted((r for r in refs if _key(r) > cursor), key=_key)[:limit]
+            present = {r[0] for r in db.execute("SELECT id FROM nodes WHERE kind='human_source'")}
+            pending = sorted((r for r in refs if _key(r) not in present), key=_key)
+            batch = pending[:limit]
             for ref in batch:
                 snapshot = self._snapshot(ref, source, now=now)
                 if snapshot is None:
@@ -319,118 +319,126 @@ class GraphStore:
             return {
                 "visual_processed": visual_processed,
                 "processed": len(batch),
-                "remaining": max(0, len([r for r in refs if _key(r) > cursor]) - len(batch)),
+                "remaining": max(0, len(pending) - len(batch)),
             }
 
     def import_observation(self, item: dict[str, Any], *, now: datetime) -> None:
         """Trusted private operator input. Human-source content cannot invoke this API."""
         with self._transaction() as (db, source):
-            kind = item["kind"]
-            if kind not in {"claim", "preference", "humor", "style"}:
-                raise LearningUnavailable("Unsupported reviewed observation")
-            if item["status"] not in {"active", "tentative", "contested", "superseded"}:
-                raise LearningUnavailable("Explicit observation status required")
-            if (
-                item.get("reviewed_by_operator") is not True
-                or not isinstance(item.get("confidence_basis"), str)
-                or not 1 <= len(item["confidence_basis"]) <= 500
-                or not isinstance(item.get("extraction_provenance"), str)
-                or not 1 <= len(item["extraction_provenance"]) <= 300
-                or not 1 <= len(item["supports"]) <= 3
-                or not 1 <= len(item["entities"]) <= 4
-                or not 1 <= len(item["summary"]) <= 600
-            ):
-                raise LearningUnavailable("Bounded evidence and review provenance required")
-            expiry = item.get("expires_at")
-            if expiry:
-                expiry = _time(datetime.fromisoformat(expiry))
-            if expiry and _time(datetime.fromisoformat(expiry)) <= _time(now):
-                raise LearningUnavailable("Observation has expired")
-            snapshots = []
-            for ref in item["supports"]:
-                snapshot = self._snapshot(ref, source, now=now)
-                if snapshot is None:
-                    raise LearningUnavailable(
-                        "Only current attributed human sources can support beliefs"
-                    )
-                snapshots.append(snapshot)
-            if len({s["content_hash"] for s in snapshots}) != len(snapshots):
-                raise LearningUnavailable("Duplicate support is not corroboration")
-            key = "observation:" + item["id"]
-            data = {
-                k: item[k]
-                for k in ("summary", "status", "confidence_basis", "extraction_provenance")
-            }
-            data |= {
-                "supports": snapshots,
-                "extraction_version": VERSION,
-                "observed_at": _time(now),
-                "source_times": [s["source_time"] for s in snapshots],
-                "unknown_date": any(s["unknown_date"] for s in snapshots),
-                "expires_at": expiry,
-            }
-            self._node(db, key, kind, data)
-            db.execute(
-                "DELETE FROM edges WHERE origin=? OR (target=? AND relation='supports')", (key, key)
-            )
-            for snapshot in snapshots:
-                src = _key(snapshot["ref"])
-                self._node(
-                    db,
-                    src,
-                    "human_source",
-                    snapshot
-                    | {
-                        "extraction_version": VERSION,
-                        "observed_at": _time(now),
-                        "confidence_basis": "Attribution checked; see linked observation",
-                        "status": "active",
-                    },
-                )
-                self._edge(db, src, "supports", key, snapshot | data)
-            for entity in item["entities"]:
-                if (
-                    entity["kind"] not in {"entity", "concept"}
-                    or not 1 <= len(entity["aliases"]) <= 12
-                ):
-                    raise LearningUnavailable("Bounded typed entity aliases required")
-                if any(not isinstance(a, str) or not 2 <= len(a) <= 80 for a in entity["aliases"]):
-                    raise LearningUnavailable("Invalid entity alias")
-                entity_key = entity["kind"] + ":" + entity["id"]
-                self._node(
-                    db,
-                    entity_key,
-                    entity["kind"],
-                    {
-                        "aliases": entity["aliases"],
-                        "extraction_version": VERSION,
-                        "observed_at": _time(now),
-                        "confidence_basis": "Attribution checked; see linked observation",
-                        "source_times": data["source_times"],
-                        "unknown_date": data["unknown_date"],
-                        "status": "tentative",
-                    },
-                )
-                self._edge(
-                    db,
-                    key,
-                    "about" if kind in {"claim", "preference"} else "exemplifies",
-                    entity_key,
-                    data,
-                )
-            for other in item.get("contradicts", []):
-                other_key = "observation:" + other
-                if not db.execute("SELECT 1 FROM nodes WHERE id=?", (other_key,)).fetchone():
-                    raise LearningUnavailable("Contradiction requires an existing observation")
-                self._edge(db, key, "contradicts", other_key, data)
-                for contested in (key, other_key):
-                    old = json.loads(
-                        db.execute("SELECT data FROM nodes WHERE id=?", (contested,)).fetchone()[0]
-                    )
-                    old["status"] = "contested"
-                    db.execute("UPDATE nodes SET data=? WHERE id=?", (_json(old), contested))
-            self._bound(db)
+            self._write_observation(db, source, item, now=now)
         self._remove_backups()
+
+    def _write_observation(
+        self,
+        db: sqlite3.Connection,
+        source: sqlite3.Connection,
+        item: dict[str, Any],
+        *,
+        now: datetime,
+        automated: bool = False,
+    ) -> None:
+        kind = item["kind"]
+        if kind not in {"claim", "preference", "humor", "style"}:
+            raise LearningUnavailable("Unsupported reviewed observation")
+        if item["status"] not in {"active", "tentative", "contested", "superseded"}:
+            raise LearningUnavailable("Explicit observation status required")
+        if (
+            (not automated and item.get("reviewed_by_operator") is not True)
+            or not isinstance(item.get("confidence_basis"), str)
+            or not 1 <= len(item["confidence_basis"]) <= 500
+            or not isinstance(item.get("extraction_provenance"), str)
+            or not 1 <= len(item["extraction_provenance"]) <= 300
+            or not 1 <= len(item["supports"]) <= 3
+            or not 1 <= len(item["entities"]) <= 4
+            or not 1 <= len(item["summary"]) <= 600
+        ):
+            raise LearningUnavailable("Bounded evidence and review provenance required")
+        expiry = item.get("expires_at")
+        if expiry:
+            expiry = _time(datetime.fromisoformat(expiry))
+        if expiry and _time(datetime.fromisoformat(expiry)) <= _time(now):
+            raise LearningUnavailable("Observation has expired")
+        snapshots = []
+        for ref in item["supports"]:
+            snapshot = self._snapshot(ref, source, now=now)
+            if snapshot is None:
+                raise LearningUnavailable(
+                    "Only current attributed human sources can support beliefs"
+                )
+            snapshots.append(snapshot)
+        if len({s["content_hash"] for s in snapshots}) != len(snapshots):
+            raise LearningUnavailable("Duplicate support is not corroboration")
+        key = "observation:" + item["id"]
+        data = {
+            k: item[k] for k in ("summary", "status", "confidence_basis", "extraction_provenance")
+        }
+        data |= {
+            "supports": snapshots,
+            "extraction_version": VERSION,
+            "observed_at": _time(now),
+            "source_times": [s["source_time"] for s in snapshots],
+            "unknown_date": any(s["unknown_date"] for s in snapshots),
+            "expires_at": expiry,
+            "review_kind": "automated-two-pass" if automated else "operator",
+        }
+        self._node(db, key, kind, data)
+        db.execute(
+            "DELETE FROM edges WHERE origin=? OR (target=? AND relation='supports')", (key, key)
+        )
+        for snapshot in snapshots:
+            src = _key(snapshot["ref"])
+            self._node(
+                db,
+                src,
+                "human_source",
+                snapshot
+                | {
+                    "extraction_version": VERSION,
+                    "observed_at": _time(now),
+                    "confidence_basis": "Attribution checked; see linked observation",
+                    "status": "active",
+                },
+            )
+            self._edge(db, src, "supports", key, snapshot | data)
+        for entity in item["entities"]:
+            if entity["kind"] not in {"entity", "concept"} or not 1 <= len(entity["aliases"]) <= 12:
+                raise LearningUnavailable("Bounded typed entity aliases required")
+            if any(not isinstance(a, str) or not 2 <= len(a) <= 80 for a in entity["aliases"]):
+                raise LearningUnavailable("Invalid entity alias")
+            entity_key = entity["kind"] + ":" + entity["id"]
+            self._node(
+                db,
+                entity_key,
+                entity["kind"],
+                {
+                    "aliases": entity["aliases"],
+                    "extraction_version": VERSION,
+                    "observed_at": _time(now),
+                    "confidence_basis": "Attribution checked; see linked observation",
+                    "source_times": data["source_times"],
+                    "unknown_date": data["unknown_date"],
+                    "status": "tentative",
+                },
+            )
+            self._edge(
+                db,
+                key,
+                "about" if kind in {"claim", "preference"} else "exemplifies",
+                entity_key,
+                data,
+            )
+        for other in item.get("contradicts", []):
+            other_key = "observation:" + other
+            if not db.execute("SELECT 1 FROM nodes WHERE id=?", (other_key,)).fetchone():
+                raise LearningUnavailable("Contradiction requires an existing observation")
+            self._edge(db, key, "contradicts", other_key, data)
+            for contested in (key, other_key):
+                old = json.loads(
+                    db.execute("SELECT data FROM nodes WHERE id=?", (contested,)).fetchone()[0]
+                )
+                old["status"] = "contested"
+                db.execute("UPDATE nodes SET data=? WHERE id=?", (_json(old), contested))
+        self._bound(db)
 
     @staticmethod
     def _bound(db: sqlite3.Connection) -> None:
@@ -518,6 +526,7 @@ class GraphStore:
     def sweep(self, *, now: datetime) -> int:
         """Erase derivations after source changes; keep source fingerprints authoritative."""
         erased = 0
+        invalid_sources = set()
         with self._transaction() as (db, source), ExitStack() as stack:
             archive = None
             try:
@@ -538,7 +547,20 @@ class GraphStore:
                 if invalid:
                     db.execute("DELETE FROM nodes WHERE id=?", (row["id"],))
                     db.execute("DELETE FROM nodes WHERE id=?", ("episode:" + row["id"],))
+                    if row["kind"] == "human_source":
+                        invalid_sources.add(row["id"])
+                        db.execute(
+                            "DELETE FROM checkpoints WHERE stream IN (?, ?)",
+                            ("study:" + row["id"], "study-veto:" + row["id"]),
+                        )
                     erased += 1
+            for checkpoint in db.execute(
+                "SELECT stream, cursor FROM checkpoints WHERE stream LIKE 'study:%'"
+            ).fetchall():
+                if invalid_sources.intersection(
+                    json.loads(checkpoint["cursor"]).get("source_keys", [])
+                ):
+                    db.execute("DELETE FROM checkpoints WHERE stream=?", (checkpoint["stream"],))
             db.execute(
                 "DELETE FROM nodes WHERE kind IN ('visual','captured_human') AND id NOT IN "
                 "(SELECT origin FROM edges WHERE relation='part-of')"
@@ -563,6 +585,15 @@ class GraphStore:
 
     def remove(self, key: str) -> None:
         with self._transaction() as (db, _source):
+            row = db.execute("SELECT data FROM nodes WHERE id=?", (key,)).fetchone()
+            if row:
+                data = json.loads(row[0])
+                if data.get("review_kind") == "automated-two-pass":
+                    for support in data["supports"]:
+                        db.execute(
+                            "INSERT OR REPLACE INTO checkpoints VALUES (?, ?)",
+                            ("study-veto:" + _key(support["ref"]), support["fingerprint"]),
+                        )
             db.execute(
                 "DELETE FROM nodes WHERE id=? AND kind IN ('claim','preference','humor','style')",
                 (key,),
@@ -585,6 +616,15 @@ class GraphStore:
                 "schema": 1,
                 "nodes": dict(db.execute("SELECT kind, COUNT(*) FROM nodes GROUP BY kind")),
                 "edges": db.execute("SELECT COUNT(*) FROM edges").fetchone()[0],
+                "studies": dict(
+                    db.execute(
+                        "SELECT json_extract(cursor, '$.outcome'), COUNT(*) FROM checkpoints "
+                        "WHERE stream LIKE 'study:%' GROUP BY json_extract(cursor, '$.outcome')"
+                    )
+                ),
+                "study_vetoes": db.execute(
+                    "SELECT COUNT(*) FROM checkpoints WHERE stream LIKE 'study-veto:%'"
+                ).fetchone()[0],
                 "checkpoints": db.execute("SELECT COUNT(*) FROM checkpoints").fetchone()[0],
             }
 

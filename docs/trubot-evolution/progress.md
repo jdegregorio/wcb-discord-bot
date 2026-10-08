@@ -694,3 +694,48 @@ Next increment: continuous bounded graph population/distillation with source
 invalidation, richer contextual observations and proper held-out conversations.
 Preserve the existing spending ledger, withdrawal marker and runtime allowlist.
 Image-dependent historical interpretation still requires actual pixel/frame study.
+
+
+## 2026-10-08 05:00 Pacific run: continuous graph learning candidate
+
+Base `d811d99e333cc2ad7d53a9ff48e43bea391edbf8`, fetched before creating the new
+managed `trubot-daily-20261008-0500` worktree and feature branch. No unfinished
+evolution PR overlapped. Joe's primary checkout remains untouched at `0d116e9`.
+
+Chosen increment: keep the graph learning from new sources so qualified connected
+memory can evolve between operator studies. A synthetic reproduction showed that
+new native evidence sorting before the prior Slack cursor stayed outside the graph
+(1 source instead of 2). Population now selects missing references in bounded
+batches, and a background two-pass text learner creates source-backed tentative
+observations through the existing learning lifecycle and maintenance ledger.
+
+One study every four hours considers at most six related excerpts. Exact attributed
+quotes, distinct support, conditions, a separate contextual review, source refresh,
+atomic fingerprint checks, explicit expiry and recorded conflicts gate acceptance.
+Corrections reopen affected studies, withdrawal blocks loaded/restored clients,
+and operator retirement prevents automatic reuse of unchanged supports.
+Ordinary replies run independently; the learner never posts a Discord message.
+
+All six local gates pass for 2.7.0: 264 tests, 95.60% branch-inclusive coverage,
+locked sync, formatting, lint, strict source typing and package build. Synthetic
+live acceptance passes 8/8, including actual direct/reaction/follow-up generation
+with captured sends, durable pacing, correction and withdrawal. The first fixture
+with two exchanges produced zero observations; three distinct dated exchanges
+passed extraction and review in 7.62 seconds. Concept-selected questions are not
+independent human holdouts, and this sample did not yield a nonlexical alias.
+Seven existing synthetic recovery checks also pass.
+
+A private clone of the real graph studied six excerpts (one native, five Slack
+with unknown dates) plus ten adjacency blocks in 3.03 seconds. It correctly added
+no qualified observation in this sample, using one accounted provider call. Only
+counts are public; raw text and derived data remained private and the clone was
+removed. This is enabling learning progress, not a measured real-character fidelity
+improvement. Native peer setup, complete replies/threads, semantic contradiction
+coverage and historical pixel interpretation remain explicit gaps.
+
+[Candidate validation](evaluations/2026-10-08-distillation-candidate.json) separates
+synthetic flow evidence from the private rejected packet. No paid service was added.
+The conservative 31-day study reservation envelope is USD 1.124928 within the
+existing USD 2 maintenance cap. Runtime USD 18 and total USD 20 caps remain.
+Release, CI, installed acceptance, live study outcome, backup/restore, digest,
+health and final measured usage are recorded after rollout below.

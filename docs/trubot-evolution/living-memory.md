@@ -17,8 +17,10 @@ episodes and 96 original image hashes. A 24-exchange private contextual study
 retained one qualified claim with three sources after strict review. Other
 proposed interpretations were rejected. Captured images are linked but marked
 unstudied; they do not yet establish historical visual interpretations or beliefs.
-Continuous extraction, peer nodes, real reply/thread relationships, broader
-entities and evaluated humor/style observations remain further increments.
+Version 2.7.0 adds continuous bounded text extraction with a separate contextual
+review, source-driven checkpoint invalidation and operator retirement. Peer nodes,
+real reply/thread relationships, broader entities and evaluated humor/style
+observations remain further increments. Read progress.md for actual rollout state.
 
 The automation runs six standalone tasks daily at 01:00, 05:00, 09:00, 13:00,
 17:00 and 21:00 Pacific. Each run uses a fresh managed worktree, inspects prior

@@ -67,11 +67,15 @@ bounded Discord reply
 - `memory.py` combines bounded lexical source recall with reviewed graph traversal.
   It materializes current raw evidence and qualified observations only after native
   source verification, preserving attribution and unknown dates.
-- `graph.py` owns private typed nodes/edges and operator population checkpoints.
+- `graph.py` owns private typed nodes/edges, incremental population and study checkpoints.
   Sources, captured image hashes, episodes, the verified person and qualified
   concepts/observations are connected on the existing volume. Runtime compares
   evidence fingerprints; source mutations erase invalid derived state and backups.
-  Continuous model extraction and historical visual interpretation remain future work.
+  Historical visual interpretation remains future work.
+- `distillation.py` runs bounded two-pass text studies beside replies. Durable pacing,
+  exact quote validation, native refresh and atomic source fingerprint checks gate
+  tentative observations. Source invalidation reopens affected studies, and operator
+  retirement blocks automatic reuse of unchanged supporting evidence.
 - `app.py` is the composition root. Importing any module is side-effect free.
 
 Operator withdrawal writes and synchronizes a private marker beside the learning
