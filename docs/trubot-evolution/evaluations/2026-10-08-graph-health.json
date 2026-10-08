@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-10-08T08:59:42.084779+00:00",
+  "container": {
+    "image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:2f21ce0ad4b4819b9dcdc603539bfbe3e7ac2cd3271d416d9c62650a04777412",
+    "revision": "fdfd2ea52163095255ccafd7728b51b3f488b383",
+    "health": "healthy",
+    "restarts": 0,
+    "started": "2026-10-08T08:46:10.715397536Z"
+  },
+  "uptime_seconds": 811.37,
+  "discord_readiness": true,
+  "events_since_start": {
+    "errors": 0,
+    "response_failures": 0,
+    "disconnects": 0,
+    "learning_channel_pauses": 0,
+    "learning_pauses": 0,
+    "memory_unavailable": 0,
+    "learning_batches": 12,
+    "normal_posts": 0
+  },
+  "usage": {
+    "month": "2026-10",
+    "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+    "timezone": "UTC",
+    "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+    "estimated_usd": 0.025489775,
+    "runtime_usd": 0.001783145,
+    "maintenance_usd": 0.02370663,
+    "monthly_limit_usd": 20,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "attempts": 141,
+    "input_tokens": 450621,
+    "cached_input_tokens": 293990,
+    "output_tokens": 5942,
+    "unsettled_attempts": 0,
+    "pre_guard_spend": "unknown; not included"
+  },
+  "run_estimated_usd": 0.01370494,
+  "private_production_staging_removed": true,
+  "no_test_league_posts": true,
+  "infrastructure_added_usd": 0,
+  "rollback_needed": false
+}

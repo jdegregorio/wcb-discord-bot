@@ -1,0 +1,58 @@
+{
+  "version": "2.6.0",
+  "merged_commit": "fdfd2ea52163095255ccafd7728b51b3f488b383",
+  "digest": "sha256:2f21ce0ad4b4819b9dcdc603539bfbe3e7ac2cd3271d416d9c62650a04777412",
+  "no_source_override": true,
+  "no_discord_writes": true,
+  "graph_acceptance": {
+    "cases": [
+      {
+        "mode": "direct",
+        "passed": true,
+        "graph_used": true,
+        "context_bytes": 4564,
+        "retrieval_ms": 919.35,
+        "response_ms": 4054.54
+      },
+      {
+        "mode": "reaction",
+        "passed": true,
+        "graph_used": true,
+        "context_bytes": 4161,
+        "retrieval_ms": 1648.56,
+        "response_ms": 4201.95
+      },
+      {
+        "mode": "followup",
+        "passed": true,
+        "graph_used": true,
+        "context_bytes": 4632,
+        "retrieval_ms": 950.65,
+        "response_ms": 3123.0
+      }
+    ],
+    "model_rubric_fidelity_passes": 3,
+    "model_rubric_unsupported_claims": 0
+  },
+  "regression_acceptance": {
+    "passed": 5,
+    "total": 5,
+    "cases": [
+      "grounded-preference-direct",
+      "grounded-preference-followup",
+      "actual-pixels-direct",
+      "actual-pixels-reaction",
+      "unsupported-bot-memory-excluded"
+    ]
+  },
+  "synthetic_storage_acceptance": {
+    "passed": 7,
+    "total": 7,
+    "real_withdrawal_invoked": false
+  },
+  "limitations": [
+    "One reviewed concept and three synthetic paraphrases, not a broad or independent human holdout benchmark",
+    "Same-model contextual rubric; no human review",
+    "Historical visual relationships are populated, but pixel interpretation and continuous distillation remain future work"
+  ]
+}
