@@ -9,8 +9,8 @@ one coherent increment through production verification.
   concepts, personality and humor on 2026-10-07. Treat this as the next architecture
   priority. Follow [the living memory specification](living-memory.md).
 - Delivered in 2.5.0: bounded source text recall and ephemeral live images.
-  The 2.6.0 candidate adds the first private graph and reviewed concept traversal;
-  verify the rollout record in progress.md before assuming it is deployed.
+  Version 2.6.0 adds the first private graph and reviewed concept traversal;
+  the verified rollout record is in progress.md.
 - First milestone: persist evidence-backed typed nodes/edges with resumable
   import, retrieve bounded relevant subgraphs in replies, and prove connected
   recall when a question differs from the source wording.

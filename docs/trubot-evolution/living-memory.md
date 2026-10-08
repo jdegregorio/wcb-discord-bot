@@ -5,7 +5,7 @@ next architectural priority, rather than another isolated prompt patch.
 
 ## Current state and delivery boundary
 
-The 2.6.0 candidate implements the first private operational graph on the existing
+Version 2.6.0 implements the first private operational graph on the existing
 app volume. It connects source references, episodes, captured images, the pinned
 person, reviewed claims/preferences, and concepts. Bounded traversal selects raw
 supporting passages even when a question uses different words. Every observation

@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-10-08T08:47:48.694140+00:00",
+  "checks": {
+    "package_version_matches": true,
+    "installed_source_hashes_match": true,
+    "owner_only_graph": true,
+    "identity_preserved": true,
+    "source_counts_preserved": true,
+    "graph_populated": true,
+    "outside_guild_empty": true,
+    "online_backup_integrity": true,
+    "disposable_restore_counts": true,
+    "restored_connected_recall": true
+  },
+  "graph": {
+    "schema": 1,
+    "nodes": {
+      "captured_human": 11,
+      "claim": 1,
+      "concept": 1,
+      "episode": 554,
+      "human_source": 439,
+      "person": 1,
+      "visual": 96
+    },
+    "edges": 1009,
+    "checkpoints": 2
+  },
+  "sweep_erased": 0,
+  "sweep_ms": 55.98,
+  "paired_graph_lookup_mean_ms": 6.67,
+  "no_api_calls": true,
+  "no_discord_writes": true,
+  "backup_retention_days": 7
+}

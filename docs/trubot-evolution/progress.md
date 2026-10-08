@@ -632,3 +632,65 @@ The final package build, runtime PR, CI, merged revision, immutable release/imag
 installed acceptance, backup/restore, deployed health and final usage are recorded
 below as the release cycle completes. Raw studies, responses and expectations stay
 private and temporary; no personal conclusion, source ID or message enters Git.
+
+
+### Verified graph rollout
+
+- Runtime [PR #35](https://github.com/jdegregorio/wcb-discord-bot/pull/35) merged
+  as `fdfd2ea52163095255ccafd7728b51b3f488b383`, with the same tree as tested
+  candidate `08c6795`. [PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37751230809)
+  and [merged-main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37751456378)
+  passed. All six local merged-revision gates passed again: 238 tests,
+  95.88% branch-inclusive coverage, format, lint, strict typing, locked sync and build.
+- [v2.6.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.6.0)
+  targets that exact tested commit. [Both-architecture image build](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37751611468)
+  succeeded before the existing locked app transaction deployed on reverified
+  pi5/aarch64/Ubuntu 24.04. The running immutable digest is
+  `sha256:2f21ce0ad4b4819b9dcdc603539bfbe3e7ac2cd3271d416d9c62650a04777412`.
+  The OCI revision, installed version and seven installed source hashes match.
+  Previous healthy rollback digest is
+  `sha256:625190b095cf625b300b26ae0a3822844a8bd8230d61c09860718bf391129b2a`
+  (2.5.0). No rollback was needed. Image rollback retains graph bytes; older
+  withdrawal tools do not clean them, so use a compatible operator cleanup tool.
+- Installed release acceptance uses the actual package with no source/dependency
+  override and captures all sends. Connected recall passes 3/3 in direct, reaction
+  and follow-up modes, with graph evidence verified in actual generation contexts.
+  Installed contextual model review passes 3/3 with zero unsupported claims in
+  this sample. Five existing preference, live-pixel and bot-exclusion checks pass.
+  Seven installed synthetic graph recovery checks pass without touching the real
+  learning identity or invoking real withdrawal.
+- Ten production continuity/recovery checks pass. Private graph mode is 0600;
+  the pinned identity, 34 native sources, 16 historical documents and 96 images
+  remain. Graph population is 439 eligible human references, 554 episodes,
+  96 image nodes, 11 captured target humans, one qualified claim and one concept,
+  with 1,009 edges and two checkpoints. A private online backup and disposable
+  restore preserve counts and connected recall. No live database or ledger was
+  replaced. Full source sweep erased zero records in 55.98 ms; paired live/restore
+  graph lookups averaged 6.67 ms locally. Source refetch plus graph retrieval took
+  0.92-1.65 seconds in installed acceptance, with 3.12-4.20-second reply latency.
+- [Installed acceptance](evaluations/2026-10-08-graph-installed.json) and
+  [production data/recovery](evaluations/2026-10-08-graph-production.json) contain
+  counts and checks only. The final health, accounting and private staging cleanup
+  are recorded in the following checkpoint. No historical image understanding,
+  continuous distillation or comprehensive personality memory is claimed.
+
+
+Final health at `2026-10-08T08:59:42.084779+00:00`: healthy readiness, zero
+restarts, errors, response failures, disconnects, learning pauses and memory
+warnings over 811 seconds. Twelve bounded learning batches completed; there were
+no normal league posts in this quiet window. All test sends were captured.
+Production and local temporary study copies, private responses, expectations,
+candidate modules and disposable restores were removed. Authoritative sources,
+the active graph, private seven-day graph backup and usage state remain intact.
+[Health/accounting evidence](evaluations/2026-10-08-graph-health.json) records
+141 settled attempts, zero unsettled, 450,621 input, 293,990 cached input and
+5,942 output tokens. Tracked conservative spending is USD 0.025489775, of which
+this run added USD 0.01370494, entirely from the existing maintenance allowance.
+Runtime spend is unchanged; no paid infrastructure was added. Estimates are not
+billing records, and pre-guard October spend remains unknown. Off-device
+recovery/deletion remains unverified. No rollback or permission blocker remains.
+
+Next increment: continuous bounded graph population/distillation with source
+invalidation, richer contextual observations and proper held-out conversations.
+Preserve the existing spending ledger, withdrawal marker and runtime allowlist.
+Image-dependent historical interpretation still requires actual pixel/frame study.
