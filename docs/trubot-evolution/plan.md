@@ -146,3 +146,18 @@ If authenticated human posting is unavailable, record that exact blocker rather
 than claiming a real Discord test. Development questions and bot answers are not
 Andrew's learning evidence. Record private message references outside Git and public
 pass/fail summaries in progress.md.
+
+
+## Natural recall and ongoing character audits
+
+Ordinary memory answers should give supported content directly. Retain source dates,
+unknown-date metadata, confidence, contradictions and provenance internally. Explain
+uncertainty briefly when timing affects the answer or someone asks for dates/evidence;
+a year used to find a past exchange does not require an export-label disclaimer.
+
+Each run reviews bounded recent bot activity separately from development probes and
+compares attributed human context. Count coverage and disclose evaluator limitations.
+Private source references belong on the app volume; public reports contain only
+methods, defect categories and aggregate results. Do not infer human habits from a
+one-off quote, bot answer or peer claim. Continue contextual graph learning after
+fixing the request-aware presentation defect in 2.7.2.

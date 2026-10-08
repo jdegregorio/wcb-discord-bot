@@ -503,3 +503,18 @@ manually during the next smoke run, and remove this directory during operator
 withdrawal cleanup. The usage ledger remains independent. A separate validation
 client must use its own ephemeral readiness path before construction so closing
 it cannot remove the running bot's heartbeat.
+
+
+## Natural recall presentation, 2.7.2
+
+Presentation is selected from the focused human request. It never changes private
+source metadata, approved attribution, graph confidence, correction, withdrawal or
+the usage ledger. Broad year questions can retrieve labeled exports without
+asserting a calendar date or announcing the export label. Explicit timing/evidence
+requests retain concise relevant qualifications; filenames are never dated proof.
+
+Content-free character audits share the seven-day manual smoke-test retention and
+withdrawal cleanup path above. Keep only source/message references, sample counts,
+generic defect flags and timing. Do not retain raw conversations, private preference
+values or generated answer text in these artifacts. Structural scans do not replace
+contextual semantic review or establish personality traits.

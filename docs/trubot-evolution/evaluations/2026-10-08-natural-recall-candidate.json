@@ -1,0 +1,40 @@
+{
+  "base": "be52c3c4386faaa10ae437a435456642876133e7",
+  "version": "2.7.2",
+  "gates": {
+    "tests": 296,
+    "branch_coverage_percent": 95.79,
+    "locked_sync": true,
+    "format": true,
+    "lint": true,
+    "mypy": true,
+    "build": true
+  },
+  "actual_pre_fix": {
+    "private_development": true,
+    "human_questions": 1,
+    "gateway_responses": 1,
+    "unsolicited_metadata": true
+  },
+  "audit": {
+    "source_channels": 4,
+    "league_bot_replies": 20,
+    "league_target_messages": 7,
+    "development_bot_replies": 15,
+    "explicit_labeled_smoke_setups": 2,
+    "eligible_heldout_blocks": 12,
+    "unknown_date": true,
+    "independent_episodes_verified": false,
+    "human_metadata": 0,
+    "development_metadata": 3,
+    "unsolicited_development_metadata": 2,
+    "semantic_review": "not independently graded; automated privacy review rejected raw output and provider egress"
+  },
+  "synthetic_live": {
+    "covered_cases": 6,
+    "captured_only": true,
+    "readiness_isolated": true,
+    "lexical_fixture_gap_then_explicit_query_term_pass": true
+  },
+  "release_deployment": "pending"
+}
