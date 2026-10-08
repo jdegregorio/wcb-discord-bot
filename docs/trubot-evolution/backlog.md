@@ -145,3 +145,8 @@ one coherent increment through production verification.
 - Retrieval follow-up: semantic aliases outside the fixed lexical topic vocabulary
   need graph support. A synthetic unmapped-team phrase demonstrated this gap.
   Expand concepts from reviewed source evidence, rather than hardcoding real tastes.
+
+- The 2.7.2 actual six-case smoke sequence found a source-follow-up continuity gap.
+  2.7.3 matches a recent quoted reply to current attributed human text as a lookup
+  key, not personal evidence. Acceptance includes peer/fabricated quote exclusion,
+  source changes, native freshness, guild/year scope and real quoted-source recall.

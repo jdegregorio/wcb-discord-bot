@@ -161,3 +161,7 @@ Private source references belong on the app volume; public reports contain only
 methods, defect categories and aggregate results. Do not infer human habits from a
 one-off quote, bot answer or peer claim. Continue contextual graph learning after
 fixing the request-aware presentation defect in 2.7.2.
+
+Referential evidence questions must remain connected to the quoted exchange. A
+bot quotation can be a bounded lookup key only when current eligible human source
+text matches; it cannot create a belief or bypass source freshness or withdrawal.

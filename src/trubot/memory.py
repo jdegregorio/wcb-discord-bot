@@ -116,6 +116,12 @@ def years(text: str) -> set[str]:
     return set(re.findall(r"(?<!\d)(?:19|20)\d{2}(?!\d)", text))
 
 
+def quotation_key(text: str) -> str:
+    # Normalize typographic punctuation only for source matching. This never
+    # turns bot output into evidence: a current eligible authored source must match.
+    return " ".join(re.sub(r"[^\w\s]", "", text.casefold()).split())
+
+
 class RecallPresentation(StrEnum):
     CONTENT = "content"
     TIMING = "timing"
@@ -176,8 +182,11 @@ class ContextMemory:
         self.archives = ArchiveStore(learning)
         self.graph = GraphStore(learning)
 
-    def candidates(self, query: str, *, guild_id: int, now: datetime) -> list[MemoryCandidate]:
-        query_terms = terms(query[:8000])
+    def candidates(
+        self, query: str, *, guild_id: int, now: datetime, quotation: str = ""
+    ) -> list[MemoryCandidate]:
+        quote = quotation_key(quotation[:500])
+        query_terms = terms(quotation[:500] if quote else query[:8000])
         query_years = years(query[:8000])
         with self.learning._transaction() as db:
             identity = self.learning._read_identity(db)
@@ -250,7 +259,7 @@ class ContextMemory:
         try:
             # Unknown-date graph observations cannot override a requested period.
             observations = (
-                [] if query_years else self.graph.lookup(query, guild_id=guild_id, now=now)
+                [] if query_years or quote else self.graph.lookup(query, guild_id=guild_id, now=now)
             )
             ids = [item["id"] for item in observations]
             for item in observations:
@@ -272,7 +281,10 @@ class ContextMemory:
                         )
         except LearningUnavailable:
             pass
-        ranked = sorted(graph_candidates + native + historical, key=lambda c: c.rank, reverse=True)
+        available = graph_candidates + native + historical
+        if quote:
+            available = [c for c in available if quote in quotation_key(c.content)]
+        ranked = sorted(available, key=lambda c: c.rank, reverse=True)
         unique: list[MemoryCandidate] = []
         seen: set[str] = set()
         for candidate in ranked:
@@ -290,6 +302,7 @@ class ContextMemory:
         verified_after: datetime | None = None,
         now: datetime | None = None,
         request: str = "",
+        quotation: str = "",
     ) -> str:
         # Materialize from current storage, not the search result. Corrections,
         # suppressions and withdrawal between search and rendering take effect.
@@ -349,6 +362,9 @@ class ContextMemory:
                             ],
                         }
                     )
+        if quotation:
+            quote = quotation_key(quotation[:500])
+            evidence = [item for item in evidence if quote in quotation_key(item["text"])]
         if not evidence:
             return ""
         ids = list(dict.fromkeys(key for c in candidates for key in c.source.get("graph_ids", [])))

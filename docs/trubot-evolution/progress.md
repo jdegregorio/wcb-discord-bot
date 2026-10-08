@@ -907,8 +907,9 @@ source metadata and evidence. Prior bot wording cannot select a disclosure mode.
 Broad recall answers should stay natural without claiming unsupported dates;
 explicit timing/evidence questions retain relevant uncertainty.
 
-A bounded local audit scanned the latest 100 messages in each of four verified
-source channels within 14 days: 20 bot replies and seven target-human messages.
+A bounded local audit scanned the latest 100 messages in each of three authenticated league
+channels within 14 days: five bot replies and seven target-human messages.
+The fourth configured channel is development and is excluded from league counts.
 Development latest-40/two-day coverage contained 15 bot replies, including two
 explicitly labeled smoke setups; other development exchanges are operator
 conversations, not spontaneous league activity. Twelve separately selected eligible
@@ -939,3 +940,51 @@ allowances are preserved. First baseline estimate USD 0.0314292; billing and
 pre-guard spend remain unknown. No added infrastructure or schema migration.
 Release, required CI, installed checks, actual post-deploy Discord responses,
 digest, health, cost and final audit follow after rollout.
+
+
+### First rollout and source-follow-up correction
+
+[PR #41](https://github.com/jdegregorio/wcb-discord-bot/pull/41) merged as
+`49a60d1a622ba0a5f064f821f90432715ab8648f`, identical to tested `35409ea`.
+[PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37807424418),
+[main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37807585947)
+and [both-architecture publish](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37807850522)
+passed. Immutable [v2.7.2](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.7.2)
+was deployed through the locked transaction on reverified pi5, healthy at
+`sha256:2746f2ac877b195147356a91dc2e896e65157088fc9e6a65f4377495380781be`.
+All four changed installed source hashes and OCI revision matched the release.
+
+Six actual owner-authored Discord questions produced six running gateway replies.
+Five acceptance cases passed: direct baseball, unmentioned baseball follow-up,
+broad year recall, exact sourced quotation and exact-date honesty. Ordinary
+responses had no unsolicited metadata or replacement stock hedge. The quote
+matched a current eligible attributed source substring. Latencies 2.580-4.827 s.
+The sixth source question failed continuity: retrieval selected a different passage
+and the bot denied having the earlier quotation in its current evidence. This
+lookup code was unchanged in 2.7.2. Do not call the six-case acceptance complete.
+
+The same run adds a 2.7.3 repair: a referential date/source question may use a
+recent exact quotation as a lookup key, only after matching it against current
+eligible authored source text. Bot prose remains non-evidence. Other-guild, peer,
+fabricated, changed, wrong-period, stale or withdrawn text cannot satisfy it.
+Rendering rechecks the match after materialization. This reconnects the actual
+quoted exchange without trusting earlier bot assertions. No new graph claim.
+All six gates pass with 299 tests and 95.83% branch-inclusive coverage. A live
+synthetic handler source follow-up passes with isolated readiness and the same
+maintenance ledger. The final real-source continuity check follows deployment.
+
+The first audit loop incorrectly counted the development channel within the
+configured set as league activity. Authenticated channel-guild filtering corrected
+the baseline to three league channels, five bot replies and seven target messages.
+Public candidate counts and private audit references are corrected. Post-deploy
+structural coverage still shows five league bot replies, seven target messages,
+20 development bot replies and 12 human blocks. Development window coverage is
+latest 40 messages, so counts vary with truncation. Historical learning overlap
+is not ruled out; these blocks are not proven independent untouched holdouts.
+No new league activity during rollout is a fidelity success claim.
+
+At 16:25:46 UTC, 2.7.2 was healthy with zero restarts/errors, response failures,
+disconnects, memory warnings, learning pauses or study pauses. Six posts were
+actual development tests. Source stores and graph counts remained unchanged.
+Tracked estimated cost USD 0.03555375, runtime USD 0.006749015 and maintenance
+USD 0.028804735, 180 settled attempts and zero unsettled. Existing caps remain.

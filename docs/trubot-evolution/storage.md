@@ -518,3 +518,7 @@ withdrawal cleanup path above. Keep only source/message references, sample count
 generic defect flags and timing. Do not retain raw conversations, private preference
 values or generated answer text in these artifacts. Structural scans do not replace
 contextual semantic review or establish personality traits.
+
+Version 2.7.3 adds bounded recent quotation lookup for referential timing/evidence
+questions. It searches current attributed source text and rechecks at render time.
+There is no persisted bot-memory cache, new derived state or schema change.
