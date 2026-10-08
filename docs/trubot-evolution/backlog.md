@@ -41,8 +41,8 @@ one coherent increment through production verification.
 
 - 2026-10-07 complementary run: durable operator withdrawal, local evidence and
   backup cleanup, protection against stale database restoration, loaded-worker
-  shutdown, and preservation of spending state. Version 2.3.1 candidate; release
-  and production verification are tracked in progress.md.
+  shutdown, and preservation of spending state. Version 2.3.1 released
+  and verified healthy; rollout evidence is tracked in progress.md.
 
 - 2026-10-07: verified private identity and incremental intake, atomic per-channel
   checkpoints, live events, bounded historical catch-up, edit/delete race guards,

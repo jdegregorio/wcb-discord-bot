@@ -283,51 +283,6 @@
 - Final pre-PR gates: locked all-group sync, formatting, lint, strict typing,
   156 tests (96.43% branch-inclusive coverage), package build and diff checks pass.
 
-## 2026-10-07 complementary run: durable learning withdrawal
-
-- Initial base: `9ac5f50ae2d753f36326d9582977f31859a9c923`; new managed worktree
-  `trubot-daily-20261007-1512`. Joe's primary checkout was untouched.
-- Reconciliation: an earlier active run had no PR during the initial dashboard
-  check. Private state inspection later exposed its incompatible in-progress
-  schema. No state was overwritten or deleted. Its fresh account audit and the
-  current authenticated audit agreed after converting string IDs to integers.
-  This run's duplicate prototype is preserved locally at `f81a554` on
-  `feature/trubot-daily-20261007-1512` and is not part of the released increment.
-- Dependency: prior-run [PR #27](https://github.com/jdegregorio/wcb-discord-bot/pull/27)
-  merged with CI passing as `37f15ed83954728e9a27451cb9d4ab218fdf5b9c`.
-  The complementary branch was rebased onto that fetched main, rather than
-  releasing a competing ingestion schema. Live v2.3.0 is healthy at
-  `sha256:e54ef0e705df983c7c0b05e457162c8dae5953687e9d406e6374ce77aa84822a`.
-- Selected increment: operator withdrawal that cannot be undone by restoring
-  stale private evidence, so future learning has a reliable revocation path.
-  Version 2.3.1 retains schema 1 and the existing app volume.
-- Reproduction: the installed v2.3.0 runbook deletion followed by a compatible
-  mode-0600 stale backup restore reinstates the old identity and accepts evidence.
-  `evaluations/2026-10-07-withdrawal-before.json` records one of seven new
-  acceptance criteria present. This demonstrates a recovery gap, not identity
-  confusion or contamination in current production.
-- Acceptance: command erases records/identity and documented local learning
-  copies; durable marker blocks old restores, initialization, and in-flight
-  transactions. A loaded worker stops without Discord reads. Failed cleanup
-  remains disabled and a retry succeeds. Spending state and normal replies remain
-  available. No real production withdrawal or deletion is performed in validation.
-- Candidate: synthetic installed-handler/library probe passes 7/7 locally and
-  on ARM64. Unit coverage includes unsafe copy targets, symlink markers, disk
-  synchronization failure, stale restores and loaded-worker shutdown. Earlier
-  probe staging missed restored-file permissions and was corrected before the
-  before/after evidence was recorded. Reports contain only synthetic data.
-- Cost: zero API calls, zero Discord writes, zero added paid infrastructure.
-  This increment changes no prompt, model, usage ledger, or monthly limits.
-- Limitations: off-device deletion/recovery remains unverified. Older images do
-  not honor the marker; rollback must preserve the erased identity and must not
-  restore stale learning state. Prior individual corrections still require
-  reapplying source invalidations after backup restoration. Retrieval remains next.
-- Local gates and PR/release/deployment identifiers will be added after verification.
-- Final pre-PR gates: locked sync, format, lint, strict types, 169 tests with
-  96.49% branch-inclusive coverage, package build and diff check all passed.
-  Final ARM64 candidate probe is 7/7 after the directory-sync and runtime
-  composition checks. Provider calls and Discord writes remain zero.
-
 ### Final evidence for the 08:16 intake run
 
 - Implementation commit `938ff4ce3147fae63cb4cee75767017fd696816b`;
@@ -381,3 +336,89 @@
 - This run adds final evidence only after v2.3.0; it does not take credit for the
   complementary withdrawal implementation. Next roadmap step remains grounded
   preference derivation/retrieval with source freshness and correction propagation.
+
+## 2026-10-07 complementary run: durable learning withdrawal
+
+- Initial base: `9ac5f50ae2d753f36326d9582977f31859a9c923`; new managed worktree
+  `trubot-daily-20261007-1512`. Joe's primary checkout was untouched.
+- Reconciliation: an earlier active run had no PR during the initial dashboard
+  check. Private state inspection later exposed its incompatible in-progress
+  schema. No state was overwritten or deleted. Its fresh account audit and the
+  current authenticated audit agreed after converting string IDs to integers.
+  This run's duplicate prototype is preserved locally at `f81a554` on
+  `feature/trubot-daily-20261007-1512` and is not part of the released increment.
+- Dependency: prior-run [PR #27](https://github.com/jdegregorio/wcb-discord-bot/pull/27)
+  merged with CI passing as `37f15ed83954728e9a27451cb9d4ab218fdf5b9c`.
+  The complementary branch was rebased onto that fetched main, rather than
+  releasing a competing ingestion schema. Live v2.3.0 is healthy at
+  `sha256:e54ef0e705df983c7c0b05e457162c8dae5953687e9d406e6374ce77aa84822a`.
+- Selected increment: operator withdrawal that cannot be undone by restoring
+  stale private evidence, so future learning has a reliable revocation path.
+  Version 2.3.1 retains schema 1 and the existing app volume.
+- Reproduction: the installed v2.3.0 runbook deletion followed by a compatible
+  mode-0600 stale backup restore reinstates the old identity and accepts evidence.
+  `evaluations/2026-10-07-withdrawal-before.json` records one of seven new
+  acceptance criteria present. This demonstrates a recovery gap, not identity
+  confusion or contamination in current production.
+- Acceptance: command erases records/identity and documented local learning
+  copies; durable marker blocks old restores, initialization, and in-flight
+  transactions. A loaded worker stops without Discord reads. Failed cleanup
+  remains disabled and a retry succeeds. Spending state and normal replies remain
+  available. No real production withdrawal or deletion is performed in validation.
+- Candidate: synthetic installed-handler/library probe passes 7/7 locally and
+  on ARM64. Unit coverage includes unsafe copy targets, symlink markers, disk
+  synchronization failure, stale restores and loaded-worker shutdown. Earlier
+  probe staging missed restored-file permissions and was corrected before the
+  before/after evidence was recorded. Reports contain only synthetic data.
+- Cost: zero API calls, zero Discord writes, zero added paid infrastructure.
+  This increment changes no prompt, model, usage ledger, or monthly limits.
+- Limitations: off-device deletion/recovery remains unverified. Older images do
+  not honor the marker; rollback must preserve the erased identity and must not
+  restore stale learning state. Prior individual corrections still require
+  reapplying source invalidations after backup restoration. Retrieval remains next.
+- Final pre-PR gates: locked sync, format, lint, strict types, 169 tests with
+  96.49% branch-inclusive coverage, package build and diff check all passed.
+  Final ARM64 candidate probe is 7/7 after the directory-sync and runtime
+  composition checks. Provider calls and Discord writes remain zero.
+
+- Runtime change: [PR #28](https://github.com/jdegregorio/wcb-discord-bot/pull/28)
+  merged normally as `d5369a7f7b228798095073807af6c34757112d5f`.
+  [PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37718899000)
+  and [merged-main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37718971366)
+  passed. Merged main exactly matched the tested tree; all six merged gates passed.
+- Release: [v2.3.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.3.1)
+  targets that tested merged commit. The [image build](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37719061039)
+  passed for AMD64 and ARM64 before the app-scoped transaction deployed on
+  reverified pi5/aarch64/Ubuntu 24.04.4. No sudo was assumed.
+- Running immutable digest:
+  `sha256:f822b8fb80daa077d174d0b493928daa0dc56db19fb76d1e9bead4b094ec6990`.
+  OCI revision, installed version and all seven inspected source hashes match.
+  Previous healthy v2.3.0 is
+  `sha256:e54ef0e705df983c7c0b05e457162c8dae5953687e9d406e6374ce77aa84822a`.
+  No rollback was needed. Both images retain learning schema 1 and spending state.
+- Installed acceptance passes 7/7 with disposable synthetic state. All eight
+  installation/continuity checks pass: readiness fresh, real identity still pinned,
+  34 real source records preserved, permissions 0700/0600 with UID/GID 10001,
+  and existing API attempt counts/estimated balance not reset. No real learning
+  withdrawal was performed and no test posts reached Discord.
+- Cost snapshot: 57 settled attempts, 141,265 input, 109,007 cached input and
+  1,452 output tokens. Conservative app estimate USD 0.00584832 (runtime
+  USD 0.001047145, maintenance USD 0.004801175). These include the earlier
+  run's character evaluations and normal runtime activity. This complementary
+  increment itself made zero provider calls. Earlier October spend remains unknown.
+- Recovery: consistent private learning backup passes integrity check and a
+  disposable restore preserves counts/identity. Both source and backup remain
+  private; live state was never replaced. Off-device recovery/deletion remains
+  unverified, with that dependency recorded in the backlog.
+- Final health at 2026-10-08T02:48:06.071598+00:00: healthy, zero restarts and fresh readiness.
+  Over 287 seconds since startup, zero response failures, ERROR lines,
+  disconnects or learning pauses; 4 bounded learning batches completed and
+  0 live league posts occurred. This verifies recovery and intake continuity,
+  not long-term character fidelity or complete historical coverage.
+- Transient GitHub connection failure during PR creation was retried successfully.
+  Deployment used the existing immutable transaction and preserved the recorded
+  rollback target. Disposable staging was removed after preserving all reports.
+  [Evidence PR #30](https://github.com/jdegregorio/wcb-discord-bot/pull/30)
+  preserves this rollout without changing runtime source. Its documentation
+  conflict with prior-run [PR #29](https://github.com/jdegregorio/wcb-discord-bot/pull/29)
+  was resolved by preserving both release records.

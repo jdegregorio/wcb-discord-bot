@@ -156,12 +156,6 @@ transport checks only. CI tests the harness without making API calls.
 an irrelevant earlier bot reply.
 ## API spending guard
 
-An authorized operator can withdraw private learning with `trubot-learning forget`.
-It erases the archive, pinned identity, adjacent audit, and documented local learning
-backups, and writes a private durable marker. An old database restore cannot resume
-intake while that marker exists. The usage ledger and normal replies remain available.
-See [the storage runbook](docs/trubot-evolution/storage.md) for recovery boundaries.
-
 Every provider attempt reserves a conservative cost in a private SQLite ledger
 before network I/O. The UTC calendar-month allowance is USD 20: USD 18 for
 normal replies and USD 2 shared by evaluations and future learning. The adapter
@@ -187,6 +181,12 @@ in [the storage runbook](docs/trubot-evolution/storage.md). There is no added pa
 infrastructure. Keep all app-key API use, including evaluation, on this ledger.
 
 ## Private learning intake
+
+An authorized operator can withdraw private learning with `trubot-learning forget`.
+It erases the archive, pinned identity, adjacent audit, and documented local learning
+backups, and writes a private durable marker. An old database restore cannot resume
+intake while that marker exists. The usage ledger and normal replies remain available.
+See [the storage runbook](docs/trubot-evolution/storage.md) for recovery boundaries.
 
 Version 2.3.0 starts a reliable evidence intake loop. A trusted operator must
 first corroborate Andrew's unique stable account with authenticated author and
