@@ -34,13 +34,14 @@
     "provider_calls": 0
   },
   "quality": {
-    "tests_passed": 264,
-    "branch_inclusive_coverage_percent": 95.6,
+    "tests_passed": 265,
+    "branch_inclusive_coverage_percent": 95.67,
     "locked_sync": true,
     "format": true,
     "lint": true,
     "strict_types": true,
-    "build": true
+    "build": true,
+    "final_quote_independence_hardening": true
   },
   "no_discord_writes": true,
   "no_new_paid_infrastructure": true,

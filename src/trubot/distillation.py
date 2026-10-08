@@ -304,6 +304,7 @@ def validate_proposal(proposed: Any, study: Study) -> dict[str, Any] | None:
     if not isinstance(supports, list) or not 2 <= len(supports) <= 3:
         raise LearningUnavailable("Independent support required")
     indexes = []
+    quotes = set()
     for support in supports:
         if not isinstance(support, dict) or set(support) != {"source", "quote"}:
             raise LearningUnavailable("Invalid support")
@@ -317,9 +318,11 @@ def validate_proposal(proposed: Any, study: Study) -> dict[str, Any] | None:
         ):
             raise LearningUnavailable("Exact attributed quote required")
         indexes.append(index)
+        quotes.add(quote)
     if (
         0 not in indexes
         or len(set(indexes)) != len(indexes)
+        or len(quotes) != len(indexes)
         or len({study.snapshots[i]["content_hash"] for i in indexes}) != len(indexes)
     ):
         raise LearningUnavailable("Anchor and distinct evidence required")

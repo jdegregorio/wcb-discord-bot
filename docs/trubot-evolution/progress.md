@@ -716,7 +716,7 @@ Corrections reopen affected studies, withdrawal blocks loaded/restored clients,
 and operator retirement prevents automatic reuse of unchanged supports.
 Ordinary replies run independently; the learner never posts a Discord message.
 
-All six local gates pass for 2.7.0: 264 tests, 95.60% branch-inclusive coverage,
+All six local gates pass for 2.7.0: 265 tests, 95.67% branch-inclusive coverage,
 locked sync, formatting, lint, strict source typing and package build. Synthetic
 live acceptance passes 8/8, including actual direct/reaction/follow-up generation
 with captured sends, durable pacing, correction and withdrawal. The first fixture

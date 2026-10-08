@@ -521,3 +521,16 @@ async def test_source_check_after_reservation_stops_withdrawn_provider_request(p
     check.assert_awaited_once()
     assert fake.responses.request is None
     assert private_test_ledger.summary()["unsettled_attempts"] == 1
+
+
+def test_duplicate_quotes_with_changed_surrounding_text_are_not_corroboration(stores):
+    learning, _, graph = stores
+    shared = "I order salted caramel after dinner."
+    learning.observe(source(content=shared + " First context."), now=NOW)
+    learning.observe(source(1, content=shared + " Copied context."), now=NOW)
+    graph.populate(now=NOW)
+    study = StudyStore(graph).prepare(now=NOW, channel_ids=frozenset({10}))
+    with pytest.raises(LearningUnavailable, match="distinct evidence"):
+        validate_proposal(
+            proposal(study, supports=[{"source": i, "quote": shared} for i in [0, 1]]), study
+        )
