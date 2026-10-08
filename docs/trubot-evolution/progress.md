@@ -739,3 +739,55 @@ The conservative 31-day study reservation envelope is USD 1.124928 within the
 existing USD 2 maintenance cap. Runtime USD 18 and total USD 20 caps remain.
 Release, CI, installed acceptance, live study outcome, backup/restore, digest,
 health and final measured usage are recorded after rollout below.
+
+### Verified continuous-learning rollout
+
+- Runtime [PR #37](https://github.com/jdegregorio/wcb-discord-bot/pull/37) merged
+  as `59ab845dc2617f9c575f18606e936742b8367940`. Its tree matches tested
+  `1437b0cff2abb7e143bcc74bf4ee5b121062bfeb` (`d9c8a29`).
+  [Final PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37777789637)
+  and [merged-main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37777924644)
+  passed. Merged local gates also pass: 265 tests, 95.67% branch-inclusive coverage,
+  locked sync, formatting, lint, strict source typing and build.
+- Immutable [v2.7.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.7.0)
+  targets the tested merged commit. [Both-architecture publish](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37778122825)
+  succeeded before the installed locked `pi-app deploy wcb-bot 2.7.0` transaction.
+  Reverified pi5/aarch64/Ubuntu 24.04.4. Running immutable image is
+  `sha256:880469ddabe26075d43daee59c5d698daac382c4365d0af5e4ea3a37722e4e35`.
+  Installed package version, OCI revision and seven runtime source hashes match.
+  Previous healthy 2.6.0 image is
+  `sha256:2f21ce0ad4b4819b9dcdc603539bfbe3e7ac2cd3271d416d9c62650a04777412`.
+  No rollback needed. Image rollback retains graph state; retire any bad new
+  observation or restore a verified compatible graph copy separately if required.
+  Never replace the usage ledger during recovery.
+- Installed acceptance uses the released package with no source/dependency override.
+  Live synthetic checks pass 8/8, with three captured direct/reaction/follow-up
+  sends and two accounted study calls. Study time was 6.59 seconds. Questions
+  were selected from a synthetic concept and did not test independent human
+  holdouts or nonlexical aliases. Seven installed synthetic recovery checks pass.
+  No real withdrawal or league-channel test post was invoked.
+- The actual background worker completed one bounded study and retained zero new
+  observations. The graph retains the original qualified claim/concept, 439 human
+  sources, 554 episodes, 96 image nodes, 11 captured humans and 1,009 edges.
+  Four checkpoints include durable pacing and the rejected anchor. The pinned
+  identity, 34 native sources, four approved channels, 16 exports, 4,299 historical
+  blocks, 115 visual episodes and 96 original images remain intact. Historical
+  pixels remain unstudied. No real-character fidelity gain is claimed.
+- Private online pre/post-release graph backups have mode 0600, valid integrity,
+  and matching disposable restore counts. The post-release copy also preserves
+  the study state and pacing. No live source/graph/usage database was replaced.
+  Source correction and withdrawal protections remain authoritative on restore.
+  Off-device recovery/deletion remains unverified.
+- Accounting after installed validation: 154 settled attempts, zero unsettled,
+  480,447 input, 302,405 cached input and 6,679 output tokens. Conservative tracked
+  total USD 0.0286188; this run added USD 0.003129025, all maintenance.
+  Runtime estimate remains USD 0.001783145. Existing USD 18 runtime / USD 2
+  maintenance limits are intact, and no paid infrastructure was added. These
+  estimates are not provider billing; pre-guard October spend remains unknown.
+
+[Rollout, acceptance, recovery and cost evidence](evaluations/2026-10-08-distillation-release.json)
+contains counts only. Final health and staging cleanup are recorded below after
+confirming later ingestion cycles preserve the study lease. Next: evaluate genuine
+held-out contextual humor/style and improve source neighborhoods and contradiction
+coverage. Full native peers, reply/thread history and actual historical frame study
+remain separate increments.
