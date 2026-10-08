@@ -547,3 +547,36 @@ source removal, withdrawal, image bounds, CDN restriction, focus/reference pixel
 and image spending reservations. Complete historical interpretation, generated
 belief confidence/contradiction management and all-years native context remain
 roadmap work.
+
+Production verification: [PR 33](https://github.com/jdegregorio/wcb-discord-bot/pull/33)
+merged as `fdcc8bb7817c575a87e5820d82567b7ce556df0b`. PR CI
+`37724953704`, merged-main CI `37725067781` and both-architecture publish
+`37725155753` passed. Release
+[v2.5.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.5.0) is
+healthy on pi5 at immutable digest
+`sha256:625190b095cf625b300b26ae0a3822844a8bd8230d61c09860718bf391129b2a`.
+The platform release timer deployed it; the explicit scoped deployment command
+confirmed it was already current. Prior rollback digest is
+`sha256:02b07f6c17117b708b0e704b514ca6c82012e7d4e8d0d6962995ba518dba9bbf`.
+
+Installed acceptance passes 5/5 using the released wheel, with no source/dependency
+override and zero Discord writes. Health shows zero restarts, errors, response
+failures, disconnects or learning pauses and four completed learning batches.
+All 16 documents, 4,299 blocks, 115 visual episodes and 96 original assets remain.
+The ledger records 102 settled attempts, no unsettled attempts, and conservative
+tracked spending of USD 0.011784835 since guard initialization. Earlier October
+spend remains unknown. Temporary candidate code, dependencies and private expected
+results were removed. Production evidence is
+[acceptance](evaluations/2026-10-07-live-context-production.json) and
+[health/usage](evaluations/2026-10-07-live-context-health.json).
+
+Joe then requested a living knowledge graph connecting raw exchanges to entities,
+distilled concepts, preferences, personality and humor. The current release is
+explicitly a foundation, not that graph. [Living memory](living-memory.md) defines
+typed nodes/relationships, source provenance and confidence basis, temporal
+validity, counterexamples, invalidation, graph retrieval and response-level
+acceptance. The daily automation is verified active at 01:00 local time with its
+existing model, reasoning, execution and notification settings; its prompt now
+directs the next run to implement the first operational graph milestone. The
+weekly recap is updated to report graph readiness, continuous updates and source
+coverage separately. Implementation is planned, not yet completed.
