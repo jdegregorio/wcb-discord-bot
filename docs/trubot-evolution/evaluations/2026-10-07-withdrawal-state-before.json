@@ -1,0 +1,32 @@
+{
+  "time": "2026-10-08T02:42:29.291307+00:00",
+  "learning": {
+    "schema": 1,
+    "retention_days": 180,
+    "max_messages": 10000,
+    "messages": 34,
+    "pending_corrections": 0,
+    "deletion_markers": 0,
+    "channels": 4,
+    "identity": "privately verified and pinned"
+  },
+  "usage": {
+    "month": "2026-10",
+    "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+    "timezone": "UTC",
+    "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+    "estimated_usd": 0.004367755,
+    "runtime_usd": 0.001047145,
+    "maintenance_usd": 0.00332061,
+    "monthly_limit_usd": 20,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "attempts": 42,
+    "input_tokens": 104288,
+    "cached_input_tokens": 80263,
+    "output_tokens": 1124,
+    "unsettled_attempts": 0,
+    "pre_guard_spend": "unknown; not included"
+  },
+  "withdrawal_marker_present": false
+}

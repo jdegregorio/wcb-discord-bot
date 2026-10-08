@@ -1,0 +1,14 @@
+{
+  "time": "2026-10-08T02:39:27.837609+00:00",
+  "container_image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:e54ef0e705df983c7c0b05e457162c8dae5953687e9d406e6374ce77aa84822a",
+  "started_at": "2026-10-07T17:47:58.344151216Z",
+  "health": "healthy",
+  "restarts": 0,
+  "last_24h": {
+    "responses_failed": 0,
+    "errors": 0,
+    "disconnects": 5,
+    "learning_pauses": 0,
+    "posted": 1
+  }
+}
