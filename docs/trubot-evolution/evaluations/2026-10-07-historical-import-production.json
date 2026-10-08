@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-08T03:10:41.569670+00:00",
+  "corpus": {
+    "visual_episodes": 115,
+    "image_assets": 96,
+    "image_bytes": 62571650,
+    "schema": 1,
+    "documents": 16,
+    "origins": 27,
+    "blocks": 4299,
+    "target_blocks": 412,
+    "voice_eligible_blocks": 405,
+    "suppressed_documents": 0
+  },
+  "checks": {
+    "raw_export_hashes_match": true,
+    "image_hashes_match": true,
+    "slack_target_alias_correct": true,
+    "nearby_context_available": true,
+    "native_visual_attribution_correct": true,
+    "native_visual_scope_correct": true,
+    "native_timestamps_preserved": true,
+    "private_permissions": true,
+    "consistent_backup_and_restore": true,
+    "existing_native_identity_preserved": true
+  },
+  "visual_episodes_with_target": 12,
+  "unique_target_messages_in_visual_windows": 11,
+  "model_calls_for_import": 0,
+  "vision_analysis_calls": 0,
+  "off_device_backup": "unverified",
+  "idempotent_replay": true,
+  "replayed_manifest_entries": 28
+}

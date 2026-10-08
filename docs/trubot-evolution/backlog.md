@@ -66,7 +66,8 @@ one coherent increment through production verification.
   ingestion with speaker attribution, nearby context and explicit date/quote
   ambiguity. Includes Joe's supplied files and supported early Discord attachments.
   Private historical state shares the verified identity withdrawal boundary.
-  Version 2.4.0 candidate; production evidence is tracked in progress.md.
+  Version 2.4.0 is deployed and the corpus is imported, including 115 visual
+  episodes and 96 original image assets. Production evidence is in progress.md.
 
 
 - 2026-10-07 complementary run: durable operator withdrawal, local evidence and
