@@ -786,8 +786,20 @@ health and final measured usage are recorded after rollout below.
   estimates are not provider billing; pre-guard October spend remains unknown.
 
 [Rollout, acceptance, recovery and cost evidence](evaluations/2026-10-08-distillation-release.json)
-contains counts only. Final health and staging cleanup are recorded below after
-confirming later ingestion cycles preserve the study lease. Next: evaluate genuine
+contains counts only. Later ingestion cycles preserve the one-study lease; final
+health and staging cleanup are recorded below. Next: evaluate genuine
 held-out contextual humor/style and improve source neighborhoods and contradiction
 coverage. Full native peers, reply/thread history and actual historical frame study
 remain separate increments.
+
+
+Final health at `2026-10-08T12:47:11.398513+00:00`: healthy readiness for 361 seconds, zero restarts,
+errors, response failures, disconnects, learning pauses, memory warnings or study
+pauses. Eight bounded channel batches completed across two cycles while study
+completion remained one, proving the production lease prevented another study.
+There were no normal league posts in this window. Usage remained 154 settled
+attempts, zero unsettled; all test sends were captured. This is a short rollout
+window, not a long-term error-rate guarantee. Private validation code and disposable
+studies were removed; only authoritative sources, the graph, documented private
+backups and the unchanged usage ledger remain. No routine permission blocker
+remains. The evidence-only follow-up preserves runtime source identical to v2.7.0.

@@ -92,7 +92,7 @@
     "run_added_estimated_usd": 0.003129025
   },
   "health": {
-    "observed_at": "2026-10-08T12:44:17.882799+00:00",
+    "observed_at": "2026-10-08T12:47:11.398513+00:00",
     "started_at": "2026-10-08T12:41:10.041401122Z",
     "healthy": true,
     "restarts": 0,
@@ -105,12 +105,15 @@
     "memory_warnings": 0,
     "graph_study_pauses": 0,
     "graph_study_completed": 1,
-    "learning_batches": 4,
-    "league_posts": 0
+    "learning_batches": 8,
+    "league_posts": 0,
+    "observed_seconds": 361
   },
   "limitations": [
     "Real corpus studies retained no new observation; this increment enables continuous learning, not a measured character-fidelity gain.",
     "Native peer setup, full native history/reply/thread relationships, actual historical pixel interpretation, and semantic contradiction coverage remain incomplete.",
     "Pre-guard spending, provider billing reconciliation and off-device recovery/deletion remain unverified."
-  ]
+  ],
+  "validation_staging_removed": true,
+  "production_second_cycle_pacing_verified": true
 }
