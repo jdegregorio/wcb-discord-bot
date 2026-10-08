@@ -831,3 +831,59 @@ All six candidate quality gates passed: 278 tests, 95.72% branch-inclusive cover
 locked sync, formatting, lint, strict typing and package build. Regression coverage
 includes all three Discord handler paths, owner/guild/channel isolation, unchanged
 learning counts, native timestamps, export labels and current-origin removal.
+
+### Verified recall rollout and actual Discord smoke tests
+
+Runtime [PR #39](https://github.com/jdegregorio/wcb-discord-bot/pull/39) merged as
+`602e44f9070ac9a089eb3fb6618beb75e4979d72`, with the same tree as tested `96dbf81`.
+[PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37791681378)
+and [merged-main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37791860508)
+passed. All six merged local gates passed again: 278 tests and 95.72% coverage.
+Immutable [v2.7.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.7.1)
+and [both-architecture publish](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37792028135)
+succeeded before the locked pi-app deploy on reverified pi5.
+
+Running image is `sha256:d5981cb774329af225d608575e5db684e4769c7ef539cdf2590ed931cdfca7b9`.
+Installed package version, OCI revision and all three changed source hashes match.
+Previous healthy v2.7.0 remains the compatible rollback target. No schema migration,
+ledger replacement, new graph claim or paid infrastructure was introduced.
+
+Four actual owner-authored questions were sent through the authenticated Chrome
+Discord UI in the private development server. The running gateway posted all four
+answers: direct baseball recall, unmentioned baseball follow-up, a 2020-labeled
+historical paraphrase, and an exact historical quotation with the export label and
+unknown message date explicit. All four passed private support checks; the quotation
+matched an eligible attributed source substring after normalizing punctuation and
+whitespace. Three separate maintenance-model reviews passed groundedness, specific
+recall and scope honesty. Responses took 2.654-5.900 seconds. No captured send or
+injected handler message is counted as a real Discord test. No league test chatter
+was posted. Private message IDs and content-free checks are in the app-volume audit;
+raw excerpts and derived answer text were removed from that artifact.
+
+One separately built validation client initially shared the running bot's readiness
+path. Closing it briefly unlinked that heartbeat and caused one failed health probe.
+The bot's regular heartbeat restored readiness without a restart; replies and data
+were unaffected. The validation helper was corrected to use its own ephemeral path,
+and the daily task now explicitly requires that isolation. Final status is healthy
+with zero restarts, response failures, disconnects or learning/memory warnings.
+This incident is disclosed separately from the successful recall checks.
+
+Native evidence remains 34 records with zero pending corrections; the graph retains
+439 human sources, one claim, 554 episodes, 96 image nodes and 1,009 edges. A current
+2020-labeled export contains 75 eligible target blocks. These are grouped blocks,
+not dated individual-message counts. Complete native history, larger contextual graph
+coverage and actual historical pixel study remain outstanding. Four sampled exchanges
+prove this reported routing/retrieval repair, not complete recall or general fidelity.
+
+Ledger after validation: 165 settled attempts, zero unsettled, 510,152 input tokens,
+315,945 cached input and 7,035 output. Conservative tracked estimate USD 0.030952825
+(runtime USD 0.00386242, maintenance USD 0.027090405). Delta since the first measured
+baseline is USD 0.00147874; the earlier reproduction was already included in that
+baseline. Provider billing and pre-guard October spend remain unknown. Existing
+USD 18 runtime / USD 2 maintenance / USD 20 total limits remain authoritative.
+
+[Content-free release and actual Discord evidence](evaluations/2026-10-08-real-discord-recall.json)
+separates sampled support checks, source coverage, the validation heartbeat incident,
+health and cost. The daily automation is ACTIVE with its six-run schedule and original
+model/settings preserved, and now carries the development context and real-smoke
+requirement. No routine access or approval blocker remains.

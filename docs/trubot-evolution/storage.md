@@ -493,3 +493,13 @@ hints are checked again during rendering, and removed documents cannot supply
 quotes. Native timestamps take priority for dated recall. Unknown-date graph
 observations cannot bypass a requested year. This does not backfill old native
 messages or interpret previously unstudied images.
+
+Content-free operator smoke audits may retain private development question/answer
+message IDs, anonymous case names, boolean checks and latency under
+`/var/lib/trubot/smoke-tests`, directory mode 0700 and files 0600. They store no raw
+source excerpts, source-account mapping, derived answer text or new beliefs, and
+never enter retrieval. Keep seven days of operator evidence; remove older files
+manually during the next smoke run, and remove this directory during operator
+withdrawal cleanup. The usage ledger remains independent. A separate validation
+client must use its own ephemeral readiness path before construction so closing
+it cannot remove the running bot's heartbeat.
