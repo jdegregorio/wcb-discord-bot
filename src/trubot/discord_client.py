@@ -502,9 +502,9 @@ class TruBotClient(discord.Client):
             source_guild_id = learning.identity.guild_id
         # Use the focused topic. Only a context-dependent follow-up needs nearby
         # human messages; prior bot prose must not become evidence or query bait.
-        query = target or ""
-        # Speaker labels and earlier assistant prose are not topic evidence.
-        query = query.split(": ", 1)[-1]
+        # Strip the speaker label once, preserving punctuation in the actual request.
+        request = (target or "").split(": ", 1)[-1]
+        query = request
         if not (terms(query) or years(query)):
             query += " " + " ".join(
                 m.content.split(": ", 1)[-1] for m in history[-4:] if m.role == "user"
@@ -537,7 +537,11 @@ class TruBotClient(discord.Client):
                 verified.append(candidate)
             if self._learning is not None and self._learning.verified:
                 return await asyncio.to_thread(
-                    memory.render, verified, verified_after=verification_started, now=self._clock()
+                    memory.render,
+                    verified,
+                    verified_after=verification_started,
+                    now=self._clock(),
+                    request=request,
                 )
             return ""
         except LearningUnavailable:

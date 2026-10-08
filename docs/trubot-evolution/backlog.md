@@ -119,8 +119,29 @@ one coherent increment through production verification.
   2.7.1 filters native timestamps and matching export period hints, explicitly
   preserving unknown message dates. Existing imports include 2020-labeled sources.
 - Acceptance: actual human Discord direct and follow-up questions return supported
-  baseball preference; 2020 question gives a source-backed quote with date caveat;
+  baseball preference; 2020 question gives supported content naturally; explicit date/evidence
+  questions explain only the relevant uncertainty;
   other guilds/non-owners and withdrawn sources remain excluded. Real Discord
   tests are required each run, separately from fixture and handler checks.
 - Follow-up: independently held-out broader recall, dated all-years native history,
   contextual graph coverage and actual historical pixel studies remain priorities.
+
+
+## Memory-quality correction, 2026-10-08 09:00 run
+
+- Reproduced in actual private Discord: broad year recall added an export-label
+  preamble and exact-date disclaimer, although the question requested content.
+  Cause: memory rendering explicitly required this qualification for every year.
+- 2.7.2 candidate: choose content, timing or evidence presentation from the focused
+  request, independent of retrieved words and prior bot prose. Preserve identical
+  evidence and all source invalidation/withdrawal checks. Rollout in progress.md.
+- Acceptance: ordinary baseball and broad year recall are grounded and direct with
+  no routine metadata or replacement hedge; exact-date requests cannot invent a
+  calendar date; relevant evidence requests remain honest. Test actual Discord.
+- Replenished priority: verify the legacy persona's biographical and habitual-style
+  assumptions against multiple independent attributed contexts, including contrary
+  examples. Current audit measures structural metadata/length only; broader humor,
+  sincerity, stance and relationship fidelity remain unvalidated in this run.
+- Retrieval follow-up: semantic aliases outside the fixed lexical topic vocabulary
+  need graph support. A synthetic unmapped-team phrase demonstrated this gap.
+  Expand concepts from reviewed source evidence, rather than hardcoding real tastes.

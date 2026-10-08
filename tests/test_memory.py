@@ -117,3 +117,58 @@ def test_year_query_native_timestamp_and_numeric_boundaries(store):
     assert len(memory.candidates(f"What did you say in {NOW.year}?", guild_id=77, now=NOW)) == 1
     assert not memory.candidates("What did you say in 2020?", guild_id=77, now=NOW)
     assert years("general_2020-1.txt 20209 12020") == {"2020"}
+
+
+@pytest.mark.parametrize(
+    ("focused_request", "expected"),
+    [
+        ("Who is your baseball team?", "content"),
+        ("What was something you said in 2020?", "content"),
+        ("Quote one thing you said in 2020", "content"),
+        ("Tell me about the old league", "content"),
+        ("When did you say that?", "timing"),
+        ("What day was that?", "timing"),
+        ("Do you know the date of that baseball message?", "timing"),
+        ("What date did you say that?", "timing"),
+        ("Which message date was that?", "timing"),
+        ("How long have you liked baseball?", "timing"),
+        ("Was that before or after the change?", "timing"),
+        ("Are you sure that was in 2020?", "timing"),
+        ("Did you actually say that in 2020?", "timing"),
+        ("What is the source for that?", "evidence"),
+        ("Can you show evidence?", "evidence"),
+        ("Quote the archive and give the exact date", "evidence"),
+    ],
+)
+def test_focused_recall_presentation_distinguishes_content_timing_and_evidence(
+    focused_request, expected
+):
+    from trubot.memory import recall_presentation
+
+    assert recall_presentation(focused_request).value == expected
+
+
+def test_presentation_preserves_identical_grounding_and_unknown_dates(store):
+    archive = ArchiveStore.initialize(store)
+    archive.import_document(
+        b"legacy.target\n  8:01 AM\nI enjoyed the overtime finish.",
+        channel="general",
+        target_alias="legacy.target",
+        alias_basis="Synthetic operator audit",
+        origin={"kind": "synthetic"},
+        period_hint="general_2020.txt",
+        now=NOW,
+    )
+    memory = ContextMemory(store)
+    candidates = memory.candidates("What did you say in 2020?", guild_id=77, now=NOW)
+    requests = ["What did you say in 2020?", "When did you say that?", "Show the source"]
+    rendered = [memory.render(candidates, request=request) for request in requests]
+    data = [json.loads(item.split("\n", 1)[1]) for item in rendered]
+    assert data[0] == data[1] == data[2]
+    assert data[0][0]["source"]["period_is_message_date"] is False
+    assert data[0][0]["source"]["date"].startswith("unknown")
+    assert "ordinary recall" in rendered[0]
+    assert "asks about timing" in rendered[1]
+    assert "asks for evidence" in rendered[2]
+    archive.remove_document(candidates[0].source["document"], now=NOW)
+    assert not memory.render(candidates, request=requests[2])

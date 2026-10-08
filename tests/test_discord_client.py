@@ -566,3 +566,46 @@ async def test_development_owner_recall_reaches_discord_handlers_without_learnin
     assert "White Sox forever" in responder.calls[0][0][0].content
     development.send.assert_awaited_once_with("Hot")
     assert store.status()["messages"] == 1
+
+
+@pytest.mark.asyncio
+async def test_memory_presentation_uses_current_request_not_previous_date_disclaimers(tmp_path):
+    from test_learning import AUDIT
+    from test_learning import NOW as EVIDENCE_NOW
+
+    from trubot.archives import ArchiveStore
+    from trubot.ingestion import MessageIngestor
+    from trubot.learning import LearningStore
+    from trubot.memory import ContextMemory
+
+    store = LearningStore.initialize(tmp_path / "learning.sqlite3", AUDIT, now=EVIDENCE_NOW)
+    archive = ArchiveStore.initialize(store)
+    archive.import_document(
+        b"legacy.target\n  8:01 AM\nI enjoy baseball.",
+        channel="general",
+        target_alias="legacy.target",
+        alias_basis="Synthetic operator audit",
+        origin={"kind": "synthetic"},
+        period_hint="general_2020.txt",
+        now=EVIDENCE_NOW,
+    )
+    client, _, _, _ = make_client(clock=lambda: EVIDENCE_NOW)
+    learning = MessageIngestor(store, frozenset({10}), clock=lambda: EVIDENCE_NOW)
+    learning.verified = True
+    client._learning, client._memory = learning, ContextMemory(store)
+    history = [
+        ConversationMessage("user", "Tim: What is the exact date?"),
+        ConversationMessage("assistant", "The archive message date is unknown."),
+    ]
+    try:
+        ordinary = await client._memory_context(
+            fake_channel(), "Tim: What did you say in 2020?", history
+        )
+        assert "ordinary recall" in ordinary
+        assert "asks about timing" not in ordinary
+        exact = await client._memory_context(
+            fake_channel(), "Tim: When did you say that about baseball?", history
+        )
+        assert "asks about timing" in exact
+    finally:
+        await client.close()

@@ -7,6 +7,7 @@ import re
 from contextlib import suppress
 from dataclasses import dataclass, field
 from datetime import UTC, datetime, timedelta
+from enum import StrEnum
 from typing import Any
 
 from trubot.archives import ArchiveStore
@@ -113,6 +114,53 @@ def score(text: str, query: set[str]) -> int:
 
 def years(text: str) -> set[str]:
     return set(re.findall(r"(?<!\d)(?:19|20)\d{2}(?!\d)", text))
+
+
+class RecallPresentation(StrEnum):
+    CONTENT = "content"
+    TIMING = "timing"
+    EVIDENCE = "evidence"
+
+
+def recall_presentation(request: str) -> RecallPresentation:
+    """Select disclosure from the focused request, never retrieved text or prior replies."""
+    request = request[:8000].casefold()
+    if re.search(r"\b(?:source|evidence|prove|proof|archive|export|provenance)\b", request):
+        return RecallPresentation.EVIDENCE
+    if re.search(
+        r"\b(?:when|date|dated|timestamp)\b|\b(?:which|what) (?:day|month|year)\b|\bhow long\b"
+        r"|\b(?:before|after|earlier|later)\b|\b(?:really|actually|definitely|sure)\b.*\b(?:19|20)\d{2}\b",
+        request,
+    ):
+        return RecallPresentation.TIMING
+    return RecallPresentation.CONTENT
+
+
+def _presentation_guidance(presentation: RecallPresentation) -> str:
+    common = (
+        "Source fields and graph provenance are internal grounding metadata. "
+        "Archive period hints label an export, never prove a message date. "
+        "Do not assert an unsupported calendar date or infer which unknown-date belief is newer. "
+    )
+    if presentation is RecallPresentation.EVIDENCE:
+        return common + (
+            "The focused request asks for evidence: give only the relevant support and explain "
+            "any date limitation needed to assess it briefly. Do not expose private identifiers "
+            "or unrelated source material. "
+        )
+    if presentation is RecallPresentation.TIMING:
+        return common + (
+            "The focused request asks about timing: use verified source timestamps when present. "
+            "If timing is unknown, say so briefly in conversational language; never substitute "
+            "a filename range or posting date for a message date. "
+        )
+    return common + (
+        "The focused request is ordinary recall: answer with supported content naturally. "
+        "A broad year mention is a retrieval cue, not a request for a metadata report. "
+        "Do not recite export labels, storage limitations or routine date disclaimers. "
+        "Do not add a mandatory hedge. Brief uncertainty is appropriate only if it materially "
+        "changes the answer. Quote only exact authored words; paraphrases need no quotation marks. "
+    )
 
 
 @dataclass(frozen=True, slots=True)
@@ -241,6 +289,7 @@ class ContextMemory:
         *,
         verified_after: datetime | None = None,
         now: datetime | None = None,
+        request: str = "",
     ) -> str:
         # Materialize from current storage, not the search result. Corrections,
         # suppressions and withdrawal between search and rendering take effect.
@@ -317,9 +366,8 @@ class ContextMemory:
             "Use Andrew's own statements for supported interests/preferences. "
             "Peers are context only. Historical events are not current sports results. "
             "Adjacency does not prove motive or a reply relationship. "
-            "Archive period hints only label an export, not the date of its messages. "
-            "For a year question, you may quote Andrew from the matching labeled export "
-            "while explicitly saying the exact message date is unknown. Do not invent a date.\n"
+            + _presentation_guidance(recall_presentation(request))
+            + "\n"
             + json.dumps(evidence, ensure_ascii=False)
             + (
                 "\nCONNECTED REVIEWED MEMORY - tentative/contested observations are uncertain; "

@@ -887,3 +887,55 @@ separates sampled support checks, source coverage, the validation heartbeat inci
 health and cost. The daily automation is ACTIVE with its six-run schedule and original
 model/settings preserved, and now carries the development context and real-smoke
 requirement. No routine access or approval blocker remains.
+
+
+## 2026-10-08 09:00 natural-memory quality run
+
+Fetched base `be52c3c4386faaa10ae437a435456642876133e7` before creating new managed worktree
+`trubot-daily-20261008-0900` and unique feature branch. Prior recall/evidence PRs
+were merged; no evolution PR overlapped. Primary checkout remains untouched.
+Reverified pi5/aarch64/Ubuntu 24.04.4, app manifest and healthy 2.7.1 immutable
+image `sha256:d5981cb774329af225d608575e5db684e4769c7ef539cdf2590ed931cdfca7b9`.
+Authenticated membership confirms the private development guild still contains
+only its owner and Trubot, and the already-allowed general channel is used.
+
+One fresh actual owner-authored broad-year question reproduced unsolicited
+export terminology and a stock exact-date disclaimer through the running gateway.
+The existing renderer required this disclaimer. Version 2.7.2 selects content,
+timing or evidence presentation from the focused request, preserving the same
+source metadata and evidence. Prior bot wording cannot select a disclosure mode.
+Broad recall answers should stay natural without claiming unsupported dates;
+explicit timing/evidence questions retain relevant uncertainty.
+
+A bounded local audit scanned the latest 100 messages in each of four verified
+source channels within 14 days: 20 bot replies and seven target-human messages.
+Development latest-40/two-day coverage contained 15 bot replies, including two
+explicitly labeled smoke setups; other development exchanges are operator
+conversations, not spontaneous league activity. Twelve separately selected eligible
+historical human blocks were checked with adjacent source references. Their
+calendar dates are unknown and independence across episodes is unproven.
+Development contained three metadata disclosures, two unsolicited; the sampled
+human blocks contained zero. Median lengths were 12 versus 15.5 words. These
+structural counts support a metadata defect, not a general human style or humor
+claim. Private content-free audit retains source digest/block/line references.
+
+Automatic approval review rejected raw private excerpts in command logs and a
+provider-assisted private-context audit for sensitive egress. A local-only scan
+completed without raw output or provider calls. Semantic humor, sincerity, stances,
+relationships and full held-out character fidelity were not independently graded;
+this limitation remains open. No new persona characteristic was learned.
+
+All six candidate gates pass: 296 tests, 95.79% branch-inclusive coverage, locked
+sync, formatting, lint, strict typing and package build. Regression covers focused
+request classification, identical grounding across presentation modes, source
+removal and immunity to previous bot disclaimers. Live synthetic handler checks
+cover direct/reaction/follow-up broad recall, timing, evidence and preferences with
+isolated readiness and captured sends. One unmapped lexical team fixture missed
+retrieval; adding an explicit query term to that synthetic source produced direct
+supported recall. This is a documented vocabulary gap, not added human evidence.
+
+The existing usage ledger and USD 18 runtime / USD 2 maintenance / USD 20 monthly
+allowances are preserved. First baseline estimate USD 0.0314292; billing and
+pre-guard spend remain unknown. No added infrastructure or schema migration.
+Release, required CI, installed checks, actual post-deploy Discord responses,
+digest, health, cost and final audit follow after rollout.
