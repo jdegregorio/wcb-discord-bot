@@ -1,0 +1,49 @@
+{
+  "before": {
+    "historical_import_supported": false,
+    "native_peer_context_archived": false,
+    "native_retention_days": 180
+  },
+  "after": {
+    "visual_episodes": 115,
+    "image_assets": 96,
+    "image_bytes": 62571650,
+    "schema": 1,
+    "documents": 16,
+    "origins": 27,
+    "blocks": 4299,
+    "target_blocks": 412,
+    "voice_eligible_blocks": 405,
+    "suppressed_documents": 0
+  },
+  "scenarios": {
+    "lossless_source_hashes": true,
+    "lossless_image_hashes": true,
+    "exact_alias_attribution": true,
+    "context_available": true,
+    "global_withdrawal_removes_archive": true,
+    "stale_restore_blocked": true
+  },
+  "imports": {
+    "new_documents": 16,
+    "duplicate_documents": 12
+  },
+  "visual_capture": {
+    "missing_reasons": {
+      "reference_only": 28
+    },
+    "total_byte_limit": 67108864,
+    "per_file_byte_limit": 16777216,
+    "vision_inference_calls": 0
+  },
+  "limits": [
+    "Most Slack source calendar dates are absent.",
+    "Slack attribution uses the approved alias, not stable Slack ID verification.",
+    "Grouped blocks are not individual Slack message counts.",
+    "Native visual target attribution is remapped in this disposable probe and separately verified in production.",
+    "Archived evidence does not influence runtime replies yet.",
+    "Visual scan covers earliest 100 native messages per accessible guild text channel only."
+  ],
+  "model_calls": 0,
+  "added_infrastructure_cost_usd": 0
+}

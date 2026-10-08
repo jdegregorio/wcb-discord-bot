@@ -3,13 +3,20 @@
 Replenish this list as evidence arrives. Each run owns prioritization and carries
 one coherent increment through production verification.
 
-## 1. Evidence-backed preference retrieval
+## 1. Contextual evidence derivation and retrieval
 
-- Acceptance: derive a compact set of interests and style observations with source
+- Acceptance: study historical exchanges with setup, target response and peer
+  reactions, including actual visual setup when images/memes carry meaning.
+  Review captured image bytes and preserve missing-media uncertainty. Keep OCR or
+  quoted image text separate from authored voice. Derive a compact set of interests and style observations with source
   references, confidence, timestamps, and contradiction/expiry handling. Retrieve
   only relevant evidence within a token budget. Andrew's preferences must come
   from his attributed messages, never another person's enthusiasm or bot output.
 - Dependencies: verified ingestion and spending guard, delivered in 2.3.0/2.2.0.
+  Include the private Slack corpus through `ArchiveStore.context`, retaining alias,
+  unknown-date and ambiguous-quote qualifications. Never infer a current preference
+  from an undated old exchange alone. Assess overlapping exports before weighting
+  repeated phrases; identical short replies may be separate events.
   Revalidate source freshness before deriving beliefs, including sources not yet
   revisited by rotating reconciliation after an offline interval.
 - Validation: supported enthusiasm, rival preferences, stale sports beliefs,
@@ -37,7 +44,30 @@ one coherent increment through production verification.
 - Validation: pricing drift review, uncertain-request corrections based on billing,
   recovery after a newer request, and no access expansion or credential leakage.
 
+## Full Discord history and context
+
+- Acceptance: resumable bounded all-years backfill for approved guild conversations,
+  including peer context, reply references, threads, timestamps, edits and deletions.
+  Preserve referenced image attachments with captions and bounded visual analysis;
+  evaluate image-dependent humor, unavailable media and misleading OCR attribution.
+  Report actual channel/date coverage and inaccessible gaps. Discover historical
+  Slack attachments beyond the earliest 100-message scan if evidence warrants it.
+- Dependencies: revisit native retention/schema and explicit historical retention
+  independently of recent intake. Broad guild read access is authorized for
+  development; keep runtime participation and intake scoped until deliberately
+  reviewed. Preserve bot exclusion, withdrawal and correction across every store.
+- Validation: contextual cross-author exchanges, bot exclusion, reply/thread links,
+  missing dates, interrupted large backfills, duplicate sources, deleted sources,
+  no interruption to normal replies, and historical/current belief distinction.
+
 ## Completed
+
+- 2026-10-07 historical-import work: lossless deduplicated league Slack archive
+  ingestion with speaker attribution, nearby context and explicit date/quote
+  ambiguity. Includes Joe's supplied files and supported early Discord attachments.
+  Private historical state shares the verified identity withdrawal boundary.
+  Version 2.4.0 candidate; production evidence is tracked in progress.md.
+
 
 - 2026-10-07 complementary run: durable operator withdrawal, local evidence and
   backup cleanup, protection against stale database restoration, loaded-worker

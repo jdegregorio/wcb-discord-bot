@@ -422,3 +422,56 @@
   preserves this rollout without changing runtime source. Its documentation
   conflict with prior-run [PR #29](https://github.com/jdegregorio/wcb-discord-bot/pull/29)
   was resolved by preserving both release records.
+
+## 2026-10-07: Historical league conversation corpus
+
+Joe explicitly authorized historical league Slack exports and broad readable guild
+access for development, including older Slack files attached in Discord. This
+complementary import increment starts at main
+`d5369a7f7b228798095073807af6c34757112d5f` in an isolated managed worktree.
+Joe's source checkout remains on its existing revision; private workspace copies
+are outside tracked source and excluded from Git and Docker build contexts.
+
+Before: native intake retained only recent target messages, with a default 180-day
+floor, and could not import Slack files or preserve peer conversation context.
+After: the version 2.4.0 candidate adds a private operator importer with lossless
+raw exports, SHA-256 document deduplication, origin records, exact approved alias
+attribution, speaker order/line spans and bounded adjacent-context lookup. It
+flags missing calendar dates, grouped continuations, thread quotes, previews,
+reaction UI, bots and system notices. It also captures 115 native visual episodes
+with 96 lossless image assets (62,571,650 bytes), anchored to messages and nearby
+speaker context. Twenty-eight external embed references retain missing-pixel
+markers; no attachment download was skipped in this scan. The corpus shares
+verified learning identity
+and withdrawal, but does not yet influence generated replies.
+
+Discovery used the existing bot token in production without printing/copying it.
+It read the earliest 100 messages of accessible guild text channels: 15 channels
+scanned, nine denied history access, 16 supported text attachment occurrences.
+Together with 12 supplied upload occurrences (nine unique), the combined manifest
+has 28 entries and 16 unique raw exports across 12 legacy league channels.
+Candidate import produced 4,299 grouped speaker blocks, 412 target-attributed
+blocks and 405 candidate voice blocks, with 27 distinct origin records. One
+identical upload origin naturally deduplicates too. Counts are not individual
+Slack messages; source date labels do not prove actual message dates.
+
+All 196 tests pass with 96.27% branch-inclusive coverage. Format, lint, strict
+source typing, locked sync and package build pass. Real-file disposable import,
+lossless file/image hashes, exact alias checks, adjacent context, duplicate replay,
+withdrawal cleanup and stale-restoration refusal pass without model calls or
+Discord posts. See [candidate evidence](evaluations/2026-10-07-historical-import-candidate.json).
+The daily evolution and weekly recap prompts now include authorized Slack sources,
+private storage locations, contextual evidence studies, historical/current belief
+uncertainty and full native Discord context as a separate planned increment.
+Existing schedules, execution environment, models and notification policy remain.
+
+Visual capture includes no OCR or inference and does not reconstruct missing
+legacy Slack images. The daily/weekly prompts now require actual pixel inspection
+for image-dependent learning and separate quoted image text from authored voice.
+
+Release, production import, backup/restore and final health evidence are pending
+at this candidate checkpoint. No claim of improved generated voice or complete
+all-years native Discord backfill. No ingestion API cost or paid infrastructure.
+Next priority is source-backed contextual study and bounded retrieval, validated
+on held-out exchanges before runtime use; native peers/threads/backfill and
+unknown-date handling remain explicit roadmap work.

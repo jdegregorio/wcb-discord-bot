@@ -1,8 +1,12 @@
 # Trubot evolution
 
-Build a more faithful, adaptive fictional character inspired by Andrew Truax.
+Build a faithful digital twin of Andrew Truax's league persona: voice, humor,
+interests, memory, emotional continuity, and contextual judgment.
 Joe owns the application and authorizes the daily development and release cycle.
-He confirms Andrew consents to learning from his league Discord messages.
+He confirms Andrew consents to learning from his league messages. On 2026-10-07,
+Joe explicitly added the league's historical Slack text exports, including files
+attached at the beginnings of Discord channels, and broad guild read access for
+development.
 Trubot retains its bot account and must never present generated text as Andrew's
 actual words or actions.
 
@@ -32,8 +36,10 @@ regression. Preserve needed evidence before archiving the run's worktree.
 
 ## Learning boundary
 
-Only the configured league channel allowlist is authorized. No DMs, Slack,
-additional channels, or learning from guessed identity. Pin Andrew's stable user
+Runtime Discord intake keeps the configured league channel allowlist. No DMs
+or learning from guessed identity. Operator development may read accessible guild
+channels and import the authorized league Slack archives. This access does not
+silently expand runtime intake. Pin Andrew's stable user
 ID privately only after authenticated guild/member and message attribution
 agree. Preserve author ID, message ID, channel ID, source timestamps, edits,
 and deletion provenance in private state. Other participants supply context,
@@ -63,3 +69,34 @@ resurrect a revoked learning identity. Next priority is evidence-backed preferen
 derivation and retrieval. Evaluation token counts are measured; dollar conversions
 are estimates, not billing records. Do not add a paid service or increase the
 runtime model cost without a budget-supported reason.
+
+## Historical conversation learning
+
+The private historical corpus preserves each unique raw export plus parsed speaker
+blocks, source order, line references, grouped message continuations, origin records,
+and nearby conversation. Match only the operator-approved exact legacy Slack alias.
+The exports lack stable Slack author IDs and usually lack dates. File labels and
+Discord attachment posting dates are provenance hints, never message timestamps.
+Flag thread quotes, link previews, bots, and system messages before studying voice.
+Other speakers provide context and must not be treated as Andrew's preferences.
+Adjacent blocks suggest conversational context but do not establish causality.
+
+Develop the learning loop from source-backed conversational episodes: invitation or
+setup, Andrew's response, other members' reactions, and changes in topic or tone.
+Study humor timing, relational context, sincere engagement, interests and changing
+beliefs. Preserve source references and uncertainty. Separate observations from
+interpretations, validate on held-out exchanges, handle corrections/contradictions,
+and retrieve only relevant evidence within the runtime token budget. Archive
+ingestion is an enabling step; it does not by itself improve generated replies.
+
+Full native Discord history with peers, threads and reply relationships remains a
+planned increment. Current native intake has a 180-day default retention floor and
+archives only Andrew's text. It is not a complete all-years contextual backfill.
+Historical exports have explicit operator-managed retention and withdrawal.
+
+Visual context is part of an episode's evidence. Preserve accessible original
+Discord image attachments, native captions, adjacent speaker messages and source
+references. Inspect actual pixels before interpreting image-dependent reactions,
+jokes or preferences. Keep quoted text/OCR separate from Andrew's authored words.
+Record unavailable legacy images and external embeds as missing evidence instead
+of inventing their contents. Support GIF/frame context when it matters.
