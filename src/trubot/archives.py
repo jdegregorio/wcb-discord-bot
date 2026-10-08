@@ -156,7 +156,7 @@ class ArchiveStore:
     """Separate long-term historical corpus, guarded by the existing learning identity.
 
     The learning lock serializes import/read/delete with complete withdrawal.
-    Ordinary replies never read this store. Historical retention is operator-owned,
+    Replies read bounded, attributed evidence through ContextMemory. Retention is operator-owned,
     independent of the rolling Discord retention horizon.
     """
 

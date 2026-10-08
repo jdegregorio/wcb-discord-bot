@@ -220,7 +220,35 @@ Operator-imported Slack text exports extend Trubot's private learning corpus wit
 other speakers' conversational context. `trubot-archives` preserves raw sources,
 deduplicates files, labels speaker blocks and flags missing dates or ambiguous
 quotes/previews. Accessible native image attachments are retained with nearby
-conversation, while missing or external-only media is marked explicitly. The corpus supports future evidence-backed studies and retrieval;
-archived text does not yet affect replies. See the [evolution plan](docs/trubot-evolution/plan.md)
+conversation, while missing or external-only media is marked explicitly. Version 2.5.0 retrieves bounded Andrew-attributed text evidence for live replies.
+The retained historical images support ongoing contextual studies. See the [evolution plan](docs/trubot-evolution/plan.md)
 and [private storage contract](docs/trubot-evolution/storage.md) for scope, import,
 correction, withdrawal and recovery.
+
+
+## Live memory and image context
+
+Version 2.5.0 connects private source memory to responses. Relevant Andrew-authored
+native messages are refreshed before use; legacy Slack passages include source
+lines, date uncertainty and separately labeled adjacent context. Supported
+preferences can now inform the persona. Other people's claims and prior bot
+replies cannot establish Andrew's beliefs. Retrieval currently uses bounded
+keywords and topic expansion; full contextual interpretation remains ongoing.
+
+Live replies can read pixels in the current message, the same-channel message it
+references, and recent conversation. The two-image limit prioritizes focus and
+reference images. Discord attachments and proxied previews are fetched without
+credentials, decoded and sent as structured vision inputs. Unavailable images
+are marked; animations provide only their first frame. Live pixels are ephemeral.
+
+The operator acceptance script uses authenticated read access and the existing
+maintenance ledger while capturing every Discord send:
+
+```bash
+uv run python scripts/evaluate_live_context.py --expected-team-file /private/team.txt
+```
+
+It requires an operator-reviewed mode-0600 expectation file in a private directory
+and the verified private learning store. It checks grounded baseball
+memory, direct/follow-up behavior, image content/OCR, reactions and bot-memory
+exclusion. See the storage runbook for source freshness, withdrawal and bounds.

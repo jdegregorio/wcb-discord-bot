@@ -22,14 +22,17 @@ from trubot.history import (
     clamp_discord_message,
     collect_history,
     message_target,
+    visual_message,
 )
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable
+from trubot.memory import ContextMemory, terms
 from trubot.participation import (
     Observation,
     ParticipationTracker,
     SchedulingAction,
 )
+from trubot.vision import ImageCollector
 
 logger = logging.getLogger(__name__)
 
@@ -81,6 +84,7 @@ class TruBotClient(discord.Client):
         self._response_locks: defaultdict[int, asyncio.Lock] = defaultdict(asyncio.Lock)
         self._closing = False
         self._learning = learning
+        self._memory = ContextMemory(learning.store) if learning is not None else None
         self._learning_task: asyncio.Task[None] | None = None
 
     async def on_ready(self) -> None:
@@ -353,13 +357,32 @@ class TruBotClient(discord.Client):
         async with self._response_locks[channel.id]:
             request_at = self._clock()
             try:
+                images = ImageCollector()
+                focused = (
+                    await visual_message(anchor, bot_user_id=user.id, images=images, target=True)
+                    if anchor is not None
+                    else None
+                )
+                reference_context = await self._reference_context(anchor, images)
                 history = await collect_history(
                     cast(HistoryChannel, channel),
                     bot_user_id=user.id,
                     limit=self._settings.history_limit,
                     before=anchor,
                     after=request_at - timedelta(seconds=self._settings.history_window_seconds),
+                    images=images,
                 )
+                if reference_context is not None:
+                    history.append(reference_context)
+                if focused is not None and (
+                    focused.images or "image pixels unavailable" in focused.content
+                ):
+                    # Keep the focus last so the adapter retains its image parts.
+                    history.append(focused)
+                    target = focused.content
+                memory = await self._memory_context(channel, target, history)
+                if memory:
+                    history.insert(0, ConversationMessage("user", memory))
                 if not history and target is None:
                     logger.warning("No usable history for response channel_id=%d", channel.id)
                     return False
@@ -391,11 +414,13 @@ class TruBotClient(discord.Client):
                     with suppress(discord.HTTPException):
                         await channel.send("I'm taking a breather. Try me again later.")
                 return False
-            except Exception:
-                logger.exception(
-                    "Trubot response failed channel_id=%d mode=%s",
+            except Exception as error:
+                # Provider exceptions can contain source text or image payloads.
+                logger.error(
+                    "Trubot response failed channel_id=%d mode=%s error_type=%s",
                     channel.id,
                     mode.value,
+                    type(error).__name__,
                 )
                 if mode in {ReplyMode.DIRECT, ReplyMode.REACTION}:
                     with suppress(discord.HTTPException):
@@ -416,6 +441,78 @@ class TruBotClient(discord.Client):
                 len(output),
             )
             return True
+
+    async def _reference_context(
+        self, anchor: discord.Message | None, images: ImageCollector
+    ) -> ConversationMessage | None:
+        if anchor is None or self.user is None:
+            return None
+        reference = getattr(anchor, "reference", None)
+        if not isinstance(reference, discord.MessageReference):
+            return None
+        if reference.channel_id != anchor.channel.id or reference.message_id is None:
+            return None
+        try:
+            # Refresh even a resolved reference, since cached content can be edited.
+            message = await anchor.channel.fetch_message(reference.message_id)
+            converted = await visual_message(
+                message, bot_user_id=self.user.id, images=images, target=True
+            )
+            if converted is not None:
+                return ConversationMessage(
+                    converted.role,
+                    "REFERENCED MESSAGE (context only): " + converted.content,
+                    converted.images,
+                )
+        except discord.HTTPException:
+            return ConversationMessage("user", "[Referenced message unavailable.]")
+        return None
+
+    async def _memory_context(
+        self, channel: DiscordChannel, target: str | None, history: list[ConversationMessage]
+    ) -> str:
+        learning, memory = self._learning, self._memory
+        if learning is None or memory is None or not learning.verified:
+            return ""
+        # Use the focused topic. Only a context-dependent follow-up needs nearby
+        # human messages; prior bot prose must not become evidence or query bait.
+        query = target or ""
+        # Speaker labels and earlier assistant prose are not topic evidence.
+        query = query.split(": ", 1)[-1]
+        if not terms(query):
+            query += " " + " ".join(
+                m.content.split(": ", 1)[-1] for m in history[-4:] if m.role == "user"
+            )
+        try:
+            candidates = await asyncio.to_thread(
+                memory.candidates, query, guild_id=channel.guild.id, now=self._clock()
+            )
+            verified = []
+            verification_started = self._clock()
+            for candidate in candidates:
+                if candidate.source["kind"] == "discord":
+                    source_channel = self.get_channel(candidate.source["channel_id"])
+                    if not isinstance(source_channel, (discord.TextChannel, discord.Thread)):
+                        continue
+                    if not learning.accepts(source_channel):
+                        continue
+                    try:
+                        await asyncio.wait_for(
+                            learning.refresh(source_channel, candidate.source["message_id"]),
+                            timeout=2,
+                        )
+                    except (discord.HTTPException, TimeoutError):
+                        # Missing permission or network access never revives cached evidence.
+                        continue
+                verified.append(candidate)
+            if self._learning is not None and self._learning.verified:
+                return await asyncio.to_thread(
+                    memory.render, verified, verified_after=verification_started
+                )
+            return ""
+        except LearningUnavailable:
+            logger.warning("Response memory unavailable; source verification required")
+            return ""
 
     @staticmethod
     def _consume_task_result(task: asyncio.Task[None]) -> None:

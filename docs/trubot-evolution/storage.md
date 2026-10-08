@@ -311,3 +311,34 @@ remove orphaned images. `remove-visual --digest <episode-key>` removes an episod
 its unreferenced images and historical backup copies, and blocks reimport. Global
 withdrawal removes all raw images and visual episodes with the archive database.
 The same archive backup/restore and off-device correction rules apply.
+
+## Live response memory and images (2.5.0)
+
+Responses use bounded lexical/topic retrieval from the existing private native and
+Slack source stores. At most five distinct Andrew-authored passages are supplied,
+with message references or export digest/line references. Slack adjacency is
+explicitly context only, with ambiguity flags and unknown dates. There is no
+separate generated fact database or unbounded transcript injection. Corrections,
+source removal and withdrawal are checked again during materialization. Native
+sources are fetched again before use, with a two-second timeout per source;
+failed fetches exclude the evidence. Membership verification and guild scope
+remain required. Missing memory never disables an ordinary reply.
+
+Current messages, explicit reply references in the same channel, and recent
+history can supply live pixels. Focus/reference images have priority over history.
+Each response shares two downloads/images, four MiB per download, twenty million
+source pixels and six-second download timeouts. Only Discord CDN/proxy hosts are
+fetched, without credentials or redirects. PNG/JPEG/WebP/GIF decode to bounded
+1600-pixel JPEG inputs, with EXIF orientation applied. Animations use their first
+frame with an explicit limitation. Missing or excess images are marked unavailable.
+Live pixels remain in process memory and are not saved as learning evidence.
+
+Responses sends structured image parts with high detail. Base64 payload size is
+not counted as text tokens. Each image receives a deliberately loose 80,000-token
+reservation plus the text bound through the same persistent usage ledger.
+Authoritative usage is settled normally; any bound violation halts further calls.
+The current official image guide omits a Luna-specific tokenizer row, so this
+reservation exceeds the documented patch rejection ceiling times the highest
+published multiplier. This is a conservative engineering bound, not a quoted
+Luna token formula. The two-image limit also preserves the existing 200,000-token
+pricing boundary. Text-heavy requests can still exceed that boundary and pause.

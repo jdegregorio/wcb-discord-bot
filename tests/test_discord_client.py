@@ -378,3 +378,80 @@ async def test_spending_guard_explains_explicit_pause_and_keeps_unsolicited_mode
         assert not tracker._channels
     finally:
         await client.close()
+
+
+@pytest.mark.asyncio
+async def test_live_images_from_focus_and_reference_keep_authorship_and_focus():
+    import io
+
+    from PIL import Image
+
+    from trubot.vision import ImageCollector
+
+    output = io.BytesIO()
+    Image.new("RGB", (80, 60), "red").save(output, format="PNG")
+    fetch = AsyncMock(return_value=output.getvalue())
+    client, responder, _, _ = make_client()
+    channel = fake_channel()
+    message = fake_message(channel)
+    message.attachments = [
+        SimpleNamespace(
+            url="https://cdn.discordapp.com/focus.png", size=100, content_type="image/png"
+        )
+    ]
+    message.embeds = []
+    message.reference = discord.MessageReference(message_id=123, channel_id=10)
+    referenced = message_for_history("", author_id=2, name="Jim")
+    referenced.attachments = [
+        SimpleNamespace(
+            url="https://cdn.discordapp.com/reference.png", size=100, content_type="image/png"
+        )
+    ]
+    referenced.embeds = []
+    channel.fetch_message.return_value = referenced
+    with patch("trubot.discord_client.ImageCollector", side_effect=lambda: ImageCollector(fetch)):
+        await client.on_message(message)
+    context, mode, _, target = responder.calls[0]
+    assert mode is ReplyMode.DIRECT
+    assert context[-1].content == target
+    assert len(context[-1].images) == 1
+    assert "Jim: [image attached]" in context[-2].content
+    assert len(context[-2].images) == 1
+    assert fetch.await_count == 2
+
+
+@pytest.mark.asyncio
+async def test_memory_is_verified_refreshed_and_attached_to_real_handler(tmp_path):
+    from test_learning import AUDIT, source
+    from test_learning import NOW as EVIDENCE_NOW
+
+    from trubot.ingestion import MessageIngestor
+    from trubot.learning import LearningStore
+    from trubot.memory import ContextMemory
+    from trubot.vision import ImageCollector
+
+    store = LearningStore.initialize(tmp_path / "learning.sqlite3", AUDIT, now=EVIDENCE_NOW)
+    store.observe(source(content="White Sox forever"), now=EVIDENCE_NOW)
+    client, _responder, _, _ = make_client(clock=lambda: EVIDENCE_NOW)
+    learning = MessageIngestor(store, frozenset({10}), clock=lambda: EVIDENCE_NOW)
+    client._learning = learning
+    client._memory = ContextMemory(store)
+    channel = fake_channel()
+    query = "Tim: Who is your baseball team?"
+    assert await client._memory_context(channel, query, []) == ""
+    learning.verified = True
+    with (
+        patch.object(client, "get_channel", return_value=channel),
+        patch.object(learning, "refresh", new_callable=AsyncMock) as refresh,
+    ):
+        memory = await client._memory_context(channel, query, [])
+        assert "White Sox forever" in memory
+        refresh.assert_awaited_once()
+        refresh.side_effect = discord.Forbidden(
+            SimpleNamespace(status=403, reason="Denied"), "Denied"
+        )
+        assert await client._memory_context(channel, query, []) == ""
+        refresh.side_effect = None
+        store.forget(now=EVIDENCE_NOW)
+        assert await client._memory_context(channel, query, []) == ""
+    assert await client._reference_context(None, ImageCollector()) is None

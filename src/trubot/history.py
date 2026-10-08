@@ -9,6 +9,7 @@ from typing import Protocol
 import discord
 
 from trubot.conversation import ConversationMessage
+from trubot.vision import ImageCollector, image_urls
 
 MAX_HISTORY_MESSAGE_CHARS = 4_000
 
@@ -31,6 +32,7 @@ async def collect_history(
     limit: int,
     before: discord.Message | None,
     after: datetime,
+    images: ImageCollector | None = None,
 ) -> list[ConversationMessage]:
     # Discord returns the channel's oldest messages when oldest_first=True and
     # no lower cursor is supplied. Fetch the newest bounded slice, then reverse
@@ -45,11 +47,11 @@ async def collect_history(
         )
     ]
     messages: list[ConversationMessage] = []
-    for message in reversed(recent):
-        converted = convert_message(message, bot_user_id=bot_user_id)
+    for message in recent:
+        converted = await visual_message(message, bot_user_id=bot_user_id, images=images)
         if converted is not None:
             messages.append(converted)
-    return messages
+    return list(reversed(messages))
 
 
 def convert_message(
@@ -63,7 +65,11 @@ def convert_message(
 
     content = message.clean_content.strip()
     if not content:
-        return None
+        if not image_urls(message) and not any(
+            (a.content_type or "").startswith("image/") for a in getattr(message, "attachments", ())
+        ):
+            return None
+        content = "[image attached]"
     content = _truncate(content, MAX_HISTORY_MESSAGE_CHARS)
 
     if author_id == bot_user_id:
@@ -71,6 +77,23 @@ def convert_message(
 
     display_name = message.author.display_name.strip() or "Friend"
     return ConversationMessage(role="user", content=f"{display_name}: {content}")
+
+
+async def visual_message(
+    message: discord.Message,
+    *,
+    bot_user_id: int,
+    images: ImageCollector | None,
+    target: bool = False,
+) -> ConversationMessage | None:
+    converted = convert_message(message, bot_user_id=bot_user_id)
+    if target and (converted is None or message.author.bot):
+        label = " [Bot source, not personal evidence.]" if message.author.bot else ""
+        converted = ConversationMessage("user", message_target(message) + label)
+    if converted is None or images is None or converted.role != "user":
+        return converted
+    pixels, notice = await images.collect(message)
+    return ConversationMessage(converted.role, converted.content + notice, pixels)
 
 
 def message_target(message: discord.Message) -> str:

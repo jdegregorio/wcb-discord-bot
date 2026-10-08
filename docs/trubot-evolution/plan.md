@@ -101,3 +101,13 @@ references. Inspect actual pixels before interpreting image-dependent reactions,
 jokes or preferences. Keep quoted text/OCR separate from Andrew's authored words.
 Record unavailable legacy images and external embeds as missing evidence instead
 of inventing their contents. Support GIF/frame context when it matters.
+
+
+## Live context milestone (2.5.0)
+
+Private Slack/native text retrieval and ephemeral live vision now support replies.
+Daily work should evaluate remembered interests and image-dependent exchanges,
+then extend the current bounded lexical/topic search into reviewed contextual
+beliefs with confidence and contradiction handling. Preserve source refresh,
+withdrawal, missing-image honesty and the spending ledger. Historical image
+interpretation and full native history coverage remain independent work.
