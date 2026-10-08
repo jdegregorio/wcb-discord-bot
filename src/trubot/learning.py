@@ -360,12 +360,20 @@ class LearningStore:
         copies = [audit] if audit.exists() or audit.is_symlink() else []
         if backups.exists() or backups.is_symlink():
             _private(backups)
+            if not backups.is_dir():
+                raise LearningUnavailable("Private backup directory required")
             copies.extend(backups.glob(self.path.stem + "-*.sqlite3*"))
         for copy in copies:
             _private(copy)
             if not stat.S_ISREG(copy.lstat().st_mode):
                 raise LearningUnavailable("Learning cleanup requires regular private copies")
             copy.unlink()
+        for parent in {copy.parent for copy in copies}:
+            descriptor = os.open(parent, os.O_RDONLY | os.O_DIRECTORY)
+            try:
+                os.fsync(descriptor)
+            finally:
+                os.close(descriptor)
 
     def status(self) -> dict[str, int | str]:
         withdrawn = self.is_withdrawn()

@@ -39,6 +39,11 @@ one coherent increment through production verification.
 
 ## Completed
 
+- 2026-10-07 complementary run: durable operator withdrawal, local evidence and
+  backup cleanup, protection against stale database restoration, loaded-worker
+  shutdown, and preservation of spending state. Version 2.3.1 candidate; release
+  and production verification are tracked in progress.md.
+
 - 2026-10-07: verified private identity and incremental intake, atomic per-channel
   checkpoints, live events, bounded historical catch-up, edit/delete race guards,
   offline reconciliation, configurable retention and recovery. Version 2.3.0.
@@ -66,3 +71,5 @@ one coherent increment through production verification.
   eventual; no claim of full-history freshness or complete initial backfill.
 - Validation: large-channel interruption/recovery, extended outages, permission
   loss, shrinking allowlists, retention and correction reflected in derived data.
+- Withdrawal markers must accompany disaster recovery. Validate encrypted
+  off-device deletion and recovery; current command covers documented local copies.

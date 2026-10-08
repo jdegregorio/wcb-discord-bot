@@ -66,6 +66,12 @@ bounded Discord reply
   tied to Discord readiness, resume, disconnect and shutdown.
 - `app.py` is the composition root. Importing any module is side-effect free.
 
+Operator withdrawal writes and synchronizes a private marker beside the learning
+database before erasing source records and identity. Every learning transaction
+checks the marker before and after acquiring its database lock. Workers stop before
+Discord reads, and initialization also refuses a withdrawn store. This prevents
+old backup restoration from restarting learning while preserving usage accounting.
+
 ## Participation invariants
 
 For each channel, the tracker retains a rolling set of human activity, the last

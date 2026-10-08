@@ -93,7 +93,9 @@ def test_cleanup_failure_leaves_guard_active_and_retry_completes(tmp_path):
     assert store.status()["messages"] == 0
 
 
-@pytest.mark.parametrize("copy_kind", ["public", "symlink", "directory", "backup_directory"])
+@pytest.mark.parametrize(
+    "copy_kind", ["public", "symlink", "directory", "backup_directory", "backup_file"]
+)
 def test_unsafe_cleanup_targets_are_preserved_while_learning_stays_blocked(tmp_path, copy_kind):
     store = initialized(tmp_path)
     outside = tmp_path / "unrelated.txt"
@@ -106,8 +108,11 @@ def test_unsafe_cleanup_targets_are_preserved_while_learning_stays_blocked(tmp_p
         audit.symlink_to(outside)
     elif copy_kind == "directory":
         audit.mkdir(mode=0o700)
-    else:
+    elif copy_kind == "backup_directory":
         (tmp_path / "backups").mkdir(mode=0o755)
+    else:
+        (tmp_path / "backups").write_text("invalid directory")
+        (tmp_path / "backups").chmod(0o600)
     with pytest.raises(LearningUnavailable):
         store.forget(now=NOW)
     assert store.is_withdrawn()

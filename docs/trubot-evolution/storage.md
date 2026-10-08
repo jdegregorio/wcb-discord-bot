@@ -172,9 +172,40 @@ identity, retention, access or administrative changes.
 Removing a channel from the runtime allowlist stops its intake; existing records
 remain private until retention or explicit deletion. Stop the app before scope
 revocation and purge that channel's private records/markers and copies if needed.
-Complete revocation requires removing the learning database, audit and learning
-backups after stopping the app. Startup then leaves learning disabled. Preserve
-the separate usage ledger so deletion cannot reset API spending.
+For complete local withdrawal on version 2.3.1 or newer, an authorized operator runs:
+
+```sh
+ssh pi5 'docker exec wcb-bot trubot-learning forget'
+ssh pi5 'docker exec wcb-bot trubot-learning status'
+```
+
+The command synchronizes a mode-0600 `learning.sqlite3.withdrawn` marker before
+clearing source records, correction/deletion markers, checkpoints, and identity.
+It removes the adjacent `identity-audit.json` and private `backups/learning-*.sqlite3*`
+copies. It preserves the database schema, separate usage ledger, and usage backups.
+Normal replies continue. A loaded worker stops before further Discord reads;
+all learning transactions also block on the marker, including operations already
+waiting for the database lock. The marker contains only a schema and UTC timestamp.
+
+A failed cleanup leaves the marker active. Retry the same command to finish;
+never clear the marker to repair a failed deletion. Unsafe ownership, permissions,
+symlinks, or nonregular backup targets are preserved and reported as unavailable.
+Inspect these app-private targets before retrying. Status reports withdrawal and
+remaining record counts without any account IDs or content.
+
+Keep the withdrawal marker outside database restoration. Restoring an old schema-1
+archive cannot re-enable intake while it exists, and initialization refuses it even
+if the database is missing. Recommissioning requires a fresh explicit consent
+and attribution decision, cleanup of revoked copies, and a trusted operator removing
+the marker before initializing newly verified state. Channel messages never
+provide that authorization. This scheduled project must not remove a marker
+merely because Andrew still appears in guild membership.
+
+The command covers only the documented local files. Apply withdrawal to off-device
+copies and exports through their owning backup process; that coverage is unverified.
+Image versions before 2.3.1 do not understand the marker. A rollback after withdrawal
+must leave the learning database without identity, and must never restore an old
+learning copy into an older image. The spending ledger must never be replaced.
 
 ## Backup and recovery
 
@@ -190,7 +221,8 @@ Never export raw data, IDs or derived preferences into Git, release notes or log
 Stop only this app using `pi-app stop wcb-bot`, restore a verified compatible copy
 as UID/GID 10001 with mode 0600, and start via `pi-app start wcb-bot`. Restored
 checkpoints may replay pages safely. Deletions/corrections since the backup must
-be reapplied; a stale backup must never resurrect revoked evidence. The usage
+be reapplied. Preserve any withdrawal marker independently of the database;
+never remove it or copy it away to make a stale archive start learning. The usage
 ledger must not be replaced during learning recovery. Verify content-free status,
 Discord readiness and bounded resumed intake. Retain the pinned identity rather
 than guessing it from history after losing state.

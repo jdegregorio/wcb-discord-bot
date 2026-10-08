@@ -66,6 +66,7 @@ def evaluate() -> dict[str, object]:
         checks["known_learning_copies_removed"] = not copy.exists()
         checks["spending_state_preserved"] = usage.read_bytes() == b"synthetic spending state"
         store.path.write_bytes(saved)
+        store.path.chmod(0o600)
         reopened = LearningStore(store.path)
         try:
             reopened.identity()
