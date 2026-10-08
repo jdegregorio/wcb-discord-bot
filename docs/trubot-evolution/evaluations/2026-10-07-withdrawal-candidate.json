@@ -1,0 +1,18 @@
+{
+  "time": "2026-10-08T02:20:53.243797+00:00",
+  "checks": {
+    "withdrawal_command_available": true,
+    "known_learning_copies_removed": true,
+    "spending_state_preserved": true,
+    "stale_restore_identity_blocked": true,
+    "stale_restore_intake_blocked": true,
+    "loaded_worker_stops_without_discord_reads": true,
+    "cleanup_retry_erases_restored_data": true
+  },
+  "passed": 7,
+  "total": 7,
+  "provider_calls": 0,
+  "discord_reads": 0,
+  "discord_writes": 0,
+  "fixture_privacy": "synthetic disposable learning store"
+}

@@ -91,6 +91,20 @@ async def test_member_verification_never_uses_display_names(learner):
         await learner.verify_member(client)
 
 
+async def test_operator_withdrawal_stops_worker_and_loaded_client_without_discord_calls(learner):
+    learner.verified = True
+    learner.store.observe(source(), now=NOW)
+    learner.store.forget(now=NOW)
+    client = MagicMock(spec=discord.Client)
+    await learner.cycle(client)
+    assert not learner.verified
+    client.get_guild.assert_not_called()
+    client.get_channel.assert_not_called()
+    channel, _, _ = channel_with_history()
+    await learner.observe(message(channel))
+    assert learner.store.status()["messages"] == 0
+
+
 async def test_reconcile_repairs_missed_offline_edits_and_deletes(learner):
     channel, _, _ = channel_with_history()
     learner.verified = True

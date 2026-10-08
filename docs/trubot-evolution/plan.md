@@ -58,6 +58,8 @@ The daily Codex session's model setting is independent of runtime model choice.
 Version 2.2.0 adds a persistent usage ledger and an enforceable UTC monthly
 spending guard. The first partially covered month retains an explicit unknown
 pre-guard-spend limitation. Version 2.3.0 adds privately verified, bounded incremental intake on the existing
-app volume. Next priority is evidence-backed preference derivation and retrieval. Evaluation token counts are measured; dollar conversions
+app volume. Version 2.3.1 adds durable operator withdrawal so recovery cannot
+resurrect a revoked learning identity. Next priority is evidence-backed preference
+derivation and retrieval. Evaluation token counts are measured; dollar conversions
 are estimates, not billing records. Do not add a paid service or increase the
 runtime model cost without a budget-supported reason.

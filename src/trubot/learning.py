@@ -6,6 +6,7 @@ import argparse
 import json
 import os
 import sqlite3
+import stat
 from collections.abc import Iterator, Sequence
 from contextlib import closing, contextmanager
 from dataclasses import dataclass, field
@@ -98,12 +99,22 @@ class LearningStore:
         self.path = path
         self.retention_days = retention_days
 
+    @property
+    def withdrawal_path(self) -> Path:
+        return self.path.with_name(self.path.name + ".withdrawn")
+
+    def is_withdrawn(self) -> bool:
+        # Even a malformed marker or dangling symlink must block learning.
+        return self.withdrawal_path.exists() or self.withdrawal_path.is_symlink()
+
     @classmethod
     def initialize(
         cls, path: Path, audit: dict[str, Any], *, now: datetime, retention_days: int = 180
     ) -> LearningStore:
         """Explicit operator action after authenticated attribution, never at runtime."""
         store = cls(path, retention_days=retention_days)
+        if store.is_withdrawn():
+            raise LearningUnavailable("Operator withdrawal requires a fresh consent decision")
         identity = cls._identity(audit)
         path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
         # Check the directory before writing personal data, then create exclusively.
@@ -150,8 +161,10 @@ class LearningStore:
         return identity
 
     @contextmanager
-    def _transaction(self) -> Iterator[sqlite3.Connection]:
+    def _transaction(self, *, allow_withdrawn: bool = False) -> Iterator[sqlite3.Connection]:
         try:
+            if not allow_withdrawn and self.is_withdrawn():
+                raise LearningUnavailable("Learning withdrawn by operator")
             _private(self.path)
             with closing(
                 sqlite3.connect(self.path.absolute().as_uri() + "?mode=rw", uri=True, timeout=1)
@@ -160,6 +173,8 @@ class LearningStore:
                 db.execute("PRAGMA secure_delete = ON")
                 db.execute("PRAGMA synchronous = FULL")
                 db.execute("BEGIN IMMEDIATE")
+                if not allow_withdrawn and self.is_withdrawn():
+                    raise LearningUnavailable("Learning withdrawn by operator")
                 if db.execute("PRAGMA user_version").fetchone()[0] != 1:
                     raise LearningUnavailable("Unsupported learning schema")
                 yield db
@@ -311,9 +326,60 @@ class LearningStore:
         with self._transaction() as db:
             self._prune(db, now)
 
+    def forget(self, *, now: datetime) -> None:
+        """Erase local learning evidence and durably block stale backup restoration.
+
+        The marker commits to the filesystem before any evidence is erased. It
+        remains if cleanup fails, so a retry can finish cleanup without re-enabling
+        intake. No credentials, account IDs, or message contents enter the marker.
+        """
+        with self._transaction(allow_withdrawn=True) as db:
+            if not self.is_withdrawn():
+                descriptor = os.open(
+                    self.withdrawal_path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600
+                )
+                with os.fdopen(descriptor, "w") as marker:
+                    marker.write(json.dumps({"schema": 1, "withdrawn_at": _time(now)}))
+                    marker.flush()
+                    os.fsync(marker.fileno())
+                # Persist the directory entry as well as its contents before commit.
+                directory = os.open(self.path.parent, os.O_RDONLY | os.O_DIRECTORY)
+                try:
+                    os.fsync(directory)
+                finally:
+                    os.close(directory)
+            else:
+                _private(self.withdrawal_path)
+            for table in ("messages", "invalidations", "channels", "identity"):
+                db.execute(f"DELETE FROM {table}")  # noqa: S608 - fixed schema-owned names
+
+        # Only documented local learning copies are in scope. Usage accounting
+        # and its backups are deliberately outside these filename patterns.
+        audit = self.path.parent / "identity-audit.json"
+        backups = self.path.parent / "backups"
+        copies = [audit] if audit.exists() or audit.is_symlink() else []
+        if backups.exists() or backups.is_symlink():
+            _private(backups)
+            if not backups.is_dir():
+                raise LearningUnavailable("Private backup directory required")
+            copies.extend(backups.glob(self.path.stem + "-*.sqlite3*"))
+        for copy in copies:
+            _private(copy)
+            if not stat.S_ISREG(copy.lstat().st_mode):
+                raise LearningUnavailable("Learning cleanup requires regular private copies")
+            copy.unlink()
+        for parent in {copy.parent for copy in copies}:
+            descriptor = os.open(parent, os.O_RDONLY | os.O_DIRECTORY)
+            try:
+                os.fsync(descriptor)
+            finally:
+                os.close(descriptor)
+
     def status(self) -> dict[str, int | str]:
-        with self._transaction() as db:
-            self._read_identity(db)
+        withdrawn = self.is_withdrawn()
+        with self._transaction(allow_withdrawn=withdrawn) as db:
+            if not withdrawn:
+                self._read_identity(db)
             return {
                 "schema": 1,
                 "retention_days": self.retention_days,
@@ -328,7 +394,9 @@ class LearningStore:
                     "SELECT COUNT(*) FROM invalidations WHERE deleted=1"
                 ).fetchone()[0],
                 "channels": db.execute("SELECT COUNT(*) FROM channels").fetchone()[0],
-                "identity": "privately verified and pinned",
+                "identity": "withdrawn by operator"
+                if withdrawn
+                else "privately verified and pinned",
             }
 
 
@@ -336,7 +404,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Private Trubot learning state (no message output)"
     )
-    parser.add_argument("command", choices=("init", "status"))
+    parser.add_argument("command", choices=("init", "status", "forget"))
     parser.add_argument(
         "--path",
         type=Path,
@@ -363,6 +431,8 @@ def main() -> None:
                 now=datetime.now(UTC),
                 retention_days=args.retention_days,
             )
+        elif args.command == "forget":
+            store.forget(now=datetime.now(UTC))
         print(json.dumps(store.status(), indent=2))
     except (LearningUnavailable, OSError, ValueError):
         parser.exit(

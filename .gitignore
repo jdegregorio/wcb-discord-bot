@@ -27,3 +27,4 @@ htmlcov/
 # Private runtime usage state
 *.sqlite3
 *.sqlite3-*
+*.sqlite3.withdrawn

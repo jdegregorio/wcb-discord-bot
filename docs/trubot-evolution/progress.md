@@ -282,3 +282,48 @@
   timeout/capacity failures earlier were successfully retried within policy.
 - Final pre-PR gates: locked all-group sync, formatting, lint, strict typing,
   156 tests (96.43% branch-inclusive coverage), package build and diff checks pass.
+
+## 2026-10-07 complementary run: durable learning withdrawal
+
+- Initial base: `9ac5f50ae2d753f36326d9582977f31859a9c923`; new managed worktree
+  `trubot-daily-20261007-1512`. Joe's primary checkout was untouched.
+- Reconciliation: an earlier active run had no PR during the initial dashboard
+  check. Private state inspection later exposed its incompatible in-progress
+  schema. No state was overwritten or deleted. Its fresh account audit and the
+  current authenticated audit agreed after converting string IDs to integers.
+  This run's duplicate prototype is preserved locally at `f81a554` on
+  `feature/trubot-daily-20261007-1512` and is not part of the released increment.
+- Dependency: prior-run [PR #27](https://github.com/jdegregorio/wcb-discord-bot/pull/27)
+  merged with CI passing as `37f15ed83954728e9a27451cb9d4ab218fdf5b9c`.
+  The complementary branch was rebased onto that fetched main, rather than
+  releasing a competing ingestion schema. Live v2.3.0 is healthy at
+  `sha256:e54ef0e705df983c7c0b05e457162c8dae5953687e9d406e6374ce77aa84822a`.
+- Selected increment: operator withdrawal that cannot be undone by restoring
+  stale private evidence, so future learning has a reliable revocation path.
+  Version 2.3.1 retains schema 1 and the existing app volume.
+- Reproduction: the installed v2.3.0 runbook deletion followed by a compatible
+  mode-0600 stale backup restore reinstates the old identity and accepts evidence.
+  `evaluations/2026-10-07-withdrawal-before.json` records one of seven new
+  acceptance criteria present. This demonstrates a recovery gap, not identity
+  confusion or contamination in current production.
+- Acceptance: command erases records/identity and documented local learning
+  copies; durable marker blocks old restores, initialization, and in-flight
+  transactions. A loaded worker stops without Discord reads. Failed cleanup
+  remains disabled and a retry succeeds. Spending state and normal replies remain
+  available. No real production withdrawal or deletion is performed in validation.
+- Candidate: synthetic installed-handler/library probe passes 7/7 locally and
+  on ARM64. Unit coverage includes unsafe copy targets, symlink markers, disk
+  synchronization failure, stale restores and loaded-worker shutdown. Earlier
+  probe staging missed restored-file permissions and was corrected before the
+  before/after evidence was recorded. Reports contain only synthetic data.
+- Cost: zero API calls, zero Discord writes, zero added paid infrastructure.
+  This increment changes no prompt, model, usage ledger, or monthly limits.
+- Limitations: off-device deletion/recovery remains unverified. Older images do
+  not honor the marker; rollback must preserve the erased identity and must not
+  restore stale learning state. Prior individual corrections still require
+  reapplying source invalidations after backup restoration. Retrieval remains next.
+- Local gates and PR/release/deployment identifiers will be added after verification.
+- Final pre-PR gates: locked sync, format, lint, strict types, 169 tests with
+  96.49% branch-inclusive coverage, package build and diff check all passed.
+  Final ARM64 candidate probe is 7/7 after the directory-sync and runtime
+  composition checks. Provider calls and Discord writes remain zero.
