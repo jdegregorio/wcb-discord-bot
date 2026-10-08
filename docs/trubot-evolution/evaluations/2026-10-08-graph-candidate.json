@@ -1,0 +1,80 @@
+{
+  "version": "2.6.0",
+  "base_sha": "7e243bbabd66af7cc571f28310feff619e882637",
+  "graph": {
+    "human_sources": 439,
+    "native_sources": 34,
+    "eligible_slack_blocks": 405,
+    "episodes": 554,
+    "captured_visual_episodes": 115,
+    "image_nodes": 96,
+    "captured_target_humans": 11,
+    "reviewed_claims": 1,
+    "concepts": 1,
+    "edges": 1009,
+    "checkpoints": 2
+  },
+  "study": {
+    "exchanges": 24,
+    "accepted_observations": 1,
+    "supports": 3,
+    "generated_paraphrases": 6,
+    "lexical_misses": 4,
+    "method": "Private model-assisted contextual study with exact target quotation checks and separate contextual review"
+  },
+  "before": {
+    "answer_term_passes": 0,
+    "cases": 3,
+    "graph_context_passes": 0
+  },
+  "candidate": {
+    "answer_term_passes": 3,
+    "cases": 3,
+    "graph_context_passes": 3,
+    "model_rubric_fidelity_passes": 3,
+    "model_rubric_unsupported_claims": 0,
+    "context_bytes": [
+      4564,
+      4161,
+      4632
+    ],
+    "retrieval_ms": [
+      813.47,
+      3096.1,
+      935.52
+    ],
+    "response_ms": [
+      3439.79,
+      4578.23,
+      4056.06
+    ]
+  },
+  "no_discord_writes": true,
+  "quality": {
+    "tests": 238,
+    "branch_inclusive_coverage_percent": 95.88,
+    "locked_sync": true,
+    "format": true,
+    "lint": true,
+    "mypy": true,
+    "build": true
+  },
+  "synthetic_storage_acceptance": {
+    "passed": 7,
+    "total": 7
+  },
+  "repairs": [
+    "Reaction fixture now preserves authenticated older source refetches",
+    "Measure actual generation context rather than redundant preflight fetches",
+    "Qualified graph status/date contract prevents observed permanent-allegiance overclaim",
+    "Native verification has four seconds per source and six seconds total",
+    "Shared image/human nodes survive removal of a different connected episode"
+  ],
+  "limitations": [
+    "Three synthetic paraphrases of one retained concept; not independent held-out human exchanges",
+    "Reviewer uses the same runtime model; no human rubric review",
+    "Not continuous graph population or model distillation",
+    "Historical images are connected but unstudied; no historical image-dependent personal inference",
+    "Native peers, threads, full history and richer entities/humor remain future work"
+  ]
+}

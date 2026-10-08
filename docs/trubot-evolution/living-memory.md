@@ -5,17 +5,25 @@ next architectural priority, rather than another isolated prompt patch.
 
 ## Current state and delivery boundary
 
-Version 2.5.0 supplies bounded, source-backed text recall and ephemeral live
-image understanding. It does not implement a knowledge graph, distilled beliefs,
-entity resolution or continuous concept extraction. Raw source storage and
-keyword/topic retrieval are enabling foundations.
+The 2.6.0 candidate implements the first private operational graph on the existing
+app volume. It connects source references, episodes, captured images, the pinned
+person, reviewed claims/preferences, and concepts. Bounded traversal selects raw
+supporting passages even when a question uses different words. Every observation
+carries evidence fingerprints, source dates or explicit unknown dates, extraction
+provenance, confidence basis, status, and optional expiry.
 
-The existing daily job runs at 01:00 local time. Its next run should start the
-first graph milestone, delivering a coherent implementation through tests,
-release and production verification. Subsequent runs should extend and evaluate
-it rather than repeating ingestion or planning. Do not announce graph completion
-until the first milestone's response-level acceptance passes. Full recall depends
-on actual source coverage and cannot mean perfect recall of missing conversations.
+Initial population covers 439 eligible target text sources, 115 captured visual
+episodes and 96 original image hashes. A 24-exchange private contextual study
+retained one qualified claim with three sources after strict review. Other
+proposed interpretations were rejected. Captured images are linked but marked
+unstudied; they do not yet establish historical visual interpretations or beliefs.
+Continuous extraction, peer nodes, real reply/thread relationships, broader
+entities and evaluated humor/style observations remain further increments.
+
+The automation runs six standalone tasks daily at 01:00, 05:00, 09:00, 13:00,
+17:00 and 21:00 Pacific. Each run uses a fresh managed worktree, inspects prior
+progress and open PRs, and completes one coherent improvement. See progress.md
+for actual release and deployment status, rather than treating a candidate as live.
 
 ## Graph model
 

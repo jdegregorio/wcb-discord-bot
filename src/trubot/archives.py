@@ -345,6 +345,7 @@ class ArchiveStore:
             db.execute("DELETE FROM visual_episodes WHERE digest=?", (digest,))
             db.execute("DELETE FROM assets WHERE digest NOT IN (SELECT asset FROM episode_assets)")
         self._remove_backups()
+        self.learning._sweep_graph(now=now)
 
     def remove_document(self, digest: str, *, now: datetime) -> None:
         """Correction removes raw and parsed data and blocks silent reimport."""
@@ -352,6 +353,7 @@ class ArchiveStore:
             db.execute("INSERT OR IGNORE INTO suppressions VALUES (?, ?)", (digest, _time(now)))
             db.execute("DELETE FROM documents WHERE digest=?", (digest,))
         self._remove_backups()
+        self.learning._sweep_graph(now=now)
 
     def _remove_backups(self) -> None:
         # Backup copies could otherwise restore corrected sources. Remove only

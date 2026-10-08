@@ -28,7 +28,7 @@ _SPEAKER_PREFIX = re.compile(
     r"^(?:trubot|andrew(?:[.\s]+truax)?|truax)\s*:\s*",
     flags=re.IGNORECASE,
 )
-_PROMPT_CACHE_KEY = "wcb-trubot-personality-v7"
+_PROMPT_CACHE_KEY = "wcb-trubot-personality-v8"
 _NO_REPLY = "<NO_REPLY>"
 
 _TARGET_LABELS = {

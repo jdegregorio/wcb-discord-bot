@@ -489,6 +489,7 @@ class TruBotClient(discord.Client):
             )
             verified = []
             verification_started = self._clock()
+            verification_deadline = asyncio.get_running_loop().time() + 6
             for candidate in candidates:
                 if candidate.source["kind"] == "discord":
                     source_channel = self.get_channel(candidate.source["channel_id"])
@@ -496,10 +497,13 @@ class TruBotClient(discord.Client):
                         continue
                     if not learning.accepts(source_channel):
                         continue
+                    remaining = verification_deadline - asyncio.get_running_loop().time()
+                    if remaining <= 0:
+                        break
                     try:
                         await asyncio.wait_for(
                             learning.refresh(source_channel, candidate.source["message_id"]),
-                            timeout=2,
+                            timeout=min(4, remaining),
                         )
                     except (discord.HTTPException, TimeoutError):
                         # Missing permission or network access never revives cached evidence.
@@ -507,7 +511,7 @@ class TruBotClient(discord.Client):
                 verified.append(candidate)
             if self._learning is not None and self._learning.verified:
                 return await asyncio.to_thread(
-                    memory.render, verified, verified_after=verification_started
+                    memory.render, verified, verified_after=verification_started, now=self._clock()
                 )
             return ""
         except LearningUnavailable:

@@ -580,3 +580,55 @@ existing model, reasoning, execution and notification settings; its prompt now
 directs the next run to implement the first operational graph milestone. The
 weekly recap is updated to report graph readiness, continuous updates and source
 coverage separately. Implementation is planned, not yet completed.
+
+
+## 2026-10-08 01:00 run: first connected private graph
+
+Base main is `7e243bbabd66af7cc571f28310feff619e882637`, fetched without resetting
+Joe's checkout. All source work uses the new managed worktree
+`trubot-daily-20261008-0100` and unique feature branch. No overlapping evolution
+PR is open; existing dependency PRs remain separate. The primary checkout is
+unchanged. The six-runs-per-day schedule supersedes older cadence notes.
+
+Before: source retrieval depended on keyword/topic overlap. Three private synthetic
+paraphrases missed the retained observation's supporting sources and expected
+reply terms (0/3). After: entity/concept traversal supplies the connected source
+neighborhood to actual direct, reaction and follow-up handlers (3/3), with captured
+sends and zero league posts. The graph is private on the existing app volume:
+439 eligible target text references, 554 episodes including 115 visual episodes,
+96 original image hashes, 11 captured target humans, one qualified claim, one
+concept, 1,009 edges and two resumable checkpoints. Raw source stores remain
+lossless and authoritative; graph nodes do not copy their text.
+
+A bounded 24-exchange contextual study used the existing maintenance ledger,
+validated exact target quotes, and retained one observation with three independent
+sources after a separate contextual review. Broader proposals were rejected.
+Confidence, timestamps/unknown dates, extraction provenance, status, contradictions
+and expiry remain explicit. Runtime source fingerprints and native refetch prevent
+stale supports from shaping beliefs. Source changes erase affected derivations and
+local graph backups; withdrawal blocks loaded clients and stale restoration while
+preserving accounting. Native verification has four seconds per source and six
+seconds total to avoid observed two-second Discord refetch timeout flakiness.
+
+All 238 tests pass with 95.88% branch-inclusive coverage; locked sync, format,
+lint and strict source typing pass. Synthetic installed-storage-style acceptance
+passes 7/7: interruption/restart, connected recall/guild scope, contradictory
+preference, online backup/disposable restore, edits/deletion/stale graph restore,
+peer exclusion/date uncertainty/suppression, loaded-client withdrawal. Actual
+captured generation contexts are 4,161-4,632 bytes; source retrieval took
+0.81-3.10 seconds and handler response latency was 3.44-4.58 seconds in the final
+three-case candidate sample. A contextual model rubric passes 3/3 with zero
+unsupported claims after repairing an observed permanent-allegiance overclaim.
+
+See [content-free candidate evidence](evaluations/2026-10-08-graph-candidate.json).
+These are synthetic paraphrases of one studied concept, not independently held-out
+human conversations or proof of general character fidelity. Review uses the same
+runtime model rather than a human judge. Historical images have graph relationships
+but remain unstudied, so no image-derived historical belief enters replies.
+Continuous distillation/population, richer entities/humor, native peers/threads and
+full historical coverage remain prioritized work. No added paid infrastructure.
+
+The final package build, runtime PR, CI, merged revision, immutable release/image,
+installed acceptance, backup/restore, deployed health and final usage are recorded
+below as the release cycle completes. Raw studies, responses and expectations stay
+private and temporary; no personal conclusion, source ID or message enters Git.

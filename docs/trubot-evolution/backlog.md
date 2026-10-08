@@ -8,13 +8,19 @@ one coherent increment through production verification.
 - Joe explicitly requested interconnected raw exchanges, entities, distilled
   concepts, personality and humor on 2026-10-07. Treat this as the next architecture
   priority. Follow [the living memory specification](living-memory.md).
-- Delivered in 2.5.0: bounded source text recall and ephemeral live images. The
-  graph, distilled claims and continuous updates are still missing.
+- Delivered in 2.5.0: bounded source text recall and ephemeral live images.
+  The 2.6.0 candidate adds the first private graph and reviewed concept traversal;
+  verify the rollout record in progress.md before assuming it is deployed.
 - First milestone: persist evidence-backed typed nodes/edges with resumable
   import, retrieve bounded relevant subgraphs in replies, and prove connected
   recall when a question differs from the source wording.
-- Next: incremental concept/claim/style extraction, contradiction handling and
-  source-driven invalidation; then deeper native history and visual coverage.
+- Next: continuous bounded distillation and incremental graph population. Use the
+  maintenance ledger, independent support, conflicting evidence, expiry and
+  source invalidation. Current population is an operator snapshot, not a live
+  extractor; newly arriving sources are not automatically distilled.
+- Then: privately study more contexts and actual pixels, add verified reply/thread
+  relationships and source visibility checks, and test broader conceptual recall.
+  Initial scope retains one qualified claim, not comprehensive personality memory.
 - Validation: direct/reaction/follow-up recall, private held-out expectations,
   contextual humor, stale sports facts, contradictions, edits/deletions, withdrawal,
   restart/recovery, bot/peer exclusion, source uncertainty, bounded cost and latency.

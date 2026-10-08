@@ -252,3 +252,26 @@ It requires an operator-reviewed mode-0600 expectation file in a private directo
 and the verified private learning store. It checks grounded baseball
 memory, direct/follow-up behavior, image content/OCR, reactions and bot-memory
 exclusion. See the storage runbook for source freshness, withdrawal and bounds.
+
+
+## Connected private memory
+
+Version 2.6.0 adds a private SQLite evidence graph. Reviewed concepts can retrieve
+supporting exchanges through different wording, with confidence, source dates,
+contradictions and expiry preserved. Native sources are refreshed before use;
+edits, deletion and withdrawal invalidate derived memory. Initial coverage and
+limitations are recorded in the [living memory plan](docs/trubot-evolution/living-memory.md).
+Images are connected to captured episodes but historical visual interpretation
+and continuous distillation remain future work. Operator commands and recovery
+are in the [storage runbook](docs/trubot-evolution/storage.md).
+
+The bounded acceptance script reads private expectations, uses the existing
+maintenance ledger and captures all Discord sends:
+
+```sh
+uv run python scripts/evaluate_graph.py --expectations /private/expectations.json --phase installed
+```
+
+Answer-term checks verify recall; separate contextual review evaluates scope,
+natural engagement and unsupported claims. Private responses and expectations
+must remain outside Git and application logs.
