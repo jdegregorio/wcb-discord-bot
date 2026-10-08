@@ -1,0 +1,1 @@
+{"no_discord_writes": true, "cases": [{"id": "baseball-direct", "passed": true, "posts": 1}, {"id": "baseball-followup", "passed": true, "posts": 1}, {"id": "image-direct", "passed": true, "posts": 1}, {"id": "image-reaction", "passed": true, "posts": 1}, {"id": "unsupported-bot-memory", "passed": true, "posts": 1}]}

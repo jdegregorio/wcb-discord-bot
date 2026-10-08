@@ -3,28 +3,21 @@
 Replenish this list as evidence arrives. Each run owns prioritization and carries
 one coherent increment through production verification.
 
-## 1. Contextual evidence derivation and richer retrieval
+## 1. Living memory graph
 
-- Delivered in 2.5.0: bounded source retrieval for live replies and ephemeral live
-  image understanding. Source removal/withdrawal and native freshness are enforced.
-  Continue beyond lexical/topic retrieval toward reviewed, compact beliefs.
-- Acceptance: study historical exchanges with setup, target response and peer
-  reactions, including actual visual setup when images/memes carry meaning.
-  Review captured image bytes and preserve missing-media uncertainty. Keep OCR or
-  quoted image text separate from authored voice. Derive a compact set of interests and style observations with source
-  references, confidence, timestamps, and contradiction/expiry handling. Retrieve
-  only relevant evidence within a token budget. Andrew's preferences must come
-  from his attributed messages, never another person's enthusiasm or bot output.
-- Dependencies: verified ingestion and spending guard, delivered in 2.3.0/2.2.0.
-  Include the private Slack corpus through `ArchiveStore.context`, retaining alias,
-  unknown-date and ambiguous-quote qualifications. Never infer a current preference
-  from an undated old exchange alone. Assess overlapping exports before weighting
-  repeated phrases; identical short replies may be separate events.
-  Revalidate source freshness before deriving beliefs, including sources not yet
-  revisited by rotating reconciliation after an offline interval.
-- Validation: supported enthusiasm, rival preferences, stale sports beliefs,
-  corrections, unsupported claims, and prompt injection. Compare against the
-  emotional-judgment fixtures and add private held-out evidence evaluations.
+- Joe explicitly requested interconnected raw exchanges, entities, distilled
+  concepts, personality and humor on 2026-10-07. Treat this as the next architecture
+  priority. Follow [the living memory specification](living-memory.md).
+- Delivered in 2.5.0: bounded source text recall and ephemeral live images. The
+  graph, distilled claims and continuous updates are still missing.
+- First milestone: persist evidence-backed typed nodes/edges with resumable
+  import, retrieve bounded relevant subgraphs in replies, and prove connected
+  recall when a question differs from the source wording.
+- Next: incremental concept/claim/style extraction, contradiction handling and
+  source-driven invalidation; then deeper native history and visual coverage.
+- Validation: direct/reaction/follow-up recall, private held-out expectations,
+  contextual humor, stale sports facts, contradictions, edits/deletions, withdrawal,
+  restart/recovery, bot/peer exclusion, source uncertainty, bounded cost and latency.
 
 ## 2. Participation and emotional continuity
 

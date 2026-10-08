@@ -111,3 +111,13 @@ then extend the current bounded lexical/topic search into reviewed contextual
 beliefs with confidence and contradiction handling. Preserve source refresh,
 withdrawal, missing-image honesty and the spending ledger. Historical image
 interpretation and full native history coverage remain independent work.
+
+
+## Next architecture priority
+
+Joe requested a living knowledge graph on 2026-10-07: raw human exchanges and
+images connected to entities, distilled claims, events and abstract personality/
+humor observations. Follow [living-memory.md](living-memory.md) and the updated
+backlog. Deliver the first operational graph recall increment in the next daily
+cycle, then continuously update/invalidate derived evidence and extend historical
+coverage. Do not equate 2.5.0's keyword/topic retrieval with a finished graph.
