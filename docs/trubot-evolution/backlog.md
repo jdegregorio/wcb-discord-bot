@@ -14,10 +14,13 @@ one coherent increment through production verification.
 - First milestone: persist evidence-backed typed nodes/edges with resumable
   import, retrieve bounded relevant subgraphs in replies, and prove connected
   recall when a question differs from the source wording.
-- Next: continuous bounded distillation and incremental graph population. Use the
-  maintenance ledger, independent support, conflicting evidence, expiry and
-  source invalidation. Current population is an operator snapshot, not a live
-  extractor; newly arriving sources are not automatically distilled.
+- 2.7.0 increment: continuous bounded source population and two-pass text
+  distillation, using the existing maintenance ledger, qualified support, conflicts,
+  expiry, source invalidation and operator retirement. Verify rollout in progress.md.
+- Next acceptance: study contextual humor/style with genuine held-out human exchanges;
+  measure precision and useful recall against the current conservative learner.
+  Expand contextual neighborhoods and contradiction discovery using source evidence.
+  Current six-excerpt lexical packets can abstain and do not establish full coverage.
 - Then: privately study more contexts and actual pixels, add verified reply/thread
   relationships and source visibility checks, and test broader conceptual recall.
   Initial scope retains one qualified claim, not comprehensive personality memory.

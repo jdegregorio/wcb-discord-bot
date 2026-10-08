@@ -6,7 +6,8 @@ import asyncio
 import json
 import logging
 import re
-from collections.abc import Sequence
+from collections.abc import Awaitable, Callable, Sequence
+from typing import Any
 
 from openai import APIConnectionError, APIStatusError, AsyncOpenAI, RateLimitError
 from openai.types.responses import (
@@ -143,6 +144,57 @@ class OpenAITruaxResponder:
         logger.info("Generated Trubot response mode=%s characters=%d", mode.value, len(reply))
         return reply
 
+    async def study_json(
+        self,
+        *,
+        instructions: str,
+        payload: dict[str, Any],
+        schema: dict[str, Any],
+        name: str,
+        source_check: Callable[[], Awaitable[None]] | None = None,
+    ) -> dict[str, Any]:
+        """One bounded maintenance attempt. No retries, tools, or stored response."""
+        content = json.dumps(payload, ensure_ascii=False)
+        size = len(json.dumps([instructions, content, schema], ensure_ascii=False).encode())
+        if size > 16_000:
+            raise ResponderError("Study context exceeds its spending bound")
+        response = await self._generate(
+            input_bound=size + 4096,
+            output_bound=1024,
+            mode=ReplyMode.DIRECT,
+            purpose="maintenance",
+            retry_limit=0,
+            before_request=source_check,
+            request=ResponseCreateParamsNonStreaming(
+                model=self._model,
+                service_tier="default",
+                instructions=instructions,
+                input=[{"role": "user", "content": content}],
+                reasoning={"effort": "none"},
+                text={
+                    "verbosity": "low",
+                    "format": {
+                        "type": "json_schema",
+                        "name": name,
+                        "strict": True,
+                        "schema": schema,
+                    },
+                },
+                max_output_tokens=1024,
+                store=False,
+                prompt_cache_key="wcb-trubot-distillation-v1",
+            ),
+        )
+        if getattr(response, "status", "completed") != "completed":
+            raise ResponderError("Incomplete study response")
+        try:
+            parsed = json.loads(response.output_text)
+            if not isinstance(parsed, dict):
+                raise ValueError("Object required")
+            return parsed
+        except (ValueError, TypeError) as error:
+            raise ResponderError("Invalid study response") from error
+
     async def _generate(
         self,
         *,
@@ -150,18 +202,24 @@ class OpenAITruaxResponder:
         output_bound: int,
         mode: ReplyMode,
         request: ResponseCreateParamsNonStreaming,
+        purpose: str | None = None,
+        retry_limit: int | None = None,
+        before_request: Callable[[], Awaitable[None]] | None = None,
     ) -> Response:
-        for attempt in range(self._max_retries + 1):
+        retries = self._max_retries if retry_limit is None else retry_limit
+        for attempt in range(retries + 1):
             # Atomic commit completes before any provider I/O, across channels/processes.
             reservation = await asyncio.to_thread(
                 self._budget.reserve,
                 model=self._model,
                 input_bound=input_bound,
                 output_bound=output_bound,
-                purpose=self._purpose,
+                purpose=purpose or self._purpose,
                 mode=mode.value,
             )
             try:
+                if before_request is not None:
+                    await before_request()
                 response = await self._client.responses.create(**request)
             except asyncio.CancelledError:
                 # A committed pending reservation survives cancellation and crashes.
@@ -171,7 +229,7 @@ class OpenAITruaxResponder:
                 retryable = isinstance(error, APIConnectionError | RateLimitError) or (
                     isinstance(error, APIStatusError) and error.status_code >= 500
                 )
-                if not retryable or attempt == self._max_retries:
+                if not retryable or attempt == retries:
                     raise
                 await asyncio.sleep(min(0.5 * 2**attempt, 8))
                 continue
@@ -195,7 +253,7 @@ class OpenAITruaxResponder:
                     usage.input_tokens_details.cached_tokens,
                     usage.output_tokens,
                     cost / NANODOLLARS,
-                    self._purpose,
+                    purpose or self._purpose,
                 )
             return response
         raise BudgetUnavailable("No accounted API attempt completed")

@@ -1,0 +1,60 @@
+{
+  "increment": "continuous private graph distillation",
+  "base_sha": "d811d99e333cc2ad7d53a9ff48e43bea391edbf8",
+  "before": {
+    "new_native_after_slack_snapshot": false,
+    "observed_human_sources": 1,
+    "expected_human_sources": 2
+  },
+  "synthetic_live": {
+    "cases_passed": 8,
+    "cases_total": 8,
+    "provider_calls": 5,
+    "captured_handler_posts": 3,
+    "study_ms": 7616.98,
+    "nonlexical_alias": false,
+    "independent_human_holdout": false,
+    "initial_two_exchange_fixture": {
+      "provider_calls": 1,
+      "observations": 0
+    }
+  },
+  "private_corpus_clone": {
+    "provider_calls": 1,
+    "passages": 6,
+    "unknown_dates": 5,
+    "adjacent_context_blocks": 10,
+    "qualified_observations_added": 0,
+    "outcome": "rejected",
+    "study_ms": 3025.8
+  },
+  "synthetic_recovery": {
+    "cases_passed": 7,
+    "cases_total": 7,
+    "provider_calls": 0
+  },
+  "quality": {
+    "tests_passed": 265,
+    "branch_inclusive_coverage_percent": 95.67,
+    "locked_sync": true,
+    "format": true,
+    "lint": true,
+    "strict_types": true,
+    "build": true,
+    "final_quote_independence_hardening": true
+  },
+  "no_discord_writes": true,
+  "no_new_paid_infrastructure": true,
+  "limits": {
+    "studies_per_4_hours": 1,
+    "provider_calls_per_study": 2,
+    "request_utf8_bytes": 16000,
+    "request_output_tokens": 1024,
+    "monthly_maintenance_usd": 2
+  },
+  "limitations": [
+    "Synthetic concept-selected questions are not independently held-out human turns.",
+    "The real corpus packet added no observation, so no measured real-character fidelity gain is claimed.",
+    "Historical pixels, full native peer setup, reply/thread history and semantic contradiction coverage remain gaps."
+  ]
+}

@@ -367,9 +367,10 @@ ssh pi5 'docker exec wcb-bot trubot-graph remove --id <reviewed-observation-id>'
 Initialization is exclusive and never happens at runtime. Repeat bounded
 population batches until `remaining` is zero and visual processing is zero.
 Each batch and checkpoint commits atomically; interruption/replay is safe.
-The checkpoint is for an initial source snapshot. Later sources sorting before
-it need a future incremental population workflow. Do not mistake it for continuous
-extraction. Capacity is 30,000 nodes; lookup scans at most 1,000 entity/concept
+Version 2.7.0 selects source references missing from the graph rather than
+using the initial sorted cursor as a coverage boundary. Later native or Slack
+sources are picked up in bounded batches by the existing learning cycle. Visual
+population still uses its operator snapshot cursor and is not continuous coverage. Capacity is 30,000 nodes; lookup scans at most 1,000 entity/concept
 nodes. Reviewed manifests are private, at most 128 KB and 100 observations.
 Each observation has 1-3 distinct human supports, at most four entities/concepts,
 a summary of at most 600 characters, review/provenance, confidence basis, status
@@ -410,3 +411,69 @@ Preserve the withdrawal marker independently. Do not replace usage state.
 Image rollback retains graph bytes. Releases before 2.6.0 do not clean graph files
 on withdrawal, so use a compatible operator tool or explicitly erase those private
 files while preserving the marker. Off-device recovery/deletion remains unverified.
+
+
+## Continuous text distillation (2.7.0)
+
+No schema migration or added state file is required. Schema-1 graph checkpoints
+hold a durable four-hour dispatch lease, per-anchor fingerprint/version/outcome,
+source dependency references and retry time. Source stores remain authoritative.
+A batch studies at most six related eligible human excerpts, capped at 1,200 UTF-8
+bytes each, with at most two neighboring Slack context blocks of 250 bytes each.
+Native sources stay within the configured intake intersection and are refetched
+within the existing four-second-per-source/six-second-total budget. Every selected
+source is rechecked before each paid request and under the final commit lock.
+
+The extractor can propose at most one observation. 2-3 distinct exact target
+quotes, including the new anchor, must pass local validation. Duplicate source
+text, peer/bot claims and unviewed images cannot support it. A separate contextual
+model pass checks literal meaning, uncertainty and relevant recorded disagreements.
+Accepted summaries retain explicit conditions, tentative/contested status,
+30-day expiry and automated review provenance. This is not human review or proof
+of a permanent personal belief. Short/ambiguous anchors may produce no observation.
+
+Both requests use the existing USD 2 maintenance allowance, not a fresh ledger.
+The existing standard GPT-6 Luna prices were rechecked on 2026-10-08 against
+[the official model documentation](https://developers.openai.com/api/docs/models/gpt-6-luna).
+Each request has a 16,000-byte framing/input/schema cap, a further 4,096-token
+reservation margin and 1,024 output tokens. At two attempts every four hours,
+the conservative maximum reservation envelope is USD 1.124928 for a 31-day month.
+That leaves room for evaluations within the shared USD 2 limit; exhaustion or
+unsupported pricing pauses studies before network I/O. Actual token usage is
+settled normally. Missing usage, failures and cancellation retain reservations.
+There is no added paid infrastructure, and pre-guard spending remains unknown.
+
+The dispatch lease commits before requests, so restart, concurrent workers or
+failures cannot cause a study storm. Valid rejections are checkpointed for 30 days;
+insufficient support retries after one day. Transport/storage failures retain the
+lease and retry after four hours without losing the anchor. Source corrections,
+deletions or pruning erase affected derivations and all dependent study checkpoints,
+allowing a bounded review of corrected evidence. Population no longer skips new
+native references that sort before the old Slack cursor.
+
+Removing an automated observation with `trubot-graph remove` also records
+fingerprint vetoes for its supporting sources. The automatic learner cannot reuse
+those unchanged sources as anchors or support, including a study already in flight.
+An edit produces new evidence and clears the old veto through source invalidation.
+Raw sources remain available to explicitly reviewed operator work and existing
+source retrieval. For complete suppression, use the source-store deletion workflow.
+Retirement is deliberately conservative about future automatic use of those sources.
+
+Check `trubot-graph status` for aggregate accepted/rejected/insufficient study
+checkpoints and veto counts. Withdrawal erases all graph checkpoints and vetoes
+with the graph database and documented local backups. An independent withdrawal
+marker still blocks loaded clients and restored copies. The spending ledger stays
+intact. Online graph backups carry these checkpoints; restoring an older copy can
+replay a study or lose a later operator veto, so reapply retirements after restore.
+Current source fingerprints and the maintenance ledger remain authoritative.
+Off-device recovery/deletion remains unverified. Data already sent in a provider
+request cannot be recalled by a later withdrawal.
+
+`python scripts/evaluate_distillation.py --live` runs five accounted provider calls
+on disposable synthetic sources and captures every Discord send. Without `--live`,
+it runs deterministic local study/reply stubs. It never changes real learning state
+or creates a spending ledger. `evaluate_incremental_sources.py` makes one authorized
+private study in a disposable graph clone, verifies pinned guild membership and
+refreshes selected native sources through authenticated Discord reads. It reports
+counts only and never sends a Discord message or copies/replaces usage state.
+Synthetic concept-selected questions test the flow, not independent human fidelity.

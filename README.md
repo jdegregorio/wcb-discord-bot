@@ -275,3 +275,21 @@ uv run python scripts/evaluate_graph.py --expectations /private/expectations.jso
 Answer-term checks verify recall; separate contextual review evaluates scope,
 natural engagement and unsupported claims. Private responses and expectations
 must remain outside Git and application logs.
+
+
+## Continuous private graph learning (2.7.0)
+
+The existing background learning cycle adds new eligible native/Slack sources to
+an explicitly initialized graph. Every four hours it studies at most six related
+human excerpts, with separately labeled Slack adjacency. New claims/preferences
+and contextual humor/style observations need 2-3 distinct exact support quotes
+and a separate model review. Accepted observations are tentative, expire after
+30 days, and carry source references, uncertainty and extraction provenance.
+They enter bounded connected recall after the existing source verification.
+
+The learner uses GPT-6 Luna, strict [structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs),
+no tools, no retries and `store=false`. Both attempts use the existing maintenance
+ledger. Restart, failure or reconnect cannot reset its four-hour pacing. Missing
+or withdrawn graph/source state pauses studies while ordinary replies continue.
+It never posts a Discord message itself. See the storage runbook for operator
+retirement, correction and recovery, and progress.md for measured coverage.
