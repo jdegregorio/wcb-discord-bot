@@ -17,6 +17,7 @@ DEFAULT_ALLOWED_CHANNEL_IDS = frozenset(
 )
 DEFAULT_REACTION_EMOJIS = frozenset({"ThomasJones", "🍆"})
 DEFAULT_READY_FILE = Path("/tmp/wcb-bot-ready")  # noqa: S108 - isolated container heartbeat
+DEFAULT_DEVELOPMENT_GUILD_ID = 1043023451482505226
 _LOG_LEVELS = frozenset({"CRITICAL", "ERROR", "WARNING", "INFO", "DEBUG", "NOTSET"})
 
 
@@ -35,6 +36,7 @@ class Settings:
     discord_token: str = field(repr=False)
     openai_api_key: str = field(repr=False)
     allowed_channel_ids: frozenset[int] = DEFAULT_ALLOWED_CHANNEL_IDS
+    development_guild_id: int = DEFAULT_DEVELOPMENT_GUILD_ID
     reaction_emoji_names: frozenset[str] = DEFAULT_REACTION_EMOJIS
     openai_model: str = "gpt-6-luna"
     openai_timeout_seconds: float = 45.0
@@ -77,6 +79,9 @@ class Settings:
             discord_token=_required(values, "DISCORD_TOKEN"),
             openai_api_key=_required(values, "OPENAI_API_KEY"),
             allowed_channel_ids=allowed_channels,
+            development_guild_id=_integer(
+                values, "TRUBOT_DEVELOPMENT_GUILD_ID", DEFAULT_DEVELOPMENT_GUILD_ID
+            ),
             reaction_emoji_names=reaction_emojis,
             openai_model=_nonempty(values, "TRUBOT_OPENAI_MODEL", "gpt-6-luna"),
             openai_timeout_seconds=_number(values, "OPENAI_TIMEOUT_SECONDS", 45.0),
@@ -112,6 +117,7 @@ class Settings:
 
     def _validate(self) -> None:
         _at_least_one(self.allowed_channel_ids, "TRUBOT_ALLOWED_CHANNEL_IDS")
+        _at_least(self.development_guild_id, 0, "TRUBOT_DEVELOPMENT_GUILD_ID")
         _at_least_one(self.reaction_emoji_names, "TRUBOT_REACTION_EMOJIS")
         _greater_than(self.openai_timeout_seconds, 0, "OPENAI_TIMEOUT_SECONDS")
         _between(self.openai_max_retries, 0, 4, "OPENAI_MAX_RETRIES")
