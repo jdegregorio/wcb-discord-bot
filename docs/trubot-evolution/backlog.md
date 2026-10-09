@@ -150,3 +150,24 @@ one coherent increment through production verification.
   2.7.3 matches a recent quoted reply to current attributed human text as a lookup
   key, not personal evidence. Acceptance includes peer/fabricated quote exclusion,
   source changes, native freshness, guild/year scope and real quoted-source recall.
+
+
+## Context-aware study increment, 2026-10-08 13:00 run
+
+- Reproduced: two nearby native remarks passed habitual-style support validation,
+  and Slack neighborhoods discarded speaker/position and missing-media flags.
+- 2.8.0: anonymous contextual roles, setup/reaction position, ambiguity/truncation
+  flags, diversified packet selection and local rejection of overlapping pattern
+  support before a paid review or graph write. No source-schema migration.
+- Acceptance: preserve peer/bot/context-only exclusion, same-speaker continuity,
+  bounded snippets, obvious shared-exchange rejection, distinct-context candidates,
+  pacing, correction/withdrawal, connected recall and real development Discord checks.
+- Follow-up: verified native conversational neighborhoods/reply links remain
+  separate work. Six hours or more than ten export blocks are sampling exclusions,
+  not verified episode boundaries; independent contextual evaluation is still needed.
+  Single explicit self-reports still require two-source support in the automatic
+  learner. Evaluate a separately scoped self-report path without creating habits.
+- Legacy biography/style assumptions remain unvalidated. A local 12-block holdout
+  and structural recent-activity audit do not establish humor or personality fidelity.
+  Private model-assisted auditing awaits explicit payload approval after automatic
+  review rejected raw output and provider egress. Continue useful local work.

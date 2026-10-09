@@ -165,3 +165,13 @@ fixing the request-aware presentation defect in 2.7.2.
 Referential evidence questions must remain connected to the quoted exchange. A
 bot quotation can be a bounded lookup key only when current eligible human source
 text matches; it cannot create a belief or bypass source freshness or withdrawal.
+
+
+## Context-aware study support, 2.8.0
+
+The next learner increment preserves anonymous speaker keys, before/after position,
+parser ambiguity flags and truncation in bounded historical neighborhoods. It
+prioritizes related excerpts from separated contexts and blocks obvious shared
+exchanges from establishing habitual humor/style. Native packets explicitly mark
+missing peer setup. Separation is a conservative sampling filter, not proof of
+independent episodes; contextual review, tentative status and expiry remain required.

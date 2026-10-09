@@ -522,3 +522,26 @@ contextual semantic review or establish personality traits.
 Version 2.7.3 adds bounded recent quotation lookup for referential timing/evidence
 questions. It searches current attributed source text and rechecks at render time.
 There is no persisted bot-memory cache, new derived state or schema change.
+
+
+## Context-aware study packets, 2.8.0
+
+Schema-1 sources/graph and four-hour pacing are unchanged. Study version v2
+reopens prior anchor eligibility at the next existing dispatch boundary, never
+resets the lease or creates a ledger. At most six authored snippets now use
+1,000 UTF-8 bytes each; at most two adjacent Slack blocks use 120 bytes each.
+Anonymous document-scoped speaker keys, target/bot/context-only roles, position,
+parser flags and truncation preserve interpretation limits without raw names.
+Native packets explicitly identify absent peer setup. Context blocks cannot
+become support quotes. No historical pixel interpretation is added.
+
+Packet selection prefers related sources outside obvious shared contexts.
+Humor/style support rejects native pairs less than six hours apart (including
+channel changes) and same-export pairs within ten blocks. Separate corpora or
+export windows are candidates for contextual review, never proven independent
+episodes. Review must reject a pattern if setup cannot establish recurrence.
+Tentative observations retain sampling uncertainty, source dates, expiry, exact
+quotes and existing correction/withdrawal/veto checks. Existing qualified claims
+are not retroactively changed; current production has no automated style/humor
+observations to retire. The 16,000-byte request guard and maintenance cap remain
+authoritative; oversized packets pause without a paid call.

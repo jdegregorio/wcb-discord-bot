@@ -1,0 +1,48 @@
+{
+  "base": "8b64810b87e094675868904ce49d41ed216455f8",
+  "version": "2.8.0",
+  "before": {
+    "failed_regression_cases": 2
+  },
+  "after": {
+    "tests": 312,
+    "branch_coverage_percent": 95.9
+  },
+  "audit": {
+    "league_bot": 5,
+    "league_target": 7,
+    "development_bot": 20,
+    "heldout_human_blocks": 12,
+    "native_source_channels": 3,
+    "unknown_slack_dates": true,
+    "semantic_evaluation_completed": false,
+    "model_assisted_audit_pending_approval": true
+  },
+  "limitations": [
+    "sampling separation is not proven episode independence",
+    "native peer setup remains missing",
+    "no new personal observation or measured character-fidelity gain"
+  ],
+  "gates": {
+    "locked_sync": true,
+    "format": true,
+    "lint": true,
+    "mypy": true,
+    "pytest": true,
+    "build": true
+  },
+  "synthetic_live": {
+    "passed": 8,
+    "total": 8,
+    "study_ms": 6193.5,
+    "nonlexical_alias": false,
+    "captured_only": true,
+    "readiness_isolated": true
+  },
+  "actual_pre_release": {
+    "owner_ui": true,
+    "gateway_reply": true,
+    "universal_pattern_rejected": true,
+    "already_passed_before": true
+  }
+}

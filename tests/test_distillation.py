@@ -534,3 +534,118 @@ def test_duplicate_quotes_with_changed_surrounding_text_are_not_corroboration(st
         validate_proposal(
             proposal(study, supports=[{"source": i, "quote": shared} for i in [0, 1]]), study
         )
+
+
+def test_adjacent_messages_cannot_establish_a_habitual_style(stores):
+    store = seed(stores)
+    study = store.prepare(now=NOW, channel_ids=frozenset({10}))
+    with pytest.raises(LearningUnavailable, match="Separate conversational contexts"):
+        validate_proposal(proposal(study, kind="style"), study)
+
+
+def test_slack_packet_preserves_speaker_position_and_context_limits(stores):
+    _, archive, graph = stores
+    archive.import_document(
+        b"peer\n  8:00 AM\nWould you pick caramel?\nlegacy.target\n  8:01 AM\n"
+        b"I order caramel after dinner.\npeer\n  8:02 AM\nSame dessert again?\n"
+        b"legacy.target\n  8:03 AM\nCaramel is my choice after dinner.",
+        channel="synthetic",
+        target_alias="legacy.target",
+        alias_basis="Synthetic audit",
+        origin={"kind": "synthetic"},
+        now=NOW,
+    )
+    graph.populate(now=NOW)
+    study = StudyStore(graph).prepare(now=NOW, channel_ids=frozenset({10}))
+    passage = study.passages[0]
+    assert passage["context_scope"] == "export_adjacency_only"
+    assert passage["adjacent_context"][0]["position"] == "before"
+    assert passage["adjacent_context"][0]["author_role"] == "other_speaker"
+    assert "peer" not in json.dumps(passage)
+    with pytest.raises(LearningUnavailable, match="Separate conversational contexts"):
+        validate_proposal(proposal(study, kind="humor"), study)
+
+
+def test_context_diversity_precedes_another_remark_in_the_same_exchange(stores):
+    learning, _, graph = stores
+    seed(stores)
+    learning.observe(
+        source(
+            2,
+            content="I order caramel after dinner on Fridays.",
+            created_at=NOW - timedelta(days=3),
+        ),
+        now=NOW,
+    )
+    graph.populate(now=NOW)
+    study = StudyStore(graph).prepare(now=NOW, channel_ids=frozenset({10}))
+    assert study.snapshots[1]["ref"]["message_id"] == BASE + 2
+    assert validate_proposal(proposal(study, kind="style"), study)
+    assert study.passages[0]["context_scope"] == "native_target_only_peer_setup_missing"
+
+
+@pytest.mark.parametrize("gap,separated", [(0, False), (5, False), (6, True), (24, True)])
+def test_native_separation_is_temporal_not_a_channel_change(gap, separated):
+    from trubot.distillation import contexts_separated
+
+    assert (
+        contexts_separated(
+            {"ref": {"kind": "discord", "channel_id": 10}, "source_time": NOW.isoformat()},
+            {
+                "ref": {"kind": "discord", "channel_id": 20},
+                "source_time": (NOW - timedelta(hours=gap)).isoformat(),
+            },
+        )
+        is separated
+    )
+
+
+@pytest.mark.parametrize("gap,separated", [(1, False), (2, False), (10, False), (11, True)])
+def test_slack_separation_excludes_shared_and_nearby_windows(gap, separated):
+    from trubot.distillation import contexts_separated
+
+    assert (
+        contexts_separated(
+            {"ref": {"kind": "slack", "document": "synthetic", "ordinal": 5}},
+            {"ref": {"kind": "slack", "document": "synthetic", "ordinal": 5 + gap}},
+        )
+        is separated
+    )
+
+
+def test_context_flags_and_anonymous_speaker_consistency_do_not_become_support(stores):
+    _, archive, graph = stores
+    archive.import_document(
+        b"peer\n  8:00 AM\nImage from iOS\nlegacy.target\n  8:01 AM\n"
+        b"I order caramel after dinner.\npeer\n  8:02 AM\nSame dessert again?\n"
+        b"legacy.target\n  8:03 AM\nCaramel is my choice after dinner.",
+        channel="synthetic",
+        target_alias="legacy.target",
+        alias_basis="Synthetic audit",
+        origin={"kind": "synthetic"},
+        now=NOW,
+    )
+    graph.populate(now=NOW)
+    study = StudyStore(graph).prepare(now=NOW, channel_ids=frozenset({10}))
+    first = study.passages[1]["adjacent_context"]
+    assert first[0]["speaker_key"] == first[1]["speaker_key"]
+    assert first[0]["position"] == "before" and first[1]["position"] == "after"
+    assert "visual_context_missing" in first[0]["flags"]
+    bad = proposal(study)
+    bad["observations"][0]["supports"][0]["quote"] = "Same dessert again?"
+    with pytest.raises(LearningUnavailable, match="Exact attributed quote"):
+        validate_proposal(bad, study)
+
+
+async def test_false_habit_is_rejected_before_paid_review_or_graph_write(stores):
+    seed(stores)
+    distiller, client, responder, _ = worker(stores)
+
+    async def extract(**kwargs):
+        return proposal(SimpleNamespace(passages=kwargs["payload"]["sources"]), kind="humor")
+
+    responder.study_json.side_effect = extract
+    await distiller.cycle(client)
+    assert responder.study_json.await_count == 1
+    assert stores[2].status()["nodes"].get("humor", 0) == 0
+    assert stores[2].status()["studies"]["rejected"] == 1
