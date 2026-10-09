@@ -3,6 +3,25 @@
 Replenish this list as evidence arrives. Each run owns prioritization and carries
 one coherent increment through production verification.
 
+## Current ordered increments, 2026-10-09
+
+This order supersedes older next-step paragraphs below. H1-H3 are defined in
+[research.md](research.md); completed increments retain their historical evidence.
+
+| Priority/status | Evidence and user benefit | Dependencies/acceptance/validation | Confidence and operating impact |
+| --- | --- | --- | --- |
+| 1. Study diagnosis, selected enabling increment | H1: generic pauses obscure the limiting learning step, so future memory corrections can target real causes. | Same 14 baseline/fault probes classify stages/reasons without payloads; preserve restart pacing, withdrawal, rejection, cancellation, budget and real gateway replies. | Supported diagnosis hypothesis; no measured reply-quality gain. No added calls, storage schema or infrastructure. |
+| 2. Held-out conceptual recall | H2 and the 2.9.0 long-alias miss; relevant supported positions should survive varied wording. | Reviewed private expectations, six new paraphrases plus contrary/unrelated cases; compare precision, recall, voice, latency and cost on identical sources; real Discord. | Partial one-proposition evidence; broader precision unresolved. Existing bounded context and maintenance allowance. |
+| 3. Native neighborhoods and source-qualified persona | Unfinished prior runs, missing peer/reply context and unvalidated legacy traits. | Reconcile their branches first; verified references and pixels where relevant; held-out human contextual review, deletion/withdrawal and actual direct/follow-up/reaction behavior. | Enabling coverage; do not equate ingestion with fidelity. Existing volume, bounded batches/studies. |
+| 4. Selective skills/tools harness prototype | H3 and Joe's context direction, so fresh/relevant facts improve answers without mechanical explanations. | Same-case Responses/SDK/managed comparisons; source scope, procedure trust, termination, abstention, privacy, cost/latency bounds and actual delivery. | Exploratory; documentation capabilities untested here. No paid service or recurring spend until guarded and measured. |
+| 5. Requested generated outdoor images | H3 and Joe's northern-lights/trail-camera direction, so outdoor engagement has a suitable visual flow. | Study sharing/caption evidence and actual pixels; guarded generation, generated provenance, concise captions, Discord attachment display and failure/deduplication checks. Ambient comes later. | Exploratory sharing fidelity; explicit product requirement. Pricing/access/model reservations must fit USD 20 existing total. |
+
+Priority change: choose reliable diagnosis while overlapping behavioral work remains
+unfinished, then expand evidence-grounded retrieval. New human/held-out evidence,
+normal production study outcomes or failed retrieval precision can change this
+order. Long-term direction remains connected living memory, broader historical and
+visual coverage, and selectively loaded context with natural participation.
+
 ## 1. Living memory graph
 
 - Joe explicitly requested interconnected raw exchanges, entities, distilled

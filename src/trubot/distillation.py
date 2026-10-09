@@ -6,20 +6,29 @@ import asyncio
 import json
 import logging
 import re
+import sqlite3
+import time
 from collections.abc import Callable
 from contextlib import ExitStack, closing, suppress
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
-from typing import Any
+from typing import Any, Literal
 from uuid import uuid4
 
 import discord
+from openai import APIConnectionError, APIStatusError, APITimeoutError
 
+from trubot.budget import BudgetExceeded, BudgetUnavailable
 from trubot.graph import GraphStore, _hash, _json, _key
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable, _time
 from trubot.memory import score, terms
-from trubot.openai_responder import OpenAITruaxResponder
+from trubot.openai_responder import (
+    OpenAITruaxResponder,
+    ResponderError,
+    StudyContextExceeded,
+    StudyResponseInvalid,
+)
 
 logger = logging.getLogger(__name__)
 VERSION = "contextual-two-pass-v3"
@@ -145,6 +154,12 @@ class Study:
     passages: list[dict[str, Any]] = field(repr=False)
 
 
+@dataclass(frozen=True)
+class StudySelection:
+    study: Study | None = field(repr=False)
+    reason: Literal["ready", "paced", "no_candidate"]
+
+
 class StudyStore:
     """Pacing/checkpoints live in the existing graph, so restart cannot reset the quota."""
 
@@ -158,12 +173,21 @@ class StudyStore:
         channel_ids: frozenset[int],
         anchor_ref: dict[str, Any] | None = None,
     ) -> Study | None:
+        return self.select(now=now, channel_ids=channel_ids, anchor_ref=anchor_ref).study
+
+    def select(
+        self,
+        *,
+        now: datetime,
+        channel_ids: frozenset[int],
+        anchor_ref: dict[str, Any] | None = None,
+    ) -> StudySelection:
         with self.graph._transaction() as (db, source):
             gate = db.execute(
                 "SELECT cursor FROM checkpoints WHERE stream='distillation'"
             ).fetchone()
             if gate and json.loads(gate[0])["not_before"] > _time(now):
-                return None
+                return StudySelection(None, "paced")
             snapshots, bodies, truncated = [], [], []
             with ExitStack() as stack:
                 archive = None
@@ -230,7 +254,7 @@ class StudyStore:
                         anchor = index
                         break
                 if anchor is None or (anchor_ref is not None and anchor != preferred[0]):
-                    return None
+                    return StudySelection(None, "no_candidate")
                 query = terms(bodies[anchor])
                 related = sorted(
                     (i for i in order if i != anchor),
@@ -304,7 +328,7 @@ class StudyStore:
                 "INSERT OR REPLACE INTO checkpoints VALUES ('distillation', ?)",
                 (_json({"token": token, "not_before": _time(now + INTERVAL)}),),
             )
-            return Study(token, [snapshots[i] for i in selected], passages)
+            return StudySelection(Study(token, [snapshots[i] for i in selected], passages), "ready")
 
     def check(self, study: Study, *, now: datetime, verified_after: datetime | None = None) -> None:
         with self.graph._transaction() as (db, source):
@@ -462,6 +486,39 @@ def validate_proposal(proposed: Any, study: Study) -> dict[str, Any] | None:
     return item
 
 
+def _pause_reason(error: Exception) -> str:
+    """Only fixed categories may reach logs. Never inspect exception text or bodies."""
+    if isinstance(error, BudgetExceeded):
+        return "budget_exhausted"
+    if isinstance(error, BudgetUnavailable):
+        return "budget_unavailable"
+    if isinstance(error, (TimeoutError, APITimeoutError)):
+        return "timeout"
+    if isinstance(error, StudyContextExceeded):
+        return "context_bound"
+    if isinstance(error, StudyResponseInvalid):
+        return "provider_response_invalid"
+    if isinstance(error, APIConnectionError):
+        return "provider_connection"
+    if isinstance(error, APIStatusError):
+        if error.status_code == 429:
+            return "provider_rate_limited"
+        if error.status_code in {401, 403}:
+            return "provider_access"
+        return "provider_status"
+    if isinstance(error, discord.HTTPException):
+        if error.status == 403:
+            return "discord_access"
+        return "discord_transport"
+    if isinstance(error, LearningUnavailable):
+        return "evidence_unavailable"
+    if isinstance(error, (OSError, sqlite3.DatabaseError)):
+        return "storage_unavailable"
+    if isinstance(error, ResponderError):
+        return "responder_unavailable"
+    return "unexpected_error"
+
+
 class GraphDistiller:
     def __init__(
         self,
@@ -477,24 +534,46 @@ class GraphDistiller:
         self, client: discord.Client, *, anchor_ref: dict[str, Any] | None = None
     ) -> None:
         if not self.ingestor.verified:
+            logger.debug("Graph study skipped reason=verification_pending")
             return
+        elapsed_start = time.monotonic()
+        stage, sources, requests = "source_population", 0, 0
+
+        def completed(reason: str, *, accepted: bool = False) -> None:
+            logger.info(
+                "Graph study completed accepted=%d reason=%s stage=commit "
+                "sources=%d requests=%d elapsed_ms=%d",
+                int(accepted),
+                reason,
+                sources,
+                requests,
+                round((time.monotonic() - elapsed_start) * 1000),
+            )
+
         try:
             graph = self.store.graph
             await asyncio.to_thread(graph.populate, now=self.clock(), limit=100)
-            study = await asyncio.to_thread(
-                self.store.prepare,
+            stage = "packet_selection"
+            selection = await asyncio.to_thread(
+                self.store.select,
                 now=self.clock(),
                 channel_ids=self.ingestor.channel_ids,
                 anchor_ref=anchor_ref,
             )
+            study = selection.study
             if study is None:
+                logger.debug("Graph study skipped reason=%s", selection.reason)
                 return
+            sources = len(study.snapshots)
             if len(study.snapshots) < 2 and not _self_report_eligible(study.passages[0]):
+                stage = "commit"
                 await asyncio.to_thread(
                     self.store.finish, study, None, now=self.clock(), outcome="insufficient"
                 )
+                completed("insufficient_support")
                 return
             started = self.clock()
+            stage = "source_refresh"
             async with asyncio.timeout(6):
                 for snapshot in study.snapshots:
                     ref = snapshot["ref"]
@@ -504,17 +583,23 @@ class GraphDistiller:
                             raise LearningUnavailable("Study channel unavailable")
                         async with asyncio.timeout(4):
                             await self.ingestor.refresh(channel, ref["message_id"])
+            stage = "source_validation"
             await asyncio.to_thread(
                 self.store.check, study, now=self.clock(), verified_after=started
             )
 
             async def source_check() -> None:
+                nonlocal stage
+                previous, stage = stage, "source_validation"
                 if not self.ingestor.verified:
                     raise LearningUnavailable("Study membership verification lost")
                 await asyncio.to_thread(
                     self.store.check, study, now=self.clock(), verified_after=started
                 )
+                stage = previous
 
+            stage = "extraction"
+            requests += 1
             result = await self.responder.study_json(
                 instructions=_EXTRACT,
                 payload={"sources": study.passages},
@@ -522,16 +607,21 @@ class GraphDistiller:
                 name="memory_extract",
                 source_check=source_check,
             )
+            stage = "proposal_validation"
+            reason = "no_proposal"
             try:
                 proposed = validate_proposal(result, study)
             except LearningUnavailable:
                 proposed = None
+                reason = "proposal_invalid"
             if proposed is None:
+                stage = "commit"
                 await asyncio.to_thread(
                     self.store.finish, study, None, now=self.clock(), outcome="rejected"
                 )
-                logger.info("Graph study completed accepted=0")
+                completed(reason)
                 return
+            stage = "existing_lookup"
             existing = await asyncio.to_thread(
                 graph.lookup,
                 " ".join(proposed["aliases"]),
@@ -547,9 +637,12 @@ class GraphDistiller:
                 }
                 for x in existing
             ]
+            stage = "source_validation"
             await asyncio.to_thread(
                 self.store.check, study, now=self.clock(), verified_after=started
             )
+            stage = "review"
+            requests += 1
             review = await self.responder.study_json(
                 instructions=_REVIEW,
                 payload={"sources": study.passages, "proposal": proposed, "existing": prior},
@@ -557,6 +650,7 @@ class GraphDistiller:
                 name="memory_review",
                 source_check=source_check,
             )
+            stage = "review_validation"
             if (
                 set(review) != {"accepted", "basis", "contradicts"}
                 or type(review["accepted"]) is not bool
@@ -568,10 +662,11 @@ class GraphDistiller:
                     type(i) is not int or not 0 <= i < len(existing) for i in review["contradicts"]
                 )
             ):
+                stage = "commit"
                 await asyncio.to_thread(
                     self.store.finish, study, None, now=self.clock(), outcome="rejected"
                 )
-                logger.info("Graph study completed accepted=0")
+                completed("review_invalid")
                 return
             item = None
             if review["accepted"]:
@@ -604,6 +699,7 @@ class GraphDistiller:
                         for i in review["contradicts"]
                     ],
                 }
+            stage = "commit"
             await asyncio.to_thread(
                 self.store.finish,
                 study,
@@ -611,10 +707,17 @@ class GraphDistiller:
                 now=self.clock(),
                 outcome="accepted" if item else "rejected",
             )
-            logger.info("Graph study completed accepted=%d", int(item is not None))
+            completed("accepted" if item else "review_declined", accepted=item is not None)
         except asyncio.CancelledError:
             raise
-        except Exception:
+        except Exception as error:
             # Failures retain the pacing lease and API reservations. Source text,
             # generated output and exception payloads never enter application logs.
-            logger.warning("Graph study paused: private evidence, review or spending unavailable")
+            logger.warning(
+                "Graph study paused stage=%s reason=%s sources=%d requests=%d elapsed_ms=%d",
+                stage,
+                _pause_reason(error),
+                sources,
+                requests,
+                round((time.monotonic() - elapsed_start) * 1000),
+            )

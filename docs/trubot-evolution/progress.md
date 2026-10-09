@@ -1253,3 +1253,64 @@ infrastructure was added. Broader paraphrase coverage, independently held-out
 contextual fidelity, native reply/thread history and unvalidated legacy persona
 assumptions remain follow-up work. See the
 [content-free release evidence](evaluations/2026-10-09-selfreport-release.json).
+
+## 2026-10-09 09:00 run: diagnosable learning outcomes
+
+New managed worktree `trubot-daily-20261009-0900`, branch
+`feature/trubot-daily-20261009-0900-0155`, fetched base
+`875f11808f99163875ccbc95ff42198f2fb19ab2`. Primary checkout was not edited,
+stashed or reset. The initial sandbox fetch could not resolve GitHub; the authorized
+network retry succeeded before branch/source mutation. Other active runs and open
+PRs were inspected. 2.9.0 is already released; native/reply/persona work remains
+other runs' scope. No overlapping evolution PR was open at selection.
+
+Phase 1 reviewed the current production code, earlier failure/evaluation evidence,
+a fresh authenticated bounded activity/human-source scan and documented tools/image
+capabilities. The latest 100/channel, 14-day league window has five older bot replies
+and seven Andrew messages across three channels. The latest 40 development messages
+contain 20 bot replies. Twelve eligible unknown-date historical blocks with adjacent
+references supplied a structural comparison. Development/human median length is
+18/14 words; two requested development metadata references versus zero human
+references. Ordinary recall shows no routine metadata disclaimers in this sample.
+Semantic humor, emotional judgment and habitual traits were not independently
+reviewed, and historical independence/prior-learning overlap remain unknown.
+
+H1-H3 record falsifiable diagnosis, conceptual-recall and skills/generated-image
+hypotheses with baseline, acceptance and contrary cases in [research.md](research.md).
+Phase 2 chooses H1 as supported enabling work so future memory experiments can
+separate missing/invalid evidence from learning failures. Held-out conceptual recall
+remains next, followed by native/source-qualified persona context, selective tools
+and requested northern-lights/trail-camera attachment prototypes. Reconciled
+repository-owned ROADMAP.md and docs/agent-harness.md reflect current memory/vision
+and distinguish documented capability from tested behavior. No vendor migration,
+image generation or new persona characteristic was shipped.
+
+Reproduced against the installed 2.9.0 package: nine injected failure paths collapsed
+into one generic warning, and five completion outcomes lacked diagnostic reasons.
+The same 14 isolated synthetic probes on 2.9.1 diagnose 14/14; private payload
+exclusion and restart pacing pass 14/14. They open only disposable synthetic stores,
+mock every transport, construct no Discord client and make zero provider calls or
+Discord writes. This is not measured reply-quality improvement or proof of a
+natural production study. The recent 2.9.0 restart had zero studies/pauses at baseline;
+older generic events cannot be retrospectively classified.
+
+Runtime now logs only fixed stage/cause/outcome plus source count, study-adapter
+request count and elapsed milliseconds. It distinguishes valid abstention and
+review rejection from unavailable sources, budget/provider/storage errors and
+failed commits. Adapter errors for oversized packets and incomplete/malformed
+results are typed without changing behavior or payload bounds. Normal verification,
+pacing and no-candidate skips remain DEBUG only. Cancellation propagates. No raw
+exception messages/bodies/classes, source/answer text, IDs, paths or source hashes
+enter these events. Reservations, source checks, withdrawal, vetoes, four-hour pacing,
+learning decisions and all storage schemas remain intact.
+
+All six candidate gates pass: locked sync, format check, lint, strict typing,
+345 tests with 96.21% branch-inclusive coverage, and wheel/source build. Regression
+covers private failure bodies, typed API/Discord categories, pre-request source-check
+stage, atomic commit failure, cancellation, restart pacing and quiet ordinary polls.
+Budget baseline is USD 0.0479301, 217 settled/zero unsettled attempts; existing
+USD 18 runtime / USD 2 maintenance caps remain. No new provider calls or paid service
+were needed for research/diagnosis. Billing and pre-guard October spend are unknown.
+See [candidate evidence](evaluations/2026-10-09-study-diagnostics-candidate.json).
+CI, merged-source checks, immutable release/digest, installed probes and actual
+owner-authored private Discord responses follow below.

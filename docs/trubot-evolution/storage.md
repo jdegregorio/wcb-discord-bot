@@ -571,3 +571,35 @@ Single-source observations share source correction, deletion, retirement and
 withdrawal cleanup. Compatible image rollback leaves graph and usage state intact;
 retire a bad observation separately through the existing graph operator command.
 Private evaluation copies must be removed when their content-free evidence is saved.
+
+## Content-free study diagnostics (2.9.1)
+
+Study events report only fixed pipeline stage, cause/outcome, bounded source count,
+study-adapter request count and monotonic elapsed milliseconds. Requests are calls
+to the study adapter, not proof of provider network attempts or billed requests;
+the usage ledger remains authoritative. No raw exception strings, classes, paths,
+response bodies, message IDs, source hashes, quotes or generated answers are logged.
+No new database, schema or retention boundary is introduced.
+
+`Graph study paused` distinguishes evidence availability, budget exhaustion/state,
+request context bound, malformed/incomplete result, provider connection/status/access,
+Discord access/transport, timeout, storage and unexpected failures. The stage shows
+whether the failure occurred during population, selection, source refresh/check,
+extraction, prior-memory lookup, review or commit. A source check inside a provider
+adapter retains the validation stage if it fails before the request. Categories
+identify a class of failure, not a retrospective root cause. Evidence unavailable
+may include withdrawal, changed support, permissions or unavailable private state;
+inspect the existing private status and source rules without relaxing them.
+
+Completed studies distinguish insufficient support, no proposal, invalid proposal,
+invalid review, reviewer rejection and accepted observations. Normal unverified,
+paced and no-candidate skips are DEBUG only, avoiding warning spam each poll.
+Cancellation propagates and never claims failure or completion. Diagnosis does not
+retry failed work or reset the four-hour lease, reservations, vetoes or source checks.
+
+Use `scripts/evaluate_study_diagnostics.py --require-diagnostics` against an installed
+wheel for synthetic fault isolation. It creates disposable synthetic learning/graph
+stores and mocked transports, never constructs a Discord client or reads credentials,
+never opens live learning/budget stores, and makes no provider or Discord call.
+Its success proves classification and isolation, not improved human fidelity.
+Actual owner-authored development Discord replies remain a separate release gate.

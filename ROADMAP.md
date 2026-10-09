@@ -1,0 +1,49 @@
+# Trubot roadmap
+
+Make Trubot more faithful through attributed conversation evidence, relevant
+memory and natural participation. Maintain the bot identity, learning withdrawal,
+private source storage, existing channel rules and USD 20 monthly spending guard.
+The current ordered plan is maintained in
+[the evolution backlog](docs/trubot-evolution/backlog.md).
+
+## Current delivery order
+
+1. Finish scoped, evidence-backed recall and persona corrections already underway.
+   2.9.0 supplies qualified self-report learning and one demonstrated recall repair.
+   Diagnose learning outcomes so new experiments can distinguish missing support,
+   rejected proposals, source access and provider/budget failures.
+2. Expand held-out conceptual recall and native conversational neighborhoods.
+   Preserve peer setup, reply/thread relationships, corrections and uncertainty;
+   validate actual responses as well as source retrieval.
+3. Prototype selective skills and tools against the current Responses baseline.
+   Compare application-owned bounded tools, the Python Agents SDK and a managed
+   harness using the same cases. Keep participation and posting in the application.
+   Select for measured quality, robustness and maintainability; give little weight
+   to implementation effort. See [the harness study](docs/agent-harness.md).
+4. Prototype explicitly requested U.P. northern-lights and trail-camera wildlife
+   images with concise natural captions. Study attributed sharing contexts and
+   actual pixels first. Deliver generated images as Discord attachments with
+   clear generated provenance; never imply a real sighting or real source photo.
+5. Enable additional skills/context sources and occasional ambient generated
+   pictures only after requested flows pass quality, budget and delivery checks.
+
+Each item requires a hypothesis, baseline, disconfirming cases and a bounded
+experiment. Documentation capabilities and successful ingestion are enabling
+work, not measured fidelity. Current results are in
+[research.md](docs/trubot-evolution/research.md) and
+[progress.md](docs/trubot-evolution/progress.md).
+
+## Images and richer context
+
+Planned scenes include northern lights above U.P. trees/lakes/snow and plausible
+trail-camera wildlife with trail-camera framing. Captions must fit observed
+human contexts. Use fresh public weather/aurora facts only when actually fetched
+and verified. A generated scene never establishes Andrew's current activity.
+
+Typed context tools may retrieve league history, standings/matchups, current
+football reports, shared images and outdoor conditions. Load reviewed procedures
+selectively. Bound tools, time, context, calls and cost; ordinary banter should
+remain fast. Every new provider/model cost needs an enforceable reservation in
+the existing ledger. Requested attachment handling must preserve retries,
+cancellation, eligibility rechecks, mention suppression and one-contribution
+accounting before ambient picture participation is considered.
