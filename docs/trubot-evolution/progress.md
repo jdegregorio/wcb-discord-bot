@@ -1432,3 +1432,85 @@ controls. No API call was needed for research/prototype/retrieval checks; the re
 baseline reply uses the existing ledger. Pre-run tracked estimate USD 0.049035785,
 221 settled/zero unsettled attempts; earlier October spend and billing are unknown.
 Full CI/release, installed acceptance, real gateway, health and ledger evidence follow.
+
+### Verified 2.9.2 rollout
+
+[PR #49](https://github.com/jdegregorio/wcb-discord-bot/pull/49) passed required
+[PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37985243852),
+merged as `bf9196b0d1f4f9f10e45d5e93f50cd0caa852af7`, and has the identical tree
+to tested `9de4c7b`. All six gates passed on that merged source again: 376 tests,
+96.25% coverage. [Main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37985450282)
+passed. Immutable [v2.9.2](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.9.2)
+targets the exact tested merged commit. Both architectures
+[published successfully](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37985591556).
+The merge succeeded; the CLI's subsequent local branch cleanup tried the primary
+checkout's occupied main and failed safely. Manual fetch/detached verification used
+only this managed worktree. The primary checkout was never edited or reset.
+
+Reconfirmed pi5/aarch64/Ubuntu 24.04 immediately before the installed locked
+`pi-app deploy wcb-bot v2.9.2` transaction. Running immutable digest:
+`sha256:f8b3ec1f9cd1cbc4823b05ce20ef3773cc4365015d4bdb4bc01b2e302f9005fc`.
+Previous healthy 2.9.1:
+`sha256:18aa210b6bb770298dfb4918e6acd5310d7b6b664ec0943b8af285f375324518`.
+Installed version, OCI revision and all three changed module hashes match merged
+source. An early installed probe read the old container while deployment was
+pending; its result was discarded and its artifact replaced only after the
+transaction completed and 2.9.2 was confirmed. Final installed replay is 2/6 graph
+connections, three unchanged controls. Private identity, withdrawal state, study
+pacing, native count and graph coverage match before/after. No rollback was needed.
+
+Actual owner-authored Chrome questions and running gateway answers pass 5/5 in the
+authenticated two-member private development guild's existing allowed general:
+plural position, baseball, broad year-context quote, exact day and unmentioned
+follow-up. Latencies: 7.256, 4.023, 2.677, 3.060, 2.778 seconds. Ordinary recall
+has no unsolicited metadata; timing uncertainty is brief. The quote matches current
+eligible attributed source under the requested export-period cue; that cue never
+proves its message date. Position/baseball checks combine limited term/source checks
+and direct agent reading, not independent human grading. The repeated position
+uses similar wording appropriately in the same test exchange; it is not evidence
+of an Andrew catchphrase. No league posts, user-token extraction or development
+learning; private artifacts hold only references, flags, counts and timing.
+
+The changed real case is slower than its single baseline (3.304 seconds). Same-corpus
+local retrieval, 20 samples each, has baseline median/max 11.844/14.413 ms versus
+installed 21.728/37.827 ms, now including the recovered connection. This is a bounded
+CPU/context cost of the retrieval correction, not an API-latency causal estimate
+or a concurrency/load benchmark. Four broader paraphrases still miss the graph;
+no general reply-quality improvement is claimed. Source text never changed.
+
+Post-deployment structural audit still has five older league replies/seven target
+messages and zero new spontaneous league replies. Latest 40 development messages
+after the first four smoke replies have 20 bot replies, median 14.5 words. Window
+turnover/mixed releases prevent causal voice claims; warmth, reaction/ambient timing,
+relationships and broader humor fidelity remain ungraded. The fifth follow-up was
+reviewed separately. Private source semantic export remains restricted; safer
+aggregate checks do not substitute for independent human-source contextual grading.
+
+At 20:22:20 UTC, 329 seconds after startup, Docker and direct readiness pass with
+zero restarts/errors/reply failures/learning pauses/memory warnings/study pauses,
+eight learning batches and five posts. One gateway disconnect at 20:19:25.333
+resumed at 20:19:25.597 (264 ms); the subsequent real unmentioned follow-up passed.
+No repeated disconnect or failed reply occurred in this bounded window. Zero new
+production studies completed after deployment. Before release, 2.9.1 classified a
+natural six-source, one-request study as `proposal_invalid` at commit, zero accepted.
+This resolves the earlier unobserved-classification gap, not extraction success.
+
+Coverage remains 34 native records, 439 graph human sources, 554 episodes,
+96 visuals/11 captured human sources, one claim, one preference and 1,011 edges.
+No migration or derived-state population. Existing source correction, expiry,
+backup/recovery, withdrawal and ledger authority remain; no raw/private data in Git.
+Private reports are `smoke-tests/2026-10-09-1300-*`, modes 0600/0700, seven-day
+manual retention and withdrawal cleanup. Existing volume ownership/privacy passes.
+Temporary candidate/baseline packages are removed after evidence preservation.
+
+Ledger at 20:22:20 UTC: estimated USD 0.05142999 (runtime 0.016827085,
+maintenance 0.034602905), 227 settled/zero unsettled attempts, 732,890 input,
+394,224 cached input and 10,309 output tokens. Run delta USD 0.002394205:
+one baseline plus five deployed real reply requests; research/retrieval probes
+made zero provider calls. Original ledger and USD 18/2/20 caps persist, no added
+paid infrastructure. Provider billing and earlier October spend remain unknown.
+Public [release evidence](evaluations/2026-10-09-lexical-recall-release.json) records
+retrieval, real Discord, latency, health, provenance and limitations separately.
+Next: four semantic misses, independent private contextual review and valid learner
+proposal diagnosis, while reconciling native/persona work. Selective skills/tools
+and generated U.P. northern-lights/trail-camera scenes remain guarded experiments.

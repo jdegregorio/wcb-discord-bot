@@ -1,0 +1,131 @@
+{
+  "version": "2.9.2",
+  "hypothesis": "H4",
+  "base_sha": "d4a207dad1d4a796630134d370b9b1d2614beed0",
+  "candidate_sha": "9de4c7b8356b5dcb9f823b691c1b9846ae5365e3",
+  "merged_sha": "bf9196b0d1f4f9f10e45d5e93f50cd0caa852af7",
+  "pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/49",
+  "pr_ci": 37985243852,
+  "main_ci": 37985450282,
+  "publish_ci": 37985591556,
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.9.2",
+  "digest": "sha256:f8b3ec1f9cd1cbc4823b05ce20ef3773cc4365015d4bdb4bc01b2e302f9005fc",
+  "previous_digest": "sha256:18aa210b6bb770298dfb4918e6acd5310d7b6b664ec0943b8af285f375324518",
+  "all_quality_gates": "passed on candidate and identical merged source",
+  "tests": 376,
+  "coverage_percent": 96.25,
+  "installed_version_revision_and_three_module_hashes": "match tested merged source",
+  "retrieval": {
+    "cases": 6,
+    "baseline_connected": 1,
+    "installed_connected": 2,
+    "remaining_misses": 4,
+    "unchanged_control_cases": 3,
+    "no_new_observations_or_aliases": true
+  },
+  "local_retrieval_latency": {
+    "samples_each": 20,
+    "baseline_median_ms": 11.844,
+    "installed_median_ms": 21.728,
+    "baseline_max_ms": 14.413,
+    "installed_max_ms": 37.827,
+    "no_provider_calls": true
+  },
+  "real_discord": {
+    "owner_ui_gateway": true,
+    "baseline": {
+      "passed": 1,
+      "total": 1,
+      "latency_seconds": 3.304
+    },
+    "deployed": {
+      "passed": 5,
+      "total": 5,
+      "latencies_seconds": [
+        7.256,
+        4.023,
+        2.677,
+        3.06,
+        2.778
+      ],
+      "ordinary_metadata_disclaimers": 0,
+      "exact_quote_matches_current_eligible_source": true,
+      "followup_after_recovery_passed": true
+    },
+    "no_league_test_posts": true,
+    "no_user_tokens_extracted": true,
+    "development_excluded_from_learning": true,
+    "content_free_references_only": true
+  },
+  "health": {
+    "at": "2026-10-09T20:22:20.451064+00:00",
+    "window_seconds": 329,
+    "docker": "healthy",
+    "direct_readiness": true,
+    "restarts": 0,
+    "errors": 0,
+    "reply_failures": 0,
+    "learning_pauses": 0,
+    "memory_warnings": 0,
+    "study_pauses": 0,
+    "disconnects": 1,
+    "immediate_resume_ms": 264,
+    "subsequent_gateway_passed": true,
+    "learning_batches": 8,
+    "posts": 5,
+    "studies_completed": 0
+  },
+  "continuity": {
+    "identity": true,
+    "withdrawal": true,
+    "study_pacing": true,
+    "native_sources": 34,
+    "graph_human_sources": 439,
+    "graph_episodes": 554,
+    "graph_edges": 1011,
+    "schema_change": false,
+    "volume_privacy": true
+  },
+  "cost": {
+    "baseline_estimated_usd": 0.049035785,
+    "final_estimated_usd": 0.05142999,
+    "delta_usd": 0.002394205,
+    "runtime_usd": 0.016827085,
+    "maintenance_usd": 0.034602905,
+    "settled_attempts": 227,
+    "unsettled": 0,
+    "input_tokens": 732890,
+    "cached_input_tokens": 394224,
+    "output_tokens": 10309,
+    "research_provider_calls": 0,
+    "real_reply_requests": 6,
+    "existing_caps_usd": [
+      18,
+      2,
+      20
+    ],
+    "paid_infrastructure_added": false,
+    "billing_and_pre_guard_spend": "unknown"
+  },
+  "audit": {
+    "league_channels": 3,
+    "messages_per_channel_limit": 100,
+    "days": 14,
+    "league_bot_replies": 5,
+    "human_messages": 7,
+    "new_spontaneous_replies": 0,
+    "development_sample_posts": 40,
+    "development_bot_replies": 20,
+    "human_semantic_reference_review": "private export rejected; aggregate audit completed",
+    "natural_pre_release_study": "proposal_invalid at commit; six sources, one request, zero accepted"
+  },
+  "limitations": [
+    "Retrieval gain only; baseline actual answer already correct",
+    "Four semantic paraphrases still miss",
+    "Operator-written query set, no independent human semantic grader",
+    "One real changed reply slower; no latency trend established",
+    "No reaction/ambient/emotional/visual fidelity claim",
+    "One promptly resumed disconnect, bounded health window",
+    "Full native context, automatic extraction quality and generated scenes remain incomplete"
+  ]
+}

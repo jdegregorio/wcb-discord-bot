@@ -204,8 +204,9 @@ corrections and enabling work. Record methods, counts, uncertainty, contrary cas
 and quality/cost limitations in [research.md](research.md). Six standalone daily
 runs and all privacy, real Discord, budget and release gates remain authoritative.
 
-Current order: reconcile unfinished persona/native/reply work; ship supported study
-failure diagnosis; expand held-out conceptual recall and native neighborhoods;
+Current order: reconcile unfinished persona/native work; expand independently
+held-out conceptual recall and native neighborhoods after delivered study diagnosis
+and bounded noun-form retrieval;
 compare selective skills/tools; prototype requested U.P. northern-lights and
 trail-camera images with natural captions. [ROADMAP.md](../../ROADMAP.md) and
 [agent-harness.md](../agent-harness.md) express this same order. Older next-milestone

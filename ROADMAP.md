@@ -8,10 +8,10 @@ The current ordered plan is maintained in
 
 ## Current delivery order
 
-1. Finish scoped, evidence-backed recall and persona corrections already underway.
-   2.9.0 supplies qualified self-report learning and one demonstrated recall repair.
-   Diagnose learning outcomes so new experiments can distinguish missing support,
-   rejected proposals, source access and provider/budget failures.
+1. Expand held-out conceptual recall and reconcile unfinished persona/context work.
+   Delivered: qualified self-reports in 2.9.0, study diagnosis in 2.9.1 and bounded
+   noun-form retrieval in 2.9.2. Four of six new semantic phrasings still miss the
+   reviewed connection; source-qualified expectations and specificity come first.
 2. Expand held-out conceptual recall and native conversational neighborhoods.
    Preserve peer setup, reply/thread relationships, corrections and uncertainty;
    validate actual responses as well as source retrieval.
@@ -49,8 +49,8 @@ cancellation, eligibility rechecks, mention suppression and one-contribution
 accounting before ambient picture participation is considered.
 
 
-2026-10-09 13:00 priority refinement: complete H4 bounded singular/plural retrieval
-first, then wider H2 semantic recall/native context and source-qualified persona,
+2026-10-09 13:00 priority refinement: H4 bounded singular/plural retrieval is delivered;
+next is wider H2 semantic recall/native context and source-qualified persona,
 then H3 selective skills/tools and guarded generated outdoor image experiments.
 Study diagnosis is delivered in 2.9.1. No harness/model migration is justified by
 the present retrieval-only evidence. See docs/trubot-evolution/research.md.
