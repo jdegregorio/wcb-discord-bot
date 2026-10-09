@@ -204,3 +204,27 @@ plural mismatch, low for broad fidelity. Operating impact is zero added API call
 or infrastructure. Reprioritize again if specificity regresses or genuinely held-out
 human recall shows a different limiting cause. Runtime selection follows this
 research, not a requirement to invent a behavioral assumption to meet a shipping goal.
+
+### H4 release result and revised priorities
+
+Supported narrow correction: installed 2.9.2 recovers the same plural connection,
+1/6 to 2/6 across the original six queries, with controls unchanged. All 376 tests,
+required CI and package/image builds pass. Actual Discord passes 5/5, including
+unmentioned follow-up after one automatically resumed gateway disconnect. Ordinary
+recall is direct; exact timing remains uncertain and quotes match current eligible
+source. The baseline real answer already passed, so generated quality improvement
+is unmeasured. New aliases, semantic links or personality traits were not inferred.
+
+Local retrieval increases from median 11.844 to 21.728 ms (20 samples per revision;
+max 14.413 to 37.827 ms), with newly connected evidence included. The changed real
+reply increases from 3.304 to 7.256 seconds in one sample; other deployed cases take
+2.677-4.023 seconds. Provider/queue/context variance is unresolved; do not claim a
+latency improvement. Normal source/graph bounds, monthly caps and reply timeout stay.
+
+One natural 2.9.1 study now reports invalid proposal at commit, zero accepted.
+The diagnosis milestone is observed; safe replay of proposal/support validity is a
+new concrete prerequisite to broader automatic learning. Preserve its four-hour
+pacing and original maintenance ledger. Broader H2 semantic recall remains first,
+then native/source-qualified persona context and validated learner improvements,
+then H3 skills/tools and explicitly requested generated scene attachment flows.
+Raw-source export restriction and independent semantic grading remain honest gaps.

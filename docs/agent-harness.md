@@ -56,8 +56,8 @@ reservation and attachment delivery remain untested. Study sharing/caption conte
 before asserting a persona habit, and preserve explicit generated provenance.
 
 
-2026-10-09 13:00 priority refinement: complete H4 bounded singular/plural retrieval
-first, then wider H2 semantic recall/native context and source-qualified persona,
+2026-10-09 13:00 priority refinement: H4 bounded singular/plural retrieval is delivered;
+next is wider H2 semantic recall/native context and source-qualified persona,
 then H3 selective skills/tools and guarded generated outdoor image experiments.
 Study diagnosis is delivered in 2.9.1. No harness/model migration is justified by
 the present retrieval-only evidence. See docs/trubot-evolution/research.md.

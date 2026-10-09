@@ -11,13 +11,15 @@ This order supersedes older next-step paragraphs below. H1-H3 are defined in
 | Priority/status | Evidence and user benefit | Dependencies/acceptance/validation | Confidence and operating impact |
 | --- | --- | --- | --- |
 | Completed: study diagnosis | H1: generic pauses obscure the limiting learning step, so future memory corrections can target real causes. | Same 14 baseline/fault probes classify stages/reasons without payloads; preserve restart pacing, withdrawal, rejection, cancellation, budget and real gateway replies. | Supported diagnosis hypothesis; no measured reply-quality gain. No added calls, storage schema or infrastructure. |
-| 1. Held-out conceptual recall | H2 and the 2.9.0 long-alias miss; relevant supported positions should survive varied wording. | Reviewed private expectations, six new paraphrases plus contrary/unrelated cases; compare precision, recall, voice, latency and cost on identical sources; real Discord. | Partial one-proposition evidence; broader precision unresolved. Existing bounded context and maintenance allowance. |
+| Completed: grammatical connections | H4: explicit noun forms recover a reviewed connection without new beliefs. | Identical-source graph recall 1/6 to 2/6, three controls unchanged; authority/quotation regression and real Discord. | Supported retrieval correction; baseline reply already correct, no reply-quality gain. Zero added API/infrastructure. |
+| 1. Held-out conceptual recall | H2, four remaining new phrasing misses and the 2.9.0 long-alias miss; relevant supported positions should survive varied wording. | Reviewed private expectations, six new paraphrases plus contrary/unrelated cases; compare precision, recall, voice, latency and cost on identical sources; real Discord. | Partial one-proposition evidence; broader precision unresolved. Existing bounded context and maintenance allowance. |
 | 2. Native neighborhoods and source-qualified persona | Unfinished prior runs, missing peer/reply context and unvalidated legacy traits. | Reconcile their branches first; verified references and pixels where relevant; held-out human contextual review, deletion/withdrawal and actual direct/follow-up/reaction behavior. | Enabling coverage; do not equate ingestion with fidelity. Existing volume, bounded batches/studies. |
 | 3. Selective skills/tools harness prototype | H3 and Joe's context direction, so fresh/relevant facts improve answers without mechanical explanations. | Same-case Responses/SDK/managed comparisons; source scope, procedure trust, termination, abstention, privacy, cost/latency bounds and actual delivery. | Exploratory; documentation capabilities untested here. No paid service or recurring spend until guarded and measured. |
 | 4. Requested generated outdoor images | H3 and Joe's northern-lights/trail-camera direction, so outdoor engagement has a suitable visual flow. | Study sharing/caption evidence and actual pixels; guarded generation, generated provenance, concise captions, Discord attachment display and failure/deduplication checks. Ambient comes later. | Exploratory sharing fidelity; explicit product requirement. Pricing/access/model reservations must fit USD 20 existing total. |
 
-Priority change: choose reliable diagnosis while overlapping behavioral work remains
-unfinished, then expand evidence-grounded retrieval. New human/held-out evidence,
+Priority change: diagnosis is delivered, followed by H4's supported grammatical
+retrieval correction. Continue wider H2 coverage while reconciling unfinished
+behavioral work. New human/held-out evidence,
 normal production study outcomes or failed retrieval precision can change this
 order. Long-term direction remains connected living memory, broader historical and
 visual coverage, and selectively loaded context with natural participation.
@@ -251,3 +253,11 @@ skills/tools and requested generated U.P. northern-lights/trail-camera scenes.
 Acceptance includes specificity, exact quotations, conflicting/invalid sources,
 withdrawal, guild isolation and actual Discord. Zero added provider/storage cost.
 Private semantic review remains a gap; counts cannot establish a personality trait.
+
+
+Study follow-up: a natural 2.9.1 production study now classified `proposal_invalid`
+at commit (six sources, one request, zero accepted). Diagnosis is observed in a
+normal cycle; do not reset pacing or infer the proposal's content. Investigate
+valid extraction/support on a disposable private replay before changing acceptance.
+This new evidence replaces the earlier unobserved-natural-study gap without
+establishing automatic learning success or a character trait.
