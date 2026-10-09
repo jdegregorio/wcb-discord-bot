@@ -990,6 +990,84 @@ Tracked estimated cost USD 0.03555375, runtime USD 0.006749015 and maintenance
 USD 0.028804735, 180 settled attempts and zero unsettled. Existing caps remain.
 
 
+### Final 2.7.3 rollout and real Discord acceptance
+
+[PR #42](https://github.com/jdegregorio/wcb-discord-bot/pull/42) merged as
+`8b64810b87e094675868904ce49d41ed216455f8`, identical tree to tested `284d44c`.
+[PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37809783106),
+[merged-main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37810013379)
+and [both-architecture publish](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37810355045)
+passed. All six candidate and merged local gates passed: 299 tests, 95.83%
+branch-inclusive coverage. Immutable [v2.7.3](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.7.3)
+was deployed by the existing release timer; the locked app-scoped transaction
+confirmed it current on reverified pi5. Digest
+`sha256:fa7a68d86797b7ae09480e4b2d10b4e0863b53184480d787163a3523a8d48c4c`,
+installed version, OCI revision and four changed source hashes matched.
+
+All six actual owner-authored questions and production gateway replies passed in
+the confirmed private development general channel: baseball, unmentioned baseball
+follow-up, broad year recall, exact historical quotation, exact-date honesty and
+source continuity through an intervening date question. Ordinary recall had no
+routine metadata or mandatory hedge. The quotation matched current eligible
+authored source text; years inside that quotation describe its subject matter,
+not proof of its calendar date. Latencies were 3.120-8.933 seconds. An additional
+unmentioned date probe arrived after the attention window expired and stayed silent;
+the accepted date case used an explicit summons. No league test chatter was posted.
+
+The content-free validator initially merged source words across line breaks,
+causing a false quotation mismatch. Correct whitespace collapsing and separation
+of quoted subject-matter years from message-date assertions repaired that check.
+Final six-case report was recorded at 2026-10-09 14:01:02 UTC. Real UI naturalness
+review, exact source matching and local attributed-support checks are sampled
+acceptance evidence, not independent semantic or human grading of general fidelity.
+Private message/source references remain only in versioned app-volume smoke reports
+with mode 0600, directory 0700 and documented seven-day manual retention/withdrawal
+cleanup. No raw excerpts or derived answer text are stored in those reports.
+All validation clients used isolated readiness paths; production readiness survived.
+
+After-deployment local audit at 2026-10-09 09:50 UTC retained five league bot replies,
+seven target messages across three channels, 20 development replies and 12 historical
+human blocks. Development metadata flags were five, two apparently unsolicited;
+human flags were zero. Median words were 21 versus 15.5. The development sample mixes
+earlier versions, smoke tests and operator conversations and is clipped to the latest
+40 messages. Increased total metadata flags include requested evidence/date answers;
+these counts do not establish current-version regression or improved general style.
+Historical episode independence and previous learning overlap remain unverified.
+The automatic privacy review rejection of raw-output/provider audits left semantic
+humor, sincerity, stances and relationships ungraded. No new persona trait was learned.
+
+The extended 2.7.3 health window at 2026-10-09 04:21 UTC was healthy, zero restarts,
+errors, response failures, memory warnings or learning pauses, with 560 learning
+batches and eight posts. Four gateway disconnects recovered and two generic study
+pauses occurred. A later local diagnostic counted eight disconnects, each followed
+by resume logs within about 0.24-0.35 seconds, and four study pauses. Their generic
+cause logging limits diagnosis and is added to the backlog. No rollback was needed;
+this is bounded evidence, not a long-term error-rate guarantee.
+
+Native 34 records, 16 archives/4,299 grouped blocks, 405 eligible target blocks,
+75 eligible 2020-labeled blocks, 439 graph humans, 554 episodes, 96 images, one
+qualified claim and 1,009 edges remained. No new graph claim or complete-history
+coverage is attributed to this increment. Tracked estimate at the extended health
+snapshot was USD 0.03920785: runtime 0.01016947, maintenance 0.02903838; 190 settled,
+zero unsettled attempts, 611,839 input/358,535 cached input/7,919 output tokens.
+The delta from initial USD 0.0314292 includes background and interleaved later-run
+activity. Provider billing/pre-guard spending remain unknown; USD 18/2/20 caps
+and the existing ledger persist, with no paid infrastructure added.
+
+By final evidence reconciliation, the following run had merged PR #43 and deployed
+2.8.0 at `41a89a8cdf8065a466000fb80c22308cc11baa01`. At 2026-10-09 15:24 UTC,
+its digest `sha256:7264c60932b0c24864aeddaf63b6dac322525cf98a44f64de93cbdd5ecf28d48`
+was healthy with zero restarts/errors/response failures. Its diff preserves this
+run's memory and Discord fixes. The evidence-only branch starts from that fetched
+main revision and preserves the other run's notes and deployment. This run did not
+redeploy an older release or mutate another worktree. Primary checkout is untouched.
+[Content-free release evidence](evaluations/2026-10-08-natural-recall-release.json)
+records acceptance, audit, cost, health and remaining limitations separately.
+The evidence branch reran all six gates on the reconciled 2.8.0 source: 312 tests,
+95.90% branch-inclusive coverage, locked sync, format, lint, typing and build pass.
+Its only changes are this record, the completed backlog item and content-free JSON.
+
+
 ## 2026-10-08 13:00 - Context-aware graph studies (candidate)
 
 - New managed worktree `trubot-daily-20261008-1300`, feature branch of the same
