@@ -173,8 +173,8 @@ one coherent increment through production verification.
 - Follow-up: verified native conversational neighborhoods/reply links remain
   separate work. Six hours or more than ten export blocks are sampling exclusions,
   not verified episode boundaries; independent contextual evaluation is still needed.
-  Single explicit self-reports still require two-source support in the automatic
-  learner. Evaluate a separately scoped self-report path without creating habits.
+  Version 2.9.0 adds a separately scoped self-report path without creating habits;
+  the qualified acceptance and remaining retrieval gaps are recorded below.
 - Legacy biography/style assumptions remain unvalidated. A local 12-block holdout
   and structural recent-activity audit do not establish humor or personality fidelity.
   Private model-assisted auditing awaits explicit payload approval after automatic
@@ -201,3 +201,9 @@ one coherent increment through production verification.
   assertions in older league replies around human enthusiasm. Prioritize a future
   source-backed participation correction; do not generalize from this small sample.
   Biography and habitual-style auditing remains overlapping prior-run work.
+- Delivered and verified: 2.9.0, PR #45, one private operator-reviewed narrow
+  observation with current support and concise aliases; original actual Discord
+  stance failure corrected, six real acceptance cases pass. Clone extraction passed
+  two-pass review, but automatic production acceptance is not yet observed.
+  Keep the alias gap open: test multiple held-out paraphrases and reject unsupported
+  entity connections before expanding retrieval. No full personality coverage claim.
