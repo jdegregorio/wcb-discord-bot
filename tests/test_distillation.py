@@ -64,6 +64,7 @@ def proposal(study, **changes):
         "observations": [
             {
                 "kind": "preference",
+                "support_basis": "corroborated",
                 "summary": "Caramel desserts are a supported choice.",
                 "conditions": "After dinner, historical statements only.",
                 "supports": [
@@ -649,3 +650,182 @@ async def test_false_habit_is_rejected_before_paid_review_or_graph_write(stores)
     assert responder.study_json.await_count == 1
     assert stores[2].status()["nodes"].get("humor", 0) == 0
     assert stores[2].status()["studies"]["rejected"] == 1
+
+
+def single_report(study, **changes):
+    return proposal(
+        study,
+        support_basis="explicit_self_report",
+        summary="A stated dessert preference.",
+        supports=[{"source": 0, "quote": study.passages[0]["author_text"]}],
+        **changes,
+    )
+
+
+def test_specific_full_self_report_can_connect_a_single_source(stores):
+    learning, _, graph = stores
+    learning.observe(source(content="I prefer salted caramel after dinner."), now=NOW)
+    graph.populate(now=NOW)
+    study = StudyStore(graph).prepare(now=NOW, channel_ids=frozenset({10}))
+    item = validate_proposal(single_report(study), study)
+    assert item["support_basis"] == "explicit_self_report"
+
+
+@pytest.mark.parametrize(
+    "failure", ["style", "humor", "no_self_report", "partial", "truncated", "context_only"]
+)
+def test_single_source_does_not_establish_a_pattern_or_lose_qualifiers(stores, failure):
+    learning, _, graph = stores
+    text = "I prefer salted caramel after dinner, but vanilla for breakfast."
+    if failure == "no_self_report":
+        text = "Salted caramel was served after dinner."
+    learning.observe(source(content=text), now=NOW)
+    graph.populate(now=NOW)
+    study = StudyStore(graph).prepare(now=NOW, channel_ids=frozenset({10}))
+    item = single_report(study)
+    if failure in {"style", "humor"}:
+        item["observations"][0]["kind"] = failure
+    elif failure == "partial":
+        item["observations"][0]["supports"][0]["quote"] = "I prefer salted caramel after dinner"
+    elif failure == "truncated":
+        study.passages[0]["author_text_truncated"] = True
+    elif failure == "context_only":
+        item["observations"][0]["supports"][0]["quote"] = "I prefer chocolate after dinner."
+    with pytest.raises(LearningUnavailable):
+        validate_proposal(item, study)
+
+
+@pytest.mark.parametrize("mode", ["direct", "reaction", "followup"])
+async def test_single_report_distills_connects_and_invalidates_through_handlers(stores, mode):
+    learning, _, graph = stores
+    text = "I prefer salted caramel after dinner, but vanilla for breakfast."
+    learning.observe(source(content=text), now=NOW)
+    graph.populate(now=NOW)
+    assert not ContextMemory(learning).candidates("sweet tooth", guild_id=77, now=NOW)
+    distiller, validation, adapter, channel = worker(stores)
+
+    async def generate(**kwargs):
+        if kwargs["name"] == "memory_extract":
+            assert "ENTIRE" in kwargs["instructions"]
+            return single_report(SimpleNamespace(passages=kwargs["payload"]["sources"]))
+        assert "isolated" in kwargs["instructions"]
+        return {
+            "accepted": True,
+            "basis": "Specific stated choice; breakfast exception retained.",
+            "contradicts": [],
+        }
+
+    adapter.study_json.side_effect = generate
+    await distiller.cycle(validation)
+    assert adapter.study_json.await_count == 2
+    current = GraphStore(learning).lookup("sweet tooth", guild_id=77, now=NOW)
+    assert len(current) == 1 and current[0]["support_basis"] == "explicit_self_report"
+    assert current[0]["status"] == "tentative" and len(current[0]["supports"]) == 1
+    assert "not a habitual or current belief" in current[0]["confidence_basis"]
+    assert not graph.lookup("sweet tooth", guild_id=78, now=NOW)
+    assert not graph.lookup("sweet tooth", guild_id=77, now=NOW + timedelta(days=31))
+    # Restart cannot repeat the paid study or alter the four-hour allowance.
+    await worker(stores)[0].cycle(validation)
+    assert adapter.study_json.await_count == 2
+    client, responder, _, _ = make_client(clock=lambda: NOW)
+    client._learning, client._memory = distiller.ingestor, ContextMemory(learning)
+
+    async def history(**_kwargs):
+        for item in []:
+            yield item
+
+    channel.history = history
+    question = fake_message(channel, direct=mode == "direct")
+    question.content = question.clean_content = (
+        "🤖 " if mode == "direct" else ""
+    ) + "Tell me about your sweet tooth"
+    with patch.object(client, "get_channel", return_value=channel):
+        if mode == "reaction":
+            original_fetch = channel.fetch_message
+
+            async def fetch(i):
+                return question if i == question.id else await original_fetch(i)
+
+            channel.fetch_message = fetch
+            await client.on_raw_reaction_add(
+                SimpleNamespace(
+                    channel_id=10,
+                    user_id=1,
+                    message_id=question.id,
+                    emoji=SimpleNamespace(name="ThomasJones"),
+                    member=SimpleNamespace(bot=False),
+                )
+            )
+        else:
+            if mode == "followup":
+                client._attention.activate(10, NOW)
+            await client.on_message(question)
+    context = responder.calls[0][0][0].content
+    assert text in context and "explicit_self_report" in context
+    channel.send.assert_awaited_once()
+    learning.invalidate(10, [source().id], deleted=True, now=NOW)
+    assert not graph.lookup("sweet tooth", guild_id=77, now=NOW)
+    learning.forget(now=NOW)
+    with pytest.raises(LearningUnavailable):
+        graph.lookup("sweet tooth", guild_id=77, now=NOW)
+    await client.close()
+
+
+def test_requested_maintenance_anchor_obeys_scope_veto_and_pacing(stores):
+    learning, _, graph = stores
+    seed(stores)
+    learning.observe(source(2, content="I hate letting the winner choose the matchup."), now=NOW)
+    graph.populate(now=NOW)
+    store = StudyStore(graph)
+    ref = {"kind": "discord", "message_id": source(2).id}
+    with pytest.raises(LearningUnavailable, match="unavailable"):
+        store.prepare(now=NOW, channel_ids=frozenset({20}), anchor_ref=ref)
+    study = store.prepare(now=NOW, channel_ids=frozenset({10}), anchor_ref=ref)
+    assert study.snapshots[0]["ref"]["message_id"] == ref["message_id"]
+    assert store.prepare(now=NOW, channel_ids=frozenset({10}), anchor_ref=ref) is None
+    store.finish(study, None, now=NOW, outcome="rejected")
+    assert (
+        store.prepare(now=NOW + timedelta(hours=4), channel_ids=frozenset({10}), anchor_ref=ref)
+        is None
+    )
+
+
+async def test_single_report_review_rejection_never_persists(stores):
+    learning, _, graph = stores
+    learning.observe(source(content="I love this rule, if the aim is to ruin everything."), now=NOW)
+    graph.populate(now=NOW)
+    distiller, client, responder, _ = worker(stores)
+    responder.study_json.side_effect = [
+        single_report(
+            SimpleNamespace(
+                passages=[{"author_text": "I love this rule, if the aim is to ruin everything."}]
+            )
+        ),
+        {
+            "accepted": False,
+            "basis": "Sarcasm does not support a literal preference.",
+            "contradicts": [],
+        },
+    ]
+    await distiller.cycle(client)
+    assert responder.study_json.await_count == 2
+    assert not graph.lookup("sweet tooth", guild_id=77, now=NOW)
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "He told me I prefer caramel for dessert.",
+        "If I prefer caramel, would that change things?",
+        '"I prefer caramel" was his claim.',
+        "I heard him say I prefer caramel.",
+        "I prefer caramel. " + "Context. " * 40,
+    ],
+)
+def test_ambiguous_reported_hypothetical_or_long_text_cannot_use_single_support(stores, text):
+    learning, _, graph = stores
+    learning.observe(source(content=text), now=NOW)
+    graph.populate(now=NOW)
+    study = StudyStore(graph).prepare(now=NOW, channel_ids=frozenset({10}))
+    with pytest.raises(LearningUnavailable):
+        validate_proposal(single_report(study), study)

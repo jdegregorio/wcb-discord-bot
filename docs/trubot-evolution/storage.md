@@ -545,3 +545,29 @@ quotes and existing correction/withdrawal/veto checks. Existing qualified claims
 are not retroactively changed; current production has no automated style/humor
 observations to retire. The 16,000-byte request guard and maintenance cap remain
 authoritative; oversized packets pause without a paid call.
+
+
+## Specific self-report support (2.9.0)
+
+Graph schema remains 1. New automated observations carry `support_basis`, either
+`corroborated` or `explicit_self_report`. The latter is restricted to one complete
+12-300-character, untruncated first-person claim/preference in the anchor source.
+A separate contextual review must confirm literal authorship and a summary limited
+to that particular statement. It never establishes a recurring humor/style trait
+or enduring/current preference. Both passes use the existing maintenance ledger;
+four-hour production pacing, tentative status and 30-day expiry remain unchanged.
+
+Trusted maintenance code can pass an exact eligible `anchor_ref` to
+`GraphDistiller.cycle`. This does not expose a Discord command or bypass channel
+scope, current source fingerprints, study cooldown, operator veto or withdrawal.
+An unavailable, retired or already studied requested anchor does not fall through
+to a different study. Never clear checkpoints or create a new production ledger
+to force a study. Disposable evaluation clones may simulate the next due cycle;
+record that simulation separately from actual production learning.
+
+The support basis and source dates are internal grounding metadata, not mandatory
+conversation disclaimers. Existing graph lookup and render revalidate every support.
+Single-source observations share source correction, deletion, retirement and
+withdrawal cleanup. Compatible image rollback leaves graph and usage state intact;
+retire a bad observation separately through the existing graph operator command.
+Private evaluation copies must be removed when their content-free evidence is saved.

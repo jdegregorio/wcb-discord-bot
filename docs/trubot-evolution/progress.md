@@ -1115,3 +1115,58 @@ Its only changes are this record, the completed backlog item and content-free JS
   rejecting universal behavior from two jokes. This already passed in 2.7.3;
   the reproduced defect is the future graph-learning support path, not this
   direct conversational answer. Real post-release checks remain required.
+
+
+## 2026-10-09 05:00 - Specific self-report graph learning (candidate)
+
+Fresh managed worktree `trubot-daily-20261009-0500`, feature branch of the same
+suffix, fetched base `41a89a8cdf8065a466000fb80c22308cc11baa01`. Joe's checkout
+stays at `0d116e9`. Earlier style-example, recent-native-context and reply-detection
+runs were inspected before selection; their unfinished worktrees remain untouched.
+Main contains 2.8.0. No overlapping evolution PR was open. Execution was interrupted
+and resumed with updated permissions; no source change or release happened during
+that interruption.
+
+Authenticated pinned member and private development membership were reverified.
+The last-100/channel, 14-day league audit covers three channels, five older bot
+replies and seven target messages. The development last-40 sample contains 20 bot
+replies. Twelve eligible historical self-report blocks were reviewed with nearby
+speakers. Sparse samples support defect categories, not a universal personality
+judgment. No new league activity or pixel-dependent interpretation was claimed.
+The audit identified pessimism during human enthusiasm, a current-sports assertion
+without support, and a reproduced incorrect historical stance. Related persona and
+native-context work remains assigned to earlier runs.
+
+One actual owner-authored development question received an opposite historical
+stance from the verified authored source. Retrieval omitted that source; the graph
+had no relevant observation. The automatic learner's universal two-source requirement
+also excluded a specific, literal self-report. New support-basis metadata and local
+full-quotation/first-person gates admit one narrow claim/preference after independent
+review. Humor/style still need recurring evidence; source timestamps, tentative status,
+30-day expiry, contradictions, edits, deletion, withdrawal and vetoes are preserved.
+Packet source indexes prevent index confusion, and extraction targets one proposition.
+Trusted exact-source maintenance targeting keeps the existing four-hour gate.
+
+Disposable corpus evaluation simulated the next due cycle, without changing production
+pacing or creating a ledger. Three earlier packets were rejected: combined unrelated
+claims exceeded bounds, or quoted the wrong support index. The final packet retained
+one correctly scoped observation after two passes. Long phrase aliases still missed
+the original paraphrase; short, source-supported operator aliases need review before
+that wording can recall it. Three other human variations retained two conditional
+self-reports and rejected one ambiguous interpretation. Prior learning overlap is
+unknown, and this is agent contextual review plus the same runtime model, not an
+independent human fidelity benchmark.
+
+All six gates pass: locked sync, format, lint, strict types, 329 tests with 95.81%
+branch-inclusive coverage, and wheel/source build. Regression covers single-source
+connected recall through direct/reaction/follow-up handlers, full qualifications,
+peer/quoted/truncated/hypothetical rejection, pattern exclusion, review rejection,
+expiry, source deletion, withdrawal, restart and maintenance pacing. Private evidence
+is on the app volume; public aggregate evaluation is in
+`evaluations/2026-10-09-selfreport-candidate.json`.
+
+Budget baseline: 198 settled attempts, zero unsettled, estimated USD 0.042584475.
+Existing USD 18 runtime / USD 2 maintenance / USD 20 monthly caps remain. No paid
+infrastructure or schema migration. Billing and pre-guard October spend are unknown.
+CI, merge, release, deployed digest, private population, actual post-release Discord
+checks and final health evidence follow below.

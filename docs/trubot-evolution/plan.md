@@ -175,3 +175,15 @@ prioritizes related excerpts from separated contexts and blocks obvious shared
 exchanges from establishing habitual humor/style. Native packets explicitly mark
 missing peer setup. Separation is a conservative sampling filter, not proof of
 independent episodes; contextual review, tentative status and expiry remain required.
+
+
+## Specific self-reports, 2.9.0
+
+Automatic learning distinguishes a specific stated position from a recurring trait.
+A complete, untruncated first-person claim/preference can support one qualified
+observation after exact attribution checks and independent contextual review.
+Humor/style still require repeated evidence in separated contexts. Keep temporal
+uncertainty, expiry, contradictions, source correction, retirement and withdrawal.
+Evaluate supported recall through actual development Discord conversations and
+compare conditional wording with human exchanges; do not infer lasting beliefs
+from a single self-report.
