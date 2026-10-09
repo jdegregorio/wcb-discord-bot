@@ -1385,3 +1385,50 @@ contains no raw source/answer text or private IDs. App-volume artifacts use
 `smoke-tests/2026-10-09-0900-*`, modes 0600/0700, seven-day manual retention and
 withdrawal cleanup. Next priority is H2 held-out conceptual recall/contextual
 coverage; tools/image prototypes remain explicitly unvalidated H3 candidates.
+
+## 2026-10-09 13:00: grammatical memory connections
+
+Fetched base `d4a207dad1d4a796630134d370b9b1d2614beed0`; new managed worktree
+`trubot-daily-20261009-1300`, branch `feature/trubot-daily-20261009-1300-014a`.
+Primary checkout and older unfinished native/persona worktrees remain untouched.
+No overlapping evolution PR was open. Reverified production pi5/aarch64/Ubuntu
+24.04, 2.9.1 healthy with zero restarts, existing immutable digest and deployment
+interface. Existing app-scoped credentials are present; no secrets exported.
+
+Both planning phases are recorded in research.md. The authenticated structural
+character audit found the same five older league bot replies and seven target
+messages, no new spontaneous activity, and 20 development replies. It cannot
+establish human traits or semantic/emotional fidelity. Automatic approval review
+rejected exporting private raw source/derived payloads into the tool transcript;
+a safer content-free app-volume audit completed. Detailed private semantic review
+is still a gap, not an inferred Andrew trait. No image-dependent interpretation.
+
+H4: six predeclared new operator-written conceptual phrasings retrieved the existing
+reviewed neighborhood in 1/6 cases. A disposable plural-only prototype and final
+candidate both retrieve 2/6; the other five positive-case outcomes and all three
+control lookups are unchanged. Baseline and candidate use identical sources; no
+new graph observation, alias, source or provider request was added. The actual
+owner-authored baseline Discord answer on the plural case was already correct,
+with recent supported channel context available. This increment fixes retrieval;
+it does not demonstrate a generated reply-quality improvement. Four broader
+paraphrases remain unresolved. Hypotheses H2/H3 and generated outdoor scenes remain
+on the roadmap, with skills/tools and guarded attachment delivery still exploratory.
+
+2.9.2 shares conservative noun-form normalization between reviewed graph phrases,
+lexical scoring and existing topic expansion. An explicit 17-noun vocabulary avoids
+arbitrary stemming of names and verbs. Phrase boundaries/order and source text
+remain intact; exact quotations never use grammatical normalization. No context,
+participation, spending, retention, storage-schema or study-pacing limit changed.
+
+Candidate gates passed: locked sync, formatting, lint, strict typing, 376 tests,
+96.25% branch-inclusive coverage, wheel/source build. New regression coverage checks
+singular/plural equivalence, names/substrings/verbs/order, numeric boundaries,
+source correction/deletion, exact quotation, contradictory neighborhoods, freshness,
+guild isolation, restart, withdrawal and production-handler source refresh. A stale
+fake-channel test clock and a stopped-word score expectation were corrected in the
+test harness before passing. Existing tests show no known flakiness or failure.
+Installed candidate source probe confirms 2/6 reviewed connections and unchanged
+controls. No API call was needed for research/prototype/retrieval checks; the real
+baseline reply uses the existing ledger. Pre-run tracked estimate USD 0.049035785,
+221 settled/zero unsettled attempts; earlier October spend and billing are unknown.
+Full CI/release, installed acceptance, real gateway, health and ledger evidence follow.

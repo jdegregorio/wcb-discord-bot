@@ -313,3 +313,13 @@ server and read the running bot's actual responses. Use the authenticated Discor
 UI for the owner account; never use a user token or pretend a bot probe is human.
 Check grounded baseball recall, a year-labeled historical quote with date uncertainty,
 and the changed acceptance scenario. Captured sends remain regression coverage.
+
+## Grammatical recall coverage (2.9.2)
+
+Reviewed graph aliases and lexical source scoring treat an explicit, bounded set
+of common sports/league noun plurals as equivalent to their singular forms.
+This preserves connections such as a singular alias queried with a plural noun.
+Names, verbs, semantic synonyms and exact source quotations keep their existing
+meaning. Sources, conflicts, freshness and withdrawal remain authoritative.
+This improves a demonstrated retrieval miss; wider conceptual recall is still
+incomplete and no general reply-quality gain has been measured.

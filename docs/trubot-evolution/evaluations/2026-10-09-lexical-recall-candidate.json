@@ -1,0 +1,27 @@
+{
+  "base_sha": "d4a207dad1d4a796630134d370b9b1d2614beed0",
+  "version": "2.9.2",
+  "hypothesis": "H4",
+  "change": "Bounded domain noun plural equivalence in reviewed aliases and lexical source scoring",
+  "private_query_count": 9,
+  "conceptual_cases": 6,
+  "graph_recall_before": 1,
+  "graph_recall_candidate": 2,
+  "unchanged_controls": 3,
+  "synthetic_regressions": 31,
+  "tests": 376,
+  "coverage_percent": 96.25,
+  "all_six_quality_gates": "passed before final documentation",
+  "research_provider_calls": 0,
+  "real_baseline_discord_cases": 1,
+  "real_baseline_correct": true,
+  "reply_quality_improvement_measured": false,
+  "remaining_conceptual_misses": 4,
+  "limitations": [
+    "Operator-written paraphrases, not independent human references",
+    "Baseline reply may use recent channel context",
+    "Private semantic audit payload export rejected; aggregate method completed",
+    "No new spontaneous league reply in the bounded scan",
+    "Broader semantics and image/tool hypotheses remain unvalidated"
+  ]
+}

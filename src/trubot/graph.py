@@ -6,7 +6,6 @@ import argparse
 import hashlib
 import json
 import os
-import re
 import sqlite3
 from collections.abc import Iterator
 from contextlib import ExitStack, closing, contextmanager, nullcontext
@@ -16,6 +15,7 @@ from typing import Any
 
 from trubot.archives import ArchiveStore
 from trubot.learning import LearningStore, LearningUnavailable, _private, _time
+from trubot.lexical import phrase
 
 VERSION = "reviewed-graph-v1"
 MAX_NODES = 30_000
@@ -483,15 +483,12 @@ class GraphStore:
             if self.learning._read_identity(source).guild_id != guild_id:
                 return []
             matched = []
-            text = " " + re.sub(r"[^a-z0-9]+", " ", query[:8000].casefold()) + " "
+            text = phrase(query[:8000])
             for row in db.execute(
                 "SELECT id, data FROM nodes WHERE kind IN ('entity', 'concept') LIMIT 1000"
             ):
                 entity = json.loads(row["data"])
-                if any(
-                    " " + re.sub(r"[^a-z0-9]+", " ", a.casefold()) + " " in text
-                    for a in entity["aliases"]
-                ):
+                if any(phrase(alias) in text for alias in entity["aliases"]):
                     matched.append(row["id"])
             result = []
             seen = set()

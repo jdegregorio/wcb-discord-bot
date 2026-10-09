@@ -13,6 +13,7 @@ from typing import Any
 from trubot.archives import ArchiveStore
 from trubot.graph import GraphStore
 from trubot.learning import LearningStore, LearningUnavailable, _time
+from trubot.lexical import words
 
 _STOP = frozenset(
     [
@@ -86,7 +87,7 @@ _STOP = frozenset(
         "something",
     ]
 )
-_TOPICS = (
+_TOPICS: tuple[frozenset[str], ...] = (
     frozenset(
         ["baseball", "mlb", "sox", "cubs", "yankees", "tigers", "brewers", "white", "fenway"]
     ),
@@ -100,16 +101,25 @@ _TOPICS = (
 )
 
 
+_TOPICS = tuple(frozenset(word for term in topic for word in words(term)) for topic in _TOPICS)
+
+
+def _terms(text: str) -> set[str]:
+    return {
+        word for token in re.findall(r"[a-z]{3,}", text.casefold()) for word in words(token)
+    } - _STOP
+
+
 def terms(text: str) -> set[str]:
-    words = set(re.findall(r"[a-z]{3,}", text.casefold())) - _STOP
+    query = _terms(text)
     for topic in _TOPICS:
-        if words & topic:
-            words.update(topic)
-    return words
+        if query & topic:
+            query.update(topic)
+    return query
 
 
 def score(text: str, query: set[str]) -> int:
-    return len((set(re.findall(r"[a-z]{3,}", text.casefold())) - _STOP) & query)
+    return len(_terms(text) & query)
 
 
 def years(text: str) -> set[str]:
