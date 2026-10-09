@@ -116,3 +116,18 @@ Retain H3 as bounded prototype work, not a commitment to a vendor harness. The
 ordered roadmap records rationale, dependencies, acceptance and operating impact.
 A naturally completed production study and wider source-qualified recall evidence
 could reduce H1 follow-up urgency; failed held-out precision would deprioritize H2.
+
+### H1 release validation
+
+2.9.1 installed-package probes diagnose 14/14 on the reverified Pi; all pacing,
+privacy and failed-write checks pass. Actual owner-authored private development
+Discord baseball, broad historical quote and exact-date replies pass 3/3. The
+quote is an exact normalized substring of current eligible source evidence;
+baseball support uses a limited source-term regression plus direct agent review.
+Ordinary recall is direct with no routine metadata disclaimer, while exact-date
+uncertainty is brief. No independent human grader or general fidelity gain.
+Post-release structural audit still has five older league replies/seven target
+messages and zero new spontaneous league replies. Development median is 16.5
+words with zero unsolicited metadata; window turnover prevents causal inference.
+No new production study completed in the 194-second health snapshot. Full health,
+source continuity, measured cost and limitations are in progress.md and release JSON.

@@ -1,0 +1,177 @@
+{
+  "release": "v2.9.1",
+  "runtime_pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/47",
+  "tested_sha": "5c2cc59d983f9f777ea934d08ac08046a416a6bc",
+  "merged_sha": "b8d3c2d5b2931f2951b1f64fb8aa2954d17ffa1b",
+  "same_tested_tree": true,
+  "pr_ci": 37957000605,
+  "main_ci": 37957219149,
+  "image_publish": 37957350780,
+  "both_architectures_built": true,
+  "previous_digest": "sha256:d5ce8498cbe3295466c8de4211df282a46a239b18a013885034c49de99294072",
+  "installed_source_hashes_match": true,
+  "installed_diagnostics": {
+    "passed": true,
+    "diagnosed": 14,
+    "total": 14,
+    "provider_calls": 0,
+    "discord_writes": 0,
+    "live_state_access": false,
+    "pacing_and_privacy_preserved": true
+  },
+  "real_discord": {
+    "owner_authored": true,
+    "actual_gateway_responses": true,
+    "private_two_member_scope_verified": true,
+    "cases": [
+      {
+        "id": "baseball",
+        "passed": true,
+        "latency_seconds": 5.275
+      },
+      {
+        "id": "broad_year",
+        "passed": true,
+        "latency_seconds": 4.714
+      },
+      {
+        "id": "exact_date",
+        "passed": true,
+        "latency_seconds": 3.809
+      }
+    ],
+    "league_test_posts": 0,
+    "user_token_extracted": false,
+    "raw_answer_text_retained": false,
+    "grading": "Source term/substring checks plus direct agent reading; not independent human fidelity grading."
+  },
+  "health": {
+    "at": "2026-10-09T16:17:49.610372+00:00",
+    "elapsed_seconds": 194,
+    "digest": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:18aa210b6bb770298dfb4918e6acd5310d7b6b664ec0943b8af285f375324518",
+    "revision": "b8d3c2d5b2931f2951b1f64fb8aa2954d17ffa1b",
+    "healthy": true,
+    "restarts": 0,
+    "readiness_probe": true,
+    "errors": 0,
+    "response_failures": 0,
+    "disconnects": 0,
+    "memory_warnings": 0,
+    "learning_pauses": 0,
+    "study_pauses": 0,
+    "study_completed": 0,
+    "learning_batches": 4,
+    "reply_posts": 3,
+    "study_categories": {
+      "budget_exhausted": 0,
+      "budget_unavailable": 0,
+      "timeout": 0,
+      "context_bound": 0,
+      "provider_response_invalid": 0,
+      "provider_connection": 0,
+      "evidence_unavailable": 0,
+      "storage_unavailable": 0,
+      "unexpected_error": 0
+    }
+  },
+  "continuity": {
+    "identity_preserved": true,
+    "pacing_preserved": true,
+    "learning": {
+      "schema": 1,
+      "retention_days": 180,
+      "max_messages": 10000,
+      "messages": 34,
+      "pending_corrections": 0,
+      "deletion_markers": 0,
+      "channels": 4,
+      "identity": "privately verified and pinned"
+    },
+    "archives": {
+      "visual_episodes": 115,
+      "image_assets": 96,
+      "image_bytes": 62571650,
+      "schema": 1,
+      "documents": 16,
+      "origins": 27,
+      "blocks": 4299,
+      "target_blocks": 412,
+      "voice_eligible_blocks": 405,
+      "suppressed_documents": 0
+    },
+    "graph": {
+      "schema": 1,
+      "nodes": {
+        "captured_human": 11,
+        "claim": 1,
+        "concept": 2,
+        "episode": 554,
+        "human_source": 439,
+        "person": 1,
+        "preference": 1,
+        "visual": 96
+      },
+      "edges": 1011,
+      "studies": {
+        "rejected": 2
+      },
+      "study_vetoes": 0,
+      "checkpoints": 5
+    },
+    "online_backup_integrity": true,
+    "disposable_restore_integrity_and_counts": true,
+    "probe_staging_removed": true,
+    "live_state_replaced": false,
+    "ledger_replaced": false
+  },
+  "budget": {
+    "baseline_estimated_usd": 0.0479301,
+    "final": {
+      "month": "2026-10",
+      "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+      "timezone": "UTC",
+      "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+      "estimated_usd": 0.04868566,
+      "runtime_usd": 0.01443288,
+      "maintenance_usd": 0.03425278,
+      "monthly_limit_usd": 20,
+      "runtime_limit_usd": 18,
+      "maintenance_limit_usd": 2,
+      "attempts": 220,
+      "input_tokens": 701624,
+      "cached_input_tokens": 383016,
+      "output_tokens": 10059,
+      "unsettled_attempts": 0,
+      "pre_guard_spend": "unknown; not included"
+    },
+    "run_delta_estimated_usd": 0.00075556,
+    "research_and_diagnostics_provider_calls": 0,
+    "actual_discord_reply_calls": 3,
+    "paid_infrastructure_added": false
+  },
+  "character_audit": {
+    "league_bot": 5,
+    "league_target": 7,
+    "source_channels": 3,
+    "development_bot": 20,
+    "historical_human_blocks": 12,
+    "development_median_words_before_after": [
+      18,
+      16.5
+    ],
+    "human_median_words": 14,
+    "unsolicited_development_metadata_before_after": [
+      0,
+      0
+    ],
+    "new_spontaneous_league_replies": 0
+  },
+  "limitations": [
+    "Enabling diagnostics, not measured reply-quality gain.",
+    "No natural production study or pause yet in the bounded post-release window.",
+    "Installed fault probes use disposable synthetic learners, not fault injection into live production learning.",
+    "Historical episode independence/prior-learning overlap unknown; semantic fidelity not independently graded.",
+    "Short health window; no long-term error-rate guarantee.",
+    "Pre-guard billing and off-device recovery/deletion remain unverified."
+  ]
+}

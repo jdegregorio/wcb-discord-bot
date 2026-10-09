@@ -1314,3 +1314,74 @@ were needed for research/diagnosis. Billing and pre-guard October spend are unkn
 See [candidate evidence](evaluations/2026-10-09-study-diagnostics-candidate.json).
 CI, merged-source checks, immutable release/digest, installed probes and actual
 owner-authored private Discord responses follow below.
+
+### Verified 2.9.1 rollout
+
+[PR #47](https://github.com/jdegregorio/wcb-discord-bot/pull/47) passed required
+[CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37957000605)
+and merged as `b8d3c2d5b2931f2951b1f64fb8aa2954d17ffa1b`, with the identical tree
+to tested candidate `5c2cc59d983f9f777ea934d08ac08046a416a6bc`. All six local gates
+passed again on merged main (345 tests, 96.21% coverage); merged
+[main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37957219149)
+passed. Immutable [v2.9.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.9.1)
+targets that exact commit. Both architectures
+[built successfully](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37957350780)
+before deployment.
+
+Reverified pi5/aarch64/Ubuntu 24.04 and used its installed locked app transaction.
+Running digest is
+`sha256:18aa210b6bb770298dfb4918e6acd5310d7b6b664ec0943b8af285f375324518`;
+previous healthy 2.9.0 digest is
+`sha256:d5ce8498cbe3295466c8de4211df282a46a239b18a013885034c49de99294072`.
+Installed version, OCI revision and both changed module hashes match the tested
+merged source. No rollback was needed. Installed isolated probes pass 14/14,
+with no provider calls, Discord writes, live-state access or separate client.
+The main readiness heartbeat remains healthy throughout.
+
+Actual owner-authored Chrome Discord questions and running gateway replies pass
+3/3: baseball, broad year-context quote and explicit exact-date question. Latencies
+are 5.275, 4.714 and 3.809 seconds. Ordinary content recall is direct and has no
+metadata disclaimers; exact-date uncertainty is concise. The quote matches current
+eligible source text; year-labeled provenance is never asserted as a proven message
+date. Baseball uses a source-term support check and direct agent reading, not a
+full independent semantic grader. These test normal replies after isolated study
+failures, not injected failures in the live background learner. No test chatter
+entered league channels, no user token was extracted, and development posts were
+not learned as Andrew. Private artifacts retain only references/flags/counts/timing.
+
+Post-deployment audit repeats the bounded three-channel latest-100/14-day scan:
+five older bot replies, seven Andrew messages and zero new spontaneous league
+replies. The latest 40 development messages still contain 20 replies, median 16.5
+words, zero unsolicited metadata; the same 12 human blocks have median 14 words
+and zero metadata. Window turnover and mixed versions prevent causal character
+claims. Direct agent review of the three new responses found no unnecessary
+storage explanation, invented date or unsupported habitual extension. Humor,
+emotional reactions, ambient timing and broad personality fidelity remain ungraded.
+
+At 16:17:49 UTC, 194 seconds after startup, Docker health and direct readiness pass:
+zero restarts/errors/response failures/disconnects/memory warnings/learning pauses/
+study pauses, four learning batches and three replies. No natural production
+study completed in this short window; the previous four-hour checkpoint is unchanged.
+This is bounded health evidence, not a long-term error-rate claim. Identity and
+source/graph coverage remain unchanged: 34 native records, 16 archives, 4,299
+blocks, 405 eligible human blocks, 115 visual episodes/96 assets, 439 graph human
+sources, 554 episodes, one claim, one preference and 1,011 edges. No schema change,
+new personality observation or historical/visual coverage expansion.
+
+Private online backups of learning, archive and graph pass integrity checks;
+disposable restore integrity and every table count match. The first archive
+restore attempt exceeded the container's 16 MiB `/tmp`; rerunning on the approved
+private app volume passed and probe copies were removed. Live stores and usage
+were never replaced. Documented mode-0600 backups retain seven-day operator
+retention and withdrawal handling. Off-device recovery/deletion remains unverified.
+
+Ledger at 16:17:51 UTC: estimated USD 0.04868566 (runtime 0.01443288, maintenance
+0.03425278), 220 settled/zero unsettled attempts, 701,624 input/383,016 cached input/
+10,059 output tokens. Run delta USD 0.00075556 corresponds to three actual Discord
+reply requests; research/diagnostics made no provider call. Existing USD 18/2/20
+caps and original ledger persist; billing and pre-guard October spend remain unknown.
+Public [rollout evidence](evaluations/2026-10-09-study-diagnostics-release.json)
+contains no raw source/answer text or private IDs. App-volume artifacts use
+`smoke-tests/2026-10-09-0900-*`, modes 0600/0700, seven-day manual retention and
+withdrawal cleanup. Next priority is H2 held-out conceptual recall/contextual
+coverage; tools/image prototypes remain explicitly unvalidated H3 candidates.
