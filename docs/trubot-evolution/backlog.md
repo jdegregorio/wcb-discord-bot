@@ -238,3 +238,16 @@ enabling work and no measured character-quality gain is claimed. Full evidence
 is in [the rollout record](evaluations/2026-10-09-study-diagnostics-release.json).
 Next: independently held-out conceptual recall and native/contextual evidence,
 reconciling the unfinished persona/reply work before overlap.
+
+
+## 2026-10-09 13:00 selection
+
+H4 in research.md supports a bounded grammatical retrieval correction: known
+singular/plural domain nouns should connect identical reviewed memories. Baseline
+1/6 new phrasings, prototype 2/6, controls unchanged; real baseline reply already
+correct, so do not claim measured reply gain. Ship and verify this increment, then
+continue broader H2 conceptual coverage, unfinished native/persona work, H3 selective
+skills/tools and requested generated U.P. northern-lights/trail-camera scenes.
+Acceptance includes specificity, exact quotations, conflicting/invalid sources,
+withdrawal, guild isolation and actual Discord. Zero added provider/storage cost.
+Private semantic review remains a gap; counts cannot establish a personality trait.

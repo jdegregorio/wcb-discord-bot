@@ -215,3 +215,16 @@ The selected diagnosis increment adds fixed cause/stage/outcome metadata so that
 operators can distinguish unavailable learning from valid abstention. It makes no
 new persona claim or source/behavior change. Generated-image sharing patterns,
 selective tools and any harness migration remain exploratory until measured.
+
+
+## 2026-10-09 13:00 selection
+
+H4 in research.md supports a bounded grammatical retrieval correction: known
+singular/plural domain nouns should connect identical reviewed memories. Baseline
+1/6 new phrasings, prototype 2/6, controls unchanged; real baseline reply already
+correct, so do not claim measured reply gain. Ship and verify this increment, then
+continue broader H2 conceptual coverage, unfinished native/persona work, H3 selective
+skills/tools and requested generated U.P. northern-lights/trail-camera scenes.
+Acceptance includes specificity, exact quotations, conflicting/invalid sources,
+withdrawal, guild isolation and actual Discord. Zero added provider/storage cost.
+Private semantic review remains a gap; counts cannot establish a personality trait.

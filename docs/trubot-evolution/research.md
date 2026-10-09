@@ -131,3 +131,76 @@ messages and zero new spontaneous league replies. Development median is 16.5
 words with zero unsolicited metadata; window turnover prevents causal inference.
 No new production study completed in the 194-second health snapshot. Full health,
 source continuity, measured cost and limitations are in progress.md and release JSON.
+
+
+## 2026-10-09 13:00 run: inflection-aware recall
+
+Base `d4a207dad1d4a796630134d370b9b1d2614beed0`, production 2.9.1. No open
+evolution PR; older native-neighborhood and persona worktrees retain unfinished
+changes and are left intact. Diagnosis, singleton support and natural-date language
+are delivered. The six-runs/day schedule and all existing gates remain unchanged.
+
+### Phase 1: research and character audit
+
+Authenticated inspection reconfirmed the pinned human and private development
+owner/two-member guild/channel. Latest 100 messages in each of three approved
+league channels, limited to 14 days, contain five older bot replies and seven human
+messages, unchanged from the previous run. The latest 40 development posts contain
+20 bot replies. Word-count medians are 13 league-bot, 4 human and 16.5 development;
+small, different contexts and mixed versions prevent a cadence or style conclusion.
+The two current reviewed observations have three and one supports; the historical
+support has a five-block neighborhood, while native support lacks stored peers.
+These are structural checks, not independent semantic or emotional grading.
+
+Automatic approval review rejected exporting private raw exchanges/derived payloads
+into the tool transcript. A safer app-volume audit exported only counts/booleans,
+kept content private and made zero provider calls. Detailed independent human-source
+semantic audit remains a gap; it requires approved private review rather than
+copying payloads into logs. The real baseline owner-authored Discord response was
+direct and natural, without metadata caveats, and gave the previously supported
+position. Recent channel context may supply it independently of graph retrieval.
+No spontaneous reaction/ambient behavior or new human trait was established.
+
+H4 - regular inflections should preserve reviewed concept connections:
+- Problem/evidence: the production graph uses literal normalized alias phrases;
+  six predeclared new conceptual phrasings retrieve the reviewed neighborhood in
+  only 1/6 cases. A plural-only disposable-process prototype recovers a second
+  case without changing three unrelated/timing control lookups.
+- Mechanism/so-that benefit: canonicalize a bounded vocabulary of common domain
+  noun plurals consistently in graph aliases and lexical source search, so that
+  ordinary grammatical variation can retrieve the same source-backed memory.
+  Do not add semantic synonyms, beliefs, aliases or new extraction assumptions.
+- Baseline: 1/6 graph-connected cases, 0/3 control hits; actual baseline answer
+  on the plural case is correct. Broader response improvement is unmeasured.
+- Predetermined acceptance: recover the plural miss with identical current sources;
+  preserve the other eight private query outcomes; synthetic singular/plural pairs,
+  multiword boundaries, specificity, proper names, quotation exactness, conflicts,
+  source invalidation, guild isolation, freshness and withdrawal pass. No provider
+  calls, expanded context limits, new storage or additional operating cost.
+- Disconfirmation: unrelated aliases match, exact quotations become fuzzy, a
+  conflicting/invalid support disappears, or real gateway recall/voice regresses.
+- Method: identical-source installed baseline/prototype and candidate comparisons,
+  meaningful synthetic handler tests, installed acceptance and real owner-authored
+  private Discord questions. Numbers measure retrieval separately from replies.
+- Preliminary conclusion: supported narrow enabling correction; 4/6 broader
+  paraphrases remain unresolved. No perfect recall or character gain claim.
+
+H2 remains unresolved beyond this grammatical increment. Conceptual normalization
+and selective retrieval require wider private expectations and genuine held-out
+human contexts; current six phrasings are operator-written, not human-reference
+prose. H3 remains exploratory: selective skills/tools and generated U.P. northern
+lights/trail-camera pictures need caption/pixel studies, guarded pricing and real
+attachment delivery. Prior documented capabilities do not establish project quality.
+No vendor/model change or image generation is selected in this run.
+
+### Phase 2: roadmap decision
+
+Prioritize H4's supported, bounded retrieval correction as one coherent increment.
+Keep H2's broader synonym/semantic recall next and the unfinished native/persona
+branches separate. Preserve source-qualified contextual learning, skills/tools and
+requested generated scenes as larger directions. Dependencies are current reviewed
+private memory and regression verification; confidence is high for the demonstrated
+plural mismatch, low for broad fidelity. Operating impact is zero added API calls
+or infrastructure. Reprioritize again if specificity regresses or genuinely held-out
+human recall shows a different limiting cause. Runtime selection follows this
+research, not a requirement to invent a behavioral assumption to meet a shipping goal.
