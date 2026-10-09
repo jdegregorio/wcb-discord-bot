@@ -179,3 +179,25 @@ one coherent increment through production verification.
   and structural recent-activity audit do not establish humor or personality fidelity.
   Private model-assisted auditing awaits explicit payload approval after automatic
   review rejected raw output and provider egress. Continue useful local work.
+
+
+## Specific self-report recall, 2026-10-09 05:00 run
+
+- Reproduced through actual private Discord: a paraphrased historical stance
+  question produced the opposite of an explicit attributed source statement.
+  Lexical retrieval missed that passage; automatic graph learning required
+  multiple sources even for a narrow self-report.
+- 2.9.0 adds an explicit support basis, full-quotation and first-person gates,
+  narrowly scoped two-pass extraction, stable packet source indexes, and bounded
+  trusted maintenance source targeting that retains four-hour pacing and vetoes.
+- Acceptance: supported specific positions enter connected recall without becoming
+  habits; retain qualifications, uncertainty, contradictions and 30-day expiry;
+  reject quoted, truncated, hypothetical, peer/bot and ambiguous support; verify
+  edits, deletion, retirement, withdrawal and actual development replies.
+- Follow-up: improve conceptual query coverage beyond exact aliases using held-out
+  paraphrases. An accepted observation with only long phrase aliases can remain
+  inaccessible to a differently worded question. Keep all derivations private.
+- Character audit found context-insensitive pessimism and unverified current-sports
+  assertions in older league replies around human enthusiasm. Prioritize a future
+  source-backed participation correction; do not generalize from this small sample.
+  Biography and habitual-style auditing remains overlapping prior-run work.

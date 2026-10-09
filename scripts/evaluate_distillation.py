@@ -114,6 +114,7 @@ async def evaluate(*, live: bool):
                 "observations": [
                     {
                         "kind": "preference",
+                        "support_basis": "corroborated",
                         "summary": "A caramel dessert is supported.",
                         "conditions": "After dinner, without claiming permanence.",
                         "supports": [

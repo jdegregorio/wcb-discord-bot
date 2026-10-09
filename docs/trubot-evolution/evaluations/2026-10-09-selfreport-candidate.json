@@ -1,0 +1,64 @@
+{
+  "phase": "candidate",
+  "base_sha": "41a89a8cdf8065a466000fb80c22308cc11baa01",
+  "version": "2.9.0",
+  "tests": 329,
+  "branch_inclusive_coverage_percent": 95.81,
+  "all_six_gates_passed": true,
+  "character_audit": {
+    "league_channels": 3,
+    "latest_messages_per_channel": 100,
+    "recent_window_days": 14,
+    "league_bot_replies": 5,
+    "target_messages": 7,
+    "development_bot_replies_latest_40": 20,
+    "historical_selfreport_blocks_inspected": 12,
+    "categories": [
+      "context_insensitive_pessimism",
+      "unsupported_current_sports_assertion",
+      "incorrect_historical_stance_recall"
+    ],
+    "limitations": [
+      "Sparse older league activity does not establish present-release character fidelity.",
+      "Image-dependent source was not interpreted without pixels.",
+      "Historical dates and independence are unknown."
+    ]
+  },
+  "real_discord_before": {
+    "owner_authored_questions": 1,
+    "actual_gateway_responses": 1,
+    "historical_stance_grounding_passed": false
+  },
+  "private_clone_evaluation": {
+    "production_pacing_unchanged": true,
+    "simulated_due_time": "2026-10-09T16:51:37.343842+00:00",
+    "target_source_before": false,
+    "new_specific_observations_after": 1,
+    "original_paraphrase_retrieval_after": false,
+    "target_study_seconds": 5.997,
+    "earlier_rejected_packets": 3,
+    "rejection_categories": [
+      "oversized_combined_claim",
+      "wrong_support_index"
+    ],
+    "alias_gap": "Accepted long-phrase aliases did not match the original paraphrase."
+  },
+  "human_variations": {
+    "cases": 3,
+    "qualified_literal_reports_retained": 2,
+    "ambiguous_interpretations_rejected": 1,
+    "provider_reviews": 2,
+    "raw_and_derived_text_in_report": false,
+    "prior_learning_overlap_unknown": true,
+    "independent_human_grader": false
+  },
+  "cost": {
+    "baseline_estimated_usd": 0.042584475,
+    "monthly_runtime_limit_usd": 18,
+    "monthly_maintenance_limit_usd": 2,
+    "monthly_total_limit_usd": 20,
+    "billing_and_pre_guard_spend": "unknown",
+    "added_paid_infrastructure": false
+  },
+  "real_discord_after": "pending release and production validation"
+}

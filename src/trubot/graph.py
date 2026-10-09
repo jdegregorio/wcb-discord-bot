@@ -358,6 +358,17 @@ class GraphStore:
             expiry = _time(datetime.fromisoformat(expiry))
         if expiry and _time(datetime.fromisoformat(expiry)) <= _time(now):
             raise LearningUnavailable("Observation has expired")
+        if automated and (
+            item.get("support_basis") not in {"corroborated", "explicit_self_report"}
+            or (
+                item["support_basis"] == "explicit_self_report"
+                and (kind not in {"claim", "preference"} or len(item["supports"]) != 1)
+            )
+            or (item["support_basis"] == "corroborated" and len(item["supports"]) < 2)
+            or item["status"] != "tentative"
+            or not expiry
+        ):
+            raise LearningUnavailable("Qualified automated support basis required")
         snapshots = []
         for ref in item["supports"]:
             snapshot = self._snapshot(ref, source, now=now)
@@ -380,6 +391,7 @@ class GraphStore:
             "unknown_date": any(s["unknown_date"] for s in snapshots),
             "expires_at": expiry,
             "review_kind": "automated-two-pass" if automated else "operator",
+            "support_basis": item.get("support_basis", "operator_reviewed"),
         }
         self._node(db, key, kind, data)
         db.execute(
