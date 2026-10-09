@@ -17,6 +17,7 @@ from trubot.graph import GraphStore
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable
 from trubot.memory import ContextMemory
+from trubot.openai_responder import StudyContextExceeded, StudyResponseInvalid
 
 
 @pytest.fixture
@@ -310,12 +311,12 @@ async def test_maintenance_adapter_accounts_once_without_retries(private_test_le
         await responder.study_json(instructions="fixture", payload={}, schema={}, name="test_study")
     assert create.await_count == 1
     assert private_test_ledger.summary()["unsettled_attempts"] == 1
-    with pytest.raises(Exception, match="bound"):
+    with pytest.raises(StudyContextExceeded, match="bound"):
         await responder.study_json(
             instructions="x" * 16001, payload={}, schema={}, name="test_study"
         )
     fake.responses.output_text = "not json"
-    with pytest.raises(Exception, match="Invalid study"):
+    with pytest.raises(StudyResponseInvalid, match="Invalid study"):
         await responder.study_json(instructions="fixture", payload={}, schema={}, name="test_study")
 
 

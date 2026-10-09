@@ -43,6 +43,14 @@ class ResponderError(RuntimeError):
     """Base error for a response that cannot be posted."""
 
 
+class StudyContextExceeded(ResponderError):
+    """A study packet exceeds its existing request bound."""
+
+
+class StudyResponseInvalid(ResponderError):
+    """A study result is incomplete or cannot be decoded as an object."""
+
+
 class EmptyResponseError(ResponderError):
     """Raised when the model returns no usable text."""
 
@@ -157,7 +165,7 @@ class OpenAITruaxResponder:
         content = json.dumps(payload, ensure_ascii=False)
         size = len(json.dumps([instructions, content, schema], ensure_ascii=False).encode())
         if size > 16_000:
-            raise ResponderError("Study context exceeds its spending bound")
+            raise StudyContextExceeded("Study context exceeds its spending bound")
         response = await self._generate(
             input_bound=size + 4096,
             output_bound=1024,
@@ -186,14 +194,14 @@ class OpenAITruaxResponder:
             ),
         )
         if getattr(response, "status", "completed") != "completed":
-            raise ResponderError("Incomplete study response")
+            raise StudyResponseInvalid("Incomplete study response")
         try:
             parsed = json.loads(response.output_text)
             if not isinstance(parsed, dict):
                 raise ValueError("Object required")
             return parsed
         except (ValueError, TypeError) as error:
-            raise ResponderError("Invalid study response") from error
+            raise StudyResponseInvalid("Invalid study response") from error
 
     async def _generate(
         self,

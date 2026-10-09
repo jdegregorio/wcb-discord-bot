@@ -194,3 +194,24 @@ recall are separate evidence; production pacing was preserved. Prioritize wider
 held-out conceptual coverage and contextual human fidelity next, alongside the
 unfinished native conversation and legacy-persona work. Concise reviewed aliases
 can connect a paraphrase; long generated phrase aliases alone did not do so here.
+
+## Two-phase evolution cycle and current priorities, 2026-10-09
+
+Before selecting work, audit actual bot activity against attributed human context,
+form falsifiable hypotheses and run bounded baseline comparisons. Then reprioritize
+from the results, preserving unvalidated candidates separately from demonstrated
+corrections and enabling work. Record methods, counts, uncertainty, contrary cases
+and quality/cost limitations in [research.md](research.md). Six standalone daily
+runs and all privacy, real Discord, budget and release gates remain authoritative.
+
+Current order: reconcile unfinished persona/native/reply work; ship supported study
+failure diagnosis; expand held-out conceptual recall and native neighborhoods;
+compare selective skills/tools; prototype requested U.P. northern-lights and
+trail-camera images with natural captions. [ROADMAP.md](../../ROADMAP.md) and
+[agent-harness.md](../agent-harness.md) express this same order. Older next-milestone
+paragraphs document the sequence already delivered, not a directive to rebuild it.
+
+The selected diagnosis increment adds fixed cause/stage/outcome metadata so that
+operators can distinguish unavailable learning from valid abstention. It makes no
+new persona claim or source/behavior change. Generated-image sharing patterns,
+selective tools and any harness migration remain exploratory until measured.
