@@ -132,7 +132,7 @@ one coherent increment through production verification.
 - Reproduced in actual private Discord: broad year recall added an export-label
   preamble and exact-date disclaimer, although the question requested content.
   Cause: memory rendering explicitly required this qualification for every year.
-- 2.7.2 candidate: choose content, timing or evidence presentation from the focused
+- Delivered in 2.7.2: choose content, timing or evidence presentation from the focused
   request, independent of retrieved words and prior bot prose. Preserve identical
   evidence and all source invalidation/withdrawal checks. Rollout in progress.md.
 - Acceptance: ordinary baseball and broad year recall are grounded and direct with
@@ -150,6 +150,14 @@ one coherent increment through production verification.
   2.7.3 matches a recent quoted reply to current attributed human text as a lookup
   key, not personal evidence. Acceptance includes peer/fabricated quote exclusion,
   source changes, native freshness, guild/year scope and real quoted-source recall.
+  Delivered in 2.7.3; all six actual owner-authored development Discord scenarios
+  pass, including source continuity through an intervening date question.
+  See [release evidence](evaluations/2026-10-08-natural-recall-release.json).
+- Operational follow-up: diagnose generic background study-pause events without
+  logging source content. The extended 2.7.3 window had recovered gateway
+  disconnects and periodic study pauses, with zero response failures or restarts.
+  Acceptance: content-free cause categories distinguish transient source access,
+  budget/pacing and extraction errors while preserving the maintenance ledger.
 
 
 ## Context-aware study increment, 2026-10-08 13:00 run
