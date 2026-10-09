@@ -988,3 +988,52 @@ disconnects, memory warnings, learning pauses or study pauses. Six posts were
 actual development tests. Source stores and graph counts remained unchanged.
 Tracked estimated cost USD 0.03555375, runtime USD 0.006749015 and maintenance
 USD 0.028804735, 180 settled attempts and zero unsettled. Existing caps remain.
+
+
+## 2026-10-08 13:00 - Context-aware graph studies (candidate)
+
+- New managed worktree `trubot-daily-20261008-1300`, feature branch of the same
+  run suffix, fetched base `8b64810b87e094675868904ce49d41ed216455f8`. Primary
+  checkout untouched. The 09:00 run has released 2.7.3 and is finishing smoke
+  evidence; later runs are investigating native recall and legacy persona
+  grounding separately. No evolution PR was open during reconciliation.
+- Character audit: authenticated pinned membership and private development
+  routing rechecked. Local bounded last-100/channel, 14-day scan found five
+  league bot replies and seven target messages across three source channels.
+  Four configured channels include the separate development channel. Twenty
+  development bot replies and 12 eligible held-out unknown-date human blocks
+  were scanned with adjacent context. Development median length 16.5 words,
+  human 14; metadata flags five versus zero, with two development qualifications
+  apparently unsolicited. Earlier-version tests are mixed in the sample;
+  these counts do not prove the current version regressed or validate a trait.
+- Automatic review rejected printing raw conversations, then rejected sending
+  raw private excerpts to OpenAI for a bounded audit. No rejected action ran.
+  Used a local content-free audit instead; semantic evaluation awaits explicit
+  approval and is incomplete. Private content-free refs are on the app volume
+  at `smoke-tests/2026-10-08-1300-quality-before.json`, not public Git.
+- Two pre-fix regression tests failed: nearby distinct remarks could establish
+  habitual style, and exported neighborhoods lost speaker/position metadata.
+  Correction preserves anonymous speaker roles, context flags/positions and
+  explicit missing native setup. Related packet selection now prefers separated
+  contexts; obvious shared-exchange humor/style proposals fail before paid review
+  or graph persistence. Separation is a sampling bound, not proven independence.
+- Candidate tests: 312 passing, 95.90% branch-inclusive coverage; formatting,
+  strict typing and build pass. An initial lint line-length failure was fixed
+  before publication. Final release gates, CI, deployment and real smoke evidence
+  follow below. No full-history backfill or new personal observation claimed.
+- Production baseline 2.7.3: 439 human source nodes, one qualified claim, 554
+  episodes, 96 images, 11 captured humans, 1,009 edges; two rejected automatic
+  studies. No automated style/humor observations need retirement.
+- Cost baseline: 190 settled attempts, zero unsettled; conservative tracked total
+  USD 0.03920785, runtime 0.01016947, maintenance 0.02903838. Pre-guard October
+  spend and billing remain unknown. USD 18/2/20 caps and infrastructure unchanged.
+
+- Final candidate all six gates pass: 312 tests, 95.90% branch-inclusive coverage.
+  Accounted synthetic live acceptance passes 8/8 with captured sends and isolated
+  readiness. Study latency 6.1935 seconds; no nonlexical alias was proposed in
+  this sample. This proves the existing connected learning flow survives the
+  packet change, not independent human fidelity.
+- Actual owner UI pre-release pattern question received a real gateway response
+  rejecting universal behavior from two jokes. This already passed in 2.7.3;
+  the reproduced defect is the future graph-learning support path, not this
+  direct conversational answer. Real post-release checks remain required.
