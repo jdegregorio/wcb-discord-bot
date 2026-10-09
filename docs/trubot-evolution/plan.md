@@ -187,3 +187,10 @@ uncertainty, expiry, contradictions, source correction, retirement and withdrawa
 Evaluate supported recall through actual development Discord conversations and
 compare conditional wording with human exchanges; do not infer lasting beliefs
 from a single self-report.
+
+Verified 2.9.0 adds one narrow operator-reviewed graph observation and fixes a
+demonstrated real Discord stance error. Clone extraction and actual deployed
+recall are separate evidence; production pacing was preserved. Prioritize wider
+held-out conceptual coverage and contextual human fidelity next, alongside the
+unfinished native conversation and legacy-persona work. Concise reviewed aliases
+can connect a paraphrase; long generated phrase aliases alone did not do so here.

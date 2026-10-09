@@ -1170,3 +1170,86 @@ Existing USD 18 runtime / USD 2 maintenance / USD 20 monthly caps remain. No pai
 infrastructure or schema migration. Billing and pre-guard October spend are unknown.
 CI, merge, release, deployed digest, private population, actual post-release Discord
 checks and final health evidence follow below.
+
+### Verified 2.9.0 rollout
+
+[PR #45](https://github.com/jdegregorio/wcb-discord-bot/pull/45) passed required
+[CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37953139709).
+Tested candidate `85baaade277030912864116873f7b89f0fecdc2c` was rebased onto the
+previous run's evidence commit `89c6302`; squash merge
+`b1e55382e8e66adf641fbc65df6ca556d6a2e5c3` has the identical tested tree.
+All six gates passed again on merged main, with 329 tests and 95.81% coverage;
+[main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37953287294)
+passed. Immutable [release v2.9.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.9.0)
+targets that exact commit. Both AMD64 and ARM64
+[image builds](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37953474824)
+succeeded before deployment.
+
+Reverified pi5/aarch64/Ubuntu 24.04 and the installed app helper/manifest, then used
+the existing locked `pi-app deploy wcb-bot 2.9.0` transaction. Running digest is
+`sha256:d5ce8498cbe3295466c8de4211df282a46a239b18a013885034c49de99294072`;
+previous healthy 2.8.0 digest is
+`sha256:7264c60932b0c24864aeddaf63b6dac322525cf98a44f64de93cbdd5ecf28d48`.
+Installed package version, OCI revision and three changed source hashes match
+merged main. No rollback was required. The container started at 15:43:34 UTC.
+
+One candidate observation was rechecked against the live exact source fingerprint,
+complete authored statement and neighboring speakers, then imported through the
+existing operator graph path. This was authorized agent operator review, not a new
+human review or an automatic production study. Concise conceptual aliases were
+reviewed separately; they fixed the original paraphrase's retrieval gap. The
+observation remains tentative with unknown message date and 30-day expiry. No
+provider call, new Discord post or production pacing change accompanied import.
+The original distillation checkpoint stayed byte-identical. Automatic production
+study acceptance remains unobserved; clone acceptance simulated the next due cycle.
+
+Actual owner-authored Chrome Discord questions and production gateway replies pass
+6/6: the original historical stance, unmentioned follow-up, explicit exact date,
+baseball, broad year recall and restraint about habitual traits. Latencies were
+4.236, 4.757, 3.751, 3.832, 2.885 and 3.097 seconds. The same original question
+changed from an unsupported opposite stance to supported content. Ordinary recall
+has no stock metadata disclaimer; the explicit date answer stays briefly uncertain.
+Baseball and year answers were compared with current attributed human sources;
+the year remains a retrieval cue, not a proven calendar date. No league test posts,
+user-token extraction or learning of development messages occurred.
+
+Post-deployment character review covers these six actual replies (median 15.5 words)
+against the earlier contextual human study and current supports. The follow-up
+repeats the same short stance wording and acknowledges the earlier wrong answer;
+these are appropriate in this exchange but do not validate a general catchphrase.
+No unsolicited storage explanation, unsupported date or universal habit was found.
+The repeated last-100/channel, 14-day league scan still has five older bot replies
+and seven target messages across three channels, with zero new league replies
+since deployment. Reaction and ambient fidelity were tested through fixtures only,
+not new spontaneous league activity. Agent review and the same runtime model are
+not independent human fidelity grading; historical episode independence and prior
+learning overlap remain unknown. No new enduring personality trait was established.
+
+At 15:50:10 UTC, more than six minutes after startup, Docker health and a direct
+readiness probe passed, with zero restarts, errors, response failures, disconnects,
+memory warnings, learning pauses or study pauses; eight learning batches and six
+reply posts completed. No production graph study had run in this short window.
+This is bounded health evidence, not a long-term error-rate guarantee. Learning,
+archive and graph online backups passed SQLite integrity checks, and a disposable
+restore matched identity and graph counts. Both private evaluation/restore copies
+were removed after saving content-free reports, leaving the source, graph, marker
+and ledger intact.
+
+Coverage remains 34 native records, 16 archives/4,299 grouped blocks, 405 eligible
+target blocks, 75 eligible 2020-labeled blocks, 439 graph human sources, 554 episodes,
+96 images and 11 captured humans. Graph now has one qualified claim and one narrow
+preference, two concepts and 1,011 edges. No all-years native or visual expansion.
+Private artifacts use the existing app-volume `smoke-tests/2026-10-09-0500-*`
+prefix, modes 0600/0700, seven-day manual retention and withdrawal cleanup. Only
+references, counts, flags and timing are retained; no source or answer prose.
+
+Final conservative ledger estimate at 15:50:36 UTC is USD 0.0479301, comprising
+runtime 0.01367732 and maintenance 0.03425278, with 217 settled/zero unsettled
+attempts, 687,994 input/374,610 cached input/10,022 output tokens. Delta from the
+run baseline is USD 0.005345625, including 12 maintenance requests and seven real
+Discord response requests; the ledger is shared with background activity. Existing
+USD 18/2/20 caps persist, billing and pre-guard spending remain unknown, and no paid
+infrastructure was added. Broader paraphrase coverage, independently held-out
+contextual fidelity, native reply/thread history and unvalidated legacy persona
+assumptions remain follow-up work. See the
+[content-free release evidence](evaluations/2026-10-09-selfreport-release.json).

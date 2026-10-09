@@ -1,0 +1,190 @@
+{
+  "run": "2026-10-09-0500",
+  "phase": "verified-release",
+  "base_sha": "41a89a8cdf8065a466000fb80c22308cc11baa01",
+  "runtime": {
+    "pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/45",
+    "tested_candidate": "85baaade277030912864116873f7b89f0fecdc2c",
+    "merged_commit": "b1e55382e8e66adf641fbc65df6ca556d6a2e5c3",
+    "tested_and_merged_tree_identical": true,
+    "version": "2.9.0",
+    "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.9.0",
+    "pr_ci": "https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37953139709",
+    "main_ci": "https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37953287294",
+    "both_architecture_publish": "https://github.com/jdegregorio/wcb-discord-bot/actions/runs/37953474824",
+    "digest": "sha256:d5ce8498cbe3295466c8de4211df282a46a239b18a013885034c49de99294072",
+    "previous_digest": "sha256:7264c60932b0c24864aeddaf63b6dac322525cf98a44f64de93cbdd5ecf28d48",
+    "installed_version_revision_and_three_source_hashes_match": true,
+    "deployment": "existing locked pi-app transaction on reverified pi5",
+    "rollback_needed": false
+  },
+  "gates": {
+    "locked_sync": true,
+    "format": true,
+    "lint": true,
+    "mypy": true,
+    "pytest": true,
+    "build": true,
+    "tests": 329,
+    "branch_inclusive_coverage_percent": 95.81,
+    "candidate_and_merged_revision_passed": true
+  },
+  "learning": {
+    "new_specific_observations": 1,
+    "production_import_basis": "authorized agent operator contextual review after candidate two-pass extraction; concise concept aliases reviewed separately",
+    "support_basis": "explicit_self_report",
+    "status": "tentative",
+    "expiry_days": 30,
+    "unknown_dates_preserved": true,
+    "source_fingerprint_rechecked": true,
+    "production_pacing_checkpoint_byte_identical": true,
+    "provider_calls_during_import": 0,
+    "production_automatic_study_observed": false,
+    "clone_due_cycle_simulated": true,
+    "original_paraphrase_before_retrieved_source": false,
+    "generated_long_phrase_aliases_retrieved_original_paraphrase": false,
+    "reviewed_concise_aliases_retrieved_original_paraphrase": true,
+    "heldout_paraphrase_generalization_unproven": true
+  },
+  "actual_discord": {
+    "checks_recorded_at": "2026-10-09T15:49:38.822310+00:00",
+    "authenticated_private_development_membership": true,
+    "owner_authored_chrome_ui": true,
+    "actual_production_gateway_replies": true,
+    "before_historical_stance_pass": false,
+    "after_cases_pass": 6,
+    "after_cases_total": 6,
+    "cases": [
+      {
+        "case": "historical_stance",
+        "pass": true,
+        "latency_seconds": 4.236
+      },
+      {
+        "case": "unmentioned_followup",
+        "pass": true,
+        "latency_seconds": 4.757
+      },
+      {
+        "case": "explicit_exact_date",
+        "pass": true,
+        "latency_seconds": 3.751
+      },
+      {
+        "case": "baseball",
+        "pass": true,
+        "latency_seconds": 3.832
+      },
+      {
+        "case": "broad_year",
+        "pass": true,
+        "latency_seconds": 2.885
+      },
+      {
+        "case": "habit_restraint",
+        "pass": true,
+        "latency_seconds": 3.097
+      }
+    ],
+    "ordinary_metadata_disclaimers": 0,
+    "unsupported_calendar_dates": 0,
+    "league_test_posts": 0,
+    "raw_or_derived_answer_text_in_artifacts": false,
+    "method": "agent contextual source comparison and naturalness review, actual owner questions and gateway responses",
+    "limitations": [
+      "not independent human fidelity grading",
+      "same-position follow-up repeats short stance wording",
+      "year is a retrieval cue, not dated-message proof"
+    ]
+  },
+  "character_audit": {
+    "latest_messages_per_channel": 100,
+    "recent_window_days": 14,
+    "league_channels": 3,
+    "league_bot_replies": 5,
+    "target_messages": 7,
+    "historical_human_blocks_inspected": 12,
+    "new_league_replies_since_deployment": 0,
+    "deployed_development_replies_reviewed": 6,
+    "deployed_development_median_words": 15.5,
+    "categories": [
+      "incorrect_historical_stance",
+      "context_insensitive_pessimism",
+      "unsupported_current_sports_assertion"
+    ],
+    "limitations": [
+      "sparse older league activity",
+      "reaction/ambient acceptance through fixtures only",
+      "historical dates, episode independence and prior learning overlap unknown",
+      "image-dependent sources not interpreted without pixels",
+      "no enduring personality trait established"
+    ]
+  },
+  "health": {
+    "recorded_at": "2026-10-09T15:50:10.133420+00:00",
+    "started_at": "2026-10-09T15:43:34.864088226Z",
+    "healthy": true,
+    "direct_readiness_probe": true,
+    "restarts": 0,
+    "errors": 0,
+    "response_failures": 0,
+    "disconnects": 0,
+    "memory_warnings": 0,
+    "learning_pauses": 0,
+    "study_pauses": 0,
+    "learning_batches": 8,
+    "posted_replies": 6,
+    "production_studies": 0,
+    "limitations": "short bounded window, not long-term error-rate assurance"
+  },
+  "recovery": {
+    "online_learning_archive_graph_backup_integrity": "ok",
+    "disposable_restored_identity_and_graph_counts_match": true,
+    "this_run_private_evaluation_and_restore_copies_removed": true,
+    "source_graph_marker_and_ledger_preserved": true,
+    "smoke_artifacts": "content-free IDs/counts/flags/timing only, app volume, 0600/0700, seven-day manual retention and withdrawal cleanup"
+  },
+  "cost": {
+    "baseline_tracked_usd": 0.042584475,
+    "final_tracked_usd": 0.0479301,
+    "delta_usd": 0.005345625,
+    "runtime_usd": 0.01367732,
+    "maintenance_usd": 0.03425278,
+    "attempts": 217,
+    "unsettled_attempts": 0,
+    "input_tokens": 687994,
+    "cached_input_tokens": 374610,
+    "output_tokens": 10022,
+    "existing_monthly_caps_usd": {
+      "runtime": 18,
+      "maintenance": 2,
+      "total": 20
+    },
+    "added_paid_infrastructure": false,
+    "limitations": "conservative shared ledger estimate, not billing; pre-guard October spending unknown"
+  },
+  "coverage": {
+    "native_records": 34,
+    "archive_documents": 16,
+    "grouped_blocks": 4299,
+    "eligible_target_blocks": 405,
+    "eligible_2020_labeled_blocks": 75,
+    "graph_human_sources": 439,
+    "episodes": 554,
+    "visual_assets": 96,
+    "captured_humans": 11,
+    "qualified_claims": 1,
+    "narrow_preferences": 1,
+    "concepts": 2,
+    "edges": 1011,
+    "full_native_history": false,
+    "new_visual_interpretation": false
+  },
+  "followup": [
+    "held-out conceptual retrieval coverage",
+    "native reply/thread neighborhoods",
+    "independent contextual fidelity evaluation",
+    "unsupported legacy-persona assumption audit",
+    "content-free study-pause diagnosis"
+  ]
+}
