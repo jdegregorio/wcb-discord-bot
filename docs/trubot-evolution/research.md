@@ -466,3 +466,35 @@ Then prioritize H6 source-qualified held-out response review with wider H2 seman
 recall and native neighborhoods; selective tools and generated scenes follow.
 A supported-example recall regression blocks release; better semantic evidence
 may retire H6's suspected extra-stance defect instead of assuming it false.
+
+### H7 release result and contrary actual evidence
+
+2.10.0 passes 417 tests/all gates and required PR/main/image CI. All 22 installed
+source hashes match; source-lifecycle 8/8 and private continuity 6/6 pass. Five
+actual private Discord checks pass, including supported recall, date honesty,
+recent-event restraint and unmentioned follow-up. A sixth scope answer still
+adds unqualified personal positions: H6 is not fixed. This rejects the legacy
+catalog as the sole causal explanation. Current retrieved source selection and
+semantic qualification require review, rather than another blanket tone tweak.
+The partial answer does not demonstrate that those positions are false.
+
+Zero new spontaneous league messages or natural studies were observed after
+release. Structural length differences are not causal evidence. No general
+human fidelity gain, new trait or comprehensive memory claim. H7's current-source
+correction/withdrawal route is validated; narrow absent-source synthetic restraint
+improves. H6/H2 semantic precision and native neighborhoods stay ahead of H3 tools
+and generated scenes. Maintenance experiment estimate USD0.001401495 on the
+existing ledger; total run delta USD0.00475904 includes eight actual reply calls.
+
+H8 - bounded native study refresh (new exploratory enabling candidate): one
+predeploy background study times out at source_refresh with six sources/zero
+requests/5,307ms. Hypothesis: deadline allocation can prevent eligible packets
+from reaching extraction. Reproduce with authenticated permitted current-source
+reads before changing bounds, so that continuous memory can advance while edits,
+denied access and withdrawal stay authoritative. Acceptance: same packet reaches
+extraction under a bounded background deadline, failures abstain without stale
+sources or retry storms, normal replies stay responsive and pacing/caps remain.
+One timeout cannot establish prevalence or a required deadline increase. Vendor
+performance or healthy containers would not validate it. Investigate alongside
+native context work; wider observed timeout or source-staleness evidence can change
+priority. No added provider/infrastructure impact until a study actually dispatches.
