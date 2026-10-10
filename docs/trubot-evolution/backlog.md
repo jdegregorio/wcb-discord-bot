@@ -11,8 +11,9 @@ This order supersedes older next-step paragraphs below. H1-H3 are defined in
 | Priority/status | Evidence and user benefit | Dependencies/acceptance/validation | Confidence and operating impact |
 | --- | --- | --- | --- |
 | Completed: study diagnosis | H1: generic pauses obscure the limiting learning step, so future memory corrections can target real causes. | Same 14 baseline/fault probes classify stages/reasons without payloads; preserve restart pacing, withdrawal, rejection, cancellation, budget and real gateway replies. | Supported diagnosis hypothesis; no measured reply-quality gain. No added calls, storage schema or infrastructure. |
+| Selected: provider evidence contract | H5: 15 schema-valid/local-invalid forms, so existing evidence rules constrain generation. | Both branches, empty abstention and source-bound reviewer schema accepted by real provider; exact attribution, semantic review, pacing and real Discord preserved. | Contract hypothesis supported; natural rejection cause and reply gain unresolved. Adds bounded schema bytes, no calls/infrastructure. |
 | Completed: grammatical connections | H4: explicit noun forms recover a reviewed connection without new beliefs. | Identical-source graph recall 1/6 to 2/6, three controls unchanged; authority/quotation regression and real Discord. | Supported retrieval correction; baseline reply already correct, no reply-quality gain. Zero added API/infrastructure. |
-| 1. Held-out conceptual recall | H2, four remaining new phrasing misses and the 2.9.0 long-alias miss; relevant supported positions should survive varied wording. | Reviewed private expectations, six new paraphrases plus contrary/unrelated cases; compare precision, recall, voice, latency and cost on identical sources; real Discord. | Partial one-proposition evidence; broader precision unresolved. Existing bounded context and maintenance allowance. |
+| 1. Held-out conceptual recall after H5 | H2, four remaining new phrasing misses and the 2.9.0 long-alias miss; relevant supported positions should survive varied wording. | Reviewed private expectations, six new paraphrases plus contrary/unrelated cases; compare precision, recall, voice, latency and cost on identical sources; real Discord. | Partial one-proposition evidence; broader precision unresolved. Existing bounded context and maintenance allowance. |
 | 2. Native neighborhoods and source-qualified persona | Unfinished prior runs, missing peer/reply context and unvalidated legacy traits. | Reconcile their branches first; verified references and pixels where relevant; held-out human contextual review, deletion/withdrawal and actual direct/follow-up/reaction behavior. | Enabling coverage; do not equate ingestion with fidelity. Existing volume, bounded batches/studies. |
 | 3. Selective skills/tools harness prototype | H3 and Joe's context direction, so fresh/relevant facts improve answers without mechanical explanations. | Same-case Responses/SDK/managed comparisons; source scope, procedure trust, termination, abstention, privacy, cost/latency bounds and actual delivery. | Exploratory; documentation capabilities untested here. No paid service or recurring spend until guarded and measured. |
 | 4. Requested generated outdoor images | H3 and Joe's northern-lights/trail-camera direction, so outdoor engagement has a suitable visual flow. | Study sharing/caption evidence and actual pixels; guarded generation, generated provenance, concise captions, Discord attachment display and failure/deduplication checks. Ambient comes later. | Exploratory sharing fidelity; explicit product requirement. Pricing/access/model reservations must fit USD 20 existing total. |
@@ -261,3 +262,18 @@ normal cycle; do not reset pacing or infer the proposal's content. Investigate
 valid extraction/support on a disposable private replay before changing acceptance.
 This new evidence replaces the earlier unobserved-natural-study gap without
 establishing automatic learning success or a character trait.
+
+
+### 2026-10-09 17:00 evidence decision
+
+Select H5 in research.md: enforce existing extraction/review bounds in the
+provider schema before broader automatic-learning work, so that invalid contract
+forms cannot consume a study. Fifteen synthetic invalid proposals are currently
+schema-valid but locally rejected. Keep local source/semantic review, live pacing,
+withdrawal, budget and participation unchanged. Acceptance: same invalid cases
+blocked, valid evidence/abstention retained, real provider schema compatibility,
+full regressions and actual private Discord recall. No additional runtime calls
+or infrastructure. Natural production rejection causes and reply gains remain
+unmeasured. After this enabling increment: broader held-out conceptual recall,
+unfinished native/persona context, selective skills/tools, then guarded generated
+U.P. northern-lights/trail-camera attachment experiments.

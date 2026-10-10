@@ -61,3 +61,18 @@ next is wider H2 semantic recall/native context and source-qualified persona,
 then H3 selective skills/tools and guarded generated outdoor image experiments.
 Study diagnosis is delivered in 2.9.1. No harness/model migration is justified by
 the present retrieval-only evidence. See docs/trubot-evolution/research.md.
+
+
+### 2026-10-09 17:00 evidence decision
+
+Select H5 in research.md: enforce existing extraction/review bounds in the
+provider schema before broader automatic-learning work, so that invalid contract
+forms cannot consume a study. Fifteen synthetic invalid proposals are currently
+schema-valid but locally rejected. Keep local source/semantic review, live pacing,
+withdrawal, budget and participation unchanged. Acceptance: same invalid cases
+blocked, valid evidence/abstention retained, real provider schema compatibility,
+full regressions and actual private Discord recall. No additional runtime calls
+or infrastructure. Natural production rejection causes and reply gains remain
+unmeasured. After this enabling increment: broader held-out conceptual recall,
+unfinished native/persona context, selective skills/tools, then guarded generated
+U.P. northern-lights/trail-camera attachment experiments.

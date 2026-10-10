@@ -228,3 +228,99 @@ pacing and original maintenance ledger. Broader H2 semantic recall remains first
 then native/source-qualified persona context and validated learner improvements,
 then H3 skills/tools and explicitly requested generated scene attachment flows.
 Raw-source export restriction and independent semantic grading remain honest gaps.
+
+
+## 2026-10-09 17:00 run: evidence-shaped extraction contracts
+
+Base `282f5f01cc0b013f1f344fa56d28aff45a34c6c7`, production 2.9.2. No
+open evolution PR. The older native and persona branches remain unfinished and
+unchanged; their unique work is not duplicated. Six daily runs remain authoritative.
+
+### Phase 1: hypotheses, audit and bounded research
+
+Authenticated owner UI review covered seven human messages and five older league
+bot replies in their visible conversational setups, plus 20 recent development
+replies. One attributed wildlife attachment was inspected at full viewer size.
+Older responses undercut sincere enthusiasm, introduce unsupported current sports
+claims, and add an unnecessary stock joke to a reaction. These predate the current
+release; no new spontaneous current-release activity was observed. Development
+recall is short and direct; repeated wording comes from repeated operator prompts
+about the same proposition and does not establish a catchphrase. Human contexts
+include sincere excitement and a short image caption, but a single visual episode
+cannot establish a posting habit. No new persona observation is imported.
+Independent human grading, spontaneous follow-up/ambient quality and broad historical
+semantic coverage remain gaps. Model prose is never the human reference.
+
+H5 - enforce existing evidence rules in the provider contract:
+- Problem: two normal background studies have rejected a proposal locally; their
+  exact failed rule is unknown. Current structured schemas allow invalid sizes,
+  support counts and source indexes. Synthetic baseline admits all 15 malformed
+  proposals that the unchanged local validator rejects. This does not establish
+  the cause of those natural rejections.
+- Mechanism/so-that benefit: bound fields and arrays, restrict indexes to the
+  current packet, and encode separate corroborated/self-report alternatives so
+  that the provider cannot spend a study producing these invalid contract forms.
+  Preserve exact source checks and independent semantic review locally.
+- Predeclared acceptance: reject the same 15 malformed schema cases; accept valid
+  corroborated and complete specific self-report proposals and empty abstention;
+  ineligible anchors cannot propose singleton traits; review indexes are bounded
+  to supplied prior observations. Real provider accepts the schema, existing
+  handler/source/correction/withdrawal/pacing/budget regressions pass, and real
+  private Discord baseball/year/date/follow-up responses remain natural/grounded.
+- Disconfirmation: incompatible schema, increased false supports, accidental
+  removal of semantic review, extra retries, changed live pacing, lost valid
+  corroborated support, or degraded real gateway replies.
+- Method: same-case contract replay; bounded synthetic provider comparisons on
+  the existing maintenance ledger; full learner/handler regressions; installed
+  package acceptance and real owner UI smoke. No private graph population.
+- Limitations: automatic approval review rejected a private-corpus provider
+  replay due to exact-payload authorization. It was stopped without execution.
+  Safer synthetic experiments and authenticated read-only/UI source audits
+  continue. Natural rejection cause and measured memory/reply gains remain open.
+
+H2 broader semantic recall remains unresolved beyond the delivered bounded noun
+normalization. H3 selective skills/tools and generated U.P. northern-lights and
+trail-camera scenes remain exploratory. One inspected image supplies visual
+context, not validation of generated caption fidelity or sharing cadence.
+The [current Structured Outputs guide](https://developers.openai.com/api/docs/guides/structured-outputs)
+documents nested alternatives, integer/array bounds and string restrictions. Provider
+compatibility still needs actual testing in this application.
+
+### Phase 2: roadmap decision
+
+Select H5 as a coherent reliability increment before expanding automatic learning,
+with high confidence in the contract mismatch and unresolved behavioral benefit.
+It enforces existing rules, changes no model, creates no new beliefs and adds no
+requests or infrastructure. Keep broader conceptual recall, native/source-qualified
+persona work, selective tools and requested generated scenes in order afterward.
+A private replay that identifies a different failed rule would redirect learner
+follow-up; a schema compatibility or valid-support regression blocks release.
+
+H5 candidate results: a standards-based JSON Schema validator admits 15/15
+invalid proposals under the baseline contract and 0/15 under the new contract.
+Valid singleton, corroboration and abstention controls remain possible. Exact
+corroborated quotes, source independence, topic meaning and semantic acceptance
+remain local checks; adversarial duplicate/fabricated support regressions prove
+that the schema cannot replace them.
+
+The real adapter accepted both new extraction branches and the zero-prior review
+schema. Three synthetic packets per revision, nine requests total: baseline
+locally valid 2/3 versus candidate 3/3; both independently accepted 1/3 and abstained
+on the ambiguous case. The candidate corroborated proposal was structurally valid
+but declined by contextual review. One sample per packet is insufficient for an
+acceptance-rate conclusion. This supports compatibility and contract enforcement,
+not memory breadth or character quality. Estimated provider delta USD 0.001340875
+on the existing ledger; no new ledger, model, provider or infrastructure. Example
+serialized extraction schema grows 783 to 1,837 bytes; bounds/reservations account
+for that input. Automatic checkpoint VERSION stays unchanged so this mechanical
+contract change cannot reset study pacing or retry rejected sources.
+
+Read-only aggregate audit confirms three league channels with the latest 100 each
+and a 14-day floor: five older bot/seven human messages, zero new league replies
+since the prior run. Development latest 40 contains 20 bot replies; 12 eligible
+historical blocks supply structural coverage only. No unsolicited storage metadata
+was detected. Medians are 13/4/15/16.5 words respectively; these different contexts
+cannot establish a length defect. Two completed production studies are rejected;
+precise causes remain unavailable. The initial aggregate query included development
+in the league count; that discarded result was corrected by authenticated guild
+filtering before this report.
