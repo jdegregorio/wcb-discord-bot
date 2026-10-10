@@ -178,3 +178,15 @@ human statement. Named topics retain topical search. Qualified day/month/year
 questions use timing presentation, while ordinary recall keeps natural language.
 Unrelated voice examples are omitted from quotation lookup. No new provider call,
 source scope, storage schema, model, participation rule or spending allowance.
+
+
+## Conditional episode memory candidate
+
+Candidate 2.12.0 represents reviewed humor/style abstractions with conditions,
+limitations and linked human counterexamples. Source changes invalidate the whole
+pattern. Ordinary relevant context uses the summary; explicit evidence requests
+keep source passages. Existing factual memory, five-source bound, fresh native
+checks, withdrawal and spending remain. This is enabling work with 24 regression
+cases; measured human fidelity is still open. The private pattern remains offline
+pending specific OpenAI payload approval. See the evolution research and storage
+notes for validation, lifecycle and rollback boundaries.

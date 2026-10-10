@@ -19,6 +19,7 @@ import discord
 from openai import APIConnectionError, APIStatusError, APITimeoutError
 
 from trubot.budget import BudgetExceeded, BudgetUnavailable
+from trubot.episode_memory import contexts_separated
 from trubot.graph import GraphStore, _hash, _json, _key
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable, _time
@@ -33,19 +34,6 @@ from trubot.openai_responder import (
 logger = logging.getLogger(__name__)
 VERSION = "contextual-two-pass-v3"
 INTERVAL = timedelta(hours=4)
-
-
-def contexts_separated(left: dict[str, Any], right: dict[str, Any]) -> bool:
-    """Exclude obvious shared exchanges, without claiming proven episode boundaries."""
-    a, b = left["ref"], right["ref"]
-    if a["kind"] != b["kind"]:
-        return True  # Different corpora; chronology remains unknown to the reviewer.
-    if a["kind"] == "slack":
-        return bool(a["document"] != b["document"] or abs(a["ordinal"] - b["ordinal"]) > 10)
-    # Channel changes alone do not make simultaneous remarks independent.
-    return abs(
-        datetime.fromisoformat(left["source_time"]) - datetime.fromisoformat(right["source_time"])
-    ) >= timedelta(hours=6)
 
 
 def _object(properties: dict[str, Any]) -> dict[str, Any]:

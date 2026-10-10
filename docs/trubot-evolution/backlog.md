@@ -360,3 +360,10 @@ older next-step notes: H18 source-qualified timing, H6/H2 scope/conceptual preci
 durable native/visual graph context, then H3 selective tools/skills and requested
 generated U.P. aurora/trail-camera scenes. Clock/model experiments justify no change.
 Keep all source, privacy, participation, withdrawal and existing spending rules.
+
+
+2026-10-10 13:00: select H21a conditional episode abstraction storage/retrieval,
+with linked counterexamples and authoritative source invalidation. H22 creative
+amplification remains next, then contextual native/visual coverage, selective
+skills/tools and generated outdoor scenes. Behavioral benefit is prospective;
+see research.md for locked acceptance, dependencies and operating impact.

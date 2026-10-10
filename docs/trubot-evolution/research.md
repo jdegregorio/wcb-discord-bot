@@ -942,3 +942,106 @@ outdoor images. H18 literal timing remains secondary reliability. New grounding 
 privacy regressions can interrupt this order. Automation prompt is updated with
 the same direction; six daily standalone runs, model/reasoning, notification and
 budget settings are preserved.
+
+
+### 2026-10-10 13:00 Phase 1, H21a conditional episode abstractions
+
+Base 662938036b4782cc4a620e4492cce49b3e80d0c5. New managed worktree and
+feature/trubot-daily-20261010-1300; previous evolution is complete, no overlapping
+evolution PR. Production 2.11.3 is healthy. Authenticated pinned human and private
+two-member development guild/general verified. Bounded latest-100/14-day audit
+of two league channels finds 7 target, 5 older bot and 17 peer messages; one empty
+channel. Development replies are separate and never human learning evidence.
+No spontaneous current-release league response, independent grader or new pixels.
+
+Private contextual study reads attributed archive blocks with document digests,
+ordinals and line references, including surrounding peer setup and reactions.
+Thirty-three unique target blocks across seven exports in the bounded thematic study. Image-dependent interpretations are excluded.
+Four source episodes reserved before extraction/generation: varied sports humor,
+self-deprecation, sincere congratulations and a specific substantive rule vote.
+They are held out from support selection. Adjacency is not proven reply linkage;
+unknown source dates remain unknown. No public personal observations or excerpts.
+
+H21a hypothesis: first-class conditions, limitations and linked human counterexamples
+make useful abstractions operational without flattening them into universal traits,
+so that replies can use a remembered conversational mechanism instead of copying
+its original punchline. Baseline graph importer discards extra abstraction metadata;
+counterexamples do not participate in freshness/deletion. Existing extraction favors
+a narrow proposition and has no production humor/style node. Proposed mechanism:
+bounded optional abstraction on humor/style nodes, 2-3 separated supporting sources,
+0-2 distinct contrary sources, shared fingerprint invalidation and relevant traversal;
+ordinary replies receive summaries, explicit evidence requests retain source text.
+
+Acceptance locked before experiments: metadata and typed counterexample edges survive
+restart; edits/deletes/stale verification/expiry/withdrawal invalidate the entire
+abstraction; one remark or same-window repetition cannot establish a pattern; peer,
+bot and missing evidence rejected; complete neighborhoods fit existing five-source
+bound. Ordinary context omits pattern support quotes, preserves limits and related
+factual memory. Explicit evidence/time/quote access remains grounded and scoped.
+Privately populate one tentative abstraction with source review and contrary cases.
+Compare baseline/candidate on identical eight contexts, including four held-out
+human setups and four novel emotional/serious/unrelated controls. Use same model,
+settings and existing maintenance ledger, one sample per arm. Judge fit, naturalness,
+grounding, warmth, repetition and timing, not keywords. Require no factual/emotional
+regression and relevant creative use in at least one eligible context; report ties
+and variability. Actual owner Discord must test changed scenario, serious contrary
+case, support recall and unrelated/emotional controls. This enabling milestone need
+not prove broad fidelity or 2-3x humor. Disconfirm if qualifications are lost, quotes
+still dominate, or creativity invents beliefs/memories or hurts sincere engagement.
+
+H22 creative amplification and H3 tools/generated outdoor scenes remain candidates.
+No harness/model migration, image generation or new provider capability is selected;
+vendor capability claims are unnecessary for this SQLite-backed increment. Broader
+continuous abstraction extraction and context coverage are separate dependencies.
+
+### Phase 2 decision before implementation
+
+Select H21a: source-lifecycle and abstraction presentation enabling work is justified
+by deterministic code gaps and Joe's concept-memory direction. Preserve H22 next,
+then contextual native/visual coverage, selective skills/tools and generated U.P.
+aurora/trail-camera scenes. Confidence in mechanical correction is high; behavioral
+benefit remains unvalidated until matched and real checks. Existing app volume and
+schema 1, five-source/6-second freshness bound, USD 18/2/20 guard, pacing, allowlist
+and withdrawal remain. No extra runtime call/service; bounded summary context may
+replace longer source passages. Contrary behavior would narrow population/scope,
+not justify shipping an unsupported universal trait.
+
+
+### H21a engineering and offline result, provider authorization blocker
+
+Baseline fails 11 of the initial 14 synthetic cases: missing metadata, detached
+counterevidence, permissive malformed imports and absent abstraction presentation.
+Candidate passes all 24 final regressions, including real direct/follow-up/reaction
+handlers with all three native source checks, bot/peer/cross-guild exclusion,
+archive suppression, source changes, backups, bounded neighborhoods and shared
+factual support. All six gates pass: 545 tests, 96.67% branch coverage, 26 typed
+modules and package build. No personality trait is embedded in public fixtures.
+
+Private offline comparison uses the same eight inputs and authoritative source
+stores, excluding four held-out human target responses from retrieval. Baseline
+has no abstraction. Candidate retrieves a tentative private abstraction in the
+novel playful and serious contrary scenario (2/8), preserving explicit limits.
+The other six do not retrieve it. Both relevant contexts omit its original support
+punchlines; context sizes change 6,976 to 5,547 and 6,564 to 5,061 bytes. These are
+retrieval/presentation results, not generated reply quality or billed savings.
+An initially broad alias also matched distress; narrowed situation aliases remove
+that match on the same offline inputs. The four held-out source cases did not
+retrieve this particular pattern, limiting its coverage. One actual owner baseline
+question receives a fitting brief joke already; no improvement is claimed there.
+
+Automatic approval review rejected the eight-call private OpenAI baseline study,
+then rejected the same exact study after authorization reassessment. It requires
+specific human approval for the selected private excerpts, held-out setups and
+conditional derived pattern to be sent to the existing OpenAI API. A concise
+asynchronous question is pending. No rejected provider call executed, and no
+indirect alternative sent that payload. Independent offline experiments proceed
+without provider calls. New pattern stays in a disposable private graph copy,
+never production learning/reply evidence while permission is pending.
+
+H21a mechanical correction is supported; generalized human fidelity and natural
+reply benefit remain unvalidated. H22 amplification is still prospective. The
+reviewable candidate PR must retain the exact blocker; no successful release,
+deployment or changed real Discord acceptance is claimed. Resume prerequisite:
+explicit payload/destination approval, then matched guarded provider study, live
+population only if supported, full CI/release/image/deployment and actual private
+owner Discord checks. Reject/narrow if conditions, care or grounding regress.

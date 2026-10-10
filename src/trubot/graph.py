@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Any
 
 from trubot.archives import ArchiveStore
+from trubot.episode_memory import abstraction_contract, observation_sources
 from trubot.learning import LearningStore, LearningUnavailable, _private, _time
 from trubot.lexical import phrase
 
@@ -379,6 +380,18 @@ class GraphStore:
             snapshots.append(snapshot)
         if len({s["content_hash"] for s in snapshots}) != len(snapshots):
             raise LearningUnavailable("Duplicate support is not corroboration")
+        abstraction = abstraction_contract(item, snapshots)
+        counterexamples: list[dict[str, Any]] = []
+        if abstraction is not None:
+            for ref in abstraction["counterexamples"]:
+                snapshot = self._snapshot(ref, source, now=now)
+                if snapshot is None or any(
+                    snapshot["content_hash"] == old["content_hash"]
+                    or _key(snapshot["ref"]) == _key(old["ref"])
+                    for old in snapshots + counterexamples
+                ):
+                    raise LearningUnavailable("Distinct attributed counterevidence required")
+                counterexamples.append(snapshot)
         key = "observation:" + item["id"]
         data = {
             k: item[k] for k in ("summary", "status", "confidence_basis", "extraction_provenance")
@@ -393,11 +406,21 @@ class GraphStore:
             "review_kind": "automated-two-pass" if automated else "operator",
             "support_basis": item.get("support_basis", "operator_reviewed"),
         }
+        if abstraction is not None:
+            data["abstraction"] = {
+                "conditions": abstraction["conditions"],
+                "limitations": abstraction["limitations"],
+                "counterexamples": counterexamples,
+            }
+            data["source_times"] = [s["source_time"] for s in snapshots + counterexamples]
+            data["unknown_date"] = any(s["unknown_date"] for s in snapshots + counterexamples)
         self._node(db, key, kind, data)
         db.execute(
-            "DELETE FROM edges WHERE origin=? OR (target=? AND relation='supports')", (key, key)
+            "DELETE FROM edges WHERE origin=? OR (target=? AND relation IN "
+            "('supports','counterexample-of'))",
+            (key, key),
         )
-        for snapshot in snapshots:
+        for snapshot in snapshots + counterexamples:
             src = _key(snapshot["ref"])
             self._node(
                 db,
@@ -411,7 +434,13 @@ class GraphStore:
                     "status": "active",
                 },
             )
-            self._edge(db, src, "supports", key, snapshot | data)
+            self._edge(
+                db,
+                src,
+                "counterexample-of" if snapshot in counterexamples else "supports",
+                key,
+                snapshot | data,
+            )
         for entity in item["entities"]:
             if entity["kind"] not in {"entity", "concept"} or not 1 <= len(entity["aliases"]) <= 12:
                 raise LearningUnavailable("Bounded typed entity aliases required")
@@ -470,7 +499,7 @@ class GraphStore:
             data.get("expires_at") and data["expires_at"] <= _time(now)
         ):
             return False
-        for support in data["supports"]:
+        for support in observation_sources(data):
             current = self._snapshot(
                 support["ref"], source, now=now, verified_after=verified_after, archive=archive
             )
@@ -516,7 +545,7 @@ class GraphStore:
                         seen.add(row["id"])
                         result.append({"id": row["id"], **data})
             # A complete neighborhood must fit. Never drop one side of a contradiction.
-            refs = {_key(s["ref"]) for item in result for s in item["supports"]}
+            refs = {_key(s["ref"]) for item in result for s in observation_sources(item)}
             return result if len(result) <= 4 and len(refs) <= 5 else []
 
     def describe(
@@ -598,7 +627,7 @@ class GraphStore:
             if row:
                 data = json.loads(row[0])
                 if data.get("review_kind") == "automated-two-pass":
-                    for support in data["supports"]:
+                    for support in observation_sources(data):
                         db.execute(
                             "INSERT OR REPLACE INTO checkpoints VALUES (?, ?)",
                             ("study-veto:" + _key(support["ref"]), support["fingerprint"]),

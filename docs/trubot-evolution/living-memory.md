@@ -143,3 +143,10 @@ through installed source probes and actual owner-authored Discord messages.
 It does not populate peer nodes or reply/thread edges in the durable graph.
 Continuous context-qualified derivation and broader native/visual coverage remain
 separate milestones; the graph retains its existing fingerprints and withdrawal.
+
+
+2026-10-10 13:00: select H21a conditional episode abstraction storage/retrieval,
+with linked counterexamples and authoritative source invalidation. H22 creative
+amplification remains next, then contextual native/visual coverage, selective
+skills/tools and generated outdoor scenes. Behavioral benefit is prospective;
+see research.md for locked acceptance, dependencies and operating impact.
