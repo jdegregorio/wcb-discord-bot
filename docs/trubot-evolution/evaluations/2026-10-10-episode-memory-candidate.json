@@ -80,5 +80,25 @@
     "No broad fidelity or numeric humor multiplier measured",
     "Continuous abstraction extraction remains separate",
     "New release/deployment/real changed scenario incomplete"
-  ]
+  ],
+  "pull_request": "https://github.com/jdegregorio/wcb-discord-bot/pull/62",
+  "tested_commit": "6a0fd32ca7a09ef679b7b0777d4eb468e1d4ddcf",
+  "ci": {
+    "run": 38083335444,
+    "conclusion": "success"
+  },
+  "budget": {
+    "latest_estimated_usd": 0.079147505,
+    "maintenance_usd": 0.04091342,
+    "runtime_usd": 0.038234085,
+    "observed_delta_usd": 0.000410625,
+    "provider_research_calls": 0,
+    "unsettled_attempts": 0,
+    "limits_usd": [
+      18,
+      2,
+      20
+    ],
+    "billing_and_pre_guard_spend": "unknown"
+  }
 }
