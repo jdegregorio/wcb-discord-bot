@@ -379,3 +379,90 @@ in memory; source time and SHA-256 are retained privately, no raw pixels/caption
 It has no existing captured-archive match, confirming a recent visual coverage
 gap. No image-derived persona observation was created. Full native text/visual
 coverage remains separate work and current archive counts are not completeness.
+
+## 2026-10-09 21:00: source authority for voice examples
+
+Phase 1 reviewed production 2.9.3, the prior run's H6 gap, open GitHub work,
+current source/graph state and the unfinished 2026-10-08 persona implementation.
+No evolution PR is open. Reconcile that implementation into this new worktree;
+leave the older native/context worktree unchanged. Base: `01485e657bd3b21f3abf815ee6650007589477df`.
+
+H7 - source-check the legacy voice catalog (enabling correction):
+- Problem/evidence: all 20 catalog exchanges and several biography/style assertions
+  enter every prompt as authoritative, including after private learning withdrawal.
+  A fresh content-free current-corpus comparison finds 16 matching answer entries,
+  15 distinct authored blocks, but only four matching answer/setup pairs. Exact
+  normalized whole-block matches are stronger than topic counts, but adjacency
+  within three preceding blocks is not a verified reply relationship. Missing
+  matches do not prove the original catalog false; they cannot currently authorize it.
+- Mechanism/benefit: use the catalog only as lookup keys, then supply at most three
+  current attributed, contextual, deduplicated source pairs through the existing
+  memory scope so that a stale illustration cannot quietly become personal fact.
+  Remove unvalidated fixed biography/habit assertions. Keep identity and ordinary
+  emotional/participation policy. No new personality trait is derived.
+- Baseline: unconditional 20 examples, no source correction/withdrawal connection.
+  Six predeclared synthetic matched adapter cases: three absent personal sources,
+  qualified contrary positions, specific excitement and explicit unknown timing.
+  The baseline invents source-specific personal details in all three absent-source
+  cases; the other three controls pass direct agent review. These are contract
+  tests, not held-out human fidelity judgments.
+- Acceptance: catalog alone supplies no voice evidence; both attributed answer and
+  preceding peer setup must match; quoted/ambiguous/media-dependent/bot setup stays
+  excluded; missing sources, corrections, year scope, withdrawal and unauthorized
+  guilds remove examples. Bound context to three separated pairs, preserve normal
+  supported recall/enthusiasm/timing and prove direct/follow-up/reaction handlers.
+  Actual owner Discord delivery and full release gates remain required.
+- Disconfirmation: stale or unsupported examples survive, scope/withdrawal/year
+  gates loosen, supported recall disappears, ordinary answers routinely expose
+  machinery, or the extra bounded context causes a material latency/cost regression.
+- Validation: synthetic stores and handler regressions; same six provider cases on
+  the same runtime model/adapter/ledger; private aggregate real-source coverage;
+  actual development Discord before/after. Source records remain unchanged.
+
+H6 extra autobiographical stance examples remains separately unresolved. The same
+real private question repeats extra positions whose semantic qualification has not
+been reviewed. A real recent-event probe already responds cautiously before the
+change. Do not attribute that baseline success or a future isolated scope reply to
+H7 alone. Broad source retrieval and prior bot history are additional causes.
+
+H2 wider semantic recall and H3 selective skills/tools plus generated northern-lights
+and trail-camera scenes remain exploratory with the existing prerequisites.
+This run adds no technology/model comparison, private provider replay or image
+interpretation. Vendor capabilities do not establish character benefit.
+
+Experiment results before selection:
+- Prototype 1: three absent-source details suppressed, but all three answers add
+  routine bot-identity/physical limitations. Reject that fallback for naturalness.
+- Prototype 2: identity repetition removed; one answer apologizes for an unsupported
+  event. Add explicit premise restraint and keep the missing-source reply brief.
+- Final six-case sample: zero legacy personal details, supported contrary positions,
+  enthusiasm and unknown timing retained. One social-action answer remains categorical
+  and less natural than desired. Count naturalness as partial, not six perfect replies.
+  These small repeated synthetic cases tune the contract, not independent human recall.
+  Twenty-four provider calls total (six baseline and three candidate sets), all through
+  the existing maintenance ledger. No raw human corpus enters this experiment.
+- Current-corpus selector: three pairs, 2,462 bytes, approximately 56-66 ms in three
+  probes. No added provider request, cache or storage schema. Year-scoped selection
+  additionally requires a current matching export-period hint; it never proves a date.
+- Fresh structural audit: three league channels, latest 100 each/14-day floor,
+  five older bot replies/seven authenticated human messages; no new spontaneous
+  league activity. Latest 40 development posts contain 20 bot replies. Twelve
+  historical eligible blocks with adjacency are structural coverage, reused sample,
+  not independent held-out exchanges. No unsolicited metadata detected. Mixed
+  contexts and revisions prevent causal length or emotional-fidelity claims.
+- Authenticated UI contextual review includes three recent human posts with peer
+  responses and two older bot replies in one league channel. It confirms that
+  specific enthusiasm and contextual participation vary; it does not establish a
+  universal tone. A second league channel has no recent target exchange. Historical
+  pixels and full native linked history are not newly studied. No private trait
+  or source excerpt is committed. Independent human grading remains unavailable.
+
+Phase 2 decision: select H7 as a justified source-lifecycle increment, reconciling
+unfinished persona work instead of adding another unconditional prompt example.
+Evidence is strong for authority/withdrawal correctness and narrow synthetic
+restraint, limited for general reply naturalness, unresolved for H6 semantic stance.
+Complete handler/source regressions, release and actual supported recall next.
+Then prioritize H6 source-qualified held-out response review with wider H2 semantic
+recall and native neighborhoods; selective tools and generated scenes follow.
+A supported-example recall regression blocks release; better semantic evidence
+may retire H6's suspected extra-stance defect instead of assuming it false.

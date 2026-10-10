@@ -75,7 +75,7 @@ async def test_explicit_responses_use_luna_without_reasoning() -> None:
     assert fake.responses.request["max_output_tokens"] == 180
     assert fake.responses.request["store"] is False
     assert fake.responses.request["safety_identifier"] == "safe-user"
-    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v9"
+    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v10"
     assert fake.responses.request["input"] == [
         {
             "role": "user",

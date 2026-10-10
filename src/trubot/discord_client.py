@@ -35,6 +35,7 @@ from trubot.participation import (
     SchedulingAction,
 )
 from trubot.vision import ImageCollector
+from trubot.voice_memory import voice_context
 
 logger = logging.getLogger(__name__)
 
@@ -553,7 +554,7 @@ class TruBotClient(discord.Client):
                         continue
                 verified.append(candidate)
             if self._learning is not None and self._learning.verified:
-                return await asyncio.to_thread(
+                recalled = await asyncio.to_thread(
                     memory.render,
                     verified,
                     verified_after=verification_started,
@@ -561,6 +562,10 @@ class TruBotClient(discord.Client):
                     request=request,
                     quotation=quotation,
                 )
+                voice = await asyncio.to_thread(
+                    voice_context, memory.learning, query, guild_id=source_guild_id
+                )
+                return "\n".join(part for part in (recalled, voice) if part)
             return ""
         except LearningUnavailable:
             logger.warning("Response memory unavailable; source verification required")

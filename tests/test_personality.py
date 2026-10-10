@@ -7,12 +7,16 @@ from trubot.personality import STYLE_EXAMPLES, instructions_for
 
 
 @pytest.mark.parametrize("mode", list(ReplyMode))
-def test_each_reply_mode_keeps_the_authentic_voice(mode: ReplyMode) -> None:
+def test_each_reply_mode_requires_attributed_voice(mode: ReplyMode) -> None:
     instructions = instructions_for(mode)
 
     assert "Thomas Jones" in instructions
     assert "Return only the message" in instructions
-    assert "Why is it called trash talk" in instructions
+    assert "SOURCE-CHECKED VOICE CONTEXT" in instructions
+    assert "Why is it called trash talk" not in instructions
+    assert "Michigan" not in instructions
+    assert "lifelong friends" not in instructions
+    assert "Authentic style examples" not in instructions
     assert "speaker label" in instructions
     assert len(STYLE_EXAMPLES) == 20
 

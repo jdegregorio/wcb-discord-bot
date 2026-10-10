@@ -288,3 +288,20 @@ reply scope is the next audit prerequisite. Reconcile older persona/native work
 while validating H6/H2, then continue selective skills/tools and guarded generated
 U.P. northern-lights/trail-camera attachment experiments. See research.md and the
 release evaluation for acceptance, uncertainty, counts and cost.
+
+### 2026-10-09 21:00 priority refinement
+
+H7 source-authoritative contextual voice is selected for delivery, reconciling the
+unfinished persona prototype. Acceptance covers actual current answer/setup pairs,
+corrections, withdrawal, year/guild scope, natural supported recall and actual
+Discord; no new provider call or storage. High confidence in lifecycle correctness,
+partial synthetic naturalness. Do not classify missing catalog matches as false
+human statements. H6 semantic qualification of extra positions remains open.
+
+Next ordered increments: (1) jointly review H6 source-qualified scope and wider H2
+held-out conceptual recall, (2) finish native peer/reply/thread neighborhoods from
+the unfinished branch, (3) compare H3 bounded selective skills/tools, (4) requested
+generated U.P. northern-lights/trail-camera attachments, then measured ambient use.
+Each retains the evidence/dependency/acceptance/operating-impact contracts in the
+priority table. Better source evidence can retire the suspected H6 defect; a
+supported-memory regression blocks H7 rollout. No new personality habit inferred.

@@ -254,3 +254,15 @@ reply scope is the next audit prerequisite. Reconcile older persona/native work
 while validating H6/H2, then continue selective skills/tools and guarded generated
 U.P. northern-lights/trail-camera attachment experiments. See research.md and the
 release evaluation for acceptance, uncertainty, counts and cost.
+
+### 2026-10-09 21:00 evidence decision
+
+H7 in research.md selects current-source voice examples, so that legacy prose
+cannot bypass attribution, correction, historical year scope or withdrawal.
+Reconcile the unfinished persona implementation into this run; keep only bounded
+current authored/setup pairs and retire unconditional biography/habit assertions.
+This is enabling source authority, with a narrow synthetic restraint improvement;
+partial naturalness and H6 extra-stance qualification remain unresolved. No new
+trait, schema, model, provider call or paid infrastructure. Next: source-qualified
+H6/H2 held-out replies and native context, H3 selective tools/skills, then generated
+U.P. northern-lights/trail-camera scenes. All established release/smoke/budget rules apply.
