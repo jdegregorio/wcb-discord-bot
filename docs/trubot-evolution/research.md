@@ -575,3 +575,42 @@ Next: H6/H2 source-qualified semantic precision, continuous context-qualified gr
 learning and broader native/visual coverage, then H3 tools and guarded scene delivery.
 A supported semantic-extra source could retire H6; poor native-context relevance or
 latency blocks this rollout. Do not count ingestion/health alone as reply improvement.
+
+### H10 released result and contrary limits
+
+H10 is supported for its narrow recency/context correction in 2.11.0. Three
+same-source baseline cases contained 0/0/3 dated recent sources of five each;
+candidate contained 3/2/3, installed 3/3/2, all dated. Source/context omissions
+follow the unchanged freshness deadline. The candidate's six-second case and
+installed 2.7-5.1-second probes expose variable network overhead, not a latency
+gain. Mandatory refresh order and exhausted remaining time have regressions.
+
+One fresh paired actual owner question returned an undated export before and a
+current native quote after. Seven core real checks and a supplemental explicit
+parent-link case pass agent contextual review: no invented reply, peer belief,
+unseen pixels, historical exact day or routine metadata disclaimer. Exact native
+and historical quotes are checked against current attributed sources; the latter's
+2020 period hint remains distinct from calendar-date proof. Real gateway latency
+2.374-6.953 seconds, paired recency answer 4.192 to 5.535 seconds. This overhead
+is bounded and visible; eight successes do not establish general naturalness.
+
+447 tests/all six gates, required PR/main/image CI and installed 23-module hashes
+pass. Confirmed private guild/owner/general UI sent actual messages, not synthetic
+or bot-authored probes. HTTP-only audits used isolated readiness paths and made
+no provider calls. Zero new spontaneous league activity, new derived traits or
+new historical pixel interpretation. The seven native posts, five older bot posts,
+twenty overlapping development replies and twelve reused historical structural
+blocks provide limited coverage, not independent held-out human grading.
+
+Decision: mark H10 delivered, retire its undated-fallback baseline from the active
+backlog, return H6/H2 semantic source qualification to first priority. The native
+prototype's relevant reply-context work is reconciled; H7 is already delivered.
+Durable contextual graph derivation and broader native/visual coverage follow;
+H8 refresh prevalence remains unresolved and must not relax source authority.
+H3 tools/skills and requested generated U.P. scenes remain exploratory under the
+existing guard. Broader source-qualified failures or repeated context latency can
+reprioritize. No new provider call per reply/service; up to two bounded history
+pages and two same-channel references fit the existing deadline. Tracked run
+estimate USD0.003559075, entirely eleven actual replies; maintenance unchanged.
+See [release validation](evaluations/2026-10-10-native-recall-release.json) for
+counts, actual checks, rollback target and limitations. H6 remains unresolved.

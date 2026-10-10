@@ -8,9 +8,10 @@ The current ordered plan is maintained in
 
 ## Current delivery order
 
-1. Deliver H10 recent native recall and bounded source-linked setup, then validate
-   source-qualified reply scope (H6) and expand held-out conceptual
+1. Validate source-qualified reply scope (H6) and expand held-out conceptual
    recall and reconcile unfinished persona/context work. H5 is delivered in 2.9.3.
+   H7 current-source voice is delivered in 2.10.0; H10 recent native recall and
+   bounded source-linked setup are delivered in 2.11.0.
    Delivered: qualified self-reports in 2.9.0, study diagnosis in 2.9.1 and bounded
    noun-form retrieval in 2.9.2. Four of six new semantic phrasings still miss the
    reviewed connection; source-qualified expectations and specificity come first.
@@ -111,3 +112,12 @@ This is enabling work, not a new persona trait. H6/H2 semantic precision remains
 then continuous graph/context coverage and H3 selective skills/tools plus requested
 generated U.P. northern-lights/trail-camera scenes. See research.md for evidence,
 dependencies, acceptance, disconfirmation and operating impact.
+
+2026-10-10 01:00 verified: H10 is delivered in 2.11.0. Recent recall uses dated
+native sources and bounded live human setup; eight actual owner gateway checks
+pass, including unmentioned follow-up and an explicit native parent link. One
+paired recent answer improves source recency; broader character fidelity and
+latency improvement are unmeasured. H6/H2 semantic precision remains first, then
+durable contextual graph/coverage, H3 selective tools/skills and requested generated
+U.P. northern-lights/trail-camera scenes. No new model, provider call, service,
+graph belief or schema. Details and limits are in the evolution release evaluation.

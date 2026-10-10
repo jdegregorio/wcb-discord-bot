@@ -116,3 +116,12 @@ This is enabling work, not a new persona trait. H6/H2 semantic precision remains
 then continuous graph/context coverage and H3 selective skills/tools plus requested
 generated U.P. northern-lights/trail-camera scenes. See research.md for evidence,
 dependencies, acceptance, disconfirmation and operating impact.
+
+2026-10-10 01:00 verified: H10 is delivered in 2.11.0. Recent recall uses dated
+native sources and bounded live human setup; eight actual owner gateway checks
+pass, including unmentioned follow-up and an explicit native parent link. One
+paired recent answer improves source recency; broader character fidelity and
+latency improvement are unmeasured. H6/H2 semantic precision remains first, then
+durable contextual graph/coverage, H3 selective tools/skills and requested generated
+U.P. northern-lights/trail-camera scenes. No new model, provider call, service,
+graph belief or schema. Details and limits are in the evolution release evaluation.

@@ -1674,7 +1674,7 @@ these limits. Runtime source is unchanged from the tested release.
   PR/final CI, helper cleanup and archive only this run's worktree follow.
 
 
-## 2026-10-10 01:00 run: H10 recent native episodes (candidate)
+## 2026-10-10 01:00 run: H10 recent native episodes
 
 - Base `09a8b6059ff8f7d3ddb85b774bd7a28706969b77`, fresh managed worktree
   `trubot-daily-20261010-0100`, feature branch of the same suffix. Primary checkout
@@ -1707,6 +1707,62 @@ these limits. Runtime source is unchanged from the tested release.
   readiness path preceded validation-client construction; main readiness passed
   after disposal. Original stores were not cloned or replaced. Container tmpfs
   staging is bounded code only. Source revalidation updates verification metadata.
-- Pending: focused PR/required CI, merged revision gates, immutable release/build,
-  locked deployment, installed package/source checks, actual private Discord recent
-  scenario/core controls, final health/cost and evidence. Do not call candidate live.
+- Candidate-stage release steps were pending; the verified result follows.
+
+### 01:00 release and actual validation
+
+- Runtime [PR #55](https://github.com/jdegregorio/wcb-discord-bot/pull/55), tested
+  `9ffc726943dc308b1584987e9128738079d24284`, merged
+  `3a910509846ea4ef399650ecd4933bc31e79faba`; identical source tree. Required
+  [PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38037723555),
+  [main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38037791048)
+  and [both-architecture publish](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38037905665)
+  passed. All six local gates rechecked on merged main: 447 tests, 96.44% coverage.
+- Immutable [v2.11.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.11.0)
+  targets the exact merged commit. Reverified pi5/aarch64/Ubuntu 24.04.4 and app
+  manifest/transaction; `pi-app deploy wcb-bot 2.11.0` adopted
+  `sha256:2b4d9d2f8892bb6b968e893c0da86f7714ef7316c3679de361cc4e8a0a491865`.
+  OCI revision/version/all 23 module hashes match. Previous healthy 2.10.0 digest
+  `sha256:a14d3f4ecf725b1c1e2ae0de2a8b150dc33d7641a2829e029e074ea1beca014c`
+  remains recorded for rollback. No schema migration, rollback or new service.
+- Three installed authenticated probes contain 3/3/2 recent dated sources and
+  3/1/2 human context rows; one explicit linked parent in the first case. Elapsed
+  4,650/2,734.8/5,103.17 ms. Safely omitted sources/context and network variability
+  preclude a latency improvement claim. Identity/withdrawal fingerprints unchanged;
+  main readiness healthy after validation clients closed with distinct paths.
+- Actual owner Chrome questions and production gateway responses in the confirmed
+  two-member development guild: seven core checks and one supplemental explicit
+  native reply-link check pass contextual review. Recent quote now matches a
+  dated native source instead of the baseline undated export. Unmentioned follow-up
+  does not invent a reply or unseen pixels; topical recent recall stays relevant;
+  existing preference and historical quote/date controls pass. Explicit parent setup
+  matches the authenticated human reply relationship. Broad recall uses dated text.
+- Real latencies by case: 5.535/6.953/4.053/4.550/2.374/6.130/4.934/2.757 seconds.
+  Zero routine metadata disclaimers. The historical quote matches an eligible
+  current source and period hint, not calendar-date proof. Exact day is uncertain.
+  Only the recent-quote case has a fresh matched baseline (4.192 seconds, wrong
+  recency). Agent review is not independent human grading or general voice evidence.
+- Post-deploy audit: three league channels/latest100/14days, seven target posts
+  and five older bot replies; no spontaneous current-release league reply. Twenty
+  recent development replies reviewed structurally; eight fresh smoke responses
+  reviewed against human context overlap that window. Twelve historical blocks are reused,
+  not newly held-out human evidence. No new pixels interpreted or trait derived.
+- At 08:37:06 UTC, five-minute observation: healthy/direct readiness, zero restarts,
+  errors, response failures, disconnects, memory warnings, learning/study pauses;
+  four learning batches/eight replies/zero completed studies. Short window only.
+  Native 34; archive 16 documents/4,299 blocks/405 eligible; graph 439 human sources,
+  554 episodes/96 visuals/11 captured humans/one claim/one preference/two concepts/
+  1,011 edges unchanged. Ephemeral neighbors are not durable graph population.
+- Tracked estimate USD 0.06522696 (runtime 0.027589935, maintenance 0.037637025),
+  delta 0.003559075 from this run's first observed snapshot. Eleven actual reply
+  calls (three before/eight after), zero provider-assisted research requests;
+  289 settled/zero unsettled, 905,932 input/472,096 cached/12,553 output tokens.
+  USD 18/2/20 caps and study pacing preserved; billing/pre-guard spend unknown.
+- Private content-free references, timing and pass/fail remain app-volume
+  smoke-tests, 0600/0700, seven-day manual retention/withdrawal cleanup. No source
+  or answer prose, league test chatter, user-token extraction or development learning.
+  [Public validation](evaluations/2026-10-10-native-recall-release.json) separates
+  source routing, actual response acceptance and coverage limits. H6/H2 semantic
+  precision remains next, then context-qualified graph/coverage and H3 tools/scenes.
+  [Evidence PR #56](https://github.com/jdegregorio/wcb-discord-bot/pull/56) holds
+  this release record. Final CI/archive status is recorded in automation memory.

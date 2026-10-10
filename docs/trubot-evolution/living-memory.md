@@ -116,7 +116,8 @@ and improved character fidelity. No milestone alone proves an indistinguishable
 digital twin. Continue to measure the actual replies.
 
 
-2.11.0 candidate adds ephemeral source-linked native neighborhoods to replies.
+2.11.0 adds ephemeral source-linked native neighborhoods to replies, verified
+through installed source probes and actual owner-authored Discord messages.
 It does not populate peer nodes or reply/thread edges in the durable graph.
 Continuous context-qualified derivation and broader native/visual coverage remain
 separate milestones; the graph retains its existing fingerprints and withdrawal.
