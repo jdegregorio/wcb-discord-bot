@@ -15,6 +15,7 @@ from trubot.graph import GraphStore
 from trubot.learning import LearningStore, LearningUnavailable, _time
 from trubot.lexical import words
 from trubot.native_context import NativeEpisode
+from trubot.recall_window import WINDOW_WORDS, recall_window
 
 _STOP = frozenset(
     [
@@ -181,18 +182,12 @@ _RECENT_QUERY_WORDS = frozenset(
         "exchanges",
     ]
 )
+_RECENT_QUERY_WORDS |= WINDOW_WORDS
 
 
 def recent_recall(text: str) -> bool:
     """A focused request for recent authored conversation, not current sports news."""
-    return not years(text) and bool(
-        re.search(r"\b(?:recent|recently|latest|lately)\b", text, re.IGNORECASE)
-        and re.search(
-            r"\b(?:say|said|saying|talked|talking|mentioned|messages?|conversations?|exchanges?|recall|remember|quote)\b",
-            text,
-            re.IGNORECASE,
-        )
-    )
+    return recall_window(text) is not None
 
 
 def recent_terms(text: str) -> set[str]:
@@ -279,11 +274,12 @@ class ContextMemory:
         self, query: str, *, guild_id: int, now: datetime, quotation: str = ""
     ) -> list[MemoryCandidate]:
         quote = quotation_key(quotation[:500])
-        recent = recent_recall(query[:8000])
+        window = recall_window(query)
+        recent = window is not None
         query_terms = recent_terms(query[:8000]) if recent else terms(query[:8000])
         if quote:
             query_terms = terms(quotation[:500])
-        query_years = years(query[:8000])
+        query_years = set() if recent else years(query[:8000])
         with self.learning._transaction() as db:
             identity = self.learning._read_identity(db)
             if guild_id != identity.guild_id or not (query_terms or query_years or recent):
@@ -304,18 +300,16 @@ class ContextMemory:
                     "AND author_id=? AND guild_id=? ORDER BY created_at DESC LIMIT 10000",
                     (
                         _time(
-                            now
-                            - timedelta(
-                                days=min(14, self.learning.retention_days)
-                                if recent
-                                else self.learning.retention_days
-                            )
+                            now - min(window, timedelta(days=self.learning.retention_days))
+                            if window is not None
+                            else now - timedelta(days=self.learning.retention_days)
                         ),
                         identity.user_id,
                         identity.guild_id,
                     ),
                 )
                 if r["channel_id"] in identity.channel_ids
+                and window != timedelta(0)
                 and (not query_years or r["created_at"][:4] in query_years)
                 and r["created_at"] <= _time(now)
                 and (not recent or not query_terms or score(r["content"], query_terms))
@@ -417,8 +411,11 @@ class ContextMemory:
         # Materialize from current storage, not the search result. Corrections,
         # suppressions and withdrawal between search and rendering take effect.
         evidence: list[dict[str, Any]] = []
+        window = recall_window(request)
         for candidate in candidates:
             source = candidate.source
+            if window == timedelta(0):
+                continue
             if recent_recall(request) and source["kind"] != "discord":
                 continue
             if source["kind"] == "discord":
@@ -433,10 +430,10 @@ class ContextMemory:
                         row
                         and row["content"]
                         and (
-                            not recent_recall(request)
+                            window is None
                             or _time(
                                 (now or datetime.now(UTC))
-                                - timedelta(days=min(14, self.learning.retention_days))
+                                - min(window, timedelta(days=self.learning.retention_days))
                             )
                             <= row["created_at"]
                             <= _time(now or datetime.now(UTC))
@@ -520,7 +517,7 @@ class ContextMemory:
             "Peers are context only. Historical events are not current sports results. "
             "Adjacency does not prove motive or a reply relationship. "
             + (
-                "These are verified dated human messages from the last fourteen days. "
+                "These are verified dated human messages within the requested rolling window. "
                 "Give a recent supported example naturally, using human setup only as context. "
                 if recent_recall(request)
                 else ""

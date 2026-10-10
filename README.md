@@ -365,3 +365,15 @@ are not retrieved here. Context is ephemeral and never added to learning or the
 memory graph. Source edits, deletion and withdrawal invalidate the recalled focus.
 Full native history, durable peer/thread graph coverage and broader conceptual
 recall remain future work. See the research/progress records for measured results.
+
+
+## Rolling conversation recall (2.11.1)
+
+Authored recall such as "quote something from the past week" or "what did you say
+in the last 48 hours" uses verified native timestamps. Numeric and ordinary spelled
+hours/days/weeks define rolling durations, intersected with current retention.
+Selection and rendering both recheck the window; at most three native sources and
+two human neighborhoods are supplied. Empty, zero or unknown quantities cannot
+fall back to undated archives or voice examples. Named calendar months/days remain
+outside this parser; explicit year recall keeps its existing provenance rules.
+No new state, retention, provider call, model, participation or spending policy.

@@ -1,0 +1,84 @@
+{
+  "hypothesis": "H14",
+  "phase": "candidate",
+  "date": "2026-10-10",
+  "base": "327af434ea8dafa4303c8497749a79b491472adb",
+  "source_audit": {
+    "league_channels": 3,
+    "latest_per_channel": 100,
+    "days": 14,
+    "target": 7,
+    "older_bot": 5,
+    "peer": 17,
+    "development_bot": 20,
+    "new_spontaneous_current_release": 0,
+    "independent_human_grading": false,
+    "new_traits": 0
+  },
+  "same_source_probe": {
+    "baseline_selected": [
+      5,
+      4,
+      5
+    ],
+    "baseline_within_window": [
+      0,
+      0,
+      2
+    ],
+    "candidate_selected": [
+      3,
+      0,
+      2
+    ],
+    "candidate_within_window": [
+      3,
+      0,
+      2
+    ],
+    "eligible_in_window": [
+      5,
+      0,
+      2
+    ],
+    "provider_calls": 0
+  },
+  "actual_baseline": {
+    "owner_question": true,
+    "private_two_member_guild_verified": true,
+    "past_week_quote_supplied": false
+  },
+  "configuration_experiment": {
+    "hypothesis": "H11",
+    "cases": 6,
+    "requests": 12,
+    "samples_per_configuration_case": 1,
+    "baseline_output_tokens": 123,
+    "candidate_output_tokens": 424,
+    "baseline_max_latency_ms": 2722,
+    "candidate_max_latency_ms": 4195,
+    "estimated_cost_usd": 0.000817375,
+    "release_supported": false,
+    "supported_scope_example_omitted": true,
+    "same_runtime_model": true
+  },
+  "H12": {
+    "status": "unvalidated",
+    "throughput_results_discarded": true,
+    "reason": "Experimental sibling tasks were not joined after timeout; no runtime scheduling change."
+  },
+  "quality": {
+    "gates_passed": 6,
+    "tests": 480,
+    "branch_coverage_percent": 96.49,
+    "new_regression_cases": 33
+  },
+  "no_new_runtime_calls": true,
+  "no_new_service_or_schema": true,
+  "limitations": [
+    "Naturalness/fidelity has no independent human grading.",
+    "Recent league activity is sparse; most bot samples predate current fixes.",
+    "Named calendar periods and all-years native history remain incomplete.",
+    "H6 semantic extras and wider H2 conceptual precision remain unresolved."
+  ]
+}

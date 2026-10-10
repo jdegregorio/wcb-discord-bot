@@ -1766,3 +1766,21 @@ these limits. Runtime source is unchanged from the tested release.
   precision remains next, then context-qualified graph/coverage and H3 tools/scenes.
   [Evidence PR #56](https://github.com/jdegregorio/wcb-discord-bot/pull/56) holds
   this release record. Final CI/archive status is recorded in automation memory.
+
+
+## 2026-10-10 05:00 run, implementation checkpoint
+
+Fresh managed worktree trubot-daily-20261010-0500, base
+327af434ea8dafa4303c8497749a79b491472adb, unique feature branch. Joe's primary
+checkout and older prototypes are untouched. Both planning phases and bounded
+authenticated character audit are in research.md. H14 is selected after the actual
+past-week quote miss; low reasoning did not improve the six-case synthetic comparison
+and concurrent-refresh figures are discarded for harness leakage. Runtime memory
+window parsing is being verified; no deployment or general fidelity gain is claimed.
+
+Candidate: 2.11.1, six gates passed, 480 tests/96.49% branch coverage. Same-corpus
+source probe passes all three rolling-window cases (3/0/2 eligible selected),
+compared with baseline 0/0/2 eligible of 5/4/5. Actual paired baseline returned
+no past-week quote; post-release real tests remain pending. No new graph claims,
+source state/schema/service or provider calls per reply. Evaluation metadata is
+in evaluations/2026-10-10-rolling-recall-candidate.json.

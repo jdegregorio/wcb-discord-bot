@@ -277,3 +277,68 @@ def test_native_episode_binding_drops_context_after_source_edit_or_deletion(stor
     assert "Keep the current rule?" not in rendered
     store.invalidate(10, [source().id], deleted=True, now=NOW)
     assert memory.render(candidates, native_episodes={source().id: episode}) == ""
+
+
+@pytest.mark.parametrize(
+    ("query", "hours"),
+    [
+        ("Quote something you said in the past week.", 168),
+        ("What did you say in the last two days?", 48),
+        ("Quote a message from the past hour.", 1),
+    ],
+)
+def test_rolling_recall_uses_timestamp_boundaries_and_never_undated_fallback(store, query, hours):
+    from trubot.memory import MemoryCandidate
+
+    boundary = NOW - timedelta(hours=hours)
+    store.observe(source(0, content="In range.", created_at=boundary), now=NOW)
+    store.observe(
+        source(1, content="Outside.", created_at=boundary - timedelta(microseconds=1)), now=NOW
+    )
+    archive = ArchiveStore.initialize(store)
+    imported = archive.import_document(
+        b"legacy.target\n  8:01 AM\nI said something in the past week.",
+        channel="synthetic",
+        target_alias="legacy.target",
+        alias_basis="Synthetic operator audit",
+        origin={"kind": "synthetic"},
+        now=NOW,
+    )
+    memory = ContextMemory(store)
+    selected = memory.candidates(query, guild_id=77, now=NOW)
+    assert [c.content for c in selected] == ["In range."]
+    rendered = memory.render(selected, request=query, now=NOW)
+    assert "In range." in rendered and "Outside." not in rendered
+    # Rendering rechecks the requested interval independently of candidate selection.
+    old = memory.candidates("Outside", guild_id=77, now=NOW)
+    assert "Outside." not in memory.render(old, request=query, now=NOW)
+    assert "no verified recent human source" in memory.render(
+        [MemoryCandidate({"kind": "slack", "document": imported}, "Invented", 1)],
+        request=query,
+        now=NOW,
+    )
+    store.invalidate(10, [source().id], deleted=True, now=NOW)
+    assert memory.candidates(query, guild_id=77, now=NOW) == []
+    assert "no verified recent human source" in memory.render(selected, request=query, now=NOW)
+
+
+def test_rolling_recall_intersects_retention_and_rejects_unknown_or_zero_amounts(store):
+    store.observe(source(content="Current", created_at=NOW), now=NOW)
+    store.observe(source(1, content="Earlier", created_at=NOW - timedelta(days=5)), now=NOW)
+    constrained = LearningStore(store.path, retention_days=2)
+    memory = ContextMemory(constrained)
+    query = "Quote a message from the past thirty days."
+    selected = memory.candidates(query, guild_id=77, now=NOW)
+    assert [c.content for c in selected] == ["Current"]
+    assert memory.render(selected, request=query, now=NOW + timedelta(days=3)).startswith(
+        "RECENT CONVERSATION RECALL"
+    )
+    for query in (
+        "Quote messages from the last 0 hours",
+        "Quote messages from the past few days",
+    ):
+        assert memory.candidates(query, guild_id=77, now=NOW) == []
+        assert "no verified recent human source" in memory.render(selected, request=query, now=NOW)
+    store.forget(now=NOW)
+    with pytest.raises(LearningUnavailable):
+        memory.candidates("Quote messages from the past week", guild_id=77, now=NOW)

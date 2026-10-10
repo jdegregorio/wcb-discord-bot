@@ -14,6 +14,7 @@ This order supersedes older next-step paragraphs below. H1-H3 are defined in
 | Completed: provider evidence contract | H5: 15 schema-valid/local-invalid forms, so existing evidence rules constrain generation. | Both branches, empty abstention and source-bound reviewer schema accepted by real provider; exact attribution, semantic review, pacing and real Discord preserved. | Contract hypothesis supported; natural rejection cause and reply gain unresolved. Adds bounded schema bytes, no calls/infrastructure. |
 | Completed: grammatical connections | H4: explicit noun forms recover a reviewed connection without new beliefs. | Identical-source graph recall 1/6 to 2/6, three controls unchanged; authority/quotation regression and real Discord. | Supported retrieval correction; baseline reply already correct, no reply-quality gain. Zero added API/infrastructure. |
 | Completed: recent native episodes | H10: actual recent questions retrieved undated exports despite seven current sources, so recent memory now uses real dates/setup. | Three identical-source and installed cases; 447 tests; eight actual owner Discord checks, including explicit linked setup and unmentioned follow-up. Reconciled native prototype 14f8366. | Supported routing/context correction in 2.11.0; broad fidelity unmeasured. Up to two history pages and two reference reads within six seconds; no new provider request/service. |
+| Selected: rolling recall windows | H14: an actual past-week quote failed despite five dated sources, so natural time phrases reach verified memory. | Numeric/spelled hours/days/weeks, boundary/retention/freshness/withdrawal and real gateway controls; three-source limit. | Supported routing hypothesis, broad fidelity unmeasured; no added calls/service/schema. H11 rejected, H12 unvalidated. |
 | 1a. Source-qualified reply scope | H6: one actual reply adds personal examples with unresolved attribution, so narrow answers avoid invented biography. | Privately review contextual sources; six matched supported/unsupported/contrary prompts, natural language and actual Discord. Reconcile older persona branch. | One-sample evidence; no prevalence or proven change regression. Bound any tools/verification with the existing maintenance/runtime guard. |
 | 1b. Held-out conceptual recall after H5 | H2, four remaining new phrasing misses and the 2.9.0 long-alias miss; relevant supported positions should survive varied wording. | Reviewed private expectations, six new paraphrases plus contrary/unrelated cases; compare precision, recall, voice, latency and cost on identical sources; real Discord. | Partial one-proposition evidence; broader precision unresolved. Existing bounded context and maintenance allowance. |
 | 2. Durable native neighborhoods and context-qualified graph learning | Ephemeral H10 context is delivered; durable peer/reply/thread graph and broader historical/visual coverage remain incomplete. | Reconcile remaining prototype work first; verified references and pixels where relevant; held-out human contextual review, deletion/withdrawal and actual direct/follow-up/reaction behavior. | Enabling coverage; do not equate ingestion with fidelity. Existing volume, bounded batches/studies. |
@@ -328,3 +329,17 @@ This is enabling work, not a new persona trait. H6/H2 semantic precision remains
 then continuous graph/context coverage and H3 selective skills/tools plus requested
 generated U.P. northern-lights/trail-camera scenes. See research.md for evidence,
 dependencies, acceptance, disconfirmation and operating impact.
+
+
+### 2026-10-10 05:00 decision
+
+H14 in research.md selects rolling authored-recall windows after actual private
+Discord missed a past-week quote despite five eligible dated sources. Parse past/last
+hours, days and weeks, intersect source retention and recheck at rendering, so that
+normal time language reaches the existing native recall and human setup. Keep the
+three-source bound, freshness, guild/operator scope, withdrawal, spending and natural
+presentation. No new calls/model/service/schema or intake. H11 low reasoning failed
+its comparison and is deferred; H12 concurrent reads remain unvalidated. Next: H6/H2
+semantic precision, durable contextual graph/native and visual coverage, H3 selective
+skills/tools and guarded generated U.P. aurora/trail-camera scenes. Acceptance and
+operating impact are in research.md; broad character fidelity remains unmeasured.

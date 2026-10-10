@@ -197,3 +197,41 @@ def test_voice_context_cannot_bypass_requested_year_scope(archive):
             db.execute("DELETE FROM origins WHERE period_hint='synthetic_2020.txt'")
         assert voice_context(archive.learning, "garden 2020", guild_id=77) == ""
         assert "Tomatoes win." in voice_context(archive.learning, "garden", guild_id=77)
+
+
+@pytest.mark.asyncio
+async def test_empty_rolling_window_cannot_reuse_voice_examples(archive):
+    from dataclasses import replace
+    from types import SimpleNamespace
+
+    from test_discord_client import fake_channel, fake_message, make_client
+
+    from trubot.ingestion import MessageIngestor
+    from trubot.memory import ContextMemory
+
+    add(archive, "peer\n  8:00 AM\nGarden update?\nlegacy.target\n  8:01 AM\nTomatoes win.")
+    client, responder, _, _ = make_client(clock=lambda: NOW)
+    client._settings = replace(client._settings, development_guild_id=78)
+    learning = MessageIngestor(archive.learning, frozenset({10}), clock=lambda: NOW)
+    learning.verified = True
+    client._learning, client._memory = learning, ContextMemory(archive.learning)
+    channel = fake_channel()
+    channel.guild = SimpleNamespace(id=78, owner_id=1)
+
+    async def empty_history(**_kwargs):
+        for item in []:
+            yield item
+
+    channel.history = empty_history
+    message = fake_message(channel)
+    message.content = message.clean_content = "🤖 Quote your garden message from the past 48 hours."
+    with patch(
+        "trubot.voice_memory.STYLE_EXAMPLES", (StyleExample("Garden update?", "Tomatoes win."),)
+    ):
+        await client.on_message(message)
+    memory = responder.calls[0][0][0].content
+    assert "no verified recent human source" in memory
+    assert "Tomatoes win." not in memory and "SOURCE-CHECKED VOICE CONTEXT" not in memory
+    assert archive.learning.status()["messages"] == 0
+    channel.send.assert_awaited_once_with("Hot")
+    await client.close()
