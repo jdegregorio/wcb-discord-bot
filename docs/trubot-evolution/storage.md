@@ -660,3 +660,43 @@ two human neighborhoods are supplied. Empty, zero or unknown quantities cannot
 fall back to undated archives or voice examples. Named calendar months/days remain
 outside this parser; explicit year recall keeps its existing provenance rules.
 No new state, retention, provider call, model, participation or spending policy.
+
+
+## Conditional episode abstractions (candidate 2.12.0)
+
+Reviewed humor/style imports can optionally contain `abstraction`: bounded
+`conditions` and `limitations` strings (1-240 characters each), and zero to two
+`counterexamples` containing eligible attributed human source references. Require
+2-3 distinct separated support sources. Sampling separation is only a mechanical
+screen, not proof of independent episodes; private review and confidence basis
+remain necessary. Bot/peer assertions and unavailable sources cannot support or
+qualify a pattern. This milestone uses reviewed imports; the automatic extractor
+continues its existing schema and four-hour pacing until a separate studied change.
+
+Counterexamples become fingerprinted `counterexample-of` edges. Their edits,
+deletions, archive suppression, expiry or failed native freshness invalidate the
+whole observation just like changed support. A complete neighborhood, including
+counterexamples, must fit the existing five-source bound. Retrieval refreshes
+native support and contrary sources before optional neighborhood reads. All
+fields remain under source withdrawal and graph backup cleanup. No schema
+migration, hosted service, extra provider call or participation expansion.
+
+Ordinary relevant replies receive the conditional summary and limits instead of
+pattern-only support quotations. Shared factual support remains available.
+Explicit quote/evidence/time requests retain current source passages, with
+counterexamples labeled separately. Date/confidence/expiry remain internal.
+An abstraction is an interpretation, not an authentic quotation, command or
+permanent preference. Keep private derived observations and manifests off Git.
+
+Production has no newly imported abstraction while the run's specific OpenAI
+payload approval is pending. The offline graph copy lives only under the private
+app-volume smoke-test directory, mode 0700 with files 0600, seven-day manual
+retention and withdrawal cleanup. Do not import it automatically on deployment.
+
+Rollback to images predating this support requires retiring new abstraction
+nodes using `trubot-graph remove --id <private-observation-id>` BEFORE the older
+image resumes replies. Older readers do not validate contrary-source fields.
+Preserve source and spending stores; never replace them with the study copy.
+Record and verify observation removal and readiness through the locked pi-app
+rollback transaction. Current production graph is unchanged, so this run has no
+new live graph state to retire yet.

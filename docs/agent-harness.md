@@ -185,3 +185,10 @@ Keep all source, privacy, participation, withdrawal and existing spending rules.
 H18 has contrary fresh native-date evidence and remains unresolved. No harness
 migration or model prompt change is justified. Retain H6/H2, durable context,
 then bounded tools/skills and generated outdoor scene prototypes. See research.md.
+
+
+2026-10-10 13:00: select H21a conditional episode abstraction storage/retrieval,
+with linked counterexamples and authoritative source invalidation. H22 creative
+amplification remains next, then contextual native/visual coverage, selective
+skills/tools and generated outdoor scenes. Behavioral benefit is prospective;
+see research.md for locked acceptance, dependencies and operating impact.
