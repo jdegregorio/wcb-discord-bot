@@ -324,3 +324,48 @@ cannot establish a length defect. Two completed production studies are rejected;
 precise causes remain unavailable. The initial aggregate query included development
 in the league count; that discarded result was corrected by authenticated guild
 filtering before this report.
+
+
+### H5 release result and post-deployment character audit
+
+2.9.3 deployed after required PR/main CI and both-architecture publication.
+Installed schema identity/review bounds match, diagnostics pass 14/14, synthetic
+connected learner/handler/deletion/withdrawal scenarios pass 8/8. All 401 tests
+pass at 96.28% branch coverage. No graph migration or new real observation.
+
+Actual owner UI questions and gateway responses pass four core scenarios: direct
+baseball recall, a current eligible historical quote, explicit timing uncertainty
+and an unmentioned qualified-stance follow-up. Ordinary memory is direct with no
+metadata caveat; exact timing is briefly uncertain. Source-term/graph checks plus
+direct agent review are limited and not independent human grading.
+
+One additional restraint response correctly rejects a universal trait but adds
+extra autobiographical stance examples. Their topical authored coverage exists,
+but semantic qualification is not established by keyword counts. An authenticated
+native search yielded three peer-authored results, which cannot establish the
+target's stance; no new belief was learned. Count this response as partially
+accepted, not fully grounded. Reply code, sources and graph counts are unchanged,
+and no natural study ran since release; no evidence ties the extra prose to this
+contract change. It is a concrete new audit gap, not a demonstrated regression.
+Keep the healthy reliability release and prioritize source-qualified reply scope.
+
+H6 - avoid unverified extra personal examples:
+- Evidence: one actual development response adds examples beyond the answer needed.
+  Specific attribution/context/chronology is unresolved; no prevalence estimate.
+- Mechanism/so-that benefit: retrieve support for additional personal claims or omit
+  them so that a scoped answer does not quietly invent biography or stable beliefs.
+- Baseline: four fully verified core answers plus one partially verified extra
+  response in this run. Acceptance: private contextual source review and at least
+  six matched held-out prompts, including supported/unsupported/contrary examples,
+  natural direct language and actual Discord. No stock disclaimer.
+- Disconfirmation: sourced extra context is suppressed, ordinary replies become
+  mechanical, false biography persists, or extra tools/cost exceed useful benefit.
+- Validation prerequisite: safe private semantic evidence review; current aggregate
+  terms alone do not validate the claims. Status: exploratory correction candidate.
+
+Phase 2 update: H5 contract enforcement is delivered. Prioritize H6 reply scope
+and reconcile unfinished source-qualified persona/native work alongside wider H2
+semantic recall. Keep H3 tools/skills and requested generated outdoor pictures.
+Reprioritize if private context validates the extra examples or broader held-out
+recall shows a more consequential limiting cause. Health, immutable identities,
+source/pacing continuity, exact cost and limitations are recorded in release JSON.

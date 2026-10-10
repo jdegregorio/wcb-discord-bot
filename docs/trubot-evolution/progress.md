@@ -1545,3 +1545,46 @@ and generated U.P. northern-lights/trail-camera scenes remain guarded experiment
 - Version 2.9.3, development-only standards validator, meaningful contract/pipeline
   regressions. All six candidate gates pass: 401 tests, 96.28% branch-inclusive coverage.
   Release/deployment/real Discord results pending.
+
+
+### 17:00 release and actual validation
+
+- Runtime [PR #51](https://github.com/jdegregorio/wcb-discord-bot/pull/51)
+  tested `ff804a9c34642e584eab48816a7049c27f378e73`, merged
+  `7de1e39978bf75a7a7c7f5cb1c39400e850ea2dd`; identical tree. PR CI
+  38008000100/main CI 38008123720 pass; all six merged gates pass, 401 tests.
+- Immutable [v2.9.3](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.9.3)
+  targets that commit; AMD64/ARM64 publish 38008204215 succeeds. Reverified
+  pi5/aarch64/Ubuntu 24.04.4; locked app transaction deploys
+  `sha256:ac3848aa72f1333b2a6f4ade316eeb2181af8b1c69bc5b09aacede94e4a8df24`.
+  OCI revision, package/exported version and two installed module hashes match.
+  Previous immutable 2.9.2 digest retained; no data migration or rollback needed.
+- Installed schemas match 3/3 and review bounds 3/3; diagnostic acceptance 14/14;
+  synthetic learner direct/reaction/follow-up/correction/withdrawal 8/8. No provider
+  calls or live state in installed synthetic probes. Distinct readiness path is
+  supplied before validation-client construction; production heartbeat survives.
+- Real owner-authored private Discord: four core checks pass (baseball, eligible
+  period-qualified quote, exact-day uncertainty, unmentioned scoped follow-up),
+  4.993/2.741/2.091/3.878 seconds. Normal recall natural, no routine metadata.
+  One additional restraint answer (3.195 seconds) gives unverified extra personal
+  examples; correctly rejecting a universal trait is partial acceptance only.
+  Aggregate topics and three peer-only native search results cannot verify stance.
+  H6 added above wider conceptual recall; do not claim all five fully grounded.
+  No independent human grading or spontaneous current-release fidelity evidence.
+- Private content-free IDs, pass/fail, timings, state fingerprints and visual
+  provenance are under app-volume `smoke-tests/2026-10-09-1700-*`, modes 0600/0700,
+  seven-day manual retention/withdrawal cleanup. No raw answer/source artifact.
+  Primary/older worktrees untouched; no league tests or development learning.
+- Identity/withdrawal/four-hour pacing/graph counts unchanged: 439 human, 554
+  episodes, 96 visuals, 11 captured humans, one claim/one preference/two concepts.
+  Two natural rejected studies remain; no new observation or study since release.
+- At 00:23:55 UTC, 389-second health window: healthy/direct heartbeat, zero
+  restarts/errors/reply failures/disconnects/memory warnings/learning pauses/study
+  pauses; eight batches/five replies. Bounded window, not a long-term rate claim.
+- Tracked cost USD 0.05531207 (runtime 0.01907654, maintenance 0.03623553),
+  run delta USD 0.00359033 for nine synthetic study and six actual reply requests.
+  243 settled/zero unsettled; 770,838 input/405,432 cached/11,164 output tokens.
+  Original ledger and USD 18/2/20 caps preserved; billing/pre-guard spend unknown.
+- [Public release evidence](evaluations/2026-10-09-study-contract-release.json)
+  distinguishes contract reliability from reply quality and the rejected private
+  replay. Evidence PR/final CI and exact helper cleanup/worktree archive follow.

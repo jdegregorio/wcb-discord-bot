@@ -8,8 +8,8 @@ The current ordered plan is maintained in
 
 ## Current delivery order
 
-1. Complete H5 provider evidence-contract enforcement, then expand held-out
-   conceptual recall and reconcile unfinished persona/context work.
+1. Validate source-qualified reply scope (H6), then expand held-out conceptual
+   recall and reconcile unfinished persona/context work. H5 is delivered in 2.9.3.
    Delivered: qualified self-reports in 2.9.0, study diagnosis in 2.9.1 and bounded
    noun-form retrieval in 2.9.2. Four of six new semantic phrasings still miss the
    reviewed connection; source-qualified expectations and specificity come first.
@@ -70,3 +70,13 @@ or infrastructure. Natural production rejection causes and reply gains remain
 unmeasured. After this enabling increment: broader held-out conceptual recall,
 unfinished native/persona context, selective skills/tools, then guarded generated
 U.P. northern-lights/trail-camera attachment experiments.
+
+
+2026-10-09 17:00 verified outcome: H5 is delivered in 2.9.3 with contract,
+provider and installed handler evidence, not a measured general fidelity gain.
+Four core actual Discord scenarios pass. One additional answer gives unverified
+personal examples despite correctly rejecting a universal trait; H6 source-qualified
+reply scope is the next audit prerequisite. Reconcile older persona/native work
+while validating H6/H2, then continue selective skills/tools and guarded generated
+U.P. northern-lights/trail-camera attachment experiments. See research.md and the
+release evaluation for acceptance, uncertainty, counts and cost.
