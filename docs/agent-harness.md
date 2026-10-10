@@ -125,3 +125,17 @@ latency improvement are unmeasured. H6/H2 semantic precision remains first, then
 durable contextual graph/coverage, H3 selective tools/skills and requested generated
 U.P. northern-lights/trail-camera scenes. No new model, provider call, service,
 graph belief or schema. Details and limits are in the evolution release evaluation.
+
+
+### 2026-10-10 05:00 decision
+
+H14 in research.md selects rolling authored-recall windows after actual private
+Discord missed a past-week quote despite five eligible dated sources. Parse past/last
+hours, days and weeks, intersect source retention and recheck at rendering, so that
+normal time language reaches the existing native recall and human setup. Keep the
+three-source bound, freshness, guild/operator scope, withdrawal, spending and natural
+presentation. No new calls/model/service/schema or intake. H11 low reasoning failed
+its comparison and is deferred; H12 concurrent reads remain unvalidated. Next: H6/H2
+semantic precision, durable contextual graph/native and visual coverage, H3 selective
+skills/tools and guarded generated U.P. aurora/trail-camera scenes. Acceptance and
+operating impact are in research.md; broad character fidelity remains unmeasured.

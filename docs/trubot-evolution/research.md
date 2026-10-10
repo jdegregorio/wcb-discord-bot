@@ -614,3 +614,88 @@ pages and two same-channel references fit the existing deadline. Tracked run
 estimate USD0.003559075, entirely eleven actual replies; maintenance unchanged.
 See [release validation](evaluations/2026-10-10-native-recall-release.json) for
 counts, actual checks, rollback target and limitations. H6 remains unresolved.
+
+
+## 2026-10-10 05:00: rolling-window recall and configuration research
+
+Phase 1 audited deployed 2.11.0, fetched main 327af434, prior memory/notes,
+open work and older native/persona prototypes. Relevant prototype work was already
+reconciled in 2.10.0/2.11.0; no overlapping evolution PR is open. The authenticated
+three-channel latest-100/14-day sample has seven Andrew posts, five older bot posts
+and seventeen peer posts. Twenty development replies are separate evidence.
+The owner/two-member development guild and pinned human membership were reverified.
+UI review revisited three human posts, their peer setup/reactions and three older
+bot posts. Older gloomy enthusiasm mismatches predate the current fixes. Zero new
+spontaneous replies means current league fidelity remains sparsely measured.
+No new trait or historical pixel interpretation is derived in this run.
+
+H11 - low reasoning for grounded replies (rejected for release):
+- Hypothesis: bounded low reasoning on the same six synthetic source cases/model
+  improves conditional, sarcastic, peer, conflicting, scoped and exact-date answers.
+  So that complex evidence supports a direct natural answer without extra biography.
+- Predeclared acceptance: repair at least two failures, omit no supported answer,
+  introduce no unsupported stance/date, and justify latency/output cost. Twelve
+  maintenance calls compared none/180 tokens with low/512 tokens; other framing
+  stayed fixed. Low omitted the supported scoped example and two other useful
+  references. It did not repair two failures. Output totals 123 versus 424 tokens;
+  maximum latency 2.722 versus 4.195 seconds. Cost USD0.000817375.
+- Method: agent semantic review of synthetic sources, not a human voice reference,
+  independent human grading or a population estimate. One sample per case/config.
+  Leave production configuration unchanged. Official reasoning documentation describes
+  the cost/latency tradeoff, not a tested character gain in this application.
+
+H12/H8 - concurrent source refresh (unvalidated):
+- Prior natural study had a source-refresh timeout before any paid request.
+  A bounded six-source HTTP read experiment encountered more timeouts. Its first
+  repeated comparison failed to cancel sibling tasks and leaked counts across
+  iterations. Discard those throughput figures, and do not infer a rate-limit or
+  network cause. No sources, graph, pacing, provider configuration or runtime
+  scheduling were changed. The corrected prerequisite is isolated reads with
+  task cleanup and content-free transport diagnosis before comparing concurrency.
+  Increasing concurrency is not justified by this experiment.
+
+H14 - natural rolling-window recall (selected correction):
+- Observed failure: actual owner request for a league quote from the past week
+  returned no quote, although five eligible dated native posts exist in that exact
+  seven-day window (seven exist in fourteen days). The current route only recognizes
+  recent/recently/latest/lately. A three-case identical-corpus probe selected 5/4/5
+  baseline sources, with 0/0/2 within the requested week/48-hour/topical-week windows.
+  The bounded selection prototype supplies 3/0/2, all eligible for those windows.
+- Mechanism: parse focused authored-recall phrases for past/last hours, days or
+  weeks; intersect with authoritative retention at selection and render time; use
+  the existing maximum-three native route and omit undated/voice fallbacks. So that
+  normal time language recalls what was actually said in that interval.
+- Acceptance declared before final validation: inclusive lower/exclusive-future
+  timestamp boundaries; numeric and ordinary spelled quantities; broad and topical
+  recall; narrower empty windows; retention intersection; huge/zero/unknown quantities;
+  current sports and explicit calendar-year controls; scope, edits/deletion, withdrawal,
+  source refresh and existing direct/reaction/follow-up participation preserved.
+  Actual private Discord paired past-week quote, empty 48-hour window, topical week,
+  baseball preference, historical year, exact-date and unmentioned follow-up checks.
+- Disconfirmation: an undated/old/future source is called recent, window words become
+  false topics, voice fallback supplies a quote, source edits survive, current scores
+  become historical recall, or a new stock date disclaimer appears.
+- Validation: deterministic boundary/lifecycle/handler regressions; same-source
+  installed probe; source-checked actual gateway answers with private references.
+  This is a narrow retrieval correction, not measured broad character fidelity.
+  Named calendar months/days and complete all-years history remain separate gaps.
+
+Phase 2 decision: select H14's reproduced routing correction. H11 is rejected;
+H12 remains unvalidated. H6 extra-stance semantics and H2 wider conceptual recall
+stay next, then durable native/context-qualified graph and visual coverage. H3
+selective skills/tools and requested generated U.P. northern-lights/trail-camera
+scenes remain exploratory, with source/pixel study, timing, provenance, budget and
+real attachment delivery prerequisites. No harness migration is justified here.
+H14 depends on existing pinned sources, permissions and ledger. It adds no model
+call, paid service, schema, historical intake or participation. Both selection and
+rendering retain freshness/retention; larger requested windows cannot expand stored
+coverage. New scope failures or source-qualified studies can reprioritize again.
+Primary documentation consulted: [reasoning](https://developers.openai.com/api/docs/guides/reasoning)
+and [tools](https://developers.openai.com/api/docs/guides/tools). Documented capabilities
+remain distinct from these tested configurations and future scene/tool prototypes.
+
+H14 candidate verification: all six gates pass, 480 tests/96.49% branch coverage,
+33 new regression cases. Same private corpus routed 3/0/2 sources, each inside
+its requested window, matching the predeclared selection prototype. Source
+probe made no provider calls/source mutation. Required CI, deployment and actual
+post-release gateway verification remain pending at this checkpoint.

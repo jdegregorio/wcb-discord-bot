@@ -663,8 +663,9 @@ async def test_source_followup_recovers_quote_from_current_human_evidence_only(t
 
 
 @pytest.mark.parametrize("mode", ["direct", "followup", "reaction"])
+@pytest.mark.parametrize("window", ["latest", "from the past week"])
 async def test_recent_native_episode_reaches_production_handlers_without_learning_peers(
-    tmp_path, mode
+    tmp_path, mode, window
 ):
     from test_learning import AUDIT, source
     from test_learning import NOW as EVIDENCE_NOW
@@ -705,7 +706,7 @@ async def test_recent_native_episode_reaches_production_handlers_without_learnin
     question = fake_message(channel, direct=mode == "direct")
     question.id = item.id + 2
     question.content = question.clean_content = (
-        "🤖 Quote your latest league message and explain the setup."
+        f"🤖 Quote your league message {window} and explain the setup."
     )
     channel.fetch_message = AsyncMock(
         side_effect=lambda message_id: question if message_id == question.id else focus
@@ -726,7 +727,7 @@ async def test_recent_native_episode_reaches_production_handlers_without_learnin
             if mode == "followup":
                 question.mentions = []
                 question.content = question.clean_content = (
-                    "Quote your latest league message and explain the setup."
+                    f"Quote your league message {window} and explain the setup."
                 )
             await client.on_message(question)
     assert len(responder.calls) == 1
