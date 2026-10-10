@@ -1612,7 +1612,7 @@ these limits. Runtime source is unchanged from the tested release.
   positions, excitement and timing retained. First candidates exposed robotic
   fallback and unsupported apology, repaired before selection. Final social-action
   answer remains less natural; no independent human or general fidelity claim.
-- Fresh structural audit: three league channels/latest100/14days, five older bot
+- Fresh structural audit: three league channels/latest 100/14days, five older bot
   replies/seven authenticated humans, 20 development replies and 12 reused historical
   structural blocks. Three actual human posts and peer context reviewed in UI;
   sparse spontaneous/current-release activity. No new learned observation.
@@ -1742,7 +1742,7 @@ these limits. Runtime source is unchanged from the tested release.
   current source and period hint, not calendar-date proof. Exact day is uncertain.
   Only the recent-quote case has a fresh matched baseline (4.192 seconds, wrong
   recency). Agent review is not independent human grading or general voice evidence.
-- Post-deploy audit: three league channels/latest100/14days, seven target posts
+- Post-deploy audit: three league channels/latest 100/14days, seven target posts
   and five older bot replies; no spontaneous current-release league reply. Twenty
   recent development replies reviewed structurally; eight fresh smoke responses
   reviewed against human context overlap that window. Twelve historical blocks are reused,
@@ -1830,7 +1830,7 @@ Do not infer all real smoke checks passed from the intermediate release.
   archive case. Cause is unresolved. Do not report8/8 full recall or invent a day.
   Source-qualified timing now precedes H6/H2 semantic scope/precision, followed by
   durable native/visual graph context and H3 skills/tools/generated scenes.
-- Post-audit3 league channels/latest100/14days:7 target,5 older bot,17 peers;20
+- Post-audit3 league channels/latest 100/14days:7 target,5 older bot,17 peers;20
   recent development bot replies, overlapping final smoke tests. Twelve reused
   historical structural blocks, no new pixels/traits or held-out human voice grading.
 - At12:47:10UTC,348-second observation: healthy/direct readiness, zero restarts,
@@ -1856,22 +1856,88 @@ this release record. Final main CI and worktree archive outcome are in automatio
 
 ## 2026-10-10 09:00 source-qualified referential recall
 
-Base28f73177220b01cb7098e948f023cd2a860086b1; fresh managed worktree
+Base 28f73177220b01cb7098e948f023cd2a860086b1; fresh managed worktree
 trubot-daily-20261010-0500-7986, feature/trubot-daily-20261010-0900-7986.
 The setup name is a leftover scheduling label; this is a separate fresh run after
-the completed05:00 task. Primary and older worktrees are untouched. No overlapping
+the completed 05:00 task. Primary and older worktrees are untouched. No overlapping
 project PR. Both planning phases and bounded authenticated character audit complete.
 
 H18's previous exact-day miss does not repeat in the fresh actual owner sequence;
 source creation day agrees. No timing prompt change selected. H19/H20 source lookup
-is selected enabling work: baseline12/16 targeted cases fail, candidate16/16 pass;
+is selected enabling work: baseline 12/16 targeted cases fail, candidate 16/16 pass;
 17 additional boundaries/3 production handler modes. Authenticated native handler
-stale quote1 to0 sources after a topic boundary. Real baseline fabricated quote
+stale quote 1 to 0 sources after a topic boundary. Real baseline fabricated quote
 already abstains; no generated fidelity gain claimed. Existing source, withdrawal,
-readiness, scope, participation and USD18/2/20 ledger remain authoritative. First
+readiness, scope, participation and USD 18/2/20 ledger remain authoritative. First
 container staging failed safely; wrong-import output discarded and correct staged
 module verified. Runtime release and actual post-deployment checks remain pending.
 See research.md and the candidate evaluation for full hypotheses and limitations.
 
-Candidate all six gates pass:521 tests,96.56% branch coverage,36 new regressions.
-Version2.11.3. Runtime PR/CI/release and post-release real tests follow.
+Candidate all six gates pass: 521 tests, 96.56% branch coverage, 36 new regressions.
+Version 2.11.3. Runtime PR/CI/release and post-release real tests follow.
+
+
+### Release and actual validation outcome
+
+Runtime [PR #60](https://github.com/jdegregorio/wcb-discord-bot/pull/60),
+merged 38058d1d13ef29d8871db37e4930548c435a4157, publishes immutable
+[v2.11.3](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.11.3).
+Candidate 5c388deb79a6aa77b3a2330ea0243514eb054eff and merged tree
+268870a79d849f3c086f822b1ce2600ff3b319b0 agree. Required PR CI 38079143742,
+main CI 38079224381 and both-architecture image publish 38079298482 succeed.
+All six gates rerun on merged source: 521 tests, 96.56% branch coverage,
+25 mypy modules and wheel/sdist build pass.
+
+Reverified pi5/aarch64/Ubuntu 24.04.4, manifest and helper before the authorized
+locked pi-app deploy. Installed 2.11.3 revision and all 25 Python module hashes
+match tested source. Running digest
+sha256:d6beaca06f3387329051f4a39f6e7f1ef930f90a76c69bec7b726ffa6c2347af.
+Previous healthy 2.11.2 digest
+sha256:b6f33b3c98e5e1eb57dd37f793f1670b961d7bf13143bfa1e0934e751a8543c1.
+No rollback needed. At 2026-10-10T19:32:20.733743+00:00, healthy readiness and main heartbeat,
+zero restarts/errors/response failures/disconnects/learning or study pauses,
+11 replies and 12 bounded learning batches since restart.
+This bounded health window is not a measured character-quality improvement.
+
+Eleven actual Joe-authored development questions and eleven real gateway replies;
+ten acceptance checks pass, one native short exact-day follow-up declines a known
+date. Explicit current-source UTC/Pacific dates, fabricated quotation, new-topic
+boundary, ordinary preference, historical recall, unknown-date/evidence chain and
+empty recent-window controls pass. Ordinary memory language remains natural
+without routine metadata disclaimers. Agent contextual UI review and authenticated
+source checks supplement keyword screens; no independent human grader. Median
+latency 3.600s, range 2.622-7.693s.
+No league test chatter. No new spontaneous current-release league activity.
+Mechanical verification vocabulary remains in unsupported/empty-window replies.
+H18 remains unresolved, not declared repaired.
+
+Four maintenance-ledger provider probes use the same ten-turn actual history and
+runtime model/settings. Short installed routing uses the correct source and dates
+it while baseline abstains; full wording baseline succeeds but installed gets zero
+sources and abstains. Different live verification outcomes prevent an isolated
+generation comparison. Cause unmeasured; do not claim no regression or general
+reply-quality gain. No timing prompt is shipped. Source routing improvement is
+supported separately by matched deterministic and authenticated handler checks.
+
+Native/archive/visual/graph counts, pinned attribution, corrections and withdrawal
+remain unchanged. Content-free private references/pass-fail are stored on the
+private app volume with seven-day manual retention and existing withdrawal cleanup.
+Each HTTP helper uses a distinct ephemeral heartbeat before construction; closing
+it leaves main readiness healthy. No source/answer text is retained in smoke reports.
+
+Ledger at end of bounded experiments: USD 0.07757748 total (runtime 0.03666406,
+maintenance 0.04091342), 353 settled, zero unsettled; observed run delta 0.003807275,
+including four research requests costing 0.000708325. Monthly USD 18/2/20 guard
+and four-hour study pacing remain. No added recurring call or paid infrastructure.
+Earlier October spend and actual provider billing remain unknown.
+
+Joe's new direction is preserved in plan/backlog, ROADMAP, harness/living-memory
+notes, H21/H22 research hypotheses and the automation prompt. Priorities now lead
+with abstract values/humor/personality and relational memory, then deliberately
+amplified 2-3x creative humor including Thomas Jones cracks. No new human trait
+or humor improvement is claimed from this release. Source quotes support audits
+and lifecycle corrections; narrow quote/date repairs are secondary reliability.
+Six standalone daily times, GPT-6.1 Sol/Extra High and notification preference
+are verified unchanged. [Public evaluation](evaluations/2026-10-10-referential-recall-release.json)
+records counts, costs, real pass/partial outcomes and limitations. This evidence
+follow-up changes documentation only; installed runtime remains the tested release.

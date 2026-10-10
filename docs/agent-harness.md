@@ -1,5 +1,27 @@
 # Harness exploration
 
+## Current priority after Joe's 2026-10-10 direction
+
+Prioritize H21 abstract episode memories, then H22 deliberately amplified humor,
+then durable native/visual context, selective tools/skills and requested generated
+U.P. northern-lights/trail-camera pictures. This order supersedes historical
+next-step notes below. Values, humor mechanisms, personality, emotional responses
+and relationships should be learned as tentative or recurring conditional patterns,
+with attributed evidence and counterexamples. Source text serves provenance and
+corrections; ordinary replies should use useful abstractions without archive recitals.
+
+Joe authorizes a bot that is roughly two to three times funnier, including more
+Thomas Jones cracks. Novel punchlines and amplified bits are creative bot behavior,
+separate from Andrew's actual habits and beliefs. Test the creative policy before
+shipping, preserving warmth, timing, factual grounding and varied responses.
+The current release does not implement or validate this amplification.
+
+H19/H20 routing is delivered in 2.11.3; real Discord checks pass 10/11. H18 timing
+variability remains secondary reliability work. No harness migration is supported
+by the current evidence. Preserve privacy, withdrawal, participation and the same
+monthly guard and maintenance allowance. See [research.md](trubot-evolution/research.md).
+
+
 2026-10-09: documentation research and proposed comparisons, no migration selected.
 This reconciles Joe's harness direction with the current production architecture.
 
