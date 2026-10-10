@@ -323,3 +323,15 @@ Names, verbs, semantic synonyms and exact source quotations keep their existing
 meaning. Sources, conflicts, freshness and withdrawal remain authoritative.
 This improves a demonstrated retrieval miss; wider conceptual recall is still
 incomplete and no general reply-quality gain has been measured.
+
+
+## Bounded memory extraction (2.9.3)
+
+The learner supplies a packet-specific structured schema: bounded observation
+text and aliases, distinct self-report/corroborated alternatives, source indexes
+restricted to supplied passages, and reviewer references restricted to supplied
+observations. A singleton must quote the complete eligible anchor. Local exact
+quote, independence, context, freshness and semantic review remain authoritative.
+No new learning source or provider request is added; pacing and monthly spending
+reservations are preserved. This strengthens contract reliability; broad reply
+quality and natural production extraction gains remain unmeasured.

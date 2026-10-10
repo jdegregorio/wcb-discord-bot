@@ -1,0 +1,54 @@
+{
+  "synthetic_only": true,
+  "cases": 15,
+  "invalid_admitted": {
+    "baseline": 15,
+    "candidate": 0
+  },
+  "schema_bytes": {
+    "baseline": 783,
+    "candidate": 1837
+  },
+  "local_evidence_rules_unchanged": true,
+  "schema_coverage_limitations": [
+    "corroborated quote meaning",
+    "distinct source/episode evidence",
+    "topical aliases",
+    "semantic reviewer decision"
+  ],
+  "provider_comparison": {
+    "samples_per_revision": 3,
+    "requests": 9,
+    "baseline_locally_valid": 2,
+    "candidate_locally_valid": 3,
+    "baseline_review_accepted": 1,
+    "candidate_review_accepted": 1,
+    "ambiguous_abstention_both": true,
+    "synthetic_corroborated_review_declined": true,
+    "model": "gpt-6-luna",
+    "same_instructions_and_packets": true,
+    "cost_estimate_usd": 0.001340875,
+    "independent_human_grading": false
+  },
+  "audit": {
+    "league_channels": 3,
+    "scanned_per_channel": 100,
+    "window_days": 14,
+    "league_bot": 5,
+    "target_human": 7,
+    "development_bot": 20,
+    "historical_human_structural": 12,
+    "actual_pixel_images": 1,
+    "new_league_bot_since_prior": 0,
+    "native_sources": 34,
+    "production_rejected_studies": 2,
+    "median_words": {
+      "league_bot": 13,
+      "human": 4,
+      "development_bot": 15,
+      "historical_human": 16.5
+    },
+    "unsolicited_metadata_counts": 0,
+    "sampling_and_context_limitations": true
+  }
+}

@@ -8,7 +8,8 @@ The current ordered plan is maintained in
 
 ## Current delivery order
 
-1. Expand held-out conceptual recall and reconcile unfinished persona/context work.
+1. Complete H5 provider evidence-contract enforcement, then expand held-out
+   conceptual recall and reconcile unfinished persona/context work.
    Delivered: qualified self-reports in 2.9.0, study diagnosis in 2.9.1 and bounded
    noun-form retrieval in 2.9.2. Four of six new semantic phrasings still miss the
    reviewed connection; source-qualified expectations and specificity come first.
@@ -54,3 +55,18 @@ next is wider H2 semantic recall/native context and source-qualified persona,
 then H3 selective skills/tools and guarded generated outdoor image experiments.
 Study diagnosis is delivered in 2.9.1. No harness/model migration is justified by
 the present retrieval-only evidence. See docs/trubot-evolution/research.md.
+
+
+### 2026-10-09 17:00 evidence decision
+
+Select H5 in research.md: enforce existing extraction/review bounds in the
+provider schema before broader automatic-learning work, so that invalid contract
+forms cannot consume a study. Fifteen synthetic invalid proposals are currently
+schema-valid but locally rejected. Keep local source/semantic review, live pacing,
+withdrawal, budget and participation unchanged. Acceptance: same invalid cases
+blocked, valid evidence/abstention retained, real provider schema compatibility,
+full regressions and actual private Discord recall. No additional runtime calls
+or infrastructure. Natural production rejection causes and reply gains remain
+unmeasured. After this enabling increment: broader held-out conceptual recall,
+unfinished native/persona context, selective skills/tools, then guarded generated
+U.P. northern-lights/trail-camera attachment experiments.

@@ -1514,3 +1514,34 @@ retrieval, real Discord, latency, health, provenance and limitations separately.
 Next: four semantic misses, independent private contextual review and valid learner
 proposal diagnosis, while reconciling native/persona work. Selective skills/tools
 and generated U.P. northern-lights/trail-camera scenes remain guarded experiments.
+
+
+## 2026-10-09 17:00 run: bounded provider evidence contracts
+
+- Base `282f5f01cc0b013f1f344fa56d28aff45a34c6c7`; new managed worktree
+  `trubot-daily-20261009-1700`, branch `feature/trubot-daily-20261009-1700-0975`.
+  Primary checkout and older native/persona branches untouched. No evolution PR
+  open at selection. Production baseline 2.9.2, immutable digest
+  `sha256:f8b3ec1f9cd1cbc4823b05ce20ef3773cc4365015d4bdb4bc01b2e302f9005fc`.
+- Both required planning phases recorded as H5 in research.md; roadmap/harness
+  priorities reconciled. Selected a contract correction, no new behavioral belief.
+  Conceptual recall/native persona work and selective tools/generated scenes remain.
+- Audit: three league channels, latest 100 each/14 days, five older bot/seven
+  human messages; 20 development bot replies; 12 historical structural passages;
+  one actual attributed image inspected. Zero new spontaneous activity. Older
+  enthusiasm mismatch predates current fixes; no new style trait inferred.
+- Baseline 15/15 malformed synthetic proposals are schema-valid/local-invalid;
+  candidate admits 0/15. Local quote/independence/semantic/source gates retained.
+  Real adapter comparison: three synthetic packets/revision, nine requests; locally
+  valid 2/3 to 3/3, contextual acceptance 1/3 both, ambiguous abstention both.
+  Review declined one structurally valid candidate. No generated-quality claim.
+- Automatic approval review rejected the private-corpus provider replay before
+  execution. Synthetic comparisons and authenticated UI/read-only audits completed
+  instead. Natural rejection cause, independent human grading and broader recall
+  remain explicit gaps. No private source payload exported or graph populated.
+- Cost baseline USD 0.05172174, after synthetic comparison USD 0.053062615,
+  delta USD 0.001340875. Existing USD 18/2/20 caps and ledger preserved; zero
+  unsettled attempts, no paid infrastructure. Pre-guard spend/billing unverified.
+- Version 2.9.3, development-only standards validator, meaningful contract/pipeline
+  regressions. All six candidate gates pass: 401 tests, 96.28% branch-inclusive coverage.
+  Release/deployment/real Discord results pending.

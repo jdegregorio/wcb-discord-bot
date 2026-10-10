@@ -603,3 +603,15 @@ stores and mocked transports, never constructs a Discord client or reads credent
 never opens live learning/budget stores, and makes no provider or Discord call.
 Its success proves classification and isolation, not improved human fidelity.
 Actual owner-authored development Discord replies remain a separate release gate.
+
+
+### Provider evidence contracts, 2.9.3
+
+Extraction/review schemas are generated from the bounded current packet and prior
+observation count. They enforce existing text/array bounds and supported indexes,
+with a complete anchor quotation for eligible singleton self-reports. The same
+local validator, review, fingerprint checks and final source-locked commit remain.
+No graph migration, new file, retention change or source population is needed.
+The study provenance/checkpoint version stays unchanged: existing outcomes and
+four-hour pacing do not reset. Rollback to 2.9.2 remains data-compatible and
+honors withdrawal. Schema bytes enter the existing maintenance reservation.
