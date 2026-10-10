@@ -1,0 +1,311 @@
+{
+  "hypotheses": [
+    "H14",
+    "H16"
+  ],
+  "phase": "verified-release-with-open-follow-up-timing",
+  "date": "2026-10-10",
+  "base": "327af434ea8dafa4303c8497749a79b491472adb",
+  "runtime_prs": [
+    "https://github.com/jdegregorio/wcb-discord-bot/pull/57",
+    "https://github.com/jdegregorio/wcb-discord-bot/pull/58"
+  ],
+  "intermediate_runtime": "cfe8d79537f837fb89147b111470792cf6e47cc3",
+  "tested_candidate": "75bdfc45d30b485d5be765fcce48b0052e856fa3",
+  "merged_runtime": "b95e70d78d57c858d0268a0e21fc07432d172ab8",
+  "tested_and_merged_tree": "248b409297c5984e06f418bb97d0236836ed15da",
+  "release": "v2.11.2",
+  "pr_ci": 38052548390,
+  "main_ci": 38052640290,
+  "quality": {
+    "required_gates_passed": 6,
+    "tests": 485,
+    "branch_coverage_percent": 96.49,
+    "new_regression_cases_this_run": 38
+  },
+  "source_routing": {
+    "baseline_selected": [
+      5,
+      4,
+      5
+    ],
+    "baseline_within_window": [
+      0,
+      0,
+      2
+    ],
+    "candidate_selected": [
+      3,
+      0,
+      2
+    ],
+    "candidate_within_window": [
+      3,
+      0,
+      2
+    ],
+    "eligible_in_window": [
+      5,
+      0,
+      2
+    ],
+    "provider_calls": 0
+  },
+  "intermediate_actual": {
+    "questions": 10,
+    "broad_false_abstentions": 3,
+    "topical_quote_supported": true,
+    "preference_supported": true,
+    "historical_quote_supported": true,
+    "exact_historical_date_not_invented": true,
+    "full_acceptance": false,
+    "linked_setup_false_abstention": true
+  },
+  "H16_matched_replay": {
+    "cases": 3,
+    "requests": 6,
+    "history_turns": 28,
+    "same_model_sources_and_history": true,
+    "samples_per_case_configuration": 1,
+    "broad_first_position_quote": false,
+    "broad_near_focus_quote": true,
+    "topical_source_matching_preserved": true,
+    "empty_window_abstention_preserved": true,
+    "estimated_cost_usd": 0.000921195,
+    "independent_human_grading": false
+  },
+  "other_research": {
+    "H11": {
+      "cases": 6,
+      "requests": 12,
+      "decision": "rejected",
+      "estimated_cost_usd": 0.000817375
+    },
+    "clock_framing": {
+      "cases": 3,
+      "requests": 6,
+      "decision": "causal_benefit_unvalidated; no clock prompt shipped",
+      "estimated_cost_usd": 0.0008295
+    },
+    "H12": {
+      "status": "unvalidated",
+      "throughput_figures_discarded": true
+    }
+  },
+  "provider_research_requests": 24,
+  "provider_research_estimated_usd": 0.00256807,
+  "no_new_calls_per_reply": true,
+  "no_new_model_schema_service_or_intake": true,
+  "limitations": [
+    "One matched sample per configuration/case is narrow evidence.",
+    "Naturalness/fidelity has no independent human grading.",
+    "Sparse spontaneous league activity and incomplete native/visual history.",
+    "H6 semantic extras and wider H2 conceptual precision remain unresolved.",
+    "Provider billing and pre-guard spend remain unknown.",
+    "One native exact-date follow-up remains partial despite a dated source in the handler.",
+    "One empty-window reply uses verification language; naturalness remains a limited agent assessment."
+  ],
+  "image_build_ci": 38052710092,
+  "deployment": {
+    "started_at": "2026-10-10T12:41:22.474407986Z",
+    "image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:b6f33b3c98e5e1eb57dd37f793f1670b961d7bf13143bfa1e0934e751a8543c1",
+    "oci_revision": "b95e70d78d57c858d0268a0e21fc07432d172ab8",
+    "source_modules": 24,
+    "all_hashes_match": true,
+    "healthy": true,
+    "restarts": 0,
+    "previous_version": "2.11.1",
+    "previous_digest": "sha256:607e9d8ecaee02111dbd64e41538b6dc95ae7f5ac73084fe371aca617e000bd3",
+    "run_start_version": "2.11.0",
+    "run_start_digest": "sha256:2b4d9d2f8892bb6b968e893c0da86f7714ef7316c3679de361cc4e8a0a491865",
+    "rollback_required": false,
+    "schema_migration": false,
+    "observed_at": "2026-10-10T12:47:10.391488+00:00",
+    "observation_seconds": 348,
+    "direct_readiness": true,
+    "errors": 0,
+    "response_failures": 0,
+    "disconnects": 0,
+    "memory_warnings": 0,
+    "learning_pauses": 0,
+    "learning_channel_pauses": 0,
+    "graph_study_pauses": 0,
+    "graph_study_completed": 0,
+    "learning_batches": 8,
+    "posted_responses": 8
+  },
+  "real_discord": {
+    "utc": "2026-10-10T12:45:25.450141+00:00",
+    "actual_owner_messages": true,
+    "confirmed_private_two_member_guild": true,
+    "no_raw_source_or_answer_artifacts": true,
+    "no_provider_calls_by_audit": true,
+    "questions": 8,
+    "fully_verified": 7,
+    "partial": 1,
+    "broad_baseline_false_abstention_repaired": true,
+    "cases": [
+      {
+        "case": 0,
+        "answered": true,
+        "latency_ms": 4879,
+        "acceptance": "pass",
+        "metadata_disclaimer": false,
+        "verification_vocabulary": false,
+        "quotes": 1,
+        "quote_matches_current_scoped_source": true
+      },
+      {
+        "case": 1,
+        "answered": true,
+        "latency_ms": 2864,
+        "acceptance": "pass",
+        "metadata_disclaimer": false,
+        "verification_vocabulary": true,
+        "empty_window_abstention": true
+      },
+      {
+        "case": 2,
+        "answered": true,
+        "latency_ms": 3659,
+        "acceptance": "pass",
+        "metadata_disclaimer": false,
+        "verification_vocabulary": false,
+        "quotes": 1,
+        "quote_matches_current_scoped_source": true
+      },
+      {
+        "case": 3,
+        "answered": true,
+        "latency_ms": 4179,
+        "acceptance": "pass",
+        "metadata_disclaimer": false,
+        "verification_vocabulary": false,
+        "reviewed_preference_supported": true
+      },
+      {
+        "case": 4,
+        "answered": true,
+        "latency_ms": 2311,
+        "acceptance": "pass",
+        "metadata_disclaimer": false,
+        "verification_vocabulary": false,
+        "quotes": 1,
+        "quote_matches_current_scoped_source": true
+      },
+      {
+        "case": 5,
+        "answered": true,
+        "latency_ms": 2595,
+        "acceptance": "pass",
+        "metadata_disclaimer": false,
+        "verification_vocabulary": false,
+        "exact_historical_date_not_invented": true
+      },
+      {
+        "case": 6,
+        "answered": true,
+        "latency_ms": 3123,
+        "acceptance": "pass",
+        "metadata_disclaimer": false,
+        "verification_vocabulary": false,
+        "quotes": 1,
+        "quote_matches_current_scoped_source": true,
+        "authenticated_native_parent_setup_matches": true
+      },
+      {
+        "case": 7,
+        "answered": true,
+        "latency_ms": 2497,
+        "acceptance": "partial",
+        "metadata_disclaimer": false,
+        "verification_vocabulary": false,
+        "known_native_date_not_supplied": true,
+        "handler_probe_dated_sources": 1,
+        "handler_probe_timing_guidance": true,
+        "handler_probe_provider_calls": 0
+      }
+    ],
+    "independent_human_grading": false
+  },
+  "post_deploy_audit": {
+    "utc": "2026-10-10T12:47:36.831769+00:00",
+    "channels": 3,
+    "latest_per_channel": 100,
+    "days": 14,
+    "target": 7,
+    "older_bot": 5,
+    "peer": 17,
+    "development_bot": 20,
+    "routine_metadata_candidates": 0,
+    "spontaneous_current_release_league_replies": 0,
+    "new_traits": 0,
+    "new_pixels_interpreted": 0,
+    "native_complete_history": false,
+    "reused_historical_structural_blocks": 12,
+    "independent_human_grading": false
+  },
+  "installed_handler_probes": {
+    "dated_sources": [
+      3,
+      2
+    ],
+    "human_context_rows": [
+      3,
+      3
+    ],
+    "elapsed_ms": [
+      2396,
+      1496
+    ],
+    "provider_calls": 0,
+    "source_revalidation_only": true
+  },
+  "source_continuity": {
+    "identity_unchanged": true,
+    "withdrawal_unchanged": true,
+    "native_count_unchanged": true,
+    "archive_unchanged": true,
+    "native_messages": 34,
+    "archive_documents": 16,
+    "archive_blocks": 4299,
+    "voice_eligible_blocks": 405,
+    "visual_episodes": 115,
+    "image_assets": 96,
+    "graph_nodes": {
+      "captured_human": 11,
+      "claim": 1,
+      "concept": 2,
+      "episode": 554,
+      "human_source": 439,
+      "person": 1,
+      "preference": 1,
+      "visual": 96
+    },
+    "graph_edges": 1011,
+    "graph_studies_rejected": 2,
+    "graph_checkpoints": 5
+  },
+  "budget": {
+    "observed_at": "2026-10-10T12:46:24.254406+00:00",
+    "estimated_usd": 0.073770205,
+    "runtime_usd": 0.03356511,
+    "maintenance_usd": 0.040205095,
+    "run_delta_usd": 0.008543245,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "monthly_limit_usd": 20,
+    "attempts": 334,
+    "unsettled_attempts": 0,
+    "input_tokens": 1037674,
+    "cached_input_tokens": 546483,
+    "output_tokens": 13813,
+    "actual_reply_calls_this_run": 21,
+    "actual_baseline_questions": 3,
+    "actual_intermediate_questions": 10,
+    "actual_final_questions": 8,
+    "provider_research_calls_this_run": 24,
+    "provider_billing_and_pre_guard_spend": "unknown"
+  },
+  "evidence_pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/59"
+}

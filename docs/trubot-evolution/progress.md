@@ -1791,3 +1791,64 @@ merged and deployed healthy, but actual broad quotes still falsely abstained.
 H16's full-context matched replay supports moving fresh evidence near focus.
 2.11.2 completes the same rolling-recall increment; final verification follows.
 Do not infer all real smoke checks passed from the intermediate release.
+
+
+### 05:00 final release and actual validation
+
+- Runtime [PR #57](https://github.com/jdegregorio/wcb-discord-bot/pull/57) delivers
+  rolling windows; [PR #58](https://github.com/jdegregorio/wcb-discord-bot/pull/58)
+  completes fresh-evidence placement after contrary actual replies. Second tested
+  head 75bdfc45d30b485d5be765fcce48b0052e856fa3 merged as
+  b95e70d78d57c858d0268a0e21fc07432d172ab8; identical tree
+  248b409297c5984e06f418bb97d0236836ed15da. All six gates on candidate/merged
+  revision: 485 tests, 96.49% coverage. Required [PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38052548390),
+  [main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38052640290)
+  and [image build](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38052710092) pass.
+- Immutable [v2.11.2](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.11.2)
+  targets that merged commit. Reverified pi5/aarch64/Ubuntu24.04.4 and app manifest;
+  locked pi-app transaction runs sha256:b6f33b3c98e5e1eb57dd37f793f1670b961d7bf13143bfa1e0934e751a8543c1.
+  Version/OCI revision/all24 module hashes match. Previous healthy 2.11.1 digest
+  607e9d8ecaee02111dbd64e41538b6dc95ae7f5ac73084fe371aca617e000bd3 remains
+  recorded for rollback; original 2.11.0 was 2b4d9d2f8892bb6b968e893c0da86f7714ef7316c3679de361cc4e8a0a491865.
+  No rollback, schema migration, model change or added service.
+- Installed selection 3/0/2, all inside week/48hour/topical-week windows, versus
+  baseline eligible 0/0/2 of5/4/5. Actual memory-handler probes supply3/2 dated
+  sources with3/3 human context rows, 2.396/1.496 seconds. No provider calls in probes.
+- Final actual owner Chrome/private confirmed two-member guild/general: eight
+  gateway responses, seven fully verified plus one partial. Exact broad question
+  now returns an eligible current native quote, versus repeated baseline denial.
+  Empty48hour window abstains; topical week quote, supported preference, eligible
+  historical period quote, exact historical uncertainty and authenticated linked
+  human setup pass. Historical period hints never prove a calendar date.
+- Real latencies 4.879/2.864/3.659/4.179/2.311/2.595/3.123/2.497 seconds. No general
+  speed or human-fidelity gain claim. One empty reply uses verification vocabulary;
+  zero ordinary storage/date metadata caveats. Agent contextual/source review is
+  limited and not independent human grading. No current spontaneous league reply.
+- H18 new timing defect: the unmentioned native-date follow-up responds but declines
+  a known day. A fresh production memory-handler probe supplies one dated native
+  source/two context rows and timing guidance in956ms; it is not a missing-date
+  archive case. Cause is unresolved. Do not report8/8 full recall or invent a day.
+  Source-qualified timing now precedes H6/H2 semantic scope/precision, followed by
+  durable native/visual graph context and H3 skills/tools/generated scenes.
+- Post-audit3 league channels/latest100/14days:7 target,5 older bot,17 peers;20
+  recent development bot replies, overlapping final smoke tests. Twelve reused
+  historical structural blocks, no new pixels/traits or held-out human voice grading.
+- At12:47:10UTC,348-second observation: healthy/direct readiness, zero restarts,
+  errors, response failures, disconnects, memory warnings, learning pauses and study
+  pauses;8 learning batches/8 replies/zero completed studies. Short window only.
+  Identity/withdrawal/native34/archive16docs4299blocks405eligible and graph439
+  human sources/554episodes/96visuals/1011edges unchanged; no development learning.
+- Tracked estimate USD0.073770205 (runtime0.03356511, maintenance0.040205095);
+  observed run delta0.008543245.24 maintenance research calls cost0.00256807,
+  plus21 actual replies (3before/10intermediate/8final).334 settled/zero unsettled;
+  1037674input/546483cached/13813output tokens. Existing18/2/20caps and pacing
+  preserved; provider billing and pre-guard October spend remain unknown.
+- Private content-free IDs/timing/passfail/counts only on app-volume smoke-tests,
+  0600/0700, seven-day manual retention and withdrawal cleanup. Validation paths are
+  distinct before construction; HTTP-only helpers do not own the main heartbeat.
+  No raw source/answer artifacts, new source copies, league chatter or user tokens.
+  [Public validation](evaluations/2026-10-10-rolling-recall-release.json) separates
+  routing, matched harness experiment, actual replies and the remaining timing miss.
+
+[Evidence PR #59](https://github.com/jdegregorio/wcb-discord-bot/pull/59) preserves
+this release record. Final main CI and worktree archive outcome are in automation memory.

@@ -747,3 +747,33 @@ clock/model tweak. 2.11.2 is a second immutable release in the same coherent run
 Dependencies are current source refresh and the existing production adapter.
 Confidence is narrow to the reproduced broad miss; full native/visual coverage and
 H6/H2 semantic precision remain next. Real repeat after deployment is still required.
+
+
+### H14/H16 release result and new H18 prerequisite
+
+2.11.2's first fresh actual broad question and linked human-setup request both
+return exact current source quotes, repairing the observed 2.11.1 false abstentions.
+Seven of eight real checks fully verify; native exact-date follow-up is partial.
+All485 tests/required CI/image builds pass; immutable Pi runtime is healthy.
+This supports rolling retrieval and near-focus evidence in the observed cases,
+not general character fidelity, complete history or a latency gain.
+
+H18 - source-qualified native timing follow-up (new first increment): actual
+follow-up declines a known day despite one fresh dated native source, two context
+rows and timing guidance. Earlier archive-date uncertainty remains correct.
+Hypothesis: focused quotation/timing handling or additional voice/history context
+may obscure the timestamp. Neither cause is validated. So that explicit timing
+questions use supported dates while broad recall stays natural and unknown archive
+dates remain uncertain. Baseline: one actual miss plus a successful source-handler
+probe, no earlier matched native-date answer. Acceptance: exact quoted native
+source/date/timezone, unknown-date archive, unsupported quotation and correction/
+withdrawal controls over identical full contexts; fresh real unmentioned follow-up.
+Disconfirming evidence: fabricated timing, routine date disclaimers, wrong quote
+link, worse grounded recall or hypothesis fails matched replay. Dependency: private
+source-reviewed expectations, existing maintenance guard; no automatic source
+assertion or model change. Confidence is high in the narrow miss, low in its cause.
+Estimated operating impact should stay at one bounded runtime request; reject added
+calls/cost without measured benefit. H18 now precedes H6/H2; new matched source
+coverage or contrary replies can reprioritize. H17 absence-language exploration is
+lower priority: one empty reply uses verification vocabulary, with no source-backed
+habit claim or new prompt assumption.
