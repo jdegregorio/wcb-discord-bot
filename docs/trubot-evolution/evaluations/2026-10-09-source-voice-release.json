@@ -1,0 +1,155 @@
+{
+  "version": "2.10.0",
+  "runtime_pr": 53,
+  "base": "01485e657bd3b21f3abf815ee6650007589477df",
+  "tested_candidate": "e8efebb7280d78b357072a93b79e78293bcc8be4",
+  "merged": "7be0836cbd8e74bc07791c5776130158b789d345",
+  "tree": "24585735c222c519ab0661f855ad131c5f19343e",
+  "tested_tree_matches_merged": true,
+  "ci": {
+    "pr": 38023442151,
+    "main": 38023523932,
+    "both_architecture_publish": 38023593146,
+    "all_passed": true
+  },
+  "quality": {
+    "six_gates_passed": true,
+    "tests": 417,
+    "branch_coverage_percent": 96.36
+  },
+  "deployment": {
+    "target": "pi5/aarch64/Ubuntu 24.04.4",
+    "digest": "sha256:a14d3f4ecf725b1c1e2ae0de2a8b150dc33d7641a2829e029e074ea1beca014c",
+    "previous_digest": "sha256:ac3848aa72f1333b2a6f4ade316eeb2181af8b1c69bc5b09aacede94e4a8df24",
+    "transaction": "pi-app deploy wcb-bot 2.10.0",
+    "package_export_and_oci_revision_match": true,
+    "source_hashes_passed": 22,
+    "source_hashes_total": 22,
+    "rollback_needed": false
+  },
+  "installed": {
+    "source_lifecycle_passed": 8,
+    "source_lifecycle_total": 8,
+    "catalog_only_empty": true,
+    "current_source_setup_pair": true,
+    "wrong_guild_year_removed_withdrawn_excluded": true,
+    "no_live_state_in_synthetic_probe": true,
+    "no_provider_calls_in_synthetic_probe": true,
+    "no_validation_discord_client_constructed": true,
+    "production_heartbeat_healthy_after_probes": true
+  },
+  "real_discord": {
+    "owner_ui_questions_and_gateway_answers": true,
+    "private_members": 2,
+    "fully_verified_checks": 5,
+    "total_questions": 6,
+    "scenarios": [
+      "baseball",
+      "eligible_period_quote",
+      "exact_day_uncertainty",
+      "unsupported_recent_event_restraint",
+      "unmentioned_connected_followup"
+    ],
+    "scope_question_fully_grounded": false,
+    "scope_limitation": "Additional personal positions still lack semantic source qualification; legacy catalog is not their sole cause.",
+    "seconds": {
+      "scope": 4.124,
+      "baseball": 4.41,
+      "year": 2.157,
+      "date": 3.011,
+      "event": 1.81,
+      "followup": 3.084
+    },
+    "fresh_before_questions": 2,
+    "other_prior_baselines_reused": 4,
+    "current_eligible_period_quote_matches": true,
+    "calendar_date_not_proven_by_label": true,
+    "routine_metadata_disclaimers": 0,
+    "development_learning_excluded": true,
+    "league_test_posts": 0,
+    "raw_answers_retained": false,
+    "independent_human_grading": false
+  },
+  "continuity": {
+    "identity_withdrawal_sources_graph_checks": 6,
+    "all_passed": true,
+    "native_messages": 34,
+    "archive_documents": 16,
+    "archive_grouped_blocks": 4299,
+    "archive_eligible_blocks": 405,
+    "graph_human": 439,
+    "graph_episodes": 554,
+    "graph_visual": 96,
+    "graph_claims": 1,
+    "graph_preferences": 1,
+    "graph_edges": 1011,
+    "new_observations": 0,
+    "no_migration_or_new_ledger": true
+  },
+  "post_audit": {
+    "league_channels": 3,
+    "latest_each": 100,
+    "days": 14,
+    "older_bot": 5,
+    "target_human": 7,
+    "new_spontaneous_league": 0,
+    "development_bot": 20,
+    "reused_historical_structural_blocks": 12,
+    "development_median_words": 9.0,
+    "unsolicited_metadata": 0,
+    "window_turnover_prevents_causal_quality_claim": true
+  },
+  "health": {
+    "time": "2026-10-10T04:24:29.743283+00:00",
+    "window_seconds": 202,
+    "healthy": true,
+    "direct_readiness": true,
+    "restarts": 0,
+    "errors": 0,
+    "reply_failures": 0,
+    "disconnects": 0,
+    "memory_warnings": 0,
+    "learning_pauses": 0,
+    "study_pauses": 0,
+    "natural_studies": 0,
+    "learning_batches": 4,
+    "replies": 6,
+    "predeploy_study_pause": {
+      "stage": "source_refresh",
+      "reason": "timeout",
+      "sources": 6,
+      "requests": 0,
+      "elapsed_ms": 5307
+    }
+  },
+  "cost": {
+    "estimated_usd": 0.06007111,
+    "runtime_usd": 0.022434085,
+    "maintenance_usd": 0.037637025,
+    "run_delta_usd": 0.00475904,
+    "maintenance_experiment_delta_usd": 0.001401495,
+    "synthetic_requests": 24,
+    "fresh_real_reply_requests": 8,
+    "settled_attempts": 275,
+    "unsettled": 0,
+    "input_tokens": 853167,
+    "cached_input_tokens": 456411,
+    "output_tokens": 11825,
+    "monthly_caps_usd": [
+      18,
+      2,
+      20
+    ],
+    "new_paid_infrastructure": false,
+    "pre_guard_spend_and_billing": "unverified"
+  },
+  "limits": [
+    "H7 validates source authority and narrow synthetic restraint, not broad human fidelity.",
+    "H6 extra personal-position qualification remains unresolved; fixed legacy examples are not the sole cause.",
+    "One synthetic missing-source fallback remains less natural.",
+    "Only two fresh real baselines; four prior checks reused.",
+    "No new spontaneous league or natural study outcome after deployment.",
+    "Native full context, historical pixels and off-device recovery remain incomplete.",
+    "No new model, tool harness or generated image behavior validated."
+  ]
+}

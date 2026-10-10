@@ -1623,3 +1623,52 @@ these limits. Runtime source is unchanged from the tested release.
 - Private content-free references/counts at app-volume smoke-tests with 0600/0700
   and established seven-day manual retention/withdrawal cleanup. No league probes,
   source excerpts, derived answer text or credentials in Git/log artifacts.
+
+### 21:00 release and actual validation
+
+- Runtime [PR #53](https://github.com/jdegregorio/wcb-discord-bot/pull/53),
+  tested `e8efebb7280d78b357072a93b79e78293bcc8be4`, merged
+  `7be0836cbd8e74bc07791c5776130158b789d345`; identical tree `24585735c222c519ab0661f855ad131c5f19343e`.
+  PR CI 38023442151/main CI 38023523932 and both-architecture publish
+  38023593146 passed. All six merged local gates: 417 tests, 96.36% coverage.
+- Immutable [v2.10.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.10.0)
+  targets that merged commit. Reverified pi5/aarch64/Ubuntu 24.04.4, manifest,
+  helper and enabled release timer. Locked `pi-app deploy wcb-bot 2.10.0` runs
+  `sha256:a14d3f4ecf725b1c1e2ae0de2a8b150dc33d7641a2829e029e074ea1beca014c`.
+  Previous healthy 2.9.3 digest retained. Version, OCI revision and all 22 module
+  hashes match. No schema change, migration, new source population or rollback.
+- Installed source-lifecycle acceptance passes 8/8 on disposable synthetic stores,
+  without provider calls, live-state access or Discord-client construction. Six
+  private identity/source/withdrawal/graph continuity checks pass. Main heartbeat
+  healthy after all probes. Native 34; archive 16/4,299/405 eligible; graph 439
+  humans/554 episodes/96 visuals/one claim/one preference/1,011 edges unchanged.
+- Real owner Chrome questions and actual production gateway replies: five fully
+  verified checks of six questions (baseball, current eligible period quote,
+  exact-day honesty, recent-event restraint and unmentioned connected follow-up).
+  Latencies 4.410/2.157/3.011/1.810/3.084 seconds. Ordinary recall has no metadata
+  disclaimer; exact timing remains unknown. Quote is a current attributed excerpt,
+  not dated proof. Recent-event baseline was already cautious; no improvement claim.
+- The sixth scope response (4.124 seconds) still adds personal position examples
+  whose semantic qualification is unverified. Count it as partial, not fully
+  grounded. This disconfirms legacy examples as the sole cause, not H7's proven
+  source-lifecycle need. H6 remains next with semantic precision/qualified sources.
+  Only two fresh baseline questions were sent; four earlier baseline checks reused.
+  No independent human grading, league tests, user-token extraction or dev learning.
+- Post-deploy audit unchanged league five older bot/seven target messages, zero
+  new spontaneous league activity; latest 40 development contains 20 bot replies,
+  median 9 words, no unsolicited metadata. Different questions/windows cannot
+  establish causal voice improvement. Twelve historical blocks remain reused
+  structural coverage; full native/pixel/held-out human studies incomplete.
+- At 04:24:29 UTC over 202 seconds: healthy/directready, zero restarts/errors/replyfailures/
+  disconnects/memorywarnings/learningpauses/studypauses, four batches/six replies,
+  zero new studies. Predeploy one background source-refresh timeout (six sources,
+  zero requests, 5,307ms) is diagnosed separately; no cost or retrospective fix claim.
+- Tracked estimate USD 0.06007111 (runtime 0.022434085, maintenance 0.037637025),
+  run delta 0.00475904; 24 synthetic maintenance and eight actual owner-reply calls,
+  275 settled/zero unsettled, 853,167 input/456,411 cached/11,825 output tokens.
+  Existing USD 18/2/20 caps preserved, no paid infrastructure. Billing/pre-guard spend
+  unknown. Private content-free references/passfail/continuity remain app-volume
+  smoke-tests, 0600/0700, seven-day manual retention and withdrawal cleanup.
+- [Public validation](evaluations/2026-10-09-source-voice-release.json) separates
+  lifecycle, synthetic restraint and actual partial semantic acceptance. Evidence
+  PR/final CI, helper cleanup and archive only this run's worktree follow.

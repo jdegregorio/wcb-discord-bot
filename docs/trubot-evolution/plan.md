@@ -266,3 +266,13 @@ partial naturalness and H6 extra-stance qualification remain unresolved. No new
 trait, schema, model, provider call or paid infrastructure. Next: source-qualified
 H6/H2 held-out replies and native context, H3 selective tools/skills, then generated
 U.P. northern-lights/trail-camera scenes. All established release/smoke/budget rules apply.
+
+
+2026-10-09 21:00 verified: H7 is delivered in 2.10.0 with current-source
+voice, correction/year/withdrawal acceptance and actual supported-memory delivery.
+Five of six actual questions are fully verified; the additional scope answer is
+partial. H6 remains open, and legacy examples are not its sole cause. Prioritize
+H6/H2 semantic source precision and native neighborhoods; investigate H8's one
+source-refresh timeout without loosening freshness. Then H3 selective skills/tools
+and generated U.P. northern-lights/trail-camera scenes. No broad fidelity gain or
+complete replica is claimed. Details and limits are in the release evaluation.

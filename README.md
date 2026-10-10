@@ -1,8 +1,8 @@
 # Trubot
 
-Trubot is the Will Carter Bowl League of Champions’ Discord personality bot: a
-dry, oddly sincere, Thomas-Jones-obsessed league member who occasionally has the
-best one-liner in the channel.
+Trubot is the Will Carter Bowl League of Champions’ Discord character, shaped
+by attributed league conversations, contextual voice examples and bounded
+source-backed memory.
 
 Version 2 is a ground-up rewrite. It has one job—make Trubot feel like Trubot—
 and deliberately has no commands, Trello integration, or `!insultjim` feature.

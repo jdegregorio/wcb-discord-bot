@@ -35,9 +35,11 @@ bounded Discord reply
 
 - `config.py` parses and validates the entire environment at startup. Secrets
   cannot appear in the settings representation.
-- `personality.py` is the only source of character instructions and authentic
-  examples. Fictional judgment illustrations are labelled separately and never
-  serve as personal evidence about Andrew. Prompt plumbing never owns character decisions.
+- `personality.py` owns character instructions and legacy lookup keys.
+  `voice_memory.py` resolves at most three current attributed answer/setup pairs
+  through the existing private memory scope, with correction, year and withdrawal
+  gates. Examples describe a context, not a biography or habitual trait. Synthetic
+  judgment illustrations remain separate and never supply personal evidence.
 - `openai_responder.py` is the only OpenAI dependency. It produces a plain
   string through the Responses API and normalizes accidental speaker prefixes.
 - `participation.py` is a synchronous state machine. Given channel activity and

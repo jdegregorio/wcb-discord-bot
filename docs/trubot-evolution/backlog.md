@@ -305,3 +305,14 @@ generated U.P. northern-lights/trail-camera attachments, then measured ambient u
 Each retains the evidence/dependency/acceptance/operating-impact contracts in the
 priority table. Better source evidence can retire the suspected H6 defect; a
 supported-memory regression blocks H7 rollout. No new personality habit inferred.
+
+H7 delivered in 2.10.0: source lifecycle 8/8, 417 tests, five fully verified actual
+Discord checks plus one partial scope response. The older persona prototype's
+source-authority milestone is reconciled here; do not reimplement it. H6 remains
+unresolved and its sole-legacy-catalog causal assumption is rejected by the actual
+post-release answer. Next H6/H2 work should assess retrieved-source precision and
+semantic qualification. H8 source-refresh timeout is an exploratory enabling
+candidate beside native neighborhoods: reproduce exact permitted source reads,
+prove bounded responsiveness/freshness/withdrawal and retain existing pacing/caps.
+One timeout does not justify relaxing checks. Operating impact uses the existing
+maintenance allowance, with no added service. H3 skills/tools/images remain planned.
