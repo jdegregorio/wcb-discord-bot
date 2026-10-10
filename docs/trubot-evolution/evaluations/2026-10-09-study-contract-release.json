@@ -1,0 +1,136 @@
+{
+  "version": "2.9.3",
+  "base": "282f5f01cc0b013f1f344fa56d28aff45a34c6c7",
+  "tested_candidate": "ff804a9c34642e584eab48816a7049c27f378e73",
+  "merged": "7de1e39978bf75a7a7c7f5cb1c39400e850ea2dd",
+  "tested_tree_matches_merged": true,
+  "pr": 51,
+  "ci": {
+    "pr": 38008000100,
+    "main": 38008123720,
+    "publish_both_architectures": 38008204215,
+    "all_passed": true
+  },
+  "local_quality": {
+    "six_gates": true,
+    "tests": 401,
+    "branch_coverage_percent": 96.28
+  },
+  "deployment": {
+    "host_verified": "pi5/aarch64/Ubuntu 24.04.4",
+    "digest": "sha256:ac3848aa72f1333b2a6f4ade316eeb2181af8b1c69bc5b09aacede94e4a8df24",
+    "previous": "sha256:f8b3ec1f9cd1cbc4823b05ce20ef3773cc4365015d4bdb4bc01b2e302f9005fc",
+    "transaction": "pi-app deploy wcb-bot 2.9.3",
+    "oci_revision_matches": true,
+    "package_and_exported_version_match": true,
+    "module_hashes_match": true,
+    "rollback_needed": false
+  },
+  "installed": {
+    "schema_fingerprints": 3,
+    "review_bounds": 3,
+    "diagnostic_probes_passed": 14,
+    "diagnostic_probes_total": 14,
+    "synthetic_handler_scenarios_passed": 8,
+    "synthetic_handler_scenarios_total": 8,
+    "live_state_access_in_synthetic_probes": false,
+    "provider_calls_in_installed_probes": 0,
+    "readiness_isolated": true
+  },
+  "real_discord": {
+    "actual_owner_ui_and_gateway": true,
+    "private_members": 2,
+    "core_passed": 4,
+    "core_total": 4,
+    "additional_scoped_response": 1,
+    "additional_response_fully_grounded": false,
+    "reason": "Additional personal stance examples lack semantic attribution review; correct rejection of a universal trait is only partial acceptance.",
+    "latency_seconds": {
+      "baseball": 4.993,
+      "historical_quote": 2.741,
+      "exact_day": 2.091,
+      "scope_with_extra_examples": 3.195,
+      "unmentioned_followup": 3.878
+    },
+    "ordinary_metadata_disclaimers": 0,
+    "historical_quote_matches_eligible_period_source": true,
+    "export_period_not_message_date": true,
+    "baseball_current_authored_term_support_plus_agent_review": true,
+    "followup_current_reviewed_graph_support_plus_agent_review": true,
+    "independent_human_grading": false,
+    "development_learning_excluded": true,
+    "league_test_posts": 0,
+    "raw_answers_retained": false
+  },
+  "continuity": {
+    "identity": true,
+    "withdrawal": true,
+    "four_hour_pacing": true,
+    "graph_node_counts": true,
+    "new_observations": 0
+  },
+  "health": {
+    "time": "2026-10-10T00:23:55.342688+00:00",
+    "window_seconds": 389,
+    "healthy": true,
+    "direct_readiness": true,
+    "restarts": 0,
+    "errors": 0,
+    "reply_failures": 0,
+    "disconnects": 0,
+    "memory_warnings": 0,
+    "learning_pauses": 0,
+    "study_pauses": 0,
+    "natural_completed_studies": 0,
+    "learning_batches": 8,
+    "replies": 5
+  },
+  "cost": {
+    "estimated_usd": 0.05531207,
+    "runtime_usd": 0.01907654,
+    "maintenance_usd": 0.03623553,
+    "run_delta_usd": 0.00359033,
+    "synthetic_requests": 9,
+    "real_reply_requests": 6,
+    "settled_attempts": 243,
+    "unsettled": 0,
+    "input_tokens": 770838,
+    "cached_input_tokens": 405432,
+    "output_tokens": 11164,
+    "monthly_caps_usd": [
+      18,
+      2,
+      20
+    ],
+    "pre_guard_spend_and_billing": "unverified",
+    "new_paid_infrastructure": false
+  },
+  "limitations": [
+    "Two natural rejected studies remain unclassified at the exact proposal-rule level.",
+    "Automatic approval review stopped the private-corpus provider replay before execution; synthetic alternatives were completed.",
+    "No measured general character gain or natural extraction improvement.",
+    "One additional restraint answer includes unverified autobiographical examples.",
+    "Native peer/reply/thread and historical semantic coverage incomplete.",
+    "Skills/tools and generated outdoor pictures remain exploratory."
+  ],
+  "post_release_audit": {
+    "league_bot": 5,
+    "target_human": 7,
+    "development_bot": 20,
+    "historical_structural": 12,
+    "new_spontaneous_league": 0,
+    "development_median_words": 10,
+    "unsolicited_metadata": 0,
+    "context_window_turnover_prevents_causal_length_claim": true
+  },
+  "visual_audit": {
+    "authenticated_original_pixels_inspected": 1,
+    "hashed_original_images": 1,
+    "original_bytes": 221337,
+    "private_source_timestamp_and_sha256_retained": true,
+    "existing_archive_matches": 0,
+    "raw_pixels_retained": false,
+    "new_persona_observations": 0,
+    "coverage_gap": "Recent inspected image is outside the initially captured archive."
+  }
+}
