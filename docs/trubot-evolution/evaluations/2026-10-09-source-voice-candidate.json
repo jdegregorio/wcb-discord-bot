@@ -1,0 +1,74 @@
+{
+  "version": "2.10.0",
+  "base": "01485e657bd3b21f3abf815ee6650007589477df",
+  "hypothesis": "H7 current-source authority for contextual voice",
+  "catalog_coverage": {
+    "entries": 20,
+    "answer_entries_matched": 16,
+    "distinct_authored_blocks": 15,
+    "answer_setup_pairs": 4,
+    "source_wording_and_setup_matching": "exact normalized whole blocks",
+    "adjacency_not_verified_reply_linkage": true
+  },
+  "synthetic_provider": {
+    "predeclared_cases": 6,
+    "total_requests": 24,
+    "baseline_unsupported_legacy_details": 3,
+    "final_unsupported_legacy_details": 0,
+    "absent_source_cases": 3,
+    "qualified_position_enthusiasm_timing_controls_preserved": 3,
+    "first_prototype_identity_repetition": 3,
+    "second_prototype_unsupported_event_apology": 1,
+    "final_categorical_social_fallback": "naturalness remains partial",
+    "independent_human_fidelity": false,
+    "same_model_adapter_ledger": true,
+    "private_source_provider_replay": false
+  },
+  "selector": {
+    "examples": 3,
+    "bytes": 2462,
+    "observed_ms": [
+      55.53,
+      65.67,
+      58.18
+    ],
+    "no_added_provider_call": true,
+    "no_new_schema_or_belief": true
+  },
+  "audit": {
+    "league_channels": 3,
+    "latest_per_channel": 100,
+    "days": 14,
+    "older_league_bot": 5,
+    "target_human": 7,
+    "development_bot_latest40": 20,
+    "reused_historical_structural_blocks": 12,
+    "ui_human_posts_reviewed": 3,
+    "ui_older_bot_posts_reviewed": 2,
+    "new_spontaneous_league": 0,
+    "unsolicited_metadata": 0,
+    "full_native_visual_or_semantic_coverage": false
+  },
+  "regression": {
+    "source_voice_tests": 16,
+    "handlers": [
+      "direct",
+      "followup",
+      "reaction"
+    ],
+    "catalog_not_evidence": true,
+    "correction_withdrawal_guild_year_bounds": true
+  },
+  "gates": {
+    "six_passed": true,
+    "tests": 417,
+    "branch_coverage_percent": 96.36
+  },
+  "limitations": [
+    "Six repeated synthetic cases tune a contract, not held-out human character fidelity.",
+    "One categorical absent-source fallback remains less natural.",
+    "H6 extra-stance semantic attribution remains unresolved.",
+    "Actual Discord deployment acceptance still pending.",
+    "Native neighborhoods and historical pixels remain incomplete."
+  ]
+}

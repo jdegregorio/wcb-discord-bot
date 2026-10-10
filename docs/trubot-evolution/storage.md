@@ -615,3 +615,18 @@ No graph migration, new file, retention change or source population is needed.
 The study provenance/checkpoint version stays unchanged: existing outcomes and
 four-hour pacing do not reset. Rollback to 2.9.2 remains data-compatible and
 honors withdrawal. Schema bytes enter the existing maintenance reservation.
+
+
+## Source-checked voice, 2.10.0
+
+The legacy catalog contains lookup keys only. Each reply resolves eligible current
+archive answer/setup pairs under existing source transactions and guild gates.
+At most three separated pairs, 1,200 characters per block, are supplied with source
+lines, exact alias attribution and unknown-date metadata. Requested years require
+current matching export-period hints, never dated-message proof. Quotes, ambiguous
+thread/link/media context and bot setup cannot establish a voice pair. There is
+no persistent voice cache, new database, graph observation or backfill. Withdrawal
+and removal therefore erase this route as well as normal recall. The usage ledger,
+four-hour study pacing and existing storage/backup boundaries stay unchanged.
+Older images retain unconditional catalog examples; rollback must not be used to
+restore private-derived behavior after withdrawal. This release has no migration.

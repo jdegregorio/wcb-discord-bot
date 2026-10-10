@@ -335,3 +335,15 @@ quote, independence, context, freshness and semantic review remain authoritative
 No new learning source or provider request is added; pacing and monthly spending
 reservations are preserved. This strengthens contract reliability; broad reply
 quality and natural production extraction gains remain unmeasured.
+
+
+## Source-checked contextual voice (2.10.0)
+
+Legacy examples are lookup keys rather than unconditional personal evidence.
+Replies can receive at most three current attributed archive passages whose
+preceding peer setup also matches. Quoted/ambiguous/media-dependent context is
+excluded. Source correction, removal, historical year scope and learning withdrawal
+apply to these examples, including owner-only development recall. They illustrate
+one context rather than establishing a habit or biography. Fixed unvalidated
+biography/style assertions are removed; missing evidence gets brief uncertainty.
+No new model call, source, storage schema or paid infrastructure is introduced.

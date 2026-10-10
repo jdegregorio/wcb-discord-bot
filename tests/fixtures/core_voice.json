@@ -4,7 +4,7 @@
     "mode": "direct",
     "history": [],
     "target": "Who is your favorite football player, Trubot?",
-    "rubric": "Answer Thomas Jones directly, in the established brief casual voice. Do not invent another favorite or turn the answer into generic assistant commentary."
+    "rubric": "Without attributed source memory, do not invent a favorite player. Answer briefly and naturally. Real source-backed interests are evaluated separately in development Discord."
   },
   {
     "id": "recover_from_irrelevant_bot_premise",
@@ -30,13 +30,13 @@
       }
     ],
     "target": "What are you talking about? Who is your favorite player?",
-    "rubric": "Reset the unsupported spelling premise and answer Thomas Jones. Do not defend or repeat the bot's earlier error."
+    "rubric": "Reset the unsupported spelling premise. Without attributed source memory, do not invent a favorite player or defend the earlier bot mistake."
   },
   {
     "id": "unknown_baseball_allegiance",
     "mode": "direct",
     "history": [],
     "target": "Trubot, are you a Sox fan or a Cubs fan?",
-    "rubric": "Do not invent a permanent baseball allegiance or lack of interest. A light neutral answer is fine; the only established specific player preference is Thomas Jones, and other people or bot outputs cannot establish Andrew's fandom."
+    "rubric": "Do not invent a permanent baseball allegiance or lack of interest. Other people and previous bot output cannot establish Andrew fandom. Real source-backed recall is evaluated separately."
   }
 ]

@@ -1596,3 +1596,30 @@ in memory (221,337 bytes); source/hash metadata privately retained, no pixels or
 caption. No captured-archive match, so native visual coverage remains incomplete.
 Evidence [PR #52](https://github.com/jdegregorio/wcb-discord-bot/pull/52) includes
 these limits. Runtime source is unchanged from the tested release.
+
+## 2026-10-09 21:00 run: source-checked contextual voice
+
+- New managed worktree `trubot-daily-20261009-2100`, unique feature branch,
+  fetched base `01485e657bd3b21f3abf815ee6650007589477df`. Primary checkout and
+  older native/persona worktrees unchanged. No overlapping evolution PR; three
+  unrelated dependency PRs remain. Earlier persona prototype reconciled here.
+- Both planning phases recorded as H7 in research.md. Twenty catalog entries,
+  16 matching answer entries, only four current authored/setup pairs. Select at
+  most three with source references, unknown dates and explicit context-only roles.
+  Fixed unvalidated biography/habit assertions no longer supply personal evidence.
+- Six synthetic matched cases, 24 maintenance calls across baseline/three candidates:
+  unsupported legacy personal details 3/3 before to 0/3 after. Supported contrary
+  positions, excitement and timing retained. First candidates exposed robotic
+  fallback and unsupported apology, repaired before selection. Final social-action
+  answer remains less natural; no independent human or general fidelity claim.
+- Fresh structural audit: three league channels/latest100/14days, five older bot
+  replies/seven authenticated humans, 20 development replies and 12 reused historical
+  structural blocks. Three actual human posts and peer context reviewed in UI;
+  sparse spontaneous/current-release activity. No new learned observation.
+- Current-corpus selector gives three examples/2,462 bytes in about 56-66 ms.
+  No provider call added, no new persistence or migration. Source withdrawal,
+  correction, scope, ambiguous quotes/media, bounded context and year exclusions
+  have meaningful synthetic regression coverage. Actual delivery/release pending.
+- Private content-free references/counts at app-volume smoke-tests with 0600/0700
+  and established seven-day manual retention/withdrawal cleanup. No league probes,
+  source excerpts, derived answer text or credentials in Git/log artifacts.
