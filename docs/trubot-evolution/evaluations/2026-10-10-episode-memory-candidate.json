@@ -1,0 +1,84 @@
+{
+  "run": "2026-10-10-1300",
+  "base": "662938036b4782cc4a620e4492cce49b3e80d0c5",
+  "candidate_version": "2.12.0",
+  "state": "reviewable candidate; private provider approval pending",
+  "character_audit": {
+    "league_channels": 2,
+    "page_limit": 100,
+    "recent_days": 14,
+    "target_messages": 7,
+    "older_bot_messages": 5,
+    "peer_messages": 17,
+    "current_release_spontaneous_bot_messages": 0,
+    "private_archive_target_blocks": 33,
+    "source_exports": 7,
+    "heldout_target_blocks": 4,
+    "new_pixel_interpretations": 0
+  },
+  "initial_regressions": {
+    "cases": 14,
+    "baseline_failed": 11
+  },
+  "final_regressions": {
+    "cases": 24,
+    "passed": 24,
+    "handler_modes": [
+      "direct",
+      "followup",
+      "reaction"
+    ],
+    "all_selected_native_sources_refreshed": true
+  },
+  "quality": {
+    "locked_sync": "passed",
+    "format": "passed",
+    "lint": "passed",
+    "mypy": "passed",
+    "tests": 545,
+    "branch_coverage_percent": 96.67,
+    "build": "passed"
+  },
+  "private_offline_comparison": {
+    "cases_per_arm": 8,
+    "baseline_abstract_cases": 0,
+    "candidate_abstract_cases": 2,
+    "ordinary_original_pattern_punchlines": 0,
+    "context_bytes_before": [
+      6976,
+      6564
+    ],
+    "context_bytes_after": [
+      5547,
+      5061
+    ],
+    "distress_pattern_after_narrowing": false,
+    "provider_calls": 0,
+    "reply_quality_measured": false
+  },
+  "actual_discord": {
+    "baseline_questions": 1,
+    "actual_gateway_replies": 1,
+    "baseline_already_fitting": true,
+    "changed_deployed_scenario": "pending",
+    "no_league_test_posts": true
+  },
+  "blocker": {
+    "automatic_approval_rejections": 2,
+    "action": "Private held-out source/pattern OpenAI comparison",
+    "specific_human_approval": "pending",
+    "private_pattern_in_production": false
+  },
+  "production": {
+    "version": "2.11.3",
+    "digest": "sha256:d6beaca06f3387329051f4a39f6e7f1ef930f90a76c69bec7b726ffa6c2347af",
+    "mutated": false
+  },
+  "limitations": [
+    "No generated matched private study executed",
+    "No independent human grading",
+    "No broad fidelity or numeric humor multiplier measured",
+    "Continuous abstraction extraction remains separate",
+    "New release/deployment/real changed scenario incomplete"
+  ]
+}

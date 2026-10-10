@@ -1947,3 +1947,48 @@ this public validation and the new abstract-memory/humor direction. Final eviden
 CI, main revision and managed-worktree archive result are recorded in automation
 memory. Owned host/container comparison staging is removed; private content-free
 validation references remain under the documented retention/withdrawal path.
+
+
+## 2026-10-10 13:00 conditional episode-memory candidate
+
+Base 662938036b4782cc4a620e4492cce49b3e80d0c5, new managed worktree
+trubot-daily-20261010-1300 and feature/trubot-daily-20261010-1300. Previous
+release/evidence complete; no overlapping evolution PR. Primary and older
+worktrees untouched. Both planning phases and bounded authenticated character
+audit complete: 7 target/5 older bot/17 peers, two league channels/latest 100/14
+days; 33 unique attributed archive blocks/seven exports/four reserved holdouts.
+No new trait in public notes, independent human grader or image interpretation.
+
+H21a selects first-class conditional episode abstractions with linked contrary
+sources and authoritative invalidation. Candidate 2.12.0 preserves summary,
+conditions, limitations, confidence, temporal metadata and counterexample
+fingerprints. Ordinary relevant context omits pattern-only punchlines; factual
+support and explicit evidence/quote/time requests remain available. No schema,
+model, intake, participation, additional provider request or service change.
+Source corrections/suppression/withdrawal and shared spending remain authoritative.
+
+Baseline fails 11/14 initial cases. Candidate passes 24/24 final regressions,
+including three actual handler modes and all three selected source refreshes.
+All six gates pass: 545 tests, 96.67% branch coverage and wheel/sdist build.
+Eight same-input offline cases per arm find a conditional pattern in two relevant
+candidate contexts versus none in baseline; other six do not retrieve it.
+Original punchlines omitted; relevant packet sizes 6,976/6,564 to 5,547/5,061
+bytes. A broad-alias distress match is removed by narrower situations. This is
+measured context behavior, not measured generated fidelity or API savings.
+
+Actual owner development baseline produces one fitting joke through the gateway;
+it does not reproduce a joke failure or prove a candidate improvement. Specific
+private OpenAI study approval is pending after automatic approval review rejected
+the eight-call source/pattern baseline study and its unchanged reassessment.
+No refused provider call ran, no bypass, and the new pattern remains only in a
+mode-0600 disposable app-volume graph. Production 2.11.3 and its graph are unchanged.
+Publication/release/deployment and real changed acceptance remain open until
+specific approval and the planned validation complete. H22 creative amplification
+remains next, followed by context coverage, selective tools and generated scenes.
+
+[Candidate validation](evaluations/2026-10-10-episode-memory-candidate.json) preserves
+counts, method, contrary result and exact limitations. Reviewable PR, CI and final
+memory follow. Preserve this worktree for continuation; do not archive unfinished
+work. Private source/derived data is confined to approved app storage with existing
+retention and withdrawal. Spending caps remain USD 18/2/20, no provider research
+calls or paid infrastructure. Actual provider billing/pre-guard spend remain unknown.
