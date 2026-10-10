@@ -1,0 +1,48 @@
+{
+  "base_sha": "28f73177220b01cb7098e948f023cd2a860086b1",
+  "hypotheses": {
+    "H18": "variable; fresh actual follow-up succeeds",
+    "H19": "supported source-resolution enabling correction",
+    "H20": "supported timing intent correction"
+  },
+  "comparison": {
+    "same_initial_cases": 16,
+    "baseline_pass": 4,
+    "candidate_pass": 16,
+    "additional_resolver_cases": 17,
+    "production_handler_modes": 3,
+    "authenticated_old_quote_sources_baseline": 1,
+    "candidate": 0
+  },
+  "audit": {
+    "league_channels": 3,
+    "latest_limit_each": 100,
+    "window_days": 14,
+    "human_target": 7,
+    "older_bot": 5,
+    "peers": 17,
+    "current_release_spontaneous_bot": 0,
+    "overlapping_dev_bot_latest40": 20,
+    "new_persona_trait": false,
+    "pixel_interpretation": false,
+    "independent_human_grading": false
+  },
+  "cost": {
+    "provider_research_calls": 0,
+    "new_recurring_calls": 0,
+    "added_paid_services": 0,
+    "monthly_guard_preserved": true
+  },
+  "limits": [
+    "No measured generated-answer gain; baseline fabricated-quote reply already abstained.",
+    "H18 native date variability unresolved.",
+    "Incomplete native/visual context and semantic coverage."
+  ],
+  "real_post_release_smoke": "pending",
+  "quality_gates": {
+    "all_six": "passed",
+    "tests": 521,
+    "branch_coverage_percent": 96.56,
+    "new_regressions": 36
+  }
+}

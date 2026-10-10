@@ -327,3 +327,12 @@ older next-step notes: H18 source-qualified timing, H6/H2 scope/conceptual preci
 durable native/visual graph context, then H3 selective tools/skills and requested
 generated U.P. aurora/trail-camera scenes. Clock/model experiments justify no change.
 Keep all source, privacy, participation, withdrawal and existing spending rules.
+
+
+09:00 decision: validate H19/H20 focused referential recall as a coherent enabling
+increment. Fresh real H18 native-date follow-up succeeds, so its cause remains
+variable/unresolved. Explicit quotation priority, topic boundaries and qualified
+date wording should prevent wrong-reference evidence while retaining source
+continuity. Acceptance and disconfirmation are in research.md. H6/H2 semantic
+precision, durable graph/context, then H3 selective tools/skills and requested
+generated U.P. aurora/trail-camera scenes follow. No new persona trait/model/call.

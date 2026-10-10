@@ -1852,3 +1852,26 @@ Do not infer all real smoke checks passed from the intermediate release.
 
 [Evidence PR #59](https://github.com/jdegregorio/wcb-discord-bot/pull/59) preserves
 this release record. Final main CI and worktree archive outcome are in automation memory.
+
+
+## 2026-10-10 09:00 source-qualified referential recall
+
+Base28f73177220b01cb7098e948f023cd2a860086b1; fresh managed worktree
+trubot-daily-20261010-0500-7986, feature/trubot-daily-20261010-0900-7986.
+The setup name is a leftover scheduling label; this is a separate fresh run after
+the completed05:00 task. Primary and older worktrees are untouched. No overlapping
+project PR. Both planning phases and bounded authenticated character audit complete.
+
+H18's previous exact-day miss does not repeat in the fresh actual owner sequence;
+source creation day agrees. No timing prompt change selected. H19/H20 source lookup
+is selected enabling work: baseline12/16 targeted cases fail, candidate16/16 pass;
+17 additional boundaries/3 production handler modes. Authenticated native handler
+stale quote1 to0 sources after a topic boundary. Real baseline fabricated quote
+already abstains; no generated fidelity gain claimed. Existing source, withdrawal,
+readiness, scope, participation and USD18/2/20 ledger remain authoritative. First
+container staging failed safely; wrong-import output discarded and correct staged
+module verified. Runtime release and actual post-deployment checks remain pending.
+See research.md and the candidate evaluation for full hypotheses and limitations.
+
+Candidate all six gates pass:521 tests,96.56% branch coverage,36 new regressions.
+Version2.11.3. Runtime PR/CI/release and post-release real tests follow.

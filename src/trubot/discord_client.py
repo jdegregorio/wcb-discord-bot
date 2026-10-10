@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import asyncio
 import logging
-import re
 from collections import defaultdict
 from collections.abc import Awaitable, Callable, Sequence
 from contextlib import suppress
@@ -30,8 +29,6 @@ from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable
 from trubot.memory import (
     ContextMemory,
-    RecallPresentation,
-    recall_presentation,
     recent_context_unavailable,
     recent_recall,
     terms,
@@ -43,6 +40,7 @@ from trubot.participation import (
     ParticipationTracker,
     SchedulingAction,
 )
+from trubot.recall_reference import quotation_unavailable, recall_quotation
 from trubot.vision import ImageCollector
 from trubot.voice_memory import voice_context
 
@@ -525,17 +523,10 @@ class TruBotClient(discord.Client):
         # Strip the speaker label once, preserving punctuation in the actual request.
         request = (target or "").split(": ", 1)[-1]
         query = request
-        quotation = ""
-        if recall_presentation(request) is not RecallPresentation.CONTENT and re.search(
-            r"\b(?:that|this|it)\b", request, re.IGNORECASE
-        ):
-            for message in reversed(history[-8:]):
-                if message.role != "assistant":
-                    continue
-                quotes = re.findall(r'[“"]([^”"]{8,500})[”"]', message.content)
-                if quotes:
-                    quotation = quotes[0]
-                    break
+        lookup = recall_quotation(request, history)
+        if lookup == "":
+            return quotation_unavailable()
+        quotation = lookup or ""
         if not (terms(query) or years(query)):
             query += " " + " ".join(
                 m.content.split(": ", 1)[-1] for m in history[-4:] if m.role == "user"
@@ -611,11 +602,13 @@ class TruBotClient(discord.Client):
                 )
                 voice = (
                     ""
-                    if recent_recall(request)
+                    if recent_recall(request) or lookup is not None
                     else await asyncio.to_thread(
                         voice_context, memory.learning, query, guild_id=source_guild_id
                     )
                 )
+                if lookup is not None and not recalled:
+                    return quotation_unavailable()
                 return "\n".join(part for part in (recalled, voice) if part)
             return ""
         except LearningUnavailable:

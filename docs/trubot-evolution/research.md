@@ -777,3 +777,77 @@ calls/cost without measured benefit. H18 now precedes H6/H2; new matched source
 coverage or contrary replies can reprioritize. H17 absence-language exploration is
 lower priority: one empty reply uses verification vocabulary, with no source-backed
 habit claim or new prompt assumption.
+
+
+## 2026-10-10 09:00 research and decision
+
+Fetched base 28f73177220b01cb7098e948f023cd2a860086b1 in a fresh managed
+worktree. Prior 05:00 work is complete in 2.11.2; older source-voice and native
+prototypes have their delivered milestones reconciled on main. No overlapping
+project PR is open. Primary checkout and older worktrees remain untouched.
+
+Phase 1 hypotheses, defined before candidate comparison:
+
+- H18 native timing: prior real date follow-up declined a dated source. A fresh
+  owner-authored native quote plus unmentioned date follow-up now answers a day.
+  Verify against authenticated creation time before classifying success. This is
+  contrary evidence to a universal timestamp defect, not proof of reliability.
+  Cause remains unresolved. Do not ship the proposed timing prompt on that basis.
+- H19 focused quotation resolution: the handler skips newer nonquoted answers
+  when scanning eight turns, and ignores explicit quotation text in the current
+  timing/evidence request. Thus an older quote can become the lookup key across
+  a topic change. Existing exact-source matching verifies the wrong referent.
+  Baseline source-handler and synthetic cases will measure this independently
+  from generated answers. A real fabricated-quote control already abstains,
+  so generated quality gain is not established. Correct the lookup so that a
+  friend's question receives evidence for its own referent.
+  Acceptance: current single explicit quote wins; multiple distinct quotes
+  abstain from quotation lookup; a new subject stops lookback; timing/evidence
+  chains retain the original quote; peer text cannot seed implicit lookup;
+  current attributed sources, edits, deletion, year/guild scope and withdrawal
+  remain required. Baseline/candidate use identical sources and histories.
+  Disconfirming cases: loss of supported continuity, invented quote/date,
+  wrong-topic source, broader access, or source lifecycle regression.
+- H20 qualified date wording: `What exact day?` is currently classified as ordinary
+  recall while `What day?` is timing. Test exact/specific/calendar day/month/year
+  against ordinary year recall, news and non-timing controls. Handle these
+  phrasings so that source dates are available only when asked. This is a narrow
+  intent correction, not a habitual voice assumption or calendar-coverage claim.
+
+Audit method: authenticated pinned membership, three allowed league channels,
+latest100 each/14 days: 7 target, 5 older bot, 17 peer messages in one channel;
+other two have none. No spontaneous current-release league response. Latest40
+private development messages include20 bot replies and overlap previous smoke
+checks. Agent UI review of current development replies found direct native recall,
+correct preference and one natural date answer; unsupported quote declined with
+verification vocabulary. Human source quotations are lookup keys, never bot-derived
+traits. No new personality preference, visual interpretation or emotional/humor
+trend is inferred. Full independent human grading and wider native/image history
+remain gaps. Provider-assisted research is unnecessary for deterministic routing.
+
+Phase 2: select one source-qualified referential recall increment, H19/H20, subject
+to baseline reproduction and regression acceptance. This is justified enabling
+work; actual generated-answer improvement is not yet measured. Preserve H18 as
+variable/unresolved, followed by H6 scope/H2 conceptual precision and durable
+native/visual graph context. H3 selective skills/tools and requested generated U.P.
+aurora/trail-camera scenes remain exploratory, requiring sharing/pixel study,
+provenance, guarded pricing, same-case comparisons and real attachment delivery.
+No model, service, schema, intake, participation or additional provider call is
+required. Existing maintenance/runtime ledger and four-hour study pacing remain.
+New contrary source/response evidence can reprioritize again.
+
+
+H19/H20 candidate outcome: baseline12/16 failing, candidate16/16 passing on
+identical synthetic stores/histories. Seventeen additional resolver boundaries
+and three full direct/follow-up/reaction handler cases preserve current-source
+matching and no development learning. Same authenticated native source handler
+selected an old unrelated quote before and no quote afterward (1 to0 sources,
+voice omitted). No provider research calls. First staging attempt failed against
+the read-only container; its baseline-import result was discarded. Successful
+stream extraction into ephemeral /tmp verified the candidate module path before
+rerunning. Main readiness remained healthy after both HTTP-only helper clients.
+Actual fabricated-quote baseline abstained, so no measured generated-answer gain.
+Fresh native date is authenticated to the source creation day; H18 remains variable.
+UI contextual audit confirms older pessimistic/unsupported sports additions around
+human enthusiasm; these predate current fixes, no new trait inferred or current
+spontaneous fidelity measured. No image-dependent interpretation in this increment.

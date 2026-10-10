@@ -157,3 +157,9 @@ older next-step notes: H18 source-qualified timing, H6/H2 scope/conceptual preci
 durable native/visual graph context, then H3 selective tools/skills and requested
 generated U.P. aurora/trail-camera scenes. Clock/model experiments justify no change.
 Keep all source, privacy, participation, withdrawal and existing spending rules.
+
+
+2026-10-10 09:00: H19/H20 focused quotation routing is selected enabling work;
+H18 has contrary fresh native-date evidence and remains unresolved. No harness
+migration or model prompt change is justified. Retain H6/H2, durable context,
+then bounded tools/skills and generated outdoor scene prototypes. See research.md.
