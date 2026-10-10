@@ -1941,3 +1941,9 @@ Six standalone daily times, GPT-6.1 Sol/Extra High and notification preference
 are verified unchanged. [Public evaluation](evaluations/2026-10-10-referential-recall-release.json)
 records counts, costs, real pass/partial outcomes and limitations. This evidence
 follow-up changes documentation only; installed runtime remains the tested release.
+
+[Evidence PR #61](https://github.com/jdegregorio/wcb-discord-bot/pull/61) preserves
+this public validation and the new abstract-memory/humor direction. Final evidence
+CI, main revision and managed-worktree archive result are recorded in automation
+memory. Owned host/container comparison staging is removed; private content-free
+validation references remain under the documented retention/withdrawal path.
