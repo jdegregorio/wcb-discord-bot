@@ -8,7 +8,10 @@ The current ordered plan is maintained in
 
 ## Current delivery order
 
-1. Validate source-qualified reply scope (H6) and expand held-out conceptual
+1. Repair the reproduced native-date follow-up miss (H18), preserving unknown
+   archive dates and natural broad recall. H14/H16 rolling quotes and fresh-focus
+   evidence are delivered in 2.11.2; seven real checks pass, one timing check is partial.
+   Then validate source-qualified reply scope (H6) and expand held-out conceptual
    recall and reconcile unfinished persona/context work. H5 is delivered in 2.9.3.
    H7 current-source voice is delivered in 2.10.0; H10 recent native recall and
    bounded source-linked setup are delivered in 2.11.0.
@@ -144,3 +147,12 @@ attachment handling. Complete and retest this in 2.11.2 within the same incremen
 Clock framing had no demonstrated benefit; model/guard/intake remain unchanged.
 H6/H2, durable native/visual graph context, selective tools and generated outdoor
 scenes retain the recorded order after this supported completion correction.
+
+
+05:00 verified result: H14/H16 delivered in 2.11.2, 485 tests and healthy immutable
+Pi runtime. Seven actual Discord checks fully verify; H18 native-date follow-up
+remains partial even with a fresh timestamped source. This latest order supersedes
+older next-step notes: H18 source-qualified timing, H6/H2 scope/conceptual precision,
+durable native/visual graph context, then H3 selective tools/skills and requested
+generated U.P. aurora/trail-camera scenes. Clock/model experiments justify no change.
+Keep all source, privacy, participation, withdrawal and existing spending rules.
