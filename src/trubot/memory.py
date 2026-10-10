@@ -222,7 +222,8 @@ def recall_presentation(request: str) -> RecallPresentation:
     if re.search(r"\b(?:source|evidence|prove|proof|archive|export|provenance)\b", request):
         return RecallPresentation.EVIDENCE
     if re.search(
-        r"\b(?:when|date|dated|timestamp)\b|\b(?:which|what) (?:day|month|year)\b|\bhow long\b"
+        r"\b(?:when|date|dated|timestamp)\b|\b(?:which|what) "
+        r"(?:(?:exact|specific|precise|calendar) )?(?:day|month|year)\b|\bhow long\b"
         r"|\b(?:before|after|earlier|later)\b|\b(?:really|actually|definitely|sure)\b.*\b(?:19|20)\d{2}\b",
         request,
     ):

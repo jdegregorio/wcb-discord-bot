@@ -382,3 +382,15 @@ No new state, retention, provider call, model, participation or spending policy.
 Freshly checked memory follows previous conversation and precedes the current
 question, including its image pixels. Earlier bot replies remain conversation
 context and cannot override authenticated human memory evidence.
+
+
+## Focused quotation recall (2.11.3)
+
+Timing and evidence requests prioritize one explicit quotation in the current
+question. Implicit quotation lookup follows only an uninterrupted timing/evidence
+chain, stops at a new subject, and rejects ambiguous quotations. Every key still
+requires current attributed source support; bot/peer wording never establishes a
+human statement. Named topics retain topical search. Qualified day/month/year
+questions use timing presentation, while ordinary recall keeps natural language.
+Unrelated voice examples are omitted from quotation lookup. No new provider call,
+source scope, storage schema, model, participation rule or spending allowance.

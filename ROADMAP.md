@@ -8,8 +8,10 @@ The current ordered plan is maintained in
 
 ## Current delivery order
 
-1. Repair the reproduced native-date follow-up miss (H18), preserving unknown
-   archive dates and natural broad recall. H14/H16 rolling quotes and fresh-focus
+1. Deliver source-qualified referential recall (H19/H20): focused quotations,
+   topic boundaries and qualified timing intent. H18 remains variable after a
+   fresh real date follow-up succeeds. Preserve unknown archive dates and natural
+   broad recall. H14/H16 rolling quotes and fresh-focus
    evidence are delivered in 2.11.2; seven real checks pass, one timing check is partial.
    Then validate source-qualified reply scope (H6) and expand held-out conceptual
    recall and reconcile unfinished persona/context work. H5 is delivered in 2.9.3.

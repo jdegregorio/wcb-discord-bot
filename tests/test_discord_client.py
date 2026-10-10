@@ -663,7 +663,8 @@ async def test_source_followup_recovers_quote_from_current_human_evidence_only(t
             "Tim: What source supports that 2020 memory?",
             [ConversationMessage("assistant", "“This bot quote is completely invented.”")],
         )
-        assert fabricated == ""
+        assert "QUOTATION RECALL" in fabricated
+        assert quote not in fabricated
     finally:
         await client.close()
 

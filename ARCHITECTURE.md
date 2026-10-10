@@ -166,3 +166,15 @@ are not retrieved here. Context is ephemeral and never added to learning or the
 memory graph. Source edits, deletion and withdrawal invalidate the recalled focus.
 Full native history, durable peer/thread graph coverage and broader conceptual
 recall remain future work. See the research/progress records for measured results.
+
+
+## Focused quotation recall (2.11.3)
+
+Timing and evidence requests prioritize one explicit quotation in the current
+question. Implicit quotation lookup follows only an uninterrupted timing/evidence
+chain, stops at a new subject, and rejects ambiguous quotations. Every key still
+requires current attributed source support; bot/peer wording never establishes a
+human statement. Named topics retain topical search. Qualified day/month/year
+questions use timing presentation, while ordinary recall keeps natural language.
+Unrelated voice examples are omitted from quotation lookup. No new provider call,
+source scope, storage schema, model, participation rule or spending allowance.
