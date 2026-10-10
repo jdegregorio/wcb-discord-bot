@@ -8,32 +8,38 @@ The current ordered plan is maintained in
 
 ## Current delivery order
 
-1. Deliver source-qualified referential recall (H19/H20): focused quotations,
-   topic boundaries and qualified timing intent. H18 remains variable after a
-   fresh real date follow-up succeeds. Preserve unknown archive dates and natural
-   broad recall. H14/H16 rolling quotes and fresh-focus
-   evidence are delivered in 2.11.2; seven real checks pass, one timing check is partial.
-   Then validate source-qualified reply scope (H6) and expand held-out conceptual
-   recall and reconcile unfinished persona/context work. H5 is delivered in 2.9.3.
-   H7 current-source voice is delivered in 2.10.0; H10 recent native recall and
-   bounded source-linked setup are delivered in 2.11.0.
-   Delivered: qualified self-reports in 2.9.0, study diagnosis in 2.9.1 and bounded
-   noun-form retrieval in 2.9.2. Four of six new semantic phrasings still miss the
-   reviewed connection; source-qualified expectations and specificity come first.
-2. Expand held-out conceptual recall and native conversational neighborhoods.
-   Preserve peer setup, reply/thread relationships, corrections and uncertainty;
-   validate actual responses as well as source retrieval.
-3. Prototype selective skills and tools against the current Responses baseline.
-   Compare application-owned bounded tools, the Python Agents SDK and a managed
-   harness using the same cases. Keep participation and posting in the application.
-   Select for measured quality, robustness and maintainability; give little weight
-   to implementation effort. See [the harness study](docs/agent-harness.md).
-4. Prototype explicitly requested U.P. northern-lights and trail-camera wildlife
-   images with concise natural captions. Study attributed sharing contexts and
-   actual pixels first. Deliver generated images as Discord attachments with
-   clear generated provenance; never imply a real sighting or real source photo.
-5. Enable additional skills/context sources and occasional ambient generated
-   pictures only after requested flows pass quality, budget and delivery checks.
+1. Build useful abstract episode memories (H21): infer tentative values,
+   humor mechanisms, emotional responses and ways of relating to people across
+   attributed contexts. Compare contrary episodes and retrieve conditional
+   summaries so that replies benefit without quoting the archive. Start with one
+   bounded operational abstraction increment, not a comprehensive profile.
+2. Test and ship deliberate comedic amplification (H22): Joe authorizes roughly
+   two to three times the real Andrew's humor and more playful Thomas Jones
+   cracks. Novel jokes are creative bot behavior, not proof of a human trait or
+   real memory. Validate fun, variety, warmth and timing against held-out contexts;
+   avoid mandatory callbacks or redirecting every conversation to the bit.
+3. Expand durable native conversational neighborhoods and visual graph context.
+   Preserve peer setup, reply/thread relationships, corrections and uncertainty.
+   Support abstraction study and broader semantic recall, not only exact quotes.
+4. Prototype selective skills and tools against the current Responses baseline.
+   Compare bounded application tools, the Python Agents SDK and a managed harness
+   on identical cases. Keep participation and posting in the application. Choose
+   for measured quality, robustness and maintainability. See
+   [the harness study](docs/agent-harness.md).
+5. Prototype requested U.P. northern-lights and trail-camera wildlife pictures
+   with short natural captions. Study sharing contexts and actual pixels, reserve
+   spending and deliver generated attachments with clear generated provenance.
+   Consider ambient pictures only after requested delivery is validated.
+
+H19/H20 referential routing is delivered in 2.11.3. Ten of eleven actual owner
+Discord checks pass; native timing follow-up H18 remains variable. Literal quote
+and date repairs are secondary reliability work unless a material grounding or
+privacy regression takes precedence. H6 source attribution and H2 semantic
+precision remain acceptance concerns within abstract memory work.
+
+This order incorporates Joe's 2026-10-10 direction and supersedes historical
+priority paragraphs below. Amplified humor is authorized but not yet deployed
+or measured. No new personality inference is established by this release.
 
 Each item requires a hypothesis, baseline, disconfirming cases and a bounded
 experiment. Documentation capabilities and successful ingestion are enabling

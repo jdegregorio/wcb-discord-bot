@@ -815,9 +815,9 @@ Phase 1 hypotheses, defined before candidate comparison:
   intent correction, not a habitual voice assumption or calendar-coverage claim.
 
 Audit method: authenticated pinned membership, three allowed league channels,
-latest100 each/14 days: 7 target, 5 older bot, 17 peer messages in one channel;
-other two have none. No spontaneous current-release league response. Latest40
-private development messages include20 bot replies and overlap previous smoke
+latest 100 each/14 days: 7 target, 5 older bot, 17 peer messages in one channel;
+other two have none. No spontaneous current-release league response. Latest 40
+private development messages include 20 bot replies and overlap previous smoke
 checks. Agent UI review of current development replies found direct native recall,
 correct preference and one natural date answer; unsupported quote declined with
 verification vocabulary. Human source quotations are lookup keys, never bot-derived
@@ -837,11 +837,11 @@ required. Existing maintenance/runtime ledger and four-hour study pacing remain.
 New contrary source/response evidence can reprioritize again.
 
 
-H19/H20 candidate outcome: baseline12/16 failing, candidate16/16 passing on
+H19/H20 candidate outcome: baseline 12/16 failing, candidate 16/16 passing on
 identical synthetic stores/histories. Seventeen additional resolver boundaries
 and three full direct/follow-up/reaction handler cases preserve current-source
 matching and no development learning. Same authenticated native source handler
-selected an old unrelated quote before and no quote afterward (1 to0 sources,
+selected an old unrelated quote before and no quote afterward (1 to 0 sources,
 voice omitted). No provider research calls. First staging attempt failed against
 the read-only container; its baseline-import result was discarded. Successful
 stream extraction into ephemeral /tmp verified the candidate module path before
@@ -851,3 +851,94 @@ Fresh native date is authenticated to the source creation day; H18 remains varia
 UI contextual audit confirms older pessimistic/unsupported sports additions around
 human enthusiasm; these predate current fixes, no new trait inferred or current
 spontaneous fidelity measured. No image-dependent interpretation in this increment.
+
+
+### H19/H20 deployed outcome and H18 limitation
+
+PR #60, merged 38058d1d13ef29d8871db37e4930548c435a4157, releases 2.11.3.
+The tested and merged runtime trees match. All six gates pass on both revisions:
+521 tests, 96.56% branch-inclusive coverage, 25 modules checked, build complete.
+Both image architectures publish and pi-app deploys the immutable digest recorded
+in progress.md. Installed source hashes match all 25 tested Python modules.
+
+Eleven actual owner messages and eleven actual gateway replies in the confirmed
+private development general channel: ten acceptance checks pass, one short native
+exact-day follow-up declines an available date. Explicit current-quote UTC/Pacific
+dates, topic boundary, fabricated quote, ordinary preference, historical recall,
+unknown date, evidence continuity and empty recent window pass. Source comparisons
+and agent contextual UI review accompany keyword screens. Ordinary preference
+and broad historical replies avoid routine metadata disclaimers. Unsupported and
+empty-window answers still use somewhat mechanical verification vocabulary.
+No independent human grader or spontaneous current-release league reply sample;
+no new humor, emotional or personality pattern is validated.
+
+Four guarded provider probes reuse the same ten-turn actual history and runtime
+model/settings, two phrasings per baseline/installed configuration. Short lookup
+selects broad sources and abstains in baseline, while installed selects the current
+source and answers its date. Full wording succeeds in baseline but installed finds
+zero sources and abstains. Live source verification outcomes differ; no measured
+timeout cause or isolated generation effect is established. This is inconclusive
+for H18 and does not establish a timing reliability improvement or absence of
+regressions. No timing prompt change is shipped. Routing acceptance remains
+supported by deterministic/source-handler evidence; broad generated fidelity is
+unmeasured. Public case counts and limitations are in the release evaluation.
+
+### Phase 2 update: abstract memory and creative humor, 2026-10-10
+
+Joe explicitly redirects priorities away from exact quotes toward concepts and
+generalized memories about values, humor and personality inferred from each
+interaction. He authorizes 2-3x comedic amplification and more Thomas Jones cracks.
+These are product directions, not new private observations or proof that a runtime
+change improves quality. The distillation policy already supports humor/style but
+prefers one narrow source-0 proposition; recurring abstractions in production are
+sparse. Current voice rules require supported/relevant callbacks and discourage
+subject redirection. Their effect on fun is plausible and unmeasured, not causal
+proof of the reported loss. Existing independent-episode, source and correction
+requirements remain useful for human evidence. Creative jokes need not be exact
+historical quotations.
+
+H21 - abstract episode memory (prospective, unresolved): conditional summaries
+of repeated or tentative patterns should make responses more fitting, so that
+Trubot remembers how Andrew relates and reacts rather than merely what he said.
+Baseline: current narrow extraction and sparse reviewed graph. Proposed mechanism:
+cluster independent attributed episodes around a pattern, record evidence and
+counterexamples with conditions, confidence and lifecycle metadata, then retrieve
+concise abstractions for relevant replies. Study at least twelve contextual episodes
+across multiple settings; reserve at least four genuinely held-out episodes before
+extraction. Counts are planned, not achieved. A single interaction can update a
+tentative hypothesis, not establish a universal trait. Inspect actual pixels if
+interpretation depends on an image. Acceptance: one useful private operational
+abstraction with inspectable sources, contrary-case handling, withdrawal/edit/delete
+propagation, relevant retrieval and ordinary natural language. Compare current and
+candidate on the same held-out human contexts, direct/follow-up/reaction controls
+and actual Discord. Disconfirm if summaries flatten contradictions, invent motives,
+make replies less specific/warm, or encourage mechanical catchphrases. No behavior
+benefit has been measured. Use existing volume and maintenance ledger.
+
+H22 - creative humor amplification (prospective, unresolved): an explicit bot
+performance policy, grounded in studied humor mechanisms but freer to invent
+punchlines and Thomas Jones bits, should be more entertaining without losing
+contextual judgment. Baseline is current production voice and actual responses;
+old bot output can establish prior bot behavior but cannot establish human traits.
+Compare unchanged, moderate and stronger amplification on the same at least
+sixteen predeclared held-out contexts, including banter, celebration, disagreement,
+unrelated subjects and difficult news. Counts and success rules must be locked
+before generation; report disagreement and evaluator limitations. The requested
+2-3x is a creative intensity target, not a measurable established multiplier.
+Acceptance: contextual review prefers amplified humor in eligible banter, with no
+invented factual memories, repetitive compulsory callbacks, dismissive celebration
+or inappropriate grief jokes; retain brief natural responses and abstention where
+needed. Actual owner-authored development conversations must test novel jokes,
+follow-up continuity, Thomas Jones opportunities and contrary contexts. Seek human
+feedback when available without delegating roadmap ownership. Reject or reduce
+amplification if fun rises only through repetition/derailment or emotional care
+falls. No humor amplification is deployed by 2.11.3. Keep one ordinary runtime
+request and current participation/spending rules unless measured evidence justifies
+a different design.
+
+Ordered next increments: H21 bounded abstract memory, H22 creative humor,
+contextual native/visual graph coverage, selective tools/skills, requested generated
+outdoor images. H18 literal timing remains secondary reliability. New grounding or
+privacy regressions can interrupt this order. Automation prompt is updated with
+the same direction; six daily standalone runs, model/reasoning, notification and
+budget settings are preserved.

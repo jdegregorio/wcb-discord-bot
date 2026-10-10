@@ -1,0 +1,312 @@
+{
+  "release": "2.11.3",
+  "base_sha": "28f73177220b01cb7098e948f023cd2a860086b1",
+  "runtime_pr": 60,
+  "runtime_commit": "38058d1d13ef29d8871db37e4930548c435a4157",
+  "candidate_commit": "5c388deb79a6aa77b3a2330ea0243514eb054eff",
+  "tested_merged_tree": "268870a79d849f3c086f822b1ce2600ff3b319b0",
+  "ci": {
+    "pr": 38079143742,
+    "main": 38079224381,
+    "image_publish": 38079298482,
+    "all": "success",
+    "architectures": [
+      "linux/amd64",
+      "linux/arm64"
+    ]
+  },
+  "quality_gates": {
+    "all_six": "passed on candidate and merged runtime",
+    "tests": 521,
+    "branch_coverage_percent": 96.56,
+    "new_regressions": 36
+  },
+  "installed_source": {
+    "version": "2.11.3",
+    "module_count": 25,
+    "all_match": true
+  },
+  "deterministic_same_cases": {
+    "count": 16,
+    "baseline_pass": 4,
+    "candidate_pass": 16,
+    "additional_boundaries": 17,
+    "production_handler_modes": 3
+  },
+  "installed_source_checks": {
+    "checks": 5,
+    "pass": 5,
+    "cases": [
+      {
+        "case": "explicit-native",
+        "sources": 1,
+        "exact_match": true,
+        "empty": false,
+        "voice": false
+      },
+      {
+        "case": "known-chain",
+        "sources": 1,
+        "exact_match": true,
+        "empty": false,
+        "voice": false
+      },
+      {
+        "case": "fabricated-focus",
+        "sources": 0,
+        "exact_match": false,
+        "empty": true,
+        "voice": false
+      }
+    ],
+    "unrelated_old_quote_selected": false,
+    "non_owner_denied": true,
+    "dev_scope_verified": true
+  },
+  "real_discord": {
+    "owner_questions": 11,
+    "gateway_replies": 11,
+    "pass": 10,
+    "partial": 1,
+    "cases": [
+      {
+        "case": "native-quote",
+        "present": true,
+        "reply": true,
+        "passed": true,
+        "natural_content": true,
+        "latency_seconds": 4.63
+      },
+      {
+        "case": "qualified-followup",
+        "present": true,
+        "reply": true,
+        "passed": false,
+        "natural_content": true,
+        "latency_seconds": 7.693
+      },
+      {
+        "case": "explicit-utc",
+        "present": true,
+        "reply": true,
+        "passed": true,
+        "natural_content": true,
+        "latency_seconds": 3.142
+      },
+      {
+        "case": "explicit-pacific",
+        "present": true,
+        "reply": true,
+        "passed": true,
+        "natural_content": true,
+        "latency_seconds": 3.168
+      },
+      {
+        "case": "invalid-explicit",
+        "present": true,
+        "reply": true,
+        "passed": true,
+        "natural_content": true,
+        "latency_seconds": 2.622
+      },
+      {
+        "case": "baseball",
+        "present": true,
+        "reply": true,
+        "passed": true,
+        "natural_content": true,
+        "latency_seconds": 4.768
+      },
+      {
+        "case": "new-topic-boundary",
+        "present": true,
+        "reply": true,
+        "passed": true,
+        "natural_content": true,
+        "latency_seconds": 3.6
+      },
+      {
+        "case": "historical-quote",
+        "present": true,
+        "reply": true,
+        "passed": true,
+        "natural_content": true,
+        "latency_seconds": 2.936
+      },
+      {
+        "case": "unknown-day",
+        "present": true,
+        "reply": true,
+        "passed": true,
+        "natural_content": true,
+        "latency_seconds": 4.806
+      },
+      {
+        "case": "evidence-chain",
+        "present": true,
+        "reply": true,
+        "passed": true,
+        "natural_content": true,
+        "latency_seconds": 4.539
+      },
+      {
+        "case": "empty-window",
+        "present": true,
+        "reply": true,
+        "passed": true,
+        "natural_content": true,
+        "latency_seconds": 2.97
+      }
+    ],
+    "latency_median_seconds": 3.6,
+    "latency_range_seconds": [
+      2.622,
+      7.693
+    ],
+    "independent_human_grader": false,
+    "methods": [
+      "authenticated current-source comparisons",
+      "agent contextual UI review",
+      "bounded keyword screens"
+    ],
+    "main_heartbeat_after_helpers": true
+  },
+  "matched_provider_probe": {
+    "baseline": {
+      "phase": "baseline",
+      "history_turns": 10,
+      "model": "gpt-6-luna",
+      "cases": [
+        {
+          "question_kind": "short",
+          "source_count": 5,
+          "current_native_match": false,
+          "date_correct": false,
+          "abstained": true,
+          "latency_seconds": 5.704
+        },
+        {
+          "question_kind": "full",
+          "source_count": 1,
+          "current_native_match": true,
+          "date_correct": true,
+          "abstained": false,
+          "latency_seconds": 1.488
+        }
+      ],
+      "provider_requests": 2,
+      "no_discord_writes": true,
+      "no_raw_persistence": true
+    },
+    "installed": {
+      "phase": "installed",
+      "history_turns": 10,
+      "model": "gpt-6-luna",
+      "cases": [
+        {
+          "question_kind": "short",
+          "source_count": 1,
+          "current_native_match": true,
+          "date_correct": true,
+          "abstained": false,
+          "latency_seconds": 2.793
+        },
+        {
+          "question_kind": "full",
+          "source_count": 0,
+          "current_native_match": false,
+          "date_correct": false,
+          "abstained": true,
+          "latency_seconds": 1.539
+        }
+      ],
+      "provider_requests": 2,
+      "no_discord_writes": true,
+      "no_raw_persistence": true
+    },
+    "result": "inconclusive: short source routing improves; full installed probe gets zero sources while baseline succeeds; cause and isolated generation effect unknown"
+  },
+  "character_audit": {
+    "league_channels": 3,
+    "latest_limit_each": 100,
+    "window_days": 14,
+    "target_human": 7,
+    "older_bot": 5,
+    "peers": 17,
+    "current_release_spontaneous_bot": 0,
+    "development_latest40_bot": 20,
+    "development_overlap": true,
+    "new_trait_inferred": false,
+    "pixel_interpretation": false,
+    "post_release_review": "ordinary recall direct/natural; timing miss and verification vocabulary remain; broader fidelity unmeasured"
+  },
+  "health": {
+    "at": "2026-10-10T19:32:20.733743+00:00",
+    "started_at": "2026-10-10T19:21:30.370959009Z",
+    "image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:d6beaca06f3387329051f4a39f6e7f1ef930f90a76c69bec7b726ffa6c2347af",
+    "revision": "38058d1d13ef29d8871db37e4930548c435a4157",
+    "health": "healthy",
+    "restarts": 0,
+    "events": {
+      "errors": 0,
+      "response_failures": 0,
+      "disconnects": 0,
+      "learning_pauses": 0,
+      "memory_warnings": 0,
+      "study_pauses": 0,
+      "replies": 11,
+      "batches": 12
+    },
+    "heartbeat": true
+  },
+  "previous_image_digest": "sha256:b6f33b3c98e5e1eb57dd37f793f1670b961d7bf13143bfa1e0934e751a8543c1",
+  "deployment": "existing locked pi-app transaction, no rollback needed",
+  "source_continuity": {
+    "native_messages": 34,
+    "archive_documents": 16,
+    "archive_origins": 27,
+    "archive_blocks": 4299,
+    "target_blocks": 412,
+    "eligible_blocks": 405,
+    "visual_episodes": 115,
+    "assets": 96,
+    "graph_human_sources": 439,
+    "graph_episodes": 554,
+    "graph_edges": 1011,
+    "no_new_derived_persona": true,
+    "identity_corrections_withdrawal_preserved": true
+  },
+  "cost": {
+    "month_conservative_usd": 0.07757748,
+    "runtime_usd": 0.03666406,
+    "maintenance_usd": 0.04091342,
+    "run_observed_delta_usd": 0.003807275,
+    "research_requests": 4,
+    "research_delta_usd": 0.000708325,
+    "settled_attempts": 353,
+    "unsettled_attempts": 0,
+    "monthly_guard_usd": 20,
+    "runtime_guard_usd": 18,
+    "maintenance_guard_usd": 2,
+    "added_recurring_calls": 0,
+    "added_paid_services": 0,
+    "prior_october_and_actual_billing_unknown": true
+  },
+  "privacy": "Private references contain only IDs/timestamps/pass-fail. No raw exchanges or answers in artifacts. Distinct ephemeral helper heartbeat; no league test posts or development learning.",
+  "priority_update": {
+    "H21": "abstract episode-backed memory, prospective",
+    "H22": "authorized 2-3x creative humor and Thomas Jones callbacks, prospective",
+    "H18": "secondary unresolved timing reliability",
+    "automation_prompt_updated": true,
+    "schedule_model_reasoning_notification_preserved": true,
+    "humor_amplification_deployed": false
+  },
+  "limitations": [
+    "No general generated-quality improvement established.",
+    "One actual native date follow-up declines supported date.",
+    "Full matched installed provider probe has zero sources; cause unknown.",
+    "No independent human grading or spontaneous current-release league replies.",
+    "Abstract-memory/humor hypotheses not yet tested or shipped.",
+    "Native visual history and provider billing coverage incomplete."
+  ]
+}

@@ -38,7 +38,7 @@
     "H18 native date variability unresolved.",
     "Incomplete native/visual context and semantic coverage."
   ],
-  "real_post_release_smoke": "pending",
+  "real_post_release_smoke": "Completed: 10/11 pass, one native timing follow-up partial. See 2026-10-10-referential-recall-release.json.",
   "quality_gates": {
     "all_six": "passed",
     "tests": 521,
