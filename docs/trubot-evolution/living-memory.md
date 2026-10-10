@@ -114,3 +114,9 @@ measured benefit justifies it, rather than loading the whole corpus into replies
 Report the first operational graph separately from complete historical coverage
 and improved character fidelity. No milestone alone proves an indistinguishable
 digital twin. Continue to measure the actual replies.
+
+
+2.11.0 candidate adds ephemeral source-linked native neighborhoods to replies.
+It does not populate peer nodes or reply/thread edges in the durable graph.
+Continuous context-qualified derivation and broader native/visual coverage remain
+separate milestones; the graph retains its existing fingerprints and withdrawal.

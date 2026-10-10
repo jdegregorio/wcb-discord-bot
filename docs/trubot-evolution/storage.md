@@ -630,3 +630,21 @@ and removal therefore erase this route as well as normal recall. The usage ledge
 four-hour study pacing and existing storage/backup boundaries stay unchanged.
 Older images retain unconditional catalog examples; rollback must not be used to
 restore private-derived behavior after withdrawal. This release has no migration.
+
+
+## Recent native conversation recall (2.11.0)
+
+Recent-message questions use at most three verified native sources from the last
+fourteen days, within the configured retention period. They select chronologically
+for broad recall and retain topical filtering for specific questions. Undated
+historical exports and voice examples cannot fill a recent-recall gap.
+
+After mandatory source refresh, the remaining six-second budget can fetch at most
+two same-channel human neighborhoods. Each carries up to five short context rows,
+source dates and explicit reply links. Peers remain context; adjacency does not
+prove a reply relationship. Bot/webhook, expired, future, cross-guild and denied
+context is excluded. Source/media gaps stay explicit internally. Historical pixels
+are not retrieved here. Context is ephemeral and never added to learning or the
+memory graph. Source edits, deletion and withdrawal invalidate the recalled focus.
+Full native history, durable peer/thread graph coverage and broader conceptual
+recall remain future work. See the research/progress records for measured results.

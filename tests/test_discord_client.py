@@ -443,6 +443,7 @@ async def test_memory_is_verified_refreshed_and_attached_to_real_handler(tmp_pat
     with (
         patch.object(client, "get_channel", return_value=channel),
         patch.object(learning, "refresh", new_callable=AsyncMock) as refresh,
+        patch("trubot.discord_client.collect_native_episode", new=AsyncMock(return_value=None)),
     ):
         memory = await client._memory_context(channel, query, [])
         assert "White Sox forever" in memory
@@ -499,6 +500,7 @@ async def test_development_recall_requires_configured_guild_allowed_channel_and_
     with (
         patch.object(client, "get_channel", return_value=source_channel),
         patch.object(learning, "refresh", new_callable=AsyncMock),
+        patch("trubot.discord_client.collect_native_episode", new=AsyncMock(return_value=None)),
     ):
         result = await client._memory_context(
             development, "Who is your baseball team?", [], requester_user_id=requester_id
@@ -546,6 +548,7 @@ async def test_development_owner_recall_reaches_discord_handlers_without_learnin
     with (
         patch.object(client, "get_channel", side_effect={10: source_channel, 20: development}.get),
         patch.object(learning, "refresh", new_callable=AsyncMock),
+        patch("trubot.discord_client.collect_native_episode", new=AsyncMock(return_value=None)),
     ):
         if mode == "reaction":
             await client.on_raw_reaction_add(
@@ -657,3 +660,85 @@ async def test_source_followup_recovers_quote_from_current_human_evidence_only(t
         assert fabricated == ""
     finally:
         await client.close()
+
+
+@pytest.mark.parametrize("mode", ["direct", "followup", "reaction"])
+async def test_recent_native_episode_reaches_production_handlers_without_learning_peers(
+    tmp_path, mode
+):
+    from test_learning import AUDIT, source
+    from test_learning import NOW as EVIDENCE_NOW
+    from test_native_context import message as native_message
+
+    from trubot.ingestion import MessageIngestor
+    from trubot.learning import LearningStore
+    from trubot.memory import ContextMemory
+
+    store = LearningStore.initialize(tmp_path / "learning.sqlite3", AUDIT, now=EVIDENCE_NOW)
+    item = source(
+        content="Maybe, if everyone gets a vote.", created_at=EVIDENCE_NOW - timedelta(minutes=1)
+    )
+    store.observe(item, now=EVIDENCE_NOW)
+    learning = MessageIngestor(store, frozenset({10}), clock=lambda: EVIDENCE_NOW)
+    learning.verified = True
+    client, responder, _, _ = make_client(clock=lambda: EVIDENCE_NOW)
+    client._learning, client._memory = learning, ContextMemory(store)
+    channel = fake_channel()
+    focus = native_message(channel, item.id, text=item.content, created_at=item.created_at)
+    setup = native_message(
+        channel,
+        item.id - 1,
+        author=9,
+        text="Cut the draft clock to thirty seconds?",
+        created_at=item.created_at - timedelta(seconds=1),
+    )
+
+    async def history(**kwargs):
+        if "around" in kwargs:
+            for row in [focus, setup]:
+                yield row
+        else:
+            for row in []:
+                yield row
+
+    channel.history = history
+    question = fake_message(channel, direct=mode == "direct")
+    question.id = item.id + 2
+    question.content = question.clean_content = (
+        "🤖 Quote your latest league message and explain the setup."
+    )
+    channel.fetch_message = AsyncMock(
+        side_effect=lambda message_id: question if message_id == question.id else focus
+    )
+    client._attention.activate(10, EVIDENCE_NOW)
+    with patch.object(client, "get_channel", return_value=channel):
+        if mode == "reaction":
+            await client.on_raw_reaction_add(
+                SimpleNamespace(
+                    channel_id=10,
+                    user_id=1,
+                    message_id=question.id,
+                    emoji=SimpleNamespace(name="🍆"),
+                    member=SimpleNamespace(bot=False),
+                )
+            )
+        else:
+            if mode == "followup":
+                question.mentions = []
+                question.content = question.clean_content = (
+                    "Quote your latest league message and explain the setup."
+                )
+            await client.on_message(question)
+    assert len(responder.calls) == 1
+    memory = responder.calls[0][0][0].content
+    assert "Maybe, if everyone gets a vote." in memory
+    assert "thirty seconds" in memory
+    assert "peer (not persona evidence)" in memory
+    assert '"position": "before"' in memory
+    assert store.status()["messages"] == 1
+    channel.send.assert_awaited_once_with("Hot")
+    # Every second collector is disposed locally; no peer rows or graph claims were added.
+    store.forget(now=EVIDENCE_NOW)
+    unavailable = await client._memory_context(channel, question.content, [])
+    assert "no verified recent human source" in unavailable
+    assert "thirty seconds" not in unavailable

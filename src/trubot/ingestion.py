@@ -72,21 +72,22 @@ class MessageIngestor:
         await asyncio.to_thread(self.store.commit_batch, channel.id, messages, now=self.clock())
         return len(messages)
 
-    async def refresh(self, channel: Channel, message_id: int) -> None:
+    async def refresh(self, channel: Channel, message_id: int) -> discord.Message | None:
         if not self.verified or not self.accepts(channel):
-            return
+            return None
         started = self.clock()
         try:
             message = await channel.fetch_message(message_id)
         except discord.NotFound:
             await self.invalidate(channel.id, [message_id], deleted=True)
-            return
+            return None
         # Permission/network failures never imply deletion and never restore old text.
         await asyncio.to_thread(
             self.store.observe,
             SourceMessage.from_discord(message, observed_at=started, authoritative=True),
             now=self.clock(),
         )
+        return message
 
     async def invalidate(self, channel_id: int, ids: list[int], *, deleted: bool) -> None:
         if channel_id in self.channel_ids:

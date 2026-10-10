@@ -8,7 +8,8 @@ The current ordered plan is maintained in
 
 ## Current delivery order
 
-1. Validate source-qualified reply scope (H6), then expand held-out conceptual
+1. Deliver H10 recent native recall and bounded source-linked setup, then validate
+   source-qualified reply scope (H6) and expand held-out conceptual
    recall and reconcile unfinished persona/context work. H5 is delivered in 2.9.3.
    Delivered: qualified self-reports in 2.9.0, study diagnosis in 2.9.1 and bounded
    noun-form retrieval in 2.9.2. Four of six new semantic phrasings still miss the
@@ -100,3 +101,13 @@ H6/H2 semantic source precision and native neighborhoods; investigate H8's one
 source-refresh timeout without loosening freshness. Then H3 selective skills/tools
 and generated U.P. northern-lights/trail-camera scenes. No broad fidelity gain or
 complete replica is claimed. Details and limits are in the release evaluation.
+
+
+2026-10-10 01:00 priority: select H10 recent native conversation recall after actual
+Discord returned an undated passage for a recent question. Reconcile native prototype
+14f8366 onto current main, preserve mandatory freshness before optional setup reads,
+and validate bounded recent routing, source-linked context and real gateway replies.
+This is enabling work, not a new persona trait. H6/H2 semantic precision remains next,
+then continuous graph/context coverage and H3 selective skills/tools plus requested
+generated U.P. northern-lights/trail-camera scenes. See research.md for evidence,
+dependencies, acceptance, disconfirmation and operating impact.

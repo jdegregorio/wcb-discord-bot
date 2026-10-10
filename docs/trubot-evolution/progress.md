@@ -1672,3 +1672,41 @@ these limits. Runtime source is unchanged from the tested release.
 - [Public validation](evaluations/2026-10-09-source-voice-release.json) separates
   lifecycle, synthetic restraint and actual partial semantic acceptance. Evidence
   PR/final CI, helper cleanup and archive only this run's worktree follow.
+
+
+## 2026-10-10 01:00 run: H10 recent native episodes (candidate)
+
+- Base `09a8b6059ff8f7d3ddb85b774bd7a28706969b77`, fresh managed worktree
+  `trubot-daily-20261010-0100`, feature branch of the same suffix. Primary checkout
+  and older worktrees untouched. No overlapping evolution PR. Reconciled native
+  prototype `14f8366`; H7 was already shipped, not reimplemented.
+- Both planning phases are in research.md. Actual owner-authored recent/setup
+  request returned an undated historical quote. Source-count and UI audit show
+  seven recent target posts, five older league bot posts, twenty recent development
+  responses, one inspected explicit native reply and an unstudied image gap.
+  H6 semantic extras remain unresolved. H9 short-name behavior is deferred after
+  the fresh quote passed and eligible historical short-name occurrences were absent.
+- Identical-source authenticated baseline/candidate comparison, three predeclared
+  operator-written cases: broad recent/setup sources 0 dated of 5 to 3 of 3;
+  broad recent 0 of 5 to 2 of 2; recent baseball 3 of 5 to 3 of 3. Candidate supplies
+  3/1/3 human context rows and 1/0/0 explicit focus reply links. No undated fallback.
+  The second case safely omitted a source at the six-second refresh boundary.
+  Baseline retrieval 91.52/82.30/1,563.76 ms; candidate 1,904.77/6,005.73/1,572.24 ms.
+  Variable authenticated network reads limit causal latency conclusions. Zero new
+  provider calls or Discord writes in these comparisons; no new source/graph claim.
+- Candidate has 447 passing tests and 96.44% branch-inclusive coverage, including
+  thirty new recent-routing, native-context, handler and lifecycle regressions.
+  Formatting, lint, strict types, locked sync and package build pass. Old operator
+  message DTOs now preserve reference/media metadata. Optional neighbors follow
+  all mandatory refreshes; denial stops reference reads; absent setup/pixels and
+  empty recent recall cannot reuse old bot/export text. Current grammar and graph
+  contracts, withdrawal, scope, study pacing and ledger remain intact.
+- Private count-only reports are under the existing app-volume smoke-tests path,
+  0600/0700 with seven-day manual retention and withdrawal cleanup. No raw source
+  excerpts, derived observations or generated answer text is retained. A distinct
+  readiness path preceded validation-client construction; main readiness passed
+  after disposal. Original stores were not cloned or replaced. Container tmpfs
+  staging is bounded code only. Source revalidation updates verification metadata.
+- Pending: focused PR/required CI, merged revision gates, immutable release/build,
+  locked deployment, installed package/source checks, actual private Discord recent
+  scenario/core controls, final health/cost and evidence. Do not call candidate live.

@@ -28,7 +28,16 @@ from trubot.history import (
 )
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable
-from trubot.memory import ContextMemory, RecallPresentation, recall_presentation, terms, years
+from trubot.memory import (
+    ContextMemory,
+    RecallPresentation,
+    recall_presentation,
+    recent_context_unavailable,
+    recent_recall,
+    terms,
+    years,
+)
+from trubot.native_context import NativeEpisode, collect_native_episode
 from trubot.participation import (
     Observation,
     ParticipationTracker,
@@ -532,6 +541,8 @@ class TruBotClient(discord.Client):
                 quotation=quotation,
             )
             verified = []
+            native_episodes: dict[int, NativeEpisode] = {}
+            refreshed_sources: list[tuple[DiscordChannel, int, discord.Message]] = []
             verification_started = self._clock()
             verification_deadline = asyncio.get_running_loop().time() + 6
             for candidate in candidates:
@@ -545,14 +556,41 @@ class TruBotClient(discord.Client):
                     if remaining <= 0:
                         break
                     try:
-                        await asyncio.wait_for(
+                        refreshed = await asyncio.wait_for(
                             learning.refresh(source_channel, candidate.source["message_id"]),
                             timeout=min(4, remaining),
                         )
                     except (discord.HTTPException, TimeoutError):
                         # Missing permission or network access never revives cached evidence.
                         continue
+                    if refreshed is not None:
+                        refreshed_sources.append(
+                            (source_channel, candidate.source["message_id"], refreshed)
+                        )
                 verified.append(candidate)
+            # Verify every selected source first. Optional setup must never spend
+            # time that a later mandatory source refresh needs.
+            for source_channel, message_id, refreshed in refreshed_sources[:2]:
+                remaining = verification_deadline - asyncio.get_running_loop().time()
+                if remaining <= 0:
+                    break
+                try:
+                    episode = await asyncio.wait_for(
+                        collect_native_episode(
+                            source_channel,
+                            message_id,
+                            identity=learning.identity,
+                            now=self._clock(),
+                            retention_days=learning.store.retention_days,
+                            focus=refreshed,
+                        ),
+                        timeout=min(1.5, remaining),
+                    )
+                    if episode is not None:
+                        native_episodes[message_id] = episode
+                except (discord.HTTPException, TimeoutError):
+                    # Context is optional; never use stale or guessed neighbors.
+                    pass
             if self._learning is not None and self._learning.verified:
                 recalled = await asyncio.to_thread(
                     memory.render,
@@ -561,15 +599,20 @@ class TruBotClient(discord.Client):
                     now=self._clock(),
                     request=request,
                     quotation=quotation,
+                    native_episodes=native_episodes,
                 )
-                voice = await asyncio.to_thread(
-                    voice_context, memory.learning, query, guild_id=source_guild_id
+                voice = (
+                    ""
+                    if recent_recall(request)
+                    else await asyncio.to_thread(
+                        voice_context, memory.learning, query, guild_id=source_guild_id
+                    )
                 )
                 return "\n".join(part for part in (recalled, voice) if part)
             return ""
         except LearningUnavailable:
             logger.warning("Response memory unavailable; source verification required")
-            return ""
+            return recent_context_unavailable() if recent_recall(request) else ""
 
     @staticmethod
     def _consume_task_result(task: asyncio.Task[None]) -> None:

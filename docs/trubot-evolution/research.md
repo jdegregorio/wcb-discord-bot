@@ -498,3 +498,80 @@ One timeout cannot establish prevalence or a required deadline increase. Vendor
 performance or healthy containers would not validate it. Investigate alongside
 native context work; wider observed timeout or source-staleness evidence can change
 priority. No added provider/infrastructure impact until a study actually dispatches.
+
+
+## 2026-10-10 01:00 run: recent native conversation recall
+
+Base `09a8b6059ff8f7d3ddb85b774bd7a28706969b77`, production 2.10.0.
+No open evolution PR. Older native commit `14f8366` is an unfinished prototype;
+its worktree and the older persona branch are preserved. H7 is already delivered.
+
+### Phase 1: evidence and hypotheses
+
+Read current production, sources, progress, architecture, ledger and actual Discord.
+The authenticated private owner/two-member guild was verified before three fresh
+questions. Recent development interaction shows weak contextual engagement and
+extra positions whose semantic source qualification remains H6. A fresh vague
+enthusiasm answer already uses prior channel context; a short-name quote is valid.
+Neither supplies evidence of a general quality gain. No new human trait is derived.
+UI study reviewed seven dated target posts with human setup, reactions and one
+explicit same-channel reply relationship, plus five older bot posts. The older
+pessimistic replies predate delivered changes. Image-dependent meaning remains
+uninterpreted without pixels. Sparse spontaneous activity and no independent human
+grader limit humor, timing and emotional-fidelity conclusions.
+
+H9 - short-name lexical recall: baseline drops two-letter tokens. Private source
+counts find no eligible historical occurrence of the tested short name, while the
+fresh real response recalls a current authored full-name line through voice context.
+A tokenizer change cannot by itself prove relevant recall or enthusiasm. Defer the
+behavioral proposal; prerequisite is reviewed source-qualified entity aliases and
+held-out specificity tests. Do not infer an interest from operator questions.
+
+H10 - recent recall must use dated native episodes:
+- Observed: the real recent-quote/setup question returns an undated historical
+  passage. Baseline same-corpus broad recent cases supply five Slack blocks each,
+  zero dated recent sources. Seven eligible native messages exist in fourteen days.
+- Mechanism/benefit: select recent native sources chronologically and attach bounded
+  freshly read human neighbors and explicit same-channel references, so that short
+  reactions and recent memories retain their actual conversational setup.
+- Predeclared cases: broad recent recall, recent quote plus setup, recent baseball;
+  controls: historical year, exact quoted follow-up, current sports and unknown topic.
+  Use identical sources/model. Separate retrieval, response and contextual results.
+- Acceptance: at most three sources within min(14 days, retention), no undated
+  fallback or historical voice examples for recent requests; topic-specific recent
+  queries exclude unrelated sources. At most two live episodes, five human context
+  rows each, 350 characters each; only approved same-guild/channel reads. Bot/webhook,
+  denied, future, expired and cross-channel context is excluded. Reply linkage is
+  asserted only from an actual reference; adjacency remains context. Missing pixels
+  remain a gap. Mandatory source refresh precedes optional context work within the
+  existing six-second deadline. Edits/deletion/withdrawal invalidate rendered focus.
+  Current-sports, historical/baseball, unrelated follow-up and spending guards pass.
+  Actual owner-authored Discord recent/setup and existing core recall pass after deploy.
+- Disconfirmation: an old export is called recent, peer prose becomes Andrew's
+  belief, a missing image is described, neighboring work starves source refresh,
+  unsupported reply relationships, stale source, expanded scope or duplicate post.
+- Method: source-count baseline and bounded selection prototype; source UI contextual
+  study; reconcile old prototype onto current main, synthetic handler/lifecycle/fault
+  regressions, installed-package and authenticated source probes, real Discord.
+- Preliminary result: broad selection prototype has three dated sources instead of
+  five undated blocks. Native source coverage is seven, not full historical coverage.
+  This supports an enabling recency/context correction, not a general fidelity gain.
+
+H6 semantic extras and H2 broader conceptual aliases remain unresolved. H8 refresh
+failure remains exploratory; this increment must not relax freshness. H3 selective
+skills/tools and generated U.P. northern-lights/trail-camera scenes retain source,
+pixel, timing, provider-pricing and actual-attachment validation prerequisites.
+
+### Phase 2: roadmap decision before implementation
+
+Select H10, reconciling the unfinished native prototype. It repairs reproduced
+recency misselection and supplies source-linked conversational context without a
+new persona assumption or storage schema. Confidence is high for source routing,
+unmeasured for broad naturalness. Dependencies: pinned identity, recent intake,
+current source permissions and existing ledger. Operating impact: up to two history
+pages and two same-channel reference fetches within the existing deadline, bounded
+extra text in the ordinary accounted response; no new provider call or paid service.
+Next: H6/H2 source-qualified semantic precision, continuous context-qualified graph
+learning and broader native/visual coverage, then H3 tools and guarded scene delivery.
+A supported semantic-extra source could retire H6; poor native-context relevance or
+latency blocks this rollout. Do not count ingestion/health alone as reply improvement.

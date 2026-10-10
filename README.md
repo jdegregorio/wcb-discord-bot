@@ -347,3 +347,21 @@ apply to these examples, including owner-only development recall. They illustrat
 one context rather than establishing a habit or biography. Fixed unvalidated
 biography/style assertions are removed; missing evidence gets brief uncertainty.
 No new model call, source, storage schema or paid infrastructure is introduced.
+
+
+## Recent native conversation recall (2.11.0)
+
+Recent-message questions use at most three verified native sources from the last
+fourteen days, within the configured retention period. They select chronologically
+for broad recall and retain topical filtering for specific questions. Undated
+historical exports and voice examples cannot fill a recent-recall gap.
+
+After mandatory source refresh, the remaining six-second budget can fetch at most
+two same-channel human neighborhoods. Each carries up to five short context rows,
+source dates and explicit reply links. Peers remain context; adjacency does not
+prove a reply relationship. Bot/webhook, expired, future, cross-guild and denied
+context is excluded. Source/media gaps stay explicit internally. Historical pixels
+are not retrieved here. Context is ephemeral and never added to learning or the
+memory graph. Source edits, deletion and withdrawal invalidate the recalled focus.
+Full native history, durable peer/thread graph coverage and broader conceptual
+recall remain future work. See the research/progress records for measured results.
