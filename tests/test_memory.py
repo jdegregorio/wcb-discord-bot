@@ -223,3 +223,57 @@ def test_native_quotation_requires_current_fresh_source_after_lookup(store):
     store.invalidate(10, [source().id], deleted=False, now=NOW)
     store.observe(source(content="I changed my view.", authoritative=True), now=NOW)
     assert not memory.render(candidates, quotation=text)
+
+
+def test_recent_conversation_uses_dated_native_sources_in_chronological_order(store):
+    # Older, verbose lexical hits must not hide a short recent human response.
+    store.observe(source(0, content="Yep.", created_at=NOW - timedelta(minutes=2)), now=NOW)
+    store.observe(source(1, content="Nope.", created_at=NOW - timedelta(days=1)), now=NOW)
+    store.observe(
+        source(2, content="Old league example", created_at=NOW - timedelta(days=20)), now=NOW
+    )
+    archive = ArchiveStore.initialize(store)
+    archive.import_document(
+        b"legacy.target\n  8:00 AM\nI talked about the league recently. A recent example.",
+        channel="general",
+        target_alias="legacy.target",
+        alias_basis="Synthetic operator audit",
+        origin={"kind": "synthetic"},
+        now=NOW,
+    )
+    memory = ContextMemory(store)
+    query = (
+        "What have you been saying in the league lately? "
+        "Give me one recent example and what was going on around it."
+    )
+    candidates = memory.candidates(query, guild_id=77, now=NOW)
+    assert [c.content for c in candidates] == ["Yep.", "Nope."]
+    assert all(c.source["kind"] == "discord" for c in candidates)
+    assert not memory.candidates(query, guild_id=78, now=NOW)
+    assert not memory.candidates(query, guild_id=77, now=NOW + timedelta(days=15))
+    assert (
+        len(memory.candidates("What did you say about baseball recently?", guild_id=77, now=NOW))
+        == 0
+    )
+    # A year request continues using historical scope rather than recent native scope.
+    assert (
+        len(memory.candidates("What was a recent conversation in 2020?", guild_id=77, now=NOW)) == 0
+    )
+
+
+def test_native_episode_binding_drops_context_after_source_edit_or_deletion(store):
+    from trubot.native_context import NativeEpisode
+
+    store.observe(source(content="Yep."), now=NOW)
+    memory = ContextMemory(store)
+    candidates = memory.candidates("What did you say lately?", guild_id=77, now=NOW)
+    episode = NativeEpisode("Yep.", None, ({"author": "peer", "text": "Keep the current rule?"},))
+    rendered = memory.render(candidates, native_episodes={source().id: episode})
+    assert "Keep the current rule?" in rendered
+    assert "Keep the current rule?" not in repr(episode)
+    store.observe(source(content="Nope.", authoritative=True), now=NOW)
+    rendered = memory.render(candidates, native_episodes={source().id: episode})
+    assert "Nope." in rendered
+    assert "Keep the current rule?" not in rendered
+    store.invalidate(10, [source().id], deleted=True, now=NOW)
+    assert memory.render(candidates, native_episodes={source().id: episode}) == ""

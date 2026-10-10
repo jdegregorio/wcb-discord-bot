@@ -73,6 +73,17 @@ async def evaluate():
                         if row.get("edited_timestamp")
                         else None,
                         content=row["content"],
+                        attachments=row.get("attachments", []),
+                        embeds=row.get("embeds", []),
+                        reference=(
+                            discord.MessageReference(
+                                message_id=int(row["message_reference"]["message_id"]),
+                                channel_id=int(row["message_reference"]["channel_id"]),
+                                guild_id=identity.guild_id,
+                            )
+                            if (row.get("message_reference") or {}).get("message_id")
+                            else None
+                        ),
                     )
 
                 channel.fetch_message = fetch

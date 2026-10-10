@@ -14,6 +14,7 @@ from trubot.archives import ArchiveStore
 from trubot.graph import GraphStore
 from trubot.learning import LearningStore, LearningUnavailable, _time
 from trubot.lexical import words
+from trubot.native_context import NativeEpisode
 
 _STOP = frozenset(
     [
@@ -126,6 +127,88 @@ def years(text: str) -> set[str]:
     return set(re.findall(r"(?<!\d)(?:19|20)\d{2}(?!\d)", text))
 
 
+_RECENT_QUERY_WORDS = frozenset(
+    [
+        "recent",
+        "recently",
+        "latest",
+        "lately",
+        "said",
+        "say",
+        "did",
+        "saying",
+        "talked",
+        "talking",
+        "mentioned",
+        "message",
+        "messages",
+        "conversation",
+        "conversations",
+        "remember",
+        "recall",
+        "league",
+        "quote",
+        "quoted",
+        "explain",
+        "setup",
+        "context",
+        "example",
+        "examples",
+        "give",
+        "one",
+        "going",
+        "around",
+        "been",
+        "happening",
+        "doing",
+        "stuff",
+        "things",
+        "past",
+        "weeks",
+        "week",
+        "days",
+        "day",
+        "last",
+        "were",
+        "reply",
+        "replying",
+        "replies",
+        "responded",
+        "responding",
+        "response",
+        "background",
+        "exchange",
+        "exchanges",
+    ]
+)
+
+
+def recent_recall(text: str) -> bool:
+    """A focused request for recent authored conversation, not current sports news."""
+    return not years(text) and bool(
+        re.search(r"\b(?:recent|recently|latest|lately)\b", text, re.IGNORECASE)
+        and re.search(
+            r"\b(?:say|said|saying|talked|talking|mentioned|messages?|conversations?|exchanges?|recall|remember|quote)\b",
+            text,
+            re.IGNORECASE,
+        )
+    )
+
+
+def recent_terms(text: str) -> set[str]:
+    words = re.findall(r"[a-z]{3,}", text.casefold())
+    return terms(" ".join(word for word in words if word not in _RECENT_QUERY_WORDS))
+
+
+def recent_context_unavailable() -> str:
+    return (
+        "RECENT CONVERSATION RECALL - no verified recent human source is available "
+        "for this request. "
+        "Do not substitute an undated historical export, a voice example or an earlier bot reply. "
+        "Say briefly and naturally that you do not have a recent example; keep machinery internal."
+    )
+
+
 def quotation_key(text: str) -> str:
     # Normalize typographic punctuation only for source matching. This never
     # turns bot output into evidence: a current eligible authored source must match.
@@ -196,11 +279,14 @@ class ContextMemory:
         self, query: str, *, guild_id: int, now: datetime, quotation: str = ""
     ) -> list[MemoryCandidate]:
         quote = quotation_key(quotation[:500])
-        query_terms = terms(quotation[:500] if quote else query[:8000])
+        recent = recent_recall(query[:8000])
+        query_terms = recent_terms(query[:8000]) if recent else terms(query[:8000])
+        if quote:
+            query_terms = terms(quotation[:500])
         query_years = years(query[:8000])
         with self.learning._transaction() as db:
             identity = self.learning._read_identity(db)
-            if guild_id != identity.guild_id or not (query_terms or query_years):
+            if guild_id != identity.guild_id or not (query_terms or query_years or recent):
                 return []
             native = [
                 MemoryCandidate(
@@ -211,20 +297,33 @@ class ContextMemory:
                         "created_at": r["created_at"],
                     },
                     r["content"],
-                    score(r["content"], query_terms) + (10000 if query_years else 0),
+                    score(r["content"], query_terms) + (10000 if query_years or recent else 0),
                 )
                 for r in db.execute(
                     "SELECT * FROM messages WHERE content IS NOT NULL AND created_at >= ? "
                     "AND author_id=? AND guild_id=? ORDER BY created_at DESC LIMIT 10000",
                     (
-                        _time(now - timedelta(days=self.learning.retention_days)),
+                        _time(
+                            now
+                            - timedelta(
+                                days=min(14, self.learning.retention_days)
+                                if recent
+                                else self.learning.retention_days
+                            )
+                        ),
                         identity.user_id,
                         identity.guild_id,
                     ),
                 )
                 if r["channel_id"] in identity.channel_ids
                 and (not query_years or r["created_at"][:4] in query_years)
+                and r["created_at"] <= _time(now)
+                and (not recent or not query_terms or score(r["content"], query_terms))
             ]
+        if recent:
+            # Unknown-date exports cannot answer recent recall. Keep chronological
+            # order for a broad request instead of favoring long lexical matches.
+            return [c for c in native if not quote or quote in quotation_key(c.content)][:3]
         historical = []
         try:
             with self.archives._transaction() as db:
@@ -313,12 +412,15 @@ class ContextMemory:
         now: datetime | None = None,
         request: str = "",
         quotation: str = "",
+        native_episodes: dict[int, NativeEpisode] | None = None,
     ) -> str:
         # Materialize from current storage, not the search result. Corrections,
         # suppressions and withdrawal between search and rendering take effect.
         evidence: list[dict[str, Any]] = []
         for candidate in candidates:
             source = candidate.source
+            if recent_recall(request) and source["kind"] != "discord":
+                continue
             if source["kind"] == "discord":
                 with self.learning._transaction() as db:
                     self.learning._read_identity(db)
@@ -327,12 +429,37 @@ class ContextMemory:
                         "WHERE id=? AND verified_at>=?",
                         (source["message_id"], _time(verified_after) if verified_after else ""),
                     ).fetchone()
-                    if row and row["content"]:
+                    if (
+                        row
+                        and row["content"]
+                        and (
+                            not recent_recall(request)
+                            or _time(
+                                (now or datetime.now(UTC))
+                                - timedelta(days=min(14, self.learning.retention_days))
+                            )
+                            <= row["created_at"]
+                            <= _time(now or datetime.now(UTC))
+                        )
+                    ):
                         evidence.append(
                             {
                                 "source": source,
                                 "author": "verified Andrew",
                                 "text": row["content"][:1500],
+                                "conversation_context_only": (
+                                    episode.as_data()
+                                    if (
+                                        episode := (native_episodes or {}).get(source["message_id"])
+                                    )
+                                    and episode.matches(row["content"], row["edited_at"])
+                                    else {
+                                        "human_messages": [],
+                                        "gaps": [
+                                            "native setup and source media pixels not supplied"
+                                        ],
+                                    }
+                                ),
                             }
                         )
             else:
@@ -376,7 +503,7 @@ class ContextMemory:
             quote = quotation_key(quotation[:500])
             evidence = [item for item in evidence if quote in quotation_key(item["text"])]
         if not evidence:
-            return ""
+            return recent_context_unavailable() if recent_recall(request) else ""
         ids = list(dict.fromkeys(key for c in candidates for key in c.source.get("graph_ids", [])))
         observations = []
         if ids:
@@ -392,6 +519,12 @@ class ContextMemory:
             "Use Andrew's own statements for supported interests/preferences. "
             "Peers are context only. Historical events are not current sports results. "
             "Adjacency does not prove motive or a reply relationship. "
+            + (
+                "These are verified dated human messages from the last fourteen days. "
+                "Give a recent supported example naturally, using human setup only as context. "
+                if recent_recall(request)
+                else ""
+            )
             + _presentation_guidance(recall_presentation(request))
             + "\n"
             + json.dumps(evidence, ensure_ascii=False)

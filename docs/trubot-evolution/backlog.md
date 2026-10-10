@@ -3,7 +3,7 @@
 Replenish this list as evidence arrives. Each run owns prioritization and carries
 one coherent increment through production verification.
 
-## Current ordered increments, 2026-10-09
+## Current ordered increments, 2026-10-10
 
 This order supersedes older next-step paragraphs below. H1-H3 are defined in
 [research.md](research.md); completed increments retain their historical evidence.
@@ -13,9 +13,10 @@ This order supersedes older next-step paragraphs below. H1-H3 are defined in
 | Completed: study diagnosis | H1: generic pauses obscure the limiting learning step, so future memory corrections can target real causes. | Same 14 baseline/fault probes classify stages/reasons without payloads; preserve restart pacing, withdrawal, rejection, cancellation, budget and real gateway replies. | Supported diagnosis hypothesis; no measured reply-quality gain. No added calls, storage schema or infrastructure. |
 | Completed: provider evidence contract | H5: 15 schema-valid/local-invalid forms, so existing evidence rules constrain generation. | Both branches, empty abstention and source-bound reviewer schema accepted by real provider; exact attribution, semantic review, pacing and real Discord preserved. | Contract hypothesis supported; natural rejection cause and reply gain unresolved. Adds bounded schema bytes, no calls/infrastructure. |
 | Completed: grammatical connections | H4: explicit noun forms recover a reviewed connection without new beliefs. | Identical-source graph recall 1/6 to 2/6, three controls unchanged; authority/quotation regression and real Discord. | Supported retrieval correction; baseline reply already correct, no reply-quality gain. Zero added API/infrastructure. |
+| Selected: recent native episodes | H10: actual recent questions retrieve undated exports despite seven current sources, so recent memory uses real dates/setup. | Three identical-source cases; mandatory freshness before bounded optional human context; explicit references, gaps, scope/withdrawal and actual Discord. Reconcile native prototype 14f8366. | Supported routing/context enabling work; broad fidelity unmeasured. Up to two history/reference reads within six seconds, no new provider request/service. |
 | 1a. Source-qualified reply scope | H6: one actual reply adds personal examples with unresolved attribution, so narrow answers avoid invented biography. | Privately review contextual sources; six matched supported/unsupported/contrary prompts, natural language and actual Discord. Reconcile older persona branch. | One-sample evidence; no prevalence or proven change regression. Bound any tools/verification with the existing maintenance/runtime guard. |
 | 1b. Held-out conceptual recall after H5 | H2, four remaining new phrasing misses and the 2.9.0 long-alias miss; relevant supported positions should survive varied wording. | Reviewed private expectations, six new paraphrases plus contrary/unrelated cases; compare precision, recall, voice, latency and cost on identical sources; real Discord. | Partial one-proposition evidence; broader precision unresolved. Existing bounded context and maintenance allowance. |
-| 2. Native neighborhoods and source-qualified persona | Unfinished prior runs, missing peer/reply context and unvalidated legacy traits. | Reconcile their branches first; verified references and pixels where relevant; held-out human contextual review, deletion/withdrawal and actual direct/follow-up/reaction behavior. | Enabling coverage; do not equate ingestion with fidelity. Existing volume, bounded batches/studies. |
+| 2. Durable native neighborhoods and context-qualified graph learning | Ephemeral H10 context is selected; durable peer/reply/thread graph and broader historical/visual coverage remain incomplete. | Reconcile their branches first; verified references and pixels where relevant; held-out human contextual review, deletion/withdrawal and actual direct/follow-up/reaction behavior. | Enabling coverage; do not equate ingestion with fidelity. Existing volume, bounded batches/studies. |
 | 3. Selective skills/tools harness prototype | H3 and Joe's context direction, so fresh/relevant facts improve answers without mechanical explanations. | Same-case Responses/SDK/managed comparisons; source scope, procedure trust, termination, abstention, privacy, cost/latency bounds and actual delivery. | Exploratory; documentation capabilities untested here. No paid service or recurring spend until guarded and measured. |
 | 4. Requested generated outdoor images | H3 and Joe's northern-lights/trail-camera direction, so outdoor engagement has a suitable visual flow. | Study sharing/caption evidence and actual pixels; guarded generation, generated provenance, concise captions, Discord attachment display and failure/deduplication checks. Ambient comes later. | Exploratory sharing fidelity; explicit product requirement. Pricing/access/model reservations must fit USD 20 existing total. |
 
@@ -316,3 +317,13 @@ candidate beside native neighborhoods: reproduce exact permitted source reads,
 prove bounded responsiveness/freshness/withdrawal and retain existing pacing/caps.
 One timeout does not justify relaxing checks. Operating impact uses the existing
 maintenance allowance, with no added service. H3 skills/tools/images remain planned.
+
+
+2026-10-10 01:00 priority: select H10 recent native conversation recall after actual
+Discord returned an undated passage for a recent question. Reconcile native prototype
+14f8366 onto current main, preserve mandatory freshness before optional setup reads,
+and validate bounded recent routing, source-linked context and real gateway replies.
+This is enabling work, not a new persona trait. H6/H2 semantic precision remains next,
+then continuous graph/context coverage and H3 selective skills/tools plus requested
+generated U.P. northern-lights/trail-camera scenes. See research.md for evidence,
+dependencies, acceptance, disconfirmation and operating impact.

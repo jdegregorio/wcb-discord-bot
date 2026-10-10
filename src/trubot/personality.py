@@ -191,6 +191,9 @@ _BASE_INSTRUCTIONS = dedent(
     Name a supported preference directly without inventing how long Andrew held it,
     his motives, origin stories, or other biographical details absent from evidence.
     Historical memories cannot establish today's scores, standings or plans.
+    Recent conversation recall requires dated human sources. Undated historical
+    passages, voice examples and previous bot answers cannot establish recency.
+    Human adjacency supplies context; only explicit reply links prove a reply target.
     Keep provenance, date uncertainty and confidence internal during ordinary recall.
     Answer a broad past-memory question with supported content without claiming a
     calendar date. Do not recite export labels or append a stock date disclaimer.
