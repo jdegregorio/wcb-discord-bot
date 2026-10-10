@@ -381,7 +381,8 @@ async def test_spending_guard_explains_explicit_pause_and_keeps_unsolicited_mode
 
 
 @pytest.mark.asyncio
-async def test_live_images_from_focus_and_reference_keep_authorship_and_focus():
+@pytest.mark.parametrize("memory", ["", "RETRIEVED HISTORICAL EVIDENCE: source checked"])
+async def test_live_images_from_focus_and_reference_keep_authorship_and_focus(memory):
     import io
 
     from PIL import Image
@@ -392,6 +393,7 @@ async def test_live_images_from_focus_and_reference_keep_authorship_and_focus():
     Image.new("RGB", (80, 60), "red").save(output, format="PNG")
     fetch = AsyncMock(return_value=output.getvalue())
     client, responder, _, _ = make_client()
+    client._memory_context = AsyncMock(return_value=memory)
     channel = fake_channel()
     message = fake_message(channel)
     message.attachments = [
@@ -415,8 +417,12 @@ async def test_live_images_from_focus_and_reference_keep_authorship_and_focus():
     assert mode is ReplyMode.DIRECT
     assert context[-1].content == target
     assert len(context[-1].images) == 1
-    assert "Jim: [image attached]" in context[-2].content
-    assert len(context[-2].images) == 1
+    reference_position = -3 if memory else -2
+    assert "Jim: [image attached]" in context[reference_position].content
+    assert len(context[reference_position].images) == 1
+    if memory:
+        assert context[-2].content == memory
+        assert not context[-2].images
     assert fetch.await_count == 2
 
 
@@ -566,7 +572,7 @@ async def test_development_owner_recall_reaches_discord_handlers_without_learnin
                 message.mentions = []
             await client.on_message(message)
     assert len(responder.calls) == 1
-    assert "White Sox forever" in responder.calls[0][0][0].content
+    assert "White Sox forever" in responder.calls[0][0][-1].content
     development.send.assert_awaited_once_with("Hot")
     assert store.status()["messages"] == 1
 
@@ -731,7 +737,7 @@ async def test_recent_native_episode_reaches_production_handlers_without_learnin
                 )
             await client.on_message(question)
     assert len(responder.calls) == 1
-    memory = responder.calls[0][0][0].content
+    memory = responder.calls[0][0][-1].content
     assert "Maybe, if everyone gets a vote." in memory
     assert "thirty seconds" in memory
     assert "peer (not persona evidence)" in memory
@@ -743,3 +749,27 @@ async def test_recent_native_episode_reaches_production_handlers_without_learnin
     unavailable = await client._memory_context(channel, question.content, [])
     assert "no verified recent human source" in unavailable
     assert "thirty seconds" not in unavailable
+
+
+@pytest.mark.parametrize("mode", list(ReplyMode))
+async def test_fresh_memory_follows_stale_bot_history_before_current_focus(mode):
+    client, responder, _, _ = make_client()
+    channel = fake_channel()
+    prior = message_for_history("I do not have a verified quote.", author_id=999, bot=True)
+
+    async def history(**kwargs):
+        yield prior
+
+    channel.history = history
+    packet = "RETRIEVED HISTORICAL EVIDENCE: a freshly verified human quote"
+    client._memory_context = AsyncMock(return_value=packet)
+    try:
+        assert await client._respond(
+            channel, mode=mode, requester_user_id=1, target="Joe: Quote last week's message."
+        )
+        context, actual_mode, _, focus = responder.calls[0]
+        assert actual_mode is mode
+        assert [m.content for m in context] == [prior.clean_content, packet]
+        assert focus == "Joe: Quote last week's message."
+    finally:
+        await client.close()

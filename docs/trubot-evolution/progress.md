@@ -1784,3 +1784,10 @@ compared with baseline 0/0/2 eligible of 5/4/5. Actual paired baseline returned
 no past-week quote; post-release real tests remain pending. No new graph claims,
 source state/schema/service or provider calls per reply. Evaluation metadata is
 in evaluations/2026-10-10-rolling-recall-candidate.json.
+
+
+05:00 completion correction: 2.11.1 [PR #57](https://github.com/jdegregorio/wcb-discord-bot/pull/57)
+merged and deployed healthy, but actual broad quotes still falsely abstained.
+H16's full-context matched replay supports moving fresh evidence near focus.
+2.11.2 completes the same rolling-recall increment; final verification follows.
+Do not infer all real smoke checks passed from the intermediate release.

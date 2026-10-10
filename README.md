@@ -377,3 +377,8 @@ two human neighborhoods are supplied. Empty, zero or unknown quantities cannot
 fall back to undated archives or voice examples. Named calendar months/days remain
 outside this parser; explicit year recall keeps its existing provenance rules.
 No new state, retention, provider call, model, participation or spending policy.
+
+
+Freshly checked memory follows previous conversation and precedes the current
+question, including its image pixels. Earlier bot replies remain conversation
+context and cannot override authenticated human memory evidence.
