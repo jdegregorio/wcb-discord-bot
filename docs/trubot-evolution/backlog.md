@@ -343,3 +343,12 @@ its comparison and is deferred; H12 concurrent reads remain unvalidated. Next: H
 semantic precision, durable contextual graph/native and visual coverage, H3 selective
 skills/tools and guarded generated U.P. aurora/trail-camera scenes. Acceptance and
 operating impact are in research.md; broad character fidelity remains unmeasured.
+
+
+05:00 correction from actual deployment: H14 routing passes but broad recall
+still falsely abstains in 2.11.1. H16's full 28-turn matched experiment supports
+placing fresh source evidence near the current focus while preserving image
+attachment handling. Complete and retest this in 2.11.2 within the same increment.
+Clock framing had no demonstrated benefit; model/guard/intake remain unchanged.
+H6/H2, durable native/visual graph context, selective tools and generated outdoor
+scenes retain the recorded order after this supported completion correction.

@@ -400,7 +400,15 @@ class TruBotClient(discord.Client):
                     channel, target, history, requester_user_id=requester_user_id
                 )
                 if memory:
-                    history.insert(0, ConversationMessage("user", memory))
+                    # Fresh source checks should follow old conversation, including stale
+                    # bot denials. Keep a visual focus last so the responder attaches
+                    # its pixels to the actual question instead of the memory packet.
+                    position = (
+                        len(history) - 1
+                        if history and history[-1].content == target
+                        else len(history)
+                    )
+                    history.insert(position, ConversationMessage("user", memory))
                 if not history and target is None:
                     logger.warning("No usable history for response channel_id=%d", channel.id)
                     return False

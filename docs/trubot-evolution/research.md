@@ -699,3 +699,51 @@ H14 candidate verification: all six gates pass, 480 tests/96.49% branch coverage
 its requested window, matching the predeclared selection prototype. Source
 probe made no provider calls/source mutation. Required CI, deployment and actual
 post-release gateway verification remain pending at this checkpoint.
+
+
+### 05:00 actual contrary evidence and H16 context-order completion
+
+2.11.1 deployed at the tested commit cfe8d79537f837fb89147b111470792cf6e47cc3,
+with required CI/image builds and all 24 installed module hashes passing. The
+installed selector supplies 3/0/2 dated sources in the exact week/48-hour/topical
+week windows. Actual broad recall still declined twice, plus one paraphrase;
+topical recall, preference, historical quote and exact-date controls pass. Source
+refresh probes succeed, and the actual memory handler supplies 3/2 dated sources.
+Do not call this intermediate deployment full reply-quality acceptance.
+
+Clock framing hypothesis: six matched maintenance calls over three cases, using
+the same sources/model and ten prior turns, pass both configurations. Added request
+time framing does not repair a reproduced miss; its causal benefit is unvalidated,
+so no clock prompt change is selected. USD0.0008295 maintenance estimate.
+
+H16 - fresh evidence near current focus:
+- Observed mismatch: live requests contain 28-30 prior turns, including older bot
+  denials. Fresh source memory currently precedes all those turns. The ten-turn
+  replay is a harness mismatch, not a faithful reproduction of the real failure.
+- Mechanism and benefit: put freshly revalidated evidence after prior conversation
+  and just before the current focus, so that stale bot denials do not overshadow
+  current human evidence. It remains untrusted user-role data; no authority, model,
+  memory content, context cap, source rule or request count changes.
+- Acceptance before comparison: recover broad quote using identical current sources
+  and full baseline history; preserve topical source matching and empty-window
+  abstention. Focused image pixels/reference authorship must remain attached to the
+  current question, with all reply modes and withdrawal controls intact.
+- Disconfirmation: unsupported quotes, empty-window fallback, dropped/misattributed
+  pixels, source scope regression or failure to repair the actual gateway case.
+- Matched experiment: three cases, six maintenance calls, same runtime model and
+  28-turn history from before the first deployed broad question. First-position
+  memory reproduces the false abstention; near-focus memory returns one exact
+  source-backed quote. Both topical replies quote current sources; both empty
+  replies abstain. No ordinary supported-answer metadata in the candidate. Empty
+  replies still use a verification term, an unresolved naturalness concern.
+- One sample per configuration/case, agent source checks rather than independent
+  human grading. Latencies 2.193/1.253, 0.956/1.927, 1.365/1.131 seconds; no general
+  latency gain. Maintenance cost USD0.000921195, original ledger and caps. Neither
+  private source nor generated answer prose is persisted by this study.
+
+Phase 2 revises H14's completion to include the supported H16 harness correction,
+instead of accepting source routing as reply success or shipping an unvalidated
+clock/model tweak. 2.11.2 is a second immutable release in the same coherent run.
+Dependencies are current source refresh and the existing production adapter.
+Confidence is narrow to the reproduced broad miss; full native/visual coverage and
+H6/H2 semantic precision remain next. Real repeat after deployment is still required.
