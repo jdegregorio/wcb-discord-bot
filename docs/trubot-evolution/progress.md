@@ -1764,4 +1764,5 @@ these limits. Runtime source is unchanged from the tested release.
   [Public validation](evaluations/2026-10-10-native-recall-release.json) separates
   source routing, actual response acceptance and coverage limits. H6/H2 semantic
   precision remains next, then context-qualified graph/coverage and H3 tools/scenes.
-  Evidence PR/final main CI and archiving only this run follow.
+  [Evidence PR #56](https://github.com/jdegregorio/wcb-discord-bot/pull/56) holds
+  this release record. Final CI/archive status is recorded in automation memory.
