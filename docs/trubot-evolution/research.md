@@ -369,3 +369,13 @@ semantic recall. Keep H3 tools/skills and requested generated outdoor pictures.
 Reprioritize if private context validates the extra examples or broader held-out
 recall shows a more consequential limiting cause. Health, immutable identities,
 source/pacing continuity, exact cost and limitations are recorded in release JSON.
+
+Post-release aggregate audit remains five older league bot/seven target messages
+and zero new spontaneous league activity. Latest 40 development posts contain
+20 bot replies, median 10 words, no unsolicited metadata. Window turnover and
+different questions prevent attributing the median change to this release.
+The inspected authenticated original image (221,337 bytes) was hashed and decoded
+in memory; source time and SHA-256 are retained privately, no raw pixels/caption.
+It has no existing captured-archive match, confirming a recent visual coverage
+gap. No image-derived persona observation was created. Full native text/visual
+coverage remains separate work and current archive counts are not completeness.

@@ -112,5 +112,25 @@
     "One additional restraint answer includes unverified autobiographical examples.",
     "Native peer/reply/thread and historical semantic coverage incomplete.",
     "Skills/tools and generated outdoor pictures remain exploratory."
-  ]
+  ],
+  "post_release_audit": {
+    "league_bot": 5,
+    "target_human": 7,
+    "development_bot": 20,
+    "historical_structural": 12,
+    "new_spontaneous_league": 0,
+    "development_median_words": 10,
+    "unsolicited_metadata": 0,
+    "context_window_turnover_prevents_causal_length_claim": true
+  },
+  "visual_audit": {
+    "authenticated_original_pixels_inspected": 1,
+    "hashed_original_images": 1,
+    "original_bytes": 221337,
+    "private_source_timestamp_and_sha256_retained": true,
+    "existing_archive_matches": 0,
+    "raw_pixels_retained": false,
+    "new_persona_observations": 0,
+    "coverage_gap": "Recent inspected image is outside the initially captured archive."
+  }
 }

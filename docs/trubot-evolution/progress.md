@@ -1588,3 +1588,11 @@ and generated U.P. northern-lights/trail-camera scenes remain guarded experiment
 - [Public release evidence](evaluations/2026-10-09-study-contract-release.json)
   distinguishes contract reliability from reply quality and the rejected private
   replay. Evidence PR/final CI and exact helper cleanup/worktree archive follow.
+
+Post-release audit: unchanged league 5 bot/7 human, zero new spontaneous activity.
+Development median 10 words in the latest 40/20 bot sample; no causal quality claim.
+One authenticated recent original image was inspected, decoded and SHA-256 hashed
+in memory (221,337 bytes); source/hash metadata privately retained, no pixels or
+caption. No captured-archive match, so native visual coverage remains incomplete.
+Evidence [PR #52](https://github.com/jdegregorio/wcb-discord-bot/pull/52) includes
+these limits. Runtime source is unchanged from the tested release.
