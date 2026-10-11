@@ -1,14 +1,14 @@
 # Harness exploration
 
-2026-10-10 21:00 decision: H23 is verified in 2.12.1. H24 connects automatic
-humor/style proposals to conditional graph memory, so that future corroborated
-episodes can guide replies through summaries and explicit limitations. Select
-this tested enabling contract; no new human pattern or humor gain is established.
-The selected private H21a population study remains pending and separate. Next:
-validated private abstraction population/contextual extraction, H22 variation,
-durable native/visual coverage, selective tools/skills and generated U.P. aurora/
-trail-camera scenes. Preserve privacy, withdrawal, participation, budget, schedule,
-model and actual Discord acceptance.
+2026-10-10 21:00 verified: H24 is delivered in 2.13.0. Automatic humor/style
+proposals preserve conditions, limitations and attributed counterexamples through
+independent review, graph commit and relevant replies. All 587 tests, merged-main
+CI, both image architectures, installed source hashes and six real Discord checks
+pass. This is enabling conformance; no new human abstraction, extraction-quality
+or humor gain is established. The selected private H21a study remains pending.
+Next: validated abstract population/contextual extraction, H22 variation, durable
+native/visual coverage, selective tools/skills and generated U.P. aurora/trail-camera
+scenes. Privacy, withdrawal, participation, budget and schedule remain authoritative.
 
 
 ## Current priority after Joe's 2026-10-10 direction
