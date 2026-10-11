@@ -2367,11 +2367,54 @@ speaker's explicit own-past question, preserves live human context, and admits
 Andrew's own verified identity. Scope follows reaction target author, not reactor.
 Current authoritative withdrawal and guild/operator checks remain first.
 No model, reasoning, token ceiling, prompt contract, study pacing, schema,
-population, participation or infrastructure change. Version2.15.1 candidate.
+population, participation or infrastructure change. Version 2.15.1 candidate.
 Thirty-two new source-routing, identity, handler, permission, quote/hypothetical
-and withdrawal regressions pass. All six local gates pass:679 tests,96.77%
-coverage,75 formatted files,27 typed source modules and both package artifacts.
-Matched invented-source comparison:baseline4/10,candidate10/10; six unsupported
+and withdrawal regressions pass. All six local gates pass: 679 tests, 96.77%
+coverage, 75 formatted files, 27 typed source modules and both package artifacts.
+Matched invented-source comparison: baseline 4/10, candidate 10/10; six unsupported
 ownership answers corrected, live-human and bot-history controls retained.
 This supports the narrow source boundary, not a human-fidelity or humor claim.
 Release and actual post-deployment acceptance follow.
+
+Shipped runtime PR[#72](https://github.com/jdegregorio/wcb-discord-bot/pull/72),
+branch 8f10127b6df723f778e749f54ae3cdabf005b99a, merged/retested main
+bc44670d88efbefe9e7ba1ddcac91778684ef46c. Immutable
+[v2.15.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.15.1);
+PR/main Quality and container publication all succeed. Verified amd64/arm64
+manifests before the existing locked release transaction. Running index digest
+sha256:d10b78616f2a4fe466f6e53280e8bd763e5c543c2e78e9ec8c7ab25c3fe3c030,
+OCI revision/package match and 27 installed source hashes match. Previous 2.15.0
+digest 212d290fad5c46cf6984c9dbd6b52f6897eda2bc4b00b903c1de6dd7f0611717
+remains rollback target. Readiness healthy after HTTP-only clients close,
+zero restarts/errors/response-learning-study failures, two optional voice warnings.
+
+Actual owner-authored gateway smoke in authenticated two-member allowlisted
+private general: 8/9 scenarios pass, 8 actual answers, one correct abstention.
+Changed acceptance 3/3: original own-past question, unprefixed follow-up paraphrase
+and actual human words preserved. Broad-history control still misassigns the
+source person, as baseline did; its routing is unchanged. Preserve that failure,
+do not claim complete historical recall or a clean overall character pass.
+Baseball, exact timing, invited fiction, care and recipient silence pass.
+Care repetition and familiar humor mechanism remain quality candidates; no
+measured human fidelity or numeric funniness gain. No fresh spontaneous current
+release league sample; counts remain 7 target/17 peer/5 older bot across 3 channels.
+
+Production corpus unchanged: 34 native, 16 exports/4299 grouped blocks/405 eligible,
+115 visuals/96 assets, 439 graph sources/554 episodes/1011 edges, one claim/one
+preference/zero abstractions. No development message enters human evidence.
+Final October tracked USD 0.128031055 (runtime 0.05352596, maintenance 0.074505095),
+912 settled attempts/zero unsettled. Run USD 0.024477665, research USD 0.021102315.
+Same USD 18/2/20 caps; provider billing and pre-guard spending remain unknown.
+Private content-free message/source references and invented-source studies stay
+under `/var/lib/trubot/smoke-tests/2026-10-11-0900`, 0700/0600, seven-day manual
+retention and withdrawal cleanup. No raw personal excerpts/answer text persisted.
+Own staging is cleaned before this run's worktree is archived; primary checkout
+and earlier worktrees remain untouched. Public
+[release evidence](evaluations/2026-10-11-author-scope-release.json) records
+actual pass/fail and coverage. H29/H30 rejected; H31 narrow correction supported.
+Next: validated H21/H28 abstract learning with subject checks, H22 variation,
+native/visual coverage, selective skills/tools and generated outdoor scenes.
+
+Evidence PR [#73](https://github.com/jdegregorio/wcb-discord-bot/pull/73) preserves
+the release result and roadmap. It changes documentation only; source, tests,
+version and lock match the tested immutable release.
