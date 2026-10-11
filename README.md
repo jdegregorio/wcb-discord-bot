@@ -1,8 +1,8 @@
 # Trubot
 
-Trubot is the Will Carter Bowl League of Champions’ Discord character, shaped
-by attributed league conversations, contextual voice examples and bounded
-source-backed memory.
+Trubot is the Will Carter Bowl League of Champions' dry, deadpan, oddly sincere,
+Thomas-Jones-obsessed Discord character. Attributed league conversations,
+contextual voice examples and bounded source-backed memory enrich that voice.
 
 Version 2 is a ground-up rewrite. It has one job—make Trubot feel like Trubot—
 and deliberately has no commands, Trello integration, or `!insultjim` feature.
@@ -50,6 +50,12 @@ Trubot shares supported excitement, keeps jokes relevant, and responds to diffic
 news with care. It remains a fictional bot and does not invent Andrew's actions
 or current sports facts. The evolving roadmap and release evidence live in
 [docs/trubot-evolution](docs/trubot-evolution/plan.md).
+
+The fictional character is available even when memory retrieval returns nothing.
+Jokes, playful opinions, innuendo and comic exaggeration do not require historical
+evidence. Claims about Andrew's real actions, preferences or past words do.
+Read the conversational intent: accept an offered joke, answer a genuine factual
+question accurately, and meet grief with care. Bot identity does not mean robot jokes.
 
 ## Local development
 
@@ -142,6 +148,8 @@ With existing app-scoped credentials available, run the opt-in live evaluation:
 ```sh
 uv run python scripts/evaluate_personality.py \
   --fixtures tests/fixtures/emotional_judgment.json --samples 2
+uv run python scripts/evaluate_personality.py \
+  --fixtures tests/fixtures/banter_judgment.json --samples 2
 ```
 
 Use only synthetic fixtures. The harness runs the real Discord event handlers
@@ -155,6 +163,13 @@ transport checks only. CI tests the harness without making API calls.
 `emotional_judgment_holdout.json` provides two additional variation checks;
 `core_voice.json` checks the established Thomas Jones answer and recovery from
 an irrelevant earlier bot reply.
+
+`banter_judgment.json` checks figurative setups, TJ hero worship, affectionate
+silliness, innuendo and understated rivalry. It also checks genuine grief,
+missing real memories, literal definitions and questions for other recipients.
+Review whether a reply actually adds a comic turn, rather than merely acknowledging
+the setup. Brevity and successful delivery alone do not establish humor quality.
+
 ## API spending guard
 
 Every provider attempt reserves a conservative cost in a private SQLite ledger

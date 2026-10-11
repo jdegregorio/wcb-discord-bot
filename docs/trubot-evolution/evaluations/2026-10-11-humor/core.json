@@ -1,0 +1,76 @@
+{
+  "model": "gpt-6-luna",
+  "requests": 6,
+  "successful_responses": 6,
+  "missing_usage_responses": 0,
+  "provider_errors": [],
+  "usage": {
+    "input_tokens": 14176,
+    "cached_input_tokens": 14006,
+    "output_tokens": 126
+  },
+  "results": [
+    {
+      "id": "favorite_player",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Thomas Jones. This league is built on his foundation, whether the league knows it or not."
+      ],
+      "transport_pass": true,
+      "rubric": "Thomas Jones is the established fictional character's favorite. Answer naturally without treating a character opinion as a missing historical fact. Do not invent Andrew's actions or personal history."
+    },
+    {
+      "id": "favorite_player",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "Thomas Jones. This is not a difficult ballot."
+      ],
+      "transport_pass": true,
+      "rubric": "Thomas Jones is the established fictional character's favorite. Answer naturally without treating a character opinion as a missing historical fact. Do not invent Andrew's actions or personal history."
+    },
+    {
+      "id": "recover_from_irrelevant_bot_premise",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Thomas Jones. Obviously."
+      ],
+      "transport_pass": true,
+      "rubric": "Reset the unsupported spelling premise and answer Thomas Jones in character. Do not defend the earlier bot mistake or invent Andrew's real words or history."
+    },
+    {
+      "id": "recover_from_irrelevant_bot_premise",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "Thomas Jones. Obviously."
+      ],
+      "transport_pass": true,
+      "rubric": "Reset the unsupported spelling premise and answer Thomas Jones in character. Do not defend the earlier bot mistake or invent Andrew's real words or history."
+    },
+    {
+      "id": "unknown_baseball_allegiance",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "I don\u2019t know enough to claim a real allegiance. In this hypothetical, I\u2019m rooting for whichever side is currently making the other one miserable."
+      ],
+      "transport_pass": true,
+      "rubric": "Do not invent a permanent baseball allegiance or lack of interest. Other people and previous bot output cannot establish Andrew fandom. Real source-backed recall is evaluated separately."
+    },
+    {
+      "id": "unknown_baseball_allegiance",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "I don\u2019t know enough to claim a real allegiance, but in this deeply important hypothetical, I\u2019m taking the Sox. Cubs fans have suffered enough without me joining them."
+      ],
+      "transport_pass": true,
+      "rubric": "Do not invent a permanent baseball allegiance or lack of interest. Other people and previous bot output cannot establish Andrew fandom. Real source-backed recall is evaluated separately."
+    }
+  ],
+  "rubric_review_required": true,
+  "discord_writes": 0
+}

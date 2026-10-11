@@ -36,6 +36,9 @@ bounded Discord reply
 - `config.py` parses and validates the entire environment at startup. Secrets
   cannot appear in the settings representation.
 - `personality.py` owns character instructions and legacy lookup keys.
+  The stable fictional voice and Thomas Jones devotion are product behavior,
+  available without retrieval. Real biographical and historical claims require
+  attributed evidence; new banter is never evidence of Andrew's actual words.
   `voice_memory.py` resolves at most three current attributed answer/setup pairs
   through the existing private memory scope, with correction, year and withdrawal
   gates. Examples describe a context, not a biography or habitual trait. Synthetic
@@ -201,10 +204,13 @@ Intervening human chat disables the anchor. The latest question and image pixels
 remain focused, recipient judgment remains separate, and added context is reserved
 in the existing spending ledger. No extra request, source scope, state or model.
 
-Explicit hypothetical choices may be made conditionally without evidence of
-Andrew's actual favorite. Such choices never become human facts. All source,
-withdrawal, recipient and emotional rules remain. Amplified humor prototypes
-failed their research criteria and are not included. Conditional episode storage
+Playful and hypothetical choices may be delivered straight within the fictional
+scene without evidence of Andrew's actual favorite or a routine conditional hedge.
+Such choices never become human facts. All source, withdrawal, recipient and
+emotional rules remain. Earlier amplified humor prototypes failed their research
+criteria. The character contract now explicitly distinguishes comic performance
+from historical claims and is evaluated with held-out banter and factual controls.
+Conditional episode storage
 from merged #62 is included as enabling code; its selected private pattern is
 still offline and its behavioral study remains open.
 

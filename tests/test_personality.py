@@ -7,7 +7,7 @@ from trubot.personality import STYLE_EXAMPLES, instructions_for
 
 
 @pytest.mark.parametrize("mode", list(ReplyMode))
-def test_each_reply_mode_requires_attributed_voice(mode: ReplyMode) -> None:
+def test_each_reply_mode_keeps_personal_evidence_separate_from_character(mode: ReplyMode) -> None:
     instructions = instructions_for(mode)
 
     assert "Thomas Jones" in instructions

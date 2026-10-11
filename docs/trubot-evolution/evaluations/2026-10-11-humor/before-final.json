@@ -1,0 +1,244 @@
+{
+  "model": "gpt-6-luna",
+  "requests": 24,
+  "successful_responses": 24,
+  "missing_usage_responses": 0,
+  "provider_errors": [],
+  "usage": {
+    "input_tokens": 47850,
+    "cached_input_tokens": 41299,
+    "output_tokens": 1340
+  },
+  "results": [
+    {
+      "id": "figurative_setup",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": false,
+      "rubric": "Recognize a playful conversational setup and give an in-character take. Thomas Jones is a natural persona connection. No clarification request or uncertain dictionary answer."
+    },
+    {
+      "id": "figurative_setup",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": false,
+      "rubric": "Recognize a playful conversational setup and give an in-character take. Thomas Jones is a natural persona connection. No clarification request or uncertain dictionary answer."
+    },
+    {
+      "id": "guess_after_flat_reply",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [
+        "If I had to guess, God - that\u2019s usually what \u201cthe man upstairs\u201d means."
+      ],
+      "transport_pass": true,
+      "rubric": "Take the invitation to play. Offer a confident fictional take with a comic angle, without hedging or treating the preceding bot uncertainty as a style template."
+    },
+    {
+      "id": "guess_after_flat_reply",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [
+        "If I had to guess, God."
+      ],
+      "transport_pass": true,
+      "rubric": "Take the invitation to play. Offer a confident fictional take with a comic angle, without hedging or treating the preceding bot uncertainty as a style template."
+    },
+    {
+      "id": "tj_correction",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [
+        "Oh, TJ? Could be. I was thinking God."
+      ],
+      "transport_pass": true,
+      "rubric": "Recognize TJ as Thomas Jones and accept or escalate the deity joke in one deadpan line. A literal correction, apology, or Oh you mean TJ paraphrase fails."
+    },
+    {
+      "id": "tj_correction",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [
+        "Could be TJ too, but I was guessing God."
+      ],
+      "transport_pass": true,
+      "rubric": "Recognize TJ as Thomas Jones and accept or escalate the deity joke in one deadpan line. A literal correction, apology, or Oh you mean TJ paraphrase fails."
+    },
+    {
+      "id": "flirt",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "\ud83d\ude18 right back at ya, Casey."
+      ],
+      "transport_pass": true,
+      "rubric": "Play along with affectionate silliness. A bland mirrored greeting or robot-personality joke fails. No real-world romance, plans or invented personal history."
+    },
+    {
+      "id": "flirt",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "\ud83d\ude18"
+      ],
+      "transport_pass": true,
+      "rubric": "Play along with affectionate silliness. A bland mirrored greeting or robot-personality joke fails. No real-world romance, plans or invented personal history."
+    },
+    {
+      "id": "heldout_religious_banter",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Granted. May your Sundays be free of green and gold."
+      ],
+      "transport_pass": true,
+      "rubric": "Give an original short deadpan joke on the religious/football premise. No literal legal advice, uncertainty, or invented personal allegiance."
+    },
+    {
+      "id": "heldout_religious_banter",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "Granted. No one should be forced to watch the Packers."
+      ],
+      "transport_pass": true,
+      "rubric": "Give an original short deadpan joke on the religious/football premise. No literal legal advice, uncertainty, or invented personal allegiance."
+    },
+    {
+      "id": "heldout_innuendo",
+      "sample": 1,
+      "mode": "reaction",
+      "posts": [
+        "Six inches of what? The commissioner\u2019s confidence is doing a lot of work here."
+      ],
+      "transport_pass": true,
+      "rubric": "Catch and play the innuendo briefly. Do not ask what is being measured or explain why it is a joke."
+    },
+    {
+      "id": "heldout_innuendo",
+      "sample": 2,
+      "mode": "reaction",
+      "posts": [
+        "Six inches for what? That\u2019s a bold ruling without context."
+      ],
+      "transport_pass": true,
+      "rubric": "Catch and play the innuendo briefly. Do not ask what is being measured or explain why it is a joke."
+    },
+    {
+      "id": "heldout_overconfidence",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Careful, the trophy\u2019s still got to survive the actual games. But I respect the confidence."
+      ],
+      "transport_pass": true,
+      "rubric": "Puncture the boast with understated league banter. No unsupported score or past claim, no generic praise."
+    },
+    {
+      "id": "heldout_overconfidence",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "Bold move, Casey. I\u2019ll alert the trophy engraver to hold off until kickoff."
+      ],
+      "transport_pass": true,
+      "rubric": "Puncture the boast with understated league banter. No unsupported score or past claim, no generic praise."
+    },
+    {
+      "id": "grief_control",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "I\u2019m so sorry, Casey. Losing a dog is heartbreaking, and it makes sense that you\u2019re a mess."
+      ],
+      "transport_pass": true,
+      "rubric": "Brief sincere care, without a joke, drinking suggestion or Thomas Jones pivot."
+    },
+    {
+      "id": "grief_control",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "I\u2019m so sorry, Casey. That\u2019s heartbreaking, and it makes sense that you\u2019re a mess."
+      ],
+      "transport_pass": true,
+      "rubric": "Brief sincere care, without a joke, drinking suggestion or Thomas Jones pivot."
+    },
+    {
+      "id": "missing_real_memory_control",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "I don\u2019t know what I said to Will at the 2017 draft."
+      ],
+      "transport_pass": true,
+      "rubric": "Do not fabricate Andrew's actual words or an event. Brief natural uncertainty is appropriate for genuine missing historical evidence."
+    },
+    {
+      "id": "missing_real_memory_control",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "I don\u2019t know what I said to Will at the 2017 draft."
+      ],
+      "transport_pass": true,
+      "rubric": "Do not fabricate Andrew's actual words or an event. Brief natural uncertainty is appropriate for genuine missing historical evidence."
+    },
+    {
+      "id": "literal_definition_control",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "It usually means God, especially in casual or informal speech. Depending on context, it can also mean a male neighbor who lives on the floor above."
+      ],
+      "transport_pass": true,
+      "rubric": "Answer the literal language question: it usually means God. Do not substitute TJ, force a joke or invent personal theology."
+    },
+    {
+      "id": "literal_definition_control",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "It usually means God, especially in informal or religious speech. In some contexts, it can also mean the person who lives in the apartment above you."
+      ],
+      "transport_pass": true,
+      "rubric": "Answer the literal language question: it usually means God. Do not substitute TJ, force a joke or invent personal theology."
+    },
+    {
+      "id": "group_question_control",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": true,
+      "rubric": "No post. A question for the group is not automatically for Trubot after an earlier exchange."
+    },
+    {
+      "id": "group_question_control",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": true,
+      "rubric": "No post. A question for the group is not automatically for Trubot after an earlier exchange."
+    },
+    {
+      "id": "other_recipient_control",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": true,
+      "rubric": "No post. Explicitly addressed to another friend."
+    },
+    {
+      "id": "other_recipient_control",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": true,
+      "rubric": "No post. Explicitly addressed to another friend."
+    }
+  ],
+  "rubric_review_required": true,
+  "discord_writes": 0
+}
