@@ -751,7 +751,7 @@ does not replay old sources. Existing withdrawal, correction, backups and spendi
 apply. Rollback to 2.14.0 is data-compatible; this release populates no human trait.
 
 
-## Complete reviewed episode studies, version 2.16.0
+## Complete reviewed episode studies, version 2.16.1
 
 `trubot-study --episodes /var/lib/trubot/private-study/episodes.json` is an operator
 maintenance command. Its JSON file must have a private owner and directory, be at
@@ -780,3 +780,11 @@ automatic lexical sampling or populate a trait merely because refs were selected
 It provides a usable maintenance path for cross-topic episode/counterexample study.
 Private manifests share the source owner's retention/deletion responsibilities;
 do not publish them or retain raw/derived human data in test artifacts.
+
+The installed command caches only text/thread channels accepted by the pinned source
+guild and configured intake intersection. Reply-only development channels are skipped
+without becoming learning evidence. A denied HTTP read stops the command. Version
+2.16.0 failed this mixed-allowlist acceptance and was rolled back; its prerelease
+status excludes it from stable discovery. Version 2.16.1 passed authenticated
+installed-command completion with disposable invented evidence and preserved the
+production heartbeat. Rejection receipts do not establish human extraction quality.

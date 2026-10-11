@@ -1,5 +1,23 @@
 # Harness exploration
 
+2026-10-11 13:00 verified: H32 is deployed in 2.16.1 through PRs #75/#76.
+Complete trusted episode sets preserve cross-topic supports and contrary cases in
+both study passes, with a usable plain-HTTP operator command. Installed command
+completion, rejection receipt and invalid-set stopping pass. The first 2.16.0
+rollout failed installed channel-scope acceptance, was rolled back, and is excluded
+from stable discovery; a regression-tested correction shipped under a new tag.
+All six gates, 724 tests, required CI, both image architectures and 28 installed
+source hashes pass. Actual private Discord: 8/10 trials; two clear controlled
+cases pass, one controlled follow-up abstains, and broad historical ownership
+still fails a gateway control. Negative outcomes are retained. No new human
+abstraction, humor or broad fidelity gain claimed. H32 is enabling conformance;
+H33 automatic diversity and H21/H28 human quality remain unvalidated.
+Next: validated H21/H28 population with private semantic/held-out expectations,
+H22 humor variation in the separate active chat, native/visual coverage, selective
+tools/skills and generated U.P. aurora/trail-camera scenes. See progress.md and
+evaluations/2026-10-11-episode-selection-release.json for full results and costs.
+
+
 
 2026-10-11 13:00 selection: H32 complete trusted episode selection supports H21
 abstract-memory validation across different wording and contrary cases. Exact refs
