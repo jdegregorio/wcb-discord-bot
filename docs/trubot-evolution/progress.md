@@ -2459,3 +2459,24 @@ Provider billing and pre-guard October spend remain unknown.
 
 Release, immutable digest, installed command/handler acceptance, actual owner gateway
 responses, final health/cost and CI identifiers remain pending at this candidate record.
+
+
+### 13:00 installed acceptance correction
+
+v2.16.0 was built by container workflow 38172062179 for merged commit
+9019bd61db1eff2c3e5bff88ea544a61f7aeeddb and deployed at 20:27 UTC. The installed
+plain-HTTP command then failed before selection: the existing reply allowlist
+contains the private development channel in addition to league source channels.
+The command incorrectly rejected that unrelated channel. This was reproduced
+through the installed console entrypoint; fixtures missed the actual arrangement.
+The complete two-pass synthetic writer and actual controlled Discord send passed,
+but those checks did not establish command acceptance.
+
+The app transaction rolled back to healthy 2.15.1, digest
+sha256:d10b78616f2a4fe466f6e53280e8bd763e5c543c2e78e9ec8c7ab25c3fe3c030,
+zero restarts. v2.16.0 is excluded from stable discovery as a prerelease; its tag,
+commit and image are retained. 2.16.1 skips unrelated/non-text configured channels
+without caching them as source context. Denied HTTP reads still fail closed.
+Three regressions cover the development-guild channel, a non-text channel, and a
+denied source read. All six gates pass: 724 tests, 96.81% coverage, 28 typed modules.
+Corrected release and installed/real Discord acceptance remain pending.
