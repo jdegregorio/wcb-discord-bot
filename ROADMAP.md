@@ -1,5 +1,17 @@
 # Trubot roadmap
 
+2026-10-11 05:00 verified: H27 is deployed in 2.15.0. Whole neighboring setup and
+reaction messages fit the existing request ceiling, with explicit internal gaps.
+All 647 tests, CI, both images and 27 installed source hashes pass. Changed writer
+and two actual controlled Discord cases pass. Overall actual Discord is 8/9:
+one broad-history answer misassigned the source subject; its exact repeat passes.
+The ordinary reply path and live observations are unchanged, so this is unresolved
+H6 attribution variability, not a demonstrated H27 regression. Do not claim a clean
+historical acceptance or full fidelity improvement. Next: H21 human population with
+H6 subject-grounding checks, H28 classification study, H22 variation, native/visual
+coverage, selective tools/skills and generated U.P. aurora/trail-camera scenes.
+
+
 2026-10-11 05:00 selection: H27 fits fuller historical setup/reaction packets into
 existing study request bounds. This supports H21 contextual abstraction learning;
 no new human trait or general reply-quality gain is claimed. Acceptance, contrary
