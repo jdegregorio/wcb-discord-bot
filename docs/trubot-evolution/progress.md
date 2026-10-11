@@ -2390,7 +2390,7 @@ zero restarts/errors/response-learning-study failures, two optional voice warnin
 
 Actual owner-authored gateway smoke in authenticated two-member allowlisted
 private general: 8/9 scenarios pass, 8 actual answers, one correct abstention.
-Changed acceptance 3/3:original own-past question, unprefixed follow-up paraphrase
+Changed acceptance 3/3: original own-past question, unprefixed follow-up paraphrase
 and actual human words preserved. Broad-history control still misassigns the
 source person, as baseline did; its routing is unchanged. Preserve that failure,
 do not claim complete historical recall or a clean overall character pass.
@@ -2402,8 +2402,8 @@ release league sample; counts remain 7 target/17 peer/5 older bot across 3 chann
 Production corpus unchanged: 34 native, 16 exports/4299 grouped blocks/405 eligible,
 115 visuals/96 assets, 439 graph sources/554 episodes/1011 edges, one claim/one
 preference/zero abstractions. No development message enters human evidence.
-Final October trackedUSD 0.128031055(runtime 0.05352596, maintenance 0.074505095),
-912 settled attempts/zero unsettled. RunUSD 0.024477665, researchUSD 0.021102315.
+Final October tracked USD 0.128031055 (runtime 0.05352596, maintenance 0.074505095),
+912 settled attempts/zero unsettled. Run USD 0.024477665, research USD 0.021102315.
 Same USD 18/2/20 caps; provider billing and pre-guard spending remain unknown.
 Private content-free message/source references and invented-source studies stay
 under `/var/lib/trubot/smoke-tests/2026-10-11-0900`, 0700/0600, seven-day manual
@@ -2414,3 +2414,7 @@ and earlier worktrees remain untouched. Public
 actual pass/fail and coverage. H29/H30 rejected; H31 narrow correction supported.
 Next: validated H21/H28 abstract learning with subject checks, H22 variation,
 native/visual coverage, selective skills/tools and generated outdoor scenes.
+
+Evidence PR [#73](https://github.com/jdegregorio/wcb-discord-bot/pull/73) preserves
+the release result and roadmap. It changes documentation only; source, tests,
+version and lock match the tested immutable release.

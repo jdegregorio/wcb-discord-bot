@@ -158,7 +158,7 @@ or the requested humor amplification. No fresh spontaneous league reply sample.
 The authenticated bounded audit remains 7 target/17 peer/5 older bot across 3
 channels; the separate count-only archive audit is not a semantic human study.
 
-Final ledgerUSD 0.128031055, zero unsettled attempts; runUSD 0.024477665, research
+Final ledger USD 0.128031055, zero unsettled attempts; run USD 0.024477665, research
 USD 0.021102315. Same USD 18/2/20 guard and no new recurring provider request/service.
 Provider billing and pre-guard spend remain unknown. Synthetic mean latency:
 baseline 1.434s, candidate 1.252s; max 2.445s/2.518s. Small sample, no latency-gain claim.

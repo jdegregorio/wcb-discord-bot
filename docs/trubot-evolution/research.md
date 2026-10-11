@@ -1612,6 +1612,6 @@ No ordinary metadata disclaimer. Care phrasing repeats earlier runs; familiar
 humor mechanism and one invited fictional line do not establish amplification.
 The bounded league counts remain 7 target/17 peer/5 older bot, zero new spontaneous
 release replies. No newly populated human trait or abstraction. Monthly tracked
-USD 0.128031055, 912 settled attempts/zero unsettled; research deltaUSD 0.021102315.
+USD 0.128031055, 912 settled attempts/zero unsettled; research delta USD 0.021102315.
 Prioritize validated abstract learning with ownership acceptance, then H22
 variation. The material subject-grounding issue remains part of those criteria.
