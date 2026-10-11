@@ -446,3 +446,60 @@ async def test_operator_withdrawal_stops_before_discord_reads(stores):
         await execute_study(client, distiller.ingestor, responder, refs, clock=lambda: NOW)
     client.fetch_guild.assert_not_called()
     responder.study_json.assert_not_awaited()
+
+
+@pytest.mark.parametrize("outside", ["development-guild", "voice-channel"])
+async def test_operator_does_not_treat_reply_only_channels_as_learning_scope(stores, outside):
+    from types import SimpleNamespace
+    from unittest.mock import AsyncMock, MagicMock
+
+    import discord
+    from test_discord_client import fake_channel
+
+    from trubot.study import execute_study
+
+    _, refs = seed_episodes(stores)
+    distiller, client, responder, source_channel = worker(stores)
+    distiller.ingestor.channel_ids = frozenset({10, 20})
+    guild = MagicMock(spec=discord.Guild)
+    guild.id = 77
+    guild.fetch_member = AsyncMock(return_value=SimpleNamespace(id=42, bot=False))
+    client._connection = MagicMock()
+    client.get_guild.return_value = guild
+    client.fetch_guild = AsyncMock(return_value=guild)
+    other = (
+        fake_channel(20) if outside == "development-guild" else MagicMock(spec=discord.VoiceChannel)
+    )
+    if outside == "development-guild":
+        other.guild = SimpleNamespace(id=88)
+    client.fetch_channel = AsyncMock(side_effect=[source_channel, other])
+    responder.study_json.side_effect = None
+    responder.study_json.return_value = {"observations": []}
+    result = await execute_study(client, distiller.ingestor, responder, refs, clock=lambda: NOW)
+    assert result["completed"] and not result["accepted"]
+    guild._add_channel.assert_called_once_with(source_channel)
+    assert not result["gateway_started"] and result["discord_writes"] == 0
+
+
+async def test_operator_never_bypasses_denied_source_channel(stores):
+    from types import SimpleNamespace
+    from unittest.mock import AsyncMock, MagicMock
+
+    import discord
+
+    from trubot.study import execute_study
+
+    _, refs = seed_episodes(stores)
+    distiller, client, responder, _ = worker(stores)
+    guild = MagicMock(spec=discord.Guild)
+    guild.id = 77
+    guild.fetch_member = AsyncMock(return_value=SimpleNamespace(id=42, bot=False))
+    client._connection = MagicMock()
+    client.get_guild.return_value = guild
+    client.fetch_guild = AsyncMock(return_value=guild)
+    client.fetch_channel = AsyncMock(
+        side_effect=discord.Forbidden(SimpleNamespace(status=403, reason="Denied"), "Denied")
+    )
+    with pytest.raises(discord.Forbidden):
+        await execute_study(client, distiller.ingestor, responder, refs, clock=lambda: NOW)
+    responder.study_json.assert_not_awaited()

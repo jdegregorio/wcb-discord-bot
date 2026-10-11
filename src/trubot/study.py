@@ -59,10 +59,13 @@ async def execute_study(
     for channel_id in sorted(ingestor.channel_ids):
         _ensure_identity(ingestor)
         channel = await client.fetch_channel(channel_id)
+        # The configured reply allowlist also contains the private development
+        # guild. A configured channel is not necessarily a source-guild channel.
+        # Never cache it as learning context. Denied HTTP reads still propagate.
         if not isinstance(channel, (discord.TextChannel, discord.Thread)) or not ingestor.accepts(
             channel
         ):
-            raise LearningUnavailable("Source study channel unavailable")
+            continue
         if isinstance(channel, discord.Thread):
             guild._add_thread(channel)
         else:
