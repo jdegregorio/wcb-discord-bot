@@ -1,5 +1,16 @@
 # Trubot evolution
 
+2026-10-11 09:00 verified: H31 is deployed in 2.15.1 through PR #72.
+All 679 tests, six gates, PR/main CI, both image architectures and 27 installed
+source hashes pass. Matched synthetic ownership cases improve 4/10 to 10/10;
+actual private Discord is 8/9, including all 3 changed acceptance scenarios.
+Broad historical persona-subject variability still fails one control and remains
+open. No general fidelity/humor improvement or human abstraction population is
+claimed. H29 framing/H30 reasoning prototypes were rejected and excluded.
+Next: H21/H28 contextual abstraction learning with subject-grounding controls,
+H22 variation, native/visual coverage, selective skills/tools and generated
+U.P. aurora/trail-camera scenes. Existing schedule, spending and privacy unchanged.
+
 2026-10-11 09:00 selection: H31 enforces the person boundary before private
 retrieval. An actual owner question about their own past was answered with
 Andrew's view. Identity framing and low-reasoning experiments failed controls

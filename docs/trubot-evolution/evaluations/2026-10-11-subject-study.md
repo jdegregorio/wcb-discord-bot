@@ -51,7 +51,7 @@ Phase 2: prioritize this reproduced material grounding correction before more
 abstraction population, so richer memory retains its subject. Then H21/H28
 validated learning, H22 variation, native/visual coverage, tools/skills and images.
 High confidence in origin loss; generated reply benefit awaits comparison.
-Operating impact: bounded text framing in the existing request, same USD18/2/20
+Operating impact: bounded text framing in the existing request, same USD 18/2/20
 ledger. New evidence or failed controls can change this order.
 
 First experiment: 40 matched invented-source calls, ten cases/two samples/arm.
@@ -106,7 +106,7 @@ ownership failures, no new controls, no empty/truncated outputs. Compare single-
 results to avoid attributing a model-configuration gain to framing alone.
 Same private baseline/deployed real acceptance remains required.
 Latency and actual ledger cost must be reported; no additional recurring request
-or model/service, existing USD18/2/20 guard stays enforceable.
+or model/service, existing USD 18/2/20 guard stays enforceable.
 
 Final research decision: the four-arm comparison still transfers an anonymous
 peer's opinion in both combined samples of requester recall. H29 prompt/framing
@@ -135,11 +135,32 @@ character-subject variability remains open; H31 does not claim to fix it.
 No model, prompt contract, reasoning, token ceiling, source population or service
 change; private study data is unchanged. This is supported source isolation work.
 
-Final H31 result:five cases/two samples/two arms,20 calls. Baseline4/10,
-candidate10/10 under the locked full-meaning criteria. Six borrowed historical
+Final H31 result: five cases/two samples/two arms, 20 calls. Baseline 4/10,
+candidate 10/10 under the locked full-meaning criteria. Six borrowed historical
 views become brief natural uncertainty. Both live-human and misleading-bot-history
 controls retain their expected behavior in each arm. Thirty-two focused
-regressions and679 full tests pass,96.77% coverage; all six gates pass.
-Limitations:small synthetic sample, one operator reviewer, no independent judge,
+regressions and 679 full tests pass, 96.77% coverage; all six gates pass.
+Limitations: small synthetic sample, one operator reviewer, no independent judge,
 no new human abstraction, no broad persona-attribution or humor improvement claim.
 Real post-deployment acceptance remains required before completion.
+
+Deployment result: 2.15.1 is healthy on its immutable index digest, both published
+architectures verified, 27/27 installed source hashes and release revision match.
+Actual private gateway: 8/9 scenarios pass, including 3/3 changed acceptance
+(original personal-history question, natural follow-up paraphrase, live human
+words). One broad year question still assigns the character source to the owner,
+matching the pre-release failure. H31 does not change that routing, so preserve
+this failed control as unresolved H6 variability rather than claim full recall.
+Baseball, exact timing, invited fictional humor, care and other-recipient silence
+pass. Ordinary replies do not recite date/storage metadata. Care wording repeats
+prior runs and the joke mechanism remains familiar; neither proves human fidelity
+or the requested humor amplification. No fresh spontaneous league reply sample.
+The authenticated bounded audit remains 7 target/17 peer/5 older bot across 3
+channels; the separate count-only archive audit is not a semantic human study.
+
+Final ledgerUSD 0.128031055, zero unsettled attempts; runUSD 0.024477665, research
+USD 0.021102315. Same USD 18/2/20 guard and no new recurring provider request/service.
+Provider billing and pre-guard spend remain unknown. Synthetic mean latency:
+baseline 1.434s, candidate 1.252s; max 2.445s/2.518s. Small sample, no latency-gain claim.
+All public [release evidence](2026-10-11-author-scope-release.json) is content-free;
+private source references and actual message IDs remain in approved app storage.
