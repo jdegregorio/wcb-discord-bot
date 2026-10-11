@@ -4,7 +4,7 @@
   "chosen_hypothesis": "H23",
   "version": "2.12.1",
   "production_before": "2.11.3",
-  "production_after": "pending",
+  "production_after": "2.12.1",
   "character_audit": {
     "league_channels": 2,
     "message_limit_each": 100,
@@ -74,10 +74,101 @@
     "actual_billing_and_pre_guard_spend": "unknown"
   },
   "limitations": [
-    "Small one-sample comparisons with implementation-aware evaluator.",
-    "Final real Discord/deployment acceptance pending.",
-    "No general human fidelity or humor improvement claim.",
+    "Single implementation-aware reviewer; small one-sample comparisons.",
+    "One actual changed-topic regression improved, not a universal guarantee.",
+    "No general human fidelity or humor gain claim; all amplification prototypes rejected.",
     "Prior selected private H21a pattern remains offline pending specific approval.",
     "Full native/visual context and abstract population/extraction remain roadmap work."
-  ]
+  ],
+  "pull_request": "https://github.com/jdegregorio/wcb-discord-bot/pull/63",
+  "tested_commit": "7a52db3e05f5575b84b966a80344f1fc47fb3e12",
+  "merged_commit": "209346b0a5572ddc42abc7b9d47d93e1b1cbe52f",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.12.1",
+  "ci": {
+    "pr": 38097574312,
+    "merged_main": 38097649909,
+    "container_publish": 38097698875,
+    "conclusions": "success"
+  },
+  "deployment": {
+    "host": "pi5",
+    "architecture": "aarch64",
+    "os": "Ubuntu 24.04.4",
+    "digest": "sha256:8fd3350b6dc93378f64f55061bbcbf95c0e8758006adb714b3bfc090e5194214",
+    "previous_version": "2.11.3",
+    "previous_digest": "sha256:d6beaca06f3387329051f4a39f6e7f1ef930f90a76c69bec7b726ffa6c2347af",
+    "transaction": "pi-app deploy wcb-bot 2.12.1",
+    "healthy": true,
+    "restarts": 0,
+    "installed_modules_matched": 27,
+    "rollback_required": false
+  },
+  "actual_discord": {
+    "confirmed_private_guild": true,
+    "owner_and_bot_only": true,
+    "allowed_general": true,
+    "owner_authored_questions": 10,
+    "actual_gateway_answers": 9,
+    "verified_recipient_abstentions": 1,
+    "reviewed_passes": 10,
+    "baseline_questions": 5,
+    "baseline_failing_topic_switches": 1,
+    "same_scenario_after": "conditional dessert choice instead of prior animal",
+    "fiction_not_human_preference": true,
+    "source_grounding_care_celebration_controls": "pass",
+    "latency_seconds_min_median_max": [
+      2.181,
+      3.358,
+      4.591
+    ],
+    "private_records": "app-volume smoke-tests/2026-10-10-1700, references/counts/pass-fail only",
+    "development_learning": false
+  },
+  "post_deploy_character_audit": {
+    "reviewed_actual_answers": 9,
+    "sources": "same four private human reference contexts, source scope unchanged",
+    "general_humor_fidelity_gain": "unmeasured",
+    "observed_limit": "One animal joke repeats older bot wording; broader variation remains H22 work."
+  },
+  "health_snapshot": {
+    "utc": "2026-10-11T00:21:42Z",
+    "errors": 0,
+    "response_failures": 0,
+    "disconnects": 0,
+    "memory_warnings": 0,
+    "learning_pauses": 0,
+    "study_pauses": 0,
+    "learning_batches": 4,
+    "gateway_answers": 9,
+    "declined_followups": 1
+  },
+  "persistent_continuity": {
+    "native_sources": 34,
+    "archive_documents": 16,
+    "archive_blocks": 4299,
+    "voice_eligible_blocks": 405,
+    "visual_episodes": 115,
+    "image_assets": 96,
+    "graph_human_sources": 439,
+    "graph_episodes": 554,
+    "graph_edges": 1011,
+    "live_abstractions": 0,
+    "identity_and_withdrawal": "preserved"
+  },
+  "final_observed_budget": {
+    "estimated_total_usd": 0.09052265,
+    "runtime_usd": 0.04358256,
+    "maintenance_usd": 0.04694009,
+    "run_delta_usd": 0.011375145,
+    "research_delta_usd": 0.00602667,
+    "research_calls": 84,
+    "attempts": 457,
+    "unsettled": 0,
+    "limits_usd": [
+      18,
+      2,
+      20
+    ],
+    "billing_and_pre_guard_spend": "unknown"
+  }
 }

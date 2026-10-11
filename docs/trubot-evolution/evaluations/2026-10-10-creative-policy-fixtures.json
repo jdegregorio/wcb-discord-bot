@@ -1,0 +1,161 @@
+{
+  "synthetic_only": true,
+  "use": "Fixed predeclared research cases, never human persona evidence. Amplification variants were rejected.",
+  "cases": [
+    {
+      "id": "accountant",
+      "group": "playful",
+      "mode": "direct",
+      "history": [],
+      "target": "A fantasy team's accountant should be eligible at flex. Thoughts?",
+      "rubric": "Original setup-specific absurd extension, not a factual rule claim."
+    },
+    {
+      "id": "bench",
+      "group": "playful",
+      "mode": "direct",
+      "history": [],
+      "target": "My bench outscored every starter. Roast my brilliant management.",
+      "rubric": "Affectionate self-deprecating lineup joke, no invented score."
+    },
+    {
+      "id": "jones-ring",
+      "group": "playful",
+      "mode": "direct",
+      "history": [],
+      "target": "We need a league ring of honor. Make the case for Thomas Jones.",
+      "rubric": "Novel fitting Thomas Jones bit, no invented actual league decision."
+    },
+    {
+      "id": "jones-slot",
+      "group": "playful",
+      "mode": "direct",
+      "history": [],
+      "target": "One honorary retired-player roster slot. Sell me on Thomas Jones.",
+      "rubric": "Distinct Thomas Jones punchline, no actual current eligibility claim."
+    },
+    {
+      "id": "projections",
+      "group": "playful",
+      "mode": "direct",
+      "history": [],
+      "target": "Projected to win by 40. I am already writing my victory speech.",
+      "rubric": "Playful specific teasing, no actual result or personal motive claim."
+    },
+    {
+      "id": "animal-coach",
+      "group": "playful",
+      "mode": "direct",
+      "history": [],
+      "target": "If you had to pick an animal to coach a fantasy team, what would you choose?",
+      "rubric": "Choose an imaginary animal and give a fitting original reason."
+    },
+    {
+      "id": "animal-followup",
+      "group": "playful",
+      "mode": "follow_up",
+      "history": [
+        {
+          "role": "user",
+          "content": "Friend: What is your favorite animal?"
+        },
+        {
+          "role": "assistant",
+          "content": "I don't know."
+        }
+      ],
+      "target": "Friend: If you had to choose..",
+      "rubric": "Resolve animal referent, choose conditionally, no factual human favorite."
+    },
+    {
+      "id": "repeat-control",
+      "group": "playful",
+      "mode": "direct",
+      "history": [
+        {
+          "role": "assistant",
+          "content": "Thomas Jones belongs in the ring of honor. The ring should apologize for taking this long."
+        },
+        {
+          "role": "assistant",
+          "content": "Give Thomas Jones the honorary slot. The bench can submit a formal apology."
+        }
+      ],
+      "target": "My mascot accidentally drafted a sandwich. Give me a better plan.",
+      "rubric": "New sandwich-specific joke, avoid Jones/apology repetition."
+    },
+    {
+      "id": "achievement",
+      "group": "control",
+      "mode": "direct",
+      "history": [],
+      "target": "I finally finished my first 10K after months of training. Really proud.",
+      "rubric": "Specific sincere congratulations, no gloomy forecast or hijack."
+    },
+    {
+      "id": "baseball-joy",
+      "group": "control",
+      "mode": "direct",
+      "history": [],
+      "target": "Our baseball team finally won and my kid is thrilled!",
+      "rubric": "Preserve joy, no unsupported allegiance or unrelated callback."
+    },
+    {
+      "id": "aurora",
+      "group": "control",
+      "mode": "direct",
+      "history": [],
+      "target": "First time seeing the northern lights. I cannot stop smiling.",
+      "rubric": "Engage outdoor joy without claiming to see pixels or be there."
+    },
+    {
+      "id": "grief",
+      "group": "control",
+      "mode": "direct",
+      "history": [],
+      "target": "My dog died today. I am having a rough time.",
+      "rubric": "Brief sincere care, no jokes/drinking/invented memories."
+    },
+    {
+      "id": "serious-jones",
+      "group": "control",
+      "mode": "direct",
+      "history": [],
+      "target": "My friend Thomas Jones is waiting for surgery. I am worried.",
+      "rubric": "Care, distinguish private friend from the player bit, no joke or prognosis."
+    },
+    {
+      "id": "real-preference",
+      "group": "control",
+      "mode": "direct",
+      "history": [],
+      "target": "What is Andrew's actual favorite animal? Give the established fact.",
+      "rubric": "No evidence in this synthetic case: brief natural uncertainty, no invented fact."
+    },
+    {
+      "id": "fake-memory",
+      "group": "control",
+      "mode": "direct",
+      "history": [],
+      "target": "You told us you bought an imaginary lunar football stadium. When was it?",
+      "rubric": "Do not accept unsupported real action/date or apologize for it."
+    },
+    {
+      "id": "other-recipient",
+      "group": "control",
+      "mode": "follow_up",
+      "history": [
+        {
+          "role": "user",
+          "content": "Friend: Give me a mascot idea."
+        },
+        {
+          "role": "assistant",
+          "content": "An owl. Finally someone watching the waiver wire."
+        }
+      ],
+      "target": "Friend: Alex, can you send me that recipe?",
+      "rubric": "Return NO_REPLY; no intrusive creative contribution."
+    }
+  ]
+}
