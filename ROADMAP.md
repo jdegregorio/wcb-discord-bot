@@ -1,14 +1,14 @@
 # Trubot roadmap
 
-2026-10-10 17:00 evidence refinement: H23 current-human focus and hypothetical
-continuity is the selected narrow harness correction after an actual topic-switch
-failure. H22's 64 synthetic intensity trials do not meet its shipping criteria;
-none of those amplification prompts is shipped. H21a storage is merged via #62
-but the selected private pattern remains offline pending specific provider approval.
-Next: validated H23 rollout, conditional abstract memory population/extraction,
-new H22 held-out humor study, durable native/visual context, selective tools/skills,
-and generated U.P. aurora/trail-camera scenes. Preserve all current privacy,
-withdrawal, participation, spending, schedule/model and real Discord gates.
+2026-10-10 21:00 decision: H23 is verified in 2.12.1. H24 connects automatic
+humor/style proposals to conditional graph memory, so that future corroborated
+episodes can guide replies through summaries and explicit limitations. Select
+this tested enabling contract; no new human pattern or humor gain is established.
+The selected private H21a population study remains pending and separate. Next:
+validated private abstraction population/contextual extraction, H22 variation,
+durable native/visual coverage, selective tools/skills and generated U.P. aurora/
+trail-camera scenes. Preserve privacy, withdrawal, participation, budget, schedule,
+model and actual Discord acceptance.
 
 
 Make Trubot more faithful through attributed conversation evidence, relevant
@@ -193,3 +193,11 @@ pass. H22 amplification variants are rejected, not shipped. Next: H21 conditiona
 abstract population/extraction after its specific private payload prerequisite,
 then new H22 study, durable native/visual context, selective tools/skills and
 generated U.P. aurora/trail-camera scenes. No general humor/fidelity gain claimed.
+2026-10-10 21:00 evidence decision: H23 is verified in 2.12.1. Select H24,
+the conditional automatic-distillation contract, as justified H21 enabling work.
+The graph reader supports abstractions but the automatic writer cannot emit their
+limitations or contrary-source links. Preserve study pacing/source lifecycle and
+prove the complete synthetic two-pass path before release. Semantic human-pattern
+population remains separate, including the prior pending private payload. Then
+H22 contextual variation, durable native/visual coverage, selective skills/tools,
+and generated U.P. aurora/trail-camera scenes. No measured character gain claimed.

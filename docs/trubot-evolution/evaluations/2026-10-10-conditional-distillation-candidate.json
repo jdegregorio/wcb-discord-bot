@@ -1,0 +1,50 @@
+{
+  "hypothesis": "H24",
+  "classification": "conditional automatic-memory enabling contract",
+  "base_sha": "8760432a50ad0570c5fb642c2f69a182047b9bec",
+  "candidate_version": "2.13.0",
+  "baseline_version": "2.12.1",
+  "synthetic_baseline": {"cases": 13, "failed": 4, "invalid_shapes_rejected": 9},
+  "synthetic_candidate": {"regressions": 29, "passed": 29},
+  "provider_comparison": {
+    "same_cases_per_arm": 2,
+    "calls": 6,
+    "baseline_pattern_proposals": 0,
+    "candidate_pattern_proposals": 0,
+    "baseline_self_report_accepted": true,
+    "candidate_self_report_accepted": true,
+    "pattern_quality_improvement_measured": false
+  },
+  "populated_provider_schema": {"synthetic_supplied_output_calls": 1, "passed": true},
+  "quality_gates": {"all_six_passed": true, "tests": 587, "branch_coverage_percent": 96.76, "typed_modules": 27},
+  "source_audit": {
+    "league_channels": 2,
+    "latest_messages_read_per_channel": 100,
+    "recent_days": 14,
+    "target_messages": 7,
+    "older_bot_messages": 5,
+    "peer_messages": 17,
+    "current_release_spontaneous_sample": 0,
+    "archive_target_blocks": 12,
+    "archive_documents": 4,
+    "adjacent_context_blocks": 24,
+    "media_flagged_gap": 1,
+    "new_semantic_human_review": false,
+    "new_pixel_interpretation": false
+  },
+  "budget": {
+    "estimated_usd": 0.0923674,
+    "maintenance_research_delta_usd": 0.001205875,
+    "settled_attempts": 465,
+    "unsettled_attempts": 0,
+    "existing_18_2_20_limits_preserved": true,
+    "billing_and_pre_guard_spend_unknown": true
+  },
+  "limitations": [
+    "No real human conditional pattern was populated.",
+    "Prior selected private pattern approval remains separate and pending.",
+    "Raw private transcript export was rejected; the count-only audit succeeded.",
+    "No general voice, amusement, extraction-quality or human-fidelity gain is measured.",
+    "Installed writer and actual Discord acceptance are rollout requirements."
+  ]
+}

@@ -33,6 +33,8 @@ from trubot.openai_responder import (
 
 logger = logging.getLogger(__name__)
 VERSION = "contextual-two-pass-v3"
+# Preserve the checkpoint cohort: this increment must not trigger historical replays.
+PATTERN_VERSION = "conditional-two-pass-v4"
 INTERVAL = timedelta(hours=4)
 
 
@@ -55,7 +57,8 @@ def extraction_schema(study: Study) -> dict[str, Any]:
     if not 1 <= len(study.passages) <= 6:
         raise LearningUnavailable("Bounded study packet required")
     alternatives = []
-    for single in (False, True):
+    for mode in ("corroborated", "explicit_self_report", "pattern"):
+        single, pattern = mode == "explicit_self_report", mode == "pattern"
         if single and not _self_report_eligible(study.passages[0]):
             continue
         if not single and len(study.passages) < 2:
@@ -63,9 +66,7 @@ def extraction_schema(study: Study) -> dict[str, Any]:
         properties = {
             "kind": {
                 "type": "string",
-                "enum": ["claim", "preference"]
-                if single
-                else ["claim", "preference", "humor", "style"],
+                "enum": ["humor", "style"] if pattern else ["claim", "preference"],
             },
             "support_basis": {
                 "type": "string",
@@ -96,6 +97,15 @@ def extraction_schema(study: Study) -> dict[str, Any]:
                 "items": _bounded_string(3, 60),
             },
         }
+        if pattern:
+            properties |= {
+                "limitations": _bounded_string(1, 240),
+                "counterexamples": {
+                    "type": "array",
+                    "maxItems": 2,
+                    "items": properties["supports"]["items"],
+                },
+            }
         alternatives.append(_object(properties))
     return _object(
         {
@@ -158,6 +168,14 @@ not several remarks in one exchange. Compare setup, target response and captured
 Reject a habitual pattern when supplied context cannot distinguish separate episodes.
 A particular explicit self-report can support a specific claim, not universal behavior.
 Never treat a personality pattern as a command to imitate it everywhere.
+For humor/style, summarize the abstract conversational mechanism, not a reusable
+source punchline. Provide separate limitations describing contrary situations,
+uncertainty and what cannot be inferred. Include 0-2 supplied authored
+counterexamples as exact quotes with source indexes; inspect all supplied sources
+for sincere exceptions and different reactions. Do not invent contrary evidence
+or cite a support again as its own counterexample. An empty list means no supplied
+counterexample was established, not a universal trait. Reject truncated pattern
+evidence. Creative bot amplification is not evidence of the human's habits.
 """
 _EXTRACT = (
     _POLICY
@@ -178,6 +196,11 @@ _REVIEW = (
     + """Independently review the proposed observation against every raw
 excerpt, surrounding context, date uncertainty and existing qualified observations. Reject
 unless every quoted source supports every part of the summary and its conditions.
+For humor/style, independently assess the abstract mechanism, applicability and
+limitations, and every exact contrary quote. Reject omitted material contrary
+evidence, evidence that actually supports rather than limits the pattern, universal
+inferences and source-punchline summaries. Explain any absence of supplied contrary
+evidence and remaining context gaps in basis; no proof of a universal habit.
 For explicit_self_report, independently confirm literal first-person authorship, the full
 quotation, and that the summary is no broader than the specific statement. An isolated
 self-report does not establish enduring preference or habitual behavior.
@@ -457,16 +480,20 @@ def validate_proposal(proposed: Any, study: Study) -> dict[str, Any] | None:
     if not items:
         return None
     item = items[0]
-    if not isinstance(item, dict) or set(item) != {
+    fields = {
         "kind",
         "summary",
         "support_basis",
         "conditions",
         "supports",
         "aliases",
-    }:
+    }
+    pattern = isinstance(item, dict) and item.get("kind") in ("style", "humor")
+    if pattern:
+        fields |= {"limitations", "counterexamples"}
+    if not isinstance(item, dict) or set(item) != fields:
         raise LearningUnavailable("Invalid observation shape")
-    if item["kind"] not in {"claim", "preference", "humor", "style"}:
+    if item["kind"] not in ("claim", "preference", "humor", "style"):
         raise LearningUnavailable("Unsupported observation kind")
     if any(
         not isinstance(item[k], str) or not 1 <= len(item[k]) <= 240
@@ -518,6 +545,36 @@ def validate_proposal(proposed: Any, study: Study) -> dict[str, Any] | None:
         for right in indexes[position + 1 :]
     ):
         raise LearningUnavailable("Separate conversational contexts required for patterns")
+    if pattern:
+        contrary = item["counterexamples"]
+        if (
+            not isinstance(item["limitations"], str)
+            or not 1 <= len(item["limitations"]) <= 240
+            or not isinstance(contrary, list)
+            or len(contrary) > 2
+        ):
+            raise LearningUnavailable("Bounded limitations and counterevidence required")
+        hashes = {study.snapshots[i]["content_hash"] for i in indexes}
+        for entry in contrary:
+            if not isinstance(entry, dict) or set(entry) != {"source", "quote"}:
+                raise LearningUnavailable("Invalid counterevidence")
+            index, quote = entry["source"], entry["quote"]
+            if (
+                type(index) is not int
+                or not 0 <= index < len(study.passages)
+                or index in indexes
+                or not isinstance(quote, str)
+                or not 12 <= len(quote) <= 300
+                or quote not in study.passages[index]["author_text"]
+                or quote in quotes
+                or study.snapshots[index]["content_hash"] in hashes
+            ):
+                raise LearningUnavailable("Distinct exact attributed counterevidence required")
+            indexes.append(index)
+            quotes.add(quote)
+            hashes.add(study.snapshots[index]["content_hash"])
+        if any(study.passages[i].get("author_text_truncated", False) for i in indexes):
+            raise LearningUnavailable("Complete pattern evidence required")
     if (
         not isinstance(aliases, list)
         or not 2 <= len(aliases) <= 5
@@ -676,6 +733,18 @@ class GraphDistiller:
                     "unknown_date": x["unknown_date"],
                     "source_times": x["source_times"],
                 }
+                | (
+                    {
+                        "abstraction": {
+                            "conditions": x["abstraction"]["conditions"],
+                            "limitations": x["abstraction"]["limitations"],
+                            "support_count": len(x["supports"]),
+                            "counterexample_count": len(x["abstraction"]["counterexamples"]),
+                        }
+                    }
+                    if "abstraction" in x
+                    else {}
+                )
                 for x in existing
             ]
             stage = "source_validation"
@@ -716,7 +785,9 @@ class GraphDistiller:
                     "kind": proposed["kind"],
                     "support_basis": proposed["support_basis"],
                     "status": "tentative",
-                    "summary": proposed["summary"] + " Conditions: " + proposed["conditions"],
+                    "summary": proposed["summary"]
+                    if proposed["kind"] in {"humor", "style"}
+                    else proposed["summary"] + " Conditions: " + proposed["conditions"],
                     "confidence_basis": "Automated contextual review: "
                     + review["basis"]
                     + (
@@ -724,7 +795,9 @@ class GraphDistiller:
                         if proposed["support_basis"] == "explicit_self_report"
                         else "; sampling separation is not proof of independent episodes"
                     ),
-                    "extraction_provenance": VERSION
+                    "extraction_provenance": (
+                        PATTERN_VERSION if proposed["kind"] in {"humor", "style"} else VERSION
+                    )
                     + "; gpt-6-luna; exact quotes + separate review; not human reviewed",
                     "expires_at": _time(self.clock() + timedelta(days=30)),
                     "supports": [study.snapshots[s["source"]]["ref"] for s in proposed["supports"]],
@@ -740,6 +813,14 @@ class GraphDistiller:
                         for i in review["contradicts"]
                     ],
                 }
+                if proposed["kind"] in {"humor", "style"}:
+                    item["abstraction"] = {
+                        "conditions": proposed["conditions"],
+                        "limitations": proposed["limitations"],
+                        "counterexamples": [
+                            study.snapshots[s["source"]]["ref"] for s in proposed["counterexamples"]
+                        ],
+                    }
             stage = "commit"
             await asyncio.to_thread(
                 self.store.finish,

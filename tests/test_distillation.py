@@ -61,6 +61,12 @@ def seed(stores):
 
 
 def proposal(study, **changes):
+    if changes.get("kind") in {"style", "humor"}:
+        changes = {
+            "limitations": "Synthetic historical pattern only.",
+            "counterexamples": [],
+            **changes,
+        }
     return {
         "observations": [
             {

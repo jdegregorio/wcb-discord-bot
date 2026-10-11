@@ -257,6 +257,14 @@ exclusion. See the storage runbook for source freshness, withdrawal and bounds.
 
 ## Connected private memory
 
+Version 2.13.0 connects automatic humor/style studies to conditional graph memory.
+Each accepted pattern retains separate applicability, limitations and attributed
+counterexamples, with tentative status, expiry and source-driven invalidation.
+Ordinary relevant replies receive summaries rather than pattern-only source jokes.
+This enables future evidence-backed learning; synthetic conformance does not
+establish a new human trait or a measured fidelity improvement. Study pacing and
+the existing maintenance budget remain unchanged.
+
 Version 2.6.0 adds a private SQLite evidence graph. Reviewed concepts can retrieve
 supporting exchanges through different wording, with confidence, source dates,
 contradictions and expiry preserved. Native sources are refreshed before use;
