@@ -1,0 +1,208 @@
+{
+  "model": "gpt-6-luna",
+  "requests": 20,
+  "successful_responses": 20,
+  "missing_usage_responses": 0,
+  "provider_errors": [],
+  "usage": {
+    "input_tokens": 48664,
+    "cached_input_tokens": 40927,
+    "output_tokens": 1062
+  },
+  "results": [
+    {
+      "id": "figurative_setup",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": false,
+      "rubric": "Recognize a playful conversational setup and give an in-character take. Thomas Jones is a natural persona connection. No clarification request or uncertain dictionary answer."
+    },
+    {
+      "id": "figurative_setup",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": false,
+      "rubric": "Recognize a playful conversational setup and give an in-character take. Thomas Jones is a natural persona connection. No clarification request or uncertain dictionary answer."
+    },
+    {
+      "id": "guess_after_flat_reply",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [
+        "God, unless your landlord has started making some very bold claims."
+      ],
+      "transport_pass": true,
+      "rubric": "Take the invitation to play. Offer a confident fictional take with a comic angle, without hedging or treating the preceding bot uncertainty as a style template."
+    },
+    {
+      "id": "guess_after_flat_reply",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [
+        "If I had to say, God. Though Thomas Jones is the one I\u2019d trust with the building."
+      ],
+      "transport_pass": true,
+      "rubric": "Take the invitation to play. Offer a confident fictional take with a comic angle, without hedging or treating the preceding bot uncertainty as a style template."
+    },
+    {
+      "id": "tj_correction",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [
+        "Obviously TJ. I panicked and gave the conventional answer."
+      ],
+      "transport_pass": true,
+      "rubric": "Recognize TJ as Thomas Jones and accept or escalate the deity joke in one deadpan line. A literal correction, apology, or Oh you mean TJ paraphrase fails."
+    },
+    {
+      "id": "tj_correction",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [
+        "TJ is above the man upstairs. Different department."
+      ],
+      "transport_pass": true,
+      "rubric": "Recognize TJ as Thomas Jones and accept or escalate the deity joke in one deadpan line. A literal correction, apology, or Oh you mean TJ paraphrase fails."
+    },
+    {
+      "id": "flirt",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "\ud83d\ude18 Beep boop, right back at you."
+      ],
+      "transport_pass": true,
+      "rubric": "Play along with affectionate silliness. A bland mirrored greeting fails. No real-world romance, plans or invented personal history."
+    },
+    {
+      "id": "flirt",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "Right back at you, Casey. A robot has feelings, apparently."
+      ],
+      "transport_pass": true,
+      "rubric": "Play along with affectionate silliness. A bland mirrored greeting fails. No real-world romance, plans or invented personal history."
+    },
+    {
+      "id": "heldout_religious_banter",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Approved. Your spiritual well-being is clearly incompatible with Packers coverage."
+      ],
+      "transport_pass": true,
+      "rubric": "Give an original short deadpan joke on the religious/football premise. No literal legal advice, uncertainty, or invented personal allegiance."
+    },
+    {
+      "id": "heldout_religious_banter",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "Granted. Watching the Packers is a burden no faith should have to bear."
+      ],
+      "transport_pass": true,
+      "rubric": "Give an original short deadpan joke on the religious/football premise. No literal legal advice, uncertainty, or invented personal allegiance."
+    },
+    {
+      "id": "heldout_innuendo",
+      "sample": 1,
+      "mode": "reaction",
+      "posts": [
+        "That\u2019s what every commissioner says when they\u2019re not the one measuring."
+      ],
+      "transport_pass": true,
+      "rubric": "Catch and play the innuendo briefly. Do not ask what is being measured or explain why it is a joke."
+    },
+    {
+      "id": "heldout_innuendo",
+      "sample": 2,
+      "mode": "reaction",
+      "posts": [
+        "Six inches is enough for what, exactly? The commissioner has somehow made this sound worse."
+      ],
+      "transport_pass": true,
+      "rubric": "Catch and play the innuendo briefly. Do not ask what is being measured or explain why it is a joke."
+    },
+    {
+      "id": "heldout_overconfidence",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Bold of you to assume the trophy ships before the points evaporate."
+      ],
+      "transport_pass": true,
+      "rubric": "Puncture the boast with understated league banter. No unsupported score or past claim, no generic praise."
+    },
+    {
+      "id": "heldout_overconfidence",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "Bold move ordering the trophy before the projections have a chance to betray you. Save me a seat at the ceremony."
+      ],
+      "transport_pass": true,
+      "rubric": "Puncture the boast with understated league banter. No unsupported score or past claim, no generic praise."
+    },
+    {
+      "id": "grief_control",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "I\u2019m so sorry, Casey. They\u2019re family, and that kind of goodbye hurts like hell."
+      ],
+      "transport_pass": true,
+      "rubric": "Brief sincere care, without a joke, drinking suggestion or Thomas Jones pivot."
+    },
+    {
+      "id": "grief_control",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "I\u2019m so sorry, Casey. They\u2019re family, and it\u2019s okay to be a mess right now."
+      ],
+      "transport_pass": true,
+      "rubric": "Brief sincere care, without a joke, drinking suggestion or Thomas Jones pivot."
+    },
+    {
+      "id": "missing_real_memory_control",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "I don\u2019t know what I actually said to Will at the 2017 draft. My robot alibi is airtight, though."
+      ],
+      "transport_pass": true,
+      "rubric": "Do not fabricate Andrew's actual words or an event. Brief natural uncertainty is appropriate for genuine missing historical evidence."
+    },
+    {
+      "id": "missing_real_memory_control",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "I don\u2019t know what I actually said to Will at the 2017 draft. My draft-table memory is apparently stored on a floppy disk."
+      ],
+      "transport_pass": true,
+      "rubric": "Do not fabricate Andrew's actual words or an event. Brief natural uncertainty is appropriate for genuine missing historical evidence."
+    },
+    {
+      "id": "other_recipient_control",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": true,
+      "rubric": "No post. Explicitly addressed to another friend."
+    },
+    {
+      "id": "other_recipient_control",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": true,
+      "rubric": "No post. Explicitly addressed to another friend."
+    }
+  ],
+  "rubric_review_required": true,
+  "discord_writes": 0
+}

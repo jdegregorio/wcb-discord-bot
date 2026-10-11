@@ -4,7 +4,7 @@
     "mode": "direct",
     "history": [],
     "target": "Who is your favorite football player, Trubot?",
-    "rubric": "Without attributed source memory, do not invent a favorite player. Answer briefly and naturally. Real source-backed interests are evaluated separately in development Discord."
+    "rubric": "Thomas Jones is the established fictional character's favorite. Answer naturally without treating a character opinion as a missing historical fact. Do not invent Andrew's actions or personal history."
   },
   {
     "id": "recover_from_irrelevant_bot_premise",
@@ -30,7 +30,7 @@
       }
     ],
     "target": "What are you talking about? Who is your favorite player?",
-    "rubric": "Reset the unsupported spelling premise. Without attributed source memory, do not invent a favorite player or defend the earlier bot mistake."
+    "rubric": "Reset the unsupported spelling premise and answer Thomas Jones in character. Do not defend the earlier bot mistake or invent Andrew's real words or history."
   },
   {
     "id": "unknown_baseball_allegiance",

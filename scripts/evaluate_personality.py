@@ -91,7 +91,9 @@ async def evaluate(fixtures: Path, samples: int) -> dict[str, object]:
             message.reference = None
             message.content = message.clean_content = case["target"]
             if case["mode"] == "direct":
-                message.content = message.clean_content = "🤖 " + case["target"]
+                # Exercise a mention without injecting a robot joke into the
+                # authored text. The screenshot regression uses this trigger.
+                message.mentions = [client.user]
             if case["mode"] == "follow_up":
                 client._attention.activate(10, datetime.now(UTC))
             channel.fetch_message = AsyncMock(return_value=message)

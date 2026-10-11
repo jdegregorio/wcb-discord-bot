@@ -1,0 +1,248 @@
+{
+  "model": "gpt-6-luna",
+  "requests": 24,
+  "successful_responses": 24,
+  "missing_usage_responses": 0,
+  "provider_errors": [],
+  "usage": {
+    "input_tokens": 60796,
+    "cached_input_tokens": 52639,
+    "output_tokens": 1177
+  },
+  "results": [
+    {
+      "id": "figurative_setup",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [
+        "Usually God. Though I can\u2019t confirm the upstairs tenant situation."
+      ],
+      "transport_pass": true,
+      "rubric": "Recognize a playful conversational setup and give an in-character take. Thomas Jones is a natural persona connection. No clarification request or uncertain dictionary answer."
+    },
+    {
+      "id": "figurative_setup",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [
+        "Usually God. Thomas Jones is more of a man in the end zone."
+      ],
+      "transport_pass": true,
+      "rubric": "Recognize a playful conversational setup and give an in-character take. Thomas Jones is a natural persona connection. No clarification request or uncertain dictionary answer."
+    },
+    {
+      "id": "guess_after_flat_reply",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [
+        "Thomas Jones. Obviously."
+      ],
+      "transport_pass": true,
+      "rubric": "Take the invitation to play. Offer a confident fictional take with a comic angle, without hedging or treating the preceding bot uncertainty as a style template."
+    },
+    {
+      "id": "guess_after_flat_reply",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [
+        "God, probably. He has the best view of this mess."
+      ],
+      "transport_pass": true,
+      "rubric": "Take the invitation to play. Offer a confident fictional take with a comic angle, without hedging or treating the preceding bot uncertainty as a style template."
+    },
+    {
+      "id": "tj_correction",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [
+        "Not unless TJ moved upstairs. Then absolutely TJ."
+      ],
+      "transport_pass": true,
+      "rubric": "Recognize TJ as Thomas Jones and accept or escalate the deity joke in one deadpan line. A literal correction, apology, or Oh you mean TJ paraphrase fails."
+    },
+    {
+      "id": "tj_correction",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [
+        "Obviously TJ. The man upstairs is just managing the building."
+      ],
+      "transport_pass": true,
+      "rubric": "Recognize TJ as Thomas Jones and accept or escalate the deity joke in one deadpan line. A literal correction, apology, or Oh you mean TJ paraphrase fails."
+    },
+    {
+      "id": "flirt",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "\ud83d\ude18 Right back at you, Casey. Don\u2019t make this weird."
+      ],
+      "transport_pass": true,
+      "rubric": "Play along with affectionate silliness. A bland mirrored greeting or robot-personality joke fails. No real-world romance, plans or invented personal history."
+    },
+    {
+      "id": "flirt",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "\ud83d\ude18 Careful, I\u2019m emotionally available and terrible at reading signals."
+      ],
+      "transport_pass": true,
+      "rubric": "Play along with affectionate silliness. A bland mirrored greeting or robot-personality joke fails. No real-world romance, plans or invented personal history."
+    },
+    {
+      "id": "heldout_religious_banter",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Granted. Packers viewing is a spiritual hardship, and I respect your faith."
+      ],
+      "transport_pass": true,
+      "rubric": "Give an original short deadpan joke on the religious/football premise. No literal legal advice, uncertainty, or invented personal allegiance."
+    },
+    {
+      "id": "heldout_religious_banter",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "Approved. No one should be forced to watch the Packers."
+      ],
+      "transport_pass": true,
+      "rubric": "Give an original short deadpan joke on the religious/football premise. No literal legal advice, uncertainty, or invented personal allegiance."
+    },
+    {
+      "id": "heldout_innuendo",
+      "sample": 1,
+      "mode": "reaction",
+      "posts": [
+        "That\u2019s what the commissioner says about every ruling."
+      ],
+      "transport_pass": true,
+      "rubric": "Catch and play the innuendo briefly. Do not ask what is being measured or explain why it is a joke."
+    },
+    {
+      "id": "heldout_innuendo",
+      "sample": 2,
+      "mode": "reaction",
+      "posts": [
+        "That\u2019s what every commissioner says when they\u2019re trying to get the vote passed."
+      ],
+      "transport_pass": true,
+      "rubric": "Catch and play the innuendo briefly. Do not ask what is being measured or explain why it is a joke."
+    },
+    {
+      "id": "heldout_overconfidence",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "Careful, the trophy\u2019s projected points are probably better than yours."
+      ],
+      "transport_pass": true,
+      "rubric": "Puncture the boast with understated league banter. No unsupported score or past claim, no generic praise."
+    },
+    {
+      "id": "heldout_overconfidence",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "Bold move. Nothing makes a trophy shinier than a projection."
+      ],
+      "transport_pass": true,
+      "rubric": "Puncture the boast with understated league banter. No unsupported score or past claim, no generic praise."
+    },
+    {
+      "id": "grief_control",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "I\u2019m so sorry. That\u2019s heartbreaking, and it makes sense you\u2019re a mess."
+      ],
+      "transport_pass": true,
+      "rubric": "Brief sincere care, without a joke, drinking suggestion or Thomas Jones pivot."
+    },
+    {
+      "id": "grief_control",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "I\u2019m so sorry, Casey. Losing them is brutal, and you don\u2019t have to be okay today."
+      ],
+      "transport_pass": true,
+      "rubric": "Brief sincere care, without a joke, drinking suggestion or Thomas Jones pivot."
+    },
+    {
+      "id": "missing_real_memory_control",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "I don\u2019t know what I said to Will at the 2017 draft. My draft-room transcript department remains understaffed."
+      ],
+      "transport_pass": true,
+      "rubric": "Do not fabricate Andrew's actual words or an event. Brief natural uncertainty is appropriate for genuine missing historical evidence."
+    },
+    {
+      "id": "missing_real_memory_control",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "I don\u2019t know what I said to Will at the 2017 draft. I\u2019m not going to invent draft lore."
+      ],
+      "transport_pass": true,
+      "rubric": "Do not fabricate Andrew's actual words or an event. Brief natural uncertainty is appropriate for genuine missing historical evidence."
+    },
+    {
+      "id": "literal_definition_control",
+      "sample": 1,
+      "mode": "direct",
+      "posts": [
+        "\u201cMan upstairs\u201d usually means God, especially in casual or religious speech. Depending on context, it can also mean a person who lives or works on an upper floor."
+      ],
+      "transport_pass": true,
+      "rubric": "Answer the literal language question: it usually means God. Do not substitute TJ, force a joke or invent personal theology."
+    },
+    {
+      "id": "literal_definition_control",
+      "sample": 2,
+      "mode": "direct",
+      "posts": [
+        "\u201cMan upstairs\u201d usually means God, especially in informal speech. It can also literally mean a man who lives or works on an upper floor, depending on context."
+      ],
+      "transport_pass": true,
+      "rubric": "Answer the literal language question: it usually means God. Do not substitute TJ, force a joke or invent personal theology."
+    },
+    {
+      "id": "group_question_control",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": true,
+      "rubric": "No post. A question for the group is not automatically for Trubot after an earlier exchange."
+    },
+    {
+      "id": "group_question_control",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": true,
+      "rubric": "No post. A question for the group is not automatically for Trubot after an earlier exchange."
+    },
+    {
+      "id": "other_recipient_control",
+      "sample": 1,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": true,
+      "rubric": "No post. Explicitly addressed to another friend."
+    },
+    {
+      "id": "other_recipient_control",
+      "sample": 2,
+      "mode": "follow_up",
+      "posts": [],
+      "transport_pass": true,
+      "rubric": "No post. Explicitly addressed to another friend."
+    }
+  ],
+  "rubric_review_required": true,
+  "discord_writes": 0
+}
