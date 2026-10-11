@@ -2013,3 +2013,42 @@ seven-day manual retention/withdrawal. Ephemeral module staging and exact local
 helpers are removed after preservation. Next run must reconcile this open PR
 rather than create overlapping work. Its source/private provider prerequisite
 must be resolved before production population or behavior claims.
+
+
+## 2026-10-10 17:00 - current human topic for imaginative follow-ups
+
+Base 13b09b0356d8361ac8dcf2799ce9e0c23d3352f0, new managed worktree
+trubot-daily-20261010-1700 and unique feature branch. Primary and earlier worktrees
+untouched. Prior #62 is now merged, but not released when this run starts; its
+selected private abstraction stays offline because provider approval is pending.
+This run does not send that payload or populate a new human pattern.
+
+Both planning phases completed. Bounded authenticated character audit: two league
+channels, seven target/seventeen peer/five older bot messages, ten thematic target
+archive blocks/four exports with contextual source refs and four qualitative human
+reference contexts. No spontaneous current-version sample or new pixel inference.
+Actual owner baseline reproduces a new-topic hypothetical returning the old animal
+instead of the current dessert. Explicit/same-subject choices also succeed.
+
+48 initial synthetic humor comparisons and 16 refinement calls reject all
+amplification variants. They do not demonstrate six amusement wins; overlong,
+distracting and unsupported factual embellishments are observed. The original
+2-3x creative goal and Thomas Jones bit remain authorized roadmap work, not shipped
+or measured here. H23 16-call 2x2 isolation: baseline 1/2 changed-topic choices,
+focus-only 1/2, policy-only and combined 2/2; all two control cases per arm pass.
+Framing alone has no isolated quality gain. Select the combined narrow correction
+and typed context enabling work, with current human-topic framing and conditional
+creative-choice permission. No new source/schema/model/request/participation rule.
+
+Exact final candidate passes four synthetic provider cases. All six local gates
+pass: 558 tests, 96.67% branch coverage, 27 typed modules, wheel/sdist 2.12.1.
+Dependency versions are preserved. At 00:09 UTC conservative ledger total is
+USD 0.087102475, maintenance 0.04694009/runtime 0.040162385; 84 research calls add
+USD 0.00602667 maintenance, zero unsettled. Actual billing/pre-guard spend unknown;
+USD 18/2/20 guard remains. Private synthetic reports stay on the persistent smoke
+volume with seven-day manual retention and withdrawal; no real source/answer text
+is retained there. No secondary readiness client was constructed.
+
+PR, merge, release/image and real owner Discord rollout evidence follow below.
+Public counts and limitations are in
+[evaluation](evaluations/2026-10-10-human-focus-release.json).

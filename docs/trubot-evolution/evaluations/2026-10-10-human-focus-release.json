@@ -1,0 +1,83 @@
+{
+  "run": "2026-10-10-1700",
+  "base_sha": "13b09b0356d8361ac8dcf2799ce9e0c23d3352f0",
+  "chosen_hypothesis": "H23",
+  "version": "2.12.1",
+  "production_before": "2.11.3",
+  "production_after": "pending",
+  "character_audit": {
+    "league_channels": 2,
+    "message_limit_each": 100,
+    "age_days": 14,
+    "target_messages": 7,
+    "peer_messages": 17,
+    "older_bot_messages": 5,
+    "current_release_spontaneous_bot_messages": 0,
+    "selected_archive_blocks": 10,
+    "selected_exports": 4,
+    "new_pixel_interpretation": false,
+    "human_reference_contexts": 4,
+    "independent_human_evaluator": false
+  },
+  "humor_experiments": {
+    "inputs": 16,
+    "initial_arms": 3,
+    "initial_calls": 48,
+    "refinement_calls": 16,
+    "outcome": "All amplification variants rejected; no six-of-eight humor preference or measured multiplier. Overlong/distracting/unsupported factual embellishment observed.",
+    "private_pattern_sent": false
+  },
+  "focus_experiment": {
+    "inputs": 4,
+    "arms": 4,
+    "requests": 16,
+    "topic_switch_success": {
+      "baseline": 1,
+      "focus_only": 1,
+      "policy_only": 2,
+      "combined": 2
+    },
+    "topic_switch_total_each": 2,
+    "controls_pass_each": 2,
+    "controls_total_each": 2,
+    "framing_only_quality_gain": "not established"
+  },
+  "final_candidate_provider": {
+    "same_cases": 4,
+    "pass": 4,
+    "requests": 4,
+    "synthetic_only": true,
+    "discord_writes": 0,
+    "constructs_discord_readiness_client": false
+  },
+  "quality_gates": {
+    "locked_sync": "pass",
+    "format": "pass",
+    "lint": "pass",
+    "mypy": "pass",
+    "pytest_passed": 558,
+    "coverage_percent": 96.67,
+    "build": "pass",
+    "dependency_versions_changed": false
+  },
+  "budget_before_deployment": {
+    "estimated_total_usd": 0.087102475,
+    "maintenance_total_usd": 0.04694009,
+    "research_delta_usd": 0.00602667,
+    "provider_research_calls": 84,
+    "unsettled": 0,
+    "limits_usd": [
+      18,
+      2,
+      20
+    ],
+    "actual_billing_and_pre_guard_spend": "unknown"
+  },
+  "limitations": [
+    "Small one-sample comparisons with implementation-aware evaluator.",
+    "Final real Discord/deployment acceptance pending.",
+    "No general human fidelity or humor improvement claim.",
+    "Prior selected private H21a pattern remains offline pending specific approval.",
+    "Full native/visual context and abstract population/extraction remain roadmap work."
+  ]
+}

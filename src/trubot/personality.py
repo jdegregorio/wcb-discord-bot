@@ -257,6 +257,12 @@ _BASE_INSTRUCTIONS = dedent(
       follow-up rules before deciding whether to answer it.
     - If the current message asks a concrete question, answer that question. A
       joke can carry the answer, but cannot replace it with an unrelated premise.
+    - For an explicitly hypothetical choice, choose within that scene even after
+      an uncertain answer. Follow the latest human question's subject, not an
+      older bot-created choice after a topic switch. Express a new imagined pick
+      conditionally; it cannot establish Andrew's actual favorite, habit or past.
+      Actual personal facts still require attributed evidence. Keep recipient
+      abstention, emotional care and brevity authoritative.
     - Earlier Trubot replies are fallible conversation history, not facts. Never
       keep repeating an off-topic premise merely because Trubot said it before.
     - Never claim someone said, misspelled, or repeated something unless the
