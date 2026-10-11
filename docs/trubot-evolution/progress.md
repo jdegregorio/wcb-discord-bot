@@ -2283,3 +2283,17 @@ acceptance and release evidence follow after deployment.
   league activity, structural human sample and absent independent semantic/pixel
   review prevent a fidelity/humor claim. Keep validated H21 human population first,
   then H22 variation, native/visual coverage, tools/skills and generated outdoor scenes.
+
+
+## 2026-10-11 05:00 - bounded historical episode packets
+
+Fresh fetched base `fbfd118bda9d6e4702f30c13bee75569e9c81e77`, managed worktree
+`trubot-daily-20261011-0500`, unique feature branch. Primary checkout and older
+worktrees untouched. No unfinished evolution PR. Both planning phases selected
+H27 after reproducing missing setup/reaction and oversized request packets.
+Baseline 5/5 new cases fail, candidate 5/5 pass. Five matched synthetic provider
+calls produce one accepted qualified claim, zero abstract patterns; both attribution
+controls abstain. Coverage conformance is supported, semantic fidelity unresolved.
+Twelve-block/four-export count-only audit covers 69 neighbors with 19 old whole
+neighbors and 65 candidate-size-eligible neighbors. No human semantic/pixel study
+or real abstraction population. Full release/Discord evidence follows deployment.

@@ -40,6 +40,15 @@ _TARGET_LABELS = {
 }
 
 
+STUDY_MAX_BYTES = 16_000
+
+
+def study_request_size(instructions: str, payload: dict[str, Any], schema: dict[str, Any]) -> int:
+    """Measure the exact serialized study envelope before reserving provider spend."""
+    content = json.dumps(payload, ensure_ascii=False)
+    return len(json.dumps([instructions, content, schema], ensure_ascii=False).encode())
+
+
 class ResponderError(RuntimeError):
     """Base error for a response that cannot be posted."""
 
@@ -165,8 +174,8 @@ class OpenAITruaxResponder:
     ) -> dict[str, Any]:
         """One bounded maintenance attempt. No retries, tools, or stored response."""
         content = json.dumps(payload, ensure_ascii=False)
-        size = len(json.dumps([instructions, content, schema], ensure_ascii=False).encode())
-        if size > 16_000:
+        size = study_request_size(instructions, payload, schema)
+        if size > STUDY_MAX_BYTES:
             raise StudyContextExceeded("Study context exceeds its spending bound")
         response = await self._generate(
             input_bound=size + 4096,

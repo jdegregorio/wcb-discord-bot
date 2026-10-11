@@ -1443,3 +1443,90 @@ zero unsettled requests. Same USD18/2/20 caps, no added service or recurring cal
 Billing and pre-guard spend remain unknown. Prioritize validated human contextual
 population now, then H22 variation, wider native/visual context, selective tools/skills
 and generated outdoor scenes. Do not equate expanded domains with a learned profile.
+
+
+## 2026-10-11 05:00 - H27 bounded contextual study packets
+
+Phase 1, before implementation: production 2.14.0 is healthy and has zero human
+abstractions. No unfinished evolution PR; earlier selected H21a private payload
+remains separate and unused. Authenticated three-channel latest-100/14-day audit
+has 7 target, 17 peer and 5 older bot messages, zero current-release spontaneous
+sample. Current owner development responses show repeated joke/care wording.
+The twelve-block historical structural audit is not a semantic character study.
+No new human trait, actual pixel interpretation or 2-3x humor claim is supported.
+
+H27: StudyStore currently supplies only one neighbor per side, truncated to 120
+UTF-8 bytes. Longer setup qualifications and reactions, or a setup two blocks
+away, cannot reach either model pass. Six synthetic 987-character sources use
+14,332 request bytes even with no context; adding the existing neighbors can
+exceed the authoritative 16,000-byte adapter limit. Fuller bounded episodes should
+make future abstractions auditable so that humor/timing is learned from setup and
+reaction rather than isolated words. This is enabling work, not validated fidelity.
+
+Acceptance declared now: up to three neighboring blocks per side, anonymous
+speaker/role/position/parser flags and complete text for admitted rows. Oversized
+or budget-omitted context must be counted explicitly, never silently clipped.
+Keep up to six attributed sources and their source-index correspondence; remove
+lowest-ranked related candidates only when the bare packet cannot fit. Reserve
+request headroom and check the exact adapter serialization. Prioritize near setup
+and reaction across sources before farther context. Both provider passes must see
+identical admitted evidence; never discard contradictions to force review to fit.
+Anchor, exact quote validation, separation, withdrawal, immutable export suppression,
+source refresh, four-hour cohort/lease, tentative expiry, model and spending remain.
+No native peer-coverage claim or new graph schema/category/intake.
+
+Validation: reproduce long/distant setup loss and oversized packet through the
+existing selection and two-pass handler on invented exports; compare the same
+fixtures after change. Guard peer/bot/quoted support, media gaps, unknown dates,
+Unicode, oversize, truncation, source invalidation and withdrawal. Bounded matched
+provider comparison: two separate context-dependent playful episodes plus a
+sincere counterepisode, and a quoted-peer negative. Success for extraction quality
+requires a reviewed pattern only in the full-context arm and no negative learned
+belief. Abstention in both arms leaves semantic benefit unresolved. Supplied-output
+conformance is not spontaneous learning. Run real owner development Discord through
+released handlers, with isolated invented memory for changed acceptance and normal
+baseball/history/care/recipient controls. Store only private message references and
+pass/fail metadata. Existing maintenance ledger only; no new production ledger.
+
+Alternatives: H22 variation remains an actual response mismatch, but previous
+intensity changes failed. H25 native/visual coverage could improve source quality;
+missing semantic/pixel review and durable context remain prerequisites. H3 selective
+skills/tools and generated U.P. aurora/trail-camera scenes remain exploratory.
+No evidence supports changing the model or migrating the harness now.
+
+Phase 2 decision: prioritize H27 as one supported H21 context-enabling correction,
+then independently validated human abstraction population, H22 variation, broader
+native/visual coverage, selective tools/skills and requested generated scenes.
+High confidence in source coverage/request-bound defects; behavioral contribution
+unresolved. Operating impact: bounded additional context in existing two requests,
+maximum six studies/day, unchanged USD18 runtime/USD2 maintenance/USD20 total.
+No service or recurring extra request. Retire H27 if context remains truncated or
+bounds/source authority regress; better human semantic evidence can reprioritize
+population immediately. Do not add further unmeasured domain categories.
+
+
+H27 pre-release result: baseline fails 5/5 new selection/handler cases; candidate
+passes 5/5. The long ASCII/Unicode fixture envelopes are 18,400/18,442 baseline
+bytes, exceeding the unchanged provider gate. Candidate admission uses at most
+14,000 exact request bytes with 2,000 bytes of normal review headroom. Unusually
+large prior neighborhoods can still stop at the final 16,000-byte gate; they
+are never shortened to hide contradictions. Both passes use the same packet.
+
+Count-only ArchiveStore.context audit: twelve attributed blocks across four
+exports, 69 neighboring blocks. Baseline includes only 19 whole neighbors;
+65 are within the candidate's 600-byte per-row admission limit, including 46
+farther neighbors. Four oversized neighbors and three media-flagged windows
+remain gaps. These are potential coverage counts before packet budget admission,
+not semantic judgments, verified reply links or proof of independent episodes.
+No human text exported, pixel study, personality conclusion or population.
+
+Matched provider experiment: five maintenance calls across four same-model,
+same-policy cases. Baseline abstains on the invented playful pair; fuller context
+produces one independently accepted qualified CLAIM describing a conversational
+mechanism, not an abstract pattern. Both quoted-peer negatives abstain. The
+predeclared abstract-extraction criterion is NOT met. H27 coverage/conformance is
+supported; human abstract-learning/fidelity benefit remains unresolved. H28 is a
+new exploratory classification hypothesis: mechanisms may be emitted as claims,
+losing explicit pattern limitations/counterexample edges. Test multiple independent
+held-outs and false-pattern controls before changing classification or local rules.
+Do not relabel this one provider result as improved humor or human learning.

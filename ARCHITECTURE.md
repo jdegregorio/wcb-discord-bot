@@ -223,3 +223,11 @@ priorities, emotions expressed reactions, and relationships observed interaction
 none establishes hidden motives, mental health or private intimacy. Domain coverage
 is enabling conformance, not a validated human trait or measured fidelity gain.
 Existing schema-1 data remains readable; no intake, source or spending migration.
+
+
+Historical distillation studies whole neighboring messages (up to three per side),
+with anonymous speaker roles and explicit omitted-context counts. Packet admission
+measures the same serialized envelope as the provider adapter, keeps the anchor
+and source indexes aligned, and reserves review headroom. Independent extraction
+and review receive identical evidence; large prior conflicts still stop at the
+existing request limit. This changes no graph schema, intake scope or study pacing.

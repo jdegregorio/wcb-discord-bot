@@ -1,5 +1,14 @@
 # Trubot evolution
 
+2026-10-11 05:00 selection: H27 fits fuller historical setup/reaction packets into
+existing study request bounds. This supports H21 contextual abstraction learning;
+no new human trait or general reply-quality gain is claimed. Acceptance, contrary
+cases, scope and operating impact are in research.md (under docs/trubot-evolution).
+Next: validated human abstraction population, H22 variation, native/visual coverage,
+selective tools/skills and generated U.P. aurora/trail-camera scenes. Preserve source,
+withdrawal, four-hour pacing, participation and USD18/2/20 caps.
+
+
 2026-10-11 01:00 verified: H26 is delivered in 2.14.0. Conditional value,
 emotion and relationship memories retain the same evidence, review, limitations,
 source lifecycle and withdrawal contract. All 642 tests, CI, both image architectures,
