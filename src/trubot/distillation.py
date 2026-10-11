@@ -25,16 +25,18 @@ from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable, _time
 from trubot.memory import score, terms
 from trubot.openai_responder import (
+    STUDY_MAX_BYTES,
     OpenAITruaxResponder,
     ResponderError,
     StudyContextExceeded,
     StudyResponseInvalid,
+    study_request_size,
 )
 
 logger = logging.getLogger(__name__)
 VERSION = "contextual-two-pass-v3"
 # Preserve the checkpoint cohort: this increment must not trigger historical replays.
-PATTERN_VERSION = "behavioral-two-pass-v5"
+PATTERN_VERSION = "bounded-episode-two-pass-v6"
 INTERVAL = timedelta(hours=4)
 
 
@@ -143,7 +145,10 @@ Only author_text is Andrew's eligible authored text;
 adjacent_context is context only, never support. Bot, peer claims, quoted material, previews,
 OCR and missing images cannot establish his beliefs. Native excerpts may lack peer setup;
 Slack dates are unknown. Context includes anonymous speaker keys, positions and parser flags;
-keep different speakers separate. Truncated passages may omit qualifications; reject
+keep different speakers separate. context_omitted counts neighboring blocks withheld for
+size or request budget; admitted context text is complete but the bounded neighborhood
+can still omit the real setup. Do not assume missing context is agreement or a reaction.
+Truncated passages may omit qualifications; reject
 interpretations that rely on missing text or image pixels. Context-only target blocks
 are not additional support.
 Native target-only packets explicitly lack peer setup. Adjacency does not prove reply links
@@ -231,6 +236,51 @@ class Study:
 class StudySelection:
     study: Study | None = field(repr=False)
     reason: Literal["ready", "paced", "no_candidate"]
+
+
+# Leave 2,000 bytes for a normal proposal/prior review. The adapter remains the
+# final 16,000-byte gate for unusually large priors; never drop a contradiction.
+_CONTEXT_ENVELOPE = STUDY_MAX_BYTES - 2_000
+_CONTEXT_ROW_BYTES = 600
+
+
+def _fit_context(study: Study) -> Study:
+    """Keep whole anonymous context rows, balanced across the admitted sources."""
+    pools = [p["adjacent_context"] for p in study.passages]
+    passages = [
+        p | {"adjacent_context": [], "context_omitted": len(pool)}
+        for p, pool in zip(study.passages, pools, strict=True)
+    ]
+    snapshots = list(study.snapshots)
+
+    def size() -> int:
+        packet = Study(study.token, snapshots, passages)
+        return study_request_size(_EXTRACT, {"sources": passages}, extraction_schema(packet))
+
+    # Only related candidates are removed, before any proposal exists. Keep the
+    # anchor and source_index ordering intact, and never shorten authored support.
+    while size() > _CONTEXT_ENVELOPE:
+        if len(passages) == 1:
+            raise StudyContextExceeded("Study anchor exceeds its request bound")
+        passages.pop()
+        snapshots.pop()
+        pools.pop()
+
+    # Nearest before/after rows in every source precede farther rows in any one
+    # source. Large or unaffordable rows are explicit gaps, never clipped quotes.
+    for offset in (-1, 1, -2, 2, -3, 3):
+        for passage, pool in zip(passages, pools, strict=True):
+            for row in pool:
+                if row["offset"] != offset or len(row["text"].encode()) > _CONTEXT_ROW_BYTES:
+                    continue
+                passage["adjacent_context"].append(row)
+                passage["context_omitted"] -= 1
+                if size() > _CONTEXT_ENVELOPE:
+                    passage["adjacent_context"].pop()
+                    passage["context_omitted"] += 1
+    for passage in passages:
+        passage["adjacent_context"].sort(key=lambda row: row["offset"])
+    return Study(study.token, snapshots, passages)
 
 
 class StudyStore:
@@ -367,18 +417,16 @@ class StudyStore:
                                 "position": "before" if r["ordinal"] < ref["ordinal"] else "after",
                                 "offset": r["ordinal"] - ref["ordinal"],
                                 "flags": json.loads(r["flags"]),
-                                "text_truncated": len(r["content"].encode("utf-8")) > 120,
-                                "text": r["content"]
-                                .encode("utf-8")[:120]
-                                .decode("utf-8", errors="ignore"),
+                                "text_truncated": False,
+                                "text": r["content"],
                             }
                             for r in archive.execute(
                                 "SELECT * FROM messages WHERE document=? "
                                 "AND ordinal BETWEEN ? AND ? AND ordinal!=? ORDER BY ordinal",
                                 (
                                     ref["document"],
-                                    ref["ordinal"] - 1,
-                                    ref["ordinal"] + 1,
+                                    ref["ordinal"] - 3,
+                                    ref["ordinal"] + 3,
                                     ref["ordinal"],
                                 ),
                             )
@@ -397,11 +445,12 @@ class StudyStore:
                         }
                     )
             token = uuid4().hex
+            study = _fit_context(Study(token, [snapshots[i] for i in selected], passages))
             db.execute(
                 "INSERT OR REPLACE INTO checkpoints VALUES ('distillation', ?)",
                 (_json({"token": token, "not_before": _time(now + INTERVAL)}),),
             )
-            return StudySelection(Study(token, [snapshots[i] for i in selected], passages), "ready")
+            return StudySelection(study, "ready")
 
     def check(self, study: Study, *, now: datetime, verified_after: datetime | None = None) -> None:
         with self.graph._transaction() as (db, source):

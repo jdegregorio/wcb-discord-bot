@@ -1,5 +1,14 @@
 # Prioritized backlog
 
+2026-10-11 05:00 selection: H27 fits fuller historical setup/reaction packets into
+existing study request bounds. This supports H21 contextual abstraction learning;
+no new human trait or general reply-quality gain is claimed. Acceptance, contrary
+cases, scope and operating impact are in research.md (under docs/trubot-evolution).
+Next: validated human abstraction population, H22 variation, native/visual coverage,
+selective tools/skills and generated U.P. aurora/trail-camera scenes. Preserve source,
+withdrawal, four-hour pacing, participation and USD18/2/20 caps.
+
+
 2026-10-11 01:00 verified: H26 is delivered in 2.14.0. Conditional value,
 emotion and relationship memories retain the same evidence, review, limitations,
 source lifecycle and withdrawal contract. All 642 tests, CI, both image architectures,
@@ -425,3 +434,13 @@ prove the complete synthetic two-pass path before release. Semantic human-patter
 population remains separate, including the prior pending private payload. Then
 H22 contextual variation, durable native/visual coverage, selective skills/tools,
 and generated U.P. aurora/trail-camera scenes. No measured character gain claimed.
+
+
+H28 exploratory follow-up to H27: one fuller-context synthetic mechanism is emitted
+as a claim instead of a pattern. Study held-out human episodes and invented false
+patterns before changing categorization, so that qualified mechanisms retain limits
+and contrary edges. Depends on independently reviewed semantic expectations and
+H27 packets. Acceptance: correct conditional domains, sincere exceptions, no peer
+beliefs or universal traits, same-model baseline comparison and real Discord.
+Confidence low (one synthetic result); existing maintenance allowance, no added
+recurring call/service. Keep validated human population and H22 ahead of more schema.

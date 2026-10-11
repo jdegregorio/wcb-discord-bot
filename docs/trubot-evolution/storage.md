@@ -728,3 +728,24 @@ kinds. Before rollback after actual population, preserve a private graph backup 
 retire/suppress new-domain observations using the current version; never restore
 withdrawn sources or reset spending state. The release validation populates only
 isolated invented stores, so current production rollback has no new-kind data risk.
+
+
+## Bounded historical episode study context, 2.15.0
+
+Historical study packets may include up to three adjacent blocks before and after
+an attributed source. Admitted rows contain complete text, anonymous speaker keys,
+roles, offsets and parser flags. Rows above 600 UTF-8 bytes or outside the request
+allowance are counted as omitted context, not clipped into misleading fragments.
+The complete extraction envelope is at most 14,000 bytes, leaving normal review
+headroom within the unchanged 16,000-byte provider ceiling. Lowest-ranked related
+sources may be excluded before extraction; the anchor and surviving indexes stay
+aligned. Once extraction begins, both passes retain identical source/context rows.
+Large priors still fail closed at the adapter rather than dropping contradictions.
+
+No new graph schema, categories, private corpus, retention policy or persistent
+context copy. The immutable export digest supplies context provenance; document
+suppression/removal invalidates target support and derived observations. Native
+sources retain their target-only scope, freshness and missing-peer labels. The
+checkpoint cohort and four-hour pacing remain unchanged; new extraction provenance
+does not replay old sources. Existing withdrawal, correction, backups and spending
+apply. Rollback to 2.14.0 is data-compatible; this release populates no human trait.
