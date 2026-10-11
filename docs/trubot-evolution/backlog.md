@@ -1,17 +1,26 @@
 # Prioritized backlog
 
-2026-10-11 01:00 selection: H26 extends conditional episode memory to values,
-expressed emotional responses and observed ways of relating. This is enabling work;
-no new Andrew pattern is established. Preserve H21 validated population first,
-then H22 variation, native/visual context, selective tools/skills and generated U.P.
-aurora/trail-camera scenes. Acceptance and contrary evidence are in research.md.
+2026-10-11 01:00 verified: H26 is delivered in 2.14.0. Conditional value,
+emotion and relationship memories retain the same evidence, review, limitations,
+source lifecycle and withdrawal contract. All 642 tests, CI, both image architectures,
+27 installed source hashes and eight actual private Discord scenarios pass. This
+is enabling conformance; no new human abstraction or spontaneous extraction gain
+is established. Next: validated contextual population, H22 variation, native/visual
+coverage, selective tools/skills and generated U.P. aurora/trail-camera scenes.
 
-H26 priority: complete conditional behavioral-domain schema, graph lifecycle and
-summary recall, with exact source invalidation, mandatory limitations, two-pass
-review and real private Discord acceptance. Confidence: high in conformance,
-unresolved human learning benefit. Same volume/model/ledger/pacing; no extra calls.
-After delivery, prioritize validated contextual population instead of adding more
-unmeasured schema categories. H22 remains an approved creative goal.
+H26 completed: conditional behavioral domains pass 55 new regressions and eight
+actual Discord scenarios. The provider comparison yields no new-domain proposal;
+only supplied-output schema conformance is established. Prioritize validated
+contextual population instead of more unmeasured categories. H22 remains active.
+
+Next increments: (1) independently validate contextual extraction and first usable
+human abstractions on held-out episodes, (2) study H22 creative variation with
+sincere/contrary controls, (3) durable native/visual evidence, (4) selectively loaded
+procedures/tools, (5) generated U.P. aurora/trail-camera scenes. Existing priority
+contracts below apply; reject learned hidden motives, diagnoses or intimacy. The
+prior specific private payload prerequisite remains separate. A source-grounding
+regression raises reliability work immediately; sparse population or repeated
+wording keeps H21/H22 ahead of further schema or literal-quote patches.
 
 
 2026-10-10 21:00 verified: H24 is delivered in 2.13.0. Automatic humor/style
