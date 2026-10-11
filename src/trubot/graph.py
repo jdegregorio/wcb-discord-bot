@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Any
 
 from trubot.archives import ArchiveStore
-from trubot.episode_memory import abstraction_contract, observation_sources
+from trubot.episode_memory import OBSERVATION_KINDS, abstraction_contract, observation_sources
 from trubot.learning import LearningStore, LearningUnavailable, _private, _time
 from trubot.lexical import phrase
 
@@ -339,7 +339,7 @@ class GraphStore:
         automated: bool = False,
     ) -> None:
         kind = item["kind"]
-        if kind not in {"claim", "preference", "humor", "style"}:
+        if kind not in OBSERVATION_KINDS:
             raise LearningUnavailable("Unsupported reviewed observation")
         if item["status"] not in {"active", "tentative", "contested", "superseded"}:
             raise LearningUnavailable("Explicit observation status required")
@@ -394,7 +394,8 @@ class GraphStore:
                 counterexamples.append(snapshot)
         key = "observation:" + item["id"]
         data = {
-            k: item[k] for k in ("summary", "status", "confidence_basis", "extraction_provenance")
+            k: item[k]
+            for k in ("kind", "summary", "status", "confidence_basis", "extraction_provenance")
         }
         data |= {
             "supports": snapshots,
@@ -578,7 +579,7 @@ class GraphStore:
                 if row["kind"] == "human_source":
                     current = self._snapshot(data["ref"], source, now=now, archive=archive)
                     invalid = current is None or current["fingerprint"] != data["fingerprint"]
-                elif row["kind"] in {"claim", "preference", "humor", "style"}:
+                elif row["kind"] in OBSERVATION_KINDS:
                     invalid = not self._valid(data, source, now=now, archive=archive)
                 elif "archive_episode" in data:
                     invalid = data["archive_episode"] not in episodes
@@ -623,19 +624,16 @@ class GraphStore:
 
     def remove(self, key: str) -> None:
         with self._transaction() as (db, _source):
-            row = db.execute("SELECT data FROM nodes WHERE id=?", (key,)).fetchone()
-            if row:
-                data = json.loads(row[0])
+            row = db.execute("SELECT kind, data FROM nodes WHERE id=?", (key,)).fetchone()
+            if row and row["kind"] in OBSERVATION_KINDS:
+                data = json.loads(row["data"])
                 if data.get("review_kind") == "automated-two-pass":
                     for support in observation_sources(data):
                         db.execute(
                             "INSERT OR REPLACE INTO checkpoints VALUES (?, ?)",
                             ("study-veto:" + _key(support["ref"]), support["fingerprint"]),
                         )
-            db.execute(
-                "DELETE FROM nodes WHERE id=? AND kind IN ('claim','preference','humor','style')",
-                (key,),
-            )
+                db.execute("DELETE FROM nodes WHERE id=?", (key,))
             db.execute(
                 "DELETE FROM nodes WHERE kind IN ('visual','captured_human') AND id NOT IN "
                 "(SELECT origin FROM edges WHERE relation='part-of')"

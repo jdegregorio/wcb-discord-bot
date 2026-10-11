@@ -1327,3 +1327,91 @@ broader native/visual evidence, selective tools/skills and requested generated
 outdoor scenes. Change priority if qualified data is lost, source lifecycle regresses,
 contextual extraction remains unable to propose supported patterns, or variation
 tests reveal insensitive/repetitive behavior. Do not label transport health as fidelity.
+
+## 2026-10-11 01:00 - H26 behavioral episode domains
+
+Phase 1: production 2.13.0 is healthy. Fetched base
+`7c0eb6eb7a20cbbb104f5a3b3bfd114bc5c20f5f`; new managed worktree and
+`feature/trubot-daily-20261011-0100`. Previous #66/#67 release is complete;
+no evolution PR is open. Older private H21a payload and worktrees stay separate.
+
+Authenticated count-only audit: three allowed league channels, latest 100 each,
+14-day floor, seven target/seventeen peer/five older bot messages and zero
+current-release bot messages. ArchiveStore.context covers twelve attributed
+blocks in one export with 23 neighbors and one media gap. Twelve is a structural
+sample, not twelve independent episodes. No new raw private payload, semantic
+human trend, pixel interpretation or personal graph population. The earlier
+specific private payload prerequisite remains unresolved and is not bypassed.
+
+Actual Chrome development review covers the latest operator tests across two
+releases: natural supported recall, short invented jobs, achievement, sincere
+care and recipient abstention. The same care sentence appears twice and job
+jokes use similar framing. These are variation hypotheses, not evidence about
+Andrew. Missing current spontaneous activity and independent human comparison
+prevent a measured character-fidelity claim. Keep development text out of learning.
+
+H26 observed gap: graph, extraction and pattern validation accept only humor/style
+abstractions. Values, emotional responses and ways of relating cannot pass the
+conditional path, although Joe prioritizes them. Baseline same invented 42-case
+suite fails 24 positive schema/graph/writer/lifecycle cases; eighteen invalid
+cases reject before reaching meaningful new-domain validation. Proposed mechanism:
+shared typed pattern domains through two-pass study, private graph, source lifecycle
+and relevant summary retrieval, so that future corroborated behavioral episodes
+can guide replies without becoming literal quotes or universal personal claims.
+This is a justified enabling increment, not an inferred Andrew trait.
+
+Acceptance declared before implementation: `value`, `emotion`, `relationship`
+require the existing 2-3 separated attributed supports, conditions, limitations,
+0-2 exact contrary excerpts and independent review. New domains cannot be flat
+operator observations or singleton self-reports. Preserve tentative/30-day automatic
+expiry, source freshness, contradiction, retirement/veto, withdrawal, source bounds,
+checkpoint cohort, four-hour pacing, participant scope and spending caps. Retain
+old graph compatibility; no source/schema migration or new provider request.
+Pass the same synthetic cases plus provider schema/extraction comparisons, installed
+writer-to-summary recall and actual private owner Discord through released handlers.
+Disconfirm if qualifications/source authority disappear or normal recall, care,
+recipient abstention, legacy observations, privacy or budget regress.
+
+Compare baseline/candidate on two invented positive contexts and one quoted-peer
+negative using identical model, sources and request limits. Predeclared behavioral
+hypothesis: candidate accepts at least one qualified new-domain pattern, baseline
+cannot represent it, negative cannot establish the persona's view. Record abstention
+or different classification as contrary evidence. This small synthetic experiment
+cannot establish human extraction precision, amusement or a 2-3x improvement.
+Provider support for enums/nested anyOf is documented in the current primary
+[Structured Outputs guide](https://developers.openai.com/api/docs/guides/structured-outputs#supported-schemas);
+actual compatibility must be tested here.
+
+Alternatives: H22 variation/amplification remains unresolved after rejected
+intensity variants and repeated actual joke/care framing. H25 broader native/visual
+neighborhoods could make patterns more trustworthy; actual pixels and independent
+held-outs are prerequisites. H3 selective tools/skills and generated U.P. aurora/
+trail-camera images remain exploratory, with source, timing and guarded cost tests.
+No evidence supports a model or harness migration in this run.
+
+Phase 2: select H26 as a coherent H21 enabling increment. High confidence in the
+representation defect; behavioral benefit is prospective. Keep privately validated
+population/contextual extraction first, then H22 source-contextual variation,
+broader native/visual coverage, selective skills/tools and requested outdoor scenes.
+Change priority if new categories tempt unsupported psychology or real extraction
+still cannot form useful qualified patterns. Operating impact is bounded added
+schema/instruction bytes within existing two-pass 16,000-byte study ceilings,
+six possible studies/day and the shared USD 2 maintenance allowance. No service,
+model, recurring extra call, participation or runtime learning expansion.
+
+H26 provider result: nine guarded synthetic requests across six matched cases.
+Both arms abstain on effort-response, both accept a qualified fair-rule observation
+outside the new domains, and neither accepts quoted-peer beliefs. The criterion
+for spontaneous new-domain extraction is not met. H26 remains supported for
+representation/lifecycle conformance only; the provider learning hypothesis is
+unresolved. Do not claim better automatic extraction or relax source safeguards.
+A supplied-output roundtrip can confirm populated schema compatibility separately.
+
+H26 conformance result: same original 42 cases now pass; thirteen additional
+handler/race/compatibility checks pass (55 new regressions total). Nine direct,
+follow-up and reaction combinations deliver summaries with domain, limitations
+and all support/contrary sources refreshed. Three review-time source deletions
+prevent commits. Older patterns lacking domain metadata remain readable.
+Three populated provider supplied-output roundtrips pass under the unchanged
+maintenance ledger. These are contract checks, not spontaneous extraction or
+human-pattern quality. No new Andrew abstraction has been populated.

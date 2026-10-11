@@ -716,3 +716,15 @@ it includes the H21a reader, counterexample validation and withdrawal lifecycle.
 Older readers without that contract are not safe for newly populated patterns.
 The selected prior private pattern remains separate from this synthetic-only
 conformance work and requires its recorded validation prerequisite.
+
+### 2.14.0 behavioral observation compatibility
+
+The existing schema-1 graph accepts `value`, `emotion` and `relationship` nodes
+only with qualified abstractions. The shared observation domain registry governs
+write, sweep and retirement. New records retain domain metadata; old records lacking
+that metadata remain readable. No source migration or private human population is
+performed by the release. Older images cannot correctly sweep or retire these new
+kinds. Before rollback after actual population, preserve a private graph backup and
+retire/suppress new-domain observations using the current version; never restore
+withdrawn sources or reset spending state. The release validation populates only
+isolated invented stores, so current production rollback has no new-kind data risk.
