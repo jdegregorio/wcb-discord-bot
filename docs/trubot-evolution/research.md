@@ -1530,3 +1530,35 @@ new exploratory classification hypothesis: mechanisms may be emitted as claims,
 losing explicit pattern limitations/counterexample edges. Test multiple independent
 held-outs and false-pattern controls before changing classification or local rules.
 Do not relabel this one provider result as improved humor or human learning.
+
+
+H27 production conclusion: the exact tested source tree is deployed and source
+coverage/conformance is supported. One installed invented study admits all four
+setup/reaction rows per source and gives identical packets to two deterministic
+passes; conditional memory, contrary evidence and tentative status reach recall.
+Two actual owner messages with isolated invented memory are sent through released
+handlers in the confirmed private general channel: playful mechanism and sincere
+exception pass 2/2. This is conformance, not spontaneous human extraction quality.
+Separate readiness is configured before construction; no second gateway, learning
+from development probes or league test chatter.
+
+Normal gateway checks: six answers plus one recipient abstention, 6/7 pass.
+Baseball, exact-date uncertainty, invited fiction and care pass. Broad historical
+recall is natural without metadata disclaimers but first assigns Andrew's source
+statement to the operator; exact same question repeats with correct subject (1/2).
+Keep that first failure. Source/graph population is unchanged and the ordinary
+reply function, memory renderer, history, persona and Discord handler are identical
+to 2.14.0; only study sizing in the adapter changes. No causal H27 reply regression
+is established, so no rollback is indicated by these inputs. H6 must add a matched
+source-subject acceptance study before larger abstraction population/voice claims.
+Do not average away the failed answer or equate a correct retry with a fixed defect.
+
+Post-audit: eight actual answers reviewed, zero new spontaneous league sample.
+Care wording repeats prior runs; a new fictional joke does not establish funnier
+human fidelity. Recent league counts remain 7 target/17 peers/5 older bot across
+three bounded channels. No semantic held-out human review, pixel study, independent
+judge or new personality observation. The old selected private payload remains
+unused. Prioritize qualified human population and subject grounding together, then
+H28 domain-classification experiment/H22 contextual variation, native/visual
+coverage, selective tools/skills and requested generated scenes. No more schema
+categories justified by this run.

@@ -2297,3 +2297,56 @@ controls abstain. Coverage conformance is supported, semantic fidelity unresolve
 Twelve-block/four-export count-only audit covers 69 neighbors with 19 old whole
 neighbors and 65 candidate-size-eligible neighbors. No human semantic/pixel study
 or real abstraction population. Full release/Discord evidence follows deployment.
+
+
+### Verified H27 rollout, 2026-10-11T12:30:13.570119+00:00
+
+- PR [#70](https://github.com/jdegregorio/wcb-discord-bot/pull/70), tested
+  `c1802f207cdef9848b70d0573b51a229755ac8e7`, merged
+  `876c16ce3c1e679252cdbcd9a6b25307cdf50eb0` with an identical tree.
+  PR CI38138503764/main CI38138602610/image publish38138683510 pass.
+  All six gates before/after merge:647 tests,96.76% branch-inclusive coverage,
+  27 typed modules,2.15.0 wheel/sdist; dependency versions unchanged.
+- Immutable [v2.15.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.15.0)
+  published both architectures. Reverified pi5/aarch64/Ubuntu24.04.4, helper,
+  manifest and secret permissions. Release timer deploys through the existing
+  transaction before the explicit app-scoped deploy command, which confirms it.
+- Digest `sha256:212d290fad5c46cf6984c9dbd6b52f6897eda2bc4b00b903c1de6dd7f0611717`;
+  previous2.14.0 `sha256:759c6a15419811a5c2a52e164d65fced57b6b2c1602f51a7664141d2e683cf95`.
+  Package/OCI revision and all27 installed source hashes match. Readiness healthy,
+  zero restarts/errors/response failures/disconnects/memory/learning/study pauses.
+  Six gateway posts,one decline,eight learning batches,zero study completions
+  since12:19:58UTC. Controlled sends are counted separately.
+- Installed writer preserves full synthetic episodes; two actual owner handler
+  scenarios pass. Normal gateway6/7, overall8/9 actual scenarios/eight answers.
+  Broad historical first reply misassigns the source subject; exact repeat passes.
+  This is an unresolved H6 fidelity defect in an unchanged ordinary reply path,
+  not demonstrated H27 regression. No rollback required for this context increment.
+  Preserve failed acceptance; no full recall/fidelity claim. Exact-date uncertainty,
+  baseball, fiction, care and recipient abstention pass. Main heartbeat remains
+  healthy after every separate validation client closes.
+- Production source counts unchanged:34 native,16 exports/4299 blocks/405 eligible,
+  115 visual episodes/96 assets,439 graph sources/554 episodes/1011 edges,
+  one claim/one preference/zero abstractions. No human pattern populated.
+- Tracked OctoberUSD0.10355339(runtime0.05015061,maintenance0.05340278),505 settled,
+  zero unsettled. Run delta0.004221935;five research calls0.001026135. Existing
+  USD18/2/20 caps, no added service or recurring request. Provider billing and
+  pre-guard October spend remain unknown.
+- Private content-free references/synthetic helpers and results are under
+  `/var/lib/trubot/smoke-tests/2026-10-11-0500`,0700/0600, seven-day manual retention
+  and withdrawal cleanup. Invented stores are removed; owned staging is cleaned before
+  archiving. Public [release evidence](evaluations/2026-10-11-context-packets-release.json)
+  records actual failure and coverage limits. Primary checkout was never changed.
+  A prior count-only audit helper was rerun once and overwrote its same prior
+  before-count report; all other older evidence and pending private work are intact.
+- Roadmap: H27 enabling correction delivered; semantic human abstraction quality,
+  H6 subject qualification,H28 classification,H22 variation remain unresolved.
+  Keep broader native/visual evidence,selective skills/tools and generated outdoor
+  scenes. Six-run schedule,model/reasoning/notifications and privacy unchanged.
+
+Final error audit distinguishes two optional voice-dependency startup warnings
+from application errors: zero other warnings, zero response/memory/learning/study
+failures, healthy readiness and zero restarts. Private final metadata preserves
+8/9 actual outcomes; disposable invented stores are removed. Evidence PR
+[#71](https://github.com/jdegregorio/wcb-discord-bot/pull/71) changes documentation
+only, preserving the tested released source/tests/version/lock.
