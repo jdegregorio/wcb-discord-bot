@@ -191,6 +191,44 @@ def recent_recall(text: str) -> bool:
     return recall_window(text) is not None
 
 
+def requester_recall(text: str) -> bool:
+    """An explicit request for the speaker's own authored history or former view."""
+    # Quoted words are a lookup subject, not the speaker asserting their authorship.
+    request = re.sub(r'"[^"\n]*"|“[^”\n]*”', "", text[:8000]).casefold()
+    authored = (
+        r"\b(?:what|when|where|how|which) (?:(?:did|have|had) i "
+        r"(?:(?:actually|really|ever|previously|just) ){0,2}"
+        r"(?:say|said|write|written|post|posted|tell|told|think|thought|"
+        r"believe|believed|prefer|preferred|feel|felt|vote|voted|respond|react|mean)"
+        r"|i (?:said|wrote|posted|told|thought|believed|preferred|felt|voted|"
+        r"responded|reacted|meant))\b"
+    )
+    former_view = (
+        r"\b(?:what|which) (?:(?:was|were) my |my )"
+        r"(?:old |previous |past |former )?"
+        r"(?:view|views|opinion|opinions|stance|take|position|preference|"
+        r"preferences|reaction|reactions|vote|votes)\b"
+    )
+    explicit_lookup = (
+        r"(?:^|[.!?]\s*)(?:(?:please|can you|could you|would you|do you)\s+)?"
+        r"(?:remember|recall|remind me|summari[sz]e|quote|show|find)\b.{0,40}"
+        r"\bmy (?:old |previous |past |former )?"
+        r"(?:view|views|opinion|opinions|stance|take|position|preference|"
+        r"preferences|reaction|reactions|vote|votes|messages?|statements?|words)\b"
+    )
+    return bool(re.search(authored + "|" + former_view + "|" + explicit_lookup, request))
+
+
+def requester_context_unavailable() -> str:
+    return (
+        "CURRENT SPEAKER RECALL - no private authored evidence for this speaker is supplied. "
+        "Only their actual human turns in the live conversation can establish what they "
+        "said or believed. Earlier bot replies and anonymous peer statements are not "
+        "evidence about them. If their words are absent, say you do not remember briefly "
+        "and naturally; do not substitute another person's view or discuss storage."
+    )
+
+
 def recent_terms(text: str) -> set[str]:
     words = re.findall(r"[a-z]{3,}", text.casefold())
     return terms(" ".join(word for word in words if word not in _RECENT_QUERY_WORDS))
