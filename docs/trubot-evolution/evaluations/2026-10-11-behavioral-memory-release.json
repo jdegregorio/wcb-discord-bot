@@ -1,0 +1,146 @@
+{
+  "run": "2026-10-11-0100",
+  "hypothesis": "H26",
+  "status": "released_and_deployed",
+  "classification": "enabling_conformance",
+  "base_sha": "7c0eb6eb7a20cbbb104f5a3b3bfd114bc5c20f5f",
+  "tested_sha": "64322204514a7436d9c1454dd65794fea0352a85",
+  "merged_sha": "cec3dcb1cd2d341a311eb5729778f79c17e8ac67",
+  "identical_merged_tree": true,
+  "pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/68",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.14.0",
+  "ci": {
+    "pr": 38124052069,
+    "main": 38124175380,
+    "images": 38124257650,
+    "all_success": true,
+    "platforms": [
+      "linux/arm64",
+      "linux/amd64"
+    ]
+  },
+  "quality": {
+    "all_six_gates_passed_before_and_after_merge": true,
+    "tests": 642,
+    "branch_inclusive_coverage_percent": 96.77,
+    "new_regressions": 55,
+    "same_original_cases": 42,
+    "baseline_failures": 24,
+    "candidate_original_failures": 0,
+    "dependency_versions_unchanged": true
+  },
+  "provider": {
+    "synthetic_only": true,
+    "matched_calls": 9,
+    "supplied_output_roundtrip_calls": 3,
+    "roundtrip_domains": 3,
+    "spontaneous_new_domain_proposals": 0,
+    "learning_gain_demonstrated": false,
+    "negative_peer_case_accepted": false
+  },
+  "discord": {
+    "private_two_member_scope_authenticated": true,
+    "actual_owner_scenarios": 8,
+    "actual_answers": 7,
+    "controlled_new_domain_sends": 3,
+    "normal_gateway_answers": 4,
+    "recipient_abstentions": 1,
+    "passed": 8,
+    "readiness_isolated": true,
+    "main_readiness_healthy_after_cleanup": true,
+    "league_test_posts": 0,
+    "development_learning": false,
+    "raw_answers_retained": false
+  },
+  "deployment": {
+    "version": "2.14.0",
+    "host_verified": "pi5/aarch64/Ubuntu24.04.4",
+    "locked_app_transaction": true,
+    "digest": "sha256:759c6a15419811a5c2a52e164d65fced57b6b2c1602f51a7664141d2e683cf95",
+    "previous_digest": "sha256:3e4b32b1574253c3f0ba6acb412d0de070f13b2395a660ceed88d46c6c45fb5d",
+    "installed_source_hashes_matched": 27,
+    "package_and_oci_revision_matched": true,
+    "healthy": true,
+    "restarts": 0,
+    "rollback_required": false
+  },
+  "health": {
+    "at": "2026-10-11T08:27:06Z",
+    "started_at": "2026-10-11T08:19:28.428878066Z",
+    "errors": 0,
+    "response_failures": 0,
+    "disconnects": 0,
+    "memory_warnings": 0,
+    "learning_pauses": 0,
+    "study_pauses": 0,
+    "generation_pauses": 0,
+    "learning_batches": 8,
+    "study_completions": 0,
+    "gateway_replies": 4,
+    "gateway_declines": 1
+  },
+  "audit": {
+    "league_channels": 3,
+    "maximum_messages_per_channel": 100,
+    "days": 14,
+    "target_messages": 7,
+    "peer_messages": 17,
+    "older_bot_messages": 5,
+    "current_release_spontaneous_bot_messages": 0,
+    "archive_target_blocks": 12,
+    "archive_documents": 1,
+    "archive_neighbors": 23,
+    "media_gaps": 1,
+    "new_semantic_human_study": false,
+    "post_release_answers_reviewed": 7,
+    "variation_gaps_remain": true,
+    "human_fidelity_measured": false
+  },
+  "production_memory": {
+    "native_messages": 34,
+    "archive_documents": 16,
+    "archive_blocks": 4299,
+    "eligible_blocks": 405,
+    "visual_episodes": 115,
+    "image_assets": 96,
+    "graph_sources": 439,
+    "graph_episodes": 554,
+    "graph_edges": 1011,
+    "human_abstractions": 0,
+    "new_human_observations": 0,
+    "source_counts_unchanged": true
+  },
+  "cost": {
+    "tracked_month_estimated_usd": 0.099331455,
+    "runtime_usd": 0.047684835,
+    "maintenance_usd": 0.05164662,
+    "run_delta_usd": 0.004857205,
+    "synthetic_research_usd": 0.001875455,
+    "settled_attempts": 491,
+    "unsettled_attempts": 0,
+    "monthly_caps_usd": [
+      18,
+      2,
+      20
+    ],
+    "provider_billing": "unverified",
+    "pre_guard_spend": "unknown",
+    "extra_recurring_calls": 0,
+    "added_paid_services": 0
+  },
+  "limitations": [
+    "Enabling typed graph coverage does not establish an Andrew trait.",
+    "No spontaneous new-domain proposal in the matched provider experiment.",
+    "No new independent human semantic or pixel study.",
+    "Zero current spontaneous league bot samples.",
+    "Wording and joke-frame repetition remains unresolved.",
+    "Prior selected private payload prerequisite remains separate."
+  ],
+  "next": [
+    "validated contextual human population",
+    "contextual creative variation",
+    "durable native and visual coverage",
+    "selective skills and tools",
+    "generated U.P. aurora and trail-camera scenes"
+  ]
+}

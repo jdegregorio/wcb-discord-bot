@@ -2236,3 +2236,50 @@ proposal; three supplied-output calls pass schema conformance. Existing four-hou
 cohort, two-pass calls, model and USD18/2/20 caps are unchanged. No private pending
 payload sent and no human graph observation populated. Actual installed Discord
 acceptance and release evidence follow after deployment.
+
+### Verified 2.14.0 rollout, 2026-10-11T08:27Z
+
+- Runtime PR [#68](https://github.com/jdegregorio/wcb-discord-bot/pull/68) merged
+  `cec3dcb1cd2d341a311eb5729778f79c17e8ac67`; tested
+  `64322204514a7436d9c1454dd65794fea0352a85` has the identical tree.
+  Required PR CI38124052069 and merged-main CI38124175380 pass. All six local
+  gates pass before and after merge:642 tests/96.77% branch-inclusive coverage,
+  27 typed modules, wheel/sdist2.14.0. Dependency versions are unchanged.
+- Immutable [v2.14.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.14.0)
+  targets the tested merge; image publish38124257650 succeeds for ARM64/AMD64.
+  Reverified pi5/aarch64/Ubuntu24.04.4, manifest, helper lock/rollback and secret
+  permissions. Existing app transaction deploys without sudo or unrelated changes.
+- Running digest `sha256:759c6a15419811a5c2a52e164d65fced57b6b2c1602f51a7664141d2e683cf95`;
+  previous healthy2.13.0 `sha256:3e4b32b1574253c3f0ba6acb412d0de070f13b2395a660ceed88d46c6c45fb5d`.
+  Package/OCI revision and all27 installed source hashes match. An early hash probe
+  ran during replacement and was repeated after transaction completion; the final
+  source check passes. No released behavior regression or rollback required.
+- Installed writer3/3 synthetic domains; actual owner Discord8/8 scenarios, seven
+  answers and one abstention. Three changed cases use isolated invented graph,
+  released handler and authenticated real sends; four normal gateway answers cover
+  supported recall, natural history, invited fiction and care. No second gateway,
+  learning from tests, source scope expansion, raw answer artifact or league post.
+  Primary heartbeat is verified after client close and fixture cleanup.
+- At08:27:06UTC: healthy, zero restarts/errors/response failures/disconnects/memory,
+  learning/study/generation pauses; four normal gateway replies, one decline,
+  eight learning batches and zero study completions since08:19:28UTC. The three
+  controlled real sends are counted separately from the gateway logs.
+- Source/graph counts unchanged:34 native;16 archives/4299 blocks/405 eligible;
+  115 visual episodes/96 assets;439 graph sources/554 episodes/1011 edges,
+  one claim/one preference/zero abstractions. No real human observation populated.
+- Tracked October estimateUSD0.099331455 (runtime0.047684835,
+  maintenance0.05164662),491 settled/zero unsettled. Run delta0.004857205;
+  twelve synthetic research calls0.001875455. Existing USD18/2/20 caps preserved;
+  no new recurring call or paid infrastructure. Billing/pre-guard spend unknown.
+- Private helpers, invented provider results and content-free real references are
+  `/var/lib/trubot/smoke-tests/2026-10-11-0100`,0700/0600, existing seven-day manual
+  retention/withdrawal cleanup. Disposable invented databases and host staging
+  removed. Public [release evidence](evaluations/2026-10-11-behavioral-memory-release.json)
+  contains no raw exchanges or personal observations. Owned local staging will be
+  removed after final evidence merge; earlier private payload/worktrees untouched.
+- Research/planning conclusion: H26 representation/lifecycle is delivered; provider
+  spontaneous new-domain learning is not demonstrated. Post-audit seven answers
+  shows reused achievement/care language and a prior joke frame. Sparse current
+  league activity, structural human sample and absent independent semantic/pixel
+  review prevent a fidelity/humor claim. Keep validated H21 human population first,
+  then H22 variation, native/visual coverage, tools/skills and generated outdoor scenes.
