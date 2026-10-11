@@ -700,3 +700,19 @@ Preserve source and spending stores; never replace them with the study copy.
 Record and verify observation removal and readiness through the locked pi-app
 rollback transaction. Current production graph is unchanged, so this run has no
 new live graph state to retire yet.
+# Conditional automatic patterns, 2.13.0
+
+Automatic humor/style proposals now require conditions and limitations, with 0-2
+exact attributed contrary excerpts. The writer stores their current source refs
+in the existing abstraction contract, never as an extra factual belief. Support
+must still be 2-3 separated sources, with tentative status and 30-day expiry.
+All support and contrary-source edits, deletions, retirement and withdrawal remain
+authoritative. Checkpoint cohort and four-hour lease/retry pacing are unchanged;
+new extraction provenance does not force a historical replay. No schema migration,
+new corpus intake, volume or ledger is introduced.
+
+Rollback to the recorded previous 2.12.1 is compatible with conditional records:
+it includes the H21a reader, counterexample validation and withdrawal lifecycle.
+Older readers without that contract are not safe for newly populated patterns.
+The selected prior private pattern remains separate from this synthetic-only
+conformance work and requires its recorded validation prerequisite.

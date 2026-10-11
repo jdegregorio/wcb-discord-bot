@@ -2115,3 +2115,45 @@ leave the older unfinished/private-study worktree alone. Next order is H21's
 conditional abstract memory work, H22 re-study, native/visual graph context,
 selective skills/tools, generated outdoor scenes. Schedule/model/notifications
 and all authorization/privacy/source/withdrawal/spending gates are unchanged.
+## 2026-10-10 21:00 - conditional automatic-memory contract
+
+Fetched base 8760432a50ad0570c5fb642c2f69a182047b9bec; new managed worktree
+trubot-daily-20261010-2100 and unique feature branch. Primary checkout and older
+worktrees untouched. Previous #63/#64 release/evidence are complete; #62's private
+population payload remains pending and is never sent or populated by this run.
+
+Both planning phases select H24 as justified H21 enabling work. Missing extraction
+and writer fields prevent automatic conditional patterns. Add packet-bound schema,
+bounded conditions/limitations/contrary quotes, exact attribution and duplicate,
+separation and truncation checks; preserve independent review and source-authority
+at atomic commit. Pattern summaries enter the existing graph abstraction reader,
+with tentative status, 30-day expiry and new extraction provenance. Checkpoint
+cohort remains v3 so existing studies are not forcibly replayed; four-hour pacing,
+source scopes, withdrawal, model and spending limits remain unchanged.
+
+Content-free authenticated audit: two league channels/latest 100/14 days contain
+seven target, five older bot and seventeen peers; zero current spontaneous sample.
+Twelve eligible archive target blocks/four exports/24 neighbors are inspected for
+structural coverage, with one media gap. Semantic human and independently held-out
+evaluation is unavailable: automatic review rejected raw private transcript export,
+and the safer count-only alternative succeeded. No new pixels or derived human
+pattern are claimed. One actual owner baseline receives a brief topical joke;
+this is a control, not a reproduced reply-quality defect or amusement gain.
+
+Baseline 4/13 synthetic contract failures; candidate 29/29 new regressions pass,
+including pipeline recall, contrary-source mutations during review, retirement,
+reviewer rejection, bot/peer refresh exclusions, truncation, duplicates and pacing.
+Seven guarded synthetic provider calls: six-call baseline/candidate comparison
+abstains on the fictional pattern in both arms and preserves a specific self-report;
+one supplied-output call validates populated conditional schema compatibility.
+No automatic extraction-quality or human-fidelity gain is measured. All six local
+gates, CI/release, installed conformance and actual Discord rollout follow below.
+
+Final local gates pass: locked sync, format, lint, 27-module strict typing,
+587 tests/96.76% branch coverage and wheel/sdist 2.13.0. Dependency versions are
+unchanged. Pre-release tracked estimate USD 0.0923674, 465 settled/zero unsettled;
+seven synthetic maintenance calls add USD 0.001205875, one actual baseline adds
+USD 0.000638875. Actual billing and pre-guard October spend remain unknown.
+Production 2.12.1 remains healthy with zero restarts and its main heartbeat intact.
+Candidate counts and limitations are in
+[the evaluation](evaluations/2026-10-10-conditional-distillation-candidate.json).

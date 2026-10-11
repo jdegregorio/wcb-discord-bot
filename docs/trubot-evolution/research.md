@@ -1227,3 +1227,74 @@ monthly total USD 0.09052265 with zero unsettled requests at the final snapshot.
 USD 18/2/20 limits preserved; actual billing/pre-guard spend remain unknown.
 Raw real questions/answers are not saved in operator artifacts. Private source
 and test refs/counts/pass-fail use the existing smoke retention/withdrawal path.
+## 2026-10-10 21:00 - H24 conditional automatic distillation
+
+Phase 1, predeclared criteria: H21a storage/retrieval is merged, but automatic
+extraction has no limitations or contrary-source fields and commits humor/style
+as literal source-backed observations. Live graph has zero conditional patterns.
+Hypothesis H24: carry a bounded conditional pattern through schema, local validation,
+independent review and atomic graph commit, so that future corroborated episodes
+can guide replies through abstractions rather than repeating source punchlines.
+This is enabling work; it does not establish a real human trait or humor gain.
+
+Baseline: two valid synthetic pattern shapes and one two-pass recall scenario
+fail; an empty contrary list also cannot pass. Nine invalid-shape cases reject
+for the old blanket shape rule, not validated counterevidence semantics.
+The first fixture draft had unrelated lexical terms and selected too few sources;
+it was corrected before these baseline results. Three separated synthetic authored
+sources share a topic, with two playful supports and one sincere contrary case.
+
+Acceptance locked before implementation: support 2-3 separated attributed sources,
+up to two distinct exact attributed contrary excerpts, explicit conditions and
+limitations, tentative status/30-day expiry and extraction provenance. Independent
+review must assess qualifications and contrary cases. Preserve 4-hour pacing,
+previous checkpoint cohort, source refresh, retirement, correction, withdrawal,
+five-source reply bounds and USD 18/2/20 spending limits. Old claim/preference
+and explicit self-report paths remain valid. No extra study call or service.
+Test same-episode, duplicate/overlap, invented/peer/bot/context evidence, truncation,
+source edits during review, restart, expiry and withdrawal. Compare the same
+synthetic cases with baseline, prove provider schema compatibility using synthetic
+text, exercise installed handlers, and use actual owner Discord smoke responses.
+Disconfirm H24 if conditional data is lost, qualification disappears, unsafe
+evidence passes or existing source lifecycle/pacing/care/recall regresses.
+
+Other hypotheses: H22 variation/creative amplification remains unresolved after
+the last run's rejected intensity variants. H25 durable contextual native/visual
+coverage may improve abstraction validity, but no new pixel interpretation or
+semantic held-out human study is available in this run. H3 selective tools/skills
+and generated U.P. aurora/trail-camera images remain exploratory. No model/harness
+migration is justified by this contract defect; current provider docs support
+nested anyOf and bounded arrays, while actual project compatibility needs testing.
+Documentation: [Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs#supported-schemas).
+
+Audit coverage: authenticated two-member private guild/owner verified; two league
+channels/latest 100 each/14 days contain seven target, five older bot and seventeen
+peer messages, with zero current-release spontaneous bot samples. Content-free
+archive contextual audit covers twelve eligible target blocks/four exports and
+24 neighbors, one media-flagged gap. Character lengths are structural evidence,
+not a semantic human trend. Automatic approval review rejected exporting raw
+private excerpts to the transcript. The safer count-only audit succeeds; new
+semantic human/held-out validation remains unavailable, with no personal pattern
+population or claim. Development smoke content is excluded from learning.
+The prior selected private H21a payload is still pending and is not used here.
+
+Phase 2 decision: select H24 as the next justified H21 enabling increment. Source
+selection/recall already supports conditional observations; the automatic writer
+is the missing link. Confidence is high in this mechanical gap, prospective in
+reply-quality benefit. Keep reviewed private population as a separate prerequisite,
+then source-contextual H22 variation, durable native/visual coverage, H3 tools/skills,
+and generated outdoor scenes. Require held-out human semantic evaluation before
+calling newly learned abstractions a fidelity improvement. Operating impact is
+bounded extra schema/output bytes in existing two-pass studies, at most six studies
+daily under the same maintenance allowance, no new ongoing request/service.
+
+Experiment outcome before release: corrected same-case baseline 4/13 failures;
+candidate 29/29 conformance and lifecycle regressions pass. Two-arm/two-packet
+provider comparison uses six calls: both arms abstain on the fictional humor
+packet and accept the specific self-report control. No automatic-pattern quality
+gain is demonstrated. One additional synthetic supplied-output call verifies
+the populated conditional schema and local exact-evidence validation. This is
+transport/contract evidence, not inferred human behavior. The existing runtime
+model, request bounds and ledger are unchanged. Conditional writer conformance
+and real owner Discord with isolated synthetic memory are separate acceptance
+steps; no candidate private personal payload is used or populated.
