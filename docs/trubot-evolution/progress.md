@@ -2480,3 +2480,70 @@ without caching them as source context. Denied HTTP reads still fail closed.
 Three regressions cover the development-guild channel, a non-text channel, and a
 denied source read. All six gates pass: 724 tests, 96.81% coverage, 28 typed modules.
 Corrected release and installed/real Discord acceptance remain pending.
+
+
+### 13:00 final release result - 2.16.1
+
+Runtime PR [#75](https://github.com/jdegregorio/wcb-discord-bot/pull/75) merged
+9019bd61db1eff2c3e5bff88ea544a61f7aeeddb. Correction PR
+[#76](https://github.com/jdegregorio/wcb-discord-bot/pull/76) merged
+eecefb4ef0cd13ef81c68c21a0b210d2ddc2de3e, identical tested runtime tree 4f0bd7f.
+Required CI 38171771447/38171908551 for the first release and
+38172872640/38172957602 for the correction pass. Image workflows
+38172062179/38173072737 pass with linux/amd64 and arm64. All six local gates
+pass before/after each runtime merge; final 724 tests, 45 new regressions,
+96.81% branch-inclusive coverage and 28 typed modules. Dependency versions unchanged.
+
+New immutable [v2.16.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.16.1)
+runs on reverified pi5/aarch64/Ubuntu 24.04.4 through the locked app transaction,
+digest sha256:ebc387f4e733d728a74b218d2f24202ddab4b6deee1c5edfd24a40218f717532,
+started 2026-10-11T20:41:31Z. OCI revision/package/all 28 source hashes match.
+Readiness remains healthy after every HTTP/validation client closes. Zero restarts,
+response errors, learning/study pauses or other warnings; two existing optional
+voice warnings. Previous healthy 2.15.1 remains the transaction rollback target.
+The failed 2.16.0 tag/image and installed failure evidence remain intact; prerelease
+status keeps it out of stable discovery. No tag reused or branch protection bypassed.
+
+Installed command: invalid/paced selection stops without a provider charge;
+authenticated plain-HTTP completion with three invented source episodes finishes
+and reports rejection honestly. Cost USD 0.00030125 on the existing maintenance
+ledger. No gateway/send/heartbeat ownership or production learning mutation.
+Installed deterministic writer preserves two supports/one nonlexical sincere
+exception across both passes. Lifecycle/deletion controls pass in regression tests.
+
+Actual owner private Discord, final release: 8/10 trials, eight answers.
+Three controlled handler trials: playful and clear sincere invitation pass; an
+initial sincere follow-up abstains and remains a negative trial. The clearer
+invitation verifiably receives abstract memory plus its limitation; the answer
+reuses the supplied invented sincere wording. Seven normal gateway controls: 6/7,
+six answers and intended recipient silence. Baseball, requester history, exact
+timing, invited fiction and care pass. Broad historical memory still assigns the
+character's source to the owner, matching baseline. Humor and care repeat earlier
+mechanisms/phrasing. Do not claim full historical recall, better humor, independent
+naturalness or populated human abstractions. No league test chatter or bot/test
+learning evidence, and no separate validation gateway. Primary heartbeat preserved.
+
+Post-audit stays sparse: three league channels/latest 100/14 days contain seven
+target, seventeen peers, five older bot and zero spontaneous current-release
+replies. Twelve historical target blocks/one export/twenty-three neighbors/one
+media gap are structural only. Semantic human/pixel study remains unvalidated
+after the automatic approval rejection of private exchanges entering command logs.
+No new trait is promoted; older private pending payload stays unused.
+
+Production state unchanged: 34 native messages; 16 exports/4299 blocks/412 target/
+405 eligible; 115 visual episodes/96 assets; 439 graph sources/554 episodes/1011
+edges, one claim/one preference/zero abstract patterns. Private content-free refs,
+all synthetic trials and failed-release metadata remain app-owned in this run's
+private smoke directory, 0700/0600, seven-day manual retention and withdrawal cleanup.
+Disposable synthetic/CLI stores removed. No raw human/source/answer artifacts.
+
+Final tracked October USD 0.13635065: runtime 0.058021535, maintenance 0.078329115;
+945 settled/zero unsettled. Run USD 0.006319045 across 29 ledger attempts,
+including 17-request research USD 0.002570545. Existing caps USD 18/2/20 preserved;
+no added paid service or automatic request cadence. Billing/pre-guard spend unknown.
+Public [release evidence](evaluations/2026-10-11-episode-selection-release.json)
+records methods, failures, costs and scope. H32 enabling hypothesis supported;
+H33 automatic diversity exploratory; H21/H28 human quality unresolved. Next:
+validated abstract population with ownership/sincere and independent held-out
+controls, separate H22 humor work, native/visual coverage, selective skills/tools
+and generated outdoor scenes. Schedule/model/reasoning/notifications unchanged.

@@ -1690,3 +1690,39 @@ schema/provider compatibility and contrary evidence against an extraction-qualit
 claim, not a measured fidelity gain. Exact-set admission is supported as enabling
 work; human abstraction population and H28 classification remain unvalidated.
 Experiment estimate USD 0.002570545; no fresh ledger or recurring added request.
+
+
+H32 final installed/release validation: 2.16.0 reproduced a command failure on the
+actual mixed reply/source allowlist. The fixtures missed the development guild;
+production was rolled back to healthy 2.15.1 and 2.16.0 excluded from stable
+discovery. The 2.16.1 correction skips non-source/non-text configured channels,
+never caches them as evidence, and still propagates denied HTTP reads. Three
+regressions bring the new selection/operator suite to 45 and total suite to 724.
+All six gates, required PR/main CI and both image platforms pass.
+
+The installed complete command authenticates pinned member/source channels,
+finishes an invented three-episode extraction and honestly reports rejection.
+It uses the existing maintenance ledger (USD 0.00030125), preserves production
+learning/readiness, starts no gateway and posts nothing. An invalid private set
+stops without paid extraction. Deterministic two-pass writer conformance on the
+installed image preserves two supports and one nonlexical contrary episode.
+
+Actual Discord on final release: three controlled owner-authored handler trials,
+two replies/pass and one follow-up abstention. The clearer sincere invitation
+receives both the abstract mechanism and its limitation, then replies sincerely;
+its wording repeats the supplied invented exception. This is compatibility and
+scope evidence, not independent naturalness or human fidelity improvement.
+Seven actual owner gateway controls: six pass with six answers and one intended
+other-recipient silence. Broad historical ownership still fails exactly as the
+baseline did. Fiction/care are appropriate but reuse earlier mechanisms/phrasing;
+H22 variation stays open. No source/answer text is persisted in smoke artifacts.
+
+Post-deployment structural audit retains three league channels, latest 100/14 days:
+seven target, seventeen peers, five older bot, zero spontaneous current-release
+replies. Twelve archive target blocks/one export, twenty-three neighbors and one
+media gap supply structural coverage only. Raw semantic human/pixel review remains
+unvalidated after the approval rejection; no trait is promoted. H32 enabling
+hypothesis supported, extraction-quality hypothesis unresolved, H33 exploratory.
+The ledger and withdrawal/source scope are unchanged. No new recurring service
+or default sampling/prompt/model/participation change. Broader attribution failure
+and follow-up ambiguity remain explicit controls for future H21/H22 experiments.

@@ -1,0 +1,173 @@
+{
+  "run": "2026-10-11-1300",
+  "hypothesis": "H32",
+  "classification": "validated enabling conformance, human reply quality unvalidated",
+  "base_sha": "fe4a7bd97979a26ee2c534d4dee74338c2325c61",
+  "runtime_prs": [
+    75,
+    76
+  ],
+  "release": "v2.16.1",
+  "release_commit": "eecefb4ef0cd13ef81c68c21a0b210d2ddc2de3e",
+  "image_digest": "sha256:ebc387f4e733d728a74b218d2f24202ddab4b6deee1c5edfd24a40218f717532",
+  "ci": {
+    "initial_pr": 38171771447,
+    "initial_main": 38171908551,
+    "initial_image": 38172062179,
+    "correction_pr": 38172872640,
+    "correction_main": 38172957602,
+    "correction_image": 38173072737
+  },
+  "rollback": {
+    "failed_release": "v2.16.0",
+    "failed_digest": "sha256:946fd9a5aa35cc61a6286703d9c4d4be95c12cc9d1a0e4683b0b4ef968fb1e3f",
+    "cause": "installed command rejected configured reply-only development channel",
+    "restored_release": "v2.15.1",
+    "restored_digest": "sha256:d10b78616f2a4fe466f6e53280e8bd763e5c543c2e78e9ec8c7ab25c3fe3c030",
+    "restored_healthy": true,
+    "failed_tag_excluded_from_stable": true,
+    "immutable_tag_retained": true
+  },
+  "quality": {
+    "six_required_gates": "pass before and after runtime merge",
+    "tests_passed": 724,
+    "new_regressions": 45,
+    "coverage_percent": 96.81,
+    "typed_modules": 28,
+    "source_hashes_match": 28,
+    "platforms": [
+      "linux/amd64",
+      "linux/arm64"
+    ]
+  },
+  "same_model_research": {
+    "invented_cases": 3,
+    "repetitions": 2,
+    "arms": 2,
+    "provider_requests": 17,
+    "estimated_usd": 0.002570545,
+    "pattern_baseline_accepted": 1,
+    "pattern_complete_accepted": 0,
+    "pattern_trials_per_arm": 2,
+    "quoted_peer_negative_abstentions_per_arm": 2,
+    "specific_self_report_accepts_per_arm": 2,
+    "all_trials_retained_privately": true,
+    "human_reference_used": false,
+    "human_quality_gain_claimed": false
+  },
+  "installed_acceptance": {
+    "complete_command": "pass with honest rejected receipt",
+    "isolated_invented_sources": 3,
+    "command_provider_estimated_usd": 0.00030125,
+    "invalid_set_stops_without_paid_extraction": true,
+    "writer_two_pass_complete_set": true,
+    "synthetic_supports": 2,
+    "synthetic_contrary_cases": 1,
+    "secondary_gateway": false,
+    "command_discord_writes": 0,
+    "production_learning_mutated": false,
+    "production_readiness_preserved": true
+  },
+  "actual_discord": {
+    "private_owner_guild_verified": true,
+    "final_release_trials": 10,
+    "passes": 8,
+    "answers": 8,
+    "controlled_trials": 3,
+    "controlled_passes": 2,
+    "controlled_abstentions": 1,
+    "gateway_trials": 7,
+    "gateway_passes": 6,
+    "gateway_answers": 6,
+    "intended_other_recipient_silence": true,
+    "retained_failures": [
+      "controlled follow-up abstention",
+      "baseline broad historical subject misattribution"
+    ],
+    "clear_sincere_abstract_and_limitation_delivered": true,
+    "synthetic_wording_reused": true,
+    "raw_text_retained": false,
+    "development_learning_excluded": true,
+    "failed_release_controlled_pass_recorded_separately": true
+  },
+  "character_audit": {
+    "league_channels": 3,
+    "scan_limit_per_channel": 100,
+    "window_days": 14,
+    "target_messages": 7,
+    "peer_messages": 17,
+    "older_bot_messages": 5,
+    "current_spontaneous_replies": 0,
+    "archive_target_blocks": 12,
+    "archive_exports": 1,
+    "neighbors": 23,
+    "media_gaps": 1,
+    "semantic_human_review": false,
+    "pixel_review": false,
+    "approval_rejection": "private exchanges would enter command logs",
+    "new_traits": 0,
+    "abstract_human_population": 0,
+    "independent_grader": false
+  },
+  "health": {
+    "hostname": "pi5",
+    "architecture": "aarch64",
+    "os": "Ubuntu 24.04.4",
+    "healthy": true,
+    "restarts": 0,
+    "errors": 0,
+    "reply_failures": 0,
+    "learning_pauses": 0,
+    "study_pauses": 0,
+    "optional_voice_warnings": 2,
+    "other_warnings": 0,
+    "immutable_source_revision_match": true
+  },
+  "state_continuity": {
+    "native_messages": 34,
+    "archive_exports": 16,
+    "archive_blocks": 4299,
+    "target_blocks": 412,
+    "eligible_blocks": 405,
+    "visual_episodes": 115,
+    "visual_assets": 96,
+    "graph_sources": 439,
+    "graph_episodes": 554,
+    "graph_edges": 1011,
+    "claims": 1,
+    "preferences": 1,
+    "abstract_patterns": 0
+  },
+  "cost": {
+    "tracked_october_estimated_usd": 0.13635065,
+    "runtime_estimated_usd": 0.058021535,
+    "maintenance_estimated_usd": 0.078329115,
+    "run_estimated_usd": 0.006319045,
+    "settled_attempts": 945,
+    "run_attempts": 29,
+    "unsettled_attempts": 0,
+    "caps_runtime_maintenance_total": [
+      18,
+      2,
+      20
+    ],
+    "new_paid_service": false,
+    "provider_billing_visibility": false,
+    "pre_guard_spend": "unknown"
+  },
+  "limitations": [
+    "no measured human abstraction or general humor/fidelity gain",
+    "sparse spontaneous league activity",
+    "raw semantic/pixel review unavailable",
+    "broad historical source-subject failure remains",
+    "one controlled follow-up abstains",
+    "model trials small and stochastic; deterministic supplied outputs only establish conformance"
+  ],
+  "next_priorities": [
+    "validated H21/H28 abstract learning with semantic/held-out and subject controls",
+    "independent H22 humor variation work",
+    "native and visual conversation coverage",
+    "selective skills/tools",
+    "generated U.P. aurora and trail-camera scenes"
+  ]
+}
