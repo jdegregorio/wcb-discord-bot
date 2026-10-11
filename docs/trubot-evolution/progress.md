@@ -2418,3 +2418,44 @@ native/visual coverage, selective skills/tools and generated outdoor scenes.
 Evidence PR [#73](https://github.com/jdegregorio/wcb-discord-bot/pull/73) preserves
 the release result and roadmap. It changes documentation only; source, tests,
 version and lock match the tested immutable release.
+
+
+## 2026-10-11 13:00 - complete reviewed episode workflow (candidate)
+
+Fetched base fe4a7bd97979a26ee2c534d4dee74338c2325c61, new managed worktree
+trubot-daily-20261011-1300, branch feature/trubot-daily-20261011-1300. Primary
+checkout and prior worktrees untouched. Previous evolution #72/#73 is finished;
+separate humor draft #74 remains independent and is not merged by this run.
+Both planning phases select H32, with H33 automatic sampling exploratory and H21/H28
+human population still dependent on private semantic and held-out validation.
+
+2.16.0 adds complete trusted episode refs and a usable plain-HTTP maintenance
+command. It preserves selected support and contrary cases across lexical differences,
+or stops without paid extraction. Source scope, freshness, retirement, withdrawal,
+request bounds, shared four-hour pacing and maintenance ledger remain enforced.
+Automatic default sampling and ordinary reply/persona/participation paths are unchanged.
+A per-cycle receipt prevents confusing another process's checkpoint with completion.
+
+Candidate validation: all six gates, 721 tests, 96.76% branch-inclusive coverage,
+28 typed modules; dependency versions unchanged. Forty-two new regressions cover
+source selection/lifecycle and operator execution. Direct baseline lexical control
+omits a nonlexical exception; supplied-output two-pass writer stores two supports
+and one contrary link and deletion removes recall. This is enabling conformance.
+Same-model comparison, three invented cases/two repetitions/two arms: 17 requests,
+USD 0.002570545. Baseline accepts a pattern in 1/2, complete arm abstains in 2/2;
+quoted-peer negatives abstain and specific self-report controls pass in both arms.
+No private human extraction or broad quality improvement claimed; all trials retained.
+
+Audit: authenticated two-member private guild verified. Three league channels,
+latest 100/14 days: seven target, seventeen peers, five older bot, zero replies from
+current release. Structural archive sample: twelve target blocks/one export,
+twenty-three neighbors/one media gap, no new semantic human or pixel review.
+Actual development UI exposes flat invited-banter wording and historical ownership
+variability; separate active humor work owns that correction. Raw semantic study
+output was rejected by automatic approval review for private exchanges entering
+command logs. Safe count-only audit completed; older pending payload remains unused.
+Initial tracked October USD 0.130031605, zero unsettled; caps USD 18/2/20 unchanged.
+Provider billing and pre-guard October spend remain unknown.
+
+Release, immutable digest, installed command/handler acceptance, actual owner gateway
+responses, final health/cost and CI identifiers remain pending at this candidate record.

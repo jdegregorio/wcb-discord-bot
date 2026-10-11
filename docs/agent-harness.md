@@ -1,5 +1,18 @@
 # Harness exploration
 
+
+2026-10-11 13:00 selection: H32 complete trusted episode selection supports H21
+abstract-memory validation across different wording and contrary cases. Exact refs
+must remain current, attributed, scoped and unretired; preserve every selected ref
+through both passes or stop before extraction. Automatic sampling, pacing, models,
+ledger and persona stay unchanged. Human abstraction quality remains unvalidated;
+raw semantic transcript handling was rejected by automatic approval review. H33
+automatic diversification is exploratory. H22 is active work in another chat.
+Next: validated H21/H28 population with ownership/sincere controls, H22 variation,
+durable native/visual context, selective tools/skills and generated outdoor scenes.
+See research.md for both phases, acceptance, dependencies and operating impact.
+
+
 2026-10-11 09:00 verified: H31 is deployed in 2.15.1 through PR #72.
 All 679 tests, six gates, PR/main CI, both image architectures and 27 installed
 source hashes pass. Matched synthetic ownership cases improve 4/10 to 10/10;

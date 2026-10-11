@@ -244,7 +244,7 @@ _CONTEXT_ENVELOPE = STUDY_MAX_BYTES - 2_000
 _CONTEXT_ROW_BYTES = 600
 
 
-def _fit_context(study: Study) -> Study:
+def _fit_context(study: Study, *, require_all_sources: bool = False) -> Study:
     """Keep whole anonymous context rows, balanced across the admitted sources."""
     pools = [p["adjacent_context"] for p in study.passages]
     passages = [
@@ -260,8 +260,8 @@ def _fit_context(study: Study) -> Study:
     # Only related candidates are removed, before any proposal exists. Keep the
     # anchor and source_index ordering intact, and never shorten authored support.
     while size() > _CONTEXT_ENVELOPE:
-        if len(passages) == 1:
-            raise StudyContextExceeded("Study anchor exceeds its request bound")
+        if require_all_sources or len(passages) == 1:
+            raise StudyContextExceeded("Required study sources exceed the request bound")
         passages.pop()
         snapshots.pop()
         pools.pop()
@@ -283,6 +283,42 @@ def _fit_context(study: Study) -> Study:
     return Study(study.token, snapshots, passages)
 
 
+def _episode_keys(refs: list[dict[str, Any]]) -> list[str]:
+    """Validate trusted selectors without allowing text, coercions or alias guessing."""
+    if not isinstance(refs, list) or not 1 <= len(refs) <= 6:
+        raise LearningUnavailable("One to six distinct episode sources required")
+    keys = []
+    for ref in refs:
+        if not isinstance(ref, dict):
+            raise LearningUnavailable("Invalid episode source reference")
+        if ref.get("kind") == "slack":
+            valid = (
+                set(ref) == {"kind", "document", "ordinal"}
+                and isinstance(ref.get("document"), str)
+                and re.fullmatch(r"[0-9a-f]{64}", ref["document"]) is not None
+                and type(ref.get("ordinal")) is int
+                and ref["ordinal"] >= 0
+            )
+        elif ref.get("kind") == "discord":
+            valid = (
+                set(ref) in ({"kind", "message_id"}, {"kind", "message_id", "channel_id"})
+                and type(ref.get("message_id")) is int
+                and 0 < ref["message_id"] < 2**64
+                and (
+                    "channel_id" not in ref
+                    or (type(ref["channel_id"]) is int and 0 < ref["channel_id"] < 2**64)
+                )
+            )
+        else:
+            valid = False
+        if not valid:
+            raise LearningUnavailable("Invalid episode source reference")
+        keys.append(_key(ref))
+    if len(set(keys)) != len(keys):
+        raise LearningUnavailable("Distinct episode source references required")
+    return keys
+
+
 class StudyStore:
     """Pacing/checkpoints live in the existing graph, so restart cannot reset the quota."""
 
@@ -295,8 +331,11 @@ class StudyStore:
         now: datetime,
         channel_ids: frozenset[int],
         anchor_ref: dict[str, Any] | None = None,
+        episode_refs: list[dict[str, Any]] | None = None,
     ) -> Study | None:
-        return self.select(now=now, channel_ids=channel_ids, anchor_ref=anchor_ref).study
+        return self.select(
+            now=now, channel_ids=channel_ids, anchor_ref=anchor_ref, episode_refs=episode_refs
+        ).study
 
     def select(
         self,
@@ -304,7 +343,11 @@ class StudyStore:
         now: datetime,
         channel_ids: frozenset[int],
         anchor_ref: dict[str, Any] | None = None,
+        episode_refs: list[dict[str, Any]] | None = None,
     ) -> StudySelection:
+        if episode_refs is not None and anchor_ref is not None:
+            raise LearningUnavailable("Choose one trusted study selector")
+        requested = _episode_keys(episode_refs) if episode_refs is not None else None
         with self.graph._transaction() as (db, source):
             gate = db.execute(
                 "SELECT cursor FROM checkpoints WHERE stream='distillation'"
@@ -362,8 +405,25 @@ class StudyStore:
                     if not preferred:
                         raise LearningUnavailable("Requested study source unavailable")
                     order = preferred + [i for i in order if i not in preferred]
+                exact = None
+                if requested is not None:
+                    available = {_key(s["ref"]): i for i, s in enumerate(snapshots)}
+                    if any(key not in available for key in requested):
+                        raise LearningUnavailable("Requested episode evidence unavailable")
+                    exact = [available[key] for key in requested]
+                    for ref, index in zip(episode_refs or [], exact, strict=True):
+                        if (
+                            "channel_id" in ref
+                            and ref["channel_id"] != snapshots[index]["ref"]["channel_id"]
+                        ):
+                            raise LearningUnavailable("Requested episode channel mismatch")
+                        if truncated[index]:
+                            raise LearningUnavailable(
+                                "Requested episode text exceeds the study bound"
+                            )
+                    order = exact
                 anchor = None
-                for index in order:
+                for index in order[:1] if exact is not None else order:
                     done = db.execute(
                         "SELECT cursor FROM checkpoints WHERE stream=?",
                         ("study:" + _key(snapshots[index]["ref"]),),
@@ -384,8 +444,10 @@ class StudyStore:
                     key=lambda i: score(bodies[i], query),
                     reverse=True,
                 )
-                selected = [anchor]
-                pool = [i for i in related if score(bodies[i], query) > 0]
+                selected = list(exact) if exact is not None else [anchor]
+                pool = (
+                    [] if exact is not None else [i for i in related if score(bodies[i], query) > 0]
+                )
                 while pool and len(selected) < 6:
                     # Prefer separate setups before filling remaining slots with related
                     # remarks. These are candidates for review, not confirmed episodes.
@@ -445,7 +507,10 @@ class StudyStore:
                         }
                     )
             token = uuid4().hex
-            study = _fit_context(Study(token, [snapshots[i] for i in selected], passages))
+            study = _fit_context(
+                Study(token, [snapshots[i] for i in selected], passages),
+                require_all_sources=exact is not None,
+            )
             db.execute(
                 "INSERT OR REPLACE INTO checkpoints VALUES ('distillation', ?)",
                 (_json({"token": token, "not_before": _time(now + INTERVAL)}),),
@@ -687,15 +752,21 @@ class GraphDistiller:
         self.store = StudyStore(GraphStore(ingestor.store))
 
     async def cycle(
-        self, client: discord.Client, *, anchor_ref: dict[str, Any] | None = None
-    ) -> None:
+        self,
+        client: discord.Client,
+        *,
+        anchor_ref: dict[str, Any] | None = None,
+        episode_refs: list[dict[str, Any]] | None = None,
+    ) -> Literal["accepted", "rejected", "insufficient"] | None:
         if not self.ingestor.verified:
             logger.debug("Graph study skipped reason=verification_pending")
-            return
+            return None
         elapsed_start = time.monotonic()
         stage, sources, requests = "source_population", 0, 0
 
-        def completed(reason: str, *, accepted: bool = False) -> None:
+        def completed(
+            reason: str, *, accepted: bool = False
+        ) -> Literal["accepted", "rejected", "insufficient"]:
             logger.info(
                 "Graph study completed accepted=%d reason=%s stage=commit "
                 "sources=%d requests=%d elapsed_ms=%d",
@@ -704,6 +775,13 @@ class GraphDistiller:
                 sources,
                 requests,
                 round((time.monotonic() - elapsed_start) * 1000),
+            )
+            return (
+                "accepted"
+                if accepted
+                else "insufficient"
+                if reason == "insufficient_support"
+                else "rejected"
             )
 
         try:
@@ -715,19 +793,19 @@ class GraphDistiller:
                 now=self.clock(),
                 channel_ids=self.ingestor.channel_ids,
                 anchor_ref=anchor_ref,
+                episode_refs=episode_refs,
             )
             study = selection.study
             if study is None:
                 logger.debug("Graph study skipped reason=%s", selection.reason)
-                return
+                return None
             sources = len(study.snapshots)
             if len(study.snapshots) < 2 and not _self_report_eligible(study.passages[0]):
                 stage = "commit"
                 await asyncio.to_thread(
                     self.store.finish, study, None, now=self.clock(), outcome="insufficient"
                 )
-                completed("insufficient_support")
-                return
+                return completed("insufficient_support")
             started = self.clock()
             stage = "source_refresh"
             async with asyncio.timeout(6):
@@ -775,8 +853,7 @@ class GraphDistiller:
                 await asyncio.to_thread(
                     self.store.finish, study, None, now=self.clock(), outcome="rejected"
                 )
-                completed(reason)
-                return
+                return completed(reason)
             stage = "existing_lookup"
             existing = await asyncio.to_thread(
                 graph.lookup,
@@ -834,8 +911,7 @@ class GraphDistiller:
                 await asyncio.to_thread(
                     self.store.finish, study, None, now=self.clock(), outcome="rejected"
                 )
-                completed("review_invalid")
-                return
+                return completed("review_invalid")
             item = None
             if review["accepted"]:
                 item = {
@@ -887,7 +963,7 @@ class GraphDistiller:
                 now=self.clock(),
                 outcome="accepted" if item else "rejected",
             )
-            completed("accepted" if item else "review_declined", accepted=item is not None)
+            return completed("accepted" if item else "review_declined", accepted=item is not None)
         except asyncio.CancelledError:
             raise
         except Exception as error:
@@ -901,3 +977,4 @@ class GraphDistiller:
                 requests,
                 round((time.monotonic() - elapsed_start) * 1000),
             )
+            return None

@@ -78,6 +78,11 @@ bounded Discord reply
   exact quote validation, native refresh and atomic source fingerprint checks gate
   tentative observations. Source invalidation reopens affected studies, and operator
   retirement blocks automatic reuse of unchanged supporting evidence.
+- `study.py` exposes the trusted complete-episode maintenance command. A plain
+  HTTP client reauthenticates the pinned member and source channels. Exact source
+  selectors keep cross-topic support and contrary examples in both study passes,
+  retaining pacing, provenance, withdrawal and the existing maintenance ledger.
+  It owns no application heartbeat and starts no gateway or Discord send.
 - `app.py` is the composition root. Importing any module is side-effect free.
 
 Operator withdrawal writes and synchronizes a private marker beside the learning

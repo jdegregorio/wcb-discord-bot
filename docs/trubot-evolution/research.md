@@ -1615,3 +1615,78 @@ release replies. No newly populated human trait or abstraction. Monthly tracked
 USD 0.128031055, 912 settled attempts/zero unsettled; research delta USD 0.021102315.
 Prioritize validated abstract learning with ownership acceptance, then H22
 variation. The material subject-grounding issue remains part of those criteria.
+
+## 2026-10-11 13:00 - H32 complete reviewed episode selection
+
+Phase 1, predeclared hypotheses and acceptance (before experiments):
+- H32 enabling hypothesis: a trusted operator can specify an anchor but not the
+  whole reviewed episode set. `StudyStore.select` admits related sources only when
+  lexical score is positive. Cross-topic corroboration and nonlexical sincere
+  exceptions can therefore be omitted. Accept exact 1-6 current attributed refs,
+  preserving order and every requested source through request fitting, so that a
+  reviewed abstract mechanism can be tested against its intended contrary cases.
+  Baseline: only anchor targeting; automatic lexical selection. Acceptance: selected
+  distinct refs appear in both passes in the same order; no replacement/drop on
+  missing, retired, out-of-scope, changed or oversized evidence; no paid extraction
+  on invalid selection. Four-hour checkpoint pacing, source refresh, withdrawal,
+  maintenance ledger, final byte bound and automatic default selection stay intact.
+  Disconfirmation: acceptance weakened, a requested ref silently substituted or
+  truncated, or cost/pacing reset. Validate whole two-pass handler fixtures,
+  matched same-model invented packets, installed checks and actual private Discord.
+  Synthetic selection conformance does not establish human extraction quality.
+- H33 exploratory: diversified automatic sampling could surface genuine exceptions
+  and cross-topic recurring mechanisms. Random unrelated text can instead add noise.
+  Requires independently reviewed held-out human episodes and same-case baseline;
+  no sampling-policy change selected without that evidence. Existing maintenance
+  allowance, no added service. H28 classification remains unresolved.
+- H22 humor remains active overlapping work in Joe's separate chat. Do not change
+  its responder/personality path in this increment. Native study peer setup, broader
+  visual/history coverage and tool/image candidates remain larger dependencies.
+
+Isolation: fetched base fe4a7bd97979a26ee2c534d4dee74338c2325c61; new managed
+worktree trubot-daily-20261011-1300, unique feature branch. Prior PRs #72/#73
+completed; no overlapping evolution PR open. Other worktrees and Joe's local
+changes untouched. Production 2.15.1 healthy on pi5/aarch64/Ubuntu 24.04.4.
+October tracked USD 0.130031605 at initial read, zero unsettled attempts; prior
+billing/pre-guard visibility still unknown.
+
+Character audit: actual private development UI retains mechanical clarification
+of invited banter and earlier ownership failure, distinct from spontaneous league
+activity. Humor correction is active in another chat. New raw historical semantic
+review was rejected by automatic approval review because streaming exchanges would
+expose private data in command logs. Use content-free structural audit; do not
+bypass that rejection or reuse the older pending H21a payload. No new personality
+observation or pixel interpretation claimed. Authenticated exact archive alias and
+existing stable native identity remain authoritative.
+
+Phase 2: select H32 as supported H21 enabling work, with no behavioral assumption
+or new graph category. This removes the lexical constraint from explicitly reviewed
+study sets while preserving automatic default intake. Confidence high in the source
+selection gap; human abstraction/quality gain unresolved. At most existing six
+sources/two provider passes/14,000 extraction and 16,000 final bytes, existing
+four-hour quota and USD 18 runtime/2 maintenance/20 monthly caps. Priority after
+this: reviewed H21/H28 population with ownership and sincere exceptions, concurrent
+H22 humor, durable native/visual episodes, selective skills/tools, generated U.P.
+aurora and trail-camera scenes. Missing semantic access and held-out expectations
+remain concrete prerequisites, not grounds to infer traits. Reconsider if exact
+sets cannot preserve lifecycle or actual-context validation rejects the mechanism.
+
+
+H32 experiment results before release: 30 source-selection/lifecycle regressions
+pass. The first baseline run exposed 13 missing-interface failures plus one
+fixture API error, which was corrected before evaluating the implementation.
+A direct existing-path control confirms the sincere nonlexical exception is absent;
+complete selection preserves all three invented episodes. Whole two-pass writer
+conformance stores two supports and one contrary link, then source deletion removes
+recall. Additional operator tests cover private manifests, authenticated identity,
+plain HTTP cleanup, unchanged readiness and honest completion status.
+
+Same-model synthetic provider comparison: three cases, two repetitions, two arms,
+17 total extraction/review requests on the existing maintenance ledger. Baseline
+pattern proposals are accepted in 1/2 trials; complete-context arm abstains in 2/2.
+Both arms abstain on quoted-peer negatives (2/2 per arm) and accept the particular
+self-report control (2/2 per arm). Every trial is retained privately. This supplies
+schema/provider compatibility and contrary evidence against an extraction-quality
+claim, not a measured fidelity gain. Exact-set admission is supported as enabling
+work; human abstraction population and H28 classification remain unvalidated.
+Experiment estimate USD 0.002570545; no fresh ledger or recurring added request.

@@ -749,3 +749,34 @@ sources retain their target-only scope, freshness and missing-peer labels. The
 checkpoint cohort and four-hour pacing remain unchanged; new extraction provenance
 does not replay old sources. Existing withdrawal, correction, backups and spending
 apply. Rollback to 2.14.0 is data-compatible; this release populates no human trait.
+
+
+## Complete reviewed episode studies, version 2.16.0
+
+`trubot-study --episodes /var/lib/trubot/private-study/episodes.json` is an operator
+maintenance command. Its JSON file must have a private owner and directory, be at
+most 4,096 bytes, and contain only `schema: 1` and `episode_refs`, an ordered array
+of one to six distinct references. The first is the anchor. Discord references
+use `kind: discord`, integer `message_id`, and optional integer `channel_id`;
+Slack references use `kind: slack`, exact SHA-256 `document`, and integer `ordinal`.
+Use reviewed source references, not copied text, guessed aliases or file-date hints.
+The command accepts no instructions, summaries, access grants or new evidence.
+
+The source member is authenticated again with a plain bot HTTP client. Native
+channels retain the runtime intake intersection. No gateway or Discord send is
+started, and the command owns no application readiness file. Extraction/review use
+current source text and the existing maintenance ledger. The complete requested
+set must be available, unretired, untruncated and fit the existing request bound;
+otherwise no selection lease or paid extraction is acquired. Four-hour pacing and
+anchor retry remain shared with the running learner. All requested source indexes
+remain ordered in both passes. Context rows can still have explicit size gaps.
+
+Output is content-free completion/outcome metadata. Exit 2 means not completed or
+unavailable, including pacing; `completed` does not mean accepted, and accepted is
+still tentative two-pass model review, not human validation. Native source refresh,
+exact quotation, independent pattern support, contrary-source links, atomic commit,
+correction, retirement and withdrawal remain mandatory. This path does not change
+automatic lexical sampling or populate a trait merely because refs were selected.
+It provides a usable maintenance path for cross-topic episode/counterexample study.
+Private manifests share the source owner's retention/deletion responsibilities;
+do not publish them or retain raw/derived human data in test artifacts.
