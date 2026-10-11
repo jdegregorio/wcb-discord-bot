@@ -2052,3 +2052,66 @@ is retained there. No secondary readiness client was constructed.
 PR, merge, release/image and real owner Discord rollout evidence follow below.
 Public counts and limitations are in
 [evaluation](evaluations/2026-10-10-human-focus-release.json).
+
+
+### Verified release and actual gateway acceptance
+
+[Runtime PR #63](https://github.com/jdegregorio/wcb-discord-bot/pull/63) merged
+209346b0a5572ddc42abc7b9d47d93e1b1cbe52f, identical tree to tested
+7a52db3e05f5575b84b966a80344f1fc47fb3e12. PR CI
+[38097574312](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38097574312)
+and main CI
+[38097649909](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38097649909)
+pass. All six merged-main local gates pass again, 558 tests/96.67% branch coverage.
+Immutable [v2.12.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.12.1)
+and both-architecture
+[publish 38097698875](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38097698875)
+succeed. Locked app-scoped pi-app transaction deploys on freshly verified
+pi5/aarch64/Ubuntu 24.04.4 without sudo or unrelated service changes.
+
+Running digest sha256:8fd3350b6dc93378f64f55061bbcbf95c0e8758006adb714b3bfc090e5194214.
+Previous healthy 2.11.3 digest
+sha256:d6beaca06f3387329051f4a39f6e7f1ef930f90a76c69bec7b726ffa6c2347af.
+All 27 installed modules match tested source, package/OCI revision agree, main
+readiness is healthy with zero restarts. No rollback required; no new live
+abstraction is populated, so prior-image graph field compatibility is unchanged.
+
+Real owner-authored Chrome Discord tests in the authenticated two-member private
+guild/allowed general pass 10/10: nine actual gateway answers, one verified
+recipient abstention. The baseline had five questions/five answers with one
+failed new-topic continuation. Same changed scenario now chooses within the new
+subject, and a factual follow-up explicitly separates that pick from human
+preference. Invited fictional callback, sincere celebration, grief, supported
+baseball preference and unsupported event controls pass. Observed answer latency
+2.181 to 4.591 seconds, median 3.358; no latency improvement claimed. No user token,
+league test post, development learning or second readiness client.
+
+Post-deployment character audit covers all nine actual answers, with four private
+human reference contexts. One animal joke repeats older bot wording; broader
+variation/voice remains H22 work. No spontaneous current-release league sample,
+independent human grader or new pixels. Narrow continuity improves one actual
+scenario; no full replica, numeric humor or general human-fidelity claim.
+
+At 2026-10-11T00:21:42Z: zero errors, response failures, disconnects, memory
+warnings, learning or study pauses; nine posts, one declined follow-up and four
+learning batches. Identity, withdrawal, 34 native records, 16 archive documents,
+4,299 blocks/405 eligible target blocks, 115 visual episodes/96 assets and graph
+439 sources/554 episodes/1,011 edges remain. Live abstractions zero; selected prior
+private pattern remains offline with its approval prerequisite. Actual test
+references and reviewed pass/fail/count metadata are private, no raw question or
+answer text in artifacts. Synthetic research outputs are separate.
+
+Tracked estimate USD 0.09052265 (runtime 0.04358256/maintenance 0.04694009),
+457 attempts/zero unsettled. Run delta USD 0.011375145 includes 84 research calls
+and actual gateway activity; research delta USD 0.00602667. No extra recurring
+call or paid infrastructure. USD 18/2/20 caps remain; billing/pre-guard October
+spend are unknown. Automatic approval review rejected printing an unverified
+version environment file; helper-code verification and four allowlisted non-secret
+metadata fields provided a safe alternative. No secret was printed or bypass used.
+
+The evidence-only follow-up preserves the rollout without runtime changes.
+Retain source/test references before archiving only this run's managed worktree;
+leave the older unfinished/private-study worktree alone. Next order is H21's
+conditional abstract memory work, H22 re-study, native/visual graph context,
+selective skills/tools, generated outdoor scenes. Schedule/model/notifications
+and all authorization/privacy/source/withdrawal/spending gates are unchanged.

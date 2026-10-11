@@ -1199,3 +1199,31 @@ generated U.P. aurora/trail-camera pictures. Do not retire the approved Thomas J
 creative policy. Change priority again if real continuity does not improve or
 factual/emotional/recipient quality regresses. Longer-term memory/harness direction
 remains; the pending private payload is never sent by this increment.
+
+
+H23 production result: all ten actual private-owner scenarios pass, including
+nine gateway responses and a verified other-recipient abstention. Same failed
+animal-to-dessert setup now yields a conditional dessert choice; explicit
+follow-up confirms it is not Andrew's established human favorite. Novel invited
+Thomas Jones fiction, sincere achievement, grief care, supported natural baseball
+recall and unsupported factual-event uncertainty pass. No test posts in league
+channels or learning from development. This is one actual scenario improvement;
+model variability and history differences prevent a universal claim. No separate
+framing-only causal gain or general amusement/fidelity gain is established.
+
+Post-deployment audit reviews all nine actual answers against the same private
+human reference contexts and factual boundaries. One animal reply reuses prior
+bot joke wording, an unresolved variation limit for H22; it is not human evidence.
+No current spontaneous league activity, independent human grade or new pixels.
+The source corpus and graph remain unchanged, including zero live abstractions.
+The selected prior H21a private pattern remains offline and unvalidated for reply
+quality. Full private data and derived observations never enter these public notes.
+
+All local gates pass twice, 558 tests/96.67% branch coverage, PR and main CI and
+both image architectures succeed. 27 installed source hashes match merged main.
+Healthy Pi readiness/zero restarts and content-free error counters remain clear.
+84 synthetic provider research calls add USD 0.00602667 maintenance; tracked
+monthly total USD 0.09052265 with zero unsettled requests at the final snapshot.
+USD 18/2/20 limits preserved; actual billing/pre-guard spend remain unknown.
+Raw real questions/answers are not saved in operator artifacts. Private source
+and test refs/counts/pass-fail use the existing smoke retention/withdrawal path.

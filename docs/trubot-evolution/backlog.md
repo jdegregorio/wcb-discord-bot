@@ -10,9 +10,9 @@ new H22 held-out humor study, durable native/visual context, selective tools/ski
 and generated U.P. aurora/trail-camera scenes. Preserve all current privacy,
 withdrawal, participation, spending, schedule/model and real Discord gates.
 
-| Selected increment | Evidence, benefit and rationale | Dependencies and acceptance | Confidence and operating impact |
+| Completed increment | Evidence, benefit and rationale | Dependencies and acceptance | Confidence and operating impact |
 | --- | --- | --- | --- |
-| H23 current-human follow-up focus | Actual gateway switches back to an older animal after a new dessert subject. Keep imaginative conversation on the current human setup. | Typed conversation/memory/reference rows, bounded framing, hypothetical permission; source/recipient/care controls, full gates and actual changed-topic Discord. | Narrow 2x2 support; framing alone not shown better. At most 600 extra source characters per inferred reply, no extra request/service. |
+| Completed H23 current-human follow-up focus | Actual gateway switches back to an older animal after a new dessert subject. Keep imaginative conversation on the current human setup. | Typed conversation/memory/reference rows, bounded framing, hypothetical permission; source/recipient/care controls, full gates and actual changed-topic Discord. | Narrow 2x2 support; framing alone not shown better. At most 600 extra source characters per inferred reply, no extra request/service. |
 
 
 Replenish this list as evidence arrives. Each run owns prioritization and carries
@@ -382,3 +382,14 @@ with linked counterexamples and authoritative source invalidation. H22 creative
 amplification remains next, then contextual native/visual coverage, selective
 skills/tools and generated outdoor scenes. Behavioral benefit is prospective;
 see research.md for locked acceptance, dependencies and operating impact.
+
+
+2026-10-10 17:00 verified: H23 is delivered in 2.12.1. Actual owner Discord
+checks pass 10/10 (nine gateway answers and one recipient abstention); the
+previously failed changed-topic choice now follows the current human subject.
+Fictional picks remain separate from Andrew's actual preferences. All 558 tests,
+merged-main CI, both image architectures, installed source hashes and Pi readiness
+pass. H22 amplification variants are rejected, not shipped. Next: H21 conditional
+abstract population/extraction after its specific private payload prerequisite,
+then new H22 study, durable native/visual context, selective tools/skills and
+generated U.P. aurora/trail-camera scenes. No general humor/fidelity gain claimed.
