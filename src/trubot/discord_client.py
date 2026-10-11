@@ -392,7 +392,11 @@ class TruBotClient(discord.Client):
                     focused.images or "image pixels unavailable" in focused.content
                 ):
                     # Keep the focus last so the adapter retains its image parts.
-                    history.append(focused)
+                    history.append(
+                        ConversationMessage(
+                            focused.role, focused.content, focused.images, origin="focus"
+                        )
+                    )
                     target = focused.content
                 memory = await self._memory_context(
                     channel, target, history, requester_user_id=requester_user_id
@@ -406,7 +410,7 @@ class TruBotClient(discord.Client):
                         if history and history[-1].content == target
                         else len(history)
                     )
-                    history.insert(position, ConversationMessage("user", memory))
+                    history.insert(position, ConversationMessage("user", memory, origin="memory"))
                 if not history and target is None:
                     logger.warning("No usable history for response channel_id=%d", channel.id)
                     return False
@@ -487,9 +491,12 @@ class TruBotClient(discord.Client):
                     converted.role,
                     "REFERENCED MESSAGE (context only): " + converted.content,
                     converted.images,
+                    origin="reference",
                 )
         except discord.HTTPException:
-            return ConversationMessage("user", "[Referenced message unavailable.]")
+            return ConversationMessage(
+                "user", "[Referenced message unavailable.]", origin="reference"
+            )
         return None
 
     async def _memory_context(

@@ -8,6 +8,7 @@ from enum import StrEnum
 from typing import Literal
 
 MessageRole = Literal["user", "assistant"]
+MessageOrigin = Literal["conversation", "memory", "reference", "focus"]
 
 
 class ReplyMode(StrEnum):
@@ -28,6 +29,8 @@ class ConversationMessage:
     role: MessageRole
     content: str
     images: tuple[ConversationImage, ...] = field(default=(), repr=False)
+
+    origin: MessageOrigin = "conversation"
 
     def as_input(self) -> dict[str, str]:
         return {"role": self.role, "content": self.content}

@@ -774,3 +774,39 @@ async def test_fresh_memory_follows_stale_bot_history_before_current_focus(mode)
         assert focus == "Joe: Quote last week's message."
     finally:
         await client.close()
+
+
+@pytest.mark.asyncio
+async def test_real_followup_handler_tags_memory_and_keeps_latest_human_topic():
+    from test_openai_responder import FakeOpenAI, make_responder
+
+    from trubot.reply_focus import preceding_human_turn
+
+    client, captured, _, _ = make_client()
+    channel = fake_channel()
+    channel.history_messages[:] = [
+        message_for_history("Which animal?", author_id=1),
+        message_for_history("An owl.", author_id=999, bot=True, name="Trubot"),
+        message_for_history("What fruit would you pick?", author_id=1),
+        message_for_history("I don't know.", author_id=999, bot=True, name="Trubot"),
+    ]
+    memory = "RETRIEVED HISTORICAL EVIDENCE: old animal topic"
+    client._memory_context = AsyncMock(return_value=memory)
+    client._attention.activate(channel.id, NOW)
+    message = fake_message(channel, direct=False)
+    message.clean_content = message.content = "If you had to choose.."
+    try:
+        await client.on_message(message)
+        messages, mode, safety_id, target = captured.calls[0]
+        assert mode is ReplyMode.FOLLOW_UP
+        assert preceding_human_turn(messages) == "Tim: What fruit would you pick?"
+        assert messages[-1].origin == "memory"
+        fake = FakeOpenAI("I'd pick mango.")
+        responder = make_responder(fake)
+        reply = await responder.reply(messages, mode=mode, safety_id=safety_id, target=target)
+        assert reply == "I'd pick mango."
+        assert fake.responses.request is not None
+        assert "Tim: What fruit would you pick?" in fake.responses.request["input"][-1]["content"]
+        assert fake.responses.request["input"][-2]["content"] == memory
+    finally:
+        await client.close()

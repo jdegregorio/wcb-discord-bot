@@ -1,5 +1,20 @@
 # Prioritized backlog
 
+2026-10-10 17:00 evidence refinement: H23 current-human focus and hypothetical
+continuity is the selected narrow harness correction after an actual topic-switch
+failure. H22's 64 synthetic intensity trials do not meet its shipping criteria;
+none of those amplification prompts is shipped. H21a storage is merged via #62
+but the selected private pattern remains offline pending specific provider approval.
+Next: validated H23 rollout, conditional abstract memory population/extraction,
+new H22 held-out humor study, durable native/visual context, selective tools/skills,
+and generated U.P. aurora/trail-camera scenes. Preserve all current privacy,
+withdrawal, participation, spending, schedule/model and real Discord gates.
+
+| Selected increment | Evidence, benefit and rationale | Dependencies and acceptance | Confidence and operating impact |
+| --- | --- | --- | --- |
+| H23 current-human follow-up focus | Actual gateway switches back to an older animal after a new dessert subject. Keep imaginative conversation on the current human setup. | Typed conversation/memory/reference rows, bounded framing, hypothetical permission; source/recipient/care controls, full gates and actual changed-topic Discord. | Narrow 2x2 support; framing alone not shown better. At most 600 extra source characters per inferred reply, no extra request/service. |
+
+
 Replenish this list as evidence arrives. Each run owns prioritization and carries
 one coherent increment through production verification.
 

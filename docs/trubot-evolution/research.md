@@ -1045,3 +1045,157 @@ deployment or changed real Discord acceptance is claimed. Resume prerequisite:
 explicit payload/destination approval, then matched guarded provider study, live
 population only if supported, full CI/release/image/deployment and actual private
 owner Discord checks. Reject/narrow if conditions, care or grounding regress.
+
+
+### 2026-10-10 17:00 Phase 1, creative performance hypotheses
+
+Fetched base 13b09b0356d8361ac8dcf2799ce9e0c23d3352f0, new managed worktree
+and unique feature/trubot-daily-20261010-1700. Prior PR #62 merged outside the
+previous run after its checkpoint. Its deterministic H21a storage correction is
+on main; its selected private pattern remains offline and provider approval is
+unresolved. Production is still 2.11.3. Do not infer private payload approval from
+that merge or send it through another route. No overlapping evolution PR is open.
+
+Authenticated pinned human, private development guild with exactly owner/bot and
+allowed general channel verified again. Latest 100 messages in two league channels,
+14-day cutoff: seven target, seventeen peers, five older bot replies. No current
+release spontaneous sample. Ten thematic attributed archive blocks across four
+exports read with ArchiveStore.context and digest/ordinal/line references. Adjacent
+human setup/reactions remain context, unknown dates remain unknown. Four contexts
+reserved for qualitative human comparison: playful sporting exaggeration, sincere
+thanks, sincere congratulations and routine accountability. They are not new graph
+supports or provider payloads. Image-dependent interpretation excluded; no pixels,
+full native-history coverage, independent human evaluator or new human trait claimed.
+
+Mismatch categories: some old bot celebration responses dampen enthusiasm; actual
+owner development conversation loses an elliptical hypothetical referent and then
+abstains from choosing even after clarification. Fully explicit hypothetical baseline
+in this run already produces a fitting brief joke. This contrary success means the
+baseline is capable of humor; do not claim it always refuses creative choices.
+
+H22a: a separately labeled creative performance policy, permitting original
+punchlines and imaginary choices without treating them as human facts, improves
+contextual humor so that supported persona grounding does not become refusal to
+play. Permit selective Thomas Jones callbacks as Joe-authorized bot fiction, not
+a newly inferred human habit. Resolve clear elliptical follow-ups through the
+immediate exchange; a playful choice never supplies autobiographical evidence.
+
+H22b: stronger intensity might improve amusement, or instead increase repetitive
+callbacks and derailment. Compare unchanged baseline, moderate and strong versions
+with the same model, input, mode, output bound and existing maintenance ledger.
+No selected pending private source/pattern or real held-out excerpts enter these
+requests. All sixteen inputs are repository-owned synthetic conversations: eight
+playful cases and eight emotional, topical, factual or recipient controls, including
+two follow-ups. Predeclare one sample per arm (48 requests), no model judge. Review
+answer fit, humor mechanism, freshness/variety, sincerity, grounding, brevity and
+abstention, not keywords. Preserve all outputs only for synthetic evaluation.
+
+Success locked before generation: prefer an arm to baseline in at least six of
+eight eligible cases without material regression in any of eight controls; both
+Thomas Jones invitations should yield relevant novel play; imaginative follow-up
+must choose within its established topic. No invented real memories/preferences,
+no grief joke, no redirected celebration, no answer to another person. At most
+two non-invited callbacks in the six other playful cases; no repeated punchline
+or compulsory callback. Ties count against the six-win threshold. If neither arm
+passes, narrow the hypothesis or ship only a supported enabling correction after
+additional defined validation, never call plausibility a measured improvement.
+Actual owner Discord must test changed banter, Thomas Jones, elliptical imaginative
+follow-up, celebration, distress, unrelated topic and source-grounding controls.
+Numeric 2-3x is an authorized intensity target, not an established measurable gain.
+
+H21 continuous abstraction extraction remains first longer-term work, conditional
+pattern population stays blocked on its specific payload prerequisite. H3 selective
+tools/harness and generated U.P. aurora/trail-camera pictures stay exploratory. No
+new provider/model capability is selected, so no vendor-document capability claim.
+
+
+H22a/b first result: both initial intensity arms fail the predeclared shipping
+criteria. Baseline already answers the synthetic hypothetical follow-up; neither
+variant provides six clear humor wins. Moderate includes an unnecessary physical
+promise in one invited callback; stronger is wordy and redirects an unrelated
+projection setup. Both embellish an unsupported factual-event question with a
+fictional deed instead of simply rejecting its premise. Eight controls otherwise
+retain care, topical celebration, preference uncertainty and recipient abstention.
+Reject both exact prototypes, do not ship their unsupported factual embellishment.
+48 settled synthetic requests use the existing ledger, no private graph read,
+Discord write or readiness client construction. Maintenance delta USD 0.00295382.
+
+Predeclare a refinement before generation: retain same sixteen inputs and baseline,
+shorten the creative guidance, explicitly stop unsupported factual-event answers
+before fictional embellishment, forbid physical promises, favor quick plain chat
+and avoid unsolicited callbacks. One further sample per case (16 requests).
+Keep six-of-eight preference and all-control criteria for any humor-gain claim;
+if absent, H22's general amusement improvement remains unvalidated. A bounded
+creative permission contract can be justified as enabling work only if every
+control passes and directed fictional choices/callbacks preserve grounding,
+recipient judgment and brevity. Report this separately from measured fun.
+
+
+Refinement result: sixteen synthetic responses preserve emotional/recipient
+controls, but do not meet six clear amusement wins. One unsupported event answer
+still says it cannot pin down when it came up, an ambiguous premise acceptance.
+Do not ship the amplification variants or claim a humor multiplier. Thomas Jones
+play remains authorized and prospective, not a newly learned human belief.
+
+H23 opportunity isolated through actual gateway: after an animal hypothetical,
+a new human ice-cream question receives uncertainty, then an elliptical invitation
+to choose incorrectly returns the older animal. Earlier fully explicit and
+same-subject hypothetical choices pass. The recent human topic is available in
+history, but prior bot prose dominates the reference. Hypothesis: a bounded typed
+anchor to the immediate preceding human question improves creative continuity,
+so that play follows a friend's current setup without inventing factual memory.
+No source retrieval or model change is needed. Distinguish memory/reference rows
+from actual conversational turns instead of recognizing text marker keywords.
+
+Before generation, lock a 2x2 harness/policy comparison on four synthetic cases:
+two independent topic switches, a different-recipient control and a factual
+human-preference control. Baseline, minimal creative-choice policy, focus framing
+only and both use identical history/model/mode/bounds, sixteen calls total.
+Acceptance: both topic switches choose the latest human subject in the selected
+arm, both controls preserve abstention/grounding, no old topic or false human
+preference. This is a narrow continuity correction, not general character fidelity
+or fun measured by words. Disconfirm if anchoring stale memory/reference content
+changes the subject, or framing makes side conversations look addressed.
+If supported, Phase 2 may prioritize this harness prerequisite ahead of H22,
+while H21 private-pattern approval remains open. No permission or budget expansion.
+
+
+### Phase 2 evidence decision, before production implementation
+
+H22 intensity variants are rejected, including the shortened refinement. No
+six-of-eight humor preference result or numeric improvement is established.
+The H23 2x2 experiment supports a narrow continuity/creative-choice correction:
+baseline 1/2 topic switches, focus-only 1/2, policy-only 2/2, combined 2/2;
+each arm passes the two factual/recipient controls. The experiment does not
+isolate a generated-quality benefit from framing alone. One sample per cell,
+synthetic contexts, single implementation-aware evaluator; no generalization claim.
+
+Select H23: preserve the latest human exchange in inferred follow-ups and allow
+explicit hypothetical choices, so that a friend can develop a playful scene
+without an older bot answer hijacking the new subject or missing factual evidence
+causing an unnecessary refusal. Introduce typed memory/reference provenance and
+a bounded recent human-turn anchor; never infer conversation source from textual
+marker keywords. Only anchor an uninterrupted human/bot exchange. Existing
+recipient judgment, source retrieval, learning withdrawal, history scope and
+participation remain authoritative. This is a supported narrow correction and
+bounded harness enabling work, not the rejected humor amplification.
+
+Acceptance: exclude retrieved evidence and detached references from topic framing;
+no stale anchor after intervening human chat; preserve focused pixels and final
+question; no extra call or readiness client; reserve added framing bytes in the
+existing ledger. Same-case installed provider replay, real owner changed-topic
+hypothetical plus factual, care, joy, unrelated and recipient controls; all six
+quality gates, immutable release and healthy Pi gateway. Roll back on regression.
+Confidence is moderate for narrow creative continuity, high for deterministic
+provenance bounds; broad style benefit and longer-term latency are unmeasured.
+Add at most 600 source characters plus short framing to follow-ups, no new service,
+model or provider call; USD 18/2/20 caps and unknown billing/pre-guard scope stay.
+
+Next order: complete H23 with real acceptance; resolve H21's private pattern
+prerequisite and wider conditional abstraction extraction/population; retest H22
+on source-contextual held-outs without polished verbosity or false factual scenes;
+then durable native/visual neighborhoods, selective skills/tools and requested
+generated U.P. aurora/trail-camera pictures. Do not retire the approved Thomas Jones
+creative policy. Change priority again if real continuity does not improve or
+factual/emotional/recipient quality regresses. Longer-term memory/harness direction
+remains; the pending private payload is never sent by this increment.

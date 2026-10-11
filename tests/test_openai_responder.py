@@ -75,7 +75,7 @@ async def test_explicit_responses_use_luna_without_reasoning() -> None:
     assert fake.responses.request["max_output_tokens"] == 180
     assert fake.responses.request["store"] is False
     assert fake.responses.request["safety_identifier"] == "safe-user"
-    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v10"
+    assert fake.responses.request["prompt_cache_key"] == "wcb-trubot-personality-v11"
     assert fake.responses.request["input"] == [
         {
             "role": "user",
@@ -305,3 +305,56 @@ async def test_excess_images_are_rejected_before_provider_call():
             safety_id="synthetic",
         )
     assert fake.responses.request is None
+
+
+@pytest.mark.parametrize("mode", list(ReplyMode))
+@pytest.mark.asyncio
+async def test_human_focus_is_local_to_followups_and_preserves_authoritative_memory(mode):
+    fake = FakeOpenAI("I'd pick mango.")
+    responder = make_responder(fake)
+    human = "Friend: What fruit would you pick?"
+    memory = "RETRIEVED HISTORICAL EVIDENCE: a different old subject"
+    messages = [
+        ConversationMessage("user", "Friend: Pick an animal coach."),
+        ConversationMessage("assistant", "An owl."),
+        ConversationMessage("user", human),
+        ConversationMessage("assistant", "I don't know."),
+        ConversationMessage("user", memory, origin="memory"),
+        ConversationMessage("user", "Old referenced animal", origin="reference"),
+    ]
+    await responder.reply(
+        messages, mode=mode, safety_id="synthetic", target="Friend: If you had to choose.."
+    )
+    request = fake.responses.request
+    assert request is not None
+    focus = request["input"][-1]["content"]
+    assert ("IMMEDIATE PRECEDING HUMAN TURN" in focus) == (mode is ReplyMode.FOLLOW_UP)
+    if mode is ReplyMode.FOLLOW_UP:
+        assert human in focus
+        assert "Old referenced animal" not in focus
+        assert memory not in focus
+    assert request["input"][-3]["content"] == memory
+    assert request["store"] is False
+
+
+@pytest.mark.asyncio
+async def test_followup_focus_keeps_target_pixels():
+    from trubot.conversation import ConversationImage
+
+    fake = FakeOpenAI("Nice")
+    responder = make_responder(fake)
+    pixel = ConversationImage("data:image/jpeg;base64,synthetic", "Current image")
+    messages = [
+        ConversationMessage("user", "Friend: Which mascot would you pick?"),
+        ConversationMessage("assistant", "An owl."),
+        ConversationMessage("user", "Friend: This one?", (pixel,), origin="focus"),
+    ]
+    await responder.reply(
+        messages, mode=ReplyMode.FOLLOW_UP, safety_id="synthetic", target="Friend: This one?"
+    )
+    request = fake.responses.request
+    assert request is not None
+    content = request["input"][-1]["content"]
+    assert "Which mascot" in content[0]["text"]
+    assert content[-1]["image_url"] == pixel.data_url
+    assert len(request["input"]) == 3

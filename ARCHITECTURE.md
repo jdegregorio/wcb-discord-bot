@@ -190,3 +190,20 @@ checks, withdrawal and spending remain. This is enabling work with 24 regression
 cases; measured human fidelity is still open. The private pattern remains offline
 pending specific OpenAI payload approval. See the evolution research and storage
 notes for validation, lifecycle and rollback boundaries.
+
+
+## Human focus for imaginative follow-ups (2.12.1)
+
+Inferred follow-ups can carry at most 600 characters from the immediately
+preceding human setup. Typed conversation, memory, reference and focus origins
+prevent retrieved evidence or detached older messages from supplying that topic.
+Intervening human chat disables the anchor. The latest question and image pixels
+remain focused, recipient judgment remains separate, and added context is reserved
+in the existing spending ledger. No extra request, source scope, state or model.
+
+Explicit hypothetical choices may be made conditionally without evidence of
+Andrew's actual favorite. Such choices never become human facts. All source,
+withdrawal, recipient and emotional rules remain. Amplified humor prototypes
+failed their research criteria and are not included. Conditional episode storage
+from merged #62 is included as enabling code; its selected private pattern is
+still offline and its behavioral study remains open.

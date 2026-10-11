@@ -1,5 +1,16 @@
 # Trubot evolution
 
+2026-10-10 17:00 evidence refinement: H23 current-human focus and hypothetical
+continuity is the selected narrow harness correction after an actual topic-switch
+failure. H22's 64 synthetic intensity trials do not meet its shipping criteria;
+none of those amplification prompts is shipped. H21a storage is merged via #62
+but the selected private pattern remains offline pending specific provider approval.
+Next: validated H23 rollout, conditional abstract memory population/extraction,
+new H22 held-out humor study, durable native/visual context, selective tools/skills,
+and generated U.P. aurora/trail-camera scenes. Preserve all current privacy,
+withdrawal, participation, spending, schedule/model and real Discord gates.
+
+
 ## Current priority after Joe's 2026-10-10 direction
 
 Prioritize H21 abstract episode memories, then H22 deliberately amplified humor,
