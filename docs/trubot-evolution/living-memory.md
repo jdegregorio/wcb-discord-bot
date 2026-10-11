@@ -167,3 +167,13 @@ withdrawal, recipient and emotional rules remain. Amplified humor prototypes
 failed their research criteria and are not included. Conditional episode storage
 from merged #62 is included as enabling code; its selected private pattern is
 still offline and its behavioral study remains open.
+
+### Behavioral domains, 2.14.0
+
+Conditional value/emotion/relationship memories share humor/style corroboration,
+separation, counterevidence, review, expiry and invalidation. Values describe
+observed priorities; emotions describe expressed responses; relationships describe
+observed interaction patterns. Never infer motives, mental health or private intimacy.
+New types require abstraction fields even for operator imports. Population and
+human held-out fidelity remain separate milestones; do not equate schema coverage
+with a complete personality graph. Checkpoint cohort and pacing are unchanged.

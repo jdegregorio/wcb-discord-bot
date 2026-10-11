@@ -2220,3 +2220,19 @@ privacy-safe [release evidence](evaluations/2026-10-10-conditional-distillation-
 separates conformance, actual delivery and unresolved quality claims. The follow-up
 evidence PR changes documentation only; preserve evidence before archiving this run's
 managed worktree and leave older pending work untouched.
+
+## 2026-10-11 01:00 - conditional behavioral graph domains
+
+Fresh fetched base7c0eb6eb7a20cbbb104f5a3b3bfd114bc5c20f5f, managed worktree
+trubot-daily-20261011-0100, unique feature branch. Primary checkout and older
+worktrees unchanged. No overlapping evolution PR. Both planning phases and audit
+are recorded in research.md; selected H26 extends H21 representation coverage.
+Baseline 24/42 invented contract failures, candidate42/42; no human pattern learned.
+Release, installed acceptance and actual post-deployment Discord remain pending.
+
+Candidate conformance: 55/55 new synthetic regressions; baseline original42 cases
+had24 failures. Provider matched comparison9 calls gives no spontaneous new-domain
+proposal; three supplied-output calls pass schema conformance. Existing four-hour
+cohort, two-pass calls, model and USD18/2/20 caps are unchanged. No private pending
+payload sent and no human graph observation populated. Actual installed Discord
+acceptance and release evidence follow after deployment.

@@ -1,5 +1,12 @@
 # Harness exploration
 
+2026-10-11 01:00 selection: H26 extends conditional episode memory to values,
+expressed emotional responses and observed ways of relating. This is enabling work;
+no new Andrew pattern is established. Preserve H21 validated population first,
+then H22 variation, native/visual context, selective tools/skills and generated U.P.
+aurora/trail-camera scenes. Acceptance and contrary evidence are in research.md.
+
+
 2026-10-10 21:00 verified: H24 is delivered in 2.13.0. Automatic humor/style
 proposals preserve conditions, limitations and attributed counterexamples through
 independent review, graph commit and relevant replies. All 587 tests, merged-main

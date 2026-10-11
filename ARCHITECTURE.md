@@ -207,3 +207,19 @@ withdrawal, recipient and emotional rules remain. Amplified humor prototypes
 failed their research criteria and are not included. Conditional episode storage
 from merged #62 is included as enabling code; its selected private pattern is
 still offline and its behavioral study remains open.
+
+## Conditional behavioral domains (2.14.0)
+
+A shared observation registry connects extraction, graph write, sweep and
+retirement. `value`, `emotion` and `relationship` use the same conditional
+abstraction contract as humor/style. New behavioral kinds cannot omit that
+contract. Each requires separated attributed support, bounded applicability,
+limitations and linked contrary evidence. Automated studies retain independent
+review, tentative status, 30-day expiry, four-hour pacing and the current cohort.
+
+Ordinary replies receive domain-labeled summaries with qualifications, not raw
+support quotes. Evidence requests retain source access. Values describe observed
+priorities, emotions expressed reactions, and relationships observed interactions;
+none establishes hidden motives, mental health or private intimacy. Domain coverage
+is enabling conformance, not a validated human trait or measured fidelity gain.
+Existing schema-1 data remains readable; no intake, source or spending migration.

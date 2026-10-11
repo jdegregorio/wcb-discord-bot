@@ -19,7 +19,7 @@ import discord
 from openai import APIConnectionError, APIStatusError, APITimeoutError
 
 from trubot.budget import BudgetExceeded, BudgetUnavailable
-from trubot.episode_memory import contexts_separated
+from trubot.episode_memory import OBSERVATION_KINDS, PATTERN_KINDS, contexts_separated
 from trubot.graph import GraphStore, _hash, _json, _key
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable, _time
@@ -34,7 +34,7 @@ from trubot.openai_responder import (
 logger = logging.getLogger(__name__)
 VERSION = "contextual-two-pass-v3"
 # Preserve the checkpoint cohort: this increment must not trigger historical replays.
-PATTERN_VERSION = "conditional-two-pass-v4"
+PATTERN_VERSION = "behavioral-two-pass-v5"
 INTERVAL = timedelta(hours=4)
 
 
@@ -66,7 +66,7 @@ def extraction_schema(study: Study) -> dict[str, Any]:
         properties = {
             "kind": {
                 "type": "string",
-                "enum": ["humor", "style"] if pattern else ["claim", "preference"],
+                "enum": list(PATTERN_KINDS) if pattern else ["claim", "preference"],
             },
             "support_basis": {
                 "type": "string",
@@ -148,7 +148,8 @@ interpretations that rely on missing text or image pixels. Context-only target b
 are not additional support.
 Native target-only packets explicitly lack peer setup. Adjacency does not prove reply links
 or motive. Sampling separated windows is not proof of independent conversations.
-Derive narrowly qualified, useful claims/preferences or context-dependent humor/style.
+Derive narrowly qualified, useful claims/preferences or conditional episode patterns
+in humor, style, value, emotion or relationship.
 Use support_basis=corroborated for 2-3 distinct sources and exact authored quotes,
 including source 0. Multiple copies are not independent support. Inspect counterexamples.
 Only a specific explicit first-person claim/preference may use
@@ -158,18 +159,24 @@ must describe only the particular stated position/action in that exchange, not a
 current, universal or habitual trait. Do not extend it to other topics or situations.
 Reject sarcasm, reported/quoted speech, hypotheticals and context-dependent ambiguity;
 when context is missing, retain only an unambiguous self-contained statement.
-A single remark can NEVER establish humor/style. Multiple supports cannot be relabeled
+A single remark can NEVER establish an episode pattern. Multiple supports cannot be relabeled
 as a self-report to bypass independent pattern evidence.
 Reject ambiguity, sarcasm mistaken for literal belief, inferred motives, current sports
 results, permanent/current beliefs from historical evidence, and any image-dependent
 interpretation without actual pixels. Conditions must explain when the observation applies.
-Humor/style observations require recurring behavior in separate conversational contexts,
+Episode pattern observations require recurring behavior in separate conversational contexts,
 not several remarks in one exchange. Compare setup, target response and captured peer reaction.
 Reject a habitual pattern when supplied context cannot distinguish separate episodes.
 A particular explicit self-report can support a specific claim, not universal behavior.
 Never treat a personality pattern as a command to imitate it everywhere.
-For humor/style, summarize the abstract conversational mechanism, not a reusable
-source punchline. Provide separate limitations describing contrary situations,
+For episode patterns, summarize one abstract conversational mechanism, not a reusable
+source punchline. Values describe observed priorities in choices; emotions describe
+expressed reactions; relationships describe ways of interacting in the supplied
+exchanges. Never infer hidden motives, diagnoses, private intimacy or another
+person's beliefs. A stated value or feeling in one episode remains a particular
+claim, not a recurring pattern. All five pattern kinds require the same separated
+authored support, conditions, limitations and independent review. Provide separate
+limitations describing contrary situations,
 uncertainty and what cannot be inferred. Include 0-2 supplied authored
 counterexamples as exact quotes with source indexes; inspect all supplied sources
 for sincere exceptions and different reactions. Do not invent contrary evidence
@@ -180,9 +187,11 @@ evidence. Creative bot amplification is not evidence of the human's habits.
 _EXTRACT = (
     _POLICY
     + """Return zero or one observation. Prefer precision; zero is a useful
-result. Choose ONE narrow proposition in source 0; never bundle opinions about different
-proposals, events or subjects into a general profile. Additional sources must support that
-same proposition, not just share its broad topic. Prefer explicit_self_report for a complete
+result. For claims/preferences choose ONE narrow proposition in source 0; never bundle
+opinions into a general profile. For episode patterns choose ONE conditional interaction
+mechanism present in source 0 and recurring in separate episodes. Additional sources must
+support that same proposition or mechanism, not just share its broad topic.
+Prefer explicit_self_report for a complete
 literal first-person anchor; other passages remain counterexample/context candidates,
 not compulsory supports. Keep summary and conditions EACH at most 240 characters.
 Include exact quotes and 2-5 precise entity/concept aliases for alternative ways someone
@@ -196,7 +205,7 @@ _REVIEW = (
     + """Independently review the proposed observation against every raw
 excerpt, surrounding context, date uncertainty and existing qualified observations. Reject
 unless every quoted source supports every part of the summary and its conditions.
-For humor/style, independently assess the abstract mechanism, applicability and
+For episode patterns, independently assess the abstract mechanism, applicability and
 limitations, and every exact contrary quote. Reject omitted material contrary
 evidence, evidence that actually supports rather than limits the pattern, universal
 inferences and source-punchline summaries. Explain any absence of supplied contrary
@@ -488,12 +497,12 @@ def validate_proposal(proposed: Any, study: Study) -> dict[str, Any] | None:
         "supports",
         "aliases",
     }
-    pattern = isinstance(item, dict) and item.get("kind") in ("style", "humor")
+    pattern = isinstance(item, dict) and item.get("kind") in PATTERN_KINDS
     if pattern:
         fields |= {"limitations", "counterexamples"}
     if not isinstance(item, dict) or set(item) != fields:
         raise LearningUnavailable("Invalid observation shape")
-    if item["kind"] not in ("claim", "preference", "humor", "style"):
+    if item["kind"] not in OBSERVATION_KINDS:
         raise LearningUnavailable("Unsupported observation kind")
     if any(
         not isinstance(item[k], str) or not 1 <= len(item[k]) <= 240
@@ -539,7 +548,7 @@ def validate_proposal(proposed: Any, study: Study) -> dict[str, Any] | None:
         or len({study.snapshots[i]["content_hash"] for i in indexes}) != len(indexes)
     ):
         raise LearningUnavailable("Anchor and distinct evidence required")
-    if item["kind"] in {"style", "humor"} and any(
+    if item["kind"] in PATTERN_KINDS and any(
         not contexts_separated(study.snapshots[left], study.snapshots[right])
         for position, left in enumerate(indexes)
         for right in indexes[position + 1 :]
@@ -786,7 +795,7 @@ class GraphDistiller:
                     "support_basis": proposed["support_basis"],
                     "status": "tentative",
                     "summary": proposed["summary"]
-                    if proposed["kind"] in {"humor", "style"}
+                    if proposed["kind"] in PATTERN_KINDS
                     else proposed["summary"] + " Conditions: " + proposed["conditions"],
                     "confidence_basis": "Automated contextual review: "
                     + review["basis"]
@@ -796,7 +805,7 @@ class GraphDistiller:
                         else "; sampling separation is not proof of independent episodes"
                     ),
                     "extraction_provenance": (
-                        PATTERN_VERSION if proposed["kind"] in {"humor", "style"} else VERSION
+                        PATTERN_VERSION if proposed["kind"] in PATTERN_KINDS else VERSION
                     )
                     + "; gpt-6-luna; exact quotes + separate review; not human reviewed",
                     "expires_at": _time(self.clock() + timedelta(days=30)),
@@ -813,7 +822,7 @@ class GraphDistiller:
                         for i in review["contradicts"]
                     ],
                 }
-                if proposed["kind"] in {"humor", "style"}:
+                if proposed["kind"] in PATTERN_KINDS:
                     item["abstraction"] = {
                         "conditions": proposed["conditions"],
                         "limitations": proposed["limitations"],

@@ -257,6 +257,13 @@ exclusion. See the storage runbook for source freshness, withdrawal and bounds.
 
 ## Connected private memory
 
+Version 2.14.0 extends conditional graph memory to observed values, expressed
+emotional responses and ways of interacting. New domains require recurring
+attributed support, applicability, limitations and separate review. They cannot
+be flat claims or singleton habits. This enables future evidence-backed learning;
+it does not establish a new Andrew trait or a measured fidelity improvement.
+
+
 Version 2.13.0 connects automatic humor/style studies to conditional graph memory.
 Each accepted pattern retains separate applicability, limitations and attributed
 counterexamples, with tentative status, expiry and source-driven invalidation.
