@@ -1,5 +1,22 @@
 # Trubot roadmap
 
+2026-10-11 09:00 selection: H31 enforces the person boundary before private
+retrieval. An actual owner question about their own past was answered with
+Andrew's view. Identity framing and low-reasoning experiments failed controls
+and are rejected. Match the focus author to the authoritative source identity
+before admitting authored history, graph abstractions or source voice.
+Live human conversation remains available; persona recall and quoted lookups
+keep their existing routing. No model, reasoning, token, prompt-contract, study
+pacing, population or service change. Broad persona-attribution variability remains
+open. See evaluations/2026-10-11-subject-study.md for both planning phases and
+failed experiments.
+
+Next: H21/H28 validated abstract learning with ownership acceptance, H22 humor
+variation, wider native/visual episodes, selective skills/tools and generated
+U.P. aurora/trail-camera scenes. No new persona characteristic is established.
+The earlier private study prerequisite is untouched. Prioritize a demonstrated
+grounding regression; do not add further unmeasured schema categories.
+
 2026-10-11 05:00 verified: H27 is deployed in 2.15.0. Whole neighboring setup and
 reaction messages fit the existing request ceiling, with explicit internal gaps.
 All 647 tests, CI, both images and 27 installed source hashes pass. Changed writer

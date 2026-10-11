@@ -31,6 +31,8 @@ from trubot.memory import (
     ContextMemory,
     recent_context_unavailable,
     recent_recall,
+    requester_context_unavailable,
+    requester_recall,
     terms,
     years,
 )
@@ -399,7 +401,11 @@ class TruBotClient(discord.Client):
                     )
                     target = focused.content
                 memory = await self._memory_context(
-                    channel, target, history, requester_user_id=requester_user_id
+                    channel,
+                    target,
+                    history,
+                    requester_user_id=requester_user_id,
+                    focus_author_user_id=anchor.author.id if anchor is not None else None,
                 )
                 if memory:
                     # Fresh source checks should follow old conversation, including stale
@@ -506,6 +512,7 @@ class TruBotClient(discord.Client):
         history: list[ConversationMessage],
         *,
         requester_user_id: int | None = None,
+        focus_author_user_id: int | None = None,
     ) -> str:
         learning, memory = self._learning, self._memory
         if learning is None or memory is None or not learning.verified:
@@ -529,6 +536,19 @@ class TruBotClient(discord.Client):
         # but only current eligible authored source text can satisfy that lookup.
         # Strip the speaker label once, preserving punctuation in the actual request.
         request = (target or "").split(": ", 1)[-1]
+        if requester_recall(request):
+            try:
+                # Recheck the authoritative store, including withdrawal, rather
+                # than trusting the ingestor's cached verification flag.
+                source_identity = await asyncio.to_thread(memory.learning.identity)
+            except LearningUnavailable:
+                return ""
+            if focus_author_user_id != source_identity.user_id:
+                # The private corpus is Andrew's authored history. A peer asking
+                # about their own words cannot inherit it in the test guild either.
+                # Live human context stays available; no character source, graph
+                # abstraction or voice example is retrieved for this request.
+                return requester_context_unavailable()
         query = request
         lookup = recall_quotation(request, history)
         if lookup == "":

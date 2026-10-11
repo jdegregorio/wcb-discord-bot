@@ -2350,3 +2350,28 @@ failures, healthy readiness and zero restarts. Private final metadata preserves
 8/9 actual outcomes; disposable invented stores are removed. Evidence PR
 [#71](https://github.com/jdegregorio/wcb-discord-bot/pull/71) changes documentation
 only, preserving the tested released source/tests/version/lock.
+
+
+## 2026-10-11 09:00 - author-scoped personal recall
+
+New managed worktree trubot-daily-20261011-0900, fetched base
+ff0e31a33763cbbeb4628d791f53ebe92d443b55; unique feature branch.
+Primary checkout, earlier worktrees and private pending study untouched.
+Both planning phases select H31 after actual owner requester recall reproduces
+cross-person memory attribution. H29 identity framing and H30 low reasoning
+fail contrary controls and are rejected, with all experiments retained privately.
+No runtime source from those prototypes ships.
+
+The selected change blocks character-source/graph/voice retrieval for another
+speaker's explicit own-past question, preserves live human context, and admits
+Andrew's own verified identity. Scope follows reaction target author, not reactor.
+Current authoritative withdrawal and guild/operator checks remain first.
+No model, reasoning, token ceiling, prompt contract, study pacing, schema,
+population, participation or infrastructure change. Version2.15.1 candidate.
+Thirty-two new source-routing, identity, handler, permission, quote/hypothetical
+and withdrawal regressions pass. All six local gates pass:679 tests,96.77%
+coverage,75 formatted files,27 typed source modules and both package artifacts.
+Matched invented-source comparison:baseline4/10,candidate10/10; six unsupported
+ownership answers corrected, live-human and bot-history controls retained.
+This supports the narrow source boundary, not a human-fidelity or humor claim.
+Release and actual post-deployment acceptance follow.

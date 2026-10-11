@@ -1562,3 +1562,45 @@ unused. Prioritize qualified human population and subject grounding together, th
 H28 domain-classification experiment/H22 contextual variation, native/visual
 coverage, selective tools/skills and requested generated scenes. No more schema
 categories justified by this run.
+
+
+## 2026-10-11 09:00 - H29/H30 rejected, H31 source subject boundary
+
+Both planning phases, acceptance, contrary cases and revisions are in
+[the subject study](evaluations/2026-10-11-subject-study.md).
+Fresh base ff0e31a33763cbbeb4628d791f53ebe92d443b55; no unfinished evolution PR.
+Actual private gateway reproduces broad subject transfer and, separately,
+answers an owner's own-past question with the character source's statement.
+Private semantic human audit:12 target blocks/6 exports/48 neighboring blocks,
+one missing-media window, no pixel interpretation or new learned trait.
+Three-channel latest100/14-day audit:7 target/17 peer/5 older bot, zero fresh
+spontaneous current-release sample. Development tests are separate.
+
+H29 framing and H30 low reasoning fail locked control acceptance. All rejected
+provider prototypes stay out of production. The four-arm study separates framing
+from reasoning and still transfers anonymous-peer views. Vendor documentation
+supports low reasoning, but capability is not a quality result. Actual code/model
+behavior in this project is the evidence. The selected H31 admission boundary
+uses stable authenticated focus-author identity, never names or the reactor.
+Withdrawal is rechecked from the source store before admission.
+
+Phase 2 priority change: deliver this supported source-isolation correction so
+future abstractions retain their person; keep H21/H28 and H22 ahead of further
+schema or literal-date tweaks. Broader native/visual coverage, selective tools
+and requested generated outdoor scenes remain active. Existing USD18/2/20
+guard, six-run schedule and privacy constraints remain unchanged. No actual
+human pattern is populated; no general fidelity or humor gain is inferred.
+
+Final H31 matched comparison:20 calls,five cases/two samples/two arms. Baseline
+4/10 full-meaning passes; candidate10/10. Six own-authored/paraphrase/former-view
+answers stop borrowing another person's historical view. Actual live human words
+remain usable in2/2 samples per arm; absent human words plus misleading bot history
+retain natural uncertainty in2/2 per arm. This supplies narrow admission evidence.
+All376 rejected H29/H30 calls remain recorded; no failed sample is removed.
+Thirty-two routing/handler/withdrawal regressions and679 full tests pass locally.
+Model, reasoning and ordinary source retrieval settings remain unchanged.
+Official [model documentation](https://developers.openai.com/api/docs/models/gpt-6-luna)
+and [reasoning guide](https://developers.openai.com/api/docs/guides/reasoning)
+describe capabilities and token accounting; they do not validate reply quality.
+All experiments use the existing maintenance ledger; final settled cost follows
+the deployed acceptance. No independent evaluator or broad human fidelity result.
