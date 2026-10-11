@@ -2436,7 +2436,7 @@ request bounds, shared four-hour pacing and maintenance ledger remain enforced.
 Automatic default sampling and ordinary reply/persona/participation paths are unchanged.
 A per-cycle receipt prevents confusing another process's checkpoint with completion.
 
-Candidate validation: all six gates, 721 tests, 96.82% branch-inclusive coverage,
+Candidate validation: all six gates, 721 tests, 96.76% branch-inclusive coverage,
 28 typed modules; dependency versions unchanged. Forty-two new regressions cover
 source selection/lifecycle and operator execution. Direct baseline lexical control
 omits a nonlexical exception; supplied-output two-pass writer stores two supports
