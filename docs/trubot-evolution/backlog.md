@@ -1,17 +1,18 @@
 # Prioritized backlog
 
-2026-10-10 21:00 decision: H23 is verified in 2.12.1. H24 connects automatic
-humor/style proposals to conditional graph memory, so that future corroborated
-episodes can guide replies through summaries and explicit limitations. Select
-this tested enabling contract; no new human pattern or humor gain is established.
-The selected private H21a population study remains pending and separate. Next:
-validated private abstraction population/contextual extraction, H22 variation,
-durable native/visual coverage, selective tools/skills and generated U.P. aurora/
-trail-camera scenes. Preserve privacy, withdrawal, participation, budget, schedule,
-model and actual Discord acceptance.
+2026-10-10 21:00 verified: H24 is delivered in 2.13.0. Automatic humor/style
+proposals preserve conditions, limitations and attributed counterexamples through
+independent review, graph commit and relevant replies. All 587 tests, merged-main
+CI, both image architectures, installed source hashes and six real Discord checks
+pass. This is enabling conformance; no new human abstraction, extraction-quality
+or humor gain is established. The selected private H21a study remains pending.
+Next: validated abstract population/contextual extraction, H22 variation, durable
+native/visual coverage, selective tools/skills and generated U.P. aurora/trail-camera
+scenes. Privacy, withdrawal, participation, budget and schedule remain authoritative.
 
 | Completed increment | Evidence, benefit and rationale | Dependencies and acceptance | Confidence and operating impact |
 | --- | --- | --- | --- |
+| Completed H24 automatic conditional-pattern contract | The graph reader supported conditions/limits/contrary links, but automatic proposals and commit did not. 2.13.0 preserves qualified mechanisms so future corroborated episodes can guide replies. | 29 regressions, 587 total tests, installed writer fixture and six actual Discord checks. Provider comparison abstains on fictional patterns in both arms; no real abstraction populated. | Enabling conformance supported. Human extraction quality unresolved; existing two-pass requests, checkpoint pacing and USD 18/2/20 caps. |
 | Completed H23 current-human follow-up focus | Actual gateway switches back to an older animal after a new dessert subject. Keep imaginative conversation on the current human setup. | Typed conversation/memory/reference rows, bounded framing, hypothetical permission; source/recipient/care controls, full gates and actual changed-topic Discord. | Narrow 2x2 support; framing alone not shown better. At most 600 extra source characters per inferred reply, no extra request/service. |
 
 

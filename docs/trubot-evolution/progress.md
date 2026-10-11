@@ -2157,3 +2157,66 @@ USD 0.000638875. Actual billing and pre-guard October spend remain unknown.
 Production 2.12.1 remains healthy with zero restarts and its main heartbeat intact.
 Candidate counts and limitations are in
 [the evaluation](evaluations/2026-10-10-conditional-distillation-candidate.json).
+
+Release verification: [PR #66](https://github.com/jdegregorio/wcb-discord-bot/pull/66)
+merges tested f4e7e2165fc055c425c44cf298d8b41b06973106 as
+2d884d02208f6e5f81db6d9bcb5b722c06a37886; trees match. All six merged-main
+local gates pass again. [PR CI 38111018419](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38111018419),
+[main CI 38111102443](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38111102443)
+and both-architecture
+[publish 38111187987](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38111187987)
+succeed. Immutable [v2.13.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.13.0)
+targets that exact merged commit. The freshly verified pi5/aarch64/Ubuntu 24.04.4
+app-scoped locked transaction deploys without sudo or unrelated service changes.
+
+Running digest sha256:3e4b32b1574253c3f0ba6acb412d0de070f13b2395a660ceed88d46c6c45fb5d,
+OCI revision matches release, package is 2.13.0 and all 27 installed modules match
+tested source. Previous healthy 2.12.1 digest
+sha256:8fd3350b6dc93378f64f55061bbcbf95c0e8758006adb714b3bfc090e5194214.
+Previous reader supports conditional records; no new real abstraction is populated
+and no rollback is needed. Source/identity/withdrawal state and graph counts remain:
+34 native records, 16 archives/4,299 blocks/405 eligible target blocks,
+115 visual episodes/96 assets, 439 graph sources/554 episodes/1,011 edges,
+one claim and one preference, zero human abstractions.
+
+Actual owner-authored Discord acceptance passes 6/6 in the authenticated two-member
+private development guild's allowed general. Two changed cases use the released
+production on_message handler with an isolated invented graph and actual authenticated
+Discord sends: playful brainstorming applies the abstract mechanism without copying
+source punchlines; a serious vote receives sincere advice without jokes or memory
+metadata. The graph was prepared with deterministic study outputs to test writer
+conformance, not real automatic extraction. A separate readiness path was set before
+client construction; closing it preserves the main heartbeat. No secondary gateway,
+league test posts, production graph mutation or development learning.
+
+Four further normal gateway cases pass: supported natural baseball recall, invited
+fictional Thomas Jones callback, sincere care, and verified abstention for another
+recipient. Three actual gateway answers plus one abstention are distinct from the
+two handler-driven actual sends. Post-release character audit covers all five actual
+answers. A joke repeats an older sentence frame and a care answer repeats older wording;
+H22 variation remains unresolved. There is no current-release spontaneous league
+sample, new semantic human/pixel study or independent grader. Numeric humor and
+general character fidelity are unmeasured.
+
+At 2026-10-11T04:31:10Z: healthy, zero restarts/errors/response failures/disconnects,
+memory warnings, learning or study pauses; three normal gateway posts, eight learning
+batches and zero study completions. Release timer active. Content-free private test
+references, pass/fail metadata and the invented helper are retained under the existing
+seven-day manual smoke retention/withdrawal policy; disposable invented graph and
+owned host/container staging are removed. Main heartbeat remains healthy after cleanup.
+
+Tracked October estimate USD 0.09447425 (runtime 0.045720885, maintenance 0.048753365),
+471 settled/zero unsettled attempts. Total run delta USD 0.0039516; seven synthetic
+research calls add USD 0.001205875. Same USD 18/2/20 caps, no additional recurring call
+or infrastructure. Actual billing/pre-guard spending remain unknown. Automatic
+approval review rejected raw private transcript export; the safer content-free audit
+succeeded without bypass. The earlier selected private pattern's approval prerequisite
+remains pending, and that payload was never sent or populated.
+
+H24 is delivered as qualified-memory enabling work. Next: H21 actual contextual
+abstraction learning/validated population, H22 variation, H25 native/visual coverage,
+selective skills/tools and generated U.P. aurora/trail-camera scenes. The complete
+privacy-safe [release evidence](evaluations/2026-10-10-conditional-distillation-release.json)
+separates conformance, actual delivery and unresolved quality claims. The follow-up
+evidence PR changes documentation only; preserve evidence before archiving this run's
+managed worktree and leave older pending work untouched.
