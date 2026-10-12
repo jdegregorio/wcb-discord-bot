@@ -788,3 +788,14 @@ without becoming learning evidence. A denied HTTP read stops the command. Versio
 status excludes it from stable discovery. Version 2.16.1 passed authenticated
 installed-command completion with disposable invented evidence and preserved the
 production heartbeat. Rejection receipts do not establish human extraction quality.
+
+
+## 2.17.2 optional recovery
+
+Private source packets are revalidated through the production handler before an
+optional exact-repeat recovery. Changed, deleted, withdrawn, denied or unchecked
+packets receive no extra reservation/provider request. The already generated draft
+is retained; this does not retract a first request already in flight. No schema or
+state migration. Existing withdrawal marker, correction/expiry and spending state
+remain authoritative. 2.17.0 and undeployed2.17.1 are prereleases; healthy2.16.1
+is the compatible recorded rollback.

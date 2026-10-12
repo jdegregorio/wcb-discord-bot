@@ -117,3 +117,71 @@ Prior eight recovery/provider trials remain conditional recovery evidence; the
 new private-source gate is validated separately with deterministic lifecycle tests.
 Production stayed on healthy2.16.1 throughout; immutable2.17.0/2.17.1 tags remain
 prereleases, not overwritten. Final six gates and installed/actual acceptance follow.
+
+## Final release and actual acceptance, 2026-10-12 UTC
+
+PR #79 merged ccf8bcd; PR/main CI 38202644136/38202772735 pass. Its 2.17.1
+candidate was excluded before deployment for the source-check defect. PR #80
+merged e404c2019b5abf323b056adc6a8681c284ebb837, identical to tested 50023ad
+and tree 9426b33c652872fc355b996dbd6c8edbb1fc7ae8. Required CI
+38203365997/38203475839 and final images 38203597857 pass. All six gates pass
+before/after merge: 762 tests, 96.83% branch-inclusive coverage, 28 typed modules,
+2.17.2 wheel/sdist; dependency versions unchanged. New regressions total 38.
+
+Immutable [v2.17.2](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.17.2)
+runs through pi-app on reverified pi5/aarch64/Ubuntu 24.04.4, digest
+sha256:a78b82141d17bf07d43d828297ce02fde267e80a1aabf84d35ef84bd7356c7d2.
+Previous healthy 2.16.1 digest ebc387f4e733d728a74b218d2f24202ddab4b6deee1c5edfd24a40218f717532
+is retained. Both architectures, package/OCI revision and 28 source hashes match.
+At 04:38:40 UTC, 707 seconds after start: healthy readiness, zero restarts/errors,
+response failures/disconnects/learning/study/memory/optional-refresh warnings;
+two optional voice startup warnings only, eight gateway posts and one decline.
+No final rollback. An early health read caught the old container during deployment;
+its version assertion failed and was rerun after transaction completion.
+
+Actual private owner tests: one controlled released-handler recovery passes with
+one paid call and a real post; nine normal gateway scenarios yield seven passes,
+eight answers and one intentional recipient abstention. Combined 8/10. Supported
+preference, sincere care, explicit timing uncertainty, operator-history boundary,
+comic setup and fresh fictional league premise pass. The TJ follow-up is distinct
+but merely a weak acknowledgment, so the strict comic-turn criterion remains
+failed. Broad historical recall still misassigns Andrew's source words to the
+operator, matching the documented previous defect. No routine date disclaimer
+on ordinary recall; familiar care wording remains a variation gap. Retain both
+negatives, do not claim clean full acceptance or a general humor multiplier.
+The selected exact-repeat recovery/source-lifecycle safeguard is operational;
+its broader quality hypothesis is only partially supported. No newly demonstrated
+material regression requires final rollback. Future work must satisfy open criteria.
+
+After deployment, an additional attributed central block/four neighbors in an
+already studied export verifies supported historical content locally. This is
+post-hoc source verification, not a held-out quality comparison. Total local
+review: six central blocks, five exports, 24 neighbors plus one separately noted
+target-authored neighbor. No source date inferred, pixel-dependent interpretation,
+private human provider payload, new trait or abstraction. Bounded before/after
+league counts remain sparse: three channels, latest 100/14 days, seven target,
+17 peer, five older bot, zero fresh spontaneous current-release activity.
+
+Continuity unchanged: 34 native records; 16 exports/4,299 grouped blocks/405
+eligible blocks; 115 visual episodes/96 assets; 439 graph sources, 554 episodes,
+1,011 edges, one claim/one preference/zero abstract patterns. No real withdrawal,
+second gateway, user-token extraction, league test post or development learning.
+Separate readiness is set before validation-client construction and the primary
+heartbeat is healthy after closure. Private app-volume artifacts retain content-free
+actual test references and flags, synthetic studies and public-code helpers only,
+0700/0600, existing seven-day manual retention/withdrawal. Actual answer text and
+raw human renderings are not retained; local private PNGs were deleted after review.
+
+Final October ledger estimate USD 0.1508092: runtime 0.06570523, maintenance
+0.08510397, 1,060 settled/zero unsettled. Run USD 0.00577221 over 28 attempts:
+runtime 0.00380216 and maintenance 0.00197005. Sixteen paid research calls plus
+one controlled maintenance recovery; real gateway baseline/acceptance uses runtime.
+No fresh ledger, paid service or cap change. USD 18/2/20 remains enforced; provider
+billing and pre-guard spend are unknown. Six daily standalone times, Sol/xhigh,
+notification setting and source/privacy/participation rules remain unchanged.
+
+[Release evidence](2026-10-11-repetition-release.json) preserves method,
+counts, negative cases, timing, hashes and identifiers. Next: validated human
+abstractions with person/care controls, creative variation/weak follow-ups, broader
+native/visual context, selective skills/tools and generated outdoor scenes. No
+further unmeasured schema categories or repeated literal/date-only patch priority.

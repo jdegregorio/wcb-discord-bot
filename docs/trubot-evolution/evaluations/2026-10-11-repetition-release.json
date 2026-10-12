@@ -1,0 +1,255 @@
+{
+  "run": "2026-10-11-2100",
+  "base_sha": "597bfccd88136bd4993b07686fef9ad85c3cf5f2",
+  "increment": "H38 bounded exact older-bot reply recovery with current private-source checks",
+  "classification": "validated enabling safeguard; general comedic quality unresolved",
+  "runtime_prs": [
+    79,
+    80
+  ],
+  "initial_runtime_merge": "ccf8bcd016a25d5274276eb32d2529b4d97254c3",
+  "released_commit": "e404c2019b5abf323b056adc6a8681c284ebb837",
+  "tested_source_head": "50023ad",
+  "tested_tree": "9426b33c652872fc355b996dbd6c8edbb1fc7ae8",
+  "release": "v2.17.2",
+  "release_url": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.17.2",
+  "ci": {
+    "pr79": 38202644136,
+    "main79": 38202772735,
+    "pr80": 38203365997,
+    "main80": 38203475839,
+    "final_images": 38203597857,
+    "all": "success"
+  },
+  "quality": {
+    "six_required_gates": "pass before and after merge",
+    "tests": 762,
+    "new_regressions": 38,
+    "branch_inclusive_coverage_percent": 96.83,
+    "typed_modules": 28,
+    "packages": "2.17.2 wheel and sdist",
+    "dependency_versions": "unchanged"
+  },
+  "research": {
+    "human_context_central_blocks": 6,
+    "exports": 5,
+    "neighbors": 24,
+    "extra_target_neighbor_not_additional_episode": 1,
+    "revisited_windows": 5,
+    "additional_posthoc_source_verification": 1,
+    "independent_human_holdout": false,
+    "provider_human_payloads": 0,
+    "new_human_traits": 0,
+    "historical_pixel_interpretation": false,
+    "calendar_inference": false,
+    "league_audit": {
+      "channels": 3,
+      "latest_messages_per_channel": 100,
+      "days": 14,
+      "target": 7,
+      "peer": 17,
+      "older_bot": 5,
+      "fresh_spontaneous_bot": 0,
+      "before_after": "same sparse counts"
+    },
+    "conditional_recovery": {
+      "injected_first_drafts_per_arm": 8,
+      "baseline_paid_draws": 0,
+      "candidate_paid_draws": 8,
+      "candidate_distinct_relevant": 8,
+      "candidate_semantic_passes": 8,
+      "comic": 4,
+      "care": 2,
+      "unknown_real_history": 2,
+      "recovery_seconds_range": [
+        0.949,
+        6.017
+      ],
+      "natural_recurrence_rate_measured": false
+    },
+    "matched_handler_controls": {
+      "paid_calls_per_arm": 4,
+      "semantic_transport_passes_per_arm": 4,
+      "cases": "other-recipient and literal idiom; two samples each"
+    },
+    "judge": "same agent semantic review, not blind or independent human review",
+    "general_fidelity_or_humor_multiplier_claim": false
+  },
+  "discord": {
+    "confirmed_private_guild": true,
+    "owner_and_bot_only": true,
+    "existing_allowed_general": true,
+    "baseline_gateway_scenarios": 2,
+    "baseline_comic_passes": 0,
+    "candidate_controlled_handler_scenarios": 1,
+    "candidate_controlled_passes": 1,
+    "controlled_first_draft_injected": true,
+    "controlled_paid_calls": 1,
+    "controlled_actual_posts": 1,
+    "normal_gateway_scenarios": 9,
+    "normal_gateway_passes": 7,
+    "normal_gateway_answers": 8,
+    "normal_gateway_abstentions": 1,
+    "combined_scenarios": 10,
+    "combined_passes": 8,
+    "exact_copy_safeguard_installed": "pass",
+    "strict_full_comic_acceptance": "not met; weak unprefixed TJ acknowledgment retained",
+    "passes": [
+      "controlled exact-repeat recovery",
+      "comic setup",
+      "fresh unrelated fictional league bit",
+      "sincere care",
+      "supported preference",
+      "explicit timing uncertainty",
+      "operator-specific history boundary",
+      "other-recipient silence"
+    ],
+    "retained_failures": [
+      "TJ follow-up is distinct but a weak comic acknowledgment",
+      "broad history misassigns the source speaker to the operator"
+    ],
+    "ordinary_date_disclaimers": 0,
+    "familiar_care_wording": "unchanged variation gap",
+    "new_material_regression_demonstrated": false,
+    "real_learning_mutations": 0,
+    "league_test_posts": 0,
+    "second_gateway_connections": 0,
+    "user_tokens_extracted": 0,
+    "isolated_readiness_before_client_construction": true,
+    "primary_readiness_after_close": true,
+    "retained_artifacts": "content-free refs/pass-fail only; no raw actual answers"
+  },
+  "deployment": {
+    "target": "pi5/aarch64/Ubuntu 24.04.4",
+    "transaction": "pi-app app-scoped lock/rollback",
+    "architecture_manifests": [
+      "linux/amd64",
+      "linux/arm64"
+    ],
+    "before": {
+      "observed_at": "2026-10-12T04:09:16.483089+00:00",
+      "image_id": "sha256:ebc387f4e733d728a74b218d2f24202ddab4b6deee1c5edfd24a40218f717532",
+      "digests": [
+        "ghcr.io/jdegregorio/wcb-discord-bot@sha256:ebc387f4e733d728a74b218d2f24202ddab4b6deee1c5edfd24a40218f717532"
+      ],
+      "oci_revision": "eecefb4ef0cd13ef81c68c21a0b210d2ddc2de3e",
+      "oci_version": "2.16.1",
+      "status": "running",
+      "health": "healthy",
+      "restarts": 0,
+      "started_at": "2026-10-12T00:25:43.596658339Z",
+      "errors": 0,
+      "warnings": 4,
+      "voice_warnings": 2,
+      "response_failures": 0,
+      "learning_pauses": 0,
+      "study_pauses": 1,
+      "timer": "active"
+    },
+    "after": {
+      "observed_at": "2026-10-12T04:38:40.190368+00:00",
+      "image_id": "sha256:a78b82141d17bf07d43d828297ce02fde267e80a1aabf84d35ef84bd7356c7d2",
+      "digests": [
+        "ghcr.io/jdegregorio/wcb-discord-bot@sha256:a78b82141d17bf07d43d828297ce02fde267e80a1aabf84d35ef84bd7356c7d2"
+      ],
+      "oci_revision": "e404c2019b5abf323b056adc6a8681c284ebb837",
+      "oci_version": "2.17.2",
+      "status": "running",
+      "health": "healthy",
+      "restarts": 0,
+      "started_at": "2026-10-12T04:26:53.750806498Z",
+      "errors": 0,
+      "warnings": 2,
+      "voice_warnings": 2,
+      "response_failures": 0,
+      "learning_pauses": 0,
+      "study_pauses": 0,
+      "memory_warnings": 0,
+      "optional_refresh_warnings": 0,
+      "exact_echo_refreshes": 0,
+      "posted_replies": 8,
+      "declines": 1,
+      "disconnects": 0,
+      "timer": "active"
+    },
+    "installed_source_hashes_match": 28,
+    "package_oci_revision_match": true,
+    "readiness": "healthy",
+    "rollback_of_final_release": false,
+    "excluded_immutable_candidates": [
+      {
+        "version": "2.17.0",
+        "reason": "preceding run rolled back real Discord failure"
+      },
+      {
+        "version": "2.17.1",
+        "reason": "this run source-lifecycle review; excluded before deployment"
+      }
+    ],
+    "early_health_read": "sampled old container during transaction; failed version assertion, then reverified after completion; not treated as a regression"
+  },
+  "continuity": {
+    "native_messages": 34,
+    "archive_documents": 16,
+    "grouped_blocks_not_messages": 4299,
+    "eligible_blocks": 405,
+    "visual_episodes": 115,
+    "lossless_assets": 96,
+    "graph_human_sources": 439,
+    "graph_episodes": 554,
+    "graph_edges": 1011,
+    "claims": 1,
+    "preferences": 1,
+    "abstract_patterns": 0,
+    "new_schema_or_population": false,
+    "withdrawal_spending_state_preserved": true
+  },
+  "spending": {
+    "initial_month_estimated_usd": 0.14503699,
+    "final_month_estimated_usd": 0.1508092,
+    "final_runtime_usd": 0.06570523,
+    "final_maintenance_usd": 0.08510397,
+    "run_estimated_usd": 0.00577221,
+    "run_runtime_usd": 0.00380216,
+    "run_maintenance_usd": 0.00197005,
+    "provider_research_calls": 16,
+    "run_accounted_attempts": 28,
+    "total_settled": 1060,
+    "unsettled": 0,
+    "caps_usd": {
+      "runtime": 18,
+      "maintenance": 2,
+      "total": 20
+    },
+    "fresh_ledger": false,
+    "new_paid_service": false,
+    "billing_and_pre_guard_spend": "unknown; ledger estimates only"
+  },
+  "privacy": {
+    "private_root": "app-volume smoke-tests/2026-10-11-2100",
+    "directory_mode": "0700",
+    "files_mode": "0600",
+    "retention": "existing seven-day manual retention and withdrawal cleanup",
+    "raw_renderings": "owned local ephemeral PNGs deleted after review",
+    "private_refs_not_public": true
+  },
+  "roadmap": {
+    "completed": "H38 recovery and source-lifecycle guard",
+    "supported": "conditional recovery and accounting/lifecycle conformance",
+    "unresolved": [
+      "full H38 comic criterion",
+      "H35/H21/H28 abstract human population",
+      "H39 paraphrase/quality selection",
+      "H6 broad historical subject grounding"
+    ],
+    "next_order": [
+      "validated conditional human abstractions with subject/care controls",
+      "creative variation and weak follow-up handling",
+      "broader native/visual episodes",
+      "selective skills/tools",
+      "generated U.P. aurora and trail-camera scenes"
+    ],
+    "rationale": "Ship the validated enabling recovery safeguard, not an unvalidated trait or general comedy claim. Existing weak humor and historical subject errors do not establish a new regression; retain them as open acceptance, not a waiver or clean pass."
+  },
+  "schedule_model_notification": "six standalone local times, GPT-6.1 Sol/xhigh and failed-runs-only unchanged"
+}
