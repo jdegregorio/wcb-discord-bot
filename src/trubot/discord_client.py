@@ -636,8 +636,8 @@ class TruBotClient(discord.Client):
                     # Context is optional; never use stale or guessed neighbors.
                     pass
             if self._learning is not None and self._learning.verified:
-                recalled = await asyncio.to_thread(
-                    memory.render,
+                packet = await asyncio.to_thread(
+                    memory.render_packet,
                     verified,
                     verified_after=verification_started,
                     now=self._clock(),
@@ -647,11 +647,14 @@ class TruBotClient(discord.Client):
                 )
                 voice = (
                     ""
-                    if recent_recall(request) or lookup is not None
+                    if recent_recall(request)
+                    or lookup is not None
+                    or not packet.allow_voice_examples
                     else await asyncio.to_thread(
                         voice_context, memory.learning, query, guild_id=source_guild_id
                     )
                 )
+                recalled = packet.text
                 if lookup is not None and not recalled:
                     return quotation_unavailable()
                 return "\n".join(part for part in (recalled, voice) if part)

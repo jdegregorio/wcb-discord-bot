@@ -59,7 +59,7 @@ def abstraction_contract(
     return value
 
 
-def abstract_context(observations: list[dict[str, Any]]) -> str:
+def abstract_context(observations: list[dict[str, Any]], *, include_audit: bool = True) -> str:
     import json
 
     patterns = [
@@ -68,7 +68,6 @@ def abstract_context(observations: list[dict[str, Any]]) -> str:
             for k in (
                 "summary",
                 "status",
-                "confidence_basis",
                 "unknown_date",
                 "source_times",
                 "expires_at",
@@ -78,9 +77,16 @@ def abstract_context(observations: list[dict[str, Any]]) -> str:
             "domain": item.get("kind", "pattern"),
             "conditions": item["abstraction"]["conditions"],
             "limitations": item["abstraction"]["limitations"],
-            "support_count": len(item["supports"]),
-            "counterexample_count": len(item["abstraction"]["counterexamples"]),
         }
+        | (
+            {
+                "confidence_basis": item["confidence_basis"],
+                "support_count": len(item["supports"]),
+                "counterexample_count": len(item["abstraction"]["counterexamples"]),
+            }
+            if include_audit
+            else {}
+        )
         for item in observations
         if "abstraction" in item
     ]

@@ -478,3 +478,12 @@ Curated episode abstractions remain conditional and tentative, with current
 attributed support, applicability controls, provenance and expiry. Ordinary
 replies use the relevant abstract mechanism without quoting its source examples.
 Population is distinct from independent human validation or general fidelity gains.
+
+## Abstract memory presentation (2.19.0)
+
+Ordinary replies use conditional episode summaries with their uncertainty and
+limits. Review counts and confidence explanations stay in the private graph and
+explicit evidence requests. A validated abstraction packet prevents raw voice
+examples from competing with that guidance. Literal quotes, factual shared support
+and timing evidence remain available through the existing source checks. This
+is enabling behavior; current production has no active human abstract patterns.

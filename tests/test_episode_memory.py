@@ -249,6 +249,9 @@ async def test_patterns_flow_through_real_discord_handlers_with_all_sources_refr
         with (
             patch.object(client, "get_channel", return_value=channel),
             patch.object(ingestor, "refresh", new_callable=AsyncMock) as refresh,
+            patch(
+                "trubot.discord_client.voice_context", return_value="Competing raw punchline"
+            ) as voice,
         ):
             if mode == "reaction":
                 channel.fetch_message.return_value = message
@@ -266,6 +269,7 @@ async def test_patterns_flow_through_real_discord_handlers_with_all_sources_refr
                     client._attention.activate(10, NOW)
                 await client.on_message(message)
         assert refresh.await_count == 3
+        voice.assert_not_called()
         context = "\n".join(m.content for m in responder.calls[0][0])
         assert "ABSTRACT EPISODE MEMORY" in context and "croissant" not in context
         assert "Serious votes need sincere answers" in context
@@ -391,3 +395,52 @@ def test_explicit_pattern_source_requests_keep_quotes_even_with_timing_words(sto
     )
     assert "ABSTRACT EPISODE MEMORY" in rendered and "pastry chef" in rendered
     assert "counterexample" in rendered
+
+
+@pytest.mark.parametrize(
+    "question", ["roster brainstorming", "When does roster brainstorming fit?"]
+)
+def test_guidance_packet_keeps_scope_but_omits_review_process(stores, question):
+    learning, graph, _ = seed_pattern(stores)
+    memory = ContextMemory(learning)
+    packet = memory.render_packet(
+        memory.candidates(question, guild_id=77, now=NOW), request=question, now=NOW
+    )
+    assert not packet.allow_voice_examples
+    assert "confidence_basis" not in packet.text
+    assert "support_count" not in packet.text and "counterexample_count" not in packet.text
+    assert "source_times" in packet.text and "unknown_date" in packet.text
+    assert "tentative" in packet.text and "expires_at" in packet.text
+    assert "Serious votes need sincere answers" in packet.text
+    assert "pastry chef" not in packet.text and "croissant" not in packet.text
+    assert "Playfully" not in repr(packet)
+    # Projection never changes the stored evidence or review basis.
+    item = graph.lookup("roster brainstorming", guild_id=77, now=NOW)[0]
+    assert item["confidence_basis"] and len(item["supports"]) == 2
+    assert len(item["abstraction"]["counterexamples"]) == 1
+
+
+@pytest.mark.parametrize(
+    "question", ["Show evidence for roster brainstorming", "Quote roster brainstorming"]
+)
+def test_literal_packet_retains_audit_and_source_examples(stores, question):
+    learning, _, _ = seed_pattern(stores)
+    memory = ContextMemory(learning)
+    packet = memory.render_packet(
+        memory.candidates(question, guild_id=77, now=NOW), request=question, now=NOW
+    )
+    assert packet.allow_voice_examples
+    assert "confidence_basis" in packet.text and "support_count" in packet.text
+    assert "pastry chef" in packet.text and "croissant" in packet.text
+
+
+def test_empty_or_invalidated_pattern_does_not_disable_source_voice(stores):
+    learning, graph, refs = seed_pattern(stores)
+    memory = ContextMemory(learning)
+    candidates = memory.candidates("roster brainstorming", guild_id=77, now=NOW)
+    learning.invalidate(10, [refs[2]["message_id"]], deleted=True, now=NOW)
+    assert not graph.lookup("roster brainstorming", guild_id=77, now=NOW)
+    packet = memory.render_packet(candidates, request="roster brainstorming", now=NOW)
+    assert packet.allow_voice_examples
+    assert "ABSTRACT EPISODE MEMORY" not in packet.text
+    assert memory.render_packet([], now=NOW).allow_voice_examples

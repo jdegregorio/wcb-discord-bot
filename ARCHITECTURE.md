@@ -72,6 +72,9 @@ bounded Discord reply
   scan checkpoints. The worker runs beside response generation, with lifecycle
   tied to Discord readiness, resume, disconnect and shutdown.
 - `memory.py` combines bounded lexical source recall with reviewed graph traversal.
+  A typed RenderedMemory packet carries the voice-example admission policy.
+  Ordinary abstract guidance omits review prose/counts and suppresses raw voice
+  examples; literal evidence keeps its source text. Dates, status and scope persist.
   It materializes current raw evidence and qualified observations only after native
   source verification, preserving attribution and unknown dates.
 - `graph.py` owns private typed nodes/edges, incremental population and study checkpoints.
