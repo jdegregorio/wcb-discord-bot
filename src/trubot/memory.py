@@ -559,7 +559,7 @@ class ContextMemory:
         abstracts = abstract_context(observations)
         if (
             abstracts
-            and recall_presentation(request) is RecallPresentation.CONTENT
+            and recall_presentation(request) is not RecallPresentation.EVIDENCE
             and not re.search(
                 r"\b(?:quote|quotation|said|say|example|examples)\b", request.casefold()
             )

@@ -465,3 +465,16 @@ withdrawal, recipient and emotional rules remain. Amplified humor prototypes
 failed their research criteria and are not included. Conditional episode storage
 from merged #62 is included as enabling code; its selected private pattern is
 still offline and its behavioral study remains open.
+
+## Reviewed memory rollout (2.18.0)
+
+Private `trubot-graph import` manifests commit their complete reviewed observation
+batch under one source lock. A validation failure rolls back earlier entries,
+including replacements and conflict changes, and keeps prior backups intact.
+Batches require one to 100 distinct observation IDs. Successful imports retain
+existing backup cleanup, correction, retirement and withdrawal behavior.
+
+Curated episode abstractions remain conditional and tentative, with current
+attributed support, applicability controls, provenance and expiry. Ordinary
+replies use the relevant abstract mechanism without quoting its source examples.
+Population is distinct from independent human validation or general fidelity gains.

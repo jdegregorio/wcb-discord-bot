@@ -799,3 +799,23 @@ is retained; this does not retract a first request already in flight. No schema 
 state migration. Existing withdrawal marker, correction/expiry and spending state
 remain authoritative. 2.17.0 and undeployed2.17.1 are prereleases; healthy2.16.1
 is the compatible recorded rollback.
+
+
+## Atomic reviewed imports, 2.18.0
+
+The private `trubot-graph import --manifest` format stays schema 1. Its complete
+one-to-100 observation batch now shares a source/withdrawal lock and graph transaction.
+Distinct nonempty string IDs are required; an invalid later item rolls back additions,
+replacements and contradiction status changes. Validation rejection preserves prior
+graph backups. Successful import retains existing backup cleanup; a subsequent file
+cleanup failure can still require operator recovery after the database commit.
+No cross-filesystem atomicity is claimed. Raw and derived manifest contents are never
+logged. Remove ephemeral reviewed manifests after import; production graph state is
+the retained derivation and follows source correction/deletion, expiry and withdrawal.
+
+This rollout may retain a small locally reviewed tentative abstraction with explicit
+non-human extraction provenance, source links, conditions, applicability controls and
+30-day expiry. Local Codex review is not independent human validation. Do not restore
+retired or corrected observations from a stale manifest or remove the withdrawal marker.
+Rollback the memory by retiring its recorded observation ID, not restoring a learning
+or spending database. No source schema, study pacing or allowance changes.

@@ -1812,3 +1812,12 @@ counts, negative cases, timing, hashes and identifiers. Next: validated human
 abstractions with person/care controls, creative variation/weak follow-ups, broader
 native/visual context, selective skills/tools and generated outdoor scenes. No
 further unmeasured schema categories or repeated literal/date-only patch priority.
+
+
+## 2026-10-12 01:00 - H40/H41 reviewed population
+
+Both phases, falsifiable criteria, source coverage and evaluator limitations are in
+[evaluation study](evaluations/2026-10-12-reviewed-population-study.md).
+H40 CLI reproduction: rejected two-item import leaves one committed observation.
+H41 proposed curated abstraction remains tentative until current source and real
+Discord validation; independent human/general fidelity evidence remains open.

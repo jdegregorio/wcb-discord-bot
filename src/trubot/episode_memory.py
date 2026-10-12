@@ -65,7 +65,14 @@ def abstract_context(observations: list[dict[str, Any]]) -> str:
     patterns = [
         {
             k: item[k]
-            for k in ("summary", "status", "confidence_basis", "unknown_date", "expires_at")
+            for k in (
+                "summary",
+                "status",
+                "confidence_basis",
+                "unknown_date",
+                "source_times",
+                "expires_at",
+            )
         }
         | {
             "domain": item.get("kind", "pattern"),

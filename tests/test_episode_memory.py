@@ -1,3 +1,4 @@
+import json
 from datetime import timedelta
 
 import pytest
@@ -351,3 +352,42 @@ def test_pattern_quotes_and_factual_shared_support_stay_available(stores):
     assert "croissant" in memory.render(
         candidates, request="Quote an example of roster brainstorming", now=NOW
     )
+
+
+@pytest.mark.parametrize(
+    "question",
+    [
+        "What is your style when doing roster brainstorming?",
+        "How do you react after roster brainstorming?",
+        "When did this roster brainstorming pattern appear?",
+    ],
+)
+def test_conditional_and_timing_pattern_questions_use_abstraction_with_dates(stores, question):
+    learning, _, _ = seed_pattern(stores)
+    memory = ContextMemory(learning)
+    rendered = memory.render(
+        memory.candidates(question, guild_id=77, now=NOW), request=question, now=NOW
+    )
+    assert "ABSTRACT EPISODE MEMORY" in rendered
+    assert "pastry chef" not in rendered and "croissant" not in rendered
+    dates = json.loads(rendered.split("\n", 1)[1])[0]["source_times"]
+    assert dates == [(NOW - timedelta(days=i + 1)).isoformat() for i in range(3)]
+    assert "Serious votes need sincere answers" in rendered
+
+
+@pytest.mark.parametrize(
+    "question",
+    [
+        "When did you say it? Quote roster brainstorming.",
+        "Show source evidence after roster brainstorming.",
+        "Give an example of roster brainstorming when you joked.",
+    ],
+)
+def test_explicit_pattern_source_requests_keep_quotes_even_with_timing_words(stores, question):
+    learning, _, _ = seed_pattern(stores)
+    memory = ContextMemory(learning)
+    rendered = memory.render(
+        memory.candidates(question, guild_id=77, now=NOW), request=question, now=NOW
+    )
+    assert "ABSTRACT EPISODE MEMORY" in rendered and "pastry chef" in rendered
+    assert "counterexample" in rendered
