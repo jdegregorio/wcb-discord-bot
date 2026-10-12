@@ -1,5 +1,37 @@
 # Prioritized backlog
 
+2026-10-12 01:00 verified: H40 atomic reviewed imports and H41 abstraction-first
+presentation are deployed in 2.18.0 (PR #82). All six gates, 781 tests, 96.84%
+coverage, required CI, both images and 28 installed source hashes pass. Actual
+installed CLI acceptance is 3/3. Normal real Discord controls are 8/9; broad
+historical source-person confusion remains failed. The private human memory
+prototype is 1/3 and RETIRED for source-example reuse and mechanical qualification.
+Zero human abstractions remain active. No general fidelity or humor gain is claimed.
+
+Next ordered increments:
+1. H44/H41 selective natural abstraction projection and source-example relevance,
+   before more traits. Compare the failed cases, novel banter and sincere controls;
+   keep method metadata private, preserve source uncertainty and factual evidence.
+   Dependency: qualified human support and the existing verified reader. Confidence:
+   unresolved; expected impact bounded context with no new service/request by default.
+2. H21/H28 independently reviewed conditional human population and continuous
+   distillation, with real held-outs, contrary cases and H6 source-person acceptance.
+   Source precision is a prerequisite; exact/date lookup remains secondary.
+3. H22/H39 creative variation and weak follow-ups. One clarified TJ trial passes;
+   this does not resolve the prior unclarified failure. H43 old enthusiasm mismatch
+   remains an audit category; the current enthusiasm control passes, so no new
+   behavioral change is justified from the old window alone.
+4. Wider native peer/reply/thread and original-pixel coverage, bounded selective
+   skills/tools, then generated U.P. aurora/trail-camera scenes with natural captions
+   and generated provenance. These remain exploratory with their existing budget,
+   withdrawal, source-scope and real-delivery prerequisites.
+
+Evidence: docs/trubot-evolution/evaluations/2026-10-12-reviewed-population-release.json.
+Do not replay the erased failed curated manifest or add more schema categories as
+substitutes for reply quality. Six daily times/model/reasoning/notifications and
+USD18/2/20 limits remain unchanged. This current order supersedes older notes below.
+
+
 2026-10-12 01:00 selection: H40/H41 atomic reviewed episode population. Fix the
 reproduced partial graph import, then admit one tentative conditional abstraction
 only after private context/source and actual Discord scope/control validation.

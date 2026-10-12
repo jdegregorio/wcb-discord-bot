@@ -2712,3 +2712,60 @@ immutable digest a78b82141d17bf07d43d828297ce02fde267e80a1aabf84d35ef84bd7356c7d
 Initial October estimate USD0.1508092, zero unsettled; all research so far is offline,
 actual gateway baselines use the existing runtime ledger. Release and actual candidate
 acceptance are pending; do not treat proposed population as deployed.
+
+
+### Verified release outcome, 2026-10-12 01:00 Pacific
+
+Runtime PR #82 merged `c86ec65ab12c2dd3b68bbc70ec6c22e56017e6a8`, tree `d65e78fc63c557a464acbc4cb5c8e1fe32540a4a`,
+identical to tested bdcf45b. PR CI 38223156007 and merged-main CI 38223490205 pass;
+38223111670 is the superseded cancelled PR run. All six merged local gates pass:
+781 tests/96.84% coverage, 28 typed modules, 2.18.0 wheel/sdist. Immutable
+[v2.18.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.18.0) images
+38223665070 succeed for AMD64/ARM64 before the locked pi-app transaction. Reverified
+pi5/aarch64/Ubuntu24.04; running digest `sha256:f7f8612ae2ed84de7730d050e35f23c9b050c75fad86c80ad977d67d81cf38bb`, previous
+healthy 2.17.2 `sha256:a78b82141d17bf07d43d828297ce02fde267e80a1aabf84d35ef84bd7356c7d2` retained. Package, OCI revision
+and all 28 installed source hashes match. Readiness healthy, zero restarts and no
+new errors/reply failures/disconnects/memory/learning/study pauses; two optional voice
+startup warnings. Primary readiness verified after all plain HTTP validation clients;
+no second app gateway/client, token extraction, league test post or development learning.
+
+Installed actual CLI rejection/commit/synthetic withdrawal acceptance is 3/3. One
+private local-Codex reviewed conditional abstraction was imported atomically (three
+supports, two applicability controls, five exports, unknown dates, 30-day expiry).
+It is RETIRED after actual prototype acceptance is 1/3: novel fictional banter passes,
+source-example reuse and mechanical qualification fail. Both ephemeral manifests are
+erased. Curated retirement does not add automatic extraction vetoes; zero automatic
+vetoes remain. No active human abstraction, independent human validation or general
+fidelity/humor improvement is claimed. Source/ledger stores are never replaced.
+
+Actual normal gateway controls after retirement: 8/9, eight answers and recipient
+silence. Care, supported enthusiasm/preference, exact-date honesty, operator own-history
+boundary and clarified fictional TJ direct/unmentioned follow-up pass. Broad historical
+source-person confusion fails as before; it remains an explicit grounding prerequisite.
+Combined candidate 9/12 (11 answers/one silence), baseline 1/2. The old unclarified
+TJ weakness remains unresolved despite this clarified trial's comic turn. Data rollback
+is retirement of the failed prototype; no new material runtime/source regression calls
+for image rollback. Do not claim clean full recall, natural-memory or comic acceptance.
+
+Human contextual review totals 16 central blocks/12 exports/63 neighbors, including
+three held-out non-support windows (one compatible mechanism/two practical controls),
+five targeted revisits and eight new deterministic windows. No independent human judge
+or original historical image interpretation. Before/after league audit: three channels,
+latest100/14days, seven target/17peer/five oldbot/zero fresh spontaneous. Five older
+bot windows reveal a contextual enthusiasm mismatch with a peer reaction; current
+enthusiasm passes, so a new mood policy is not justified by that old evidence alone.
+
+Private continuity returns to 34 native/16 documents/4,299 grouped blocks/405 eligible,
+115 visual episodes/96 assets, 439 graph sources/554 episodes/1,011 edges, one claim/
+one preference/zero abstractions. Real withdrawal untouched. Content-free test refs,
+source refs/count summaries and public-code helpers are retained privately (0700/0600,
+seven-day manual retention/withdrawal cleanup). No actual answer/source text artifacts.
+
+Tracked October estimate USD 0.156075430 (runtime 0.070971460,
+maintenance 0.085103970), 1074 settled/zero unsettled. Run delta
+USD 0.005266230 over 14 runtime
+attempts; zero provider research calls and maintenance spend unchanged. Existing18/2/20
+caps, no new paid service/request schedule. Provider billing and pre-guard spend remain
+unknown. Evidence JSON preserves all pass/fail categories and identifiers. Next H44
+natural selective abstraction use before more H21/H28 traits, then variation and
+native/visual/tools/generated scenes. Evidence PR/final main and owned cleanup follow.
