@@ -1860,3 +1860,26 @@ operating impact: docs/trubot-evolution/evaluations/2026-10-12-selective-voice-s
 Next: H44 natural abstract projection, independently reviewed H21/H28 population,
 H22/H39 variation, native/visual coverage, selective skills/tools and generated
 U.P. aurora/trail-camera scenes. Existing privacy/withdrawal and USD18/2/20 apply.
+
+### H45 released results and remaining contrary evidence
+
+Locked admission regression 9/9 corrected; 13 new regressions and all 794 tests pass.
+Both actual installed packet checks and disposable lifecycle controls pass. Relevant
+actual fixture response copies the short source line, so source-example transformation
+remains unresolved H44. Normal real Discord is 9/11; positive emotional fit includes
+three short sentences, failing brevity, and broad-history ownership still fails as
+before. Combined behavioral review is 10/13. Novel banter, care, supported preference,
+exact-date uncertainty, narrow own-history scope, clarified TJ pair and recipient
+abstention pass. Familiar mock-administration humor is not a demonstrated novelty gain.
+No new human abstraction or general quality gain is inferred. Candidate stays deployed:
+the selected admission correction is verified, and none of these negatives establishes
+a new material regression. Sources, identity, graph, withdrawal and spending persist.
+
+The first controlled candidate attempt used the UI's optimistic pre-confirmation ID;
+HTTP lookup failed before provider use or send. The confirmed server ID succeeded.
+An operational counter initially used an older logger label; corrected to the current
+source label before the final 10-post/one-decline evidence. Neither is a product fix.
+Automatic approval review rejected printing an environment file; no retry/bypass was
+used, and verified container metadata plus the existing transaction completed rollout.
+All raw contextual/comparison renderings are removed; private records contain only
+refs/counts/metrics, invented fixtures or public helper code. No raw answer artifact.

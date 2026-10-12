@@ -819,3 +819,13 @@ non-human extraction provenance, source links, conditions, applicability control
 retired or corrected observations from a stale manifest or remove the withdrawal marker.
 Rollback the memory by retiring its recorded observation ID, not restoring a learning
 or spending database. No source schema, study pacing or allowance changes.
+
+## 2026-10-12 05:00 selective voice release
+
+2.18.1 makes no storage/schema/intake change. Real learning and graph counts remain
+unchanged with zero active human abstractions. Two actual installed-handler fixtures
+use disposable invented stores and distinct readiness before construction; source
+removal/withdrawal and production heartbeat pass. Private refs, counts and public
+helpers live under the app volume smoke-tests/2026-10-12-0500 directory, 0700/0600,
+existing manual seven-day retention and withdrawal cleanup. Raw contextual/rendered
+answers are erased. Existing billing/backup coverage limitations remain unchanged.

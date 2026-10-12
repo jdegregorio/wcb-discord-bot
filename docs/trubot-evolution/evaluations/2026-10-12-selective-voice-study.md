@@ -107,3 +107,28 @@ ignores the garden example in this one answer, so packet failure is distinct fro
 reply-quality failure. A separate readiness path was set before app-client creation;
 no second gateway was opened and the running heartbeat remained healthy after close.
 Installed candidate admission and normal actual gateway controls remain pending.
+
+## Released verification
+
+2.18.1 is deployed through the installed locked pi-app transaction on reverified
+pi5/aarch64/Ubuntu 24.04.4. Required PR/main CI and both architecture builds pass;
+merged tree equals tested source, package/OCI and all 28 installed hashes match.
+All six merged local gates pass: 794 tests, 96.84% coverage. Source state unchanged.
+
+Changed actual packet checks 2/2 pass with disposable source removal/withdrawal and
+primary readiness verified after closing both isolated clients. Relevant actual
+example response copies its entire short invented source. It is on topic but fails
+fresh-wording review, so behavioral controlled checks are 1/2. Normal gateway checks
+are 9/11, ten answers and one recipient abstention. Existing broad source-person
+confusion persists; enthusiasm is appropriate but three sentences fail the voice
+limit. Combined behavioral review 10/13. Retain these contrary results. Neither the
+controlled fixture nor healthy container demonstrates human fidelity. No material
+new runtime regression is demonstrated, so no rollback is selected.
+
+Private authenticated references contain no raw source/answer text; eight human
+windows are rechecked, none truncated, no source pixels interpreted or trait added.
+Tracked October USD0.161571360; run USD0.005495930 across 32 attempts, maintenance
+USD0.001188275 of which 16 research requests are USD0.000734410. Zero unsettled.
+Existing USD18/2/20 caps, no service/extra recurring call; billing/pre-guard unknown.
+Final public counts, CI/digests, negative controls and limitations are in the release
+JSON. H44/H6 projection/author admission precede further H21/H28 population.
