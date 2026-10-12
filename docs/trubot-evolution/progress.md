@@ -2697,7 +2697,7 @@ reproduction: rejected two-item batch leaves one observation before, zero after.
 Current private source checks and disposable clone acceptance pass; one tentative
 abstraction remains proposed until real release/Discord validation. No raw/derived
 personal content in Git; source reviewer and reply reviewer are Codex, not an
-independent human. Thirteen central archive windows, 12 distinct exports, 51
+independent human. Thirteen central archive windows, nine distinct exports, 51
 neighbors (five windows revisit prior studies); five older actual league bot windows
 reviewed separately. Eight deterministic windows are new to this run's review, not
 proven unseen across all past studies. Missing media/dates remain explicit internally.
