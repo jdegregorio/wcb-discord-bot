@@ -41,7 +41,9 @@ bounded Discord reply
   attributed evidence; new banter is never evidence of Andrew's actual words.
   `voice_memory.py` resolves at most three current attributed answer/setup pairs
   through the existing private memory scope, with correction, year and withdrawal
-  gates. Examples describe a context, not a biography or habitual trait. Synthetic
+  gates. Only distinctive literal terms shared with the preceding setup admit a
+  voice pair; broad topic expansion, answer-only matches and filler do not. Examples
+  describe a context, not a biography or habitual trait. Synthetic
   judgment illustrations remain separate and never supply personal evidence.
 - `openai_responder.py` is the only OpenAI dependency. It produces a plain
   string through the Responses API and normalizes accidental speaker prefixes.

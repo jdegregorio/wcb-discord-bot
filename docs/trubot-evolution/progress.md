@@ -2769,3 +2769,16 @@ caps, no new paid service/request schedule. Provider billing and pre-guard spend
 unknown. Evidence JSON preserves all pass/fail categories and identifiers. Next H44
 natural selective abstraction use before more H21/H28 traits, then variation and
 native/visual/tools/generated scenes. Evidence PR/final main and owned cleanup follow.
+
+## 2026-10-12 05:00 - selective source examples (pre-release)
+
+Base dd77ec2260b34211d8604ef5666439e16419078d, new managed worktree and branch.
+H45 corrects unconditional and answer-only raw voice admission. Both planning
+phases and locked acceptance are in evaluations/2026-10-12-selective-voice-study.md.
+Nine baseline failures become passes; full handler/source controls are required.
+Matched 16-request invented-source comparison: semantic 7/8 baseline, 8/8 candidate,
+no off-topic source reuse in six candidate negatives versus one in six baseline.
+Actual isolated owner-message baseline admits irrelevant voice data; candidate and
+normal gateway acceptance remain pending. No new human trait or general quality claim.
+Research USD0.000734410 through existing maintenance allowance; no added recurring
+request, model, service, study pacing, source intake or participation change.
