@@ -841,3 +841,13 @@ authoritative. This does not populate a new human abstraction. Run evidence keep
 content-free private refs/counts, synthetic fixtures and public helpers on the
 existing app volume under 0700/0600 with the existing manual seven-day/withdrawal
 cleanup. Human/reply renderings and candidate overrides are erased.
+
+2.19.1 completes ordinary would/could/should/current-response wording without a
+storage migration. Explicit quote/evidence/past-word support stays available. The
+same marker, invalidation, backup, expiry and private evidence retention apply.
+No new human abstraction is populated.
+
+For development evidence transfers, create the local staging directory with mode
+0700 and transfer files with mode 0600 before collecting human material. Do not
+inherit the workstation's default umask. Verify these modes before rendering or
+transport, then erase temporary raw images/archives after review.

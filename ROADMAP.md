@@ -1,5 +1,28 @@
 # Trubot roadmap
 
+2026-10-12 09:00 completed: H47/H47b is deployed in 2.19.1 (PRs #86/#88).
+Typed ordinary guidance excludes audit prose/counts and competing raw voice
+examples, including would/could/should/current-response wording. Explicit evidence,
+quotes and actual past-word lookups retain source support. Conditions, limitations,
+dates, status, expiry, author scope and withdrawal remain authoritative.
+
+All six gates, 808 tests, 96.86% coverage, required PR/main CI, both architectures
+and 28 installed hashes pass. Completion actual checks 7/7: two controlled memory
+cases and five gateway controls. Cumulative installed packet/lifecycle is 5/5;
+cumulative behavior 18/21 across both releases. Preserve the initial attribution
+and two brevity failures, not a blanket clean acceptance. No new human abstraction
+or general fidelity/humor gain. The additional ordinary baseline already produced
+a relevant novel reply; its packet defect is distinct from behavior.
+
+Next remains H48/H21/H28 qualified conditional human population with H6 author
+controls, then H22/H39 variation/brevity, fuller native/visual episodes, bounded
+selective skills/tools and generated U.P. aurora/trail-camera sharing. Ordered
+criteria below remain authoritative. Zero active patterns, failed prototype retired.
+Existing volume/ledger, no new schema/model/service or recurring calls; USD18/2/20
+and six daily standalone runs preserved. Evidence:
+docs/trubot-evolution/evaluations/2026-10-12-abstract-projection-completion.json.
+
+
 2026-10-12 09:00 completion: H47b closes the legacy bare say/said bypass for
 ordinary response wording. Six baseline failures become passes; literal quote,
 evidence and actual did-you-say controls retain support. Real 2.19.0 owner probe

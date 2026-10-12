@@ -187,7 +187,8 @@
     "mechanical audit narration was not reproduced in the matched tiny synthetic sample",
     "existing attribution and brevity failures retained",
     "full native peer/thread and visual coverage still incomplete",
-    "billing and pre-guard spend unknown"
+    "billing and pre-guard spend unknown",
+    "Temporary local transfer permissions were not independently verified before raw archive erasure; require 0700 staging and 0600 transfers before future source collection"
   ],
   "rollback": {
     "required": false,
@@ -207,5 +208,13 @@
     "broader native/reply/thread/pixel coverage",
     "bounded selective skills/tools",
     "generated U.P. aurora/trail-camera sharing with natural captions and provenance"
-  ]
+  ],
+  "temporary_transfer_privacy": {
+    "local_staging_directory_initial_mode": "0755",
+    "raw_transfer_archive_permissions_verified_before_erasure": false,
+    "raw_images_and_archives_remaining": 0,
+    "staging_directory_corrected_to": "0700",
+    "persistent_app_evidence_permissions_verified": true,
+    "unauthorized_access_assessed": false
+  }
 }
