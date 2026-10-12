@@ -1821,3 +1821,30 @@ Both phases, falsifiable criteria, source coverage and evaluator limitations are
 H40 CLI reproduction: rejected two-item import leaves one committed observation.
 H41 proposed curated abstraction remains tentative until current source and real
 Discord validation; independent human/general fidelity evidence remains open.
+
+
+## 2026-10-12 final hypothesis decisions
+
+H40 is supported/deployed: actual rejected CLI batch leaves zero partial imports;
+installed rejection/valid-commit/withdrawal acceptance passes 3/3. H41 representation
+conformance passes, but the source-reviewed human prototype fails full naturalness
+(1/3 actual gateway trials) and is retired. No active human abstraction or reply-quality
+gain is claimed. One first-party human-pattern answer narrows its mechanism but recites
+method qualifications; the other reuses a source example through existing context.
+Do not redefine either failed criterion after observing the answer. Nine normal gateway
+controls after retirement pass eight; broad historical source-person confusion persists.
+H42 remains exploratory. H43 old enthusiasm mismatch is not reproduced by the current
+positive control, so no new emotion policy is selected. H44 selective abstract projection
+and source-example relevance becomes the next falsifiable research prerequisite before
+more human population. Do not repeat the rejected H37 role-relabeling prototype without
+new evidence. Support uncertainty stays authoritative; ordinary replies should not
+recite method metadata or copy old examples. Full vendor/harness migration is unvalidated.
+
+Additional held-out source review: three central blocks from three previously excluded
+exports and 12 neighbors, not population supports. One compatible mechanism and two
+practical-scope controls; same Codex evaluator, not independent human validation. Total
+16 central blocks/12 exports/63 neighbors; five older bot windows remain separately
+classified. No actual original-pixel interpretation, filename-derived dates or human
+research-provider payload. All research is offline; real gateway calls use the existing
+runtime ledger. Raw source renderings and both ephemeral manifests are erased at cleanup.
+See the release JSON for identifiers, failed criteria, continuity, costs and limits.
