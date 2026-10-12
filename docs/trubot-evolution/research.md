@@ -1883,3 +1883,7 @@ Automatic approval review rejected printing an environment file; no retry/bypass
 used, and verified container metadata plus the existing transaction completed rollout.
 All raw contextual/comparison renderings are removed; private records contain only
 refs/counts/metrics, invented fixtures or public helper code. No raw answer artifact.
+
+## 2026-10-12 09:00 - H47 purpose-specific abstract projection
+
+Both planning phases and locked criteria are in [evaluation study](evaluations/2026-10-12-abstract-projection-study.md). H47 separates ordinary conditional guidance from audit details and competing raw examples. H48 human population remains unresolved; no new trait selected. H46 wider context/tools/generated outdoors remains exploratory. Actual acceptance is pending.

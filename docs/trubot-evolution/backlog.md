@@ -1,5 +1,21 @@
 # Prioritized backlog
 
+2026-10-12 09:00 selection: H47 purpose-specific abstract projection. Ordinary
+conditional guidance omits review-process prose/counts and competing raw voice
+examples; explicit evidence/quotes keep support. Author scope, status, conditions,
+limitations, dates, expiry and withdrawal stay authoritative. So that useful
+abstractions guide fresh replies without reciting the audit. Same-model and actual
+private Discord acceptance remain pending. Both planning phases and locked criteria:
+docs/trubot-evolution/evaluations/2026-10-12-abstract-projection-study.md.
+
+Next: H48/H21/H28 qualified human population with H6 person controls; H22/H39
+variation and brevity; full native/visual context; bounded selective skills/tools;
+generated U.P. aurora/trail-camera sharing with natural captions and provenance.
+Zero active human patterns; failed prototype stays retired. Confidence in packet
+correction is high, behavioral/general fidelity remains unresolved. Existing volume,
+smaller context, no new recurring request/service; USD18/2/20 and six-run schedule.
+
+
 2026-10-12 05:00 verified: H45 selective setup relevance is deployed in 2.18.1
 (PR #84). All six gates, 794 tests, 96.84% coverage, required CI, both architectures
 and 28 installed source hashes pass. Actual changed packet acceptance is 2/2;

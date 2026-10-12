@@ -2828,3 +2828,17 @@ older worktrees untouched. Evidence [PR #85](https://github.com/jdegregorio/wcb-
 these final measured results. Runtime source/tests/version/lock are unchanged from
 ff33a752. Final main CI and owned-worktree archive status are preserved in automation
 memory after this evidence merge.
+
+## 2026-10-12 09:00 - abstract memory projection
+
+Base 0241bf7da03a610adf72dc404b2f0dba5a6f2a9b; new managed worktree and unique
+feature branch. Prior run complete; primary/older drafts untouched. Both planning
+phases, locked hypotheses, private source counts and negatives are in
+[evaluation study](evaluations/2026-10-12-abstract-projection-study.md). H47 is a
+purpose-specific typed renderer and handler admission correction. H48 human
+population remains unvalidated; zero active abstractions and retired prototype.
+
+Actual baseline packet exposes competing voice and reproduces source reuse.
+Matched synthetic semantic results 6/12 to 10/12; exact ordinary/timing source-line
+reuse 4/8 to 0/8. Evidence source-person and brevity negatives remain. All six local
+gates pass, 799 tests, 96.85% coverage. Release/deployment/actual acceptance pending.
