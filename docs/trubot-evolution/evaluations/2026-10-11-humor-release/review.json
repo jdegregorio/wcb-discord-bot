@@ -1,0 +1,17 @@
+{
+  "baseline_comic_pass": 7,
+  "candidate_comic_pass": 11,
+  "comic_trials_per_arm": 12,
+  "original_clear_controls_per_arm": 6,
+  "supplemental_controls_per_arm": 4,
+  "ambiguous_definition_expected_idiom_baseline": 0,
+  "ambiguous_definition_expected_idiom_candidate": 1,
+  "ambiguous_trials_per_arm": 2,
+  "all_samples_retained": true,
+  "human_provider_holdout": "blocked before execution",
+  "new_human_traits": 0,
+  "independent_grader": false,
+  "same_reaction_metaphor_repeated": true,
+  "general_fidelity_gain_claimed": false,
+  "two_to_three_times_funnier_measured": false
+}

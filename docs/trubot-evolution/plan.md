@@ -1,5 +1,13 @@
 # Trubot evolution
 
+2026-10-11 17:00 selection: complete merged PR #74 as H34, with fresh matched
+humor and fact/care/recipient controls, all gates and real private Discord release
+validation. H35 abstract population remains unvalidated and next; do not add another
+schema as a substitute. Then variation, native/visual context, selective skills/tools
+and guarded generated U.P. aurora/trail-camera scenes. Both planning phases and
+criteria are in docs/trubot-evolution/evaluations/2026-10-11-humor-release-study.md.
+
+
 2026-10-11 13:00 verified: H32 is deployed in 2.16.1 through PRs #75/#76.
 Complete trusted episode sets preserve cross-topic supports and contrary cases in
 both study passes, with a usable plain-HTTP operator command. Installed command
