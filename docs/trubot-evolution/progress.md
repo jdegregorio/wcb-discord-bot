@@ -2782,3 +2782,49 @@ Actual isolated owner-message baseline admits irrelevant voice data; candidate a
 normal gateway acceptance remain pending. No new human trait or general quality claim.
 Research USD0.000734410 through existing maintenance allowance; no added recurring
 request, model, service, study pacing, source intake or participation change.
+
+### 05:00 final runtime rollout and measured outcome
+
+Runtime [PR #84](https://github.com/jdegregorio/wcb-discord-bot/pull/84) merged as
+ff33a75217b84fdbbee596528ea208d699ccc2d4, identical to tested 7fdd1f7 tree.
+PR CI 38248021258 and main CI 38248261704 pass. All six merged local gates pass:
+794 tests, 96.84% coverage, 28 typed modules, 13 new regressions. Dependency versions
+unchanged. Immutable [v2.18.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.18.1)
+and both architectures in publish 38248458292 pass before the locked deployment.
+
+Reverified pi5/aarch64/Ubuntu 24.04.4. Running immutable digest
+sha256:d7b4eb32644826dd49dd5e23a3295fb0a5c1e478516f11154bc51a162abbca9d,
+OCI/package and 28 source hashes match. Previous 2.18.0/f7f8612a digest is retained
+in the existing transaction. At 12:40:38Z: healthy, zero restarts/errors/response
+failures/disconnects/memory/learning/study pauses, two optional voice warnings and
+zero other warnings, ten gateway posts/one decline/16 learning batches. No rollback.
+
+Actual changed admission 2/2; both disposable correction/withdrawal controls pass,
+zero test intake and live heartbeat verified after client close. Controlled behavioral
+1/2: eligible example copied verbatim. Normal gateway 9/11: historical source-person
+confusion persists, appropriate enthusiasm exceeds two sentences. Combined 10/13;
+negative results retained. Clarified TJ pair passes narrowly, familiar mechanism not
+novelty; unclarified prior failure remains unvalidated. Eleven ordinary refs and three
+controlled refs are authenticated privately. Source/graph counts unchanged, zero
+human abstractions, prior failed pattern remains retired. No general fidelity gain.
+
+Research study eight attributed central blocks/eight exports/32 neighbors/two missing
+media windows, none truncated, five older bot windows and zero spontaneous current
+league activity. Same Codex evaluator, no independent human review or original pixels.
+Matched invented comparison 7/8 to 8/8, one off-topic source reuse removed in the tiny
+sample. Full methods and limits are in selective-voice-study.md and release.json.
+
+Tracked October USD0.161571360 (runtime0.075279115/maintenance0.086292245), 1,106
+settled/zero unsettled. Run USD0.005495930 across 32 attempts; maintenance delta
+USD0.001188275, 16 research calls USD0.000734410. Existing USD18/2/20 caps, no added
+recurring request/service. Provider billing and pre-guard spending remain unknown.
+
+Private evidence on existing app volume, 0700/0600, manual seven-day retention and
+withdrawal cleanup. Only content-free refs/counts/metrics, invented fixtures and
+public helpers persist. Raw human/reply renderings erased. The UI optimistic-ID and
+old log-label helper issues were corrected without product mutation. An unsafe env-file
+read was rejected; safer metadata completed rollout, no blocker. Joe's checkout and
+older worktrees untouched. Evidence [PR #85](https://github.com/jdegregorio/wcb-discord-bot/pull/85) carries
+these final measured results. Runtime source/tests/version/lock are unchanged from
+ff33a752. Final main CI and owned-worktree archive status are preserved in automation
+memory after this evidence merge.

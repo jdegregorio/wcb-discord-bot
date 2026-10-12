@@ -1,5 +1,43 @@
 # Trubot roadmap
 
+2026-10-12 05:00 verified: H45 selective setup relevance is deployed in 2.18.1
+(PR #84). All six gates, 794 tests, 96.84% coverage, required CI, both architectures
+and 28 installed source hashes pass. Actual changed packet acceptance is 2/2;
+normal gateway is 9/11. Full behavioral review including controlled sends is 10/13:
+retain the existing broad-history source-person failure, a three-sentence enthusiasm
+reply and eligible-example verbatim reuse. No general fidelity/humor claim.
+
+Next ordered increments:
+1. H44 natural abstract projection and source-example transformation, with H6
+   author-grounding admission as a prerequisite. Retain status, conditions, dates,
+   limits and source withdrawal internally while preventing mechanical review
+   narration and source-punchline imitation. Compare failed cases with private
+   same-source fixtures, genuine human held-outs, sincere and owner controls.
+   Confidence unresolved; no new trait until interpretation and actual delivery pass.
+   Benefit: natural, correctly attributed episode guidance. Operating impact bounded
+   context on existing volume/ledger, no new request/service by default.
+2. H21/H28 independently reviewed conditional human population and continuous
+   learning. Current graph has zero active abstractions; the prior failed curated
+   pattern stays retired. Dependencies: H44/H6 acceptance, qualified support and
+   contrary evidence. Validate human held-outs, correction and real Discord delivery;
+   confidence unresolved, maintenance studies remain within USD2/month.
+3. H22/H39 creative variation and brevity, including weak follow-ups. H43 excitement
+   remains context-sensitive; emotional fit passes here but the sentence limit does
+   not. Benefit: sharp, warm replies without repeated mechanisms. Validate matched
+   novel/sincere/recipient cases and fresh activity; same evaluator and sparse league
+   activity limit confidence. Preserve low-cost runtime and existing token bounds.
+4. Broader native peer/reply/thread and original pixels; selective skills/tools;
+   generated U.P. aurora/trail-camera scenes with natural captions and generated
+   provenance. Benefit: richer contextual judgment and fitting shared moments.
+   These remain exploratory, requiring coverage, source/withdrawal safety, matched
+   contribution evidence, actual delivery and the current monthly spending guard.
+
+Evidence: docs/trubot-evolution/evaluations/2026-10-12-selective-voice-release.json.
+Priorities change on supported relevance/coverage failures or contrary reply results.
+Exact quote/date patches stay secondary. Six daily runs, model/reasoning/settings,
+privacy, source scope, participation and USD18/2/20 remain unchanged.
+
+
 2026-10-12 05:00 selection: H45 selective source-example admission, splitting
 H44 around the reproduced unconditional-example boundary. Keep only current voice
 pairs with distinctive literal setup relevance, no answer-only or broad-topic filler.
