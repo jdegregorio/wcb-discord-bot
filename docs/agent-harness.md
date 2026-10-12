@@ -1,5 +1,13 @@
 # Harness exploration
 
+2026-10-11 21:00 selection: H38 completes the rolled-back comic release with
+one budgeted fresh attempt for a long exact older bot echo. Immediate/short/literal
+reuse and abstention stay eligible; optional failure preserves the existing draft.
+H37 role relabeling is rejected. No new human trait or schema.
+Both phases and criteria: docs/trubot-evolution/evaluations/2026-10-11-repetition-study.md.
+Next: validated H35/H21/H28 abstract population, H22/H39 variation, native/visual
+coverage, selective skills/tools, generated U.P. aurora/trail-camera scenes.
+
 2026-10-11 17:00 selection: complete merged PR #74 as H34, with fresh matched
 humor and fact/care/recipient controls, all gates and real private Discord release
 validation. H35 abstract population remains unvalidated and next; do not add another

@@ -9,7 +9,7 @@ import re
 from collections.abc import Awaitable, Callable, Sequence
 from typing import Any
 
-from openai import APIConnectionError, APIStatusError, AsyncOpenAI, RateLimitError
+from openai import APIConnectionError, APIError, APIStatusError, AsyncOpenAI, RateLimitError
 from openai.types.responses import (
     EasyInputMessageParam,
     Response,
@@ -18,7 +18,7 @@ from openai.types.responses import (
 )
 from openai.types.responses.response_create_params import ResponseCreateParamsNonStreaming
 
-from trubot.budget import NANODOLLARS, BudgetUnavailable, UsageLedger
+from trubot.budget import NANODOLLARS, BudgetError, BudgetUnavailable, UsageLedger
 from trubot.conversation import ConversationMessage, ReplyMode
 from trubot.personality import instructions_for
 from trubot.reply_focus import preceding_human_turn
@@ -32,6 +32,19 @@ _SPEAKER_PREFIX = re.compile(
 )
 _PROMPT_CACHE_KEY = "wcb-trubot-personality-v12"
 _NO_REPLY = "<NO_REPLY>"
+_REUSE_REQUEST = re.compile(
+    r"\b(?:repeat|verbatim|quot(?:e|ing|ation)|word[- ]for[- ]word)\b"
+    r"|\bwhat (?:exactly )?did you say\b",
+    re.IGNORECASE,
+)
+_FRESH_REPLY_GUIDANCE = (
+    "\n\nThe draft copied an earlier bot reply. Give a fresh response to the current "
+    "message instead of copying that earlier bot reply. For an offered playful setup, "
+    "add a relevant comic turn. For sincere news or distress, keep emotional care. "
+    "Keep supported facts, uncertainty and recipient restraint authoritative. "
+    "Do not invent personal history to make the wording different."
+)
+
 
 _TARGET_LABELS = {
     ReplyMode.DIRECT: "CURRENT MESSAGE",
@@ -137,22 +150,23 @@ class OpenAITruaxResponder:
             + 4096
             + image_count * IMAGE_TOKEN_BOUND
         )
+        request = ResponseCreateParamsNonStreaming(
+            model=self._model,
+            service_tier="default",
+            instructions=instructions,
+            input=model_input,
+            reasoning={"effort": "low" if mode is ReplyMode.FOLLOW_UP else "none"},
+            text={"verbosity": "low"},
+            max_output_tokens=output_bound,
+            prompt_cache_key=_PROMPT_CACHE_KEY,
+            safety_identifier=safety_id,
+            store=False,
+        )
         response = await self._generate(
             input_bound=input_bound,
             output_bound=output_bound,
             mode=mode,
-            request=ResponseCreateParamsNonStreaming(
-                model=self._model,
-                service_tier="default",
-                instructions=instructions,
-                input=model_input,
-                reasoning={"effort": "low" if mode is ReplyMode.FOLLOW_UP else "none"},
-                text={"verbosity": "low"},
-                max_output_tokens=output_bound,
-                prompt_cache_key=_PROMPT_CACHE_KEY,
-                safety_identifier=safety_id,
-                store=False,
-            ),
+            request=request,
         )
         reply = normalize_reply(response.output_text)
         if mode is ReplyMode.FOLLOW_UP and reply.casefold() == _NO_REPLY.casefold():
@@ -160,6 +174,37 @@ class OpenAITruaxResponder:
             return None
         if not reply:
             raise EmptyResponseError("OpenAI returned an empty text response")
+        if _stale_bot_echo(reply, messages, target):
+            # One additional accounted attempt, never an unbounded joke-selection loop.
+            # Keep the same context, source scope and model. Literal requests and the
+            # immediate assistant turn remain eligible for deliberate repetition.
+            logger.info("Refreshing repeated older bot reply mode=%s", mode.value)
+            fresh_request: ResponseCreateParamsNonStreaming = {
+                **request,
+                "instructions": instructions + _FRESH_REPLY_GUIDANCE,
+                "prompt_cache_key": _PROMPT_CACHE_KEY + "-fresh",
+            }
+            try:
+                fresh = await self._generate(
+                    input_bound=input_bound + len(_FRESH_REPLY_GUIDANCE.encode("utf-8")),
+                    output_bound=output_bound,
+                    mode=mode,
+                    request=fresh_request,
+                    retry_limit=0,
+                )
+            except (APIError, BudgetError):
+                # Fresh wording is optional. The first draft is already accounted;
+                # failure must not turn a usable answer into an error or another call.
+                logger.warning("Optional repeated-reply refresh unavailable; keeping draft")
+            else:
+                candidate = normalize_reply(fresh.output_text)
+                if getattr(fresh, "status", "completed") != "completed" or not candidate:
+                    logger.warning("Optional repeated-reply refresh incomplete; keeping draft")
+                elif mode is ReplyMode.FOLLOW_UP and candidate.casefold() == _NO_REPLY.casefold():
+                    logger.info("Trubot declined refreshed follow-up candidate")
+                    return None
+                else:
+                    reply = candidate
         logger.info("Generated Trubot response mode=%s characters=%d", mode.value, len(reply))
         return reply
 
@@ -279,6 +324,30 @@ class OpenAITruaxResponder:
 
     async def close(self) -> None:
         await self._client.close()
+
+
+def _stale_bot_echo(
+    reply: str, messages: Sequence[ConversationMessage], target: str | None
+) -> bool:
+    """Recognize a long exact older echo, not proof that a reply is funny or true."""
+    if (
+        not target
+        or len(reply) < 24
+        or _REUSE_REQUEST.search(target)
+        or any(message.origin == "reference" for message in messages)
+    ):
+        return False
+    previous = [
+        normalize_reply(message.content)
+        for message in messages
+        if message.role == "assistant" and message.origin == "conversation"
+    ]
+    key = " ".join(reply.casefold().split())
+    return (
+        len(previous) > 1
+        and key != " ".join(previous[-1].casefold().split())
+        and any(key == " ".join(old.casefold().split()) for old in previous[:-1])
+    )
 
 
 def _message_input(message: ConversationMessage) -> EasyInputMessageParam:
