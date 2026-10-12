@@ -29,9 +29,9 @@ def add(archive, body, index=0, period_hint=None):
 
 
 def test_catalog_alone_never_provides_evidence_and_missing_state_is_optional(archive):
-    assert voice_context(archive.learning, "hello", guild_id=77) == ""
+    assert voice_context(archive.learning, "setup", guild_id=77) == ""
     archive.path.unlink()
-    assert voice_context(archive.learning, "hello", guild_id=77) == ""
+    assert voice_context(archive.learning, "setup", guild_id=77) == ""
 
 
 def test_both_roles_must_match_current_sources_with_provenance_and_corrections(archive):
@@ -96,9 +96,9 @@ def test_examples_are_bounded_deduplicated_and_relevance_ranked(archive):
     with patch("trubot.voice_memory.STYLE_EXAMPLES", tuple(catalog)):
         result = voice_context(archive.learning, "garden", guild_id=77)
         data = json.loads(result.split("\n", 1)[1])
-        assert len(data) == 3
+        assert len(data) == 1
         assert "garden" in data[0]["preceding_peer_context_only"]
-        assert len({x["andrew_authored_words"] for x in data}) == 3
+        assert len({x["andrew_authored_words"] for x in data}) == 1
         assert len(result) < 10_000
 
 
@@ -112,7 +112,7 @@ def test_nearby_examples_do_not_duplicate_a_conversation(archive):
         "trubot.voice_memory.STYLE_EXAMPLES",
         (StyleExample("Setup zero", "Response zero"), StyleExample("Setup one", "Response one")),
     ):
-        result = voice_context(archive.learning, "hello", guild_id=77)
+        result = voice_context(archive.learning, "setup", guild_id=77)
         assert len(json.loads(result.split("\n", 1)[1])) == 1
 
 
@@ -145,7 +145,7 @@ async def test_source_checked_voice_reaches_handlers_without_becoming_learning(a
 
     channel.history = empty_history
     message = fake_message(channel)
-    message.content = message.clean_content = "🤖 hello there"
+    message.content = message.clean_content = "🤖 How is your garden?"
     channel.fetch_message.return_value = message
     client._attention.activate(10, NOW)
     with (
@@ -167,7 +167,7 @@ async def test_source_checked_voice_reaches_handlers_without_becoming_learning(a
             )
         else:
             if mode == "followup":
-                message.content = message.clean_content = "hello there"
+                message.content = message.clean_content = "How is your garden?"
             await client.on_message(message)
         assert len(responder.calls) == 1
         context = responder.calls[0][0][0].content

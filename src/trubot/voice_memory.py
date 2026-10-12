@@ -9,11 +9,32 @@ from typing import Any
 
 from trubot.archives import ArchiveStore
 from trubot.learning import LearningStore, LearningUnavailable
+from trubot.lexical import words
 from trubot.memory import quotation_key, score, terms, years
 from trubot.personality import STYLE_EXAMPLES
 
 MAX_EXAMPLES = 3
 MAX_EXAMPLE_CHARS = 1_200
+# Generic framing cannot make an old setup relevant to the current exchange.
+_CONTEXT_WORDS = frozenset(
+    {
+        "banter",
+        "casual",
+        "context",
+        "example",
+        "fictional",
+        "friend",
+        "humor",
+        "joke",
+        "joking",
+        "league",
+        "message",
+        "question",
+        "reply",
+        "response",
+        "style",
+    }
+)
 
 
 def voice_context(learning: LearningStore, query: str, *, guild_id: int) -> str:
@@ -26,6 +47,9 @@ def voice_context(learning: LearningStore, query: str, *, guild_id: int) -> str:
     with learning._transaction() as db:
         if learning._read_identity(db).guild_id != guild_id:
             return ""
+    # Topic expansion helps factual recall but would admit unrelated punchlines.
+    # Use only literal, distinctive query words for contextual example admission.
+    query_terms = (terms(query[:8000]) & set(words(query[:8000]))) - _CONTEXT_WORDS
     query_years = years(query[:8000])
     examples: list[dict[str, Any]] = []
     with suppress(LearningUnavailable), archive._transaction() as db:
@@ -79,7 +103,7 @@ def voice_context(learning: LearningStore, query: str, *, guild_id: int) -> str:
                     ),
                     None,
                 )
-                if setup is None:
+                if setup is None or not score(setup["content"], query_terms):
                     continue
                 seen_text.add(authored)
                 examples.append(
@@ -103,12 +127,9 @@ def voice_context(learning: LearningStore, query: str, *, guild_id: int) -> str:
                 break
     with learning._transaction() as db:
         learning._read_identity(db)
-    query_terms = terms(query[:8000])
     examples.sort(
         key=lambda item: (
-            -score(
-                item["preceding_peer_context_only"] + item["andrew_authored_words"], query_terms
-            ),
+            -score(item["preceding_peer_context_only"], query_terms),
             hashlib.sha256((query[:8000] + str(item["source"])).encode()).hexdigest(),
         )
     )

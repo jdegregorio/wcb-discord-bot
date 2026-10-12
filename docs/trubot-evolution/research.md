@@ -1848,3 +1848,15 @@ classified. No actual original-pixel interpretation, filename-derived dates or h
 research-provider payload. All research is offline; real gateway calls use the existing
 runtime ledger. Raw source renderings and both ephemeral manifests are erased at cleanup.
 See the release JSON for identifiers, failed criteria, continuity, costs and limits.
+
+## 2026-10-12 05:00 - H45 selective source examples
+
+2026-10-12 05:00 selection: H45 selective source-example admission, splitting
+H44 around the reproduced unconditional-example boundary. Keep only current voice
+pairs with distinctive literal setup relevance, no answer-only or broad-topic filler.
+So that unrelated raw punchlines do not seed replies. No new trait, source intake,
+model, recurring request or service. Both phases, locked criteria, evidence and
+operating impact: docs/trubot-evolution/evaluations/2026-10-12-selective-voice-study.md.
+Next: H44 natural abstract projection, independently reviewed H21/H28 population,
+H22/H39 variation, native/visual coverage, selective skills/tools and generated
+U.P. aurora/trail-camera scenes. Existing privacy/withdrawal and USD18/2/20 apply.

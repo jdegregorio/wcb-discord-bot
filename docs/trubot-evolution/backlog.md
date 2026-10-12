@@ -1,5 +1,16 @@
 # Prioritized backlog
 
+2026-10-12 05:00 selection: H45 selective source-example admission, splitting
+H44 around the reproduced unconditional-example boundary. Keep only current voice
+pairs with distinctive literal setup relevance, no answer-only or broad-topic filler.
+So that unrelated raw punchlines do not seed replies. No new trait, source intake,
+model, recurring request or service. Both phases, locked criteria, evidence and
+operating impact: docs/trubot-evolution/evaluations/2026-10-12-selective-voice-study.md.
+Next: H44 natural abstract projection, independently reviewed H21/H28 population,
+H22/H39 variation, native/visual coverage, selective skills/tools and generated
+U.P. aurora/trail-camera scenes. Existing privacy/withdrawal and USD18/2/20 apply.
+
+
 2026-10-12 01:00 verified: H40 atomic reviewed imports and H41 abstraction-first
 presentation are deployed in 2.18.0 (PR #82). All six gates, 781 tests, 96.84%
 coverage, required CI, both images and 28 installed source hashes pass. Actual
