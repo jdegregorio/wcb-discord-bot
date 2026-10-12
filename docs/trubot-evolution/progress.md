@@ -2896,3 +2896,43 @@ after merge. Primary and earlier worktrees remain untouched.
 ### H47 completion patch selected
 
 Evidence PR #87 merged 31f2409fd350a2f4d40591eb68542e87753ab9b2; required CI38278547201 and final-main CI38278806014 pass. Final review then finds an ordinary response wording bypass in the legacy classifier. Actual 2.19.0 probe admits audit/raw voice/source quotation, despite already delivering a relevant novel answer. Six new regressions fail baseline; three literal controls pass. Same run/worktree and increment: bounded modal/current-response routing closes this gap, preserving explicit source lookup. All six local gates pass, 808 tests and 96.86% coverage. New immutable patch 2.19.1 and installed actual acceptance pending; earlier 11/14 behavioral negatives remain authoritative.
+
+### H47b final immutable rollout
+
+[PR #88](https://github.com/jdegregorio/wcb-discord-bot/pull/88) merged
+ddad4233a3a0b0ee293bb8f25c178fca959033f5, identical tested tree. Required PR
+CI 38279728710/main CI 38279889685 and all merged gates pass: 808 tests,
+96.86% coverage. Immutable [v2.19.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.19.1)
+built both architectures in 38280069441. Reverified pi5/aarch64/Ubuntu 24.04.4,
+deployed through locked pi-app; running sha256:053c84521d67a3b34e9f658612f2c6b6bfd54ca3021ae61da6d97672c048b696, matching OCI/package/28
+source hashes and readiness. Previous 2.19.0/541d19ce retained. At 2026-10-12T17:04:20.484274+00:00:
+zero restarts, errors, failures, disconnects or source/study pauses; two optional
+voice warnings, zero others, four gateway posts, one decline, 12 learning batches.
+No rollback.
+
+Actual ordinary/past-word packet and lifecycle checks pass 2/2, behavioral 2/2;
+five fresh gateway controls pass 5/5, completion 7/7. Cumulative installed packets
+5/5 and behavior 18/21 across versions. Initial attribution and two brevity failures
+remain open. Same Codex evaluator; no genuine human population hold-out benchmark,
+active human pattern or broad fidelity gain. Additional baseline already supplied
+a relevant novel turn despite its packet bypass. Actual fixture sends and five
+normal refs authenticated privately, zero intake, no second gateway, heartbeat
+healthy after close. Raw source/reply renderings erased. Fresh league audit:
+three channels/latest 100/14 days, seven target/15 peer/five older bot/zero current.
+Native 34/archive 16/graph 439 sources, 554 episodes, 1,015 edges unchanged;
+two claims, one preference, zero patterns. Failed prototype stays retired.
+
+Final tracked October USD 0.171527435, runtime 0.081063620,
+maintenance 0.090463815; 1158 settled/zero unsettled.
+Full run USD 0.009956075 across 52 attempts:
+runtime 0.005784505, maintenance 0.004171570.
+Includes 24 research calls, eight controlled maintenance probes, two existing
+autonomous studies and 18 runtime attempts including optional repeat recovery.
+Same USD18/2/20 caps, no fresh ledger/service/recurring request; billing/pre-guard
+spend unknown.
+
+[Completion evidence](evaluations/2026-10-12-abstract-projection-completion.json)
+preserves final identifiers and all limits alongside the initial release record.
+Evidence PR/final main CI and owned cleanup/archive are recorded in automation
+memory after merge. One coherent increment completed under two immutable releases;
+no restored human trait or unrelated runtime change.

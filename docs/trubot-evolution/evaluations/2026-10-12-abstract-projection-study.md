@@ -145,3 +145,11 @@ probe demonstrates a packet defect, not a measured behavioral failure. Disposabl
 counterexample removal and withdrawal pass, zero intake and primary heartbeat
 healthy after close. New modal/current-response routing preserves explicit quote,
 evidence and did-you-say overrides. Candidate and installed completion remain pending.
+
+H47b is deployed as immutable 2.19.1: all 808 tests, 96.86% coverage, required
+PR/main CI, both images and 28 installed hashes pass. Actual ordinary/past-word
+packets and disposable lifecycle checks pass 2/2; relevant fresh wording and exact
+natural support pass. Five fresh gateway controls pass, including one abstention.
+Completion 7/7; cumulative packet/lifecycle 5/5 and behavior 18/21. Initial
+source-person and two brevity failures remain open. No new human pattern or general
+fidelity claim. Final identifiers/costs/limits: abstract-projection-completion.json.

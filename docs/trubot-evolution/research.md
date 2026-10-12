@@ -1908,3 +1908,13 @@ smoke results. Eight human windows are audit evidence, not a population hold-out
 benchmark. Full counts, costs, negatives and identifiers are in release.json.
 
 H47b completion: final review and an actual current-release probe expose an ordinary what-would-you-say packet bypass. Six focused regressions fail before the bounded routing correction and pass afterward; quote/evidence/did-you-say controls pass. The baseline reply already gives relevant novel wording, so packet conformance remains distinct from measured behavioral gain. Same increment, no human pattern/schema/model change. Full gates 808 tests, 96.86%; immutable 2.19.1 and installed acceptance pending.
+
+### H47b installed completion
+
+Six ordinary response regressions corrected; literal overrides retained. Actual
+ordinary packet omits audit/raw voice and gives fresh relevant wording; the past-word
+request naturally returns exact support. Lifecycle and five fresh gateway controls
+pass. Completion 7/7; cumulative installed packets 5/5 and behavior 18/21 across
+versions. Keep the initial three failures open. This is reader conformance, not
+new human memory or broad quality gain. The additional baseline already replied
+with a relevant novel turn. Gates/CI/images/source hashes pass in 2.19.1.

@@ -1,0 +1,179 @@
+{
+  "run": "2026-10-12-0900",
+  "same_increment": "H47/H47b completion",
+  "initial_evidence": "2026-10-12-abstract-projection-release.json",
+  "initial_runtime_pr": 86,
+  "initial_evidence_pr": 87,
+  "completion_runtime_pr": 88,
+  "runtime_sha": "ddad4233a3a0b0ee293bb8f25c178fca959033f5",
+  "version": "2.19.1",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.19.1",
+  "production": {
+    "time": "2026-10-12T17:04:20.484274+00:00",
+    "digest": "sha256:053c84521d67a3b34e9f658612f2c6b6bfd54ca3021ae61da6d97672c048b696",
+    "revision": "ddad4233a3a0b0ee293bb8f25c178fca959033f5",
+    "started": "2026-10-12T16:52:42.595652338Z",
+    "restarts": 0,
+    "health": "healthy",
+    "errors": 0,
+    "reply_failures": 0,
+    "disconnects": 0,
+    "memory_warnings": 0,
+    "learning_pauses": 0,
+    "study_pauses": 0,
+    "optional_voice_warnings": 2,
+    "other_warnings": 0,
+    "gateway_posts": 4,
+    "gateway_declines": 1,
+    "learning_batches": 12,
+    "raw_logs_retained": false
+  },
+  "installed": {
+    "source_hashes_match": true,
+    "modules": 28,
+    "readiness": true
+  },
+  "gates": {
+    "all_six_pass": true,
+    "tests": 808,
+    "coverage_percent": 96.86,
+    "pr_ci": 38279728710,
+    "main_ci": 38279889685,
+    "image_ci": 38280069441,
+    "merged_tree_matches_tested": true
+  },
+  "baseline": {
+    "six_reader_failures": 6,
+    "literal_controls_pass": 3,
+    "actual_packet_bypass_reproduced": true,
+    "actual_reply_already_relevant_and_novel": true,
+    "new_reply_quality_gain_claimed": false
+  },
+  "actual": {
+    "changed_packets_pass": 2,
+    "changed_packet_cases": 2,
+    "disposable_lifecycle_pass": 2,
+    "disposable_lifecycle_cases": 2,
+    "controlled_behavior_pass": 2,
+    "controlled_behavior_cases": 2,
+    "fresh_gateway_pass": 5,
+    "fresh_gateway_cases": 5,
+    "answers": 4,
+    "abstentions": 1,
+    "completion_behavior_pass": 7,
+    "completion_behavior_cases": 7,
+    "cumulative_installed_packets_pass": 5,
+    "cumulative_installed_packet_cases": 5,
+    "cumulative_behavior_pass": 18,
+    "cumulative_behavior_cases": 21,
+    "initial_11_of_14_negatives_retained": [
+      "broad historical source-person attribution",
+      "ordinary enthusiasm three sentences",
+      "explicit evidence three sentences"
+    ],
+    "full_general_behavior_acceptance": false,
+    "all_refs_authenticated_privately": true,
+    "development_learning_records": 0,
+    "second_gateway_started": false,
+    "primary_heartbeat_healthy_after_close": true,
+    "raw_answer_artifacts_retained": false
+  },
+  "audit": {
+    "channels": 3,
+    "latest_per_channel": 100,
+    "days": 14,
+    "target": 7,
+    "peers": 15,
+    "older_bot": 5,
+    "current_spontaneous_bot": 0
+  },
+  "continuity": {
+    "learning": {
+      "schema": 1,
+      "retention_days": 180,
+      "max_messages": 10000,
+      "messages": 34,
+      "pending_corrections": 0,
+      "deletion_markers": 0,
+      "channels": 4,
+      "identity": "privately verified and pinned"
+    },
+    "archives": {
+      "visual_episodes": 115,
+      "image_assets": 96,
+      "image_bytes": 62571650,
+      "schema": 1,
+      "documents": 16,
+      "origins": 27,
+      "blocks": 4299,
+      "target_blocks": 412,
+      "voice_eligible_blocks": 405,
+      "suppressed_documents": 0
+    },
+    "graph": {
+      "schema": 1,
+      "nodes": {
+        "captured_human": 11,
+        "claim": 2,
+        "concept": 3,
+        "episode": 554,
+        "human_source": 439,
+        "person": 1,
+        "preference": 1,
+        "visual": 96
+      },
+      "edges": 1015,
+      "studies": {
+        "accepted": 1,
+        "rejected": 2
+      },
+      "study_vetoes": 0,
+      "checkpoints": 6
+    },
+    "real_withdrawal": false,
+    "new_human_patterns": 0,
+    "failed_pattern_restored": false
+  },
+  "cost": {
+    "month": "2026-10",
+    "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+    "timezone": "UTC",
+    "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+    "estimated_usd": 0.171527435,
+    "runtime_usd": 0.08106362,
+    "maintenance_usd": 0.090463815,
+    "monthly_limit_usd": 20,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "attempts": 1158,
+    "input_tokens": 3143485,
+    "cached_input_tokens": 2103506,
+    "output_tokens": 40990,
+    "unsettled_attempts": 0,
+    "pre_guard_spend": "unknown; not included",
+    "full_run_delta_usd": 0.009956075,
+    "full_run_runtime_usd": 0.005784505,
+    "full_run_maintenance_usd": 0.00417157,
+    "full_run_attempts": 52,
+    "research_requests": 24,
+    "controlled_maintenance_requests": 8,
+    "preexisting_autonomous_maintenance_requests": 2,
+    "runtime_requests_including_optional_recovery": 18,
+    "added_recurring_requests": 0,
+    "added_services": 0,
+    "billing_verified": false
+  },
+  "rollback": {
+    "required": false,
+    "previous_version": "2.19.0",
+    "previous_digest": "sha256:541d19cea9d3f41a3828dfecfdf90388ff9f372e45d1364a0eb9e0815627a0a6"
+  },
+  "limitations": [
+    "invented graph conformance is not human abstraction fidelity",
+    "same Codex evaluator, no independent human review or genuine human population hold-out benchmark",
+    "initial attribution and brevity failures remain open",
+    "zero active human abstractions; native/visual/harness/generated sharing hypotheses unresolved",
+    "billing and pre-guard spend unknown"
+  ],
+  "private_evidence": "existing app volume 0700/0600, content-free refs/counts/public and synthetic helpers; manual seven-day and withdrawal cleanup"
+}

@@ -841,3 +841,8 @@ authoritative. This does not populate a new human abstraction. Run evidence keep
 content-free private refs/counts, synthetic fixtures and public helpers on the
 existing app volume under 0700/0600 with the existing manual seven-day/withdrawal
 cleanup. Human/reply renderings and candidate overrides are erased.
+
+2.19.1 completes ordinary would/could/should/current-response wording without a
+storage migration. Explicit quote/evidence/past-word support stays available. The
+same marker, invalidation, backup, expiry and private evidence retention apply.
+No new human abstraction is populated.
