@@ -2936,3 +2936,12 @@ preserves final identifiers and all limits alongside the initial release record.
 Evidence PR/final main CI and owned cleanup/archive are recorded in automation
 memory after merge. One coherent increment completed under two immutable releases;
 no restored human trait or unrelated runtime change.
+
+Final operator privacy audit found local staging inherited mode 0755. Raw PNGs
+and transfer archives were already erased; their transfer-file permissions were
+not independently verified before deletion. Staging is now 0700, and persistent
+app-volume evidence permissions pass 0700/0600. No raw artifacts remain. Do not
+claim historical transfer privacy was fully verified or infer unauthorized access.
+Future collection must create 0700 staging and 0600 transfer files before writing
+human material. This operator gap does not change the healthy runtime or require
+a version rollback; it is retained as a validation limitation.

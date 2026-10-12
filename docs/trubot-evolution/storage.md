@@ -846,3 +846,8 @@ cleanup. Human/reply renderings and candidate overrides are erased.
 storage migration. Explicit quote/evidence/past-word support stays available. The
 same marker, invalidation, backup, expiry and private evidence retention apply.
 No new human abstraction is populated.
+
+For development evidence transfers, create the local staging directory with mode
+0700 and transfer files with mode 0600 before collecting human material. Do not
+inherit the workstation's default umask. Verify these modes before rendering or
+transport, then erase temporary raw images/archives after review.

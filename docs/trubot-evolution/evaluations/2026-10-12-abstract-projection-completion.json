@@ -173,7 +173,16 @@
     "same Codex evaluator, no independent human review or genuine human population hold-out benchmark",
     "initial attribution and brevity failures remain open",
     "zero active human abstractions; native/visual/harness/generated sharing hypotheses unresolved",
-    "billing and pre-guard spend unknown"
+    "billing and pre-guard spend unknown",
+    "Temporary local transfer permissions were not independently verified before raw archive erasure; require 0700 staging and 0600 transfers before future source collection"
   ],
-  "private_evidence": "existing app volume 0700/0600, content-free refs/counts/public and synthetic helpers; manual seven-day and withdrawal cleanup"
+  "private_evidence": "existing app volume 0700/0600, content-free refs/counts/public and synthetic helpers; manual seven-day and withdrawal cleanup",
+  "temporary_transfer_privacy": {
+    "local_staging_directory_initial_mode": "0755",
+    "raw_transfer_archive_permissions_verified_before_erasure": false,
+    "raw_images_and_archives_remaining": 0,
+    "staging_directory_corrected_to": "0700",
+    "persistent_app_evidence_permissions_verified": true,
+    "unauthorized_access_assessed": false
+  }
 }
