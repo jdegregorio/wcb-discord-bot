@@ -121,3 +121,27 @@ active. Fresh post-audit: seven target/15 peer/five older bot, zero current
 spontaneous activity. Actual refs reauthenticated privately, no raw answers retained.
 Final identifiers, source continuity, health, ledger and limitations are in the
 release JSON; next H48/H21/H28 population with H6 controls, then H22/H39 variation.
+
+## Completion hypothesis H47b: ordinary response wording
+
+Final review finds the legacy bare say/said classifier still routes ordinary
+response questions through raw support. The live 2.19.0 reproduction is pending
+at selection; source fixtures independently expose the predicate. Same increment,
+no new trait or schema. So that ordinary questions about what to say can use
+conditional concepts just like questions about an approach.
+
+Criteria locked before candidate results: would/could/should/current-response
+questions, including hypothetical said clauses, use conditional guidance without
+audit or raw voice. Explicit quotes/evidence and actual did-you-say lookups keep
+source support. Dates, source scope/lifecycle and factual supports remain intact.
+Run the same actual owner wording before/after, all gates, installed source/evidence
+control and normal gateway care/recipient checks. A routing correction alone does
+not prove broad humor or human fidelity. Preserve the earlier 11/14 negatives.
+
+H47b baseline reproduced: six reader regressions fail and three literal controls
+pass. Actual current-release owner probe admits audit/raw voice/source quotation
+for the ordinary modal question. It already gives a relevant novel reply, so this
+probe demonstrates a packet defect, not a measured behavioral failure. Disposable
+counterexample removal and withdrawal pass, zero intake and primary heartbeat
+healthy after close. New modal/current-response routing preserves explicit quote,
+evidence and did-you-say overrides. Candidate and installed completion remain pending.

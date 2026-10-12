@@ -270,6 +270,25 @@ def recall_presentation(request: str) -> RecallPresentation:
     return RecallPresentation.CONTENT
 
 
+def _abstract_guidance_request(request: str, quotation: str) -> bool:
+    """Fresh response questions are different from requests for authored words."""
+    text = request[:8000].casefold()
+    if quotation or recall_presentation(text) is RecallPresentation.EVIDENCE:
+        return False
+    if re.search(r"\b(?:quote|quotation)\b", text):
+        return False
+    # Explicit past-word lookup wins even inside a polite modal request.
+    if re.search(r"\b(?:did|used to)\b[\s\S]{0,80}\bsay\b", text):
+        return False
+    if re.search(
+        r"\b(?:would|could|should|might|will|do)\b[\s\S]{0,80}\b(?:say|said)\b"
+        r"|\bwhat to say\b",
+        text,
+    ):
+        return True
+    return not re.search(r"\b(?:said|example|examples)\b", text)
+
+
 def _presentation_guidance(presentation: RecallPresentation) -> str:
     common = (
         "Source fields and graph provenance are internal grounding metadata. "
@@ -583,10 +602,7 @@ class ContextMemory:
         for item in evidence:
             if any(all(item["source"].get(k) == v for k, v in ref.items()) for ref in counter_refs):
                 item["counterexample_to_pattern"] = True
-        guidance = recall_presentation(request) is not RecallPresentation.EVIDENCE and not (
-            quotation
-            or re.search(r"\b(?:quote|quotation|said|say|example|examples)\b", request.casefold())
-        )
+        guidance = _abstract_guidance_request(request, quotation)
         abstracts = abstract_context(observations, include_audit=not guidance)
         if abstracts and guidance:
             pattern_refs = [

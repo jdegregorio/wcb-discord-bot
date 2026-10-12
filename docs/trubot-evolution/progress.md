@@ -2892,3 +2892,7 @@ metrics and public helpers/invented fixtures use 0700/0600, existing manual seve
 retention/withdrawal. Raw human/reply renderings and candidate overrides erased.
 Final evidence PR, main CI and owned-worktree archive recorded in automation memory
 after merge. Primary and earlier worktrees remain untouched.
+
+### H47 completion patch selected
+
+Evidence PR #87 merged 31f2409fd350a2f4d40591eb68542e87753ab9b2; required CI38278547201 and final-main CI38278806014 pass. Final review then finds an ordinary response wording bypass in the legacy classifier. Actual 2.19.0 probe admits audit/raw voice/source quotation, despite already delivering a relevant novel answer. Six new regressions fail baseline; three literal controls pass. Same run/worktree and increment: bounded modal/current-response routing closes this gap, preserving explicit source lookup. All six local gates pass, 808 tests and 96.86% coverage. New immutable patch 2.19.1 and installed actual acceptance pending; earlier 11/14 behavioral negatives remain authoritative.

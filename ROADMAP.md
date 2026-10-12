@@ -1,5 +1,16 @@
 # Trubot roadmap
 
+2026-10-12 09:00 completion: H47b closes the legacy bare say/said bypass for
+ordinary response wording. Six baseline failures become passes; literal quote,
+evidence and actual did-you-say controls retain support. Real 2.19.0 owner probe
+reproduces packet admission, while its reply already supplies a relevant novel turn.
+No behavioral gain claimed for that one baseline. All six 2.19.1 local gates pass,
+808 tests / 96.86% coverage. Patch release/installed acceptance pending. This
+completes the same H47 increment; H48 population and the ordered roadmap below stay
+next. No new trait, schema, model, service or recurring call. Evidence and criteria:
+docs/trubot-evolution/evaluations/2026-10-12-abstract-projection-study.md.
+
+
 2026-10-12 09:00 verified: H47 is deployed in 2.19.0 (PR #86). Ordinary
 conditional guidance uses a typed packet that omits review-process prose/counts
 and competing raw voice examples. Evidence/quote support, dates, status, conditions,

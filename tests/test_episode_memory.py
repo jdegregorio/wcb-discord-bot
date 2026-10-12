@@ -444,3 +444,46 @@ def test_empty_or_invalidated_pattern_does_not_disable_source_voice(stores):
     assert packet.allow_voice_examples
     assert "ABSTRACT EPISODE MEMORY" not in packet.text
     assert memory.render_packet([], now=NOW).allow_voice_examples
+
+
+@pytest.mark.parametrize(
+    "question",
+    [
+        "What would you say for playful roster brainstorming?",
+        "What could you say for playful roster brainstorming?",
+        "What should you say for playful roster brainstorming?",
+        "What do you say during playful roster brainstorming?",
+        "What would you have said during playful roster brainstorming?",
+        "What would you say during roster brainstorming if a friend said they were struggling?",
+    ],
+)
+def test_new_response_questions_use_conditional_guidance(stores, question):
+    learning, _, _ = seed_pattern(stores)
+    memory = ContextMemory(learning)
+    packet = memory.render_packet(
+        memory.candidates(question, guild_id=77, now=NOW), request=question, now=NOW
+    )
+    assert "ABSTRACT EPISODE MEMORY" in packet.text
+    assert not packet.allow_voice_examples
+    assert "confidence_basis" not in packet.text
+    assert "pastry chef" not in packet.text and "croissant" not in packet.text
+    assert "Serious votes need sincere answers" in packet.text
+
+
+@pytest.mark.parametrize(
+    "question",
+    [
+        "What did you say during roster brainstorming?",
+        "Could you quote roster brainstorming?",
+        "Show evidence for what you would say during roster brainstorming.",
+    ],
+)
+def test_response_wording_does_not_override_explicit_source_requests(stores, question):
+    learning, _, _ = seed_pattern(stores)
+    memory = ContextMemory(learning)
+    packet = memory.render_packet(
+        memory.candidates(question, guild_id=77, now=NOW), request=question, now=NOW
+    )
+    assert packet.allow_voice_examples
+    assert "confidence_basis" in packet.text
+    assert "pastry chef" in packet.text and "croissant" in packet.text
