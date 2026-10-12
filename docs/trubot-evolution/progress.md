@@ -2547,3 +2547,34 @@ H33 automatic diversity exploratory; H21/H28 human quality unresolved. Next:
 validated abstract population with ownership/sincere and independent held-out
 controls, separate H22 humor work, native/visual coverage, selective skills/tools
 and generated outdoor scenes. Schedule/model/reasoning/notifications unchanged.
+
+## 2026-10-11 17:00 - release the reconciled comic repair
+
+Initial base 8769e75; network-reverified base 867896a includes already-merged #74.
+Fresh managed worktree and feature/trubot-daily-20261011-1700, primary unchanged.
+Both planning phases select H34 completion instead of overlapping #74 or adding
+unmeasured schema. Five attributed archive windows/five exports/20 neighbors are
+privately inspected with current source refs; five older league bot windows are
+reviewed, no fresh spontaneous current-release replies. Three league channels,
+latest 100/14 days: seven target, 17 peers, five older bot. No new human abstraction.
+Private provider holdout rejected before execution; no retry or quality claim.
+
+Fresh 48-request synthetic comparison uses the existing maintenance ledger, same
+model/handler/settings and every retained sample. Comic turns improve 7/12 to
+11/12 by agent rubric review; all clear controls pass 10/10 per arm. An ambiguous
+literal-language case fails expected idiom 2/2 baseline and 1/2 candidate; its
+clarified follow-up passes both 2/2. Preserve failures, repeated metaphor and
+subjective-grading limits. This does not measure two-to-three-fold humor or overall
+human fidelity. Real baseline owner gateway reproduces declined follow-up,
+uncertain direct answer and flat TJ acknowledgment. Source attribution remains
+an explicit release control. Results: evaluations/2026-10-11-humor-release-study.md
+and 2026-10-11-humor-release/. Maintenance delta USD 0.003033155, no unsettled
+attempts; ledger limits 18/2/20 and participation unchanged. Earlier #74 local
+research cost USD 0.01433521 was outside this app ledger; total provider billing
+and pre-guard spending remain unverified.
+
+Version 2.17.0 publishes the reconciled runtime change; all six local gates pass,
+724 tests and 96.81% branch-inclusive coverage. PR/main CI, immutable images,
+installed source hashes, actual candidate Discord and deployment remain pending.
+Next: validated H35 abstract population, humor variation, native/visual episodes,
+selective tools/skills and guarded generated outdoor scenes.

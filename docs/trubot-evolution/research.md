@@ -1726,3 +1726,12 @@ hypothesis supported, extraction-quality hypothesis unresolved, H33 exploratory.
 The ledger and withdrawal/source scope are unchanged. No new recurring service
 or default sampling/prompt/model/participation change. Broader attribution failure
 and follow-up ambiguity remain explicit controls for future H21/H22 experiments.
+
+
+## 2026-10-11 17:00 - H34 comic performance release
+
+Both phases, alternative H35/H36 hypotheses, preregistered fresh-case criteria,
+contrary controls and operating impact are recorded in
+[evaluation study](evaluations/2026-10-11-humor-release-study.md).
+H34 reconciles merged #74, currently unreleased. Human abstraction population
+remains unvalidated; no new trait or objectively multiplied humor claim.
