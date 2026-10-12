@@ -1735,3 +1735,12 @@ contrary controls and operating impact are recorded in
 [evaluation study](evaluations/2026-10-11-humor-release-study.md).
 H34 reconciles merged #74, currently unreleased. Human abstraction population
 remains unvalidated; no new trait or objectively multiplied humor claim.
+
+
+## 2026-10-11 21:00 - H38 bounded repetition recovery
+
+Both planning phases are in
+[evaluations/2026-10-11-repetition-study.md](evaluations/2026-10-11-repetition-study.md).
+Prior failed2.17.0 is reconciled without modifying the preceding worktree.
+H38 selected; H37 rejected,H39/H35 unvalidated. Provider/actual Discord results
+are separate from conformance, source audit and health.

@@ -2578,3 +2578,25 @@ Version 2.17.0 publishes the reconciled runtime change; all six local gates pass
 installed source hashes, actual candidate Discord and deployment remain pending.
 Next: validated H35 abstract population, humor variation, native/visual episodes,
 selective tools/skills and guarded generated outdoor scenes.
+
+
+## 2026-10-11 21:00 - bounded stale reply recovery, release pending
+
+Base 597bfccd88136bd4993b07686fef9ad85c3cf5f2; new managed worktree
+trubot-daily-20261011-2100 and feature/trubot-daily-20261011-2100.
+Primary checkout/earlier worktrees untouched. Previous failed 2.17.0 remains
+prerelease, production is healthy 2.16.1. Unfinished H38 repair reconciled here;
+prior uncommitted draft is preserved. No role relabeling, new trait or schema.
+Both phases, human/bot audit coverage, preregistered criteria and limits are in
+[evaluations/2026-10-11-repetition-study.md](evaluations/2026-10-11-repetition-study.md).
+
+All six local gates: 752 tests, 96.84% coverage, 28 typed modules, 2.17.1 packages.
+Four pre-fix synthetic failures become 28 passing conformance cases. Eight
+forced-old-draft candidate provider trials pass semantic review; four matched
+recipient/literal handler controls pass in each arm. Sixteen total paid research
+calls use the existing maintenance ledger. No human-provider export or general
+humor/fidelity claim. Actual baseline two replies reproduce flat comic behavior;
+changed installed/real Discord candidate checks remain pending release.
+
+Public release identifiers, digest, health, costs, all actual acceptance outcomes
+and limitations will be recorded after rollout. No completion is claimed here.
