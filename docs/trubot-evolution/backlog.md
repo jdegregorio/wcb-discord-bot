@@ -1,5 +1,37 @@
 # Prioritized backlog
 
+2026-10-12 09:00 verified: H47 is deployed in 2.19.0 (PR #86). Ordinary
+conditional guidance uses a typed packet that omits review-process prose/counts
+and competing raw voice examples. Evidence/quote support, dates, status, conditions,
+limitations, expiry, attribution, withdrawal and spending remain authoritative.
+All six gates, 799 tests, 96.85% coverage, required CI, both architectures and 28
+installed hashes pass. Actual changed packet/lifecycle checks are 3/3; normal
+gateway is 9/11 and combined behavioral review 11/14. Retain broad source-person
+attribution and two three-sentence replies as failures. No broad fidelity claim.
+
+Next ordered increments:
+1. H48/H21/H28 qualified conditional human population and continuous learning,
+   with H6 author controls. H47 presentation prerequisites are verified; zero human
+   abstractions remain active and the failed pattern stays retired. So that useful
+   concepts can generalize across new exchanges. Require separated attributed
+   supports, contrary cases, genuine human held-outs, correction/withdrawal and actual
+   natural delivery before population. Confidence unresolved; existing graph/volume
+   and USD2 maintenance allowance, no new service by default.
+2. H22/H39 variation and brevity, alongside existing H6 broad-history attribution.
+   So that replies stay sharp, warm and assigned to the right person. Validate matched
+   novel/sincere/owner cases and fresh gateway conversations. Same-agent evaluation
+   and sparse league activity limit confidence; preserve low-cost bounded runtime.
+3. Full native peer/reply/thread and original pixels; bounded selective skills/tools;
+   generated U.P. aurora/trail-camera scenes with natural captions and generated
+   provenance. Exploratory contribution remains unvalidated. Each needs coverage,
+   source lifecycle, cost reservations and real delivery within USD18/2/20.
+
+Evidence: docs/trubot-evolution/evaluations/2026-10-12-abstract-projection-release.json.
+Stronger contrary or held-out quality evidence changes priorities. No further schema
+categories substitute for human quality. Six daily runs, Sol/xhigh, notification,
+source scope, participation and existing monthly guard remain unchanged.
+
+
 2026-10-12 09:00 selection: H47 purpose-specific abstract projection. Ordinary
 conditional guidance omits review-process prose/counts and competing raw voice
 examples; explicit evidence/quotes keep support. Author scope, status, conditions,

@@ -107,3 +107,17 @@ conditional guidance is present, audit/voice/source quotation absent, and a fres
 short response uses the abstract mechanism. Matched baseline copied its source
 punchline. Both disposable lifecycle checks pass; zero intake and healthy primary
 readiness after close. This uses an invented graph, not newly validated human memory.
+
+## Installed release outcome
+
+2.19.0 is healthy on the tested immutable revision; 28 installed hashes match.
+Changed actual packets and disposable lifecycle controls pass 3/3. Controlled
+ordinary/fitting-care replies pass; evidence has correct attribution and support
+but three sentences, failing brevity. Normal gateway 9/11; combined 11/14.
+Broad-history source-person and enthusiasm brevity negatives remain. No regression
+requiring rollback demonstrated for this enabling correction. Genuine human
+abstraction population/general fidelity remains unvalidated, with zero patterns
+active. Fresh post-audit: seven target/15 peer/five older bot, zero current
+spontaneous activity. Actual refs reauthenticated privately, no raw answers retained.
+Final identifiers, source continuity, health, ledger and limitations are in the
+release JSON; next H48/H21/H28 population with H6 controls, then H22/H39 variation.

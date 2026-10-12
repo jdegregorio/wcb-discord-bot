@@ -1887,3 +1887,22 @@ refs/counts/metrics, invented fixtures or public helper code. No raw answer arti
 ## 2026-10-12 09:00 - H47 purpose-specific abstract projection
 
 Both planning phases and locked criteria are in [evaluation study](evaluations/2026-10-12-abstract-projection-study.md). H47 separates ordinary conditional guidance from audit details and competing raw examples. H48 human population remains unresolved; no new trait selected. H46 wider context/tools/generated outdoors remains exploratory. Actual acceptance is pending.
+
+### H47 released decision and contrary evidence
+
+H47 packet conformance is supported/deployed: installed actual ordinary/sincere
+requests omit competing voice/audit material, evidence preserves it, lifecycle
+checks pass 3/3 and fresh mechanism/care responses pass. Explicit evidence preserves
+source-person attribution but uses three sentences. Normal actual gateway 9/11;
+combined behavioral review 11/14, retaining enthusiasm brevity and broad-history
+attribution failures. No new material regression demonstrates rollback necessity.
+
+Matched 24-request synthetic source reuse improves 4/8 to 0/8 ordinary/timing
+trials; audit narration did not appear in either arm, so that gain is unmeasured.
+The projection is verified enabling work, not a new human memory or general fidelity
+claim. H48 human population remains unresolved and next with person/care controls;
+H22/H39 variation/brevity, native/visual context, selective skills/tools and generated
+outdoor scenes retain their scoped prerequisites. Fresh post-deployment league
+audit has zero current spontaneous activity; do not replace it with development
+smoke results. Eight human windows are audit evidence, not a population hold-out
+benchmark. Full counts, costs, negatives and identifiers are in release.json.

@@ -829,3 +829,15 @@ removal/withdrawal and production heartbeat pass. Private refs, counts and publi
 helpers live under the app volume smoke-tests/2026-10-12-0500 directory, 0700/0600,
 existing manual seven-day retention and withdrawal cleanup. Raw contextual/rendered
 answers are erased. Existing billing/backup coverage limitations remain unchanged.
+
+## Abstract memory projection, 2.19.0
+
+No schema or storage migration. Ordinary guidance omits audit prose/counts from
+provider context and suppresses competing raw voice examples. The graph retains
+confidence basis, support/counterevidence and extraction provenance for correction
+and explicit evidence. Dates, expiry, status, conditions and limitations still
+reach the reader; source freshness, invalidation, retirement and withdrawal stay
+authoritative. This does not populate a new human abstraction. Run evidence keeps
+content-free private refs/counts, synthetic fixtures and public helpers on the
+existing app volume under 0700/0600 with the existing manual seven-day/withdrawal
+cleanup. Human/reply renderings and candidate overrides are erased.
