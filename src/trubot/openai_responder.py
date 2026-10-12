@@ -103,6 +103,7 @@ class OpenAITruaxResponder:
         mode: ReplyMode,
         safety_id: str,
         target: str | None = None,
+        refresh_check: Callable[[], Awaitable[bool]] | None = None,
     ) -> str | None:
         model_input: ResponseInputParam = [_message_input(message) for message in messages]
         subject = preceding_human_turn(messages) if target and mode is ReplyMode.FOLLOW_UP else ""
@@ -175,6 +176,14 @@ class OpenAITruaxResponder:
         if not reply:
             raise EmptyResponseError("OpenAI returned an empty text response")
         if _stale_bot_echo(reply, messages, target):
+            refresh_allowed = (
+                await refresh_check()
+                if refresh_check is not None
+                else not any(message.origin == "memory" for message in messages)
+            )
+            if not refresh_allowed:
+                logger.info("Repeated-reply refresh skipped; source context changed or unchecked")
+                return reply
             # One additional accounted attempt, never an unbounded joke-selection loop.
             # Keep the same context, source scope and model. Literal requests and the
             # immediate assistant turn remain eligible for deliberate repetition.

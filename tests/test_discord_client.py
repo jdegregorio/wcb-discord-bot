@@ -32,6 +32,7 @@ class FakeResponder:
         mode: ReplyMode,
         safety_id: str,
         target: str | None = None,
+        **_kwargs: object,
     ) -> str | None:
         self.calls.append((messages, mode, safety_id, target))
         if self.error is not None:
@@ -810,3 +811,90 @@ async def test_real_followup_handler_tags_memory_and_keeps_latest_human_topic():
         assert fake.responses.request["input"][-2]["content"] == memory
     finally:
         await client.close()
+
+
+@pytest.mark.parametrize("change", ["unchanged", "edit", "delete", "withdrawal"])
+async def test_optional_recovery_revalidates_memory_after_generation(change, tmp_path, monkeypatch):
+    from test_learning import AUDIT, source
+    from test_learning import NOW as EVIDENCE_NOW
+    from test_response_repetition import SequenceAPI, responder
+
+    from trubot.ingestion import MessageIngestor
+    from trubot.learning import LearningStore
+    from trubot.memory import ContextMemory
+
+    old = "The White Sox are my baseball team."
+    new = "White Sox. Bring on the baseball."
+    store = LearningStore.initialize(tmp_path / "learning.sqlite3", AUDIT, now=EVIDENCE_NOW)
+    store.observe(source(content="White Sox forever"), now=EVIDENCE_NOW)
+    api = SequenceAPI(old, new)
+    adapter, ledger = responder(api, monkeypatch)
+    create = api.create
+
+    async def change_during_generation(**request):
+        result = await create(**request)
+        if len(api.requests) == 1:
+            if change == "edit":
+                store.observe(source(content="Cubs forever", authoritative=True), now=EVIDENCE_NOW)
+            elif change == "delete":
+                store.invalidate(10, [source().id], deleted=True, now=EVIDENCE_NOW)
+            elif change == "withdrawal":
+                store.forget(now=EVIDENCE_NOW)
+        return result
+
+    api.create = change_during_generation
+    client, _, _, _ = make_client(clock=lambda: EVIDENCE_NOW)
+    client._responder = adapter
+    learning = MessageIngestor(store, frozenset({10}), clock=lambda: EVIDENCE_NOW)
+    learning.verified = True
+    client._learning = learning
+    client._memory = ContextMemory(store)
+    channel = fake_channel()
+    rows = [
+        message_for_history(old, author_id=999, bot=True),
+        message_for_history("We were discussing fantasy football.", author_id=999, bot=True),
+    ]
+
+    async def history(**_kwargs):
+        for item in reversed(rows):
+            yield item
+
+    channel.history = history
+    message = fake_message(channel)
+    message.content = message.clean_content = "🤖 Who is your baseball team?"
+    with (
+        patch.object(client, "get_channel", return_value=channel),
+        patch.object(learning, "refresh", new=AsyncMock(return_value=None)),
+        patch.object(client, "_memory_context", wraps=client._memory_context) as memory,
+    ):
+        await client.on_message(message)
+    channel.send.assert_awaited_once_with(new if change == "unchanged" else old)
+    assert memory.await_count == 2
+    assert all(item.origin != "memory" for item in memory.await_args_list[1].args[2])
+    assert len(api.requests) == ledger.summary()["attempts"] == (2 if change == "unchanged" else 1)
+    assert "White Sox forever" in str(api.requests[0]["input"])
+    if change == "unchanged":
+        assert api.requests[0]["input"] == api.requests[1]["input"]
+    elif change == "withdrawal":
+        assert store.is_withdrawn()
+
+
+@pytest.mark.parametrize(
+    "error",
+    [TimeoutError(), discord.Forbidden(SimpleNamespace(status=403, reason="Denied"), "Denied")],
+)
+async def test_optional_source_recheck_failure_denies_refresh(error):
+    checked = []
+
+    class CheckResponder(FakeResponder):
+        async def reply(self, messages, *, refresh_check=None, **kwargs):
+            assert refresh_check is not None
+            checked.append(await refresh_check())
+            return self.output
+
+    client, _, _, _ = make_client(responder=CheckResponder())
+    channel = fake_channel()
+    with patch.object(client, "_memory_context", side_effect=["Synthetic private packet.", error]):
+        await client.on_message(fake_message(channel))
+    assert checked == [False]
+    channel.send.assert_awaited_once_with("Hot")

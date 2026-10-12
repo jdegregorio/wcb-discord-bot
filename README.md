@@ -170,7 +170,7 @@ missing real memories, literal definitions and questions for other recipients.
 Review whether a reply actually adds a comic turn, rather than merely acknowledging
 the setup. Brevity and successful delivery alone do not establish humor quality.
 
-## Repeated reply recovery (2.17.1)
+## Repeated reply recovery (2.17.2)
 
 When an addressed answer exactly copies a long older bot reply, Trubot can make
 one separately budgeted attempt at fresh wording. The immediate bot turn, short
@@ -178,7 +178,9 @@ reactions, requested quotes/repetitions and explicit references retain deliberat
 reuse. The extra attempt uses the same source context and model, with no transport
 retries or third quality attempt. An unavailable, empty or incomplete refresh
 keeps the existing accounted draft; a refreshed follow-up may still abstain.
-This targets exact stale repetition, not a general humor or factual quality score.
+Private memory is revalidated through the handler before refresh; a changed,
+withdrawn or unchecked packet is not sent again. This targets exact stale
+repetition, not a general humor or factual quality score.
 
 ## API spending guard
 

@@ -279,3 +279,53 @@ async def test_maintenance_refresh_uses_existing_maintenance_purpose(monkeypatch
     )
     assert ledger.summary()["runtime_usd"] == 0
     assert ledger.summary()["maintenance_usd"] > 0
+
+
+async def test_private_packet_without_refresh_check_never_gets_resent(monkeypatch):
+    api = SequenceAPI(OLD)
+    r, ledger = responder(api, monkeypatch)
+    messages = [
+        *history(),
+        ConversationMessage("user", "Synthetic private memory.", origin="memory"),
+    ]
+    assert (
+        await r.reply(messages, mode=ReplyMode.DIRECT, safety_id="test", target="Casey: TJ?") == OLD
+    )
+    assert len(api.requests) == ledger.summary()["attempts"] == 1
+
+
+@pytest.mark.parametrize("current", [False, True])
+async def test_private_refresh_requires_current_packet(current, monkeypatch):
+    from unittest.mock import AsyncMock
+
+    check = AsyncMock(return_value=current)
+    api = SequenceAPI(OLD, NEW)
+    r, ledger = responder(api, monkeypatch)
+    messages = [
+        *history(),
+        ConversationMessage("user", "Synthetic private memory.", origin="memory"),
+    ]
+    assert await r.reply(
+        messages, mode=ReplyMode.DIRECT, safety_id="test", target="Casey: TJ?", refresh_check=check
+    ) == (NEW if current else OLD)
+    check.assert_awaited_once_with()
+    assert len(api.requests) == ledger.summary()["attempts"] == (2 if current else 1)
+    if current:
+        assert api.requests[0]["input"] == api.requests[1]["input"]
+
+
+async def test_private_refresh_cancellation_precedes_extra_reservation(monkeypatch):
+    from unittest.mock import AsyncMock
+
+    api = SequenceAPI(OLD)
+    r, ledger = responder(api, monkeypatch)
+    check = AsyncMock(side_effect=asyncio.CancelledError())
+    with pytest.raises(asyncio.CancelledError):
+        await r.reply(
+            history(),
+            mode=ReplyMode.DIRECT,
+            safety_id="test",
+            target="Casey: TJ?",
+            refresh_check=check,
+        )
+    assert len(api.requests) == ledger.summary()["attempts"] == 1

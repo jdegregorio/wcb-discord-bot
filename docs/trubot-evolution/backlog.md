@@ -1,5 +1,11 @@
 # Prioritized backlog
 
+2026-10-11 21:00 source review: 2.17.1 is excluded from stable discovery before
+deployment. H38 correction 2.17.2 revalidates the attached private memory packet
+before optional recovery, stopping new calls for source changes or withdrawal.
+Production remains 2.16.1; final release/Discord acceptance is pending.
+Priorities and both planning phases remain in the repetition study.
+
 2026-10-11 21:00 selection: H38 completes the rolled-back comic release with
 one budgeted fresh attempt for a long exact older bot echo. Immediate/short/literal
 reuse and abstention stay eligible; optional failure preserves the existing draft.

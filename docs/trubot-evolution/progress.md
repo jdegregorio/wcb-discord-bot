@@ -2600,3 +2600,20 @@ changed installed/real Discord candidate checks remain pending release.
 
 Public release identifiers, digest, health, costs, all actual acceptance outcomes
 and limitations will be recorded after rollout. No completion is claimed here.
+
+## Source-lifecycle correction before deployment
+
+The first correction release, 2.17.1, was published but excluded from stable
+discovery before deployment. Review found that an optional refresh could resend
+an attached private memory packet after its sources changed. Four new adapter
+regressions fail on that candidate. Version 2.17.2 adds handler revalidation using
+the original conversation, preserving exact source scope and packet equality.
+An unchecked, changed, deleted, withdrawn or unavailable packet receives no extra
+reservation or request. The already generated draft is retained; cancellation
+propagates. Synthetic actual-store handler tests cover edit/deletion/withdrawal
+between first generation and recovery, unchanged-source allowance and denied
+source refresh. No real withdrawal or production source mutation is invoked.
+Prior eight recovery/provider trials remain conditional recovery evidence; the
+new private-source gate is validated separately with deterministic lifecycle tests.
+Production stayed on healthy2.16.1 throughout; immutable2.17.0/2.17.1 tags remain
+prereleases, not overwritten. Final six gates and installed/actual acceptance follow.
