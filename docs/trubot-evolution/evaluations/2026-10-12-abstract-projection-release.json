@@ -1,0 +1,211 @@
+{
+  "run": "2026-10-12-0900",
+  "base_sha": "0241bf7da03a610adf72dc404b2f0dba5a6f2a9b",
+  "runtime_sha": "c396a04c527131f5c95a11a29554481d773bac98",
+  "runtime_pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/86",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.19.0",
+  "hypothesis": "H47 purpose-specific abstract projection",
+  "kind": "validated enabling correction",
+  "new_human_pattern_count": 0,
+  "independent_human_quality_validated": false,
+  "general_fidelity_gain_claimed": false,
+  "gates": {
+    "all_six_pass": true,
+    "tests": 799,
+    "coverage_percent": 96.85,
+    "typed_modules": 28,
+    "pr_ci": 38275962652,
+    "main_ci": 38276152620,
+    "images_ci": 38276302195,
+    "merged_tree_matches_tested": true
+  },
+  "production": {
+    "time": "2026-10-12T16:29:51.035183+00:00",
+    "digest": "sha256:541d19cea9d3f41a3828dfecfdf90388ff9f372e45d1364a0eb9e0815627a0a6",
+    "revision": "c396a04c527131f5c95a11a29554481d773bac98",
+    "started": "2026-10-12T16:19:53.116353124Z",
+    "restarts": 0,
+    "health": "healthy",
+    "errors": 0,
+    "reply_failures": 0,
+    "disconnects": 0,
+    "memory_warnings": 0,
+    "learning_pauses": 0,
+    "study_pauses": 0,
+    "optional_voice_warnings": 2,
+    "other_warnings": 0,
+    "gateway_posts": 10,
+    "gateway_declines": 1,
+    "learning_batches": 8,
+    "raw_logs_retained": false
+  },
+  "installed": {
+    "version": "2.19.0",
+    "readiness": true,
+    "source_hashes_match": true,
+    "source_modules": 28
+  },
+  "audit": {
+    "channels": 3,
+    "latest_per_channel": 100,
+    "window_days": 14,
+    "target_messages": 7,
+    "peer_messages": 15,
+    "older_bot_windows": 5,
+    "fresh_spontaneous_bot_messages": 0,
+    "human_central_blocks": 8,
+    "exports": 8,
+    "neighbor_blocks": 32,
+    "marked_media_gap_windows": 0,
+    "original_pixels_interpreted": false,
+    "raw_renderings_erased": true,
+    "grouped_blocks_are_message_counts": false,
+    "genuine_human_population_holdout_benchmark": false,
+    "evaluator": "same Codex agent"
+  },
+  "matched_experiment": {
+    "evaluator": "same Codex agent",
+    "human_fidelity_validated": false,
+    "baseline_passes": 6,
+    "candidate_passes": 10,
+    "trials_per_arm": 12,
+    "ordinary_timing_exact_source_reuse": {
+      "baseline": 4,
+      "candidate": 0,
+      "trials_per_arm": 8
+    },
+    "serious_source_themed_intrusion": {
+      "baseline": 1,
+      "candidate": 0,
+      "trials_per_arm": 2
+    },
+    "candidate_brevity_failures": 1,
+    "evidence_person_failures_each_arm": 1,
+    "audit_narration_improvement_measured": false,
+    "latency_improvement_claimed": false,
+    "raw_renderings_erased": true,
+    "requests": 24,
+    "model": "gpt-6-luna",
+    "maintenance_usd": 0.00218737,
+    "median_context_bytes": {
+      "baseline": 2274,
+      "candidate": 1044
+    },
+    "median_latency_seconds": {
+      "baseline": 1.515,
+      "candidate": 1.5495
+    }
+  },
+  "actual_discord": {
+    "owner_and_two_member_guild_reauthenticated": true,
+    "allowlisted_private_channel": true,
+    "baseline_packet_defect_reproduced": true,
+    "baseline_source_copy_reproduced": true,
+    "candidate_prototype_fresh_reply": true,
+    "installed_changed_packets": {
+      "pass": 3,
+      "cases": 3
+    },
+    "installed_lifecycle_checks": {
+      "pass": 3,
+      "cases": 3
+    },
+    "controlled_behavior": {
+      "pass": 2,
+      "cases": 3
+    },
+    "normal_gateway": {
+      "pass": 9,
+      "cases": 11,
+      "answers": 10,
+      "abstentions": 1
+    },
+    "combined_behavior": {
+      "pass": 11,
+      "cases": 14
+    },
+    "failures": [
+      "explicit evidence three-sentence brevity",
+      "normal enthusiasm three-sentence brevity",
+      "broad historical source-person attribution"
+    ],
+    "actual_references_storage": "private app volume, content-free references only",
+    "development_intake_count": 0,
+    "second_gateway_started": false,
+    "primary_heartbeat_healthy_after_close": true,
+    "full_behavioral_acceptance": false
+  },
+  "continuity": {
+    "native_messages": 34,
+    "archive_documents": 16,
+    "archive_blocks": 4299,
+    "eligible_target_blocks": 405,
+    "visual_episodes": 115,
+    "image_assets": 96,
+    "graph_sources": 439,
+    "graph_episodes": 554,
+    "graph_edges": 1015,
+    "claims": 2,
+    "preferences": 1,
+    "abstract_patterns": 0,
+    "previous_retired_pattern_restored": false,
+    "prior_worker_accepted_one_claim_since_previous_run": true,
+    "no_real_withdrawal": true
+  },
+  "cost": {
+    "month": "2026-10",
+    "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+    "timezone": "UTC",
+    "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+    "estimated_usd": 0.168895595,
+    "runtime_usd": 0.079035765,
+    "maintenance_usd": 0.08985983,
+    "monthly_limit_usd": 20,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "attempts": 1149,
+    "input_tokens": 3107927,
+    "cached_input_tokens": 2086972,
+    "output_tokens": 40813,
+    "unsettled_attempts": 0,
+    "pre_guard_spend": "unknown; not included",
+    "run_delta_usd": 0.007324235,
+    "run_runtime_usd": 0.00375665,
+    "run_maintenance_usd": 0.003567585,
+    "run_attempts": 43,
+    "research_requests": 24,
+    "controlled_maintenance_requests": 5,
+    "autonomous_maintenance_requests": 2,
+    "gateway_requests_including_optional_recovery": 12,
+    "added_recurring_requests": 0,
+    "added_paid_services": 0,
+    "provider_billing_verified": false
+  },
+  "limitations": [
+    "zero active human abstractions; production effect proved with isolated invented graphs",
+    "no independent human evaluator or general humor multiplier",
+    "mechanical audit narration was not reproduced in the matched tiny synthetic sample",
+    "existing attribution and brevity failures retained",
+    "full native peer/thread and visual coverage still incomplete",
+    "billing and pre-guard spend unknown"
+  ],
+  "rollback": {
+    "required": false,
+    "previous_version": "2.18.1",
+    "previous_digest": "sha256:d7b4eb32644826dd49dd5e23a3295fb0a5c1e478516f11154bc51a162abbca9d"
+  },
+  "private_retention": "app volume 0700/0600, existing manual seven-day cleanup and withdrawal; raw source/answer renderings erased",
+  "operational_recoveries": [
+    "sandbox DNS/cache/write restrictions resolved through authorized escalation",
+    "initial merge guard rejected mistyped SHA; verified local head used without bypass",
+    "initial installed check preceded transaction completion; repeated after healthy completion",
+    "emoji-split UI locator timeout recovered confirmed reference without duplicate send"
+  ],
+  "next": [
+    "H48/H21/H28 qualified conditional human population with H6 author controls",
+    "H22/H39 contextual variation and brevity",
+    "broader native/reply/thread/pixel coverage",
+    "bounded selective skills/tools",
+    "generated U.P. aurora/trail-camera sharing with natural captions and provenance"
+  ]
+}

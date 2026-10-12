@@ -2842,3 +2842,53 @@ Actual baseline packet exposes competing voice and reproduces source reuse.
 Matched synthetic semantic results 6/12 to 10/12; exact ordinary/timing source-line
 reuse 4/8 to 0/8. Evidence source-person and brevity negatives remain. All six local
 gates pass, 799 tests, 96.85% coverage. Release/deployment/actual acceptance pending.
+
+### 09:00 completed rollout and actual acceptance
+
+Runtime [PR #86](https://github.com/jdegregorio/wcb-discord-bot/pull/86) merged
+c396a04c527131f5c95a11a29554481d773bac98, identical tested tree. PR CI 38275962652
+and main CI 38276152620 passed. Immutable [v2.19.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.19.0)
+built both architectures in 38276302195. Reverified pi5/aarch64/Ubuntu 24.04.4;
+locked pi-app transaction deployed digest sha256:541d19cea9d3f41a3828dfecfdf90388ff9f372e45d1364a0eb9e0815627a0a6. Package/OCI/28 source
+hashes match and readiness is healthy. Prior healthy 2.18.1/d7b4eb32 retained.
+At 2026-10-12T16:29:51.035183+00:00: zero errors, failures, disconnects, restarts or source/study
+pauses; two optional voice warnings, zero other warnings, ten gateway posts, one
+decline and eight learning batches. No rollback. An early installed check ran
+before the transaction finished, saw the old version, and failed; the completed
+installed verification passes. Merge SHA and emoji UI locator mistakes were
+corrected through verified references without bypass or duplicate messages.
+
+Installed changed packet/lifecycle acceptance 3/3; controlled behavior 2/3 due
+evidence brevity. Normal actual gateway 9/11, combined 11/14: existing source-person
+confusion and enthusiasm brevity remain failed. Supported preference, exact-date restraint, owner scope, care, novel banter, clarified TJ
+pair and other-recipient abstention otherwise pass. Every normal owner/bot reference
+reauthenticated privately; isolated source fixture clients verify membership,
+owner, allowlist and sends. Zero development intake, no second gateway; separate
+readiness set before construction and primary heartbeat healthy after close.
+No raw source, answer text or derived human observations in public artifacts.
+
+Audit: three channels / latest 100 messages / 14 days, seven target, 15 peers, five older bot
+windows, zero current spontaneous replies. Eight target central grouped blocks,
+eight exports, 32 neighbors and no marked media gaps. Actual text renderings read;
+original image pixels not interpreted. Same Codex evaluator, no genuine human
+population held-out benchmark or independent review. No new human trait, active
+abstraction or general fidelity/humor gain. Native 34, archive 16 / 4,299 blocks, visual
+115 episodes / 96 assets unchanged. Automatic pre-rollout studies added one claim since prior
+run: graph 439 sources / 554 episodes / 1,015 edges, two claims/one preference/zero patterns.
+The old failed pattern remains retired. Human abstractions remain the next priority.
+
+Tracked October estimate USD0.168895595, runtime0.079035765
+and maintenance0.089859830; 1149 settled/zero unsettled.
+Run delta USD0.007324235 over 43 attempts: runtime
+0.003756650/maintenance0.003567585. Includes
+24 research requests (USD0.002187370), five controlled maintenance probes, two
+existing autonomous study calls and 12 gateway attempts including one optional
+repeat recovery. Existing USD18/2/20 caps; no fresh ledger, added recurring call
+or paid service. Provider billing and pre-guard spend remain unknown.
+
+Public [release evidence](evaluations/2026-10-12-abstract-projection-release.json)
+preserves all negatives, methods and identifiers. Private app-volume refs/counts/
+metrics and public helpers/invented fixtures use 0700/0600, existing manual seven-day
+retention/withdrawal. Raw human/reply renderings and candidate overrides erased.
+Final evidence PR, main CI and owned-worktree archive recorded in automation memory
+after merge. Primary and earlier worktrees remain untouched.
