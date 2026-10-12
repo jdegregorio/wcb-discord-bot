@@ -1,5 +1,21 @@
 # Prioritized backlog
 
+2026-10-11 21:00 verified: H38 is deployed as 2.17.2 through PRs #79/#80.
+One separately budgeted exact-repeat recovery checks current private source packets.
+All six gates, 762 tests, 96.83% coverage, CI, both image architectures and 28
+installed source hashes pass. The controlled actual Discord recovery passes;
+normal gateway review is 7/9, combined 8/10. Weak TJ acknowledgment and broad
+historical source-subject confusion remain failed criteria. This is a validated
+enabling safeguard, not complete comic acceptance or general fidelity improvement.
+2.17.0 and undeployed 2.17.1 remain immutable prereleases excluded from discovery.
+
+Next: validated H35/H21/H28 human abstractions with subject/care controls; creative
+variation and weak follow-ups; broader native/visual coverage; selective skills/tools;
+generated U.P. aurora/trail-camera scenes. Prior exact/date issues stay secondary.
+H39 fuzzy/quality selection remains exploratory. No new human trait or graph category.
+See docs/trubot-evolution/evaluations/2026-10-11-repetition-release.json for evidence,
+negative cases, scope and costs. Source/withdrawal/spending/participation stay authoritative.
+
 2026-10-11 21:00 source review: 2.17.1 is excluded from stable discovery before
 deployment. H38 correction 2.17.2 revalidates the attached private memory packet
 before optional recovery, stopping new calls for source changes or withdrawal.
