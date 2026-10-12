@@ -325,8 +325,23 @@ class GraphStore:
 
     def import_observation(self, item: dict[str, Any], *, now: datetime) -> None:
         """Trusted private operator input. Human-source content cannot invoke this API."""
+        self.import_observations([item], now=now)
+
+    def import_observations(self, items: list[dict[str, Any]], *, now: datetime) -> None:
+        """Commit a complete reviewed rollout under one source/withdrawal lock."""
+        if not isinstance(items, list) or not 1 <= len(items) <= 100:
+            raise LearningUnavailable("One to 100 reviewed observations required")
+        identifiers = []
+        for item in items:
+            if not isinstance(item, dict) or not isinstance(item.get("id"), str) or not item["id"]:
+                raise LearningUnavailable("Explicit observation identifier required")
+            identifiers.append(item["id"])
+        if len(set(identifiers)) != len(identifiers):
+            raise LearningUnavailable("Distinct rollout observation identifiers required")
         with self._transaction() as (db, source):
-            self._write_observation(db, source, item, now=now)
+            for item in items:
+                self._write_observation(db, source, item, now=now)
+        # Validation rejection rolls back replacements and preserves prior backups.
         self._remove_backups()
 
     def _write_observation(
@@ -695,8 +710,7 @@ def main() -> None:
             manifest = json.loads(args.manifest.read_text())
             if manifest["schema"] != 1 or not 1 <= len(manifest["observations"]) <= 100:
                 raise LearningUnavailable("Unsupported observation manifest")
-            for item in manifest["observations"]:
-                graph.import_observation(item, now=now)
+            graph.import_observations(manifest["observations"], now=now)
         elif args.command == "remove":
             if not args.id:
                 raise LearningUnavailable("Observation identifier required")

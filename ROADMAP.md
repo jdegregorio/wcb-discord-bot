@@ -1,5 +1,17 @@
 # Trubot roadmap
 
+2026-10-12 01:00 selection: H40/H41 atomic reviewed episode population. Fix the
+reproduced partial graph import, then admit one tentative conditional abstraction
+only after private context/source and actual Discord scope/control validation.
+No stable personality trait or general humor gain is established. Both phases,
+criteria, contrary evidence and operating impact are in
+`docs/trubot-evolution/evaluations/2026-10-12-reviewed-population-study.md`.
+Next: independently reviewed H21/H28 abstractions and continuous population,
+H22/H39 variation, native/visual coverage, selective tools/skills and generated
+U.P. aurora/trail-camera scenes. Existing person/care, withdrawal and spending
+rules stay authoritative; exact/date patches remain secondary.
+
+
 2026-10-11 21:00 verified: H38 is deployed as 2.17.2 through PRs #79/#80.
 One separately budgeted exact-repeat recovery checks current private source packets.
 All six gates, 762 tests, 96.83% coverage, CI, both image architectures and 28

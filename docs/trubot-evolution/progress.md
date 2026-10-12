@@ -2685,3 +2685,30 @@ counts, negative cases, timing, hashes and identifiers. Next: validated human
 abstractions with person/care controls, creative variation/weak follow-ups, broader
 native/visual context, selective skills/tools and generated outdoor scenes. No
 further unmeasured schema categories or repeated literal/date-only patch priority.
+
+## 2026-10-12 01:00 Pacific - atomic reviewed episode rollout
+
+Fresh managed worktree `trubot-daily-20261012-0100`, base
+`1dd71dbe617be35c452af0ab84364e65f5528872`. Primary checkout/earlier drafts
+untouched, prior repair reconciled; no overlapping evolution PR. Both planning
+phases select H40/H41: one atomic reviewed import plus abstraction-first ordinary
+presentation, preserving internal dates and explicit source requests. Actual CLI
+reproduction: rejected two-item batch leaves one observation before, zero after.
+Current private source checks and disposable clone acceptance pass; one tentative
+abstraction remains proposed until real release/Discord validation. No raw/derived
+personal content in Git; source reviewer and reply reviewer are Codex, not an
+independent human. Thirteen central archive windows, 12 distinct exports, 51
+neighbors (five windows revisit prior studies); five older actual league bot windows
+reviewed separately. Eight deterministic windows are new to this run's review, not
+proven unseen across all past studies. Missing media/dates remain explicit internally.
+No new historical pixels, source scope, model, study pacing/cohort, budget or service.
+
+All six local gates pass: 781 tests, 96.84% branch-inclusive coverage, 28 typed modules,
+2.18.0 wheel/sdist, no dependency version changes. Nineteen new regressions cover
+atomic replacements/conflicts/backups/withdrawal and conditional/timing versus explicit
+quotation paths. The first clone failure identified an ordinary-question raw-punchline
+path and was corrected before population. Current production remains healthy 2.17.2,
+immutable digest a78b82141d17bf07d43d828297ce02fde267e80a1aabf84d35ef84bd7356c7d2.
+Initial October estimate USD0.1508092, zero unsettled; all research so far is offline,
+actual gateway baselines use the existing runtime ledger. Release and actual candidate
+acceptance are pending; do not treat proposed population as deployed.
