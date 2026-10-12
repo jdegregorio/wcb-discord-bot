@@ -32,6 +32,7 @@ class FixtureResponder:
         mode: ReplyMode,
         safety_id: str,
         target: str | None = None,
+        **_kwargs: object,
     ) -> str:
         return "Synthetic captured reply."
 

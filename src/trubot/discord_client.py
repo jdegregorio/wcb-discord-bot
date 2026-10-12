@@ -64,6 +64,7 @@ class Responder(Protocol):
         mode: ReplyMode,
         safety_id: str,
         target: str | None = None,
+        refresh_check: Callable[[], Awaitable[bool]] | None = None,
     ) -> str | None: ...
 
     async def close(self) -> None: ...
@@ -400,6 +401,7 @@ class TruBotClient(discord.Client):
                         )
                     )
                     target = focused.content
+                source_history = list(history)
                 memory = await self._memory_context(
                     channel,
                     target,
@@ -421,6 +423,21 @@ class TruBotClient(discord.Client):
                     logger.warning("No usable history for response channel_id=%d", channel.id)
                     return False
 
+                async def refresh_context_current() -> bool:
+                    if self._closing:
+                        return False
+                    try:
+                        refreshed = await self._memory_context(
+                            channel,
+                            target,
+                            source_history,
+                            requester_user_id=requester_user_id,
+                            focus_author_user_id=anchor.author.id if anchor is not None else None,
+                        )
+                    except (LearningUnavailable, discord.HTTPException, TimeoutError):
+                        return False
+                    return refreshed == memory
+
                 guild_id = channel.guild.id
                 async with channel.typing():
                     reply = await self._responder.reply(
@@ -428,6 +445,7 @@ class TruBotClient(discord.Client):
                         mode=mode,
                         safety_id=safety_identifier(guild_id, requester_user_id),
                         target=target,
+                        refresh_check=refresh_context_current if memory else None,
                     )
                 if reply is None:
                     logger.info(
