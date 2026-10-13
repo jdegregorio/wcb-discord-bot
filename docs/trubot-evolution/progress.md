@@ -2960,3 +2960,55 @@ Three-channel latest-100/14-day scan has seven target/15 peer/five older bot win
 zero current spontaneous replies. No provider human audit, no broad fidelity claim.
 All six local gates pass, 838 tests/96.84%, 29 modules. PR/release/installed acceptance
 are pending. Existing monthly allowance and app storage remain unchanged.
+
+### 17:00 release, installed acceptance and limits
+
+Runtime [PR #90](https://github.com/jdegregorio/wcb-discord-bot/pull/90) merged
+734e381dc73ec41ed7d1331559dc3092ee6639ee, identical to tested feature tree. Required
+PR CI38325341793, merged-main CI38325501523 and images38325633646 pass. Immutable
+[v2.19.2](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.19.2)
+builds both amd64/arm64. Reverified pi5/aarch64/Ubuntu24.04.4; scoped locked pi-app
+transaction deploys sha256:e4ff71375b47226f2a8f617973d3ccd5d944fee6f30273725ec70c2946f155b1.
+OCI/package/29 source hashes match. Prior healthy2.19.1/053c845 remains rollback
+boundary. No schema migration or rollback. Main was rechecked through all six gates,
+838 tests/96.84%,29 modules. Existing primary and original failed draft stay untouched.
+
+Real installed controls3/3 for packets/lifecycle and behavior, using disposable
+invented source stores. Distinct readiness before construction, no second gateway,
+zero development intake, withdrawal and primary heartbeat after each close. Normal
+actual owner gateway source grounding5/5; full review8/11, combined11/14. Retain
+three-sentence broad recall, three-sentence care and initial creative cue miss;
+unmentioned clarification recovers. Exact-date restraint, supported preference,
+owner scope, actual owner reaction, novel banter and recipient abstention pass.
+All owner/bot messages and the actual reaction were reauthenticated. References and
+pass/fail categories are private; no raw source or answer text in public notes.
+
+Post-release local audit: six central grouped human blocks across six exports,
+24 neighbors, four additional authored support passages screened, zero marked media
+gaps in the six windows. Original pixels unstudied. Latest100/14days in three league
+channels: target7/7, peers15/12, older bot5/5 before/after, current spontaneous0/0.
+No human provider audit, new human pattern, independent evaluator or genuine human
+population hold-out benchmark. H49 is a supported grounding correction; it does not
+establish general fidelity or amplified humor. H51 contextual cue reliability is
+exploratory beside H22/H39; qualified human abstractions remain next.
+
+At 2026-10-13T00:20:42.480781+00:00: healthy immutable2.19.2, zero errors/reply failures,
+disconnects/source or study pauses/restarts; two optional Discord voice dependency
+warnings, zero other warnings; ten gateway posts, one abstention and12 learning batches.
+Persistent counts unchanged: native34, archive16/4299 grouped blocks/412 target/405
+eligible; visual115/96 assets; graph439 sources/554 episodes/1015 edges/two claims/
+one preference/zero patterns. No candidate override remained during installed tests.
+
+October ledger estimate USD0.183547290, runtime0.085950445/maintenance0.097596845;
+1245 settled/zero unsettled. Run delta USD0.007216365 over29 attempts, runtime0.004255825/
+maintenance0.002960540:14 research requests, three real controlled maintenance probes,
+12 runtime attempts including baseline and abstention. Existing USD18/2/20 caps;
+no fresh ledger, paid service or added recurring request. Billing/pre-guard cost unknown.
+
+Private app-volume smoke-tests/2026-10-12-1700 stores only content-free references,
+counts, metrics, public helpers and invented fixtures,0700/0600 verified. Local staging
+was0700 before collection; no raw human source/answer file persisted. Existing manual
+seven-day retention and withdrawal cleanup apply. Temporary transfer archive/owned
+browser cleanup, final evidence CI and archive completion are recorded in automation
+memory. Source qualifiers remain private; failed older abstraction stays retired.
+[Full release evidence](evaluations/2026-10-12-memory-author-release.json).
