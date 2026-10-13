@@ -170,6 +170,15 @@ missing real memories, literal definitions and questions for other recipients.
 Review whether a reply actually adds a comic turn, rather than merely acknowledging
 the setup. Brevity and successful delivery alone do not establish humor quality.
 
+## Memory author binding (2.19.2)
+
+Historical evidence and abstract episode memories remain attributed to Andrew.
+An authenticated source/focus-author comparison distinguishes his own questions from
+another person's questions, including reactions and misleading display names.
+Ordinary persona recall uses natural first-person or named-source language without
+assigning Andrew's history to the person asking. Unknown authors receive conservative
+attribution. Scope is rechecked alongside private source state before reuse.
+
 ## Repeated reply recovery (2.17.2)
 
 When an addressed answer exactly copies a long older bot reply, Trubot can make

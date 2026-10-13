@@ -45,6 +45,12 @@ bounded Discord reply
   voice pair; broad topic expansion, answer-only matches and filler do not. Examples
   describe a context, not a biography or habitual trait. Synthetic
   judgment illustrations remain separate and never supply personal evidence.
+- `memory_author.py` carries typed application-owned source-author scope from the
+  pinned human identity and the focused message author. Raw display names, channel
+  content, peer claims and old bot replies cannot provide this binding. The adapter
+  applies it in instructions and beside the focus, including visual focus. Conflicting
+  or missing authenticated focus scope is conservative; withdrawal or identity change
+  removes stale memory before dispatch. A repeat attempt revalidates the same scope.
 - `openai_responder.py` is the only OpenAI dependency. It produces a plain
   string through the Responses API and normalizes accidental speaker prefixes.
 - `participation.py` is a synchronous state machine. Given channel activity and

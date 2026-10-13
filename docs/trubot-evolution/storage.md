@@ -851,3 +851,15 @@ For development evidence transfers, create the local staging directory with mode
 0700 and transfer files with mode 0600 before collecting human material. Do not
 inherit the workstation's default umask. Verify these modes before rendering or
 transport, then erase temporary raw images/archives after review.
+
+
+## Authenticated memory author scope (2.19.2)
+
+This scope is ephemeral typed metadata on an app-created memory message. It contains
+only source/other/unknown author categories, not names, account IDs or new personal
+observations. Identity comparison uses the existing pinned private store and focused
+message author, not the requesting reactor. No schema, retention, source intake,
+backup, study pacing or ledger changes. Current identity and withdrawal are rechecked
+before packet admission and optional repeated-reply recovery. Image pixels remain
+attached to their focused human message. Compatible rollback preserves graph, sources,
+withdrawal and spending state, but restores the earlier attribution defect.

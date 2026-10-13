@@ -11,6 +11,14 @@ MessageRole = Literal["user", "assistant"]
 MessageOrigin = Literal["conversation", "memory", "reference", "focus"]
 
 
+class MemoryAuthorScope(StrEnum):
+    """Application-owned identity binding, never inferred from conversation text."""
+
+    SOURCE_AUTHOR = "source_author"
+    OTHER_AUTHOR = "other_author"
+    UNKNOWN_AUTHOR = "unknown_author"
+
+
 class ReplyMode(StrEnum):
     DIRECT = "direct"
     FOLLOW_UP = "follow_up"
@@ -31,6 +39,7 @@ class ConversationMessage:
     images: tuple[ConversationImage, ...] = field(default=(), repr=False)
 
     origin: MessageOrigin = "conversation"
+    memory_author_scope: MemoryAuthorScope | None = None
 
     def as_input(self) -> dict[str, str]:
         return {"role": self.role, "content": self.content}
