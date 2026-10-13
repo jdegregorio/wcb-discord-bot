@@ -197,3 +197,14 @@ nodes with2.21.0 before a deliberate downgrade after capture. Do not restore sou
 or spending databases to roll back code. Synthetic smoke artifacts keep only
 content-free refs/flags/public code under private app-volume0700/0600 and existing
 seven-day manual retention/withdrawal cleanup; disposable databases are erased.
+
+## Native dependency freshness, candidate2.22.0
+
+H56 freshly reads the retained focus and every dependency, returns complete bounded
+human setup only ephemerally, and repairs missed edits/deletes/access loss through the
+existing learning worker. At most two captures/twelve fetches/six seconds per cycle.
+Stored captures remain last-observed metadata; no fresh visibility certificate is
+persisted. Reads are not an atomic Discord snapshot or proof of complete setup.
+Automatic native patterns remain gated. H55b must wire identical context into both
+provider passes/commit, derived context invalidation and held-out human validation.
+This is a prerequisite, not a populated abstraction or a measured fidelity gain.

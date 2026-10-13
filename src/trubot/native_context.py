@@ -78,6 +78,32 @@ def _context_row(
     }
 
 
+def dependency_metadata(
+    message: discord.Message, focus: discord.Message, identity: Identity
+) -> dict[str, Any]:
+    """Fingerprint complete human text and relations without retaining that text."""
+    row = _context_row(message, focus, identity)
+    return {
+        key: row[key]
+        for key in (
+            "message_id",
+            "created_at",
+            "edited_at",
+            "speaker_id",
+            "position",
+            "reply_to_message_id",
+            "focus_replies_to_this",
+        )
+    } | {
+        "channel_id": message.channel.id,
+        "guild_id": message.guild.id if message.guild else 0,
+        "content_sha256": hashlib.sha256(message.content.encode()).hexdigest(),
+        "media_present": bool(
+            getattr(message, "attachments", ()) or getattr(message, "embeds", ())
+        ),
+    }
+
+
 async def collect_native_episode(
     channel: discord.TextChannel | discord.Thread,
     message_id: int,
@@ -107,25 +133,7 @@ async def collect_native_episode(
     def admit(message: discord.Message) -> None:
         row = _context_row(message, focus, identity)
         # Persistable metadata includes omitted oversized humans, never their text.
-        dependencies[message.id] = {
-            key: row[key]
-            for key in (
-                "message_id",
-                "created_at",
-                "edited_at",
-                "speaker_id",
-                "position",
-                "reply_to_message_id",
-                "focus_replies_to_this",
-            )
-        } | {
-            "channel_id": channel.id,
-            "guild_id": channel.guild.id,
-            "content_sha256": hashlib.sha256(message.content.encode()).hexdigest(),
-            "media_present": bool(
-                getattr(message, "attachments", ()) or getattr(message, "embeds", ())
-            ),
-        }
+        dependencies[message.id] = dependency_metadata(message, focus, identity)
         if len(message.content.encode("utf-8")) > MAX_CONTEXT_BYTES:
             oversized.add(message.id)
         else:

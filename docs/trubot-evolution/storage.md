@@ -939,3 +939,21 @@ nodes with2.21.0 before a deliberate downgrade after capture. Do not restore sou
 or spending databases to roll back code. Synthetic smoke artifacts keep only
 content-free refs/flags/public code under private app-volume0700/0600 and existing
 seven-day manual retention/withdrawal cleanup; disposable databases are erased.
+
+## Native dependency reconciliation, candidate2.22.0
+
+Existing schema1 captures remain content-free and retain their original30-day lifetime.
+A round-robin checkpoint in the existing graph rotates up to two eligible captures per
+learning cycle. Source and retained dependency messages are read within the existing
+allowlist/pinned guild; peer text is ephemeral and never added to source storage.
+Fingerprint/reply/media-presence/time/author changes and403/404 remove the matching old
+capture, orphan dependencies and graph backups. An old verifier cannot delete a newer
+capture. Transient transport errors/timeouts preserve observed metadata and establish
+no fresh visibility. Unknown original pixels and uncaptured messages remain gaps.
+Withdrawal/identity/scope are checked before each network stage; source events and the
+final shared-lock check remain authoritative. No new schema, source replay, provider
+request, ledger or service. No automatic native pattern eligibility.
+Rollback2.21.0 is data-compatible and ignores the new content-free rotation checkpoint,
+but stops offline dependency repair. Do not restore source/spending databases. Temporary
+invented stores/candidate overrides are removed; content-free private smoke refs follow
+existing0700/0600, seven-day manual retention and withdrawal cleanup.

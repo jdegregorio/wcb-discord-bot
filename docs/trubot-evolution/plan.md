@@ -9,27 +9,26 @@ Known edits/deletes, retention, withdrawal and restored stale captures invalidat
 No new trait or measured character-quality gain. [Study](evaluations/2026-10-13-native-context-links-study.md).
 
 Next ordered increments:
-1. H55b/H54b/H50 fresh native dependency verification and contextual study integration,
-   coupled with H48/H21/H28 qualified abstract population. H55a captures only observed
-   bounded neighborhoods. It cannot prove completeness or current visibility; H54a's
-   automatic native pattern gate remains closed. Require both-pass/commit source
-   checks, contrary cases, genuine human held-outs and natural actual Discord replies.
-2. H22/H39 brevity/variation and H51 cue reliability. Same-model matched cases must
-   add relevant novel comic turns while preserving brief warmth, factual grounding,
-   recipient abstention, timing and cost. Prior failed amplification prototypes stay
-   retired; no general fidelity or 2-3x humor multiplier established.
-3. Broader native peers/replies/threads/original pixels. Preserve authenticated scope,
-   attribution and lifecycle. Recent target-only evidence and earliest100 discovery
-   are not complete history; record inaccessible and missing coverage.
+1. H55b/H54b/H50 contextual native study integration, coupled with H48/H21/H28
+   qualified abstract population. H56 supplies fresh bounded dependency reads and
+   background repair of missed peer changes; it is not provider-study integration.
+   Recheck full setup before both passes/atomic commit, link derived interpretations
+   to context invalidation, compare contrary cases and genuine human held-outs, and
+   verify natural actual Discord replies before opening the H54a native pattern gate.
+2. H22/H39 brevity/variation and H51 cue reliability, with same-model matched cases
+   and care/recipient/grounding controls. No general 2-3x humor gain established.
+3. Broader native peers/replies/threads/original pixels, with explicit coverage gaps.
 4. Selective skills/tools and generated Michigan U.P. aurora/trail-camera wildlife
-   with short natural captions and generated provenance. Require sharing/timing
-   evidence, original pixels, abstention controls and estimates inside USD20.
+   with short natural captions and generated provenance. Require original pixels,
+   sharing/timing evidence, abstention and estimates within USD20.
 
-Priorities changed by splitting the confirmed native context prerequisite into
-capture (H55a) and fresh verification/study eligibility (H55b), so useful provenance
-can ship without an unvalidated behavioral assumption. Genuine held-out abstracts
-or a tested full dependency lifecycle can reorder population. Zero active patterns
-and prior optional semantic-audit approval gap remain explicit and unexecuted.
+Priorities changed because H56 confirms that missed peer changes are not repaired by
+H55a known-state checks. Fresh dependency reconciliation can ship as a supported
+enabling correction while full contextual derivation and human validation remain open.
+A genuine held-out abstraction or material behavioral regression can reorder priorities.
+Candidate2.22.0 is awaiting release and installed acceptance; verified production
+remains2.21.0 until deployment. No active new pattern or measured fidelity gain.
+The prior specific optional private-provider grounding audit remains unexecuted.
 Keep source audit text secondary to useful abstractions in ordinary conversation.
 Retain bot identity, approved creative amplification/Thomas Jones bits, internally
 accurate dates/unknowns, correction/deletion/withdrawal/expiry, private storage and

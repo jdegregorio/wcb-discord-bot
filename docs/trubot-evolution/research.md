@@ -2029,3 +2029,13 @@ gate acceptance passes; normal gateway5cases/4posts/one abstention presentation 
 pass. Genuine source capture5/nine dependencies, known lifecycle valid, not current
 visibility certified. No new trait, abstract population or general humor/fidelity gain;
 H55b/H48 remain unvalidated. [Release evidence](evaluations/2026-10-13-native-context-links-release.json).
+
+## 2026-10-13 13:00: H56 missed native setup correction
+
+Locked [hypotheses and study](evaluations/2026-10-13-native-freshness-study.md).
+H56 supported by actual baseline/candidate private owner handler probes with identical
+invented source/setup/history/model: baseline offline edit retained, candidate erased;
+relevant natural delivery preserved.36 focused synthetic cases pass. Enabling correction,
+not measured human character gain. H55b study integration/H48 qualified population and
+H22/H39/H51 humor/variation remain unresolved. Authentication/withdrawal, native pattern
+gate, original-pixel gaps and spending rules preserved. Full release result pending.
