@@ -9,11 +9,17 @@ historical patterns/literal native self-reports, operator review, pacing and lif
 No new source/schema/checkpoint cohort/service/model/API call; rollback2.20.0 is data
 compatible but restores the permissive boundary. [Full study](evaluations/2026-10-13-native-pattern-study.md).
 
-1. H54b/H50 native context dependencies. Enabling. Evidence: current target-only
+Delivered candidate H55a (2.21.0): source-linked bounded context fingerprints,
+known-mutation/restored-state invalidation and retention.29/29 synthetic lifecycle
+cases and actual private baseline/candidate handler acceptance. No human abstraction
+or measured fidelity improvement. No peer text/schema/new calls; existing graph and
+learning lock. [Study](evaluations/2026-10-13-native-context-links-study.md).
+
+1. H55b/H54b/H50 fresh native context verification and study integration. Enabling. Evidence: current target-only
    automatic packets and H54a reproduction. Benefit: distinguish invited humor from
    a stance so that later abstractions reflect conversational setup. Dependencies:
-   authenticated bounded peers/replies, content-free fingerprints, visibility checks
-   and context edit/delete/withdrawal invalidation. Acceptance/validation: same-case
+   H55a captured authenticated bounded peers/replies/fingerprints, fresh visibility checks
+   and context edit/delete/withdrawal invalidation. Acceptance/validation: both provider passes/commit recheck every dependency; same-case
    setup studies plus source lifecycle/retrieval controls and real Discord; do not
    persist interpretations until complete. Confidence: architecture gap confirmed,
    reply-quality impact unresolved. Impact: bounded Discord reads/private app volume,

@@ -2007,3 +2007,18 @@ and H48 population; no new trait, private provider study or measured reply-quali
 gain. The prior optional private grounding-audit rejection is not retried. Full locked
 hypotheses, contrary controls, roadmap rationale and limitations:
 [evaluation record](evaluations/2026-10-13-native-pattern-study.md).
+
+
+## 2026-10-13 09:00: H55a native setup dependency links
+
+Both planning phases and locked acceptance are in
+[evaluation](evaluations/2026-10-13-native-context-links-study.md).
+Confirmed architecture gap: live native neighbors are ephemeral and cannot be
+tracked as durable context dependencies. Selected bounded metadata capture as the
+first H54b increment so that future abstractions can follow their setup.29 final
+baseline cases fail/29 candidate pass; actual private baseline/candidate same-handler
+invented fixture confirms0 versus1 durable capture, restart/deletion/privacy/gate
+controls and relevant delivery. No semantic human trait or humor/fidelity gain claimed.
+H55b fresh dependency reads/study packets and H48 qualified population remain coupled
+next increments; original pixels/broader native, brief varied humor/cues and selective
+skills/tools/generated outdoor scenes remain active. Installed checks pending.

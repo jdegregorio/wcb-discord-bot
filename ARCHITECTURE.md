@@ -265,3 +265,31 @@ source freshness remain authoritative. Historical bot context is labeled separat
 from peers. Authored-source text ceilings remain unchanged. This does not broaden
 intake, persist peers, populate a human trait or add provider/HTTP requests. Existing
 withdrawal, spending, privacy and compatible rollback remain unchanged.
+
+
+## Bounded native context dependencies (2.21.0)
+
+Existing native reply retrieval now records content-free source-to-context links in
+memory-graph.sqlite3. At most100 captures/up to five human dependencies each/30-day
+capture lifetime, plus the native source retention floor. Speaker/channel/message
+IDs, source/capture timestamps, reply relations, full text hashes, media-presence
+markers and coverage gaps remain private. Original pixels are not represented by
+these hashes, and no peer text or derived human interpretation is persisted.
+
+Shared learning-lock checks reject raced captures. Known peer edits/deletes and
+source changes erase links and graph backups; current target-neighbor rows also
+block stale restored metadata after correction. Missing graph/denied setup reads
+leave ordinary replies available. Withdrawal erases this graph state and preserves
+the spending ledger. No schema migration, source replay or new provider/Discord
+request. Optional metadata comes from the existing live collector, not a new intake.
+
+A capture records observed bounded setup, not current visibility or complete context.
+The automatic native pattern gate remains closed. H55b must add fresh per-dependency
+reads before studies/both provider passes/commit, full contextual packets and held-out
+validation before opening it. No new abstraction or measured reply-quality gain.
+Rollback2.20.1 is schema-compatible and retains the pattern gate, but stops the new
+capture lifecycle; sweep/remove native_context and orphan native_context_dependency
+nodes with2.21.0 before a deliberate downgrade after capture. Do not restore source
+or spending databases to roll back code. Synthetic smoke artifacts keep only
+content-free refs/flags/public code under private app-volume0700/0600 and existing
+seven-day manual retention/withdrawal cleanup; disposable databases are erased.

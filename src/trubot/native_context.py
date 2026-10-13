@@ -2,13 +2,14 @@
 
 from __future__ import annotations
 
+import hashlib
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from typing import Any
 
 import discord
 
-from trubot.learning import Identity, _time
+from trubot.learning import Identity, SourceMessage, _time
 
 # Context must be complete: silently clipped qualifications can reverse meaning.
 MAX_CONTEXT_BYTES = 600
@@ -21,6 +22,8 @@ class NativeEpisode:
     source_edited_at: str | None = field(repr=False)
     neighbors: tuple[dict[str, Any], ...] = field(repr=False)
     gaps: tuple[str, ...] = ()
+    source: SourceMessage | None = field(default=None, repr=False)
+    dependencies: tuple[dict[str, Any], ...] = field(default=(), repr=False)
 
     def matches(self, text: str, edited_at: str | None) -> bool:
         return self.source_text == text and self.source_edited_at == edited_at
@@ -97,14 +100,36 @@ async def collect_native_episode(
     ):
         return None
     neighbors: dict[int, dict[str, Any]] = {}
+    dependencies: dict[int, dict[str, Any]] = {}
     gaps: list[str] = []
     oversized: set[int] = set()
 
     def admit(message: discord.Message) -> None:
+        row = _context_row(message, focus, identity)
+        # Persistable metadata includes omitted oversized humans, never their text.
+        dependencies[message.id] = {
+            key: row[key]
+            for key in (
+                "message_id",
+                "created_at",
+                "edited_at",
+                "speaker_id",
+                "position",
+                "reply_to_message_id",
+                "focus_replies_to_this",
+            )
+        } | {
+            "channel_id": channel.id,
+            "guild_id": channel.guild.id,
+            "content_sha256": hashlib.sha256(message.content.encode()).hexdigest(),
+            "media_present": bool(
+                getattr(message, "attachments", ()) or getattr(message, "embeds", ())
+            ),
+        }
         if len(message.content.encode("utf-8")) > MAX_CONTEXT_BYTES:
             oversized.add(message.id)
         else:
-            neighbors[message.id] = _context_row(message, focus, identity)
+            neighbors[message.id] = row
 
     if not hasattr(focus, "attachments") or not hasattr(focus, "embeds"):
         gaps.append("source media metadata unavailable")
@@ -127,6 +152,7 @@ async def collect_native_episode(
                 _time(focus.edited_at) if focus.edited_at else None,
                 (),
                 tuple(gaps),
+                source=SourceMessage.from_discord(focus, observed_at=now, authoritative=True),
             )
     reference = getattr(focus, "reference", None)
     if isinstance(reference, discord.MessageReference) and reference.message_id is not None:
@@ -159,4 +185,6 @@ async def collect_native_episode(
         _time(focus.edited_at) if focus.edited_at else None,
         tuple(neighbors[key] for key in sorted(neighbors)[:5]),
         tuple(gaps),
+        source=SourceMessage.from_discord(focus, observed_at=now, authoritative=True),
+        dependencies=tuple(dependencies[key] for key in sorted(dependencies)[:5]),
     )

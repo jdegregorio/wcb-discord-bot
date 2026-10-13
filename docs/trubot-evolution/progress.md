@@ -3230,3 +3230,55 @@ by container replacement; disposable DBs deleted. Contentfree private refs/helpe
 0700/0600 at smoke-tests/2026-10-13-0500 retain existing7daymanual policy/withdrawal.
 Final evidence CI and owned-worktree archive recorded in automation memory.
 [Release evidence](evaluations/2026-10-13-native-pattern-release.json).
+
+
+## 2026-10-13 09:00 Pacific: H55a bounded native setup links
+
+New managed worktree trubot-daily-20261013-0900; base
+dcb55f31fb98424bed68b6fb892c40137e4ac095, unique feature/trubot-daily-20261013-0900.
+Fetched origin/main before branch/source mutation. Primary checkout never edited,
+stashed or reset. Prior run96/97 and archive completed; only dependency PRs remain.
+Used gh-axi and Raspberry Pi deployment skills; existing app key/maintenance ledger.
+
+Both planning phases: [locked hypothesis/experiment](evaluations/2026-10-13-native-context-links-study.md).
+Selected enabling native context links so future abstraction can track setup evidence.
+Split H54b into H55a capture and H55b fresh dependency verification/study integration;
+qualified H48 population remains coupled next. Retain broader native/pixels, varied
+brief humor/cues, selective skills/tools and generated U.P. aurora/trail-camera scenes.
+No unvalidated behavioral assumption or new human pattern is shipped.
+
+Candidate2.21.0: optional existing live native collector records metadata-only links
+under the source lock.100 captures/five human dependencies/30-day capture expiry/
+native retention; source times, reply links, text hashes, gaps and provenance. Known
+peer/source invalidation, restored corrected target neighbors, retention and withdrawal
+erase captures/orphans/backups. No peer/source text copied, no schema/checkpoint/model/
+source replay/service/additional provider or Discord request. Native automatic pattern
+gate remains closed. Metadata does not prove current visibility or complete context.
+
+Final same-case baseline29fail/candidate29pass. Full six gates:930tests/97.00% branch
+coverage/29typed modules/build2.21.0. The cap test exposed an eviction tie-break fixed
+before final validation. These are invented engineering cases, not human-quality gains.
+Actual H55A/B private owner probes, identical invented sources/setup/history/model:
+baseline0captures/dependencies; candidate1/1, restart/deletion/raw-text absence/gate
+controls pass. Each made one genuine maintenance reply through real memory/respond
+handlers, relevant/natural without metadata disclaimer. Distinct readiness before
+construction/no second gateway/no development learning/disposable source databases
+removed. Fixture helper ownership error from docker cp was corrected by writing as
+app UID; no production source/credential/readiness mutation. Candidate package override
+is isolated to the validation process and will be removed after installed verification.
+
+Authenticated preaudit3source channels/latest100/14days:7target/12peers/4older bot/
+0current spontaneous. UI semantic review7target messages/four dated groups/five older
+bot posts, with peer setup/reactions and linked reply; no new generalized human trait.
+No original-pixel study or private provider audit. Current graph439sources/554episodes/
+1015edges/two claims/one preference/zero active patterns; native34,archives16/4299grouped/
+412target/405eligible,visual115/96assets. Mechanical source coverage is not an independent
+human-pattern benchmark. Optional prior specific private provider-audit approval gap
+remains unexecuted. No measured general fidelity or 2-3x humor gain.
+
+PR/required CI/tested merge/immutable release/both images/pi5 deployment/installed
+acceptance and fresh normal gateway controls remain the final release steps and will
+be recorded after verification. Pre-run covered October estimateUSD0.198290225,1290
+settled/zero unsettled; USD18/2/20 guard unchanged, billing and pre-guard spend unknown.
+Private artifacts keep only references/flags and public fixture code in existing app
+volume0700/0600; actual answer/raw source text is not retained in smoke records.

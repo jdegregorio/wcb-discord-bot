@@ -22,6 +22,7 @@ from trubot.conversation import (
     safety_identifier,
 )
 from trubot.distillation import GraphDistiller
+from trubot.graph import GraphStore
 from trubot.health import ReadinessFile
 from trubot.history import (
     HistoryChannel,
@@ -669,6 +670,14 @@ class TruBotClient(discord.Client):
                     )
                     if episode is not None:
                         native_episodes[message_id] = episode
+                        # Optional durable metadata never turns peers into persona
+                        # evidence or grants automatic native pattern eligibility.
+                        with suppress(LearningUnavailable):
+                            await asyncio.to_thread(
+                                GraphStore(learning.store).record_native_context,
+                                episode,
+                                now=self._clock(),
+                            )
                 except (discord.HTTPException, TimeoutError):
                     # Context is optional; never use stale or guessed neighbors.
                     pass
