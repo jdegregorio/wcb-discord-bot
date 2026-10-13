@@ -23,6 +23,7 @@ from trubot.episode_memory import (
 )
 from trubot.learning import LearningStore, LearningUnavailable, _private, _time
 from trubot.lexical import phrase
+from trubot.native_context import NativeEpisode
 
 VERSION = "reviewed-graph-v1"
 MAX_NODES = 30_000
@@ -612,6 +613,8 @@ class GraphStore:
                 if row["kind"] == "human_source":
                     current = self._snapshot(data["ref"], source, now=now, archive=archive)
                     invalid = current is None or current["fingerprint"] != data["fingerprint"]
+                elif row["kind"] == "native_context":
+                    invalid = not self._native_context_valid(data, source, now=now)
                 elif row["kind"] in OBSERVATION_KINDS:
                     invalid = not self._valid(data, source, now=now, archive=archive)
                 elif "archive_episode" in data:
@@ -641,9 +644,190 @@ class GraphStore:
                 "DELETE FROM nodes WHERE kind IN ('entity','concept') AND id NOT IN "
                 "(SELECT target FROM edges WHERE relation IN ('about','exemplifies'))"
             )
+            self._prune_native_dependencies(db)
         if erased:
             self._remove_backups()
         return erased
+
+    def _native_context_valid(
+        self, data: dict[str, Any], source: sqlite3.Connection, *, now: datetime
+    ) -> bool:
+        current = self._snapshot(data["ref"], source, now=now)
+        if current is None or current["fingerprint"] != data["source_fingerprint"]:
+            return False
+        captured = datetime.fromisoformat(data["captured_at"])
+        if not now - timedelta(days=30) <= captured <= now:
+            return False
+        identity = self.learning._read_identity(source)
+        for dependency in data["dependencies"]:
+            if (
+                dependency["guild_id"] != identity.guild_id
+                or dependency["channel_id"] != current["ref"]["channel_id"]
+                or dependency["created_at"]
+                < _time(now - timedelta(days=self.learning.retention_days))
+            ):
+                return False
+            # Target-authored neighbors already have authoritative text in the
+            # learning store. Restored metadata must also match their current row.
+            target = source.execute(
+                "SELECT * FROM messages WHERE id=?", (dependency["message_id"],)
+            ).fetchone()
+            if target and (
+                not target["content"]
+                or hashlib.sha256(target["content"].encode()).hexdigest()
+                != dependency["content_sha256"]
+                or target["edited_at"] != dependency["edited_at"]
+            ):
+                return False
+            invalid = source.execute(
+                "SELECT * FROM invalidations WHERE id=?", (dependency["message_id"],)
+            ).fetchone()
+            if invalid and (
+                invalid["channel_id"] != dependency["channel_id"]
+                or invalid["deleted"]
+                or invalid["observed_at"] >= data["captured_at"]
+            ):
+                return False
+        return True
+
+    def record_native_context(self, episode: NativeEpisode, *, now: datetime) -> bool:
+        """Record last-observed setup dependencies, never a study eligibility certificate.
+
+        Peer text remains ephemeral. The automatic native pattern gate stays closed;
+        offline metadata cannot establish current Discord visibility or complete setup.
+        """
+        focus = episode.source
+        if focus is None:
+            raise LearningUnavailable("Authenticated native capture required")
+        with self._transaction() as (db, source):
+            identity = self.learning._read_identity(source)
+            ref = {"kind": "discord", "message_id": focus.id}
+            current = self._snapshot(ref, source, now=now)
+            if (
+                current is None
+                or focus.bot
+                or focus.webhook
+                or focus.author_id != identity.user_id
+                or focus.guild_id != identity.guild_id
+                or focus.channel_id != current["ref"]["channel_id"]
+                or _time(focus.created_at) != current["source_time"]
+                or not episode.matches(
+                    focus.content[:4000], _time(focus.edited_at) if focus.edited_at else None
+                )
+                or current["fingerprint"]
+                != _hash(
+                    [
+                        current["ref"],
+                        focus.content[:4000],
+                        _time(focus.created_at),
+                        _time(focus.edited_at) if focus.edited_at else None,
+                    ]
+                )
+                or not now - timedelta(seconds=30) <= focus.observed_at <= now
+                or len(episode.dependencies) > 5
+                or len({row["message_id"] for row in episode.dependencies})
+                != len(episode.dependencies)
+                or any(row["message_id"] == focus.id for row in episode.dependencies)
+            ):
+                raise LearningUnavailable("Native capture source changed or outside bounds")
+            dependency_keys = {
+                "message_id",
+                "created_at",
+                "edited_at",
+                "speaker_id",
+                "position",
+                "reply_to_message_id",
+                "focus_replies_to_this",
+                "channel_id",
+                "guild_id",
+                "content_sha256",
+                "media_present",
+            }
+            if any(set(row) != dependency_keys for row in episode.dependencies):
+                raise LearningUnavailable("Content-free dependency metadata required")
+            for row in episode.dependencies:
+                if (
+                    any(
+                        type(row[key]) is not int or row[key] <= 0
+                        for key in ("message_id", "speaker_id", "channel_id", "guild_id")
+                    )
+                    or row["position"] not in ("before", "after")
+                    or type(row["media_present"]) is not bool
+                    or type(row["focus_replies_to_this"]) is not bool
+                    or not isinstance(row["content_sha256"], str)
+                    or len(row["content_sha256"]) != 64
+                    or any(c not in "0123456789abcdef" for c in row["content_sha256"])
+                    or not _time(datetime.fromisoformat(row["created_at"]))
+                    <= _time(focus.observed_at)
+                ):
+                    raise LearningUnavailable("Invalid dependency metadata")
+            data = {
+                "ref": current["ref"],
+                "source_fingerprint": current["fingerprint"],
+                "captured_at": _time(focus.observed_at),
+                "source_time": current["source_time"],
+                "unknown_date": False,
+                "extraction_version": "native-dependency-capture-v1",
+                "scope": "bounded adjacency and same-channel reference; not complete context",
+                "visibility": "observed at capture only; fresh reads required before learning",
+                "dependencies": list(episode.dependencies),
+                "gaps": list(episode.gaps),
+            }
+            if not self._native_context_valid(data, source, now=now):
+                raise LearningUnavailable("Native capture dependencies invalidated")
+            key = "native-context:" + _key(ref)
+            previous = db.execute("SELECT data FROM nodes WHERE id=?", (key,)).fetchone()
+            # A raced or older collector must not overwrite a newer capture.
+            if previous and json.loads(previous[0])["captured_at"] > data["captured_at"]:
+                return False
+            db.execute("DELETE FROM nodes WHERE id=?", (key,))
+            if not db.execute("SELECT 1 FROM nodes WHERE id=?", (_key(ref),)).fetchone():
+                source_data = current | {
+                    "extraction_version": VERSION,
+                    "observed_at": _time(now),
+                    "confidence_basis": "Pinned authenticated identity",
+                    "status": "active",
+                }
+                self._node(db, _key(ref), "human_source", source_data)
+                self._node(
+                    db, "person:target", "person", source_data | {"label": "verified Andrew"}
+                )
+                source_episode = "episode:" + _key(ref)
+                self._node(db, source_episode, "episode", source_data)
+                self._edge(db, _key(ref), "authored-by", "person:target", source_data)
+                self._edge(db, _key(ref), "part-of", source_episode, source_data)
+            self._node(db, key, "native_context", data)
+            self._edge(
+                db, key, "context-for", _key(ref), {"source_fingerprint": current["fingerprint"]}
+            )
+            for dependency in data["dependencies"]:
+                target = "native-context-dependency:" + str(dependency["message_id"])
+                # Edge evidence holds this capture's complete metadata. Shared nodes
+                # hold only routing, so another capture cannot rewrite its fingerprint.
+                self._node(
+                    db,
+                    target,
+                    "native_context_dependency",
+                    {key: dependency[key] for key in ("message_id", "guild_id", "channel_id")},
+                )
+                self._edge(db, key, "depends-on", target, dependency)
+            db.execute(
+                "DELETE FROM nodes WHERE id IN (SELECT id FROM nodes WHERE kind='native_context' "
+                "ORDER BY json_extract(data, '$.captured_at') DESC, id DESC LIMIT -1 OFFSET 100)"
+            )
+            self._prune_native_dependencies(db)
+            if db.execute("SELECT COUNT(*) FROM nodes").fetchone()[0] > MAX_NODES:
+                raise LearningUnavailable("Graph node limit reached")
+        # Replacement/eviction must not leave older private setup in graph backups.
+        self._remove_backups()
+        return True
+
+    @staticmethod
+    def _prune_native_dependencies(db: sqlite3.Connection) -> None:
+        db.execute(
+            "DELETE FROM nodes WHERE kind='native_context_dependency' AND id NOT IN "
+            "(SELECT target FROM edges WHERE relation='depends-on')"
+        )
 
     def _remove_backups(self) -> None:
         backups = self.path.parent / "backups"
