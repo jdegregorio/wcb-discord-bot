@@ -1,6 +1,6 @@
 # Prioritized Trubot backlog
 
-Selected H54a: native automatic pattern evidence gate. Reproduced permissive schema,
+Delivered H54a (2.20.1, PR96): native automatic pattern evidence gate. Reproduced permissive schema,
 local validation, automated storage and restored recall. So that detached remarks
 cannot become recurring character interpretations without contextual provenance.
 High confidence in the deterministic boundary; production incidence unmeasured and

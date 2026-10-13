@@ -3192,3 +3192,41 @@ pending; no rejected operation is retried. Native34; archives16/4,299 grouped/41
 visual115/96assets; graph439sources/554episodes/1,015edges/2claims/1preference/0patterns.
 Actual release/deployment IDs, post-audit and spending to follow after rollout.
 [Study and acceptance](evaluations/2026-10-13-native-pattern-study.md).
+
+
+### 05:00 H54a deployed and verified
+
+[PR96](https://github.com/jdegregorio/wcb-discord-bot/pull/96), feature
+c1d710dd0e145a3f579c354dc5b70726080a3cd9, merged a33778ad643cf0c5611404323c7afc58c24d4558.
+Required PR38396271206/main38396459351/image38396690373 CI pass. Merged-main all6gates
+901tests/96.92%/29modules/build2.20.1. Immutable
+[release2.20.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.20.1)
+both architectures inspected; pi5 scoped locked transaction deployed
+sha256:8ed7cf72ff9e54623ee41f59a6b49d853c230facb74b8a9740a6aefb4a92937d.
+OCI/package/module/29hashes match, healthy/Discordready/0restarts. Previous2.20.0/
+b83f3de recovery retained. No migration/rollback. Automatic review rejected printing
+version envfile before execution; safe status/image inspection completed verification
+without exposing env contents or requesting unnecessary approval.
+
+Installed actual controlled fixture also blocks automatic native pattern storage and
+restored recall/abstract input. Three actual controlled sends total, each real
+maintenance request, relevant2sentences, invented disposable sources only. All refs
+reauthenticated. Distinctready BEFOREconstruction/no secondgateway/no development
+learning; primaryready survives close. Normal installed5cases/4posts/1recipient decline;
+manual full4/5. Care/TJ/author/recipient pass. Baseball is natural but strict local source
+binding unmatched, so grounding remains unvalidated. A specific query finds an
+existing3source reviewedclaim, not a preference; incomplete topic binding does not
+prove a wrong answer or new regression. No rejected private model audit retried,
+new trait or general fidelity gain. Full human semantic/pixel review remains open.
+
+Postaudit unchanged3channels/latest100/14days:7target/12peers/4olderbot/0spontaneous;
+405eligible grouped blocks/15exports mechanical only. Private source/graph counts and
+zero activepatterns unchanged. At12:30UTC0errors/replyfailures/disconnects/studypauses/
+restarts;2Discordclient warnings/0memoryverification warnings. Monthly ledger estimate
+USD0.198290225(runtime0.098401445/maintenance0.09988878),1290settled/0unsettled. Run
+USD0.003855725/11attempts(8runtime includingabstention,3maintenance). USD18/2/20caps,
+no newservice/ledger/call policy, billing/preguardunknown. Candidate override removed
+by container replacement; disposable DBs deleted. Contentfree private refs/helpercode
+0700/0600 at smoke-tests/2026-10-13-0500 retain existing7daymanual policy/withdrawal.
+Final evidence CI and owned-worktree archive recorded in automation memory.
+[Release evidence](evaluations/2026-10-13-native-pattern-release.json).

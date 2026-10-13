@@ -1,0 +1,143 @@
+{
+  "run": "2026-10-13-0500",
+  "base": "077de5fa4a73d72d68f8e56f84d654fa216f19c7",
+  "feature": "c1d710dd0e145a3f579c354dc5b70726080a3cd9",
+  "merged_runtime": "a33778ad643cf0c5611404323c7afc58c24d4558",
+  "pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/96",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.20.1",
+  "ci": {
+    "pr": 38396271206,
+    "main": 38396459351,
+    "image": 38396690373,
+    "conclusion": "success"
+  },
+  "quality": {
+    "gates_passed": 6,
+    "tests": 901,
+    "coverage_percent": 96.92,
+    "typed_modules": 29,
+    "package": "2.20.1",
+    "merged_main_rechecked": true
+  },
+  "comparison": {
+    "final_cases": 33,
+    "baseline_failed": 31,
+    "baseline_negative_passed": 2,
+    "candidate_passed": 33,
+    "synthetic_sources_only": true,
+    "initial_full_cycle_fixture_date_mismatch_repaired": true
+  },
+  "deployment": {
+    "host": "pi5",
+    "arch": "aarch64",
+    "os": "Ubuntu24.04.4",
+    "release": "2.20.1",
+    "digest": "sha256:8ed7cf72ff9e54623ee41f59a6b49d853c230facb74b8a9740a6aefb4a92937d",
+    "amd64_manifest": "sha256:536d29135143478f0b12ed71b6f13fdd38a73463ccaafd5fcd50e87a667d3aa0",
+    "arm64_manifest": "sha256:ff1f49956d9bec53c8d831b4fc532947427b60d7f372190f92291ede1b6039a3",
+    "health": "healthy",
+    "discord_ready": true,
+    "restarts": 0,
+    "source_hashes_match": 29,
+    "oci_commit_matches": true,
+    "previous_release": "2.20.0",
+    "previous_digest": "sha256:b83f3de51d1acbe9ea9b70d6d36735cc2107923102141917331320195bd806fb",
+    "rollback_used": false,
+    "migration": false
+  },
+  "discord": {
+    "controlled_actual_sends": 3,
+    "baseline_automatic_storage": true,
+    "baseline_restored_recall": true,
+    "candidate_and_installed_automatic_storage": false,
+    "candidate_and_installed_restored_recall": false,
+    "candidate_and_installed_abstract_packet_supplied": false,
+    "controlled_evidence": "invented disposable sources",
+    "matched_history_model": true,
+    "controlled_reply_quality": "relevant two-sentence replies; no measured general fidelity gain",
+    "gateway_arms_separate": true,
+    "fresh_installed_cases": 5,
+    "fresh_installed_posts": 4,
+    "fresh_installed_recipient_abstentions": 1,
+    "manual_full_pass": 4,
+    "baseball": "natural presentation; source binding remains unvalidated",
+    "private_refs_reauthenticated": true,
+    "development_learning": 0,
+    "second_gateway": false,
+    "isolated_ready_paths_before_construction": true,
+    "primary_ready_after_close": true,
+    "raw_answers_retained": false
+  },
+  "audit": {
+    "source_channels": 3,
+    "latest_per_channel": 100,
+    "days": 14,
+    "target": 7,
+    "peer": 12,
+    "older_bot": 4,
+    "current_spontaneous": 0,
+    "eligible_target_grouped_blocks": 405,
+    "exports": 15,
+    "semantic_human_review_completed": false,
+    "pixels_interpreted": false,
+    "active_patterns": 0,
+    "new_human_traits": 0,
+    "limitations": [
+      "Sparse spontaneous activity",
+      "No genuine human held-out semantic benchmark",
+      "No measured general humor or fidelity gain",
+      "Native context dependencies still missing",
+      "Prior optional private payload audit approval pending, not retried",
+      "Ordinary baseball source binding not validated by local topic-only graph check"
+    ]
+  },
+  "observability": {
+    "at": "2026-10-13T12:30:26Z",
+    "errors": 0,
+    "reply_failures": 0,
+    "disconnects": 0,
+    "study_pauses": 0,
+    "warnings": 2,
+    "warning_loggers": [
+      "discord.client"
+    ],
+    "application_memory_verification_warnings": 0
+  },
+  "cost": {
+    "month": "2026-10",
+    "estimate_usd": 0.198290225,
+    "runtime_usd": 0.098401445,
+    "maintenance_usd": 0.09988878,
+    "settled_attempts": 1290,
+    "unsettled_attempts": 0,
+    "run_estimate_usd": 0.003855725,
+    "run_attempts": 11,
+    "run_runtime_attempts": 8,
+    "run_maintenance_attempts": 3,
+    "caps_usd": [
+      18,
+      2,
+      20
+    ],
+    "new_service": false,
+    "provider_billing": "not measured",
+    "pre_guard": "unknown"
+  },
+  "privacy": {
+    "public_notes": "categories/counts/methods only",
+    "private_retention": "existing7daymanual policy",
+    "private_artifact_modes": [
+      "0700",
+      "0600"
+    ],
+    "disposable_synthetic_databases_removed": true,
+    "ephemeral_candidate_removed_by_container_replacement": true,
+    "withdrawal_preserved": true
+  },
+  "approval_review": {
+    "version_env_print_rejected": true,
+    "env_contents_not_printed": true,
+    "safe_alternative": "pi-app status and immutable docker inspection",
+    "selected_work_blocked": false
+  }
+}

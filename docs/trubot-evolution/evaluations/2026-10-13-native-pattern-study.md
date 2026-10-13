@@ -115,3 +115,57 @@ set BEFORE construction/no second gateway/no development learning/disposable sta
 removed; primary readiness survives close. A fresh owner normal baseline banter
 probe is brief and relevant. Installed verification, normal controls and release
 identifiers will be recorded after rollout.
+
+
+### Immutable rollout and actual limitations
+
+[PR96](https://github.com/jdegregorio/wcb-discord-bot/pull/96) merged
+a33778ad643cf0c5611404323c7afc58c24d4558. PR38396271206/main38396459351/image38396690373
+pass. All six gates repeated on merged main:901tests/96.92%/29modules/2.20.1.
+[Release2.20.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.20.1)
+uses that exact tested commit. Both image architectures inspected. Scoped locking/
+rollback helper deployed sha256:8ed7cf72ff9e54623ee41f59a6b49d853c230facb74b8a9740a6aefb4a92937d
+on reverified pi5/aarch64/Ubuntu24.04.4. OCI/package/module version and29 installed
+hashes match, Discord ready/healthy/zero restarts. Previous2.20.0/b83f3de retained;
+no rollback or migration. A version-env print was automatically rejected for possible
+credential exposure. It never ran; safe app/container status covered verification.
+No bypass or unresolved selected-increment approval blocker.
+
+Installed actual NP54C also rejects automatic native storage/restored recall and
+omits its abstract packet, while delivering a relevant brief reply. All three
+controlled actual sends reauthenticated; synthetic sources only, each one genuine
+maintenance request. Separate gateway attention-window replies are excluded from
+controlled arms. Distinct ready paths BEFOREconstruction; primary ready after close;
+no second gateway/development learning. Container replacement removed candidate
+package override; disposable fixture DBs were removed automatically.
+
+Fresh installed normal gateway5cases/4posts/1recipient decline. Manual full4/5:
+care is sincere and two sentences, TJ banter relevant/novel, author binding conserves
+uncertainty about the operator's own history, and other-recipient abstention passes.
+Baseball presentation is direct/natural with no routine date caveat. Its strict local
+preference-only check found no matching preference; a more specific source query
+finds an existing three-source reviewed claim, while topic-only binding checks remain
+unmatched. This is an incomplete grounding check, not proof of a wrong answer or a
+new gate regression. It remains UNVALIDATED; do not silently grade it as a full pass
+or dispatch the previously rejected private model audit. No general fidelity or
+humor multiplier, no genuine human held-out semantic benchmark, no new human trait.
+
+Pre/post league coverage unchanged:3channels/latest100/14days,7target/12peers/4olderbot/
+0current spontaneous. Mechanical405eligible grouped blocks/15exports is not semantic
+or original-pixel review. Production graph/source counts and zero active patterns
+unchanged. At12:30UTC zero application errors/reply failures/disconnects/study pauses/
+restarts;2 Discord client warnings,0 memory-verification warnings. Sparse activity
+limits error-rate inference. October covered ledger estimateUSD0.198290225, runtime
+0.098401445/maintenance0.09988878,1290settled/0unsettled. RunUSD0.003855725 across11real
+attempts:8runtime(including one abstention),3maintenance controlled sends. Estimates
+are not billing records; pre-guard spending unknown. Existing USD18/2/20 caps/key,
+no freshledger/paidservice/added provider calls from the gate.
+
+Private app-volume smoke-tests/2026-10-13-0500 retains only content-free references,
+flags and public helper code,0700/0600, under the existing7daymanual retention and
+withdrawal process. Raw human/answer text is not retained in smoke artifacts or
+public notes. Necessary public evidence is versioned before worktree archival.
+Next: durable native contextual dependencies and qualified abstract population;
+source binding/semantic inspection gaps, brevity/variation, broader native/pixels,
+selective skills/tools and generated outdoor scenes remain explicit.
+[Content-free release evidence](2026-10-13-native-pattern-release.json).
