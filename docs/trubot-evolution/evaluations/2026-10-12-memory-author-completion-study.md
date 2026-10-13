@@ -114,3 +114,47 @@ No new source data or human pattern. Same Codex evaluator, one fresh trial per c
 no independent human evaluator or genuine human held-out benchmark. Inherited
 28-request revised experiment remains separate. Installed release acceptance is
 pending; packet conformance alone does not establish general character fidelity.
+
+## Released acceptance and contrary cases
+
+2.19.2 is deployed at the tested merged commit. All required CI, both actual image
+platforms and all 29 installed hashes pass. Three actual installed-handler cases
+validate source/other/unknown bot-target scope and withdrawal, using invented stores
+and distinct readiness before construction. Controlled replies pass 3/3. Zero intake
+and primary heartbeat after each close. Normal owner gateway source grounding 5/5,
+including the original defect, supported preference, named source/year, actual owner
+reaction and own-history exclusion. Exact date remains uncertain naturally.
+
+Full normal review 8/11, combined with controlled behavior 11/14. Retain negatives:
+broad recall and care each use three sentences; the initial established creative cue
+misses, while the unmentioned clarification recovers. Warmth, novel relevant banter
+and another-recipient abstention pass. The matched actual broad answer changes from
+two to three sentences while source attribution improves. This is a real brevity
+negative, not proof of a general causal regression. No other matched actual baseline
+for these wider post-release cases; do not claim blanket conversational acceptance.
+The supported grounding correction remains deployed. Further causal comparison is
+required before a new creative/length intervention; no rollback was performed.
+
+H51 refines H22/H39: a relevant established creative cue may be lost in current
+context, so that its clarification repairs the bit but the initial turn disappoints.
+One fresh failure/recovery pair is low-confidence evidence, not a validated mechanism.
+Compare identical contexts with the author binding held constant before selecting
+change. Acceptance: relevant first-turn creative recognition, fresh contextual comic
+turns without mandatory catchphrases, no sincerity or source-person regression, actual
+Discord delivery. Disconfirmation: baseline also fails variably, current topic explains
+the response, or the change creates rote TJ replies. Existing maintenance ledger;
+no added recurring request or service. Human abstractions remain the next priority.
+
+Local human audit totals six central grouped blocks/six exports/24 neighbors, plus
+four authored passages screened for relevant support and contrary stances. No marked
+media gaps in these six windows; original pixels were not interpreted. Three-channel
+latest-100/14-day before/after scan has seven target messages both, 15/12 peers and
+five older bot windows both; zero current spontaneous replies. Sliding sample counts
+are reported as observed. No new trait, independent human evaluator, genuine human
+population hold-out benchmark, or provider human audit. Broader fidelity remains open.
+
+Authenticated content-free private refs, counts, metrics, helpers and invented fixtures
+use 0700/0600 on the existing app volume. Temporary candidate override removed before
+installed tests. No raw source/answer rendering or derived personal observation artifact.
+Existing manual seven-day retention, correction/withdrawal and backup limits apply.
+Full identifiers, actual results, costs and limits: [release evidence](2026-10-12-memory-author-release.json).

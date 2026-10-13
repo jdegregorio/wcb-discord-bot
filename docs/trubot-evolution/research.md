@@ -1922,3 +1922,13 @@ with a relevant novel turn. Gates/CI/images/source hashes pass in 2.19.1.
 ## 2026-10-12 17:00 - H49 completion
 
 Both phases and fresh baseline are in [completion study](evaluations/2026-10-12-memory-author-completion-study.md). The failed 13:00 draft and inherited matched evidence are explicitly reconciled. Select trusted memory-author binding before human abstract population. Fresh comparison and release acceptance remain pending; zero new traits or provider human audit requests.
+
+### H49 verified and H51 exploratory
+
+H49 is delivered in 2.19.2. Actual source grounding5/5, controlled scope/lifecycle3/3,
+full gateway8/11 and combined11/14. Two brevity failures and an initial creative cue
+miss remain, with clarification recovery. H51 is a low-confidence contextual cue
+hypothesis requiring matched causal comparison, not a new prompt recommendation.
+Human abstracts remain next. See [completion study](evaluations/2026-10-12-memory-author-completion-study.md)
+and [release evidence](evaluations/2026-10-12-memory-author-release.json). No new trait,
+service, schema/model or recurring request. No broad fidelity/humor multiplier claim.

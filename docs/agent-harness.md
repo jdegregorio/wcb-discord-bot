@@ -1,5 +1,27 @@
 # Harness exploration
 
+2026-10-12 17:00 verified: H49/H6 is deployed in 2.19.2 (PR #90).
+The source/focus-author binding corrects fresh actual broad recall and preserves
+supported own-history, unknown bot-target reaction scope, withdrawal and readiness.
+All six gates, 838 tests/96.84%, required PR/main CI, both image architectures and
+29 installed hashes pass. Normal gateway source grounding is 5/5; installed
+controlled packets/lifecycle/behavior are 3/3. Full normal review is 8/11, combined
+11/14: retain two three-sentence replies and one initial creative cue miss, whose
+clarification recovers. No general fidelity/humor gain or new human abstraction.
+
+Next ordered increments: H48/H21/H28 qualified conditional human population with
+genuine held-outs and author/care controls; H22/H39 variation/brevity plus exploratory
+H51 cue reliability; H50 broader native peer/reply/thread/pixels; selective skills/
+tools and generated U.P. aurora/trail-camera sharing. The grounding prerequisite is
+complete, not a reason for more literal-recall patches. Confidence/dependencies,
+benefits, acceptance, contrary evidence and operating impact remain in the completion
+study. Stronger human/context evidence can change this order. Zero active patterns;
+failed older population remains retired. Existing volume, source lifecycle, intake/
+participation and USD18/2/20 preserved; no new schema/model/service/recurring request.
+Six standalone local daily hours, Sol/xhigh and failed-runs-only notifications unchanged.
+Full results: docs/trubot-evolution/evaluations/2026-10-12-memory-author-release.json.
+
+
 2026-10-12 17:00 selection: complete H49/H6 authenticated memory-author binding.
 Fresh actual broad recall misassigns Andrew's statements to Joe. Reconcile the failed
 13:00 prototype in this run's new managed worktree so that factual and abstract
