@@ -98,7 +98,7 @@ async def test_native_context_excludes_bots_webhooks_other_guilds_and_old_neighb
     episode = await collect(channel)
     assert len(episode.neighbors) == 1
     assert episode.neighbors[0]["author"] == "verified Andrew (context only)"
-    assert len(episode.neighbors[0]["text"]) <= 350
+    assert len(episode.neighbors[0]["text"].encode()) <= 600
 
 
 async def test_native_reference_is_refreshed_in_same_channel_and_gaps_are_explicit():

@@ -1932,3 +1932,21 @@ hypothesis requiring matched causal comparison, not a new prompt recommendation.
 Human abstracts remain next. See [completion study](evaluations/2026-10-12-memory-author-completion-study.md)
 and [release evidence](evaluations/2026-10-12-memory-author-release.json). No new trait,
 service, schema/model or recurring request. No broad fidelity/humor multiplier claim.
+
+
+## 2026-10-12 21:00 H52 selection
+
+2026-10-12 21:00 selection: H52 complete live conversational setup. Native and
+historical neighbors are silently clipped at350 characters, losing qualifications.
+Preserve complete rows up to600UTF-8 bytes and mark oversized rows as gaps so that
+contextual memory does not misstate a human stance. Existing scope, attribution,
+source lifecycle, participation and USD18/2/20 remain authoritative. No new model,
+service, provider request or human abstraction. Both planning phases and acceptance:
+docs/trubot-evolution/evaluations/2026-10-12-complete-context-study.md.
+
+Next: H48/H21/H28 qualified human abstractions with genuine held-outs and H43/H6
+controls; H22/H39 variation/brevity and exploratoryH51; H50 native peers/replies/
+threads/pixels; bounded selective skills/tools and generated U.P. aurora/trail-camera
+sharing. Targeted raw historical output was automatically rejected for private-log
+risk; no workaround attempted or new trait populated. H52 is a concrete grounding
+prerequisite, not a general fidelity claim. Six daily standalone runs unchanged.

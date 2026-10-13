@@ -15,7 +15,7 @@ from trubot.episode_memory import abstract_context, observation_sources
 from trubot.graph import GraphStore
 from trubot.learning import LearningStore, LearningUnavailable, _time
 from trubot.lexical import words
-from trubot.native_context import NativeEpisode
+from trubot.native_context import MAX_CONTEXT_BYTES, NativeEpisode
 from trubot.recall_window import WINDOW_WORDS, recall_window
 
 _STOP = frozenset(
@@ -565,6 +565,13 @@ class ContextMemory:
                             continue
                         current_source["archive_period_hints"] = list(dict.fromkeys(hints))[:3]
                         current_source["period_is_message_date"] = False
+                    neighbors = [r for r in context if r["ordinal"] != source["ordinal"]]
+                    complete_neighbors = [
+                        r
+                        for r in neighbors
+                        if len(r["content"].encode("utf-8")) <= MAX_CONTEXT_BYTES
+                    ]
+                    omitted = len(neighbors) - len(complete_neighbors)
                     evidence.append(
                         {
                             "source": current_source,
@@ -574,12 +581,19 @@ class ContextMemory:
                                 {
                                     "author": "Andrew"
                                     if r["target"]
+                                    else "bot (not persona evidence)"
+                                    if r["kind"] == "bot"
                                     else "peer (not persona evidence)",
-                                    "text": r["content"][:350],
+                                    "text": r["content"],
                                 }
-                                for r in context
-                                if r["ordinal"] != source["ordinal"]
+                                for r in complete_neighbors
                             ],
+                            "context_gaps": [
+                                f"{omitted} adjacent context messages omitted for size; "
+                                "their full meaning is unavailable"
+                            ]
+                            if omitted
+                            else [],
                         }
                     )
         if quotation:
