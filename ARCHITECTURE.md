@@ -294,13 +294,19 @@ or spending databases to roll back code. Synthetic smoke artifacts keep only
 content-free refs/flags/public code under private app-volume0700/0600 and existing
 seven-day manual retention/withdrawal cleanup; disposable databases are erased.
 
-## Fresh native dependency reads, candidate2.22.0
+## Fresh native dependency reads, candidate2.22.1
 
 `native_reconciliation.py` uses the existing authenticated ingestor/source locks to
 refresh focus and each retained human dependency. The graph rotates at most two
 captures per learning cycle and conditionally discards obsolete fingerprints,
 orphan dependencies and backups. The six-second ceiling includes selection, with
-at most twelve HTTP fetches. Identity/withdrawal/scope are checked at every stage.
+at most six HTTP reads. Identity/withdrawal/scope are checked at every stage.
 Complete context text is ephemeral, not new learning intake or a durable certificate.
 No provider request or automatic native pattern permission. Contextual provider-study
 integration, derived dependency invalidation and human-held-out evaluation remain next.
+
+The2.22.1 correction uses one current bounded history page for retained dependency
+IDs, plus an exact same-channel parent read if needed. Freshness/attribution checks
+still apply to every dependency. No new neighbors enter learning/context; missing
+nonparents erase obsolete captures without guessing message deletion. No preserved
+freshness certificate or automatic native pattern permission. [Transport study](docs/trubot-evolution/evaluations/2026-10-13-native-freshness-study.md).

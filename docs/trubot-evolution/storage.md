@@ -940,7 +940,7 @@ or spending databases to roll back code. Synthetic smoke artifacts keep only
 content-free refs/flags/public code under private app-volume0700/0600 and existing
 seven-day manual retention/withdrawal cleanup; disposable databases are erased.
 
-## Native dependency reconciliation, candidate2.22.0
+## Native dependency reconciliation, candidate2.22.1
 
 Existing schema1 captures remain content-free and retain their original30-day lifetime.
 A round-robin checkpoint in the existing graph rotates up to two eligible captures per
@@ -957,3 +957,9 @@ Rollback2.21.0 is data-compatible and ignores the new content-free rotation chec
 but stops offline dependency repair. Do not restore source/spending databases. Temporary
 invented stores/candidate overrides are removed; content-free private smoke refs follow
 existing0700/0600, seven-day manual retention and withdrawal cleanup.
+
+The2.22.1 correction uses one current bounded history page for retained dependency
+IDs, plus an exact same-channel parent read if needed. Freshness/attribution checks
+still apply to every dependency. No new neighbors enter learning/context; missing
+nonparents erase obsolete captures without guessing message deletion. No preserved
+freshness certificate or automatic native pattern permission. [Transport study](evaluations/2026-10-13-native-freshness-study.md).

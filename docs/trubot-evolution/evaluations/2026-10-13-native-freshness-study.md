@@ -87,3 +87,34 @@ present is not detected by presence metadata. Reads are individual observations,
 an atomic Discord snapshot or proof of complete conversation. No human pattern is
 populated and no general fidelity/humor gain is measured. Installed release acceptance
 and normal gateway controls remain pending.
+
+### H56b: full-cycle transport experiment and supported correction
+
+Initial2.22.0 installed cycle receipts consistently show1checked/1unavailable across
+three cycles. A content-free real full-cycle trace reproduces a canceled individual
+GET. This is not a reply failure, false deletion or character-quality regression.
+Lock a two-source cohort (zero and three retained dependencies) for matched trials,
+using the same corpus, source-intake cycle and authenticated HTTP client. Success:
+all retained dependencies checked within six seconds, no widened intake, source/peer
+text copy, provider call, certificate or native pattern permission. Contrary cases:
+unchanged direct reads can succeed, and missing/denied/changed context must stay closed.
+
+Matched baseline1/2checked; longer per-read deadline1/2; native-first ordering1/2;
+combined ordering/deadline1/2. Reject these prototypes rather than deploying them.
+A fresh bounded around page (limit10), matching only the retained dependency IDs,
+checks2/2 in256+1231ms. An exact current same-channel source parent outside the page
+can be fetched separately; a missing other dependency is uncertified without claiming
+that its message was deleted. No new neighbors enter context/learning. Maximum per
+capture: source GET, one page, one exact parent GET. Maximum per cycle:two captures,
+six HTTP reads and six seconds including selection. The standalone verifier also
+owns six seconds; no shorter per-read timeout cancels otherwise usable work.
+
+Sample:one locked two-source full-cycle cohort/five actual protocol variants plus a
+separate two-source direct probe. These are engineering/transport samples, not five
+human style benchmarks or complete native coverage. Source transport contention is
+observed; no unobserved server quota or vendor guarantee is asserted. This coherent
+H56 correction will use immutable patch2.22.1 after full gates/CI/installed acceptance.
+Initial2.22.0 remains healthy and compatible; no corpus/schema/model/provider change.
+No new human abstraction or measured general fidelity gain. H55b contextual provider
+integration/derivation lifecycle and H48 genuine human-held-out abstraction population
+remain next; H22/H39 stock care prefaces/three short sentences remain observed gaps.

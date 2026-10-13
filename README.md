@@ -550,11 +550,17 @@ or spending databases to roll back code. Synthetic smoke artifacts keep only
 content-free refs/flags/public code under private app-volume0700/0600 and existing
 seven-day manual retention/withdrawal cleanup; disposable databases are erased.
 
-## Native context freshness (candidate2.22.0)
+## Native context freshness (candidate2.22.1)
 
 The existing learning cycle rechecks up to two captured native neighborhoods, within
-six seconds and at most twelve message fetches. Missed peer changes/deletions and lost
+six seconds and at most six HTTP reads. Missed peer changes/deletions and lost
 read access erase obsolete setup links. Complete current human text stays ephemeral;
 stored fingerprints do not certify complete context or current visibility. Timeout
 and transient failures do not fabricate deletion. Native abstract-pattern learning
 remains gated pending contextual study integration and human validation.
+
+The2.22.1 correction uses one current bounded history page for retained dependency
+IDs, plus an exact same-channel parent read if needed. Freshness/attribution checks
+still apply to every dependency. No new neighbors enter learning/context; missing
+nonparents erase obsolete captures without guessing message deletion. No preserved
+freshness certificate or automatic native pattern permission. [Transport study](docs/trubot-evolution/evaluations/2026-10-13-native-freshness-study.md).

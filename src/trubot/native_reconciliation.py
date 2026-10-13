@@ -33,11 +33,19 @@ async def _scope(ingestor: MessageIngestor, channel: discord.TextChannel | disco
 
 
 async def verify_native_context(
+    ingestor: MessageIngestor, channel: discord.TextChannel | discord.Thread, data: dict[str, Any]
+) -> NativeEpisode | None:
+    """Bound the complete current-source/context verification to six seconds."""
+    async with asyncio.timeout(6):
+        return await _verify_native_context(ingestor, channel, data)
+
+
+async def _verify_native_context(
     ingestor: MessageIngestor,
     channel: discord.TextChannel | discord.Thread,
     data: dict[str, Any],
 ) -> NativeEpisode | None:
-    """Read each retained dependency. Return text only ephemerally, never a certificate.
+    """Check retained dependencies against fresh reads. Text stays ephemeral.
 
     Callers must check again immediately before any future learning use. Adjacency
     is bounded, pixels are absent, and this does not open automatic pattern learning.
@@ -50,8 +58,7 @@ async def verify_native_context(
     if not await asyncio.to_thread(graph.native_context_current, data, now=ingestor.clock()):
         return None
     observed = ingestor.clock()
-    async with asyncio.timeout(1):
-        focus = await ingestor.refresh(channel, data["ref"]["message_id"])
+    focus = await ingestor.refresh(channel, data["ref"]["message_id"])
     await _scope(ingestor, channel)
     floor = ingestor.clock() - timedelta(days=ingestor.store.retention_days)
     if (
@@ -66,12 +73,27 @@ async def verify_native_context(
     ):
         return None
     neighbors = []
+    # Match only retained dependencies. New neighbors are never added to learning.
+    current = {}
+    if data["dependencies"]:
+        await _scope(ingestor, channel)
+        async for row in channel.history(limit=10, around=discord.Object(id=focus.id)):
+            current[row.id] = row
     for dependency in data["dependencies"]:
         await _scope(ingestor, channel)
         if dependency["channel_id"] != channel.id or dependency["guild_id"] != channel.guild.id:
             raise LearningUnavailable("Native dependency outside scope")
-        async with asyncio.timeout(1):
-            message = await channel.fetch_message(dependency["message_id"])
+        message = current.get(dependency["message_id"])
+        if message is None and dependency["focus_replies_to_this"]:
+            reference = getattr(focus, "reference", None)
+            if (
+                isinstance(reference, discord.MessageReference)
+                and reference.channel_id == channel.id
+                and reference.message_id == dependency["message_id"]
+            ):
+                message = await channel.fetch_message(dependency["message_id"])
+        if message is None:
+            return None
         if (
             message.id != dependency["message_id"]
             or not _human(message, channel=channel, floor=floor)
@@ -97,7 +119,7 @@ async def verify_native_context(
 async def reconcile_native_context(
     ingestor: MessageIngestor, client: discord.Client
 ) -> dict[str, int]:
-    """At most two captures/twelve message reads/six seconds per existing cycle."""
+    """At most two captures/six HTTP reads/six seconds per existing cycle."""
     result = {"verified": 0, "removed": 0, "unavailable": 0}
     if not ingestor.verified:
         return result

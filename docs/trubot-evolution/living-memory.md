@@ -198,13 +198,19 @@ or spending databases to roll back code. Synthetic smoke artifacts keep only
 content-free refs/flags/public code under private app-volume0700/0600 and existing
 seven-day manual retention/withdrawal cleanup; disposable databases are erased.
 
-## Native dependency freshness, candidate2.22.0
+## Native dependency freshness, candidate2.22.1
 
 H56 freshly reads the retained focus and every dependency, returns complete bounded
 human setup only ephemerally, and repairs missed edits/deletes/access loss through the
-existing learning worker. At most two captures/twelve fetches/six seconds per cycle.
+existing learning worker. At most two captures/six HTTP reads/six seconds per cycle.
 Stored captures remain last-observed metadata; no fresh visibility certificate is
 persisted. Reads are not an atomic Discord snapshot or proof of complete setup.
 Automatic native patterns remain gated. H55b must wire identical context into both
 provider passes/commit, derived context invalidation and held-out human validation.
 This is a prerequisite, not a populated abstraction or a measured fidelity gain.
+
+The2.22.1 correction uses one current bounded history page for retained dependency
+IDs, plus an exact same-channel parent read if needed. Freshness/attribution checks
+still apply to every dependency. No new neighbors enter learning/context; missing
+nonparents erase obsolete captures without guessing message deletion. No preserved
+freshness certificate or automatic native pattern permission. [Transport study](evaluations/2026-10-13-native-freshness-study.md).

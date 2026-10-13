@@ -59,7 +59,7 @@ async def test_current_context_is_ephemeral_and_revalidated_each_time(stores):
     with graph._transaction() as (_, source_db):
         snapshot = graph._snapshot({"kind": "discord", "message_id": BASE}, source_db, now=NOW)
     assert not automated_pattern_context([snapshot])
-    assert channel.fetch_message.await_count == 4
+    assert channel.fetch_message.await_count == 2
 
 
 @pytest.mark.parametrize(
@@ -95,14 +95,25 @@ async def test_offline_dependency_changes_or_access_loss_erase_capture_and_backu
         if problem == "edit":
             peer.edited_at = NOW
     elif problem in ("deleted", "denied"):
-        cls = discord.NotFound if problem == "deleted" else discord.Forbidden
-        error = cls(
-            SimpleNamespace(status=404 if problem == "deleted" else 403, reason="Gone"),
-            "private payload",
-        )
-        channel.fetch_message.side_effect = lambda mid: (
-            focus if mid == focus.id else (_ for _ in ()).throw(error)
-        )
+
+        async def history(**_kwargs):
+            if problem == "denied":
+                raise discord.Forbidden(
+                    SimpleNamespace(status=403, reason="Denied"), "private payload"
+                )
+            yield focus
+
+        channel.history = history
+        if problem == "deleted":
+            channel.fetch_message.side_effect = lambda mid: (
+                focus
+                if mid == focus.id
+                else (_ for _ in ()).throw(
+                    discord.NotFound(
+                        SimpleNamespace(status=404, reason="Missing"), "private payload"
+                    )
+                )
+            )
     elif problem == "bot":
         peer.author.bot = True
     elif problem == "webhook":
@@ -138,7 +149,7 @@ async def test_offline_dependency_changes_or_access_loss_erase_capture_and_backu
 
 @pytest.mark.parametrize("problem", ["transport", "timeout"])
 async def test_transient_failures_do_not_certify_or_imply_deletion(stores, problem, caplog):
-    learner, client, channel, focus, _ = await prepared(stores)
+    learner, client, channel, _focus, _ = await prepared(stores)
     graph = stores[1]
     before = metadata(graph)
     error = (
@@ -148,9 +159,12 @@ async def test_transient_failures_do_not_certify_or_imply_deletion(stores, probl
             SimpleNamespace(status=503, reason="Unavailable"), "private source"
         )
     )
-    channel.fetch_message.side_effect = lambda mid: (
-        focus if mid == focus.id else (_ for _ in ()).throw(error)
-    )
+
+    async def unavailable(**_kwargs):
+        raise error
+        yield
+
+    channel.history = unavailable
     result = await learner.reconcile_native_context(client)
     assert result == {"verified": 0, "removed": 0, "unavailable": 1}
     assert metadata(graph) == before
@@ -188,14 +202,13 @@ async def test_newer_capture_survives_raced_stale_verifier(stores):
         stores, text="A corrected setup.", now=NOW + timedelta(seconds=1)
     )
 
-    async def fetch(mid):
-        if mid == focus.id:
-            return focus
+    async def history(**_kwargs):
         graph.record_native_context(fresh, now=NOW + timedelta(seconds=1))
         peer.content = "A corrected setup."
-        return peer
+        yield peer
+        yield focus
 
-    channel.fetch_message.side_effect = fetch
+    channel.history = history
     result = await learner.reconcile_native_context(client)
     assert result["verified"] == result["removed"] == 0
     assert len(metadata(graph)) == 1
@@ -216,13 +229,12 @@ async def test_source_change_and_known_peer_events_fail_closed(stores):
 async def test_known_peer_event_during_reads_fails_final_locked_check(stores):
     learner, client, channel, focus, peer = await prepared(stores)
 
-    async def fetch(mid):
-        if mid == focus.id:
-            return focus
+    async def history(**_kwargs):
         learner.store.invalidate(10, [peer.id], deleted=False, now=NOW)
-        return peer
+        yield peer
+        yield focus
 
-    channel.fetch_message.side_effect = fetch
+    channel.history = history
     result = await learner.reconcile_native_context(client)
     assert result["verified"] == 0
     assert not metadata(stores[1])
@@ -298,12 +310,12 @@ async def test_request_timeout_is_bounded_and_retains_only_observed_metadata(sto
     learner, client, channel, _, _ = await prepared(stores)
 
     async def blocked(_mid):
-        await asyncio.sleep(2)
+        await asyncio.sleep(10)
 
     channel.fetch_message.side_effect = blocked
     started = asyncio.get_running_loop().time()
     result = await learner.reconcile_native_context(client)
-    assert asyncio.get_running_loop().time() - started < 1.6
+    assert asyncio.get_running_loop().time() - started < 6.7
     assert result["unavailable"] == 1
     assert len(metadata(stores[1])) == 1
 
@@ -339,24 +351,37 @@ async def two_full_captures(stores):
         all_messages[focus.id] = focus
         all_messages.update({peer.id: peer for peer in peers})
     channel.fetch_message = AsyncMock(side_effect=lambda mid: all_messages[mid])
+    channel.page_reads = []
+
+    async def current_history(**kwargs):
+        assert kwargs["limit"] == 10
+        channel.page_reads.append(kwargs["around"].id)
+        for mid, row in all_messages.items():
+            if abs(mid - kwargs["around"].id) <= 5:
+                yield row
+
+    channel.history = current_history
     return learner, client, channel, all_messages
 
 
-async def test_two_capture_twelve_fetch_ceiling(stores):
+async def test_two_capture_bounded_page_reads(stores):
     learner, client, channel, _ = await two_full_captures(stores)
     result = await learner.reconcile_native_context(client)
     assert result == {"verified": 2, "removed": 0, "unavailable": 0}
-    assert channel.fetch_message.await_count == 12
+    assert channel.fetch_message.await_count == 2
+    assert len(channel.page_reads) == 2
 
 
 async def test_total_six_second_ceiling_preserves_unfinished_metadata(stores):
     learner, client, channel, messages = await two_full_captures(stores)
 
-    async def fetch(mid):
-        await asyncio.sleep(0.7)
-        return messages[mid]
+    async def history(**kwargs):
+        await asyncio.sleep(4)
+        for mid, row in messages.items():
+            if abs(mid - kwargs["around"].id) <= 5:
+                yield row
 
-    channel.fetch_message.side_effect = fetch
+    channel.history = history
     started = asyncio.get_running_loop().time()
     result = await learner.reconcile_native_context(client)
     elapsed = asyncio.get_running_loop().time() - started
@@ -407,3 +432,80 @@ async def test_source_media_presence_change_invalidates_captured_setup(stores):
     assert result["verified"] == 0
     assert not metadata(stores[1])
     assert channel.fetch_message.await_count == 1
+
+
+async def test_bounded_page_avoids_a_slow_individual_peer_get(stores):
+    learner, client, channel, focus, peer = await prepared(stores)
+
+    async def fetch(mid):
+        if mid != focus.id:
+            await asyncio.sleep(10)
+        return focus if mid == focus.id else peer
+
+    channel.fetch_message.side_effect = fetch
+    # This models a queued GET while the bounded fresh history endpoint is usable.
+    result = await asyncio.wait_for(learner.reconcile_native_context(client), timeout=1)
+    assert result == {"verified": 1, "removed": 0, "unavailable": 0}
+    assert channel.fetch_message.await_count == 1
+    assert len(metadata(stores[1])) == 1
+
+
+async def test_only_exact_same_channel_parent_can_be_fetched_outside_page(stores):
+    learner, client, channel, focus, peer = await prepared(stores)
+
+    async def history(**kwargs):
+        assert kwargs["limit"] == 10
+        yield focus
+
+    channel.history = history
+    result = await learner.reconcile_native_context(client)
+    assert result["verified"] == 1
+    assert [call.args[0] for call in channel.fetch_message.await_args_list] == [focus.id, peer.id]
+    # A changed link cannot cause the old dependency or a new guessed parent to be followed.
+    focus.reference = discord.MessageReference(message_id=999, channel_id=20, guild_id=77)
+    channel.fetch_message.reset_mock()
+    result = await learner.reconcile_native_context(client)
+    assert result["verified"] == 0 and result["removed"] == 1
+    channel.fetch_message.assert_awaited_once_with(focus.id)
+
+
+async def test_missing_nonparent_is_uncertified_without_guessing_deletion(stores):
+    learner, client, channel, focus, peer = await prepared(stores)
+    focus.reference = None
+    current = await collect_native_episode(
+        channel, focus.id, identity=learner.identity, now=NOW, retention_days=180, focus=focus
+    )
+    stores[1].record_native_context(current, now=NOW)
+
+    async def history(**_kwargs):
+        yield focus
+
+    channel.history = history
+    result = await learner.reconcile_native_context(client)
+    assert result["removed"] == 1 and result["verified"] == 0
+    channel.fetch_message.assert_awaited_once_with(focus.id)
+    assert learner.store.status()["deletion_markers"] == 0
+    assert peer.content not in graph_text(stores[1])
+
+
+async def test_new_page_neighbors_cannot_expand_captured_dependencies(stores):
+    learner, _client, channel, focus, peer = await prepared(stores)
+    new = message(
+        channel,
+        BASE + 100,
+        author=42,
+        text="Never add this uncaptured human text.",
+        created_at=focus.created_at,
+    )
+
+    async def history(**_kwargs):
+        yield new
+        yield peer
+        yield focus
+
+    channel.history = history
+    verified = await verify_native_context(learner, channel, metadata(stores[1])[0])
+    assert [row["message_id"] for row in verified.neighbors] == [peer.id]
+    assert new.content not in repr(verified)
+    assert new.content not in graph_text(stores[1])
+    assert learner.store.status()["messages"] == 1
