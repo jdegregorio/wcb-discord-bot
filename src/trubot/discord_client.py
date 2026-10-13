@@ -15,7 +15,12 @@ import discord
 from trubot.attention import AttentionTracker
 from trubot.budget import BudgetError
 from trubot.config import Settings
-from trubot.conversation import ConversationMessage, ReplyMode, safety_identifier
+from trubot.conversation import (
+    ConversationMessage,
+    MemoryAuthorScope,
+    ReplyMode,
+    safety_identifier,
+)
 from trubot.distillation import GraphDistiller
 from trubot.health import ReadinessFile
 from trubot.history import (
@@ -409,6 +414,14 @@ class TruBotClient(discord.Client):
                     requester_user_id=requester_user_id,
                     focus_author_user_id=anchor.author.id if anchor is not None else None,
                 )
+                memory_scope = None
+                if memory and self._learning is not None:
+                    try:
+                        memory_scope = await self._memory_author_scope(anchor)
+                    except LearningUnavailable:
+                        # A withdrawal or changed identity cannot leave old evidence
+                        # paired with a fresh or guessed author binding.
+                        memory = ""
                 if memory:
                     # Fresh source checks should follow old conversation, including stale
                     # bot denials. Keep a visual focus last so the responder attaches
@@ -418,7 +431,12 @@ class TruBotClient(discord.Client):
                         if history and history[-1].content == target
                         else len(history)
                     )
-                    history.insert(position, ConversationMessage("user", memory, origin="memory"))
+                    history.insert(
+                        position,
+                        ConversationMessage(
+                            "user", memory, origin="memory", memory_author_scope=memory_scope
+                        ),
+                    )
                 if not history and target is None:
                     logger.warning("No usable history for response channel_id=%d", channel.id)
                     return False
@@ -434,6 +452,10 @@ class TruBotClient(discord.Client):
                             requester_user_id=requester_user_id,
                             focus_author_user_id=anchor.author.id if anchor is not None else None,
                         )
+                        if memory_scope is not None:
+                            scope = await self._memory_author_scope(anchor)
+                            if scope is not memory_scope:
+                                return False
                     except (LearningUnavailable, discord.HTTPException, TimeoutError):
                         return False
                     return refreshed == memory
@@ -493,6 +515,21 @@ class TruBotClient(discord.Client):
                 len(output),
             )
             return True
+
+    async def _memory_author_scope(self, anchor: discord.Message | None) -> MemoryAuthorScope:
+        learning = self._learning
+        if learning is None or not learning.verified:
+            raise LearningUnavailable("Verified memory identity required")
+        identity = await asyncio.to_thread(learning.store.identity)
+        if identity != learning.identity:
+            raise LearningUnavailable("Memory identity changed")
+        if anchor is None or anchor.author.bot:
+            return MemoryAuthorScope.UNKNOWN_AUTHOR
+        return (
+            MemoryAuthorScope.SOURCE_AUTHOR
+            if anchor.author.id == identity.user_id
+            else MemoryAuthorScope.OTHER_AUTHOR
+        )
 
     async def _reference_context(
         self, anchor: discord.Message | None, images: ImageCollector

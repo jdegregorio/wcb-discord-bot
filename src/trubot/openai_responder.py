@@ -19,7 +19,8 @@ from openai.types.responses import (
 from openai.types.responses.response_create_params import ResponseCreateParamsNonStreaming
 
 from trubot.budget import NANODOLLARS, BudgetError, BudgetUnavailable, UsageLedger
-from trubot.conversation import ConversationMessage, ReplyMode
+from trubot.conversation import ConversationMessage, MemoryAuthorScope, ReplyMode
+from trubot.memory_author import author_guidance, focused_author_guidance, memory_author_scope
 from trubot.personality import instructions_for
 from trubot.reply_focus import preceding_human_turn
 from trubot.vision import IMAGE_TOKEN_BOUND, MAX_IMAGES
@@ -106,12 +107,13 @@ class OpenAITruaxResponder:
         refresh_check: Callable[[], Awaitable[bool]] | None = None,
     ) -> str | None:
         model_input: ResponseInputParam = [_message_input(message) for message in messages]
+        scope = memory_author_scope(messages)
         subject = preceding_human_turn(messages) if target and mode is ReplyMode.FOLLOW_UP else ""
         if target:
             focused_input = _message_input(
                 ConversationMessage(
                     "user",
-                    _format_target(mode, target, subject),
+                    _format_target(mode, target, subject, scope),
                     messages[-1].images if messages and messages[-1].content == target else (),
                 )
             )
@@ -128,7 +130,7 @@ class OpenAITruaxResponder:
             mode.value,
             len(messages),
         )
-        instructions = instructions_for(mode)
+        instructions = instructions_for(mode) + author_guidance(scope)
         output_bound = (
             self._max_output_tokens
             if mode is ReplyMode.FOLLOW_UP
@@ -141,7 +143,9 @@ class OpenAITruaxResponder:
         # a deliberately conservative bound for each actual image input.
         text_input = [{"role": m.role, "content": m.content} for m in messages]
         if target:
-            text_input.append({"role": "user", "content": _format_target(mode, target, subject)})
+            text_input.append(
+                {"role": "user", "content": _format_target(mode, target, subject, scope)}
+            )
         input_bound = (
             len(
                 json.dumps(
@@ -369,7 +373,13 @@ def _message_input(message: ConversationMessage) -> EasyInputMessageParam:
     return EasyInputMessageParam(role=message.role, content=parts)
 
 
-def _format_target(mode: ReplyMode, target: str, subject: str = "") -> str:
+def _format_target(
+    mode: ReplyMode,
+    target: str,
+    subject: str = "",
+    scope: MemoryAuthorScope | None = None,
+) -> str:
+    target += focused_author_guidance(scope)
     label = _TARGET_LABELS.get(mode, "CURRENT MESSAGE")
     if mode is ReplyMode.FOLLOW_UP:
         context = (

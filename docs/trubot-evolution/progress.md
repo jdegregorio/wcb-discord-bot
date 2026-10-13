@@ -2945,3 +2945,18 @@ claim historical transfer privacy was fully verified or infer unauthorized acces
 Future collection must create 0700 staging and 0600 transfer files before writing
 human material. This operator gap does not change the healthy runtime or require
 a version rollback; it is retained as a validation limitation.
+
+## 2026-10-12 17:00 - memory author binding completion
+
+Base 666adf2d018bfb8feb3d9fbd6678a230c47de858; main fetched successfully before a new
+managed worktree and feature/trubot-daily-20261012-1700. Reconciles failed 13:00
+uncommitted H49 prototype, no prior PR/release. Primary and original draft untouched.
+Both planning phases and locked criteria are in [completion study](evaluations/2026-10-12-memory-author-completion-study.md), with inherited experiments explicitly separated.
+Fresh actual baseline reproduces wrong source-person attribution. Typed source/focus
+scope corrects five invented attribution cases (baseline 2/5); care and recipient
+controls pass both. No human abstraction added. Local text audit covers four grouped
+blocks/four exports/16 neighbors, zero marked media gaps; no pixels interpreted.
+Three-channel latest-100/14-day scan has seven target/15 peer/five older bot windows,
+zero current spontaneous replies. No provider human audit, no broad fidelity claim.
+All six local gates pass, 838 tests/96.84%, 29 modules. PR/release/installed acceptance
+are pending. Existing monthly allowance and app storage remain unchanged.

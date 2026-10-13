@@ -1,5 +1,22 @@
 # Prioritized backlog
 
+2026-10-12 17:00 selection: complete H49/H6 authenticated memory-author binding.
+Fresh actual broad recall misassigns Andrew's statements to Joe. Reconcile the failed
+13:00 prototype in this run's new managed worktree so that factual and abstract
+memories retain their source person. Binding uses trusted source/focus IDs, never
+labels or the reactor; recheck withdrawal/identity before admission and retry.
+No new human trait, schema, model, service or recurring request. Both planning
+phases and locked acceptance: docs/trubot-evolution/evaluations/2026-10-12-memory-author-completion-study.md.
+Next: H48/H21/H28 qualified human abstraction population with genuine held-outs and
+H6 controls; H22/H39 creative variation/brevity; H50 native peer/reply/thread/pixels;
+bounded selective skills/tools and generated U.P. aurora/trail-camera sharing.
+Dependencies, benefit, confidence, validation and cost are in the study. Existing
+volume, source lifecycle, intake/participation and USD18/2/20 remain authoritative.
+Six daily standalone hours, Sol/xhigh and notifications are unchanged. Stronger
+contrary human/context evidence can reorder priorities; wrong attribution blocks
+this rollout. Actual release acceptance remains pending.
+
+
 2026-10-12 09:00 completed: H47/H47b is deployed in 2.19.1 (PRs #86/#88).
 Typed ordinary guidance excludes audit prose/counts and competing raw voice
 examples, including would/could/should/current-response wording. Explicit evidence,
