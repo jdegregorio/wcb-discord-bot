@@ -179,17 +179,19 @@ Ordinary persona recall uses natural first-person or named-source language witho
 assigning Andrew's history to the person asking. Unknown authors receive conservative
 attribution. Scope is rechecked alongside private source state before reuse.
 
-## Repeated reply recovery (2.17.2)
+## Repeated reply recovery (2.20.0)
 
-When an addressed answer exactly copies a long older bot reply, Trubot can make
-one separately budgeted attempt at fresh wording. The immediate bot turn, short
+When an addressed answer exactly copies a long older bot reply or a 12-word passage
+inside a changed answer, Trubot can make one separately budgeted attempt at fresh wording.
+Case, punctuation and apostrophe differences do not hide copied passages. The immediate bot turn, short
 reactions, requested quotes/repetitions and explicit references retain deliberate
 reuse. The extra attempt uses the same source context and model, with no transport
 retries or third quality attempt. An unavailable, empty or incomplete refresh
 keeps the existing accounted draft; a refreshed follow-up may still abstain.
 Private memory is revalidated through the handler before refresh; a changed,
 withdrawn or unchecked packet is not sent again. This targets exact stale
-repetition, not a general humor or factual quality score.
+repetition, not a general humor or factual quality score. Short common wording and
+approximate semantic similarity do not trigger another attempt.
 
 ## API spending guard
 

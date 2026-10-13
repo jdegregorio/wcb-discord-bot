@@ -3096,3 +3096,8 @@ and withdrawal cleanup. Candidate override and obsolete raw-output helper are re
 Primary checkout and earlier failed draft stay untouched. Final evidence CI/archive
 completion will be recorded in automation memory.
 [Full release evidence](evaluations/2026-10-12-complete-context-release.json).
+
+
+## 2026-10-13 01:00 - H53 selection
+
+Both planning phases and locked criteria: [study](evaluations/2026-10-13-passage-repetition-study.md). Select substantial stale passage recovery underH22/H39 after8baseline failures/9negative controls. Fresh actual care is a contrary non-repeating case with3sentences; no new human trait or broad gain. Mechanical private source coverage405eligible blocks/15exports/zero cross-export12-word overlaps is not semantic/independent-episode proof. Current spontaneous league output0. H48 human population remains unresolved with approved semantic inspection prerequisite; nextH54 native contextual dependencies, remaining variation/brevity/cues, wider native/visual, selective tools/skills and generated outdoor scenes. Priority documents consolidated; prior evidence remains in progress/research/evaluations/Git. Runtime verification pending.

@@ -875,3 +875,16 @@ source freshness remain authoritative. Historical bot context is labeled separat
 from peers. Authored-source text ceilings remain unchanged. This does not broaden
 intake, persist peers, populate a human trait or add provider/HTTP requests. Existing
 withdrawal, spending, privacy and compatible rollback remain unchanged.
+
+
+## Stale passage recovery, 2.20.0
+
+The existing optional refresh can recognize exact12-word normalized old bot spans
+inside a changed answer. Same authoritative source revalidation/ledger and at most
+one extra generation; no new persistent state, schema, intake, privacy or recovery
+boundary. Immediate continuity, short wording and intentional quotes/references stay
+eligible for reuse. Rollback2.19.3 is data-compatible. This run's private content-free
+refs/counts/metrics, public helpers and invented fixtures use the app-volume
+smoke-tests/2026-10-13-0100 directory,0700/0600, seven-day manual retention/withdrawal
+cleanup. Candidate package override is temporary and removed after installed checks.
+Raw human/answer text is not retained in actual smoke records.

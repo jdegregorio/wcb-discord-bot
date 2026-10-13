@@ -33,13 +33,15 @@ _SPEAKER_PREFIX = re.compile(
 )
 _PROMPT_CACHE_KEY = "wcb-trubot-personality-v12"
 _NO_REPLY = "<NO_REPLY>"
+_PASSAGE_WORDS = 12
+_WORD = re.compile(r"\w+(?:'\w+)*")
 _REUSE_REQUEST = re.compile(
     r"\b(?:repeat|verbatim|quot(?:e|ing|ation)|word[- ]for[- ]word)\b"
     r"|\bwhat (?:exactly )?did you say\b",
     re.IGNORECASE,
 )
 _FRESH_REPLY_GUIDANCE = (
-    "\n\nThe draft copied an earlier bot reply. Give a fresh response to the current "
+    "\n\nThe draft copied wording from an earlier bot reply. Give a fresh response to the current "
     "message instead of copying that earlier bot reply. For an offered playful setup, "
     "add a relevant comic turn. For sincere news or distress, keep emotional care. "
     "Keep supported facts, uncertainty and recipient restraint authoritative. "
@@ -342,7 +344,7 @@ class OpenAITruaxResponder:
 def _stale_bot_echo(
     reply: str, messages: Sequence[ConversationMessage], target: str | None
 ) -> bool:
-    """Recognize a long exact older echo, not proof that a reply is funny or true."""
+    """Recognize substantial old bot wording, preserving deliberate continuity."""
     if (
         not target
         or len(reply) < 24
@@ -356,11 +358,21 @@ def _stale_bot_echo(
         if message.role == "assistant" and message.origin == "conversation"
     ]
     key = " ".join(reply.casefold().split())
-    return (
-        len(previous) > 1
-        and key != " ".join(previous[-1].casefold().split())
-        and any(key == " ".join(old.casefold().split()) for old in previous[:-1])
-    )
+    if len(previous) < 2 or key == " ".join(previous[-1].casefold().split()):
+        return False
+    if any(key == " ".join(old.casefold().split()) for old in previous[:-1]):
+        return True
+    # A changed greeting must not hide a substantial copied sentence or clause.
+    # Protect each span also present in the immediate turn, without exempting
+    # different stale wording elsewhere in the draft. This is exact overlap,
+    # not a semantic quality judgment or evidence of an Andrew habit.
+    candidates = _passages(reply) - _passages(previous[-1])
+    return bool(candidates) and any(candidates & _passages(old) for old in previous[:-1])
+
+
+def _passages(text: str) -> set[tuple[str, ...]]:
+    words = _WORD.findall(text.casefold().replace("\u2019", "'"))
+    return {tuple(words[i : i + _PASSAGE_WORDS]) for i in range(len(words) - _PASSAGE_WORDS + 1)}
 
 
 def _message_input(message: ConversationMessage) -> EasyInputMessageParam:
