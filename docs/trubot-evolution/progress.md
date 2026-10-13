@@ -3403,4 +3403,6 @@ calls from source experiments/feature, zero paid additions; billing/pre-guard un
 All candidate packages, synthetic stores and cohort copies removed. Private app-volume
 refs/flags/counts/public code/hash artifacts0700/0600, manual seven-day/withdrawal cleanup.
 All source commands used the NEW owned worktree; primary remains untouched.
-Final docs-only evidencePR/CI/merge and owned archive are the remaining completion steps.
+Final documentation evidence is in [PR102](https://github.com/jdegregorio/wcb-discord-bot/pull/102).
+Its checks verify the unchanged runtime tree. Archive follows evidence merge; its
+actual completion receipt is retained in automation memory and the worktree artifact.

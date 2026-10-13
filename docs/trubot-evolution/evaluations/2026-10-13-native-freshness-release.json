@@ -166,7 +166,7 @@
     "cohort_metadata_copy_removed": true,
     "private_artifacts_owner_only": true,
     "private_artifact_manual_retention_days": 7,
-    "managed_worktree_archive_pending": true
+    "archive_phase": "after evidence merge; completion receipt in automation memory"
   },
   "next": [
     "qualified abstract human memory plus native contextual study and derivation lifecycle",
@@ -174,5 +174,6 @@
     "broader native threads and original pixels",
     "selective skills/tools and generated Michigan U.P. outdoor scenes"
   ],
-  "pending_specific_optional_provider_audit_executed": false
+  "pending_specific_optional_provider_audit_executed": false,
+  "evidence_pull_request": "https://github.com/jdegregorio/wcb-discord-bot/pull/102"
 }
