@@ -868,7 +868,7 @@ withdrawal and spending state, but restores the earlier attribution defect.
 ## Complete live conversational setup, 2.19.3
 
 Native human neighbors and same-channel parents, plus historical adjacent blocks,
-are supplied as complete text up to600 UTF-8 bytes per message. Oversized context
+are supplied as complete text up to 600 UTF-8 bytes per message. Oversized context
 is omitted with an explicit gap rather than silently clipped. Native source/media
 gaps, speaker roles, reply links, same-channel scope, bounded reads and mandatory
 source freshness remain authoritative. Historical bot context is labeled separately

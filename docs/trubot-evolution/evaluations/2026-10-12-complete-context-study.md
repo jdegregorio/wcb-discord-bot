@@ -7,13 +7,13 @@ superseded by deployed PR90; it and the primary checkout remain untouched.
 
 ## Phase 1: evidence, hypotheses and locked criteria
 
-Authenticated current audit: three league channels, latest100/channel over14days,
+Authenticated current audit: three league channels, latest 100/channel over14 days,
 seven target messages,12 peer messages and four older bot messages; zero current
 spontaneous replies. A new local context audit covers four target grouped blocks
-in four exports with16 neighbors, two marked media-gap windows. No original pixels
+in four exports with 16 neighbors, two marked media-gap windows. No original pixels
 were interpreted. Prior older negative-reversal behavior remains an audit defect,
 not a current-release measurement or a human trait. Development tests never supply
-Andrew evidence. Graph:439 sources,554 episodes,1015 edges, two claims, one preference,
+Andrew evidence. Graph:439 sources, 554 episodes,1015 edges, two claims, one preference,
 zero patterns. Native34, archive16/4299 grouped blocks/412target/405eligible.
 
 H52: silently clipped peer setup can drop a qualification, so that a reply receives
@@ -99,7 +99,7 @@ All required gates, matched candidate response and installed acceptance remain p
 ## Candidate acceptance before release
 
 All six local gates pass: locked sync, formatting, lint,29 typed source modules,
-851tests/96.85% branch-inclusive coverage and2.19.3 wheel/sdist. No dependencies change.
+851 tests/96.85% branch-inclusive coverage and2.19.3 wheel/sdist. No dependencies change.
 One matched actual owner/private Discord candidate send with the same invented native
 setup passes complete qualification, no clipped prefix, source-author binding, source
 withdrawal and heartbeat preservation. Two maintenance requests total, one per arm.
@@ -111,3 +111,53 @@ packet integrity is supported. Installed acceptance remains pending.
 Source text itself still has separate existing ceilings. Native automatic studies
 still lack peer context. These are follow-up coverage/grounding work, not silently
 completed by this live peer-context correction. No human population is performed.
+
+
+## Released acceptance and limits
+
+PR92 merged31e07bb252a5c99aa90d7d5ac3d0263064013023. PR38345600065, merged-main
+38345714591 and image38345838462 pass. Both architectures were inspected. The
+existing release timer's locked transaction deploys 2.19.3; a fresh host/OS/architecture
+check and scoped helper confirm it already runs the immutable c0e192 digest. Package,
+OCI revision, all 29 source hashes, primary readiness and zero restarts pass. Prior
+healthy2.19.2/e4ff713 is the compatible rollback; no rollback or migration occurred.
+
+Four installed actual owner/private Discord sends verify complete native context,
+complete parent context, complete historical setup and oversized omission. All four
+packets/lifecycle and behavior pass; source withdrawal and the primary heartbeat
+remain intact after each isolated client closes. An earlier additional native send
+answered correctly but the harness expected an empty withdrawn packet instead of
+the existing safe recent unavailable marker. That failed harness assertion is retained
+separately, then corrected and repeated with a fresh owner question. No second gateway
+or production learning change occurred. No candidate override remains during acceptance.
+
+Eight normal actual gateway cases: four grounding controls pass, care content/timing
+and two-sentence brevity pass, novel banter/TJ turn and recipient abstention pass.
+Full review is 7/8 because care repeats stock wording from earlier bot replies without
+a human trend basis. It is an open naturalness concern, not a newly established human
+habit. Combined review 11/12, not blanket character-fidelity acceptance. Three installed
+qualification answers are natural and grounded; broader interpretation gain and an
+objective humor multiplier remain unmeasured. Actual message refs were reauthenticated
+and retained privately without source/answer text. No genuine human held-out population
+benchmark or independent evaluator was completed.
+
+Post-audit repeats authenticated three-channel/latest 100/14-day counts: target7/7,
+peers12/12, older bot4/4 and current spontaneous0/0. Automatic review rejected rerunning
+the earlier raw-output helper; a replacement with no raw-text printing/retention path
+succeeds. There are zero new source renderings in the post-audit. Four source windows
+and16 neighbors were reviewed before selection; two media gaps remain uninterpreted.
+A literal bounded short-source selector returns zero eligible historical topic rows;
+it is not proof the topic is absent. A separate humor selector stages six private
+refs in one export, unstudied and not independent pattern support. No provider human
+study or new human abstraction. The obsolete raw-output helper is removed.
+
+At 04:39 UTC: zero errors/reply failures/disconnects/source or study pauses/restarts;
+two optional Discord voice dependency warnings, no other warnings. Seven gateway
+posts, one decline and one separately accounted optional repeat refresh. Persistent
+source/graph counts are unchanged. October estimatedUSD 0.188154895; this run
+USD 0.004607605 over 16 attempts: runtime0.003555345/maintenance0.001052260. Existing
+USD18/2/20 caps, zero unsettled reservations, no new ledger/service/recurring request.
+Provider billing and pre-guard cost remain unknown. Native study peers and authored
+source ceilings remain open coverage/grounding work. Private refs, metrics, invented
+fixtures and public helpers use 0700 directories/0600 files, existing seven-day manual
+retention and withdrawal cleanup. Details:2026-10-12-complete-context-release.json.

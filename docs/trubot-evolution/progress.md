@@ -3049,3 +3049,50 @@ actual answers do not show a clear interpretation improvement; candidate has a n
 relevant joke. No general fidelity gain or new human pattern is claimed. The current
 league audit has zero spontaneous current-release messages; wider quality stays open.
 PR, immutable images, deployment and installed actual acceptance remain pending.
+
+
+### 21:00 immutable release and actual acceptance
+
+[PR #92](https://github.com/jdegregorio/wcb-discord-bot/pull/92) merged
+31e07bb252a5c99aa90d7d5ac3d0263064013023. Required PR CI 38345600065, main
+CI 38345714591 and image 38345838462 pass. All six gates were repeated on merged main,
+851 tests/96.85%, 29 modules and package build. Immutable [2.19.3](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.19.3) has inspected amd64/arm64 manifests.
+Reverified pi5/aarch64/Ubuntu 24.04.4; the release timer deploys through the locked
+transaction and the scoped helper confirms current digest
+sha256:c0e1921222f44c084af15903ce21cd17b158b7986dd50fa12c9c959f50db0e0a.
+OCI/package/all 29 hashes and primary readiness pass. Prior healthy 2.19.2/e4ff713
+is the recorded compatible rollback. No rollback or schema migration.
+
+Installed actual owner/Discord source fixtures: packet/lifecycle 4/4, behavior 4/4.
+Native, parent and archive qualifications are natural; oversized text is not invented.
+An initial harness withdrawal assertion incorrectly expected empty recent context;
+it is preserved as a harness failure, corrected and repeated successfully. Eight
+normal gateway checks have grounding 4/4, full review 7/8 and combined 11/12. Preserve
+stock care wording as a naturalness concern, with tone and two-sentence brevity passing.
+No general fidelity/interpretation gain, humor multiplier, genuine human held-out
+population benchmark or independent evaluator. Actual refs are privately authenticated;
+no raw source/answer text is retained. Distinct readiness before construction, no
+second gateway, zero development learning, withdrawal and main heartbeat pass.
+
+At 04:39 UTC: zero errors/reply failures/disconnects/source or study pauses/restarts;
+two optional voice dependency warnings, zero others; seven gateway posts, one decline,
+one optional accounted repeat refresh. Native 34, archives 16/4299 grouped blocks/412
+target/405 eligible, visuals 115/96 assets; graph 439 sources/554 episodes/1015 edges/two
+claims/one preference/zero patterns, unchanged. Post counts-only audit has target 7/7,
+peers 12/12, older bot 4/4 and current spontaneous 0/0 in three latest 100/14-day channels.
+The raw-output audit was automatically rejected, then replaced by a safe counts-only
+helper. No new human source renderings in the post-audit. Targeted transcript reading
+remains blocked; six private short humor refs in one export await a safe approved
+inspection, not source support. Zero provider human studies or new human traits.
+
+October ledger estimate USD 0.188154895, runtime 0.089505790/maintenance 0.098649105;
+1261 settled/zero unsettled. Run USD 0.004607605 over 16 attempts: runtime 0.003555345
+(nine attempts including eight cases/one repeat refresh), maintenance 0.001052260
+(seven invented controlled requests including the failed initial harness). Existing
+USD18/2/20 caps, no fresh ledger/service/recurring request; billing/pre-guard unknown.
+Private app-volume smoke-tests/2026-10-12-2100 uses 0700/0600, content-free refs/counts/
+metrics, public helpers and invented fixtures only, existing seven-day manual retention
+and withdrawal cleanup. Candidate override and obsolete raw-output helper are removed.
+Primary checkout and earlier failed draft stay untouched. Final evidence CI/archive
+completion will be recorded in automation memory.
+[Full release evidence](evaluations/2026-10-12-complete-context-release.json).
