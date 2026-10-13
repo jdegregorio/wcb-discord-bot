@@ -1,5 +1,26 @@
 # Trubot roadmap
 
+2026-10-12 21:00 verified: H52 is deployed in 2.19.3 (PR #92). Live native
+neighbors, same-channel parents and historical adjacency retain complete text up to
+600 UTF-8 bytes; oversized context has explicit gaps. All six gates pass on feature
+and merged main: 851 tests, 96.85% coverage, 29 typed modules and package build.
+Required PR/main/image CI, both architectures, installed hashes and readiness pass.
+Installed packet/lifecycle and contextual behavior are 4/4 each; normal gateway
+source grounding is 4/4. Full normal review is 7/8, combined 11/12: retain stock
+care wording as an open naturalness concern. The one-pair experiment verifies packet
+integrity, with no clear reply-interpretation gain. No general fidelity claim.
+
+Next: H48/H21/H28 qualified human abstractions with genuine held-outs and H43/H6
+controls; H22/H39 variation/brevity and H51 cue reliability; H50 native peers/replies/
+threads/pixels; selective skills/tools and generated U.P. aurora/trail-camera sharing.
+Targeted raw transcript output remains automatically blocked for private-log risk.
+A safer counts-only post-audit succeeded; six private humor source selectors in one
+export remain unstudied, not pattern support. Zero new human traits. Existing source
+ceilings and native study gaps remain open. Source lifecycle, scope, participation,
+USD18/2/20 and the six-run schedule/settings are unchanged. Evidence:
+docs/trubot-evolution/evaluations/2026-10-12-complete-context-release.json.
+
+
 2026-10-12 21:00 selection: H52 complete live conversational setup. Native and
 historical neighbors are silently clipped at350 characters, losing qualifications.
 Preserve complete rows up to600UTF-8 bytes and mark oversized rows as gaps so that
