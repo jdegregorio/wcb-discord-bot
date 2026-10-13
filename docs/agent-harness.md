@@ -13,8 +13,8 @@ learner has four-hour pacing/two-pass review, limited sources and the maintenanc
 ledger. Native studies lack peers; Slack adjacency is context-only and does not prove
 reply links/dates. Lifecycle/visibility, withdrawal, retirement and expiry are authority.
 
-Current verified runtime 2.19.3 (PR92). 2026-10-13 01:00 base
-180b9af66f1540fe23ab05484fd0942912d35f2c. H53 candidate verification pending.
+Current verified runtime 2.20.0 (PR94). 2026-10-13 01:00 base
+180b9af66f1540fe23ab05484fd0942912d35f2c. H53 delivered; installed recovery passes. Brevity and broader recall grounding remain open.
 Select H53 substantial stale passage recovery under H22/H39: a changed opening
 must not hide old bot wording. Eight baseline failures/nine negative controls;
 a fresh actual care answer does not repeat and has three sentences. No universal
@@ -66,3 +66,10 @@ Any second validation client gets a distinct readiness path BEFORE construction;
 verify primary gateway/readiness after close. Owner-only development recall remains
 restricted to the confirmed private guild/general. See [plan](trubot-evolution/plan.md)
 and [current study](trubot-evolution/evaluations/2026-10-13-passage-repetition-study.md).
+
+Verified 2026-10-13: all six gates/868 tests/required CI/both images/29 installed
+hashes/readiness pass. Actual seeded recovery is fresh and caring; normal gateway
+full review8/11, with2brevity failures/1unvalidated additional-recall claim case.
+Optional private model audit was automatically rejected for explicit payload-transfer
+approval; no bypass/request executed. No general fidelity gain or new human pattern.
+Detailed release evidence: trubot-evolution/evaluations/2026-10-13-passage-repetition-release.json.

@@ -1,0 +1,191 @@
+{
+  "run": "2026-10-13 01:00 Pacific",
+  "completed_at_utc": "2026-10-13T08:44:35Z",
+  "hypothesis": "H53",
+  "class": "supported delivery correction; general quality unvalidated",
+  "base_sha": "180b9af66f1540fe23ab05484fd0942912d35f2c",
+  "feature_sha": "54c92d43ebd359dc43aef2cde40309fc0f999803",
+  "merged_sha": "7b5661f636b8b4174f07b72b8305e37a90c3d605",
+  "pr": 94,
+  "release": "v2.20.0",
+  "ci": {
+    "pr": 38368883700,
+    "main": 38369046594,
+    "images": 38369227636,
+    "all_success": true
+  },
+  "local_gates": {
+    "feature_and_merged_main": true,
+    "tests": 868,
+    "coverage_percent": 96.86,
+    "typed_modules": 29,
+    "version": "2.20.0",
+    "new_regressions": 17,
+    "baseline_fail": 8,
+    "baseline_negative_pass": 9,
+    "candidate_pass": 17,
+    "combined_recovery_tests_pass": 49
+  },
+  "research": {
+    "league_channels": 3,
+    "latest_per_channel": 100,
+    "window_days": 14,
+    "before_after_target": [
+      7,
+      7
+    ],
+    "before_after_peers": [
+      12,
+      12
+    ],
+    "before_after_old_bot": [
+      4,
+      4
+    ],
+    "before_after_current_spontaneous": [
+      0,
+      0
+    ],
+    "eligible_human_grouped_blocks": 405,
+    "exports_with_eligible_human": 15,
+    "cross_export_12_word_overlap_blocks": 0,
+    "semantic_human_review": false,
+    "original_pixels_interpreted": false,
+    "independent_episode_or_habit_proof": false,
+    "new_human_traits": 0,
+    "active_human_patterns": 0
+  },
+  "real_discord": {
+    "verified_private_owner_and_bot": true,
+    "allowed_general_used": true,
+    "no_league_posts": true,
+    "raw_refs_private": true,
+    "synthetic_seeded_handler_pair": {
+      "baseline_stale_passage": true,
+      "baseline_provider_refreshes": 0,
+      "candidate_stale_passage": false,
+      "candidate_provider_refreshes": 1,
+      "installed_stale_passage": false,
+      "installed_provider_refreshes": 1,
+      "same_history_model_and_synthetic_draft": true,
+      "synthetic_seed_is_measured_generation": false,
+      "fake_provider_usage": false,
+      "care_preserved": true,
+      "candidate_and_installed_sentences": 3,
+      "brevity_open": true,
+      "distinct_readiness_before_construction": true,
+      "second_gateway": false,
+      "development_learning": 0,
+      "primary_ready_after_close": true
+    },
+    "normal_gateway_cases": 11,
+    "normal_posts": 10,
+    "recipient_declined": true,
+    "full_manual_review_pass": 8,
+    "initial_manual_pass_before_grounding_gap": 9,
+    "brevity_failures": 2,
+    "additional_year_recall_claims_unvalidated": true,
+    "narrow_memory_controls": {
+      "pass": 3,
+      "partial": 1
+    },
+    "quote_matches_previous": true,
+    "positive_and_care_fit": true,
+    "fresh_banter_tj_followup_pass": true,
+    "independent_human_evaluator": false,
+    "heldout_human_population_benchmark": false
+  },
+  "optional_grounding_audit": {
+    "attempted_execution_rejected": true,
+    "executed": false,
+    "provider_requests": 0,
+    "reason": "Automatic approval review requires explicit authorization for four private source packets and corresponding actual answers sent to OpenAI API",
+    "specific_approval_requested": true,
+    "no_bypass": true,
+    "remaining_claims_unvalidated": true
+  },
+  "deployment": {
+    "host": "pi5",
+    "architecture": "aarch64",
+    "os": "Ubuntu 24.04.4",
+    "transaction": "pi-app deploy wcb-bot 2.20.0",
+    "digest": "sha256:b83f3de51d1acbe9ea9b70d6d36735cc2107923102141917331320195bd806fb",
+    "arm64_manifest": "sha256:43c67d410b80155a8836a3326a73ff208db4fa32dea95a55badc2fdc431b5fd4",
+    "amd64_manifest": "sha256:72c0b8b855a3222246f3af8a44a228ee0578f2e5f7713b81e0f80117d7dafdd1",
+    "both_architectures_verified": true,
+    "oci_version_revision_match": true,
+    "all_29_source_hashes_match": true,
+    "healthy": true,
+    "primary_ready": true,
+    "restarts": 0,
+    "errors": 0,
+    "reply_failures": 0,
+    "disconnects": 0,
+    "study_pauses": 0,
+    "warnings": 2,
+    "optional_voice_warnings": 2,
+    "normal_gateway_refreshes": 0,
+    "normal_gateway_posts": 10,
+    "followup_declines": 1,
+    "timer_active": true,
+    "rollback": "2.19.3",
+    "rollback_digest": "sha256:c0e1921222f44c084af15903ce21cd17b158b7986dd50fa12c9c959f50db0e0a",
+    "rollback_data_compatible": true,
+    "rollback_performed": false
+  },
+  "state": {
+    "native_messages": 34,
+    "archive_documents": 16,
+    "archive_grouped_blocks": 4299,
+    "target_blocks": 412,
+    "eligible_blocks": 405,
+    "visual_episodes": 115,
+    "original_assets": 96,
+    "graph_sources": 439,
+    "graph_episodes": 554,
+    "graph_edges": 1015,
+    "claims": 2,
+    "preferences": 1,
+    "patterns": 0,
+    "schema_change": false,
+    "intake_change": false,
+    "withdrawal_and_spending_preserved": true
+  },
+  "cost": {
+    "october_estimated_usd": 0.1944345,
+    "runtime_usd": 0.09511546,
+    "maintenance_usd": 0.09931904,
+    "run_delta_usd": 0.005992355,
+    "run_runtime_delta_usd": 0.00560967,
+    "run_maintenance_delta_usd": 0.000382685,
+    "run_attempts": 17,
+    "run_runtime_attempts": 15,
+    "run_maintenance_attempts": 2,
+    "settled_total_attempts": 1279,
+    "unsettled_attempts": 0,
+    "limits_usd": [
+      18,
+      2,
+      20
+    ],
+    "billing_pre_guard": "unknown",
+    "new_service_or_ledger": false
+  },
+  "limitations": [
+    "spontaneous current-release league activity absent",
+    "mechanical source overlap is not semantic character audit",
+    "seeded recovery is not normal generation gain",
+    "short stock care and three-sentence brevity persist",
+    "additional broad recall claims require approved grounding audit",
+    "zero active human abstractions",
+    "native study peers and full historical pixels incomplete"
+  ],
+  "private_artifacts": {
+    "content_free_actual_refs_counts_metrics_only": true,
+    "invented_fixtures_and_public_helpers": true,
+    "directory_mode": "0700",
+    "files_mode": "0600",
+    "retention": "existing seven-day manual cleanup and withdrawal",
+    "raw_source_or_answer_text_retained": false
+  }
+}

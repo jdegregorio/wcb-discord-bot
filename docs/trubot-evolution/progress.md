@@ -3101,3 +3101,60 @@ completion will be recorded in automation memory.
 ## 2026-10-13 01:00 - H53 selection
 
 Both planning phases and locked criteria: [study](evaluations/2026-10-13-passage-repetition-study.md). Select substantial stale passage recovery underH22/H39 after8baseline failures/9negative controls. Fresh actual care is a contrary non-repeating case with3sentences; no new human trait or broad gain. Mechanical private source coverage405eligible blocks/15exports/zero cross-export12-word overlaps is not semantic/independent-episode proof. Current spontaneous league output0. H48 human population remains unresolved with approved semantic inspection prerequisite; nextH54 native contextual dependencies, remaining variation/brevity/cues, wider native/visual, selective tools/skills and generated outdoor scenes. Priority documents consolidated; prior evidence remains in progress/research/evaluations/Git. Runtime verification pending.
+
+
+### 01:00 H53 immutable rollout and actual limits
+
+[PR94](https://github.com/jdegregorio/wcb-discord-bot/pull/94) merged
+7b5661f636b8b4174f07b72b8305e37a90c3d605; PR 38368883700 / main 38369046594 / image
+38369227636 pass. All six gates repeated on merged main:868 tests/96.86%,29 modules
+and2.20.0 build. Immutable [2.20.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.20.0),
+both architectures inspected. Reverified pi5/aarch64/Ubuntu24.04.4, scoped locked
+pi-app transaction deployed sha256:b83f3de51d1acbe9ea9b70d6d36735cc2107923102141917331320195bd806fb.
+OCI/package/29 hashes/readiness match,0 restarts. Compatible2.19.3 / c0e1921 rollback
+retained; no rollback/schema/intake/state/model/service change.
+
+Actual identical invented handler pair: baseline keeps seeded stale passage/no
+provider call; candidate and installed release each make one real maintenance
+refresh and deliver fresh warm wording. These are seeded recovery checks, not
+spontaneous generation improvement. Both refreshed replies have3 short sentences.
+Fresh normal gateway11 cases/10 posts/1 recipient decline; final full review8/11:
+care and enthusiasm remain3 sentences, and additional broad-recall claims are
+unvalidated. Initial manual9/11 is narrowed when that source-support gap is made
+explicit. Narrow memory controls3 pass/1 partial; quotation equality, contextual
+follow-up, novel banter and TJ pass. No new human trait, general fidelity/humor
+multiplier or independent human benchmark. Exact dates are not invented and ordinary
+recall stays natural. First baseline harness stopped before sending because the
+normal gateway answered in its active window; corrected harness records each path
+separately. No fake provider usage for the synthetic draft.
+
+Automatic approval review rejected an OPTIONAL helper that would send four private
+source packets and actual recall replies to OpenAI for grounding review, requiring
+explicit authorization for that payload/destination. No helper execution/provider
+request or workaround. Specific approval requested; source-support questions remain
+unvalidated. Unaffected delivery/deployment/audits complete. No private raw/derived
+text enters public notes, logs or actual smoke artifacts. An unexecuted public-code
+helper is preserved privately for review, not automatically dispatched next run.
+
+Pre/post league3 channels/latest100/14days:7 target/12 peers/4 older bot/0 current
+spontaneous. Mechanical human405 eligible grouped blocks/15 exports/0 cross-export
+12-word overlaps is not semantic review/independence/habit proof; no pixels interpreted.
+Learning34, archives 16/4,299 grouped/412 target/405 eligible, visuals115 / 96 assets,
+graph439 sources/554 episodes/1,015 edges/2 claims/1 preference/0 patterns unchanged.
+At08:44 UTC zero errors/reply failures/disconnects/study pauses/restarts;2 optional voice
+dependency warnings/zero others,10 normal gateway posts/1 decline/zero normal refreshes.
+
+October ledger estimate USD 0.1944345, runtime0.09511546/maintenance0.09931904,
+1,279 settled/zero unsettled. Run USD 0.005992355:15 runtime attempts/USD 0.00560967 and
+2 maintenance refreshes/USD 0.000382685. No fresh ledger/paid service/cap change;
+USD18/2/20, billing/pre-guard unknown. Private app-volume smoke-tests/2026-10-13-0100
+retains content-free authenticated refs/counts/flags, public helpers and invented
+fixtures,0700 / 0600, seven-day manual retention/withdrawal. Distinct readiness BEFORE
+construction/no second gateway/zero development learning; primary healthy after closure.
+Candidate override cleanup and final evidence CI/archive recorded in automation memory.
+
+Next: qualified human abstracts with approved semantic inspection/genuine held-outs;
+native study context dependency invalidation; remaining brevity/short-stock/cues;
+wider native/reply/thread/pixels, selective skills/tools and generated U.P. aurora/
+trail-camera scenes. Six standalone hours, Sol/xhigh and notification setting unchanged.
+[Release evidence](evaluations/2026-10-13-passage-repetition-release.json).
