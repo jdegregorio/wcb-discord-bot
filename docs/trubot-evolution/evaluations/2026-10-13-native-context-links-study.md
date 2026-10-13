@@ -94,3 +94,44 @@ H55a supported as an enabling implementation. H55b and H48 remain unvalidated un
 fresh dependent reads, study integration, held-out human contexts and actual natural
 reply evaluation are complete. No external technology or vendor-model migration.
 
+
+### Immutable release and installed acceptance
+
+[PR98](https://github.com/jdegregorio/wcb-discord-bot/pull/98) merged
+4ab648a355f8466b9391bff5e2692d330d0b0e99 after required CI38429872141.
+Merged-main CI38430316576 and all six local gates pass:930tests/97.00%/29typed modules/
+build2.21.0. Immutable[release2.21.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.21.0),
+image CI38430535875 success; AMD64/ARM64 inspected. Scoped pi5 locking/rollback
+transaction deployed sha256:cfd8f29ea6c878fefffa9fdaac3c593d004332e0d5f29c2acdecffacf2070c10.
+OCI commit/module/package versions and all29 source hashes match tested main;
+healthy/Discord-ready/zero restarts. Previous2.20.1/8ed7cf7 retained, no rollback.
+
+Actual installed H55C repeats capture1/dependency1/reopen/delete/privacy/gate controls
+and relevant delivery. All three controlled actual refs reauthenticated. Fresh normal
+gateway5cases/4posts/one recipient abstention, presentation controls5/5: care brief/
+sincere, TJ relevant novel fiction, ordinary baseball direct/natural, recent source
+recall agrees with the authenticated human messages viewed before selection. No
+routine metadata/date disclaimer. Existing local topic retrieval also finds source
+coverage; this is not an independent model grading or new generalized preference.
+The prior strict preference-only audit limitation is not silently reclassified as
+resolved. Independent human held-out pattern validation remains uncompleted.
+
+Real native recall first captured2source neighborhoods/five dependencies. By the
+final four posts plus recipient decline, production holds5captures/nine dependencies,
+within bounds and valid against known source state. This is observed bounded metadata,
+not five complete episodes or proof of current visibility. Raw peer/source text is
+not copied into new nodes. Production human sources/observations/learning counts and
+zero active patterns remain unchanged. After deployment, authenticated14day source
+activity remains7target/12peers/4older bot/0current spontaneous across3channels/latest100.
+No newly observed spontaneous-fidelity/error-rate claim. Postrollout zero errors/
+reply failures/disconnects/restarts/memory warnings; two Discord client warnings.
+
+October covered estimateUSD0.20082361(runtime0.100326035/maintenance0.100497575),1298
+settled/zero unsettled. RunUSD0.002533385 across8genuine attempts:3maintenance controlled
+sends,5runtime including recipient abstention. No added paid service/calls/reads from
+capture; USD18/2/20 guard unchanged. Estimates are not billing; pre-guard spend unknown.
+Distinct readiness BEFOREconstruction and primary healthy after close; no second
+gateway/development learning. Disposable fixture stores and candidate package override
+removed. Private app-volume refs/flags/public code remain0700/0600 with existing
+seven-day manual retention/withdrawal cleanup. Raw source/answer text not retained in
+smoke artifacts. [Content-free release evidence](2026-10-13-native-context-links-release.json).
