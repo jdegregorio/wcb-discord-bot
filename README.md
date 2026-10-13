@@ -550,7 +550,7 @@ or spending databases to roll back code. Synthetic smoke artifacts keep only
 content-free refs/flags/public code under private app-volume0700/0600 and existing
 seven-day manual retention/withdrawal cleanup; disposable databases are erased.
 
-## Native context freshness (candidate2.22.1)
+## Native context freshness (2.22.1)
 
 The existing learning cycle rechecks up to two captured native neighborhoods, within
 six seconds and at most six HTTP reads. Missed peer changes/deletions and lost

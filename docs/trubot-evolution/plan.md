@@ -1,41 +1,51 @@
 # Trubot evolution plan
 
-Current verified production 2.21.0 ([PR98](https://github.com/jdegregorio/wcb-discord-bot/pull/98)).
-H55a adds source-linked native
-context dependency metadata to the existing private graph. It retains at most100
-captures with up to five human dependencies, source time, capture time, reply links,
-text hashes and explicit gaps. Peer/source text is not copied into this metadata.
-Known edits/deletes, retention, withdrawal and restored stale captures invalidate it.
-No new trait or measured character-quality gain. [Study](evaluations/2026-10-13-native-context-links-study.md).
+Current verified production2.22.1 ([PR100](https://github.com/jdegregorio/wcb-discord-bot/pull/100),
+[PR101](https://github.com/jdegregorio/wcb-discord-bot/pull/101)). H56 repairs native
+setup links after missed peer edits/deletes/access loss. The existing worker rotates
+two captures and checks every retained dependency in a current bounded page, reading
+only an exact same-channel source parent separately when needed. At most six HTTP
+reads/six seconds including selection; source/withdrawal/scope and final locked checks
+remain authoritative. No copied peer text, fresh certificate or native pattern permission.
+
+Matched actual source-cycle experiment: initialindividual reads1/2checked; timeout,
+ordering and combined alternatives each1/2and rejected; bounded-page prototype2/2;
+installed2/2in0.831seconds. Actual owner/installed-handler missed-edit acceptance also
+passes. Engineering evidence, not a human fidelity or humor benchmark. Source coverage
+is bounded and pixels are absent. No new human abstraction is populated.
 
 Next ordered increments:
-1. H55b/H54b/H50 contextual native study integration, coupled with H48/H21/H28
-   qualified abstract population. H56 supplies fresh bounded dependency reads and
-   background repair of missed peer changes; it is not provider-study integration.
-   Recheck full setup before both passes/atomic commit, link derived interpretations
-   to context invalidation, compare contrary cases and genuine human held-outs, and
-   verify natural actual Discord replies before opening the H54a native pattern gate.
-2. H22/H39 brevity/variation and H51 cue reliability, with same-model matched cases
-   and care/recipient/grounding controls. No general 2-3x humor gain established.
-3. Broader native peers/replies/threads/original pixels, with explicit coverage gaps.
-4. Selective skills/tools and generated Michigan U.P. aurora/trail-camera wildlife
-   with short natural captions and generated provenance. Require original pixels,
-   sharing/timing evidence, abstention and estimates within USD20.
+1. H48/H21/H28 qualified abstract population coupled with H55b/H54b/H50 contextual
+   native study integration. Use attributed episodes, contrary cases and genuine
+   human-held-out comparison. Recheck full dependencies before both provider passes
+   and atomic commit; link derived observations to context invalidation before opening
+   the native pattern gate. Archive patterns remain eligible under existing contracts.
+2. H22/H39/H51 brevity, semantic variety and cue reliability. Fresh care controls use
+   three short sentences and a recurring preface; humor can paraphrase an older premise.
+   Same-model matched cases must improve useful comic turns without factual inventions,
+   recipient mistakes or insensitive timing. No general2-3xhumor gain established.
+3. Broader native peers/replies/threads/original pixels with honest coverage gaps,
+   authenticated scope and correction/deletion/withdrawal handling.
+4. Selective skills/tools and generated Michigan U.P. aurora/trail-camera wildlife,
+   short natural captions and generated provenance. Validate original pixels,
+   sharing/timing, abstention and operating estimates withinUSD20.
 
-Priorities changed because H56 confirms that missed peer changes are not repaired by
-H55a known-state checks. Fresh dependency reconciliation can ship as a supported
-enabling correction while full contextual derivation and human validation remain open.
-A genuine held-out abstraction or material behavioral regression can reorder priorities.
-Verified production2.22.0 is healthy. Its live transport audit motivates candidate
-2.22.1 bounded-page correction, pending final release acceptance. No active new pattern or measured fidelity gain.
-The prior specific optional private-provider grounding audit remains unexecuted.
-Keep source audit text secondary to useful abstractions in ordinary conversation.
-Retain bot identity, approved creative amplification/Thomas Jones bits, internally
-accurate dates/unknowns, correction/deletion/withdrawal/expiry, private storage and
-recovery. Bot/peer/development/quoted/OCR text never establishes Andrew beliefs.
-Runtime keeps league allowlist/no DMs. USD18 runtime/USD2 maintenance/USD20 monthly
-ledger, no added service/provider requests/Discord reads from metadata capture.
-Six standalone local01/05/09/13/17/21 runs, Sol/xhigh and notifications unchanged.
-Each run fetches main/new managed worktree/branch, two planning phases, six gates,
-required CI/tested merge/immutable release/both architectures/scoped pi5 deployment
-and actual private Discord smoke tests.
+Priorities changed because the deployed full-cycle audit exposed a partial freshness
+result that simple timeout/ordering changes did not repair. Complete this supported
+transport correction before using native context in derived character learning.
+Genuine qualified human abstractions or a material behavioral regression can reorder
+future work. Keep source audit text secondary to abstractions in ordinary conversation.
+The prior specific optional private-provider grounding audit remains unexecuted;
+strict preference/historical semantic audit gaps are not silently marked resolved.
+
+Retain bot identity and approved creative amplification/Thomas Jones bits, accurate
+internal dates/unknowns, private evidence and source attribution. Bot/peer/development/
+quoted/OCR text never establishes Andrew beliefs. Runtime keeps league allowlist/noDMs,
+owner-only private development recall, USD18runtime/USD2maintenance/USD20monthly guard,
+original capture30-day lifetime and existing app volume. No new service/model/schema,
+source replay or provider request from this feature. Six standalone local01/05/09/13/
+17/21runs, Sol/xhigh and notifications unchanged. Every run fetches main/new managed
+worktree, completes both planning phases, six gates/required CI/tested merge/immutable
+release/both architectures/scoped deployment and real private Discord smoke tests.
+
+[Complete research and release evidence](evaluations/2026-10-13-native-freshness-study.md).

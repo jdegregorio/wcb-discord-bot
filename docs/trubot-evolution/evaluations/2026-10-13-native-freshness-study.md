@@ -118,3 +118,68 @@ Initial2.22.0 remains healthy and compatible; no corpus/schema/model/provider ch
 No new human abstraction or measured general fidelity gain. H55b contextual provider
 integration/derivation lifecycle and H48 genuine human-held-out abstraction population
 remain next; H22/H39 stock care prefaces/three short sentences remain observed gaps.
+
+### Final immutable patch and installed acceptance
+
+PR101 merged29d86dd79c37d2dbdf234c9d770be9d1c876f273 afterrequiredCI38467186010.
+MainCI38467547406 and all six merged gates pass:970tests/96.91%/30typed modules/build
+2.22.1. Runtime/test/version trees match testedfeature16b500d. Immutable[release2.22.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.22.1),
+imageCI38467848695 SUCCESS; both architectures inspected. A transient GitHubjobsAPI502
+was resolved through compact run status; no check bypass or tag reuse.
+
+Reverifiedpi5/aarch64/Ubuntu24.04.4/helper/manifest/permissions. The existing app-scoped
+locked transaction deployedf2512b462508663f31b88126682c196bb487f6824fd516c37e025eb89371b49d.
+OCIcommit/module/package versions and all30 installed source hashes match tested
+runtime. Healthy/Discord-ready/zero restarts. Immediate rollback2.22.0/e6fac5 retained;
+original2.21.0/cfd8f29 cataloged. No rollback, data migration or restored spending state.
+
+Installed SAME two-source cohort checks2/2in283+548ms; zero provider requests,
+no gateway or send. Temporary captured-cohort metadata erased afterward. Live actual
+worker nowchecks2/unavailable0, with zero errors/reply failures/memory warnings/
+disconnects and two Discord startup warnings in the observed window. Sparse current
+spontaneous activity limits error-rate conclusions. Reads are not an atomic snapshot,
+complete context, original-pixel proof or durable visibility certificate.
+
+Actual installedH56D repeats source capture/dependency/reopen/known deletion/missed
+edit/privacy/gate controls through genuine private owner request and actual Discord
+send. Relevant one-sentence answer/no routine metadata/date disclaimer. Invented
+source state only, not human learning/reference. Distinct readiness BEFOREconstruction
+and primary heartbeat after close pass. All prototype overrides and disposable source
+stores are removed. No optional rejected provider-audit payload or new human trait.
+
+Fresh final gateway controls and cost receipts are recorded in the [release JSON](2026-10-13-native-freshness-release.json)
+and progress; the recipient observation window completed. Before/after contextual
+UI audit semantically inspects five attributed target messages/three older bot posts;
+bounded authenticated scan finds seven target/twelve peer/four older bot/zero current
+spontaneous across three allowed source channels/latest100/14days. No original-pixel
+interpretation or independent human-held-out pattern benchmark. Mechanical405eligible
+grouped blocks/15exports is source coverage, not episode independence or a semantic
+review. Care repeats a preface/three short sentences; final TJ response paraphrases
+an earlier comic premise. KeepH22/H39open rather than calling these fidelity gains.
+
+A final LOCAL contextual source check reads five selected attributed grouped blocks
+and15adjacent blocks from one historical export, with digest/ordinal/line provenance.
+The final broad-past paraphrase agrees with the attributed source text; peer corrections
+remain separate, source questions are not established beliefs, and calendar dates
+remain unknown. This is local Codex semantic review, not independent human/provider
+validation or a new habit. Raw exchanges/derived answer text are not retained; private
+artifacts contain source refs/counts/pass flags only. No previously rejected provider
+payload was sent and the strict preference-only audit prerequisite remains open.
+
+Final installed gateway6cases/5posts/one recipient abstention. Actual semantic/presentation
+review: care17words/three short sentences with repeated preface; TJ15words, relevant
+fiction but paraphrased prior premise; ordinary baseball4words/direct/natural; recent
+9words/quotes match viewed human sources; past48words/two sentences/local attributed
+paraphrase check passes. All ordinary memory replies omit routine metadata/date
+caveats. These controls are not an independent human-quality grade, new preference
+or measured amplification. Four observed live cycles2checked/0unavailable. No relevant
+error/restart regression in this sparse window; two Discord startup warnings.
+
+October covered estimateUSD0.207282965(runtime0.10578422/maintenance0.101498745),1,316
+settled/zero unsettled. RunUSD0.006459355/18genuine attempts:4maintenance fixture replies,
+14runtime including two recipient abstentions and one optional wording refresh. No
+provider requests from native experiments/feature, new service or ledger reset. Guard
+USD18/2/20 unchanged; estimates are not provider billing, pre-guard spend unknown.
+Private refs/counts/flags/source hashes/public helpers remain0700/0600 under the existing
+seven-day manual retention/withdrawal process. No raw source or answer text in smoke
+artifacts. All candidate overrides, synthetic stores and cohort copies removed.
