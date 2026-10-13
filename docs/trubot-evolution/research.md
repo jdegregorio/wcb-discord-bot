@@ -2022,3 +2022,10 @@ controls and relevant delivery. No semantic human trait or humor/fidelity gain c
 H55b fresh dependency reads/study packets and H48 qualified population remain coupled
 next increments; original pixels/broader native, brief varied humor/cues and selective
 skills/tools/generated outdoor scenes remain active. Installed checks pending.
+
+H55a installed release evidence:2.21.0/cfd8f29, all six gates930tests/97%, required PR/
+main/image CI successful. Actual installed controlled capture/restart/delete/privacy/
+gate acceptance passes; normal gateway5cases/4posts/one abstention presentation controls
+pass. Genuine source capture5/nine dependencies, known lifecycle valid, not current
+visibility certified. No new trait, abstract population or general humor/fidelity gain;
+H55b/H48 remain unvalidated. [Release evidence](evaluations/2026-10-13-native-context-links-release.json).

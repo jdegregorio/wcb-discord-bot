@@ -9,7 +9,7 @@ historical patterns/literal native self-reports, operator review, pacing and lif
 No new source/schema/checkpoint cohort/service/model/API call; rollback2.20.0 is data
 compatible but restores the permissive boundary. [Full study](evaluations/2026-10-13-native-pattern-study.md).
 
-Delivered candidate H55a (2.21.0): source-linked bounded context fingerprints,
+Delivered H55a (2.21.0, PR98): source-linked bounded context fingerprints,
 known-mutation/restored-state invalidation and retention.29/29 synthetic lifecycle
 cases and actual private baseline/candidate handler acceptance. No human abstraction
 or measured fidelity improvement. No peer text/schema/new calls; existing graph and

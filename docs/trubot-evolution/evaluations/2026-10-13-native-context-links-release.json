@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "run": "2026-10-13-0900",
+  "recorded_at": "2026-10-13T16:39:09.678818+00:00",
+  "hypothesis": "H55a",
+  "kind": "validated enabling increment; no measured general character-quality gain",
+  "base": "dcb55f31fb98424bed68b6fb892c40137e4ac095",
+  "feature": "248d000b44e5ca9747744da1296a084619bc2b9d",
+  "merged_runtime": "4ab648a355f8466b9391bff5e2692d330d0b0e99",
+  "pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/98",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.21.0",
+  "ci": {
+    "pr": 38429872141,
+    "merged_main": 38430316576,
+    "image": 38430535875,
+    "all": "success"
+  },
+  "deployment": {
+    "version": "2.21.0",
+    "index_digest": "sha256:cfd8f29ea6c878fefffa9fdaac3c593d004332e0d5f29c2acdecffacf2070c10",
+    "amd64_manifest": "sha256:bc22b2c1bf5d55959c631be51607ec295db54dde88a4880c1e333988e72ef35d",
+    "arm64_manifest": "sha256:e1cba9b486a43b930185c230f3597d16c7cfd6a7aa22713b3c16476aab3a72af",
+    "host": "pi5",
+    "architecture": "aarch64",
+    "os": "Ubuntu 24.04.4",
+    "healthy": true,
+    "discord_ready": true,
+    "restarts": 0,
+    "source_modules_matched": 29,
+    "previous_version": "2.20.1",
+    "previous_digest": "sha256:8ed7cf72ff9e54623ee41f59a6b49d853c230facb74b8a9740a6aefb4a92937d",
+    "rollback_required": false
+  },
+  "quality": {
+    "all_six_gates": true,
+    "tests": 930,
+    "branch_coverage_percent": 97.0,
+    "typed_modules": 29,
+    "new_cases": 29,
+    "unchanged_baseline_failures": 29,
+    "candidate_passes": 29
+  },
+  "actual_acceptance": {
+    "synthetic_controlled_arms": 3,
+    "maintenance_requests": 3,
+    "baseline_captures": 0,
+    "candidate_captures": 1,
+    "installed_captures": 1,
+    "restart_delete_privacy_gate_controls": true,
+    "source_fixture_is_human_evidence": false,
+    "normal_gateway_cases": 5,
+    "normal_posts": 4,
+    "recipient_abstentions": 1,
+    "manual_presentation_controls_passed": 5,
+    "normal_word_counts": [
+      17,
+      14,
+      4,
+      15,
+      0
+    ],
+    "ordinary_metadata_disclaimers": 0,
+    "production_native_captures": 5,
+    "production_dependencies": 9,
+    "known_lifecycle_valid": true,
+    "current_visibility_certified": false,
+    "raw_answers_retained": false,
+    "development_learning": 0,
+    "second_gateway": false
+  },
+  "audit": {
+    "source_channels": 3,
+    "latest_messages_per_channel": 100,
+    "recent_days": 14,
+    "target_messages": 7,
+    "peer_messages": 12,
+    "older_bot_messages": 4,
+    "current_spontaneous_bot_messages": 0,
+    "ui_target_messages": 7,
+    "ui_dated_groups": 4,
+    "ui_older_bot_messages": 5,
+    "human_pattern_or_humor_gain_established": false,
+    "original_pixel_study": false,
+    "active_patterns": 0,
+    "limitations": [
+      "Sparse spontaneous activity",
+      "No independent human held-out semantic benchmark",
+      "Existing optional private provider audit remains unexecuted",
+      "Bounded neighborhood metadata does not establish current visibility or completeness"
+    ]
+  },
+  "health_observation": {
+    "errors": 0,
+    "reply_failures": 0,
+    "disconnects": 0,
+    "warnings": 2,
+    "discord_client_warnings": 2,
+    "memory_warnings": 0
+  },
+  "cost": {
+    "october_covered_estimate_usd": "0.20082361",
+    "runtime_estimate_usd": "0.100326035",
+    "maintenance_estimate_usd": "0.100497575",
+    "run_estimate_usd": "0.002533385",
+    "run_provider_attempts": 8,
+    "settled_attempts": 1298,
+    "unsettled_attempts": 0,
+    "monthly_limit_usd": 20,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "provider_billing_record": false,
+    "pre_guard_spend": "unknown",
+    "added_paid_service": false,
+    "added_provider_or_discord_reads_by_increment": false
+  },
+  "next": [
+    "H55b fresh native dependency verification and contextual study integration",
+    "H48 qualified abstract population with genuine held-outs and contrary cases",
+    "Brief varied humor/cue reliability, broader native/pixels, selective skills/tools and generated U.P. outdoor scenes"
+  ]
+}

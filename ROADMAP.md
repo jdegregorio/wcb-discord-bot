@@ -1,6 +1,7 @@
 # Trubot roadmap
 
-Current verified production 2.20.1. Candidate 2.21.0 adds H55a source-linked native
+Current verified production 2.21.0 ([PR98](https://github.com/jdegregorio/wcb-discord-bot/pull/98)).
+H55a adds source-linked native
 context dependency metadata to the existing private graph. It retains at most100
 captures with up to five human dependencies, source time, capture time, reply links,
 text hashes and explicit gaps. Peer/source text is not copied into this metadata.
