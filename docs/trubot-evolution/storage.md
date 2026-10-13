@@ -863,3 +863,15 @@ backup, study pacing or ledger changes. Current identity and withdrawal are rech
 before packet admission and optional repeated-reply recovery. Image pixels remain
 attached to their focused human message. Compatible rollback preserves graph, sources,
 withdrawal and spending state, but restores the earlier attribution defect.
+
+
+## Complete live conversational setup, 2.19.3
+
+Native human neighbors and same-channel parents, plus historical adjacent blocks,
+are supplied as complete text up to600 UTF-8 bytes per message. Oversized context
+is omitted with an explicit gap rather than silently clipped. Native source/media
+gaps, speaker roles, reply links, same-channel scope, bounded reads and mandatory
+source freshness remain authoritative. Historical bot context is labeled separately
+from peers. Authored-source text ceilings remain unchanged. This does not broaden
+intake, persist peers, populate a human trait or add provider/HTTP requests. Existing
+withdrawal, spending, privacy and compatible rollback remain unchanged.

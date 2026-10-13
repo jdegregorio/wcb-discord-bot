@@ -3012,3 +3012,40 @@ seven-day retention and withdrawal cleanup apply. Temporary transfer archive/own
 browser cleanup, final evidence CI and archive completion are recorded in automation
 memory. Source qualifiers remain private; failed older abstraction stays retired.
 [Full release evidence](evaluations/2026-10-12-memory-author-release.json).
+
+
+## 2026-10-12 21:00 H52 selection
+
+2026-10-12 21:00 selection: H52 complete live conversational setup. Native and
+historical neighbors are silently clipped at350 characters, losing qualifications.
+Preserve complete rows up to600UTF-8 bytes and mark oversized rows as gaps so that
+contextual memory does not misstate a human stance. Existing scope, attribution,
+source lifecycle, participation and USD18/2/20 remain authoritative. No new model,
+service, provider request or human abstraction. Both planning phases and acceptance:
+docs/trubot-evolution/evaluations/2026-10-12-complete-context-study.md.
+
+Next: H48/H21/H28 qualified human abstractions with genuine held-outs and H43/H6
+controls; H22/H39 variation/brevity and exploratoryH51; H50 native peers/replies/
+threads/pixels; bounded selective skills/tools and generated U.P. aurora/trail-camera
+sharing. Targeted raw historical output was automatically rejected for private-log
+risk; no workaround attempted or new trait populated. H52 is a concrete grounding
+prerequisite, not a general fidelity claim. Six daily standalone runs unchanged.
+
+
+### 21:00 candidate and actual reproduction
+
+H52 changes complete native neighbor/same-channel-parent and historical adjacency
+text, with600UTF-8 byte ceilings and explicit oversized gaps. Historical bot context
+is separately labeled. All source lifecycle, scope, retention, budgets and existing
+source-text ceilings remain authoritative; no new requests, service or human trait.
+Thirteen invented regressions: baseline11fail/2pass, candidate13/13. Required six
+gates pass,851tests/96.85%,29 modules and2.19.3 package build.
+
+Actual owner/private Discord handler baseline packet silently clips the qualification;
+matched candidate packet retains it. Both sends use disposable invented evidence,
+existing maintenance ledger, distinct readiness before client construction, zero
+fixture intake and successful withdrawal/primary heartbeat checks after close. Two
+actual answers do not show a clear interpretation improvement; candidate has a novel
+relevant joke. No general fidelity gain or new human pattern is claimed. The current
+league audit has zero spontaneous current-release messages; wider quality stays open.
+PR, immutable images, deployment and installed actual acceptance remain pending.

@@ -10,6 +10,9 @@ import discord
 
 from trubot.learning import Identity, _time
 
+# Context must be complete: silently clipped qualifications can reverse meaning.
+MAX_CONTEXT_BYTES = 600
+
 
 @dataclass(frozen=True, slots=True)
 class NativeEpisode:
@@ -65,7 +68,7 @@ def _context_row(
             and focus_reference.channel_id == focus.channel.id
             and focus_reference.message_id == message.id
         ),
-        "text": message.content[:350],
+        "text": message.content,
         "visual_context": "pixels not retrieved; do not interpret image-dependent meaning"
         if getattr(message, "attachments", ()) or getattr(message, "embeds", ())
         else "no captured media",
@@ -95,6 +98,14 @@ async def collect_native_episode(
         return None
     neighbors: dict[int, dict[str, Any]] = {}
     gaps: list[str] = []
+    oversized: set[int] = set()
+
+    def admit(message: discord.Message) -> None:
+        if len(message.content.encode("utf-8")) > MAX_CONTEXT_BYTES:
+            oversized.add(message.id)
+        else:
+            neighbors[message.id] = _context_row(message, focus, identity)
+
     if not hasattr(focus, "attachments") or not hasattr(focus, "embeds"):
         gaps.append("source media metadata unavailable")
     elif focus.attachments or focus.embeds:
@@ -107,7 +118,7 @@ async def collect_native_episode(
                 and message.created_at <= now
                 and abs((message.created_at - focus.created_at).total_seconds()) <= 1800
             ):
-                neighbors[message.id] = _context_row(message, focus, identity)
+                admit(message)
     except discord.HTTPException as error:
         gaps.append("nearby human context unavailable")
         if isinstance(error, discord.Forbidden):
@@ -121,7 +132,11 @@ async def collect_native_episode(
     if isinstance(reference, discord.MessageReference) and reference.message_id is not None:
         if reference.channel_id != channel.id:
             gaps.append("cross-channel reference not followed")
-        elif reference.message_id not in neighbors and reference.message_id != focus.id:
+        elif (
+            reference.message_id not in neighbors
+            and reference.message_id not in oversized
+            and reference.message_id != focus.id
+        ):
             try:
                 message = await channel.fetch_message(reference.message_id)
                 if (
@@ -129,11 +144,16 @@ async def collect_native_episode(
                     and _human(message, channel=channel, floor=floor)
                     and message.created_at <= focus.created_at
                 ):
-                    neighbors[message.id] = _context_row(message, focus, identity)
+                    admit(message)
                 else:
                     gaps.append("referenced human context outside scope")
             except discord.HTTPException:
                 gaps.append("referenced human context unavailable")
+    if oversized:
+        gaps.append(
+            f"{len(oversized)} human context messages omitted for size; "
+            "their full meaning is unavailable"
+        )
     return NativeEpisode(
         focus.content[:4000],
         _time(focus.edited_at) if focus.edited_at else None,

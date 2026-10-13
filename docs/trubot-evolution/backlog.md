@@ -1,5 +1,21 @@
 # Prioritized backlog
 
+2026-10-12 21:00 selection: H52 complete live conversational setup. Native and
+historical neighbors are silently clipped at350 characters, losing qualifications.
+Preserve complete rows up to600UTF-8 bytes and mark oversized rows as gaps so that
+contextual memory does not misstate a human stance. Existing scope, attribution,
+source lifecycle, participation and USD18/2/20 remain authoritative. No new model,
+service, provider request or human abstraction. Both planning phases and acceptance:
+docs/trubot-evolution/evaluations/2026-10-12-complete-context-study.md.
+
+Next: H48/H21/H28 qualified human abstractions with genuine held-outs and H43/H6
+controls; H22/H39 variation/brevity and exploratoryH51; H50 native peers/replies/
+threads/pixels; bounded selective skills/tools and generated U.P. aurora/trail-camera
+sharing. Targeted raw historical output was automatically rejected for private-log
+risk; no workaround attempted or new trait populated. H52 is a concrete grounding
+prerequisite, not a general fidelity claim. Six daily standalone runs unchanged.
+
+
 2026-10-12 17:00 verified: H49/H6 is deployed in 2.19.2 (PR #90).
 The source/focus-author binding corrects fresh actual broad recall and preserves
 supported own-history, unknown bot-target reaction scope, withdrawal and readiness.
