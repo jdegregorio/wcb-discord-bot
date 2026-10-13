@@ -1,0 +1,179 @@
+{
+  "run": "2026-10-13-1300",
+  "recorded_at": "2026-10-13T21:29:34.386601+00:00",
+  "base_sha": "a611bd2d057ef7580c048f86a96a21824f779bf1",
+  "runtime_sha": "29d86dd79c37d2dbdf234c9d770be9d1c876f273",
+  "pull_requests": [
+    "https://github.com/jdegregorio/wcb-discord-bot/pull/100",
+    "https://github.com/jdegregorio/wcb-discord-bot/pull/101"
+  ],
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.22.1",
+  "quality": {
+    "feature_and_merged_six_gates": true,
+    "tests": 970,
+    "focused_native_cases": 40,
+    "branch_coverage_percent": 96.91,
+    "typed_modules": 30,
+    "installed_module_hashes_match": true
+  },
+  "ci": {
+    "initial_pr": 38461948010,
+    "initial_main": 38462145135,
+    "initial_image": 38462398173,
+    "final_pr": 38467186010,
+    "final_main": 38467547406,
+    "final_image": 38467848695,
+    "all": "success"
+  },
+  "deployment": {
+    "version": "2.22.1",
+    "digest": "sha256:f2512b462508663f31b88126682c196bb487f6824fd516c37e025eb89371b49d",
+    "platforms": {
+      "amd64": "sha256:7c4ad8dd8533466db4715f6210811e213ba6c0024bb687d00cfb7faaee7dc030",
+      "arm64": "sha256:81008fa8eb7fea3e3d375a4a5c375bdcfa9830b4548e20c9f8d5c5544c99e0c8"
+    },
+    "healthy": true,
+    "discord_ready": true,
+    "restarts": 0,
+    "immediate_rollback_version": "2.22.0",
+    "rollback_digest": "sha256:e6fac529895723ae418c5170ab567b727e792b1ee25478e47946173d15ced8d3",
+    "rollback_used": false,
+    "data_migration": false
+  },
+  "research": {
+    "hypothesis": "H56/H56b",
+    "classification": "supported enabling correction",
+    "matched_real_source_captures": 2,
+    "retained_dependencies": [
+      0,
+      3
+    ],
+    "baseline_checked": 1,
+    "deadline_checked": 1,
+    "ordering_checked": 1,
+    "combined_checked": 1,
+    "rejected_variants": [
+      "longer per-read deadline",
+      "native-first ordering",
+      "combined ordering/deadline"
+    ],
+    "batch_checked": 2,
+    "installed_checked": 2,
+    "installed_elapsed_ms": [
+      283,
+      548
+    ],
+    "source_probe_provider_requests": 0,
+    "atomic_snapshot": false,
+    "complete_native_coverage": false,
+    "human_pattern_heldout_benchmark": false,
+    "new_human_abstractions": 0,
+    "measured_general_fidelity_gain": false,
+    "measured_humor_multiplier": false
+  },
+  "actual_discord": {
+    "authenticated_private_owner": true,
+    "controlled_baseline_candidate_initial_final": 4,
+    "baseline_offline_edit_erased": false,
+    "candidate_and_installed_offline_edit_erased": true,
+    "final_normal_cases": 6,
+    "final_posts": 5,
+    "recipient_abstention": true,
+    "no_routine_metadata_disclaimer": true,
+    "care_words": 17,
+    "care_sentences": 3,
+    "humor_words": 15,
+    "humor_semantic_variety_still_open": true,
+    "ordinary_baseball_words": 4,
+    "recent_words": 9,
+    "recent_quotes_match_viewed_human_sources": true,
+    "past_words": 48,
+    "local_historical_paraphrase_check": true,
+    "independent_human_or_provider_quality_grade": false,
+    "development_learning": 0,
+    "second_gateway_started": false,
+    "distinct_readiness_before_app_client_construction": true,
+    "primary_heartbeat_after_close": true,
+    "raw_source_or_answer_retained": false,
+    "private_refs_public": false
+  },
+  "character_audit": {
+    "channels": 3,
+    "latest_per_channel": 100,
+    "window_days": 14,
+    "target_count": 7,
+    "peer_count": 12,
+    "older_bot_count": 4,
+    "current_spontaneous_bot_count": 0,
+    "contextual_ui_target_review_count": 5,
+    "contextual_ui_bot_review_count": 3,
+    "local_historical_selected_grouped_blocks": 5,
+    "local_historical_adjacent_blocks": 15,
+    "local_historical_exports": 1,
+    "calendar_dates_known": false,
+    "original_pixel_interpretation": false,
+    "source_coverage_grouped_eligible_blocks": 405,
+    "source_coverage_exports": 15,
+    "mechanical_coverage_is_semantic_review": false
+  },
+  "background": {
+    "observed_final_cycles": 4,
+    "each": {
+      "checked": 2,
+      "removed": 0,
+      "unavailable": 0
+    },
+    "source_http_max_per_cycle": 6,
+    "deadline_seconds": 6,
+    "graph_capture_count": 5,
+    "graph_dependency_count": 9,
+    "fresh_certificate_persisted": false,
+    "native_pattern_gate_open": false
+  },
+  "errors": {
+    "errors": 0,
+    "reply_failures": 0,
+    "memory_warnings": 0,
+    "disconnects": 0,
+    "startup_discord_warnings": 2,
+    "sparse_activity_limits_error_rate_conclusion": true
+  },
+  "spend": {
+    "month": "2026-10",
+    "covered_estimated_usd": 0.207282965,
+    "runtime_usd": 0.10578422,
+    "maintenance_usd": 0.101498745,
+    "settled_attempts": 1316,
+    "unsettled_attempts": 0,
+    "run_estimated_usd": 0.006459355,
+    "run_attempts": 18,
+    "run_maintenance_attempts": 4,
+    "run_runtime_attempts": 14,
+    "run_runtime_optional_refreshes": 1,
+    "guard_usd": [
+      18,
+      2,
+      20
+    ],
+    "provider_billing_record": false,
+    "pre_guard_spend": "unknown",
+    "paid_services_added": 0,
+    "provider_calls_from_feature": 0
+  },
+  "cleanup": {
+    "prototype_package_overrides_removed": true,
+    "synthetic_source_directories_removed": true,
+    "cohort_metadata_copy_removed": true,
+    "private_artifacts_owner_only": true,
+    "private_artifact_manual_retention_days": 7,
+    "archive_phase": "after evidence merge; completion receipt in automation memory"
+  },
+  "next": [
+    "qualified abstract human memory plus native contextual study and derivation lifecycle",
+    "brevity and semantic humor variation",
+    "broader native threads and original pixels",
+    "selective skills/tools and generated Michigan U.P. outdoor scenes"
+  ],
+  "pending_specific_optional_provider_audit_executed": false,
+  "evidence_pull_request": "https://github.com/jdegregorio/wcb-discord-bot/pull/102"
+}

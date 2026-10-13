@@ -198,7 +198,7 @@ or spending databases to roll back code. Synthetic smoke artifacts keep only
 content-free refs/flags/public code under private app-volume0700/0600 and existing
 seven-day manual retention/withdrawal cleanup; disposable databases are erased.
 
-## Native dependency freshness, candidate2.22.1
+## Native dependency freshness, 2.22.1
 
 H56 freshly reads the retained focus and every dependency, returns complete bounded
 human setup only ephemerally, and repairs missed edits/deletes/access loss through the

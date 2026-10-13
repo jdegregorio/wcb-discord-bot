@@ -3364,3 +3364,45 @@ within1.5seconds. Rejected alternatives stay process-isolated, unshipped. H56b c
 transport correction selected for immutable2.22.1; source/parent/dependency/scope/lifecycle
 checks and six-second ceiling retained, HTTP maximum reduced to six.40focused cases;
 full gates/release/actual installed validation and final evidence still required.
+
+Finalruntime2.22.1: PR101 merged29d86dd afterrequiredCI38467186010; mainCI38467547406,
+imageCI38467848695 SUCCESS. Feature+merged allsixgates970tests/96.91%/30typed/build2.22.1.
+Live target/both image architectures verified. Scoped helper transaction deployed
+f2512b462508663f31b88126682c196bb487f6824fd516c37e025eb89371b49d; OCIcommit/package/module/
+all30sourcehashes match testedmain. Healthy/Discord-ready/zero restarts. Immediate
+rollback2.22.0/e6fac5 retained, original2.21.0/cfd8f29 cataloged; no rollback/migration.
+SAME installed cohort2/2in0.831seconds; all alternatives rejected and overrides removed.
+Captured-cohort copy erased after comparison. ActualH56D owner/installed-handler
+missed-edit/reopen/privacy/gate acceptance passes, natural relevant one-sentence reply,
+distinct readiness before construction and primary health after close. New actual
+background cycles2checked/0unavailable. No new human abstraction/generalfidelitygain.
+Finalfreshgateway/cost/refs/docs-onlyevidencePR and cleanup follow below.
+
+Final actual private gateway6cases/5posts/one recipient abstention. Care17words/three
+sentences/repeated preface and TJ15words/paraphrased prior premise keepH22/H39open;
+baseball4words/direct/natural, recent9words/sourcequotes agree with viewed human
+messages, past48words/two sentences/no routine metadata caveat. LOCAL source study
+5selected attributed grouped blocks/15adjacent/1export supports final past paraphrase,
+with peer corrections separate and no calendar-date proof or independent qualitygrade.
+No new generalized human observation is inferred or populated. Private artifacts retain
+refs/counts/passflags only. Prior optional specific provider-audit request not executed.
+
+Finalaudit3channels/latest100/14days unchanged7target/12peers/4olderbot/0current
+spontaneous; contextualUIreview5target/3olderbot. Native34; archives16documents/
+4,299grouped/412target/405eligible and115visualepisodes/96assets. Graph439sources/
+554episodes/two claims/onepreference/zero patterns,5captures/9dependencies,8checkpoints.
+Four actual background cycles2checked/0unavailable; zero errors/replyfailures/memory
+warnings/disconnects/restarts, two Discord startup warnings. Sparse activity limits
+rate conclusions. No original-pixel interpretation or human-held-out pattern benchmark.
+
+Covered October estimateUSD0.207282965(runtime0.10578422/maintenance0.101498745),1,316
+settled/zero unsettled. RunUSD0.006459355/18attempts:4maintenance/14runtime, including
+two recipient abstentions and one optional refresh. Guard18/2/20 unchanged; zero provider
+calls from source experiments/feature, zero paid additions; billing/pre-guard unknown.
+[Content-free release evidence](evaluations/2026-10-13-native-freshness-release.json).
+All candidate packages, synthetic stores and cohort copies removed. Private app-volume
+refs/flags/counts/public code/hash artifacts0700/0600, manual seven-day/withdrawal cleanup.
+All source commands used the NEW owned worktree; primary remains untouched.
+Final documentation evidence is in [PR102](https://github.com/jdegregorio/wcb-discord-bot/pull/102).
+Its checks verify the unchanged runtime tree. Archive follows evidence merge; its
+actual completion receipt is retained in automation memory and the worktree artifact.
