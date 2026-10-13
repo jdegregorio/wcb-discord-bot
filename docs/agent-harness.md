@@ -10,9 +10,9 @@ across schema/local validation/storage/restored recall until that lifecycle exis
 Operator review and contextual historical studies retain their own trusted boundaries.
 No schema, checkpoint cohort or model change; no forced source replay.
 
-Current production baseline 2.20.0. The 2026-10-13 05:00 run selects H54a:
+Current verified production 2.20.1 (PR96). The 2026-10-13 05:00 run shipped H54a:
 automatic native character patterns must wait for durable conversational setup and
-context invalidation. Candidate 2.20.1 enforces this in extraction, validation,
+context invalidation. Release 2.20.1 enforces this in extraction, validation,
 storage and restored recall. It does not populate a new trait or claim a measured
 reply-quality gain. [Hypotheses and acceptance](trubot-evolution/evaluations/2026-10-13-native-pattern-study.md).
 
