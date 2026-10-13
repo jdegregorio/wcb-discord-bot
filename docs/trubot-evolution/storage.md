@@ -888,3 +888,26 @@ refs/counts/metrics, public helpers and invented fixtures use the app-volume
 smoke-tests/2026-10-13-0100 directory,0700/0600, seven-day manual retention/withdrawal
 cleanup. Candidate package override is temporary and removed after installed checks.
 Raw human/answer text is not retained in actual smoke records.
+
+
+## Native automatic pattern context gate, 2.20.1
+
+Native automated study packets still contain target-only text, lacking durable peer
+setup, linked replies and context-source invalidation. All automatic pattern domains
+(humor/style/value/emotion/relationship) now reject native support or counterevidence.
+Source kinds come from authenticated snapshots. Model-supplied context labels cannot
+open this gate. Contextual archive pattern studies and explicit operator-reviewed
+native observations remain eligible under their existing validation contracts.
+
+A restored older automatic native pattern is blocked by lookup/describe before
+sweeping. The normal source sweep erases such nodes and removes graph backups through
+the existing invalidation path. No database migration, checkpoint-version change,
+new corpus, new provider payload, automatic history replay, allowance change or new
+service. Production has zero active patterns at rollout, so no observed populated
+human pattern is erased. Preserve source correction/deletion/withdrawal and expiry.
+Rollback2.20.0 is data-compatible but restores the permissive learning boundary;
+keep native automatic population paused until H54b durable context provenance and
+invalidation are implemented and evaluated. Synthetic acceptance artifacts retain
+only content-free private message references/flags and public helper code in
+smoke-tests/2026-10-13-0500,0700/0600, under the existing seven-day manual retention
+and withdrawal process. Disposable synthetic databases are removed after each test.

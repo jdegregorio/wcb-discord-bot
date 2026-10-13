@@ -510,3 +510,14 @@ source freshness remain authoritative. Historical bot context is labeled separat
 from peers. Authored-source text ceilings remain unchanged. This does not broaden
 intake, persist peers, populate a human trait or add provider/HTTP requests. Existing
 withdrawal, spending, privacy and compatible rollback remain unchanged.
+
+
+## Native character pattern evidence gate (2.20.1)
+
+Automatic native studies currently lack durable conversational setup. They cannot
+establish recurring humor, style, values, emotional or relationship patterns until
+context provenance and edit/delete/visibility invalidation are implemented. The gate
+applies to support and counterevidence during generation, validation, storage and
+restored recall. Normal sweeping erases incompatible automatic patterns and graph
+backups. Reviewed historical studies, operator review and unambiguous native literal
+claims/preferences retain their existing contracts. No new API calls or source schema.

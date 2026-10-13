@@ -1,25 +1,17 @@
 # Living memory graph
 
-## Current priority after Joe's 2026-10-10 direction
+## Current priority, 2026-10-13 05:00
 
-Prioritize H21 abstract episode memories, then H22 deliberately amplified humor,
-then durable native/visual context, selective tools/skills and requested generated
-U.P. northern-lights/trail-camera pictures. This order supersedes historical
-next-step notes below. Values, humor mechanisms, personality, emotional responses
-and relationships should be learned as tentative or recurring conditional patterns,
-with attributed evidence and counterexamples. Source text serves provenance and
-corrections; ordinary replies should use useful abstractions without archive recitals.
-
-Joe authorizes a bot that is roughly two to three times funnier, including more
-Thomas Jones cracks. Novel punchlines and amplified bits are creative bot behavior,
-separate from Andrew's actual habits and beliefs. Test the creative policy before
-shipping, preserving warmth, timing, factual grounding and varied responses.
-The current release does not implement or validate this amplification.
-
-H19/H20 routing is delivered in 2.11.3; real Discord checks pass 10/11. H18 timing
-variability remains secondary reliability work. No harness migration is supported
-by the current evidence. Preserve privacy, withdrawal, participation and the same
-monthly guard and maintenance allowance. See [research.md](research.md).
+The current plan/backlog lead with H54 native contextual provenance and H48 qualified
+abstract population as coupled prerequisites. H54a closes the permissive automatic
+native-pattern boundary; it does not provide durable peer/reply dependencies or a
+new human abstraction. Native automatic humor/style/value/emotion/relationship
+patterns wait for that lifecycle. Operator-reviewed native observations and contextual
+historical studies remain available. Then evaluate H22/H39 variation/brevity and H51,
+broader native/visual coverage, selective skills/tools and generated Michigan U.P.
+aurora/trail-camera scenes. Joe's approved 2-3x creative humor and Thomas Jones bits
+remain distinct from evidence about Andrew. No measured multiplier is established.
+See [plan](plan.md), [backlog](backlog.md) and [H54a study](evaluations/2026-10-13-native-pattern-study.md).
 
 
 Joe requested an interconnected living memory system on 2026-10-07. This is the

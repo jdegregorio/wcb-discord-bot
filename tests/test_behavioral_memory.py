@@ -5,7 +5,8 @@ from types import SimpleNamespace
 
 import pytest
 from jsonschema import Draft202012Validator
-from test_abstract_distillation import pattern_worker
+from test_abstract_distillation import episode_refs, pattern_worker
+from test_abstract_distillation import seed as archive_seed
 from test_graph import observation
 from test_learning import AUDIT, NOW, source
 
@@ -77,7 +78,7 @@ def imported(stores, kind, **changes):
 
 @pytest.mark.parametrize("kind", DOMAINS)
 def test_behavioral_domain_schema_and_local_contract(stores, kind):
-    study = StudyStore(stores[2]).prepare(now=NOW, channel_ids=frozenset({10}))
+    study = archive_seed(stores, texts=TEXTS)
     packet = proposal(study, kind)
     Draft202012Validator(extraction_schema(study)).validate(packet)
     assert validate_proposal(packet, study) == packet["observations"][0]
@@ -103,6 +104,9 @@ def test_behavioral_graph_roundtrip_uses_summaries_with_limits(stores, kind):
 
 @pytest.mark.parametrize("kind", DOMAINS)
 async def test_two_pass_behavioral_domain_commits_and_stays_paced(stores, kind):
+    study = archive_seed(stores, texts=TEXTS)
+    with stores[2]._transaction() as (db, _):
+        db.execute("DELETE FROM checkpoints WHERE stream='distillation'")
     learning, _, graph = stores
     distiller, client, responder, _ = pattern_worker(stores)
 
@@ -117,14 +121,14 @@ async def test_two_pass_behavioral_domain_commits_and_stays_paced(stores, kind):
         }
 
     responder.study_json.side_effect = generate
-    await distiller.cycle(client)
+    await distiller.cycle(client, episode_refs=episode_refs(study))
     assert responder.study_json.await_count == 2
     item = GraphStore(learning).lookup("training progress", guild_id=77, now=NOW)[0]
     assert item["kind"] == kind and item["status"] == "tentative"
     assert item["expires_at"] == (NOW + timedelta(days=30)).isoformat()
     assert "abstraction" in item
     assert "Conditions:" not in item["summary"]
-    await distiller.cycle(client)
+    await distiller.cycle(client, episode_refs=episode_refs(study))
     assert responder.study_json.await_count == 2
     graph.remove(item["id"])
     assert not graph.lookup("training progress", guild_id=77, now=NOW)
@@ -258,13 +262,16 @@ async def test_behavioral_memories_reach_production_handlers(stores, kind, mode)
 
 @pytest.mark.parametrize("kind", DOMAINS)
 async def test_changed_contrary_source_during_review_cannot_commit(stores, kind):
-    learning, _, graph = stores
+    study = archive_seed(stores, texts=TEXTS)
+    with stores[2]._transaction() as (db, _):
+        db.execute("DELETE FROM checkpoints WHERE stream='distillation'")
+    _, _, graph = stores
     distiller, client, responder, _ = pattern_worker(stores)
 
     async def generate(**kwargs):
         if kwargs["name"] == "memory_extract":
             return proposal(SimpleNamespace(passages=kwargs["payload"]["sources"]), kind)
-        learning.invalidate(10, [source(2).id], deleted=True, now=NOW)
+        stores[1].remove_document(study.snapshots[2]["ref"]["document"], now=NOW)
         return {
             "accepted": True,
             "basis": "Late review must not override deletion.",
@@ -272,7 +279,7 @@ async def test_changed_contrary_source_during_review_cannot_commit(stores, kind)
         }
 
     responder.study_json.side_effect = generate
-    await distiller.cycle(client)
+    await distiller.cycle(client, episode_refs=episode_refs(study))
     assert responder.study_json.await_count == 2
     assert not graph.lookup("training progress", guild_id=77, now=NOW)
     assert graph.status()["nodes"].get(kind, 0) == 0

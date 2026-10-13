@@ -23,18 +23,43 @@ def stores(tmp_path):
     return learning, ArchiveStore.initialize(learning), GraphStore.initialize(learning)
 
 
-def seed(stores):
+def seed(stores, *, native=False, texts=None):
     learning, _, graph = stores
-    for i, text in enumerate(
-        [
-            "Give the baker a roster spot and count every croissant.",
-            "We should draft a pastry chef for roster dessert points.",
-            "Seriously, dessert jokes aside, I want a fair roster vote.",
-        ]
-    ):
-        learning.observe(source(i, content=text, created_at=NOW - timedelta(days=i + 1)), now=NOW)
+    texts = texts or [
+        "Give the baker a roster spot and count every croissant.",
+        "We should draft a pastry chef for roster dessert points.",
+        "Seriously, dessert jokes aside, I want a fair roster vote.",
+    ]
+    refs = []
+    for i, text in enumerate(texts):
+        if native:
+            learning.observe(
+                source(i, content=text, created_at=NOW - timedelta(days=i + 1)), now=NOW
+            )
+            refs.append({"kind": "discord", "message_id": source(i).id})
+        else:
+            from test_study_context import export
+
+            refs.append(
+                export(
+                    stores,
+                    [
+                        ("peer", "Invented episode setup " + str(i)),
+                        ("fixture.target", text),
+                        ("peer", "Invented distinct episode reaction " + str(i)),
+                    ],
+                    number=i,
+                )
+            )
     graph.populate(now=NOW)
-    return StudyStore(graph).prepare(now=NOW, channel_ids=frozenset({10}))
+    return StudyStore(graph).prepare(now=NOW, channel_ids=frozenset({10}), episode_refs=refs)
+
+
+def episode_refs(study):
+    return [
+        {k: v for k, v in s["ref"].items() if k not in {"start_line", "end_line"}}
+        for s in study.snapshots
+    ]
 
 
 def pattern(study, kind="humor"):
@@ -101,7 +126,7 @@ async def test_two_pass_pattern_reaches_summary_recall_and_invalidates_contrary_
         }
 
     responder.study_json.side_effect = generate
-    await distiller.cycle(client)
+    await distiller.cycle(client, episode_refs=episode_refs(study))
     assert responder.study_json.await_count == 2
     items = GraphStore(learning).lookup("roster brainstorming", guild_id=77, now=NOW)
     assert len(items) == 1 and "abstraction" in items[0]
@@ -113,9 +138,9 @@ async def test_two_pass_pattern_reaches_summary_recall_and_invalidates_contrary_
     assert "ABSTRACT EPISODE MEMORY" in rendered
     assert "serious votes sincerely" in rendered
     assert "croissant" not in rendered and "pastry chef" not in rendered
-    await distiller.cycle(client)
+    await distiller.cycle(client, episode_refs=episode_refs(study))
     assert responder.study_json.await_count == 2
-    learning.invalidate(10, [study.snapshots[2]["ref"]["message_id"]], deleted=True, now=NOW)
+    stores[1].remove_document(study.snapshots[2]["ref"]["document"], now=NOW)
     assert not graph.lookup("roster brainstorming", guild_id=77, now=NOW)
 
 
@@ -173,7 +198,9 @@ def test_pattern_cannot_relabel_duplicate_support_or_contrary_evidence(stores, m
     study = seed(stores)
     packet = pattern(study)
     if mutation == "overlapping_episode":
-        study.snapshots[1]["source_time"] = study.snapshots[0]["source_time"]
+        study.snapshots[1]["ref"] = dict(
+            study.snapshots[0]["ref"], ordinal=study.snapshots[0]["ref"]["ordinal"] + 1
+        )
     elif mutation == "duplicate_hash":
         study.snapshots[2]["content_hash"] = study.snapshots[1]["content_hash"]
     else:
@@ -196,7 +223,7 @@ async def test_contrary_lifecycle_or_reviewer_rejection_prevents_commit(stores, 
             return pattern(SimpleNamespace(passages=kwargs["payload"]["sources"]))
         ref = study.snapshots[2]["ref"]
         if change in {"edit", "delete"}:
-            learning.invalidate(10, [ref["message_id"]], deleted=change == "delete", now=NOW)
+            stores[1].remove_document(ref["document"], now=NOW)
         elif change == "withdraw":
             learning.forget(now=NOW)
         elif change == "retire":
@@ -214,7 +241,7 @@ async def test_contrary_lifecycle_or_reviewer_rejection_prevents_commit(stores, 
         }
 
     responder.study_json.side_effect = generate
-    await distiller.cycle(client)
+    await distiller.cycle(client, episode_refs=episode_refs(study))
     if change == "withdraw":
         assert learning.is_withdrawn() and not graph.path.exists()
     else:
@@ -224,7 +251,7 @@ async def test_contrary_lifecycle_or_reviewer_rejection_prevents_commit(stores, 
 @pytest.mark.parametrize("change", ["peer", "bot"])
 async def test_refreshed_counterevidence_cannot_belong_to_peer_or_bot(stores, change):
     _, _, graph = stores
-    study = seed(stores)
+    study = seed(stores, native=True)
     with graph._transaction() as (db, _):
         db.execute("DELETE FROM checkpoints WHERE stream='distillation'")
     distiller, client, responder, channel = pattern_worker(stores)
@@ -238,7 +265,7 @@ async def test_refreshed_counterevidence_cannot_belong_to_peer_or_bot(stores, ch
         return message
 
     channel.fetch_message.side_effect = changed_source
-    await distiller.cycle(client)
+    await distiller.cycle(client, episode_refs=episode_refs(study))
     responder.study_json.assert_not_awaited()
     assert not graph.status()["nodes"].get("humor", 0)
 

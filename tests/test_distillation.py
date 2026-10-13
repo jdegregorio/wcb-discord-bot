@@ -588,7 +588,8 @@ def test_context_diversity_precedes_another_remark_in_the_same_exchange(stores):
     graph.populate(now=NOW)
     study = StudyStore(graph).prepare(now=NOW, channel_ids=frozenset({10}))
     assert study.snapshots[1]["ref"]["message_id"] == BASE + 2
-    assert validate_proposal(proposal(study, kind="style"), study)
+    with pytest.raises(LearningUnavailable, match="Native pattern context"):
+        validate_proposal(proposal(study, kind="style"), study)
     assert study.passages[0]["context_scope"] == "native_target_only_peer_setup_missing"
 
 
