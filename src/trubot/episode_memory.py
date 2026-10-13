@@ -25,6 +25,15 @@ def contexts_separated(left: dict[str, Any], right: dict[str, Any]) -> bool:
     ) >= timedelta(hours=6)
 
 
+def automated_pattern_context(snapshots: list[dict[str, Any]]) -> bool:
+    """Native automated studies lack durable setup and context invalidation today.
+
+    Operator-reviewed native patterns use a separate trusted review boundary.
+    Source kind comes from authenticated snapshots, never model-supplied flags.
+    """
+    return all(snapshot["ref"]["kind"] == "slack" for snapshot in snapshots)
+
+
 def observation_sources(data: dict[str, Any]) -> list[dict[str, Any]]:
     return list(data["supports"]) + list(data.get("abstraction", {}).get("counterexamples", []))
 

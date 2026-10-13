@@ -1992,3 +1992,18 @@ Semantic population remains unresolved, zero active patterns. Human mechanical
 405-block/15-export overlap study is not habit/independent-episode evidence.
 Source/spending/schedule unchanged, no general fidelity/humor gain. Full results,
 costs, method and failures: [release evidence](evaluations/2026-10-13-passage-repetition-release.json).
+
+
+## 2026-10-13 05:00 - H54a native automatic pattern context gate
+
+The native study contract permits target-only recurring patterns despite missing
+peer/reply setup. Final same-case baseline31fail/2pass, candidate33/33.
+Initial full-cycle fixture date mismatch was repaired before the final baseline;
+all six gates pass901tests/96.92%. Matched actual private handler sends verify
+rejected storage/restored recall and relevant delivery using invented evidence.
+Source/incomplete-context provenance is authoritative across schema, validator,
+storage and restored recall. Selected enabling correction precedes H54b dependencies
+and H48 population; no new trait, private provider study or measured reply-quality
+gain. The prior optional private grounding-audit rejection is not retried. Full locked
+hypotheses, contrary controls, roadmap rationale and limitations:
+[evaluation record](evaluations/2026-10-13-native-pattern-study.md).

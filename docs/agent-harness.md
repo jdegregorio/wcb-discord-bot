@@ -1,75 +1,52 @@
 # Trubot agent harness
 
-Current bounded Discord handlers use the OpenAI Responses API, standard gpt-6-luna,
-store=false and explicit per-attempt accounting. Direct/reaction/inferred follow-up/
-ambient modes retain existing participation. Recent conversation, current attributed
-sources, connected graph observations and up to two ephemeral live images supply
-context. Runtime has no external tools or selectively loaded skills today.
+Current handlers use standard gpt-6-luna Responses, store=false and accounted attempts.
+Direct/reaction/follow-up/ambient participation remains unchanged. Recent conversation,
+current attributed sources, connected graph observations and two ephemeral images
+supply context. Runtime has no external tools or selectively loaded skills today.
+Native automatic studies still lack peer setup; live ephemeral neighbors do not
+supply durable derived context dependencies. H54a gates automatic native patterns
+across schema/local validation/storage/restored recall until that lifecycle exists.
+Operator review and contextual historical studies retain their own trusted boundaries.
+No schema, checkpoint cohort or model change; no forced source replay.
 
-Authenticated source/focus IDs bind memory authors. Ordinary conditional abstractions
-project mechanisms and applicability/limitations; audit/quote requests retain support.
-Raw jokes and method metadata should not become ordinary templates. The private graph
-learner has four-hour pacing/two-pass review, limited sources and the maintenance
-ledger. Native studies lack peers; Slack adjacency is context-only and does not prove
-reply links/dates. Lifecycle/visibility, withdrawal, retirement and expiry are authority.
-
-Current verified runtime 2.20.0 (PR94). 2026-10-13 01:00 base
-180b9af66f1540fe23ab05484fd0942912d35f2c. H53 delivered; installed recovery passes. Brevity and broader recall grounding remain open.
-Select H53 substantial stale passage recovery under H22/H39: a changed opening
-must not hide old bot wording. Eight baseline failures/nine negative controls;
-a fresh actual care answer does not repeat and has three sentences. No universal
-care policy or human trait inferred. Exact12-word normalized older conversation
-bot overlap extends the existing optional recovery, preserving short reactions,
-latest continuity, quotation/reference and no-focus ambient. Existing private
-revalidation, accounted fallback, no extra transport retry or third generation.
-High confidence in reproduced boundary, unresolved spontaneous incidence/broad
-quality. Only matching replies can add one existing optional attempt; no new state,
-schema, source, model, ledger, service or background request. Compatible2.19.3 rollback.
+Current production baseline 2.20.0. The 2026-10-13 05:00 run selects H54a:
+automatic native character patterns must wait for durable conversational setup and
+context invalidation. Candidate 2.20.1 enforces this in extraction, validation,
+storage and restored recall. It does not populate a new trait or claim a measured
+reply-quality gain. [Hypotheses and acceptance](trubot-evolution/evaluations/2026-10-13-native-pattern-study.md).
 
 Next ordered increments:
-1. H48/H21/H28 qualified abstract population. Requires separated attributed support,
-   contrary cases, approved private semantic inspection, genuine human held-outs,
-   author/care controls and natural actual Discord delivery. Existing graph and
-   USD2 maintenance allowance; zero active patterns/retired failed prototype remain.
-2. H54/H50 native study context dependencies. Current automatic native packets lack
-   peer setup. Durable provenance and invalidation after peer edits/deletion/visibility
-   changes must precede contextual trait persistence. Bounded reads and exact authored
-   support, correction/withdrawal and held-outs are acceptance, not extra text alone.
-3. H22/H39 remaining variation/brevity and H51 cue reliability. Same-model matched
-   cases, novel relevant comic turn, sincere care, brief responses, grounded memory
-   and recipient abstention. Prior amplification experiments failed. Measure latency/
-   cost and spontaneous incidence; no demonstrated general fidelity or 2-3x gain.
-4. Full native peer/reply/thread/original-pixel coverage, selective skills/tools and
-   generated Michigan U.P. aurora/trail-camera wildlife with short natural captions
-   and generated provenance. Human sharing/timing fit, actual pixels, source lifecycle,
-   abstention and operating estimates within USD20 precede rollout. Exploratory.
+1. H54b/H50 durable native context dependencies and H48/H21/H28 qualified abstract
+   population. These are coupled prerequisites: attributed support, peer setup,
+   contrary cases, provenance, edit/delete/visibility invalidation, genuine held-outs
+   and natural actual Discord delivery. Existing graph and maintenance allowance;
+   zero active patterns and semantic private-audit approval gap remain explicit.
+2. H22/H39 brevity/variation and H51 cue reliability. Same-model matched cases must
+   add a novel relevant comic turn while preserving brief warmth, factual grounding,
+   recipient abstention, timing and cost. Prior failed amplification prototypes are
+   retired; no general fidelity or 2-3x humor gain has been established.
+3. Broader native peers/replies/threads/original pixels. Preserve authenticated scope,
+   full attribution and lifecycle; recent target-only intake and earliest-100-message
+   discovery are not complete history. Source expansion needs coverage/gap reporting.
+4. Selective skills/tools and generated Michigan U.P. aurora/trail-camera wildlife
+   with short natural captions and generated provenance. Require observed sharing/
+   timing fit, original-pixel inspection, abstention controls and operating estimates
+   within USD20. Exploratory; no new vendor technology is adopted in this run.
 
-Stronger held-out human evidence can reorder these. No new vendor technology,
-model, service or harness migration was evaluated/adopted in this run. Earlier
-chronological decisions and contrary results remain in progress.md, research.md,
-evaluations and Git history. Consolidation prevents stale priority order.
+The reproduced native learning-contract gap moves H54 ahead of population. Stronger
+contextual human evidence or a validated dependency lifecycle can change this order.
+Source text remains audit evidence; ordinary replies should use supported abstractions.
+Retain bot identity, approved creative amplification/Thomas Jones bits, source dates
+or internal unknowns, correction/deletion/withdrawal/expiry, private app storage and
+recovery. Bot/peer/development/quoted/OCR text never establishes Andrew beliefs.
+Runtime retains the league allowlist/no DMs. USD18 runtime/USD2 maintenance/USD20
+monthly guard and existing ledger; no paid service or new calls from this gate.
+Six standalone local01/05/09/13/17/21 runs, Sol/xhigh and notification preference
+unchanged. Each run fetches main, creates a new managed worktree/branch, completes
+two planning phases, all six gates, required CI, tested merge, immutable release,
+both image architectures, scoped pi5 deployment and actual private Discord smokes.
 
-Retain bot identity and Joe's approved creative amplification/Thomas Jones bits,
-source attribution/dates or internal unknowns, correction/deletion/withdrawal/expiry,
-private app volume/retention/recovery, no raw or derived personal data in public Git,
-releases or logs. Runtime intake retains league allowlist/no DMs; bot, peers and
-private development messages never establish Andrew beliefs. Ordinary replies should
-not narrate storage/export limits. Existing USD18 runtime/USD2 maintenance/USD20
-monthly guard; no fresh ledger, unaccounted evaluation or paid service. Billing and
-pre-guard spending remain unknown. Six fresh standalone tasks at local01/05/09/13/
-17/21, Sol/xhigh and notification preference unchanged. Fetch main, NEW managed
-worktree/unique branch/base SHA, primary untouched, two planning phases, all six gates,
-required CI/tested merge/immutable release/both images/scoped pi5 transaction, installed
-hashes/readiness and actual owner private Discord smokes. Roll back on regression.
-
-Any second validation client gets a distinct readiness path BEFORE construction;
-verify primary gateway/readiness after close. Owner-only development recall remains
-restricted to the confirmed private guild/general. See [plan](trubot-evolution/plan.md)
-and [current study](trubot-evolution/evaluations/2026-10-13-passage-repetition-study.md).
-
-Verified 2026-10-13: all six gates/868 tests/required CI/both images/29 installed
-hashes/readiness pass. Actual seeded recovery is fresh and caring; normal gateway
-full review8/11, with2brevity failures/1unvalidated additional-recall claim case.
-Optional private model audit was automatically rejected for explicit payload-transfer
-approval; no bypass/request executed. No general fidelity gain or new human pattern.
-Detailed release evidence: trubot-evolution/evaluations/2026-10-13-passage-repetition-release.json.
+Any separate validation client sets a distinct readiness path BEFORE construction.
+Verify primary readiness and gateway after closing it. Owner-only development recall
+stays in the confirmed private guild/allowed general channel; no development learning.

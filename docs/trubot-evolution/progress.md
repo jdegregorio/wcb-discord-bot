@@ -3158,3 +3158,37 @@ native study context dependency invalidation; remaining brevity/short-stock/cues
 wider native/reply/thread/pixels, selective skills/tools and generated U.P. aurora/
 trail-camera scenes. Six standalone hours, Sol/xhigh and notification setting unchanged.
 [Release evidence](evaluations/2026-10-13-passage-repetition-release.json).
+
+
+## 2026-10-13 05:00 Pacific - H54a native pattern evidence gate, candidate
+
+Base077de5fa4a73d72d68f8e56f84d654fa216f19c7, new managed worktree/unique branch,
+primary untouched/no overlapping evolution PR. Phase1 found native target-only
+packets could establish recurring patterns without durable setup; Phase2 advances
+context provenance and qualified population as coupled prerequisites. Candidate
+2.20.1 gates all five automatic pattern domains at schema/validator/storage/restored
+recall, including counterevidence. Normal sweep erases incompatible derivations and
+graph backups. Native literal recall, operator review, contextual Slack patterns,
+source lifecycle/pacing/withdrawal remain. No schema/model/provider-payload/extra-call
+change, no forced historical replay and no new human trait. Source and package
+versions agree. Data-compatible2.20.0 rollback restores the prior permissive gate.
+
+Same-case final baseline31fail/2negativepass; candidate33/33. Corrected a synthetic
+full-cycle source-date mismatch before final baseline and moved automatic pattern
+positive fixtures to genuine disposable contextual archive storage. All six gates:
+901tests/96.92% coverage/29 typed modules/package2.20.1. Actual matched owner private
+fixtures: baseline stores/retrieves invented automatic pattern; candidate blocks
+storage/restored recall and excludes the abstract packet. Both deliver relevant
+brief actual handler replies, one real maintenance request each. Normal gateway
+attention-window replies are separate; synthetic stubs are never billed as requests.
+Distinct ready paths BEFORE construction, no second gateway/development learning;
+primary heartbeat survives close. Production learning and pacing are untouched.
+
+Audit3leaguechannels/latest100/14days:7target/12peers/4olderbot/0current spontaneous.
+Historical405eligible grouped blocks/15exports mechanical coverage only; semantic
+human and original-pixel review unavailable here. No new Andrew trait or reply-quality
+multiplier is claimed. Prior optional private model-audit payload approval remains
+pending; no rejected operation is retried. Native34; archives16/4,299 grouped/412target;
+visual115/96assets; graph439sources/554episodes/1,015edges/2claims/1preference/0patterns.
+Actual release/deployment IDs, post-audit and spending to follow after rollout.
+[Study and acceptance](evaluations/2026-10-13-native-pattern-study.md).

@@ -19,7 +19,12 @@ import discord
 from openai import APIConnectionError, APIStatusError, APITimeoutError
 
 from trubot.budget import BudgetExceeded, BudgetUnavailable
-from trubot.episode_memory import OBSERVATION_KINDS, PATTERN_KINDS, contexts_separated
+from trubot.episode_memory import (
+    OBSERVATION_KINDS,
+    PATTERN_KINDS,
+    automated_pattern_context,
+    contexts_separated,
+)
 from trubot.graph import GraphStore, _hash, _json, _key
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable, _time
@@ -58,12 +63,17 @@ def extraction_schema(study: Study) -> dict[str, Any]:
     """Encode mechanical evidence rules for this packet before provider generation."""
     if not 1 <= len(study.passages) <= 6:
         raise LearningUnavailable("Bounded study packet required")
+    pattern_indexes = [
+        i for i, snapshot in enumerate(study.snapshots) if automated_pattern_context([snapshot])
+    ]
     alternatives = []
     for mode in ("corroborated", "explicit_self_report", "pattern"):
         single, pattern = mode == "explicit_self_report", mode == "pattern"
         if single and not _self_report_eligible(study.passages[0]):
             continue
         if not single and len(study.passages) < 2:
+            continue
+        if pattern and (0 not in pattern_indexes or len(pattern_indexes) < 2):
             continue
         properties = {
             "kind": {
@@ -84,7 +94,11 @@ def extraction_schema(study: Study) -> dict[str, Any]:
                     {
                         "source": {
                             "type": "integer",
-                            "enum": [0] if single else list(range(len(study.passages))),
+                            "enum": [0]
+                            if single
+                            else pattern_indexes
+                            if pattern
+                            else list(range(len(study.passages))),
                         },
                         "quote": {"type": "string", "enum": [study.passages[0]["author_text"]]}
                         if single
@@ -151,7 +165,10 @@ can still omit the real setup. Do not assume missing context is agreement or a r
 Truncated passages may omit qualifications; reject
 interpretations that rely on missing text or image pixels. Context-only target blocks
 are not additional support.
-Native target-only packets explicitly lack peer setup. Adjacency does not prove reply links
+Native target-only packets explicitly lack peer setup. They cannot support or limit
+recurring humor/style/value/emotion/relationship patterns in automatic studies. Native
+literal claims or specific preferences still need unambiguous authored statements.
+Adjacency does not prove reply links
 or motive. Sampling separated windows is not proof of independent conversations.
 Derive narrowly qualified, useful claims/preferences or conditional episode patterns
 in humor, style, value, emotion or relationship.
@@ -696,6 +713,8 @@ def validate_proposal(proposed: Any, study: Study) -> dict[str, Any] | None:
             indexes.append(index)
             quotes.add(quote)
             hashes.add(study.snapshots[index]["content_hash"])
+        if not automated_pattern_context([study.snapshots[i] for i in indexes]):
+            raise LearningUnavailable("Native pattern context requires durable study provenance")
         if any(study.passages[i].get("author_text_truncated", False) for i in indexes):
             raise LearningUnavailable("Complete pattern evidence required")
     if (

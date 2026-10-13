@@ -1,73 +1,50 @@
 # Prioritized Trubot backlog
 
-## Selected supported correction: H53
+Selected H54a: native automatic pattern evidence gate. Reproduced permissive schema,
+local validation, automated storage and restored recall. So that detached remarks
+cannot become recurring character interpretations without contextual provenance.
+High confidence in the deterministic boundary; production incidence unmeasured and
+zero active patterns. Acceptance includes all five domains, support/counterevidence,
+historical patterns/literal native self-reports, operator review, pacing and lifecycle.
+No new source/schema/checkpoint cohort/service/model/API call; rollback2.20.0 is data
+compatible but restores the permissive boundary. [Full study](evaluations/2026-10-13-native-pattern-study.md).
 
-Current verified runtime 2.20.0 (PR94). 2026-10-13 01:00 base
-180b9af66f1540fe23ab05484fd0942912d35f2c. H53 delivered; installed recovery passes. Brevity and broader recall grounding remain open.
-Select H53 substantial stale passage recovery under H22/H39: a changed opening
-must not hide old bot wording. Eight baseline failures/nine negative controls;
-a fresh actual care answer does not repeat and has three sentences. No universal
-care policy or human trait inferred. Exact12-word normalized older conversation
-bot overlap extends the existing optional recovery, preserving short reactions,
-latest continuity, quotation/reference and no-focus ambient. Existing private
-revalidation, accounted fallback, no extra transport retry or third generation.
-High confidence in reproduced boundary, unresolved spontaneous incidence/broad
-quality. Only matching replies can add one existing optional attempt; no new state,
-schema, source, model, ledger, service or background request. Compatible2.19.3 rollback.
+1. H54b/H50 native context dependencies. Enabling. Evidence: current target-only
+   automatic packets and H54a reproduction. Benefit: distinguish invited humor from
+   a stance so that later abstractions reflect conversational setup. Dependencies:
+   authenticated bounded peers/replies, content-free fingerprints, visibility checks
+   and context edit/delete/withdrawal invalidation. Acceptance/validation: same-case
+   setup studies plus source lifecycle/retrieval controls and real Discord; do not
+   persist interpretations until complete. Confidence: architecture gap confirmed,
+   reply-quality impact unresolved. Impact: bounded Discord reads/private app volume,
+   provider studies within the existing USD2 allowance.
+2. H48/H21/H28 qualified human abstract population. Exploratory until qualified.
+   Evidence: zero active patterns, retired prototype failures, incomplete semantic
+   review. Benefit: adapt humor, values and emotional engagement across topics.
+   Dependencies: safe private semantic inspection, separated attributed episodes,
+   contrary cases and H54b for native contexts. Acceptance/validation: genuine human
+   held-outs, author/care controls, grounded natural actual Discord delivery. Confidence:
+   unvalidated; no universal habits or model self-grading as human reference. Impact:
+   existing graph storage and bounded USD2 maintenance studies, no new ledger.
+3. H22/H39/H51 brevity, variation and cue reliability. Behavioral experiment.
+   Evidence: prior care/enthusiasm three-sentence failures and short stock wording;
+   H53 repetition recovery is shipped. Benefit: warmth and stronger relevant comic
+   turns with varied, brief wording. Dependencies: held-out setup/control cases and
+   qualified human comparisons. Acceptance/validation: same-model matched care/banter/
+   memory/recipient cases and fresh Discord, full meaning review rather than keywords.
+   Confidence: prior amplification prototypes failed; further evidence required.
+   Impact: bounded existing maintenance trials; measure latency/cost before rollout.
+4. Native/visual expansion, selective context tools/skills and generated outdoor scenes.
+   Exploratory larger direction. Evidence: limited native history/pixels, no current
+   runtime tools, Joe's aurora/trail-camera request. Benefit: relevant supported
+   engagement. Dependencies: original pixels, sharing/timing evidence, attribution/
+   withdrawal, safe selective calls and generated provenance. Acceptance/validation:
+   source gaps, held-outs, abstention, actual Discord and USD20 operating estimate.
+   Confidence: unresolved; vendor documentation is not project behavior.
 
-Acceptance: addressed partial-copy modes, punctuation/apostrophes, private revalidation,
-accounted one-attempt fallback and deliberate continuity controls; seeded actual
-handler baseline/candidate plus fresh gateway care/banter/recall/scope/recipient,
-all quality/release gates. Seeded replies cannot prove spontaneous generation gain.
-
-Next ordered increments:
-1. H48/H21/H28 qualified abstract population. Requires separated attributed support,
-   contrary cases, approved private semantic inspection, genuine human held-outs,
-   author/care controls and natural actual Discord delivery. Existing graph and
-   USD2 maintenance allowance; zero active patterns/retired failed prototype remain.
-2. H54/H50 native study context dependencies. Current automatic native packets lack
-   peer setup. Durable provenance and invalidation after peer edits/deletion/visibility
-   changes must precede contextual trait persistence. Bounded reads and exact authored
-   support, correction/withdrawal and held-outs are acceptance, not extra text alone.
-3. H22/H39 remaining variation/brevity and H51 cue reliability. Same-model matched
-   cases, novel relevant comic turn, sincere care, brief responses, grounded memory
-   and recipient abstention. Prior amplification experiments failed. Measure latency/
-   cost and spontaneous incidence; no demonstrated general fidelity or 2-3x gain.
-4. Full native peer/reply/thread/original-pixel coverage, selective skills/tools and
-   generated Michigan U.P. aurora/trail-camera wildlife with short natural captions
-   and generated provenance. Human sharing/timing fit, actual pixels, source lifecycle,
-   abstention and operating estimates within USD20 precede rollout. Exploratory.
-
-Stronger held-out human evidence can reorder these. No new vendor technology,
-model, service or harness migration was evaluated/adopted in this run. Earlier
-chronological decisions and contrary results remain in progress.md, research.md,
-evaluations and Git history. Consolidation prevents stale priority order.
-
-Delivered: graph/retrieval and conditional two-pass extraction; complete trusted
-episode selection; atomic reviewed importH40; selective current voiceH45; ordinary
-abstract projectionH47/H47b; authenticated author bindingH49; complete bounded live
-setupH52(2.19.3). Do not repeat them. Native intake is bounded recent target-only;
-source text ceilings, original visual coverage and semantic pattern quality remain
-open. Full past results/failures in progress/research/evaluations.
-
-Retain bot identity and Joe's approved creative amplification/Thomas Jones bits,
-source attribution/dates or internal unknowns, correction/deletion/withdrawal/expiry,
-private app volume/retention/recovery, no raw or derived personal data in public Git,
-releases or logs. Runtime intake retains league allowlist/no DMs; bot, peers and
-private development messages never establish Andrew beliefs. Ordinary replies should
-not narrate storage/export limits. Existing USD18 runtime/USD2 maintenance/USD20
-monthly guard; no fresh ledger, unaccounted evaluation or paid service. Billing and
-pre-guard spending remain unknown. Six fresh standalone tasks at local01/05/09/13/
-17/21, Sol/xhigh and notification preference unchanged. Fetch main, NEW managed
-worktree/unique branch/base SHA, primary untouched, two planning phases, all six gates,
-required CI/tested merge/immutable release/both images/scoped pi5 transaction, installed
-hashes/readiness and actual owner private Discord smokes. Roll back on regression.
-
-[Current detailed study](evaluations/2026-10-13-passage-repetition-study.md).
-
-Verified 2026-10-13: all six gates/868 tests/required CI/both images/29 installed
-hashes/readiness pass. Actual seeded recovery is fresh and caring; normal gateway
-full review8/11, with2brevity failures/1unvalidated additional-recall claim case.
-Optional private model audit was automatically rejected for explicit payload-transfer
-approval; no bypass/request executed. No general fidelity gain or new human pattern.
-Detailed release evidence: evaluations/2026-10-13-passage-repetition-release.json.
+Priorities changed because H54a shows the native context prerequisite was optional
+in code. Safe native context lifecycle or genuine held-out abstractions can reorder
+these increments. Delivered: living graph/retrieval, source lifecycle, conditional
+extraction, contextual archive studies, complete trusted selection, atomic reviewed
+import, selective voice, abstract projection, author binding, complete bounded live
+setup and H53 stale passage recovery. Preserve all safety/release rules in plan.md.

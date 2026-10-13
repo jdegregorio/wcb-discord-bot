@@ -14,7 +14,13 @@ from pathlib import Path
 from typing import Any
 
 from trubot.archives import ArchiveStore
-from trubot.episode_memory import OBSERVATION_KINDS, abstraction_contract, observation_sources
+from trubot.episode_memory import (
+    OBSERVATION_KINDS,
+    PATTERN_KINDS,
+    abstraction_contract,
+    automated_pattern_context,
+    observation_sources,
+)
 from trubot.learning import LearningStore, LearningUnavailable, _private, _time
 from trubot.lexical import phrase
 
@@ -407,6 +413,12 @@ class GraphStore:
                 ):
                     raise LearningUnavailable("Distinct attributed counterevidence required")
                 counterexamples.append(snapshot)
+        if (
+            automated
+            and kind in PATTERN_KINDS
+            and not automated_pattern_context(snapshots + counterexamples)
+        ):
+            raise LearningUnavailable("Native pattern context requires durable study provenance")
         key = "observation:" + item["id"]
         data = {
             k: item[k]
@@ -513,6 +525,12 @@ class GraphStore:
     ) -> bool:
         if data["status"] in {"superseded", "invalid"} or (
             data.get("expires_at") and data["expires_at"] <= _time(now)
+        ):
+            return False
+        if (
+            data.get("review_kind") == "automated-two-pass"
+            and (data.get("kind") in PATTERN_KINDS or "abstraction" in data)
+            and not automated_pattern_context(observation_sources(data))
         ):
             return False
         for support in observation_sources(data):
