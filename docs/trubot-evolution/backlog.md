@@ -62,3 +62,10 @@ pass. No new human abstraction or measured character gain. Pending full quality 
 installed release acceptance. Acceptance, disconfirming evidence and roadmap rationale
 in [study](evaluations/2026-10-13-native-freshness-study.md). H55b remains next: integrate
 identical contextual packets into both provider passes/commit and derived invalidation.
+
+H56b: retain the existing six-second/two-capture limits while matching every retained
+dependency in one current bounded page, separately reading only an exact current
+source parent outside it. Same real-source full-cycle cohort improves1/2to2/2checked;
+longer timeouts and reordering did not pass. Supports transport reliability, not human
+fidelity. Native provider study/derived dependency invalidation remain next.40focused
+cases pending final gates/installed acceptance. Zero extra provider cost/intake/storage.

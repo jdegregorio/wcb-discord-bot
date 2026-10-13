@@ -26,8 +26,8 @@ Priorities changed because H56 confirms that missed peer changes are not repaire
 H55a known-state checks. Fresh dependency reconciliation can ship as a supported
 enabling correction while full contextual derivation and human validation remain open.
 A genuine held-out abstraction or material behavioral regression can reorder priorities.
-Candidate2.22.0 is awaiting release and installed acceptance; verified production
-remains2.21.0 until deployment. No active new pattern or measured fidelity gain.
+Verified production2.22.0 is healthy. Its live transport audit motivates candidate
+2.22.1 bounded-page correction, pending final release acceptance. No active new pattern or measured fidelity gain.
 The prior specific optional private-provider grounding audit remains unexecuted.
 Keep source audit text secondary to useful abstractions in ordinary conversation.
 Retain bot identity, approved creative amplification/Thomas Jones bits, internally
