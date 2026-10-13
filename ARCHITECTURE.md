@@ -293,3 +293,14 @@ nodes with2.21.0 before a deliberate downgrade after capture. Do not restore sou
 or spending databases to roll back code. Synthetic smoke artifacts keep only
 content-free refs/flags/public code under private app-volume0700/0600 and existing
 seven-day manual retention/withdrawal cleanup; disposable databases are erased.
+
+## Fresh native dependency reads, candidate2.22.0
+
+`native_reconciliation.py` uses the existing authenticated ingestor/source locks to
+refresh focus and each retained human dependency. The graph rotates at most two
+captures per learning cycle and conditionally discards obsolete fingerprints,
+orphan dependencies and backups. The six-second ceiling includes selection, with
+at most twelve HTTP fetches. Identity/withdrawal/scope are checked at every stage.
+Complete context text is ephemeral, not new learning intake or a durable certificate.
+No provider request or automatic native pattern permission. Contextual provider-study
+integration, derived dependency invalidation and human-held-out evaluation remain next.

@@ -549,3 +549,12 @@ nodes with2.21.0 before a deliberate downgrade after capture. Do not restore sou
 or spending databases to roll back code. Synthetic smoke artifacts keep only
 content-free refs/flags/public code under private app-volume0700/0600 and existing
 seven-day manual retention/withdrawal cleanup; disposable databases are erased.
+
+## Native context freshness (candidate2.22.0)
+
+The existing learning cycle rechecks up to two captured native neighborhoods, within
+six seconds and at most twelve message fetches. Missed peer changes/deletions and lost
+read access erase obsolete setup links. Complete current human text stays ephemeral;
+stored fingerprints do not certify complete context or current visibility. Timeout
+and transient failures do not fabricate deletion. Native abstract-pattern learning
+remains gated pending contextual study integration and human validation.

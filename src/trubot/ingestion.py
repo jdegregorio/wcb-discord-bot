@@ -102,6 +102,11 @@ class MessageIngestor:
         for message_id in ids:
             await self.refresh(channel, message_id)
 
+    async def reconcile_native_context(self, client: discord.Client) -> dict[str, int]:
+        from trubot.native_reconciliation import reconcile_native_context
+
+        return await reconcile_native_context(self, client)
+
     async def cycle(self, client: discord.Client) -> None:
         if await asyncio.to_thread(self.store.is_withdrawn):
             self.verified = False
@@ -119,3 +124,14 @@ class MessageIngestor:
                 logger.info("Learning batch completed scanned=%d", count)
             except (discord.HTTPException, LearningUnavailable):
                 logger.warning("Learning channel paused; source or private storage unavailable")
+        try:
+            result = await self.reconcile_native_context(client)
+            logger.info(
+                "Native context verification verified=%d removed=%d unavailable=%d",
+                result["verified"],
+                result["removed"],
+                result["unavailable"],
+            )
+        except (LearningUnavailable, OSError):
+            # Optional graph state must not interrupt source intake or normal replies.
+            logger.debug("Native context verification unavailable")

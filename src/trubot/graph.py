@@ -690,6 +690,61 @@ class GraphStore:
                 return False
         return True
 
+    def native_context_targets(
+        self, *, now: datetime, channel_ids: frozenset[int], limit: int = 2
+    ) -> list[dict[str, Any]]:
+        """Rotate existing captures, never treat stored metadata as fresh context."""
+        if not 1 <= limit <= 2:
+            raise LearningUnavailable("Bounded native context verification required")
+        with self._transaction() as (db, source):
+            rows = [
+                row
+                for row in db.execute(
+                    "SELECT id,data FROM nodes WHERE kind='native_context' ORDER BY id"
+                ).fetchall()
+                if (data := json.loads(row["data"]))["ref"]["channel_id"] in channel_ids
+                and self._native_context_valid(data, source, now=now)
+            ]
+            cursor = db.execute(
+                "SELECT cursor FROM checkpoints WHERE stream='native-context-verification'"
+            ).fetchone()
+            after = cursor[0] if cursor else ""
+            ordered = [row for row in rows if row["id"] > after] + [
+                row for row in rows if row["id"] <= after
+            ]
+            selected = ordered[:limit]
+            if selected:
+                db.execute(
+                    "INSERT OR REPLACE INTO checkpoints VALUES ('native-context-verification', ?)",
+                    (selected[-1]["id"],),
+                )
+            return [json.loads(row["data"]) for row in selected]
+
+    def native_context_current(self, data: dict[str, Any], *, now: datetime) -> bool:
+        with self._transaction() as (db, source):
+            row = db.execute(
+                "SELECT data FROM nodes WHERE id=? AND kind='native_context'",
+                ("native-context:" + _key(data["ref"]),),
+            ).fetchone()
+            return bool(
+                row
+                and json.loads(row[0]) == data
+                and self._native_context_valid(data, source, now=now)
+            )
+
+    def discard_native_context(self, data: dict[str, Any]) -> bool:
+        """A stale verifier cannot erase a concurrent newer capture."""
+        with self._transaction() as (db, _source):
+            key = "native-context:" + _key(data["ref"])
+            row = db.execute("SELECT data FROM nodes WHERE id=?", (key,)).fetchone()
+            removed = bool(row and json.loads(row[0]) == data)
+            if removed:
+                db.execute("DELETE FROM nodes WHERE id=?", (key,))
+                self._prune_native_dependencies(db)
+        if removed:
+            self._remove_backups()
+        return removed
+
     def record_native_context(self, episode: NativeEpisode, *, now: datetime) -> bool:
         """Record last-observed setup dependencies, never a study eligibility certificate.
 
