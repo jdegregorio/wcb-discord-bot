@@ -2189,3 +2189,12 @@ counterevidence, so a growing qualified memory library retains useful concepts.
 observations, both deliver once. No human trait or general prose gain measured.
 H64 applicability and H65 humor/emotion abstractions remain exploratory; broader
 H48 qualification follows this safeguard. Full gates/installed acceptance pending.
+
+
+H63 final installed acceptance is supported:23/23growth regressions, real installed
+fixture4vs0baseline, source-hash/byte/lifecycle/route controls. Normal gateway7/8,
+not all-pass: H66 historical attribution fails. First input/source packet is identical
+across the corrected actual pair and H63 selector unused; baseline has additional
+polarity vulnerability. New material grounding priorityH66 precedes H48 population;
+stock care/humor/applicability remain unresolved. No human trait/general fidelity
+improvement inferred. [Full result](evaluations/2026-10-14-graph-selection-study.md).

@@ -3749,3 +3749,30 @@ initial two native discrepancies are explained by source-read cancellations duri
 immediate back-to-back harness reuse. Spaced recheck20/20fresh reads matches both.
 Existing source bounds remain unchanged. No new abstraction, personal interpretation
 or general humor/fidelity gain. PR113 opened/labeled/attached, required CI pending.
+
+
+### H63 installed2.26.0, H66 grounding requirement open
+
+PR113/head5d11c9e/merged94319a5; requiredPRCI38632197022/main38632606709/image38632916783
+SUCCESS. Both images verified, index76022c69 installed by enabled release transaction;
+manual helper confirms current. Previous2.25.0/5f1e9cc8 retained.31source hashes/OCI
+revision match. HealthyDiscordready/0restarts. Installed actual owner fixture4obs/
+one post, purelookup bytes/status unchanged; nine current routes match after corrected
+native read pacing. Full feature/merged1,107tests96.86%31modules/build pass.
+
+Fresh normal gateway7/8semantic acceptance,7posts/one abstention/9runtime attempts.
+Broad historical reply misattributes peer stance; exact current human context proves
+it. Matched first inputs/source packets are identical and changed selector called0;
+finalbaselinepasses/candidatefails. Earlier baseline also errs in content polarity,
+but invalid optional-refresh-list assertion excludes that first pair from causal
+comparison. No generated bot answer is a human reference. H66 author-constrained
+synthesis now first, before H48 population; current scoped retrieval increment passes,
+all general recall acceptance is not claimed. Stock care/familiar humor remain.
+
+Postaudit7target12peer4olderbot0fresh/unavailable0,0errors/replyfailures/disconnects/
+studypauses/restarts/2SDKwarnings,one care recovery. Graph2claims1preference1value8native
+contexts12deps1039edges,34native sources unchanged. Run19settled/USD0.006362655estimate,
+coveredOctober0.250879475/1621attempts/one unchanged unsettled;18/2/20guard preserved.
+Private refs/counts0700/0600,7daymanualretention/withdrawal,no raw source/answers.
+[Final study](evaluations/2026-10-14-graph-selection-study.md) and
+[release/installed evidence](evaluations/2026-10-14-graph-selection-release.json).

@@ -137,3 +137,48 @@ PR113 contains the tested runtime,23 regressions and privacy-safe study/roadmap 
 All nine current routes and private invented growth comparison pass. Release and
 installed normal gateway acceptance remain pending. No raw exchanges, derived personal
 interpretation, source identifiers or bot answer text enter public artifacts.
+
+
+## Installed result and newly observed grounding gap
+
+PR113 merge94319a5, PRCI38632197022/main38632606709/image38632916783SUCCESS.
+2.26.0 immutableindex76022c69 on reverifiedpi5; timer used existing locked transaction,
+manual helper confirms already current. Prior2.25.0/5f1e9cc8retained.31source hashes/
+OCIversion/revision match. Pure lookup bytes/status unchanged, source-backed current
+abstraction retained, unrelated/wrongguild excluded and main heartbeat survives HTTP
+client closure. Installed fictional capacity returns4observations/one real post/
+one maintenance request,16words/two sentences. No temporary candidate override.
+
+Normalgateway8cases produce7posts/one recipient abstention/9runtime requests.
+Depth26words, care17, baseball5, past30, date17, requester16, humor15. Seven semantic
+controls pass, but broad past recall assigns a peer's stance to Andrew. Direct private
+source inspection of5selected contextual windows separates that peer statement from
+the actual target. Exact-date answer stays uncertain, ordinary baseball stays natural;
+care stays stock and humor repeats a familiar comic mechanism. No general quality gain.
+
+A matched actual-owner historical pair uses identical first source packets and
+provider requests, and neither arm calls the changed graph selector. Baseline's final
+31word answer passes; candidate30word answer repeats the attribution failure. Baseline
+uses2attempts, candidate1. The earlier comparison also produces an erroneous baseline
+content polarity, but its assertion compared whole optional-refresh lists rather than
+first requests; exclude that pair from matched causal evidence. Corrections preserve
+the first-input comparison and separately account optional recovery. No raw answers
+or source excerpts enter retained smoke artifacts. This is an existing synthesis
+vulnerability, not evidence of a new selector effect; do not claim full recall acceptance.
+
+Phase2 revised: H66 author-constrained synthesis is first, before broader H48 abstract
+population. Validate peer attribution/polarity and actual reply grounding while
+preserving contextual humor, native/abstract learning and unknown dates internally.
+Current increment remains deployed: its growth acceptance passes, source packet routes
+are unchanged, and rollback would not alter the failed year route. Historical grounding
+remains an explicit open quality requirement, never silently graded as passing.
+
+Post audit remains7target12peer4olderbot0fresh across3channels/14days; no new human
+trait/independent fidelity claim. Zero observederrors/replyfailures/disconnects/study
+pauses/restarts,2startupSDKwarnings, one care repetition recovery. Short/sparse window
+limits rates. Log helper initially lacked Docker timestamps; corrected --timestamps
+parses aware times and stores content-free counts only. Final coveredOctober estimate
+USD0.250879475/1,621attempts/one unchanged preexisting unsettled. Run19settledattempts/
+USD0.006362655:10runtime/0.004309220,9maintenance/0.002053435. Shared18/2/20guard,
+not provider billing, pre-guard unknown. No new service/schema/personal population.
+[Structured evidence](2026-10-14-graph-selection-release.json).

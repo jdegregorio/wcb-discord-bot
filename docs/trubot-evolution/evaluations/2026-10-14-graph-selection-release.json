@@ -1,0 +1,181 @@
+{
+  "run": "2026-10-14T13:00:00-07:00",
+  "recorded_at": "2026-10-14T20:47:59.413851+00:00",
+  "increment": "H63 complete bounded graph selection",
+  "status": "deployed; H63 verified; separate historical attribution requirement open",
+  "base_sha": "16de7ba279cf610eb9a517fd7eec98a1f6cb0123",
+  "runtime_sha": "94319a54d2812b1fe2314ebb49737f3424dcf0b1",
+  "pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/113",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.26.0",
+  "ci": {
+    "pr": 38632197022,
+    "merged_main": 38632606709,
+    "images": 38632916783,
+    "conclusions": "success"
+  },
+  "quality": {
+    "all_six_feature_and_merged_gates": true,
+    "tests": 1107,
+    "branch_coverage_percent": 96.86,
+    "typed_modules": 31,
+    "candidate_growth_cases": 23,
+    "exact_baseline_failed": 16,
+    "exact_baseline_passed": 7,
+    "initial_invalid_fixture_failures_excluded": true
+  },
+  "image": {
+    "index": "sha256:76022c69b7490fd97529542b35b35aec74ee4b01f3f792e3d4e656be8ce95328",
+    "linux_amd64": "sha256:33ed86b9560cbd049fe285d30a944c7fe7fccad35d079d8bc5c2e86f59bce8ed",
+    "linux_arm64": "sha256:06538217f44f9268365eafd938cfaf6f204ddd8dc8ca70b00d78de4edc808f6d",
+    "installed_hashes_match": 31,
+    "oci_version": "2.26.0",
+    "oci_revision_matches_runtime": true
+  },
+  "production": {
+    "target": "pi5/aarch64/Ubuntu24.04.4",
+    "app": "wcb-bot",
+    "release_timer_applied_existing_transaction": true,
+    "manual_helper_confirmed_already_current": true,
+    "health": "healthy",
+    "discord_ready": true,
+    "restarts": 0,
+    "previous_version": "2.25.0",
+    "previous_index": "sha256:5f1e9cc8c904efe908973ed293149381573239824d2ff08f798934566026ee8d",
+    "rollback_performed": false,
+    "rollback_reason": "No new-selector regression demonstrated; failed historical request bypasses it."
+  },
+  "validation": {
+    "actual_invented_owner_handler_growth": {
+      "baseline_observations": 0,
+      "candidate_observations": 4,
+      "installed_observations": 4,
+      "posts_per_arm": 1,
+      "provider_requests_per_arm": 1,
+      "human_trait_or_general_quality_claim": false
+    },
+    "current_actual_anchor_routes": 9,
+    "exact_packet_matches": 9,
+    "native_spaced_recheck_successful_source_reads": 20,
+    "initial_back_to_back_freshness_cancellations_recorded": true,
+    "freshness_bounds_relaxed": false,
+    "normal_gateway": {
+      "cases": 8,
+      "posts": 7,
+      "recipient_abstentions": 1,
+      "semantic_passes": 7,
+      "historical_attribution_failure": true,
+      "runtime_attempts": 9,
+      "stock_care_and_semantic_humor_variety_unresolved": true
+    },
+    "matched_historical_pair": {
+      "first_source_packets_identical": true,
+      "first_provider_requests_identical": true,
+      "changed_graph_selector_calls": 0,
+      "baseline_final_pass": true,
+      "candidate_final_pass": false,
+      "attempts": 3,
+      "earlier_assertion_compared_optional_refresh_lists_and_is_excluded": true,
+      "requirement_open": "H66 author-constrained historical synthesis"
+    },
+    "primary_heartbeat_preserved_after_all_http_clients": true,
+    "second_gateway": false,
+    "development_learning": 0
+  },
+  "audit": {
+    "before_and_after": {
+      "channels": 3,
+      "latest_per_channel": 100,
+      "days": 14,
+      "target": 7,
+      "peer": 12,
+      "older_bot": 4,
+      "fresh_spontaneous_bot": 0,
+      "unavailable_channels": 0
+    },
+    "ui": {
+      "older_bot": 3,
+      "attributed_text_target": 4,
+      "image_dependent_excluded_without_pixels": 1,
+      "peer_setup_reactions_linked_reply_read": true
+    },
+    "private_archive_study": {
+      "windows": 6,
+      "exports": 2,
+      "target_grouped_occurrences": 6,
+      "peer_grouped_occurrences": 12,
+      "current_exact_context_refs_lines_verified": true
+    },
+    "historical_acceptance_grounding_read": {
+      "additional_windows": 5,
+      "calendar_dates_unknown": true,
+      "peer_stance_separated_from_target": true
+    },
+    "new_human_trait": false,
+    "independent_heldout_quality_gain": false,
+    "evaluator": "Same Codex operator; no independent human review"
+  },
+  "observed_logs": {
+    "errors": 0,
+    "reply_failures": 0,
+    "disconnects": 0,
+    "study_pauses": 0,
+    "startup_sdk_warnings": 2,
+    "repetition_recovery": 1,
+    "brevity_repairs": 0,
+    "source_reuse_refusals": 0,
+    "short_sparse_window_limitation": true
+  },
+  "graph": {
+    "native_source_messages": 34,
+    "claims": 2,
+    "preferences": 1,
+    "values": 1,
+    "contexts": 8,
+    "context_dependencies": 12,
+    "edges": 1039,
+    "new_personal_population": 0,
+    "pure_lookup_byte_preserving": true,
+    "bounds": {
+      "observations": 4,
+      "unique_support_and_contrary_refs": 5,
+      "freshness_checks": 64,
+      "concept_nodes": 1000
+    }
+  },
+  "cost": {
+    "covered_october_estimated_usd": 0.250879475,
+    "attempts": 1621,
+    "unchanged_preexisting_unsettled": 1,
+    "run_settled_attempts": 19,
+    "run_estimated_usd": 0.006362655,
+    "run_runtime_attempts": 10,
+    "run_runtime_usd": 0.00430922,
+    "run_maintenance_attempts": 9,
+    "run_maintenance_usd": 0.002053435,
+    "shared_runtime_maintenance_total_limits": [
+      18,
+      2,
+      20
+    ],
+    "estimates_not_billing": true,
+    "pre_guard_spend_unknown": true,
+    "new_paid_service": false,
+    "new_runtime_provider_attempt": false
+  },
+  "privacy": {
+    "raw_source_or_answer_text_in_public_or_smoke_artifacts": false,
+    "content_free_private_references_and_metrics": true,
+    "existing_seven_day_manual_retention_and_withdrawal": true,
+    "no_rejected_payload_retry": true,
+    "runtime_allowlist_intake_native_gate_unchanged": true
+  },
+  "roadmap": {
+    "first": "H66 author-constrained historical synthesis after observed grounding failures",
+    "then": [
+      "H48/H21/H28 qualified abstract population and legacy review",
+      "H64 applicability and H22/H39/H51 care, humor, cues",
+      "Wider native linked context and original pixels",
+      "H61 selective skills/tools and generated U.P. aurora/trail-camera sharing"
+    ]
+  }
+}
