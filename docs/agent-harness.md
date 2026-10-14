@@ -1,84 +1,71 @@
 # Trubot agent harness
 
-H62/H62a is the current increment: safe reviewed abstract-memory rollout. Import
-preview validates the complete batch under the source lock, rolls back all prospective
-writes and preserves backups; commit revalidates evidence. One newly studied private
-conditional memory is eligible only after held-out, lifecycle and actual handler
-acceptance. It is tentative with contrary evidence and thirty-day expiry. Source
-content and personal interpretation stay private. General character/humor improvement
-is unmeasured; the fresh baseline decision reply is already natural and relevant.
-[Planning and acceptance](trubot-evolution/evaluations/2026-10-14-abstract-rollout-study.md).
-Release and installed normal gateway acceptance are pending.
+H62/H62a is deployed in 2.25.0: complete reviewed import preview plus one usable
+private conditional abstraction. Actual CLI preview preserves graph bytes/status/
+backups, and commit revalidates current sources. The new tentative memory has two
+contextual supports, one contrary source and 30-day expiry; interpretation and
+source references remain private. One independent compatible human held-out supports
+the narrow scope; overlaps are excluded. Same Codex evaluator, no independent human
+review. Baseline already gives natural decision replies, so this establishes qualified
+population and non-regression, not general character or humor improvement.
+[Both phases and results](trubot-evolution/evaluations/2026-10-14-abstract-rollout-study.md). [Installed evidence](trubot-evolution/evaluations/2026-10-14-abstract-rollout-release.json).
 
-The production composition uses standard gpt-6-luna Responses, store=false,
-accounted attempts, bounded current conversation, verified source/graph memory,
-source-author binding and at most two ephemeral image inputs. There are no external
-runtime tools or selectively loaded skills yet. Quoted source/peer/bot/development
-text cannot establish Andrew beliefs or authorize application actions.
+All six feature/merged gates pass: 1,084 tests, 96.88% branch coverage, 31 typed modules.
+Required PR/main CI and both images pass; all installed source hashes match. Ten
+fresh normal gateway cases pass, including firm/care/recipient controls, natural
+baseball/year recall, exact-date honesty, speaker ownership and approved humor.
+Production is healthy/Discord ready with zero restarts and observed errors. Short
+window/zero current spontaneous league posts limit character and error-rate claims.
 
-H59 adds bounded ordinary-reply length repair to existing repetition recovery.
-One shared optional generation uses the same model/source context, separately
-accounted on the original runtime/maintenance purpose, with no optional transport
-retry or third quality attempt. Private memory is rechecked before reuse. Explicit
-evidence/quotation/detail/creative requests and unfocused ambient runway are exempt.
-A still-overlong or failed repair preserves the original; no mid-thought truncation.
-This recognizes format excess, not semantic quality or a new human trait.
-[Research and results](trubot-evolution/evaluations/2026-10-14-brief-reply-study.md).
+Production uses standard gpt-6-luna Responses/store=false, bounded current history,
+verified source/graph memory, author binding and at most two ephemeral image inputs.
+One shared optional quality attempt handles long repetition or ordinary length repair;
+short continuity exempts at most five words/sixty characters from cosmetic echo repair.
+Every provider attempt uses the existing ledger and source reuse is revalidated.
 
-The graph connects attributed human sources, episodes, entities and qualified
-observations. Ordinary abstract guidance suppresses competing raw voice/audit prose;
-evidence requests retain source access. Every claim remains source/temporal/status
-qualified. Native setup captures are bounded content-free dependencies, freshly
-checked at study boundaries and linked to derived invalidation. Native studies still
-send target-only text; automatic native patterns remain closed. Specific semantic
-peer-transfer approval and genuine human-held-outs remain open. Archive pattern
-contracts remain eligible, but qualified human pattern population is unresolved.
+The graph has one newly qualified conditional abstraction plus existing literal
+claims/preferences. Ordinary abstract projection excludes audit counts and competing
+raw pattern voice; explicit evidence preserves supported source access. Conditional
+care-topic packets may still load, so appropriate use and selective admission remain
+separate. An actual zero-provider source-packet replay verifies four abstract packets
+and correct literal/year/other-speaker routes without another gateway or learning.
 
-Next order: qualified H48/H55b abstractions/contextual native studies and legacy
-qualification; H22/H39/H51 emotional judgment/semantic humor variety/cues; wider
-native peer/reply/thread/original-pixel coverage; selective skills/tools and generated
-Michigan U.P. aurora/trail-camera scenes. Original image interpretation, sharing/timing,
-held-outs, generated provenance and USD20 operating estimates are prerequisites.
-[Current plan](trubot-evolution/plan.md) and [backlog](trubot-evolution/backlog.md)
-own priority, evidence, acceptance and decision triggers. Keep source text secondary
-to useful qualified abstractions during ordinary conversation.
+Native setup captures remain content-free bounded dependencies. Automated native
+patterns stay closed; target-only study payloads are unchanged. Specific semantic
+peer-transfer permission, genuine human held-outs and legacy qualification remain
+open. Archive pattern contracts remain available. No external runtime tools or
+selectively loaded skills are present yet. Source/peer/bot/development text cannot
+establish Andrew's beliefs or authorize commands/configuration/access.
 
-Preserve bot identity, approved creative amplification and Thomas Jones bits,
-existing private storage/retention/corrections/withdrawal, authenticated author/scope,
-owner-only confirmed development recall and runtime league allowlist/noDMs. USD18
-runtime/USD2 maintenance/USD20 calendar-month ledger is shared with all app API use.
-Validation clients set a distinct ephemeral readiness path before construction;
-plain HTTP studies/audits own no application heartbeat or second gateway. Six daily
-standalone01/05/09/13/17/21Sol/xhighruns and notifications remain unchanged.
+Next order:
 
-H59b2.24.1 corrects the failed2.24.0 same-context repair: length repair now supplies
-the actual fallible draft plus a scoped focused revision, with serialized bytes
-reserved. Same-case history stress and actual candidate owner/handler acceptance
-are mandatory, followed by normal installed gateway acceptance. Images/source/author
-scope remain; repetition-only payloads keep their earlier shape.2.24.0 is prerelease
-and was rolled back to2.23.0 after its real acceptance failure.
+1. Broader qualified H48/H21/H28 abstractions, independent human held-outs and legacy
+   qualification. H62 establishes one narrow conditional memory, not a full profile.
+   Archive studies can proceed with existing contracts. H55b/H54b/H50 semantic native
+   integration still needs its specific unresolved peer-transfer permission and
+   source/setup lifecycle; automatic native patterns remain closed. No rejected payload
+   or retired H41 pattern is replayed.
+2. H22/H39/H51 emotional specificity, semantic humor variety and cue reliability.
+   Stock care survives the present audit. Validate meaning and creative amplification
+   against contextual human evidence, contrary scenarios and fresh Discord, separately
+   from brevity or packet presence. Retain warmth and recipient restraint.
+3. Broader native peers/replies/threads/original pixels with honest missing/denied
+   coverage, attribution, corrections, expiry and withdrawal.
+4. H61 selective skills/tools and generated Michigan U.P. aurora/trail-camera scenes
+   with short natural captions and generated provenance. Official capabilities are
+   documented possibilities; test relevance, sharing/timing, abstention, compatibility
+   and operating costs before rollout.
 
+Preserve bot identity and approved creative amplification/Thomas Jones bits;
+private attribution, unknown dates internally, correction/deletion/withdrawal;
+runtime league allowlist/no DMs and owner-only confirmed development recall; existing
+volume and shared USD 18 runtime/USD 2 maintenance/USD 20 monthly guard. No model/service,
+source intake, native pattern permission, study pacing, spending pool, schedule or
+notification change. Six standalone local01/05/09/13/17/21 Sol/xhigh runs retain fresh
+fetched-main managed worktrees, both planning phases, full gates/CI/tested merges,
+immutable releases/both images/scoped deployment and actual private Discord tests.
 
-H59b2.24.1installed outcome: all31testedsourcehashesmatch,7normalgatewaycontrols
-pass, both care replies1sentence. One optional source-reuse check refuses uncertified
-memory and makes no extra provider call; six authenticated sends remain authoritative.
-Final9runtimeattempts/twocare repairs, affectedcare10-11seconds. No rawdraft learning,
-newtrait/nativepayload/patternpermission/schema/ledger change or broadqualityclaim.
-[Final evidence](trubot-evolution/evaluations/2026-10-14-brief-reply-release.json).
-
-## Short reply continuity, H60a
-
-Verified production 2.24.2 exempts drafts with at most five lexical words and sixty characters
-from optional full-echo recovery. This avoids cosmetic novelty for small answers;
-it does not classify facts or grant memory authority. Initial source checks and
-independent length repair remain. Longer echoes/twelve-word passages keep one optional
-accounted, revalidated attempt. Short comic lines may repeat within this explicit bound.
-No first-request/model/prompt/schema/tool/intake change. H48/H55b abstract population,
-qualified legacy review and semantic humor remain next; H61 selective tools are only
-documented/exploratory. [Acceptance and results](trubot-evolution/evaluations/2026-10-14-short-continuity-study.md).
-
-Installed H60a: all 31 source hashes match, six real gateway controls pass. Short
-recall uses one request without a cosmetic refresh. Care still gets the shared length/
-repetition repair; seven-word date uncertainty gets repetition recovery. Eight
-accounted runtime requests, five posts/one recipient abstention, zero errors/restarts.
-No general latency/character gain. [Final evidence](trubot-evolution/evaluations/2026-10-14-short-continuity-release.json).
+Validation clients set distinct ephemeral readiness paths before construction and
+never start a second gateway. HTTP-only receipts/audits own no application heartbeat.
+Retain content-free private references/metrics with existing seven-day manual retention
+and withdrawal cleanup; no raw answer/source text in smoke artifacts.

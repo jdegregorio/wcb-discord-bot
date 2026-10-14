@@ -32,7 +32,7 @@ without replaying source wording, so that invited contextual decisions can use l
 concepts. Baseline has zero patterns and already supplies a reasonable natural answer
 in a fresh actual owner/gateway question. Missing abstract retrieval is an enabling
 gap, not proof that every baseline reply is poor. Mechanism: current graph supports
-plus contrary evidence, tentative conditions/limitations and thirty-day expiry;
+plus contrary evidence, tentative conditions/limitations and 30-day expiry;
 ordinary projection uses the summary, with factual/author authority unchanged.
 
 Acceptance locked before human held-out results: attributed separated support and
@@ -67,7 +67,7 @@ Select H62/H62a: safe qualified abstract rollout, including import preview and o
 private population only if contextual/prototype acceptance passes. This advances the
 operational memory priority after recent format repairs. High confidence in preview
 boundary; modest source interpretation confidence; general reply benefit unresolved.
-Existing graph/source lifecycle, current review scope and shared USD18/2/20 ledger
+Existing graph/source lifecycle, current review scope and shared USD 18/2/20 ledger
 are dependencies. No new service, model, source/intake scope, automatic native pattern
 permission, study pacing, spending pool, schedule or notification change.
 
@@ -107,12 +107,54 @@ already supplies reasonable decision replies, so no general quality gain is meas
 Both arms use six provider requests, including a shared optional firm-answer refresh.
 Candidate packet bytes are 1,634-2,113 lower in four affected cases; recipient packet
 is unchanged. Sequential latency/cache variance does not support a latency claim.
-At this checkpoint the run uses 17 settled requests/USD0.005060950 estimate, twelve
-maintenance requests/USD0.002777530 and five runtime/USD0.002283420. Covered October
-USD0.240387545, one unchanged preexisting unsettled reservation; estimates are not
+At this checkpoint the run uses 17 settled requests/USD 0.005060950 estimate, twelve
+maintenance requests/USD 0.002777530 and five runtime/USD 0.002283420. Covered October
+USD 0.240387545, one unchanged preexisting unsettled reservation; estimates are not
 billing and pre-guard spending is unknown. No extra recurring call/service/pool.
 
 H62 is supported as qualified population and naturalness non-regression in this cohort;
 its broad behavioral benefit is unresolved. H62a preview is supported. Candidate human
 memory is not in production yet. Installed gates/release/normal gateway acceptance pending.
 
+
+
+## Immutable rollout and actual installed outcome
+
+Final feature and merged gates pass1,084 tests/96.88% branch coverage/31 typed modules/build.
+PR111 merged 7f2710a; PR CI 38597368346/main 38597741654/image CI 38598047810 SUCCESS. Immutable
+v2.25.0 targets the tested commit; both images verified. Reverified pi5/aarch64/Ubuntu 24.04
+existing locked app transaction deployed 5f1e9cc8, prior 2.24.2/c75799d retained. All 31
+installed source hashes/OCIversion/revision match, Discord ready/healthy/zero restarts.
+
+Actual CLI first rejects the ephemeral manifest's non-private /tmp parent before
+state change. Corrected app-owned 0700 parent passes preview; graph bytes/status/backups
+unchanged, actual commit1. One qualified conditional value/two supports/one contrary/
+30-day expiry, exact held-out provenance in the existing protected graph. No new private
+storage path needing a withdrawal exception. Production source counts unchanged;
+1 value/4 concepts/1,034 edges. No prior retired pattern restored or automatic gate opened.
+
+Ten fresh normal gateway cases pass:9posts/1accounted recipient abstention/11 runtime
+requests. Changed decisions18/28 words/two sentences, firm 22/two, care 17/two; baseball 4/two,
+past 45/two natural grounded/no calendar assertion, date 17/two honest scoped uncertainty,
+operator 14/two retains correct person attribution, humor 16/two adds a relevant new turn.
+One care repetition refresh, no length repair or source-reuse refusal. Same Codex judge,
+no new independent human review; stock care and semantic variety remain open. Source-
+packet replays on seven actual owner anchors use zero provider calls/four abstracts/
+no audit counts, no second gateway/development learning; primary heartbeat survives close.
+Year-context packet has no abstraction, preserving the existing dated-source route.
+Care can load the topic's abstraction but respects applicability; relevance admission
+is not yet validated. Packet presence alone never establishes a quality gain.
+
+Post audit3 channels/latest100/14 days remains7 target12 peer4 older bot0 current spontaneous.
+Zero observed errors/reply failures/disconnects/study pauses/restarts; two startup SDK
+warnings. Short window and sparse activity limit error-rate and spontaneous quality claims.
+Source coverage34 native/16 archives/4,299 grouped/412 target/405 eligible/115 visual/96 assets.
+No original-pixel interpretation, full native history or generalized twin completion.
+
+Run 28 settled attempts/USD 0.009190225estimate:12 maintenance/USD 0.002777530 and16 runtime/
+USD 0.006412695. Installed 11/USD 0.004129275. Covered October USD 0.244516820/1,602 attempts/
+one unchanged preexisting unsettled reservation. Estimates are not billing; pre-guard
+spend unknown. SharedUSD 18/2/20/key/model/pacing/scope/schedule unchanged. No rollback.
+Privacy-safe [release evidence](2026-10-14-abstract-rollout-release.json) preserves
+all measured controls and limitations. Private content-free receipts retain only refs/
+flags/counts with seven-day manual retention/withdrawal. Owned raw staging is removed.

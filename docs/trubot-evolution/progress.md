@@ -3703,3 +3703,27 @@ and generated U.P. aurora/trail-camera scenes. Guard18/2/20, source/lifecycle/in
 model/pacing/schedule/notifications remain. Candidate2.25.0 release/install acceptance
 pending. Runtime change is operator preview; private population is a separately
 validated deployment step, never public Git source or synthetic human evidence.
+
+
+### H62/H62a final installed result
+
+Deployed2.25.0/5f1e9cc8 after PR111/required CI/both images and merged full gates:
+1,084 tests/96.88%/31modules. Actual CLI preview preserves graph bytes/status/backups;
+commit adds one qualified tentative conditional value with two supports/one contrary/
+30-day expiry and exact held-out provenance in protected graph state. Initial CLI parent
+privacy rejection changes nothing; corrected owned 0700 parent passes. No old pattern
+restoration, native gate expansion, new private retention exception or source replay.
+
+Fresh normal gateway10/10,9posts/1abstention/11 runtime requests; seven zero-provider
+actual-anchor packet checks pass, primary heartbeat survives close. Care stays stock,
+semantic variation/general fidelity unmeasured; baseline already natural. Source counts
+unchanged, graph1 value4 concepts1,034 edges. Post audit7 target12 peer4 older bot0 fresh across
+three channels/latest100/14 days, zero observed errors/restarts/two startup warnings.
+Run 28attempts/USD 0.009190225 estimate, coveredOctoberUSD 0.244516820/one unchanged
+preexisting unsettled reservation. No billing/pre-guard visibility invented.
+
+[Final study](evaluations/2026-10-14-abstract-rollout-study.md) and
+[release/health/cost evidence](evaluations/2026-10-14-abstract-rollout-release.json).
+Next independent qualified abstractions/legacy review, native semantic integration
+when specifically approved, emotion/semantic humor/cues, broader native/pixels and
+H61 selective tools/generated outdoor scenes. All standing invariants preserved.
