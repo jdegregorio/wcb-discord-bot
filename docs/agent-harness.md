@@ -9,9 +9,11 @@ Target-only provider payloads and the native pattern gate remain unchanged. H55b
 semantic context integration requires specific peer-transfer approval plus held-outs.
 Both phases and criteria: [study](trubot-evolution/evaluations/2026-10-13-native-study-context-study.md).
 
-Current baseline production2.22.2 (PR103) is verified healthy; its prior run stopped
-at an account usage limit after installed probes. This run reconciles its receipts.
-Selected candidate2.23.0 release/installed validation remains pending.
+Current verified production2.23.0 (PR104), immutable4cc40f2, healthy/Discordready.
+All six feature/merged gates, CI/images/hashes and installed real Discord lifecycle
+acceptance pass. Prior interrupted2.22.2 runtime/receipts are reconciled. Semantic
+peer-transfer approval and genuine human-held-out qualification remain open; target-only
+payloads/native pattern gate unchanged. Three legacy observations remain unlinked.
 
 Next ordered increments:
 1. H48/H21/H28 qualified abstract population coupled with H55b/H54b/H50 contextual

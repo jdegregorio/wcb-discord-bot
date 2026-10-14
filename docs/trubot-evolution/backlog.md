@@ -83,3 +83,12 @@ transport,40lifecycle/privacy/scope/race/bounds cases,970tests/fullgates, matche
 cohort1/2to2/2and installed2/2, actual private owner/handler missed-edit acceptance.
 No new human abstraction or general fidelity gain. Final gateway receipts/evidence
 are recorded in the study/progress. Next priorities and decision triggers follow plan.md.
+
+DeliveredH58a2.23.0/PR104:17baselinefail/7controls,24candidatepass, actual owner/installed
+review-stage edit/post-commit deletion pass, full gates/CI/images/hashes/readiness.
+Local capture metadata only; native pattern gate/target-only payloads unchanged.
+Genuine context-bound population0, legacy3observations (2native/1automatic native)
+need qualification under the new contract, without arbitrary source replay. Coupled
+next: specific-approved semantic H55b plus H48 human-held-out abstract population,
+including legacy source/context review. Naturalness/humor and wider native/visual/tools/
+generated outdoors retain their evidence and budget prerequisites.
