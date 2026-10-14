@@ -3406,3 +3406,25 @@ All source commands used the NEW owned worktree; primary remains untouched.
 Final documentation evidence is in [PR102](https://github.com/jdegregorio/wcb-discord-bot/pull/102).
 Its checks verify the unchanged runtime tree. Archive follows evidence merge; its
 actual completion receipt is retained in automation memory and the worktree artifact.
+
+
+## 2026-10-13 17:00 H57 candidate2.22.2
+
+Baseabfe526; unique new managed worktree/feature branch; primary untouched. Both
+planning phases: authenticated bounded audit7target/12peer/4older bot across3channels,
+no current spontaneous output; contextual5target/3olderbot and six previous private
+answers reviewed separately. No image inference or new human abstraction. H57 selected
+from two reproduced obsolete-memory commits; H55b/qualified abstracts remain next.
+
+Fresh native source reads before each maintenance attempt and reviewed commit preserve
+original cohort/payload, source/withdrawal and atomic local validation, four-hour lease,
+closed native pattern gate and existing ledger. Six seconds/four per read; at most
+24HTTP reads/study, no extra provider request/model/schema/service.26focused cases;
+all six local gates996tests/96.87%branchcoverage/30typedmodules/build2.22.2.
+Actual private matched owner/handler fixture: baseline commits obsolete invented
+preference, candidate commits none; both actual replies use corrected source naturally.
+Actual native same-cohort preflight2reads/521ms versus4reads/947ms, zero provider/send/
+gateway/real-state mutation; copies erased. Initial log-harness umask fixture failure
+and stalled backup helper corrected; no evidence claimed from failures. No measured
+general fidelity or humor gain. CI/release/deployment/installed acceptance pending.
+[Research and acceptance](evaluations/2026-10-13-study-freshness-study.md).

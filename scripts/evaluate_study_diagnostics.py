@@ -100,11 +100,21 @@ async def evaluate(*, require_diagnostics=False):
                 ingestor = MessageIngestor(learning, frozenset({10}), clock=lambda: now)
                 ingestor.verified = True
                 # Synthetic source already authoritatively verified at the fixed probe clock.
-                ingestor.refresh = AsyncMock()
+                ingestor.refresh = AsyncMock(
+                    return_value=SimpleNamespace(
+                        id=identifier,
+                        channel=SimpleNamespace(id=10),
+                        guild=SimpleNamespace(id=77),
+                        author=SimpleNamespace(id=42, bot=False),
+                        webhook_id=None,
+                    )
+                )
                 responder = SimpleNamespace(study_json=AsyncMock())
                 distiller = GraphDistiller(ingestor, responder, clock=lambda: now)
                 client = MagicMock(spec=discord.Client)
-                client.get_channel.return_value = MagicMock(spec=discord.TextChannel)
+                channel = MagicMock(spec=discord.TextChannel)
+                channel.id, channel.guild = 10, SimpleNamespace(id=77)
+                client.get_channel.return_value = channel
 
                 async def generate(case=case, text=text, **kwargs):
                     await kwargs["source_check"]()

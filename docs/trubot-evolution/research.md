@@ -2054,3 +2054,13 @@ semantic joke repetition remain gaps, not fidelity gains. Local5block/15context/
 check supports final historical paraphrase without dates, newtraits or independentgrade.
 FinalUSD0.006459355/18attempts, USD18/2/20 guard and no addedprovider/service. Release,
 CI,digest,sourcehashes,limitations and private-retention metadata in release JSON/progress.
+
+## 2026-10-13 17:00 H57 selection
+
+Both phases completed: bounded authenticated character audit and three falsifiable
+hypotheses, then roadmap reprioritization. Two same-case invented learning cycles
+show 2.22.1 committing obsolete native support when Discord edits are missed during
+extraction/review. Select fresh native source reads before each provider attempt and
+commit so that corrected human evidence cannot become durable memory. Native contextual
+integration/qualified abstractions stay next; care/semantic-humor prototypes remain
+unvalidated. [Study](evaluations/2026-10-13-study-freshness-study.md).
