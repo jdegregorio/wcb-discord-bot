@@ -1,10 +1,12 @@
 # Trubot roadmap
 
-H60a bounded short reply continuity is selected for 2.24.2. Fresh 2.24.1 actual gateway
-recall spends two provider attempts on unchanged four-word output. The candidate
+H60a bounded short reply continuity is deployed and verified in 2.24.2. Fresh 2.24.1 actual gateway
+recall spends two provider attempts on unchanged four-word output. The adapter
 exempts at most five words and sixty characters from cosmetic repetition recovery;
 initial memory checks, longer echoes and separate length repair remain authoritative.
 [Both planning phases and acceptance](docs/trubot-evolution/evaluations/2026-10-14-short-continuity-study.md).
+[Final installed evidence](docs/trubot-evolution/evaluations/2026-10-14-short-continuity-release.json).
+All six gateway controls pass; longer seven-word uncertainty can still incur recovery.
 H59/H59b 2.24.1 is complete; the failed 2.24.0 remains immutable prerelease after rollback.
 
 Next ordered increments match [plan](docs/trubot-evolution/plan.md) and

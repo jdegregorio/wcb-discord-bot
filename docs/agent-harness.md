@@ -58,7 +58,7 @@ newtrait/nativepayload/patternpermission/schema/ledger change or broadqualitycla
 
 ## Short reply continuity, H60a
 
-Candidate 2.24.2 exempts drafts with at most five lexical words and sixty characters
+Verified production 2.24.2 exempts drafts with at most five lexical words and sixty characters
 from optional full-echo recovery. This avoids cosmetic novelty for small answers;
 it does not classify facts or grant memory authority. Initial source checks and
 independent length repair remain. Longer echoes/twelve-word passages keep one optional
@@ -66,3 +66,9 @@ accounted, revalidated attempt. Short comic lines may repeat within this explici
 No first-request/model/prompt/schema/tool/intake change. H48/H55b abstract population,
 qualified legacy review and semantic humor remain next; H61 selective tools are only
 documented/exploratory. [Acceptance and results](trubot-evolution/evaluations/2026-10-14-short-continuity-study.md).
+
+Installed H60a: all 31 source hashes match, six real gateway controls pass. Short
+recall uses one request without a cosmetic refresh. Care still gets the shared length/
+repetition repair; seven-word date uncertainty gets repetition recovery. Eight
+accounted runtime requests, five posts/one recipient abstention, zero errors/restarts.
+No general latency/character gain. [Final evidence](trubot-evolution/evaluations/2026-10-14-short-continuity-release.json).

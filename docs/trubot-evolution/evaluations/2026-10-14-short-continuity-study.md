@@ -137,3 +137,48 @@ Handler elapsed 10,572ms versus 4,641ms includes source reads and posting; one s
 pair is not a general latency benchmark. Normal baseline reproduction had two actual
 provider requests; the matched replays specifically establish removal of the cosmetic
 source check. Groundedness and naturalness were separately inspected in the actual UI.
+
+### Final installed outcome
+
+PR #109 merged `81f8e065e7a795a9caa77b4f0672481e4ceaeef0` after required PR CI
+38562915499. Merged main CI 38563150309 and all six local merged gates pass with
+1,071 tests/96.87% coverage/31 typed modules/build. Immutable release v2.24.2,
+image CI 38563452233 and both architectures pass. The existing locked app transaction
+installs digest `c75799ddee36c8804e96869590a1071dba5e828fbc99529692807fe26787c31b`.
+All 31 source hashes and OCI commit match the tested runtime. Healthy, Discord ready,
+zero restarts. Prior good 2.24.1/c2553b4 is retained; no rollback or data restore needed.
+
+Six fresh normal owner-authored gateway controls pass contextual manual review:
+five authenticated posts/one accounted recipient abstention, eight provider attempts.
+Short recall retains supported four-word content with one request and no cosmetic
+refresh (5,635ms versus baseline 10,249ms; one changed-history pair is not a general
+latency estimate). Care uses the shared repetition/length attempt and gives one
+specific sincere sentence. Humor is relevant but repeats a familiar comic premise;
+this is a semantic variety gap, not a new humor gain. Historical recall is source-backed
+and natural without ordinary metadata caveats or unsupported calendar assertion.
+Exact-date uncertainty stays conversational and does not fabricate a day. That seven-word
+answer still gets one optional repetition attempt, confirming the deliberately narrow
+size boundary. Cosmetic treatment of longer stable facts is an exploratory question;
+do not widen the exemption without matched meaning/author/source controls.
+
+Post-audit: same seven target/twelve peer/four older bot/zero current spontaneous
+league turns. No current spontaneous fidelity claim. Zero errors/reply failures/
+disconnects/study pauses/restarts in the short window; two startup SDK warnings.
+Private source and graph counts remain stable, with zero active patterns. Historical
+selection checked through six ArchiveStore.context windows in one export, 42 grouped
+block occurrences (12 target/30 peer, with possible overlap); this is mechanical
+coverage, not independent episode proof or a new semantic style study. Exact source
+references remain private and calendar dates remain unknown internally.
+
+Final covered October estimate USD 0.235326595/1,574 attempts, one unchanged preexisting
+unsettled reservation. Run 68 settled attempts/USD 0.009047595: 58 maintenance/
+USD 0.004649270 and ten runtime/USD 0.004398325. Installed eight requests cost estimate
+USD 0.003330700. The shared 18/2/20 guard is unchanged, with no added service. These
+estimates are not billing; pre-guard spending remains unknown. No private payload
+expansion, source replay, new trait, schema/model/intake or schedule/notification change.
+
+Content-free private references/metrics have existing seven-day manual retention and
+withdrawal cleanup. Candidate overrides were erased before installed tests; public
+synthetic reports and both full quality logs were preserved in automation storage.
+The evidence merge is documentation only, with zero runtime/test/version/lock changes.
+[Complete release evidence](2026-10-14-short-continuity-release.json).

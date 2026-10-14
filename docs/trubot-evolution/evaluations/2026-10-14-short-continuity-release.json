@@ -1,0 +1,287 @@
+{
+  "run": "2026-10-14 05:00 America/Los_Angeles",
+  "hypothesis": "H60a",
+  "status": "runtime deployed and six installed gateway controls pass",
+  "base_commit": "66de3e9a1c30eba98cbcb4585e0ff67d11d572ab",
+  "change": {
+    "pr": 109,
+    "url": "https://github.com/jdegregorio/wcb-discord-bot/pull/109",
+    "head": "5a367e9f24015597aa41006d901788b90d811c32",
+    "runtime_merge": "81f8e065e7a795a9caa77b4f0672481e4ceaeef0"
+  },
+  "quality": {
+    "all_six_feature_and_merged_gates": "pass",
+    "tests": 1071,
+    "branch_coverage_percent": 96.87,
+    "typed_modules": 31,
+    "focused_optional_quality_checks": 100,
+    "new_checks": 19,
+    "new_baseline_fail": 17,
+    "new_baseline_controls_pass": 2,
+    "pr_ci": 38562915499,
+    "main_ci": 38563150309,
+    "image_ci": 38563452233
+  },
+  "release": {
+    "tag": "v2.24.2",
+    "url": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.24.2",
+    "digest": "sha256:c75799ddee36c8804e96869590a1071dba5e828fbc99529692807fe26787c31b",
+    "amd64": "sha256:0665af8508f24a0061215af5251e8286fe1103e3eaa1f7c603bede60cedfce38",
+    "arm64": "sha256:404be40627e821ba66d094765b2232031d6d571a8b45f7a09ba25c6dcbb8308d",
+    "installed_source_hashes_match": 31,
+    "oci_commit_matches": true,
+    "health": "healthy and Discord ready",
+    "restarts": 0,
+    "transaction": "existing locked app deploy transaction"
+  },
+  "rollback": {
+    "required": false,
+    "previous_good_version": "2.24.1",
+    "previous_good_digest": "sha256:c2553b4f5876c7c1db76a047771c1497a3f17ccacd02c7d62e4db9ca872c46de",
+    "data_restore": false,
+    "compatible": "code only; preserve source, graph, withdrawal and ledger state"
+  },
+  "general_trial": {
+    "contexts": 8,
+    "samples_per_arm": 2,
+    "final_outcomes": 32,
+    "posts": 28,
+    "correct_abstentions": 4,
+    "provider_attempts": [
+      19,
+      18
+    ],
+    "new_control_regression_observed": false,
+    "limitation": "initial punctuation mismatch did not exercise exact echo; request difference is stochastic independent length repair, not H60a"
+  },
+  "causal_trial": {
+    "contexts": 3,
+    "samples_per_arm": 2,
+    "pairs": 6,
+    "first_requests_identical": true,
+    "first_drafts_identical": true,
+    "final_posts_identical": true,
+    "provider_attempts": [
+      12,
+      6
+    ],
+    "elapsed_ms": [
+      24708,
+      6668
+    ],
+    "usage_input_cached_output": [
+      [
+        31588,
+        23202,
+        154
+      ],
+      [
+        15586,
+        15568,
+        54
+      ]
+    ],
+    "limitation": "sequential arms/cache/provider variation, no general latency or character claim"
+  },
+  "actual_gateway_baseline": {
+    "provider_attempts": 2,
+    "final_words": 4,
+    "final_sentences": 2,
+    "owner_to_bot_ms": 10249,
+    "final_was_unchanged": true,
+    "limitation": "one normal reproduction; three separately controlled same-anchor sends are not additional gateway responses"
+  },
+  "actual_same_anchor_handler": {
+    "baseline": {
+      "provider_attempts": 1,
+      "nonempty_memory_checks": 2,
+      "memory_ms": [
+        1958,
+        5625
+      ],
+      "provider_ms": 2077,
+      "elapsed_ms": 10572,
+      "optional_source_reuse_refused": true
+    },
+    "candidate": {
+      "provider_attempts": 1,
+      "nonempty_memory_checks": 1,
+      "memory_ms": [
+        2227
+      ],
+      "provider_ms": 1534,
+      "elapsed_ms": 4641
+    },
+    "source_grounding_and_naturalness_review": "pass after authenticated source-channel cache was populated",
+    "initial_candidate_without_channel_cache": "excluded from grounding acceptance",
+    "second_gateway_started": false,
+    "distinct_ready_before_construction": true,
+    "development_learning": 0,
+    "raw_answer_retained": false,
+    "purpose": "maintenance",
+    "limitation": "one sequential pair; initial verification preserved, only cosmetic callback removed"
+  },
+  "installed_gateway": {
+    "cases": 6,
+    "posts": 5,
+    "correct_abstentions": 1,
+    "provider_attempts": 8,
+    "source_reuse_refusals": 0,
+    "shared_quality_attempts": 2,
+    "brevity_repairs": 1,
+    "repetition_refreshes": 2,
+    "all_six_manual_reviews": "pass",
+    "cases_metrics": [
+      {
+        "case": "care",
+        "words": 12,
+        "sentences": 1,
+        "latency_ms": 7845,
+        "provider_attempts": 2,
+        "pass": true
+      },
+      {
+        "case": "humor",
+        "words": 13,
+        "sentences": 1,
+        "latency_ms": 3379,
+        "provider_attempts": 1,
+        "pass": true
+      },
+      {
+        "case": "baseball",
+        "words": 4,
+        "sentences": 2,
+        "latency_ms": 5635,
+        "provider_attempts": 1,
+        "cosmetic_refresh": false,
+        "pass": true
+      },
+      {
+        "case": "past",
+        "words": 43,
+        "sentences": 2,
+        "latency_ms": 4087,
+        "provider_attempts": 1,
+        "pass": true
+      },
+      {
+        "case": "date",
+        "words": 7,
+        "sentences": 1,
+        "latency_ms": 6187,
+        "provider_attempts": 2,
+        "pass": true,
+        "limitation": "seven-word unchanged uncertainty remains eligible for repetition recovery"
+      },
+      {
+        "case": "recipient",
+        "posts": 0,
+        "provider_attempts": 1,
+        "pass": true
+      }
+    ],
+    "metadata_disclaimers_in_ordinary_recall": 0,
+    "unsupported_calendar_assertion_observed": false,
+    "semantics": "manual contextual review, not keyword-only grading or independent human validation"
+  },
+  "audit": {
+    "recent_scope": "three approved intake channels, latest 100 each, fourteen days",
+    "target_turns": 7,
+    "peer_turns": 12,
+    "older_bot_turns": 4,
+    "current_spontaneous_bot_turns": 0,
+    "ui_cohort_target_turns": 3,
+    "ui_cohort_older_bot_turns": 2,
+    "image_dependent_turn_excluded_without_pixels": true,
+    "new_trait_or_pattern": false,
+    "historical_probe": {
+      "context_windows": 6,
+      "documents": 1,
+      "window_block_occurrences": 42,
+      "target_occurrences": 12,
+      "peer_occurrences": 30,
+      "calendar_dates_established": 0,
+      "independent_episodes_established": false,
+      "semantic_human_pattern_study": false,
+      "exact_source_refs": "private only"
+    }
+  },
+  "source_coverage": {
+    "native_messages": 34,
+    "archives": 16,
+    "grouped_blocks": 4299,
+    "target_blocks": 412,
+    "eligible_blocks": 405,
+    "visual_episodes": 115,
+    "image_assets": 96,
+    "graph_sources": 439,
+    "graph_episodes": 554,
+    "claims": 2,
+    "preferences": 1,
+    "patterns": 0,
+    "native_context_captures": 6,
+    "context_dependencies": 9,
+    "legacy_unqualified_observations": 3
+  },
+  "health_window": {
+    "errors": 0,
+    "reply_failures": 0,
+    "disconnects": 0,
+    "study_pauses": 0,
+    "warnings": 2,
+    "warnings_basis": "startup Discord SDK warnings",
+    "limitation": "short observed window, sparse spontaneous activity; no general error-rate estimate"
+  },
+  "cost": {
+    "covered_october_estimated_usd": 0.235326595,
+    "attempts": 1574,
+    "unsettled_attempts": 1,
+    "unsettled_basis": "preexisting, unchanged",
+    "run_estimated_usd": 0.009047595,
+    "run_attempts": 68,
+    "run_runtime_usd": 0.004398325,
+    "run_runtime_attempts": 10,
+    "run_maintenance_usd": 0.00464927,
+    "run_maintenance_attempts": 58,
+    "installed_gateway_usd": 0.0033307,
+    "guard_usd": [
+      18,
+      2,
+      20
+    ],
+    "provider_billing": "not available; pre-guard spend unknown",
+    "added_paid_services": 0
+  },
+  "limits": [
+    "short jokes may repeat within the five-word/sixty-character exemption",
+    "longer stable facts or uncertainty can still trigger cosmetic recovery",
+    "stock care prefaces and semantic humor repetition remain",
+    "zero qualified active patterns or new genuine human-held-out benchmark",
+    "specific earlier private semantic transfer/audit approvals remain unresolved; no rejected payload was retried",
+    "source text is evidence, not a universal human trait or exact calendar-date proof"
+  ],
+  "next": [
+    "qualified H48/H55b abstract episode population and legacy context review",
+    "emotional judgment and semantic humor/cue reliability",
+    "broader native peers/replies/threads/original pixels",
+    "H61 selective skills/tools and generated Michigan U.P. aurora/trail-camera sharing with short captions/generated provenance"
+  ],
+  "privacy": {
+    "raw_exchanges_in_public_notes": false,
+    "raw_answers_in_smoke_artifacts": false,
+    "development_messages_as_human_learning": false,
+    "new_provider_payload": false,
+    "native_automatic_pattern_gate": "unchanged, closed",
+    "runtime_intake_scope": "unchanged"
+  },
+  "private_receipts": {
+    "directory": "existing private app volume, per-run smoke-tests directory",
+    "retention": "seven days manual; existing withdrawal cleanup",
+    "mode": "0700 directory, 0600 files",
+    "candidate_overrides_removed_before_installed_acceptance": true,
+    "references": "content-free message references and pass/fail metadata only"
+  },
+  "completed_at": "2026-10-14T12:33:18Z",
+  "evidence_merge": "this documentation-only PR; runtime and acceptance complete"
+}

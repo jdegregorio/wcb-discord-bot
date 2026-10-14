@@ -3642,3 +3642,34 @@ each, handler time 10,572/4,641ms; sequential one-pair timing is limited. Initia
 native channel cache trial is excluded from grounding acceptance. Production heartbeat
 verified after validation clients close; no second gateway/development learning/raw answer
 artifact. Runtime merge/release/deployment and fresh normal gateway acceptance pending.
+
+Delivered 2.24.2, PR109 head 5a367e9f24015597aa41006d901788b90d811c32,
+merge 81f8e065e7a795a9caa77b4f0672481e4ceaeef0. PR CI38562915499/main CI38563150309/
+image CI38563452233 success; all feature/merged gates1,071tests/96.87%/31typed/build.
+Immutable [release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.24.2)
+index c75799ddee36c8804e96869590a1071dba5e828fbc99529692807fe26787c31b,
+AMD64 0665af8508f24a0061215af5251e8286fe1103e3eaa1f7c603bede60cedfce38,
+ARM64 404be40627e821ba66d094765b2232031d6d571a8b45f7a09ba25c6dcbb8308d.
+Verified pi5/aarch64/Ubuntu24.04, existing locked transaction, all31sourcehashes/OCI
+commit, healthy/Discordready/0restarts. Prior good2.24.1/c2553b4 retained, no rollback.
+
+Six fresh normal gateway controls pass manual review: five posts/one recipient
+abstention/eight provider requests. Short source-backed recall one call/no cosmetic
+refresh, same four-word answer. Observed latency10,249ms to5,635ms is one pair with
+changed history/cache, not a general benchmark. Shared care repair remains. Exact-date
+uncertainty seven words retains two requests; the boundary is deliberately narrow.
+Familiar comic premise/stock care wording, zero new abstract patterns and sparse current
+spontaneous league activity remain limitations. No unsupported day/ordinary metadata
+disclaimer, source/author/recipient regression observed. Short window has0errors/reply
+failures/disconnects/study pauses,2startupSDKwarnings. Post-audit counts7target/12peer/
+4olderbot/0currentspontaneous; no development learning or source expansion.
+
+Run68settledrequests/USD0.009047595estimate (58maintenance/0.004649270,10runtime/
+0.004398325); installed8requests/0.003330700. CoveredOctober0.235326595/1574attempts/
+1unchangedpreexistingunsettled,18/2/20guard unchanged. Not billing; pre-guard unknown.
+Six historical context windows/one export/42block occurrences with possible overlap are
+mechanical source coverage, not independent semantic pattern evidence. Private exact
+refs/metrics0700/0600,seven-daymanualretention/withdrawalcleanup,no raw answer artifact.
+Candidateoverridesremovedbeforeinstalledtests; publicsyntheticreports/fullqualitylogs
+preserved in automationstorage. EvidencePR only changes docs; runtime/test/version/
+lock identical to released81f8e06. [Full result](evaluations/2026-10-14-short-continuity-release.json).
