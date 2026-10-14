@@ -1,5 +1,11 @@
 # Prioritized Trubot backlog
 
+Selected H57 before H55b: fresh native source reads at every provider attempt and
+commit, based on two reproduced obsolete-memory defects. Same-case lifecycle/retry/
+scope controls and real Discord required. Existing six-source study/four-hour pacing,
+USD2 maintenance and closed native pattern gate unchanged. Supported enabling work,
+no measured character gain. See this run's study for criteria and decision triggers.
+
 Delivered H54a (2.20.1, PR96): native automatic pattern evidence gate. Reproduced permissive schema,
 local validation, automated storage and restored recall. So that detached remarks
 cannot become recurring character interpretations without contextual provenance.

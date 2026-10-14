@@ -1,5 +1,10 @@
 # Trubot roadmap
 
+Selected this run: H57 native study boundary freshness. Baseline two missed-edit
+cycles commit obsolete preferences; repair before H55b contextual integration.
+No new human abstraction or measured fidelity claim. Both planning phases and
+criteria: [study](docs/trubot-evolution/evaluations/2026-10-13-study-freshness-study.md).
+
 Current verified production2.22.1 ([PR100](https://github.com/jdegregorio/wcb-discord-bot/pull/100),
 [PR101](https://github.com/jdegregorio/wcb-discord-bot/pull/101)). H56 repairs native
 setup links after missed peer edits/deletes/access loss. The existing worker rotates

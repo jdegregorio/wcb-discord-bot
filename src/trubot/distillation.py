@@ -825,25 +825,47 @@ class GraphDistiller:
                     self.store.finish, study, None, now=self.clock(), outcome="insufficient"
                 )
                 return completed("insufficient_support")
-            started = self.clock()
-            stage = "source_refresh"
-            async with asyncio.timeout(6):
-                for snapshot in study.snapshots:
-                    ref = snapshot["ref"]
-                    if ref["kind"] == "discord":
-                        channel = client.get_channel(ref["channel_id"])
-                        if not isinstance(channel, (discord.TextChannel, discord.Thread)):
-                            raise LearningUnavailable("Study channel unavailable")
-                        async with asyncio.timeout(4):
-                            await self.ingestor.refresh(channel, ref["message_id"])
-            stage = "source_validation"
-            await asyncio.to_thread(
-                self.store.check, study, now=self.clock(), verified_after=started
-            )
 
             async def source_check() -> None:
                 nonlocal stage
                 previous, stage = stage, "source_validation"
+                started = self.clock()
+                # Local snapshots cannot detect a missed gateway edit during a
+                # provider call. Reread the original cohort before each of two
+                # maintenance attempts, then before the locked commit.
+                async with asyncio.timeout(6):
+                    for snapshot in study.snapshots:
+                        stage = "source_validation"
+                        if (
+                            not self.ingestor.verified
+                            or await asyncio.to_thread(self.ingestor.store.identity)
+                            != self.ingestor.identity
+                        ):
+                            raise LearningUnavailable("Study membership verification lost")
+                        ref = snapshot["ref"]
+                        if ref["kind"] != "discord":
+                            continue
+                        channel = client.get_channel(ref["channel_id"])
+                        if not isinstance(
+                            channel, (discord.TextChannel, discord.Thread)
+                        ) or not self.ingestor.accepts(channel):
+                            raise LearningUnavailable("Study channel unavailable")
+                        stage = "source_refresh"
+                        async with asyncio.timeout(4):
+                            message = await self.ingestor.refresh(channel, ref["message_id"])
+                        stage = "source_validation"
+                        if (
+                            message is None
+                            or message.id != ref["message_id"]
+                            or message.channel.id != channel.id
+                            or message.guild is None
+                            or message.guild.id != self.ingestor.identity.guild_id
+                            or message.author.id != self.ingestor.identity.user_id
+                            or message.author.bot
+                            or message.webhook_id is not None
+                        ):
+                            raise LearningUnavailable("Study source attribution changed")
+                stage = "source_validation"
                 if not self.ingestor.verified:
                     raise LearningUnavailable("Study membership verification lost")
                 await asyncio.to_thread(
@@ -851,6 +873,9 @@ class GraphDistiller:
                 )
                 stage = previous
 
+            # Fail before acquiring a provider reservation when initial access or
+            # the selected evidence is already unavailable.
+            await source_check()
             stage = "extraction"
             requests += 1
             result = await self.responder.study_json(
@@ -902,9 +927,7 @@ class GraphDistiller:
                 for x in existing
             ]
             stage = "source_validation"
-            await asyncio.to_thread(
-                self.store.check, study, now=self.clock(), verified_after=started
-            )
+            await asyncio.to_thread(self.store.check, study, now=self.clock())
             stage = "review"
             requests += 1
             review = await self.responder.study_json(
@@ -974,6 +997,7 @@ class GraphDistiller:
                             study.snapshots[s["source"]]["ref"] for s in proposed["counterexamples"]
                         ],
                     }
+            await source_check()
             stage = "commit"
             await asyncio.to_thread(
                 self.store.finish,

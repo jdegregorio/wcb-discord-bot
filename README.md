@@ -564,3 +564,13 @@ IDs, plus an exact same-channel parent read if needed. Freshness/attribution che
 still apply to every dependency. No new neighbors enter learning/context; missing
 nonparents erase obsolete captures without guessing message deletion. No preserved
 freshness certificate or automatic native pattern permission. [Transport study](docs/trubot-evolution/evaluations/2026-10-13-native-freshness-study.md).
+
+## Fresh native study support (2.22.2)
+
+The learner rereads the original native source cohort before each maintenance provider
+attempt and before committing a reviewed observation. Missed edits/deletions or lost
+read access pause the study; current source attribution, withdrawal and the locked
+local commit remain authoritative. The two provider passes retain identical original
+evidence. Four bounded read stages admit at most six native sources each, with six
+seconds total and four seconds per read. Maintenance retries remain disabled.
+This adds no provider attempt or schema and keeps automatic native patterns gated.

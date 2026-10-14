@@ -973,3 +973,20 @@ but stops background repair. Do not restore source or spending stores. All proto
 package overrides, synthetic fixture stores and captured-cohort copies are removed
 before completion. Only content-free refs/counts/flags/public helpers and source hashes
 remain under existing0700/0600, seven-day manual retention/withdrawal cleanup.
+
+
+## Native study boundary freshness, 2.22.2
+
+The existing study lease/cohort now receives current native HTTP reads before each
+of two maintenance provider attempts and before the reviewed-observation commit.
+Initial preflight still fails before a provider reservation. Source changes or denied/
+transient reads stop the study; transient failure does not imply deletion. Existing
+source locks, fingerprints, correction/withdrawal and conservative uncertain spending
+reservations remain authoritative. Four read stages, at most six sources/24 HTTP reads
+per study, six seconds per stage/four per read. No maintenance retries, new ledger,
+schema, checkpoint cohort, peer intake or native automatic pattern eligibility.
+Rollback2.22.1 is data-compatible but restores the stale study boundary. Preserve
+source/spending stores. Content-free private refs/counts and public helper code use
+the existing app-volume smoke-tests/2026-10-13-1700 directory under0700/0600 and the
+existing seven-day manual retention/withdrawal cleanup. Invented fixture stores and
+package overrides are erased after validation; no source excerpts or replies retained.
