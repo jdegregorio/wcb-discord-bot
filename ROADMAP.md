@@ -1,5 +1,17 @@
 # Trubot roadmap
 
+H59/H59b brief-draft correction is deployed and verified as2.24.1 after rollback of
+failed2.24.0. Next: qualified abstract episode population/contextual native studies/
+legacy qualification; emotional judgment and varied amplified humor; native peers/
+replies/threads/original pixels; selective skills/tools and generated Michigan U.P.
+aurora/trail-camera scenes with short natural captions and generated provenance.
+Specific approval/held-out/source-lifecycle/budget prerequisites remain authoritative.
+
+[The evolution plan](docs/trubot-evolution/plan.md) owns current priorities and
+[evidence](docs/trubot-evolution/evaluations/2026-10-14-brief-reply-release.json).
+Earlier detail below is historical.
+
+
 Current order: H59 brief-reply correction through release; qualified H48/H55b
 abstract population/contextual native studies and legacy qualification; H22/H39/H51
 emotional/humor variety; broader native/visual episodes; selective tools/skills and

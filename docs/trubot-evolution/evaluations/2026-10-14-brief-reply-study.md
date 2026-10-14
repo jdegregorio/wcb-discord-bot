@@ -85,7 +85,7 @@ Matched trial: twelve synthetic contexts, three samples per arm, same gpt-6-luna
 handlers, instructions, context and spending ledger. Baseline 36 provider attempts,
 candidate 42 (six optional repairs), all complete/accounted with usage. Transport
 36/36 per arm. Care/celebration length: baseline 17/21, candidate 21/21 within two
-brief sentences. Manual review of all 72 final outputs finds no new factual,
+brief sentences. Manual review of all 72 final outcomes finds no new factual,
 recipient, grief-care or identity failure. Two candidate low-stakes setback replies
 retain gentle object-directed jokes; this is contrary evidence to a broader emotional
 judgment claim. Stock care prefaces and semantic joke repetition remain unresolved.
@@ -154,7 +154,7 @@ qualified abstractions/context integration and broader themes retain their prere
 
 H59b accumulated-history trial:36finalcasesperarm, baseline42/candidate41settled
 providerattempts, alltransport/usagecomplete. Care/celebration brevity20/21to21/21;
-all72finaloutputs manually reviewed, no new grounding/care/recipient/identity failure
+all72finaloutcomes manually reviewed, no new grounding/care/recipient/identity failure
 observed. Candidate low-stakes setback answers are specific and sincere with no joke;
 that small stochastic result is not a general emotional-judgment claim. Familiar comic
 premises and occasional two-part stock care remain. Baseline73,961ms/candidate67,139ms
@@ -172,3 +172,63 @@ fetched role-bearing guild provesview/read/sendbeforeposting. No denied access b
 Automatic approval review rejected printing a potentially secret-bearing version.env.
 No retry/indirect read; containerOCI/module/sourcehashes and existingapptransaction
 verified release/rollback independently. No permission remains blocked by that action.
+
+
+## Final installed outcome,2.24.1
+
+PR107merged e761f965c92b311789a334f023e727f6549e41de after requiredCI38537163276.
+Merged-mainCI38537462172 and all six local gates pass:1,052tests/96.87%coverage/
+31typedmodules/build2.24.1. Immutablev2.24.1 imageCI38537848820 succeeds for
+AMD64/ARM64. Release discovery completed the existing scopedtransaction while the
+manual helper waited; manual deploy reportsalreadycurrent. Verifiedpi5/aarch64/
+Ubuntu24.04, immutablec2553b4f5876c7c1db76a047771c1497a3f17ccacd02c7d62e4db9ca872c46de,
+OCIcommit/module/package/all31sourcehashesmatch. Healthy/Discordready/0restarts.
+Previousgood2.23.0/4cc40f2 remains the rollback target.2.24.0prerelease flag is
+rechecked through GitHubAPI; no immutable tag was reused.
+
+Seven fresh normal gateway cases, six authenticated posts/one correct abstention:
+
+| Case | Words | Sentences | Owner-to-bot ms | Meaning review |
+| --- | ---: | ---: | ---: | --- |
+| Care reproduction | 12 | 1 | 10,014 | Specific sincere care; repair exercised |
+| New care variation | 14 | 1 | 11,314 | Specific sincere care; third-person phrasing to operator |
+| Invited banter | 12 | 1 | 3,865 | Relevant creative turn, no real-history claim |
+| Ordinary preference | 4 | 2 | 10,705 | Direct supported content, no metadata disclaimer |
+| Broad past recall | 43 | 2 | 3,284 | Three source-checked content claims, no calendar assertion |
+| Exact calendar day | 7 | 1 | 3,857 | Natural uncertainty, no fabricated date |
+| Other recipient | 0 | 0 | n/a | Actual accounted follow-up declines |
+
+Both care repairs succeed through the installed ordinary gateway, with two optional
+repairs and no overlong/incomplete/unavailable repair outcome. Seven generations/nine
+settledproviderattempts. Six actual posts are authoritative; five adaptercompletion
+logs omit one early return after an optional source-reuse refusal. A first diagnostic
+assertion incorrectly equated those counts; corrected before reporting. One private
+packet refresh was not certified and was not sent again, preserving its original
+accounted answer. No new provider request from that refusal. Zero errors, replyfailures,
+disconnects or learning/study pauses; two startup SDKwarnings. Sparse league activity
+limits rates/generalization. There is no claimed latency improvement; affected care
+costs an additional request and takes10-11seconds in these two observed trials.
+
+Pre/post league audit retains3channels/latest100/14days,7target/12peer/4olderbot/
+0current spontaneous. Private historical control study examines7topic-selected
+windows from2documents:21grouped blocks,8target/13peercontext. ArchiveStore.context
+preserves digest/ordinal/line references and unknown dates. Contrasting episode-specific
+statements are not a universal or newest belief. Every actual historical claim was
+checked against attributed source text; peers and one adjacent off-topic target line
+remain context, not a new trait. These topic-selected windows are not an independent
+human-held-out care/humor benchmark. No pixels or new abstract observation studied.
+
+FinalcoveredOctoberestimateUSD0.226279000,1,506attempts/onepreexistingunsettled
+reservation. This run175settledattempts/USD0.013332600:163maintenance/USD0.008018325,
+12runtime/USD0.005314275. Finalinstalled9attempts/USD0.003774565. Actualbilling and
+pre-guardspending remain unknown. USD18/2/20guard unchanged, no addedpaidservice.
+Learning34native/graph439sources/554episodes/2claims/1preference/0patterns unchanged;
+existing recall records6content-freecontextcaptures/9dependencies. Three legacy
+observations and qualified H48/H55b population remain open. No development evidence.
+
+Private root0700/files0600 retains content-free refs/counts/flags and public helpers,
+seven-day manual retention/withdrawal cleanup. All candidate override directories and
+raw diagnostic staging are erased before final acceptance. No source copies, study
+checkpoints, usage state, private corpus or withdrawal marker were reset. Qualitylogs
+remain privately under this automation. Source raw/derived observations stay outsideGit.
+[Structured release evidence](2026-10-14-brief-reply-release.json).

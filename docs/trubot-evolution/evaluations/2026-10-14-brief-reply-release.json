@@ -1,0 +1,275 @@
+{
+  "run": "2026-10-14 01:00 America/Los_Angeles",
+  "hypothesis": "H59/H59b",
+  "status": "runtime and installed acceptance complete",
+  "base_commit": "f871005e13d010a8890e93ad2b28b6677925af4c",
+  "changes": {
+    "initial_pr": 106,
+    "initial_head": "f42a20b5eb72c2dd80f33392f9b8c687976beb4d",
+    "initial_merge": "922c260237c8b74367c4aa480c394390cba9eb70",
+    "repair_pr": 107,
+    "repair_head": "014d8fa8cd8218e6e9c00b526381bde1a5749dd2",
+    "runtime_merge": "e761f965c92b311789a334f023e727f6549e41de"
+  },
+  "quality": {
+    "initial_tests": 1051,
+    "final_tests": 1052,
+    "branch_coverage_percent": 96.87,
+    "typed_modules": 31,
+    "all_six_feature_and_merged_gates": "pass",
+    "initial_pr_ci": 38534523682,
+    "initial_main_ci": 38534769398,
+    "initial_image_ci": 38535048934,
+    "repair_pr_ci": 38537163276,
+    "repair_main_ci": 38537462172,
+    "repair_image_ci": 38537848820
+  },
+  "release": {
+    "tag": "v2.24.1",
+    "url": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.24.1",
+    "digest": "sha256:c2553b4f5876c7c1db76a047771c1497a3f17ccacd02c7d62e4db9ca872c46de",
+    "amd64": "sha256:02e61a94f7c5877a80933939f2a064ec318102557dae3769b62f5b6eb3b786f1",
+    "arm64": "sha256:5409e289eef371ecd7650e4eccfc43bfcddd709d31a09c180330d8999aa11148",
+    "installed_source_hashes_match": 31,
+    "oci_commit_matches": true,
+    "health": "healthy and Discord ready",
+    "restarts": 0,
+    "transaction": "existing app release discovery; manual deploy confirmed already current"
+  },
+  "rollback": {
+    "failed_release": "v2.24.0",
+    "failed_digest": "sha256:f5179a0bfa64edd49c23c964d26ccf03493af168f1a7ac72a08fc5f551ce9ace",
+    "reason": "normal gateway care remained three sentences after the repair",
+    "prerelease_and_not_latest": true,
+    "tag_bytes_unchanged": true,
+    "restored_version": "2.23.0",
+    "restored_digest": "sha256:4cc40f2d0eeec0a03c9d55cd3bf329573061a06ab8862b72cb9d7c5feb662a77",
+    "health_verified": true,
+    "data_restore": false
+  },
+  "trials": [
+    {
+      "arm_order": "sequential, baseline then candidate",
+      "contexts": 12,
+      "samples_per_arm": 3,
+      "final_outcomes_per_arm": 36,
+      "posted_answers_per_arm": 33,
+      "correct_abstentions_per_arm": 3,
+      "care_celebration_baseline_pass": 17,
+      "care_celebration_candidate_pass": 21,
+      "care_celebration_total": 21,
+      "provider_attempts": [
+        36,
+        42
+      ],
+      "usage_input_cached_output": [
+        [
+          88983,
+          80848,
+          802
+        ],
+        [
+          103981,
+          101240,
+          971
+        ]
+      ],
+      "elapsed_ms": [
+        76863,
+        68406
+      ],
+      "limitation": "did not represent accumulated real care history; real acceptance failed"
+    },
+    {
+      "arm_order": "sequential, failed repair baseline then actual-draft candidate",
+      "contexts": 12,
+      "samples_per_arm": 3,
+      "final_outcomes_per_arm": 36,
+      "posted_answers_per_arm": 33,
+      "correct_abstentions_per_arm": 3,
+      "care_celebration_baseline_pass": 20,
+      "care_celebration_candidate_pass": 21,
+      "care_celebration_total": 21,
+      "provider_attempts": [
+        42,
+        41
+      ],
+      "usage_input_cached_output": [
+        [
+          107618,
+          103035,
+          963
+        ],
+        [
+          105676,
+          104701,
+          882
+        ]
+      ],
+      "elapsed_ms": [
+        73961,
+        67139
+      ],
+      "new_control_regression_observed": false,
+      "limitation": "synthetic repeated care context; no independent human-care benchmark or randomized latency estimate"
+    }
+  ],
+  "actual_candidate_handler": {
+    "first_sentences": 3,
+    "first_words": 20,
+    "revised_sentences": 1,
+    "revised_words": 12,
+    "real_provider_attempts": 2,
+    "elapsed_ms_with_http": 8656,
+    "second_gateway": false,
+    "distinct_readiness_before_construction": true,
+    "development_learning": 0,
+    "raw_answer_retained": false
+  },
+  "installed_gateway": {
+    "cases": 7,
+    "authenticated_posts": 6,
+    "correct_abstentions": 1,
+    "provider_attempts": 9,
+    "successful_brevity_repairs": 2,
+    "one_source_reuse_refusal": true,
+    "cases_metrics": [
+      {
+        "case": "care",
+        "words": 12,
+        "sentences": 1,
+        "latency_ms": 10014,
+        "pass": true
+      },
+      {
+        "case": "care_holdout",
+        "words": 14,
+        "sentences": 1,
+        "latency_ms": 11314,
+        "pass": true
+      },
+      {
+        "case": "humor",
+        "words": 12,
+        "sentences": 1,
+        "latency_ms": 3865,
+        "pass": true
+      },
+      {
+        "case": "baseball",
+        "words": 4,
+        "sentences": 2,
+        "latency_ms": 10705,
+        "pass": true
+      },
+      {
+        "case": "past",
+        "words": 43,
+        "sentences": 2,
+        "latency_ms": 3284,
+        "pass": true
+      },
+      {
+        "case": "date",
+        "words": 7,
+        "sentences": 1,
+        "latency_ms": 3857,
+        "pass": true
+      },
+      {
+        "case": "recipient",
+        "words": 0,
+        "sentences": 0,
+        "latency_ms": null,
+        "pass": true
+      }
+    ],
+    "source_claims_checked": true,
+    "ordinary_metadata_disclaimers": 0,
+    "exact_date_fabrication": false,
+    "raw_answer_retained": false
+  },
+  "audit": {
+    "channels": 3,
+    "latest_per_channel": 100,
+    "window_days": 14,
+    "target": 7,
+    "peer": 12,
+    "older_bot": 4,
+    "current_spontaneous": 0,
+    "ui_target": 5,
+    "ui_older_bot": 3,
+    "excluded_image_dependent_turns": 1,
+    "historical_context_windows": 7,
+    "historical_documents": 2,
+    "historical_grouped_blocks": 21,
+    "historical_target_blocks": 8,
+    "historical_peer_blocks": 13,
+    "new_human_trait": false,
+    "independent_human_holdout": false,
+    "general_fidelity_or_humor_gain": false
+  },
+  "diagnostics": {
+    "generation_requests": 7,
+    "provider_usage_events": 9,
+    "adapter_completion_logs": 5,
+    "authenticated_posts": 6,
+    "declined_followups": 1,
+    "quality_repairs": 2,
+    "still_overlong": 0,
+    "source_refresh_skips": 1,
+    "optional_failures": 0,
+    "errors": 0,
+    "warnings": 2,
+    "disconnects": 0,
+    "reply_failures": 0,
+    "learning_or_study_pauses": 0,
+    "raw_text_retained": false
+  },
+  "cost": {
+    "covered_month_estimate_usd": 0.226279,
+    "preexisting_unsettled_reservations": 1,
+    "run_attempts": 175,
+    "run_estimate_usd": 0.0133326,
+    "maintenance_attempts": 163,
+    "maintenance_estimate_usd": 0.008018325,
+    "runtime_attempts": 12,
+    "runtime_estimate_usd": 0.005314275,
+    "final_gateway_estimate_usd": 0.003774565,
+    "limits_usd": {
+      "runtime": 18,
+      "maintenance": 2,
+      "total": 20
+    },
+    "actual_billing": "unavailable",
+    "pre_guard_spend": "unknown",
+    "new_paid_service": false
+  },
+  "scope": {
+    "runtime_intake_and_allowlist": "unchanged",
+    "dm_intake": false,
+    "native_study_payload": "target only",
+    "native_pattern_gate": "closed",
+    "no_new_trait_or_schema": true,
+    "new_generated_draft_human_evidence": false,
+    "source_graph_withdrawal_spending_restore": false,
+    "schedule": "01/05/09/13/17/21 local, unchanged",
+    "scheduled_model_and_effort": "Sol/xhigh unchanged"
+  },
+  "remaining": [
+    "qualified H48/H55b abstractions and legacy review need evidence and specific peer-transfer approval",
+    "separate optional grounding audit approval remains unresolved",
+    "stock care wording, third-person operator phrasing and semantic humor variety",
+    "native peers/replies/threads/original pixels",
+    "selective skills/tools and generated U.P. aurora/trail-camera scenes",
+    "optional short factual repetition latency requires tracing and matched validation"
+  ],
+  "operations": [
+    "initial sandbox fetch DNS failure resolved with authorized fetch before source edits",
+    "initial merge succeeded server-side; local main checkout cleanup rejected because primary already holds main",
+    "version.env print rejected by auto-review; no retry or indirect read, safe container metadata and app transaction used",
+    "partial-guild permission false-negative resolved with authenticated guild roles before sends",
+    "initial diagnostic completion count corrected to separate early return from actual authenticated posts"
+  ],
+  "privacy": "public evidence includes no raw conversations, private message/source IDs or derived human observations; private receipts 0700/0600 with seven-day manual retention and withdrawal cleanup"
+}
