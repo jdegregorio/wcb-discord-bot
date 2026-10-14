@@ -121,3 +121,19 @@ Discord read buckets. Spaced same-case recheck is required before claiming route
 non-regression; no freshness bounds are relaxed or raw payloads retained.
 Six local exact-alias archive windows also match current ArchiveStore.context
 refs/line ranges:6target12peer grouped occurrences/two exports, zero provider calls.
+
+
+Spaced recheck passes both native cases with20/20 successful fresh source reads,
+identical packets and authenticated membership. Across the original seven exact
+matches and corrected native recheck, all nine current routes match. No provider
+calls in these probes, no freshness/timeouts changed. Back-to-back bucket reuse is
+a harness limitation, not evidence of changed graph behavior or a latency gain.
+Normal handler verification updates two existing native capture opportunities:
+8context nodes/12dependencies/1,039edges; claims/preferences/one value and34native
+messages remain unchanged. Lookup alone is byte-preserving in the shared-source
+regression. Private refs/counts retain0700/0600 and existing7day manual retention.
+
+PR113 contains the tested runtime,23 regressions and privacy-safe study/roadmap notes.
+All nine current routes and private invented growth comparison pass. Release and
+installed normal gateway acceptance remain pending. No raw exchanges, derived personal
+interpretation, source identifiers or bot answer text enter public artifacts.

@@ -3741,3 +3741,11 @@ counts.23candidate checks and matched actual owner-handler fictional capacity ch
 pass: baseline0/candidate4 graph observations,14/11words, two sentences/one request
 each. No source/learning/schema/provider/model/intake change or human fidelity gain.
 Full engineering gates, release and installed checks pending. [Study](evaluations/2026-10-14-graph-selection-study.md).
+
+H63 feature result:23/23candidate versus16fail/7pass on corrected exact baseline;
+all six gates1,107tests/96.86%/31modules/build. Actual owner fixture0versus4graph
+observations/one maintained post per arm. Nine current production-memory routes match;
+initial two native discrepancies are explained by source-read cancellations during
+immediate back-to-back harness reuse. Spaced recheck20/20fresh reads matches both.
+Existing source bounds remain unchanged. No new abstraction, personal interpretation
+or general humor/fidelity gain. PR113 opened/labeled/attached, required CI pending.
