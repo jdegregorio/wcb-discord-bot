@@ -1,22 +1,31 @@
 # Prioritized Trubot backlog
 
-H63 selected for 2.26.0: growing a relevant graph currently collapses lookup when
-independent observations together exceed prompt bounds. Ranked complete conflict
-components preserve at most four observations/five unique support and contrary
-sources, with at most64 freshness validations per call. Whole reviewed aliases
-rank by specificity, with deterministic ties and no semantic/persona inference.
-Transitive disagreements remain together or are omitted; another fitting component
-can still be retrieved. This enables broader qualified abstractions without new
-provider calls, schema, private population or behavior assumptions. Candidate focused
-checks and actual invented owner-handler capacity comparison pass; rollout pending.
-[Both phases and evidence](evaluations/2026-10-14-graph-selection-study.md).
+H63 is deployed and verified in 2.26.0: complete bounded graph retrieval survives
+memory growth, preserving transitive conflicts and source lifecycle. All six
+feature/merged gates pass1,107tests/96.86%/31modules; required PR/main/image CI and
+both architectures succeed.31installed source hashes/OCI revision match; actual
+installed owner-handler fixture keeps4observations versus0baseline. Nine existing
+actual-anchor memory routes match; back-to-back source-read timeouts are a corrected
+harness limitation, with20/20spaced fresh reads and unchanged freshness bounds.
 
-Next order remains broader independent H48/H21/H28 abstractions/legacy review,
-H64 applicability plus H22/H39/H51 care/semantic humor/cues, wider native linked
-context/original pixels, H61 selective skills/tools and generated U.P. aurora/
-trail-camera sharing. H55b specific transfer approval remains unresolved, native
-automatic patterns closed. Source/correction/withdrawal/privacy,18/2/20 guard,
-model/intake/study pacing and six-run schedule/notifications are unchanged.
+Fresh normal gateway8cases/7posts/one abstention:7semantic passes, one historical
+attribution failure. A peer stance is assigned to Andrew. Same-case first source
+packets/provider requests are identical across baseline/candidate, with zero calls
+to the changed selector; final baseline passes, candidate fails. Earlier baseline
+also exhibits a different content-grounding error. This is an existing synthesis
+vulnerability; do not claim every recall case passes or a measured general fidelity
+gain. H66 author-constrained historical synthesis is now first, ahead of H48 population.
+Stock care and familiar humor remain unresolved. No rollback can change a selector
+that the failed route does not execute; the scoped H63 increment remains healthy.
+[Final study](evaluations/2026-10-14-graph-selection-study.md) and [installed evidence](evaluations/2026-10-14-graph-selection-release.json).
+
+Next: H66 grounding correction with adversarial peer/polarity cases and held-out/
+actual Discord validation; H48/H21/H28 independent qualified abstractions/legacy
+review; H64 applicability plus H22/H39/H51 care/semantic humor/cues; broader native
+linked context/original pixels; H61 selective tools/generated U.P. scenes. H55b
+specific semantic-transfer approval remains unresolved and native automatic patterns
+closed. Preserve source/author/correction/withdrawal/privacy and shared18/2/20 guard;
+no source intake, model, service, study pacing, schedule or notification change.
 
 H62/H62a is deployed in 2.25.0: complete reviewed import preview plus one usable
 private conditional abstraction. Actual CLI preview preserves graph bytes/status/
@@ -48,7 +57,7 @@ no added service or recurring request; four matched packets shrink1,634-2,113 by
 not a general cost/latency claim. Care can still load the topic's abstraction while
 respecting its limits; selective admission remains an opportunity.
 
-Next ordered increments:
+Previous H62 order (superseded by H66 above):
 
 1. Broader qualified H48/H21/H28 abstractions, independent human held-outs and legacy
    qualification. H62 establishes one narrow conditional memory, not a full profile.
@@ -100,3 +109,20 @@ source intake, native pattern permission, study pacing, spending pool, schedule 
 notification change. Six standalone local01/05/09/13/17/21 Sol/xhigh runs retain fresh
 fetched-main managed worktrees, both planning phases, full gates/CI/tested merges,
 immutable releases/both images/scoped deployment and actual private Discord tests.
+
+
+H66 priority1: author-constrained historical synthesis. Evidence: one fresh normal
+attribution failure, current authored versus peer context, identical-input comparison
+with zero H63 selector calls; earlier baseline also fails content polarity. Benefit:
+supported natural memories preserve whose stance it was and what it actually meant.
+Mechanism remains a hypothesis: noisy adjacent context/freeform synthesis permits
+misbinding despite current labels. Dependencies: exact attributed source contexts,
+peer/bot/quoted exclusions and unchanged date/withdrawal authority. Acceptance: no
+peer stance promoted to target, no polarity reversal or invented dates; peer setup
+still supports humor/context where appropriate; direct natural recall/other-speaker/
+care/recipient controls pass. Validation: matched contextual human cases, adversarial
+synthetic peer/polarity cases, honest independent held-outs and fresh real Discord.
+Confidence high in observed failure, correction design and general rates unresolved.
+Operating impact must fit existing ledger; no paid service or provider pass selected.
+This material grounding issue justifies moving literal reliability ahead of broader
+abstract population. Independent non-regression evidence can change the order again.
