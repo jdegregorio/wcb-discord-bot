@@ -55,3 +55,14 @@ memory and makes no extra provider call; six authenticated sends remain authorit
 Final9runtimeattempts/twocare repairs, affectedcare10-11seconds. No rawdraft learning,
 newtrait/nativepayload/patternpermission/schema/ledger change or broadqualityclaim.
 [Final evidence](trubot-evolution/evaluations/2026-10-14-brief-reply-release.json).
+
+## Short reply continuity, H60a
+
+Candidate 2.24.2 exempts drafts with at most five lexical words and sixty characters
+from optional full-echo recovery. This avoids cosmetic novelty for small answers;
+it does not classify facts or grant memory authority. Initial source checks and
+independent length repair remain. Longer echoes/twelve-word passages keep one optional
+accounted, revalidated attempt. Short comic lines may repeat within this explicit bound.
+No first-request/model/prompt/schema/tool/intake change. H48/H55b abstract population,
+qualified legacy review and semantic humor remain next; H61 selective tools are only
+documented/exploratory. [Acceptance and results](trubot-evolution/evaluations/2026-10-14-short-continuity-study.md).

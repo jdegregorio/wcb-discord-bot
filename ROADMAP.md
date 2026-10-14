@@ -1,72 +1,36 @@
 # Trubot roadmap
 
-H59/H59b brief-draft correction is deployed and verified as2.24.1 after rollback of
-failed2.24.0. Next: qualified abstract episode population/contextual native studies/
-legacy qualification; emotional judgment and varied amplified humor; native peers/
-replies/threads/original pixels; selective skills/tools and generated Michigan U.P.
-aurora/trail-camera scenes with short natural captions and generated provenance.
-Specific approval/held-out/source-lifecycle/budget prerequisites remain authoritative.
+H60a bounded short reply continuity is selected for 2.24.2. Fresh 2.24.1 actual gateway
+recall spends two provider attempts on unchanged four-word output. The candidate
+exempts at most five words and sixty characters from cosmetic repetition recovery;
+initial memory checks, longer echoes and separate length repair remain authoritative.
+[Both planning phases and acceptance](docs/trubot-evolution/evaluations/2026-10-14-short-continuity-study.md).
+H59/H59b 2.24.1 is complete; the failed 2.24.0 remains immutable prerelease after rollback.
 
-[The evolution plan](docs/trubot-evolution/plan.md) owns current priorities and
-[evidence](docs/trubot-evolution/evaluations/2026-10-14-brief-reply-release.json).
-Earlier detail below is historical.
+Next ordered increments match [plan](docs/trubot-evolution/plan.md) and
+[backlog](docs/trubot-evolution/backlog.md):
 
+1. Qualified H48/H55b abstract episode population, semantic native context and legacy
+   qualification. Specific transfer approval, attributed support/contrary episodes,
+   genuine human-held-outs and source/setup lifecycle are prerequisites. Zero active
+   qualified patterns remains unresolved. Archive pattern contracts remain eligible.
+2. Emotional judgment, contextual cues and varied approved humor amplification.
+   Validate meaning, care/recipient restraint and fresh Discord, separately from format.
+3. Broader native peer/reply/thread/original-pixel coverage and lifecycle.
+4. H61 selective skills/tools and generated Michigan U.P. aurora/trail-camera scenes,
+   short natural captions and generated provenance. Documented capabilities are not
+   project results. Validate relevance, sharing/timing, abstention and operating costs.
 
-Current order: H59 brief-reply correction through release; qualified H48/H55b
-abstract population/contextual native studies and legacy qualification; H22/H39/H51
-emotional/humor variety; broader native/visual episodes; selective tools/skills and
-generated Michigan U.P. aurora/trail-camera scenes. See
-[the maintained evolution plan](docs/trubot-evolution/plan.md) for prerequisites,
-acceptance, costs and evidence. Earlier status below is historical.
+Priority changed because the actual current flow proves unnecessary work; H60a is a
+supported harness correction, not a new human trait. A failed trial rejects rollout.
+Qualified human patterns or material grounding/privacy regressions can reorder work.
+Source text remains secondary to useful abstractions during ordinary conversation.
 
-
-Selected this run: H58a native study dependency lifecycle. Existing content-free
-setup captures now bind studies and their derived observations. Missed setup changes
-pause extraction/review/commit; known corrections or removal retire dependent memory.
-Same-case baseline17fail/7pass, candidate24/24. Actual private owner/handler baseline
-commits an obsolete invented observation; candidate blocks it. Engineering gain only.
-Target-only provider payloads and the native pattern gate remain unchanged. H55b
-semantic context integration requires specific peer-transfer approval plus held-outs.
-Both phases and criteria: [study](docs/trubot-evolution/evaluations/2026-10-13-native-study-context-study.md).
-
-Current verified production2.23.0 (PR104), immutable4cc40f2, healthy/Discordready.
-All six feature/merged gates, CI/images/hashes and installed real Discord lifecycle
-acceptance pass. Prior interrupted2.22.2 runtime/receipts are reconciled. Semantic
-peer-transfer approval and genuine human-held-out qualification remain open; target-only
-payloads/native pattern gate unchanged. Three legacy observations remain unlinked.
-
-Next ordered increments:
-1. H48/H21/H28 qualified abstract population coupled with H55b/H54b/H50 contextual
-   native study integration. Use attributed episodes, contrary cases and genuine
-   human-held-out comparison. Recheck full dependencies before both provider passes
-   and atomic commit; link derived observations to context invalidation before opening
-   the native pattern gate. Archive patterns remain eligible under existing contracts.
-2. H22/H39/H51 brevity, semantic variety and cue reliability. Fresh care controls use
-   three short sentences and a recurring preface; humor can paraphrase an older premise.
-   Same-model matched cases must improve useful comic turns without factual inventions,
-   recipient mistakes or insensitive timing. No general2-3xhumor gain established.
-3. Broader native peers/replies/threads/original pixels with honest coverage gaps,
-   authenticated scope and correction/deletion/withdrawal handling.
-4. Selective skills/tools and generated Michigan U.P. aurora/trail-camera wildlife,
-   short natural captions and generated provenance. Validate original pixels,
-   sharing/timing, abstention and operating estimates withinUSD20.
-
-Priorities changed because the deployed full-cycle audit exposed a partial freshness
-result that simple timeout/ordering changes did not repair. Complete this supported
-transport correction before using native context in derived character learning.
-Genuine qualified human abstractions or a material behavioral regression can reorder
-future work. Keep source audit text secondary to abstractions in ordinary conversation.
-The prior specific optional private-provider grounding audit remains unexecuted;
-strict preference/historical semantic audit gaps are not silently marked resolved.
-
-Retain bot identity and approved creative amplification/Thomas Jones bits, accurate
-internal dates/unknowns, private evidence and source attribution. Bot/peer/development/
-quoted/OCR text never establishes Andrew beliefs. Runtime keeps league allowlist/noDMs,
-owner-only private development recall, USD18runtime/USD2maintenance/USD20monthly guard,
-original capture30-day lifetime and existing app volume. No new service/model/schema,
-source replay or provider request from this feature. Six standalone local01/05/09/13/
-17/21runs, Sol/xhigh and notifications unchanged. Every run fetches main/new managed
-worktree, completes both planning phases, six gates/required CI/tested merge/immutable
-release/both architectures/scoped deployment and real private Discord smoke tests.
-
-[Complete research and release evidence](docs/trubot-evolution/evaluations/2026-10-13-native-freshness-study.md).
+Preserve bot identity, approved creative amplification/Thomas Jones bits, authenticated
+attribution, unknown dates internally, private evidence, correction/deletion/withdrawal,
+runtime allowlist/no DMs, owner-only private development recall, existing volume and
+USD 18 runtime/USD 2 maintenance/USD 20 monthly spending guard. No new model/service,
+source replay, schedule or notification change. Keep six standalone local 01/05/09/13/
+17/21 Sol/xhigh runs, fetched-main new managed worktrees, both planning phases, full
+gates/required CI/tested merges/immutable releases/both images/scoped deployments and
+actual private Discord smoke tests. Prior detail remains in research/progress/Git history.

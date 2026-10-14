@@ -2087,3 +2087,26 @@ legacy native observations remain unqualified for the new context contract. Targ
 payloads/native gate unchanged. No general fidelity/humor gain claimed. H55b semantic
 transfer is specifically approval-gated; H48 genuine contextual held-outs and legacy
 qualification remain next. See release evidence for counts/limitations/costs.
+
+## 2026-10-14 05:00 - H60a short reply continuity selection
+
+Both planning phases and locked criteria: [study](evaluations/2026-10-14-short-continuity-study.md).
+Fresh normal gateway baseline confirms two accounted requests with unchanged four-word
+factual output. Seventeen new baseline failures/two substantial-echo controls support
+bounded short continuity, so tiny answers avoid cosmetic latency/cost. Candidate passes
+100 focused optional-quality safeguards; matched provider trials and release pending.
+Three-channel authenticated fourteen-day audit: 7 target/12 peer/4 older bot/0 current
+spontaneous. Two older bot and three target turns inspected with setup; image-dependent
+turn excluded without pixels. No new trait or genuine human-held-out quality claim.
+Next H48/H55b qualified abstractions/legacy review, emotional/semantic humor variety,
+wider native/visual coverage, H61 selective tools/generated outdoors. Specific earlier
+transfer approvals remain unresolved; no rejected payload replay. Current official tools
+are documented possibilities, not tested Trubot capabilities or measured quality.
+
+H60a candidate evidence: corrected six causal pairs have identical first requests,
+first drafts and final answers; baseline 12 requests versus six. Initial general cohort
+missed exact echo due punctuation and supports controls only. All 32 general outcomes
+reviewed without a new control regression. Actual same-owner-anchor source-backed handler
+checks drop from two to one, keeping one accounted request and supported natural content.
+The initial uncached-source harness is excluded from grounding acceptance and preserved
+as a limitation. Full gates 1,071 tests/96.87% pass. Installed gateway acceptance pending.

@@ -3620,3 +3620,25 @@ It changes documentation only. Runtime, tests, version and lockfile are identica
 released commit e761f965c92b311789a334f023e727f6549e41de. The run's three PRs are
 attached to its chat and labeled codex and codex-automation. Private receipt refs and
 quality logs are preserved before archiving only this run's managed worktree.
+
+## 2026-10-14 05:00 - H60a short reply continuity
+
+Base 66de3e9a1c30eba98cbcb4585e0ff67d11d572ab; new managed worktree and unique
+feature/trubot-daily-20261014-0500 branch. Prior evolution complete, no unfinished PR.
+Primary checkout untouched. Fetch used authorized network after sandbox DNS failure.
+Both planning phases and fresh actual gateway reproduction preceded runtime changes.
+Selected bounded short continuity after two accounted calls with unchanged four-word
+output; baseline 17 new failures/2 controls, candidate 100 focused checks pass.
+[Locked study](evaluations/2026-10-14-short-continuity-study.md).
+Full gates, matched studies, release/deployment and actual acceptance pending.
+
+Candidate evidence: 100 focused checks, all six final feature gates, 1,071 tests,
+96.87% coverage/31 typed modules/build. Corrected six causal pairs: first requests/drafts/
+finals identical, requests 12 to six. General 8-context/2-sample cohort: 32 final outcomes,
+28 posts/4 abstentions, no new control regression in manual review. Initial punctuation
+mismatch did not exercise exact echo and is not counted as causal. Actual source-backed
+same-owner-anchor handler baseline/candidate: memory checks 2 to 1, one accounted request
+each, handler time 10,572/4,641ms; sequential one-pair timing is limited. Initial missing
+native channel cache trial is excluded from grounding acceptance. Production heartbeat
+verified after validation clients close; no second gateway/development learning/raw answer
+artifact. Runtime merge/release/deployment and fresh normal gateway acceptance pending.

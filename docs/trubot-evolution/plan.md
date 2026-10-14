@@ -1,48 +1,45 @@
 # Trubot evolution plan
 
-Selected H59b: bounded actual-draft repair, so recurring three-part acknowledgements
-fit the existing brief voice contract. Initial2.24.0 passed the sparse synthetic trial
-but failed actual accumulated-history care acceptance; it was marked prerelease and
-rolled back to2.23.0. The correction gives the optional repair the actual fallible
-bot draft and repeats the original focus/author scope, reserving those text bytes.
-Matched history stress20/21to21/21briefcare/celebration,36finalcasesperarm; actual
-candidateowner/handler3sentences/20wordsto1sentence/12words, sincereandreviewed.
-32final safeguards; no new control regression observed. No general character/humor
-or human-memory gain. [Research and rollback](evaluations/2026-10-14-brief-reply-study.md).
+Selected H60a: bounded short reply continuity, so brief stable answers avoid cosmetic
+rechecks and regeneration. Fresh actual 2.24.1 gateway reproduction makes two accounted
+provider attempts and posts the same four-word answer. The full-echo recognizer treats
+24 characters as substantial. Candidate exempts at most five lexical words and sixty
+characters; longer echoes/passages and independent brevity repair remain eligible.
+It grants no factual authority and leaves initial memory verification authoritative.
+[Both planning phases and locked criteria](evaluations/2026-10-14-short-continuity-study.md).
+Full quality, matched trials and installed release acceptance are pending.
 
-Verifiedproduction2.24.1/c2553b4healthy/Discordready/0restarts, all31installedsource
-hashesmatch testedruntimee761f96. Seven normalgatewaycontrolsPASS, care3sentencesto1,
-with grounded natural ordinary recall/dateuncertainty/recipientrestraint. Affected
-caretakes10-11seconds; no generalfidelity/humormultiplier is claimed.2.24.0 remains
-immutableprerelease after verifiedrollback. H59/H59bcomplete; evidence merge follows.
-[Complete outcome](evaluations/2026-10-14-brief-reply-release.json).
+H59/H59b is complete in 2.24.1 after verified rollback of failed 2.24.0. Its actual-draft
+length repair remains. No new human trait or general fidelity/humor multiplier is claimed.
+[Previous release evidence](evaluations/2026-10-14-brief-reply-release.json).
 
 Next ordered increments:
-1. H48/H21/H28 qualified abstract population coupled with H55b/H54b/H50 semantic
-   native context integration and legacy qualification. Require specific peer-transfer
-   approval, attributed support/contrary episodes, genuine human-held-outs and source/
-   setup invalidation before opening the native pattern gate. Archive studies remain
-   eligible, but no qualified active pattern has been established.
+1. H48/H21/H28 qualified abstract episode population coupled with H55b/H54b/H50
+   semantic native context integration and legacy qualification. Require approved
+   private semantic study, attributed independent support/contrary episodes, applicability,
+   genuine human-held-outs and source/setup invalidation. Specific peer-transfer and
+   optional grounding-audit approvals remain unresolved. Archive pattern contracts remain
+   eligible; zero active qualified patterns is an evidence gap, not completed learning.
 2. H22/H39/H51 emotional judgment, semantic humor variety and cue reliability.
-   H59 enforces length only; stock wording, gentle setback punchlines and familiar
-   comic premises need matched meaning-based evaluation and actual Discord checks.
+   Short-repeat and length checks address format only. Validate stock care wording,
+   contextual comic turns and approved creative amplification through matched meaning
+   review, human contextual evidence and fresh Discord conversations.
 3. Broader native peers/replies/threads/original pixels, with authenticated scope,
-   source lifecycle and honest historical/visual coverage gaps.
-4. Selective skills/tools and generated Michigan U.P. aurora/trail-camera wildlife,
-   short natural captions and generated provenance. Validate sharing/timing, original
-   pixels, held-outs, abstention and USD20 operating estimates.
+   source lifecycle and honest historical/visual gaps.
+4. H61 selective skills/tools and generated Michigan U.P. aurora/trail-camera wildlife
+   with short natural captions and generated provenance. Current official tool capabilities
+   are documented, not tested here. Validate relevance, sharing/timing, original pixels,
+   tool failure/abstention and USD 20 operating estimates before production.
 
-H59 moved ahead of approval-gated population because a current user flow reproduced
-a supported contract defect without requiring new private transfers. A failed trial,
-qualified human pattern or material grounding/privacy regression can reorder work.
-No rejected provider payload is retried; three legacy observations remain unlinked.
-Source text remains auditing evidence, secondary to useful qualified abstractions.
+H60a moved ahead of unresolved population after actual unnecessary-work reproduction.
+A failed same-case trial rejects it; qualified human abstractions or a material grounding/
+privacy regression can reorder work. Source audit text stays secondary to abstractions.
 
-Preserve bot identity, approved creative amplification and Thomas Jones bits,
-private attribution/unknown dates/withdrawal, runtime league allowlist/noDMs,
-owner-only confirmed development scope, USD18runtime/USD2maintenance/USD20monthly
-ledger, existing volume/retention and six standalone01/05/09/13/17/21Sol/xhighruns.
-No new model/service/schema/intake/spending pool, schedule or notification change.
-All runs fetch main/new managed worktree, finish both planning phases, six gates,
-required CI/tested merge/immutable release/both images/scoped deployment and actual
-private Discord smoke tests. Never equate healthy transport with measured fidelity.
+Preserve bot identity, approved creative amplification/Thomas Jones bits, private evidence,
+source attribution and unknown dates, correction/deletion/withdrawal, runtime league
+allowlist/no DMs, owner-only confirmed development recall and the existing app volume.
+The shared USD 18 runtime/USD 2 maintenance/USD 20 monthly ledger remains authoritative.
+No new model, paid service, schema, intake, spending pool, schedule or notification setting.
+Keep six standalone 01/05/09/13/17/21 Sol/xhigh runs, new fetched-main managed worktrees,
+both planning phases, all six gates, required CI, tested merges, immutable releases,
+both image architectures, scoped deployment and actual private Discord smoke tests.
