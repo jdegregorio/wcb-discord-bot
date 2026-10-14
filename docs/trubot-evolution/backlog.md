@@ -1,6 +1,6 @@
 # Prioritized Trubot backlog
 
-Selected H59, candidate2.24.0: brief-reply repair. Evidence: fresh real care repro,
+Selected H59, candidate2.24.1: brief-reply repair. Evidence: fresh real care repro,
 9baseline regression failures,31final safeguard cases, matched care/celebration
 brevity17/21to21/21. Benefit: concise specific engagement, so formulaic three-part
 acknowledgements do not crowd conversation. Dependencies: same shared optional
@@ -10,7 +10,9 @@ exceptions, failure/cancel/budget controls, all gates and real installed Discord
 Confidence: supported narrow length correction; general voice/emotional quality open.
 Operating impact: six additional maintenance attempts over36candidate trial cases,
 at most one shared optional repair per reply, no new service/model/storage/intake.
-Full [study](evaluations/2026-10-14-brief-reply-study.md). Release acceptance pending.
+Full [study](evaluations/2026-10-14-brief-reply-study.md). Initial2.24.0 failed actual acceptance and was rolled back/prerelease. H59b actual
+draft revision passes owner/handler3sentencesto1, matchedhistory20/21to21/21,
+32safeguards; candidate2.24.1 awaits normal installed release acceptance.
 
 Next priority order and decision triggers follow [plan](plan.md): H48/H55b qualified
 abstractions/contextual integration/legacy review, H22/H39/H51 emotional and semantic

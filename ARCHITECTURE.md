@@ -328,3 +328,9 @@ ambient replies retain runway. Current-source checks precede private reuse; the
 same ledger purpose accounts for the request without optional transport retries.
 Unavailable/empty/incomplete/still-overlong repair preserves the original. No new
 source context, storage, tool, model or provider study payload is introduced.
+
+The2.24.1 length repair includes the actual fallible assistant draft and a revision
+of the original focused message, so accumulated three-part bot acknowledgements do
+not define the replacement. Author binding is repeated at that focus; images remain
+in the original input exactly once. The serialized extra text joins the reservation.
+Repetition-only payloads stay unchanged. No bot draft becomes human learning evidence.

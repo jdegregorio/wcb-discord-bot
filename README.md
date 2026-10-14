@@ -582,7 +582,7 @@ target-only and automatic native personality patterns remain gated. See the
 [evolution plan](docs/trubot-evolution/plan.md) for semantic-learning prerequisites.
 
 
-## Brief ordinary replies (2.24.0)
+## Brief ordinary replies (2.24.1)
 
 An ordinary addressed draft with more than two prose sentences or sixty words can
 receive one complete shorter attempt, shared with repetition recovery. It keeps the

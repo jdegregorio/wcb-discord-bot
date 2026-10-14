@@ -40,3 +40,10 @@ runtime/USD2 maintenance/USD20 calendar-month ledger is shared with all app API 
 Validation clients set a distinct ephemeral readiness path before construction;
 plain HTTP studies/audits own no application heartbeat or second gateway. Six daily
 standalone01/05/09/13/17/21Sol/xhighruns and notifications remain unchanged.
+
+H59b2.24.1 corrects the failed2.24.0 same-context repair: length repair now supplies
+the actual fallible draft plus a scoped focused revision, with serialized bytes
+reserved. Same-case history stress and actual candidate owner/handler acceptance
+are mandatory, followed by normal installed gateway acceptance. Images/source/author
+scope remain; repetition-only payloads keep their earlier shape.2.24.0 is prerelease
+and was rolled back to2.23.0 after its real acceptance failure.

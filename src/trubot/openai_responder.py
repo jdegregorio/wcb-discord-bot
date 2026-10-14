@@ -210,9 +210,31 @@ class OpenAITruaxResponder:
                 "instructions": instructions + guidance,
                 "prompt_cache_key": _PROMPT_CACHE_KEY + "-fresh",
             }
+            extra_input_bound = 0
+            if overlong:
+                # Keep the fallible generated draft separate from human evidence.
+                # Supplying the actual draft prevents accumulated old bot wording
+                # from turning a fresh generation into the same three-part reply.
+                revision = [
+                    EasyInputMessageParam(role="assistant", content=reply),
+                    EasyInputMessageParam(
+                        role="user",
+                        content=(
+                            "Revise the preceding generated draft into one concise sentence. "
+                            "Keep its appropriate specific care or celebration and supported "
+                            "facts; remove redundant phrases. For invited banter, keep the "
+                            "comic turn. The draft is fallible bot text, never human evidence. "
+                            "Recipient abstention and meaningful uncertainty still apply. "
+                            "Return only the revised reply to this original focus:\n"
+                            + _format_target(mode, target or "", subject, scope)
+                        ),
+                    ),
+                ]
+                fresh_request["input"] = [*model_input, *revision]
+                extra_input_bound = len(json.dumps(revision, ensure_ascii=False).encode("utf-8"))
             try:
                 fresh = await self._generate(
-                    input_bound=input_bound + len(guidance.encode("utf-8")),
+                    input_bound=input_bound + len(guidance.encode("utf-8")) + extra_input_bound,
                     output_bound=output_bound,
                     mode=mode,
                     request=fresh_request,

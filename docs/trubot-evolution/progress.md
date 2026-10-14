@@ -3556,3 +3556,23 @@ Line-length lint failure corrected and complete gates rerun. TrialUSD0.004066880
 maintenance/78settledattempts, plus actual baseline questionUSD0.000599750;
 coveredOctoberUSD0.217613030/onepreexistingunsettledreservation. Estimates, not
 billing; pre-guardspendunknown. Release and installed acceptance still pending.
+
+
+### H59a real acceptance failure and H59b correction
+
+PR106merged922c260237c8b74367c4aa480c394390cba9eb70, CI38534523682/
+38534769398/38535048934success. Immutable2.24.0/f5179a0 deployedhealthy/all31source
+hashesmatch, but fresh actualcare remains3sentences. Logs confirm1repair/2accounted
+attempts/noerrors/stilloverlongfallback. Synthetic trials omitted accumulated chat.
+The release is marked prerelease/notlatest, tagbytesunchanged; scopedtransaction
+rollbackrestored2.23.0/4cc40f2healthy/Discordready. No source/state/ledger restore.
+
+H59b supplies actualfalliblebotdraft and repeats originalfocus/authorbinding in the
+same optional attempt, reserving its serialized bytes. Repetition-only shape and
+imagecountremain.32finalfocused cases include author/image protection; testfixture
+corrected to use authoritative memory-origin binding, rather than expecting a focus
+label to establish identity. Actualcandidateowner/handler H59B: firstdraft3sentences/
+20words, accountedrevision1sentence/12words, actualsendreviewednatural/sincere.
+Distinct readinessbeforeconstruction, nosecondgateway/developmentlearning/rawartifact;
+primaryheartbeathealthyafterclose. Same-model accumulated-history matched trial and
+allreleasegates remain pending. Same coherent dailyincrement, candidate2.24.1.
