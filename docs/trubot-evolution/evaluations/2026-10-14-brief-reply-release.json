@@ -271,5 +271,6 @@
     "partial-guild permission false-negative resolved with authenticated guild roles before sends",
     "initial diagnostic completion count corrected to separate early return from actual authenticated posts"
   ],
-  "privacy": "public evidence includes no raw conversations, private message/source IDs or derived human observations; private receipts 0700/0600 with seven-day manual retention and withdrawal cleanup"
+  "privacy": "public evidence includes no raw conversations, private message/source IDs or derived human observations; private receipts 0700/0600 with seven-day manual retention and withdrawal cleanup",
+  "completion_evidence_pr": 108
 }
