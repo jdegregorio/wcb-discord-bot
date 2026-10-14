@@ -342,3 +342,13 @@ full-echo recovery. This avoids a cosmetic source recheck/provider request after
 answer. First generation/source checks are unchanged; independent brevity repair still
 runs. Six-word or longer-than-sixty-character echoes and twelve-word passages retain
 existing recovery. No new model, prompt, storage, intake, tool or spending pool.
+
+
+## Reviewed rollout previews, 2.25.0
+
+The operator import CLI can validate a whole batch with `--dry-run`. Prospective
+writes use the same source/withdrawal lock and validation as committed imports, then
+roll back. Beliefs, edges, checkpoints and backups stay unchanged. A later commit
+revalidates sources; preview grants no enduring approval or authority to channel text.
+Private qualified population remains independent of packaged code and needs actual
+behavioral acceptance, expiry, source/contrary lifecycle and operator retirement.

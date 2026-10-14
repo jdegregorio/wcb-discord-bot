@@ -1,0 +1,698 @@
+{
+  "schema": 1,
+  "run": "2026-10-14-0900",
+  "base_sha": "ad3c4e514704e777935bade5b1fadef878885bc9",
+  "feature_sha": "676c376dd731804d858bc410b7b18d02c7418f15",
+  "runtime_sha": "7f2710a7af29947bbf149eee1de5a860f6ba5a94",
+  "runtime_pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/111",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.25.0",
+  "ci": {
+    "pr": 38597368346,
+    "main": 38597741654,
+    "images": 38598047810,
+    "conclusion": "success"
+  },
+  "image": {
+    "index": "sha256:5f1e9cc8c904efe908973ed293149381573239824d2ff08f798934566026ee8d",
+    "amd64": "sha256:409efabc8bb8dbc0763c4a830b8da087fedeb94f1c9d7df50ec5643e7d383b7b",
+    "arm64": "sha256:7c570f4e0199af04755b8d074eb0031d4764b0f54ed0333bc7bbced6110d557a",
+    "previous_version": "2.24.2",
+    "previous_index": "sha256:c75799ddee36c8804e96869590a1071dba5e828fbc99529692807fe26787c31b",
+    "rollback_used": false
+  },
+  "quality": {
+    "gates": 6,
+    "tests": 1084,
+    "branch_coverage_percent": 96.88,
+    "typed_modules": 31,
+    "new_preview_checks": 13,
+    "baseline_preview_failures": 12
+  },
+  "study_limits": [
+    "One Codex evaluator, no independent human review.",
+    "Two distinct supports and one contrary source; one compatible independent human held-out, overlap excluded.",
+    "Grouped-block occurrences are not independent messages or episodes.",
+    "Baseline already natural; qualified population and non-regression demonstrated, broad fidelity/humor gain unmeasured.",
+    "Abstract packet can load in a care question mentioning its topic; applicability preserved in replies.",
+    "Sequential sampling/cache variance precludes latency claims.",
+    "Native semantic peer transfer and optional private audit approval gaps remain.",
+    "Sparse current league activity; short error window, no general error-rate claim."
+  ],
+  "harness_corrections": [
+    "Initial clone exceeded16 MB tmpfs; owned private app-volume clones erased on completion.",
+    "Initial installed CLI manifest lacked private parent; privacy check rejected before state change; app-owned 0700parent used."
+  ],
+  "no_new_model_service_scope_guard_schedule_notifications": true,
+  "raw_text_or_personal_interpretation_public": false,
+  "lifecycle": {
+    "preview_unchanged": true,
+    "conditional_retrieval": true,
+    "wrong_guild": true,
+    "unrelated": true,
+    "expired": true,
+    "contrary_removal": true,
+    "support_removal_0": true,
+    "support_removal_1": true,
+    "withdrawal": true
+  },
+  "controlled-baseline": {
+    "time": "2026-10-14T16:16:43.762375+00:00",
+    "arm": "baseline",
+    "cases": [
+      {
+        "case": "depth",
+        "posted": true,
+        "words": 24,
+        "sentences": 2,
+        "packets": [
+          {
+            "nonempty": true,
+            "abstract": false,
+            "audit": false,
+            "bytes": 6657
+          }
+        ],
+        "requests": [
+          {
+            "ms": 2296,
+            "usage": true
+          }
+        ],
+        "elapsed_ms": 3300,
+        "raw_text_retained": false,
+        "manual_semantic_review_required": true
+      },
+      {
+        "case": "waivers",
+        "posted": true,
+        "words": 34,
+        "sentences": 2,
+        "packets": [
+          {
+            "nonempty": true,
+            "abstract": false,
+            "audit": false,
+            "bytes": 7006
+          }
+        ],
+        "requests": [
+          {
+            "ms": 1940,
+            "usage": true
+          }
+        ],
+        "elapsed_ms": 2902,
+        "raw_text_retained": false,
+        "manual_semantic_review_required": true
+      },
+      {
+        "case": "firm",
+        "posted": true,
+        "words": 16,
+        "sentences": 1,
+        "packets": [
+          {
+            "nonempty": true,
+            "abstract": false,
+            "audit": false,
+            "bytes": 7123
+          },
+          {
+            "nonempty": true,
+            "abstract": false,
+            "audit": false,
+            "bytes": 7123
+          }
+        ],
+        "requests": [
+          {
+            "ms": 2607,
+            "usage": true
+          },
+          {
+            "ms": 2128,
+            "usage": true
+          }
+        ],
+        "elapsed_ms": 7196,
+        "raw_text_retained": false,
+        "manual_semantic_review_required": true
+      },
+      {
+        "case": "care",
+        "posted": true,
+        "words": 17,
+        "sentences": 2,
+        "packets": [
+          {
+            "nonempty": true,
+            "abstract": false,
+            "audit": false,
+            "bytes": 7051
+          }
+        ],
+        "requests": [
+          {
+            "ms": 1755,
+            "usage": true
+          }
+        ],
+        "elapsed_ms": 2918,
+        "raw_text_retained": false,
+        "manual_semantic_review_required": true
+      },
+      {
+        "case": "recipient",
+        "posted": false,
+        "words": 0,
+        "sentences": 0,
+        "packets": [
+          {
+            "nonempty": true,
+            "abstract": false,
+            "audit": false,
+            "bytes": 2986
+          }
+        ],
+        "requests": [
+          {
+            "ms": 1051,
+            "usage": true
+          }
+        ],
+        "elapsed_ms": 1861,
+        "raw_text_retained": false,
+        "manual_semantic_review_required": true
+      }
+    ],
+    "development_learning": 0,
+    "second_gateway": false,
+    "distinct_readiness_before_construction": true,
+    "same_real_owner_anchors": true
+  },
+  "controlled-candidate": {
+    "time": "2026-10-14T16:17:09.364361+00:00",
+    "arm": "candidate",
+    "cases": [
+      {
+        "case": "depth",
+        "posted": true,
+        "words": 44,
+        "sentences": 2,
+        "packets": [
+          {
+            "nonempty": true,
+            "abstract": true,
+            "audit": false,
+            "bytes": 4935
+          }
+        ],
+        "requests": [
+          {
+            "ms": 2194,
+            "usage": true
+          }
+        ],
+        "elapsed_ms": 3329,
+        "raw_text_retained": false,
+        "manual_semantic_review_required": true
+      },
+      {
+        "case": "waivers",
+        "posted": true,
+        "words": 34,
+        "sentences": 2,
+        "packets": [
+          {
+            "nonempty": true,
+            "abstract": true,
+            "audit": false,
+            "bytes": 5372
+          }
+        ],
+        "requests": [
+          {
+            "ms": 1699,
+            "usage": true
+          }
+        ],
+        "elapsed_ms": 2698,
+        "raw_text_retained": false,
+        "manual_semantic_review_required": true
+      },
+      {
+        "case": "firm",
+        "posted": true,
+        "words": 20,
+        "sentences": 1,
+        "packets": [
+          {
+            "nonempty": true,
+            "abstract": true,
+            "audit": false,
+            "bytes": 5010
+          },
+          {
+            "nonempty": true,
+            "abstract": true,
+            "audit": false,
+            "bytes": 5010
+          }
+        ],
+        "requests": [
+          {
+            "ms": 1697,
+            "usage": true
+          },
+          {
+            "ms": 2732,
+            "usage": true
+          }
+        ],
+        "elapsed_ms": 5521,
+        "raw_text_retained": false,
+        "manual_semantic_review_required": true
+      },
+      {
+        "case": "care",
+        "posted": true,
+        "words": 17,
+        "sentences": 2,
+        "packets": [
+          {
+            "nonempty": true,
+            "abstract": true,
+            "audit": false,
+            "bytes": 5010
+          }
+        ],
+        "requests": [
+          {
+            "ms": 1196,
+            "usage": true
+          }
+        ],
+        "elapsed_ms": 2025,
+        "raw_text_retained": false,
+        "manual_semantic_review_required": true
+      },
+      {
+        "case": "recipient",
+        "posted": false,
+        "words": 0,
+        "sentences": 0,
+        "packets": [
+          {
+            "nonempty": true,
+            "abstract": false,
+            "audit": false,
+            "bytes": 2986
+          }
+        ],
+        "requests": [
+          {
+            "ms": 1214,
+            "usage": true
+          }
+        ],
+        "elapsed_ms": 1964,
+        "raw_text_retained": false,
+        "manual_semantic_review_required": true
+      }
+    ],
+    "development_learning": 0,
+    "second_gateway": false,
+    "distinct_readiness_before_construction": true,
+    "same_real_owner_anchors": true
+  },
+  "installed": {
+    "time": "2026-10-14T16:33:10.318186+00:00",
+    "version": "2.25.0",
+    "source_hash_count": 31,
+    "installed_source_match": true,
+    "actual_cli_preview_validated": 1,
+    "preview_bytes_status_backups_unchanged": true,
+    "actual_cli_committed": 1,
+    "conditional_abstract_retrieval": true,
+    "qualified_supports": 2,
+    "contrary_sources": 1,
+    "tentative": true,
+    "expiry_present": true,
+    "primary_discord_ready": true,
+    "raw_text_retained": false
+  },
+  "installed-packets": {
+    "time": "2026-10-14T16:42:32.959497+00:00",
+    "cases": [
+      {
+        "case": "depth",
+        "memory_nonempty": true,
+        "abstract": true,
+        "expected_abstract": true,
+        "audit_counts": false,
+        "raw_text_retained": false
+      },
+      {
+        "case": "waivers",
+        "memory_nonempty": true,
+        "abstract": true,
+        "expected_abstract": true,
+        "audit_counts": false,
+        "raw_text_retained": false
+      },
+      {
+        "case": "firm",
+        "memory_nonempty": true,
+        "abstract": true,
+        "expected_abstract": true,
+        "audit_counts": false,
+        "raw_text_retained": false
+      },
+      {
+        "case": "care",
+        "memory_nonempty": true,
+        "abstract": true,
+        "expected_abstract": true,
+        "audit_counts": false,
+        "raw_text_retained": false
+      },
+      {
+        "case": "baseball",
+        "memory_nonempty": true,
+        "abstract": false,
+        "expected_abstract": false,
+        "audit_counts": false,
+        "raw_text_retained": false
+      },
+      {
+        "case": "past",
+        "memory_nonempty": true,
+        "abstract": false,
+        "expected_abstract": null,
+        "audit_counts": false,
+        "raw_text_retained": false
+      },
+      {
+        "case": "own",
+        "memory_nonempty": true,
+        "abstract": false,
+        "expected_abstract": false,
+        "audit_counts": false,
+        "raw_text_retained": false
+      }
+    ],
+    "provider_calls": 0,
+    "actual_owner_anchors": true,
+    "distinct_ready_before_construction": true,
+    "second_gateway": false,
+    "development_learning": 0
+  },
+  "gateway": {
+    "time": "2026-10-14T16:42:13.538546+00:00",
+    "normal_gateway": true,
+    "owner_membership_verified": true,
+    "development_learning": 0,
+    "cases": [
+      {
+        "case": "depth",
+        "posted": true,
+        "words": 18,
+        "sentences": 2,
+        "manually_reviewed": true,
+        "raw_text_retained": false
+      },
+      {
+        "case": "waivers",
+        "posted": true,
+        "words": 28,
+        "sentences": 2,
+        "manually_reviewed": true,
+        "raw_text_retained": false
+      },
+      {
+        "case": "firm",
+        "posted": true,
+        "words": 22,
+        "sentences": 2,
+        "manually_reviewed": true,
+        "raw_text_retained": false
+      },
+      {
+        "case": "care",
+        "posted": true,
+        "words": 17,
+        "sentences": 2,
+        "manually_reviewed": true,
+        "raw_text_retained": false
+      },
+      {
+        "case": "baseball",
+        "posted": true,
+        "words": 4,
+        "sentences": 2,
+        "manually_reviewed": true,
+        "raw_text_retained": false
+      },
+      {
+        "case": "past",
+        "posted": true,
+        "words": 45,
+        "sentences": 2,
+        "manually_reviewed": true,
+        "raw_text_retained": false
+      },
+      {
+        "case": "date",
+        "posted": true,
+        "words": 17,
+        "sentences": 2,
+        "manually_reviewed": true,
+        "raw_text_retained": false
+      },
+      {
+        "case": "own",
+        "posted": true,
+        "words": 14,
+        "sentences": 2,
+        "manually_reviewed": true,
+        "raw_text_retained": false
+      },
+      {
+        "case": "humor",
+        "posted": true,
+        "words": 16,
+        "sentences": 2,
+        "manually_reviewed": true,
+        "raw_text_retained": false
+      },
+      {
+        "case": "recipient",
+        "posted": false,
+        "words": 0,
+        "sentences": 0,
+        "manually_reviewed": true,
+        "raw_text_retained": false
+      }
+    ],
+    "semantic_reviewed_passes": 10,
+    "semantic_review_limit": "Same Codex evaluator; sparse spontaneous activity, broad fidelity unmeasured."
+  },
+  "log-metrics": {
+    "time": "2026-10-14T16:42:34.544890+00:00",
+    "counts": {
+      "errors": 0,
+      "reply_failures": 0,
+      "disconnects": 0,
+      "study_pauses": 0,
+      "warnings": 2,
+      "requests": 11,
+      "repairs": 1,
+      "source_reuse_refusals": 0,
+      "posts": 9,
+      "followup_abstentions": 1,
+      "repetition_refreshes": 1,
+      "brevity_repairs": 0
+    },
+    "raw_logs_retained": false,
+    "cases": [
+      {
+        "case": "depth",
+        "requests": 1,
+        "repairs": 0,
+        "source_reuse_refusals": 0,
+        "repetition_refreshes": 0,
+        "brevity_repairs": 0
+      },
+      {
+        "case": "waivers",
+        "requests": 1,
+        "repairs": 0,
+        "source_reuse_refusals": 0,
+        "repetition_refreshes": 0,
+        "brevity_repairs": 0
+      },
+      {
+        "case": "firm",
+        "requests": 1,
+        "repairs": 0,
+        "source_reuse_refusals": 0,
+        "repetition_refreshes": 0,
+        "brevity_repairs": 0
+      },
+      {
+        "case": "care",
+        "requests": 2,
+        "repairs": 1,
+        "source_reuse_refusals": 0,
+        "repetition_refreshes": 1,
+        "brevity_repairs": 0
+      },
+      {
+        "case": "baseball",
+        "requests": 1,
+        "repairs": 0,
+        "source_reuse_refusals": 0,
+        "repetition_refreshes": 0,
+        "brevity_repairs": 0
+      },
+      {
+        "case": "past",
+        "requests": 1,
+        "repairs": 0,
+        "source_reuse_refusals": 0,
+        "repetition_refreshes": 0,
+        "brevity_repairs": 0
+      },
+      {
+        "case": "date",
+        "requests": 1,
+        "repairs": 0,
+        "source_reuse_refusals": 0,
+        "repetition_refreshes": 0,
+        "brevity_repairs": 0
+      },
+      {
+        "case": "own",
+        "requests": 1,
+        "repairs": 0,
+        "source_reuse_refusals": 0,
+        "repetition_refreshes": 0,
+        "brevity_repairs": 0
+      },
+      {
+        "case": "humor",
+        "requests": 1,
+        "repairs": 0,
+        "source_reuse_refusals": 0,
+        "repetition_refreshes": 0,
+        "brevity_repairs": 0
+      },
+      {
+        "case": "recipient",
+        "requests": 1,
+        "repairs": 0,
+        "source_reuse_refusals": 0,
+        "repetition_refreshes": 0,
+        "brevity_repairs": 0
+      }
+    ]
+  },
+  "source_study": {
+    "time": "2026-10-14T16:19:03.709650+00:00",
+    "windows": 21,
+    "documents": 6,
+    "target_block_occurrences": 39,
+    "peer_block_occurrences": 66,
+    "attributed_refs_current": true,
+    "calendar_dates_established": 0,
+    "raw_text_retained": false
+  },
+  "post_audit": {
+    "time": "2026-10-14T16:42:35.793507+00:00",
+    "counts": {
+      "target": 7,
+      "peer": 12,
+      "current_spontaneous_bot": 0,
+      "unavailable_channels": 0
+    },
+    "verified_human_member": true,
+    "development_owner_membership_permissions": true,
+    "raw_text_retained": false
+  },
+  "ledger": {
+    "month": "2026-10",
+    "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+    "timezone": "UTC",
+    "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+    "estimated_usd": 0.24451682,
+    "runtime_usd": 0.12404869,
+    "maintenance_usd": 0.12046813,
+    "monthly_limit_usd": 20,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "attempts": 1602,
+    "input_tokens": 4566672,
+    "cached_input_tokens": 3077407,
+    "output_tokens": 51011,
+    "unsettled_attempts": 1,
+    "pre_guard_spend": "unknown; not included"
+  },
+  "graph": {
+    "schema": 1,
+    "nodes": {
+      "captured_human": 11,
+      "claim": 2,
+      "concept": 4,
+      "episode": 554,
+      "human_source": 439,
+      "native_context": 6,
+      "native_context_dependency": 9,
+      "person": 1,
+      "preference": 1,
+      "value": 1,
+      "visual": 96
+    },
+    "edges": 1034,
+    "studies": {
+      "accepted": 1,
+      "rejected": 3
+    },
+    "study_vetoes": 0,
+    "checkpoints": 8
+  },
+  "learning": {
+    "schema": 1,
+    "retention_days": 180,
+    "max_messages": 10000,
+    "messages": 34,
+    "pending_corrections": 0,
+    "deletion_markers": 0,
+    "channels": 4,
+    "identity": "privately verified and pinned"
+  },
+  "archives": {
+    "visual_episodes": 115,
+    "image_assets": 96,
+    "image_bytes": 62571650,
+    "schema": 1,
+    "documents": 16,
+    "origins": 27,
+    "blocks": 4299,
+    "target_blocks": 412,
+    "voice_eligible_blocks": 405,
+    "suppressed_documents": 0
+  },
+  "run_cost": {
+    "settled_attempts": 28,
+    "runtime_attempts": 16,
+    "maintenance_attempts": 12,
+    "estimated_usd": 0.009190225,
+    "runtime_usd": 0.006412695,
+    "maintenance_usd": 0.00277753,
+    "installed_runtime_usd": 0.004129275,
+    "billing_record": false,
+    "pre_guard_spend": "unknown; not included",
+    "unsettled_preexisting": 1,
+    "new_unsettled": 0
+  }
+}

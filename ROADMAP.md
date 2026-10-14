@@ -1,48 +1,47 @@
 # Trubot roadmap
 
-H62/H62a is the current increment: safe reviewed abstract-memory rollout. Import
-preview validates the complete batch under the source lock, rolls back all prospective
-writes and preserves backups; commit revalidates evidence. One newly studied private
-conditional memory is eligible only after held-out, lifecycle and actual handler
-acceptance. It is tentative with contrary evidence and thirty-day expiry. Source
-content and personal interpretation stay private. General character/humor improvement
-is unmeasured; the fresh baseline decision reply is already natural and relevant.
-[Planning and acceptance](docs/trubot-evolution/evaluations/2026-10-14-abstract-rollout-study.md).
-Release and installed normal gateway acceptance are pending.
+H62/H62a is deployed in 2.25.0: complete reviewed import preview plus one usable
+private conditional abstraction. Actual CLI preview preserves graph bytes/status/
+backups, and commit revalidates current sources. The new tentative memory has two
+contextual supports, one contrary source and 30-day expiry; interpretation and
+source references remain private. One independent compatible human held-out supports
+the narrow scope; overlaps are excluded. Same Codex evaluator, no independent human
+review. Baseline already gives natural decision replies, so this establishes qualified
+population and non-regression, not general character or humor improvement.
+[Both phases and results](docs/trubot-evolution/evaluations/2026-10-14-abstract-rollout-study.md). [Installed evidence](docs/trubot-evolution/evaluations/2026-10-14-abstract-rollout-release.json).
 
-H60a bounded short reply continuity is deployed and verified in 2.24.2. Fresh 2.24.1 actual gateway
-recall spends two provider attempts on unchanged four-word output. The adapter
-exempts at most five words and sixty characters from cosmetic repetition recovery;
-initial memory checks, longer echoes and separate length repair remain authoritative.
-[Both planning phases and acceptance](docs/trubot-evolution/evaluations/2026-10-14-short-continuity-study.md).
-[Final installed evidence](docs/trubot-evolution/evaluations/2026-10-14-short-continuity-release.json).
-All six gateway controls pass; longer seven-word uncertainty can still incur recovery.
-H59/H59b 2.24.1 is complete; the failed 2.24.0 remains immutable prerelease after rollback.
+All six feature/merged gates pass: 1,084 tests, 96.88% branch coverage, 31 typed modules.
+Required PR/main CI and both images pass; all installed source hashes match. Ten
+fresh normal gateway cases pass, including firm/care/recipient controls, natural
+baseball/year recall, exact-date honesty, speaker ownership and approved humor.
+Production is healthy/Discord ready with zero restarts and observed errors. Short
+window/zero current spontaneous league posts limit character and error-rate claims.
 
-Next ordered increments match [plan](docs/trubot-evolution/plan.md) and
+Next order matches [plan](docs/trubot-evolution/plan.md) and
 [backlog](docs/trubot-evolution/backlog.md):
 
-1. Qualified H48/H55b abstract episode population, semantic native context and legacy
-   qualification. Specific transfer approval, attributed support/contrary episodes,
-   genuine human-held-outs and source/setup lifecycle are prerequisites. Zero active
-   qualified patterns remains unresolved. Archive pattern contracts remain eligible.
-2. Emotional judgment, contextual cues and varied approved humor amplification.
-   Validate meaning, care/recipient restraint and fresh Discord, separately from format.
-3. Broader native peer/reply/thread/original-pixel coverage and lifecycle.
-4. H61 selective skills/tools and generated Michigan U.P. aurora/trail-camera scenes,
-   short natural captions and generated provenance. Documented capabilities are not
-   project results. Validate relevance, sharing/timing, abstention and operating costs.
+1. Broader qualified H48/H21/H28 abstractions, independent human held-outs and legacy
+   qualification. H62 establishes one narrow conditional memory, not a full profile.
+   Archive studies can proceed with existing contracts. H55b/H54b/H50 semantic native
+   integration still needs its specific unresolved peer-transfer permission and
+   source/setup lifecycle; automatic native patterns remain closed. No rejected payload
+   or retired H41 pattern is replayed.
+2. H22/H39/H51 emotional specificity, semantic humor variety and cue reliability.
+   Stock care survives the present audit. Validate meaning and creative amplification
+   against contextual human evidence, contrary scenarios and fresh Discord, separately
+   from brevity or packet presence. Retain warmth and recipient restraint.
+3. Broader native peers/replies/threads/original pixels with honest missing/denied
+   coverage, attribution, corrections, expiry and withdrawal.
+4. H61 selective skills/tools and generated Michigan U.P. aurora/trail-camera scenes
+   with short natural captions and generated provenance. Official capabilities are
+   documented possibilities; test relevance, sharing/timing, abstention, compatibility
+   and operating costs before rollout.
 
-Priority changed because the actual current flow proves unnecessary work; H60a is a
-supported harness correction, not a new human trait. A failed trial rejects rollout.
-Qualified human patterns or material grounding/privacy regressions can reorder work.
-Source text remains secondary to useful abstractions during ordinary conversation.
-
-Preserve bot identity, approved creative amplification/Thomas Jones bits, authenticated
-attribution, unknown dates internally, private evidence, correction/deletion/withdrawal,
-runtime allowlist/no DMs, owner-only private development recall, existing volume and
-USD 18 runtime/USD 2 maintenance/USD 20 monthly spending guard. No new model/service,
-source replay, schedule or notification change. Keep six standalone local 01/05/09/13/
-17/21 Sol/xhigh runs, fetched-main new managed worktrees, both planning phases, full
-gates/required CI/tested merges/immutable releases/both images/scoped deployments and
-actual private Discord smoke tests. Prior detail remains in research/progress/Git history.
+Preserve bot identity and approved creative amplification/Thomas Jones bits;
+private attribution, unknown dates internally, correction/deletion/withdrawal;
+runtime league allowlist/no DMs and owner-only confirmed development recall; existing
+volume and shared USD 18 runtime/USD 2 maintenance/USD 20 monthly guard. No model/service,
+source intake, native pattern permission, study pacing, spending pool, schedule or
+notification change. Six standalone local01/05/09/13/17/21 Sol/xhigh runs retain fresh
+fetched-main managed worktrees, both planning phases, full gates/CI/tested merges,
+immutable releases/both images/scoped deployment and actual private Discord tests.
