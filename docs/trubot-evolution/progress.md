@@ -3727,3 +3727,17 @@ preexisting unsettled reservation. No billing/pre-guard visibility invented.
 Next independent qualified abstractions/legacy review, native semantic integration
 when specifically approved, emotion/semantic humor/cues, broader native/pixels and
 H61 selective tools/generated outdoor scenes. All standing invariants preserved.
+
+
+## 2026-10-14 13:00 - H63 graph retrieval under growth
+
+Fetched base16de7ba, new managed worktree and unique feature branch, primary untouched.
+Prior run complete, no overlapping evolution PR. Three-channel audit7target12peer/
+4olderbot0fresh; UI3bot4texttarget/one missing-pixel exclusion, six exact-alias archive
+windows/two exports6target12peer grouped occurrences. No new human trend established.
+Both planning phases select a supported enabling retrieval increment before broader
+qualified abstracts. Initial fixture construction mistakes are excluded from defect
+counts.23candidate checks and matched actual owner-handler fictional capacity check
+pass: baseline0/candidate4 graph observations,14/11words, two sentences/one request
+each. No source/learning/schema/provider/model/intake change or human fidelity gain.
+Full engineering gates, release and installed checks pending. [Study](evaluations/2026-10-14-graph-selection-study.md).

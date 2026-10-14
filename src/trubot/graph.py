@@ -7,7 +7,7 @@ import hashlib
 import json
 import os
 import sqlite3
-from collections.abc import Iterator
+from collections.abc import Callable, Iterator
 from contextlib import ExitStack, closing, contextmanager, nullcontext
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
@@ -22,7 +22,7 @@ from trubot.episode_memory import (
     observation_sources,
 )
 from trubot.learning import LearningStore, LearningUnavailable, _private, _time
-from trubot.lexical import phrase
+from trubot.lexical import phrase, words
 from trubot.native_context import NativeEpisode
 
 VERSION = "reviewed-graph-v1"
@@ -54,6 +54,10 @@ def _key(ref: dict[str, Any]) -> str:
     if ref["kind"] == "slack":
         return f"slack:{ref['document']}:{int(ref['ordinal']):06}"
     raise LearningUnavailable("Unsupported graph support source")
+
+
+class _LookupLimit(Exception):
+    """Stop source validation before considering another incomplete component."""
 
 
 class GraphStore:
@@ -577,42 +581,124 @@ class GraphStore:
         with self._transaction() as (db, source):
             if self.learning._read_identity(source).guild_id != guild_id:
                 return []
-            matched = []
             text = phrase(query[:8000])
+            matched = {}
             for row in db.execute(
-                "SELECT id, data FROM nodes WHERE kind IN ('entity', 'concept') LIMIT 1000"
+                "SELECT id, data FROM nodes WHERE kind IN ('entity', 'concept') "
+                "ORDER BY id LIMIT 1000"
             ):
                 entity = json.loads(row["data"])
-                if any(phrase(alias) in text for alias in entity["aliases"]):
-                    matched.append(row["id"])
-            result = []
-            seen = set()
-            for key in matched[:8]:
+                lengths = [
+                    len(words(alias)) for alias in entity["aliases"] if phrase(alias) in text
+                ]
+                if lengths:
+                    matched[row["id"]] = max(lengths)
+            if not matched:
+                return []
+            # Rank before bounding source validation. Graph growth must not favor
+            # the first eight concepts or twelve observations in identifier order.
+            candidates: dict[str, tuple[dict[str, Any], set[str]]] = {}
+            for row in db.execute(
+                "SELECT n.id, n.data, e.target FROM edges e JOIN nodes n ON n.id=e.origin "  # noqa: S608 - only placeholder count is interpolated; values are bound
+                "WHERE e.relation IN ('about', 'exemplifies') AND e.target IN ("
+                + ",".join("?" for _ in matched)
+                + ")",
+                tuple(matched),
+            ):
+                key = row["id"]
+                if key not in candidates:
+                    candidates[key] = (json.loads(row["data"]), set())
+                candidates[key][1].add(row["target"])
+            ranked = sorted(
+                candidates,
+                key=lambda key: (
+                    -max(matched[topic] for topic in candidates[key][1]),
+                    -len(candidates[key][1]),
+                    key,
+                ),
+            )
+            # This per-call cache is scoped to the shared source lock. At most 64
+            # observations undergo freshness validation, including conflict sides.
+            current: dict[str, dict[str, Any] | None] = {}
+
+            def read(key: str) -> dict[str, Any] | None:
+                if key in current:
+                    return current[key]
+                if len(current) >= 64:
+                    raise _LookupLimit
+                if key in candidates:
+                    data = candidates[key][0]
+                else:
+                    row = db.execute("SELECT data FROM nodes WHERE id=?", (key,)).fetchone()
+                    if row is None:
+                        current[key] = None
+                        return None
+                    data = json.loads(row[0])
+                current[key] = (
+                    {"id": key, **data} if self._valid(data, source, db=db, now=now) else None
+                )
+                return current[key]
+
+            result: dict[str, dict[str, Any]] = {}
+            refs: set[str] = set()
+            skipped: set[str] = set()
+            for key in ranked:
+                if key in result or key in skipped:
+                    continue
+                try:
+                    component = self._lookup_component(key, db, read)
+                except _LookupLimit:
+                    # Nothing from an incompletely checked component is emitted.
+                    break
+                if not component:
+                    continue
+                extra_refs = {
+                    _key(s["ref"]) for item in component.values() for s in observation_sources(item)
+                }
+                if len(result.keys() | component.keys()) > 4 or len(refs | extra_refs) > 5:
+                    skipped.update(component)
+                    continue
+                result.update(component)
+                refs.update(extra_refs)
+                if len(result) == 4:
+                    break
+            return list(result.values())
+
+    @staticmethod
+    def _lookup_component(
+        key: str,
+        db: sqlite3.Connection,
+        read: Callable[[str], dict[str, Any] | None],
+    ) -> dict[str, dict[str, Any]]:
+        """Never select one side of a valid transitive contradiction component."""
+        component: dict[str, dict[str, Any]] = {}
+        pending = [key]
+        seen = set()
+        while pending:
+            key = pending.pop()
+            if key in seen:
+                continue
+            seen.add(key)
+            item = read(key)
+            if item is None:
+                continue
+            component[key] = item
+            refs = {
+                _key(s["ref"]) for item in component.values() for s in observation_sources(item)
+            }
+            if len(component) > 4 or len(refs) > 5:
+                return {}
+            pending.extend(
+                row[0]
                 for row in db.execute(
-                    "SELECT n.id, n.data FROM edges e JOIN nodes n ON n.id=e.origin "
-                    "WHERE e.target=? AND e.relation IN ('about', 'exemplifies') "
-                    "ORDER BY n.id LIMIT 12",
-                    (key,),
-                ):
-                    data = json.loads(row["data"])
-                    if row["id"] not in seen and self._valid(data, source, db=db, now=now):
-                        seen.add(row["id"])
-                        result.append({"id": row["id"], **data})
-            # Conflicting observations are included together even if only one entity matched.
-            for item in list(result):
-                for row in db.execute(
-                    "SELECT n.id, n.data FROM edges e JOIN nodes n "
-                    "ON n.id=CASE WHEN e.origin=? THEN e.target ELSE e.origin END "
-                    "WHERE e.relation='contradicts' AND (e.origin=? OR e.target=?)",
-                    (item["id"], item["id"], item["id"]),
-                ):
-                    data = json.loads(row["data"])
-                    if row["id"] not in seen and self._valid(data, source, db=db, now=now):
-                        seen.add(row["id"])
-                        result.append({"id": row["id"], **data})
-            # A complete neighborhood must fit. Never drop one side of a contradiction.
-            refs = {_key(s["ref"]) for item in result for s in observation_sources(item)}
-            return result if len(result) <= 4 and len(refs) <= 5 else []
+                    "SELECT target FROM edges WHERE origin=? AND relation='contradicts' "
+                    "UNION SELECT origin FROM edges WHERE target=? AND relation='contradicts' "
+                    "ORDER BY 1 DESC",
+                    (key, key),
+                )
+                if row[0] not in seen
+            )
+        return component
 
     def describe(
         self, ids: list[str], *, now: datetime, verified_after: datetime | None
