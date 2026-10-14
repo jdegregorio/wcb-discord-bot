@@ -3428,3 +3428,43 @@ gateway/real-state mutation; copies erased. Initial log-harness umask fixture fa
 and stalled backup helper corrected; no evidence claimed from failures. No measured
 general fidelity or humor gain. CI/release/deployment/installed acceptance pending.
 [Research and acceptance](evaluations/2026-10-13-study-freshness-study.md).
+
+## 2026-10-13 21:00 H58a candidate2.23.0
+
+Baseccd3ec493b284275812164b150e4ccd5c93cd967; new managed worktree
+trubot-daily-20261013-2100 and unique feature branch. Primary never edited/stashed/reset.
+Prior PR103 merged/deployed2.22.2/536a76c, installed C/D refs reauthenticated and actual
+Discord answers inspected. Prior run stopped at account usage limit before final notes;
+no overlapping evolution PR. This run completes the reconciliation and fresh controls.
+
+Both phases in [study](evaluations/2026-10-13-native-study-context-study.md).
+Fresh authenticated audit3channels/latest100/14days:7target/12peer/4olderbot;
+contextual UI5target/3olderbot, no current spontaneous output or original-pixel study.
+No new abstract human observation or independent held-out human quality benchmark.
+
+Selected H58a local native setup dependency lifecycle after rejected semantic-payload
+expansion. Final same-case baseline17fail/7pass; candidate24/24. Actual private owner
+baseline commits obsolete invented preference, candidate pauses. Both actual roleplay
+replies are relevant. Invented disposable source stores only, target-only study payloads,
+existing maintenance ledger, distinct readiness before construction/no second gateway.
+Provider peer-transfer approval remains pending; no rejected payload path retried.
+Candidate ties existing capture fingerprints to study checks/locked commit/observations,
+correction/removal/replacement/expiry/withdrawal/backups and preserves unchanged recapture.
+Source cohort/checkpoint version/model/native pattern gate/spending guard remain.
+Full quality/release/installed acceptance and final costs pending.
+
+Feature allsixgates pass:1,020tests/96.86%branchcoverage/30typedmodules/build2.23.0.
+Final24focused cases cover privacy, native gate, correction, races, transport,
+unchanged recapture, restoration, withdrawal and checkpoint/backup retirement.
+Local QA log preserved0600 in this automation directory outside the worktree.
+
+### Prior H57 reconciliation
+
+Verified PR103 mergedccd3ec4, required PRCI38488394986/main38488564708/image38488779154
+SUCCESS. Production2.22.2 immutable536a76c3dd6a9a4bb58781d6d423877f5eca2c294eb43579305ad20b24337cc6
+healthy/Discordready/zero restarts. Prior C/D actual installed private receipts were
+reauthenticated; both block obsolete invented memories and actual answers are direct
+current-source replies. Previous run ended at account usage limit after these tests,
+not at a product failure. Its missing fresh gateway controls are not retroactively
+claimed; this run performs fresh controls after its own release. Covered ledger at
+run startUSD0.20793597/1320settled/0unsettled; includes prior four maintenance probes.

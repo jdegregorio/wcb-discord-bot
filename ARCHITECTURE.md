@@ -310,3 +310,12 @@ IDs, plus an exact same-channel parent read if needed. Freshness/attribution che
 still apply to every dependency. No new neighbors enter learning/context; missing
 nonparents erase obsolete captures without guessing message deletion. No preserved
 freshness certificate or automatic native pattern permission. [Transport study](docs/trubot-evolution/evaluations/2026-10-13-native-freshness-study.md).
+
+Native study setup lifecycle (2.23.0): an immutable local tuple of existing capture
+metadata accompanies the original study cohort. Current-source/page/parent reads
+revalidate every retained dependency before attempts/commit. The shared graph/source
+lock binds observation interpreted-with edges and rejects local races. Lookup/describe
+validate semantic capture fingerprints; identical recapture preserves memory, while
+replacement/removal/expiry invalidates observations/checkpoints/backups. No peer text
+is persisted or added to study requests. Reply rendering strips this new local
+metadata. Automatic native patterns remain closed pending contextual qualification.

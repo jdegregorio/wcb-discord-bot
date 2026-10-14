@@ -574,3 +574,9 @@ local commit remain authoritative. The two provider passes retain identical orig
 evidence. Four bounded read stages admit at most six native sources each, with six
 seconds total and four seconds per read. Maintenance retries remain disabled.
 This adds no provider attempt or schema and keeps automatic native patterns gated.
+
+Native maintenance studies bind any existing private setup fingerprints to their
+resulting observations. A changed or removed setup pauses the study or retires
+its dependent memory. The new fingerprints stay local; provider studies remain
+target-only and automatic native personality patterns remain gated. See the
+[evolution plan](docs/trubot-evolution/plan.md) for semantic-learning prerequisites.

@@ -990,3 +990,25 @@ source/spending stores. Content-free private refs/counts and public helper code 
 the existing app-volume smoke-tests/2026-10-13-1700 directory under0700/0600 and the
 existing seven-day manual retention/withdrawal cleanup. Invented fixture stores and
 package overrides are erased after validation; no source excerpts or replies retained.
+
+## Native study setup dependencies,2.23.0
+
+Studies bind existing private content-free captures, freshly rechecking source and
+retained dependencies before both provider attempts and commit. Study payloads stay
+target-only. Linked observations store bounded capture metadata and interpreted-with
+edges; no peer text copied. Shared-lock checks reject changed captures. Recall validates
+current semantic fingerprints; identical recaptures preserve observations/edges.
+Changed/erased/evicted/expired captures retire linked observations and source-cohort
+study checkpoints; corrections and graph backups follow existing source lifecycle.
+No schema migration, checkpoint version/replay, model, extra provider attempt or service.
+Maximum6sources/5dependencies,3HTTPreads per captured source/18per boundary/72per study;
+each boundary still6seconds. Transients preserve old capture without certifying freshness.
+New local context metadata is stripped before reply rendering. Native automatic patterns
+remain closed. Human context interpretation/held-out quality are separate prerequisites.
+
+Before downgrade to2.22.2 or earlier, erase only context-dependent observations and
+linked study checkpoints and graph backups using the current private graph transaction;
+older readers ignore their new invalidation metadata. Preserve source/capture/spending
+stores. No data restore for code rollback. Content-free refs/flags/public helper code
+in smoke-tests/2026-10-13-2100 use existing0700/0600,seven-day manual retention and
+withdrawal cleanup. Disposable invented stores/process overrides removed after validation.

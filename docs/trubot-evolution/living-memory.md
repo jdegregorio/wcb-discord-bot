@@ -214,3 +214,13 @@ IDs, plus an exact same-channel parent read if needed. Freshness/attribution che
 still apply to every dependency. No new neighbors enter learning/context; missing
 nonparents erase obsolete captures without guessing message deletion. No preserved
 freshness certificate or automatic native pattern permission. [Transport study](evaluations/2026-10-13-native-freshness-study.md).
+
+## H58a native setup dependency lifecycle
+
+2.23.0 binds existing content-free context captures to native studies and their
+observations. Fresh reads at both attempts/commit and locked local checks reject
+changes; derived retrieval/retirement follows context correction, removal and expiry.
+Identical recapture preserves memory. This completes local dependency lifecycle,
+not contextual semantic learning or abstract population. Native pattern gate remains
+closed; target-only provider payloads unchanged. Specific peer-context transfer approval
+and genuine human-held-out qualification remain prerequisites for H55b/H48.

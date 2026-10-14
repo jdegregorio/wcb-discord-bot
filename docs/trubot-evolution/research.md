@@ -2064,3 +2064,15 @@ extraction/review. Select fresh native source reads before each provider attempt
 commit so that corrected human evidence cannot become durable memory. Native contextual
 integration/qualified abstractions stay next; care/semantic-humor prototypes remain
 unvalidated. [Study](evaluations/2026-10-13-study-freshness-study.md).
+
+## 2026-10-13 21:00 H58a selected
+
+Both phases and final scope: [study](evaluations/2026-10-13-native-study-context-study.md).
+Confirmed omitted setup and stale derived-memory lifecycle. Original8fail/2pass;
+final local-only17fail/7pass, candidate24/24. Actual matched private owner/handler
+baseline retains obsolete invented observation, candidate blocks it; both natural
+roleplay answers remain relevant. No new human trait or measured prose gain.
+Specific peer-payload transfer rejected by automatic review; optional exact approval
+pending, rejected patch never applied. Ship local metadata binding/invalidation only.
+Then qualified H48 abstracts with H55b semantic prerequisites, matched H22/H39/H51
+behavior, native/visual expansion, selective skills/tools/generated U.P. scenes.

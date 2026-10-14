@@ -359,6 +359,7 @@ class GraphStore:
         *,
         now: datetime,
         automated: bool = False,
+        native_context: tuple[dict[str, Any], ...] = (),
     ) -> None:
         kind = item["kind"]
         if kind not in OBSERVATION_KINDS:
@@ -435,6 +436,17 @@ class GraphStore:
             "review_kind": "automated-two-pass" if automated else "operator",
             "support_basis": item.get("support_basis", "operator_reviewed"),
         }
+        if native_context:
+            if (
+                not automated
+                or len(native_context) > 6
+                or any(
+                    not self._context_current(db, source, capture, now=now, exact=True)
+                    for capture in native_context
+                )
+            ):
+                raise LearningUnavailable("Study context changed before observation write")
+            data["native_context"] = list(native_context)
         if abstraction is not None:
             data["abstraction"] = {
                 "conditions": abstraction["conditions"],
@@ -449,6 +461,10 @@ class GraphStore:
             "('supports','counterexample-of'))",
             (key, key),
         )
+        for capture in native_context:
+            self._edge(
+                db, key, "interpreted-with", "native-context:" + _key(capture["ref"]), capture
+            )
         for snapshot in snapshots + counterexamples:
             src = _key(snapshot["ref"])
             self._node(
@@ -520,12 +536,18 @@ class GraphStore:
         data: dict[str, Any],
         source: sqlite3.Connection,
         *,
+        db: sqlite3.Connection,
         now: datetime,
         verified_after: datetime | None = None,
         archive: sqlite3.Connection | None = None,
     ) -> bool:
         if data["status"] in {"superseded", "invalid"} or (
             data.get("expires_at") and data["expires_at"] <= _time(now)
+        ):
+            return False
+        if any(
+            not self._context_current(db, source, capture, now=now)
+            for capture in data.get("native_context", [])
         ):
             return False
         if (
@@ -564,7 +586,7 @@ class GraphStore:
                     (key,),
                 ):
                     data = json.loads(row["data"])
-                    if row["id"] not in seen and self._valid(data, source, now=now):
+                    if row["id"] not in seen and self._valid(data, source, db=db, now=now):
                         seen.add(row["id"])
                         result.append({"id": row["id"], **data})
             # Conflicting observations are included together even if only one entity matched.
@@ -576,7 +598,7 @@ class GraphStore:
                     (item["id"], item["id"], item["id"]),
                 ):
                     data = json.loads(row["data"])
-                    if row["id"] not in seen and self._valid(data, source, now=now):
+                    if row["id"] not in seen and self._valid(data, source, db=db, now=now):
                         seen.add(row["id"])
                         result.append({"id": row["id"], **data})
             # A complete neighborhood must fit. Never drop one side of a contradiction.
@@ -592,7 +614,7 @@ class GraphStore:
                 row = db.execute("SELECT data FROM nodes WHERE id=?", (key,)).fetchone()
                 if row:
                     data = json.loads(row[0])
-                    if self._valid(data, source, now=now, verified_after=verified_after):
+                    if self._valid(data, source, db=db, now=now, verified_after=verified_after):
                         result.append({"id": key, **data})
             return result
 
@@ -616,10 +638,16 @@ class GraphStore:
                 elif row["kind"] == "native_context":
                     invalid = not self._native_context_valid(data, source, now=now)
                 elif row["kind"] in OBSERVATION_KINDS:
-                    invalid = not self._valid(data, source, now=now, archive=archive)
+                    invalid = not self._valid(data, source, db=db, now=now, archive=archive)
                 elif "archive_episode" in data:
                     invalid = data["archive_episode"] not in episodes
                 if invalid:
+                    if row["kind"] == "native_context":
+                        invalid_sources.add(_key(data["ref"]))
+                    elif row["kind"] in OBSERVATION_KINDS:
+                        invalid_sources.update(
+                            _key(capture["ref"]) for capture in data.get("native_context", [])
+                        )
                     db.execute("DELETE FROM nodes WHERE id=?", (row["id"],))
                     db.execute("DELETE FROM nodes WHERE id=?", ("episode:" + row["id"],))
                     if row["kind"] == "human_source":
@@ -722,15 +750,64 @@ class GraphStore:
 
     def native_context_current(self, data: dict[str, Any], *, now: datetime) -> bool:
         with self._transaction() as (db, source):
+            return self._context_current(db, source, data, now=now, exact=True)
+
+    @staticmethod
+    def _context_signature(data: dict[str, Any]) -> dict[str, Any]:
+        # Unchanged recaptures extend observed visibility, not the interpretation.
+        return {key: value for key, value in data.items() if key != "captured_at"}
+
+    def _context_current(
+        self,
+        db: sqlite3.Connection,
+        source: sqlite3.Connection,
+        data: dict[str, Any],
+        *,
+        now: datetime,
+        exact: bool = False,
+    ) -> bool:
+        row = db.execute(
+            "SELECT data FROM nodes WHERE id=? AND kind='native_context'",
+            ("native-context:" + _key(data["ref"]),),
+        ).fetchone()
+        current = json.loads(row[0]) if row else None
+        return bool(
+            current
+            and (
+                current == data
+                if exact
+                else self._context_signature(current) == self._context_signature(data)
+            )
+            and self._native_context_valid(data, source, now=now)
+            and self._native_context_valid(current, source, now=now)
+        )
+
+    def study_context(self, ref: dict[str, Any], *, now: datetime) -> dict[str, Any] | None:
+        """Select existing setup only. No new collector, intake or visibility claim."""
+        with self._transaction() as (db, source):
             row = db.execute(
                 "SELECT data FROM nodes WHERE id=? AND kind='native_context'",
-                ("native-context:" + _key(data["ref"]),),
+                ("native-context:" + _key(ref),),
             ).fetchone()
-            return bool(
-                row
-                and json.loads(row[0]) == data
-                and self._native_context_valid(data, source, now=now)
-            )
+            if row:
+                data: dict[str, Any] = json.loads(row[0])
+                if self._native_context_valid(data, source, now=now):
+                    return data
+            return None
+
+    @staticmethod
+    def _erase_context_observations(db: sqlite3.Connection, key: str) -> None:
+        db.execute(
+            "DELETE FROM nodes WHERE id IN (SELECT origin FROM edges "
+            "WHERE target=? AND relation='interpreted-with')",
+            (key,),
+        )
+        source_key = key.removeprefix("native-context:")
+        for row in db.execute(
+            "SELECT stream,cursor FROM checkpoints WHERE stream LIKE 'study:%'"
+        ).fetchall():
+            if source_key in json.loads(row["cursor"]).get("source_keys", []):
+                db.execute("DELETE FROM checkpoints WHERE stream=?", (row["stream"],))
 
     def discard_native_context(self, data: dict[str, Any]) -> bool:
         """A stale verifier cannot erase a concurrent newer capture."""
@@ -739,6 +816,7 @@ class GraphStore:
             row = db.execute("SELECT data FROM nodes WHERE id=?", (key,)).fetchone()
             removed = bool(row and json.loads(row[0]) == data)
             if removed:
+                self._erase_context_observations(db, key)
                 db.execute("DELETE FROM nodes WHERE id=?", (key,))
                 self._prune_native_dependencies(db)
         if removed:
@@ -835,7 +913,11 @@ class GraphStore:
             # A raced or older collector must not overwrite a newer capture.
             if previous and json.loads(previous[0])["captured_at"] > data["captured_at"]:
                 return False
-            db.execute("DELETE FROM nodes WHERE id=?", (key,))
+            if previous and self._context_signature(
+                json.loads(previous[0])
+            ) != self._context_signature(data):
+                self._erase_context_observations(db, key)
+            db.execute("DELETE FROM edges WHERE origin=?", (key,))
             if not db.execute("SELECT 1 FROM nodes WHERE id=?", (_key(ref),)).fetchone():
                 source_data = current | {
                     "extraction_version": VERSION,
@@ -866,6 +948,11 @@ class GraphStore:
                     {key: dependency[key] for key in ("message_id", "guild_id", "channel_id")},
                 )
                 self._edge(db, key, "depends-on", target, dependency)
+            for evicted in db.execute(
+                "SELECT id FROM nodes WHERE kind='native_context' "
+                "ORDER BY json_extract(data, '$.captured_at') DESC, id DESC LIMIT -1 OFFSET 100"
+            ).fetchall():
+                self._erase_context_observations(db, evicted[0])
             db.execute(
                 "DELETE FROM nodes WHERE id IN (SELECT id FROM nodes WHERE kind='native_context' "
                 "ORDER BY json_extract(data, '$.captured_at') DESC, id DESC LIMIT -1 OFFSET 100)"
