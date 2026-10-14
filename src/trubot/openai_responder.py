@@ -22,6 +22,7 @@ from trubot.budget import NANODOLLARS, BudgetError, BudgetUnavailable, UsageLedg
 from trubot.conversation import ConversationMessage, MemoryAuthorScope, ReplyMode
 from trubot.memory_author import author_guidance, focused_author_guidance, memory_author_scope
 from trubot.personality import instructions_for
+from trubot.reply_brevity import BRIEF_REPLY_GUIDANCE, needs_brief_reply
 from trubot.reply_focus import preceding_human_turn
 from trubot.vision import IMAGE_TOKEN_BOUND, MAX_IMAGES
 
@@ -181,27 +182,37 @@ class OpenAITruaxResponder:
             return None
         if not reply:
             raise EmptyResponseError("OpenAI returned an empty text response")
-        if _stale_bot_echo(reply, messages, target):
+        repeated = _stale_bot_echo(reply, messages, target)
+        overlong = needs_brief_reply(reply, messages, target)
+        if repeated or overlong:
+            guidance = (_FRESH_REPLY_GUIDANCE if repeated else "") + (
+                BRIEF_REPLY_GUIDANCE if overlong else ""
+            )
             refresh_allowed = (
                 await refresh_check()
                 if refresh_check is not None
                 else not any(message.origin == "memory" for message in messages)
             )
             if not refresh_allowed:
-                logger.info("Repeated-reply refresh skipped; source context changed or unchecked")
+                logger.info("Reply-quality refresh skipped; source context changed or unchecked")
                 return reply
             # One additional accounted attempt, never an unbounded joke-selection loop.
             # Keep the same context, source scope and model. Literal requests and the
             # immediate assistant turn remain eligible for deliberate repetition.
-            logger.info("Refreshing repeated older bot reply mode=%s", mode.value)
+            logger.info(
+                "Refreshing reply quality mode=%s repeated=%s overlong=%s",
+                mode.value,
+                repeated,
+                overlong,
+            )
             fresh_request: ResponseCreateParamsNonStreaming = {
                 **request,
-                "instructions": instructions + _FRESH_REPLY_GUIDANCE,
+                "instructions": instructions + guidance,
                 "prompt_cache_key": _PROMPT_CACHE_KEY + "-fresh",
             }
             try:
                 fresh = await self._generate(
-                    input_bound=input_bound + len(_FRESH_REPLY_GUIDANCE.encode("utf-8")),
+                    input_bound=input_bound + len(guidance.encode("utf-8")),
                     output_bound=output_bound,
                     mode=mode,
                     request=fresh_request,
@@ -210,14 +221,16 @@ class OpenAITruaxResponder:
             except (APIError, BudgetError):
                 # Fresh wording is optional. The first draft is already accounted;
                 # failure must not turn a usable answer into an error or another call.
-                logger.warning("Optional repeated-reply refresh unavailable; keeping draft")
+                logger.warning("Optional reply-quality refresh unavailable; keeping draft")
             else:
                 candidate = normalize_reply(fresh.output_text)
                 if getattr(fresh, "status", "completed") != "completed" or not candidate:
-                    logger.warning("Optional repeated-reply refresh incomplete; keeping draft")
+                    logger.warning("Optional reply-quality refresh incomplete; keeping draft")
                 elif mode is ReplyMode.FOLLOW_UP and candidate.casefold() == _NO_REPLY.casefold():
                     logger.info("Trubot declined refreshed follow-up candidate")
                     return None
+                elif overlong and needs_brief_reply(candidate, messages, target):
+                    logger.info("Optional brief reply still overlong; keeping original draft")
                 else:
                     reply = candidate
         logger.info("Generated Trubot response mode=%s characters=%d", mode.value, len(reply))
