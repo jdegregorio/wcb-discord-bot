@@ -1,5 +1,15 @@
 # Trubot roadmap
 
+H62/H62a is the current increment: safe reviewed abstract-memory rollout. Import
+preview validates the complete batch under the source lock, rolls back all prospective
+writes and preserves backups; commit revalidates evidence. One newly studied private
+conditional memory is eligible only after held-out, lifecycle and actual handler
+acceptance. It is tentative with contrary evidence and thirty-day expiry. Source
+content and personal interpretation stay private. General character/humor improvement
+is unmeasured; the fresh baseline decision reply is already natural and relevant.
+[Planning and acceptance](docs/trubot-evolution/evaluations/2026-10-14-abstract-rollout-study.md).
+Release and installed normal gateway acceptance are pending.
+
 H60a bounded short reply continuity is deployed and verified in 2.24.2. Fresh 2.24.1 actual gateway
 recall spends two provider attempts on unchanged four-word output. The adapter
 exempts at most five words and sixty characters from cosmetic repetition recovery;

@@ -334,8 +334,14 @@ class GraphStore:
         """Trusted private operator input. Human-source content cannot invoke this API."""
         self.import_observations([item], now=now)
 
-    def import_observations(self, items: list[dict[str, Any]], *, now: datetime) -> None:
-        """Commit a complete reviewed rollout under one source/withdrawal lock."""
+    def import_observations(
+        self, items: list[dict[str, Any]], *, now: datetime, dry_run: bool = False
+    ) -> None:
+        """Validate a whole rollout; previews roll back writes and preserve backups.
+
+        A later import always validates again under the source/withdrawal lock.
+        A preview is never a cached authorization to commit stale evidence.
+        """
         if not isinstance(items, list) or not 1 <= len(items) <= 100:
             raise LearningUnavailable("One to 100 reviewed observations required")
         identifiers = []
@@ -348,8 +354,11 @@ class GraphStore:
         with self._transaction() as (db, source):
             for item in items:
                 self._write_observation(db, source, item, now=now)
+            if dry_run:
+                db.rollback()
         # Validation rejection rolls back replacements and preserves prior backups.
-        self._remove_backups()
+        if not dry_run:
+            self._remove_backups()
 
     def _write_observation(
         self,
@@ -1039,7 +1048,10 @@ def main() -> None:
     parser.add_argument("--manifest", type=Path)
     parser.add_argument("--id")
     parser.add_argument("--limit", type=int, default=100)
+    parser.add_argument("--dry-run", action="store_true", help="Preview import without committing")
     args = parser.parse_args()
+    if args.dry_run and args.command != "import":
+        parser.error("--dry-run only applies to import")
     try:
         learning = LearningStore(args.learning_path.absolute())
         graph = GraphStore.initialize(learning) if args.command == "init" else GraphStore(learning)
@@ -1054,7 +1066,11 @@ def main() -> None:
             manifest = json.loads(args.manifest.read_text())
             if manifest["schema"] != 1 or not 1 <= len(manifest["observations"]) <= 100:
                 raise LearningUnavailable("Unsupported observation manifest")
-            graph.import_observations(manifest["observations"], now=now)
+            graph.import_observations(manifest["observations"], now=now, dry_run=args.dry_run)
+            batch = {
+                "validated": len(manifest["observations"]),
+                "committed": 0 if args.dry_run else len(manifest["observations"]),
+            }
         elif args.command == "remove":
             if not args.id:
                 raise LearningUnavailable("Observation identifier required")

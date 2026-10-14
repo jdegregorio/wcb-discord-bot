@@ -803,6 +803,22 @@ is the compatible recorded rollback.
 
 ## Atomic reviewed imports, 2.18.0
 
+### Preview a reviewed rollout, 2.25.0
+
+Run `trubot-graph import --manifest <private-manifest> --dry-run` before a curated
+rollout. The same complete-batch validation exercises prospective replacements,
+contradictions and source provenance under the learning lock, then rolls back every
+graph write. Existing beliefs, edges, checkpoints and graph backups remain intact.
+The content-free result reports validated and committed counts; committed is zero.
+The flag is rejected on other commands.
+
+A successful preview is a check at that moment, not a saved approval. Import without
+the flag revalidates current evidence, expiry and withdrawal before committing.
+Keep manifests private and ephemeral. Population requires contextual human evidence,
+contrary cases and actual reply validation in addition to a successful preview.
+On failed behavioral acceptance, retire only the new observation with the existing
+remove command; do not restore sources or the spending ledger.
+
 The private `trubot-graph import --manifest` format stays schema 1. Its complete
 one-to-100 observation batch now shares a source/withdrawal lock and graph transaction.
 Distinct nonempty string IDs are required; an invalid later item rolls back additions,
