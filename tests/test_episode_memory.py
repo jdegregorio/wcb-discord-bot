@@ -336,7 +336,9 @@ def test_pattern_counterevidence_counts_toward_complete_neighborhood_bound(store
         ),
         now=NOW,
     )
-    assert graph.lookup("roster brainstorming", guild_id=77, now=NOW) == []
+    items = graph.lookup("roster brainstorming", guild_id=77, now=NOW)
+    assert [item["id"] for item in items] == ["observation:dessert"]
+    assert len(items[0]["abstraction"]["counterexamples"]) == 1
 
 
 def test_pattern_quotes_and_factual_shared_support_stay_available(stores):

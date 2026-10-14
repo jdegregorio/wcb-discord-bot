@@ -2176,3 +2176,16 @@ preexisting unsettled reservation. No billing/pre-guard visibility invented.
 Next independent qualified abstractions/legacy review, native semantic integration
 when specifically approved, emotion/semantic humor/cues, broader native/pixels and
 H61 selective tools/generated outdoor scenes. All standing invariants preserved.
+
+
+## 2026-10-14 13:00 - H63 complete bounded graph selection
+
+Both phases, locked criteria, audit limits and matched trials:
+[study](evaluations/2026-10-14-graph-selection-study.md).
+Reproduced growing-graph union collapse through direct/follow-up/reaction handlers.
+Selected ranked whole conflict components, including transitive sides and pattern
+counterevidence, so a growing qualified memory library retains useful concepts.
+23candidate checks pass; actual same-owner fictional fixture baseline0/candidate4
+observations, both deliver once. No human trait or general prose gain measured.
+H64 applicability and H65 humor/emotion abstractions remain exploratory; broader
+H48 qualification follows this safeguard. Full gates/installed acceptance pending.

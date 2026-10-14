@@ -170,6 +170,15 @@ missing real memories, literal definitions and questions for other recipients.
 Review whether a reply actually adds a comic turn, rather than merely acknowledging
 the setup. Brevity and successful delivery alone do not establish humor quality.
 
+## Bounded connected recall (2.26.0)
+
+Relevant memory growth retains up to four complete observations and five unique
+support/contrary sources rather than losing every result on a crowded topic.
+Reviewed whole-word aliases rank by specificity; valid transitive disagreements
+stay together or are omitted as a group. Source freshness checks remain bounded,
+with attribution, expiry, correction and withdrawal preserved. This enables larger
+qualified abstract libraries, without establishing a new trait or measured humor gain.
+
 ## Memory author binding (2.19.2)
 
 Reviewed graph rollouts can be previewed with `trubot-graph import --manifest

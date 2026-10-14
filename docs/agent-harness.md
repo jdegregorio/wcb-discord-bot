@@ -1,5 +1,23 @@
 # Trubot agent harness
 
+H63 selected for 2.26.0: growing a relevant graph currently collapses lookup when
+independent observations together exceed prompt bounds. Ranked complete conflict
+components preserve at most four observations/five unique support and contrary
+sources, with at most64 freshness validations per call. Whole reviewed aliases
+rank by specificity, with deterministic ties and no semantic/persona inference.
+Transitive disagreements remain together or are omitted; another fitting component
+can still be retrieved. This enables broader qualified abstractions without new
+provider calls, schema, private population or behavior assumptions. Candidate focused
+checks and actual invented owner-handler capacity comparison pass; rollout pending.
+[Both phases and evidence](trubot-evolution/evaluations/2026-10-14-graph-selection-study.md).
+
+Next order remains broader independent H48/H21/H28 abstractions/legacy review,
+H64 applicability plus H22/H39/H51 care/semantic humor/cues, wider native linked
+context/original pixels, H61 selective skills/tools and generated U.P. aurora/
+trail-camera sharing. H55b specific transfer approval remains unresolved, native
+automatic patterns closed. Source/correction/withdrawal/privacy,18/2/20 guard,
+model/intake/study pacing and six-run schedule/notifications are unchanged.
+
 H62/H62a is deployed in 2.25.0: complete reviewed import preview plus one usable
 private conditional abstraction. Actual CLI preview preserves graph bytes/status/
 backups, and commit revalidates current sources. The new tentative memory has two
