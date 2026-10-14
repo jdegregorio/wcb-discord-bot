@@ -608,6 +608,12 @@ class ContextMemory:
                 observations = self.graph.describe(
                     ids, now=now or datetime.now(UTC), verified_after=verified_after
                 )
+                # Setup fingerprints govern local invalidation only. Preserve the
+                # existing reply payload without private peer-routing metadata.
+                observations = [
+                    {key: value for key, value in item.items() if key != "native_context"}
+                    for item in observations
+                ]
         counter_refs = [
             source["ref"]
             for item in observations

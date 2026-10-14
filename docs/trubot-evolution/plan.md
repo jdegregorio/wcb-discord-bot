@@ -1,23 +1,17 @@
 # Trubot evolution plan
 
-Selected this run: H57 native study boundary freshness. Baseline two missed-edit
-cycles commit obsolete preferences; repair before H55b contextual integration.
-No new human abstraction or measured fidelity claim. Both planning phases and
-criteria: [study](evaluations/2026-10-13-study-freshness-study.md).
+Selected this run: H58a native study dependency lifecycle. Existing content-free
+setup captures now bind studies and their derived observations. Missed setup changes
+pause extraction/review/commit; known corrections or removal retire dependent memory.
+Same-case baseline17fail/7pass, candidate24/24. Actual private owner/handler baseline
+commits an obsolete invented observation; candidate blocks it. Engineering gain only.
+Target-only provider payloads and the native pattern gate remain unchanged. H55b
+semantic context integration requires specific peer-transfer approval plus held-outs.
+Both phases and criteria: [study](evaluations/2026-10-13-native-study-context-study.md).
 
-Current verified production2.22.1 ([PR100](https://github.com/jdegregorio/wcb-discord-bot/pull/100),
-[PR101](https://github.com/jdegregorio/wcb-discord-bot/pull/101)). H56 repairs native
-setup links after missed peer edits/deletes/access loss. The existing worker rotates
-two captures and checks every retained dependency in a current bounded page, reading
-only an exact same-channel source parent separately when needed. At most six HTTP
-reads/six seconds including selection; source/withdrawal/scope and final locked checks
-remain authoritative. No copied peer text, fresh certificate or native pattern permission.
-
-Matched actual source-cycle experiment: initialindividual reads1/2checked; timeout,
-ordering and combined alternatives each1/2and rejected; bounded-page prototype2/2;
-installed2/2in0.831seconds. Actual owner/installed-handler missed-edit acceptance also
-passes. Engineering evidence, not a human fidelity or humor benchmark. Source coverage
-is bounded and pixels are absent. No new human abstraction is populated.
+Current baseline production2.22.2 (PR103) is verified healthy; its prior run stopped
+at an account usage limit after installed probes. This run reconciles its receipts.
+Selected candidate2.23.0 release/installed validation remains pending.
 
 Next ordered increments:
 1. H48/H21/H28 qualified abstract population coupled with H55b/H54b/H50 contextual

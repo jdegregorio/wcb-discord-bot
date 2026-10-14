@@ -10,7 +10,7 @@ import sqlite3
 import time
 from collections.abc import Callable
 from contextlib import ExitStack, closing, suppress
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from datetime import datetime, timedelta
 from typing import Any, Literal
 from uuid import uuid4
@@ -29,6 +29,7 @@ from trubot.graph import GraphStore, _hash, _json, _key
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable, _time
 from trubot.memory import score, terms
+from trubot.native_reconciliation import verify_native_context
 from trubot.openai_responder import (
     STUDY_MAX_BYTES,
     OpenAITruaxResponder,
@@ -247,6 +248,7 @@ class Study:
     token: str = field(repr=False)
     snapshots: list[dict[str, Any]] = field(repr=False)
     passages: list[dict[str, Any]] = field(repr=False)
+    native_context: tuple[dict[str, Any], ...] = field(default=(), repr=False)
 
 
 @dataclass(frozen=True)
@@ -271,7 +273,7 @@ def _fit_context(study: Study, *, require_all_sources: bool = False) -> Study:
     snapshots = list(study.snapshots)
 
     def size() -> int:
-        packet = Study(study.token, snapshots, passages)
+        packet = Study(study.token, snapshots, passages, study.native_context)
         return study_request_size(_EXTRACT, {"sources": passages}, extraction_schema(packet))
 
     # Only related candidates are removed, before any proposal exists. Keep the
@@ -297,7 +299,7 @@ def _fit_context(study: Study, *, require_all_sources: bool = False) -> Study:
                     passage["context_omitted"] += 1
     for passage in passages:
         passage["adjacent_context"].sort(key=lambda row: row["offset"])
-    return Study(study.token, snapshots, passages)
+    return Study(study.token, snapshots, passages, study.native_context)
 
 
 def _episode_keys(refs: list[dict[str, Any]]) -> list[str]:
@@ -547,6 +549,9 @@ class StudyStore:
                 )
                 if current is None or current["fingerprint"] != snapshot["fingerprint"]:
                     raise LearningUnavailable("Study evidence changed")
+            for capture in study.native_context:
+                if not self.graph._context_current(db, source, capture, now=now, exact=True):
+                    raise LearningUnavailable("Study setup changed")
 
     def finish(
         self, study: Study, item: dict[str, Any] | None, *, now: datetime, outcome: str
@@ -563,6 +568,9 @@ class StudyStore:
                 current = self.graph._snapshot(snapshot["ref"], source, now=now)
                 if current is None or current["fingerprint"] != snapshot["fingerprint"]:
                     raise LearningUnavailable("Study evidence changed before commit")
+            for capture in study.native_context:
+                if not self.graph._context_current(db, source, capture, now=now, exact=True):
+                    raise LearningUnavailable("Study setup changed before commit")
             for snapshot in study.snapshots:
                 veto = db.execute(
                     "SELECT cursor FROM checkpoints WHERE stream=?",
@@ -571,7 +579,9 @@ class StudyStore:
                 if veto and veto[0] == snapshot["fingerprint"]:
                     raise LearningUnavailable("Study support retired by operator")
             if item:
-                self.graph._write_observation(db, source, item, now=now, automated=True)
+                self.graph._write_observation(
+                    db, source, item, now=now, automated=True, native_context=study.native_context
+                )
             anchor = study.snapshots[0]
             db.execute(
                 "INSERT OR REPLACE INTO checkpoints VALUES (?, ?)",
@@ -826,6 +836,18 @@ class GraphDistiller:
                 )
                 return completed("insufficient_support")
 
+            captures = []
+            for snapshot in study.snapshots:
+                if snapshot["ref"]["kind"] == "discord":
+                    capture = await asyncio.to_thread(
+                        graph.study_context, snapshot["ref"], now=self.clock()
+                    )
+                    if capture is not None:
+                        captures.append(capture)
+            # Content-free metadata stays local. Both provider payloads remain
+            # target-only; contextual semantic studies still require qualification.
+            study = replace(study, native_context=tuple(captures))
+
             async def source_check() -> None:
                 nonlocal stage
                 previous, stage = stage, "source_validation"
@@ -851,19 +873,44 @@ class GraphDistiller:
                         ) or not self.ingestor.accepts(channel):
                             raise LearningUnavailable("Study channel unavailable")
                         stage = "source_refresh"
-                        async with asyncio.timeout(4):
-                            message = await self.ingestor.refresh(channel, ref["message_id"])
+                        capture = next((c for c in study.native_context if c["ref"] == ref), None)
+                        if capture is not None:
+                            try:
+                                episode = await verify_native_context(
+                                    self.ingestor, channel, capture
+                                )
+                            except (discord.NotFound, discord.Forbidden):
+                                await asyncio.to_thread(graph.discard_native_context, capture)
+                                raise
+                            if episode is None:
+                                await asyncio.to_thread(graph.discard_native_context, capture)
+                                raise LearningUnavailable("Study setup changed during fresh read")
+                            # Peer text is deliberately never projected into requests.
+                            message = episode.source
+                            valid_source = bool(
+                                message is not None
+                                and message.id == ref["message_id"]
+                                and message.channel_id == channel.id
+                                and message.guild_id == self.ingestor.identity.guild_id
+                                and message.author_id == self.ingestor.identity.user_id
+                                and not message.bot
+                                and not message.webhook
+                            )
+                        else:
+                            async with asyncio.timeout(4):
+                                native = await self.ingestor.refresh(channel, ref["message_id"])
+                            valid_source = bool(
+                                native is not None
+                                and native.id == ref["message_id"]
+                                and native.channel.id == channel.id
+                                and native.guild is not None
+                                and native.guild.id == self.ingestor.identity.guild_id
+                                and native.author.id == self.ingestor.identity.user_id
+                                and not native.author.bot
+                                and native.webhook_id is None
+                            )
                         stage = "source_validation"
-                        if (
-                            message is None
-                            or message.id != ref["message_id"]
-                            or message.channel.id != channel.id
-                            or message.guild is None
-                            or message.guild.id != self.ingestor.identity.guild_id
-                            or message.author.id != self.ingestor.identity.user_id
-                            or message.author.bot
-                            or message.webhook_id is not None
-                        ):
+                        if not valid_source:
                             raise LearningUnavailable("Study source attribution changed")
                 stage = "source_validation"
                 if not self.ingestor.verified:

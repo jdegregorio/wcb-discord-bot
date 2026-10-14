@@ -1,10 +1,12 @@
 # Prioritized Trubot backlog
 
-Selected H57 before H55b: fresh native source reads at every provider attempt and
-commit, based on two reproduced obsolete-memory defects. Same-case lifecycle/retry/
-scope controls and real Discord required. Existing six-source study/four-hour pacing,
-USD2 maintenance and closed native pattern gate unchanged. Supported enabling work,
-no measured character gain. See this run's study for criteria and decision triggers.
+Selected H58a: local native setup dependencies. Baseline17fail/7pass and actual
+owner/handler comparison support correction of stale interpretations. Bind existing
+metadata through study/commit, retire observations/checkpoints/backups on setup change,
+preserve unchanged recapture, source scope/withdrawal/pacing/ledger/pattern gate.
+No new provider payload or human trait. Full criteria: [study](evaluations/2026-10-13-native-study-context-study.md).
+H55b semantic context transfer remains specifically approval-gated; H48 held-outs still
+required. H57 is already deployed as2.22.2 and its prior interrupted result reconciled.
 
 Delivered H54a (2.20.1, PR96): native automatic pattern evidence gate. Reproduced permissive schema,
 local validation, automated storage and restored recall. So that detached remarks
@@ -21,11 +23,11 @@ cases and actual private baseline/candidate handler acceptance. No human abstrac
 or measured fidelity improvement. No peer text/schema/new calls; existing graph and
 learning lock. [Study](evaluations/2026-10-13-native-context-links-study.md).
 
-1. H55b/H54b/H50 contextual native study integration after H56 freshness. Enabling. Evidence: current target-only
+1. H55b/H54b/H50 semantic native study integration after H58a local lifecycle. Enabling. Evidence: current target-only
    automatic packets and H54a reproduction. Benefit: distinguish invited humor from
    a stance so that later abstractions reflect conversational setup. Dependencies:
    H55a captured authenticated bounded peers/replies/fingerprints, fresh visibility checks
-   and context edit/delete/withdrawal invalidation. Acceptance/validation: both provider passes/commit recheck every dependency; same-case
+   and context edit/delete/withdrawal invalidation. Acceptance/validation: H58a supplies local both-pass/commit dependency checks; add approved semantic setup, same-case
    setup studies plus source lifecycle/retrieval controls and real Discord; do not
    persist interpretations until complete. Confidence: architecture gap confirmed,
    reply-quality impact unresolved. Impact: bounded Discord reads/private app volume,
