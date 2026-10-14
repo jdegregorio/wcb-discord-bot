@@ -3673,3 +3673,33 @@ refs/metrics0700/0600,seven-daymanualretention/withdrawalcleanup,no raw answer a
 Candidateoverridesremovedbeforeinstalledtests; publicsyntheticreports/fullqualitylogs
 preserved in automationstorage. EvidencePR only changes docs; runtime/test/version/
 lock identical to released81f8e06. [Full result](evaluations/2026-10-14-short-continuity-release.json).
+
+
+## 2026-10-14 09:00 - H62/H62a qualified abstract rollout
+
+Both phases and locked criteria: [study](evaluations/2026-10-14-abstract-rollout-study.md).
+New fetched-main managed worktree, base ad3c4e5, primary untouched; prior run complete.
+Authenticated three-channel fourteen-day audit: 7 target/12 peer/4 older bot/0 current
+spontaneous. Contextual private archive study: 21 windows/6 exports, 39 target/66 peer
+block occurrences, current exact refs, unknown dates. Two distinct supports, a contrary
+case and one independent unseen compatible episode justify a conditional tentative
+candidate, not a universal human trait. Overlapping, sparse and missing-pixel windows
+are excluded from independent quality evidence. Same Codex evaluator; no human review.
+
+Selected preview validates all prospective graph writes under the source lock and
+rolls back successful previews without changing beliefs or backups. Commit revalidates.
+12 baseline regression failures; 13 candidate checks pass. Real-source disposable
+lifecycle 9/9. Matched actual owner handlers: both arms 5/5, eight posts/two abstentions,
+six maintenance requests each. Four candidate packets carry an abstraction with no
+audit counts, four baseline packets do not. Baseline replies are already natural;
+no broad quality/humor gain is measured. Candidate depth is longer, 44 words/two
+sentences; firm/care/recipient controls pass. First temp clone exceeds16MB tmpfs;
+owned private app-volume clones solve it and are erased, no production state change.
+
+Next: qualified population and independent human held-outs/legacy review; specific
+native semantic approval remains unresolved and no rejected transfer is retried;
+emotional/semantic humor/cues; broader native/thread/pixels; selective skills/tools
+and generated U.P. aurora/trail-camera scenes. Guard18/2/20, source/lifecycle/intake,
+model/pacing/schedule/notifications remain. Candidate2.25.0 release/install acceptance
+pending. Runtime change is operator preview; private population is a separately
+validated deployment step, never public Git source or synthetic human evidence.

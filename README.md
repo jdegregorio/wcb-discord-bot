@@ -172,6 +172,13 @@ the setup. Brevity and successful delivery alone do not establish humor quality.
 
 ## Memory author binding (2.19.2)
 
+Reviewed graph rollouts can be previewed with `trubot-graph import --manifest
+<private-manifest> --dry-run`. Preview runs full source/provenance/conflict validation
+without changing beliefs or backups; the later import revalidates everything.
+Qualified abstract memories require independent contextual support, limitations,
+contrary evidence and actual reply checks. Private population is not packaged in Git.
+See the [storage runbook](docs/trubot-evolution/storage.md) for rollout and retirement.
+
 Historical evidence and abstract episode memories remain attributed to Andrew.
 An authenticated source/focus-author comparison distinguishes his own questions from
 another person's questions, including reactions and misleading display names.

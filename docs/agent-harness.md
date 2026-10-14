@@ -1,5 +1,15 @@
 # Trubot agent harness
 
+H62/H62a is the current increment: safe reviewed abstract-memory rollout. Import
+preview validates the complete batch under the source lock, rolls back all prospective
+writes and preserves backups; commit revalidates evidence. One newly studied private
+conditional memory is eligible only after held-out, lifecycle and actual handler
+acceptance. It is tentative with contrary evidence and thirty-day expiry. Source
+content and personal interpretation stay private. General character/humor improvement
+is unmeasured; the fresh baseline decision reply is already natural and relevant.
+[Planning and acceptance](trubot-evolution/evaluations/2026-10-14-abstract-rollout-study.md).
+Release and installed normal gateway acceptance are pending.
+
 The production composition uses standard gpt-6-luna Responses, store=false,
 accounted attempts, bounded current conversation, verified source/graph memory,
 source-author binding and at most two ephemeral image inputs. There are no external
