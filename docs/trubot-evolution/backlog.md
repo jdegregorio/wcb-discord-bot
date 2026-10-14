@@ -1,5 +1,31 @@
 # Prioritized Trubot backlog
 
+Delivered H59/H59b2.24.1, PR106/107. Fresh ordinary gateway care3sentencesto1 and
+newvariation1sentence, all7installedcontrolsPASS. Initial2.24.0 real acceptance failed;
+prerelease/rollback verified, revised actual-draft candidate passed owner/handler and
+matchedhistory20/21to21/21.32safeguards/fullgates1,052tests/96.87%coverage. Affected
+careaddsoneaccountedrequest and takes10-11seconds in observed cases. No new human
+trait or generalfidelity/humor gain. [Evidence](evaluations/2026-10-14-brief-reply-release.json).
+
+Next: qualified H48/H55b abstractions/contextual native integration and legacy review,
+then H22/H39/H51 emotional/semantic variety/cues, broader native/visual episodes and
+selective tools/skills/generated outdoors. Specific peer-transfer approval and genuine
+held-outs remain prerequisites. Source quotes remain secondary to useful abstractions.
+
+H60 exploratory: short supported factual repetition may incur an unnecessary optional
+source recheck. Evidence: one source-reuse refusal and one slow4wordrecall in this
+seven-case cohort; exact causal attribution is unresolved. Benefit: keep direct facts
+natural and prompt, so stable answers do not require cosmetic novelty. Dependencies:
+per-case tracing and same-source matched tests. Acceptance/validation: lower unnecessary
+checks without stale memory/repetition/withdrawal/author failures, real Discord and
+latency/cost measurement. Confidence: unvalidated, no runtime change selected. Impact:
+existing budget/maintenance probes only, no new paid service. This can reorder after
+causal evidence or a material grounding/privacy regression; H48 remains the longer goal.
+
+Prior detailed hypotheses/acceptance follow; completed status in progress supersedes
+older pending-release notes.
+
+
 Selected H59, candidate2.24.1: brief-reply repair. Evidence: fresh real care repro,
 9baseline regression failures,31final safeguard cases, matched care/celebration
 brevity17/21to21/21. Benefit: concise specific engagement, so formulaic three-part

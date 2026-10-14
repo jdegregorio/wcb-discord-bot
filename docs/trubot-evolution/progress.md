@@ -3576,3 +3576,47 @@ label to establish identity. Actualcandidateowner/handler H59B: firstdraft3sente
 Distinct readinessbeforeconstruction, nosecondgateway/developmentlearning/rawartifact;
 primaryheartbeathealthyafterclose. Same-model accumulated-history matched trial and
 allreleasegates remain pending. Same coherent dailyincrement, candidate2.24.1.
+
+
+### H59b2.24.1 verified final runtime outcome
+
+PR107 merged e761f965c92b311789a334f023e727f6549e41de, CI38537163276/
+38537462172/image38537848820SUCCESS; feature/merged6gates1,052tests/96.87%/31typed/
+build2.24.1. Stable immutable [release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.24.1)
+running c2553b4f5876c7c1db76a047771c1497a3f17ccacd02c7d62e4db9ca872c46de,
+all31sourcehashes/OCIcommit/module/package match. Release timer completed scoped
+transaction during manual preparation; helperconfirmedalreadycurrent. Pi5/aarch64/
+Ubuntu24.04, healthy/Discordready/0restarts, previousgood2.23.0/4cc40f2retained.
+2.24.0prerelease/notlatestflagreauthenticated, tagbytesunchanged; earlierrollbackverified.
+
+Seven normalactualowner/gatewaycases,6authenticatedposts/1accountedcorrectabstention,
+9providerattempts/2successfulcare repairs. Care12words1sentence, heldoutvariation14/1,
+banter12/1, ordinarypreference4/2, broadpast43/2, exactday7/1naturaluncertainty. Source
+claimscheckedprivately with7ArchiveStore.contextwindows/2documents/21groupedblocks/
+8target13peer, plus authenticatednativeevidence. Unknowncalendar dates remaininternal;
+ordinaryanswersno metadata caveat. No exactcalendar assertion, source ownership mixup,
+new biography or insensitive care in these controls. Variation's thirdperson operator
+wording and stockprefaces remain quality questions; no human-care holdout/generalgain.
+
+Actualowner-to-botlatencies3.3-11.3seconds, care10.0/11.3seconds. Source-reuse refusal1
+made no extra call; actual6posts vs5adaptercompletionlogs corrected before reporting.
+Zeroerrors/replyfailures/disconnects/studypauses/restarts,2startupSDKwarnings; sparseleague
+activitylimitsrates. Pre/post3intakes/latest100/14days7target12peer4olderbot0current
+spontaneous; native34/439graphsources/554episodes/3legacyobservations/0patterns.
+Existing recall nowrecords6content-freecaptures/9dependencies, no newhumantrait.
+
+CoveredOctoberUSD0.226279000,1,506attempts/1preexistingunsettledreservation; run175
+settled/USD0.013332600 (163maintenance/USD0.008018325,12runtime/USD0.005314275).
+Finalgateway9/USD0.003774565. Estimatesnotbilling,pre-guardunknown,18/2/20unchanged,
+noaddedpaidservice. Privatecontent-free receipts0700/0600; trialoverrides/rawdiagnostic
+stagingerased, no sourcestate/withdrawal/usage restore. NewH60shortfactualrechecklatency
+hypothesis remainsunvalidated; qualifiedH48/H55babstractpopulation/legacyreviewstays
+nextwithspecificapprovalandheld-outs. Source/visual/tools/generatedoutdoorthemesretained.
+[Complete structured evidence](evaluations/2026-10-14-brief-reply-release.json).
+
+
+Completion evidence: [PR108](https://github.com/jdegregorio/wcb-discord-bot/pull/108).
+It changes documentation only. Runtime, tests, version and lockfile are identical to
+released commit e761f965c92b311789a334f023e727f6549e41de. The run's three PRs are
+attached to its chat and labeled codex and codex-automation. Private receipt refs and
+quality logs are preserved before archiving only this run's managed worktree.

@@ -10,9 +10,12 @@ candidateowner/handler3sentences/20wordsto1sentence/12words, sincereandreviewed.
 32final safeguards; no new control regression observed. No general character/humor
 or human-memory gain. [Research and rollback](evaluations/2026-10-14-brief-reply-study.md).
 
-Currentproduction2.23.0/4cc40f2healthy/Discordreadyafterrollback. Candidate2.24.1
-awaits testedmerge/immutableimages/normalinstalledgatewayacceptance. H58a completed;
-no overlapping unfinished evolutionPR. Primary checkout preserved in this run's worktree.
+Verifiedproduction2.24.1/c2553b4healthy/Discordready/0restarts, all31installedsource
+hashesmatch testedruntimee761f96. Seven normalgatewaycontrolsPASS, care3sentencesto1,
+with grounded natural ordinary recall/dateuncertainty/recipientrestraint. Affected
+caretakes10-11seconds; no generalfidelity/humormultiplier is claimed.2.24.0 remains
+immutableprerelease after verifiedrollback. H59/H59bcomplete; evidence merge follows.
+[Complete outcome](evaluations/2026-10-14-brief-reply-release.json).
 
 Next ordered increments:
 1. H48/H21/H28 qualified abstract population coupled with H55b/H54b/H50 semantic

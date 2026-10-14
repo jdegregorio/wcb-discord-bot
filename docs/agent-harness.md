@@ -47,3 +47,11 @@ reserved. Same-case history stress and actual candidate owner/handler acceptance
 are mandatory, followed by normal installed gateway acceptance. Images/source/author
 scope remain; repetition-only payloads keep their earlier shape.2.24.0 is prerelease
 and was rolled back to2.23.0 after its real acceptance failure.
+
+
+H59b2.24.1installed outcome: all31testedsourcehashesmatch,7normalgatewaycontrols
+pass, both care replies1sentence. One optional source-reuse check refuses uncertified
+memory and makes no extra provider call; six authenticated sends remain authoritative.
+Final9runtimeattempts/twocare repairs, affectedcare10-11seconds. No rawdraft learning,
+newtrait/nativepayload/patternpermission/schema/ledger change or broadqualityclaim.
+[Final evidence](trubot-evolution/evaluations/2026-10-14-brief-reply-release.json).
