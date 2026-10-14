@@ -1,6 +1,6 @@
 # Prioritized Trubot backlog
 
-Selected H60a short reply continuity: supported harness correction. Evidence and locked
+Delivered H60a 2.24.2 short reply continuity: supported harness correction. Evidence and locked
 acceptance: [study](evaluations/2026-10-14-short-continuity-study.md). Actual baseline
 makes two requests for unchanged four-word factual output; 17 new baseline failures and
 two substantial-echo controls. Benefit: direct prompt answers without cosmetic novelty.
@@ -11,7 +11,12 @@ contract. Validate exact same-case accounting/callback/first-request behavior, m
 same-model handlers, all gates, actual candidate and installed Discord, attempts/latency/
 cost and controls. High confidence in the causal path; broad character gain unresolved.
 Operating impact: fewer optional checks/calls in affected cases, no new service or pool.
-Short jokes may repeat deliberately; no semantic repetition claim. Release pending.
+Short jokes may repeat deliberately; no semantic repetition claim. All gates, CI,
+images, 31 installed source hashes and six normal gateway controls pass.
+[Final release evidence](evaluations/2026-10-14-short-continuity-release.json).
+The seven-word exact-date uncertainty still receives cosmetic recovery. A future
+semantic factual-continuity classifier remains exploratory, requiring matched author/
+source/quote/repetition controls and fresh Discord; do not simply widen this bound.
 
 Next ordered increments:
 

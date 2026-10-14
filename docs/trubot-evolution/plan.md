@@ -1,13 +1,15 @@
 # Trubot evolution plan
 
-Selected H60a: bounded short reply continuity, so brief stable answers avoid cosmetic
+Delivered H60a in 2.24.2: bounded short reply continuity, so brief stable answers avoid cosmetic
 rechecks and regeneration. Fresh actual 2.24.1 gateway reproduction makes two accounted
 provider attempts and posts the same four-word answer. The full-echo recognizer treats
 24 characters as substantial. Candidate exempts at most five lexical words and sixty
 characters; longer echoes/passages and independent brevity repair remain eligible.
 It grants no factual authority and leaves initial memory verification authoritative.
 [Both planning phases and locked criteria](evaluations/2026-10-14-short-continuity-study.md).
-Full quality, matched trials and installed release acceptance are pending.
+All six feature/merged gates, required CI, both images, scoped deployment, 31 source
+hashes and six normal gateway controls pass. The four-word recall uses one request,
+with supported content intact. [Final evidence](evaluations/2026-10-14-short-continuity-release.json).
 
 H59/H59b is complete in 2.24.1 after verified rollback of failed 2.24.0. Its actual-draft
 length repair remains. No new human trait or general fidelity/humor multiplier is claimed.
@@ -32,6 +34,8 @@ Next ordered increments:
    tool failure/abstention and USD 20 operating estimates before production.
 
 H60a moved ahead of unresolved population after actual unnecessary-work reproduction.
+Seven-word uncertainty still receives cosmetic recovery; semantic factual-continuity
+selection remains exploratory, alongside stock care wording and familiar comic premises.
 A failed same-case trial rejects it; qualified human abstractions or a material grounding/
 privacy regression can reorder work. Source audit text stays secondary to abstractions.
 

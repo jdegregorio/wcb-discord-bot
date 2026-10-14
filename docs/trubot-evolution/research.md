@@ -2110,3 +2110,15 @@ reviewed without a new control regression. Actual same-owner-anchor source-backe
 checks drop from two to one, keeping one accounted request and supported natural content.
 The initial uncached-source harness is excluded from grounding acceptance and preserved
 as a limitation. Full gates 1,071 tests/96.87% pass. Installed gateway acceptance pending.
+
+H60a final: deployed 2.24.2/c75799d after PR109/required CI/images/scoped transaction.
+All 31 installed source hashes match. Six normal gateway controls pass: five posts/
+one abstention, eight requests. Four-word supported recall uses one request/no cosmetic
+refresh. Seven-word exact-date uncertainty still gets recovery; semantic factual
+continuity remains exploratory. Care stays sincere/brief; familiar humor premises and
+stock care language remain unresolved. Zero current spontaneous league activity and
+zero active patterns limit fidelity claims. Shared guard and private scope unchanged;
+run USD 0.009047595 estimate/68 requests, final covered October USD 0.235326595.
+Next H48/H55b qualified abstractions/legacy qualification, emotional/semantic humor,
+wider native/visual coverage and H61 selective tools/generated outdoors.
+[Final evidence](evaluations/2026-10-14-short-continuity-release.json).
