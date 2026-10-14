@@ -1,52 +1,44 @@
 # Trubot evolution plan
 
-Selected this run: H58a native study dependency lifecycle. Existing content-free
-setup captures now bind studies and their derived observations. Missed setup changes
-pause extraction/review/commit; known corrections or removal retire dependent memory.
-Same-case baseline17fail/7pass, candidate24/24. Actual private owner/handler baseline
-commits an obsolete invented observation; candidate blocks it. Engineering gain only.
-Target-only provider payloads and the native pattern gate remain unchanged. H55b
-semantic context integration requires specific peer-transfer approval plus held-outs.
-Both phases and criteria: [study](evaluations/2026-10-13-native-study-context-study.md).
+Selected H59: bounded ordinary-reply repair, so recurring three-part acknowledgements
+fit the existing brief voice contract. A fresh real private Discord care question
+reproduced the defect. Same-case regressions baseline9fail/13pass, candidate22/22;
+final31safeguards. Matched same-model trial care/celebration brevity17/21to21/21,
+36final cases per arm,36baseline/42candidate accounted attempts. No new control
+regression observed; gentle jokes in low-stakes setbacks and stock prefaces remain.
+No general character/humor gain or new human memory is claimed.
+[Research, locked criteria and results](evaluations/2026-10-14-brief-reply-study.md).
 
-Current verified production2.23.0 (PR104), immutable4cc40f2, healthy/Discordready.
-All six feature/merged gates, CI/images/hashes and installed real Discord lifecycle
-acceptance pass. Prior interrupted2.22.2 runtime/receipts are reconciled. Semantic
-peer-transfer approval and genuine human-held-out qualification remain open; target-only
-payloads/native pattern gate unchanged. Three legacy observations remain unlinked.
+Candidate2.24.0 is awaiting full gates/release/installed real Discord. Current
+production2.23.0/4cc40f2 is healthy and Discord-ready. Prior H58a is completed,
+no unfinished evolution PR. Primary checkout preserved in a new managed worktree.
 
 Next ordered increments:
-1. H48/H21/H28 qualified abstract population coupled with H55b/H54b/H50 contextual
-   native study integration. Use attributed episodes, contrary cases and genuine
-   human-held-out comparison. Recheck full dependencies before both provider passes
-   and atomic commit; link derived observations to context invalidation before opening
-   the native pattern gate. Archive patterns remain eligible under existing contracts.
-2. H22/H39/H51 brevity, semantic variety and cue reliability. Fresh care controls use
-   three short sentences and a recurring preface; humor can paraphrase an older premise.
-   Same-model matched cases must improve useful comic turns without factual inventions,
-   recipient mistakes or insensitive timing. No general2-3xhumor gain established.
-3. Broader native peers/replies/threads/original pixels with honest coverage gaps,
-   authenticated scope and correction/deletion/withdrawal handling.
+1. H48/H21/H28 qualified abstract population coupled with H55b/H54b/H50 semantic
+   native context integration and legacy qualification. Require specific peer-transfer
+   approval, attributed support/contrary episodes, genuine human-held-outs and source/
+   setup invalidation before opening the native pattern gate. Archive studies remain
+   eligible, but no qualified active pattern has been established.
+2. H22/H39/H51 emotional judgment, semantic humor variety and cue reliability.
+   H59 enforces length only; stock wording, gentle setback punchlines and familiar
+   comic premises need matched meaning-based evaluation and actual Discord checks.
+3. Broader native peers/replies/threads/original pixels, with authenticated scope,
+   source lifecycle and honest historical/visual coverage gaps.
 4. Selective skills/tools and generated Michigan U.P. aurora/trail-camera wildlife,
-   short natural captions and generated provenance. Validate original pixels,
-   sharing/timing, abstention and operating estimates withinUSD20.
+   short natural captions and generated provenance. Validate sharing/timing, original
+   pixels, held-outs, abstention and USD20 operating estimates.
 
-Priorities changed because the deployed full-cycle audit exposed a partial freshness
-result that simple timeout/ordering changes did not repair. Complete this supported
-transport correction before using native context in derived character learning.
-Genuine qualified human abstractions or a material behavioral regression can reorder
-future work. Keep source audit text secondary to abstractions in ordinary conversation.
-The prior specific optional private-provider grounding audit remains unexecuted;
-strict preference/historical semantic audit gaps are not silently marked resolved.
+H59 moved ahead of approval-gated population because a current user flow reproduced
+a supported contract defect without requiring new private transfers. A failed trial,
+qualified human pattern or material grounding/privacy regression can reorder work.
+No rejected provider payload is retried; three legacy observations remain unlinked.
+Source text remains auditing evidence, secondary to useful qualified abstractions.
 
-Retain bot identity and approved creative amplification/Thomas Jones bits, accurate
-internal dates/unknowns, private evidence and source attribution. Bot/peer/development/
-quoted/OCR text never establishes Andrew beliefs. Runtime keeps league allowlist/noDMs,
-owner-only private development recall, USD18runtime/USD2maintenance/USD20monthly guard,
-original capture30-day lifetime and existing app volume. No new service/model/schema,
-source replay or provider request from this feature. Six standalone local01/05/09/13/
-17/21runs, Sol/xhigh and notifications unchanged. Every run fetches main/new managed
-worktree, completes both planning phases, six gates/required CI/tested merge/immutable
-release/both architectures/scoped deployment and real private Discord smoke tests.
-
-[Complete research and release evidence](evaluations/2026-10-13-native-freshness-study.md).
+Preserve bot identity, approved creative amplification and Thomas Jones bits,
+private attribution/unknown dates/withdrawal, runtime league allowlist/noDMs,
+owner-only confirmed development scope, USD18runtime/USD2maintenance/USD20monthly
+ledger, existing volume/retention and six standalone01/05/09/13/17/21Sol/xhighruns.
+No new model/service/schema/intake/spending pool, schedule or notification change.
+All runs fetch main/new managed worktree, finish both planning phases, six gates,
+required CI/tested merge/immutable release/both images/scoped deployment and actual
+private Discord smoke tests. Never equate healthy transport with measured fidelity.

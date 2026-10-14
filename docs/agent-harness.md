@@ -1,59 +1,42 @@
 # Trubot agent harness
 
-Selected this run: H58a native study dependency lifecycle. Existing content-free
-setup captures now bind studies and their derived observations. Missed setup changes
-pause extraction/review/commit; known corrections or removal retire dependent memory.
-Same-case baseline17fail/7pass, candidate24/24. Actual private owner/handler baseline
-commits an obsolete invented observation; candidate blocks it. Engineering gain only.
-Target-only provider payloads and the native pattern gate remain unchanged. H55b
-semantic context integration requires specific peer-transfer approval plus held-outs.
-Both phases and criteria: [study](trubot-evolution/evaluations/2026-10-13-native-study-context-study.md).
+The production composition uses standard gpt-6-luna Responses, store=false,
+accounted attempts, bounded current conversation, verified source/graph memory,
+source-author binding and at most two ephemeral image inputs. There are no external
+runtime tools or selectively loaded skills yet. Quoted source/peer/bot/development
+text cannot establish Andrew beliefs or authorize application actions.
 
-Current verified production2.23.0 (PR104), immutable4cc40f2, healthy/Discordready.
-All six feature/merged gates, CI/images/hashes and installed real Discord lifecycle
-acceptance pass. Prior interrupted2.22.2 runtime/receipts are reconciled. Semantic
-peer-transfer approval and genuine human-held-out qualification remain open; target-only
-payloads/native pattern gate unchanged. Three legacy observations remain unlinked.
+H59 adds bounded ordinary-reply length repair to existing repetition recovery.
+One shared optional generation uses the same model/source context, separately
+accounted on the original runtime/maintenance purpose, with no optional transport
+retry or third quality attempt. Private memory is rechecked before reuse. Explicit
+evidence/quotation/detail/creative requests and unfocused ambient runway are exempt.
+A still-overlong or failed repair preserves the original; no mid-thought truncation.
+This recognizes format excess, not semantic quality or a new human trait.
+[Research and results](trubot-evolution/evaluations/2026-10-14-brief-reply-study.md).
 
-Next ordered increments:
-1. H48/H21/H28 qualified abstract population coupled with H55b/H54b/H50 contextual
-   native study integration. Use attributed episodes, contrary cases and genuine
-   human-held-out comparison. Recheck full dependencies before both provider passes
-   and atomic commit; link derived observations to context invalidation before opening
-   the native pattern gate. Archive patterns remain eligible under existing contracts.
-2. H22/H39/H51 brevity, semantic variety and cue reliability. Fresh care controls use
-   three short sentences and a recurring preface; humor can paraphrase an older premise.
-   Same-model matched cases must improve useful comic turns without factual inventions,
-   recipient mistakes or insensitive timing. No general2-3xhumor gain established.
-3. Broader native peers/replies/threads/original pixels with honest coverage gaps,
-   authenticated scope and correction/deletion/withdrawal handling.
-4. Selective skills/tools and generated Michigan U.P. aurora/trail-camera wildlife,
-   short natural captions and generated provenance. Validate original pixels,
-   sharing/timing, abstention and operating estimates withinUSD20.
+The graph connects attributed human sources, episodes, entities and qualified
+observations. Ordinary abstract guidance suppresses competing raw voice/audit prose;
+evidence requests retain source access. Every claim remains source/temporal/status
+qualified. Native setup captures are bounded content-free dependencies, freshly
+checked at study boundaries and linked to derived invalidation. Native studies still
+send target-only text; automatic native patterns remain closed. Specific semantic
+peer-transfer approval and genuine human-held-outs remain open. Archive pattern
+contracts remain eligible, but qualified human pattern population is unresolved.
 
-Priorities changed because the deployed full-cycle audit exposed a partial freshness
-result that simple timeout/ordering changes did not repair. Complete this supported
-transport correction before using native context in derived character learning.
-Genuine qualified human abstractions or a material behavioral regression can reorder
-future work. Keep source audit text secondary to abstractions in ordinary conversation.
-The prior specific optional private-provider grounding audit remains unexecuted;
-strict preference/historical semantic audit gaps are not silently marked resolved.
+Next order: qualified H48/H55b abstractions/contextual native studies and legacy
+qualification; H22/H39/H51 emotional judgment/semantic humor variety/cues; wider
+native peer/reply/thread/original-pixel coverage; selective skills/tools and generated
+Michigan U.P. aurora/trail-camera scenes. Original image interpretation, sharing/timing,
+held-outs, generated provenance and USD20 operating estimates are prerequisites.
+[Current plan](trubot-evolution/plan.md) and [backlog](trubot-evolution/backlog.md)
+own priority, evidence, acceptance and decision triggers. Keep source text secondary
+to useful qualified abstractions during ordinary conversation.
 
-Retain bot identity and approved creative amplification/Thomas Jones bits, accurate
-internal dates/unknowns, private evidence and source attribution. Bot/peer/development/
-quoted/OCR text never establishes Andrew beliefs. Runtime keeps league allowlist/noDMs,
-owner-only private development recall, USD18runtime/USD2maintenance/USD20monthly guard,
-original capture30-day lifetime and existing app volume. No new service/model/schema,
-source replay or provider request from this feature. Six standalone local01/05/09/13/
-17/21runs, Sol/xhigh and notifications unchanged. Every run fetches main/new managed
-worktree, completes both planning phases, six gates/required CI/tested merge/immutable
-release/both architectures/scoped deployment and real private Discord smoke tests.
-
-[Complete research and release evidence](trubot-evolution/evaluations/2026-10-13-native-freshness-study.md).
-
-Current handlers use standardgpt-6-luna Responses/store=false/accounted attempts,
-recent conversation, verified sources/graph observations and two ephemeral images.
-No external tools/selective skills today. Native distillation packets remain target-only;
-H56 current context checks do not open the H54a native pattern gate. A separate app
-client sets distinct readiness BEFOREconstruction; plain HTTP study clients own none.
-Historical exact aliases/date uncertainty and source withdrawal/spending remain intact.
+Preserve bot identity, approved creative amplification and Thomas Jones bits,
+existing private storage/retention/corrections/withdrawal, authenticated author/scope,
+owner-only confirmed development recall and runtime league allowlist/noDMs. USD18
+runtime/USD2 maintenance/USD20 calendar-month ledger is shared with all app API use.
+Validation clients set a distinct ephemeral readiness path before construction;
+plain HTTP studies/audits own no application heartbeat or second gateway. Six daily
+standalone01/05/09/13/17/21Sol/xhighruns and notifications remain unchanged.

@@ -3525,3 +3525,34 @@ replies/6runtime including recipient abstention. Guard18/2/20 unchanged, no new 
 not provider billing; pre-guard spending unknown. Specific semantic peer-context transfer
 approval remains pending after automatic review rejection; local-only correction complete.
 [Content-free release evidence](evaluations/2026-10-13-native-study-context-release.json).
+
+
+## 2026-10-14 01:00 - H59 bounded brief-reply repair
+
+Base f871005e13d010a8890e93ad2b28b6677925af4c, new managed worktree and unique
+feature/trubot-daily-20261014-0100 branch, primary untouched. Prior run completed,
+no unfinished evolution PR. Both planning phases, authenticated bounded character
+audit and fresh actual owner/gateway care reproduction completed before selection.
+Three channels/latest100/14days:7target/12peer/4olderbot; UI5target/3olderbot with
+context. Zero current spontaneous activity; one image turn excluded, no new human trait.
+
+H59 prototype:9baseline failures/13controls,22/22candidate;31final safeguards.
+Same-model synthetic12contexts/3samplesperarm,72finalanswers reviewed: care/celebration
+brevity17/21to21/21, no new grounding/recipient/grief-control regression observed.
+36baseline/42candidate accounted attempts. Gentle jokes in two low-stakes setback
+answers remain contrary evidence to a general emotional-judgment claim; stock care
+prefaces/humor variety remain open. No independent human-care hold-out or broad
+fidelity gain. Full [research](evaluations/2026-10-14-brief-reply-study.md).
+
+Selected repair shares one optional quality attempt with repetition, conservatively
+exempts literal/detail/creative requests, rechecks private memory before reuse,
+accounts same purpose, preserves failed/overlong drafts without truncation. No native
+study payload/pattern gate/ledger/schema/source/schedule change. Specific approvals
+and H48/H55b qualification stay open. Candidate2.24.0 awaits gates, tested merge,
+immutable release/images/scoped deployment and fresh actual Discord acceptance.
+
+Feature six gatesPASS:1,051tests/96.87%branchcoverage/31typedmodules/build2.24.0.
+Line-length lint failure corrected and complete gates rerun. TrialUSD0.004066880
+maintenance/78settledattempts, plus actual baseline questionUSD0.000599750;
+coveredOctoberUSD0.217613030/onepreexistingunsettledreservation. Estimates, not
+billing; pre-guardspendunknown. Release and installed acceptance still pending.

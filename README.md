@@ -580,3 +580,15 @@ resulting observations. A changed or removed setup pauses the study or retires
 its dependent memory. The new fingerprints stay local; provider studies remain
 target-only and automatic native personality patterns remain gated. See the
 [evolution plan](docs/trubot-evolution/plan.md) for semantic-learning prerequisites.
+
+
+## Brief ordinary replies (2.24.0)
+
+An ordinary addressed draft with more than two prose sentences or sixty words can
+receive one complete shorter attempt, shared with repetition recovery. It keeps the
+same contextual facts and emotional intent. Quotation, evidence, detail and creative
+writing requests retain their runway. Quoted punctuation, decimals and common
+abbreviations do not masquerade as extra sentences. No reply is mechanically cut.
+The same private-memory recheck and spending guard apply; a failed or still-overlong
+repair keeps the original. This is a bounded length correction, not a semantic judge
+or a guarantee of humor, naturalness or Andrew fidelity.

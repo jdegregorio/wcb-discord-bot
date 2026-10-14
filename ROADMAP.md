@@ -1,5 +1,13 @@
 # Trubot roadmap
 
+Current order: H59 brief-reply correction through release; qualified H48/H55b
+abstract population/contextual native studies and legacy qualification; H22/H39/H51
+emotional/humor variety; broader native/visual episodes; selective tools/skills and
+generated Michigan U.P. aurora/trail-camera scenes. See
+[the maintained evolution plan](docs/trubot-evolution/plan.md) for prerequisites,
+acceptance, costs and evidence. Earlier status below is historical.
+
+
 Selected this run: H58a native study dependency lifecycle. Existing content-free
 setup captures now bind studies and their derived observations. Missed setup changes
 pause extraction/review/commit; known corrections or removal retire dependent memory.

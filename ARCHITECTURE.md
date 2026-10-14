@@ -319,3 +319,12 @@ validate semantic capture fingerprints; identical recapture preserves memory, wh
 replacement/removal/expiry invalidates observations/checkpoints/backups. No peer text
 is persisted or added to study requests. Reply rendering strips this new local
 metadata. Automatic native patterns remain closed pending contextual qualification.
+
+
+`reply_brevity.py` conservatively recognizes ordinary prose excess in a completed
+draft. `openai_responder.py` combines brief and repetition guidance in the existing
+one optional quality attempt. Explicit content/reference requests and unfocused
+ambient replies retain runway. Current-source checks precede private reuse; the
+same ledger purpose accounts for the request without optional transport retries.
+Unavailable/empty/incomplete/still-overlong repair preserves the original. No new
+source context, storage, tool, model or provider study payload is introduced.
