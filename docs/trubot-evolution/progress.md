@@ -3468,3 +3468,60 @@ current-source replies. Previous run ended at account usage limit after these te
 not at a product failure. Its missing fresh gateway controls are not retroactively
 claimed; this run performs fresh controls after its own release. Covered ledger at
 run startUSD0.20793597/1320settled/0unsettled; includes prior four maintenance probes.
+
+### H58a released and verified
+
+[PR104](https://github.com/jdegregorio/wcb-discord-bot/pull/104), feature4a4b918,
+mergedb96f8f92254432e65070ee5220e26b6dc8076076. Required PR38510455595/main38510641533/
+image38510812783 CI SUCCESS. Feature and merged six gates:1,020tests/96.86%/30modules,
+build2.23.0. One mistyped merge-head SHA was rejected; retried with the verified
+unchanged tested SHA. No protection bypass, tag reuse or agent coauthor.
+
+[Immutable2.23.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.23.0),
+both architectures verified. Reverifiedpi5/aarch64/Ubuntu24.04.4/manifest/helper/locks/
+rollback/group write access; sudo unavailable and unnecessary. Scoped helper deployed
+4cc40f2d0eeec0a03c9d55cd3bf329573061a06ab8862b72cb9d7c5feb662a77. OCIcommit/package/
+module/all30sourcehashes match tested release. Healthy/Discordready/zero restarts.
+Previous2.22.2/536a76c retained; no rollback or schema migration. Before downgrade,
+retire only context-dependent observations/checkpoints/backups with current code;
+source/capture/spending stores remain. Legacy readers ignore the new metadata.
+
+Actual installed C/D probes: review-stage missed setup edit blocks observation;
+post-commit setup deletion retires it. Four controlled real owner/handler replies
+including baseline/candidate/installed, all refs reauthenticated. All relevant roleplay
+answers, no raw answer artifact. Extraction/review stubbed on invented sources;
+zero genuine provider study calls and four genuine maintenance reply attempts.
+Distinct readiness before construction/no second gateway/no development learning.
+Candidate override removed before installed checks; disposable stores/copies erased.
+
+Read-only same real two-capture cohort verifies all four boundaries2/2, stage869/3714/
+822/776ms under6seconds. Zero provider/send/gateway/real-state mutation. Two actual
+installed worker cycles2verified/0removed/0unavailable. This is transport/lifecycle
+acceptance, not a measured human abstraction or reply-quality gain.
+
+Fresh normal gateway6cases/5posts/1correct recipient abstention. Local contextual
+presentation/recipient5/6: care20words/3sentences/stockpreface remains open, humor14words/
+1relevant creative sentence, baseball4words/direct/natural, recent16words/2manual
+sentences/quotes match viewed human messages, past33words/2sentences/no exact-date
+assertion or routine metadata caveat. Sentence-count heuristics miss quoted punctuation;
+manual meaning review is authoritative. Strict preference-only and independent historical
+semantic audits remain unvalidated; prior optional rejected provider audit never sent.
+No new human habit or measured2-3xhumor gain.
+
+Fresh bounded pre/post league audit unchanged7target/12peer/4olderbot in3channels,
+zero current spontaneous posts; UI5target/3olderbot reviewed with setup. No new original
+pixels. Coverage34native/16archives/4299grouped/412target/405eligible/115visual/96assets;
+graph439sources/554episodes/2claims/1preference/0patterns/5captures/9dependencies.
+Three legacy observations, two native-supported/one automated native, were not
+retroactively linked or revalidated. Genuine production has0context-bound observations
+so far; new-study correctness is demonstrated by invented handler acceptance only.
+
+Observed post-release0errors/replyfailures/memorywarnings/disconnects/studypauses/
+restarts;2startup Discord warnings. The early worker counter used the wrong label,
+corrected before reporting two actual successful cycles. Sparse league activity limits
+rate/fidelity claims. October covered estimateUSD0.210867275(runtime0.107923395/
+maintenance0.10294388),1330settled/0unsettled. RunUSD0.002931305/10attempts:4maintenance
+replies/6runtime including recipient abstention. Guard18/2/20 unchanged, no new service,
+not provider billing; pre-guard spending unknown. Specific semantic peer-context transfer
+approval remains pending after automatic review rejection; local-only correction complete.
+[Content-free release evidence](evaluations/2026-10-13-native-study-context-release.json).

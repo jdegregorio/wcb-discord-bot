@@ -106,3 +106,12 @@ before attempts and commit, and retire dependent observations when their context
 changes. All24focused lifecycle/privacy cases pass. Full six gates pass:1,020tests,
 96.86%branch coverage,30typed modules and2.23.0 package build. No flakiness accepted.
 Required PR CI/tested merge/release/installed tests remain pending.
+
+Installed2.23.0 passes actual review-stage edit and post-commit deletion; all private
+owner/reply refs reauthenticated. Same real cohort2/2at each of four current-read
+boundaries. Full release/CI/installed hashes/readiness pass. Six normal gateway cases:
+presentation/recipient5/6, retain care brevity and stock preface. Strict historical/
+preference-only semantic grading is not completed. No new human trait or actual
+production context-bound population; three legacy observations remain unlinked.
+Specific semantic peer-transfer approval still pending; no rejected path retried.
+[Full counts, identifiers, costs and limits](2026-10-13-native-study-context-release.json).

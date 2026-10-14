@@ -1,0 +1,204 @@
+{
+  "run": "2026-10-13 21:00 Pacific",
+  "base": "ccd3ec493b284275812164b150e4ccd5c93cd967",
+  "hypothesis": "H58a",
+  "scope": "Local native setup dependency lifecycle; target-only provider payloads unchanged",
+  "runtime_pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/104",
+  "feature_commit": "4a4b9181340069c53c7da0a221bfd89a0df94df7",
+  "merged_commit": "b96f8f92254432e65070ee5220e26b6dc8076076",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.23.0",
+  "ci": {
+    "pr": 38510455595,
+    "main": 38510641533,
+    "image": 38510812783,
+    "all_success": true
+  },
+  "quality": {
+    "all_six_gates_feature_and_merged": true,
+    "tests": 1020,
+    "branch_coverage_percent": 96.86,
+    "typed_modules": 30,
+    "package": "2.23.0"
+  },
+  "engineering": {
+    "same_case_baseline": {
+      "failed": 17,
+      "passed": 7
+    },
+    "same_case_candidate": {
+      "passed": 24,
+      "failed": 0
+    },
+    "fixtures_invented": true,
+    "human_fidelity_benchmark": false
+  },
+  "production": {
+    "host": "pi5",
+    "os": "Ubuntu24.04.4",
+    "architecture": "aarch64",
+    "digest": "sha256:4cc40f2d0eeec0a03c9d55cd3bf329573061a06ab8862b72cb9d7c5feb662a77",
+    "arm64_manifest": "sha256:3363ccea18bb14b400ca3a11e9a3fb4711021b553a5aa54c1af30ea9ceb7ca88",
+    "amd64_manifest": "sha256:4be89bf893997c4f0c5f27a88c1bb02d8e7aedd2ddecb3d52baa349765ed2359",
+    "healthy": true,
+    "discord_ready": true,
+    "restarts": 0,
+    "source_hashes_match": 30,
+    "oci_commit_matches": true,
+    "previous_version": "2.22.2",
+    "previous_digest": "sha256:536a76c3dd6a9a4bb58781d6d423877f5eca2c294eb43579305ad20b24337cc6",
+    "rollback_used": false
+  },
+  "actual_private_discord": {
+    "owner_and_bot_refs_authenticated": 4,
+    "controlled_actual_handler_replies": 4,
+    "baseline_obsolete_observation_retained": true,
+    "candidate_and_installed_missed_edit_blocked": true,
+    "installed_post_commit_setup_deletion_retires_observation": true,
+    "real_provider_study_requests": 0,
+    "invented_study_adapter_invocations_per_probe": 2,
+    "distinct_readiness_before_construction": true,
+    "second_gateway": false,
+    "development_learning": 0,
+    "raw_answer_or_source_artifacts": false,
+    "normal_gateway_cases": 6,
+    "normal_gateway_posts": 5,
+    "recipient_abstentions": 1,
+    "presentation_and_recipient_review": {
+      "passed": 5,
+      "failed": 1
+    },
+    "care": {
+      "words": 20,
+      "sentences": 3,
+      "sincere": true,
+      "brevity_pass": false,
+      "stock_preface_remaining": true
+    },
+    "humor": {
+      "words": 14,
+      "sentences": 1,
+      "relevant_creative_line": true,
+      "general_humor_gain_measured": false
+    },
+    "baseball": {
+      "words": 4,
+      "natural": true,
+      "strict_preference_only_semantic_audit_complete": false
+    },
+    "recent": {
+      "words": 16,
+      "manual_sentences": 2,
+      "quotes_match_viewed_human_sources": true
+    },
+    "past": {
+      "words": 33,
+      "sentences": 2,
+      "natural": true,
+      "unsupported_exact_date_asserted": false,
+      "independent_historical_semantic_audit_complete": false
+    },
+    "routine_metadata_disclaimers": 0,
+    "evaluator": "Local Codex contextual UI review; no independent human grade"
+  },
+  "transport": {
+    "same_authenticated_captures": 2,
+    "four_stages_verified": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "stage_elapsed_ms": [
+      869,
+      3714,
+      822,
+      776
+    ],
+    "total_stage_ceiling_seconds": 6,
+    "provider_requests": 0,
+    "sends": 0,
+    "production_state_mutation": false,
+    "temporary_private_copies_erased": true
+  },
+  "audit": {
+    "channels": 3,
+    "latest_per_channel": 100,
+    "days": 14,
+    "target": 7,
+    "peers": 12,
+    "older_bot": 4,
+    "current_spontaneous": 0,
+    "contextual_human_turns_reviewed": 5,
+    "contextual_older_bot_turns_reviewed": 3,
+    "image_dependent_turns_excluded": 1,
+    "new_human_traits": 0,
+    "independent_human_held_out_benchmark_complete": false
+  },
+  "coverage": {
+    "native_messages": 34,
+    "archive_documents": 16,
+    "grouped_blocks": 4299,
+    "target_blocks": 412,
+    "eligible_grouped_blocks": 405,
+    "visual_episodes": 115,
+    "image_assets": 96,
+    "graph_sources": 439,
+    "graph_episodes": 554,
+    "claims": 2,
+    "preferences": 1,
+    "patterns": 0,
+    "captures": 5,
+    "dependencies": 9,
+    "legacy_observations": 3,
+    "legacy_native_supported": 2,
+    "legacy_automatic_native_supported": 1,
+    "production_context_bound_observations": 0,
+    "legacy_observations_retroactively_revalidated": false
+  },
+  "errors": {
+    "observed_errors": 0,
+    "reply_failures": 0,
+    "memory_warnings": 0,
+    "disconnects": 0,
+    "study_pauses": 0,
+    "startup_client_warnings": 2,
+    "actual_worker_cycles": [
+      {
+        "verified": 2,
+        "removed": 0,
+        "unavailable": 0
+      },
+      {
+        "verified": 2,
+        "removed": 0,
+        "unavailable": 0
+      }
+    ],
+    "sparse_spontaneous_activity_limits_rate_claims": true
+  },
+  "cost": {
+    "covered_month_estimate_usd": 0.210867275,
+    "runtime_usd": 0.107923395,
+    "maintenance_usd": 0.10294388,
+    "attempts": 1330,
+    "unsettled": 0,
+    "run_delta_usd": 0.002931305,
+    "run_attempts": 10,
+    "run_runtime_attempts": 6,
+    "run_maintenance_reply_attempts": 4,
+    "monthly_guard_usd": 20,
+    "runtime_guard_usd": 18,
+    "maintenance_guard_usd": 2,
+    "new_paid_services": 0,
+    "provider_invoice": false,
+    "pre_guard_spend": "unknown"
+  },
+  "unresolved": [
+    "Specific bounded peer-context transfer approval; rejected patch never applied or retried",
+    "Contextual semantic study integration and genuine human-held-out abstract population",
+    "Legacy native observation qualification and context coverage",
+    "Care brevity/stock wording and measured semantic humor variety",
+    "Broader native threads and original pixels; selective skills/tools and generated U.P. scenes"
+  ],
+  "privacy": "No raw human excerpts, personal observations or reply text in Git/release/smoke artifacts; refs and flags remain in app-scoped private storage"
+}
