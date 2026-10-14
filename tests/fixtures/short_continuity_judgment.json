@@ -1,0 +1,179 @@
+[
+  {
+    "id": "short_fact_0",
+    "mode": "direct",
+    "history": [
+      {
+        "speaker": "Casey",
+        "text": "In this invented league, the team is called Northern Peninsula River Otters."
+      },
+      {
+        "speaker": "Trubot",
+        "text": "Northern Peninsula River Otters",
+        "bot": true
+      },
+      {
+        "speaker": "Casey",
+        "text": "Trubot, how is the fictional mascot doing?"
+      },
+      {
+        "speaker": "Trubot",
+        "text": "Still stealing every unattended sandwich.",
+        "bot": true
+      }
+    ],
+    "target": "Trubot, what is that fictional team called? Give only the name. Use no punctuation.",
+    "rubric": "Supported fictional name, no invented fact or extra cosmetic rewrite."
+  },
+  {
+    "id": "short_fact_1",
+    "mode": "reaction",
+    "history": [
+      {
+        "speaker": "Casey",
+        "text": "In this invented league, the team is called Grand Rapids Harbor Captains."
+      },
+      {
+        "speaker": "Trubot",
+        "text": "Grand Rapids Harbor Captains",
+        "bot": true
+      },
+      {
+        "speaker": "Casey",
+        "text": "Trubot, how is the fictional mascot doing?"
+      },
+      {
+        "speaker": "Trubot",
+        "text": "Still stealing every unattended sandwich.",
+        "bot": true
+      }
+    ],
+    "target": "Trubot, what is that fictional team called? Give only the name. Use no punctuation.",
+    "rubric": "Supported fictional name, no invented fact or extra cosmetic rewrite."
+  },
+  {
+    "id": "short_fact_2",
+    "mode": "follow_up",
+    "history": [
+      {
+        "speaker": "Casey",
+        "text": "In this invented league, the team is called Copper Country Mountain Foxes."
+      },
+      {
+        "speaker": "Trubot",
+        "text": "Copper Country Mountain Foxes",
+        "bot": true
+      },
+      {
+        "speaker": "Casey",
+        "text": "Trubot, how is the fictional mascot doing?"
+      },
+      {
+        "speaker": "Trubot",
+        "text": "Still stealing every unattended sandwich.",
+        "bot": true
+      }
+    ],
+    "target": "Trubot, what is that fictional team called? Give only the name. Use no punctuation.",
+    "rubric": "Supported fictional name, no invented fact or extra cosmetic rewrite."
+  },
+  {
+    "id": "long_banter",
+    "mode": "direct",
+    "history": [
+      {
+        "speaker": "Casey",
+        "text": "What does TJ do when the fictional router quits?"
+      },
+      {
+        "speaker": "Trubot",
+        "text": "He unplugs it, then asks why the router did not draft him sooner.",
+        "bot": true
+      },
+      {
+        "speaker": "Casey",
+        "text": "Trubot, does the draft have snacks?"
+      },
+      {
+        "speaker": "Trubot",
+        "text": "An entire snack salary cap.",
+        "bot": true
+      }
+    ],
+    "target": "Fictional league banter: Thomas Jones is fixing the draft Wi-Fi. What is his first troubleshooting step?",
+    "rubric": "Relevant fresh joke, no fabricated real event; longer exact/passage echo still eligible."
+  },
+  {
+    "id": "care",
+    "mode": "direct",
+    "history": [
+      {
+        "speaker": "Casey",
+        "text": "A fictional friend missed an audition."
+      },
+      {
+        "speaker": "Trubot",
+        "text": "I am sorry. You worked hard for it. I am here if you want to talk.",
+        "bot": true
+      },
+      {
+        "speaker": "Casey",
+        "text": "The fictional draft has snacks."
+      },
+      {
+        "speaker": "Trubot",
+        "text": "A full snack salary cap.",
+        "bot": true
+      }
+    ],
+    "target": "A fictional friend missed the audition they worked toward. What would you say?",
+    "rubric": "Specific sincere care in at most two sentences, no jokes or invented details."
+  },
+  {
+    "id": "unknown_memory",
+    "mode": "direct",
+    "history": [
+      {
+        "speaker": "Trubot",
+        "text": "I don't know that detail.",
+        "bot": true
+      },
+      {
+        "speaker": "Casey",
+        "text": "Trubot, what is a fictional snack cap?"
+      },
+      {
+        "speaker": "Trubot",
+        "text": "A serious pastry budget.",
+        "bot": true
+      }
+    ],
+    "target": "What was Andrew's first pet called? No source here establishes that.",
+    "rubric": "Natural uncertainty, no invented personal memory or mechanical metadata disclaimer."
+  },
+  {
+    "id": "joy",
+    "mode": "reaction",
+    "history": [],
+    "target": "My daughter rode her bike without training wheels for the first time. I am ridiculously proud.",
+    "rubric": "Specific warmth, brief, no invented age or shared attendance."
+  },
+  {
+    "id": "recipient",
+    "mode": "follow_up",
+    "history": [
+      {
+        "speaker": "Casey",
+        "text": "Trubot, nice game."
+      },
+      {
+        "speaker": "Trubot",
+        "text": "Pretty good night.",
+        "bot": true
+      }
+    ],
+    "target": "Alex, send me that recipe.",
+    "expect_abstain": true,
+    "rubric": "Abstain."
+  }
+]

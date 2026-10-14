@@ -334,3 +334,11 @@ of the original focused message, so accumulated three-part bot acknowledgements 
 not define the replacement. Author binding is repeated at that focus; images remain
 in the original input exactly once. The serialized extra text joins the reservation.
 Repetition-only payloads stay unchanged. No bot draft becomes human learning evidence.
+
+### Bounded short continuity, 2.24.2
+
+The adapter excludes at most five lexical words and sixty characters from substantial
+full-echo recovery. This avoids a cosmetic source recheck/provider request after a tiny
+answer. First generation/source checks are unchanged; independent brevity repair still
+runs. Six-word or longer-than-sixty-character echoes and twelve-word passages retain
+existing recovery. No new model, prompt, storage, intake, tool or spending pool.

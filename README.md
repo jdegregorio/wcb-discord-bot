@@ -592,3 +592,11 @@ abbreviations do not masquerade as extra sentences. No reply is mechanically cut
 The same private-memory recheck and spending guard apply; a failed or still-overlong
 repair keeps the original. This is a bounded length correction, not a semantic judge
 or a guarantee of humor, naturalness or Andrew fidelity.
+
+## Short reply continuity (2.24.2)
+
+Answers with at most five words and sixty characters retain normal brief continuity
+without an optional cosmetic repetition rewrite. Initial memory verification remains.
+Longer repeated replies/passages and independent brevity repair still share the existing
+single budgeted quality attempt. This boundary also permits a short punchline to repeat;
+it does not establish factual truth or solve semantic joke repetition.

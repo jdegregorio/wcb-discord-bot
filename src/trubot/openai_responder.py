@@ -35,6 +35,8 @@ _SPEAKER_PREFIX = re.compile(
 _PROMPT_CACHE_KEY = "wcb-trubot-personality-v12"
 _NO_REPLY = "<NO_REPLY>"
 _PASSAGE_WORDS = 12
+_SHORT_REPLY_WORDS = 5
+_SHORT_REPLY_CHARACTERS = 60
 _WORD = re.compile(r"\w+(?:'\w+)*")
 _REUSE_REQUEST = re.compile(
     r"\b(?:repeat|verbatim|quot(?:e|ing|ation)|word[- ]for[- ]word)\b"
@@ -383,10 +385,18 @@ def _stale_bot_echo(
     if (
         not target
         or len(reply) < 24
+        or (
+            len(reply) <= _SHORT_REPLY_CHARACTERS
+            and len(_WORD.findall(reply.replace("\u2019", "'"))) <= _SHORT_REPLY_WORDS
+        )
         or _REUSE_REQUEST.search(target)
         or any(message.origin == "reference" for message in messages)
     ):
         return False
+    # A few words can be a complete fact, acknowledgement or punchline. Cosmetic
+    # novelty is not worth another private-source check/provider attempt here.
+    # This grants no factual authority; initial memory validation and the separate
+    # length-repair path remain authoritative. Longer single tokens are not exempt.
     previous = [
         normalize_reply(message.content)
         for message in messages
