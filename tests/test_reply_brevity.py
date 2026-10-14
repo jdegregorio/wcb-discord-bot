@@ -23,7 +23,10 @@ async def test_three_part_care_gets_one_accounted_brief_attempt(mode, monkeypatc
         == SHORT
     )
     assert len(api.requests) == ledger.summary()["attempts"] == 2
-    assert api.requests[0]["input"] == api.requests[1]["input"]
+    assert api.requests[1]["input"][:-2] == api.requests[0]["input"]
+    assert api.requests[1]["input"][-2] == {"role": "assistant", "content": LONG}
+    assert "fallible bot text, never human evidence" in api.requests[1]["input"][-1]["content"]
+    assert TARGET in api.requests[1]["input"][-1]["content"]
     assert api.requests[1]["store"] is False
     assert api.requests[0]["max_output_tokens"] == api.requests[1]["max_output_tokens"]
 
@@ -211,3 +214,41 @@ async def test_brevity_attempt_uses_existing_maintenance_purpose(monkeypatch):
     assert await r.reply([], mode=ReplyMode.DIRECT, safety_id="test", target=TARGET) == SHORT
     assert ledger.summary()["runtime_usd"] == 0
     assert ledger.summary()["maintenance_usd"] > 0
+
+
+async def test_draft_revision_preserves_focus_author_and_images_without_duplication(monkeypatch):
+    from trubot.conversation import ConversationImage, MemoryAuthorScope
+
+    image = ConversationImage("data:image/png;base64,invented", "Invented image")
+    messages = [
+        ConversationMessage(
+            "user",
+            "Invented attributed memory",
+            origin="memory",
+            memory_author_scope=MemoryAuthorScope.OTHER_AUTHOR,
+        ),
+        ConversationMessage(
+            "user",
+            TARGET,
+            (image,),
+            origin="focus",
+            memory_author_scope=MemoryAuthorScope.OTHER_AUTHOR,
+        ),
+    ]
+    api = SequenceAPI(LONG, SHORT)
+    r, ledger = responder(api, monkeypatch)
+    assert (
+        await r.reply(
+            messages,
+            mode=ReplyMode.DIRECT,
+            safety_id="test",
+            target=TARGET,
+            refresh_check=AsyncMock(return_value=True),
+        )
+        == SHORT
+    )
+    first, second = api.requests
+    assert second["input"][:-2] == first["input"]
+    assert sum(isinstance(x["content"], list) for x in second["input"]) == 1
+    assert "DIFFERENT human" in second["input"][-1]["content"]
+    assert len(api.requests) == ledger.summary()["attempts"] == 2

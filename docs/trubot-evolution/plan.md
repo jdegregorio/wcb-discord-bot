@@ -1,17 +1,18 @@
 # Trubot evolution plan
 
-Selected H59: bounded ordinary-reply repair, so recurring three-part acknowledgements
-fit the existing brief voice contract. A fresh real private Discord care question
-reproduced the defect. Same-case regressions baseline9fail/13pass, candidate22/22;
-final31safeguards. Matched same-model trial care/celebration brevity17/21to21/21,
-36final cases per arm,36baseline/42candidate accounted attempts. No new control
-regression observed; gentle jokes in low-stakes setbacks and stock prefaces remain.
-No general character/humor gain or new human memory is claimed.
-[Research, locked criteria and results](evaluations/2026-10-14-brief-reply-study.md).
+Selected H59b: bounded actual-draft repair, so recurring three-part acknowledgements
+fit the existing brief voice contract. Initial2.24.0 passed the sparse synthetic trial
+but failed actual accumulated-history care acceptance; it was marked prerelease and
+rolled back to2.23.0. The correction gives the optional repair the actual fallible
+bot draft and repeats the original focus/author scope, reserving those text bytes.
+Matched history stress20/21to21/21briefcare/celebration,36finalcasesperarm; actual
+candidateowner/handler3sentences/20wordsto1sentence/12words, sincereandreviewed.
+32final safeguards; no new control regression observed. No general character/humor
+or human-memory gain. [Research and rollback](evaluations/2026-10-14-brief-reply-study.md).
 
-Candidate2.24.0 is awaiting full gates/release/installed real Discord. Current
-production2.23.0/4cc40f2 is healthy and Discord-ready. Prior H58a is completed,
-no unfinished evolution PR. Primary checkout preserved in a new managed worktree.
+Currentproduction2.23.0/4cc40f2healthy/Discordreadyafterrollback. Candidate2.24.1
+awaits testedmerge/immutableimages/normalinstalledgatewayacceptance. H58a completed;
+no overlapping unfinished evolutionPR. Primary checkout preserved in this run's worktree.
 
 Next ordered increments:
 1. H48/H21/H28 qualified abstract population coupled with H55b/H54b/H50 semantic

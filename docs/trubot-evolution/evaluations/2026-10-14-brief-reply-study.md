@@ -121,3 +121,54 @@ Trial maintenance cost estimateUSD0.004066880 across78settledattempts; actual
 provider billing is not available. Covered October ledgerUSD0.217613030 including
 one previously unsettled reservation. Runtime baseline questionUSD0.000599750.
 The existing monthly guard remains USD18/2/20; pre-guard spending remains unknown.
+
+
+## H59b: actual acceptance failure and revised hypothesis
+
+Installed2.24.0 normal gateway care remains three sentences. Content-free diagnostics
+show one overlong repair, no skipped freshness/provider error and a still-overlong
+second draft. Both attempts were accounted. The first synthetic trial omitted the
+accumulated care replies in the real development history. This rejects sufficiency
+of same-context regeneration, despite the matched synthetic length result. No new
+factual/care regression was observed, but cost/latency without the intended benefit
+justified rollback. Immutable2.24.0 is marked prerelease/notlatest to exclude stable
+discovery; the scoped transaction restored2.23.0 and verified Discord readiness.
+No source/graph/withdrawal/spending state restore or tag overwrite.
+
+H59b supplies the actual generated draft plus an explicit revision of the original
+focus only when repairing length. So that the model rewrites the excess rather than
+regenerating a familiar acknowledgement from older chat. Bot draft stays fallible
+assistant text, never human evidence; author scope, source context and image inputs
+remain. Exact serialized revision bytes join the conservative spending reservation.
+One shared optional attempt, freshness checks, failure fallback and existing exceptions
+remain. Repetition-only requests keep their previous payload.
+
+Locked revised validation: same12contexts/3samplesperarm with accumulated synthetic
+care/history stress; full semantic/control review, matching brief care and no new
+coldness/grounding/recipient failure. Actual candidate owner/handler acceptance in the
+confirmed private guild must pass before release, followed by normal installed gateway
+care and held-out care after deployment. No private-human provider payload expansion.
+Phase2 retains the same coherent H59 increment, superseding its insufficient prototype;
+qualified abstractions/context integration and broader themes retain their prerequisites.
+
+
+H59b accumulated-history trial:36finalcasesperarm, baseline42/candidate41settled
+providerattempts, alltransport/usagecomplete. Care/celebration brevity20/21to21/21;
+all72finaloutputs manually reviewed, no new grounding/care/recipient/identity failure
+observed. Candidate low-stakes setback answers are specific and sincere with no joke;
+that small stochastic result is not a general emotional-judgment claim. Familiar comic
+premises and occasional two-part stock care remain. Baseline73,961ms/candidate67,139ms
+aggregate; sequential arm/cache/provider variance prevents claiming lower latency.
+Usage baseline107,618input/103,035cached/963output; candidate105,676/104,701/882.
+
+ActualcandidateH59B owner/handler: first3sentences/20words, revision1sentence/12words,
+actualDiscordsend viewed and sincere. Both requests real,complete,usagepresent,
+existingmaintenancepurpose;8,656ms includingauthenticatedHTTP reads. No secondgateway,
+readiness distinctbeforeconstruction, no learning/intake/rawanswerartifact. Production
+heartbeat healthyafterclose. Authenticated permission inspection initially used the
+uncached channel's partial guild, causing a local false-negative; attaching the freshly
+fetched role-bearing guild provesview/read/sendbeforeposting. No denied access bypass.
+
+Automatic approval review rejected printing a potentially secret-bearing version.env.
+No retry/indirect read; containerOCI/module/sourcehashes and existingapptransaction
+verified release/rollback independently. No permission remains blocked by that action.
