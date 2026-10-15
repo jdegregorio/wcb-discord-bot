@@ -4002,3 +4002,27 @@ pre-guard unknown. No model, service, source population, native gate, pacing, in
 schedule or notification change. Private: 13 content-free receipt files, 0700/0600 verified,
 existing seven-day manual retention/withdrawal; no raw answers/sources/personal summaries.
 [Structured result](evaluations/2026-10-15-authored-recall-release.json).
+
+
+## 2026-10-15 13:00 - H71 final private-source publication check
+
+Base c4ef4f33fe2edcbd5572a931f20aa358b4a8a8d1, fresh managed worktree and unique
+feature/trubot-daily-20261015-1300. Earlier09:00branch clean at same base; no
+unfinished evolution PR. Primary checkout untouched. [Both phases and study](evaluations/2026-10-15-reply-source-freshness-study.md).
+H70 question annotation rejected on contrary human contexts, no rollout.
+Select final source/scope check after generation and before send. Actual private
+Discord production-handler synthetic race posts stale draft before fix; three real
+archive correction/removal/withdrawal handler fixtures and twelve changed/unavailable/
+closing mode controls fail baseline. Unchanged full baseline1,167passes/96.87%coverage.
+No new persona fact, memory population or automatic native pattern permission.
+Implementation, full quality gates and release/deployment/installed acceptance pending.
+
+
+All six final feature gates pass: locked sync, formatting, lint, strict typing of
+31 modules,1,189tests/96.98%branch coverage and both2.26.6build artifacts. The272
+focused source/graph/handler checks pass after updating the superseded expectations.
+No failing/flaky gate accepted. Pre-release run26settled requests, estimated
+USD0.003472855:25maintenance/USD0.002908355and1runtime/USD0.0005645. Covered
+OctoberUSD0.29197848/1,842attempts/one unchanged old unsettled; estimates are not
+billing, pre-guard spending unknown, shared18/2/20guard unchanged. Required CI,
+merged-main gates, images/deployment/installed normal gateway remain pending.

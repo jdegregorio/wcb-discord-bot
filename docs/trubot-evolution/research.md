@@ -2459,3 +2459,13 @@ pre-guard unknown. No model, service, source population, native gate, pacing, in
 schedule or notification change. Private: 13 content-free receipt files, 0700/0600 verified,
 existing seven-day manual retention/withdrawal; no raw answers/sources/personal summaries.
 [Structured result](evaluations/2026-10-15-authored-recall-release.json).
+
+
+## 2026-10-15 13:00 - H70 rejected, H71 publication coherence selected
+
+[Both planning phases, locked criteria and experiments](evaluations/2026-10-15-reply-source-freshness-study.md).
+Question-form prototype: baseline10/12candidate10/12 overall, contrary candidate
+2unsupported concrete interpretations; reject. No new trait or prompt change.
+Final source/scope guard chosen after actual production-handler stale post and
+15 safety regressions fail baseline. This enables safe abstract expansion;
+no measured general reply-quality improvement. Full release acceptance pending.

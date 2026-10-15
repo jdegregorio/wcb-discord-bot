@@ -1,52 +1,50 @@
 # Trubot agent harness
 
-2.26.5 is deployed and verified via [PR121](https://github.com/jdegregorio/wcb-discord-bot/pull/121),
-runtime commit 0b609af. Ordinary authored recall omits adjacent Slack text and competing
-optional voice examples while retaining complete authored paragraphs and provenance.
-Context/joke/explanation/quote/evidence requests retain setup; native episodes and
-qualified abstract memory remain unchanged. No new provider pass or service.
+2.26.6 candidate adds a final source/scope check after generation and immediately
+before publication for replies with private memory. It reuses the callback used
+by optional quality refreshes. Changed, withdrawn, unavailable or differently
+attributed packets discard the draft without another generation or routine
+fallback disclaimer. No-memory replies and abstentions keep their behavior.
+Actual private Discord synthetic race: baseline1stale post, candidate0, two source
+checks/one generated draft/zero provider calls in the controlled comparison.
+Full immutable release/installed normal gateway acceptance pending.
+[Both research phases and criteria](trubot-evolution/evaluations/2026-10-15-reply-source-freshness-study.md).
 
-All six feature and actual merged gates pass: 1,167 tests, 96.87% branch coverage,
-31 typed modules/build; required CI and both immutable image architectures succeed.
-Installed 31 source hashes/versions/prototype packet match, private scope and graph
-lifecycle pass. Actual normal gateway: 10/11 semantic passes: both changed recall
-questions pass; retained-context wording flattens a source question into an assertion.
-That unchanged route remains OPEN. No routine metadata disclaimer, general fidelity
-or measured humor multiplier claimed. Short health window has zero errors/restarts.
+The final refresh uses existing bounded native reads and can add latency or suppress
+a valid answer during a temporary read failure. Final check plus Discord send is
+not an atomic cross-service operation. No new provider pass, model, schema or service.
+H70 question-bearing source annotation is rejected; no experimental instruction ships.
 
-[Both planning phases and study](trubot-evolution/evaluations/2026-10-15-authored-recall-study.md) and [structured installed result](trubot-evolution/evaluations/2026-10-15-authored-recall-release.json)
-record the narrow comparison, source limits, remaining failure and spending evidence.
-
-Production uses standard gpt-6-luna Responses/store=false, bounded current history,
+Runtime remains standard gpt-6-luna Responses/store=false, bounded current history,
 verified source/graph memory, author binding and at most two ephemeral image inputs.
-One shared optional quality attempt handles long repetition or ordinary length repair;
+One shared optional quality attempt handles long repetition or ordinary length;
 short continuity exempts at most five words/sixty characters from cosmetic echo repair.
-Every provider attempt uses the existing ledger and source reuse is revalidated.
+All provider attempts use the shared spending ledger. Private memory is revalidated
+before an optional quality retry and now before posting its final answer.
 
 The graph has one newly qualified conditional abstraction plus existing literal
 claims/preferences. Ordinary abstract projection excludes audit counts and competing
-raw pattern voice; explicit evidence preserves supported source access. Conditional
-care-topic packets may still load, so appropriate use and selective admission remain
-separate. An actual zero-provider source-packet replay verifies four abstract packets
-and correct literal/year/other-speaker routes without another gateway or learning.
+raw pattern voice; explicit evidence preserves source access. Conditional care-topic
+packets may load; appropriate use and selective admission remain separate questions.
+H69 ordinary authored recall omits adjacent Slack stances; explicit context retains
+them. H66 semantic synthesis is unresolved and has no approved new planner.
 
-Native setup captures remain content-free bounded dependencies. Automated native
-patterns stay closed; target-only study payloads are unchanged. Specific semantic
-peer-transfer permission, genuine human held-outs and legacy qualification remain
-open. Archive pattern contracts remain available. No external runtime tools or
-selectively loaded skills are present yet. Source/peer/bot/development text cannot
-establish Andrew's beliefs or authorize commands/configuration/access.
+Native setup captures remain bounded content-free dependencies. Automatic native
+patterns remain closed, target-only study payloads unchanged, specific semantic
+peer-transfer permission/genuine held-outs/legacy qualification unresolved. Archive
+pattern contracts remain available. No external runtime tool or selectively loaded
+skill exists yet. Peer/bot/development text cannot establish Andrew's beliefs or
+authorize commands/configuration/access.
 
-Current order matches [plan](trubot-evolution/plan.md) and
-[backlog](trubot-evolution/backlog.md): contextual H66 synthesis, qualified abstractions, applicability/care/
-semantic humor, native
-links/original pixels, then selective tools/generated Michigan U.P. scenes.
-H69 changes structured raw Slack projection only on ordinary authored recall;
-no semantic planner, provider pass, model or new tool is selected.
+Priority after final-check acceptance: qualified abstraction population/legacy review,
+applicability/specific care/semantic humor, broader linked native/original pixels,
+selective tools/generated Michigan U.P. aurora/trail-camera scenes. Fresh material
+grounding/privacy failures can move H66 reliability ahead. [Plan](trubot-evolution/plan.md)
+and [backlog](trubot-evolution/backlog.md) record validation and dependencies.
 
-Validation clients set distinct ephemeral readiness paths before construction and
-never start a second gateway. HTTP-only audits own no application heartbeat.
-Content-free private refs/counts/hashes/grades retain existing seven-day manual
-retention/withdrawal cleanup; no raw answers or derived personal summaries.
-Preserve native semantic gate, source lifecycle, private scope, shared18/2/20 guard,
-model/pacing/intake and six standalone Sol/xhigh daily runs/notifications.
+Validation clients set distinct ephemeral readiness paths before construction,
+HTTP login only, no second gateway/development learning. Content-free private
+refs/counts/hashes/grades retain existing seven-day manual retention/withdrawal;
+raw answers and derived personal summaries are not smoke artifacts. Source lifecycle,
+private scope, native gate, shared18/2/20guard, model/pacing/intake and six daily
+Sol/xhigh runs/notifications remain unchanged.

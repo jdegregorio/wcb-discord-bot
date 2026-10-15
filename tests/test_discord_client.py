@@ -868,8 +868,12 @@ async def test_optional_recovery_revalidates_memory_after_generation(change, tmp
         patch.object(client, "_memory_context", wraps=client._memory_context) as memory,
     ):
         await client.on_message(message)
-    channel.send.assert_awaited_once_with(new if change == "unchanged" else old)
-    assert memory.await_count == 2
+    if change == "unchanged":
+        channel.send.assert_awaited_once_with(new)
+    else:
+        channel.send.assert_not_awaited()
+    # Initial source read, optional retry check, final publication check.
+    assert memory.await_count == 3
     assert all(item.origin != "memory" for item in memory.await_args_list[1].args[2])
     assert len(api.requests) == ledger.summary()["attempts"] == (2 if change == "unchanged" else 1)
     assert "White Sox forever" in str(api.requests[0]["input"])
@@ -894,7 +898,9 @@ async def test_optional_source_recheck_failure_denies_refresh(error):
 
     client, _, _, _ = make_client(responder=CheckResponder())
     channel = fake_channel()
-    with patch.object(client, "_memory_context", side_effect=["Synthetic private packet.", error]):
+    with patch.object(
+        client, "_memory_context", side_effect=["Synthetic private packet.", error, error]
+    ):
         await client.on_message(fake_message(channel))
     assert checked == [False]
-    channel.send.assert_awaited_once_with("Hot")
+    channel.send.assert_not_awaited()

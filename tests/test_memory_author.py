@@ -183,12 +183,13 @@ async def test_retry_revalidates_scope_even_when_rendered_text_is_unchanged(clie
 
     try:
         with patch.object(responder, "reply", side_effect=reply):
-            assert await client._respond(
+            assert not await client._respond(
                 channel,
                 mode=ReplyMode.DIRECT,
                 requester_user_id=1,
                 anchor=anchor,
                 target="Joe: What do you remember from 2020?",
             )
+        channel.send.assert_not_awaited()
     finally:
         await client.close()

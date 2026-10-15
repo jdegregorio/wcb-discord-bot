@@ -268,7 +268,9 @@ async def test_patterns_flow_through_real_discord_handlers_with_all_sources_refr
                 if mode == "followup":
                     client._attention.activate(10, NOW)
                 await client.on_message(message)
-        assert refresh.await_count == 3
+        # Verify all three sources before generation and again before publication.
+        assert refresh.await_count == 6
+        assert refresh.await_args_list[:3] == refresh.await_args_list[3:]
         voice.assert_not_called()
         context = "\n".join(m.content for m in responder.calls[0][0])
         assert "ABSTRACT EPISODE MEMORY" in context and "croissant" not in context

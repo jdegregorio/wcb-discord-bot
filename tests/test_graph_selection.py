@@ -189,7 +189,8 @@ async def test_growing_graph_reaches_actual_handlers(stores, mode):
                 await client.on_message(message)
         context = "\n".join(m.content for m in responder.calls[0][0])
         assert "CONNECTED REVIEWED MEMORY" in context
-        assert refresh.await_count == 4
+        assert refresh.await_count == 8
+        assert refresh.await_args_list[:4] == refresh.await_args_list[4:]
         channel.send.assert_awaited_once()
     finally:
         await client.close()
