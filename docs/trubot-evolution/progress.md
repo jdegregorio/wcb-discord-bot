@@ -3824,3 +3824,40 @@ provider mutation. No app behavior or source data changed to hide either failure
 Automatic review rejected printing an entire production version environment file;
 used approved app status/container metadata/helper code instead, no file-read retry
 or credential disclosure. No remaining deployment action is blocked.
+
+
+### Final release and actual verification
+
+PR116 head a5a401c8615b0228cbda819012b52bd69f2330e0, merge
+7ea07e3d78072c445962a39d102e16532af59518. Required repair PRCI38659172865/
+mainCI38659404866/imageCI38659579614 pass. All six actual merged gates pass:
+1,118tests/96.87% branch coverage/31typed modules/build. A mistyped head guard
+rejection and subsequent old-main check are excluded; correct head/revision pass.
+Release v2.26.2 immutable index1f671727e8170e6cd1d4578aeaa2bda23d83c35322b323f0f97ce2ffba36c2be
+is healthy/Discord ready/zero restarts on reverified pi5. Both architectures pass;
+31installed source hashes and internal/package/OCI versions match. Existing helper
+locking/pull/health/rollback transaction used; prior2.26.1/f265eddc retained. No
+rollback, state restoration or new source population. Graph lookup bytes/status,
+qualified abstraction and unrelated/wrong-guild controls pass.
+
+Actual installed complete/oversized invented handler cases pass, one maintenance
+request each, no stock date caveat in these final two replies. Earlier caveat
+failures remain explicit. Primary readiness survives distinct HTTP-client closure
+and normal gateway responses. Nine gateway owner probes/eightposts/one abstention:
+seven selected serial controls pass6/7; historical peer attribution fails. Earlier
+overlapped ownership probe fails, later serial repeat passes. Unchanged noun-phrase
+requester classifier gap joins H66 first priority; broader synthesis/ownership
+remain OPEN. Care is sincere, humor relevant but repeats a familiar mechanism;
+no general fidelity/funniness gain. No release rollback can fix unchanged routes.
+
+Post audit5target/10peer/3olderbot/zero fresh/zero denied; one visual episode
+excluded without pixels. Zero observed errors/reply failures/disconnects/study
+pauses, two startup warnings, short sparse window. Covered OctoberUSD0.261375345/
+1,655attempts/one unchanged unsettled. Run34settled/USD0.01049587, shared18/2/20
+guard; estimates not billing, pre-guard unknown.
+
+Private refs/counts/hashes/grades retained under app-volume0700/0600 and existing
+seven-day manual retention/withdrawal. Prototype filename collision receipts
+recovered from authenticated history; original equality assertions completed,
+no raw answer text saved or new provider calls. Source-integrity protection and
+H66 failures are reported separately. Final evidence-only PR/cleanup follows.
