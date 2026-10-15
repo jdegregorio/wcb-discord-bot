@@ -3806,3 +3806,21 @@ Feature full gates pass: locked sync, formatting, lint, 31 typed modules, 1,117 
 96.87% branch coverage and both 2.26.1 artifacts. Import-order lint failure fixed
 before passing gates. No dependencies changed. Actual current corpus has zero
 passages affected by the renderer change; no general synthesis improvement claimed.
+
+PR115 merged f668a5f, required PR/main CI succeeded. Release2.26.1 and image
+run38658588522 succeed for both architectures. Existing helper deployed index
+f265eddc8147777501f922f9383a689445e8009945e34dd985e829bd52ea2189, healthy/ready
+with zero restarts. Actual installed invented complete and6,545-byte oversized
+cases both pass narrow acceptance: closing stance retained, oversized source wholly
+omitted and natural uncertainty without peer substitution. Ordinary date caveat
+persists on the complete case.
+
+Installed version assertion catches an overlooked internal constant: package/OCI
+2.26.1, internal2.26.0. Preserve immutable tag; fix all version declarations and
+add a source/package/project consistency regression in2.26.2. Do not claim final
+release acceptance until new CI/images/deployment/install checks complete. An
+initial installed helper hash-file path error was corrected before any source or
+provider mutation. No app behavior or source data changed to hide either failure.
+Automatic review rejected printing an entire production version environment file;
+used approved app status/container metadata/helper code instead, no file-read retry
+or credential disclosure. No remaining deployment action is blocked.

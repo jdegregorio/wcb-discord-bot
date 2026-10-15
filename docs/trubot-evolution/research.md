@@ -2286,3 +2286,11 @@ applicability/emotion/semantic humor, broader linked native/original pixels, and
 H61 selective tools/generated U.P. aurora/trail cameras with natural captions and
 generated provenance. No new technology capability claim, paid service, native
 semantic-transfer permission, study pacing, schedule or notification change.
+
+
+Installed2.26.1: complete and oversized invented real-handler replies pass narrow
+H68 acceptance; oversized6,545bytes has no authored prefix/peer stand-in and replies
+with natural uncertainty. Complete retains the closing stance, but unnecessary
+date caveat persists. Internal version assertion catches2.26.0constant against
+2.26.1package/OCI. Add a release-consistency regression and publish immutable
+2.26.2; never reuse the tag. No semantic prototype, state or model changes.
