@@ -197,6 +197,16 @@ explicit fictional premises within their scene. Quoted peers cannot supply the
 requester's answer. Andrew retains his own retrieval.
 Quoted questions and hypothetical advice preserve their existing routing.
 
+## Historical authored recall (2.26.5)
+
+Ordinary questions about remembered words or positions use complete Andrew-authored
+Slack passages without adjacent speakers' text or competing optional voice examples.
+Explicit context, joke, explanation, quote and evidence requests retain separately
+attributed surroundings. Native setup and reviewed abstractions keep their existing
+behavior. Source dates, provenance, conflicts, correction and withdrawal remain
+internal and authoritative. This narrows a measured peer-stance failure; it does
+not establish general semantic accuracy or a new personal trait.
+
 ## Memory author binding (2.19.2)
 
 Reviewed graph rollouts can be previewed with `trubot-graph import --manifest

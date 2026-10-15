@@ -1,41 +1,32 @@
 # Trubot evolution plan
 
-2.26.4 is deployed and verified. The requester guard uses facts in the current
-focused message and prior human turns, keeps fictional facts within their scene,
-and answers about the requester without substituting quoted peers. This completes
-the interrupted 2.26.3 increment, which had been rolled back after losing a supplied
-focused answer. No source population, model, provider pass or service changed.
+2.26.5 selects H69: ordinary historical authored recall omits adjacent Slack text
+and competing optional voice examples. Complete authored passages, provenance and
+graph scope remain. Explicit setup, joke, explanation, quotation and evidence
+requests keep their surrounding context; native setup and creative replies remain.
+Production is still 2.26.4 until the release result below confirms installation.
 
-All six feature and actual merged gates pass: 1,148 tests, 96.87% branch coverage,
-31 strictly typed modules and package build. Required CI and both images succeeded.
-Refined matched replies pass 12/12 in each arm; final equality is non-regression,
-not comparative superiority. Fresh normal gateway checks pass the changed scenarios
-and surrounding controls, 11/12 overall. Existing historical peer-stance synthesis
-still fails and remains OPEN. Care is sincere but plain; humor is relevant, without
-establishing a funniness multiplier. No broad character-fidelity gain is claimed.
-
-[Both planning phases and study](evaluations/2026-10-15-live-requester-study.md) and [release evidence](evaluations/2026-10-15-live-requester-release.json)
-retain the rejected first candidate, prior rollback, limitations, health and cost.
+Fresh normal gateway reproduces H66. Matched failing case: baseline 0/2, candidate
+2/2; four separate human source controls: 8/8 each arm. Twenty actual handler posts,
+24 maintenance attempts, same sources/histories/model/limits. Narrow improvement,
+no general fidelity or humor claim. [Both planning phases and limitations](evaluations/2026-10-15-authored-recall-study.md).
 
 ## Ordered next increments
 
-1. H66 historical author/polarity synthesis. Current genuine source distinctions
-   and real gateway failures justify priority before broader population. Test
-   source-linked planning/verification using matched controls, genuine independent
-   human held-outs and serial real Discord. Earlier projection/reasoning/history
-   prototypes failed. H66b addresses requester syntax only.
-2. H48/H21/H28 qualified abstract population and legacy qualification. Distill
-   values, humor mechanisms/timing and ways of relating with separate contextual
-   supports, contrary cases, uncertainty and source lifecycle. H62 supplies one
-   conditional memory; H63 allows useful retrieval as the library grows.
-3. H64 applicability and H22/H39/H51 emotional specificity/semantic humor variety.
-   Validate warmth and approved creative amplification against human context and
-   fresh actual replies, separately from brevity or packet presence. Stock care
-   and familiar comic mechanisms remain unresolved.
+1. H48/H21/H28 qualified abstract population and legacy qualification. Expand
+   evidence-backed values, humor timing and ways of relating with contrary episodes,
+   uncertainty, applicable contexts and full source lifecycle. H62 supplies one
+   conditional memory; H63 preserves bounded connected retrieval as it grows.
+2. H64 applicability and H22/H39/H51 specific warmth/semantic humor. Compare against
+   human contextual examples and fresh actual replies, including approved creative
+   TJ amplification, without making source claims about invented jokes.
+3. H66 contextual historical synthesis. H69 addresses one ordinary recall route;
+   explicit context and syntactic gaps remain. Source-linked planning/verification
+   needs matched human cases before selection. Escalate on fresh material failures.
 4. Broader native peers/replies/threads/original pixels, with honest coverage gaps.
 5. H61 selectively loaded skills/tools and generated Michigan U.P. aurora and
    trail-camera wildlife scenes with natural short captions and generated provenance.
-   Validate relevance, sharing/timing, abstention, failure, latency and cost first.
+   Validate relevance, timing, abstention, failure, latency and cost first.
 
 The [backlog](backlog.md) records dependencies, acceptance, confidence and impact.
 A material grounding/privacy regression or a validated abstract/humor comparison

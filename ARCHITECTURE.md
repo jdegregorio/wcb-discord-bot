@@ -364,3 +364,14 @@ Other complete sources and reviewed memory remain eligible under existing source
 validation. No schema, retrieval, native intake or provider configuration changes.
 Actual request size feeds existing reservation. Native ingestion's separate stored
 character cap is unchanged; renderer completeness is not full original-source coverage.
+
+
+### Authored historical recall,2.26.5
+
+ContextMemory projects ordinary factual recall after current source materialization
+and graph selection, before serialization. It omits Slack adjacent text/context gaps
+on that route and suppresses optional voice examples. Authored paragraphs, source
+metadata and graph conflict scope remain whole. Focused context/joke/explanation/
+quote/evidence requests retain the existing setup; native episodes and abstract
+projection are unchanged. This adds no provider call, storage or prompt instruction.
+The conservative lexical request predicate is not a general semantic intent model.

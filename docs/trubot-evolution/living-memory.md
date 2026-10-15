@@ -1,21 +1,15 @@
 # Living memory graph
 
-2.26.4 is deployed and verified. The requester guard uses facts in the current
-focused message and prior human turns, keeps fictional facts within their scene,
-and answers about the requester without substituting quoted peers. This completes
-the interrupted 2.26.3 increment, which had been rolled back after losing a supplied
-focused answer. No source population, model, provider pass or service changed.
+2.26.5 selects H69: ordinary historical authored recall omits adjacent Slack text
+and competing optional voice examples. Complete authored passages, provenance and
+graph scope remain. Explicit setup, joke, explanation, quotation and evidence
+requests keep their surrounding context; native setup and creative replies remain.
+Production is still 2.26.4 until the release result below confirms installation.
 
-All six feature and actual merged gates pass: 1,148 tests, 96.87% branch coverage,
-31 strictly typed modules and package build. Required CI and both images succeeded.
-Refined matched replies pass 12/12 in each arm; final equality is non-regression,
-not comparative superiority. Fresh normal gateway checks pass the changed scenarios
-and surrounding controls, 11/12 overall. Existing historical peer-stance synthesis
-still fails and remains OPEN. Care is sincere but plain; humor is relevant, without
-establishing a funniness multiplier. No broad character-fidelity gain is claimed.
-
-[Both planning phases and study](evaluations/2026-10-15-live-requester-study.md) and [release evidence](evaluations/2026-10-15-live-requester-release.json)
-retain the rejected first candidate, prior rollback, limitations, health and cost.
+Fresh normal gateway reproduces H66. Matched failing case: baseline 0/2, candidate
+2/2; four separate human source controls: 8/8 each arm. Twenty actual handler posts,
+24 maintenance attempts, same sources/histories/model/limits. Narrow improvement,
+no general fidelity or humor claim. [Both planning phases and limitations](evaluations/2026-10-15-authored-recall-study.md).
 
 H62/H62a2.25.0 supplies reviewed rollout preview plus one qualified conditional
 abstraction;H632.26.0 preserves whole conflict components as memory grows;
