@@ -1,0 +1,250 @@
+{
+  "run": "2026-10-15 05:00 America/Los_Angeles",
+  "time": "2026-10-15T12:26:12.834902+00:00",
+  "base": "472070173c818fae17a3edff8ac645555fb15f56",
+  "head": "29249f63d7a17d6b77ea8615471b1dec77e44695",
+  "runtime_commit": "0b609af54e6f3d6f95c3c7cc8063275b3ebb8d2e",
+  "runtime_pr": 121,
+  "version": "2.26.5",
+  "ci": {
+    "pr": 38732870662,
+    "main": 38733134377,
+    "images": 38733398455,
+    "all_success": true
+  },
+  "gates": {
+    "feature_and_actual_merged_six_gates": true,
+    "tests": 1167,
+    "branch_coverage_percent": 96.87,
+    "strict_modules": 31,
+    "build": true
+  },
+  "audit": {
+    "before_and_after_counts": {
+      "target": 5,
+      "peer": 8,
+      "bot": 3,
+      "current_spontaneous_bot": 0,
+      "unavailable_channels": 0
+    },
+    "windows": 12,
+    "exports": 4,
+    "target_grouped_occurrences": 14,
+    "peer_grouped_occurrences": 38,
+    "overlap": true,
+    "missing_pixels_excluded": true,
+    "new_trait": false
+  },
+  "experiments": {
+    "same_initial_owner_history_source_and_model": true,
+    "reproduced_posts": 4,
+    "reproduced_baseline_pass": 0,
+    "reproduced_candidate_pass": 2,
+    "each_arm_reproduced_samples": 2,
+    "heldout_posts": 16,
+    "heldout_baseline_pass": 8,
+    "heldout_candidate_pass": 8,
+    "each_arm_heldout_samples": 8,
+    "separate_human_anchors": 4,
+    "maintenance_provider_calls": 24,
+    "globally_unseen_human_episodes_not_claimed": true,
+    "same_codex_evaluator": true,
+    "general_fidelity_improvement_not_claimed": true
+  },
+  "release": {
+    "url": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.26.5",
+    "index": "sha256:5944b382f081339599aa71aa80a6983e82ceb9a934e14fe460d4142801aa660f",
+    "amd64": "sha256:3b40995472fb52f3f12920f4a624ec04d36a878be2c20a1cd10a6aa08b3c0f85",
+    "arm64": "sha256:8a53cde16e3a8fac7180dd70481296984ef1743ffbc83c88a82162cf2746d726",
+    "previous_version": "2.26.4",
+    "previous_index": "sha256:86c625aec390b318f875797a971796ddd68bd0085bfdf9c50e2a156c7113d280",
+    "installed": true,
+    "healthy": true,
+    "restarts": 0,
+    "current_run_rollback": false,
+    "no_data_restore": true
+  },
+  "installed": {
+    "source_hash_count": 31,
+    "installed_source_match": true,
+    "exact_original_prototype_packet_match": true,
+    "explicit_context_render_unchanged": true,
+    "nonowner_denied": true,
+    "qualified_abstract_lifecycle_unchanged": true,
+    "wrong_guild_unrelated_excluded": true,
+    "primary_ready_after_close": true,
+    "provider_calls": 0,
+    "second_gateway": false,
+    "development_learning": 0,
+    "distinct_ready_before_construction": true
+  },
+  "gateway": {
+    "normal_gateway": true,
+    "cases": 11,
+    "posts": 10,
+    "semantic_pass": 10,
+    "changed_ordinary_cases_pass": true,
+    "context_synthesis_open": true,
+    "ordinary_metadata_disclaimers": 0,
+    "case_results": [
+      {
+        "case": "past",
+        "posted": true,
+        "words": 34,
+        "sentences": 1,
+        "semantic_pass": true,
+        "limitation_category": null
+      },
+      {
+        "case": "past-variant",
+        "posted": true,
+        "words": 35,
+        "sentences": 2,
+        "semantic_pass": true,
+        "limitation_category": null
+      },
+      {
+        "case": "context",
+        "posted": true,
+        "words": 46,
+        "sentences": 2,
+        "semantic_pass": false,
+        "limitation_category": "source_question_flattened_into_assertion"
+      },
+      {
+        "case": "persona-baseball",
+        "posted": true,
+        "words": 5,
+        "sentences": 2,
+        "semantic_pass": true,
+        "limitation_category": null
+      },
+      {
+        "case": "own-baseball",
+        "posted": true,
+        "words": 8,
+        "sentences": 1,
+        "semantic_pass": true,
+        "limitation_category": null
+      },
+      {
+        "case": "date",
+        "posted": true,
+        "words": 6,
+        "sentences": 1,
+        "semantic_pass": true,
+        "limitation_category": null
+      },
+      {
+        "case": "abstract",
+        "posted": true,
+        "words": 28,
+        "sentences": 2,
+        "semantic_pass": true,
+        "limitation_category": null
+      },
+      {
+        "case": "focus",
+        "posted": true,
+        "words": 11,
+        "sentences": 1,
+        "semantic_pass": true,
+        "limitation_category": null
+      },
+      {
+        "case": "humor",
+        "posted": true,
+        "words": 12,
+        "sentences": 2,
+        "semantic_pass": true,
+        "limitation_category": null
+      },
+      {
+        "case": "care",
+        "posted": true,
+        "words": 19,
+        "sentences": 2,
+        "semantic_pass": true,
+        "limitation_category": null
+      },
+      {
+        "case": "recipient",
+        "posted": false,
+        "words": 0,
+        "sentences": 0,
+        "semantic_pass": true,
+        "limitation_category": null
+      }
+    ]
+  },
+  "health": {
+    "time": "2026-10-15T12:26:12.835204+00:00",
+    "counts": {
+      "errors": 0,
+      "reply_failures": 0,
+      "disconnects": 0,
+      "study_pauses": 0,
+      "warnings": 2,
+      "requests": 12,
+      "posts": 10,
+      "followup_abstentions": 1,
+      "quality_refreshes": 1
+    },
+    "raw_logs_retained": false,
+    "short_window_not_error_rates": true
+  },
+  "budget": {
+    "window_start": "2026-10-15T12:00:00+00:00",
+    "window_usage": [
+      {
+        "purpose": "maintenance",
+        "attempts": 24,
+        "estimated_nanodollars": 3917365,
+        "unsettled": 0
+      },
+      {
+        "purpose": "runtime",
+        "attempts": 14,
+        "estimated_nanodollars": 5651975,
+        "unsettled": 0
+      }
+    ],
+    "run_attempts": 38,
+    "run_estimated_usd": 0.00956934,
+    "covered_month": {
+      "month": "2026-10",
+      "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+      "timezone": "UTC",
+      "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+      "estimated_usd": 0.288505625,
+      "runtime_usd": 0.14908161,
+      "maintenance_usd": 0.139424015,
+      "monthly_limit_usd": 20,
+      "runtime_limit_usd": 18,
+      "maintenance_limit_usd": 2,
+      "attempts": 1816,
+      "input_tokens": 5419410,
+      "cached_input_tokens": 3646150,
+      "output_tokens": 56615,
+      "unsettled_attempts": 1,
+      "pre_guard_spend": "unknown; not included"
+    },
+    "estimates_are_not_billing": true
+  },
+  "privacy": {
+    "content_free_private_artifacts": 13,
+    "permissions": "0700 directories/0600 files verified",
+    "retention": "existing seven-day manual retention and withdrawal cleanup",
+    "raw_source_answers_or_personal_summaries_retained": false
+  },
+  "standing_limits_preserved": true,
+  "new_service": false,
+  "native_semantic_gate_unchanged": true,
+  "roadmap_order": [
+    "H66 contextual assertion/polarity grounding",
+    "H48/H21/H28 qualified abstractions and legacy review",
+    "H64/H22/H39/H51 applicability emotion semantic humor",
+    "linked native history and original pixels",
+    "H61 selective tools and generated Michigan U.P. aurora/trail-camera scenes"
+  ]
+}

@@ -1,21 +1,27 @@
 # Living memory graph
 
-2.26.5 selects H69: ordinary historical authored recall omits adjacent Slack text
-and competing optional voice examples. Complete authored passages, provenance and
-graph scope remain. Explicit setup, joke, explanation, quotation and evidence
-requests keep their surrounding context; native setup and creative replies remain.
-Production is still 2.26.4 until the release result below confirms installation.
+2.26.5 is deployed and verified via [PR121](https://github.com/jdegregorio/wcb-discord-bot/pull/121),
+runtime commit 0b609af. Ordinary authored recall omits adjacent Slack text and competing
+optional voice examples while retaining complete authored paragraphs and provenance.
+Context/joke/explanation/quote/evidence requests retain setup; native episodes and
+qualified abstract memory remain unchanged. No new provider pass or service.
 
-Fresh normal gateway reproduces H66. Matched failing case: baseline 0/2, candidate
-2/2; four separate human source controls: 8/8 each arm. Twenty actual handler posts,
-24 maintenance attempts, same sources/histories/model/limits. Narrow improvement,
-no general fidelity or humor claim. [Both planning phases and limitations](evaluations/2026-10-15-authored-recall-study.md).
+All six feature and actual merged gates pass: 1,167 tests, 96.87% branch coverage,
+31 typed modules/build; required CI and both immutable image architectures succeed.
+Installed 31 source hashes/versions/prototype packet match, private scope and graph
+lifecycle pass. Actual normal gateway: 10/11 semantic passes: both changed recall
+questions pass; retained-context wording flattens a source question into an assertion.
+That unchanged route remains OPEN. No routine metadata disclaimer, general fidelity
+or measured humor multiplier claimed. Short health window has zero errors/restarts.
+
+[Both planning phases and study](evaluations/2026-10-15-authored-recall-study.md) and [structured installed result](evaluations/2026-10-15-authored-recall-release.json)
+record the narrow comparison, source limits, remaining failure and spending evidence.
 
 H62/H62a2.25.0 supplies reviewed rollout preview plus one qualified conditional
 abstraction;H632.26.0 preserves whole conflict components as memory grows;
 H682.26.2 preserves complete stored authored passages or wholly omits them.
 These do not establish broad character/humor improvement. Exact source evidence
-and derived personal observations stay private, with full lifecycle and18/2/20guard.
+and derived personal observations stay private, with full lifecycle and 18/2/20guard.
 
 Joe requested an interconnected living memory system on 2026-10-07. Its operational
 milestones and delivery boundaries follow; the current priorities are listed above.
