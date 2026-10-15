@@ -1,15 +1,21 @@
 # Prioritized Trubot backlog
 
-H66c live requester evidence completes the interrupted requester-ownership
-increment in 2.26.4. Initial 2.26.3 was rolled back to 2.26.2 after a real gateway
-reply ignored a supplied focused statement. Current and prior human facts now have
-explicit precedence within the requester guard; quoted peers remain separate.
-Fresh first cohort: baseline9/10, candidate9/10 (prior-human loss versus quoted-peer
-relevance miss). Refined cohort: baseline12/12 and candidate12/12 across six matched
-owner contexts. This validates narrow repair/non-regression, not general superiority.
-All six feature gates pass:1,148tests/96.87%branch coverage/31typed modules/build.
-Required CI, merged gates and installed acceptance remain pending. H66 broader
-historical author/polarity synthesis remains OPEN. [Study](evaluations/2026-10-15-live-requester-study.md).
+2.26.4 is deployed and verified. The requester guard uses facts in the current
+focused message and prior human turns, keeps fictional facts within their scene,
+and answers about the requester without substituting quoted peers. This completes
+the interrupted 2.26.3 increment, which had been rolled back after losing a supplied
+focused answer. No source population, model, provider pass or service changed.
+
+All six feature and actual merged gates pass: 1,148 tests, 96.87% branch coverage,
+31 strictly typed modules and package build. Required CI and both images succeeded.
+Refined matched replies pass 12/12 in each arm; final equality is non-regression,
+not comparative superiority. Fresh normal gateway checks pass the changed scenarios
+and surrounding controls, 11/12 overall. Existing historical peer-stance synthesis
+still fails and remains OPEN. Care is sincere but plain; humor is relevant, without
+establishing a funniness multiplier. No broad character-fidelity gain is claimed.
+
+[Both planning phases and study](evaluations/2026-10-15-live-requester-study.md) and [release evidence](evaluations/2026-10-15-live-requester-release.json)
+retain the rejected first candidate, prior rollback, limitations, health and cost.
 
 ## Ordered next increments
 

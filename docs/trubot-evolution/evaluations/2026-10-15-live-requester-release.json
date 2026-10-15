@@ -1,0 +1,140 @@
+{
+  "run": "2026-10-15 01:00 America/Los_Angeles",
+  "time": "2026-10-15T08:30:27.364616+00:00",
+  "base": "c795368759fcd8e9db32c8c4d7c065ae25a1e28d",
+  "head": "60534414c6f6d17c46722455a5b17c1f252c7dbe",
+  "runtime_commit": "57961c3daeb242ab8d54c10d439201a26b486c01",
+  "runtime_pr": 119,
+  "version": "2.26.4",
+  "ci": {
+    "pr": 38704024180,
+    "main": 38704294079,
+    "images": 38704599640,
+    "all_success": true
+  },
+  "gates": {
+    "feature_and_actual_merged_six_gates": true,
+    "tests": 1148,
+    "branch_coverage_percent": 96.87,
+    "strict_modules": 31,
+    "build": true
+  },
+  "experiments": {
+    "initial": {
+      "posts": 20,
+      "baseline_pass": 9,
+      "candidate_pass": 9,
+      "each_arm_cases": 10,
+      "provider_calls": 29,
+      "rejected_relevance_miss": true
+    },
+    "refined": {
+      "posts": 24,
+      "baseline_pass": 12,
+      "candidate_pass": 12,
+      "each_arm_cases": 12,
+      "provider_calls": 32,
+      "same_history": true,
+      "zero_source_lookups": true
+    },
+    "final_equality_not_comparative_superiority": true,
+    "independent_human_holdout_improvement_claimed": false,
+    "same_codex_evaluator": true
+  },
+  "release": {
+    "url": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.26.4",
+    "index": "sha256:86c625aec390b318f875797a971796ddd68bd0085bfdf9c50e2a156c7113d280",
+    "amd64": "sha256:f22b651f284a344b3cafcf99709950964f393355102b5427de02e0ef9b65c747",
+    "arm64": "sha256:c43b2c2dc79b9fdf7c771f213d19623958422860dc48c31ccbd14d81e52cc201",
+    "previous_version": "2.26.2",
+    "previous_index": "sha256:1f671727e8170e6cd1d4578aeaa2bda23d83c35322b323f0f97ce2ffba36c2be",
+    "current_run_rollback": false,
+    "installed": true,
+    "healthy": true,
+    "installed_source_hashes": 31,
+    "gateway_status": "changed_acceptance_pass_existing_H66_open",
+    "restarts": 0
+  },
+  "historical_H66_open": true,
+  "raw_text_retained": false,
+  "new_service": false,
+  "standing_limits_preserved": true,
+  "gateway": {
+    "cases": 12,
+    "posts": 11,
+    "recipient_abstentions": 1,
+    "semantic_pass": 11,
+    "known_historical_failures": 1,
+    "changed_acceptance_pass": true,
+    "installed_runtime_requests": 13,
+    "quality_refreshes": 1,
+    "ordinary_metadata_disclaimers": 0,
+    "same_codex_evaluator": true,
+    "actual_owner_ui_posts_and_gateway_responses": true,
+    "held_out_fictional_quantities": true,
+    "general_fidelity_gain_claimed": false
+  },
+  "cost": {
+    "window_start": "2026-10-15T08:00:00+00:00",
+    "attempts": 75,
+    "runtime_attempts": 14,
+    "maintenance_attempts": 61,
+    "runtime_usd": 0.00416286,
+    "maintenance_usd": 0.004673225,
+    "total_usd": 0.008836085,
+    "covered_month_usd": 0.278936285,
+    "covered_month_attempts": 1778,
+    "unchanged_old_unsettled": 1,
+    "monthly_limits_usd": {
+      "runtime": 18,
+      "maintenance": 2,
+      "total": 20
+    },
+    "estimates_not_billing": true,
+    "pre_guard_spend": "unknown"
+  },
+  "coverage": {
+    "channels": 3,
+    "page_limit": 100,
+    "audit_days": 14,
+    "target": 5,
+    "peer": 8,
+    "older_bot": 3,
+    "fresh_spontaneous_bot": 0,
+    "unavailable_channels": 0,
+    "archive_context_windows": 8,
+    "exports": 4,
+    "target_block_occurrences": 10,
+    "peer_block_occurrences": 30,
+    "overlap_present": true,
+    "new_qualified_traits": 0,
+    "missing_pixels_excluded": true,
+    "before_and_after_counts_same": true
+  },
+  "health": {
+    "time": "2026-10-15T08:28:23.413688+00:00",
+    "counts": {
+      "errors": 0,
+      "reply_failures": 0,
+      "disconnects": 0,
+      "study_pauses": 0,
+      "warnings": 2,
+      "requests": 13,
+      "posts": 11,
+      "followup_abstentions": 1,
+      "quality_refreshes": 1
+    },
+    "raw_logs_retained": false,
+    "short_window_not_error_rates": true
+  },
+  "privacy": {
+    "raw_text_retained": false,
+    "directory_mode": "0700",
+    "file_mode": "0600",
+    "development_learning": 0,
+    "second_gateway": false,
+    "distinct_ready_before_construction": true,
+    "primary_ready_after_client_close": true,
+    "retention": "existing seven-day manual retention and withdrawal cleanup"
+  }
+}
