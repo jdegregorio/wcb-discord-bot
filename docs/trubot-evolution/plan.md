@@ -1,21 +1,15 @@
 # Trubot evolution plan
 
-## Current increment, 2026-10-14 21:00
-
-H66b is selected for 2.26.3. Topic-bearing authored-history questions reach the
-existing authenticated author guard before retrieval, so that a peer's own recall
-cannot borrow Andrew's corpus. Same-owner/history actual Discord comparisons:
-baseline 3/4unsupported requester claims, candidate 0/4; all 4 candidate replies brief
-and natural.13 regressions fail base;56 requester checks pass candidate. All six
-feature gates pass 1,142 tests/96.87% branch coverage/31 typed modules/build.
-CI/release/deployment and fresh installed acceptance remain pending.
-
-[Research and both planning phases](evaluations/2026-10-14-requester-topic-study.md)
-record locked criteria, methods, limitations, alternatives and the selection.
-Authenticated current activity is sparse:5 target/8 peer/3 older bot/zero current
-spontaneous posts across three channels. Eight historical contextual windows
-across four exports do not establish new traits or independent held-out improvement.
-Missing pixels are excluded. Exact references and observations remain private.
+H66c live requester evidence completes the interrupted requester-ownership
+increment in 2.26.4. Initial 2.26.3 was rolled back to 2.26.2 after a real gateway
+reply ignored a supplied focused statement. Current and prior human facts now have
+explicit precedence within the requester guard; quoted peers remain separate.
+Fresh first cohort: baseline9/10, candidate9/10 (prior-human loss versus quoted-peer
+relevance miss). Refined cohort: baseline12/12 and candidate12/12 across six matched
+owner contexts. This validates narrow repair/non-regression, not general superiority.
+All six feature gates pass:1,148tests/96.87%branch coverage/31typed modules/build.
+Required CI, merged gates and installed acceptance remain pending. H66 broader
+historical author/polarity synthesis remains OPEN. [Study](evaluations/2026-10-15-live-requester-study.md).
 
 ## Ordered next increments
 

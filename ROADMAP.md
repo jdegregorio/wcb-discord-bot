@@ -1,10 +1,15 @@
 # Trubot roadmap
 
-H66b topic-bearing requester ownership is selected for 2.26.3. Matched actual
-Discord handlers reduce unsupported requester claims from3/4baseline to0/4candidate
-in this small sample, with no new provider pass. Full feature gates pass 1,142 tests/
-96.87%; CI/release/deployment and installed normal gateway acceptance pending.
-Historical peer/polarity synthesis remains OPEN, separate from this syntax repair.
+H66c live requester evidence completes the interrupted requester-ownership
+increment in 2.26.4. Initial 2.26.3 was rolled back to 2.26.2 after a real gateway
+reply ignored a supplied focused statement. Current and prior human facts now have
+explicit precedence within the requester guard; quoted peers remain separate.
+Fresh first cohort: baseline9/10, candidate9/10 (prior-human loss versus quoted-peer
+relevance miss). Refined cohort: baseline12/12 and candidate12/12 across six matched
+owner contexts. This validates narrow repair/non-regression, not general superiority.
+All six feature gates pass:1,148tests/96.87%branch coverage/31typed modules/build.
+Required CI, merged gates and installed acceptance remain pending. H66 broader
+historical author/polarity synthesis remains OPEN. [Study](docs/trubot-evolution/evaluations/2026-10-15-live-requester-study.md).
 
 Current ordered direction:
 

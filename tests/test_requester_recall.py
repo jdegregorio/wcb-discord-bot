@@ -165,6 +165,10 @@ async def test_verified_source_author_keeps_own_history_retrieval(client_memory,
     [
         "What did I say about reserve slots in 2020?",
         "What reserve slot proposal did I say I preferred in 2020?",
+        "In this imaginary league I voted for five reserve spots. "
+        "Which proposal did I say I support?",
+        "Morgan said “I support four reserve slots.” "
+        "In this new scene, which reserve slot proposal did I say I support?",
     ],
 )
 async def test_real_handler_scopes_to_focus_author_not_reactor(client_memory, mode, question_text):
@@ -184,8 +188,10 @@ async def test_real_handler_scopes_to_focus_author_not_reactor(client_memory, mo
         memory = next(m.content for m in responder.calls[0][0] if m.origin == "memory")
         assert "CURRENT SPEAKER RECALL" in memory
         assert "I preferred two reserve slots" not in memory
-        # The available live peer history remains in the normal channel context.
+        # Keep the full focused statement and prior human context available
+        # when requester routing suppresses character-source retrieval.
         assert responder.calls[0][0][0].content == "Joe: Code 12346633"
+        assert responder.calls[0][3] == "Andrew Truax: " + question_text
         channel.send.assert_awaited_once_with("Hot")
     finally:
         await client.close()

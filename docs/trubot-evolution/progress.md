@@ -3872,3 +3872,27 @@ Discord handlers:baseline3/4unsupported claims, candidate0/4, four natural
 candidate replies; shared anchors/history/model, one maintenance request each.
 13regressions fail base;56requester checks pass. Selected2.26.3 bounded routing
 repair; full gates/CI/release/deployment/installed gateway acceptance pending.
+
+
+## 2026-10-15 01:00 - H66c requester live-evidence completion
+
+New fetched-main managed worktree/basec795368, unique feature branch, primary
+untouched. Prior21:00task stopped after uncommitted repair/full gates:PR118released
+2.26.3, normal gateway supplied-focus failure caused existing-transaction rollback
+to2.26.2/index1f671727; stable latest returnedv2.26.2. Immutable tags preserved,
+no data restore. Current authenticated pi5/aarch64/Ubuntu24.04.4healthy; no overlap PR.
+Previous public-result stale deployed status is superseded by current inspected
+container, private incomplete gateway receipt and last preceding task messages.
+
+Both planning phases, fresh contextual audit, hypotheses/criteria and results:
+[study](evaluations/2026-10-15-live-requester-study.md). Fresh20posts first cohort:
+9/10each arm, baseline prior-human loss and candidate quote relevance miss. Refined
+24posts/6contexts:12/12each arm, no source retrieval, matching histories,32accounted
+requests. Supports narrow completion/non-regression, not general superiority.
+Selected2.26.4guidance explicitly admits focused/prior human facts, scopes fictional
+facts and answers about the requester rather than repeating a peer.62requester
+checks pass; full release/install acceptance pending. No new trait, native semantic
+permission, source population, model/service/intake/schedule/notification change.
+
+Feature gates pass:locked sync,format,lint,strict mypy31modules,1,148tests/96.87%
+branch coverage and package build. No failing/flaky check accepted. CI/install pending.

@@ -1,12 +1,15 @@
 # Trubot agent harness
 
-2.26.3 adds bounded topic-bearing requester-history classification before existing
-authenticated memory authorization. Peer/unknown own-history requests receive the
-requester-only guidance packet, retaining live human conversation and excluding
-Andrew's raw/graph/voice retrieval. Source-author recall remains available. Quotes
-and hypothetical questions preserve their routes. Matched real handlers4candidate
-replies preserve ownership; broader H66 historical peer/polarity synthesis remains
-OPEN. Full feature gates pass; installed release acceptance pending.
+H66c live requester evidence completes the interrupted requester-ownership
+increment in 2.26.4. Initial 2.26.3 was rolled back to 2.26.2 after a real gateway
+reply ignored a supplied focused statement. Current and prior human facts now have
+explicit precedence within the requester guard; quoted peers remain separate.
+Fresh first cohort: baseline9/10, candidate9/10 (prior-human loss versus quoted-peer
+relevance miss). Refined cohort: baseline12/12 and candidate12/12 across six matched
+owner contexts. This validates narrow repair/non-regression, not general superiority.
+All six feature gates pass:1,148tests/96.87%branch coverage/31typed modules/build.
+Required CI, merged gates and installed acceptance remain pending. H66 broader
+historical author/polarity synthesis remains OPEN. [Study](trubot-evolution/evaluations/2026-10-15-live-requester-study.md).
 
 Production uses standard gpt-6-luna Responses/store=false, bounded current history,
 verified source/graph memory, author binding and at most two ephemeral image inputs.
