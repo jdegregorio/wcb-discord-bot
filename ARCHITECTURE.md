@@ -352,3 +352,15 @@ roll back. Beliefs, edges, checkpoints and backups stay unchanged. A later commi
 revalidates sources; preview grants no enduring approval or authority to channel text.
 Private qualified population remains independent of packaged code and needs actual
 behavioral acceptance, expiry, source/contrary lifecycle and operator retirement.
+
+
+### Complete stored authored reply passages,2.26.1
+
+ContextMemory never slices a stored authored passage into a reply prefix. Complete
+UTF-8text up to6,000bytes is forwarded; larger sources retain provenance plus an
+internal gap, with no authored prefix or adjacent context. All-omitted packets
+disable optional voice examples; exact quotation lookup cannot match omitted text.
+Other complete sources and reviewed memory remain eligible under existing source
+validation. No schema, retrieval, native intake or provider configuration changes.
+Actual request size feeds existing reservation. Native ingestion's separate stored
+character cap is unchanged; renderer completeness is not full original-source coverage.

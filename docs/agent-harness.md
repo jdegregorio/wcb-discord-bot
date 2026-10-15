@@ -1,5 +1,22 @@
 # Trubot agent harness
 
+H68 source-integrity increment selected for2.26.1. The renderer will preserve
+complete stored authored passages up to6,000UTF-8bytes and omit oversized passages
+wholly, with internal gaps and no adjacent peer stand-in. Actual invented owner-handler
+baseline reverses a stance after losing the closing qualification; candidate retains
+it and answers correctly. This is enabling protection:current405eligible archive
+blocks/34native sources havezero affected long passages. All six feature gates pass: 1,117 tests, 96.87% branch coverage, 31 typed modules
+and both package artifacts. CI, release and installed checks pending.
+
+H66 historical synthesis remains OPEN and first remaining priority. New gateway
+reproduces peer-attribution failure. Packet projection, reasoning-only and old-bot
+filtering prototypes fail strict semantic acceptance and are rejected. No behavioral
+prototype is shipping. Then H48/H21/H28 abstractions, H64/H22/H39/H51 applicability/
+emotion/humor, native links/original pixels and H61 selective tools/generated Michigan
+U.P. aurora/trail-camera scenes with short natural captions/generated provenance.
+Preserve native pattern gate, source/date/withdrawal/privacy and18/2/20 guard.
+
+
 H63 is deployed and verified in 2.26.0: complete bounded graph retrieval survives
 memory growth, preserving transitive conflicts and source lifecycle. All six
 feature/merged gates pass1,107tests/96.86%/31modules; required PR/main/image CI and

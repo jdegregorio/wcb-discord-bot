@@ -3776,3 +3776,33 @@ coveredOctober0.250879475/1621attempts/one unchanged unsettled;18/2/20guard pres
 Private refs/counts0700/0600,7daymanualretention/withdrawal,no raw source/answers.
 [Final study](evaluations/2026-10-14-graph-selection-study.md) and
 [release/installed evidence](evaluations/2026-10-14-graph-selection-release.json).
+
+
+## 2026-10-14 17:00 - H68 complete stored authored evidence
+
+Fetched base 42ce06cde94c1c55e9e31e0a0e4f534bf73d4f75 in a new managed
+trubot-20261014-2100 worktree, branch feature/trubot-daily-20261014-1700-grounding.
+The name is an isolated run suffix, not a schedule change. Previous run completed;
+only three unrelated dependency PRs are open. Joe's primary dirty checkout is
+untouched. Production baseline 2.26.0/index76022c69 is healthy on reverified pi5,
+aarch64, Ubuntu24.04.4; installed helper, manifest and credential presence checked
+without secrets.
+
+Both planning phases completed. H66 fresh gateway reproduction and failed bounded
+behavioral prototypes leave broad synthesis OPEN. Select H68 deterministic source
+integrity as an enabling increment; current corpus has no long affected passages.
+Six of seven initial regressions fail on exact base, candidate seven pass. Actual
+invented 1,785-byte same-owner Discord handler comparison changes incorrect stance
+to correct stance by retaining its closing qualification, one provider call per
+arm. Both append an unnecessary date caveat; no broad naturalness gain claimed.
+Ten final regressions and all six gates are in progress. No new model/prompt
+prototype, source population, schema, service or spending pool.
+[Study](evaluations/2026-10-14-authored-completeness-study.md) records methods,
+coverage, disconfirmation, prototype failures and operating limits. Private
+app-volume artifacts retain only refs/counts/hashes under0700/0600 and existing
+seven-day manual retention/withdrawal. PR/release/install outcome follows.
+
+Feature full gates pass: locked sync, formatting, lint, 31 typed modules, 1,117 tests,
+96.87% branch coverage and both 2.26.1 artifacts. Import-order lint failure fixed
+before passing gates. No dependencies changed. Actual current corpus has zero
+passages affected by the renderer change; no general synthesis improvement claimed.
