@@ -1,13 +1,14 @@
 # Trubot agent harness
 
-2.26.6 candidate adds a final source/scope check after generation and immediately
+Deployed 2.26.6/PR123 adds a final source/scope check after generation and immediately
 before publication for replies with private memory. It reuses the callback used
 by optional quality refreshes. Changed, withdrawn, unavailable or differently
 attributed packets discard the draft without another generation or routine
 fallback disclaimer. No-memory replies and abstentions keep their behavior.
 Actual private Discord synthetic race: baseline1stale post, candidate0, two source
 checks/one generated draft/zero provider calls in the controlled comparison.
-Full immutable release/installed normal gateway acceptance pending.
+All gates/CI/both images pass. Installed source guards 5/5; fresh normal gateway
+8/9 strict cases, with weak invited humor still open. [Installed evidence](trubot-evolution/evaluations/2026-10-15-reply-source-freshness-release.json).
 [Both research phases and criteria](trubot-evolution/evaluations/2026-10-15-reply-source-freshness-study.md).
 
 The final refresh uses existing bounded native reads and can add latency or suppress
@@ -36,7 +37,7 @@ pattern contracts remain available. No external runtime tool or selectively load
 skill exists yet. Peer/bot/development text cannot establish Andrew's beliefs or
 authorize commands/configuration/access.
 
-Priority after final-check acceptance: qualified abstraction population/legacy review,
+Priority after the final-check release: qualified abstraction population/legacy review,
 applicability/specific care/semantic humor, broader linked native/original pixels,
 selective tools/generated Michigan U.P. aurora/trail-camera scenes. Fresh material
 grounding/privacy failures can move H66 reliability ahead. [Plan](trubot-evolution/plan.md)

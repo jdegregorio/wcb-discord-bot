@@ -1,0 +1,341 @@
+{
+  "schema": 1,
+  "run": "2026-10-15-1300",
+  "time": "2026-10-15T20:32:53.999964+00:00",
+  "base": "c4ef4f33fe2edcbd5572a931f20aa358b4a8a8d1",
+  "tested_head": "34bfc5f07f2ee91f32135cd9b4b9e4a44cd72463",
+  "runtime_revision": "33a484277edde9e64a7fe8e6e8557fc14410381c",
+  "pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/123",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.26.6",
+  "version": "2.26.6",
+  "images": {
+    "index": "sha256:08fab9916c1a5d07a7dcd254551637e6d29548e473f60ef6ecf0150cf34247f6",
+    "amd64": "sha256:2f12344b8caa095b6e327dea1832c0e09c27bb955397e220b9c0864539c8026c",
+    "arm64": "sha256:08cb21ff3fdf6bd93ecced8ca3cc956d89cd98271305568abfcdde403dedeea0",
+    "previous_healthy_index": "sha256:5944b382f081339599aa71aa80a6983e82ceb9a934e14fe460d4142801aa660f",
+    "previous_version": "2.26.5"
+  },
+  "quality": {
+    "all_six_feature_and_merged_gates_pass": true,
+    "tests": 1189,
+    "branch_coverage_percent": 96.98,
+    "typed_modules": 31,
+    "new_regressions": 22,
+    "pr_ci": 38800548292,
+    "main_ci": 38800961807,
+    "image_ci": 38801220809,
+    "all_ci_success": true,
+    "initial_candidate_suite": {
+      "passed": 1165,
+      "superseded_expectation_failures": 24
+    }
+  },
+  "research": {
+    "both_planning_phases_complete": true,
+    "H70": "rejected on contrary cases; no rollout",
+    "H71": "supported enabling source-publication correction",
+    "H66": "historical synthesis unresolved",
+    "matched_trials": [
+      {
+        "cohort": "question-trial",
+        "posts": 12,
+        "baseline_pass": 4,
+        "candidate_pass": 6,
+        "samples_per_arm": 6,
+        "provider_attempts": 13
+      },
+      {
+        "cohort": "question-challenge",
+        "posts": 12,
+        "baseline_pass": 6,
+        "candidate_pass": 4,
+        "samples_per_arm": 6,
+        "provider_attempts": 12
+      }
+    ],
+    "human_study": {
+      "total_windows": 14,
+      "documents": 6,
+      "occurrences": {
+        "target": 16,
+        "peer": 36,
+        "bot": 0
+      },
+      "overlap_not_independent": true
+    },
+    "recent_activity": {
+      "target": 5,
+      "peer": 8,
+      "bot": 3,
+      "current_spontaneous_bot": 0,
+      "unavailable_channels": 0
+    },
+    "latest_messages_per_channel": 100,
+    "channels": 3,
+    "recent_days": 14,
+    "calendar_dates_unknown": true,
+    "original_pixels_not_interpreted": true,
+    "new_human_traits": 0,
+    "qualified_graph_population_added": 0,
+    "general_fidelity_or_humor_gain_claimed": false
+  },
+  "source_race": {
+    "baseline_source_bound": true,
+    "baseline_checks": 1,
+    "baseline_stale_posts": 1,
+    "candidate_checks": 2,
+    "candidate_stale_posts": 0,
+    "generated_drafts_each": 1,
+    "provider_calls": 0,
+    "synthetic_inflight_state_real_private_discord_handler": true,
+    "first_unbound_attempt_excluded": true
+  },
+  "installed": {
+    "source_hashes_matched": 31,
+    "all_source_hashes_match": true,
+    "provider_calls": 0,
+    "no_second_gateway": true,
+    "development_learning": 0,
+    "distinct_readiness_before_construction": true,
+    "primary_ready_after_close": true,
+    "qualified_graph_unchanged": true,
+    "wrong_guild_unrelated_nonowner_excluded": true
+  },
+  "installed_cases": [
+    {
+      "case": "removed",
+      "source_checks": 2,
+      "generated_drafts": 1,
+      "posts": 0,
+      "pass": true
+    },
+    {
+      "case": "unavailable",
+      "source_checks": 2,
+      "generated_drafts": 1,
+      "posts": 0,
+      "pass": true
+    },
+    {
+      "case": "author-scope",
+      "source_checks": 2,
+      "generated_drafts": 1,
+      "posts": 0,
+      "pass": true
+    },
+    {
+      "case": "current",
+      "source_checks": 2,
+      "generated_drafts": 1,
+      "posts": 1,
+      "pass": true
+    },
+    {
+      "case": "no-memory",
+      "source_checks": 1,
+      "generated_drafts": 1,
+      "posts": 1,
+      "pass": true
+    }
+  ],
+  "gateway": {
+    "normal_gateway": true,
+    "owner_questions": 9,
+    "posts": 8,
+    "recipient_abstentions": 1,
+    "strict_semantic_passes": 8,
+    "runtime_provider_attempts": 10,
+    "existing_quality_refreshes": 1,
+    "cases": [
+      {
+        "case": "baseball",
+        "posted": true,
+        "words": 5,
+        "sentences": 2,
+        "semantic_review_pending": false,
+        "semantic_pass": true,
+        "ordinary_metadata_disclaimer": false,
+        "limitation_category": null
+      },
+      {
+        "case": "past",
+        "posted": true,
+        "words": 43,
+        "sentences": 2,
+        "semantic_review_pending": false,
+        "semantic_pass": true,
+        "ordinary_metadata_disclaimer": false,
+        "limitation_category": null
+      },
+      {
+        "case": "context",
+        "posted": true,
+        "words": 17,
+        "sentences": 1,
+        "semantic_review_pending": false,
+        "semantic_pass": true,
+        "ordinary_metadata_disclaimer": false,
+        "limitation_category": null
+      },
+      {
+        "case": "date",
+        "posted": true,
+        "words": 6,
+        "sentences": 1,
+        "semantic_review_pending": false,
+        "semantic_pass": true,
+        "ordinary_metadata_disclaimer": false,
+        "limitation_category": null
+      },
+      {
+        "case": "abstract",
+        "posted": true,
+        "words": 37,
+        "sentences": 2,
+        "semantic_review_pending": false,
+        "semantic_pass": true,
+        "ordinary_metadata_disclaimer": false,
+        "limitation_category": null
+      },
+      {
+        "case": "own",
+        "posted": true,
+        "words": 6,
+        "sentences": 1,
+        "semantic_review_pending": false,
+        "semantic_pass": true,
+        "ordinary_metadata_disclaimer": false,
+        "limitation_category": null
+      },
+      {
+        "case": "humor",
+        "posted": true,
+        "words": 11,
+        "sentences": 2,
+        "semantic_review_pending": false,
+        "semantic_pass": false,
+        "ordinary_metadata_disclaimer": false,
+        "limitation_category": "relevant_but_little_comic_turn"
+      },
+      {
+        "case": "care",
+        "posted": true,
+        "words": 17,
+        "sentences": 1,
+        "semantic_review_pending": false,
+        "semantic_pass": true,
+        "ordinary_metadata_disclaimer": false,
+        "limitation_category": null
+      },
+      {
+        "case": "recipient",
+        "posted": false,
+        "words": 0,
+        "sentences": 0,
+        "semantic_review_pending": false,
+        "semantic_pass": true,
+        "ordinary_metadata_disclaimer": false,
+        "limitation_category": null
+      }
+    ],
+    "context_case_does_not_validate_original_2020_episode_continuity": true,
+    "same_single_evaluator_small_samples": true
+  },
+  "health": {
+    "time": "2026-10-15T20:30:41.566513+00:00",
+    "counts": {
+      "errors": 0,
+      "warnings": 2,
+      "reply_failures": 0,
+      "requests": 9,
+      "posts": 8,
+      "abstentions": 1,
+      "quality_refreshes": 1,
+      "source_discards": 0,
+      "study_pauses": 0,
+      "disconnects": 0
+    },
+    "image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:08fab9916c1a5d07a7dcd254551637e6d29548e473f60ef6ecf0150cf34247f6",
+    "health": "healthy",
+    "restarts": 0,
+    "version": "2.26.6",
+    "revision": "33a484277edde9e64a7fe8e6e8557fc14410381c",
+    "raw_logs_retained": false,
+    "short_window_not_error_rates": true
+  },
+  "budget": {
+    "time": "2026-10-15T20:31:23.677341+00:00",
+    "window_start": "2026-10-15T19:50:00+00:00",
+    "window_usage": [
+      {
+        "purpose": "maintenance",
+        "attempts": 25,
+        "estimated_nanodollars": 2908355,
+        "unsettled": 0
+      },
+      {
+        "purpose": "runtime",
+        "attempts": 11,
+        "estimated_nanodollars": 4192735,
+        "unsettled": 0
+      }
+    ],
+    "covered_month": {
+      "month": "2026-10",
+      "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+      "timezone": "UTC",
+      "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+      "estimated_usd": 0.295606715,
+      "runtime_usd": 0.153274345,
+      "maintenance_usd": 0.14233237,
+      "monthly_limit_usd": 20,
+      "runtime_limit_usd": 18,
+      "maintenance_limit_usd": 2,
+      "attempts": 1852,
+      "input_tokens": 5556854,
+      "cached_input_tokens": 3739884,
+      "output_tokens": 58015,
+      "unsettled_attempts": 1,
+      "pre_guard_spend": "unknown; not included"
+    },
+    "estimates_are_not_billing": true,
+    "new_service": false,
+    "primary_ready": true,
+    "raw_text_retained": false
+  },
+  "privacy": {
+    "raw_sources_answers_personal_summaries_retained_in_smoke_artifacts": false,
+    "content_free_private_files": 16,
+    "modes_verified": "0700 directory/0600 files",
+    "existing_manual_retention_days": 7,
+    "existing_withdrawal_cleanup": true
+  },
+  "operating_impact": {
+    "additional_provider_pass": false,
+    "additional_bounded_source_refresh_for_memory_drafts": true,
+    "new_service": false,
+    "new_schema_or_human_population": false,
+    "native_semantic_gate_unchanged": true,
+    "model_intake_pacing_schedule_notifications_unchanged": true,
+    "check_plus_discord_send_is_not_atomic": true,
+    "latency_or_transient_read_suppression_possible": true
+  },
+  "rollback_or_data_restore": false,
+  "next": [
+    "qualified abstract population and legacy review",
+    "applicability, specific care and semantic humor",
+    "broader linked native and original pixels",
+    "selective skills/tools and generated Michigan U.P. outdoor scenes"
+  ],
+  "limitations": [
+    "No new spontaneous league replies observed in bounded recent audit",
+    "H70 rejected; H66 original question-to-assertion issue remains unresolved",
+    "Installed source-race tests simulate in-flight state, without withdrawing production learning",
+    "Eight of nine normal gateway cases pass strict review; invited humor remains weak",
+    "Final current source packet replay is not a capture of the original provider request",
+    "Small cohorts and one Codex evaluator do not establish general fidelity, funniness or error rates",
+    "Extra native refresh can add latency and fail closed; final check/send not atomic",
+    "API estimates are not billing and pre-guard spending is unknown",
+    "Normal development history includes same-run research probes; it is not spontaneous league conversation."
+  ]
+}

@@ -1,6 +1,14 @@
 # Living memory graph
 
-2.26.5 is deployed and verified via [PR121](https://github.com/jdegregorio/wcb-discord-bot/pull/121),
+2.26.6/PR123 is deployed: source/author scope is rechecked after generation and
+before publication, protecting correction/withdrawal during richer memory use.
+Installed guards5/5; normal gateway8/9 strict cases leaves weak invited humor open.
+No new graph observation or native semantic permission. Qualified abstraction
+population/legacy review is next, followed by applicability/care/semantic humor,
+broader linked native/original pixels and selective tools/generated U.P. scenes.
+[Final installed evidence](evaluations/2026-10-15-reply-source-freshness-release.json).
+
+Prior 2.26.5 was deployed and verified via [PR121](https://github.com/jdegregorio/wcb-discord-bot/pull/121),
 runtime commit 0b609af. Ordinary authored recall omits adjacent Slack text and competing
 optional voice examples while retaining complete authored paragraphs and provenance.
 Context/joke/explanation/quote/evidence requests retain setup; native episodes and
