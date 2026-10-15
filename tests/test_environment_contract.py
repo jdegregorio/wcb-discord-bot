@@ -34,3 +34,15 @@ def test_machine_readable_environment_contract_matches_runtime_defaults() -> Non
     assert properties["TRUBOT_LEARNING_BATCH_SIZE"]["default"] == settings.learning_batch_size
     assert properties["TRUBOT_LEARNING_POLL_SECONDS"]["default"] == settings.learning_poll_seconds
     assert all("TRELLO" not in name for name in properties)
+
+
+def test_source_package_and_release_versions_agree():
+    import importlib.metadata
+    import tomllib
+
+    import trubot
+
+    declared = tomllib.loads((Path(__file__).parents[1] / "pyproject.toml").read_text())["project"][
+        "version"
+    ]
+    assert trubot.__version__ == declared == importlib.metadata.version("wcb-trubot")
