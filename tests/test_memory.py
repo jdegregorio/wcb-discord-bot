@@ -148,7 +148,7 @@ def test_focused_recall_presentation_distinguishes_content_timing_and_evidence(
     assert recall_presentation(focused_request).value == expected
 
 
-def test_presentation_preserves_identical_grounding_and_unknown_dates(store):
+def test_presentation_preserves_identical_authored_grounding_and_unknown_dates(store):
     archive = ArchiveStore.initialize(store)
     archive.import_document(
         b"legacy.target\n  8:01 AM\nI enjoyed the overtime finish.",
@@ -164,7 +164,8 @@ def test_presentation_preserves_identical_grounding_and_unknown_dates(store):
     requests = ["What did you say in 2020?", "When did you say that?", "Show the source"]
     rendered = [memory.render(candidates, request=request) for request in requests]
     data = [json.loads(item.split("\n", 1)[1]) for item in rendered]
-    assert data[0] == data[1] == data[2]
+    authored = [[(row["source"], row["author"], row["text"]) for row in items] for items in data]
+    assert authored[0] == authored[1] == authored[2]
     assert data[0][0]["source"]["period_is_message_date"] is False
     assert data[0][0]["source"]["date"].startswith("unknown")
     assert "ordinary recall" in rendered[0]

@@ -2385,3 +2385,28 @@ peer stance remains open. No routine metadata disclaimer, new requester defect o
 general superiority/fidelity claim. Existing18/2/20guard; run75settled/USD0.008836085
 estimate, coveredOctoberUSD0.278936285/one unchanged old unsettled. Final study and
 structured result above record health, source/coverage gaps, privacy and roadmap.
+
+
+## 2026-10-15 05:00 - H69 authored historical recall
+
+Both phases, fresh audit, explicit hypotheses and locked semantic criteria:
+[study](evaluations/2026-10-15-authored-recall-study.md). Fresh normal gateway again
+promotes a peer stance and reverses a qualification. Twelve private windows/four
+exports/14target38peer grouped occurrences, overlaps; no new trait. Matched ordinary
+recall baseline0/2candidate2/2; four separate human anchors8/8each arm.20actual
+handler posts/24maintenance requests, same sources/histories/model/limits. This is
+narrow improvement with limited controls, not general fidelity or funniness.
+
+Select2.26.5 structured omission of adjacent Slack text and optional voice examples
+for ordinary authored recall. Keep full source paragraphs/date/author/conflicts,
+context/joke/evidence/quote access, native setup and all lifecycle/withdrawal guards.
+Return roadmap focus to qualified abstractions, then applicability/care/humor;
+contextual synthesis remains open and material grounding failures move first.
+Five new regressions fail baseline;19candidate route/lifecycle checks pass. Initial
+full suite has1,166passes/one presentation-payload equality assertion, repaired to
+compare unchanged authored grounding rather than deliberately different adjacency.
+Full gates/CI/merged-main/release/images/deployment/fresh gateway still pending.
+
+All six feature gates pass: locked sync, format, lint, strict typing of 31 modules,
+1,167 tests/96.87% branch coverage and both 2.26.5 build artifacts. CI, immutable
+images and installed acceptance remain pending.

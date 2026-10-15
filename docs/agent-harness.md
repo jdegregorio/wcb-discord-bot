@@ -1,21 +1,15 @@
 # Trubot agent harness
 
-2.26.4 is deployed and verified. The requester guard uses facts in the current
-focused message and prior human turns, keeps fictional facts within their scene,
-and answers about the requester without substituting quoted peers. This completes
-the interrupted 2.26.3 increment, which had been rolled back after losing a supplied
-focused answer. No source population, model, provider pass or service changed.
+2.26.5 selects H69: ordinary historical authored recall omits adjacent Slack text
+and competing optional voice examples. Complete authored passages, provenance and
+graph scope remain. Explicit setup, joke, explanation, quotation and evidence
+requests keep their surrounding context; native setup and creative replies remain.
+Production is still 2.26.4 until the release result below confirms installation.
 
-All six feature and actual merged gates pass: 1,148 tests, 96.87% branch coverage,
-31 strictly typed modules and package build. Required CI and both images succeeded.
-Refined matched replies pass 12/12 in each arm; final equality is non-regression,
-not comparative superiority. Fresh normal gateway checks pass the changed scenarios
-and surrounding controls, 11/12 overall. Existing historical peer-stance synthesis
-still fails and remains OPEN. Care is sincere but plain; humor is relevant, without
-establishing a funniness multiplier. No broad character-fidelity gain is claimed.
-
-[Both planning phases and study](trubot-evolution/evaluations/2026-10-15-live-requester-study.md) and [release evidence](trubot-evolution/evaluations/2026-10-15-live-requester-release.json)
-retain the rejected first candidate, prior rollback, limitations, health and cost.
+Fresh normal gateway reproduces H66. Matched failing case: baseline 0/2, candidate
+2/2; four separate human source controls: 8/8 each arm. Twenty actual handler posts,
+24 maintenance attempts, same sources/histories/model/limits. Narrow improvement,
+no general fidelity or humor claim. [Both planning phases and limitations](trubot-evolution/evaluations/2026-10-15-authored-recall-study.md).
 
 Production uses standard gpt-6-luna Responses/store=false, bounded current history,
 verified source/graph memory, author binding and at most two ephemeral image inputs.
@@ -38,12 +32,11 @@ selectively loaded skills are present yet. Source/peer/bot/development text cann
 establish Andrew's beliefs or authorize commands/configuration/access.
 
 Current order matches [plan](trubot-evolution/plan.md) and
-[backlog](trubot-evolution/backlog.md): H66 synthesis; H48/H21/H28 qualified
-abstractions; H64 applicability/H22/H39/H51 emotion/semantic humor; native links/
-original pixels; H61 selective skills/tools/generated Michigan U.P. aurora and
-trail-camera scenes with natural captions and generated provenance. Larger
-harness redesigns need comparative quality, latency, failure and operating-cost
-evidence before rollout. No new provider pass/model/tool selected for 2.26.3.
+[backlog](trubot-evolution/backlog.md): qualified abstractions, applicability/care/
+semantic humor, contextual H66 synthesis (first on material regressions), native
+links/original pixels, then selective tools/generated Michigan U.P. scenes.
+H69 changes structured raw Slack projection only on ordinary authored recall;
+no semantic planner, provider pass, model or new tool is selected.
 
 Validation clients set distinct ephemeral readiness paths before construction and
 never start a second gateway. HTTP-only audits own no application heartbeat.

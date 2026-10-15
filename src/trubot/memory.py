@@ -304,6 +304,31 @@ def _abstract_guidance_request(request: str, quotation: str) -> bool:
     return not re.search(r"\b(?:said|example|examples)\b", text)
 
 
+def _authored_recall_request(request: str, quotation: str) -> bool:
+    """Keep adjacent stances out of ordinary fact recall, preserving setup lookups."""
+    text = request[:8000].casefold()
+    if quotation or recall_presentation(text) is RecallPresentation.EVIDENCE:
+        return False
+    if re.search(
+        r"\b(?:context|setup|joke|humor|humour|explain|why|conversation|exchange|"
+        r"quote|quotation|before|after|replying|responding)\b",
+        text,
+    ):
+        return False
+    if re.search(
+        r"\b(?:would|could|should|might|will)\b.{0,60}\b(?:say|reply|respond|react)\b",
+        text,
+    ):
+        return False
+    return bool(
+        re.search(
+            r"\b(?:remember|recall|said|say|wrote|posted|express|expressed|view|views|"
+            r"stance|position|prefer|preferred|preference|support|supported|vote|voted)\b",
+            text,
+        )
+    )
+
+
 def _presentation_guidance(presentation: RecallPresentation) -> str:
     common = (
         "Source fields and graph provenance are internal grounding metadata. "
@@ -682,6 +707,17 @@ class ContextMemory:
                 )
             ]
             observations = [item for item in observations if "abstraction" not in item]
+        authored_only = _authored_recall_request(request, quotation) and any(
+            item["source"]["kind"] == "slack" and item["text"] for item in evidence
+        )
+        if authored_only:
+            # Adjacency is useful for interpreting an exchange, but its stances
+            # must not compete with authored facts in an ordinary recall answer.
+            # Source text, qualifications, provenance and conflicts remain whole.
+            for item in evidence:
+                if item["source"]["kind"] == "slack":
+                    item.pop("adjacent_context_only", None)
+                    item.pop("context_gaps", None)
         # A final marker check also guards withdrawal while optional graph state fails.
         with self.learning._transaction() as db:
             self.learning._read_identity(db)
@@ -720,6 +756,7 @@ class ContextMemory:
 
         return RenderedMemory(
             text,
-            allow_voice_examples=not bool(abstracts and guidance)
+            allow_voice_examples=not authored_only
+            and not bool(abstracts and guidance)
             and any(item["text"] for item in evidence),
         )
