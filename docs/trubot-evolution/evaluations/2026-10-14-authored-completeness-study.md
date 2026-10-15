@@ -83,3 +83,28 @@ Same Codex semantic evaluator, small repeated samples and sparse spontaneous
 activity limit all conclusions. No independent human review or funniness multiplier
 is measured. Required CI, immutable images, deployment and installed checks remain
 pending at authoring.
+
+
+## Final installed result
+
+2.26.2 is deployed and verified. A version mismatch caught after2.26.1 was repaired
+with a consistency regression and a new immutable release, never by replacing a
+tag. All six feature/actual merged gates pass1,118tests/96.87%/31typed modules;
+required CI and both images pass. All31installed source hashes and version fields
+match. Actual complete/oversized invented handler cases pass source integrity and
+naturalness in the final sample; earlier date caveats remain recorded. Qualified
+graph recall and exclusion/lifecycle checks pass; primary readiness survives close.
+
+Nine normal gateway owner probes/eightposts/one abstention include seven selected
+serial controls (six pass, historical attribution fails), plus an earlier overlapped
+ownership failure and relevant humor pass. Serial ownership recheck passes.
+The unchanged requester classifier misses that noun-phrase wording; causal repair
+remains unvalidated. H66 now explicitly includes this gap. Familiar humor mechanism
+repetition persists. No general character improvement or failure-rate claim.
+
+Final logs havezeroerrors/replyfailures/disconnects/studypauses, two startupwarnings
+and zero restarts. Run window34settled/USD0.01049587; covered monthUSD0.261375345,
+one unchanged preexisting unsettled. Sparse activity and short observation limit
+these counts. Private receipt naming collision was repaired from authenticated
+Discord references without rerunning trials or retaining raw answers.
+[Structured installed evidence](2026-10-14-authored-completeness-release.json).

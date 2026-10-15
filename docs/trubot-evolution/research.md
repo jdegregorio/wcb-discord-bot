@@ -2294,3 +2294,55 @@ with natural uncertainty. Complete retains the closing stance, but unnecessary
 date caveat persists. Internal version assertion catches2.26.0constant against
 2.26.1package/OCI. Add a release-consistency regression and publish immutable
 2.26.2; never reuse the tag. No semantic prototype, state or model changes.
+
+
+### Final 2.26.2 result and revised H66 scope
+
+PR116 version repair merged7ea07e3; all six correct merged gates pass1,118 tests/
+96.87%/31 modules/build, required mainCI38659404866 and imageCI38659579614 succeed.
+An initial mistyped head SHA was rejected by the merge guard; a subsequent old-main
+check is excluded. Correct observed head and actual merged revision were rechecked.
+2.26.2 runs immutable index1f671727 on reverified pi5 through the existing locked
+transaction. Installed internal/package/OCI versions and31source hashes match;
+qualified abstract lookup, unrelated/wrong-guild exclusion and graph bytes/status
+remain unchanged. No rollback or database/source restoration.
+
+Actual installed complete1,785-byte and oversized6,545-byte invented handler cases
+pass narrow source integrity and naturalness in this sample, one maintenance request
+each. Complete answers the retained closing stance without a date caveat; oversized
+abstains about the target's stance and adds an invited fictional aside. Earlier
+paired/2.26.1 date caveats remain recorded, not retroactively passed.
+
+Normal gateway9owner probes produce8posts/one recipient abstention/10runtime
+attempts, including one historical repetition refresh. Seven selected serial
+controls pass6/7: baseball, exact-day honesty, serial requester ownership, invited
+humor, care and recipient restraint pass; past recall still transfers a peer
+stance and blurs a source relationship. Two initial questions overlapped; retain
+the resulting requester-attribution failure and relevant humor pass separately.
+Serial owner recheck passes, so ownership is intermittent, not repaired. Use only
+aggregate log counts because per-case time windows include overlapped requests.
+Humor repeats a familiar mechanism; no creative multiplier or broad fidelity gain.
+
+H66b hypothesis: a noun-phrase authored-recall gap permits unnecessary persona
+retrieval so that the generator can misassign its source to the asker. Current
+classifier returnsFalse on the failed wording andTrue on direct authored recall.
+This is a reproducible routing gap, not proof of sole causality. Prioritize its
+investigation within H66, preserving source-author/ordinary persona/quoted-target/
+recipient controls and requiring matched and real serial validation. Do not ship
+a fix without that comparison. Broader abstractions, care/humor, pixels and tools/
+generated U.P. scenes retain their relative order after material grounding work.
+
+Post league audit remains5target/10peer/3olderbot/zero fresh/zero denied across
+three channels, separate from dev probes; no new trait or independent human
+hold-out claim. Final logs:zero errors/reply failures/disconnects/study pauses,
+two startup warnings,zero restarts. Short sparse window cannot establish rates.
+Covered October estimateUSD0.261375345/1,655attempts/one unchanged preexisting
+unsettled; run window34settled attempts/USD0.01049587 (runtime14/0.005967125,
+maintenance20/0.004528745). Existing18/2/20 guard, not provider billing; pre-guard
+unknown. No model, service, source population, native permission or schedule change.
+
+Prototype receipt filenames collided; six earlier private bot references were
+recovered from authenticated development history with explicit recovery labels.
+Original source-equality assertions and ephemeral reviews had completed. No new
+provider experiment or raw answer artifact. Private0700/0600, existing7day manual
+retention/withdrawal remain. See the structured release record for exact evidence.

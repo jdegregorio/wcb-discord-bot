@@ -1,5 +1,5 @@
 {
-  "version": "2.26.1",
+  "version": "2.26.2",
   "base": "42ce06cde94c1c55e9e31e0a0e4f534bf73d4f75",
   "increment": "H68 complete stored authored reply evidence",
   "classification": "enabling source integrity",
@@ -13,7 +13,7 @@
     "format": true,
     "lint": true,
     "mypy_modules": 31,
-    "tests": 1117,
+    "tests": 1118,
     "branch_coverage_percent": 96.87,
     "build": true
   },
@@ -41,10 +41,367 @@
     "H66 historical attribution and semantic synthesis",
     "ordinary recall date caveat in invented test",
     "broader qualified abstract population",
-    "general character and humor improvement unmeasured"
+    "general character and humor improvement unmeasured",
+    "Intermittent requester attribution; noun-phrase authored-recall classifier gap",
+    "Semantic comic repetition; no funniness multiplier measured"
   ],
   "release": {
-    "status": "pending"
+    "url": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.26.2",
+    "status": "deployed_and_verified",
+    "index": "sha256:1f671727e8170e6cd1d4578aeaa2bda23d83c35322b323f0f97ce2ffba36c2be",
+    "amd64": "sha256:dac4c33f31d66359eba2501aa99d36c7ac044c994def1b410d0c801e593f5bac",
+    "arm64": "sha256:7353695fed7ede97211bb61d608f13b1fee753700d01f49e6e3faec2d3f9eeba",
+    "rollback_used": false,
+    "previous_version": "2.26.1",
+    "previous_index": "sha256:f265eddc8147777501f922f9383a689445e8009945e34dd985e829bd52ea2189"
   },
-  "privacy": "No raw texts, answers, source identifiers or derived personal observations retained in public evidence."
+  "privacy": "No raw texts, answers, source identifiers or derived personal observations retained in public evidence.",
+  "version_consistency_regression": true,
+  "runtime_sha": "7ea07e3d78072c445962a39d102e16532af59518",
+  "runtime_prs": [
+    115,
+    116
+  ],
+  "ci": {
+    "pr": 38658150332,
+    "main": 38658391303,
+    "first_images": 38658588522,
+    "version_pr": 38659172865,
+    "version_main": 38659404866,
+    "final_images": 38659579614,
+    "all": "success"
+  },
+  "installed_evidence": {
+    "installed": {
+      "time": "2026-10-15T00:25:32.076123+00:00",
+      "version": "2.26.2",
+      "source_hash_count": 31,
+      "installed_source_match": true,
+      "conditional_abstract_retrieval": true,
+      "qualified_supports": 2,
+      "contrary_sources": 1,
+      "tentative": true,
+      "lookup_bytes_status_unchanged": true,
+      "unrelated_wrong_guild_excluded": true,
+      "primary_discord_ready": true,
+      "raw_text_retained": false
+    },
+    "current-corpus-render": {
+      "time": "2026-10-15T00:07:41.563694+00:00",
+      "counts": {
+        "slack": 405,
+        "discord": 34,
+        "different_text": 0,
+        "different_voice_admission": 0
+      },
+      "offline_render_only": true,
+      "fresh_discord_visibility_not_claimed": true,
+      "provider_calls": 0,
+      "raw_text_retained": false
+    },
+    "completeness-baseline": {
+      "time": "2026-10-15T00:03:30.175564+00:00",
+      "arm": "baseline",
+      "packets": [
+        {
+          "nonempty": true,
+          "complete_closing": false,
+          "bytes": 2587
+        }
+      ],
+      "requests": [
+        {
+          "ms": 1985,
+          "usage": true
+        }
+      ],
+      "words": 19,
+      "sentences": 3,
+      "elapsed_ms": 2879,
+      "source_fixture": "invented only",
+      "same_real_owner_anchor": true,
+      "development_learning": 0,
+      "second_gateway": false,
+      "distinct_ready_before_construction": true,
+      "stored_chars": 1785,
+      "stored_bytes": 1785,
+      "raw_text_retained": false,
+      "manual_semantic_review_required": false,
+      "narrow_stance_or_abstention_pass": false,
+      "naturalness_pass": false,
+      "same_codex_reviewer": true
+    },
+    "completeness-candidate": {
+      "time": "2026-10-15T00:04:08.552203+00:00",
+      "arm": "candidate",
+      "packets": [
+        {
+          "nonempty": true,
+          "complete_closing": true,
+          "bytes": 2872
+        }
+      ],
+      "requests": [
+        {
+          "ms": 2768,
+          "usage": true
+        }
+      ],
+      "words": 17,
+      "sentences": 3,
+      "elapsed_ms": 3656,
+      "source_fixture": "invented only",
+      "same_real_owner_anchor": true,
+      "development_learning": 0,
+      "second_gateway": false,
+      "distinct_ready_before_construction": true,
+      "stored_chars": 1785,
+      "stored_bytes": 1785,
+      "raw_text_retained": false,
+      "manual_semantic_review_required": false,
+      "narrow_stance_or_abstention_pass": true,
+      "naturalness_pass": false,
+      "same_codex_reviewer": true
+    },
+    "completeness-installed-complete": {
+      "time": "2026-10-15T00:25:42.542636+00:00",
+      "release_version": "2.26.2",
+      "arm": "installed",
+      "packets": [
+        {
+          "nonempty": true,
+          "complete_closing": true,
+          "whole_omission": false,
+          "bytes": 2872
+        }
+      ],
+      "requests": [
+        {
+          "ms": 2130,
+          "usage": true
+        }
+      ],
+      "words": 11,
+      "sentences": 2,
+      "elapsed_ms": 3289,
+      "source_fixture": "invented only",
+      "same_real_owner_anchor": true,
+      "development_learning": 0,
+      "second_gateway": false,
+      "distinct_ready_before_construction": true,
+      "stored_chars": 1785,
+      "stored_bytes": 1785,
+      "raw_text_retained": false,
+      "manual_semantic_review_required": false,
+      "narrow_stance_or_abstention_pass": true,
+      "naturalness_pass": true,
+      "same_codex_reviewer": true
+    },
+    "completeness-installed-oversized": {
+      "time": "2026-10-15T00:25:52.655209+00:00",
+      "release_version": "2.26.2",
+      "arm": "installed",
+      "packets": [
+        {
+          "nonempty": true,
+          "complete_closing": false,
+          "whole_omission": true,
+          "bytes": 1345
+        }
+      ],
+      "requests": [
+        {
+          "ms": 2477,
+          "usage": true
+        }
+      ],
+      "words": 23,
+      "sentences": 2,
+      "elapsed_ms": 3525,
+      "source_fixture": "invented only",
+      "same_real_owner_anchor": true,
+      "development_learning": 0,
+      "second_gateway": false,
+      "distinct_ready_before_construction": true,
+      "stored_chars": 6545,
+      "stored_bytes": 6545,
+      "raw_text_retained": false,
+      "manual_semantic_review_required": false,
+      "narrow_stance_or_abstention_pass": true,
+      "naturalness_pass": true,
+      "same_codex_reviewer": true
+    },
+    "gateway": {
+      "time": "2026-10-15T00:28:57.185858+00:00",
+      "normal_gateway": true,
+      "owner_membership_verified": true,
+      "development_learning": 0,
+      "cases": [
+        {
+          "case": "baseball",
+          "posted": true,
+          "words": 5,
+          "sentences": 2,
+          "manually_reviewed": true,
+          "semantic_pass": true,
+          "raw_text_retained": false
+        },
+        {
+          "case": "past",
+          "posted": true,
+          "words": 56,
+          "sentences": 3,
+          "manually_reviewed": true,
+          "semantic_pass": false,
+          "raw_text_retained": false
+        },
+        {
+          "case": "date",
+          "posted": true,
+          "words": 6,
+          "sentences": 1,
+          "manually_reviewed": true,
+          "semantic_pass": true,
+          "raw_text_retained": false
+        },
+        {
+          "case": "own",
+          "posted": true,
+          "words": 14,
+          "sentences": 2,
+          "manually_reviewed": true,
+          "semantic_pass": true,
+          "raw_text_retained": false
+        },
+        {
+          "case": "humor",
+          "posted": true,
+          "words": 17,
+          "sentences": 2,
+          "manually_reviewed": true,
+          "semantic_pass": true,
+          "raw_text_retained": false
+        },
+        {
+          "case": "care",
+          "posted": true,
+          "words": 17,
+          "sentences": 2,
+          "manually_reviewed": true,
+          "semantic_pass": true,
+          "raw_text_retained": false
+        },
+        {
+          "case": "recipient",
+          "posted": false,
+          "words": 0,
+          "sentences": 0,
+          "manually_reviewed": true,
+          "semantic_pass": true,
+          "raw_text_retained": false
+        }
+      ],
+      "semantic_reviewed_passes": 6,
+      "historical_attribution_failure": "H66: peer stance assigned to target; requires correction",
+      "earlier_overlapped_ownership_failure": true,
+      "serial_owner_recheck_pass": true,
+      "semantic_review_limit": "Same Codex evaluator; sparse spontaneous activity, broad fidelity unmeasured."
+    },
+    "overlap-receipts": {
+      "time": "2026-10-15T00:30:28.259476+00:00",
+      "manual_ui_semantic_association": true,
+      "discord_reply_link_not_claimed": true,
+      "overlapped_questions": true,
+      "cases": [
+        {
+          "case": "ownership-initial",
+          "semantic_pass": false
+        },
+        {
+          "case": "humor-initial",
+          "semantic_pass": true
+        }
+      ],
+      "later_serial_recheck_in_gateway_json": true,
+      "raw_text_retained": false
+    },
+    "log-metrics": {
+      "time": "2026-10-15T00:28:59.169124+00:00",
+      "counts": {
+        "errors": 0,
+        "reply_failures": 0,
+        "disconnects": 0,
+        "study_pauses": 0,
+        "warnings": 2,
+        "requests": 10,
+        "repairs": 1,
+        "source_reuse_refusals": 0,
+        "posts": 8,
+        "followup_abstentions": 1,
+        "repetition_refreshes": 1,
+        "brevity_repairs": 0
+      },
+      "raw_logs_retained": false,
+      "only_aggregate_events_reported": true,
+      "excluded_time_window_assignment_reason": "Initial overlapping probes make per-case timestamp attribution unreliable."
+    },
+    "budget-and-health": {
+      "time": "2026-10-15T00:30:28.267835+00:00",
+      "window_start": "2026-10-14T23:55:00+00:00",
+      "window_usage": [
+        {
+          "purpose": "maintenance",
+          "attempts": 20,
+          "estimated_nanodollars": 4528745,
+          "unsettled": 0
+        },
+        {
+          "purpose": "runtime",
+          "attempts": 14,
+          "estimated_nanodollars": 5967125,
+          "unsettled": 0
+        }
+      ],
+      "covered_month": {
+        "month": "2026-10",
+        "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+        "timezone": "UTC",
+        "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+        "estimated_usd": 0.261375345,
+        "runtime_usd": 0.134325035,
+        "maintenance_usd": 0.12705031,
+        "monthly_limit_usd": 20,
+        "runtime_limit_usd": 18,
+        "maintenance_limit_usd": 2,
+        "attempts": 1655,
+        "input_tokens": 4826355,
+        "cached_input_tokens": 3221597,
+        "output_tokens": 52971,
+        "unsettled_attempts": 1,
+        "pre_guard_spend": "unknown; not included"
+      },
+      "estimates_are_not_billing": true,
+      "new_service": false,
+      "primary_ready": true,
+      "raw_text_retained": false
+    },
+    "post_audit": {
+      "time": "2026-10-15T00:26:06.454831+00:00",
+      "counts": {
+        "target": 5,
+        "peer": 10,
+        "current_spontaneous_bot": 0,
+        "unavailable_channels": 0
+      },
+      "verified_human_member": true,
+      "development_owner_membership_permissions": true,
+      "raw_text_retained": false
+    }
+  },
+  "receipt_limits": [
+    "Prototype filename collision repaired from authenticated private history; original equality assertion completed; no rerun.",
+    "Two initial normal gateway questions overlapped; ownership failure retained and a later serial recheck passed.",
+    "Only aggregate log counts retained because per-case time windows mix overlapped requests.",
+    "Same Codex reviewer, no independent human grading or general error-rate estimate."
+  ]
 }

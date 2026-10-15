@@ -1,21 +1,26 @@
 # Prioritized Trubot backlog
 
-H68 source-integrity increment selected for2.26.1. The renderer will preserve
-complete stored authored passages up to6,000UTF-8bytes and omit oversized passages
-wholly, with internal gaps and no adjacent peer stand-in. Actual invented owner-handler
-baseline reverses a stance after losing the closing qualification; candidate retains
-it and answers correctly. This is enabling protection:current405eligible archive
-blocks/34native sources havezero affected long passages. All six feature gates pass: 1,117 tests, 96.87% branch coverage, 31 typed modules
-and both package artifacts. CI, release and installed checks pending.
+H68 is delivered in 2.26.2. Complete stored authored passages up to 6,000 UTF-8
+bytes retain closing meaning; larger passages and adjacent context are omitted
+wholly with an internal gap. All six feature/merged gates pass: 1,118 tests, 96.87%
+branch coverage, 31 typed modules and package builds. Required PR/main CI and both
+images pass. Installed versions and all 31 source hashes match; actual complete
+and oversized private Discord handler cases pass. Primary Discord remains ready,
+healthy with zero restarts. Current 405 archive blocks/34 native sources have no
+affected long passage; all 439 baseline/candidate stored-source renderings match.
+This is enabling integrity protection, not a general character-quality gain.
 
-H66 historical synthesis remains OPEN and first remaining priority. New gateway
-reproduces peer-attribution failure. Packet projection, reasoning-only and old-bot
-filtering prototypes fail strict semantic acceptance and are rejected. No behavioral
-prototype is shipping. Then H48/H21/H28 abstractions, H64/H22/H39/H51 applicability/
-emotion/humor, native links/original pixels and H61 selective tools/generated Michigan
-U.P. aurora/trail-camera scenes with short natural captions/generated provenance.
-Preserve native pattern gate, source/date/withdrawal/privacy and18/2/20 guard.
-
+H66 remains OPEN and first: historical speaker/polarity synthesis, plus intermittent
+requester ownership. Final normal gateway has nine owner probes/eight posts/one
+abstention: the seven selected serial controls pass six, with historical attribution
+failing. An earlier overlapped ownership answer also fails; its serial recheck
+passes. The unchanged classifier misses a noun-phrase authored-history question.
+Investigate this deterministic guard gap and source-linked factual planning with
+matched/held-out validation; no current behavioral prototype qualified for shipping.
+Then H48/H21/H28 qualified abstractions; H64/H22/H39/H51 applicability/care/semantic
+humor; linked native/original pixels; H61 selective skills/tools and generated
+Michigan U.P. aurora/trail-camera scenes with short natural captions and provenance.
+Preserve the native pattern gate, source/date/withdrawal/privacy and 18/2/20 guard.
 
 H63 is deployed and verified in 2.26.0: complete bounded graph retrieval survives
 memory growth, preserving transitive conflicts and source lifecycle. All six
@@ -152,3 +157,17 @@ current storage/identity/lifecycle only. Impact: no new request/service; larger 
 passages may add up to4,500characters each, within the previous worst-case UTF-8
 source bound and actual-input ledger reservation. Reorder on material grounding or
 privacy regression; do not close H66 from synthetic completeness results.
+
+H66b requester ownership investigation: an actual answer assigns the source author's
+team to the requester; a serial repeat passes. Current unchanged requester_recall
+returns False for the noun-phrase question and True for a direct authored-history
+question. This confirms a classifier coverage gap, not the sole causal explanation
+of the model error. Benefit: authored-history requests should use the asker's human
+words without borrowing the persona's corpus. Dependencies: authenticated focus
+identity, scope/withdrawal authority and genuine live/held-out controls. Acceptance:
+no corpus substitution across varied noun phrases, quotes and other recipients;
+source-author questions and ordinary persona recall remain grounded and natural.
+Validation: deterministic routing plus fixed-source matched handlers and actual
+serial Discord cases. Confidence high in gap, behavioral correction unresolved.
+Expected impact: no new service or provider pass; measure source-byte savings.
+Investigate within first-priority H66; new contrary evidence may reorder the work.
