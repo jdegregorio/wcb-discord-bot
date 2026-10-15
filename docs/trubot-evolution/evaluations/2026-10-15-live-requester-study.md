@@ -50,7 +50,7 @@ justifies population here. Require contrary cases, source lifecycle and held-out
 semantic review, plus actual Discord. Broader native replies/threads/original pixels
 remain enabling; H61 selective tools/skills and generated Michigan U.P. aurora/trail
 camera scenes remain exploratory with timing, provenance, latency and budget gates.
-Official structured-output documentation was fetched: schema compliance alone does
+[Official structured-output documentation](https://developers.openai.com/api/docs/guides/structured-outputs?api-mode=responses) was fetched: schema compliance alone does
 not establish author/meaning correctness. No new API capability was tested/selected.
 
 ## Phase 2: decision rule and ordered roadmap
@@ -111,3 +111,57 @@ and fresh installed gateway scenarios are required before declaring completion.
 
 All six feature gates pass:1,148tests,96.87%branch coverage,31typed modules and
 package build. Full logs preserved in automation storage; merged/install pending.
+
+
+## Final release and actual gateway acceptance
+
+[PR119](https://github.com/jdegregorio/wcb-discord-bot/pull/119) merged tested head
+60534414c6f6d17c46722455a5b17c1f252c7dbe as runtime commit
+57961c3daeb242ab8d54c10d439201a26b486c01. PR CI38704024180, main CI38704294079
+and image CI38704599640 succeeded. Both feature and actual merged six-gate runs
+pass 1,148 tests, 96.87% branch coverage, 31 typed modules and build. Shipped guidance
+exactly matches the refined prototype. The live 2.26.2 harness plus patched classifier
+matches base runtime behavior; the source diff to2.26.3 contains only classifier/version.
+A sandbox uv-cache read failed during a supplemental equality check; direct use of
+the existing virtual environment completed it. No failed required gate was accepted.
+
+Immutable version-tag policy retained; new [2.26.4 release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.26.4)
+and both architecture manifests are recorded in the [structured result](2026-10-15-live-requester-release.json).
+Reverified pi5/aarch64/Ubuntu24.04.4, inspected manifest/interface/permissions and
+used the existing scoped lock/pull/health/rollback transaction. Index86c625aec390
+runs healthy with zero restarts. All31installed source hashes, internal/package/OCI
+versions and OCI revision match. Prior healthy2.26.2/index1f671727 retained. No
+current-run rollback or data restoration; preceding2.26.3 rollback remains recorded.
+
+Installed zero-provider checks pass three requester routes with zero source lookups,
+nonowner denial, qualified abstraction/current graph bytes and status, wrong-guild/
+unrelated exclusions, and primary heartbeat after validation client closure. Clients
+set distinct readiness paths before construction and start no second gateway.
+
+Fresh owner UI posts and actual normal gateway:12 control messages,11 posts and
+one other-recipient abstention,13runtime attempts including one existing quality
+refresh. Eleven semantic passes: focused supplied fact with new quantity, prior
+human fact, quoted-peer separation, two requester-history ownership controls,
+supported persona baseball, exact-day honesty, invited humor, sincere care, a natural
+setup follow-up and recipient restraint. No routine metadata disclaimer appears.
+Broad historical recall still promotes an adjacent peer stance in its current
+source packet; grade fails and H66 stays first. No new requester defect observed.
+The pure source-packet audit uses zero provider calls and saves only hash/size/refs.
+Forty-eight-word historical answer is longer than preferred; natural care remains
+plain and humor uses a familiar mechanism. No general fidelity/humor multiplier,
+failure-rate or latency conclusion follows from this small single-evaluator sample.
+
+Before/after league audit counts unchanged:5target,8peer,3olderbot,0fresh spontaneous,
+0denied across three latest100 pages/fourteen days. Missing pixels stay excluded;
+no new independent human held-out or trait qualification. Exact private references
+and grades are0700/0600 with existing seven-day manual retention/withdrawal cleanup;
+no raw conversation, source excerpts or derived personal-summary artifact retained.
+
+Short installed log window:zero errors/reply failures/disconnects/study pauses,
+two startup warnings,zero restarts. This does not establish general error rates.
+Run75settled attempts estimateUSD0.008836085 (61maintenance/USD0.004673225,
+14runtime/USD0.004162860 including baseline). CoveredOctoberUSD0.278936285 across
+1,778attempts,one unchanged preexisting unsettled. Existing18/2/20guard unchanged;
+not provider billing, earlier spend unknown. No source/intake/native semantic gate,
+model/service/pacing/schedule/notification change. All future roadmap candidates
+retain their independent evidence, source lifecycle, cost and real Discord gates.

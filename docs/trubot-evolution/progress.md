@@ -3896,3 +3896,35 @@ permission, source population, model/service/intake/schedule/notification change
 
 Feature gates pass:locked sync,format,lint,strict mypy31modules,1,148tests/96.87%
 branch coverage and package build. No failing/flaky check accepted. CI/install pending.
+
+
+### H66c final installed 2.26.4 result
+
+[PR119](https://github.com/jdegregorio/wcb-discord-bot/pull/119), tested head6053441,
+merged/runtime57961c3. PR CI38704024180/main CI38704294079/image CI38704599640
+SUCCESS; all six feature/actual merged gates pass1,148tests/96.87%/31typed/build.
+New immutable [release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.26.4),
+index86c625aec390b318f875797a971796ddd68bd0085bfdf9c50e2a156c7113d280,
+AMD64f22b651f284a344b3cafcf99709950964f393355102b5427de02e0ef9b65c747,
+ARM64c43b2c2dc79b9fdf7c771f213d19623958422860dc48c31ccbd14d81e52cc201.
+Existing scoped transaction on reverified pi5/aarch64/Ubuntu24.04.4. Healthy,
+zero restarts;31source hashes/package/internal/OCI versions and revision match.
+Prior healthy2.26.2/index1f671727 retained; no current rollback/data restoration.
+
+Actual owner UI/normal gateway:12controls,11posts/one recipient abstention,
+13runtime requests including one existing refresh. Changed focused/prior-human/
+quote cases pass; requester ownership, supported persona baseball, exact-date
+honesty, humor, care, setup follow-up and recipient pass. Overall11/12 because
+historical adjacent-peer stance synthesis still fails. Current source packet
+rechecked without provider calls; no ordinary metadata disclaimer. H66 stays first,
+then qualified abstractions, applicability/emotion/humor, native links/pixels and
+selective tools/generated Michigan U.P. scenes. No general fidelity gain claimed.
+
+Post audit5target8peer3olderbot0fresh/0denied; sparse actual league activity limits
+character conclusions. Short logs0errors/replyfailures/disconnects/studypauses,
+2startupwarnings/0restarts. Run75settled requests estimateUSD0.008836085;
+coveredOctoberUSD0.278936285/1,778attempts/one unchanged old unsettled.18/2/20guard,
+model, native gate, private scope, source lifecycle, schedule/notifications unchanged.
+Private refs/counts/hashes/grades0700/0600,seven-day manual retention/withdrawal;
+no raw answer/source or derived personal-summary artifact. Primary heartbeat and
+actual gateway survive validation client closure. [Full result](evaluations/2026-10-15-live-requester-release.json).
