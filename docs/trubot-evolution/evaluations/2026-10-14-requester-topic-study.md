@@ -77,7 +77,7 @@ No secret values or raw conversations are saved in public notes or smoke artifac
 The second fresh baseline gateway question reproduces source-person stance
 assigned to the owner. Counterbalanced same-owner/same-history/same-model actual
 handler comparison: two questions, two samples per arm, eight posts total.
-Baseline retrieves persona sources 4/4 and makes unsupported requester claims 3/4;
+Baseline attempts persona retrieval 4/4 and makes unsupported requester claims 3/4;
 candidate retrieves zero persona sources, uses requester guidance 4/4 and answers
 naturally without invented requester stance, irrelevant persona aside or metadata
 disclaimer 4/4. Each uses one accounted maintenance request; primary heartbeat
@@ -109,3 +109,16 @@ skills/tools and generated U.P. scenes. Each needs its existing source lifecycle
 privacy, held-out/contrary-case and real Discord gates. Larger harness redesign
 remains available when comparative evidence supports it. A new grounding/privacy
 regression or validated abstract/humor trial can reorder these priorities.
+
+### Harness coverage clarification before release
+
+All four baseline calls attempt retrieval, but the two baseball source packets
+are empty. Their wrong ownership can therefore come from prior bot history;
+these samples are not fresh native-source validation. The two archived-stance
+packets are7,454bytes each; candidate requester packets are393bytes in all four
+trials and no source lookup occurs. No claim that four nonempty source packets
+were supplied is intended. Why the baseball packets are empty is not established
+by this trace. Matching historical conversation hashes are verified in every pair.
+The correction protects requester routing in both circumstances; fresh installed
+normal gateway tests remain necessary. No general latency or native recall gain
+is inferred.

@@ -2356,7 +2356,7 @@ windows/four exports and authenticated three-channel audit5target/8peer/3olderbo
 zero current spontaneous ground the source distinction; missing pixels excluded.
 Matched two owner anchors/two samples each arm:baseline3/4unsupported requester
 claims, candidate0/4, four natural brief candidate replies. Same histories/model,
-one maintenance request each; candidate source retrieval zero versus baseline4.
+one maintenance request each; candidate source lookup zero versus four baseline attempts.
 13new regressions fail baseline;56candidate checks pass. Select bounded syntax
 repair with existing identity/permission/withdrawal guard, pending full gates and
 fresh installed real Discord. No general fidelity/humor or independent human
