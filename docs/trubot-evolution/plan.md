@@ -1,28 +1,34 @@
 # Trubot evolution plan
 
-2.26.5 selects H69: ordinary historical authored recall omits adjacent Slack text
-and competing optional voice examples. Complete authored passages, provenance and
-graph scope remain. Explicit setup, joke, explanation, quotation and evidence
-requests keep their surrounding context; native setup and creative replies remain.
-Production is still 2.26.4 until the release result below confirms installation.
+2.26.5 is deployed and verified via [PR121](https://github.com/jdegregorio/wcb-discord-bot/pull/121),
+runtime commit 0b609af. Ordinary authored recall omits adjacent Slack text and competing
+optional voice examples while retaining complete authored paragraphs and provenance.
+Context/joke/explanation/quote/evidence requests retain setup; native episodes and
+qualified abstract memory remain unchanged. No new provider pass or service.
 
-Fresh normal gateway reproduces H66. Matched failing case: baseline 0/2, candidate
-2/2; four separate human source controls: 8/8 each arm. Twenty actual handler posts,
-24 maintenance attempts, same sources/histories/model/limits. Narrow improvement,
-no general fidelity or humor claim. [Both planning phases and limitations](evaluations/2026-10-15-authored-recall-study.md).
+All six feature and actual merged gates pass: 1,167 tests, 96.87% branch coverage,
+31 typed modules/build; required CI and both immutable image architectures succeed.
+Installed 31 source hashes/versions/prototype packet match, private scope and graph
+lifecycle pass. Actual normal gateway: 10/11 semantic passes: both changed recall
+questions pass; retained-context wording flattens a source question into an assertion.
+That unchanged route remains OPEN. No routine metadata disclaimer, general fidelity
+or measured humor multiplier claimed. Short health window has zero errors/restarts.
+
+[Both planning phases and study](evaluations/2026-10-15-authored-recall-study.md) and [structured installed result](evaluations/2026-10-15-authored-recall-release.json)
+record the narrow comparison, source limits, remaining failure and spending evidence.
 
 ## Ordered next increments
 
-1. H48/H21/H28 qualified abstract population and legacy qualification. Expand
+1. H66 contextual historical synthesis. H69 addresses ordinary authored recall;
+   explicit context and syntactic gaps remain. Source-linked planning/verification
+   needs matched human cases before selection. Escalate on fresh material failures.
+2. H48/H21/H28 qualified abstract population and legacy qualification. Expand
    evidence-backed values, humor timing and ways of relating with contrary episodes,
    uncertainty, applicable contexts and full source lifecycle. H62 supplies one
    conditional memory; H63 preserves bounded connected retrieval as it grows.
-2. H64 applicability and H22/H39/H51 specific warmth/semantic humor. Compare against
+3. H64 applicability and H22/H39/H51 specific warmth/semantic humor. Compare against
    human contextual examples and fresh actual replies, including approved creative
    TJ amplification, without making source claims about invented jokes.
-3. H66 contextual historical synthesis. H69 addresses one ordinary recall route;
-   explicit context and syntactic gaps remain. Source-linked planning/verification
-   needs matched human cases before selection. Escalate on fresh material failures.
 4. Broader native peers/replies/threads/original pixels, with honest coverage gaps.
 5. H61 selectively loaded skills/tools and generated Michigan U.P. aurora and
    trail-camera wildlife scenes with natural short captions and generated provenance.
