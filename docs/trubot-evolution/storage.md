@@ -1040,7 +1040,7 @@ withdrawal, graph and backup rules remain authoritative. Native intake's separat
 character limit is unchanged. Rollback2.26.0 requires no database restoration.
 
 
-## Final reply publication check (2.26.6 candidate)
+## Final reply publication check (2.26.6)
 
 Generated drafts containing retrieved private memory recheck the same source packet
 and authenticated author scope immediately before Discord send. A changed/removed/

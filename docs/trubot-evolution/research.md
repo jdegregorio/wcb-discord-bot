@@ -2469,3 +2469,13 @@ Question-form prototype: baseline10/12candidate10/12 overall, contrary candidate
 Final source/scope guard chosen after actual production-handler stale post and
 15 safety regressions fail baseline. This enables safe abstract expansion;
 no measured general reply-quality improvement. Full release acceptance pending.
+
+
+H71 final result: 2.26.6/PR123/runtime33a4842 deployed after all gates/CI/both
+architectures. Installed source guards 5/5; fresh owner normal gateway 8/9 strict
+semantic cases, weak invited comic turn remains open. H70 stays rejected, no
+new human trait or population. Abstract population/legacy review returns first,
+then applicability/specific care/semantic humor, native links/pixels and selective
+tools/generated U.P. scenes. H66 original source-question synthesis remains open.
+Run USD 0.00710109 estimate; existing spending/privacy/lifecycle constraints unchanged.
+[Final study and limits](evaluations/2026-10-15-reply-source-freshness-study.md).

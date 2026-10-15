@@ -1,12 +1,13 @@
 # Trubot roadmap
 
-Current candidate2.26.6 adds H71 final source-and-author-scope validation between
+Deployed 2.26.6/PR123 adds H71 final source-and-author-scope validation between
 generation and Discord publication. Actual private handler comparison prevents
-the reproduced synthetic stale post. Full release acceptance pending. H70 source
+the reproduced synthetic stale post. All gates/CI/both images pass; installed source guards 5/5 and fresh normal
+gateway 8/9, with weak invited humor still open. [Installed evidence](docs/trubot-evolution/evaluations/2026-10-15-reply-source-freshness-release.json). H70 source
 question annotation is rejected on contrary cases and does not ship.
 [Both planning phases](docs/trubot-evolution/evaluations/2026-10-15-reply-source-freshness-study.md).
 
-Ordered direction after H71 acceptance:
+Ordered direction after H71:
 
 1. H48/H21/H28 qualified abstract episode population and legacy review.
 2. H64 applicability; H22/H39/H51 specific warmth and semantic comic variety.
@@ -22,4 +23,4 @@ record evidence, dependencies, acceptance, confidence and actual releases. Sourc
 text remains audit evidence; useful abstract memories are the long-term focus.
 Preserve identity/attribution/withdrawal, native semantic gate, runtime allowlist/
 no DMs, owner-only development recall, existing model/pacing and18/2/20guard.
-Six fresh local01/05/09/13/17/21 Sol/xhigh runs and notifications remain unchanged.
+Six fresh local 01/05/09/13/17/21 Sol/xhigh runs and notifications remain unchanged.

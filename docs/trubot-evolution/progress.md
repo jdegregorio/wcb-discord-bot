@@ -4026,3 +4026,93 @@ USD0.003472855:25maintenance/USD0.002908355and1runtime/USD0.0005645. Covered
 OctoberUSD0.29197848/1,842attempts/one unchanged old unsettled; estimates are not
 billing, pre-guard spending unknown, shared18/2/20guard unchanged. Required CI,
 merged-main gates, images/deployment/installed normal gateway remain pending.
+
+
+### Final installed 2.26.6 result
+
+[PR123](https://github.com/jdegregorio/wcb-discord-bot/pull/123), tested head
+34bfc5f07f2ee91f32135cd9b4b9e4a44cd72463, guarded non-admin squash merge/runtime
+33a484277edde9e64a7fe8e6e8557fc14410381c. Required PR CI 38800548292, main CI
+38800961807 and image CI 38801220809 succeed. All six feature/actual merged local
+gates pass: 1,189 tests, 96.98% branch coverage, 31 typed modules and package build.
+
+Immutable [v2.26.6](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.26.6)
+points to that tested commit. Image index
+08fab9916c1a5d07a7dcd254551637e6d29548e473f60ef6ecf0150cf34247f6;
+AMD64 2f12344b8caa095b6e327dea1832c0e09c27bb955397e220b9c0864539c8026c;
+ARM64 08cb21ff3fdf6bd93ecced8ca3cc956d89cd98271305568abfcdde403dedeea0.
+Both architectures verified before the existing locked pull/health/rollback
+transaction on reverified pi5/aarch64/Ubuntu 24.04.4. Running immutable index,
+OCI version/revision, package/internal versions and all 31 source hashes match.
+Healthy, Discord ready, zero restarts. Prior healthy 2.26.5/index 5944b382 retained;
+no rollback or data restore. Release timer remains active.
+
+Installed actual private Discord handler validation passes 5/5 controlled cases:
+removed source, unavailable check and changed author binding produce zero posts;
+current source and no-memory scene each post once. These simulate in-flight state
+in an HTTP-only validation client, never withdraw real production learning. Each
+uses one synthetic draft and zero provider calls. Current memory gets two checks;
+no-memory gets one. Pinned member and owner-only two-member guild/channel permission
+are reverified. Graph bytes/status remain unchanged within the controlled checks,
+including one qualified abstraction, and wrong-guild/unrelated/nonowner exclusion
+passes. Distinct readiness path before client construction; primary heartbeat
+survives every close, no second gateway or development learning.
+
+Nine fresh serial owner UI questions exercise the installed normal gateway:
+eight posts, one confirmed recipient abstention, ten runtime provider requests
+including one existing quality refresh. No unexpected primary source discard.
+Strict semantic result 8/9: grounded baseball, broad past content, contextual
+source content, exact-date honesty, abstract application, requester ownership,
+brief sincere care and recipient restraint pass. The invited TJ reply is relevant
+but adds little comic turn, so humor fails the stronger qualitative criterion.
+No humor multiplier or general character improvement claimed. The broader context
+case retrieves a different applicable episode and does not validate continuity
+with the original 2020-source question failure. H66 remains unresolved. A zero-call
+current source-packet replay supports factual review but is not a capture of the
+original request. Same single Codex evaluator, small cohorts and sparse spontaneous
+activity limit conclusions; no new independent human rater.
+
+Both ordinary historical answers avoid routine source/date machinery disclaimers;
+only the explicit exact-date question receives brief uncertainty. The care reply
+uses the supplied setback without a joke or invented shared history. No new human
+trait, graph observation, model, prompt, schema, native semantic permission,
+pacing, runtime intake, schedule or notification change. H70 stays rejected.
+After the source-safety correction, prioritize qualified abstract population/legacy
+review, applicability/specific care/semantic humor, linked native/original pixels,
+and selective tools/generated Michigan U.P. aurora/trail-camera scenes with short
+natural captions and generated provenance. Fresh material grounding/privacy
+failures can reorder work. Exact quotes/dates remain secondary reliability work.
+
+Post audit matches the earlier bounded counts: three allowed league channels,
+latest 100 per channel/14 days, five target/eight peer/three older bot/zero fresh
+spontaneous posts, zero denied channels. The contextual study totals 14 windows
+across six exports, 16 target/36 peer grouped occurrences, with overlap. These are
+not independent message counts. Unknown calendar dates remain authoritative and
+missing original pixels are not interpreted. No raw source or derived personal
+summary is retained as a smoke artifact.
+
+Short installed logs: zero errors, reply failures, disconnects, source discards,
+study pauses or restarts; two startup warnings. This is a bounded observation,
+not a general error-rate claim. The extra bounded source refresh can add latency
+or suppress a valid draft during a transient read failure. Final check and Discord
+send are not atomic; a correction after the check remains a practical limit.
+
+Run 36 settled attempts, estimated USD 0.00710109: 25 maintenance/USD 0.002908355
+and 11 runtime/USD 0.004192735. Installed normal gateway accounts for ten runtime
+attempts/USD 0.003628235; baseline accounts for the other one. Covered October
+estimate USD 0.295606715 across 1,852 attempts, one unchanged preexisting unsettled
+reservation. Shared USD 18/2/20 guard remains enforced, not billing; pre-guard
+spending unknown. No new service. Private 16 content-free files have verified
+0700/0600 modes and existing seven-day manual retention/withdrawal cleanup.
+[Structured release evidence](evaluations/2026-10-15-reply-source-freshness-release.json).
+
+Normal development history includes same-run research probes. These fresh owner
+questions are not spontaneous league activity or independent human evaluation.
+
+
+Isolation sequencing deviation: the initial sandbox fetch failed, and the managed
+checkout was created from cached origin/main before the successful elevated retry.
+The retry confirmed the same c4ef4f3 base before any source edit or feature branch
+creation. The primary checkout was never edited, reset or stashed. Future runs
+must await successful fetch before invoking create_worktree; matching the later
+fetch mitigated stale-base risk here but does not change that ordering lapse.

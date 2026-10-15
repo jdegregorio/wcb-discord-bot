@@ -1,10 +1,11 @@
 # Trubot evolution plan
 
-2.26.6 candidate: H71 validates private source context and authenticated author scope
+2.26.6 deployed via [PR123](https://github.com/jdegregorio/wcb-discord-bot/pull/123): H71 validates private source context and authenticated author scope
 after generation, immediately before publication. A source correction, withdrawal,
 changed access or unavailable check discards the draft without another model call.
 Actual private Discord handler comparison: baseline one stale synthetic post,
-candidate zero; candidate performs two source checks. Full release acceptance pending.
+candidate zero; candidate performs two source checks. All gates/CI/both images pass; installed source guards 5/5 and fresh normal gateway 8/9,
+with weak invited humor still open. [Installed evidence](evaluations/2026-10-15-reply-source-freshness-release.json).
 [Both research phases and locked criteria](evaluations/2026-10-15-reply-source-freshness-study.md).
 
 H70 question-form annotation is rejected: matched baseline10/12candidate10/12,
@@ -16,8 +17,7 @@ contextual gateway baseline passes; historical synthesis remains intermittent.
 
 ## Ordered next increments
 
-1. Complete H71 runtime/CI/immutable release and installed actual Discord acceptance.
-   Then H48/H21/H28 qualified abstract population and legacy review: useful values,
+1. H48/H21/H28 qualified abstract population and legacy review: useful values,
    humor mechanisms/timing and ways of relating, with independent attributed
    episodes, contrary cases, applicability and complete source lifecycle.
 2. H64 applicability and H22/H39/H51 specific warmth and semantic humor. Preserve
@@ -44,7 +44,7 @@ Preserve bot identity, verified attribution, internal unknown dates, correction,
 deletion and withdrawal, league runtime allowlist/no DMs, owner-only confirmed
 private development recall. Native automatic patterns remain closed pending their
 specific semantic peer-transfer prerequisite. Existing volume/model/pacing and
-sharedUSD18runtime/USD2maintenance/USD20calendar-month guard remain unchanged.
-Six fresh local01/05/09/13/17/21 Sol/xhigh runs retain both planning phases,
+sharedUSD 18 runtime/USD 2 maintenance/USD 20 calendar-month guard remain unchanged.
+Six fresh local 01/05/09/13/17/21 Sol/xhigh runs retain both planning phases,
 managed isolation, all gates/CI/tested merge, immutable release/both architectures,
 scoped deployment and real Discord validation. Notifications remain unchanged.
