@@ -1,63 +1,18 @@
 # Living memory graph
 
-H68 is delivered in 2.26.2. Complete stored authored passages up to 6,000 UTF-8
-bytes retain closing meaning; larger passages and adjacent context are omitted
-wholly with an internal gap. All six feature/merged gates pass: 1,118 tests, 96.87%
-branch coverage, 31 typed modules and package builds. Required PR/main CI and both
-images pass. Installed versions and all 31 source hashes match; actual complete
-and oversized private Discord handler cases pass. Primary Discord remains ready,
-healthy with zero restarts. Current 405 archive blocks/34 native sources have no
-affected long passage; all 439 baseline/candidate stored-source renderings match.
-This is enabling integrity protection, not a general character-quality gain.
+H66b requester-topic routing is selected for2.26.3, preventing another speaker's
+covered own-history questions from borrowing Andrew's graph/raw/voice evidence.
+Matched real-handler and deterministic source-author controls pass; installed
+acceptance pending. Broader H66 historical peer/polarity synthesis remains open.
+Current priorities match [plan](plan.md) and [backlog](backlog.md): synthesis,
+qualified abstractions/legacy review, applicability/emotion/humor, native links/
+original pixels, selective tools/generated U.P. scenes.
 
-H66 remains OPEN and first: historical speaker/polarity synthesis, plus intermittent
-requester ownership. Final normal gateway has nine owner probes/eight posts/one
-abstention: the seven selected serial controls pass six, with historical attribution
-failing. An earlier overlapped ownership answer also fails; its serial recheck
-passes. The unchanged classifier misses a noun-phrase authored-history question.
-Investigate this deterministic guard gap and source-linked factual planning with
-matched/held-out validation; no current behavioral prototype qualified for shipping.
-Then H48/H21/H28 qualified abstractions; H64/H22/H39/H51 applicability/care/semantic
-humor; linked native/original pixels; H61 selective skills/tools and generated
-Michigan U.P. aurora/trail-camera scenes with short natural captions and provenance.
-Preserve the native pattern gate, source/date/withdrawal/privacy and 18/2/20 guard.
-
-
-H63 is deployed and verified in 2.26.0: complete bounded graph retrieval survives
-memory growth, preserving transitive conflicts and source lifecycle. All six
-feature/merged gates pass1,107tests/96.86%/31modules; required PR/main/image CI and
-both architectures succeed.31installed source hashes/OCI revision match; actual
-installed owner-handler fixture keeps4observations versus0baseline. Nine existing
-actual-anchor memory routes match; back-to-back source-read timeouts are a corrected
-harness limitation, with20/20spaced fresh reads and unchanged freshness bounds.
-
-Fresh normal gateway8cases/7posts/one abstention:7semantic passes, one historical
-attribution failure. A peer stance is assigned to Andrew. Same-case first source
-packets/provider requests are identical across baseline/candidate, with zero calls
-to the changed selector; final baseline passes, candidate fails. Earlier baseline
-also exhibits a different content-grounding error. This is an existing synthesis
-vulnerability; do not claim every recall case passes or a measured general fidelity
-gain. H66 author-constrained historical synthesis is now first, ahead of H48 population.
-Stock care and familiar humor remain unresolved. No rollback can change a selector
-that the failed route does not execute; the scoped H63 increment remains healthy.
-[Final study](evaluations/2026-10-14-graph-selection-study.md) and [installed evidence](evaluations/2026-10-14-graph-selection-release.json).
-
-Next: H66 grounding correction with adversarial peer/polarity cases and held-out/
-actual Discord validation; H48/H21/H28 independent qualified abstractions/legacy
-review; H64 applicability plus H22/H39/H51 care/semantic humor/cues; broader native
-linked context/original pixels; H61 selective tools/generated U.P. scenes. H55b
-specific semantic-transfer approval remains unresolved and native automatic patterns
-closed. Preserve source/author/correction/withdrawal/privacy and shared18/2/20 guard;
-no source intake, model, service, study pacing, schedule or notification change.
-
-H62/H62a 2.25.0 supplies safe reviewed rollout preview and one operational private
-conditional abstraction with support, contrary evidence, tentative status and expiry.
-Matched actual handlers and ten installed normal gateway cases pass; broad character/
-humor gain is unmeasured. Continue independent abstract population/legacy qualification,
-then emotional/semantic humor/cue trials, wider native/visual context and selective
-skills/tools/generated U.P. aurora/trail-camera sharing. Native semantic peer-transfer
-permission remains unresolved and automatic native patterns stay closed. Source-text
-quotes and narrow date lookup remain secondary. See current plan/backlog and H62 study.
+H62/H62a2.25.0 supplies reviewed rollout preview plus one qualified conditional
+abstraction;H632.26.0 preserves whole conflict components as memory grows;
+H682.26.2 preserves complete stored authored passages or wholly omits them.
+These do not establish broad character/humor improvement. Exact source evidence
+and derived personal observations stay private, with full lifecycle and18/2/20guard.
 
 Joe requested an interconnected living memory system on 2026-10-07. This is the
 next architectural priority, rather than another isolated prompt patch.

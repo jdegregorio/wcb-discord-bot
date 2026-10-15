@@ -1,173 +1,74 @@
 # Prioritized Trubot backlog
 
-H68 is delivered in 2.26.2. Complete stored authored passages up to 6,000 UTF-8
-bytes retain closing meaning; larger passages and adjacent context are omitted
-wholly with an internal gap. All six feature/merged gates pass: 1,118 tests, 96.87%
-branch coverage, 31 typed modules and package builds. Required PR/main CI and both
-images pass. Installed versions and all 31 source hashes match; actual complete
-and oversized private Discord handler cases pass. Primary Discord remains ready,
-healthy with zero restarts. Current 405 archive blocks/34 native sources have no
-affected long passage; all 439 baseline/candidate stored-source renderings match.
-This is enabling integrity protection, not a general character-quality gain.
+## Selected: H66b topic-bearing requester ownership
 
-H66 remains OPEN and first: historical speaker/polarity synthesis, plus intermittent
-requester ownership. Final normal gateway has nine owner probes/eight posts/one
-abstention: the seven selected serial controls pass six, with historical attribution
-failing. An earlier overlapped ownership answer also fails; its serial recheck
-passes. The unchanged classifier misses a noun-phrase authored-history question.
-Investigate this deterministic guard gap and source-linked factual planning with
-matched/held-out validation; no current behavioral prototype qualified for shipping.
-Then H48/H21/H28 qualified abstractions; H64/H22/H39/H51 applicability/care/semantic
-humor; linked native/original pixels; H61 selective skills/tools and generated
-Michigan U.P. aurora/trail-camera scenes with short natural captions and provenance.
-Preserve the native pattern gate, source/date/withdrawal/privacy and 18/2/20 guard.
+Evidence: actual gateway misbinding and13 baseline regression failures. Same-owner/
+history/model actual handlers:baseline 3/4unsupported claims, candidate 0/4, all 4
+candidate replies natural;56 routing checks pass. Benefit: the asker's own history
+uses their human words without borrowing Andrew's sources. Dependency: verified
+focus identity and existing permission/withdrawal guard. Acceptance: no persona
+source/graph/voice retrieval for covered peer/unknown requests across three handlers;
+Andrew's own recall, live context, persona/named-source, quotes and hypotheticals
+preserved. Full feature gates pass 1,142 tests/96.87%; installed acceptance pending.
+Confidence high in covered syntax; arbitrary paraphrases remain unmeasured. Impact:
+no extra service/request; measure source-byte savings.
+[Both phases](evaluations/2026-10-14-requester-topic-study.md).
 
-H63 is deployed and verified in 2.26.0: complete bounded graph retrieval survives
-memory growth, preserving transitive conflicts and source lifecycle. All six
-feature/merged gates pass1,107tests/96.86%/31modules; required PR/main/image CI and
-both architectures succeed.31installed source hashes/OCI revision match; actual
-installed owner-handler fixture keeps4observations versus0baseline. Nine existing
-actual-anchor memory routes match; back-to-back source-read timeouts are a corrected
-harness limitation, with20/20spaced fresh reads and unchanged freshness bounds.
+## Ordered next increments
 
-Fresh normal gateway8cases/7posts/one abstention:7semantic passes, one historical
-attribution failure. A peer stance is assigned to Andrew. Same-case first source
-packets/provider requests are identical across baseline/candidate, with zero calls
-to the changed selector; final baseline passes, candidate fails. Earlier baseline
-also exhibits a different content-grounding error. This is an existing synthesis
-vulnerability; do not claim every recall case passes or a measured general fidelity
-gain. H66 author-constrained historical synthesis is now first, ahead of H48 population.
-Stock care and familiar humor remain unresolved. No rollback can change a selector
-that the failed route does not execute; the scoped H63 increment remains healthy.
-[Final study](evaluations/2026-10-14-graph-selection-study.md) and [installed evidence](evaluations/2026-10-14-graph-selection-release.json).
+1. **H66 source-linked historical synthesis, supported defect / exploratory remedy.**
+   Evidence: repeated actual peer stance and polarity failures; source windows
+   distinguish authors. Benefit: natural memories preserve who meant what. Needs
+   attributed current source context, independent human held-outs and a bounded
+   plan/verification prototype. Acceptance: no peer promotion, negation reversal,
+   invented date or ordinary machinery disclaimer; needed setup/humor and recipient
+   controls survive. Validate matched human/adversarial cases plus fresh serial
+   Discord. Confidence high in defect, correction unresolved; prior packet,
+   reasoning and history-only candidates failed. Impact must fit existing shared
+   ledger; no new pass/model/service selected.
+2. **H48/H21/H28 qualified abstract population/legacy review, enabling plus exploratory.**
+   Evidence: sparse qualified graph and one narrow H62 conditional memory. Benefit:
+   useful values/humor/relationship abstractions rather than rote quotes. Needs
+   independent contextual supports, contrary cases, genuine held-outs, applicability
+   and full source lifecycle. Archive work is available; native semantic transfer
+   still has its specific unresolved approval prerequisite. Acceptance: supported
+   scoped memories, edits/contrary changes/expiry/withdrawal and held-out/actual
+   reply benefit without copied punchlines. Confidence unresolved beyond H62;
+   bounded existing graph/maintenance allowance, no extra service.
+3. **H64/H22/H39/H51 applicability, emotion and semantic humor, exploratory.**
+   Evidence: stock care and familiar comic premises in actual development replies;
+   sparse league activity. Benefit: specific warmth and relevant fresh comic turns.
+   Needs human contextual comparisons, contrary emotional scenes and matched
+   semantic review. Acceptance: no insensitive timing, false factual memory,
+   relentless recurring bit or replies to others; approved playful TJ amplification
+   and brief sincerity remain. Validate held-out contexts and real Discord, not
+   keywords/length alone. Confidence unresolved; shared maintenance/runtime ledger.
+4. **Broader native linked and visual history, enabling.** Evidence: bounded recent
+   target-only intake and missing peers/threads/pixels. Benefit: recover setup and
+   changing relationships without guessing. Needs authenticated readable scope,
+   original pixels and provenance. Acceptance: honest gaps, source/date/permission/
+   deletion/withdrawal integrity and held-out contextual interpretation. Confidence:
+   coverage gap established, quality benefit unmeasured. Impact: bounded existing
+   storage/Discord reads; future vision on shared maintenance ledger.
+5. **H61 selective tools/skills and generated outdoor scenes, exploratory.** Evidence:
+   requested modern harness plus Andrew sharing context; no tested new harness
+   advantage. Benefit: relevant context and well-timed Michigan U.P. aurora/trail
+   camera pictures with short natural captions. Needs source-backed timing/sharing
+   evidence, current primary technology docs and bounded prototypes. Acceptance:
+   useful selective context, clean failure/abstention, generated provenance, no
+   factual photo claim, measured latency/cost withinUSD 20 and actual Discord.
+   Confidence exploratory; no paid service or model change selected.
 
-Next: H66 grounding correction with adversarial peer/polarity cases and held-out/
-actual Discord validation; H48/H21/H28 independent qualified abstractions/legacy
-review; H64 applicability plus H22/H39/H51 care/semantic humor/cues; broader native
-linked context/original pixels; H61 selective tools/generated U.P. scenes. H55b
-specific semantic-transfer approval remains unresolved and native automatic patterns
-closed. Preserve source/author/correction/withdrawal/privacy and shared18/2/20 guard;
-no source intake, model, service, study pacing, schedule or notification change.
+Material grounding/privacy regressions or new contrary evidence reorder this list.
+Preserve existing author/date/source correction/withdrawal/privacy, native pattern
+gate,18/2/20 guard, runtime allowlist/no DMs, owner-only private development tests,
+model/pacing/six-run schedule and notifications.
 
-H62/H62a is deployed in 2.25.0: complete reviewed import preview plus one usable
-private conditional abstraction. Actual CLI preview preserves graph bytes/status/
-backups, and commit revalidates current sources. The new tentative memory has two
-contextual supports, one contrary source and 30-day expiry; interpretation and
-source references remain private. One independent compatible human held-out supports
-the narrow scope; overlaps are excluded. Same Codex evaluator, no independent human
-review. Baseline already gives natural decision replies, so this establishes qualified
-population and non-regression, not general character or humor improvement.
-[Both phases and results](evaluations/2026-10-14-abstract-rollout-study.md). [Installed evidence](evaluations/2026-10-14-abstract-rollout-release.json).
+## Recent completed increments
 
-All six feature/merged gates pass: 1,084 tests, 96.88% branch coverage, 31 typed modules.
-Required PR/main CI and both images pass; all installed source hashes match. Ten
-fresh normal gateway cases pass, including firm/care/recipient controls, natural
-baseball/year recall, exact-date honesty, speaker ownership and approved humor.
-Production is healthy/Discord ready with zero restarts and observed errors. Short
-window/zero current spontaneous league posts limit character and error-rate claims.
+- H62/H62a,2.25.0:  full reviewed preview plus one qualified conditional abstraction.
+- H63,2.26.0: ranked whole conflict components preserve bounded graph growth.
+- H68,2.26.2: complete stored passages to6,000UTF-8bytes or whole omission; version
+  consistency regression. Current corpus has no affected long passage.
 
-Completed H62/H62a: enabling reviewed rollout plus qualified private population.
-Evidence: zero prior qualified patterns, local contextual support/contrary/held-out
-study, twelve preview baseline failures, thirteen new checks, real-source lifecycle
-9/9 and matched fixed owner handlers 5/5 in each arm. Benefit: relevant abstract
-interpretation is operational without changing live beliefs during preview. Confidence:
-high in deterministic preview/lifecycle; modest interpretation and broader fidelity
-unresolved. Acceptance: exact source/author/status/expiry, complete rollback, commit
-revalidation, natural conditional decision replies and firm/care/recipient controls.
-All pass, including installed CLI and ten normal gateway controls. Operating impact:
-no added service or recurring request; four matched packets shrink1,634-2,113 bytes,
-not a general cost/latency claim. Care can still load the topic's abstraction while
-respecting its limits; selective admission remains an opportunity.
-
-Previous H62 order (superseded by H66 above):
-
-1. Broader qualified H48/H21/H28 abstractions, independent human held-outs and legacy
-   qualification. H62 establishes one narrow conditional memory, not a full profile.
-   Archive studies can proceed with existing contracts. H55b/H54b/H50 semantic native
-   integration still needs its specific unresolved peer-transfer permission and
-   source/setup lifecycle; automatic native patterns remain closed. No rejected payload
-   or retired H41 pattern is replayed.
-2. H22/H39/H51 emotional specificity, semantic humor variety and cue reliability.
-   Stock care survives the present audit. Validate meaning and creative amplification
-   against contextual human evidence, contrary scenarios and fresh Discord, separately
-   from brevity or packet presence. Retain warmth and recipient restraint.
-3. Broader native peers/replies/threads/original pixels with honest missing/denied
-   coverage, attribution, corrections, expiry and withdrawal.
-4. H61 selective skills/tools and generated Michigan U.P. aurora/trail-camera scenes
-   with short natural captions and generated provenance. Official capabilities are
-   documented possibilities; test relevance, sharing/timing, abstention, compatibility
-   and operating costs before rollout.
-
-Item1: dependencies are attributed independent contextual evidence, applicability,
-contrary cases, genuine held-outs and complete source lifecycle. Native semantic
-transfer remains a separate approval prerequisite; archive work remains eligible.
-Acceptance: useful scoped memories, source/contrary edits, expiry and withdrawal;
-held-out and actual reply benefit without old punchline reuse. Confidence unresolved
-beyond the one narrow H62 memory. Impact: bounded existing graph/USD 2 maintenance.
-
-Item2: dependencies are human contextual comparisons and matched semantic evaluation.
-Acceptance: specific sincere care, relevant fresh comic turns, no false memories,
-insensitive timing or other-recipient replies. Confidence unresolved; earlier creative
-prototypes failed and stock care remains. Impact: bounded existing maintenance trials
-and runtime ledger, no new service until measured cost/latency pass.
-
-Item3: dependencies are authenticated readable scope, complete provenance and original
-pixels where meaningful. Acceptance: linked episodes and honest denied/missing counts,
-lifecycle and permission regressions, held-out contextual interpretation. Confidence:
-coverage gap established, fidelity impact unmeasured. Impact: bounded existing volume/
-Discord reads, future vision on shared maintenance ledger.
-
-Item4: dependencies are source-backed sharing/timing and bounded tool prototypes.
-Acceptance: relevant selective packets, clean failure/abstention, generated provenance,
-short captions and actual useful Discord delivery withinUSD 20. Confidence exploratory;
-no tested new harness compatibility or added-cost estimate yet. No paid service/model
-change selected. Reprioritize on contrary evidence or grounding/privacy failures.
-
-Preserve bot identity and approved creative amplification/Thomas Jones bits;
-private attribution, unknown dates internally, correction/deletion/withdrawal;
-runtime league allowlist/no DMs and owner-only confirmed development recall; existing
-volume and shared USD 18 runtime/USD 2 maintenance/USD 20 monthly guard. No model/service,
-source intake, native pattern permission, study pacing, spending pool, schedule or
-notification change. Six standalone local01/05/09/13/17/21 Sol/xhigh runs retain fresh
-fetched-main managed worktrees, both planning phases, full gates/CI/tested merges,
-immutable releases/both images/scoped deployment and actual private Discord tests.
-
-
-H66 priority1: author-constrained historical synthesis. Evidence: one fresh normal
-attribution failure, current authored versus peer context, identical-input comparison
-with zero H63 selector calls; earlier baseline also fails content polarity. Benefit:
-supported natural memories preserve whose stance it was and what it actually meant.
-Mechanism remains a hypothesis: noisy adjacent context/freeform synthesis permits
-misbinding despite current labels. Dependencies: exact attributed source contexts,
-peer/bot/quoted exclusions and unchanged date/withdrawal authority. Acceptance: no
-peer stance promoted to target, no polarity reversal or invented dates; peer setup
-still supports humor/context where appropriate; direct natural recall/other-speaker/
-care/recipient controls pass. Validation: matched contextual human cases, adversarial
-synthetic peer/polarity cases, honest independent held-outs and fresh real Discord.
-Confidence high in observed failure, correction design and general rates unresolved.
-Operating impact must fit existing ledger; no paid service or provider pass selected.
-This material grounding issue justifies moving literal reliability ahead of broader
-abstract population. Independent non-regression evidence can change the order again.
-
-H68 acceptance: exact complete stored text within6,000bytes, whole omission above
-limit without peers as stand-ins; quotes/edits/deletes/withdrawal; actual owner
-handler comparison and installed check. Confidence high in deterministic integrity,
-low in general quality implications. No present-corpus source affected. Dependencies:
-current storage/identity/lifecycle only. Impact: no new request/service; larger ASCII
-passages may add up to4,500characters each, within the previous worst-case UTF-8
-source bound and actual-input ledger reservation. Reorder on material grounding or
-privacy regression; do not close H66 from synthetic completeness results.
-
-H66b requester ownership investigation: an actual answer assigns the source author's
-team to the requester; a serial repeat passes. Current unchanged requester_recall
-returns False for the noun-phrase question and True for a direct authored-history
-question. This confirms a classifier coverage gap, not the sole causal explanation
-of the model error. Benefit: authored-history requests should use the asker's human
-words without borrowing the persona's corpus. Dependencies: authenticated focus
-identity, scope/withdrawal authority and genuine live/held-out controls. Acceptance:
-no corpus substitution across varied noun phrases, quotes and other recipients;
-source-author questions and ordinary persona recall remain grounded and natural.
-Validation: deterministic routing plus fixed-source matched handlers and actual
-serial Discord cases. Confidence high in gap, behavioral correction unresolved.
-Expected impact: no new service or provider pass; measure source-byte savings.
-Investigate within first-priority H66; new contrary evidence may reorder the work.
+[Progress](progress.md) retains complete validation, limitations and release evidence.

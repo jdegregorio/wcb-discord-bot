@@ -3861,3 +3861,14 @@ seven-day manual retention/withdrawal. Prototype filename collision receipts
 recovered from authenticated history; original equality assertions completed,
 no raw answer text saved or new provider calls. Source-integrity protection and
 H66 failures are reported separately. Final evidence-only PR/cleanup follows.
+
+
+## 2026-10-14 21:00 - H66b requester topic ownership
+
+Fresh fetched-main worktree/base5515bddd, primary untouched. Both research phases
+and selection: [study](evaluations/2026-10-14-requester-topic-study.md). Baseline
+live owner question assigns source-person stance to requester. Matched actual
+Discord handlers:baseline3/4unsupported claims, candidate0/4, four natural
+candidate replies; shared anchors/history/model, one maintenance request each.
+13regressions fail base;56requester checks pass. Selected2.26.3 bounded routing
+repair; full gates/CI/release/deployment/installed gateway acceptance pending.
