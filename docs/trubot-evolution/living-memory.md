@@ -1,12 +1,15 @@
 # Living memory graph
 
-H66b requester-topic routing is selected for2.26.3, preventing another speaker's
-covered own-history questions from borrowing Andrew's graph/raw/voice evidence.
-Matched real-handler and deterministic source-author controls pass; installed
-acceptance pending. Broader H66 historical peer/polarity synthesis remains open.
-Current priorities match [plan](plan.md) and [backlog](backlog.md): synthesis,
-qualified abstractions/legacy review, applicability/emotion/humor, native links/
-original pixels, selective tools/generated U.P. scenes.
+H66c live requester evidence completes the interrupted requester-ownership
+increment in 2.26.4. Initial 2.26.3 was rolled back to 2.26.2 after a real gateway
+reply ignored a supplied focused statement. Current and prior human facts now have
+explicit precedence within the requester guard; quoted peers remain separate.
+Fresh first cohort: baseline9/10, candidate9/10 (prior-human loss versus quoted-peer
+relevance miss). Refined cohort: baseline12/12 and candidate12/12 across six matched
+owner contexts. This validates narrow repair/non-regression, not general superiority.
+All six feature gates pass:1,148tests/96.87%branch coverage/31typed modules/build.
+Required CI, merged gates and installed acceptance remain pending. H66 broader
+historical author/polarity synthesis remains OPEN. [Study](evaluations/2026-10-15-live-requester-study.md).
 
 H62/H62a2.25.0 supplies reviewed rollout preview plus one qualified conditional
 abstraction;H632.26.0 preserves whole conflict components as memory grows;

@@ -187,12 +187,14 @@ stay together or are omitted as a group. Source freshness checks remain bounded,
 with attribution, expiry, correction and withdrawal preserved. This enables larger
 qualified abstract libraries, without establishing a new trait or measured humor gain.
 
-## Topic-bearing requester recall (2.26.3)
+## Topic-bearing requester recall (2.26.4)
 
 Questions such as "What team have I said I support?" and "Which side did I support?"
 reach the authenticated author guard before historical retrieval. Another speaker's
 own recall cannot borrow Andrew's source text, abstractions or voice examples.
-Current human conversation remains available, and Andrew retains his own retrieval.
+The focused human message and prior human statements remain available, including
+explicit fictional premises within their scene. Quoted peers cannot supply the
+requester's answer. Andrew retains his own retrieval.
 Quoted questions and hypothetical advice preserve their existing routing.
 
 ## Memory author binding (2.19.2)

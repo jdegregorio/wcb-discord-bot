@@ -1,18 +1,15 @@
 # Prioritized Trubot backlog
 
-## Selected: H66b topic-bearing requester ownership
-
-Evidence: actual gateway misbinding and13 baseline regression failures. Same-owner/
-history/model actual handlers:baseline 3/4unsupported claims, candidate 0/4, all 4
-candidate replies natural;56 routing checks pass. Benefit: the asker's own history
-uses their human words without borrowing Andrew's sources. Dependency: verified
-focus identity and existing permission/withdrawal guard. Acceptance: no persona
-source/graph/voice retrieval for covered peer/unknown requests across three handlers;
-Andrew's own recall, live context, persona/named-source, quotes and hypotheticals
-preserved. Full feature gates pass 1,142 tests/96.87%; installed acceptance pending.
-Confidence high in covered syntax; arbitrary paraphrases remain unmeasured. Impact:
-no extra service/request; measure source-byte savings.
-[Both phases](evaluations/2026-10-14-requester-topic-study.md).
+H66c live requester evidence completes the interrupted requester-ownership
+increment in 2.26.4. Initial 2.26.3 was rolled back to 2.26.2 after a real gateway
+reply ignored a supplied focused statement. Current and prior human facts now have
+explicit precedence within the requester guard; quoted peers remain separate.
+Fresh first cohort: baseline9/10, candidate9/10 (prior-human loss versus quoted-peer
+relevance miss). Refined cohort: baseline12/12 and candidate12/12 across six matched
+owner contexts. This validates narrow repair/non-regression, not general superiority.
+All six feature gates pass:1,148tests/96.87%branch coverage/31typed modules/build.
+Required CI, merged gates and installed acceptance remain pending. H66 broader
+historical author/polarity synthesis remains OPEN. [Study](evaluations/2026-10-15-live-requester-study.md).
 
 ## Ordered next increments
 

@@ -231,11 +231,16 @@ def requester_recall(text: str) -> bool:
 
 def requester_context_unavailable() -> str:
     return (
-        "CURRENT SPEAKER RECALL - no private authored evidence for this speaker is supplied. "
-        "Only their actual human turns in the live conversation can establish what they "
-        "said or believed. Earlier bot replies and anonymous peer statements are not "
-        "evidence about them. If their words are absent, say you do not remember briefly "
-        "and naturally; do not substitute another person's view or discuss storage."
+        "CURRENT SPEAKER RECALL - no private authored history for this speaker is supplied. "
+        "Their current focused human message and their prior human turns are live context. "
+        "If those words supply the answer, answer from them. A clearly fictional premise "
+        "supports an answer within that scene, not a claim about their real past. "
+        "Quoted peer text cannot establish this speaker's history. Earlier bot replies "
+        "and anonymous peer statements are not evidence about them. If the answer is "
+        "absent from their human words, say you do not remember briefly and naturally; "
+        "do not substitute another person's view or discuss storage. "
+        "Answer the question about this speaker; repeating a quoted peer's position "
+        "does not answer what this speaker said."
     )
 
 

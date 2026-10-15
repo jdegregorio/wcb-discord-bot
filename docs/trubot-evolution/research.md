@@ -2361,3 +2361,18 @@ one maintenance request each; candidate source lookup zero versus four baseline 
 repair with existing identity/permission/withdrawal guard, pending full gates and
 fresh installed real Discord. No general fidelity/humor or independent human
 held-out improvement claimed. H66 historical synthesis stays first after repair.
+
+
+## 2026-10-15 01:00 - H66c live requester evidence
+
+[Both phases, locked criteria and full comparison](evaluations/2026-10-15-live-requester-study.md).
+Reconciled aborted previous run:2.26.3released then rolled back after focused-human
+failure; production/stable latest2.26.2. Fresh audit5target8peer3olderbot0fresh;
+8historical windows4exports10target30peer occurrences with overlap, missing pixels
+excluded. First20actual handler replies:9/10each arm; prior-human loss versus
+quoted-peer relevance miss. Refined24:12/12each arm,32accounted maintenance requests.
+Final equality is non-regression, not measured superiority; no new trait/independent
+human-held-out claim. Select explicit focused/prior-human evidence plus requester-
+focused quote restraint as completion repair.62routing/handler checks pass. Keep
+H66source synthesis first, then qualified abstractions, applicability/emotion/humor,
+native links/pixels and selective tools/generated U.P. scenes. Full release pending.
