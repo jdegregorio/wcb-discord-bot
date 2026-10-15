@@ -2198,3 +2198,91 @@ across the corrected actual pair and H63 selector unused; baseline has additiona
 polarity vulnerability. New material grounding priorityH66 precedes H48 population;
 stock care/humor/applicability remain unresolved. No human trait/general fidelity
 improvement inferred. [Full result](evaluations/2026-10-14-graph-selection-study.md).
+
+
+## 2026-10-14 17:00 - H66 locked investigation
+
+Base42ce06c. Phase1: previous installed attribution failure reproduced with a new
+owner-authored development gateway question. Current exact-source inspection of
+five attributed archive windows confirms a peer stance promoted to Andrew and a
+previous polarity reversal. Baseline ordinary recall remains natural but incorrect.
+Authenticated recent14day audit:5target/10peer/3older league bot posts across3channels,
+zero new spontaneous bot posts, no denied channels. One target visual episode is
+excluded from interpretation without original pixels. Development posts are separate.
+Two additional attributed historical windows supply contextual contrast controls,
+not newly qualified personal traits or independently reviewed human hold-outs.
+
+H66 hypothesis: explicit, source-linked separation of conversational setup from an
+authored evidence section, plus a private clause-level ownership/polarity check, will
+reduce misbinding so that natural memories preserve whose view it was. No source
+removal or changed model/reasoning/retrieval/graph/state is proposed. Baseline:
+interleaved labeled neighbors and repeated incorrect bot claims. Acceptance locked
+before trials: all candidate broad-recall trials grounded; no peer vote, reversed
+negation, invented date or ordinary metadata disclaimer; contextual humor, short
+elliptical answers, explicit evidence/date requests and speaker ownership survive.
+Disconfirmation: any candidate unsupported factual clause, loss of needed setup,
+mechanical explanation or source lifecycle regression. Method: counterbalanced
+same-owner/same-source handler pairs with actual private Discord posts, bounded
+invented attribution/polarity controls, genuine attributed contextual controls and
+fresh normal installed gateway responses. Same Codex semantic evaluator; small
+samples cannot establish general failure rates or human indistinguishability.
+
+H67 alternative: prior bot history alone drives the failure. Repeated old bot
+misstatements are present, but current authored sources are available. Keep history
+fixed in paired tests to separate packet presentation from model/harness changes.
+Removing all bot history would also lose conversational continuity; unvalidated.
+H48 abstract population and H64 applicability remain promising but no new qualified
+human pattern in this audit. H61 tools/generated U.P. aurora/trail-camera scenes stays
+exploratory with relevance/timing/cost/generated-provenance prerequisites. No new
+external technology selected, provider capabilities or funniness gain claimed.
+
+Phase2 selection remains pending bounded prototype results. Material factual
+grounding takes precedence over new abstract population only if supported; keep
+H48/H21/H28, H22/H39/H51 emotion/humor, native pixels/links and H61 on the roadmap.
+Existing maintenance ledger and18/2/20 monthly guard apply to every attempt.
+
+
+### Phase1 results and Phase2 selection,17:00
+
+Fresh normal gateway reproduces H66. Counterbalanced same-source/same-owner
+2baseline/2projection outputs: baseline2peer-attribution failures; projection
+removes that stance but2source-relationship failures. Reject under the locked
+no-unsupported-clause rule. Reasoning-only2trials also fail. Exclude these trials
+from acceptance: their harness changed the output ceiling after reservation.
+Ledger confirms all4first/optional attempts settled, output counts158/40/50/55
+within the original180ceiling, charged below reservation. No lost accounting or
+production setting change. Do not repeat that harness mistake. History-only2trials:
+1grounded/1stance-subject failure; reject as sufficient correction. No rates inferred.
+Initial prototype import and ledger inspection helper errors precede data/provider
+mutation and are corrected. No new traits or private interpretations published.
+
+H68: source-integrity enabling hypothesis. Native/archive renderers silently clip
+authored passages at1,500characters, potentially removing closing qualifications.
+Current exposure405eligible archive blocks/34native messages:zero past1,500characters.
+This is not H66's cause or a present-corpus fidelity gain. Acceptance locked before
+implementation: complete stored passages within6,000UTF-8bytes, whole omission above
+that bound, no adjacent peer stand-in, ASCII/multibyte boundaries, exact quotations,
+current-source edits/deletes/withdrawal, abstract/native non-regression and actual
+private Discord handler verification.6,000bytes matches the old cap's worst-case
+text byte bound; actual inputs remain reserved. Native intake's separate stored-text
+cap remains unchanged; do not claim full original-message coverage. Disconfirmation:
+any retained incomplete prefix or lost source lifecycle. No new model, pass or state.
+
+Phase2: select H68 after behavioral prototypes fail, so that future supported
+memories retain their closing meaning without shipping an unvalidated behavioral
+assumption. Six of seven initial completeness regressions fail on exact base;
+the Unicode1,500character boundary already passes. Candidate first seven pass.
+Actual same-owner invented1,785byte source through production handlers:baseline
+loses closing qualification and answers the opposite stance; candidate preserves
+it and answers correctly. One sample per arm establishes narrow loss recovery,
+not general naturalness. Both append an unnecessary date caveat, an existing
+voice/synthesis limitation. Private artifacts retain refs/counts only; invented
+source stores automatically erased, primary heartbeat survives client close.
+
+H66 remains first remaining priority: investigate source-linked factual planning/
+verification and independently held-out human cases rather than more isolated
+prompt tweaks. Follow H48/H21/H28 qualified abstraction population, H64/H22/H39/H51
+applicability/emotion/semantic humor, broader linked native/original pixels, and
+H61 selective tools/generated U.P. aurora/trail cameras with natural captions and
+generated provenance. No new technology capability claim, paid service, native
+semantic-transfer permission, study pacing, schedule or notification change.

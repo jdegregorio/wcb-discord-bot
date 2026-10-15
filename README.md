@@ -170,6 +170,14 @@ missing real memories, literal definitions and questions for other recipients.
 Review whether a reply actually adds a comic turn, rather than merely acknowledging
 the setup. Brevity and successful delivery alone do not establish humor quality.
 
+## Complete authored reply evidence (2.26.1)
+
+Reply context preserves complete stored authored passages up to6,000UTF-8bytes.
+Larger passages and their adjacent context are omitted together with an internal
+gap, so a closing qualification cannot silently disappear behind a partial quote.
+This changes reply rendering only; native intake bounds remain unchanged. It does
+not resolve the separate historical speaker-attribution synthesis issue.
+
 ## Bounded connected recall (2.26.0)
 
 Relevant memory growth retains up to four complete observations and five unique

@@ -18,6 +18,10 @@ from trubot.lexical import words
 from trubot.native_context import MAX_CONTEXT_BYTES, NativeEpisode
 from trubot.recall_window import WINDOW_WORDS, recall_window
 
+# The former 1,500-character prefix could already occupy 6,000 UTF-8 bytes.
+# Preserve that worst-case bound while retaining complete stored qualifications.
+MAX_AUTHORED_BYTES = 6000
+
 _STOP = frozenset(
     [
         "a",
@@ -529,7 +533,7 @@ class ContextMemory:
                             {
                                 "source": source,
                                 "author": "verified Andrew",
-                                "text": row["content"][:1500],
+                                "text": row["content"],
                                 "conversation_context_only": (
                                     episode.as_data()
                                     if (
@@ -576,7 +580,7 @@ class ContextMemory:
                         {
                             "source": current_source,
                             "author": "operator-attributed Andrew Slack alias",
-                            "text": focus["content"][:1500],
+                            "text": focus["content"],
                             "adjacent_context_only": [
                                 {
                                     "author": "Andrew"
@@ -596,11 +600,30 @@ class ContextMemory:
                             else [],
                         }
                     )
+        omitted = False
+        for index, item in enumerate(evidence):
+            if len(item["text"].encode("utf-8")) > MAX_AUTHORED_BYTES:
+                omitted = True
+                # Neither a prefix nor adjacent peer positions can stand in for
+                # the missing authored meaning. Retain provenance, never the text.
+                evidence[index] = {
+                    "source": item["source"],
+                    "author": item["author"],
+                    "text": "",
+                    "source_gap": (
+                        "Complete stored authored passage exceeds the reply byte limit; "
+                        "the entire passage and its adjacent context are omitted. "
+                        "No position or quotation can be inferred from this missing text."
+                    ),
+                }
         if quotation:
             quote = quotation_key(quotation[:500])
             evidence = [item for item in evidence if quote in quotation_key(item["text"])]
         if not evidence:
-            return RenderedMemory(recent_context_unavailable() if recent_recall(request) else "")
+            return RenderedMemory(
+                recent_context_unavailable() if recent_recall(request) else "",
+                allow_voice_examples=not omitted,
+            )
         ids = list(dict.fromkeys(key for c in candidates for key in c.source.get("graph_ids", [])))
         observations = []
         if ids:
@@ -659,6 +682,13 @@ class ContextMemory:
             "Peers are context only. Historical events are not current sports results. "
             "Adjacency does not prove motive or a reply relationship. "
             + (
+                "An omitted authored passage establishes no claim. If no supported text "
+                "or reviewed memory remains, say briefly that you do not remember the details; "
+                "keep the omission metadata internal. "
+                if omitted
+                else ""
+            )
+            + (
                 "These are verified dated human messages within the requested rolling window. "
                 "Give a recent supported example naturally, using human setup only as context. "
                 if recent_recall(request)
@@ -677,4 +707,8 @@ class ContextMemory:
             )
         )
 
-        return RenderedMemory(text, allow_voice_examples=not bool(abstracts and guidance))
+        return RenderedMemory(
+            text,
+            allow_voice_examples=not bool(abstracts and guidance)
+            and any(item["text"] for item in evidence),
+        )

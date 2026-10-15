@@ -1028,3 +1028,13 @@ older readers ignore their new invalidation metadata. Preserve source/capture/sp
 stores. No data restore for code rollback. Content-free refs/flags/public helper code
 in smoke-tests/2026-10-13-2100 use existing0700/0600,seven-day manual retention and
 withdrawal cleanup. Disposable invented stores/process overrides removed after validation.
+
+
+### H68 reply rendering,2.26.1
+
+No storage migration or source mutation. Complete stored authored text is eligible
+up to6,000UTF-8bytes; above that limit the reply packet contains provenance and an
+internal gap, never an incomplete prefix or adjacent peer substitute. All-omitted
+packets disable optional voice examples. Existing identity, correction, deletion,
+withdrawal, graph and backup rules remain authoritative. Native intake's separate
+character limit is unchanged. Rollback2.26.0 requires no database restoration.

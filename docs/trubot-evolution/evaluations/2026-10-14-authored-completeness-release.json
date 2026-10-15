@@ -1,0 +1,50 @@
+{
+  "version": "2.26.1",
+  "base": "42ce06cde94c1c55e9e31e0a0e4f534bf73d4f75",
+  "increment": "H68 complete stored authored reply evidence",
+  "classification": "enabling source integrity",
+  "baseline_regressions": {
+    "failed": 6,
+    "passed": 1
+  },
+  "candidate_regressions": 10,
+  "quality_gates": {
+    "locked_sync": true,
+    "format": true,
+    "lint": true,
+    "mypy_modules": 31,
+    "tests": 1117,
+    "branch_coverage_percent": 96.87,
+    "build": true
+  },
+  "current_private_coverage": {
+    "eligible_archive_blocks": 405,
+    "native_messages": 34,
+    "past_old_character_limit": 0
+  },
+  "actual_discord_fixture": {
+    "owner_authored_anchor": true,
+    "same_invented_source": true,
+    "source_bytes": 1785,
+    "baseline_closing_preserved": false,
+    "candidate_closing_preserved": true,
+    "baseline_stance_correct": false,
+    "candidate_stance_correct": true,
+    "provider_attempts_each": 1,
+    "baseline_packet_bytes": 2587,
+    "candidate_packet_bytes": 2872,
+    "both_date_caveat_persists": true,
+    "second_gateway": false,
+    "development_learning": 0
+  },
+  "unresolved": [
+    "H66 historical attribution and semantic synthesis",
+    "ordinary recall date caveat in invented test",
+    "broader qualified abstract population",
+    "general character and humor improvement unmeasured"
+  ],
+  "release": {
+    "status": "pending"
+  },
+  "privacy": "No raw texts, answers, source identifiers or derived personal observations retained in public evidence."
+}
