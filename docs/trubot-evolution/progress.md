@@ -4108,3 +4108,11 @@ spending unknown. No new service. Private 16 content-free files have verified
 
 Normal development history includes same-run research probes. These fresh owner
 questions are not spontaneous league activity or independent human evaluation.
+
+
+Isolation sequencing deviation: the initial sandbox fetch failed, and the managed
+checkout was created from cached origin/main before the successful elevated retry.
+The retry confirmed the same c4ef4f3 base before any source edit or feature branch
+creation. The primary checkout was never edited, reset or stashed. Future runs
+must await successful fetch before invoking create_worktree; matching the later
+fetch mitigated stale-base risk here but does not change that ordering lapse.
