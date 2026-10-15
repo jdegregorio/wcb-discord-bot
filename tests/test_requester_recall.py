@@ -32,6 +32,14 @@ from trubot.memory import ContextMemory, requester_recall
         "Remind me of my previous opinion on roster rules.",
         "Could you quote my old words on roster rules?",
         "What did I just say about reserve slots?",
+        "What baseball team have I said I support?",
+        "Which side of the roster expansion debate did I support?",
+        "What reserve slot proposal did I say I preferred in 2020?",
+        "Which team had I previously liked?",
+        "What other roster changes have I ever supported?",
+        "What position did I take on roster slots?",
+        "What\tbaseball team\nhave I said I support?",
+        "Do you remember which baseball team have I said I support?",
     ],
 )
 def test_explicit_request_for_speakers_own_past(question):
@@ -52,6 +60,16 @@ def test_explicit_request_for_speakers_own_past(question):
         "I want to know what your old opinion was.",
         "Remind me what my league uses for scoring.",
         "Should I quote my old message, or rewrite it?",
+        "What baseball team have you said you support?",
+        "Which side of the debate did Andrew support?",
+        "Which side would I support in a fictional league?",
+        "What would you say if I supported two slots?",
+        "What would you think if I said I supported two slots?",
+        'Quote your line "What baseball team have I said I support?"',
+        "Explain “Which side of the debate did I support?” as grammar.",
+        'Quote your line "What baseball team\nhave I said I support?"',
+        "What baseball team would you say I support?",
+        "What roster slot should I take?",
     ],
 )
 def test_persona_recall_hypotheticals_and_quotes_keep_current_routing(question):
@@ -80,9 +98,18 @@ def client_memory(tmp_path):
 
 @pytest.mark.asyncio
 @pytest.mark.parametrize("author_id", [1, None])
-async def test_other_or_unknown_author_never_retrieves_character_sources(client_memory, author_id):
+@pytest.mark.parametrize(
+    "question_text",
+    [
+        "What did I say about reserve rules back in 2020?",
+        "What reserve slot proposal did I say I preferred in 2020?",
+    ],
+)
+async def test_other_or_unknown_author_never_retrieves_character_sources(
+    client_memory, author_id, question_text
+):
     client, _, store = client_memory
-    question = "Andrew Truax: What did I say about reserve rules back in 2020?"
+    question = "Andrew Truax: " + question_text
     try:
         with (
             patch.object(
@@ -108,12 +135,19 @@ async def test_other_or_unknown_author_never_retrieves_character_sources(client_
 
 
 @pytest.mark.asyncio
-async def test_verified_source_author_keeps_own_history_retrieval(client_memory):
+@pytest.mark.parametrize(
+    "question_text",
+    [
+        "What did I say about reserve slots in 2020?",
+        "What reserve slot proposal did I say I preferred in 2020?",
+    ],
+)
+async def test_verified_source_author_keeps_own_history_retrieval(client_memory, question_text):
     client, _, _ = client_memory
     try:
         result = await client._memory_context(
             fake_channel(),
-            "A different display name: What did I say about reserve slots in 2020?",
+            "A different display name: " + question_text,
             [],
             requester_user_id=1,
             focus_author_user_id=42,
@@ -126,11 +160,18 @@ async def test_verified_source_author_keeps_own_history_retrieval(client_memory)
 
 @pytest.mark.asyncio
 @pytest.mark.parametrize("mode", [ReplyMode.DIRECT, ReplyMode.FOLLOW_UP, ReplyMode.REACTION])
-async def test_real_handler_scopes_to_focus_author_not_reactor(client_memory, mode):
+@pytest.mark.parametrize(
+    "question_text",
+    [
+        "What did I say about reserve slots in 2020?",
+        "What reserve slot proposal did I say I preferred in 2020?",
+    ],
+)
+async def test_real_handler_scopes_to_focus_author_not_reactor(client_memory, mode, question_text):
     client, responder, _ = client_memory
     channel = fake_channel()
     anchor = fake_message(channel, user_id=1)
-    anchor.clean_content = anchor.content = "What did I say about reserve slots in 2020?"
+    anchor.clean_content = anchor.content = question_text
     anchor.author.display_name = "Andrew Truax"
     try:
         assert await client._respond(
@@ -138,7 +179,7 @@ async def test_real_handler_scopes_to_focus_author_not_reactor(client_memory, mo
             mode=mode,
             requester_user_id=42,
             anchor=anchor,
-            target="Andrew Truax: What did I say about reserve slots in 2020?",
+            target="Andrew Truax: " + question_text,
         )
         memory = next(m.content for m in responder.calls[0][0] if m.origin == "memory")
         assert "CURRENT SPEAKER RECALL" in memory

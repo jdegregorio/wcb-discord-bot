@@ -198,14 +198,20 @@ def recent_recall(text: str) -> bool:
 def requester_recall(text: str) -> bool:
     """An explicit request for the speaker's own authored history or former view."""
     # Quoted words are a lookup subject, not the speaker asserting their authorship.
-    request = re.sub(r'"[^"\n]*"|“[^”\n]*”', "", text[:8000]).casefold()
+    request = " ".join(re.sub(r'"[^"]*"|“[^”]*”', " ", text[:8000]).split()).casefold()
+    # A topic can sit between "which/what" and the auxiliary: "which team did
+    # I support?". Only expand the inverted factual question, not "what would
+    # you think if I said ...", where the same words introduce a hypothetical.
     authored = (
-        r"\b(?:what|when|where|how|which) (?:(?:did|have|had) i "
+        r"\b(?:(?:what|which)(?: [a-z][a-z'-]*){0,8}|when|where|how) "
+        r"(?:did|have|had) i "
         r"(?:(?:actually|really|ever|previously|just) ){0,2}"
         r"(?:say|said|write|written|post|posted|tell|told|think|thought|"
-        r"believe|believed|prefer|preferred|feel|felt|vote|voted|respond|react|mean)"
-        r"|i (?:said|wrote|posted|told|thought|believed|preferred|felt|voted|"
-        r"responded|reacted|meant))\b"
+        r"believe|believed|prefer|preferred|feel|felt|vote|voted|respond|react|mean|"
+        r"support|supported|like|liked|take|taken)\b"
+        r"|\b(?:what|when|where|how|which) i "
+        r"(?:said|wrote|posted|told|thought|believed|preferred|felt|voted|"
+        r"responded|reacted|meant)\b"
     )
     former_view = (
         r"\b(?:what|which) (?:(?:was|were) my |my )"

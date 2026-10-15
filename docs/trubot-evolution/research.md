@@ -2346,3 +2346,18 @@ recovered from authenticated development history with explicit recovery labels.
 Original source-equality assertions and ephemeral reviews had completed. No new
 provider experiment or raw answer artifact. Private0700/0600, existing7day manual
 retention/withdrawal remain. See the structured release record for exact evidence.
+
+
+## 2026-10-14 21:00 - H66b requester topic ownership
+
+Both phases and locked criteria: [study](evaluations/2026-10-14-requester-topic-study.md).
+Fresh actual gateway reproduces requester misbinding. Eight exact private archive
+windows/four exports and authenticated three-channel audit5target/8peer/3olderbot/
+zero current spontaneous ground the source distinction; missing pixels excluded.
+Matched two owner anchors/two samples each arm:baseline3/4unsupported requester
+claims, candidate0/4, four natural brief candidate replies. Same histories/model,
+one maintenance request each; candidate source retrieval zero versus baseline4.
+13new regressions fail baseline;56candidate checks pass. Select bounded syntax
+repair with existing identity/permission/withdrawal guard, pending full gates and
+fresh installed real Discord. No general fidelity/humor or independent human
+held-out improvement claimed. H66 historical synthesis stays first after repair.

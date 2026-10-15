@@ -187,6 +187,14 @@ stay together or are omitted as a group. Source freshness checks remain bounded,
 with attribution, expiry, correction and withdrawal preserved. This enables larger
 qualified abstract libraries, without establishing a new trait or measured humor gain.
 
+## Topic-bearing requester recall (2.26.3)
+
+Questions such as "What team have I said I support?" and "Which side did I support?"
+reach the authenticated author guard before historical retrieval. Another speaker's
+own recall cannot borrow Andrew's source text, abstractions or voice examples.
+Current human conversation remains available, and Andrew retains his own retrieval.
+Quoted questions and hypothetical advice preserve their existing routing.
+
 ## Memory author binding (2.19.2)
 
 Reviewed graph rollouts can be previewed with `trubot-graph import --manifest
