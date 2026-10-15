@@ -440,5 +440,6 @@ async def test_operator_acceptance_captures_actual_generation_memory(stores, tmp
     assert len(responder.calls) == 3
     # Every mode refetches its real native support. Reaction target interception
     # must not return the synthetic target when older evidence is requested.
-    assert fetch.await_count == 3
+    # Each mode verifies native support before generation and before publication.
+    assert fetch.await_count == 6
     assert (tmp_path / "responses-installed.json").stat().st_mode & 0o777 == 0o600

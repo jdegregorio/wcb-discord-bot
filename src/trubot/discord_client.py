@@ -477,6 +477,16 @@ class TruBotClient(discord.Client):
                         mode.value,
                     )
                     return False
+                # Generation can outlive a correction, withdrawal or access change.
+                # Reuse the same bounded source/author check before publishing any
+                # private-memory draft, even when no quality retry was necessary.
+                if memory and not await refresh_context_current():
+                    logger.info(
+                        "Discarded generated reply; private source context changed or unavailable "
+                        "mode=%s",
+                        mode.value,
+                    )
+                    return False
                 output = clamp_discord_message(reply)
                 await channel.send(output)
             except asyncio.CancelledError:

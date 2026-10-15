@@ -1038,3 +1038,16 @@ internal gap, never an incomplete prefix or adjacent peer substitute. All-omitte
 packets disable optional voice examples. Existing identity, correction, deletion,
 withdrawal, graph and backup rules remain authoritative. Native intake's separate
 character limit is unchanged. Rollback2.26.0 requires no database restoration.
+
+
+## Final reply publication check (2.26.6 candidate)
+
+Generated drafts containing retrieved private memory recheck the same source packet
+and authenticated author scope immediately before Discord send. A changed/removed/
+withdrawn/unavailable packet discards the draft; no automatic regeneration, source
+restore, ledger reset or disclosure of draft text occurs. Existing bounded native
+refresh reads apply again. Replies without retrieved private memory and recipient
+abstentions need no final memory read. This adds no store/schema/retention exception.
+The external send is not atomic with the source check; corrections after the check
+still require the normal operator/source lifecycle. Avoid restoring data to roll back
+this runtime-only release. Private test clients keep distinct heartbeat paths.

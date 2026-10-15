@@ -160,7 +160,8 @@ async def test_inflected_reviewed_memory_reaches_production_handler_with_refresh
         patch.object(ingestor, "refresh", new_callable=AsyncMock) as refresh,
     ):
         await client.on_message(message)
-        refresh.assert_awaited_once_with(channel, source().id)
+        assert refresh.await_count == 2
+        assert all(call.args == (channel, source().id) for call in refresh.await_args_list)
     context = responder.calls[0][0]
     assert any("CONNECTED REVIEWED MEMORY" in m.content for m in context)
     assert any("I opposed the selection proposal." in m.content for m in context)

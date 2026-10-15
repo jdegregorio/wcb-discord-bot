@@ -249,7 +249,9 @@ async def test_behavioral_memories_reach_production_handlers(stores, kind, mode)
                 if mode == "followup":
                     client._attention.activate(10, NOW)
                 await client.on_message(message)
-        assert refresh.await_count == 3
+        # Verify all three sources before generation and again before publication.
+        assert refresh.await_count == 6
+        assert refresh.await_args_list[:3] == refresh.await_args_list[3:]
         context = "\n".join(m.content for m in responder.calls[0][0])
         assert "ABSTRACT EPISODE MEMORY" in context
         assert f'"domain": "{kind}"' in context

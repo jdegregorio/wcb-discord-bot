@@ -197,6 +197,16 @@ explicit fictional premises within their scene. Quoted peers cannot supply the
 requester's answer. Andrew retains his own retrieval.
 Quoted questions and hypothetical advice preserve their existing routing.
 
+## Final private-source check (2.26.6)
+
+A generated reply with retrieved private memory is revalidated immediately before
+posting, using the existing source and author-scope checks. If a correction,
+withdrawal, changed access or unavailable check invalidates the packet, the draft
+is discarded without another generation attempt. Replies without private memory
+and recipient abstentions retain their existing behavior. This protects source
+lifecycle during generation; it adds bounded source reads, no provider call.
+The final check and Discord send cannot form an atomic cross-service transaction.
+
 ## Historical authored recall (2.26.5)
 
 Ordinary questions about remembered words or positions use complete Andrew-authored
