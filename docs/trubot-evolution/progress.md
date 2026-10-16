@@ -4366,3 +4366,39 @@ questions and authenticated requester ownership for first-person activity. Thirt
 new regressions; feature all six gates1,355tests/96.98%coverage/31typedmodules/build pass.
 No new human observation, schema, service, provider pass, model, intake, pacing or
 spending pool. Full protected CI/merge/release/images/installed acceptance pending.
+
+
+### H80 final installed result
+
+[Structured evidence](evaluations/2026-10-16-recent-activity-release.json) and
+[full study](evaluations/2026-10-16-recent-activity-study.md): PR133/runtime3a1a05e/
+immutable2.27.3/indexff48a118 is healthy on reverified pi5, zero restarts,31matching
+source hashes. Feature/actual merged six gates1,355tests/96.98%coverage and protected
+PR38930176567/main38930444425/image38930721710 succeed, both architectures verified.
+Installed invented boundaries3/3; seven actual handler posts. Fresh normal owner
+gateway11/13strict (11posts/one confirmed recipient abstention): one native draft
+discarded before successful repeat, one dated activity answer infers a routine from
+an event. Changed-route4/5strict plus one partial; do not claim full semantic or
+general character success. No rollback/data restore; verified admission/ownership
+correction retained, baseball routing unchanged. Source-linked human replay was
+inspected in audit, not blind; no humor gain credited.
+
+Pre/post league audit unchanged:3allowed channels/latest100each/14days,5target8peer/
+3olderbot0fresh spontaneous/0denied, development separate. Primary heartbeat survives
+distinct-readiness HTTP-only validation closure, no second gateway. Disposable stores/
+candidate copy erased; private refs/hashes/counts/grades use0700/0600 and existing
+seven-day manual retention/withdrawal cleanup, no raw sources/replies/derived human
+observations retained in smoke artifacts or Git. One unsafe environment-file read was
+automatically rejected; safe container metadata inspection completed the work without
+credential exposure or bypass, no remaining access blocker.
+
+Run39settled attempts/USD0.00610377estimated:23maintenance/USD0.001460125,16runtime/
+USD0.004643645. Covered OctoberUSD0.339004915/2,021attempts/one unchanged old unsettled;
+no new unsettled,18/2/20guard intact, no paid service; not billing, pre-guard spend
+unknown. Container0errors/reply failures/disconnects/restarts,2startup warnings,
+1source discard/1recipient skip/2existing quality refreshes. Short windows do not
+establish a general rate comparison. H78b final-packet predictability reopens as a
+diagnostic prerequisite, then H79 useful abstract applicability/H81 event-to-routine
+calibration, linked native/original pixels and selective tools/generated U.P. scenes.
+H66 remains open. No new human trait/schema/model/provider pass/intake/pacing/schedule
+or notification change.

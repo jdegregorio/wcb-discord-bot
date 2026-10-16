@@ -1,3 +1,11 @@
+Current installed result (2026-10-16 09:00): 2.27.3 source/author correction is
+deployed and verified, with fresh owner gateway 11/13 strict passes. H78b final
+native packet predictability is reopened diagnostically; H79 useful abstract
+applicability and H81 event-to-routine calibration follow, then linked native/original
+pixels and selective tools/generated U.P. scenes. No new human observation.
+[Installed evidence](evaluations/2026-10-16-recent-activity-release.json) and
+[current plan](plan.md) supersede the priority snapshots below.
+
 Current authoritative order (2026-10-16 09:00): H78a is deployed/verified;
 H80 recent personal activity grounding is the selected2.27.3increment. Next are
 qualified useful abstract applicability, broader linked native/original pixels,
