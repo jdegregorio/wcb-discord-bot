@@ -49,6 +49,7 @@ from trubot.participation import (
     SchedulingAction,
 )
 from trubot.recall_reference import quotation_unavailable, recall_quotation
+from trubot.reply_focus import memory_followup_query
 from trubot.vision import ImageCollector
 from trubot.voice_memory import voice_context
 
@@ -615,12 +616,12 @@ class TruBotClient(discord.Client):
                 # Live human context stays available; no character source, graph
                 # abstraction or voice example is retrieved for this request.
                 return requester_context_unavailable()
-        query = request
+        query = memory_followup_query(request, history)
         lookup = recall_quotation(request, history)
         if lookup == "":
             return quotation_unavailable()
         quotation = lookup or ""
-        if not (terms(query) or years(query)):
+        if target is None and not (terms(query) or years(query)):
             query += " " + " ".join(
                 m.content.split(": ", 1)[-1] for m in history[-4:] if m.role == "user"
             )
