@@ -102,3 +102,100 @@ not independent dates/messages; one overlaps the earlier humor sample. One selec
 setup is excluded from support but belongs to a broader already-sampled discussion;
 the same evaluator sees the human continuation. No blinded independent human rating.
 Human-held-out reply comparison and installed acceptance are recorded below.
+
+
+Human hold-out: two actual private handler posts, no abstract packet in either arm.
+Both supply a concrete policy suggestion rather than matching the human continuation's
+reserve; no held-out fidelity gain. This does not invalidate the bounded continuity
+mechanism, but it leaves broader topic/condition applicability unresolved. Do not
+populate more observations solely to fill this gap. Ordinary owner gateway baseball
+recall succeeds after the excluded HTTP-client control. All20completed comparison
+posts use20maintenance attempts; one additional repaired draft was discarded. Packet
+hashes are stable within each completed invocation and paired history hashes match.
+The nine-case experiment's summed provider waits14.395sbaseline/12.820scandidate are
+single small serial samples, not speed or overhead measurements. Human-held-out
+waits2.067sbaseline/1.553scandidate likewise cannot establish a performance benefit.
+
+Source accounting: humor study22windows/seven exports,23target43context grouped
+occurrences with overlap; targeted study8windows/three exports,9target15context
+grouped occurrences with overlap. These do not establish independent episode counts.
+No original pixels interpreted or new human observation retained.
+
+PR129 tested head9e149e2b934a9c05302c48e3fd2444e8398dca3c, guarded non-admin squash
+merge/runtime c6c177b91f77636033ae5ea595de5d3f89bd1935. Required PR CI38872080815
+and main CI38872321002 succeed. All six actual merged gates pass with the same
+1,293tests/96.94%coverage/31typed modules and2.27.0build. Immutable v2.27.0 is
+published; image CI38872581428 and installed acceptance follow.
+
+
+## Installed correction and native-read limitation
+
+Image CI38872581428 succeeds; linux/amd64 fe7377ddf303b80d4309789e641f2c6589cb6caad92d69a1fdc18ea939c9eac6
+and linux/arm64 65a3ddc0b302e55a9ff0c72dff8c0dd872654e0bc51d4acb204fdfb732f60581
+are verified before the existing app-scoped deployment transaction on reverified
+pi5/aarch64/Ubuntu24.04.4. Running immutable index21b5fb2ff2092bc0bc6189ce8f76a7930dd71a10d980491e18f369eeb23b54e5,
+version2.27.0/revision c6c177b/all31source hashes match, healthy/zero restarts.
+Prior healthy2.26.9/indexf5a509942ae0be0e09d15ae55285c423f6d74d2fed0a7449e823b1cd465bfa39
+retained. No schema migration, rollback/data restore or new human observation.
+Installed actual private memory-handler opportunity routes3/3, provider0, graph
+unchanged during those checks. Source/private scope and primary readiness pass.
+Distinct readiness set before every HTTP-only validation client; no second gateway.
+
+Fresh owner UI setup and changed follow-up both receive fitting, natural replies,
+although their abstract wording remains a little formal. A subsequent native factual
+recall draft is safely suppressed by the existing final source check. The pre-release
+repaired baseline control had the same suppression. No new subject-query transformation
+applies to that factual question. A provider-free diagnostic finds unequal fresh packet
+hashes/source coverage in repeated native reads under the existing six-second bound.
+Exact timing/rate-limit causation remains unproven. Do not weaken the guard or call
+this successful factual delivery. Source-backed native context metadata can refresh
+during these probes; no human abstraction or development learning is added.
+
+H78 is an unresolved reliability candidate: make mandatory native-source verification
+and its bounded scheduling more predictable so ordinary factual answers survive the
+final safety check. Reproduce with controlled latency/HTTP limits and compare the same
+source sets before choosing a remedy. Acceptance: stable current evidence posts,
+changed/unavailable evidence still suppresses, no discarded-valid-draft increase,
+owner/scope/withdrawal remain enforced, and real Discord succeeds. No new provider
+pass or service is proposed. Confidence high in observed packet instability, root
+cause unresolved. A material regression can move H78 ahead of further population;
+keep broader native context and selective skills/generated outdoor themes active.
+
+
+## Contrary installed ownership case and H77a completion
+
+A fresh normal owner question about the requester's own prior preference receives
+a borrowed bot preference. The existing requester retrieval guard ran, but prior
+assistant/context text still reached the model. The current H77 query transform does
+not apply to this explicit ownership question; nevertheless this is a material
+contrary grounding result, not an acceptable smoke pass. Finish the context boundary
+with2.27.1before calling the run complete.
+
+H77a locked acceptance: preserve authenticated human author IDs as ephemeral internal
+metadata, never model payload or durable learning. An explicit own-history request
+uses only conversation/current-focus text from its authenticated focus author;
+prior bot replies, detached references, memory rows and other human authors cannot
+supply that person's history. Real supported same-author statements and explicitly
+fictional premises remain usable; absent evidence receives brief natural uncertainty.
+Andrew's own source retrieval and existing requester/scope/final source checks remain.
+Test forged display names, all handler modes and normal non-recall conversation.
+Compare the failing actual dev history against the same history with the boundary,
+then all gates/CI/tested merge/new immutable release/images/scoped deploy and fresh
+owner messages. No new human observation, provider pass, schema or service.
+This is a source-ownership completion of human-context routing, not permission to
+learn preferences from development messages. Native packet instability stays open;
+source safety is never relaxed to make a test pass.
+
+
+H77a results: four actual private Discord posts in two matched pairs, baseline then
+candidate on the real failing history, candidate then baseline on the fictional
+same-author control. Both baseline replies borrow bot text; both candidate replies
+respect the author boundary. Same targets/history hashes/model/limits and source
+guard. One evaluator/two contexts, no generalization or human-style gain claimed.
+Two pre-provider harness errors (async iterator and read-only instance send observer)
+are corrected without provider attempts. No repeated completed paid case. Four
+maintenance calls use the existing ledger. Authenticated IDs stay out of provider
+serialization and dataclass repr; they are not durable learning or access grants.
+All six feature gates:1,301tests,96.94%coverage,31typed modules/build2.27.1; eight
+new tests cover all handler modes, forged labels, bot/peer/reference/memory exclusion,
+ordinary conversation, visual focus, conversion and private metadata serialization.

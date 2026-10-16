@@ -76,7 +76,9 @@ def convert_message(
         return ConversationMessage(role="assistant", content=content)
 
     display_name = message.author.display_name.strip() or "Friend"
-    return ConversationMessage(role="user", content=f"{display_name}: {content}")
+    return ConversationMessage(
+        role="user", content=f"{display_name}: {content}", author_user_id=author_id
+    )
 
 
 async def visual_message(
@@ -89,11 +91,20 @@ async def visual_message(
     converted = convert_message(message, bot_user_id=bot_user_id)
     if target and (converted is None or message.author.bot):
         label = " [Bot source, not personal evidence.]" if message.author.bot else ""
-        converted = ConversationMessage("user", message_target(message) + label)
+        converted = ConversationMessage(
+            "user",
+            message_target(message) + label,
+            author_user_id=message.author.id if not message.author.bot else None,
+        )
     if converted is None or images is None or converted.role != "user":
         return converted
     pixels, notice = await images.collect(message)
-    return ConversationMessage(converted.role, converted.content + notice, pixels)
+    return ConversationMessage(
+        converted.role,
+        converted.content + notice,
+        pixels,
+        author_user_id=converted.author_user_id,
+    )
 
 
 def message_target(message: discord.Message) -> str:

@@ -404,10 +404,26 @@ class TruBotClient(discord.Client):
                     # Keep the focus last so the adapter retains its image parts.
                     history.append(
                         ConversationMessage(
-                            focused.role, focused.content, focused.images, origin="focus"
+                            focused.role,
+                            focused.content,
+                            focused.images,
+                            origin="focus",
+                            author_user_id=focused.author_user_id,
                         )
                     )
                     target = focused.content
+                request = (target or "").split(": ", 1)[-1]
+                if anchor is not None and requester_recall(request):
+                    # A peer's own history cannot inherit the persona's old answers.
+                    # IDs come only from Discord conversion, never speaker labels.
+                    history = [
+                        row
+                        for row in history
+                        if row.role == "user"
+                        and row.origin in {"conversation", "focus"}
+                        and row.author_user_id == anchor.author.id
+                        and not anchor.author.bot
+                    ]
                 source_history = list(history)
                 memory = await self._memory_context(
                     channel,

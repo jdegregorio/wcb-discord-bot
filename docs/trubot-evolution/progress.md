@@ -4249,3 +4249,15 @@ one control lacks native cache and one repaired draft is conservatively discarde
 Additional human-held-out pair remains weak in both arms; no human trait or broad
 fidelity/humor improvement claimed. No new schema/service/model/provider pass.
 Full required CI/tested merge/release/images/deployment/fresh Discord pending.
+
+
+H77a completes the post-deployment ownership finding: an old bot reply reached the
+model as the requester's preference despite retrieval exclusion. Retain ephemeral
+Discord author IDs and filter explicit requester-history context to that human's
+conversation/focus rows. Two actual matched private pairs reproduce baseline bot
+borrowing2/2and correct candidate2/2, including a supported fictional premise.
+All six feature gates1,301tests/96.94%coverage/31typed modules/build2.27.1 pass.
+No new human observation/schema/service/provider pass; final source guard remains.
+2.27.1CI/release/installed real Discord acceptance follows. H78 native packet stability
+stays open and moves ahead diagnostically; ordinary abstract applicability, native
+linked/original pixels and selective skills/generated outdoor themes remain active.
