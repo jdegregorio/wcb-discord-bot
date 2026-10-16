@@ -1051,3 +1051,22 @@ abstentions need no final memory read. This adds no store/schema/retention excep
 The external send is not atomic with the source check; corrections after the check
 still require the normal operator/source lifecycle. Avoid restoring data to roll back
 this runtime-only release. Private test clients keep distinct heartbeat paths.
+
+
+## Pattern qualification, 2.26.7
+
+All newly imported pattern domains, including humor/style, require a conditional
+abstraction,2-3separated distinct supporting sources and bounded conditions/limits.
+Preview rejects an unqualified batch atomically. Lookup/describe/sweep check stored
+node kinds even when old data.kind metadata is absent; malformed, unqualified or
+single/shared/duplicate support patterns cannot supply guidance. Qualified legacy
+conditional patterns and literal claims/preferences remain supported. Sweeps erase
+invalid derivations and existing graph backups through the normal lifecycle.
+
+No migration, source mutation, intake, paid pass or infrastructure is added. Review
+and explicitly reimport a corrected observation when appropriate; never manufacture
+missing conditions automatically. A normal sweep may permanently erase ineligible
+old observations. Rolling back code does not restore erased data; avoid source or
+usage-ledger restoration. Earlier images can re-admit unqualified restored patterns,
+so use the current qualification tool to inspect/retire them before deliberate
+downgrade. No new private human observation is populated in this run.

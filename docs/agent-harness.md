@@ -1,5 +1,16 @@
 # Trubot agent harness
 
+H73 qualification correction selected for 2.26.7: every humor/style/value/emotion/
+relationship import needs a conditional abstraction and separated support. Lookup,
+describe and sweep revalidate restored rows using their stored node kind; qualified
+legacy rows without newer domain metadata remain usable. This closes a reproduced
+single-source pattern admission defect, enabling reliable abstract population.
+H72 population is rejected: matched baseline6/7candidate7/7humor falls below the
+locked two-additional-pass threshold; no private population or persona prompt ships.
+[Both phases and evidence](trubot-evolution/evaluations/2026-10-15-abstract-humor-study.md).
+Full release and installed acceptance are pending. No measured general fidelity or
+2-3xhumor gain is claimed. Existing model/intake/native gate/spending stay intact.
+
 Deployed 2.26.6/PR123 adds a final source/scope check after generation and immediately
 before publication for replies with private memory. It reuses the callback used
 by optional quality refreshes. Changed, withdrawn, unavailable or differently

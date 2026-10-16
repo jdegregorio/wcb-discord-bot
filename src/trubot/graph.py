@@ -550,10 +550,22 @@ class GraphStore:
         source: sqlite3.Connection,
         *,
         db: sqlite3.Connection,
+        kind: str,
         now: datetime,
         verified_after: datetime | None = None,
         archive: sqlite3.Connection | None = None,
     ) -> bool:
+        # Stored row kinds predate the optional data.kind field. Recheck the
+        # current qualification contract even for restored operator observations.
+        if kind in PATTERN_KINDS or "abstraction" in data:
+            try:
+                if data.get("kind", kind) != kind:
+                    return False
+                abstraction_contract({**data, "kind": kind}, data["supports"])
+                if len({s["content_hash"] for s in data["supports"]}) != len(data["supports"]):
+                    return False
+            except (LearningUnavailable, KeyError, TypeError, ValueError):
+                return False
         if data["status"] in {"superseded", "invalid"} or (
             data.get("expires_at") and data["expires_at"] <= _time(now)
         ):
@@ -597,9 +609,9 @@ class GraphStore:
                 return []
             # Rank before bounding source validation. Graph growth must not favor
             # the first eight concepts or twelve observations in identifier order.
-            candidates: dict[str, tuple[dict[str, Any], set[str]]] = {}
+            candidates: dict[str, tuple[dict[str, Any], set[str], str]] = {}
             for row in db.execute(
-                "SELECT n.id, n.data, e.target FROM edges e JOIN nodes n ON n.id=e.origin "  # noqa: S608 - only placeholder count is interpolated; values are bound
+                "SELECT n.id, n.kind, n.data, e.target FROM edges e JOIN nodes n ON n.id=e.origin "  # noqa: S608 - only placeholder count is interpolated; values are bound
                 "WHERE e.relation IN ('about', 'exemplifies') AND e.target IN ("
                 + ",".join("?" for _ in matched)
                 + ")",
@@ -607,7 +619,7 @@ class GraphStore:
             ):
                 key = row["id"]
                 if key not in candidates:
-                    candidates[key] = (json.loads(row["data"]), set())
+                    candidates[key] = (json.loads(row["data"]), set(), row["kind"])
                 candidates[key][1].add(row["target"])
             ranked = sorted(
                 candidates,
@@ -627,15 +639,17 @@ class GraphStore:
                 if len(current) >= 64:
                     raise _LookupLimit
                 if key in candidates:
-                    data = candidates[key][0]
+                    data, _topics, kind = candidates[key]
                 else:
-                    row = db.execute("SELECT data FROM nodes WHERE id=?", (key,)).fetchone()
+                    row = db.execute("SELECT kind,data FROM nodes WHERE id=?", (key,)).fetchone()
                     if row is None:
                         current[key] = None
                         return None
-                    data = json.loads(row[0])
+                    data, kind = json.loads(row["data"]), row["kind"]
                 current[key] = (
-                    {"id": key, **data} if self._valid(data, source, db=db, now=now) else None
+                    {"id": key, **data}
+                    if self._valid(data, source, db=db, kind=kind, now=now)
+                    else None
                 )
                 return current[key]
 
@@ -706,10 +720,17 @@ class GraphStore:
         with self._transaction() as (db, source):
             result = []
             for key in ids[:4]:
-                row = db.execute("SELECT data FROM nodes WHERE id=?", (key,)).fetchone()
+                row = db.execute("SELECT kind,data FROM nodes WHERE id=?", (key,)).fetchone()
                 if row:
-                    data = json.loads(row[0])
-                    if self._valid(data, source, db=db, now=now, verified_after=verified_after):
+                    data = json.loads(row["data"])
+                    if self._valid(
+                        data,
+                        source,
+                        db=db,
+                        kind=row["kind"],
+                        now=now,
+                        verified_after=verified_after,
+                    ):
                         result.append({"id": key, **data})
             return result
 
@@ -733,7 +754,9 @@ class GraphStore:
                 elif row["kind"] == "native_context":
                     invalid = not self._native_context_valid(data, source, now=now)
                 elif row["kind"] in OBSERVATION_KINDS:
-                    invalid = not self._valid(data, source, db=db, now=now, archive=archive)
+                    invalid = not self._valid(
+                        data, source, db=db, kind=row["kind"], now=now, archive=archive
+                    )
                 elif "archive_episode" in data:
                     invalid = data["archive_episode"] not in episodes
                 if invalid:
