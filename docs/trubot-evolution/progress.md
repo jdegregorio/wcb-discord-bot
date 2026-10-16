@@ -4323,3 +4323,14 @@ notification preference. [Structured installed evidence](evaluations/2026-10-16-
 
 Final public requester-boundary fixture team names are wholly invented. The value-only
 substitution passes all eight focused cases; runtime source bytes are unchanged.
+
+
+## 2026-10-16 05:00 - H78a native reply verification
+
+Basefdf975a2e73e9a013f3efb8ba5b1145807ac42da. New managed worktree/unique feature branch,
+primary checkout untouched; no unfinished evolution PR. Both planning phases and source
+audit in [study](evaluations/2026-10-16-native-reply-batch-study.md). Matched actual private
+Discord handler baseline0/3candidate3/3 delivery, provider0, one repeated source question.
+Selected source-page verification retains5sources/equal packet hashes, exact fallback,
+shared6s deadline and unchanged source/owner/withdrawal checks. No new human observation.
+22meaningful regressions, full gates/CI/merge/release/deployment/owner UI pending.

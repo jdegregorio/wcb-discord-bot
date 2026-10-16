@@ -89,6 +89,49 @@ class MessageIngestor:
         )
         return message
 
+    async def refresh_page(
+        self, channel: Channel, message_ids: list[int]
+    ) -> dict[int, discord.Message]:
+        """Freshly verify only selected IDs from one page, without advancing intake.
+
+        A missing ID says nothing about deletion: the caller must refresh it exactly.
+        Peer and unselected text never enters learning through this path.
+        """
+        selected = set(message_ids)
+        if len(message_ids) > 5:
+            raise LearningUnavailable("Reply verification requires at most five sources")
+        if not selected or not self.verified or not self.accepts(channel):
+            return {}
+        # Check authoritative withdrawal/identity before making any network request.
+        identity = await asyncio.to_thread(self.store.identity)
+        if identity != self.identity:
+            raise LearningUnavailable("Reply source identity changed")
+        started = self.clock()
+        messages = [
+            message
+            async for message in channel.history(
+                limit=100, before=discord.Object(id=max(selected) + 1), oldest_first=False
+            )
+            if message.id in selected
+        ]
+        for message in messages:
+            if (
+                message.channel.id != channel.id
+                or message.guild is None
+                or message.guild.id != identity.guild_id
+                or message.author.id != identity.user_id
+                or message.author.bot
+                or message.webhook_id is not None
+            ):
+                raise LearningUnavailable("Reply page source attribution changed")
+        for message in messages:
+            await asyncio.to_thread(
+                self.store.observe,
+                SourceMessage.from_discord(message, observed_at=started, authoritative=True),
+                now=self.clock(),
+            )
+        return {message.id: message for message in messages}
+
     async def invalidate(self, channel_id: int, ids: list[int], *, deleted: bool) -> None:
         if channel_id in self.channel_ids:
             await asyncio.to_thread(

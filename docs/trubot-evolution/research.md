@@ -2611,3 +2611,13 @@ notification preference. [Structured installed evidence](evaluations/2026-10-16-
 
 Final public requester-boundary fixture team names are wholly invented. The value-only
 substitution passes all eight focused cases; runtime source bytes are unchanged.
+
+
+## 2026-10-16 05:00 - H78a bounded native verification
+
+[Phase1hypotheses, contrary cases, Phase2priorities and matched results](evaluations/2026-10-16-native-reply-batch-study.md).
+Owner UI baseline succeeds, but repeated fresh packet probes lose verified sources.
+Same-question actual private-handler trial: baseline0/3posts/candidate3/3, provider0.
+Select bounded selected-source page plus exact fallback. No new human observation
+or measured semantic/humor improvement. H79/H61 remain exploratory; prioritize qualified
+abstract applicability after this enabling correction. Full gates/deployment still pending.
