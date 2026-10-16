@@ -1,21 +1,25 @@
 # Trubot roadmap
 
-2.27.0 H77 is prepared: recognized ordinary follow-ups use one complete immediate
-human setup (at most600chars) as a retrieval topic. The focused request still governs
-intent and presentation; bot/memory/detached-reference rows, intervening humans,
-explicit new topics and incomplete setup cannot manufacture continuity. Requester
-ownership and source lifecycle remain authoritative. Three actual-handler regressions
-fail baseline and pass candidate; all six gates pass with1,293tests/96.94%coverage.
-Matched private Discord opportunity packets improve1/3to3/3, with no general prose
-or humor gain established. One source-held-out contextual comparison remains weak
-in both arms; no new human observation ships. Release/installed acceptance pending.
-[Both planning phases and limits](docs/trubot-evolution/evaluations/2026-10-16-memory-continuity-study.md).
+2.27.0 H77 is deployed;2.27.1completes the observed own-history boundary. Ordinary
+recognized follow-ups retain one complete immediate human setup for abstract lookup.
+Explicit requester-history questions retain only that authenticated human's current
+conversation/focus rows, excluding old bot answers, peers and detached references.
+The original request and source checks remain authoritative. Four matched private
+Discord posts reproduce borrowed bot history in both baseline cases and correct
+both with the candidate, including a retained fictional same-author premise.
+All six feature gates pass:1,301tests/96.94%coverage/31typed modules/build.2.27.1
+release and fresh installed gateway acceptance follow. Broader fidelity is unproven.
+[Both planning phases and actual limits](docs/trubot-evolution/evaluations/2026-10-16-memory-continuity-study.md).
 
-Reconciliation: PR128/v2.26.9 is already merged and healthy. Its image/main CI succeed;
-this run verifies31installed source hashes, the qualified pattern and private scope,
-provider0. Prior notes saying its release remains pending are superseded.
+Native factual packets can vary under bounded fresh reads and safely suppress a draft,
+observed before and after H77. H78 root-cause/verification scheduling is unresolved;
+preserve the final guard. This materially affects delivery and takes diagnostic
+priority before more population. Then qualified applicability/human-held-out benefit,
+linked native/original pixels, selective skills/tools and generated Michigan U.P.
+aurora/trail-camera scenes with short captions and generated provenance. H66 remains
+open, and new material privacy/grounding evidence can change order again.
 
-2.26.8 is deployed via [PR127](https://github.com/jdegregorio/wcb-discord-bot/pull/127).
+Earlier 2.26.8 is deployed via [PR127](https://github.com/jdegregorio/wcb-discord-bot/pull/127).
 H76 preserves reviewed aliases as memories share a concept, with current alias
 ownership, source lifecycle, legacy reads and bounded complete conflicts. Actual
 private handler and installed checks pass, all 24 existing alias results match,

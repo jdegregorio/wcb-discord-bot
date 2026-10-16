@@ -40,6 +40,7 @@ class ConversationMessage:
 
     origin: MessageOrigin = "conversation"
     memory_author_scope: MemoryAuthorScope | None = None
+    author_user_id: int | None = field(default=None, repr=False)
 
     def as_input(self) -> dict[str, str]:
         return {"role": self.role, "content": self.content}

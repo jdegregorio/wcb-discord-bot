@@ -2548,3 +2548,15 @@ One source-held-out pair has weak application in both arms, no general fidelity 
 Select bounded immediate-human query resolution as an enabling correction, no new
 human abstraction or model call. Full feature gates1,293tests/96.94%coverage pass;
 required CI, immutable images/deployment and fresh installed Discord pending.
+
+
+H77a completes the post-deployment ownership finding: an old bot reply reached the
+model as the requester's preference despite retrieval exclusion. Retain ephemeral
+Discord author IDs and filter explicit requester-history context to that human's
+conversation/focus rows. Two actual matched private pairs reproduce baseline bot
+borrowing2/2and correct candidate2/2, including a supported fictional premise.
+All six feature gates1,301tests/96.94%coverage/31typed modules/build2.27.1 pass.
+No new human observation/schema/service/provider pass; final source guard remains.
+2.27.1CI/release/installed real Discord acceptance follows. H78 native packet stability
+stays open and moves ahead diagnostically; ordinary abstract applicability, native
+linked/original pixels and selective skills/generated outdoor themes remain active.
