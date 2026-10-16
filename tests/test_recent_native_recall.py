@@ -123,6 +123,7 @@ async def test_all_source_refreshes_precede_optional_context_within_shared_deadl
     )
     with (
         patch.object(client, "get_channel", return_value=channel),
+        patch.object(learner, "refresh_page", AsyncMock(return_value={})),
         patch.object(learner, "refresh", side_effect=refresh),
         patch("trubot.discord_client.collect_native_episode", side_effect=collect),
         patch("trubot.discord_client.voice_context", side_effect=AssertionError("undated voice")),

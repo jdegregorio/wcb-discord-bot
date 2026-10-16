@@ -1,3 +1,22 @@
+<!-- Current run: 2026-10-16 05:00 -->
+
+2.27.2 candidate completes H78a bounded native source-page verification. Matched
+actual private Discord handler delivery improves0/3to3/3 for one repeated source
+question, provider0; this is transport reliability, not general character quality.
+[Both planning phases and locked results](evaluations/2026-10-16-native-reply-batch-study.md).
+
+Current priority: qualified abstract applicability and useful humor/emotional memory
+with independent human-held-out benefit; broader linked native/original pixels;
+selective tools/skills and generated Michigan U.P. aurora/trail-camera scenes with
+short natural captions/generated provenance. H66 stays open and material grounding/
+privacy failures can reorder. H78's reproduced transport defect has a supported
+correction; optional context can still change, and wider predictability is unmeasured.
+No additional provider pass, schema, service, learning/intake, model, pacing, guard,
+schedule or notification change. Required release/installed acceptance follows.
+
+<details>
+<summary>Prior 01:00 baseline and continuing acceptance details</summary>
+
 # Trubot evolution plan
 
 The current increment routes conversation by human topic and authenticated author.
@@ -65,3 +84,5 @@ record criteria, dependencies, operating impact, releases and limitations.
 [Final installed result and limitations](evaluations/2026-10-16-memory-continuity-release.json):
 2.27.1 healthy on the verified immutable digest, all31source hashes match,
 changed abstract/ownership controls pass; native factual delivery remains open.
+
+</details>

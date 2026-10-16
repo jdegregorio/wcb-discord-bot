@@ -686,3 +686,11 @@ sweeps. Qualified older patterns remain readable, including those without newer
 domain metadata. Literal claims/preferences retain their existing evidence rules.
 This enables safer abstract population; it does not add a new human trait or prove
 more natural or funnier replies. See the [study](docs/trubot-evolution/evaluations/2026-10-15-abstract-humor-study.md).
+
+## Bounded native reply verification (2.27.2)
+
+Multiple selected native sources in one approved channel share one fresh100-row
+history read. Only the selected sources are refreshed; intake cursors and unselected
+messages are untouched. Missing IDs require exact reads; denied channels stop.
+The existing6s shared deadline and source/scope/withdrawal publication checks remain.
+This reduces repeated-read pressure without adding a model call or durable cache.

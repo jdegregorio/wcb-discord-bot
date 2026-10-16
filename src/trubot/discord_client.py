@@ -654,24 +654,62 @@ class TruBotClient(discord.Client):
             refreshed_sources: list[tuple[DiscordChannel, int, discord.Message]] = []
             verification_started = self._clock()
             verification_deadline = asyncio.get_running_loop().time() + 6
+            # A fresh bounded page shares transport for nearby selected sources.
+            # Never persist unselected rows or infer deletion from page absence.
+            grouped: dict[int, list[int]] = {}
+            for candidate in candidates:
+                if candidate.source["kind"] == "discord":
+                    grouped.setdefault(candidate.source["channel_id"], []).append(
+                        candidate.source["message_id"]
+                    )
+            page_sources: dict[tuple[int, int], discord.Message] = {}
+            denied_channels: set[int] = set()
+            for channel_id, message_ids in grouped.items():
+                source_channel = self.get_channel(channel_id)
+                if (
+                    len(message_ids) < 2
+                    or not isinstance(source_channel, (discord.TextChannel, discord.Thread))
+                    or not learning.accepts(source_channel)
+                ):
+                    continue
+                remaining = verification_deadline - asyncio.get_running_loop().time()
+                if remaining <= 0:
+                    break
+                try:
+                    page = await asyncio.wait_for(
+                        learning.refresh_page(source_channel, message_ids),
+                        timeout=min(1.5, remaining),
+                    )
+                    page_sources.update(((channel_id, key), value) for key, value in page.items())
+                except (discord.Forbidden, discord.NotFound):
+                    # A denied channel is not a reason to try another access path.
+                    denied_channels.add(channel_id)
+                except (discord.HTTPException, TimeoutError):
+                    # Transient page loss can use existing exact reads within the
+                    # same deadline. It cannot authorize cached source reuse.
+                    pass
             for candidate in candidates:
                 if candidate.source["kind"] == "discord":
                     source_channel = self.get_channel(candidate.source["channel_id"])
                     if not isinstance(source_channel, (discord.TextChannel, discord.Thread)):
                         continue
-                    if not learning.accepts(source_channel):
+                    if not learning.accepts(source_channel) or source_channel.id in denied_channels:
                         continue
-                    remaining = verification_deadline - asyncio.get_running_loop().time()
-                    if remaining <= 0:
-                        break
-                    try:
-                        refreshed = await asyncio.wait_for(
-                            learning.refresh(source_channel, candidate.source["message_id"]),
-                            timeout=min(4, remaining),
-                        )
-                    except (discord.HTTPException, TimeoutError):
-                        # Missing permission or network access never revives cached evidence.
-                        continue
+                    refreshed = page_sources.get(
+                        (source_channel.id, candidate.source["message_id"])
+                    )
+                    if refreshed is None:
+                        remaining = verification_deadline - asyncio.get_running_loop().time()
+                        if remaining <= 0:
+                            break
+                        try:
+                            refreshed = await asyncio.wait_for(
+                                learning.refresh(source_channel, candidate.source["message_id"]),
+                                timeout=min(4, remaining),
+                            )
+                        except (discord.HTTPException, TimeoutError):
+                            # No permission/network access ever revives cached evidence.
+                            continue
                     if refreshed is not None:
                         refreshed_sources.append(
                             (source_channel, candidate.source["message_id"], refreshed)

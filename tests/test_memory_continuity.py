@@ -61,6 +61,7 @@ async def test_followup_retrieves_qualified_abstraction_from_human_setup(stores,
     try:
         with (
             patch.object(client, "get_channel", return_value=channel),
+            patch.object(ingestor, "refresh_page", AsyncMock(return_value={})),
             patch.object(ingestor, "refresh", new_callable=AsyncMock),
         ):
             if mode == "reaction":
@@ -180,6 +181,7 @@ async def test_followup_query_preserves_source_and_author_lifecycle(stores, chan
     try:
         with (
             patch.object(client, "get_channel", return_value=channel),
+            patch.object(ingestor, "refresh_page", AsyncMock(return_value={})),
             patch.object(ingestor, "refresh", new_callable=AsyncMock),
         ):
             before = await client._memory_context(channel, request, history, focus_author_user_id=1)
@@ -221,6 +223,7 @@ async def test_final_source_check_still_discards_an_expanded_memory_reply(stores
         with (
             patch("trubot.discord_client.collect_history", AsyncMock(return_value=history)),
             patch.object(client, "get_channel", return_value=channel),
+            patch.object(ingestor, "refresh_page", AsyncMock(return_value={})),
             patch.object(ingestor, "refresh", new_callable=AsyncMock),
         ):
             assert not await client._respond(
