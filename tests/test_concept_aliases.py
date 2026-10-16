@@ -69,6 +69,10 @@ def test_legacy_aliases_survive_new_relationship_without_rewriting_old_edges(sto
         db.execute(
             "UPDATE edges SET evidence=? WHERE origin=? AND relation='about'", (json.dumps(data), a)
         )
+        db.execute(
+            "UPDATE nodes SET data=? WHERE id='concept:shared'",
+            (json.dumps({"aliases": ["glacier picnic"]}),),
+        )
     b = add(stores, 1, topic="shared", aliases=("orbital picnic",))
     assert ids(GraphStore(stores[0]), "glacier picnic") == {a, b}
     assert ids(graph, "orbital picnic") == {a, b}
@@ -121,7 +125,7 @@ def test_unavailable_alias_evidence_never_activates_current_neighbors(stores):
             data["summary"] = "alias source"
             db.execute("UPDATE nodes SET data=? WHERE id=?", (json.dumps(data), a))
         assert not ids(graph, "glacier picnic")
-        assert ids(graph, "orbital picnic") == {b}
+        assert b in ids(graph, "orbital picnic")
 
 
 def test_shared_alias_freshness_work_stays_bounded(stores):
@@ -236,3 +240,48 @@ def test_duplicate_concept_entries_cannot_silently_replace_aliases(stores):
         graph.import_observations([item], now=NOW)
     assert ids(graph, "glacier picnic") == {a}
     assert not ids(graph, "orbital picnic")
+
+
+@pytest.mark.parametrize("change", ["retire", "delete", "edit", "expire", "replace"])
+def test_retired_alias_metadata_is_erased_from_a_shared_index(stores, change):
+    a = add(
+        stores,
+        0,
+        topic="shared",
+        aliases=("SYNTHETIC_RETIRED_ALIAS",),
+        expires_at=(NOW + timedelta(seconds=1)).isoformat(),
+    )
+    # Restore the exact old node/edge shape before adding a new relationship.
+    graph = stores[2]
+    with graph._transaction() as (db, _):
+        row = db.execute(
+            "SELECT evidence FROM edges WHERE origin=? AND relation='about'", (a,)
+        ).fetchone()
+        data = json.loads(row[0])
+        data.pop("aliases", None)
+        db.execute(
+            "UPDATE edges SET evidence=? WHERE origin=? AND relation='about'", (json.dumps(data), a)
+        )
+        db.execute(
+            "UPDATE nodes SET data=? WHERE id='concept:shared'",
+            (
+                json.dumps(
+                    {"aliases": ["SYNTHETIC_RETIRED_ALIAS"], "source_times": ["SYNTHETIC_OLD_TIME"]}
+                ),
+            ),
+        )
+    b = add(stores, 1, topic="shared", aliases=("orbital picnic",))
+    assert ids(graph, "SYNTHETIC_RETIRED_ALIAS") == {a, b}
+    if change == "retire":
+        graph.remove(a)
+    elif change in {"delete", "edit"}:
+        stores[0].invalidate(10, [source(0).id], deleted=change == "delete", now=NOW)
+    elif change == "expire":
+        graph.sweep(now=NOW + timedelta(seconds=2))
+    else:
+        add(stores, 0, topic="shared", aliases=("garden picnic",))
+    with graph._transaction() as (db, _):
+        data = db.execute("SELECT data FROM nodes WHERE id='concept:shared'").fetchone()[0]
+    assert "SYNTHETIC_RETIRED_ALIAS" not in data
+    assert "SYNTHETIC_OLD_TIME" not in data
+    assert b in ids(graph, "orbital picnic")

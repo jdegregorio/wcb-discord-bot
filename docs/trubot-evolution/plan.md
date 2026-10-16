@@ -1,71 +1,61 @@
 # Trubot evolution plan
 
-H76 is this run's selected enabling correction: shared-concept imports retain earlier
-reviewed lookup aliases on evidence-owned relationships. Legacy reads remain available;
-invalid or retired alias evidence cannot activate current neighbors. No new human trait,
-provider pass, model or schema. H74 emotional population is rejected after matched
-opportunity6/6each and controls6/6each. The actual private handler reproduces H76 before
-implementation, provider0. Engineering, release and installed verification follow.
+2.26.8 is deployed via [PR127](https://github.com/jdegregorio/wcb-discord-bot/pull/127).
+H76 retains reviewed lookup aliases on observation-concept relationships. Adding
+another memory to a shared concept no longer erases earlier discovery paths.
+Current alias evidence must validate before shared neighbors can load. Replacement,
+retirement, correction/deletion and expiry preserve the remaining valid routes.
+Legacy reads, conflict completeness and existing result/freshness bounds remain.
 
+All six feature/merged gates, required CI and both images pass:1,252 tests,
+96.92% branch-inclusive coverage,31 typed modules/build. Installed actual private
+Discord handler retains lookup and passes alias retirement/source removal, provider0.
+All24existing production alias queries match baseline. Fresh normal gateway8/8 core
+cases pass; humor remains modest, one abstract reply slightly stiff, spontaneous
+league activity sparse. No measured general character or humor gain.
+[Research and both planning phases](evaluations/2026-10-15-emotional-memory-study.md).
+[Installed evidence](evaluations/2026-10-15-concept-alias-release.json).
 
-2.26.7 deployed via [PR125](https://github.com/jdegregorio/wcb-discord-bot/pull/125).
-H73 requires conditional, separated-source qualification for every pattern domain
-at import and again at lookup, describe and sweep. Actual private Discord handler:
-baseline admits the unqualified synthetic pattern; installed code rejects the
-import and excludes a restored legacy fixture. Qualified memory remains usable.
-All six feature/merged gates, CI and both images pass: 1,234 tests, 96.94% coverage.
-Fresh normal gateway passes 7/8 strict cases, with unsupported broad-year inference
-still open; current old/new graph packets match for that graph-bypassing route.
-H72 population is rejected: conservative final humor scores 6/7 in each arm, with
-no clear gain. No new human trait or provider pass ships. Qualified population is
-next, then applicability/care/humor, linked native/original pixels and selective
-tools/generated U.P. scenes. [Study](evaluations/2026-10-15-abstract-humor-study.md) and [installed evidence](evaluations/2026-10-15-abstract-humor-release.json).
-
-Prior 2.26.6 deployed via [PR123](https://github.com/jdegregorio/wcb-discord-bot/pull/123): H71 validates private source context and authenticated author scope
-after generation, immediately before publication. A source correction, withdrawal,
-changed access or unavailable check discards the draft without another model call.
-Actual private Discord handler comparison: baseline one stale synthetic post,
-candidate zero; candidate performs two source checks. All gates/CI/both images pass; installed source guards 5/5 and fresh normal gateway 8/9,
-with weak invited humor still open. [Installed evidence](evaluations/2026-10-15-reply-source-freshness-release.json).
-[Both research phases and locked criteria](evaluations/2026-10-15-reply-source-freshness-study.md).
-
-H70 question-form annotation is rejected: matched baseline10/12candidate10/12,
-with two candidate unsupported interpretations in contrary contexts. No annotation,
-new human trait, graph population, provider pass or model change ships. This run's
-source publication correction enables safe abstract memory growth; it does not
-measure general character fidelity or humor improvement. The fresh ordinary
-contextual gateway baseline passes; historical synthesis remains intermittent.
+H74 conditional emotion population is rejected: opportunities6/6 each and controls
+6/6 each, no incremental gain. H72 humor population remains rejected. Neither cohort
+is production learning. Seek a demonstrated reply-quality gap before another
+population rollout. Source data and derived human observations remain private.
 
 ## Ordered next increments
 
-1. H48/H21/H28 qualified abstract population and legacy review: useful values,
-   humor mechanisms/timing and ways of relating, with independent attributed
-   episodes, contrary cases, applicability and complete source lifecycle.
-2. H64 applicability and H22/H39/H51 specific warmth and semantic humor. Preserve
-   approved creative TJ amplification, brevity, care and recipient restraint.
-3. Broader native peers/replies/threads/original pixels with honest coverage gaps.
-4. H61 selectively loaded skills/tools and generated Michigan U.P. aurora and
-   trail-camera wildlife scenes with natural short captions and generated provenance.
-5. H66 historical contextual synthesis remains exploratory reliability work;
-   a fresh material grounding or privacy failure moves it ahead of population.
-   Retired packet/reasoning/history candidates and rejected H70 are not rollouts.
+1. H64/H48/H21/H28 conditional applicability and qualified abstraction candidates
+   tied to a reproduced deficit in values, emotional engagement, humor timing or
+   ways of relating. Diagnose with human episodes and fresh bot activity first;
+   reject population that adds no held-out benefit. Preserve approved creative TJ
+   amplification, brief care and recipient restraint.
+2. Broader native peers/replies/threads and original pixels, so richer episode
+   studies can distinguish setup, response and changing relationships. Keep honest
+   coverage gaps and the specific native semantic peer-transfer gate closed.
+3. H61 selective skills/tools and generated Michigan U.P. aurora/trail-camera
+   wildlife scenes with natural short captions and generated provenance. Prototype
+   selectively useful context and sharing/timing before production rollout.
+4. H66 historical contextual synthesis remains unresolved reliability work;
+   fresh material grounding/privacy failures move it ahead. This run's passing
+   historical sample does not retire intermittent year/polarity problems.
 
-[Backlog](backlog.md) records evidence, dependencies, criteria and operating impact.
+Why this order: H72 and H74 show that plausible extra guidance can add no measured
+benefit; H76 fixes a demonstrated population prerequisite. New evidence of a
+baseline deficit or a clear independent held-out gain can change selection again.
 Larger harness/storage redesigns remain eligible when comparisons support them.
-Source text is audit evidence, secondary to useful abstractions in ordinary replies.
+Exact source text is audit evidence, secondary to useful abstractions in replies.
 
 ## Delivered foundation and invariants
 
-2.25.0: reviewed graph preview and one conditional abstraction.2.26.0: bounded
-whole conflict-component selection.2.26.2: complete stored authored passages and
-version consistency.2.26.5: ordinary authored recall separates adjacent Slack
-stances; retained-context semantics remain open. See [progress](progress.md).
+2.25.0 reviewed preview/one qualified conditional abstraction;2.26.0 bounded whole
+conflict selection;2.26.2 complete stored authored passages/version consistency;
+2.26.5 ordinary authored recall;2.26.6 final publication source/scope check;
+2.26.7 all-domain pattern qualification;2.26.8 relationship alias provenance.
+See [progress](progress.md) for release identifiers, limits and earlier milestones.
 
-Preserve bot identity, verified attribution, internal unknown dates, correction,
-deletion and withdrawal, league runtime allowlist/no DMs, owner-only confirmed
-private development recall. Native automatic patterns remain closed pending their
-specific semantic peer-transfer prerequisite. Existing volume/model/pacing and
-sharedUSD 18 runtime/USD 2 maintenance/USD 20 calendar-month guard remain unchanged.
-Six fresh local 01/05/09/13/17/21 Sol/xhigh runs retain both planning phases,
-managed isolation, all gates/CI/tested merge, immutable release/both architectures,
-scoped deployment and real Discord validation. Notifications remain unchanged.
+Preserve bot identity, verified attribution, internal unknown dates, source lifecycle,
+correction/deletion/withdrawal, runtime league allowlist/no DMs and owner-only private
+development recall. Existing volume/model/pacing and sharedUSD18runtime/USD 2 maintenance/
+USD 20 calendar-month guard remain. Six fresh local 01/05/09/13/17/21 Sol/xhigh runs
+retain both planning phases, managed isolation, full gates/CI/tested merge, immutable
+release/both architectures, scoped deployment and real Discord tests. Notifications
+are unchanged. [Backlog](backlog.md) records dependencies, criteria and operating impact.
