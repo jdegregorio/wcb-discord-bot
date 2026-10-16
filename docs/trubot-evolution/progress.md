@@ -4228,3 +4228,24 @@ plans; H76 is complete. H75 stays unvalidated; H66 material grounding/privacy ca
 reorder. Six fresh local 01/05/09/13/17/21 Sol/xhigh runs/notifications unchanged.
 [Full study](evaluations/2026-10-15-emotional-memory-study.md),
 [structured installed evidence](evaluations/2026-10-15-concept-alias-release.json).
+
+
+## 2026-10-16 01:00 - H77 natural abstract-memory continuity
+
+Base cd86e67b44b728979850dbdbc0960568915dbb92, successful fetch before new managed
+worktree and unique feature/trubot-daily-20261016-0100-reconcile branch. Primary
+checkout untouched. PR128/v2.26.9 is already merged/deployed;31installed source hashes,
+private scope, qualified memory and readiness reverified, provider0. Prior memory
+completion gap reconciled. No overlapping evolution PR; dependency PRs stay separate.
+
+[Research, both planning phases, baseline and limitations](evaluations/2026-10-16-memory-continuity-study.md).
+H77: actual memory handler omits relevant abstract memory in two of three ordinary
+follow-ups. Use one complete immediate human setup for recognized topic-free requests,
+keeping original focus and source checks. Three handler modes fail baseline then pass;
+36new regressions including ownership/lifecycle/final posting guards. All six feature
+gates pass:1,293tests,96.94%coverage,31typed modules/build2.27.0. Nine invented matched
+private Discord pairs yield1/3to3/3abstract opportunity packets; semantic gain small,
+one control lacks native cache and one repaired draft is conservatively discarded.
+Additional human-held-out pair remains weak in both arms; no human trait or broad
+fidelity/humor improvement claimed. No new schema/service/model/provider pass.
+Full required CI/tested merge/release/images/deployment/fresh Discord pending.

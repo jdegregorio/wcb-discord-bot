@@ -178,6 +178,15 @@ gap, so a closing qualification cannot silently disappear behind a partial quote
 This changes reply rendering only; native intake bounds remain unchanged. It does
 not resolve the separate historical speaker-attribution synthesis issue.
 
+## Conversational abstract-memory continuity (2.27.0)
+
+Recognized short follow-ups such as "How would you handle that?" use the immediate
+human setup to find relevant source-backed memory. The original question still
+governs the reply. Only one complete setup of at most600characters is eligible;
+new topics, intervening humans and bot/memory/reference rows cannot supply it.
+Requester ownership and fresh source checks still apply. This enables natural
+abstract-memory use without a new provider call or new human observation.
+
 ## Shared concept lookup aliases (2.26.8)
 
 Adding a reviewed memory to a shared concept preserves earlier lookup aliases.
