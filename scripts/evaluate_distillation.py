@@ -146,10 +146,11 @@ async def evaluate(*, live: bool):
                 if status["studies"].get("accepted") != 1 or len(studies) != 2:
                     raise RuntimeError("Synthetic extraction did not pass contextual review")
                 with graph._transaction() as (db, _):
-                    concept = json.loads(
-                        db.execute("SELECT data FROM nodes WHERE kind='concept'").fetchone()[0]
-                    )
-                aliases = concept["aliases"]
+                    row = db.execute(
+                        "SELECT n.data,e.evidence FROM nodes n JOIN edges e ON e.target=n.id "
+                        "WHERE n.kind='concept' AND e.relation IN ('about','exemplifies')"
+                    ).fetchone()
+                    aliases = json.loads(row[1]).get("aliases", json.loads(row[0])["aliases"])
                 nonlexical = [a for a in aliases if not any(terms(a) & terms(t) for t in texts)]
                 alias = (nonlexical or aliases)[0]
                 query = "Tell me about your " + alias

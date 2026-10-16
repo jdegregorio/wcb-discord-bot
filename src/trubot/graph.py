@@ -543,7 +543,21 @@ class GraphStore:
                 )
                 old["status"] = "contested"
                 db.execute("UPDATE nodes SET data=? WHERE id=?", (_json(old), contested))
+        self._prune_concept_indexes(db)
         self._bound(db)
+
+    @staticmethod
+    def _prune_concept_indexes(db: sqlite3.Connection) -> None:
+        # Only legacy relationships need node-level aliases and source metadata.
+        # Once the last legacy owner is gone, erase that fallback instead of
+        # retaining a retired alias on an otherwise still-connected concept.
+        db.execute(
+            "UPDATE nodes SET data=? WHERE kind IN ('entity','concept') AND NOT EXISTS "
+            "(SELECT 1 FROM edges WHERE target=nodes.id "
+            "AND relation IN ('about','exemplifies') "
+            "AND json_type(evidence,'$.aliases') IS NULL)",
+            (_json({"aliases": [], "index_provenance": "current observation relationships"}),),
+        )
 
     @staticmethod
     def _bound(db: sqlite3.Connection) -> None:
@@ -826,6 +840,7 @@ class GraphStore:
                 "DELETE FROM nodes WHERE kind IN ('entity','concept') AND id NOT IN "
                 "(SELECT target FROM edges WHERE relation IN ('about','exemplifies'))"
             )
+            self._prune_concept_indexes(db)
             self._prune_native_dependencies(db)
         if erased:
             self._remove_backups()
@@ -1155,6 +1170,7 @@ class GraphStore:
                 "DELETE FROM nodes WHERE kind IN ('entity','concept') AND id NOT IN "
                 "(SELECT target FROM edges WHERE relation IN ('about','exemplifies'))"
             )
+            self._prune_concept_indexes(db)
         self._remove_backups()
 
     def status(self) -> dict[str, Any]:

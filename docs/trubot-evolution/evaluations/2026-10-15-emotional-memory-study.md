@@ -205,3 +205,28 @@ privacy/scope/native-gate, spending/model/pacing/intake, six-run schedule/notifi
 The held-out human setup concerns a project also present in the contextual sample.
 It is excluded from support but is not demonstrably an independent project. This
 further limits generalization; H74 rejection does not change.
+
+## Final lifecycle review and follow-on patch
+
+Final review after the2.26.8rollout finds a retained-metadata gap: after the final
+legacy relationship is removed from a shared concept, the fallback node can retain
+that retired alias and its source metadata even though lookup correctly excludes
+it. A new synthetic erasure regression fails on2.26.8. No production shared concept
+exists and this run imports no real human observation, so there is no observed
+production retention incident. Finish H76 with2.26.9rather than accepting a hidden
+retention gap. The release remains immutable; its evidence is kept above.
+
+Prune fallback alias/source metadata when no legacy relationship needs it, during
+observation writes, explicit retirement and source sweep. New relationships retain
+their own aliases; legacy relationships still retain their necessary read index.
+Five regressions cover retirement, source delete/edit, expiry sweep and replacement.
+The candidate passes46focused alias/selection checks. All gates, CI, new immutable
+release/images and installed real Discord checks follow. No production learning,
+model, provider pass, schema or service changes are required for the completion.
+
+The real private handler reproduces retained fallback metadata on2.26.8and erases
+it with the exact2.26.9candidate, provider0; lookup/remaining-route/source-removal
+controls still pass. Both disposable stores are erased. A full suite exposes the
+synthetic distillation acceptance script reading the former node alias index;
+update that harness to read relationship aliases with a legacy fallback, then
+rerun all gates. No test failure or flakiness is accepted.
