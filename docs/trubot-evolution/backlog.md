@@ -1,5 +1,13 @@
 # Prioritized Trubot backlog
 
+H76 is this run's selected enabling correction: shared-concept imports retain earlier
+reviewed lookup aliases on evidence-owned relationships. Legacy reads remain available;
+invalid or retired alias evidence cannot activate current neighbors. No new human trait,
+provider pass, model or schema. H74 emotional population is rejected after matched
+opportunity6/6each and controls6/6each. The actual private handler reproduces H76 before
+implementation, provider0. Engineering, release and installed verification follow.
+
+
 2.26.7 deployed via [PR125](https://github.com/jdegregorio/wcb-discord-bot/pull/125).
 H73 requires conditional, separated-source qualification for every pattern domain
 at import and again at lookup, describe and sweep. Actual private Discord handler:
@@ -19,6 +27,15 @@ pass; installed guards 5/5, fresh normal gateway 8/9 with weak invited humor ope
 H70 annotation is rejected after contrary human contexts, with no total measured
 benefit and two unsupported candidate interpretations. No new persona trait is retained.
 
+0. **H76 shared concept alias provenance, selected enabling correction.**
+   Evidence: actual handler synthetic lookup disappears after shared concept import;
+   baseline regressions4fail/7pass. Benefit: abstract memory growth preserves prior
+   discovery paths. Dependencies: current graph/source validation. Acceptance: import/
+   restart/shared traversal, alias replacement/retirement/edit/delete/expiry, legacy
+   compatibility, conflict completeness and64-source-check bound. Validate fixtures,
+   all gates/CI, installed Discord handler and normal gateway. Confidence high for
+   boundary behavior; no measured personality gain. Local bounded reads, no provider
+   or infrastructure cost. Retire this item after deployed validation.
 1. **H48/H21/H28 qualified abstract population/legacy review, enabling/exploratory.**
    Evidence: one current conditional abstraction, sparse reviewed graph, fresh
    human rule-question and contrary episodes. Benefit: useful values, humor and

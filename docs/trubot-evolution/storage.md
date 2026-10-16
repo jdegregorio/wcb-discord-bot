@@ -1070,3 +1070,23 @@ old observations. Rolling back code does not restore erased data; avoid source o
 usage-ledger restoration. Earlier images can re-admit unqualified restored patterns,
 so use the current qualification tool to inspect/retire them before deliberate
 downgrade. No new private human observation is populated in this run.
+
+
+## Evidence-owned concept aliases, 2.26.8
+
+New about/exemplifies edge evidence includes its reviewed aliases. Lookup keeps
+shared concept traversal while requiring a current alias-owning observation; it
+uses the same64-observation freshness cache, four results and five unique sources.
+Node aliases remain unchanged as fallback for legacy edges, preserving readable
+state without migration or a new provider call. Per-observation replacement,
+remove, source correction/deletion and expiry stop retired routes from activating
+valid neighbors. Duplicate entity/concept relationships in one import are rejected
+atomically. Unknown dates, attribution, counterevidence and withdrawal remain.
+Already lost legacy aliases require contextual review and reimport, not guessing.
+
+No schema migration, new paid service or runtime spending change. Previous code
+can read this schema but ignores new edge aliases, so rollback may narrow lookup
+coverage for newly imported relationships. Authoritative human sources remain
+unchanged. This run imports no new production human observations. Research
+candidate manifest and temporary graph are erased after rejection. Content-free
+receipts retain existing0700/0600,seven-day manual retention/withdrawal cleanup.

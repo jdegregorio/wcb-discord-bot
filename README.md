@@ -178,6 +178,15 @@ gap, so a closing qualification cannot silently disappear behind a partial quote
 This changes reply rendering only; native intake bounds remain unchanged. It does
 not resolve the separate historical speaker-attribution synthesis issue.
 
+## Shared concept lookup aliases (2.26.8)
+
+Adding a reviewed memory to a shared concept preserves earlier lookup aliases.
+Each new alias belongs to its reviewed relationship; current supporting evidence
+must validate before that alias can retrieve shared neighbors. Replacement,
+retirement, correction and expiry can remove a route without erasing other routes.
+Legacy node aliases remain a read fallback. Already overwritten legacy aliases
+need source-reviewed reimport. The existing result/source/freshness bounds remain.
+
 ## Bounded connected recall (2.26.0)
 
 Relevant memory growth retains up to four complete observations and five unique
