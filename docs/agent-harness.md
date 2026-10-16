@@ -1,72 +1,56 @@
 # Trubot agent harness
 
-2.27.0 H77 is deployed;2.27.1completes the observed own-history boundary. Ordinary
-recognized follow-ups retain one complete immediate human setup for abstract lookup.
-Explicit requester-history questions retain only that authenticated human's current
-conversation/focus rows, excluding old bot answers, peers and detached references.
-The original request and source checks remain authoritative. Four matched private
-Discord posts reproduce borrowed bot history in both baseline cases and correct
-both with the candidate, including a retained fictional same-author premise.
-All six feature gates pass:1,301tests/96.94%coverage/31typed modules/build.2.27.1
-release and fresh installed gateway acceptance follow. Broader fidelity is unproven.
-[Both planning phases and actual limits](trubot-evolution/evaluations/2026-10-16-memory-continuity-study.md).
+2.27.0 / PR #129 restores abstract lookup during recognized immediate follow-ups;
+2.27.1 / PR #130 completes authenticated requester-history context. All six feature and
+actual merged gates plus protected PR/main CI pass: 1,301 tests/96.94% coverage/31 typed
+modules/build. 2.27.1 images/deployment and fresh gateway 10/11 core cases are verified.
+[Research and actual limits](trubot-evolution/evaluations/2026-10-16-memory-continuity-study.md).
 
-Native factual packets can vary under bounded fresh reads and safely suppress a draft,
-observed before and after H77. H78 root-cause/verification scheduling is unresolved;
-preserve the final guard. This materially affects delivery and takes diagnostic
-priority before more population. Then qualified applicability/human-held-out benefit,
-linked native/original pixels, selective skills/tools and generated Michigan U.P.
-aurora/trail-camera scenes with short captions and generated provenance. H66 remains
-open, and new material privacy/grounding evidence can change order again.
+Runtime remains standard gpt-6-luna Responses/store=false with bounded recent
+conversation, verified source/graph memory, author binding and up to two ephemeral
+image inputs. One shared optional quality attempt handles repetition or ordinary
+reply length. Every attempt uses the existing spending ledger; there is no new
+provider pass, tool/skill loader, service or schema in this increment.
 
-Earlier 2.26.8 is deployed via [PR127](https://github.com/jdegregorio/wcb-discord-bot/pull/127).
-H76 stores aliases on each reviewed observation-concept relationship. Shared memory
-growth preserves earlier lookup routes; current alias ownership must validate before
-neighbors load. Legacy node aliases are read fallbacks. Replacement/retirement/source
-change/expiry remove a route without losing other routes. Whole transitive conflicts,
-four observations/five unique sources and64-observation freshness ceiling remain.
-SQL reads only alias projections for matching; there is additional bounded local
-work, no schema migration, provider pass or service. Already lost legacy aliases need
-source-reviewed reimport. Previous code ignores new edge aliases after rollback.
+A recognized topic-free follow-up can use one complete immediate human setup of at
+most600 characters as its retrieval query. The original request still governs intent and
+presentation. Explicit new topics, intervening human turns, oversized/clipped setup,
+bot answers, memory rows and detached references cannot create continuity. It is
+one-hop lookup, not unrestricted semantic conversation memory.
 
-Actual private handler/installed synthetic import and lifecycle checks pass, provider0.
-All24production alias queries match baseline and probes leave graph bytes/status
-unchanged. One small serial comparison sums92.62 ms baseline/122.88 ms candidate across
-24 queries; no speed or general scale claim. All feature/merged gates/CI/images pass:
-1,252 tests/96.92% coverage/31 typed modules/build and installed31source hashes match.
-Fresh normal gateway8/8 core cases, seven posts/one actual recipient abstention;
-humor modest, abstract wording slightly stiff. No general character gain measured.
-[Both phases](trubot-evolution/evaluations/2026-10-15-emotional-memory-study.md),
-[installed evidence](trubot-evolution/evaluations/2026-10-15-concept-alias-release.json).
+Discord conversion retains authenticated human author IDs as ephemeral metadata,
+including visual focus. IDs are excluded from provider serialization and repr.
+Explicit own-history requests retain only that focus author's conversation/current
+focus rows. Prior bot answers, peers and detached references cannot establish the
+requester's history. Current same-author statements and fictional premises remain
+usable. Source retrieval still distinguishes Andrew's authored history from another
+speaker's own history; development messages never become Andrew learning evidence.
+Ordinary conversation retains peer and bot context for humor and continuity.
 
-Runtime remains standard gpt-6-luna Responses/store=false, bounded current history,
-verified source/graph memory, author binding and up to two ephemeral image inputs.
-One shared optional quality attempt handles repetition or ordinary reply length;
-all provider attempts use the existing spending ledger. Private memory is revalidated
-before a quality retry and after generation immediately before publication. Changed,
-withdrawn, unavailable or differently attributed packets discard the draft without
-another generation. Final check and Discord send are not an atomic transaction.
+Private source/scope is revalidated before quality retry and immediately before
+publication. Changed, withdrawn, unavailable or differently attributed packets
+suppress a draft without another generation. Final check and Discord send are not
+atomic. Fresh native packet coverage can differ under bounded reads; this can safely
+suppress valid factual drafts. H78 root cause/scheduling remains unresolved and takes
+diagnostic priority. This increment never weakens that final safety boundary.
 
-The graph retains one qualified value abstraction and existing literal observations.
-No new human observation is retained by this run. H74 emotional population is rejected:
-opportunities6/6 each, controls6/6 each, no gain;H72 humor population remains rejected.
-Prioritize applicability and candidates tied to a demonstrated baseline deficit,
-then broader linked native/original visual coverage and selective tools/generated
-Michigan U.P. aurora/trail-camera scenes. H66 contextual synthesis remains unresolved;
-a fresh material grounding/privacy failure moves it ahead. No external tool or
-selectively loaded skill exists in runtime yet. Generated scenes remain exploratory.
+Qualified abstract observations retain conditions, limits, support/contrary evidence
+and source lifecycle. One qualified value abstraction remains; no new human observation
+or humor population is imported. H72/H74 cohorts stay rejected. Source text supports
+audit/correction; ordinary abstract guidance omits competing raw pattern voice/audit
+counts. Unknown dates stay internal; ordinary recall uses natural language.
 
-Native setup captures are bounded content-free dependencies. Automatic native patterns
-stay closed, target-only study payloads unchanged; their specific semantic peer-transfer
-prerequisite remains. Peer/bot/development text cannot establish Andrew's beliefs or
-allow commands/configuration/access. Source text supports audit/correction; ordinary
-abstract projection omits competing raw pattern voice and audit counts. Ordinary recall
-uses natural language, source date uncertainty remains internal and authoritative.
+Native setup is bounded and incomplete; original pixels, linked threads/replies and
+broader peer history remain gaps. Content-free dependencies do not open the specific
+automatic native semantic peer-transfer gate. Source text, peer claims, bot prose,
+quoted material and development context cannot authorize access or establish Andrew's
+beliefs. Selective skills/tools and generated Michigan U.P. aurora/trail-camera scenes
+remain exploratory, requiring demonstrated timing/context benefit and budget tests.
 
-Validation clients set distinct ephemeral readiness paths before construction and use
-HTTP login only, no second gateway/development learning. Private refs/counts/hashes/
-grades use0700/0600 and existing seven-day manual retention/withdrawal cleanup. No raw
-replies or derived personal summaries are smoke artifacts. Keep bot identity, private
-scope, source lifecycle, model/pacing/intake, shared18/2/20 guard and six fresh daily
-Sol/xhigh runs/notifications unchanged. [Plan](trubot-evolution/plan.md) and
-[backlog](trubot-evolution/backlog.md) hold acceptance, dependencies and uncertainty.
+Validation clients set distinct ephemeral readiness paths before construction and
+use HTTP login without a second gateway. Private test IDs/counts/hashes/grades use
+0700/0600 and existing seven-day manual retention/withdrawal cleanup, never raw replies
+or derived human summaries. Keep bot identity, runtime allowlist/no DMs, owner-only
+private development recall, source lifecycle, model/pacing/intake,USD 18/2/20 guard and
+six fresh daily Sol/xhigh runs/notification preference. [Plan](trubot-evolution/plan.md)
+and [backlog](trubot-evolution/backlog.md) hold the ordered next increments.

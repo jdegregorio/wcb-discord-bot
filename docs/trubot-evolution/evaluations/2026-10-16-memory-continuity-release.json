@@ -1,0 +1,196 @@
+{
+  "run": "2026-10-16 01:00 America/Los_Angeles",
+  "base_commit": "cd86e67b44b728979850dbdbc0960568915dbb92",
+  "runtime_release": "2.27.1",
+  "runtime_commit": "efd79c78582bdf3f00d062a3ff1efac886cdefb2",
+  "runtime_prs": [
+    "https://github.com/jdegregorio/wcb-discord-bot/pull/129",
+    "https://github.com/jdegregorio/wcb-discord-bot/pull/130"
+  ],
+  "release_url": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.27.1",
+  "image_index": "sha256:a8928eb34e2c970cae8659f2bff88f49d5b8b6dd7d77c945082b57809da41f47",
+  "architecture_digests": {
+    "amd64": "sha256:e9ada637c319816a8eef0c55dcf7544266516e8a555d266476e179c1ba0955e1",
+    "arm64": "sha256:bdcc6fac9ba68a88a835ac44476e9c1ecc3f69ff74ac9536fd0dd1d48f44e9d4"
+  },
+  "previous_release": "2.27.0",
+  "previous_index": "sha256:21b5fb2ff2092bc0bc6189ce8f76a7930dd71a10d980491e18f369eeb23b54e5",
+  "quality": {
+    "feature_and_actual_merged_gates": true,
+    "tests": 1301,
+    "coverage_percent": 96.94,
+    "typed_modules": 31,
+    "installed_source_hashes": 31,
+    "required_pr_ci": [
+      38872080815,
+      38874277172
+    ],
+    "required_main_ci": [
+      38872321002,
+      38874480876
+    ],
+    "image_ci": [
+      38872581428,
+      38874874296
+    ],
+    "protected_merge_bypassed": false
+  },
+  "research": {
+    "humor_windows": 22,
+    "humor_exports": 7,
+    "humor_target_grouped_occurrences_with_overlap": 23,
+    "humor_context_grouped_occurrences_with_overlap": 43,
+    "targeted_windows": 8,
+    "targeted_exports": 3,
+    "targeted_target_grouped_occurrences_with_overlap": 9,
+    "targeted_context_grouped_occurrences_with_overlap": 15,
+    "original_pixels_interpreted": false,
+    "new_human_observations": 0,
+    "abstract_opportunity_packets": {
+      "baseline": 1,
+      "candidate": 3,
+      "cases": 3
+    },
+    "main_matched_pairs": 9,
+    "main_actual_posts": 18,
+    "source_heldout_pair_abstract_hits": [
+      0,
+      0
+    ],
+    "source_heldout_fidelity_improved": false,
+    "ownership_matched_cases": 2,
+    "ownership_baseline_passes": 0,
+    "ownership_candidate_passes": 2,
+    "ownership_actual_posts": 4,
+    "single_evaluator": true,
+    "general_character_or_humor_gain_measured": false
+  },
+  "installed": {
+    "version_revision_hashes_match": true,
+    "healthy": true,
+    "restarts": 0,
+    "abstract_handler_cases_passed": 3,
+    "abstract_handler_cases": 3,
+    "installed_probe_provider_calls": 0,
+    "qualified_patterns": 1,
+    "private_owner_membership_scope_verified": true,
+    "primary_ready_after_validation_close": true,
+    "no_second_gateway": true,
+    "schema_migration": false,
+    "new_service": false,
+    "rollback_or_data_restore": false
+  },
+  "normal_gateway": {
+    "initial_2_27_0_passes": 4,
+    "initial_2_27_0_cases": 6,
+    "final_2_27_1_passes": 10,
+    "final_2_27_1_cases": 11,
+    "final_posts": 9,
+    "recipient_abstentions": 1,
+    "native_fact_safe_source_discards": 1,
+    "ownership_failure_fixed": true,
+    "same_author_fictional_premise_retained": true,
+    "runtime_provider_attempts": 15,
+    "existing_quality_refreshes": 4,
+    "ordinary_recall_metadata_disclaimer": false,
+    "original_provider_payload_captured": false,
+    "cases": [
+      {
+        "case": "setup",
+        "pass": true
+      },
+      {
+        "case": "followup",
+        "pass": true
+      },
+      {
+        "case": "baseball",
+        "pass": false
+      },
+      {
+        "case": "past",
+        "pass": true
+      },
+      {
+        "case": "date",
+        "pass": true
+      },
+      {
+        "case": "own",
+        "pass": true
+      },
+      {
+        "case": "humor",
+        "pass": true
+      },
+      {
+        "case": "care",
+        "pass": true
+      },
+      {
+        "case": "fictional_setup",
+        "pass": true
+      },
+      {
+        "case": "fictional_own",
+        "pass": true
+      },
+      {
+        "case": "recipient",
+        "pass": true
+      }
+    ]
+  },
+  "post_audit": {
+    "allowed_league_channels": 3,
+    "latest_messages_per_channel": 100,
+    "window_days": 14,
+    "target": 5,
+    "peer": 8,
+    "older_bot": 3,
+    "fresh_spontaneous_bot": 0,
+    "denied_channels": 0
+  },
+  "health_window": {
+    "errors": 0,
+    "startup_warnings": 2,
+    "reply_failures": 0,
+    "disconnects": 0,
+    "study_pauses": 0,
+    "source_discards": 1,
+    "short_window_not_general_error_rates": true
+  },
+  "usage": {
+    "run_provider_attempts": 49,
+    "run_estimated_usd": 0.010771165,
+    "maintenance_attempts": 25,
+    "maintenance_estimated_usd": 0.00295236,
+    "runtime_attempts": 24,
+    "runtime_estimated_usd": 0.007818805,
+    "new_unsettled_attempts": 0,
+    "covered_month_attempts": 1973,
+    "covered_month_estimated_usd": 0.32880614,
+    "unchanged_old_unsettled_attempts": 1,
+    "monthly_limits_usd": [
+      18,
+      2,
+      20
+    ],
+    "estimates_are_billing": false,
+    "pre_guard_spend": "unknown"
+  },
+  "privacy": {
+    "raw_human_or_response_text_retained_in_smoke_artifacts": false,
+    "derived_human_observations_published": false,
+    "development_learning": false,
+    "content_free_private_receipts": true,
+    "ephemeral_author_ids_excluded_from_provider_and_repr": true,
+    "seven_day_manual_retention_and_withdrawal": true
+  },
+  "limits": [
+    "Native fresh-packet coverage can vary and suppress supported factual replies; H78 root cause remains unresolved.",
+    "One related source-held-out discussion remains weak in both arms; no independent human evaluator.",
+    "No measured general character fidelity or 2-3x humor gain.",
+    "Full native peer/thread/reply/original-pixel coverage and selective tools/generated scenes remain roadmap work."
+  ]
+}
