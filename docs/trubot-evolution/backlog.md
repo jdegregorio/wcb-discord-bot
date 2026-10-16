@@ -1,102 +1,65 @@
 # Prioritized Trubot backlog
 
-H76 is this run's selected enabling correction: shared-concept imports retain earlier
-reviewed lookup aliases on evidence-owned relationships. Legacy reads remain available;
-invalid or retired alias evidence cannot activate current neighbors. No new human trait,
-provider pass, model or schema. H74 emotional population is rejected after matched
-opportunity6/6each and controls6/6each. The actual private handler reproduces H76 before
-implementation, provider0. Engineering, release and installed verification follow.
+H76 is complete in2.26.8/[PR127](https://github.com/jdegregorio/wcb-discord-bot/pull/127):
+reviewed aliases remain attached to current observation-concept relationships.
+Actual private handler reproduces/fixes lost lookup, retirement and source removal;
+all 24 existing production alias queries match. All gates/CI/images pass:1,252 tests,
+96.92% coverage. Fresh normal gateway8/8 core cases, without a general fidelity claim.
+[Study](evaluations/2026-10-15-emotional-memory-study.md), [installed evidence](evaluations/2026-10-15-concept-alias-release.json).
+No current production shared concept exists; this is a validated enabling correction.
 
+H74 emotion population is rejected: opportunity6/6 each and controls6/6 each, no added
+pass. H72 humor population stays rejected. Do not roll out the same cohorts or add
+more guidance without a demonstrated baseline deficit and independent held-outs.
 
-2.26.7 deployed via [PR125](https://github.com/jdegregorio/wcb-discord-bot/pull/125).
-H73 requires conditional, separated-source qualification for every pattern domain
-at import and again at lookup, describe and sweep. Actual private Discord handler:
-baseline admits the unqualified synthetic pattern; installed code rejects the
-import and excludes a restored legacy fixture. Qualified memory remains usable.
-All six feature/merged gates, CI and both images pass: 1,234 tests, 96.94% coverage.
-Fresh normal gateway passes 7/8 strict cases, with unsupported broad-year inference
-still open; current old/new graph packets match for that graph-bypassing route.
-H72 population is rejected: conservative final humor scores 6/7 in each arm, with
-no clear gain. No new human trait or provider pass ships. Qualified population is
-next, then applicability/care/humor, linked native/original pixels and selective
-tools/generated U.P. scenes. [Study](evaluations/2026-10-15-abstract-humor-study.md) and [installed evidence](evaluations/2026-10-15-abstract-humor-release.json).
+1. **H64/H48/H21/H28 applicability and useful abstractions, exploratory.**
+   Evidence: H72/H74 no incremental gain, sparse qualified graph, slightly stiff
+   fresh abstract wording and modest invited humor. Benefit: fitting emotional
+   reactions, useful values/relationship abstractions and fresh comic timing.
+   Rationale: study the actual reply gap so additional memory changes behavior
+   usefully. Dependencies: attributed separated episodes, contrary contexts,
+   independent held-outs, current source lifecycle and original pixels when needed.
+   Acceptance: conditional scoped memory improves the declared gap without lost
+   controls, invented motives/preferences/history or repeated bits; demonstrate
+   matched replies and real Discord. Confidence unresolved beyond retained H62.
+   Operating impact: existing private graph and shared maintenance allowance;
+   no new provider pass/service selected. Keep creative TJ amplification separate
+   from claims about the human's actual habits. Legacy qualification/review remains.
+2. **Broader linked native and visual history, enabling.**
+   Evidence: target-only recent intake and bounded ephemeral setup, incomplete
+   threads/peers/original pixels. Benefit: explain episodes and changing views
+   without guessing. Dependencies: authenticated readable scope, bounded ingestion,
+   provenance, correction/deletion/withdrawal and explicit storage recovery.
+   Acceptance: honest coverage, attributed linked context and original-pixel
+   inspection; meaningful held-outs before native semantic peer transfer opens.
+   Confidence high for coverage gap, reply benefit unmeasured. Operating impact:
+   bounded reads/local volume; any future vision uses the existing maintenance ledger.
+3. **H61 selective skills/tools and generated outdoor scenes, exploratory.**
+   Evidence: requested modern harness and Michigan U.P. aurora/trail-camera themes;
+   no demonstrated new-harness advantage. Benefit: relevant gathered context and
+   well-timed generated pictures with short natural captions. Dependencies:
+   source-backed timing/sharing study, current primary docs, bounded prototypes,
+   generated provenance and user-visible failure/abstention behavior. Acceptance:
+   matched contextual benefit, clean tool failures, measured latency/cost within
+   USD 20 month and actual Discord. Confidence unresolved; no new paid service chosen.
+4. **H66 contextual historical synthesis, unresolved reliability.**
+   Evidence: intermittent prior peer/polarity/date failures and rejected remedies;
+   fresh baseline and installed historical sample passes here. Benefit: preserve
+   who meant what and supported uncertainty in natural recall. Dependencies: new
+   source-linked comparison on independent human held-outs. Acceptance: no peer
+   promotion, negation/conditional reversal, fabricated date or routine machinery
+   caveat; preserve setup/humor and recipient controls. Defect established,
+   correction unresolved. Shared ledger; no additional runtime planner selected.
+   Move ahead for a fresh material grounding or privacy failure.
 
-H71 source publication coherence is deployed in 2.26.6/PR123. All gates/CI/images
-pass; installed guards 5/5, fresh normal gateway 8/9 with weak invited humor open.
-[Installed evidence](evaluations/2026-10-15-reply-source-freshness-release.json). [Research and both phases](evaluations/2026-10-15-reply-source-freshness-study.md).
-H70 annotation is rejected after contrary human contexts, with no total measured
-benefit and two unsupported candidate interpretations. No new persona trait is retained.
+Priorities change because H72/H74 reject plausible but unhelpful guidance and H76
+resolves a concrete growth prerequisite. A reproduced baseline deficit or new
+independent gain can reopen population; vendor claims or ingestion success cannot.
+Preserve all scope/privacy/source/native-gate, model/pacing/intake,18/2/20 budget,
+six-run schedule and notification invariants. [Plan](plan.md), [progress](progress.md)
+and [research](research.md) retain the long-term direction and actual evidence.
 
-0. **H76 shared concept alias provenance, selected enabling correction.**
-   Evidence: actual handler synthetic lookup disappears after shared concept import;
-   baseline regressions4fail/7pass. Benefit: abstract memory growth preserves prior
-   discovery paths. Dependencies: current graph/source validation. Acceptance: import/
-   restart/shared traversal, alias replacement/retirement/edit/delete/expiry, legacy
-   compatibility, conflict completeness and64-source-check bound. Validate fixtures,
-   all gates/CI, installed Discord handler and normal gateway. Confidence high for
-   boundary behavior; no measured personality gain. Local bounded reads, no provider
-   or infrastructure cost. Retire this item after deployed validation.
-1. **H48/H21/H28 qualified abstract population/legacy review, enabling/exploratory.**
-   Evidence: one current conditional abstraction, sparse reviewed graph, fresh
-   human rule-question and contrary episodes. Benefit: useful values, humor and
-   relationship mechanisms rather than rote quotation. Dependencies: separated
-   supports/contrary contexts, genuine held-outs, applicability and source lifecycle.
-   Acceptance: qualified scoped memories, correction/expiry/withdrawal, matched
-   held-out and actual reply benefit without copied punchlines. Confidence unresolved
-   beyond H62. Existing private graph/maintenance allowance, no extra service.
-2. **H64/H22/H39/H51 applicability, emotion and semantic humor, exploratory.**
-   Evidence: older mismatched enthusiasm and prior stock development care/comic
-   premises; fresh spontaneous league activity sparse. Benefit: specific warmth
-   and relevant fresh comic turns. Needs human contextual comparisons and contrary
-   emotional scenes. Acceptance: no insensitive timing, invented factual memory,
-   relentless bit or replies to others; approved playful TJ amplification and brief
-   sincerity remain. Validate held-out semantic comparisons and real Discord,
-   not keywords/length alone. Confidence unresolved; same18/2/20shared ledger.
-3. **Broader native linked and visual history, enabling.** Evidence: bounded recent
-   target-only intake/missing peers/threads/pixels. Benefit: recover setup and
-   changing relationships without guessing. Needs authenticated readable scope,
-   original pixels and provenance. Acceptance: honest coverage gaps, date/permission/
-   deletion/withdrawal integrity and held-out interpretation. Coverage gap established,
-   reply benefit unmeasured. Bounded storage/reads; vision uses maintenance ledger.
-4. **H61 selective tools/skills and generated outdoor scenes, exploratory.**
-   Evidence: requested modern harness and sharing themes; no tested new harness
-   advantage. Benefit: relevant context and well-timed Michigan U.P. aurora/trail
-   camera pictures with short captions. Needs source-backed timing/sharing, current
-   primary technology docs and bounded prototypes. Acceptance: useful selective
-   context, clean failure/abstention, generated provenance, no factual photo claim,
-   measured latency/cost withinUSD20and actual Discord. No paid service selected.
-5. **H66 contextual historical synthesis, unresolved reliability candidate.**
-   Evidence: prior actual question/peer/polarity failures, a passing fresh gateway
-   baseline, rejected H70 and earlier packet/reasoning/history remedies. Benefit:
-   memories preserve who meant what. Needs new source-linked planning/verification
-   comparison on independent human held-outs. Acceptance: no peer promotion,
-   negation/conditional reversal, date invention or routine machinery disclaimer;
-   needed humor/setup and recipient controls survive. Defect established but
-   correction unresolved. Shared ledger; no new runtime pass selected.
-
-After H71, abstract population, applicability/care/humor, broader native/visual
-coverage, tools/generated scenes. A fresh material grounding/privacy failure
-reorders work. Native semantic peer-transfer permission remains unresolved;
-archive research does not open that gate. Preserve source lifecycle/private scope,
-model/pacing/intake/six-run schedule and notifications.
-
-Completed foundation: H69/2.26.5ordinary authored recall; H62/H62a2.25.0reviewed
-preview/one qualified abstraction; H63/2.26.0bounded whole graph selection;
-H68/2.26.2complete stored passages/version consistency. [Progress](progress.md)
-retains all validation limitations and release evidence.
-
-
-Completed H71/2.26.6: final source/scope check, supported enabling correction. Evidence:
- source correction/removal/withdrawal fixtures and real private Discord synthetic
- stale post. Benefit: private memories honor changed sources while generation
- is in flight. Dependencies: current bounded memory refresh and author binding.
- Acceptance: no post after changed/unavailable/withdrawn context or author scope;
- stable memory posts once, no-memory jokes and abstentions stay intact, no extra
- provider call. Validate all four modes, real source fixtures, exact candidate
- comparison, full gates and fresh installed gateway. Defect confidence high;
- unavoidable final-check/send interval remains. Operating impact: one extra
- existing bounded source refresh for a memory-bearing draft, no paid service.
-
-Installed 5/5 source guards and 22 new regressions support this boundary; normal gateway
-8/9 strict cases leaves stronger humor unvalidated. No extra provider pass or new
-human memory. Final check/send remains non-atomic.
+Completed foundation: H62/H62a reviewed preview/qualified abstraction;H63 bounded
+whole conflict selection;H68 complete authored passages;H69 authored recall;
+H71 final publication source/scope check;H73 all-domain pattern qualification;
+H76 evidence-owned aliases, including atomic duplicate-relationship rejection.

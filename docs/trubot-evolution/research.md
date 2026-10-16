@@ -2514,11 +2514,22 @@ candidate7/7; rejection unchanged under both scores. No human pattern is importe
 ## 2026-10-15 21:00: H74 rejected, H76 selected
 
 [Both phases, source coverage, locked criteria and experiment results](evaluations/2026-10-15-emotional-memory-study.md).
-H74 conditional emotion population adds no opportunity pass (6/6each); controls6/6each.
-24actual handler attempts/22posts plus two recipient abstentions,29provider attempts
+H74 conditional emotion population adds no opportunity pass (6/6 each); controls6/6 each.
+24 actual handler attempts/22 posts plus two recipient abstentions,29 provider attempts
 including five existing quality refreshes. All paired source/history hashes survive;
 recipient required isolated enum/history-page repairs. No new human observation retained.
 H76 reproduces a shared-concept alias overwrite in the actual private Discord handler,
 provider0. Preserve reviewed aliases on current evidence-owned relationships before
 larger abstract population. Native/pixel and selective tools/generated U.P. themes stay
 active; H66 contextual synthesis unresolved. No general character-gain claim.
+
+H76 final:2.26.8/PR127/c380d79/index3d1513c5 is healthy, all gates/CI/images and
+31 installed hashes pass. Installed real private handler validates alias import/
+retirement/source removal, provider0; existing24aliases match, no current shared
+concept. Normal gateway8/8 core,7 posts/1 abstention,8 attempts/0 quality refreshes.
+Modest humor/slightly stiff abstract wording/sparse spontaneous traffic limit fidelity
+claims. No new human observation. H74 remains rejected; prioritize applicability and
+qualified candidates tied to measured gaps, then native/original pixels and selective
+tools/generated U.P. scenes. H66 remains open. Run39attempts/USD 0.01208368 estimated,
+covered OctoberUSD0.318034975, unchanged18/2/20 guard/one old unsettled. No raw or
+personal derived data published. [Installed evidence](evaluations/2026-10-15-concept-alias-release.json).

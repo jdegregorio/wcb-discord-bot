@@ -4160,15 +4160,71 @@ Base28bbbc5f071ae5a682a5452acc41b78c1a86356c, unique feature branch in new manag
 verified checkout after successful origin/main fetch. An earlier empty cached checkout
 was archived after an initial sandbox fetch failure; no primary edit/reset/stash.
 No unfinished evolution PR. [Both research phases](evaluations/2026-10-15-emotional-memory-study.md).
-H74 opportunity6/6each, controls6/6each, rejected. Actual handler H76 synthetic baseline:
+H74 opportunity6/6 each, controls6/6 each, rejected. Actual handler H76 synthetic baseline:
 lookup true before shared concept import, false after; earlier memory absent. Provider0,
-production learning unchanged. Initial11regressions4fail/7pass after fixture correction.
+production learning unchanged. Initial11regressions4fail/7 pass after fixture correction.
 Relationship alias provenance and current owner validation implemented; source lifecycle,
 legacy reads/conflicts/result/freshness bounds retained. Full gates/release pending.
 
-H76 feature all six gates pass:1,252tests/96.92%branch coverage/31typed modules/build.
-18new meaningful regressions. Exact candidate source in actual private Discord handler
+H76 feature all six gates pass:1,252 tests/96.92% branch coverage/31 typed modules/build.
+18 new meaningful regressions. Exact candidate source in actual private Discord handler
 preserves earlier lookup after shared import, provider0. Disposable stores erased,
 production learning unchanged; distinct readiness path before validation construction.
-H74 final controls6/6each;24handler invocations/22posts/29provider attempts including
+H74 final controls6/6 each;24 handler invocations/22 posts/29 provider attempts including
 five existing quality refreshes. Rejected manifest and temporary graph erased.
+
+### Final installed H76 result
+
+[PR127](https://github.com/jdegregorio/wcb-discord-bot/pull/127), tested head
+b34bdd7438054a85cd811f0641443a7e79d9553a, merged/runtime
+c380d79ba411252053df93d0094f101190ec2293. Quality PR38849838873/main38850018817
+and image38850197616 succeed. All six feature/actual merged gates pass:1,252 tests,
+96.92% branch-inclusive coverage/31 typed modules/build. Release2.26.8/index
+3d1513c564a807db1d9e0b6aec29cded79a719ce35c7ebb39e8cba58a74527c3,
+AMD64 cf0890d9bef5a0ce84636de0b428b901bead24a2b1510e0de46267188d6797b3,
+ARM64 59d60fb7e3ba4e6d98e600215c326e7eb7f1de87298224333da226052a9dca20.
+Both architectures verified before scoped transaction on reverified pi5/aarch64/
+Ubuntu24.04.4; running digest/version/revision/all 31 source hashes match. Healthy/
+Discord ready/0 restarts, prior2.26.7/index21d5b5e4 retained, no rollback/data restore.
+
+Installed actual private handler validates shared import, alias retirement, other
+route preservation and source removal, provider0; disposable invented stores erased.
+All24current alias queries match baseline, graph bytes/status unchanged. No current
+production shared concept exists; this is an enabling correction. Legacy overwritten
+aliases need reviewed reimport; previous code ignores new edge aliases after rollback.
+One qualified value pattern remains, no new human population/model/provider pass/schema.
+Owner-only scope, pinned human, source lifecycle and native semantic gate remain.
+Distinct readiness before validation construction, HTTP only/no second gateway;
+primary heartbeat survives closure and normal gateway answers afterward.
+
+Fresh serial owner UI:8/8 core semantic cases,7 posts/1 confirmed abstention,8 runtime
+attempts/0 quality refreshes. Historical content/date restraint/baseball/abstraction/
+requester ownership/modest invited TJ humor/care/recipient controls pass. No routine
+metadata caveat; slightly stiff abstract wording and modest humor remain findings.
+No general character gain or measured2-3 xamplification. Pre-release historical gateway
+sample also passes; source replay checked, original payload uncaptured. H66 remains
+unresolved beyond this sample. Sparse league audit unchanged:5 target/8 peer/3 olderbot,
+0 fresh spontaneous/0 denied, latest100per three approved channels/14 days. No fresh
+ambient/reaction fidelity measurement. Study30main windows/3 exports,30 target/59 peer
+grouped occurrences with overlap plus 6 targeted radius2windows; no original pixels
+interpreted. One evaluator/no independent human rating/research-filled dev history.
+
+Run39settled attempts/USD 0.01208368 estimated:29 maintenance/USD 0.009273685,
+10 runtime/USD 0.002809995. Five maintenance existing quality refreshes and one
+pre-release runtime refresh; installed normal gateway0refreshes. Covered October
+USD 0.318034975/1,924 attempts/one unchanged old unsettled reservation.18/2/20 guard
+intact, not billing, pre-guard spend unknown. Short installed logs0errors/failures/
+discards/study pauses/disconnects/0 restarts,2 startup warnings; no general rate claim.
+Private content-free metadata uses0700/0600 and existing seven-day manual retention/
+withdrawal cleanup. No raw sources, generated answers or personal derivations in Git
+or smoke artifacts. Rejected candidate/stores erased. No outstanding access blocker.
+An environment-file print was auto-review rejected; safe container metadata/status
+completed verification without printing credential values or bypassing the rejection.
+
+Plan/backlog/ROADMAP/harness now prioritize demonstrated applicability/character gaps
+and qualified candidates with added held-out benefit, then linked native/original
+pixels, selective tools/generated U.P. scenes. H72/H74 rejected cohorts are not rollout
+plans; H76 is complete. H75 stays unvalidated; H66 material grounding/privacy can
+reorder. Six fresh local 01/05/09/13/17/21 Sol/xhigh runs/notifications unchanged.
+[Full study](evaluations/2026-10-15-emotional-memory-study.md),
+[structured installed evidence](evaluations/2026-10-15-concept-alias-release.json).

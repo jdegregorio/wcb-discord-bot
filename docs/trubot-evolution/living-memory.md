@@ -1,12 +1,16 @@
 # Living memory graph
 
-H76 is this run's selected enabling correction: shared-concept imports retain earlier
-reviewed lookup aliases on evidence-owned relationships. Legacy reads remain available;
-invalid or retired alias evidence cannot activate current neighbors. No new human trait,
-provider pass, model or schema. H74 emotional population is rejected after matched
-opportunity6/6each and controls6/6each. The actual private handler reproduces H76 before
-implementation, provider0. Engineering, release and installed verification follow.
-
+2.26.8 deployed via [PR127](https://github.com/jdegregorio/wcb-discord-bot/pull/127).
+H76 keeps reviewed aliases on current observation-concept relationships, so shared
+memory growth preserves older discovery paths. Installed actual handler validates
+import, retirement and source removal, provider0; all24existing alias results match.
+All gates/CI/both images pass:1,252tests/96.92%coverage/31source hashes. Fresh normal
+gateway8/8core cases, no broad fidelity or humor-gain claim. H74 emotion population
+is rejected (6/6opportunity and6/6controls each arm), H72 stays rejected. No new
+human observation ships. Prioritize applicability and qualified candidates with a
+reproduced deficit, then linked native/original pixels and selective tools/generated
+U.P. scenes. H66 remains open. [Study](evaluations/2026-10-15-emotional-memory-study.md),
+[installed evidence](evaluations/2026-10-15-concept-alias-release.json).
 
 2.26.7 deployed via [PR125](https://github.com/jdegregorio/wcb-discord-bot/pull/125).
 H73 requires conditional, separated-source qualification for every pattern domain
