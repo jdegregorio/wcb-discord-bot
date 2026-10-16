@@ -73,9 +73,9 @@ Pre-provider setup correction: async collection fixed before any provider reques
 
 ## Results and Phase 2 selection
 
-H72 population is REJECTED for production: baseline6/7candidate7/7 humorous passes,
-only one additional pass against the locked two-pass threshold. No baseline pass
-lost. Serious/care/requester controls4/4each pass; recipient pair completed separately.
+H72 population is REJECTED for production. Conservative final semantic scores are
+baseline 6/7 and candidate 6/7. One comic gain is offset by one flat or unclear
+candidate response, failing both the two-additional-pass and non-regression criteria. Serious/care/requester controls4/4each pass; recipient pair completed separately.
 Twenty-two completed actual handler posts were retained as content-free references
 from authenticated history after a final-case mode-name error. Original runtime
 same-history assertions completed per pair; original packet hashes were not recovered.
@@ -88,7 +88,7 @@ candidate remains offline and will be removed, not imported.
 H73 qualification defect, high-confidence enabling correction: current trusted
 operator import accepts humor/style with one support and no conditional abstraction.
 A disposable synthetic archive plus actual production handler/private Discord send
-confirms the unsupported pattern enters reply context. Provider0, production memory
+confirms the unsupported pattern enters reply context. Provider 0, production memory
 unchanged. Existing schema also admits restored legacy rows without qualification.
 The mechanism bypasses the same separated-support/conditions/limits contract already
 required for behavioral domains and automatic patterns. This can let a one-off line
@@ -123,8 +123,8 @@ coverage or stronger held-out gains could change its disposition. Existing model
 
 ## Engineering validation
 
-All six feature gates pass: locked sync, format, lint, strict typing31modules,
-1,234tests/96.94%branch-inclusive coverage and2.26.7package build.45new regression
+All six feature gates pass: locked sync, format, lint, strict typing31 modules,
+1,234 tests/96.94%branch-inclusive coverage and2.26.7package build.45 new regression
 cases exercise imports, restored missing/malformed qualification, duplicate/shared
 support, unrelated valid literal memory, sweep/backups and qualified legacy domains.
 The initial35case baseline run has24failures/11passes, establishing the defect.
@@ -134,3 +134,78 @@ Recipient pair completes with two actual model abstentions, provider2; all five
 controls pass each arm.24maintenance attempts total, no quality retries. Rejected
 private manifest and temporary graph copy are removed; production graph is unchanged.
 CI, merged-main verification, immutable images and fresh installed checks pending.
+
+
+## Final installed result
+
+[PR125](https://github.com/jdegregorio/wcb-discord-bot/pull/125), tested head
+6d90d240f2f90ee267c2dff20aa5957ee989c963; merged/runtime commit
+fad112b6f467b9f09a377b6032540116acefbfc0. PR CI38828539404, main CI38828742781
+and image CI38828929526 succeed. Feature and actual merged gates pass: 1,234 tests,
+96.94% branch-inclusive coverage, 31 typed modules and 2.26.7 build.
+
+Immutable [v2.26.7](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.26.7)
+index21d5b5e4aa8827d51dda196ac6b0e56cbcefbade9e89368750756d83b0c195e4;
+AMD64 8520b02ea6037ac29ea7c442b21b1463bd3daeb247da7f43908b157fe87e203e;
+ARM64 b54f28637a8559a83659fb54bc48e1dde9608779e0d14b3570346e68e4d0ea3e.
+Both architectures are verified before the existing scoped lock/pull/health/rollback
+transaction on reverified pi5/aarch64/Ubuntu24.04.4. Deploy permissions suffice;
+no sudo or unrelated service change. Running digest/OCI version/runtime revision
+and all 31 installed source hashes match. Healthy/ready, zero restarts; prior
+2.26.6/index08fab9916c1a5d07a7dcd254551637e6d29548e473f60ef6ecf0150cf34247f6
+retained. No rollback or source/spending-data restoration.
+
+Installed production-handler synthetic test: new unqualified import rejected,
+restored unqualified legacy fixture excluded from actual reply context. Provider 0;
+disposable invented stores erased, production learning unchanged. Existing qualified
+pattern and literal memory, private guild membership/owner/permissions and unrelated/
+wrong-guild/nonowner exclusion pass. Code probe leaves graph bytes/status unchanged.
+Distinct readiness paths precede client construction, HTTP only/no second gateway;
+primary heartbeat remains ready after closure and normal gateway answers afterward.
+
+Eight fresh serial owner UI questions exercise the normal gateway: seven posts,
+one confirmed recipient abstention, eight runtime requests, no quality refresh.
+Strict semantic result 7/8: baseball, exact-date restraint, retained abstraction,
+requester ownership, invited modest TJ comic analogy, sincere care and restraint pass.
+Broad past recall uses supported content but implies an unsupported calendar year:
+FAIL. Unknown-date metadata and export hints cannot establish that date. Current
+source-packet replay is byte-equal with baseline and installed graph code, with no
+graph guidance selected; original gateway provider input was not captured. This
+supports keeping the separate graph qualification correction, not a claim that
+year grounding is solved. No routine storage/date disclaimer. Comic quality remains
+modest, not measured amplification. One evaluator and research-filled dev history
+limit naturalness inference. No fresh reaction/ambient fidelity measurement.
+
+The H72 comparison's preliminary candidate score was 7/7. Conservative final review
+marks one borderline response flat/unclear under the original added-comic-turn
+rubric: final baseline 6/7, candidate 6/7, one gain/one loss. The rejection is unchanged
+under either grading; no new provider run or reference rewrite. This subjective
+sensitivity is explicit, not an independent human judgment. The main contextual
+study has three additional targeted windows, two new related anchors in one episode;
+these are not independent corroboration. Private source refs remain; rejected
+manifest and temporary graph copies are removed, with no new human observation.
+
+Pre/post league audit remains5target/8peer/3olderbot/0fresh spontaneous posts,
+0denied channels. Short installed window:0errors/reply failures/disconnects/source
+discards/study pauses,2startup warnings,0restarts. Sparse activity and short logs
+cannot establish broad fidelity or error rates. Run: 33 settled requests estimated
+USD 0.01034458:24maintenance/USD 0.00730685,9runtime/USD 0.00303773. Covered October
+USD 0.305951295 / 1,885 attempts/one unchanged old unsettled reservation. Existing
+18/2/20guard; estimates are not billing, pre-guard spend unknown. No new service.
+
+Private smoke artifacts:16 content-free files under0700/0600, existing seven-day
+manual retention/withdrawal cleanup. Only refs/counts/hashes/grades, no raw source,
+answer or derived human-summary artifacts. No change to model, schedule, intake,
+participation, native semantic gate, source lifecycle or notifications. Qualified
+population/legacy review remains next, then applicability/care/humor, linked native/
+original pixels, selective tools and generated Michigan U.P. aurora/trail-camera
+scenes. H66 contextual synthesis/year precision remains unresolved. [Structured
+installed evidence](2026-10-15-abstract-humor-release.json).
+
+
+Comparison limitations: the first eleven pairs alternate AB/BA as planned. The
+separately completed recipient pair uses AB after the harness correction; both
+arms abstain. Original per-request timing arrays were not recovered, so no latency
+comparison is claimed. The final topic alias was set before any provider result;
+the human setup was held out from support, not hidden from this evaluator. Private
+references permit source audit without retaining raw replies or rejected derivations.

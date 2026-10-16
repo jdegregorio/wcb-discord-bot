@@ -2487,7 +2487,7 @@ Run USD 0.00710109 estimate; existing spending/privacy/lifecycle constraints unc
 58private contextual windows/57anchors/seven exports,61target110peer grouped
 occurrences with overlap. Recent league audit5target8peer3olderbot0fresh. No original
 pixels interpreted. One-Codex review, no new human trait certified. H72 private
-conditional humor candidate: baseline6/7candidate7/7playful passes; serious/care/
+conditional humor candidate: final conservative6/7each; serious/care/
 requester/recipient5/5each.24accounted maintenance attempts,22actual posts/two
 abstentions; private refs recovered after final harness mode-name error, no repeats.
 Reject H72 against two-additional-pass threshold, remove offline candidate.
@@ -2500,3 +2500,12 @@ legacy support and unaffected literal memory. This is enabling correctness for
 qualified abstract growth, not measured reply-quality improvement. Full gates and
 installed acceptance pending. Roadmap retains qualified population, applicability/
 care/humor, linked native/original pixels and selective skills/generated U.P. scenes.
+
+
+H73 installed result: 2.26.7/PR125, all gates/CI/both images, 1,234 tests. Actual
+private handler excludes new/restored unqualified synthetic patterns, provider0;
+qualified memory remains. Fresh normal gateway7/8 leaves broad-year inference open;
+current old/new graph packets equal, original provider input uncaptured. H72 final
+conservative6/7each, one gain offset by one flat/unclear response, versus preliminary
+candidate7/7; rejection unchanged under both scores. No human pattern is imported.
+[Final study and limits](evaluations/2026-10-15-abstract-humor-study.md).

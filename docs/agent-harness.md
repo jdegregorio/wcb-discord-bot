@@ -1,17 +1,19 @@
 # Trubot agent harness
 
-H73 qualification correction selected for 2.26.7: every humor/style/value/emotion/
-relationship import needs a conditional abstraction and separated support. Lookup,
-describe and sweep revalidate restored rows using their stored node kind; qualified
-legacy rows without newer domain metadata remain usable. This closes a reproduced
-single-source pattern admission defect, enabling reliable abstract population.
-H72 population is rejected: matched baseline6/7candidate7/7humor falls below the
-locked two-additional-pass threshold; no private population or persona prompt ships.
-[Both phases and evidence](trubot-evolution/evaluations/2026-10-15-abstract-humor-study.md).
-Full release and installed acceptance are pending. No measured general fidelity or
-2-3xhumor gain is claimed. Existing model/intake/native gate/spending stay intact.
+2.26.7 deployed via [PR125](https://github.com/jdegregorio/wcb-discord-bot/pull/125).
+H73 requires conditional, separated-source qualification for every pattern domain
+at import and again at lookup, describe and sweep. Actual private Discord handler:
+baseline admits the unqualified synthetic pattern; installed code rejects the
+import and excludes a restored legacy fixture. Qualified memory remains usable.
+All six feature/merged gates, CI and both images pass: 1,234 tests, 96.94% coverage.
+Fresh normal gateway passes 7/8 strict cases, with unsupported broad-year inference
+still open; current old/new graph packets match for that graph-bypassing route.
+H72 population is rejected: conservative final humor scores 6/7 in each arm, with
+no clear gain. No new human trait or provider pass ships. Qualified population is
+next, then applicability/care/humor, linked native/original pixels and selective
+tools/generated U.P. scenes. [Study](trubot-evolution/evaluations/2026-10-15-abstract-humor-study.md) and [installed evidence](trubot-evolution/evaluations/2026-10-15-abstract-humor-release.json).
 
-Deployed 2.26.6/PR123 adds a final source/scope check after generation and immediately
+Prior 2.26.6/PR123 added a final source/scope check after generation and immediately
 before publication for replies with private memory. It reuses the callback used
 by optional quality refreshes. Changed, withdrawn, unavailable or differently
 attributed packets discard the draft without another generation or routine
