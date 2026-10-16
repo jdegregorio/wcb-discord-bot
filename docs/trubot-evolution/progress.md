@@ -4334,3 +4334,35 @@ Discord handler baseline0/3candidate3/3 delivery, provider0, one repeated source
 Selected source-page verification retains5sources/equal packet hashes, exact fallback,
 shared6s deadline and unchanged source/owner/withdrawal checks. No new human observation.
 22meaningful regressions, full gates/CI/merge/release/deployment/owner UI pending.
+
+
+## 2026-10-16 09:00 - H80 recent personal activity grounding
+
+Base3a00ac40db781f1d598848dd5e16feb6d462a828, fetched before a new managed worktree
+and feature/trubot-daily-20261016-0900. Primary checkout untouched. No unfinished
+project evolution PR; three unrelated dependency PRs remain. No subagents.
+
+Reconciled prior H78a: PR132 protected merge3a00ac4, PR38898442917/main38898662315/
+image38898865827success; all prior six feature/merged gates1,323tests/96.98%coverage.
+2.27.2immutable index5159b9ba336b978d5231e245a7bbe7c6c5bcd268bce9e3761c4360ac7a9443db,
+AMD64dbb94f3d66a7999ad3bb3484cb244cf7f2353c2eca2ccf763fcba0ee6b59a95d,
+ARM6445d1c3036d2ef63ccc7f91ab581decee6c662b2f485b31f63569a0e7874c97bf.
+Installed prior receipt31source hashes/two equal five-source packets/provider0,
+normal owner baseball/broad-past/exact-date responses verified. Current pi5/aarch64/
+Ubuntu24.04.4healthy0restarts, check says already2.27.2. No rollback/data restore.
+
+[Both planning phases, locked criteria and actual comparison](evaluations/2026-10-16-recent-activity-study.md).
+Source audit3league channels/latest100each/14days:5target8peer3olderbot0fresh
+spontaneous/0denied, development separated. Historical405eligible target blocks,
+11unique anchors/5exports/16overlapping radius2window visits, no pixels interpreted.
+Fresh actual owner activity question declines in third person; earlier conversation
+has absolute absence/machinery language. Controlled invented handler comparison
+reproduces the underlying source/author gap0/3baseline, candidate3/3; four comparison
+controls retained. One reserved human-held-out setup remains more elaborate than the
+actual short human response in both arms. No general fidelity/humor gain claimed.
+
+H80 /2.27.3 uses the existing bounded dated-source route for explicit factual activity
+questions and authenticated requester ownership for first-person activity. Thirty-two
+new regressions; feature all six gates1,355tests/96.98%coverage/31typedmodules/build pass.
+No new human observation, schema, service, provider pass, model, intake, pacing or
+spending pool. Full protected CI/merge/release/images/installed acceptance pending.

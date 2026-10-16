@@ -1,88 +1,50 @@
-<!-- Current run: 2026-10-16 05:00 -->
-
-2.27.2 candidate completes H78a bounded native source-page verification. Matched
-actual private Discord handler delivery improves0/3to3/3 for one repeated source
-question, provider0; this is transport reliability, not general character quality.
-[Both planning phases and locked results](evaluations/2026-10-16-native-reply-batch-study.md).
-
-Current priority: qualified abstract applicability and useful humor/emotional memory
-with independent human-held-out benefit; broader linked native/original pixels;
-selective tools/skills and generated Michigan U.P. aurora/trail-camera scenes with
-short natural captions/generated provenance. H66 stays open and material grounding/
-privacy failures can reorder. H78's reproduced transport defect has a supported
-correction; optional context can still change, and wider predictability is unmeasured.
-No additional provider pass, schema, service, learning/intake, model, pacing, guard,
-schedule or notification change. Required release/installed acceptance follows.
-
-<details>
-<summary>Prior 01:00 baseline and continuing acceptance details</summary>
-
 # Trubot evolution plan
 
-The current increment routes conversation by human topic and authenticated author.
-2.27.0 / PR #129 restores relevant qualified abstractions during recognized immediate
-follow-ups. 2.27.1 / PR #130 completes requester ownership after a real Discord contrary
-case: old bot answers cannot establish the requester's own history. Both runtime
-commits pass all six feature/merged gates and protected PR/main CI. Installed
-2.27.1 passes 10/11 core gateway cases; native factual delivery remains open. No new human observation ships.
-[Research, both planning phases and actual results](evaluations/2026-10-16-memory-continuity-study.md).
+Current run: 2026-10-16 09:00 Pacific. H80 /2.27.3 candidate closes a reproduced
+recent-activity source/author routing gap. In seven matched invented private Discord
+cases, all three activity source boundaries fail baseline and pass candidate;
+four comparison controls are retained. No new human trait or provider pass.
+[Both planning phases, method and limitations](evaluations/2026-10-16-recent-activity-study.md). Full release acceptance follows.
 
-Measured bounds: abstract opportunity packets 1/3 baseline to 3/3 candidate in three
-matched invented contexts. Two matched ownership contexts borrow bot text on baseline
-and respect authenticated human context with the patch. These are small single-evaluator
-studies, not general character fidelity or a humor multiplier. One human-held-out
-context remains weak in both arms. Native fresh packet coverage varies and can safely
-suppress a draft; H78 root cause is unresolved. Keep that guard enforced.
+Prior H78a /PR132 /2.27.2 is merged and healthy on immutable index5159b9ba,
+revision3a00ac4. Image38898865827 and31installed source hashes pass; actual post-release
+owner baseball/broad-past/exact-date replies and equal five-source packets are verified.
+That narrow transport result does not establish general reply predictability.
 
 ## Ordered next increments
 
-1. H78 native verification predictability, enabling investigation. Reproduce bounded
-   read instability under controlled timing and HTTP limits so ordinary supported
-   answers survive the final safety check. Preserve correction, withdrawal and
-   unavailable-source suppression. Diagnose before another population rollout.
-2. H64/H48/H21/H28 conditional applicability and useful abstractions tied to actual
-   values, emotional engagement, humor timing and relationship deficits. Use
-   authenticated human episodes, contrary cases and independent held-outs. H72/H74
-   cohorts remain rejected; require added benefit before adding observations.
-3. Broader native peers/replies/threads and original pixels, with honest coverage,
-   attribution, lifecycle and recovery. The specific automatic native semantic
-   peer-transfer gate stays closed until its own prerequisite passes.
-4. H61 selective skills/tools and generated Michigan U.P. aurora/trail-camera wildlife
-   scenes, with short natural captions and generated provenance. Source-backed
-   sharing/timing, current primary docs, bounded prototypes, cost and failure tests
-   precede rollout. No new runtime external tool or skill loader exists yet.
-5. H66 historical contextual synthesis remains unresolved reliability work; a fresh
-   material grounding/privacy failure changes this order. Literal quote/date lookup
-   remains secondary to useful abstractions except for material failures.
+1. Qualified abstract applicability and useful humor/emotional memory (H79/H64/H48/
+   H21/H28). Tie candidates to actual conversational deficits, separated attributed
+   episodes, contrary cases and independent human-held-out benefit. H72/H74 rejected
+   cohorts are not population plans. One qualified value memory remains in production.
+2. Broader native peers/replies/threads and original pixels with honest provenance,
+   coverage and source lifecycle. Automatic native semantic peer-transfer stays closed
+   until contextual studies and held-out qualification pass.
+3. Selective skills/tools and generated Michigan U.P. northern-lights/trail-camera
+   wildlife scenes with short natural captions and clear generated provenance (H61).
+   Study sharing/timing and original pixels; use current primary capability/pricing
+   docs and bounded baseline comparisons before selecting a new harness or service.
+4. H66 contextual historical synthesis and additional recent-activity grammar remain
+   open. New material grounding/privacy failures can reorder the list, as H80 did.
+   Literal quotes and exact dates remain secondary to useful abstractions.
 
-Priorities change because H77 repairs a demonstrated applicability route, H77a fixes
-an actual ownership error, and H78 exposes missing delivery predictability. Passing
-one recalled fact or a healthy container does not resolve these broader questions.
-A new independent benefit or material contrary result can change selection again.
-Larger harness/storage redesigns remain eligible; prefer quality and maintainability.
+H80 uses existing dated-source, requester ownership and final-publication checks so
+recent biography is grounded in the right human and period. It is a conservative
+lexical route, not a semantic classifier, complete travel history or a claim that
+Andrew has not traveled. Current known absence must remain uncertainty. No new
+schema/service/model/prompt policy, provider pass, human observation or intake.
 
-## Foundation and invariants
+Priorities changed because an actual owner conversation exposed unsupported-activity
+language, and controlled handlers then admitted undated/other-author history on that
+route. Richer abstract population still needs independent added benefit. New evidence
+of benefit or a material regression can change the next selection; harness/storage
+redesign remains eligible when the current architecture limits quality.
 
-2.25.0 reviewed preview/qualified abstraction;2.26.0 complete bounded conflicts;
-2.26.2 complete authored passages/version consistency;2.26.5 authored recall;
-2.26.6 final source/scope check;2.26.7 all-domain pattern qualification;
-2.26.8/2.26.9 evidence-owned aliases and retired fallback metadata erasure.
-PR128/2.26.9 was already merged/deployed despite stale automation memory; this run
-reverified31installed source hashes, private scope and readiness, provider0.
-
-Preserve bot identity, exact verified attribution, internal unknown dates, source
-correction/deletion/withdrawal, league intake allowlist/no DMs, owner-only development
-recall and excluded development learning. Keep creative TJ amplification distinct
-from human factual evidence, warmth/brevity/restraint, current model/pacing and the
-sharedUSD 18 runtime / USD 2 maintenance / USD 20 calendar-month guard. No added service.
-Six fresh local01:00/05:00/09:00/13:00/17:00/21:00 Sol/xhigh runs, both planning phases, managed isolation,
-required gates/CI/tested merge, immutable release/images/scoped deploy, real Discord
-and notification preference remain. [Backlog](backlog.md) and [progress](progress.md)
-record criteria, dependencies, operating impact, releases and limitations.
-
-
-[Final installed result and limitations](evaluations/2026-10-16-memory-continuity-release.json):
-2.27.1 healthy on the verified immutable digest, all31source hashes match,
-changed abstract/ownership controls pass; native factual delivery remains open.
-
-</details>
+Keep bot identity, consent/provenance/correction/deletion/withdrawal, internal unknown
+dates, league allowlist/no DMs, owner-only private development recall and excluded
+development learning. Creative TJ amplification is performance policy, not factual
+evidence about Andrew. Preserve warmth, brevity, care, contextual humor and restraint.
+Use existing volume, model/pacing and sharedUSD18runtime/2maintenance/20monthly guard.
+Six fresh local01/05/09/13/17/21Sol/xhigh runs and notification preference remain.
+[Backlog](backlog.md), [research](research.md), [progress](progress.md),
+[storage](storage.md) and [living memory](living-memory.md) preserve durable evidence.
