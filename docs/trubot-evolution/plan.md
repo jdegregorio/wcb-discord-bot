@@ -1,17 +1,19 @@
 # Trubot evolution plan
 
-H73 qualification correction selected for 2.26.7: every humor/style/value/emotion/
-relationship import needs a conditional abstraction and separated support. Lookup,
-describe and sweep revalidate restored rows using their stored node kind; qualified
-legacy rows without newer domain metadata remain usable. This closes a reproduced
-single-source pattern admission defect, enabling reliable abstract population.
-H72 population is rejected: matched baseline6/7candidate7/7humor falls below the
-locked two-additional-pass threshold; no private population or persona prompt ships.
-[Both phases and evidence](evaluations/2026-10-15-abstract-humor-study.md).
-Full release and installed acceptance are pending. No measured general fidelity or
-2-3xhumor gain is claimed. Existing model/intake/native gate/spending stay intact.
+2.26.7 deployed via [PR125](https://github.com/jdegregorio/wcb-discord-bot/pull/125).
+H73 requires conditional, separated-source qualification for every pattern domain
+at import and again at lookup, describe and sweep. Actual private Discord handler:
+baseline admits the unqualified synthetic pattern; installed code rejects the
+import and excludes a restored legacy fixture. Qualified memory remains usable.
+All six feature/merged gates, CI and both images pass: 1,234 tests, 96.94% coverage.
+Fresh normal gateway passes 7/8 strict cases, with unsupported broad-year inference
+still open; current old/new graph packets match for that graph-bypassing route.
+H72 population is rejected: conservative final humor scores 6/7 in each arm, with
+no clear gain. No new human trait or provider pass ships. Qualified population is
+next, then applicability/care/humor, linked native/original pixels and selective
+tools/generated U.P. scenes. [Study](evaluations/2026-10-15-abstract-humor-study.md) and [installed evidence](evaluations/2026-10-15-abstract-humor-release.json).
 
-2.26.6 deployed via [PR123](https://github.com/jdegregorio/wcb-discord-bot/pull/123): H71 validates private source context and authenticated author scope
+Prior 2.26.6 deployed via [PR123](https://github.com/jdegregorio/wcb-discord-bot/pull/123): H71 validates private source context and authenticated author scope
 after generation, immediately before publication. A source correction, withdrawal,
 changed access or unavailable check discards the draft without another model call.
 Actual private Discord handler comparison: baseline one stale synthetic post,

@@ -4131,3 +4131,24 @@ provider0. H73 selected as a justified prerequisite for qualified population. In
 35new regression cases:24fail on baseline,11already pass. Qualification/import/read/
 source lifecycle and legacy compatibility checks pass after the correction; full
 engineering gates/release/deployment/normal gateway acceptance pending.
+
+
+H73 final: 2.26.7/PR125/runtime fad112b6f467b9f09a377b6032540116acefbfc0 is
+healthy on immutable index21d5b5e4aa8827d51dda196ac6b0e56cbcefbade9e89368750756d83b0c195e4.
+All six feature/merged gates, required PR/main CI and both images succeed: 1,234 tests,
+96.94% branch-inclusive coverage, 31 typed modules/build. Installed 31 source hashes
+match; actual handler rejects unqualified import and excludes a restored fixture,
+provider0. Existing qualified pattern and scopes pass, primary readiness survives
+validation-client closure. No new human observation, model, schema, service or pass.
+Fresh normal gateway7/8 strict semantic cases: supported broad content still implies
+an unsupported year. Current baseline/installed graph packets match for that route;
+original provider input uncaptured. Date inference remains open, not a new graph
+qualification assumption. Modest TJ humor/care and recipient abstention pass, no
+measured funniness multiplier. H72 final conservative6/7each versus preliminary
+candidate7/7; rejection unchanged, no rollout. Post league activity remains sparse.
+Run33settled attempts/USD0.01034458estimated; covered OctoberUSD0.305951295,
+1,885attempts/one unchanged old unsettled. No errors/restarts in the short installed
+window, two startup warnings, no rollback. Sixteen content-free private files0700/0600,
+seven-day manual retention/withdrawal. Source/derived data stay private, no new
+population. [Full evidence and limits](evaluations/2026-10-15-abstract-humor-study.md)
+and [structured installed result](evaluations/2026-10-15-abstract-humor-release.json).
