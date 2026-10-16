@@ -7,6 +7,28 @@ _AUTHORED = re.compile(
     r"\b(?:say|said|saying|talked|talking|mentioned|messages?|conversations?|exchanges?|recall|remember|quote)\b",
     re.IGNORECASE,
 )
+# A narrow factual question, not a mention of an activity inside advice, a quote
+# or an imagined choice. This supplies routing only, never personal evidence.
+_ACTIVITY_QUESTION = re.compile(
+    r"^(?:(?:where|what|which|how|when) )?"
+    r"(?:have|has|did|were|was) (?P<subject>you|i|andrew|tru|trubot) "
+    r"(?:(?:actually|really|ever|recently|just) ){0,2}"
+    r"(?:(?:been )?(?:doing|reading|watching|playing|traveling|travelling|hiking|camping)"
+    r"|travel|traveled|travelled|visit|visited|go|gone|went|vacation|vacationed"
+    r"|hike|hiked|camp|camped|read|watch|watched|play|played|do|done"
+    r"|been (?:anywhere|on (?:a |any )?trips?)|(?:take|taken|took) (?:a |any )?trips?)\b",
+    re.IGNORECASE,
+)
+
+
+def activity_recall_subject(request: str) -> str | None:
+    """Recognize an explicit personal activity question without resolving identities."""
+    text = " ".join(request[:8000].casefold().removeprefix("🤖").strip().split())
+    text = text.removeprefix("@trubot ")
+    match = _ACTIVITY_QUESTION.match(text)
+    return match["subject"] if match else None
+
+
 _ROLLING = re.compile(
     r"\b(?:past|last)\s+(?:(?P<count>\d+|[a-z]+"
     r"(?:[- ](?:one|two|three|four|five|six|seven|eight|nine))?)\s+)?"
@@ -51,7 +73,7 @@ def recall_window(request: str) -> timedelta | None:
     caller intersects a recognized duration with the authoritative retention floor.
     """
     request = request[:8000]
-    if not _AUTHORED.search(request):
+    if not _AUTHORED.search(request) and activity_recall_subject(request) is None:
         return None
     match = _ROLLING.search(request)
     dated_request = request[: match.start()] + request[match.end() :] if match else request

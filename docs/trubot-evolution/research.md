@@ -2621,3 +2621,18 @@ Same-question actual private-handler trial: baseline0/3posts/candidate3/3, provi
 Select bounded selected-source page plus exact fallback. No new human observation
 or measured semantic/humor improvement. H79/H61 remain exploratory; prioritize qualified
 abstract applicability after this enabling correction. Full gates/deployment still pending.
+
+
+## 2026-10-16 09:00 - H80 recent activity boundary
+
+[Both phases, source coverage, locked acceptance and limitations](evaluations/2026-10-16-recent-activity-study.md).
+A current owner exchange exposes unsupported-activity/machinery wording. Existing
+recent recall misses lived-activity questions, and first-person activity misses
+requester ownership. Seven matched invented real private Discord handler cases:
+three focal source/author boundaries0/3baseline to3/3candidate, four comparison cases
+retained. One reserved human contextual setup remains elaborate in both arms; no
+human trait or general humor/naturalness gain. Select the conservative source/author
+routing correction; full feature gates1,355tests/96.98%coverage pass. Return next to
+qualified independent abstract benefit, linked native/original pixels, and selective
+tools/generated U.P. aurora/trail-camera sharing. H66 material grounding/privacy can
+reorder. No new provider pass/service/model or learning observation.

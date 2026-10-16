@@ -1,3 +1,11 @@
+Current authoritative order (2026-10-16 09:00): H78a is deployed/verified;
+H80 recent personal activity grounding is the selected2.27.3increment. Next are
+qualified useful abstract applicability, broader linked native/original pixels,
+selective tools/skills and generated Michigan U.P. aurora/trail-camera scenes.
+H66 material grounding/privacy can reorder. No new human observation is populated.
+[Current plan](plan.md) and [study](evaluations/2026-10-16-recent-activity-study.md)
+supersede the historical priority snapshots below.
+
 # Living memory graph
 
 2.27.0/PR129 and2.27.1/PR130 complete human-context routing: immediate human

@@ -170,6 +170,17 @@ missing real memories, literal definitions and questions for other recipients.
 Review whether a reply actually adds a comic turn, rather than merely acknowledging
 the setup. Brevity and successful delivery alone do not establish humor quality.
 
+## Recent personal activity (2.27.3)
+
+Explicit factual questions about recent travel, activities, reading or play use
+the existing bounded dated-source route. Undated history and optional voice examples
+cannot establish recency. First-person activity questions also use authenticated
+requester ownership, so another person's history cannot become the asker's biography.
+Hypothetical choices, advice, current news and broad past recall retain their routes.
+This is a conservative lexical boundary, not a general intent classifier or new
+personal observation. Source correction, withdrawal and final checks still apply;
+there is no new provider pass, service or spending allowance.
+
 ## Complete authored reply evidence (2.26.1)
 
 Reply context preserves complete stored authored passages up to6,000UTF-8bytes.

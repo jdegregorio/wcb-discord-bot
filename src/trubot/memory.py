@@ -16,7 +16,7 @@ from trubot.graph import GraphStore
 from trubot.learning import LearningStore, LearningUnavailable, _time
 from trubot.lexical import words
 from trubot.native_context import MAX_CONTEXT_BYTES, NativeEpisode
-from trubot.recall_window import WINDOW_WORDS, recall_window
+from trubot.recall_window import WINDOW_WORDS, activity_recall_subject, recall_window
 
 # The former 1,500-character prefix could already occupy 6,000 UTF-8 bytes.
 # Preserve that worst-case bound while retaining complete stored qualifications.
@@ -226,7 +226,9 @@ def requester_recall(text: str) -> bool:
         r"(?:view|views|opinion|opinions|stance|take|position|preference|"
         r"preferences|reaction|reactions|vote|votes|messages?|statements?|words)\b"
     )
-    return bool(re.search(authored + "|" + former_view + "|" + explicit_lookup, request))
+    return activity_recall_subject(request) == "i" or bool(
+        re.search(authored + "|" + former_view + "|" + explicit_lookup, request)
+    )
 
 
 def requester_context_unavailable() -> str:
