@@ -2672,3 +2672,15 @@ diagnostic prerequisite, then H79 useful abstract applicability/H81 event-to-rou
 calibration, linked native/original pixels and selective tools/generated U.P. scenes.
 H66 remains open. No new human trait/schema/model/provider pass/intake/pacing/schedule
 or notification change.
+
+
+## 2026-10-16 13:00 - H78b empty native setup
+
+[Both planning phases, baseline trace, locked acceptance and results](evaluations/2026-10-16-empty-native-context-study.md).
+Four real packet probes isolate a gap-free empty setup versus optional absence,
+with identical five authored sources. Controlled real same-model handlers:baseline
+0/3posts/candidate3/3; new22regressions baseline16fail6pass/candidate22pass.
+Empty serialization only is supported. General delivery frequency, substantive
+setup instability and abstract/semantic fidelity remain unresolved. Return next to
+H79/H81 independent abstraction usefulness/calibration; preserve H61 tools/generated
+outdoor scenes and broader linked native/original pixels. No new human observation.

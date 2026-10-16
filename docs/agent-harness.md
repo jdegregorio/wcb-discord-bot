@@ -1,72 +1,46 @@
 # Trubot agent harness
 
-The current 2.27.3 deployed increment extends the existing source/author boundary to explicit
-factual activity questions. Recognized recent activity uses bounded dated native
-sources; unknown-date exports, abstract observations and voice examples cannot
-establish recency. First-person activity uses authenticated focus-author ownership
-and only that human's live context. Hypotheticals, advice/current news and broad
-past recall retain their routes. This is conservative lexical routing, not a general
-intent classifier or new biography. [Both planning phases and study](trubot-evolution/evaluations/2026-10-16-recent-activity-study.md).
+Current2.27.4candidate: memory rendering canonicalizes only empty, gap-free native
+setup to the conservative absent-setup packet. Real repeated source reads isolate
+an optional timeout changing only empty coverage metadata; controlled same-case
+Discord handlers improve0/3to3/3posts. This is narrow delivery enabling work, not
+new human knowledge, general reliability or measured humor/fidelity gain.
+[Both planning phases and study](trubot-evolution/evaluations/2026-10-16-empty-native-context-study.md).
+
+The source pipeline is unchanged: up to5selected native IDs, one bounded100-row
+page/channel plus exact fallback, shared6s deadline, then at most2optional setups.
+Each source is freshly authenticated, and source/author scope is checked before
+quality reuse and immediately before posting. Exact whole-packet equality remains.
+Nonempty neighbors, source media/coverage gaps and oversized omissions retain their
+full representation; their changes still suppress. No cached freshness certificate.
+Final source check and Discord send cannot form an atomic cross-service transaction.
 
 Runtime remains standard gpt-6-luna Responses/store=false, bounded conversation,
-verified source/graph memory, author binding and up to two ephemeral images.
-Recognized short follow-ups can use one complete immediate human setup as a lookup
-key; original focus controls intent. No peer/bot/reference row becomes human evidence.
-One existing optional quality attempt addresses repetition/ordinary length; every
-provider attempt uses the shared spending ledger. There is no new provider pass,
-model, service, schema, tool loader or external capability in this increment.
+verified source/graph memory, authenticated author binding and up to2ephemeral images.
+Recent explicit factual activity uses dated authored sources; undated exports cannot
+establish recency. Requester own-history filters other-author/bot/reference context.
+One complete immediate human setup can activate a recognized short follow-up; the
+original focus controls intent. Unknown dates stay internal without routine caveats.
+One existing optional quality attempt handles length/repetition using the same ledger.
+No new provider pass/model/schema/service/tool loader or intake/participation change.
 
-H78a / 2.27.2 verifies selected native sources with one bounded 100-row page/channel
-plus exact fallback, at most5 selected IDs / shared 6s deadline. No unselected intake or
-cursor advancement; denied access stops. Source/scope are rechecked before quality
-reuse and immediately before posting. Changed/withdrawn/unavailable packets suppress
-the draft. Final Discord send and source check are not atomic; optional setup can
-still change, and general transport predictability is not established.
+Conditional abstract memories retain supporting/contrary source, conditions, limits,
+confidence and expiry. One qualified value memory remains; H72/H74 populations stay
+rejected. Native semantic transfer stays closed. Next: independently useful abstract
+applicability/emotion/humor and event-to-routine calibration, broader linked native
+and original pixels, then selective skills/tools and generated U.P. scenes with
+short natural captions/generated provenance. Source-backed timing/context, current
+primary docs, bounded experiments and actual Discord precede technology rollout.
+H66 grounding/privacy or independently reproduced delivery loss can reorder.
 
-Conditional abstract memories retain sources, contrary evidence, conditions, limits,
-confidence and expiry. One qualified value memory remains; no new human observation
-ships. H72/H74 population remains rejected. Native target-only/linked context and
-original pixels remain incomplete; metadata is not current visibility or a permit
-for automatic native semantic peer-transfer. Unknown dates remain authoritative
-internally and do not produce routine conversational disclaimers.
+Validation clients use distinct readiness paths before construction, HTTP login only
+and no second gateway. Private content-free refs/hashes/grades use0700/0600, existing
+seven-day manual retention and withdrawal cleanup; disposable copies are erased.
+Keep bot identity, warmth/brevity/care, contextual TJ creative amplification separate
+from human evidence, source attribution/correction/deletion/withdrawal, internal
+unknown dates, allowlist/no DMs and owner-only private development recall. Exclude
+development learning. Existing app volume/model/pacing and shared USD18 runtime /
+2 maintenance /20 monthly guard remain. Preserve six fresh local01/05/09/13/17/21
+Sol/xhigh runs and notification preference. No new human observation is imported.
 
-Next: H78b final native packet diagnosis, then independently useful abstract
-applicability/humor/emotional memory and H81 event-to-routine calibration, then linked
-native/original pixels, then selective tools/skills and generated Michigan U.P.
-aurora/trail-camera scenes with short captions/generated provenance. Source-backed
-timing/context, current primary documentation, bounded prototypes and actual Discord
-precede any harness change. H66 material grounding/privacy findings can reorder.
-
-Validation clients use distinct ephemeral readiness paths before construction,
-HTTP login only and no second gateway. Development evidence never becomes Andrew
-learning. Content-free private refs/hashes/grades use 0700/0600, existing seven-day
-manual retention and withdrawal cleanup; disposable fixtures/candidate copies are
-erased. Preserve bot identity, consent/source lifecycle, allowlist/no DMs, private
-owner scope, native gate, model/pacing,USD 18/2/20 guard and six fresh local
-01/05/09/13/17/21 Sol/xhigh runs/notification preference. [Plan](trubot-evolution/plan.md)
-and [backlog](trubot-evolution/backlog.md) give the authoritative ordered increments.
-
-
-## Final installed result and revised priorities
-
-2.27.3 is healthy on immutable index ff48a118, revision 3a1a05e. All 31 installed
-source hashes, six feature/merged gates, protected PR/main CI and both images pass.
-Installed invented source/author boundaries pass 3/3; fresh normal owner gateway
-passes 11/13 strictly, with 11 posts and one confirmed recipient abstention. One
-native factual draft is discarded before a successful repeat, and one dated-activity
-answer overgeneralizes an event into a routine. No all-pass or general fidelity claim.
-No rollback: the verified source/author boundary is retained; baseball's route is
-unchanged, and its wider reliability remains open.
-
-The new contrary evidence promotes H78b final native packet predictability as a
-bounded diagnostic prerequisite to more population. Capture same-case stage/HTTP
-timing and packet differences before choosing a remedy; optional setup/read pressure
-is a hypothesis, not a proven cause. Acceptance must preserve changed/denied/withdrawn
-suppression and improve real gateway delivery without a cached safety certificate.
-Impact remains existing bounded Discord reads/volume/guard; no new provider pass or
-service selected. Then H79 qualified abstract applicability/humor/emotional benefit,
-including H81 event-to-routine calibration with contrary cases, followed by broader
-linked native/original pixels and selective tools/generated U.P. scenes. H66 remains
-open. No new human observation, source scope, model/pacing or schedule change.
-
-[Structured installed evidence](trubot-evolution/evaluations/2026-10-16-recent-activity-release.json).
+[Plan](trubot-evolution/plan.md) and [backlog](trubot-evolution/backlog.md) are authoritative.
