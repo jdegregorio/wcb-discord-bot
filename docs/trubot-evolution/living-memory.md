@@ -1,23 +1,20 @@
 # Living memory graph
 
-2.27.0 H77 is deployed;2.27.1completes the observed own-history boundary. Ordinary
-recognized follow-ups retain one complete immediate human setup for abstract lookup.
-Explicit requester-history questions retain only that authenticated human's current
-conversation/focus rows, excluding old bot answers, peers and detached references.
-The original request and source checks remain authoritative. Four matched private
-Discord posts reproduce borrowed bot history in both baseline cases and correct
-both with the candidate, including a retained fictional same-author premise.
-All six feature gates pass:1,301tests/96.94%coverage/31typed modules/build.2.27.1
-release and fresh installed gateway acceptance follow. Broader fidelity is unproven.
-[Both planning phases and actual limits](evaluations/2026-10-16-memory-continuity-study.md).
+2.27.0/PR129 and2.27.1/PR130 complete human-context routing: immediate human
+setup can activate qualified abstractions, and authenticated author metadata keeps
+old bot/peer replies out of explicit requester-history context. IDs remain ephemeral,
+not provider text or learning. One qualified value pattern remains; no new human
+observation ships. All gates/PR/main CI pass:1,301tests/96.94%coverage/31typed modules.
+Patch image/deployment are verified; actual gateway10/11core cases pass, with
+native factual delivery open. Full evidence is in
+[research](evaluations/2026-10-16-memory-continuity-study.md).
 
-Native factual packets can vary under bounded fresh reads and safely suppress a draft,
-observed before and after H77. H78 root-cause/verification scheduling is unresolved;
-preserve the final guard. This materially affects delivery and takes diagnostic
-priority before more population. Then qualified applicability/human-held-out benefit,
-linked native/original pixels, selective skills/tools and generated Michigan U.P.
-aurora/trail-camera scenes with short captions and generated provenance. H66 remains
-open, and new material privacy/grounding evidence can change order again.
+H78 native fresh-packet predictability is next diagnostically; preserve final source
+checks. Then demonstrate useful conditional applicability on independent human-held-outs,
+broader linked native/original pixels, and selective skills/tools/generated U.P.
+aurora/trail-camera scenes. H72/H74 population stays rejected; H66 remains open.
+No general fidelity or humor multiplier claimed. [Plan](plan.md), [backlog](backlog.md)
+and [progress](progress.md) retain actual outcomes and source lifecycle requirements.
 
 Earlier 2.26.8 deployed via [PR127](https://github.com/jdegregorio/wcb-discord-bot/pull/127).
 H76 keeps reviewed aliases on current observation-concept relationships, so shared
@@ -285,3 +282,8 @@ Identical recapture preserves memory. This completes local dependency lifecycle,
 not contextual semantic learning or abstract population. Native pattern gate remains
 closed; target-only provider payloads unchanged. Specific peer-context transfer approval
 and genuine human-held-out qualification remain prerequisites for H55b/H48.
+
+
+[Final installed result and limitations](evaluations/2026-10-16-memory-continuity-release.json):
+2.27.1 healthy on the verified immutable digest, all31source hashes match,
+changed abstract/ownership controls pass; native factual delivery remains open.

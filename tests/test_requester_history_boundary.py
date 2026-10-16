@@ -18,9 +18,9 @@ async def test_own_history_keeps_same_author_and_excludes_bot_peer_and_detached_
     own = M("user", "Owner: In this fictional scene I support the Harbor Otters.", author_user_id=1)
     rows = [
         own,
-        M("assistant", "White Sox."),
-        M("user", "Owner: I support the White Sox.", author_user_id=2),
-        M("user", "Owner: I support the White Sox."),
+        M("assistant", "Bay Comets."),
+        M("user", "Owner: I support the Bay Comets.", author_user_id=2),
+        M("user", "Owner: I support the Bay Comets."),
         M("user", "Owner: unrelated reference", origin="reference", author_user_id=1),
         M("user", "Owner: old private memory", origin="memory", author_user_id=1),
     ]

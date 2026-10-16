@@ -199,3 +199,70 @@ serialization and dataclass repr; they are not durable learning or access grants
 All six feature gates:1,301tests,96.94%coverage,31typed modules/build2.27.1; eight
 new tests cover all handler modes, forged labels, bot/peer/reference/memory exclusion,
 ordinary conversation, visual focus, conversion and private metadata serialization.
+
+
+H77a final runtime: PR130 headb9cbd220bfcfa7f9a210bb93c97cc67312bba977, guarded
+non-admin squash merge efd79c78582bdf3f00d062a3ff1efac886cdefb2. Required PR
+CI38874277172/main38874480876/image38874874296 succeed. Both feature and actual
+merged gates pass:1,301tests/96.94%coverage/31typed modules/build2.27.1.
+Verified AMD64 e9ada637c319816a8eef0c55dcf7544266516e8a555d266476e179c1ba0955e1
+and ARM64 bdcc6fac9ba68a88a835ac44476e9c1ecc3f69ff74ac9536fd0dd1d48f44e9d4
+before reverified pi5 transaction. Running immutable index
+a8928eb34e2c970cae8659f2bff88f49d5b8b6dd7d77c945082b57809da41f47,
+version2.27.1/revision efd79c7/all31source hashes match. Healthy; primary heartbeat
+survives HTTP-only validation closure. Installed abstract routes3/3, provider0,
+graph unchanged during probes. One qualified pattern retained, scope exclusions
+and actual owner/two-member/channel permissions pass. No second gateway or new human
+observation. Fresh normal owner UI checks follow; earlier2.27.0failures remain in
+private content-free receipts rather than being overwritten as successes.
+
+
+### Final installed result
+
+2.27.1 is healthy on immutable indexa8928eb34e2c970cae8659f2bff88f49d5b8b6dd7d77c945082b57809da41f47,
+revision efd79c78582bdf3f00d062a3ff1efac886cdefb2, all31source hashes and versions
+match, zero restarts. Prior2.27.0 retained; no rollback/data restore. Both architecture
+manifests and all required feature/merged gates/PR/main/image CI pass.1,301tests,
+96.94%coverage,31typed modules/build. Installed abstract routes3/3, source/private
+scope and primary readiness survive distinct-readiness HTTP-only validation closure.
+No new graph observation, schema, model, service, intake/participation or schedule change.
+
+Fresh serial normal owner UI:11cases,9actual posts,one confirmed recipient skip and
+one native factual draft suppressed by final source revalidation. Strict core10/11:
+changed immediate follow-up, real requester ownership, fictional same-author control,
+supported broad historical content, exact-date honesty, fitting modest TJ humor,
+sincere care and recipient restraint pass. No routine source/date machinery caveat.
+Abstract wording remains somewhat formal; no2-3xhumor or general fidelity claim.
+The ordinary native baseball question remains OPEN. Its fresh source packet can vary;
+pre-release baseline also suppresses it, and neither new query expansion nor own-history
+filter applies to this question. No rollback for a demonstrated new code regression;
+retain H78 as first diagnostic increment and never weaken the source guard.
+The nine-request prefix and final eleven-request totals confirm delivery loss rather
+than crash. Final container window:0errors/reply failures/disconnects/study pauses,
+2startup warnings,1source discard/1handler skip/4existing quality refreshes. This is
+not a general error-rate measurement. Final runtime15provider attempts include the
+existing four quality refreshes; no additional retry policy was introduced.
+
+Pre/post league audit unchanged:three allowed channels/latest100per channel/14days,
+5target8peer3olderbot0fresh spontaneous/0denied. Missing original pixels and broader
+native episode coverage remain gaps. Humorous and targeted source-window counts,
+one-evaluator limits, source-held-out weakness and earlier ownership failure are
+retained above and in private content-free receipts; no raw answer/source text or
+private derived human observations are published or retained as smoke artifacts.
+
+Run49settled provider attempts, estimatedUSD0.010771165:25maintenance/USD0.00295236,
+24runtime/USD0.007818805. Covered OctoberUSD0.32880614/1,973attempts,one unchanged old
+unsettled reservation; no new unsettled attempt. Shared18/2/20guard unchanged, estimates
+are not provider billing, pre-guard spending unknown, no new service. Private receipts
+use0700/0600 and existing seven-day manual retention/withdrawal cleanup. No development
+learning. Source snapshots/context metadata can refresh; no human abstraction is added.
+
+Roadmap: H78 native verification predictability first, then qualified applicability
+with independent human-held-out benefit, broader native linked/original pixels, and
+selective skills/tools/generated Michigan U.P. aurora/trail-camera scenes with short
+captions/generated provenance. H66 remains open; new material grounding/privacy
+failures can reorder. Preserve six fresh local01/05/09/13/17/21Sol/xhigh runs and
+notification preference. [Structured installed evidence](2026-10-16-memory-continuity-release.json).
+
+Final public requester-boundary fixture team names are wholly invented. The value-only
+substitution passes all eight focused cases; runtime source bytes are unchanged.
