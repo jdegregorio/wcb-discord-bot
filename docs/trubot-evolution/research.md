@@ -2684,3 +2684,29 @@ Empty serialization only is supported. General delivery frequency, substantive
 setup instability and abstract/semantic fidelity remain unresolved. Return next to
 H79/H81 independent abstraction usefulness/calibration; preserve H61 tools/generated
 outdoor scenes and broader linked native/original pixels. No new human observation.
+
+
+### H83 contextual humor freshness, newly unresolved
+
+The installed normal owner humor probe substitutes topic nouns into an older bot
+joke's structure. It is contextual and brief but weak on freshness; one observation
+does not establish universal repetition. Bot text supplies failure evidence, never
+a human trait. The same run's human contextual replay misses focal response target
+in both arms. Possible mechanism: rolling assistant examples anchor generation to
+an old scaffold rather than the human setup. This is a hypothesis, not a diagnosed
+cause or selected new provider pass. Study prior human humor mechanisms, contrary
+cases and recurring-bit timing; compare baseline/prototypes on independent human-
+held-out contexts and real Discord. Acceptance: a fitting new comic turn or deliberate
+callback without automatic frame reuse, biography invention, lost care/brevity or
+recipient errors; reject if benefit is cosmetic noun swapping or evaluator-only.
+Operating impact must remain within the existing model/quality-attempt/maintenance
+allowance unless a measured alternative justifies change. Promote alongside H79/H81
+as the next coherent character-quality study; do not repeat literal-recall patches.
+
+
+H78b final installed acceptance supports the narrow empty-context correction:
+installed controlled handlers3/3,normal native gateway3/3; total gatewaystrict9/10,
+one contextual joke-frame reuse partial. H83 is promoted alongside H79/H81;
+no new human observation or general character/humor gain. Both image architectures,
+all31source hashes, all gates/protected CI and meaningful readiness pass.
+[Exact installed evidence](evaluations/2026-10-16-empty-native-context-release.json).

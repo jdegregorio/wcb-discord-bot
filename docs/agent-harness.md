@@ -1,6 +1,6 @@
 # Trubot agent harness
 
-Current2.27.4candidate: memory rendering canonicalizes only empty, gap-free native
+Current deployed2.27.4: memory rendering canonicalizes only empty, gap-free native
 setup to the conservative absent-setup packet. Real repeated source reads isolate
 an optional timeout changing only empty coverage metadata; controlled same-case
 Discord handlers improve0/3to3/3posts. This is narrow delivery enabling work, not
@@ -44,3 +44,12 @@ development learning. Existing app volume/model/pacing and shared USD18 runtime 
 Sol/xhigh runs and notification preference. No new human observation is imported.
 
 [Plan](trubot-evolution/plan.md) and [backlog](trubot-evolution/backlog.md) are authoritative.
+
+
+Installed result:31source hashes/version/revision match, immutable index35c68625,
+healthy with0restarts. Controlled optional-empty-loss handlers3/3; normal owner
+native recall3/3. Full gateway strict9/10:one humor-freshness partial,9posts and
+one confirmed recipient abstention. H83 joke-frame reuse/focal-target study joins
+H79/H81 qualified abstract applicability as next. No extra pass or selected remedy;
+current exact final checks, model and spending guard remain.
+[Release evidence](trubot-evolution/evaluations/2026-10-16-empty-native-context-release.json).

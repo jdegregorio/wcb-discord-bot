@@ -104,7 +104,7 @@ oversized gaps. Existing source edit/delete/denied/unavailable/withdrawal/author
 remain passing. Full feature gates pass:locked sync/format/lint/mypy31modules/
 1,377tests96.98%branch-inclusive coverage/build2.27.4. Initial test lint parenthesis
 fixed; no production exception suppression or guard bypass. No source or graph schema
-change. Immutable release/installed owner gateway remain pending.
+change. Immutable release and installed owner gateway are verified below.
 
 
 One contextual human response was reserved from implementation/qualification and
@@ -116,3 +116,49 @@ or a regression caused by empty-native serialization. One evaluator, ordered tri
 three repetitions of one recall condition and uninspected media limit conclusions.
 No raw source, generated response or derived personal observation enters Git or
 smoke receipts. Private receipts retain refs/hashes/counts/pass metadata only.
+
+## Final installed result and next priority
+
+PR135 protected CI38960061915 and non-admin exact-head merge succeed. Runtime
+9b1a2ad23c8a16c42d3fe564afe3f5723a61274a passes all six merged gates and main
+CI38960353640. Immutable v2.27.4/image38960561752 succeeds for both architectures.
+Scoped locked transaction on reverified pi5/aarch64/Ubuntu24.04.4 deploys index
+35c68625672209a25e7d363859799f01425868bb99bb9f447dbee534c18956bc. Healthy, zero
+restarts;31installed source hashes/package versions/revision match. Prior2.27.3
+ff48a118 remains the rollback target. No rollback or source/spending database restore.
+
+Installed actual private handlers pass3/3under the diagnosed optional-empty-read
+failure. HTTP-only validation has distinct readiness before construction and primary
+heartbeat survives closure. Fresh normal owner gateway:10probes,9posts,one confirmed
+recipient abstention. Changed native recall posts3/3; broad past, exact-date honesty,
+care, requester ownership, missing recent evidence and restraint pass. Strict9/10,
+with contextual humor partial: changed nouns reuse an older bot joke scaffold.
+No routine metadata disclaimer in this sample. Neither the source-linked nonblind
+human replay nor this humor probe establishes a semantic/fidelity/humor multiplier.
+Sparse spontaneous activity and uninspected original media remain coverage gaps.
+
+Post league audit matches3channels/latest100each/14days:5target8peer3olderbot,
+zero seven-day bot posts/denied channels; development excluded. No new trait imported.
+Private refs/hashes/counts/grades only use0700/0600, existing seven-day manual retention
+and withdrawal cleanup; no raw sources, generated replies or personal derivations
+enter Git or smoke receipts. Main source/author/access/withdrawal and exact final
+packet checks remain, including substantive optional setup changes.
+
+Run25settled attempts,estimatedUSD0.005837255:11maintenance/USD0.00124559 and
+14runtime/USD0.004591665. Covered OctoberUSD0.34484217/2,046attempts;one unchanged
+old unsettled reservation,no new unsettled attempt. Not provider billing; pre-guard
+spending unknown. Existing18/2/20guard/model/pacing/six fresh daily Sol/xhigh runs
+and notification preference remain; no new provider pass/schema/service or scope.
+Container window0errors/reply failures/source discards/disconnects/restarts,
+2startup warnings,1recipient skip,9posts,3existing quality refreshes. Short unmatched
+windows cannot establish a general error-rate improvement.
+
+The verified empty-context delivery correction is complete. Next:H83/H79/H81
+contextual humor freshness and focal-target judgment with independently useful
+qualified abstractions/emotional and event-to-routine calibration. A fresh joke-
+frame reuse observation raises this priority; rolling assistant-example anchoring
+is an unvalidated cause. Then linked native peers/replies/threads/original pixels,
+then selective skills/tools and generated Michigan U.P. aurora/trail-camera scenes
+with short natural captions/generated provenance. Material grounding/privacy or
+independently reproduced delivery failures can reorder. No general reliability or
+character completion claim. [Structured release evidence](2026-10-16-empty-native-context-release.json).

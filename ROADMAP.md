@@ -3,11 +3,12 @@
 2026-10-16 13:00: H78b /2.27.4 corrects empty native setup packet instability.
 Matched actual private handlers post0/3baseline versus3/3candidate under optional
 empty-read loss; substantive context/source changes retain final suppression.
-All six feature gates pass; immutable release/installed real owner gateway pending.
+All six gates, protected CI, immutable release and installed owner gateway are verified.
 [Research and both planning phases](docs/trubot-evolution/evaluations/2026-10-16-empty-native-context-study.md).
 
-1. H79/H81 qualified abstract applicability, humor/emotional judgment and event-to-
-   routine calibration. Require separated attributed episodes, contrary cases and
+1. H83/H79/H81 contextual humor freshness and qualified abstract applicability, humor/emotional judgment and event-to-
+   routine calibration. The fresh gateway probe reuses an older bot joke frame with changed nouns.
+   Reproduce it alongside focal-target judgment; require separated human episodes and
    added benefit on independent human-held-out contexts. H72/H74 remain rejected;
    one qualified value memory remains. Rationale: make replies fitting and natural
    without turning isolated events into habits. Current population benefit unresolved.
@@ -34,3 +35,10 @@ Sol/xhigh runs and notification preference. No new human observation is imported
 
 [Plan](docs/trubot-evolution/plan.md), [backlog](docs/trubot-evolution/backlog.md)
 and [progress](docs/trubot-evolution/progress.md) hold acceptance and actual results.
+
+
+2.27.4 is deployed healthy on index35c68625/revision9b1a2ad with31matching source
+hashes. Installed controlled handlers3/3; normal owner gateway9posts/oneabstention,
+strict9/10. One humor response reuses an old joke frame. H83 joins H79/H81 as the
+next character-quality study; no general fidelity or humor gain is claimed.
+[Installed evidence](docs/trubot-evolution/evaluations/2026-10-16-empty-native-context-release.json).

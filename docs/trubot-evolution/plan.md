@@ -6,8 +6,7 @@ silently discard a supported answer solely for empty coverage metadata. Four rea
 packet probes reproduce the mismatch. Same-case actual private handlers, same model:
 baseline0/3posts, candidate3/3posts under the observed optional-empty failure.
 All22new regressions pass; untouched baseline16fail/6pass. All six feature gates:
-1,377tests/96.98%branch coverage/31typed modules/build2.27.4. Protected merge,
-immutable images/deployment and fresh normal owner gateway remain pending.
+1,377tests/96.98%branch coverage/31typed modules/build2.27.4. Protected merge, immutable images/deployment and fresh owner gateway are verified below.
 [Both planning phases, method and limits](evaluations/2026-10-16-empty-native-context-study.md).
 
 Fresh source/author/withdrawal and exact publication packet checks remain. Nonempty
@@ -18,8 +17,10 @@ Prior H78a/2.27.2 and H80/2.27.3 are deployed, not unfinished work.
 
 ## Ordered next increments
 
-1. H79/H81 qualified abstract applicability, humor/emotional judgment and event-to-
-   routine calibration. Require separated attributed episodes, contrary cases and
+1. H83/H79/H81 contextual humor freshness and qualified abstract applicability, humor/emotional judgment and event-to-
+   routine calibration. The fresh gateway probe reuses an older bot joke frame with different nouns.
+   Reproduce this behavior alongside focal-target judgment, with separated attributed
+   episodes, contrary cases and
    added benefit on independent human-held-out contexts. H72/H74 remain rejected;
    one qualified value memory remains. Rationale: make replies fitting and natural
    without turning isolated events into habits. Current population benefit unresolved.
@@ -52,3 +53,16 @@ Sol/xhigh runs and notification preference. No new human observation is imported
 
 [Backlog](backlog.md), [research](research.md), [progress](progress.md),
 [storage](storage.md) and [living memory](living-memory.md) retain durable evidence.
+
+## Final installed result
+
+Version 2.27.4 is deployed healthy on immutable index `35c68625`, revision `9b1a2ad`.
+All 31 source hashes match. Required feature/merged gates, protected CI and both
+image architectures pass. Installed failure replay: 3/3 posts. Normal owner gateway:
+3/3 changed recall posts; 10 total probes, 9 posts and one confirmed abstention.
+Strict 9/10, with one humor freshness partial from an older bot joke frame.
+No general fidelity, humor multiplier or delivery-frequency claim.
+
+Run estimated USD 0.00584; shared 18/2/20 guard intact. No new trait, schema, model,
+provider pass or scope. H83 joins H79/H81 as the next character-quality study.
+[Exact validation, costs and limitations](evaluations/2026-10-16-empty-native-context-release.json).

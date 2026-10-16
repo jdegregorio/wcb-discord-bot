@@ -1,0 +1,145 @@
+{
+  "run": "2026-10-16-1300",
+  "hypothesis": "H78b",
+  "version": "2.27.4",
+  "base_sha": "1080e39e7e8b87f4874608ab7de8fd1d8b524519",
+  "feature_sha": "4fc63e67a60052dc374e31276a45a0a06ccfd31a",
+  "runtime_sha": "9b1a2ad23c8a16c42d3fe564afe3f5723a61274a",
+  "pull_request": "https://github.com/jdegregorio/wcb-discord-bot/pull/135",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.27.4",
+  "ci": {
+    "pr": 38960061915,
+    "main": 38960353640,
+    "image": 38960561752,
+    "all_success": true
+  },
+  "image": {
+    "index": "sha256:35c68625672209a25e7d363859799f01425868bb99bb9f447dbee534c18956bc",
+    "amd64": "sha256:91687c7d707c409233c8b7dcdd02f92a944e141d52da8b1c9c1d87ee0b3dccef",
+    "arm64": "sha256:988d0e645414a0645bd35f8e7a5893652135ba9e05c68b3001957ddce16b285a"
+  },
+  "rollback": {
+    "version": "2.27.3",
+    "index": "sha256:ff48a1183057cb7083d6c1024b8cffd567c3c353628b832ead07070709542054",
+    "used": false,
+    "data_restored": false
+  },
+  "gates": {
+    "feature": true,
+    "runtime_merge": true,
+    "test_count": 1377,
+    "branch_coverage_percent": 96.98,
+    "typed_modules": 31,
+    "build": "2.27.4"
+  },
+  "regressions": {
+    "new_cases": 22,
+    "untouched_baseline_failed": 16,
+    "untouched_baseline_passed": 6,
+    "candidate_passed": 22
+  },
+  "audit": {
+    "league_channels": 3,
+    "latest_messages_per_channel": 100,
+    "window_days": 14,
+    "target": 5,
+    "peer": 8,
+    "older_bot": 3,
+    "bot_posts_in_last_7_days": 0,
+    "denied": 0,
+    "eligible_historical_blocks_screened": 405,
+    "context_windows_inspected": 4,
+    "exports": 2,
+    "original_pixels_inspected": false,
+    "new_human_observations": 0,
+    "post_counts_match": true
+  },
+  "experiments": {
+    "provider_free_source_probes": 4,
+    "same_native_sources": 5,
+    "baseline_handler_posts": 0,
+    "candidate_handler_posts": 3,
+    "handler_trials_per_arm": 3,
+    "controlled_optional_empty_read_loss": true,
+    "installed_handler_posts": 3,
+    "installed_handler_trials": 3,
+    "heldout_human_contexts": 1,
+    "heldout_samples_per_arm": 1,
+    "heldout_blind": false,
+    "independent_character_gain": false,
+    "general_delivery_frequency_measured": false
+  },
+  "installed": {
+    "source_hashes_match": 31,
+    "version_revision_digest_match": true,
+    "healthy": true,
+    "restarts": 0,
+    "primary_readiness_survives_validation_close": true,
+    "scope_verified": true
+  },
+  "privacy": {
+    "raw_sources_in_git_or_receipts": false,
+    "generated_answers_in_git_or_receipts": false,
+    "derived_personal_observations_in_git_or_receipts": false,
+    "development_learning": false,
+    "scope_expansion": false,
+    "receipt_mode": "0700/0600",
+    "retention": "existing seven-day manual retention and withdrawal cleanup"
+  },
+  "limits": [
+    "One recall condition repeated three times per arm, ordered baseline then candidate.",
+    "Only empty, gap-free optional setup is normalized; substantive packet changes still suppress.",
+    "One nonblind source-linked replay misses response focus in both arms; no semantic or humor gain.",
+    "Sparse spontaneous activity and uninspected original media limit character assessment.",
+    "Fresh normal gateway humor repeats an older scaffold; no 2-3x humor gain established."
+  ],
+  "next": [
+    "H83/H79/H81 contextual humor freshness and focal-target judgment, qualified abstract applicability/emotion and event-to-routine calibration.",
+    "Broader linked native context and original pixels.",
+    "Selective skills/tools and generated Michigan U.P. scenes with provenance."
+  ],
+  "gateway": {
+    "normal_owner_probes": 10,
+    "actual_posts": 9,
+    "confirmed_recipient_abstentions": 1,
+    "strict_passes": 9,
+    "partial": 1,
+    "changed_native_recall_posts": 3,
+    "changed_native_recall_probes": 3,
+    "baseline_normal_owner_recall_supported": true,
+    "routine_metadata_disclaimers": 0,
+    "humor_freshness_limitation": "contextual noun substitution into an older bot joke frame"
+  },
+  "health": {
+    "window_start": "2026-10-16T20:14:25Z",
+    "errors": 0,
+    "warnings": 2,
+    "reply_failures": 0,
+    "source_discards": 0,
+    "recipient_skips": 1,
+    "posts": 9,
+    "disconnects": 0,
+    "quality_refreshes": 3,
+    "restarts": 0,
+    "general_error_rate_comparison": false
+  },
+  "cost": {
+    "run_attempts": 25,
+    "maintenance_attempts": 11,
+    "runtime_attempts": 14,
+    "run_estimated_usd": 0.005837255,
+    "run_maintenance_usd": 0.00124559,
+    "run_runtime_usd": 0.004591665,
+    "month": "2026-10",
+    "covered_month_estimated_usd": 0.34484217,
+    "covered_month_attempts": 2046,
+    "unsettled_attempts": 1,
+    "new_unsettled_attempts": 0,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "monthly_limit_usd": 20,
+    "provider_billing": false,
+    "pre_guard_spend": "unknown",
+    "new_paid_services": 0
+  }
+}

@@ -1,11 +1,12 @@
 # Prioritized Trubot backlog
 
 2026-10-16 13:00: H78b empty native setup correction passes matched real handler
-acceptance0/3to3/3under controlled optional-read loss. Feature gates pass; release/
-installed owner gateway pending. [Evidence and locked acceptance](evaluations/2026-10-16-empty-native-context-study.md).
+acceptance0/3to3/3under controlled optional-read loss. Release and installed owner gateway are verified below. [Evidence and locked acceptance](evaluations/2026-10-16-empty-native-context-study.md).
 
-1. H79/H81 qualified abstract applicability, humor/emotional judgment and event-to-
-   routine calibration. Require separated attributed episodes, contrary cases and
+1. H83/H79/H81 contextual humor freshness and qualified abstract applicability, humor/emotional judgment and event-to-
+   routine calibration. The fresh gateway probe reuses an older bot joke frame with different nouns.
+   Reproduce this behavior alongside focal-target judgment, with separated attributed
+   episodes, contrary cases and
    added benefit on independent human-held-out contexts. H72/H74 remain rejected;
    one qualified value memory remains. Rationale: make replies fitting and natural
    without turning isolated events into habits. Current population benefit unresolved.
@@ -57,3 +58,16 @@ unknown dates, allowlist/no DMs and owner-only private development recall. Exclu
 development learning. Existing app volume/model/pacing and shared USD18 runtime /
 2 maintenance /20 monthly guard remain. Preserve six fresh local01/05/09/13/17/21
 Sol/xhigh runs and notification preference. No new human observation is imported.
+
+## Final installed result
+
+Version 2.27.4 is deployed healthy on immutable index `35c68625`, revision `9b1a2ad`.
+All 31 source hashes match. Required feature/merged gates, protected CI and both
+image architectures pass. Installed failure replay: 3/3 posts. Normal owner gateway:
+3/3 changed recall posts; 10 total probes, 9 posts and one confirmed abstention.
+Strict 9/10, with one humor freshness partial from an older bot joke frame.
+No general fidelity, humor multiplier or delivery-frequency claim.
+
+Run estimated USD 0.00584; shared 18/2/20 guard intact. No new trait, schema, model,
+provider pass or scope. H83 joins H79/H81 as the next character-quality study.
+[Exact validation, costs and limitations](evaluations/2026-10-16-empty-native-context-release.json).
