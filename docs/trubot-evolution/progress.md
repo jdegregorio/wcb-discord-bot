@@ -4402,3 +4402,20 @@ diagnostic prerequisite, then H79 useful abstract applicability/H81 event-to-rou
 calibration, linked native/original pixels and selective tools/generated U.P. scenes.
 H66 remains open. No new human trait/schema/model/provider pass/intake/pacing/schedule
 or notification change.
+
+
+## 2026-10-16 13:00 - H78b empty native setup stability
+
+Base1080e39e7e8b87f4874608ab7de8fd1d8b524519. Initial sandbox DNS failure recovered
+with authorized fetch; premature worktree archived, new post-fetch managed worktree
+trubot-20261016-1300-reconcile and unique feature branch. Primary checkout untouched;
+no subagents or overlapping evolution PR. Prior2.27.3/PR133 and evidence134 complete.
+[Research, both planning phases and acceptance](evaluations/2026-10-16-empty-native-context-study.md).
+Four real source probes isolate empty setup metadata mismatch, not a source edit.
+Same real handler/source/model trials under observed optional-empty loss:baseline
+0/3posts/candidate3/3.22new regressions baseline16fail6pass/candidate22pass; substantive
+context changes and existing lifecycle guards retained. All six feature gates pass:
+1,377tests/96.98%branch coverage/31typed modules/build2.27.4. No new provider pass,
+model/schema/service, trait, intake/participation, study pacing or budget/schedule.
+Protected CI/merge, immutable release/images, installed hashes/health and fresh normal
+owner gateway pending. Narrow transport acceptance is not general character gain.

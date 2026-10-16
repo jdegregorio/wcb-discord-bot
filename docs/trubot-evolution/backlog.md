@@ -1,90 +1,59 @@
 # Prioritized Trubot backlog
 
-2026-10-16 09:00: H80 / 2.27.3 is the selected enabling correction; baseline undated/
-requester activity boundary0/3, candidate3/3, four comparison cases retained.
-[Study and locked acceptance](evaluations/2026-10-16-recent-activity-study.md). Installed acceptance and limitations are recorded below.
-H78a / PR132 / 2.27.2 is deployed and its previously incomplete record is reconciled.
+2026-10-16 13:00: H78b empty native setup correction passes matched real handler
+acceptance0/3to3/3under controlled optional-read loss. Feature gates pass; release/
+installed owner gateway pending. [Evidence and locked acceptance](evaluations/2026-10-16-empty-native-context-study.md).
 
-1. **Final native packet predictability (H78b), enabling diagnosis.** Evidence:
-   one fresh factual draft discarded before successful repeat, alongside two equal
-   installed packet probes. Benefit: supported memory reaches conversation without
-   weakening final checks. Dependencies: content-free per-stage packet/source/HTTP
-   timing under matched questions and controlled quiet/burst conditions. Acceptance:
-   lower valid-draft loss through actual gateway, unchanged correction/denial/
-   withdrawal behavior and bounded cost/latency. Optional setup pressure is an
-   unvalidated cause; diagnose before implementing. Impact: current reads/volume/
-   spending guard, no new provider pass or service selected.
-2. **Qualified useful abstractions and applicability (H79/H64/H48/H21/H28), exploratory.**
-   Evidence: modest/formal bot responses; H72/H74 cohorts add no independent gain;
-   this run inspects11 unique human anchors/5 exports, without certifying a new trait.
-   Benefit: fitting humor, warmth, emotional and relationship judgment so replies
-   reflect conversational patterns rather than copied quotations. Dependencies:
-   separated attributed episodes, contrary context, original pixels where relevant,
-   current source lifecycle and independent held-outs. Acceptance: demonstrated added
-   contextual benefit without fabricated biography/motives, repetitive bits or lost
-   care/recipient controls, followed by actual private Discord. Confidence unresolved
-   beyond the one retained qualified value memory. Impact: existing graph and shared
-   maintenance allowance; no extra provider pass/service selected.
-3. **Linked native and visual coverage, enabling.** Evidence: bounded target-only
-   native intake, ephemeral setup and content-free links leave peers/replies/threads
-   and original pixels incomplete. Benefit: study whole episodes and changing views
-   without inventing missing setup. Dependencies: authenticated readable scope,
-   bounded provenance/storage, lifecycle/withdrawal/recovery. Acceptance: linked
-   attributed context, inspected original pixels, honest gaps and independent
-   contextual qualification before automatic native semantic peer-transfer opens.
-   Confidence high in coverage gap, semantic gain unmeasured. Impact: existing volume,
-   bounded reads; future vision shares maintenance. No bulk backfill disrupting replies.
-4. **Selective skills/tools and generated outdoor sharing (H61), exploratory.**
-   Evidence: Joe's modern-harness and Michigan U.P. aurora/trail-camera themes;
-   no tested new-harness advantage. Benefit: gathered relevant context and fitting
-   generated scenes with short natural captions. Dependencies: human sharing/timing,
-   original-pixel review, primary capability/pricing docs and bounded prototypes.
-   Acceptance: matched contextual benefit, clear generated provenance, failure/
-   abstention/latency checks, actual Discord andUSD 20 monthly ceiling. Confidence
-   unresolved. No new runtime tool, paid service or model is selected.
-5. **Historical synthesis/recent grammar (H66/H80 follow-up), unresolved reliability.**
-   Evidence: prior peer/polarity failures; H80 covers explicit factual activity
-   questions, not all conversational forms. Benefit: preserve who meant what and
-   when without metadata narration. Dependencies: independently source-linked matched
-   cases. Acceptance: no peer promotion, negation/conditional reversal, false current
-   biography or routine date/machinery caveat; preserve hypothetical play and care.
-   Confidence bounded to tested cases. Existing ledger only. Material grounding or
-   privacy failures promote this work ahead of exploratory population.
+1. H79/H81 qualified abstract applicability, humor/emotional judgment and event-to-
+   routine calibration. Require separated attributed episodes, contrary cases and
+   added benefit on independent human-held-out contexts. H72/H74 remain rejected;
+   one qualified value memory remains. Rationale: make replies fitting and natural
+   without turning isolated events into habits. Current population benefit unresolved.
+2. Broader linked native peers/replies/threads and original pixels. Bounded target-
+   only intake and ephemeral setup leave coverage incomplete. Preserve provenance,
+   lifecycle/withdrawal and honest gaps; inspect pixels before interpreting visual
+   meaning. Automatic native semantic transfer stays closed pending qualification.
+3. H61 selective skills/tools and generated Michigan U.P. northern-lights and trail-
+   camera wildlife scenes with short natural captions and generated provenance.
+   Study human sharing/timing, original pixels and current primary capability/pricing
+   documentation. Compare bounded prototypes, failures, latency/cost and real Discord
+   before adding a harness/service. No tested advantage or paid service selected.
+4. H66 material grounding/privacy and remaining delivery failures can reorder this
+   list when independently reproduced. Exact quote/date refinement is secondary.
+   Substantive optional context changes still fail closed; general gateway reliability
+   is not proved by the narrow empty-context correction.
 
-H80 completion criteria: dated current authored activity usable; old/undated/future,
-wrong-author, changed/unavailable/withdrawn evidence excluded; non-source requesters
-cannot inherit persona history; four ordinary controls retained; required six gates,
-protected tested merge, immutable release/both images, installed hashes/health and
-real owner Discord. No new human observation or general fidelity/humor claim.
+## Acceptance, dependencies and operating impact
 
-Priorities favor independently useful abstractions after the reproduced grounding
-correction, then richer contextual coverage and tools/scenes. More source data or
-successful ingestion alone is not reply-quality evidence. H72/H74 remain rejected.
-Keep current scope, source/author/withdrawal, bot identity, native-pattern gate,
-model/pacing andUSD 18/2/20 guard, six fresh daily Sol/xhigh runs and notifications.
-[Plan](plan.md), [research](research.md), [progress](progress.md) hold actual results.
+H79/H81: source-reviewed separate human episodes and contrary cases; reproduce a
+conversational deficit, qualify conditional claims and expiry, compare same-model
+baseline/candidate on independent human-held-outs and real owner gateway. No invented
+motives/biography, repeated bits or loss of care/recipient restraint. Confidence in
+need high, candidate added benefit unresolved. Existing graph/maintenance allowance;
+no extra provider pass or service selected. Do not repopulate rejected H72/H74.
 
+Native/visual: authenticated readable scope, source-linked bounded storage, retention,
+correction/deletion/withdrawal/recovery and original pixels. Acceptance: inspectable
+linked context and honest coverage plus independent semantic qualification before
+opening native automatic pattern transfer. Coverage gap verified; quality gain
+unmeasured. Existing volume/bounded reads; any vision uses maintenance allowance.
 
-## Final installed result and revised priorities
+H61: requires observed sharing/timing, actual pixels, current primary docs and bounded
+matched prototypes. Acceptance: contextual benefit, generated provenance, restraint,
+failure/latency/cost checks and real Discord within USD20/month. Exploratory; larger
+harnesses/tools are candidates, not validated features or vendor-based quality claims.
 
-2.27.3 is healthy on immutable index ff48a118, revision 3a1a05e. All 31 installed
-source hashes, six feature/merged gates, protected PR/main CI and both images pass.
-Installed invented source/author boundaries pass 3/3; fresh normal owner gateway
-passes 11/13 strictly, with 11 posts and one confirmed recipient abstention. One
-native factual draft is discarded before a successful repeat, and one dated-activity
-answer overgeneralizes an event into a routine. No all-pass or general fidelity claim.
-No rollback: the verified source/author boundary is retained; baseball's route is
-unchanged, and its wider reliability remains open.
+H78b completion: current selected sources plus empty gap-free setup/absence must
+produce equal packets and publish. True setup appearance/removal/edit, link/media/
+oversized gaps, source correction/deletion, denied/unavailable/withdrawn state and
+author changes still suppress. All six gates, protected tested merge, immutable
+release/both images, installed source hashes/health and actual owner gateway required.
+Confidence high for reproduced empty condition, unresolved for overall gateway
+frequency. Same bounded reads/model/pacing, zero added provider passes or schema.
 
-The new contrary evidence promotes H78b final native packet predictability as a
-bounded diagnostic prerequisite to more population. Capture same-case stage/HTTP
-timing and packet differences before choosing a remedy; optional setup/read pressure
-is a hypothesis, not a proven cause. Acceptance must preserve changed/denied/withdrawn
-suppression and improve real gateway delivery without a cached safety certificate.
-Impact remains existing bounded Discord reads/volume/guard; no new provider pass or
-service selected. Then H79 qualified abstract applicability/humor/emotional benefit,
-including H81 event-to-routine calibration with contrary cases, followed by broader
-linked native/original pixels and selective tools/generated U.P. scenes. H66 remains
-open. No new human observation, source scope, model/pacing or schedule change.
-
-[Structured installed evidence](evaluations/2026-10-16-recent-activity-release.json).
+Keep bot identity, warmth/brevity/care, contextual TJ creative amplification separate
+from human evidence, source attribution/correction/deletion/withdrawal, internal
+unknown dates, allowlist/no DMs and owner-only private development recall. Exclude
+development learning. Existing app volume/model/pacing and shared USD18 runtime /
+2 maintenance /20 monthly guard remain. Preserve six fresh local01/05/09/13/17/21
+Sol/xhigh runs and notification preference. No new human observation is imported.

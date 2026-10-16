@@ -233,3 +233,104 @@ async def test_selected_page_identity_change_is_rejected_before_reads(setup):
     with pytest.raises(LearningUnavailable, match="identity changed"):
         await learner.refresh_page(channel, [BASE, BASE + 1])
     assert not requests
+
+
+@pytest.mark.parametrize("mode", list(ReplyMode))
+@pytest.mark.parametrize("empty_first", [True, False])
+@pytest.mark.parametrize("quality_check", [True, False])
+async def test_empty_native_setup_and_optional_timeout_keep_same_packet(
+    setup, mode, empty_first, quality_check
+):
+    from trubot.native_context import NativeEpisode
+
+    store, learner, channel, _, _ = setup
+    client, responder, _, _ = make_client(clock=lambda: NOW)
+    client._learning, client._memory = learner, ContextMemory(store)
+    calls = 0
+    reuse_checks = []
+
+    async def collect(_channel, _identifier, **kwargs):
+        nonlocal calls
+        calls += 1
+        # First source has stable actual setup; only source two has no setup.
+        focus = kwargs["focus"]
+        if calls % 2:
+            return NativeEpisode(focus.content, None, ({"text": "Human setup only."},))
+        if (calls <= 2) is empty_first:
+            return NativeEpisode(focus.content, None, ())
+        raise TimeoutError
+
+    async def reply(messages, **kwargs):
+        assert any("Human setup only." in row.content for row in messages)
+        # The optional quality-reuse check must use the same publication rule.
+        if quality_check:
+            reuse_checks.append(await kwargs["refresh_check"]())
+        return "A grounded answer."
+
+    responder.reply = reply
+    with (
+        patch.object(client, "get_channel", return_value=channel),
+        patch("trubot.discord_client.collect_history", AsyncMock(return_value=[])),
+        patch("trubot.discord_client.collect_native_episode", side_effect=collect),
+    ):
+        assert await client._respond(
+            channel,
+            mode=mode,
+            requester_user_id=1,
+            anchor=fake_message(channel),
+            target="Owner: Which baseball club do you support?",
+        )
+    channel.send.assert_awaited_once_with("A grounded answer.")
+    assert reuse_checks == ([True] if quality_check else [])
+    await client.close()
+
+
+@pytest.mark.parametrize("change", ["appears", "removed", "edited", "media", "oversized", "link"])
+async def test_substantive_native_context_changes_still_discard(setup, change):
+    from trubot.native_context import NativeEpisode
+
+    store, learner, channel, _, _ = setup
+    client, responder, _, _ = make_client(clock=lambda: NOW)
+    client._learning, client._memory = learner, ContextMemory(store)
+    generated = False
+
+    async def collect(_channel, _identifier, **kwargs):
+        focus = kwargs["focus"]
+        neighbors = ({"text": "Complete human setup.", "focus_replies_to_this": False},)
+        gaps = ()
+        if (change == "appears" and not generated) or (change == "removed" and generated):
+            neighbors = ()
+        elif change == "edited" and generated:
+            neighbors = ({"text": "Corrected human setup."},)
+        elif change in {"media", "oversized"}:
+            neighbors = ()
+            if generated:
+                gaps = (
+                    "source media pixels not retrieved"
+                    if change == "media"
+                    else "1 human context messages omitted for size",
+                )
+        elif change == "link" and generated:
+            neighbors = ({"text": "Complete human setup.", "focus_replies_to_this": True},)
+        return NativeEpisode(focus.content, None, neighbors, gaps)
+
+    async def reply(messages, **kwargs):
+        nonlocal generated
+        generated = True
+        return "An obsolete answer."
+
+    responder.reply = reply
+    with (
+        patch.object(client, "get_channel", return_value=channel),
+        patch("trubot.discord_client.collect_history", AsyncMock(return_value=[])),
+        patch("trubot.discord_client.collect_native_episode", side_effect=collect),
+    ):
+        assert not await client._respond(
+            channel,
+            mode=ReplyMode.DIRECT,
+            requester_user_id=1,
+            anchor=fake_message(channel),
+            target="Owner: Which baseball club do you support?",
+        )
+    channel.send.assert_not_awaited()
+    await client.close()

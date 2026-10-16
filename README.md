@@ -170,6 +170,14 @@ missing real memories, literal definitions and questions for other recipients.
 Review whether a reply actually adds a comic turn, rather than merely acknowledging
 the setup. Brevity and successful delivery alone do not establish humor quality.
 
+## Stable empty native setup (2.27.4)
+
+Supported recall keeps the same conservative packet when optional native setup is
+empty or absent. This prevents empty coverage metadata from discarding a verified
+answer. Fresh source/author/withdrawal checks and exact final packet comparison
+remain. Nonempty setup, media/coverage gaps and oversized omissions still retain
+their meaning and can stop publication when changed. No extra provider call or storage.
+
 ## Recent personal activity (2.27.3)
 
 Explicit factual questions about recent travel, activities, reading or play use

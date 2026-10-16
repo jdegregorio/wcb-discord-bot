@@ -567,6 +567,9 @@ class ContextMemory:
                             <= _time(now or datetime.now(UTC))
                         )
                     ):
+                        # Empty, gap-free setup supplies no extra evidence. Render
+                        # it like absent setup so optional read loss cannot change
+                        # the publication packet without a substantive change.
                         evidence.append(
                             {
                                 "source": source,
@@ -578,6 +581,7 @@ class ContextMemory:
                                         episode := (native_episodes or {}).get(source["message_id"])
                                     )
                                     and episode.matches(row["content"], row["edited_at"])
+                                    and (episode.neighbors or episode.gaps)
                                     else {
                                         "human_messages": [],
                                         "gaps": [
