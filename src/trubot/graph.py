@@ -499,32 +499,38 @@ class GraphStore:
                 key,
                 snapshot | data,
             )
+        entity_keys = [(entity["kind"], entity["id"]) for entity in item["entities"]]
+        if len(set(entity_keys)) != len(entity_keys):
+            raise LearningUnavailable("Distinct observation concept relationships required")
         for entity in item["entities"]:
             if entity["kind"] not in {"entity", "concept"} or not 1 <= len(entity["aliases"]) <= 12:
                 raise LearningUnavailable("Bounded typed entity aliases required")
             if any(not isinstance(a, str) or not 2 <= len(a) <= 80 for a in entity["aliases"]):
                 raise LearningUnavailable("Invalid entity alias")
             entity_key = entity["kind"] + ":" + entity["id"]
-            self._node(
-                db,
-                entity_key,
-                entity["kind"],
-                {
-                    "aliases": entity["aliases"],
-                    "extraction_version": VERSION,
-                    "observed_at": _time(now),
-                    "confidence_basis": "Attribution checked; see linked observation",
-                    "source_times": data["source_times"],
-                    "unknown_date": data["unknown_date"],
-                    "status": "tentative",
-                },
-            )
+            # Existing nodes are also the fallback index for legacy relationships.
+            # New aliases belong to this reviewed edge, never replace that index.
+            if not db.execute("SELECT 1 FROM nodes WHERE id=?", (entity_key,)).fetchone():
+                self._node(
+                    db,
+                    entity_key,
+                    entity["kind"],
+                    {
+                        "aliases": entity["aliases"],
+                        "extraction_version": VERSION,
+                        "observed_at": _time(now),
+                        "confidence_basis": "Attribution checked; see linked observation",
+                        "source_times": data["source_times"],
+                        "unknown_date": data["unknown_date"],
+                        "status": "tentative",
+                    },
+                )
             self._edge(
                 db,
                 key,
                 "about" if kind in {"claim", "preference"} else "exemplifies",
                 entity_key,
-                data,
+                data | {"aliases": entity["aliases"]},
             )
         for other in item.get("contradicts", []):
             other_key = "observation:" + other
@@ -594,17 +600,33 @@ class GraphStore:
             if self.learning._read_identity(source).guild_id != guild_id:
                 return []
             text = phrase(query[:8000])
-            matched = {}
+            entities = {
+                row["id"]: json.loads(row["data"])["aliases"]
+                for row in db.execute(
+                    "SELECT id, data FROM nodes WHERE kind IN ('entity', 'concept') "
+                    "ORDER BY id LIMIT 1000"
+                )
+            }
+            # Index aliases by the relationship whose current evidence owns them.
+            # Legacy relationships retain the node index they previously used.
+            matched: dict[str, int] = {}
+            owners: dict[str, list[tuple[int, str]]] = {}
             for row in db.execute(
-                "SELECT id, data FROM nodes WHERE kind IN ('entity', 'concept') "
-                "ORDER BY id LIMIT 1000"
+                "SELECT origin,target,json_extract(evidence,'$.aliases') AS aliases FROM edges "
+                "WHERE relation IN ('about','exemplifies')"
             ):
-                entity = json.loads(row["data"])
-                lengths = [
-                    len(words(alias)) for alias in entity["aliases"] if phrase(alias) in text
-                ]
+                if row["target"] not in entities:
+                    continue
+                aliases = (
+                    json.loads(row["aliases"])
+                    if row["aliases"] is not None
+                    else entities[row["target"]]
+                )
+                lengths = [len(words(alias)) for alias in aliases if phrase(alias) in text]
                 if lengths:
-                    matched[row["id"]] = max(lengths)
+                    specificity = max(lengths)
+                    matched[row["target"]] = max(matched.get(row["target"], 0), specificity)
+                    owners.setdefault(row["target"], []).append((specificity, row["origin"]))
             if not matched:
                 return []
             # Rank before bounding source validation. Graph growth must not favor
@@ -653,6 +675,18 @@ class GraphStore:
                 )
                 return current[key]
 
+            active_topics: dict[str, bool] = {}
+
+            def topic_current(topic: str) -> bool:
+                if topic not in active_topics:
+                    active_topics[topic] = any(
+                        read(owner) is not None
+                        for _specificity, owner in sorted(
+                            owners[topic], key=lambda item: (-item[0], item[1])
+                        )
+                    )
+                return active_topics[topic]
+
             result: dict[str, dict[str, Any]] = {}
             refs: set[str] = set()
             skipped: set[str] = set()
@@ -660,6 +694,8 @@ class GraphStore:
                 if key in result or key in skipped:
                     continue
                 try:
+                    if not any(topic_current(topic) for topic in sorted(candidates[key][1])):
+                        continue
                     component = self._lookup_component(key, db, read)
                 except _LookupLimit:
                     # Nothing from an incompletely checked component is emitted.

@@ -1,5 +1,13 @@
 # Trubot evolution plan
 
+H76 is this run's selected enabling correction: shared-concept imports retain earlier
+reviewed lookup aliases on evidence-owned relationships. Legacy reads remain available;
+invalid or retired alias evidence cannot activate current neighbors. No new human trait,
+provider pass, model or schema. H74 emotional population is rejected after matched
+opportunity6/6each and controls6/6each. The actual private handler reproduces H76 before
+implementation, provider0. Engineering, release and installed verification follow.
+
+
 2.26.7 deployed via [PR125](https://github.com/jdegregorio/wcb-discord-bot/pull/125).
 H73 requires conditional, separated-source qualification for every pattern domain
 at import and again at lookup, describe and sweep. Actual private Discord handler:

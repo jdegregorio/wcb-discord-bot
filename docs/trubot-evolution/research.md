@@ -2509,3 +2509,16 @@ current old/new graph packets equal, original provider input uncaptured. H72 fin
 conservative6/7each, one gain offset by one flat/unclear response, versus preliminary
 candidate7/7; rejection unchanged under both scores. No human pattern is imported.
 [Final study and limits](evaluations/2026-10-15-abstract-humor-study.md).
+
+
+## 2026-10-15 21:00: H74 rejected, H76 selected
+
+[Both phases, source coverage, locked criteria and experiment results](evaluations/2026-10-15-emotional-memory-study.md).
+H74 conditional emotion population adds no opportunity pass (6/6each); controls6/6each.
+24actual handler attempts/22posts plus two recipient abstentions,29provider attempts
+including five existing quality refreshes. All paired source/history hashes survive;
+recipient required isolated enum/history-page repairs. No new human observation retained.
+H76 reproduces a shared-concept alias overwrite in the actual private Discord handler,
+provider0. Preserve reviewed aliases on current evidence-owned relationships before
+larger abstract population. Native/pixel and selective tools/generated U.P. themes stay
+active; H66 contextual synthesis unresolved. No general character-gain claim.

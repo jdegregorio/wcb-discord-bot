@@ -4152,3 +4152,23 @@ window, two startup warnings, no rollback. Sixteen content-free private files070
 seven-day manual retention/withdrawal. Source/derived data stay private, no new
 population. [Full evidence and limits](evaluations/2026-10-15-abstract-humor-study.md)
 and [structured installed result](evaluations/2026-10-15-abstract-humor-release.json).
+
+
+## 2026-10-15 21:00 - H74 rejected, H76 shared concept lookup
+
+Base28bbbc5f071ae5a682a5452acc41b78c1a86356c, unique feature branch in new managed
+verified checkout after successful origin/main fetch. An earlier empty cached checkout
+was archived after an initial sandbox fetch failure; no primary edit/reset/stash.
+No unfinished evolution PR. [Both research phases](evaluations/2026-10-15-emotional-memory-study.md).
+H74 opportunity6/6each, controls6/6each, rejected. Actual handler H76 synthetic baseline:
+lookup true before shared concept import, false after; earlier memory absent. Provider0,
+production learning unchanged. Initial11regressions4fail/7pass after fixture correction.
+Relationship alias provenance and current owner validation implemented; source lifecycle,
+legacy reads/conflicts/result/freshness bounds retained. Full gates/release pending.
+
+H76 feature all six gates pass:1,252tests/96.92%branch coverage/31typed modules/build.
+18new meaningful regressions. Exact candidate source in actual private Discord handler
+preserves earlier lookup after shared import, provider0. Disposable stores erased,
+production learning unchanged; distinct readiness path before validation construction.
+H74 final controls6/6each;24handler invocations/22posts/29provider attempts including
+five existing quality refreshes. Rejected manifest and temporary graph erased.
