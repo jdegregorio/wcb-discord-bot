@@ -1,5 +1,16 @@
 # Prioritized Trubot backlog
 
+H73 qualification correction selected for 2.26.7: every humor/style/value/emotion/
+relationship import needs a conditional abstraction and separated support. Lookup,
+describe and sweep revalidate restored rows using their stored node kind; qualified
+legacy rows without newer domain metadata remain usable. This closes a reproduced
+single-source pattern admission defect, enabling reliable abstract population.
+H72 population is rejected: matched baseline6/7candidate7/7humor falls below the
+locked two-additional-pass threshold; no private population or persona prompt ships.
+[Both phases and evidence](evaluations/2026-10-15-abstract-humor-study.md).
+Full release and installed acceptance are pending. No measured general fidelity or
+2-3xhumor gain is claimed. Existing model/intake/native gate/spending stay intact.
+
 H71 source publication coherence is deployed in 2.26.6/PR123. All gates/CI/images
 pass; installed guards 5/5, fresh normal gateway 8/9 with weak invited humor open.
 [Installed evidence](evaluations/2026-10-15-reply-source-freshness-release.json). [Research and both phases](evaluations/2026-10-15-reply-source-freshness-study.md).

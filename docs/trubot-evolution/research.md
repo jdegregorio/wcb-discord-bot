@@ -2479,3 +2479,24 @@ then applicability/specific care/semantic humor, native links/pixels and selecti
 tools/generated U.P. scenes. H66 original source-question synthesis remains open.
 Run USD 0.00710109 estimate; existing spending/privacy/lifecycle constraints unchanged.
 [Final study and limits](evaluations/2026-10-15-reply-source-freshness-study.md).
+
+
+## 2026-10-15 17:00 - H72 rejected; H73 qualification boundary
+
+[Both research phases, locked criteria, matched replies and limitations](evaluations/2026-10-15-abstract-humor-study.md).
+58private contextual windows/57anchors/seven exports,61target110peer grouped
+occurrences with overlap. Recent league audit5target8peer3olderbot0fresh. No original
+pixels interpreted. One-Codex review, no new human trait certified. H72 private
+conditional humor candidate: baseline6/7candidate7/7playful passes; serious/care/
+requester/recipient5/5each.24accounted maintenance attempts,22actual posts/two
+abstentions; private refs recovered after final harness mode-name error, no repeats.
+Reject H72 against two-additional-pass threshold, remove offline candidate.
+
+H73 current operator import and restored-read qualification bypass is reproduced
+through actual production handler and a private Discord synthetic post, provider0.
+Select shared conditional/separated-support validation at import/lookup/describe/
+sweep. Initial35regressions24fail baseline; expanded45cover malformed/duplicate
+legacy support and unaffected literal memory. This is enabling correctness for
+qualified abstract growth, not measured reply-quality improvement. Full gates and
+installed acceptance pending. Roadmap retains qualified population, applicability/
+care/humor, linked native/original pixels and selective skills/generated U.P. scenes.

@@ -654,3 +654,14 @@ without an optional cosmetic repetition rewrite. Initial memory verification rem
 Longer repeated replies/passages and independent brevity repair still share the existing
 single budgeted quality attempt. This boundary also permits a short punchline to repeat;
 it does not establish factual truth or solve semantic joke repetition.
+
+
+## Qualified character patterns (2.26.7)
+
+Humor and style memories now require the same conditional abstraction and separated
+support as values, emotions and relationships. New unqualified imports are rejected;
+restored unqualified patterns are excluded from replies and removed by normal graph
+sweeps. Qualified older patterns remain readable, including those without newer
+domain metadata. Literal claims/preferences retain their existing evidence rules.
+This enables safer abstract population; it does not add a new human trait or prove
+more natural or funnier replies. See the [study](docs/trubot-evolution/evaluations/2026-10-15-abstract-humor-study.md).

@@ -4116,3 +4116,18 @@ The retry confirmed the same c4ef4f3 base before any source edit or feature bran
 creation. The primary checkout was never edited, reset or stashed. Future runs
 must await successful fetch before invoking create_worktree; matching the later
 fetch mitigated stale-base risk here but does not change that ordering lapse.
+
+
+## 2026-10-15 17:00 - H72 rejected, H73 pattern qualification
+
+Base ed130c318955b5622bcfed481ae9ebcc6c09b305, fresh managed worktree/unique
+feature/trubot-daily-20261015-1700 after successful fetch; no overlapping evolution
+PR. Primary checkout untouched. [Both planning phases](evaluations/2026-10-15-abstract-humor-study.md).
+Private58context windows/57anchors/seven exports,61target110peer grouped occurrences
+with overlap; missing original pixels not interpreted. Fresh league activity sparse.
+H72 baseline6/7candidate7/7humor fails the locked two-pass-gain criterion, no rollout.
+Real private handler synthetic reproduction admits an unqualified one-source pattern,
+provider0. H73 selected as a justified prerequisite for qualified population. Initial
+35new regression cases:24fail on baseline,11already pass. Qualification/import/read/
+source lifecycle and legacy compatibility checks pass after the correction; full
+engineering gates/release/deployment/normal gateway acceptance pending.

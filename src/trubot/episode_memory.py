@@ -42,13 +42,13 @@ def abstraction_contract(
     item: dict[str, Any], supports: list[dict[str, Any]]
 ) -> dict[str, Any] | None:
     if "abstraction" not in item:
-        if item["kind"] in BEHAVIORAL_KINDS:
-            raise LearningUnavailable("Behavioral memories require a conditional abstraction")
+        if item["kind"] in PATTERN_KINDS:
+            raise LearningUnavailable("Pattern memories require a conditional abstraction")
         return None
     value = item["abstraction"]
     if (
         item["kind"] not in PATTERN_KINDS
-        or len(supports) < 2
+        or not 2 <= len(supports) <= 3
         or not isinstance(value, dict)
         or set(value) != {"conditions", "limitations", "counterexamples"}
         or any(

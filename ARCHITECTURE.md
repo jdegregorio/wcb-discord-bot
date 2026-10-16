@@ -375,3 +375,14 @@ metadata and graph conflict scope remain whole. Focused context/joke/explanation
 quote/evidence requests retain the existing setup; native episodes and abstract
 projection are unchanged. This adds no provider call, storage or prompt instruction.
 The conservative lexical request predicate is not a general semantic intent model.
+
+
+## Qualified pattern boundary (2.26.7)
+
+The shared abstraction contract applies to all five pattern domains at import and
+again at graph lookup, describe and sweep. Stored node kind remains authoritative
+for old rows without data.kind. Missing/malformed conditions, unsupported support
+counts, shared episodes and duplicate supporting text exclude that observation
+without hiding unrelated valid memory. Existing source fingerprints, contrary-source
+invalidation, native freshness, expiry and withdrawal remain authoritative. This is
+an enabling correction, with no new automatic trait, prompt or provider attempt.
