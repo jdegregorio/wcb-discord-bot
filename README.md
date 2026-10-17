@@ -1,20 +1,20 @@
 # Trubot
 
-## U.P. aurora mornings (2.29.0)
+## U.P. aurora mornings (2.29.1)
 
 An opt-in scheduled visual skill checks the previous night's observed NOAA activity
 and NWS local sky conditions. After a suitable night it can share one original
-generated Lake Superior aurora scene between08:00and11:00America/Detroit. It checks
+generated Lake Superior aurora scene between 08:00 and 11:00 America/Detroit. It checks
 conversation timing, quiet time and shared post caps/cooldowns, and preserves a
 restart-safe one-attempt claim. Generated scenes are clearly labeled; conditions
 indicate a viewing opportunity, not a confirmed sighting or a real photograph.
 
 Initialize private state with `trubot-aurora init`, then set
 `TRUBOT_AURORA_CHANNEL_ID` to an already allowed source-guild text channel.
-Default0disables the feature. `TRUBOT_AURORA_STORE_PATH` defaults to
+Default 0 disables the feature. `TRUBOT_AURORA_STORE_PATH` defaults to
 `/var/lib/trubot/aurora.sqlite3`. NOAA/NWS reads use no paid service. Fixed GPT Image2
-medium1536x1024generation shares the existing monthly spending ledger; the first
-actual preview costUSD0.04172. See the [study](docs/trubot-evolution/evaluations/2026-10-17-aurora-feature-study.md)
+medium 1536x1024 generation shares the existing monthly spending ledger; the first
+actual preview cost USD 0.04172. See the [study](docs/trubot-evolution/evaluations/2026-10-17-aurora-feature-study.md)
 and [storage/operations](docs/trubot-evolution/storage.md).
 
 ## Fresh source media continuity (2.28.1)

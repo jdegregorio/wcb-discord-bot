@@ -2836,3 +2836,13 @@ shared maintenance ledger atUSD0.04172; no sighting inference. Contextual timing
 judgment8/8syntheticcases passes, one sample each, one evaluator. Engineering and
 installed delivery evidence follow in the [study](evaluations/2026-10-17-aurora-feature-study.md).
 No new human observation, memory population or measured general fidelity gain.
+
+
+H89 final:2.29.1enabled after full protected release/deployment. Actual partial HTTP
+read reproduced and corrected before activation. Full feeds parse; actual prior night
+has no qualifying opportunity. Real private synthetic-positive handler posts one
+inspected generated scene, no duplicate; normal gateway confirms generated origin.
+Timing8/8synthetic; normal gateway6functional checks with2voice partials. General
+fidelity/engagement remains unmeasured. H88 target intake works; full peer-discussion
+coverage and natural source language remain gaps. Next is a selective tool/skill
+harness and useful visual requests, not another default isolated memory patch.

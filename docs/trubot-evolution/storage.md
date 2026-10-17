@@ -1190,3 +1190,12 @@ prompt; first live previewUSD0.04172. One typical image every day would be rough
 USD1.30/month plus timing checks, within the existing18runtime/2maintenance/20total
 cap. This is an estimate, not provider billing. No request retries or paid data service.
 Generated files stay in memory for normal publication; no new raw-media retention.
+
+
+Enabled2.29.1on2026-10-17: public aurora state explicitly initialized on the existing
+volume; platform PR9 adds only the non-secret existing destination. Intermediate
+2.29.0remained off while incomplete response reads were corrected. The bounded reader
+now consumes chunks through EOF. Actual collector coverage and private synthetic
+image/duplicate/gateway evidence are in the current study. No real qualifying night
+has been observed. The default local configuration remains opt-in/off. Production
+stores no test claims; HTTP-only smoke claims are disposable and readiness-isolated.

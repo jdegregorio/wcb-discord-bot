@@ -154,3 +154,84 @@ All six corrected feature gates pass:1,516tests,34typed modules and2.29.1build.
 The release timer installed healthy2.29.0with the aurora feature still off; no
 opportunity publication was enabled on the intermediate reader. Platform PR9 waits
 for2.29.1initialization and acceptance. No production rollback or data restore needed.
+
+
+Two attributed human-held-out normal-reply controls (actual answers withheld from
+generation, one sample each) remain relevant2/2, brief/natural1/2 and matched human
+comic mechanism0/2 under a single same-model rubric. Invented real history0/2 and
+mechanical metadata0/2. Five accounted maintenance attempts include the existing
+quality-repair path and one rubric, estimatedUSD0.00084246. References and grades
+are private, with no raw answers retained. Anchors may have appeared in earlier
+studies; this is neither blind nor unseen-corpus evaluation. It is a fidelity
+limitation/control, not evidence that the visual feature improves human imitation.
+Normal reply/personality/memory code is unchanged by the visual feature.
+
+
+## Final installed outcome
+
+[PR145](https://github.com/jdegregorio/wcb-discord-bot/pull/145) ships the visual skill;
+[PR146](https://github.com/jdegregorio/wcb-discord-bot/pull/146) corrects full response
+transport before activation. Both exact tested heads merge without admin bypass.
+Final runtime/release commit973d9304d822185a5a4a3e63a0947625f68ef325, immutable
+[v2.29.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.29.1).
+Feature and actual merged six gates pass:1,516tests/96.91%branch-inclusive coverage,
+34typed modules and package build. PR/main/image CI identifiers and both immutable
+platform manifests are in the structured release record. The intermediate2.29.0
+was healthy but inactive; it is not the enabled acceptance result.
+
+Reverified pi5/aarch64/Ubuntu24.04.4 uses the existing non-sudo app-scoped locked
+release transaction. The running indexdc19d2f2, OCI revision/version and all34source
+module hashes match. Healthy/ready/read-only, zero restarts. No rollback, source or
+spending-state restore. Persistent aurora state is explicitly initialized and empty;
+synthetic claims use a separate disposable store. App configuration
+[platform PR9](https://github.com/jdegregorio/pi-platform/pull/9), merge40ec687b,
+passes60platform tests/shell/systemd validation and protected PR/main CI. The existing
+platform timer applies the single app setting, retaining the same immutable image.
+Actual source guild, already allowed destination and view/send/attach/history
+permissions verify. Root-only platform state JSON is not read; live Git/config,
+image/health and actual gateway evidence confirm application. Both timers remain
+active/enabled; no unrelated services or credentials change.
+
+Installed real private Discord image acceptance: one actual generated/uploaded
+1536x1024PNG,2,485,065bytes, inspected plausible shoreline/sky; second cycle posts
+nothing and generates nothing. Private two-member owner/bot guild, allowed general
+channel and attachment permission are authenticated. A declared synthetic night and
+clock/quiet/timing fixtures exercise the same publication handler; this is not a
+naturally occurring production aurora. Real provider generation uses maintenance
+on the existing ledger. The initial metadata harness call lacked a required SDK
+argument and stopped before any provider call/post; corrected without resetting a
+production ledger/store. Validation readiness is distinct before client construction;
+primary heartbeat survives both failed setup and successful HTTP-only client closure.
+
+Six fresh owner UI/gateway probes: five actual posts, one confirmed recipient
+abstention. Generated provenance, care, unmentioned care follow-up, supported recent
+subjects, requester ownership and recipient restraint pass their functional checks.
+Naturalness is partial for the provenance reply's unnecessary apology and recent
+recall's third-person/internal-project phrasing. Do not call this six strict character
+passes. Five response latencies2.693-5.924seconds, median3.722; no causal speed claim.
+Normal gateway responses after the final configuration restart prove continued
+readiness. No user tokens are extracted. Development posts never enter Andrew learning.
+
+Post audit: three allowed league channels/latest100/14days,5target/7peer/3olderbot,
+zero seven-day bot posts/denied channels. No natural qualifying-night image has yet
+occurred. Latest-container logs:0errors/reply failures/source discards/disconnects/
+aurora failures,4normal posts/1recipient skip/0quality refreshes/2startup warnings,
+zero restarts. Short unmatched windows cannot establish error-rate or engagement gain.
+Source study covers6windows/5exports; actual original source pixels remain uninspected.
+No new human trait/graph population; automatic native pattern gate remains closed.
+
+Run22new settled attempts, estimatedUSD0.08630947:15maintenance/USD0.084506085,
+7runtime/USD0.001803385. Two actual image previews totalUSD0.08344. Covered October
+2,252attempts/USD0.46276329; one unchanged legacy unsettled reservation, no new
+unsettled attempts. Existing18/2/20guard, not provider billing; pre-guard spend unknown.
+Seven content-free private receipts use existing0700/0600app-volume storage and
+seven-day manual retention/withdrawal cleanup. No raw sources, replies or personal
+observations enter Git/releases/logs/receipts. Synthetic public image previews are
+saved as visual artifacts, without human source data.
+
+H89 is delivered. Observing the first natural qualifying night is non-blocking
+maintenance. Next:selective tools/skills and useful visual requests, reusing working
+recent intake; then broader visual variety/trail-camera scenes. Broader group
+conversation context remains a concrete gap, not an indefinite memory prerequisite.
+Existing cadence/model/notification intent, private source lifecycle and monthly
+spending cap remain unchanged. [Structured evidence](2026-10-17-aurora-feature-release.json).
