@@ -4620,3 +4620,76 @@ native pattern gate remain. No raw peer persistence, extra provider/Discord call
 model/schema/service/scope/pacing or spending pool. Rollback needs no source/ledger
 restore. H79/H81/H83/H86 usefulness remains next, then full linked native/original
 pixels and H61 selective tools/generated U.P. scenes. [Study](evaluations/2026-10-17-native-study-setup.md).
+
+
+## Final installed result
+
+PR141 merged f0f84d36fd03791121852a60f16efde3de528bc7 after exact tested head
+9528a0ab3af7e7486d8d29b2efd58f5c745bb8a0 passed required CI39016329690. An initial
+SHA transcription mismatch was rejected without mutation, then corrected. All six
+feature and merged gates pass: 1,426 tests, 97.10% branch-inclusive coverage, 31 typed
+modules, 2.28.0 build. Main CI39016510473 and image39016649123 pass. No accepted
+lint/type/test failures or flakiness. Initial typing/import issues were fixed locally.
+
+[Release 2.28.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.28.0)
+runs on reverified pi5/aarch64/Ubuntu24.04.4, healthy with zero restarts. Index
+041503066af2a3325ffb122333beda4f2416ecf6795b1f10b6869635fec57043; all31 installed
+module hashes and image revision match the tested merge. Existing non-sudo app-scoped
+locked transaction succeeded; prior2.27.6/index99e03a9f remains rollback target.
+No rollback, source/ledger restore, service/scope/schedule/model/notification change.
+Timer active/enabled; primary readiness survives all HTTP-only validation closures.
+An unverified version-file display was rejected by automatic review; a helper-code
+inspection and strict semantic-version/digest-only read safely supplied the state.
+No credential value was printed, no approval bypass or unresolved access block.
+
+Installed actual GraphDistiller plus real maintenance provider:3 synthetic cases/6
+passes, fictional/quoted claims rejected and literal control accepted, identical
+frozen setup in both passes, anonymous projection and no peer-text persistence.
+Disposable stores erased; production graph unchanged, one retained value pattern.
+Fresh actual native captures2/2 project1and2human rows, serialized7,226/7,128bytes,
+no extra provider request. This is not native semantic qualification or full coverage.
+
+Two actual attributed held-out setups, authentic answer withheld, one responder-only
+sample each:2/2relevant,0/2fit the observed human comic mechanism. These anchors were
+previously catalogued and are a subset of the four audit windows, not new independent
+corpus. Reply code is unchanged; no causal/general character or humor gain established.
+No source answer, reply or personal derivation retained in receipts/Git/releases/logs.
+
+Fresh normal owner UI/gateway:9probes/7posts, eight unique cases strict6pass/one
+humor partial/one initial care delivery failure. Contextual fictional grounding,
+baseball, broad past recall without routine date caveat, exact-date honesty,
+requester ownership and recipient abstention pass. Broad recall is naturally voiced
+in this sample, but unchanged reply code prevents a causal voice-improvement claim.
+Invited humor fits the scene but is scaffold-like. Serial exact care retry delivers
+sincere care. Do not hide the failed original probe behind the successful retry.
+Seven latencies2.018-7.301seconds, median3.475; not causal performance evidence.
+
+The care discard is explicitly logged at the final private-source check. Three
+zero-provider rechecks vary; a second serial2packet trace retains all five source IDs
+and authored hashes but varies optional native media-gap metadata. Original request
+packets were not captured, so this is a reproduced instability mechanism consistent
+with the discard, not proven causation for that exact post. Validation concurrency
+and rate limits remain possible influences. No source rule was relaxed. H87 now
+requires an original-packet/normal-traffic trace before choosing a correction; retain
+substantive media/context, author, correction, delete, withdrawal and final checks.
+
+Post league audit matches3channels/latest100each/14days:5target8peer3olderbot and
+zero seven-day bot posts. New container window:0errors/reply exceptions/disconnects/
+restarts,1source discard,7posts/1recipient skip/2existing quality repairs/2startup
+warnings. Short unmatched windows do not establish an error-rate improvement.
+
+Run45settled attempts, estimatedUSD0.00717635:33maintenance/USD0.003306645,
+12runtime/USD0.003869705. CoveredOctoberUSD0.36811192/2,189attempts. One unchanged
+old unsettled reservation, zero new unsettled. Existing18/2/20guard intact; estimates
+are not provider billing, pre-guard spend unknown. No added infrastructure/provider.
+Private content-free refs/hashes/counts/grades in app-volume smoke-tests/2026-10-17-0100,
+0700directory/0600files, existing seven-day manual retention/withdrawal cleanup.
+No new raw peer persistence, human trait, historical backfill or denied-access bypass.
+
+H85 is complete as a contextual learning increment. Next: bounded H87 publication
+stability diagnosis, qualified H79/H81/H83/H86 abstract/emotional/comic utility,
+broader linked native/thread/original pixels, H61 selective skills/tools and generated
+Michigan U.P. aurora/trail-camera sharing. H72/H74/H83a remain rejected. Six fresh
+local01/05/09/13/17/21Sol/xhigh runs and notifications remain unchanged.
+
+[Structured validation](evaluations/2026-10-17-native-study-release.json).

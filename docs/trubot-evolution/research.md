@@ -2776,3 +2776,17 @@ setup. Select bounded anonymous projection into both passes; automatic native
 pattern gate remains closed. H86 natural source-recap voice remains exploratory,
 alongside H79/H81/H83. Native full history/pixels and H61 tools/generated outdoor
 sharing follow. No new trait. See [study](evaluations/2026-10-17-native-study-setup.md).
+
+
+### H85 release and H87 diagnostic finding
+
+Installed3/3synthetic study cases pass; actual native projections2/2. Required gates,
+protected CI and both images pass; healthy2.28.0 with31matching modules. Normal gateway
+strict6/8unique:one humor partial and one source-discarded care post; exact retry passes.
+Two held-out human setups are relevant but miss the observed comic mechanism. No
+new trait or general reply-quality gain. Serial content-free checks reproduce changing
+optional native setup/media metadata with five unchanged source/authored hashes.
+Original generation packet unavailable; link to that exact discard remains unproved.
+Promote H87 normal-traffic/original-packet diagnosis before choosing a correction,
+without relaxing fresh source/media/lifecycle rules. Abstract/humor utility remains
+next, followed by linked native/pixels and H61tools/generated sharing. [Final evidence](evaluations/2026-10-17-native-study-release.json).
