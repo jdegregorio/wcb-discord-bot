@@ -7,7 +7,7 @@ import json
 import logging
 import re
 from collections.abc import Awaitable, Callable, Sequence
-from typing import Any
+from typing import Any, cast
 
 from openai import APIConnectionError, APIError, APIStatusError, AsyncOpenAI, RateLimitError
 from openai.types.responses import (
@@ -19,6 +19,7 @@ from openai.types.responses import (
 from openai.types.responses.response_create_params import ResponseCreateParamsNonStreaming
 
 from trubot.budget import NANODOLLARS, BudgetError, BudgetUnavailable, UsageLedger
+from trubot.context_tools import ContextSkill, ContextTools, ToolProtocolError
 from trubot.conversation import ConversationMessage, MemoryAuthorScope, ReplyMode
 from trubot.memory_author import author_guidance, focused_author_guidance, memory_author_scope
 from trubot.personality import instructions_for
@@ -94,6 +95,7 @@ class OpenAITruaxResponder:
         budget: UsageLedger,
         max_retries: int = 0,
         purpose: str = "runtime",
+        context_tools: ContextTools | None = None,
     ) -> None:
         self._client = client.with_options(max_retries=0)
         self._model = model
@@ -101,6 +103,7 @@ class OpenAITruaxResponder:
         self._budget = budget
         self._max_retries = max_retries
         self._purpose = purpose
+        self._context_tools = context_tools or ContextTools()
 
     async def allow_scheduled_share(self, messages: Sequence[str]) -> bool:
         """One bounded timing decision before an optional paid visual contribution."""
@@ -191,6 +194,8 @@ class OpenAITruaxResponder:
             len(messages),
         )
         instructions = instructions_for(mode) + author_guidance(scope)
+        selected = self._context_tools.select(target, mode)
+        instructions += "".join(skill.instructions for skill in selected)
         output_bound = (
             self._max_output_tokens
             if mode is ReplyMode.FOLLOW_UP
@@ -227,12 +232,31 @@ class OpenAITruaxResponder:
             safety_identifier=safety_id,
             store=False,
         )
+        if selected:
+            request["tools"] = [skill.definition() for skill in selected]
+            request["parallel_tool_calls"] = False
+            input_bound += len(json.dumps(request["tools"]).encode()) + 1_024
         response = await self._generate(
             input_bound=input_bound,
             output_bound=output_bound,
             mode=mode,
             request=request,
+            retry_limit=0 if selected else None,
         )
+        if selected and response.status != "completed":
+            raise ToolProtocolError("Incomplete selected-skill response")
+        calls = [item for item in getattr(response, "output", ()) if item.type == "function_call"]
+        if calls:
+            response = await self._finish_context_call(
+                response,
+                selected,
+                request,
+                model_input,
+                input_bound,
+                output_bound,
+                mode,
+                refresh_check,
+            )
         reply = normalize_reply(response.output_text)
         if mode is ReplyMode.FOLLOW_UP and reply.casefold() == _NO_REPLY.casefold():
             logger.info("Trubot declined follow-up candidate")
@@ -241,7 +265,7 @@ class OpenAITruaxResponder:
             raise EmptyResponseError("OpenAI returned an empty text response")
         repeated = _stale_bot_echo(reply, messages, target)
         overlong = needs_brief_reply(reply, messages, target)
-        if repeated or overlong:
+        if (repeated or overlong) and not selected:
             guidance = (_FRESH_REPLY_GUIDANCE if repeated else "") + (
                 BRIEF_REPLY_GUIDANCE if overlong else ""
             )
@@ -324,6 +348,67 @@ class OpenAITruaxResponder:
                     reply = candidate
         logger.info("Generated Trubot response mode=%s characters=%d", mode.value, len(reply))
         return reply
+
+    async def _finish_context_call(
+        self,
+        response: Response,
+        selected: Sequence[ContextSkill],
+        request: ResponseCreateParamsNonStreaming,
+        model_input: ResponseInputParam,
+        input_bound: int,
+        output_bound: int,
+        mode: ReplyMode,
+        refresh_check: Callable[[], Awaitable[bool]] | None,
+    ) -> Response:
+        if not selected or response.status != "completed":
+            raise ToolProtocolError("Unselected or incomplete tool response")
+        if refresh_check is not None and not await refresh_check():
+            raise ToolProtocolError("Private context changed before tool continuation")
+        calls = [item for item in response.output if item.type == "function_call"]
+        output = await self._context_tools.execute(calls, selected)
+        # Preserve all response items, including reasoning, with store=False. No remote state.
+        continuation = cast(
+            ResponseInputParam,
+            [
+                *model_input,
+                *(item.model_dump(exclude_none=True) for item in response.output),
+                {"type": "function_call_output", "call_id": calls[0].call_id, "output": output},
+            ],
+        )
+        extra = len(
+            json.dumps(
+                [*(item.model_dump(exclude_none=True) for item in response.output), output],
+                ensure_ascii=False,
+            ).encode()
+        )
+        # No third request or tool retry. Failed continuation cannot leak a planning draft.
+        final_request: ResponseCreateParamsNonStreaming = {**request, "input": continuation}
+        final_request.pop("tools", None)
+        final_request.pop("parallel_tool_calls", None)
+        final_request["tool_choice"] = "none"
+        final = await self._generate(
+            input_bound=input_bound + extra,
+            output_bound=output_bound,
+            mode=mode,
+            request=final_request,
+            retry_limit=0,
+            before_request=(self._context_source_check(refresh_check) if refresh_check else None),
+        )
+        if final.status != "completed" or any(
+            item.type == "function_call" for item in final.output
+        ):
+            raise ToolProtocolError("Incomplete or repeated tool continuation")
+        return final
+
+    @staticmethod
+    def _context_source_check(
+        check: Callable[[], Awaitable[bool]],
+    ) -> Callable[[], Awaitable[None]]:
+        async def verify() -> None:
+            if not await check():
+                raise ToolProtocolError("Private context changed before continuation request")
+
+        return verify
 
     async def study_json(
         self,

@@ -2846,3 +2846,17 @@ Timing8/8synthetic; normal gateway6functional checks with2voice partials. Genera
 fidelity/engagement remains unmeasured. H88 target intake works; full peer-discussion
 coverage and natural source language remain gaps. Next is a selective tool/skill
 harness and useful visual requests, not another default isolated memory patch.
+
+
+## H90/H91/H92,2026-10-17 13:00
+
+H90 missing current-context capability reproduced in real owner/gateway conversation.
+Selective read-only tools: matched3/3synthetic useful answers versus0/3baseline;
+5/5controls no calls. Plain-language retake2/3natural,one residual generic caveat.
+One sample/case,manual evaluator,synthetic reference. No new human trait or general
+fidelity claim. Actual NOAA/NWS source staleness/gaps remain authoritative. H91
+requested images is next with durable paid-side-effect transaction/pixel acceptance.
+H92 abstract/humor utility remains unresolved; prior rejected cohorts stay rejected.
+Fresh private provider audit was auto-review rejected,not executed/retried;local
+content-free census substitutes coverage evidence only,not a fresh human-held-out
+quality result. [Predeclared method/results](evaluations/2026-10-17-context-tools-study.md).

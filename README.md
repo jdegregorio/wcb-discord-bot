@@ -1,5 +1,14 @@
 # Trubot
 
+## Selective current U.P. context (2.30.0)
+
+Ask Trubot directly to check current sky conditions or northern-lights activity near
+Marquette, Munising or the Keweenaw. A small read-only skill can gather fresh NOAA/NWS
+observations before answering. Missing or stale reports stay unknown; these are
+observations, not guaranteed sightings or forecasts. Ordinary conversation loads no
+extra tool context. No new service, credential or spending allowance is needed.
+See the [study](docs/trubot-evolution/evaluations/2026-10-17-context-tools-study.md).
+
 ## U.P. aurora mornings (2.29.1)
 
 An opt-in scheduled visual skill checks the previous night's observed NOAA activity

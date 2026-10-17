@@ -390,3 +390,12 @@ source or spending state. Already accepted observations retain their dependency
 lifecycle, but older code resumes target-only future studies. Private validation
 receipts use existing app-volume smoke-tests, 0700/0600, seven-day manual retention
 and withdrawal cleanup; content-free references/results only.
+
+
+2026-10-17 13:00 direction: H90 selective public-context tools use the working memory
+foundation without adding another literal-recall patch. NOAA/NWS data is ephemeral
+public context,never evidence about Andrew. Existing graph provenance,withdrawal,
+correction and closed native pattern gate remain. H91 requested visuals is next,
+then qualified abstract/humor utility and broader peer history when useful scenarios
+justify them. Fresh private provider audit remains approval-blocked;no new personal
+abstraction or human-held-out fidelity gain is claimed. See current plan/study.

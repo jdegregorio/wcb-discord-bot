@@ -1199,3 +1199,16 @@ now consumes chunks through EOF. Actual collector coverage and private synthetic
 image/duplicate/gateway evidence are in the current study. No real qualifying night
 has been observed. The default local configuration remains opt-in/off. Production
 stores no test claims; HTTP-only smoke claims are disposable and readiness-isolated.
+
+
+## Selective public context,2.30.0
+
+No storage migration or new database. Public observation payloads and function-call
+items are ephemeral,store=False,and never imported as human evidence. No private
+conversation enters public HTTP. Same usage.sqlite3 runtime/maintenance pools;
+each of at most two selected-skill model requests reserves independently. No image
+call or added paid service. Only content-free skill names enter application logs.
+The current run's private receipts use smoke-tests/2026-10-17-1300,0700/0600,
+existing manual seven-day retention/withdrawal cleanup,no raw source or answer text.
+Rollback2.29.1is schema-compatible;preserve source/spending state and existing aurora
+claims. Do not restore those databases to roll back this code-only capability.
