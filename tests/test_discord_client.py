@@ -878,7 +878,7 @@ async def test_optional_recovery_revalidates_memory_after_generation(change, tmp
     assert len(api.requests) == ledger.summary()["attempts"] == (2 if change == "unchanged" else 1)
     assert "White Sox forever" in str(api.requests[0]["input"])
     if change == "unchanged":
-        assert api.requests[0]["input"] == api.requests[1]["input"]
+        assert api.requests[0]["input"] == api.requests[1]["input"][:-2]
     elif change == "withdrawal":
         assert store.is_withdrawn()
 

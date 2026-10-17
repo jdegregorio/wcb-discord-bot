@@ -1,3 +1,11 @@
+Current2026-10-16 17:00: H83b/2.27.5 adds actual-draft input to existing repetition
+repair, preserving source checks and one shared attempt. H83a role reframing was
+rejected; no new trait or graph population. Next qualified abstract usefulness,
+linked native/original pixels, selective tools/generated U.P. scenes. H72/H74 stay
+rejected and native semantic transfer stays closed. [Current plan](plan.md) and
+[study](evaluations/2026-10-16-humor-repair-study.md) supersede older priority snapshots.
+Release/deployment validation pending.
+
 Installed2026-10-16 13:00 result:2.27.4healthy/index35c68625/revision9b1a2ad,
 31source hashes match. Controlled empty-loss handlers3/3and normal owner native
 recall3/3post. Gateway strict9/10,onehumor-freshness partial. H83 joins H79/H81

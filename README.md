@@ -1,5 +1,15 @@
 # Trubot
 
+## Draft-aware repetition repair (2.27.5)
+
+An existing repetition repair now sees the rejected draft and original focus,
+so it can choose a fresh comic idea instead of blindly regenerating. The draft
+is explicitly fallible bot text. It preserves source/author checks, care, recipient
+restraint, literal reuse and fallback; repetition and length still share one
+accounted quality attempt. Added input bytes are reserved. No new provider pass,
+model, schema or intake scope. Small controlled trials support this narrow repair,
+not a general humor multiplier. See the [study](docs/trubot-evolution/evaluations/2026-10-16-humor-repair-study.md).
+
 Trubot is the Will Carter Bowl League of Champions' dry, deadpan, oddly sincere,
 Thomas-Jones-obsessed Discord character. Attributed league conversations,
 contextual voice examples and bounded source-backed memory enrich that voice.
