@@ -1152,3 +1152,41 @@ pattern gate are unchanged. Private content-free refs/hashes/counts/rubric boole
 use app smoke-tests/2026-10-17-0500,0700/0600 and existing seven-day manual retention
 and withdrawal cleanup. Raw excerpts, generated answers and personal derivations
 must not be retained in smoke receipts or public notes.
+
+
+## Aurora public-evidence state and operations, 2.29.0
+
+Before enabling, run `docker exec wcb-bot trubot-aurora init` once on pi5. This creates
+only `/var/lib/trubot/aurora.sqlite3`, private0700parent/0600file, on the existing
+persistent volume. Never reinitialize an existing store. Inspect with
+`docker exec wcb-bot trubot-aurora status`. Set the non-secret
+`TRUBOT_AURORA_CHANNEL_ID` in app deployment configuration to an existing allowed
+source-guild text channel; default0is off. Optional `TRUBOT_AURORA_STORE_PATH`
+selects an already initialized private app-volume path. It is not created at runtime.
+
+Rows contain local morning date, station/region, public Kp and qualifying observation
+timestamps, outcome and bot message reference. They contain no human text, preference,
+private source, image bytes or generated caption. Claims commit before any timing or
+image call; attempting/failed/deferred/send_uncertain rows all suppress replay that
+night. A post can be lost after an ambiguous send, but is never automatically doubled.
+Rows older than35days are removed on the next successful new-night claim. No generic
+source/ledger restore is part of rollback. Older images ignore this additive store.
+
+The worker shares existing daily caps/cooldowns and quiet time, but explicitly
+requested morning posts do not need recent group activity. It checks current pinned
+source identity/withdrawal before preparing and sending, so withdrawal pauses it.
+Aurora state is public-weather/bot-delivery metadata, not Andrew-derived learning.
+Operator deletion is safe only with the feature disabled and a preserved duplicate
+prevention decision. Keep state in normal app-volume backups; retain the spending
+ledger independently through every image or code rollback.
+
+Images API modelGPT Image2, qualitymedium, size1536x1024, n1, opaquePNG, text-only
+prompt at most2000bytes. Text inputUSD5/M, image outputUSD30/M, primary pricing checked
+2026-10-17. Reserve prompt bytes plus1024 and16384output tokens before network I/O;
+settle actual provider usage without cached discounts. Missing/unsupported usage or
+ambiguous provider failure retains the full reservation. Over-bound usage halts the
+same ledger. The fixed request's documented output estimate is aboutUSD0.041 plus
+prompt; first live previewUSD0.04172. One typical image every day would be roughly
+USD1.30/month plus timing checks, within the existing18runtime/2maintenance/20total
+cap. This is an estimate, not provider billing. No request retries or paid data service.
+Generated files stay in memory for normal publication; no new raw-media retention.

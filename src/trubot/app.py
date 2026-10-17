@@ -10,6 +10,9 @@ from dotenv import load_dotenv
 from openai import AsyncOpenAI
 
 from trubot.attention import AttentionTracker
+from trubot.aurora import AuroraStore
+from trubot.aurora_feature import AuroraFeature
+from trubot.aurora_image import AuroraImageGenerator
 from trubot.budget import BudgetError, UsageLedger
 from trubot.config import ConfigurationError, Settings
 from trubot.discord_client import TruBotClient
@@ -74,6 +77,13 @@ def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> Tr
     return TruBotClient(
         settings=settings,
         responder=responder,
+        aurora=(
+            AuroraFeature(
+                AuroraStore(settings.aurora_store_path), AuroraImageGenerator(openai_client, budget)
+            )
+            if settings.aurora_channel_id
+            else None
+        ),
         participation=participation,
         attention=attention,
         readiness=readiness,

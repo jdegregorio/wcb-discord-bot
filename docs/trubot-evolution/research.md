@@ -2822,3 +2822,17 @@ and semantic comic freshness,linked native/original pixels,H61tools/generated U.
 scenes. Run41settled attempts/estimatedUSD0.0083419;18/2/20guard intact. See
 [full installed evidence](evaluations/2026-10-17-source-media-stability-release.json)
 and the study for baseline counts,uncertainty,privacy and original-pixel limits.
+
+
+## H88/H89 - recent intake and first scheduled visual skill
+
+2026-10-17 09:00 Pacific. Joe redirects priority to architecture and visual features.
+H88 current target intake/retrieval supported by authenticated bounded checks and
+one actual owner/gateway recall; full peer-discussion recall remains unproven and
+out of scope. H89 adds source-grounded next-morning U.P. scenes. Baseline has no
+such capability. Real public feeds correctly yield no opportunity for the preceding
+night. A synthetic positive produces an actual inspected1536x1024image via the
+shared maintenance ledger atUSD0.04172; no sighting inference. Contextual timing
+judgment8/8syntheticcases passes, one sample each, one evaluator. Engineering and
+installed delivery evidence follow in the [study](evaluations/2026-10-17-aurora-feature-study.md).
+No new human observation, memory population or measured general fidelity gain.

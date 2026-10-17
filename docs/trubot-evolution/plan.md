@@ -1,72 +1,61 @@
 # Trubot evolution plan
 
-Current run: 2026-10-17 05:00 Pacific. H87a selects2.28.1's narrow delivery
-correction: preserve source-media presence from every existing mandatory fresh
-native source read when optional neighborhood collection times out. Actual baseline
-handler traces lose drafts on media-warning-only changes; the prototype and actual
-candidate retain them. Human setup changes and final exact packet/source checks
-remain fail-closed. No new human trait, provider/Discord read, schema, service,
-model, spending allowance, intake or participation rule.
+Current run: 2026-10-17 09:00 Pacific. Joe explicitly redirected the roadmap from
+repeated memory refinements to larger architecture and visual participation.
+The product goal is a natural, adaptive league character with useful context and
+things worth sharing. Memory is an enabling capability, not the product roadmap.
 
-Phase1: four natural packet probes preserve five authored hashes; two normal
-captured-handler trials succeed. Initial controlled baseline loses3/3drafts:
-two injected optional losses and one naturally reversed metadata transition.
-Prototype3/3 and actual candidate3/3 post with matching original/final packets.
-These small ordered trials target transport, not spontaneous failure frequency.
-Fresh audit:3league channels/latest100each/14days,5target8peer3olderbot, zero
-seven-day bot posts. Two operator-attributed archive setups held out from generation with genuine answers
-withheld:relevance2/2, human comic mechanism0/2 in a content-free model rubric;
-one model evaluator and reused anchors limit inference. Original pixels uninspected.
+## Current increment: first scheduled visual skill, 2.29.0
+
+H88 verifies recent Andrew intake and bounded retrieval before moving on. The
+newest visible target source is stored and retrievable; three allowed-channel
+catch-up cursors exist. Actual owner/gateway recent recall returns supported recent
+subjects, but includes third-person/project language. That voice limitation stays
+open without another isolated memory prompt change. Peer discussions outside the
+short conversation window are not complete persistent discussion memory.
+
+H89 adds an opt-in U.P. aurora morning feature. Observed NOAA Kp and overlapping
+local NWS sky observations in darkness establish a viewing opportunity, not an
+actual sighting. A bounded timing decision can defer an insensitive post; a durable
+night claim precedes any paid generation. Generated pixels and captions stay honest.
+The fixed Images API path shares the existing spending ledger and runtime pool.
+Matched synthetic acceptance, actual public feeds, actual pixels and private Discord
+publication are distinct tests. Implementation does not establish general character
+or engagement improvement. See the current study for measured outcomes and limits.
 
 ## Ordered next increments
 
-1. H79/H81 qualified abstract applicability and emotional calibration, alongside H83
-   semantic comic freshness and H86 source-recap voice. So independently useful
-   memories guide natural warmth and humor. Depend on separated attributed episodes,
-   contrary cases and existing lifecycle/qualification. Accept useful held-out and
-   actual gateway benefit over the same baseline, without invented habits/motives,
-   routine disclaimers, recipient errors or repetitive scaffolds. Need remains high
-   confidence; benefit unresolved. One retained value pattern; H72/H74/H83a rejected,
-   H83b/H84/H85 complete. Existing maintenance pool; no added paid runtime pass selected.
-2. Broader linked native peers/replies/threads and inspected original pixels, so
-   abstraction preserves actual setup. H85 supplies retained setup only, not full
-   history or semantic permission. Depend on bounded source-linked lifecycle,
-   access/retention/withdrawal, honest gaps and private storage. Accept contextual
-   semantic qualification and independent useful held-outs before opening automatic
-   native pattern learning. Gate CLOSED; coverage/benefit unresolved. Existing volume
-   and maintenance ledger; no new infrastructure chosen.
-3. H61 selective skills/tools and generated Michigan U.P. aurora/trail-camera scenes
-   with short natural captions, so context gathering and sharing fit conversation.
-   Depend on sharing/timing/original-pixel studies, current primary docs, generated
-   provenance and bounded matched prototypes. Accept real Discord usefulness and
-   measured failure/latency/cost within existing guard. Exploratory, no technology
-   selected or vendor capability claimed as tested.
-4. H87 substantive optional-context availability remains diagnostic. Losing real
-   human setup still discards drafts correctly; source-media presence stability
-   does not solve all delivery failures or detect replacement pixels. Original
-   prior-run discard causation and normal failure frequency remain unknown. Depend
-   on matched original/final traces. Reorder only for reproduced material failures;
-   never blanket-relax source/media/context/author/correction/deletion/withdrawal.
-   Prefer no additional HTTP/provider call. H66 grounding/privacy can also reorder.
+1. Complete and observe the first visual skill: real qualifying-night delivery,
+   timing, generated-pixel quality, duplicate suppression and measured cost. H89;
+   high implementation confidence, natural occurrence and engagement still unknown.
+   A false opportunity, insensitive timing, duplicate or budget regression reorders
+   immediately. No new paid service; fixed medium images estimate aboutUSD0.05 each.
+2. Modern context-and-tool architecture: source-backed recent discussion episodes
+   with peers, linked replies/threads and explicit coverage, then selectively load
+   useful skills/tools before answering. So recent group discussions and outside
+   context are available when needed. H88/H61; bounded target-only learning already
+   works, full discussion recall does not. Depend on scope, correction/withdrawal,
+   private retention and budget. Accept held-out and real gateway usefulness,
+   attribution, bounded failure/latency/cost and no tools on irrelevant messages.
+   Compare a coherent prototype against the current harness before choosing a rewrite.
+3. Rich visual participation: improve aurora scene/caption variety, then generated
+   U.P. trail-camera wildlife with natural sharing timing and clear generated origin.
+   H61/H89; require actual sharing-context/pixel studies and matched judgments.
+   No invented photo ownership, sightings, dates or human memories. Runtime impact
+   must remain inside the existing18/2/20guard.
+4. Useful abstract memory, emotional engagement and approved humor amplification:
+   H79/H81/H83/H86, independently qualified support/contrary cases and measurable
+   held-out/gateway benefit. Existing rejected H72/H74/H83a populations remain
+   rejected; one qualified value pattern remains. No habitual persona trait from
+   a single quote. Exact quote/date work is secondary absent material grounding/privacy.
 
-Priorities change because a source-warning-only mechanism is reproduced and bounded
-correction succeeds. Qualified abstract/humor usefulness returns first after its
-release acceptance. Substantive-context regression or contrary transport evidence
-would reverse that decision. Exact quote/date refinements remain secondary.
-Preserve bot identity, private raw/derived data, owner-only development recall,
-runtime allowlist/no DMs, internal unknown dates, correction/deletion/withdrawal,
-care and approved creative TJ amplification separate from human evidence.
-Existing18/2/20USD monthly guard and six fresh local01/05/09/13/17/21Sol/xhigh
-runs and notifications remain unchanged. Release/installed outcome is recorded
-in progress and the study; no completion is inferred from a healthy container.
+Priorities follow Joe's latest direction and verified intake rather than continuing
+small memory boundary releases by default. Broader context and selective tools are
+architecture opportunities, not proven quality gains or vendor capability claims.
+Preserve bot identity, current runtime allowlist/no DMs, private human evidence,
+source lifecycle, monthly cap, six fresh local01/05/09/13/17/21Sol/xhigh runs and
+notification intent. Scheduled aurora posts are explicitly requested proactive
+participation: they share ambient daily caps/cooldowns and quiet time, but do not
+require two recent human participants. Ordinary ambient behavior is unchanged.
 
-[Hypotheses, experiments and limitations](evaluations/2026-10-17-source-media-stability-study.md).
-
-
-Installed2.28.1/index30a9104b/revisionc2d8c23 is healthy,Discord-ready,read-only,
-zero restarts;all31module hashes match. Feature/merged six gates1,451tests/
-97.11%coverage and protected PR/main/image CI pass. Installed media-only2/2post;
-one substantive setup transition correctly discards. Normal gateway9probes/8posts,
-strict8/9,humor freshness partial; care/direct follow-up and natural recall pass.
-No general fidelity/humor gain. Run estimatedUSD0.0083419,coveredOctoberUSD0.37645382,
-18/2/20guard unchanged. Exact results/limits are in the study and progress.
+[Current hypotheses and validation](evaluations/2026-10-17-aurora-feature-study.md).

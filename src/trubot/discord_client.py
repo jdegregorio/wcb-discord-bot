@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import io
 import logging
 from collections import defaultdict
 from collections.abc import Awaitable, Callable, Sequence
@@ -13,6 +14,8 @@ from typing import Protocol, cast
 import discord
 
 from trubot.attention import AttentionTracker
+from trubot.aurora import morning_window
+from trubot.aurora_feature import AuroraFeature
 from trubot.budget import BudgetError
 from trubot.config import Settings
 from trubot.conversation import (
@@ -65,6 +68,8 @@ DiscordChannel = discord.TextChannel | discord.Thread
 
 
 class Responder(Protocol):
+    async def allow_scheduled_share(self, messages: Sequence[str]) -> bool: ...
+
     async def reply(
         self,
         messages: Sequence[ConversationMessage],
@@ -93,6 +98,7 @@ class TruBotClient(discord.Client):
         sleeper: Sleeper = asyncio.sleep,
         learning: MessageIngestor | None = None,
         distiller: GraphDistiller | None = None,
+        aurora: AuroraFeature | None = None,
     ) -> None:
         super().__init__(intents=intents, allowed_mentions=allowed_mentions)
         self._settings = settings
@@ -109,10 +115,13 @@ class TruBotClient(discord.Client):
         self._distiller = distiller
         self._memory = ContextMemory(learning.store) if learning is not None else None
         self._learning_task: asyncio.Task[None] | None = None
+        self._aurora = aurora
+        self._aurora_task: asyncio.Task[None] | None = None
 
     async def on_ready(self) -> None:
         await self._readiness.start()
         self._start_learning()
+        self._start_aurora()
         user = self.user
         logger.info(
             "Connected to Discord user=%s user_id=%s guilds=%d",
@@ -122,6 +131,7 @@ class TruBotClient(discord.Client):
         )
 
     async def on_disconnect(self) -> None:
+        await self._stop_aurora()
         await self._stop_learning()
         await self._readiness.stop()
         logger.warning("Disconnected from Discord")
@@ -129,6 +139,7 @@ class TruBotClient(discord.Client):
     async def on_resumed(self) -> None:
         await self._readiness.start()
         self._start_learning()
+        self._start_aurora()
         logger.info("Discord session resumed")
 
     async def on_message(self, message: discord.Message) -> None:
@@ -230,6 +241,7 @@ class TruBotClient(discord.Client):
         if self._closing:
             return
         self._closing = True
+        await self._stop_aurora()
         await self._stop_learning()
         tasks = list(self._ambient_tasks.values())
         self._ambient_tasks.clear()
@@ -240,6 +252,98 @@ class TruBotClient(discord.Client):
         await self._readiness.stop()
         await self._responder.close()
         await super().close()
+
+    def _start_aurora(self) -> None:
+        if self._aurora is not None and (self._aurora_task is None or self._aurora_task.done()):
+            self._aurora_task = asyncio.create_task(self._run_aurora(), name="aurora-morning")
+
+    async def _stop_aurora(self) -> None:
+        task, self._aurora_task = self._aurora_task, None
+        if task is not None:
+            task.cancel()
+            with suppress(asyncio.CancelledError):
+                await task
+
+    async def _run_aurora(self) -> None:
+        while not self._closing:
+            try:
+                await self._aurora_cycle()
+            except asyncio.CancelledError:
+                raise
+            except Exception as error:
+                logger.warning("Aurora cycle unavailable error_type=%s", type(error).__name__)
+            await asyncio.sleep(15 * 60)
+
+    async def _aurora_channel_ready(self, channel: discord.TextChannel) -> bool:
+        learning = self._learning
+        if self._closing or learning is None or not learning.verified:
+            return False
+        identity = await asyncio.to_thread(learning.store.identity)
+        if (
+            identity != learning.identity
+            or channel.guild.id != identity.guild_id
+            or channel.id not in self._settings.allowed_channel_ids
+        ):
+            return False
+        now = self._clock()
+        if morning_window(now) is None or not self._participation.scheduled_eligible(
+            channel.id, now
+        ):
+            return False
+        # A morning image should not interrupt an active exchange or race a direct reply.
+        async for message in channel.history(limit=1):
+            if now - message.created_at < timedelta(seconds=self._settings.auto_delay_seconds):
+                return False
+        return True
+
+    async def _aurora_cycle(self) -> bool:
+        feature = self._aurora
+        channel = self.get_channel(self._settings.aurora_channel_id)
+        if feature is None or not isinstance(channel, discord.TextChannel):
+            return False
+        if not await self._aurora_channel_ready(channel):
+            return False
+        prepared = await feature.prepare(
+            now=self._clock(), before_generation=lambda: self._aurora_timing_ok(channel)
+        )
+        if prepared is None:
+            return False
+        opportunity, image = prepared
+        async with self._response_locks[channel.id]:
+            if not await self._aurora_channel_ready(channel):
+                await asyncio.to_thread(feature.store.finish, opportunity.morning, "deferred")
+                return False
+            # Mark before sending. An ambiguous send or crash must never duplicate a morning.
+            await asyncio.to_thread(feature.store.finish, opportunity.morning, "send_uncertain")
+            attachment = discord.File(
+                io.BytesIO(image.data),
+                filename="trubot-aurora-generated.png",
+                description=image.description,
+            )
+            try:
+                sent = await channel.send(
+                    image.caption, file=attachment, allowed_mentions=discord.AllowedMentions.none()
+                )
+            finally:
+                attachment.close()
+            await asyncio.to_thread(feature.store.finish, opportunity.morning, "posted", sent.id)
+            self._cancel_ambient(channel.id)
+            self._participation.record_reply(channel.id, self._clock(), ambient=True)
+            logger.info("Posted generated aurora scene")
+            return True
+
+    async def _aurora_timing_ok(self, channel: discord.TextChannel) -> bool:
+        context = []
+        async for message in channel.history(
+            limit=10, after=self._clock() - timedelta(hours=6), oldest_first=False
+        ):
+            if message.author.bot or message.webhook_id is not None:
+                continue
+            # Unseen pixels or clipped text cannot establish a suitable emotional moment.
+            if message.attachments or message.embeds or len(message.content) > 1_000:
+                return False
+            context.append(message.content)
+        return await self._responder.allow_scheduled_share(list(reversed(context)))
 
     def _start_learning(self) -> None:
         if (

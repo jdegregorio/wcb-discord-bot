@@ -444,3 +444,31 @@ source or spending state. Already accepted observations retain their dependency
 lifecycle, but older code resumes target-only future studies. Private validation
 receipts use existing app-volume smoke-tests, 0700/0600, seven-day manual retention
 and withdrawal cleanup; content-free references/results only.
+
+
+## Scheduled visual skill, 2.29.0
+
+`aurora.py` collects bounded public SWPC/NWS feeds, aligns observed Kp>=5 with two
+clear/few-cloud, good-visibility station reports separated by30minutes within one
+three-hour activity interval and solar elevation<=-12degrees. A local calendar-night
+window handles DST. KCMX/KSAW/KP53 represent the Keweenaw/Marquette/Munising; missing
+station fields remain unknown. Airport conditions and planetary activity are proxies,
+not a local sighting certificate. Polling runs every15minutes, only processing
+08:00-11:00America/Detroit, separately from reply and learning tasks.
+
+`aurora_feature.py` coordinates an explicitly initialized private SQLite night claim,
+a bounded32-token same-model contextual timing judgment, and `aurora_image.py`'s fixed
+single-image generation. Claims precede paid work and survive restart/ambiguous send.
+There is no automatic image retry, new service or new spending pool. UsageLedger
+adds separately priced Images API reservations/settlements with the same cross-month
+pending accounting and global halt on exceeded reservation. SDK retries are disabled.
+
+The existing client checks the pinned source guild, already allowed text channel,
+current learning identity/withdrawal, quiet time and shared ambient daily/cooldown
+limits before preparation and under the response lock before publication. Requested
+scheduled posts do not require two recent humans. A new active exchange after image
+generation defers the post without regenerating. Context timing uses up to10complete
+human texts in six hours; oversized/unseen-media contexts defer. Model judgment can
+still err and bounded history is incomplete. Generated provenance and alt text are
+attached outside model generation. No personal source enters image prompts/state;
+this feature does not learn bot images or establish new human traits.
