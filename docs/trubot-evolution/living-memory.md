@@ -4,7 +4,9 @@ positive focus0/3to3/3,strict celebration2/3candidate. Qualified synthetic abstr
 retrieval0/3to3/3; no actual abstract packet or new human observation in live trials.
 Existing source lifecycle/withdrawal and native automatic gate remain. [Current plan](plan.md)
 and [study](evaluations/2026-10-16-reference-memory-study.md) supersede older snapshots.
-Release/installed validation pending.
+Release and installed validation complete:healthy2.27.6/index99e03a9f/31matching
+modules. Gateway strict7/8; broad recall source narration remains a voice limitation.
+No new observation/live abstract contribution established.
 
 Current2026-10-16 17:00: H83b/2.27.5 adds actual-draft input to existing repetition
 repair, preserving source checks and one shared attempt. H83a role reframing was

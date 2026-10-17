@@ -4535,5 +4535,66 @@ Both planning phases precede selection; actual gateway and5new baseline regressi
 reproduce explicit reply subject loss. Matched real private handlers3samples/arm:
 current positive focus0/3to3/3,strict celebration2/3candidate. Existing actual graph
 contributes no abstract packet; synthetic qualified abstract retrieval0/3to3/3.
-No general fidelity/humor claim/new human trait. All gates and deployment pending.
+No general fidelity/humor claim/new human trait. Final gates and deployment below.
 [Study](evaluations/2026-10-16-reference-memory-study.md).
+
+
+### H84 final installed result
+
+PR139: https://github.com/jdegregorio/wcb-discord-bot/pull/139
+Tested41e8e5d9e989519409a28d5f55ea057d348c997d; protected CI39001619442 passes,
+exact-head non-admin merge9730472444f4e7f26f655b4c86b32997dd6ede51. Six feature
+and merged gates pass:1,416tests/97.08%branch-inclusive coverage/31typed modules/
+2.27.6build. Main CI39001756766 and image39001886684 succeed. Version-agreement
+check caught a missed package constant during the first local run and was fixed;
+no existing failure/flakiness accepted. Five initial baseline failures reproduce
+the defect; all31new controls pass, including source/access/author/lifecycle cases.
+
+Release: https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.27.6
+Index:sha256:99e03a9f3832aede799f26b54a3931a968467e0f0148b75bb3c62d6b1b99ea55
+AMD64:sha256:6e3cb58a01cfbc9cf5fa849b3fc870899614f180f716aa83a0a265dca349777f
+ARM64:sha256:9e1ad8647db3fd24a3f8992f54f425a994f79c3a82c6aad704d1da5e113f74fb
+Prior2.27.5/indexd4bb2a3c6b89b66731e0f4ed29591b3da59b674c9c6986253859ee9ca8086acb
+remains rollback target. Reverified host/OS/arch, manifest/helper and deploy group;
+existing non-sudo app-scoped locked transaction succeeds. Release timer active and
+enabled. No rollback or learning/spending-state restore. No new provider/HTTP pass,
+service/model/schema/source/intake/participation/schedule/notification change.
+
+Installed2.27.6/index99e03a9f/revision9730472 is healthy on reverified pi5,
+zero restarts and31matching source hashes. Feature/merged six gates and protected
+PR/main/image CI pass. Fresh normal owner gateway8probes/7posts/one confirmed
+abstention,strict7/8:the changed explicit Reply is correctly positive; broad recall
+is grounded but remains a third-person recap. Preference/date/care/humor/ownership/
+restraint pass; no routine metadata disclaimer. Installed exact subject binding and
+heartbeat after HTTP-only client closure pass. No new human observation.
+
+Run25settled attempts,estimatedUSD0.006158285; covered OctoberUSD0.36093557,
+existing18/2/20guard intact. One old unsettled reservation,no new unsettled attempt;
+not provider billing and pre-guard spend unknown. New container0errors/reply failures/
+source discards/disconnects/restarts,2startup warnings and2existing quality repairs.
+Short unmatched windows do not establish a general error-rate gain. No general
+fidelity/humor multiplier or live abstract-memory contribution is established.
+
+Installed authenticated exact-reference trace passes; primary heartbeat survives
+HTTP-only validation-client closure with distinct readiness before construction.
+Normal gateway is owner-authored, not a captured send or injected model draft.
+Seven response latencies1.844-7.489seconds,median3.095; not a causal performance claim.
+Post league audit unchanged3channels/latest100each/14days:5target8peer3olderbot,
+zero seven-day bot posts/denied. Six inspected source windows/five unique anchors/
+two exports include overlapping pilot windows; not independent message counts.
+Two separated full held-outs do not show general character improvement. Original
+pixels uninspected. No new human observation; one retained value node. Next remains
+qualified useful abstraction/emotion/contextual humor, now including source-recap
+voice distance, linked native/original pixels, H61tools/generated U.P. scenes.
+
+13maintenance/USD0.00143673 and12runtime/USD0.004721555 settled attempts. Covered
+October2,144attempts/USD0.36093557;old unsettled reservation predates this run,no new
+unsettled. Guard18/2/20unchanged; estimates not billing,pre-guard spending unknown.
+Private14content-free receipts under app smoke-tests/2026-10-16-2100 use0700/0600,
+existing seven-day manual retention/withdrawal cleanup. Raw exchanges/answers,
+personal derivations and credentials never enter Git/releases/logs/receipts.
+Disposable candidate lives only in replaced prior container/tmp; no source override
+in current container. Evidence publication/final-main CI/worktree archive recorded
+in the automation completion memory after verification.
+
+[Structured release evidence](evaluations/2026-10-16-reference-memory-release.json).

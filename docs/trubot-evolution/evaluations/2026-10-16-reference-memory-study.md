@@ -101,3 +101,61 @@ or public notes. No original pixels inspected, no visual meanings claimed.
 Final feature gates pass: locked sync, format check, lint,31typed modules,
 1,416tests/97.08%branch-inclusive coverage and2.27.6wheel/sdist.31new controls pass.
 No existing failure/flakiness accepted. Release and fresh installed acceptance pending.
+
+## Final release and installed validation
+
+PR139/head41e8e5d9e989519409a28d5f55ea057d348c997d passes protected
+CI39001619442 and merges without admin/bypass as9730472444f4e7f26f655b4c86b32997dd6ede51.
+Merged tree equals tested feature tree; all six gates repeat successfully and main
+CI39001756766 passes. Immutable v2.27.6 targets that commit; image39001886684 passes
+for AMD64/ARM64. Reverified pi5/aarch64/Ubuntu24.04.4, current helper/manifest/deploy
+group and existing non-sudo app lock transaction. Digest99e03a9f is actually running,
+healthy/zero restarts;31module hashes/package versions/revision match. Prior2.27.5/
+d4bb2a3c is recorded rollback. No rollback or source/spending-state restoration.
+
+Fresh actual owner UI/gateway8probes/7posts/one confirmed recipient abstention,
+strict7/8. Changed explicit Reply celebrates the selected positive setup; installed
+trace retains authenticated human author and exact subject, not chronological detour.
+Baseball preference, grounded broad past recall without stock date caveat, exact-date
+honesty, sincere care, novel invited TJ scene and requester ownership pass their
+content checks. Broad recall remains a third-person source recap and is graded
+partial for character naturalness, not hidden as a perfect pass. Same limitation
+appears in pre-run actual activity; no new regression or general naturalness claim.
+Recipient skip is confirmed in gateway logs and over22seconds of authenticated
+history. Seven response latencies1.844-7.489seconds,median3.095; unmatched small
+sample, not evidence of latency improvement. Two existing quality repairs occur.
+
+Post source audit remains3allowed league channels/latest100each/14days:5target/
+8peer/3olderbot,zero seven-day bot posts/denied. No new spontaneous activity or
+original-pixel interpretation. No new production human abstraction or source intake.
+Current source narration, qualified applicability/emotion and semantic comic utility
+remain open before linked native/original pixels, then H61 skills/tools and generated
+U.P. outdoor sharing. Native semantic gate closed; H72/H74/H83a remain rejected.
+
+Installed2.27.6/index99e03a9f/revision9730472 is healthy on reverified pi5,
+zero restarts and31matching source hashes. Feature/merged six gates and protected
+PR/main/image CI pass. Fresh normal owner gateway8probes/7posts/one confirmed
+abstention,strict7/8:the changed explicit Reply is correctly positive; broad recall
+is grounded but remains a third-person recap. Preference/date/care/humor/ownership/
+restraint pass; no routine metadata disclaimer. Installed exact subject binding and
+heartbeat after HTTP-only client closure pass. No new human observation.
+
+Run25settled attempts,estimatedUSD0.006158285; covered OctoberUSD0.36093557,
+existing18/2/20guard intact. One old unsettled reservation,no new unsettled attempt;
+not provider billing and pre-guard spend unknown. New container0errors/reply failures/
+source discards/disconnects/restarts,2startup warnings and2existing quality repairs.
+Short unmatched windows do not establish a general error-rate gain. No general
+fidelity/humor multiplier or live abstract-memory contribution is established.
+
+Private14content-free JSON receipts contain IDs/refs/counts/flags/grades/hashes and
+latencies only,0700directory/0600files, existing seven-day manual retention and
+withdrawal cleanup. No raw source excerpts, generated answers, personal derivations
+or credentials in receipts/Git/releases/production logs. Every TruBot validation
+client has distinct readiness before construction, HTTP login only/no second gateway;
+primary heartbeat and actual responses survive closure. Disposable candidate package
+was confined to the prior container's/tmp and disappears on replacement. Six fresh
+local01/05/09/13/17/21Sol/xhigh runs and notifications unchanged.
+
+Two uncontextualized diagnostic rows from a third export were inspected during
+eligibility troubleshooting, then excluded from semantic assessment. The six full
+context windows/two exports above describe reviewed context, not all accessed rows.
