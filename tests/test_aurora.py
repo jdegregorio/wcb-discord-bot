@@ -16,6 +16,7 @@ from trubot.aurora import (
     REGIONS,
     AuroraStore,
     Opportunity,
+    _fetch,
     collect_opportunity,
     main,
     morning_window,
@@ -467,6 +468,13 @@ class FeedResponse:
             )
         )
 
+        async def chunks(size):
+            raw = self.content.read.return_value
+            for index in range(0, len(raw), size):
+                yield raw[index : index + size]
+
+        self.content.iter_chunked = chunks
+
     def raise_for_status(self):
         if self.status >= 400:
             raise RuntimeError("HTTP failure")
@@ -609,3 +617,20 @@ async def test_optional_worker_failure_and_lifecycle_do_not_stop_reply_client(st
     await client._stop_aurora()
     assert client._aurora_task is None
     await client.close()
+
+
+@pytest.mark.asyncio
+async def test_fragmented_weather_response_keeps_complete_json():
+    response = FeedResponse({"features": [weather(), weather(OBSERVED + timedelta(minutes=45))]})
+    raw = response.content.read.return_value
+
+    async def fragmented(_size):
+        for n in range(0, len(raw), 7):
+            yield raw[n : n + 7]
+
+    response.content.iter_chunked = fragmented
+    response.content.read = AsyncMock(return_value=raw[:7])
+    session = MagicMock()
+    session.get.return_value = response
+    result = await _fetch(session, "https://api.weather.gov/stations/KCMX/observations")
+    assert len(result["features"]) == 2

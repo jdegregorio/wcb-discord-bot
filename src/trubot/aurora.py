@@ -200,6 +200,21 @@ def select_opportunity(
     return max(candidates, key=lambda c: (c.kp, len(c.observations), c.station), default=None)
 
 
+async def _fetch(
+    session: aiohttp.ClientSession, url: str, params: dict[str, str] | None = None
+) -> Any:
+    async with session.get(url, params=params, allow_redirects=False) as response:
+        response.raise_for_status()
+        if response.status != 200:
+            raise ValueError("Unexpected feed response")
+        data = bytearray()
+        async for chunk in response.content.iter_chunked(65_536):
+            if len(data) + len(chunk) > MAX_FEED_BYTES:
+                raise ValueError("Public feed exceeds its byte bound")
+            data.extend(chunk)
+        return json.loads(data)
+
+
 async def collect_opportunity(*, now: datetime) -> Opportunity | None:
     window = morning_window(now)
     if window is None:
@@ -208,24 +223,15 @@ async def collect_opportunity(*, now: datetime) -> Opportunity | None:
         headers={"User-Agent": USER_AGENT, "Accept": "application/geo+json, application/json"},
         timeout=aiohttp.ClientTimeout(total=20),
     ) as session:
-
-        async def fetch(url: str, params: dict[str, str] | None = None) -> Any:
-            async with session.get(url, params=params, allow_redirects=False) as response:
-                response.raise_for_status()
-                if response.status != 200:
-                    raise ValueError("Unexpected feed response")
-                data = await response.content.read(MAX_FEED_BYTES + 1)
-                if len(data) > MAX_FEED_BYTES:
-                    raise ValueError("Public feed exceeds its byte bound")
-                return json.loads(data)
-
-        kp_rows = await fetch(KP_URL)
+        kp_rows = await _fetch(session, KP_URL)
         start, end = window
         params = {"start": start.isoformat(), "end": end.isoformat(), "limit": "500"}
         # Station failures remain unknown, never clear. Other regions can still qualify.
         results = await asyncio.gather(
             *(
-                fetch(f"https://api.weather.gov/stations/{r.station}/observations", params)
+                _fetch(
+                    session, f"https://api.weather.gov/stations/{r.station}/observations", params
+                )
                 for r in REGIONS
             ),
             return_exceptions=True,
