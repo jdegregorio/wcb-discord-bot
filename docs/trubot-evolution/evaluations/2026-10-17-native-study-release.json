@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "run": "2026-10-17 01:00 America/Los_Angeles",
+  "hypothesis": "H85",
+  "version": "2.28.0",
+  "base": "50443759123c7079a19028ecb3f4b9f68f2c5744",
+  "tested_head": "9528a0ab3af7e7486d8d29b2efd58f5c745bb8a0",
+  "merged_commit": "f0f84d36fd03791121852a60f16efde3de528bc7",
+  "pull_request": "https://github.com/jdegregorio/wcb-discord-bot/pull/141",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.28.0",
+  "ci": {
+    "pr": 39016329690,
+    "merged_main": 39016510473,
+    "image": 39016649123,
+    "all_succeeded": true
+  },
+  "image": {
+    "index": "sha256:041503066af2a3325ffb122333beda4f2416ecf6795b1f10b6869635fec57043",
+    "amd64": "sha256:422094cafca1ab1c55475c6249d69e2750537dd9d6b7c5397a5f66b5e73a0168",
+    "arm64": "sha256:1d895097a28db753eb7621f04b925d377195ebf96fb96b42d57a86686ab9ee2a"
+  },
+  "rollback": {
+    "version": "2.27.6",
+    "index": "sha256:99e03a9f3832aede799f26b54a3931a968467e0f0148b75bb3c62d6b1b99ea55",
+    "used": false
+  },
+  "quality": {
+    "all_six_gates_feature_and_merged": true,
+    "tests": 1426,
+    "coverage_percent": 97.1,
+    "typed_modules": 31,
+    "installed_modules_match": 31,
+    "new_regression_cases": 10,
+    "baseline_cycle_regression_failed_as_expected": true
+  },
+  "research": {
+    "synthetic_cases": 3,
+    "samples_per_arm_per_case": 2,
+    "completed_samples": 12,
+    "false_claim_acceptance_baseline": [
+      4,
+      4
+    ],
+    "false_claim_acceptance_context": [
+      0,
+      4
+    ],
+    "literal_control_each_arm": [
+      2,
+      2
+    ],
+    "preliminary_fixture_paid_attempts_excluded": 1,
+    "independent_reviewer_provided_rejection": true,
+    "new_human_observation": false
+  },
+  "installed_study": {
+    "synthetic_cases": 3,
+    "passed": 3,
+    "provider_passes": 6,
+    "same_frozen_sources": true,
+    "anonymous_setup": true,
+    "no_peer_text_persisted": true,
+    "production_learning_changed": false
+  },
+  "real_native_projection": {
+    "existing_captures": 2,
+    "fresh": 2,
+    "rows": [
+      1,
+      2
+    ],
+    "serialized_bytes": [
+      7226,
+      7128
+    ],
+    "provider_calls": 0,
+    "semantic_gate_opened": false
+  },
+  "human_heldout": {
+    "cases": 2,
+    "samples_each": 1,
+    "authentic_answer_withheld": true,
+    "previously_catalogued_anchors": true,
+    "subset_of_four_audit_windows": true,
+    "responder_only": true,
+    "unchanged_reply_path": true,
+    "relevant": 2,
+    "observed_comic_mechanism_fit": 0,
+    "general_character_gain_established": false
+  },
+  "gateway": {
+    "normal_owner_ui_probes": 9,
+    "posts": 7,
+    "unique_cases": 8,
+    "strict_pass": 6,
+    "partial_humor": 1,
+    "initial_care_discard": 1,
+    "care_retry_pass": true,
+    "recipient_abstention_confirmed": true,
+    "latency_seconds": {
+      "min": 2.018,
+      "median": 3.475,
+      "max": 7.301
+    },
+    "test_messages_learned": false
+  },
+  "source_diagnostic": {
+    "first_rechecks": 3,
+    "stable": false,
+    "serial_layout_rechecks": 2,
+    "authored_source_ids_and_hashes_equal": true,
+    "changed_optional_native_media_gap": true,
+    "original_generation_packet_unavailable": true,
+    "causal_link_to_initial_discard_unproven": true,
+    "policy_relaxed": false,
+    "new_provider_calls": 0
+  },
+  "audit": {
+    "allowed_league_channels": 3,
+    "latest_messages_each": 100,
+    "window_days": 14,
+    "target": 5,
+    "peer": 8,
+    "older_bot": 3,
+    "seven_day_bot": 0,
+    "human_windows": 4,
+    "unique_anchors": 4,
+    "exports": 3,
+    "image_dependent_windows_excluded": 1,
+    "original_pixels_inspected": 0,
+    "one_unblinded_evaluator": true
+  },
+  "health": {
+    "host": "pi5",
+    "architecture": "aarch64",
+    "os": "Ubuntu 24.04.4",
+    "healthy": true,
+    "discord_ready": true,
+    "restarts": 0,
+    "revision": "f0f84d36fd03791121852a60f16efde3de528bc7",
+    "timer_active_enabled": true,
+    "errors": 0,
+    "reply_exceptions": 0,
+    "source_discards": 1,
+    "normal_posts": 7,
+    "recipient_skips": 1,
+    "existing_quality_repairs": 2,
+    "startup_warnings": 2,
+    "disconnects": 0,
+    "short_unmatched_windows_not_error_rate_estimate": true
+  },
+  "cost": {
+    "run_attempts": 45,
+    "run_estimated_usd": 0.00717635,
+    "maintenance_attempts": 33,
+    "maintenance_estimated_usd": 0.003306645,
+    "runtime_attempts": 12,
+    "runtime_estimated_usd": 0.003869705,
+    "covered_october_estimated_usd": 0.36811192,
+    "covered_october_attempts": 2189,
+    "unsettled_preexisting": 1,
+    "new_unsettled": 0,
+    "monthly_runtime_maintenance_total_limits_usd": [
+      18,
+      2,
+      20
+    ],
+    "not_provider_billing": true,
+    "pre_guard_spend": "unknown"
+  },
+  "privacy": {
+    "raw_or_derived_personal_evidence_in_git": false,
+    "private_receipts_only_content_free": true,
+    "directory_mode": "0700",
+    "file_mode": "0600",
+    "retention": "existing manual seven-day and withdrawal cleanup",
+    "separate_client_readiness_set_before_construction": true,
+    "primary_heartbeat_survived": true
+  },
+  "limitations": [
+    "Synthetic explicit premises and small ordered samples limit semantic generalization.",
+    "Installed learning checks are synthetic; actual native projections are not semantic qualification.",
+    "Human-held-out controls show no general comic/fidelity improvement.",
+    "One initial gateway care draft discarded; retry succeeds; original packet uncaptured.",
+    "Invited humor freshness remains partial; no measured 2-3x humor improvement.",
+    "No full native/thread/visual history or new human abstraction population."
+  ]
+}

@@ -1,6 +1,6 @@
 # Prioritized Trubot backlog
 
-Current run: 2026-10-17 01:00 Pacific. H85 is selected for 2.28.0: supply existing
+Current run: 2026-10-17 01:00 Pacific. H85 is complete in 2.28.0: supply existing
 freshly verified bounded native human setup identically to extraction and independent
 review, so learning can distinguish a literal statement from fictional or quoted speech.
 This is a contextual learning increment, not new personality population. Automatic
@@ -16,11 +16,18 @@ spontaneous bot activity. Private evidence remains outside Git.
 
 ## Ordered next increments
 
-1. Complete H85 fresh native study projection and its lifecycle/packet/release checks.
-   Existing dependency verification and graph invalidation provide prerequisites.
-   Accept identical complete bounded anonymous setup in both passes, current-source
-   checks and no peer-as-support or native-pattern bypass. High mechanism confidence;
-   semantic breadth unresolved. Existing two-pass maintenance allowance and request cap.
+1. H87 bounded publication-stability diagnosis: an actual care draft was discarded;
+   serial rechecks reproduce optional native setup/media-gap variation with unchanged
+   five-source authored hashes. A sincere exact retry passes. Original generation
+   packets were uncaptured, so exact causation and validation-load influence remain
+   unresolved. Gather an original-packet/normal-traffic trace, so unchanged evidence
+   does not unnecessarily prevent useful care. Depend on existing source/author/expiry/
+   withdrawal controls. Accept only a reproduced, matched correction that retains all
+   substantive media/context changes and final fresh checks; no blanket relaxation.
+   Mechanism confidence moderate, fix unvalidated. Prefer no added provider/HTTP call;
+   use existing maintenance ledger for bounded comparisons. Reprioritize again if the
+   trace disconfirms a production defect. H85's learning path itself passes installed
+   acceptance and does not change the reply implementation.
 2. H79/H81 qualified abstraction applicability/emotion; H83 contextual humor and H86
    source-recap voice distance. Study separated attributed episodes/contrary cases,
    independent human-held-out and actual gateway usefulness, warmth/brevity/recipient
@@ -49,3 +56,13 @@ care and contextual creative TJ amplification distinct from human evidence. Pres
 Sol/xhigh runs and notification intent. No external technology claim this run.
 
 [Hypotheses, method and limitations](evaluations/2026-10-17-native-study-setup.md).
+
+
+Installed2.28.0/index04150306/revisionf0f84d3 is healthy, zero restarts;31module
+hashes match. All six local feature/merged gates and PR/main/image CI pass. Installed
+native study3/3synthetic cases pass; fresh real native projections2/2, no semantic
+pattern permission. Normal owner gateway9probes/7posts:strict6/8unique, one humor
+partial, one initial care discard; exact care retry passes. Two human-held-out reply
+controls remain weak for the actual comic mechanism. No general fidelity gain.
+Run estimatedUSD0.00717635; coveredOctoberUSD0.36811192,18/2/20guard unchanged.
+See the study's final evidence for limitations and the next diagnostic prerequisite.
