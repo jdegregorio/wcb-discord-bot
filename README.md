@@ -1,5 +1,14 @@
 # Trubot
 
+## Fresh native learning context (2.28.0)
+
+Native memory studies now supply existing freshly checked human setup to both
+extraction and independent review. Anonymous speakers, retained reply links and
+honest coverage gaps help distinguish literal statements from quoted or fictional
+speech. Peer context never becomes authored support; raw peer text stays ephemeral.
+Automatic native personality-pattern learning remains closed.
+See the [study](docs/trubot-evolution/evaluations/2026-10-17-native-study-setup.md).
+
 ## Explicit reply memory continuity (2.27.6)
 
 A topic-free question sent with Discord Reply now uses the selected human message

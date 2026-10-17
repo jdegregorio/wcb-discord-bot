@@ -29,6 +29,7 @@ from trubot.graph import GraphStore, _hash, _json, _key
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningUnavailable, _time
 from trubot.memory import score, terms
+from trubot.native_context import NativeEpisode
 from trubot.native_reconciliation import verify_native_context
 from trubot.openai_responder import (
     STUDY_MAX_BYTES,
@@ -166,8 +167,12 @@ can still omit the real setup. Do not assume missing context is agreement or a r
 Truncated passages may omit qualifications; reject
 interpretations that rely on missing text or image pixels. Context-only target blocks
 are not additional support.
-Native target-only packets explicitly lack peer setup. They cannot support or limit
-recurring humor/style/value/emotion/relationship patterns in automatic studies. Native
+Native packets without captured setup explicitly lack peer context. Fresh captured
+human setup is context only; local anonymous speaker keys apply within one source,
+not across sources. Explicit reply links identify retained targets; adjacency alone
+does not. Gaps and context_omitted remain authoritative, including missing pixels.
+ALL native packets remain ineligible to support or limit recurring humor/style/value/
+emotion/relationship patterns in automatic studies, even with supplied setup. Native
 literal claims or specific preferences still need unambiguous authored statements.
 Adjacency does not prove reply links
 or motive. Sampling separated windows is not proof of independent conversations.
@@ -267,7 +272,7 @@ def _fit_context(study: Study, *, require_all_sources: bool = False) -> Study:
     """Keep whole anonymous context rows, balanced across the admitted sources."""
     pools = [p["adjacent_context"] for p in study.passages]
     passages = [
-        p | {"adjacent_context": [], "context_omitted": len(pool)}
+        p | {"adjacent_context": [], "context_omitted": p.get("context_omitted", 0) + len(pool)}
         for p, pool in zip(study.passages, pools, strict=True)
     ]
     snapshots = list(study.snapshots)
@@ -287,7 +292,7 @@ def _fit_context(study: Study, *, require_all_sources: bool = False) -> Study:
 
     # Nearest before/after rows in every source precede farther rows in any one
     # source. Large or unaffordable rows are explicit gaps, never clipped quotes.
-    for offset in (-1, 1, -2, 2, -3, 3):
+    for offset in (-1, 1, -2, 2, -3, 3, -4, 4, -5, 5):
         for passage, pool in zip(passages, pools, strict=True):
             for row in pool:
                 if row["offset"] != offset or len(row["text"].encode()) > _CONTEXT_ROW_BYTES:
@@ -300,6 +305,60 @@ def _fit_context(study: Study, *, require_all_sources: bool = False) -> Study:
     for passage in passages:
         passage["adjacent_context"].sort(key=lambda row: row["offset"])
     return Study(study.token, snapshots, passages, study.native_context)
+
+
+def _native_study_passage(passage: dict[str, Any], episode: NativeEpisode) -> dict[str, Any]:
+    """Project only freshly checked retained setup, with source-local anonymous links."""
+    source = episode.source
+    if source is None:
+        raise LearningUnavailable("Fresh native study source required")
+    before = sorted(
+        (row for row in episode.neighbors if row["position"] == "before"),
+        key=lambda row: row["message_id"],
+    )
+    after = sorted(
+        (row for row in episode.neighbors if row["position"] == "after"),
+        key=lambda row: row["message_id"],
+    )
+    positioned = [
+        *zip(range(-len(before), 0), before, strict=True),
+        *zip(range(1, len(after) + 1), after, strict=True),
+    ]
+    keys = {row["message_id"]: f"neighbor:{offset}" for offset, row in positioned}
+    keys[source.id] = "focus"
+    speakers: dict[int, str] = {source.author_id: "target"}
+    context = []
+    for offset, row in positioned:
+        speaker = row["speaker_id"]
+        if speaker not in speakers:
+            speakers[speaker] = f"peer:{len(speakers)}"
+        reply_to = row["reply_to_message_id"]
+        context.append(
+            {
+                "author_role": "verified_target_context_only"
+                if speaker == source.author_id
+                else "other_speaker",
+                "speaker_key": speakers[speaker],
+                "context_key": keys[row["message_id"]],
+                "position": row["position"],
+                "offset": offset,
+                "source_time": row["created_at"],
+                "reply_to_context": keys.get(reply_to, "outside_captured_context")
+                if reply_to is not None
+                else None,
+                "focus_replies_to_this": row["focus_replies_to_this"],
+                "flags": [row["visual_context"]]
+                if row["visual_context"] != "no captured media"
+                else [],
+                "text_truncated": False,
+                "text": row["text"],
+            }
+        )
+    return passage | {
+        "context_scope": "native_verified_bounded_human_setup",
+        "adjacent_context": context,
+        "context_gaps": list(episode.gaps),
+    }
 
 
 def _episode_keys(refs: list[dict[str, Any]]) -> list[str]:
@@ -824,10 +883,11 @@ class GraphDistiller:
                 anchor_ref=anchor_ref,
                 episode_refs=episode_refs,
             )
-            study = selection.study
-            if study is None:
+            selected_study = selection.study
+            if selected_study is None:
                 logger.debug("Graph study skipped reason=%s", selection.reason)
                 return None
+            study: Study = selected_study
             sources = len(study.snapshots)
             if len(study.snapshots) < 2 and not _self_report_eligible(study.passages[0]):
                 stage = "commit"
@@ -844,12 +904,14 @@ class GraphDistiller:
                     )
                     if capture is not None:
                         captures.append(capture)
-            # Content-free metadata stays local. Both provider payloads remain
-            # target-only; contextual semantic studies still require qualification.
+            # Metadata remains local and binds the exact original cohort. Fresh
+            # text is projected once, then frozen for both provider passes.
             study = replace(study, native_context=tuple(captures))
+            fresh_episodes: dict[str, NativeEpisode] = {}
 
             async def source_check() -> None:
                 nonlocal stage
+                fresh_episodes.clear()
                 previous, stage = stage, "source_validation"
                 started = self.clock()
                 # Local snapshots cannot detect a missed gateway edit during a
@@ -885,7 +947,7 @@ class GraphDistiller:
                             if episode is None:
                                 await asyncio.to_thread(graph.discard_native_context, capture)
                                 raise LearningUnavailable("Study setup changed during fresh read")
-                            # Peer text is deliberately never projected into requests.
+                            fresh_episodes[_key(ref)] = episode
                             message = episode.source
                             valid_source = bool(
                                 message is not None
@@ -923,6 +985,21 @@ class GraphDistiller:
             # Fail before acquiring a provider reservation when initial access or
             # the selected evidence is already unavailable.
             await source_check()
+            if fresh_episodes:
+                study = _fit_context(
+                    replace(
+                        study,
+                        passages=[
+                            _native_study_passage(passage, episode)
+                            if (episode := fresh_episodes.get(_key(snapshot["ref"]))) is not None
+                            else passage
+                            for snapshot, passage in zip(
+                                study.snapshots, study.passages, strict=True
+                            )
+                        ],
+                    ),
+                    require_all_sources=True,
+                )
             stage = "extraction"
             requests += 1
             result = await self.responder.study_json(
@@ -1021,6 +1098,7 @@ class GraphDistiller:
                     "extraction_provenance": (
                         PATTERN_VERSION if proposed["kind"] in PATTERN_KINDS else VERSION
                     )
+                    + ("; native-context-projection-v1" if study.native_context else "")
                     + "; gpt-6-luna; exact quotes + separate review; not human reviewed",
                     "expires_at": _time(self.clock() + timedelta(days=30)),
                     "supports": [study.snapshots[s["source"]]["ref"] for s in proposed["supports"]],

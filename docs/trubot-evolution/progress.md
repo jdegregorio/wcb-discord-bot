@@ -4598,3 +4598,25 @@ in current container. Evidence publication/final-main CI/worktree archive record
 in the automation completion memory after verification.
 
 [Structured release evidence](evaluations/2026-10-16-reference-memory-release.json).
+
+
+## 2026-10-17 01:00 Pacific - H85 fresh native study setup
+
+Base 50443759123c7079a19028ecb3f4b9f68f2c5744; post-fetch new managed checkout
+trubot-20261017-0100, feature/trubot-daily-20261017-0100. Primary checkout untouched.
+No unfinished evolution PR or subagents. Both planning phases precede implementation.
+Synthetic two-pass comparison: 12 samples; false-claim acceptance 4/4 baseline to
+0/4 contextual review, literal controls 2/2 each. One preliminary fixture metadata
+error after one paid extraction is excluded from samples and retained in costs.
+Actual cycle baseline regression fails at omitted peer premise; corrected regression
+passes. Four human windows/three exports, one excluded for absent image context.
+Recent audit: 3 allowed league channels/latest 100/14 days, 5 target/8 peer/3 older
+bot and zero seven-day spontaneous posts. No general character/humor benefit claimed.
+
+2.28.0 freezes existing freshly checked native setup for both provider passes with
+anonymous positions/speakers/reply links and honest gaps. Complete row/request caps,
+original source cohort, source/author checks, setup lifecycle and closed automatic
+native pattern gate remain. No raw peer persistence, extra provider/Discord call,
+model/schema/service/scope/pacing or spending pool. Rollback needs no source/ledger
+restore. H79/H81/H83/H86 usefulness remains next, then full linked native/original
+pixels and H61 selective tools/generated U.P. scenes. [Study](evaluations/2026-10-17-native-study-setup.md).
