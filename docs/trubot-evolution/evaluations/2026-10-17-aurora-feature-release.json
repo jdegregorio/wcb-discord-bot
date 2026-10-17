@@ -1,0 +1,105 @@
+{
+  "run": "2026-10-17-0900",
+  "base": "78a1eed9e8aeed7dbc28119de1b4eabca828d576",
+  "version": "2.29.1",
+  "runtime_commit": "973d9304d822185a5a4a3e63a0947625f68ef325",
+  "pull_requests": [
+    "https://github.com/jdegregorio/wcb-discord-bot/pull/145",
+    "https://github.com/jdegregorio/wcb-discord-bot/pull/146",
+    "https://github.com/jdegregorio/pi-platform/pull/9"
+  ],
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.29.1",
+  "image_index": "sha256:dc19d2f236a0ffd4a4b0c93b0eb48a2a56fbea4fc6b1bd1600fe033c09ca5890",
+  "amd64": "sha256:ce2ed39c87e8cdfdd93d5070a2c7eb9ec1aad4725cf3b12f11d6e3cea1632c6a",
+  "arm64": "sha256:d6a1a28bb16c3549b8b98618f13d75d9ce3ae59c2647141451a22e02c4fb855a",
+  "platform_commit": "40ec687b707a69e0be4aeda4a87200566efe2c10",
+  "ci": {
+    "app_pr": 39058542302,
+    "app_main": 39058715035,
+    "intermediate_image": 39058875705,
+    "feed_pr": 39059192591,
+    "release_main": 39059395144,
+    "release_image": 39059613928,
+    "platform_pr": 39058723564,
+    "platform_main": 39060119818
+  },
+  "gates": {
+    "all_six_pass": true,
+    "tests": 1516,
+    "branch_inclusive_coverage_percent": 96.91,
+    "typed_modules": 34
+  },
+  "installed": {
+    "host": "pi5",
+    "architecture": "aarch64",
+    "os": "Ubuntu 24.04.4",
+    "healthy": true,
+    "ready": true,
+    "read_only_root": true,
+    "restarts": 0,
+    "source_modules_match": 34,
+    "enabled": true,
+    "destination_existing_allowlist_source_guild": true
+  },
+  "validation": {
+    "regions_checked": [
+      "Keweenaw",
+      "Marquette",
+      "Munising"
+    ],
+    "prior_night_actual_opportunity": false,
+    "parsed_kp_rows": 62,
+    "parsed_weather_observations": {
+      "KCMX": 151,
+      "KSAW": 28,
+      "KP53": 12
+    },
+    "munising_cloud_visibility_gap": true,
+    "real_private_discord_image_posts": 1,
+    "duplicate_attempt_posts": 0,
+    "fixture_clock_and_opportunity": true,
+    "timing_judgment_synthetic": {
+      "passed": 8,
+      "cases": 8
+    },
+    "normal_gateway": {
+      "cases": 6,
+      "posts": 5,
+      "recipient_abstentions": 1,
+      "functional_passes": 6,
+      "voice_partials": 2
+    },
+    "image_previews_inspected": 2,
+    "natural_qualifying_night_observed": false,
+    "general_character_gain_measured": false
+  },
+  "cost": {
+    "new_settled_attempts": 22,
+    "estimated_run_usd": 0.08630947,
+    "maintenance_attempts": 15,
+    "maintenance_usd": 0.084506085,
+    "runtime_attempts": 7,
+    "runtime_usd": 0.001803385,
+    "covered_month_attempts": 2252,
+    "covered_month_estimated_usd": 0.46276329,
+    "unsettled_legacy": 1,
+    "new_unsettled": 0,
+    "monthly_limit_usd": 20,
+    "provider_billing_verified": false
+  },
+  "privacy": {
+    "private_receipts": 7,
+    "raw_source_or_answers_in_public_notes": false,
+    "raw_answers_in_smoke_receipts": false,
+    "new_human_traits_imported": 0,
+    "development_learning_excluded": true
+  },
+  "limitations": [
+    "No naturally qualifying production night observed",
+    "Airport conditions and planetary activity are proxies, not sightings",
+    "Munising station currently lacks sky/visibility data",
+    "Bounded history and a timing model can miss context",
+    "Recent reply voice remains partial; complete peer-discussion memory is absent",
+    "Small synthetic/model-graded controls do not establish character or engagement gain"
+  ]
+}

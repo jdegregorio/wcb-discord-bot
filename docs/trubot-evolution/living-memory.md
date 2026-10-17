@@ -4,8 +4,9 @@ Joe has redirected the next increments toward architecture and visual features.
 H88 verified current recent target-message ingestion and bounded retrieval. This
 is not complete peer-discussion memory. Preserve existing graph/intake/source
 lifecycle and return with a coherent broader episode-context design, rather than
-more isolated quote/date patches. H89 aurora participation goes first; selective
-skills/tools and richer discussion context follow. The graph milestones below
+more isolated quote/date patches. H89 aurora participation is now delivered; selective
+skills/tools and useful visual requests come next, using working recent intake.
+Broader discussion context remains an explicit gap. The graph milestones below
 remain the long-term memory contract, not a fixed next-run priority.
 
 Current2026-10-17 05:00: H87a/2.28.1 selects ephemeral mandatory source-media

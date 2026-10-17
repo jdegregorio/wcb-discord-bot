@@ -1,6 +1,6 @@
 # Trubot agent harness
 
-Current direction, 2026-10-17: the first scheduled visual skill is H89/2.29.0.
+Current direction, 2026-10-17: the first scheduled visual skill is H89/2.29.1.
 It separates public evidence collection, deterministic opportunity detection,
 bounded contextual timing judgment, image generation and durable publication state.
 The existing reply/memory harness remains; this is a coherent extensibility step,
@@ -9,14 +9,15 @@ not a claimed general agent rewrite or measured character gain.
 Aurora data uses fixed NOAA/NWS endpoints and complete overlapping observations.
 The single timing decision shares the existing Luna adapter/ledger, has no retries,
 and cannot authorize extra tools or change configuration. Unknown or unseen context
-can defer sharing. Image generation uses a fixed medium1536x1024GPT Image2 request,
+can defer sharing. Image generation uses a fixed medium 1536x1024 GPT Image 2 request,
 pre-reserved/settled on the same18/2/20ledger. No personal corpus goes into images.
 A durable claim precedes timing/image calls; ambiguous failures never auto-retry that
 night. Before send, the original client rechecks allowed source guild/channel,
 withdrawal, morning window, quiet time and shared daily/cooldown restraints.
 
-Next architecture work is broader attributed recent discussion episodes and
-selective context/tool loading. Compare against the current harness with useful
+Next architecture work is selective context/tool loading and useful visual requests,
+reusing existing recent intake. Broader attributed discussion episodes remain a
+concrete coverage gap, not an indefinite prerequisite for the harness. Compare against the current harness with useful
 held-outs and actual gateway outcomes, honest coverage/failure/latency/cost. Then
 extend visual breadth to trail-camera wildlife and scene/caption adaptation.
 Qualified abstract personality/humor utility remains longer-term; literal quote/date

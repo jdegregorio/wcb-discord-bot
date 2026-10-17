@@ -4807,3 +4807,46 @@ USD0.04172,27.736seconds including feed test. Timing gate8/8syntheticcases succe
 USD0.000223625/8requests. These are capability/guard tests, not engagement gains.
 Release, installed acceptance and exact identifiers remain pending in this entry
 until verified. [Study](evaluations/2026-10-17-aurora-feature-study.md).
+
+
+### Completed installed result - 2026-10-17 09:00 run
+
+H89 is live as2.29.1, runtime973d9304d822185a5a4a3e63a0947625f68ef325,
+indexdc19d2f236a0ffd4a4b0c93b0eb48a2a56fbea4fc6b1bd1600fe033c09ca5890.
+PR145/146 and platform PR9 merge tested heads with required CI, no admin bypass.
+All six feature/merged gates:1,516tests/96.91%coverage/34typed modules/build2.29.1.
+Image39059613928 succeeds for AMD64/ARM64. Existing scoped transaction deploys on
+reverified pi5; same immutable image remains after platform40ec687b enables the
+existing source-guild general channel. Healthy/ready/read-only/zero restarts,
+all34module hashes match. Persistent public-weather night store initialized;
+no source/spending data restore or unrelated service/credential change.
+
+Final review reproduces a real NWS partial read (5,211bytes plus580,191remaining).
+A fragmented-response regression fails before the fix. Corrected collector parses
+62Kp rows and151/28/12weather observations.2.29.0remains an immutable inactive
+intermediate release;2.29.1is the enabled result. No natural qualifying opportunity
+for the preceding night. Munising sky/visibility data remains unavailable/unknown.
+
+Actual installed private image handler:1post/0duplicate, real Images API and actual
+Discord upload; synthetic night/time fixtures explicit. Pixels inspected. Six normal
+owner/gateway probes:5posts/1recipient abstention; all functional checks pass, two
+voice partials (extra apology and third-person/project phrasing). Readiness survives
+isolated validation client closure; gateway still answers after final restart.
+No full peer-discussion recall or general fidelity/engagement gain is claimed.
+Two human-held-out normal-reply controls remain comic-mechanism0/2, no new trait.
+
+Post census5target/7peer/3olderbot/0fresh bot across3allowed latest100/14daywindows.
+Latest container0errors/failures/discards/disconnects/aurora failures/restarts,
+4normal posts/1recipient skip/2startup warnings. Short windows are not error rates.
+Run22settled attempts/estimatedUSD0.08630947; covered OctoberUSD0.46276329,
+2,252attempts/one unchanged old unsettled. Existing18/2/20guard; billing unverified.
+Seven private content-free receipts, no raw source/answer/derived personal text.
+Both planning phases and roadmap reconciliation are in the
+[study](evaluations/2026-10-17-aurora-feature-study.md) and
+[release record](evaluations/2026-10-17-aurora-feature-release.json).
+
+Next implementation priority:selective context/tools and requested visual skills,
+using working recent intake. Observe natural aurora delivery without blocking that
+architecture work. Avoid another default memory prompt/refinement run. Scene variety,
+trail-camera wildlife and useful qualified abstractions remain longer-term themes.
+Six standalone local01/05/09/13/17/21Sol/xhigh runs and notifications unchanged.
