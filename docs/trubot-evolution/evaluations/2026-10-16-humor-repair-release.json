@@ -1,0 +1,162 @@
+{
+  "run": "2026-10-16-1700",
+  "hypothesis": "H83b",
+  "version": "2.27.5",
+  "base_sha": "0120a9dc85b30c0f9695f8b1c4dabb093261a71e",
+  "feature_sha": "a4c37d9005fc970cdb565b6529c91cb3abe99c60",
+  "runtime_sha": "44f7c1143ce7d093bb1e9e816e7415395cba30c0",
+  "pull_request": "https://github.com/jdegregorio/wcb-discord-bot/pull/137",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.27.5",
+  "ci": {
+    "pr": 38985338232,
+    "main": 38985522844,
+    "image": 38985658582,
+    "all_success": true
+  },
+  "image": {
+    "index": "sha256:d4bb2a3c6b89b66731e0f4ed29591b3da59b674c9c6986253859ee9ca8086acb",
+    "amd64": "sha256:c2b88ecae0b0a004629deaf5c3c788d75752bdb9b32e1513ff764dba467c351a",
+    "arm64": "sha256:5a7bb466fa319cfe1b0cb33c947389ca0f3499cd8ed4002e85ef7bca9735f9db"
+  },
+  "rollback": {
+    "version": "2.27.4",
+    "index": "sha256:35c68625672209a25e7d363859799f01425868bb99bb9f447dbee534c18956bc",
+    "used": false,
+    "data_restored": false
+  },
+  "gates": {
+    "feature": true,
+    "runtime_merge": true,
+    "test_count": 1385,
+    "branch_coverage_percent": 96.98,
+    "typed_modules": 31,
+    "build": "2.27.5"
+  },
+  "regressions": {
+    "new_cases": 8,
+    "untouched_baseline_failed": 6,
+    "untouched_baseline_passed": 2,
+    "candidate_passed": 8
+  },
+  "audit": {
+    "league_channels": 3,
+    "latest_messages_per_channel": 100,
+    "window_days": 14,
+    "target": 5,
+    "peer": 8,
+    "older_bot": 3,
+    "bot_posts_in_last_7_days": 0,
+    "denied": 0,
+    "humor_anchors_screened": 15,
+    "context_windows_inspected": 10,
+    "exports": 2,
+    "original_pixels_inspected": false,
+    "new_human_observations": 0,
+    "post_counts_match": true
+  },
+  "experiments": {
+    "history_reframing_sampled_responses": 24,
+    "history_reframing_provider_attempts": 27,
+    "history_reframing_scaffold_reuse_baseline": 0,
+    "history_reframing_scaffold_reuse_candidate": 5,
+    "history_reframing_comic_outputs_per_arm": 8,
+    "history_reframing_shipped": false,
+    "controlled_initial_echo": true,
+    "repair_provider_attempts": 18,
+    "repair_samples_per_arm": 9,
+    "repair_exact_echoes_baseline": 2,
+    "repair_exact_echoes_candidate": 0,
+    "repair_strict_useful_baseline": 5,
+    "repair_strict_useful_candidate": 8,
+    "pre_release_handler_posts_per_arm": 3,
+    "pre_release_handler_strict_useful_baseline": 3,
+    "pre_release_handler_strict_useful_candidate": 2,
+    "heldout_contexts": 2,
+    "heldout_samples_per_arm": 1,
+    "heldout_blind": false,
+    "heldout_character_gain": false,
+    "initial_care_handler_trials": 2,
+    "initial_care_posts": 1,
+    "care_missing_post_cause_proven": false,
+    "care_diagnostic_posts": 1,
+    "care_diagnostic_equal_source_packets": 3,
+    "installed_controlled_trials": 3,
+    "installed_controlled_posts": 3,
+    "installed_source_packets_equal": true,
+    "general_humor_gain_measured": false
+  },
+  "installed": {
+    "source_hashes_match": 31,
+    "version_revision_digest_match": true,
+    "healthy": true,
+    "restarts": 0,
+    "primary_readiness_survives_validation_close": true,
+    "scope_verified": true,
+    "non_sudo_scoped_transaction": true,
+    "timer_active_enabled": true
+  },
+  "gateway": {
+    "normal_owner_probes": 8,
+    "actual_posts": 7,
+    "confirmed_recipient_abstentions": 1,
+    "strict_passes": 7,
+    "freshness_partial": 1,
+    "actual_uninjected_repetition_repair_posts": 1,
+    "routine_metadata_disclaimers": 0,
+    "source_ownership_and_care_pass": true
+  },
+  "health": {
+    "window_start": "2026-10-17T00:20:26.592022872Z",
+    "errors": 0,
+    "warnings": 2,
+    "reply_failures": 0,
+    "source_discards": 0,
+    "disconnects": 0,
+    "posts": 7,
+    "recipient_skips": 1,
+    "quality_refreshes": 1,
+    "repetition_refreshes": 1,
+    "restarts": 0,
+    "general_error_rate_comparison": false
+  },
+  "cost": {
+    "run_attempts": 73,
+    "maintenance_attempts": 62,
+    "runtime_attempts": 11,
+    "run_estimated_usd": 0.009935115,
+    "run_maintenance_usd": 0.00612841,
+    "run_runtime_usd": 0.003806705,
+    "month": "2026-10",
+    "covered_month_estimated_usd": 0.354777285,
+    "covered_month_attempts": 2119,
+    "unsettled_attempts": 1,
+    "new_unsettled_attempts": 0,
+    "runtime_limit_usd": 18,
+    "maintenance_limit_usd": 2,
+    "monthly_limit_usd": 20,
+    "provider_billing": false,
+    "pre_guard_spend": "unknown",
+    "new_paid_services": 0
+  },
+  "privacy": {
+    "raw_sources_or_answers_in_git_or_receipts": false,
+    "derived_personal_observations_in_git_or_receipts": false,
+    "development_learning": false,
+    "scope_expansion": false,
+    "receipt_mode": "0700/0600",
+    "retention": "existing seven-day manual retention and withdrawal cleanup"
+  },
+  "limits": [
+    "Small ordered same-model samples and one qualitative evaluator; no general humor multiplier or spontaneous incidence measurement.",
+    "One care handler post was missing; diagnostic retry passes, original cause remains unproved.",
+    "Different-focus handlers and two human-held-out contexts show no general character advantage.",
+    "One installed new scene still borrows an older scaffold; semantic repetition remains outside the exact detector.",
+    "Preliminary installed receipt overlapped a gateway reply; exact returned-message references resolve validation ambiguity.",
+    "Sparse spontaneous league activity and uninspected original pixels limit character coverage."
+  ],
+  "next": [
+    "H79/H81 useful qualified abstraction and emotional/event-to-routine calibration; H83 focal-target judgment and semantic comic freshness.",
+    "Broader linked native peers/replies/threads and original pixels with lifecycle.",
+    "H61 selective skills/tools and generated Michigan U.P. aurora/trail-camera wildlife scenes with short natural captions and generated provenance."
+  ]
+}

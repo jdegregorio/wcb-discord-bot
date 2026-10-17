@@ -63,3 +63,18 @@ separate from human evidence. Existing model, app volume, pacing and USD18runtim
 13/17/21Sol/xhigh runs and notification preference. No new human trait or service.
 
 [Study and results](evaluations/2026-10-16-humor-repair-study.md).
+
+## Final installed result, 2026-10-16 17:00
+
+2.27.5/indexd4bb2a3c/revision44f7c11 is healthy;31installed source hashes match.
+All gates/protected CI/both image architectures pass. Installed controlled handlers
+post3/3; normal owner gateway7/8strict,7posts/one confirmed abstention, one humor
+freshness partial. Actual gateway naturally exercises one successful repetition
+repair. Broader semantic freshness/focal alignment remains unresolved; H83a is
+rejected and H83b is complete for the existing exact repair. No new human trait.
+
+Run73attempts/estimatedUSD0.009935115; existing18/2/20guard intact. No general
+fidelity/humor multiplier or delivery-frequency claim. One missing pre-release care
+post remains unexplained; diagnostic retry passes. Source/lifecycle/privacy and
+six fresh daily Sol/xhigh runs/notifications remain. [Full evidence and limitations](evaluations/2026-10-16-humor-repair-release.json)
+and [progress](progress.md).

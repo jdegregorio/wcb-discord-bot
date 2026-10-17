@@ -43,4 +43,12 @@ separate from human evidence. Existing model, app volume, pacing and USD18runtim
 2maintenance/20monthly guard remain. Preserve six fresh standalone local01/05/09/
 13/17/21Sol/xhigh runs and notification preference. No new human trait or service.
 
-[Research and acceptance](trubot-evolution/evaluations/2026-10-16-humor-repair-study.md). Release/deployment validation pending.
+[Research and acceptance](trubot-evolution/evaluations/2026-10-16-humor-repair-study.md). Release/deployment validation complete below.
+
+Installed2.27.5/indexd4bb2a3c/revision44f7c11 is healthy, all31source hashes match.
+All gates/protected CI/both images pass. Installed controlled handlers3/3post and
+normal owner gateway7/8strict, one humor freshness partial,7posts/one abstention.
+Actual gateway naturally exercises one repeated-draft repair. Estimated runUSD0.00994;
+18/2/20guard unchanged. No general character/humor gain. H83a rejected; H83b complete
+for existing exact repetition repair. Wider contextual freshness/focal alignment
+and independently useful abstraction remain first. [Final evidence](trubot-evolution/evaluations/2026-10-16-humor-repair-release.json).

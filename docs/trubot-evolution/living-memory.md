@@ -4,7 +4,7 @@ rejected; no new trait or graph population. Next qualified abstract usefulness,
 linked native/original pixels, selective tools/generated U.P. scenes. H72/H74 stay
 rejected and native semantic transfer stays closed. [Current plan](plan.md) and
 [study](evaluations/2026-10-16-humor-repair-study.md) supersede older priority snapshots.
-Release/deployment validation pending.
+Release/deployment validation complete below.
 
 Installed2026-10-16 13:00 result:2.27.4healthy/index35c68625/revision9b1a2ad,
 31source hashes match. Controlled empty-loss handlers3/3and normal owner native
@@ -325,3 +325,11 @@ and genuine human-held-out qualification remain prerequisites for H55b/H48.
 [Final installed result and limitations](evaluations/2026-10-16-memory-continuity-release.json):
 2.27.1 healthy on the verified immutable digest, all31source hashes match,
 changed abstract/ownership controls pass; native factual delivery remains open.
+
+Installed2.27.5/indexd4bb2a3c/revision44f7c11 is healthy, all31source hashes match.
+All gates/protected CI/both images pass. Installed controlled handlers3/3post and
+normal owner gateway7/8strict, one humor freshness partial,7posts/one abstention.
+Actual gateway naturally exercises one repeated-draft repair. Estimated runUSD0.00994;
+18/2/20guard unchanged. No general character/humor gain. H83a rejected; H83b complete
+for existing exact repetition repair. Wider contextual freshness/focal alignment
+and independently useful abstraction remain first. [Final evidence](evaluations/2026-10-16-humor-repair-release.json).
