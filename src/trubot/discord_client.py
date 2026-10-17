@@ -16,6 +16,7 @@ from trubot.attention import AttentionTracker
 from trubot.budget import BudgetError
 from trubot.config import Settings
 from trubot.conversation import (
+    REFERENCE_PREFIX,
     ConversationMessage,
     MemoryAuthorScope,
     ReplyMode,
@@ -568,7 +569,9 @@ class TruBotClient(discord.Client):
         if not isinstance(reference, discord.MessageReference):
             return None
         if reference.channel_id != anchor.channel.id or reference.message_id is None:
-            return None
+            return ConversationMessage(
+                "user", "[Referenced message unavailable.]", origin="reference"
+            )
         try:
             # Refresh even a resolved reference, since cached content can be edited.
             message = await anchor.channel.fetch_message(reference.message_id)
@@ -578,9 +581,10 @@ class TruBotClient(discord.Client):
             if converted is not None:
                 return ConversationMessage(
                     converted.role,
-                    "REFERENCED MESSAGE (context only): " + converted.content,
+                    REFERENCE_PREFIX + converted.content,
                     converted.images,
                     origin="reference",
+                    author_user_id=converted.author_user_id,
                 )
         except discord.HTTPException:
             return ConversationMessage(

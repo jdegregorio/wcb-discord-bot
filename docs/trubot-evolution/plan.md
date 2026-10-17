@@ -1,61 +1,44 @@
 # Trubot evolution plan
 
-Current run:2026-10-16 17:00 Pacific. H83b/2.27.5 supplies the actual rejected draft
-to the existing single repetition repair, so a fresh attempt can correct the
-observed echo. Original history, source revalidation, fallback and final checks
-remain. No extra provider pass or semantic repetition classifier. Added input is
-fully reserved on the same ledger. H83a older-history role reframing was rejected
-after worsening scaffold reuse; no role change ships.
+Current run:2026-10-16 21:00Pacific. H84/2.27.6 binds topic-free Discord Reply
+memory searches to the freshly fetched selected human message. An unrelated newer
+exchange no longer replaces the search subject. Bot/unknown/unavailable/ambiguous/
+incomplete/oversized/image-dependent references cannot establish a topic. Explicit
+subjects and requester ownership stay authoritative. No new source, trait, role,
+provider/HTTP call, schema, service, model or intake/participation scope.
 
-Bounded matched adapter repairs:baseline2/9exact stale repeats/candidate0/9;
-strict useful fresh turns5/9versus8/9, with one candidate partial. Initial echo is
-controlled before provider I/O, not a measured spontaneous failure rate. One
-evaluator/small ordered samples limit confidence. No general fidelity or2-3xhumor
-claim. The earlier2.27.4empty-context correction is complete.
-
-[Two planning phases, hypotheses and locked acceptance](evaluations/2026-10-16-humor-repair-study.md).
+Actual owner gateway reproduces wrong-focus/wrong-emotion behavior. Same-anchor
+private handler comparison:baseline0/3current positive focus,candidate3/3; strict
+celebration2/3candidate, one supportive but understated. Actual abstract packet0/3
+both arms; qualified synthetic graph retrieval improves0/3to3/3across three handlers.
+This is a supported focus correction and abstract-retrieval enabling increment,
+not measured general fidelity/humor amplification or abstract population benefit.
 
 ## Ordered next increments
 
 1. H79/H81 qualified abstract applicability/emotion and H83 contextual humor utility.
-   Require independent separated human evidence, contrary contexts and useful
-   held-out/gateway gains. H72/H74 remain rejected; one qualified value pattern
-   remains. H83a history-role reframing is rejected. Broader semantic scaffold
-   detection is exploratory, not a selected extra provider pass.
-2. Broader linked native peers/replies/threads and original pixels, with bounded
-   source-linked lifecycle/withdrawal, honest gaps and independent semantic
-   qualification. Native automatic semantic transfer stays closed.
+   Need separated support, contrary cases, independent held-out/gateway usefulness,
+   warmth/brevity and no invented habits/motives or relentless bits. One qualified
+   value pattern remains. H72/H74 and H83a stay rejected; H83b repair is complete.
+2. Broader linked native peers/replies/threads and inspected original pixels with
+   bounded source-linked lifecycle/withdrawal and honest gaps. Native automatic
+   semantic gate remains closed; successful capture is not semantic qualification.
 3. H61 selective skills/tools and generated Michigan U.P. northern-lights and
-   trail-camera wildlife scenes with short natural captions/generated provenance.
-   Need sharing/timing/pixel studies, current primary capability/pricing docs,
-   bounded matched prototypes, failure/latency/cost and real Discord evidence.
-4. H66 material grounding/privacy or reproduced delivery failures can reorder.
-   Exact quote/date refinements are secondary to useful abstract engagement.
+   trail-camera wildlife with short natural captions and generated provenance.
+   Need sharing/timing/pixels, current primary docs, bounded matched prototype,
+   latency/failure/cost and real Discord evidence before technology/rollout choice.
+4. H66 material grounding/privacy or independently reproduced delivery loss may
+   reorder. Literal quotes/dates remain secondary to useful abstract engagement.
 
-Priorities changed because H83a failed while H83b improved its narrow repeated-draft
-condition. Independent abstraction usefulness or material grounding failures would
-change the order again. Larger harness/storage redesign remains eligible when
-evidence supports it. Deployment and release validation are complete below.
+Keep bot identity, attributed human evidence, corrections/deletion/withdrawal,
+private raw/derived data, internal unknown dates, existing allowlist/no DMs and
+owner-only private development recall. Development never learns Andrew. Preserve
+care, recipient restraint, brevity and approved contextual TJ humor amplification
+as creative policy separate from human evidence. Existing app volume/model/pacing/
+USD18runtime/2maintenance/20monthly guard and six fresh local01/05/09/13/17/21Sol/
+xhigh standalone runs/notifications remain. H84 needs no source or spending restore
+on code rollback. General character/funniness completion is not established.
 
-Keep bot identity, source attribution/correction/deletion/withdrawal, private raw
-and derived data, internal unknown dates, allowlist/no DMs and owner-only private
-development recall. Development messages never train Andrew. Retain warmth,
-brevity/care/recipient restraint and approved contextual TJ creative amplification
-separate from human evidence. Existing model, app volume, pacing and USD18runtime/
-2maintenance/20monthly guard remain. Preserve six fresh standalone local01/05/09/
-13/17/21Sol/xhigh runs and notification preference. No new human trait or service.
+[Locked hypotheses, methods and limitations](evaluations/2026-10-16-reference-memory-study.md).
 
-## Final installed result, 2026-10-16 17:00
-
-2.27.5/indexd4bb2a3c/revision44f7c11 is healthy;31installed source hashes match.
-All gates/protected CI/both image architectures pass. Installed controlled handlers
-post3/3; normal owner gateway7/8strict,7posts/one confirmed abstention, one humor
-freshness partial. Actual gateway naturally exercises one successful repetition
-repair. Broader semantic freshness/focal alignment remains unresolved; H83a is
-rejected and H83b is complete for the existing exact repair. No new human trait.
-
-Run73attempts/estimatedUSD0.009935115; existing18/2/20guard intact. No general
-fidelity/humor multiplier or delivery-frequency claim. One missing pre-release care
-post remains unexplained; diagnostic retry passes. Source/lifecycle/privacy and
-six fresh daily Sol/xhigh runs/notifications remain. [Full evidence and limitations](evaluations/2026-10-16-humor-repair-release.json)
-and [progress](progress.md).
+Release and installed validation pending.

@@ -3,7 +3,7 @@
 import re
 from collections.abc import Sequence
 
-from trubot.conversation import ConversationMessage
+from trubot.conversation import REFERENCE_PREFIX, ConversationMessage
 
 MAX_FOCUS_CHARS = 600
 
@@ -36,15 +36,34 @@ _MEMORY_FOLLOWUP = re.compile(
 
 
 def memory_followup_query(request: str, messages: Sequence[ConversationMessage]) -> str:
-    """Use one complete immediate human setup as a search key, never evidence.
+    """Use a complete explicit or immediate human setup as a search key, never evidence.
 
-    Original request remains the model focus. Bot, memory, detached reference and
-    visual focus rows cannot create a retrieval subject. No multi-hop resolution.
+    Original request remains the model focus. A freshly fetched explicit human
+    reply reference wins over chronology. Bot/memory/visual text cannot establish
+    a subject, and no setup is personal evidence. No multi-hop resolution.
     """
     normalized = " ".join(request.casefold().removeprefix("🤖").strip().split())
     normalized = normalized.removeprefix("@trubot ").rstrip("?!., ")
     if not _MEMORY_FOLLOWUP.fullmatch(normalized):
         return request
+    references = [m for m in messages if m.origin == "reference"]
+    if references:
+        # The transport supplies at most one freshly fetched same-channel reference.
+        # Invalid/unavailable/bot references block unrelated chronological fallback.
+        if len(references) != 1:
+            return request
+        reference = references[0]
+        if (
+            reference.role != "user"
+            or reference.author_user_id is None
+            or reference.images
+            or not reference.content.startswith(REFERENCE_PREFIX)
+            or "[message with no text]" in reference.content
+            or "[image attached]" in reference.content
+            or "image pixels unavailable" in reference.content
+        ):
+            return request
+        return _complete_setup(reference.content.removeprefix(REFERENCE_PREFIX), request)
     conversation = [m for m in messages[-8:] if m.origin == "conversation"]
     if (
         len(conversation) < 2
@@ -52,7 +71,11 @@ def memory_followup_query(request: str, messages: Sequence[ConversationMessage])
         or conversation[-2].role != "user"
     ):
         return request
-    setup = conversation[-2].content.split(": ", 1)[-1].strip()
+    return _complete_setup(conversation[-2].content, request)
+
+
+def _complete_setup(content: str, request: str) -> str:
+    setup = content.split(": ", 1)[-1].strip()
     # Truncation could drop a closing qualification or accidentally join phrases.
     if not setup or len(setup) > MAX_FOCUS_CHARS or setup.endswith("…"):
         return request

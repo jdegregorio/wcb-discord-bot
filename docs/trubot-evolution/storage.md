@@ -1090,3 +1090,17 @@ coverage for newly imported relationships. Authoritative human sources remain
 unchanged. This run imports no new production human observations. Research
 candidate manifest and temporary graph are erased after rejection. Content-free
 receipts retain existing0700/0600,seven-day manual retention/withdrawal cleanup.
+
+
+## Explicit human reply subject,2.27.6
+
+Existing same-channel reply-reference fetch retains the human author's authenticated
+ID ephemerally. Complete bounded referenced text may supply a generic memory query;
+it is neither persisted as a source nor attributed to Andrew. Bot/unknown/denied/
+cross-channel/incomplete/oversized/image-dependent references cannot supply a topic.
+No schema, source mutation, new read/provider pass or storage/retention expansion.
+Existing source correction/deletion/withdrawal/expiry, author ownership and final
+source packet checks remain. Code rollback needs no data or spending restoration.
+Private content-free refs/counts/grades use the app volume smoke-tests/2026-10-16-2100
+under0700/0600 with existing seven-day manual retention and withdrawal cleanup.
+Disposable candidate package and validation helpers are erased after installed checks.

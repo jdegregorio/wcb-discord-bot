@@ -1,14 +1,13 @@
 # Trubot
 
-## Draft-aware repetition repair (2.27.5)
+## Explicit reply memory continuity (2.27.6)
 
-An existing repetition repair now sees the rejected draft and original focus,
-so it can choose a fresh comic idea instead of blindly regenerating. The draft
-is explicitly fallible bot text. It preserves source/author checks, care, recipient
-restraint, literal reuse and fallback; repetition and length still share one
-accounted quality attempt. Added input bytes are reserved. No new provider pass,
-model, schema or intake scope. Small controlled trials support this narrow repair,
-not a general humor multiplier. See the [study](docs/trubot-evolution/evaluations/2026-10-16-humor-repair-study.md).
+A topic-free question sent with Discord Reply now uses the selected human message
+as its memory search subject. An unrelated newer exchange cannot replace that
+subject. Complete bounded text is required; bot, unavailable and image-dependent
+references cannot supply it. This supplies context to existing verified retrieval,
+without learning a new preference or adding a provider call.
+See the [study](docs/trubot-evolution/evaluations/2026-10-16-reference-memory-study.md).
 
 Trubot is the Will Carter Bowl League of Champions' dry, deadpan, oddly sincere,
 Thomas-Jones-obsessed Discord character. Attributed league conversations,
