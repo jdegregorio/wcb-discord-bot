@@ -41,4 +41,17 @@ on code rollback. General character/funniness completion is not established.
 
 [Locked hypotheses, methods and limitations](docs/trubot-evolution/evaluations/2026-10-16-reference-memory-study.md).
 
-Release and installed validation pending.
+Installed2.27.6/index99e03a9f/revision9730472 is healthy on reverified pi5,
+zero restarts and31matching source hashes. Feature/merged six gates and protected
+PR/main/image CI pass. Fresh normal owner gateway8probes/7posts/one confirmed
+abstention,strict7/8:the changed explicit Reply is correctly positive; broad recall
+is grounded but remains a third-person recap. Preference/date/care/humor/ownership/
+restraint pass; no routine metadata disclaimer. Installed exact subject binding and
+heartbeat after HTTP-only client closure pass. No new human observation.
+
+Run25settled attempts,estimatedUSD0.006158285; covered OctoberUSD0.36093557,
+existing18/2/20guard intact. One old unsettled reservation,no new unsettled attempt;
+not provider billing and pre-guard spend unknown. New container0errors/reply failures/
+source discards/disconnects/restarts,2startup warnings and2existing quality repairs.
+Short unmatched windows do not establish a general error-rate gain. No general
+fidelity/humor multiplier or live abstract-memory contribution is established.

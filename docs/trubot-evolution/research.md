@@ -2752,3 +2752,16 @@ claim measured abstract-memory contribution. Qualified synthetic graph retrieval
 with unchanged source/author/lifecycle, complete bounded text and no new paid pass.
 Next qualified abstract utility/H83 semantic freshness, linked native/pixels, H61
 selective tools and generated U.P. outdoor scenes. No new trait or general gain.
+
+
+### H84 installed result and reprioritization
+
+2.27.6/PR139/index99e03a9f is deployed, healthy and source-matched after all gates,
+protected CI and both image builds. Fresh owner gateway strict7/8,changed Reply1/1
+correct positive focus and actual exact-reference trace pass. Broad recall remains
+a third-person source recap despite grounded content; retain as an H79/H83 source-
+scoping/naturalness research question, not an unsupported personality trait or a
+permission to fabricate personal actions. Other recall/care/humor/ownership/recipient
+checks pass. No general fidelity gain/live abstract-memory contribution inferred.
+All source lifecycle/spending boundaries remain. Run25settled attempts/USD0.006158285
+estimated; one unchanged old unsettled. [Final evidence](evaluations/2026-10-16-reference-memory-release.json).

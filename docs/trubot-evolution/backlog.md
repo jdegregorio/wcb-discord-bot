@@ -51,4 +51,70 @@ in mechanism, modest confidence in broader prose quality; no extra paid call/sto
 
 [Locked hypotheses, methods and limitations](evaluations/2026-10-16-reference-memory-study.md).
 
-Release and installed validation pending.
+Installed2.27.6/index99e03a9f/revision9730472 is healthy on reverified pi5,
+zero restarts and31matching source hashes. Feature/merged six gates and protected
+PR/main/image CI pass. Fresh normal owner gateway8probes/7posts/one confirmed
+abstention,strict7/8:the changed explicit Reply is correctly positive; broad recall
+is grounded but remains a third-person recap. Preference/date/care/humor/ownership/
+restraint pass; no routine metadata disclaimer. Installed exact subject binding and
+heartbeat after HTTP-only client closure pass. No new human observation.
+
+Run25settled attempts,estimatedUSD0.006158285; covered OctoberUSD0.36093557,
+existing18/2/20guard intact. One old unsettled reservation,no new unsettled attempt;
+not provider billing and pre-guard spend unknown. New container0errors/reply failures/
+source discards/disconnects/restarts,2startup warnings and2existing quality repairs.
+Short unmatched windows do not establish a general error-rate gain. No general
+fidelity/humor multiplier or live abstract-memory contribution is established.
+
+
+## Evidence, dependencies and operating expectations
+
+H79/H81 (exploratory population): study repeated separated human episodes and
+contrary cases before deriving conditional value/emotion/relationship guidance,
+so reactions fit the friend's actual moment instead of a generic stance. Depends
+on existing qualified graph/provenance/lifecycle and fresh human context. Accept
+only source-reviewed independent held-out/gateway utility without invented motives,
+habits, lost care, brevity or ownership. Confidence in the need is high, additional
+population benefit unresolved after rejected H72/H74 cohorts. Use existing bounded
+two-pass maintenance studies and packet caps; no new service or allowance. New
+independently useful abstractions would increase priority; failed utility retires
+only their derivations, preserving sources and spending.
+
+H83 (exploratory humor utility): fresh contextual joke turns should build on the
+current setup rather than recycle a scaffold. H83a rejection, H83b narrow success
+and H84's reproduced focus loss motivate this item. Depends on separated human
+humor/context/contrary timing studies and controlled same-model replays. Acceptance
+requires fitting novel turns plus care, recipient restraint, warmth and brevity;
+original source text is an audit reference, not a mandatory catchphrase. Compare
+baseline/candidate on independent held-outs and normal gateway, with explicit
+subjective-evaluator limits. Broader mechanism/confidence and operating cost remain
+unresolved; prototype within existing maintenance and do not add a paid runtime
+classifier without measured benefit and a bounded estimate below the monthly cap.
+
+Linked native/visual context (enabling): capture full bounded peers/replies/threads
+and actual original pixels, so supported abstractions can include their real setup.
+Current dependency metadata/reconciliation does not establish complete semantic
+coverage. Depends on authenticated readable scope, source-linked expiry/correction/
+delete/withdrawal/recovery and bounded transport/storage. Accept fresh inspectable
+linked context, honest inaccessible/media gaps and independent held-out utility
+before changing the closed native automatic pattern gate. Gap confidence is high;
+semantic benefit and incremental operating use remain unmeasured. Existing app
+volume, bounded Discord reads and maintenance ledger; no paid infrastructure selected.
+
+H61 (exploratory harness and generated outdoor sharing): selectively load useful
+skills/tools and test Michigan U.P. northern-lights/trail-camera wildlife scenes
+with short natural captions, so the character gains relevant context and fitting
+sharing opportunities. Depends on attributed sharing/timing studies, original pixels,
+current primary capability/pricing docs and bounded matched prototypes. Accept
+natural useful engagement, explicit generated provenance distinct from real photos,
+source boundaries, graceful failure, timing/latency and measured cost under the
+existing20USDmonthly ceiling. Confidence in contribution is unresolved; no tool,
+model, image provider or paid service selected. Evidence of useful sharing would
+raise priority; weak timing/naturalness or budget failure rejects rollout.
+
+H66 (conditional reliability): material source grounding/privacy or independently
+reproduced delivery loss can interrupt this order, so useful character behavior
+reaches the correct audience safely. Require real-flow reproduction, exact source/
+transport diagnosis, meaningful regression and actual gateway recovery. Cost and
+dependencies depend on the reproduced defect; preserve the existing guard. The old
+single missing care post remains undiagnosed and is not evidence for relaxing checks.
