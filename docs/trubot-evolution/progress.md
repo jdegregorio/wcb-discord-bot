@@ -4477,6 +4477,50 @@ Both planning phases select H83b after rejecting H83a. Matched live maintenance
 repair calls:exact stale repeats2/9to0/9,strict useful fresh turns5/9to8/9; one
 candidate partial. Initial draft injection is controlled, not live failure incidence.
 No general2-3xhumor or human-fidelity claim. New8regressions against untouched
-baseline6fail/2pass; candidate checks/release/installed validation pending.
+baseline6fail/2pass; candidate checks/release/installed validation complete below.
 
 [Hypotheses, methods and limits](evaluations/2026-10-16-humor-repair-study.md).
+
+## Final installed result, 2026-10-16 17:00
+
+PR137 passes protected CI38985338232 and merges exact tested head non-admin as
+44f7c1143ce7d093bb1e9e816e7415395cba30c0. All six merged gates and main
+CI38985522844 pass. Immutable v2.27.5/image38985658582 succeeds for AMD64/ARM64.
+Reverified pi5/aarch64/Ubuntu24.04.4 uses the existing non-sudo locked app transaction
+and deploys indexd4bb2a3c. Healthy/zero restarts; all31source hashes/package versions/
+revision match. Prior2.27.4/index35c68625 remains rollback target. No rollback or
+source/spending-state restore; release timer remains active/enabled.
+
+Installed controlled private handlers3/3post, nine equal source-packet hashes and
+heartbeat survives HTTP-only validation-client closure. An earlier receipt assumed
+one bot post/window and collided with a concurrent normal gateway response. It was
+replaced by exact returned-message/fetch verification; it is not a production failure.
+Normal owner gateway8probes/7posts/one confirmed recipient abstention, strict7/8:
+one new humor scene still borrows an older scaffold despite a relevant added turn.
+The actual gateway naturally triggers one repeated-draft repair and posts a fresh
+answer, without injected generation. Recall, ordinary unknown-date language,
+exact-date honesty, care and requester ownership pass. No routine metadata disclaimer.
+This supports the narrow repair; no general2-3xhumor or human-fidelity claim.
+
+Post audit matches3league channels/latest100each/14days:5target8peer3olderbot,
+zero seven-day bot posts/denied channels. Development excluded; total human study
+10source windows/two exports, overlapping grouped blocks, no inspected original pixels.
+No new human trait/graph population; H72/H74 stay rejected, native semantic gate closed.
+H83a role reframing is rejected; H83b is complete for the existing repair path.
+Next remains H79/H81 useful qualified abstractions and H83 focal-target/semantic
+freshness, linked native/original pixels, selective tools/generated U.P. scenes.
+
+Run73settled attempts, estimatedUSD0.009935115:62maintenance/USD0.00612841 and
+11runtime/USD0.003806705. Covered OctoberUSD0.354777285/2,119attempts; one unchanged
+old unsettled reservation, no new unsettled attempt. Existing18/2/20guard intact;
+not billing, pre-guard spending unknown. Added runtime input only on existing repair,
+no new provider pass/schema/model/service/scope. Logs since new container start:
+0errors/reply failures/source discards/disconnects/restarts,2startup warnings,
+7normal posts/1recipient skip/1repetition refresh. Short windows cannot establish
+general error-rate improvement. Original missing care post remains an unproved
+source-boundary inference; diagnostic retry passes. Raw exchanges/answers/derived
+personal observations stay out of Git/releases/logs/receipts. Private refs/hashes/
+grades use0700/0600 and existing seven-day manual retention/withdrawal cleanup.
+All six fresh local01/05/09/13/17/21Sol/xhigh runs and notifications remain unchanged.
+
+[Structured final validation](evaluations/2026-10-16-humor-repair-release.json).
