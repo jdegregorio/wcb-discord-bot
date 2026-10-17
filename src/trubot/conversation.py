@@ -7,6 +7,8 @@ from dataclasses import dataclass, field
 from enum import StrEnum
 from typing import Literal
 
+REFERENCE_PREFIX = "REFERENCED MESSAGE (context only): "
+
 MessageRole = Literal["user", "assistant"]
 MessageOrigin = Literal["conversation", "memory", "reference", "focus"]
 

@@ -396,3 +396,14 @@ counts, shared episodes and duplicate supporting text exclude that observation
 without hiding unrelated valid memory. Existing source fingerprints, contrary-source
 invalidation, native freshness, expiry and withdrawal remain authoritative. This is
 an enabling correction, with no new automatic trait, prompt or provider attempt.
+
+
+### Explicit human reply memory continuity,2.27.6
+
+An existing fresh same-channel Discord reply reference retains an ephemeral human
+author ID. A topic-free request can search with that complete bounded human setup
+before considering chronological adjacency. Invalid, bot, unknown, image-dependent
+or incomplete references block unrelated fallback. Original question and recipient
+judgment stay authoritative. Reference text is untrusted context and a search key,
+never personal evidence. Existing source validation, lifecycle, spending and final
+publication checks remain; no new provider/HTTP call, store, schema or source scope.

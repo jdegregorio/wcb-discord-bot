@@ -2737,3 +2737,18 @@ fidelity/humor multiplier or delivery-frequency claim. One missing pre-release c
 post remains unexplained; diagnostic retry passes. Source/lifecycle/privacy and
 six fresh daily Sol/xhigh runs/notifications remain. [Full evidence and limitations](evaluations/2026-10-16-humor-repair-release.json)
 and [progress](progress.md).
+
+
+### H84 explicit human reply memory continuity,2026-10-16 21:00
+
+[Locked two-phase study](evaluations/2026-10-16-reference-memory-study.md).
+Real owner Discord Reply selects a positive setup after a detour; production
+searches the unrelated detour and responds to an older setback. Baseline5new
+mechanism/handler regressions fail; candidate passes. Matched private actual
+handlers/current source/model/history3samples/arm:focus0/3to3/3,strict celebration
+2/3candidate; one supportive/understated. Actual abstract packets0/3each, so do not
+claim measured abstract-memory contribution. Qualified synthetic graph retrieval
+0/3to3/3across direct/follow-up/reaction supports the enabling boundary. Select H84
+with unchanged source/author/lifecycle, complete bounded text and no new paid pass.
+Next qualified abstract utility/H83 semantic freshness, linked native/pixels, H61
+selective tools and generated U.P. outdoor scenes. No new trait or general gain.

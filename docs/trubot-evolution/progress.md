@@ -4524,3 +4524,16 @@ grades use0700/0600 and existing seven-day manual retention/withdrawal cleanup.
 All six fresh local01/05/09/13/17/21Sol/xhigh runs and notifications remain unchanged.
 
 [Structured final validation](evaluations/2026-10-16-humor-repair-release.json).
+
+
+## 2026-10-16 21:00Pacific - H84 explicit human reply memory continuity
+
+Base478cfdd5ff39496418eaeee7598542ed9f934e1e. Post-fetch new managed worktree
+trubot-20261016-2100/feature/trubot-daily-20261016-2100. Primary checkout untouched;
+no unfinished evolution PR/subagents. Reverified healthy2.27.5 pi5/aarch64/Ubuntu24.04.4.
+Both planning phases precede selection; actual gateway and5new baseline regressions
+reproduce explicit reply subject loss. Matched real private handlers3samples/arm:
+current positive focus0/3to3/3,strict celebration2/3candidate. Existing actual graph
+contributes no abstract packet; synthetic qualified abstract retrieval0/3to3/3.
+No general fidelity/humor claim/new human trait. All gates and deployment pending.
+[Study](evaluations/2026-10-16-reference-memory-study.md).

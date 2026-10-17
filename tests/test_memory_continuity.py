@@ -155,14 +155,13 @@ def test_ambiguous_incomplete_or_nonhuman_setup_does_not_activate_lookup(history
     )
 
 
-def test_new_human_subject_wins_and_other_origins_cannot_supply_a_topic():
+def test_new_human_subject_wins_over_memory_and_visual_rows():
     h = [
         M("user", "Friend: old training progress"),
         M("assistant", "Good."),
         M("user", "Friend: a quiet afternoon"),
         M("assistant", "Nice training progress."),
         M("user", "training progress", origin="memory"),
-        M("user", "training progress", origin="reference"),
         M("user", "training progress", origin="focus"),
     ]
     assert memory_followup_query("What do you think?", h) == "a quiet afternoon"
