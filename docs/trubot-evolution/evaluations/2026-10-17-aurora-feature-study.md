@@ -127,3 +127,30 @@ architecture or general fidelity improvement from this feature.
 Next: protected PR/main CI, immutable image build, installed state/config and actual
 private-server image/publication/provenance smoke checks. Natural qualifying-night
 production delivery remains a future observation, never simulated as an actual event.
+
+
+## Final transport review before activation
+
+Actual NWS KCMX prior-night response reproduces a partial-read defect: the first
+bounded `StreamReader.read(n)` returns5,211bytes with580,191still unread. The first
+chunk is invalid JSON; the full response has151observationfeatures. Thus the original
+public-feed no-op alone did not validate complete local weather transport. Kp itself
+is below the selected threshold, so the no-op result remains appropriate, but weather
+coverage was not established by that first collector run.
+
+A fragmented-seven-byte-chunk regression fails with JSONDecodeError under the old
+reader. The correction consumes bounded chunks to EOF, enforcing the existing4MB
+ceiling before accumulation. It adds no request, paid service or provider attempt.
+2.29.0is an immutable intermediate release; automatic aurora configuration remains
+off.2.29.1will be the first enabled release after protected CI, corrected real-feed
+coverage checks, image build and installed acceptance. No natural production event
+or comparative character gain is claimed. Platform configuration waits for the
+corrected initialized release; no routine user approval is needed.
+
+
+Corrected actual transport:62observed Kp rows and151/28/12weather observations parse
+for KCMX/KSAW/KP53 respectively. No qualifying opportunity for the prior night.
+All six corrected feature gates pass:1,516tests,34typed modules and2.29.1build.
+The release timer installed healthy2.29.0with the aurora feature still off; no
+opportunity publication was enabled on the intermediate reader. Platform PR9 waits
+for2.29.1initialization and acceptance. No production rollback or data restore needed.
