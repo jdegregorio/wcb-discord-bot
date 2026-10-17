@@ -4850,3 +4850,38 @@ using working recent intake. Observe natural aurora delivery without blocking th
 architecture work. Avoid another default memory prompt/refinement run. Scene variety,
 trail-camera wildlife and useful qualified abstractions remain longer-term themes.
 Six standalone local01/05/09/13/17/21Sol/xhigh runs and notifications unchanged.
+
+## 2026-10-17 13:00 Pacific: selective public context tools,2.30.0
+
+Base0884af8154a4d296e0a3b9e720ec8bc548f67689,new managed worktree and unique
+feature/trubot-daily-20261017-1300. Fetched origin/main first;primary checkout unchanged.
+No unfinished evolution PR;three dependency PRs remain separate. H90 selected after
+two-phase evidence/roadmap review and an actual owner/gateway baseline inability to
+check current Marquette cloud/aurora observations. H91 requested images is next;
+existing scheduled aurora feature and working recent intake remain intact.
+
+Fresh local census:3sourcechannels/latest100/14days,5target/6peer/3olderbot,zero7daybot;
+405eligible historical target grouped blocks. Authenticated target account and exact
+owner/bot development membership/channel permissions verified. No new human trait.
+Fresh private provider-assisted audit was automatic-approval rejected for private
+conversation transfer to OpenAI;not executed/retried. Local content-free census and
+synthetic/public experiments continue. Prior human studies remain reference,not a
+new held-out fidelity result. Sparse spontaneous activity limits character conclusions.
+
+Implementation: small selectively loaded read-only skill and one validated function
+execution/one Luna continuation. Fixed NOAA/NWS URLs,typed timestamps/cloud/visibility,
+bounded bytes/deadlines,partial outages unknown. No personal data in HTTP;public
+observations never human evidence. Same source lifecycle and18/2/20ledger;no schema,
+paid service,image generation or ordinary model change. Direct explicit mode only.
+
+Matched8syntheticcases per baseline/candidate:3positiveuseful0/3to3/3;5controlsavoid
+calls5/5and recipient abstention remains. Plain-language retake3/3grounded,2/3natural,
+one residual caveat. Two contrary outage/forecast-guarantee cases2/2grounded.
+No measured general character/humor gain;fresh private held-outs remain open.
+Actual public feeds expose real stale/missing coverage rather than inventing current
+conditions. All six local gates pass:1,578tests/96.99%coverage,36typedmodules,build2.30.0.
+Initial fixture/version errors corrected,no accepted failure/flakiness.30accounted
+attempts/estimatedUSD0.003893375since census;legacyunsettled1unchanged,no fresh pool.
+
+Protected PR/main CI,immutable image publication,deployment and real private gateway
+acceptance pending. Full method/results in [study](evaluations/2026-10-17-context-tools-study.md).

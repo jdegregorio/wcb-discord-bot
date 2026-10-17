@@ -1,3 +1,15 @@
+## Selective public-context harness,2.30.0
+
+`ContextTools` selects small read-only capabilities from explicit focus text.
+`UPConditionsSkill` supplies typed, fresh public NOAA/NWS observations. The same
+Responses adapter allows one validated function execution and one accounted
+continuation. No tools are available in the continuation or optional repair;
+irrelevant replies retain their existing request. Private source/author/lifecycle
+checks remain before further provider use and publication. Public HTTP receives
+no conversation text. Fixed hosts, bytes, deadlines and typed projection bound
+source trust. No additional infrastructure, durable state or remote conversation.
+See [harness](docs/agent-harness.md) and the current evolution study.
+
 Current2.28.1/H87a: source-media presence comes from every existing mandatory
 fresh native source read before optional neighborhoods. Source-only fallbacks are
 ephemeral; full captures alone record graph context. Empty source-only warnings

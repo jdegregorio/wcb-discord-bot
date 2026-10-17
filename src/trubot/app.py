@@ -15,6 +15,7 @@ from trubot.aurora_feature import AuroraFeature
 from trubot.aurora_image import AuroraImageGenerator
 from trubot.budget import BudgetError, UsageLedger
 from trubot.config import ConfigurationError, Settings
+from trubot.context_tools import ContextTools
 from trubot.discord_client import TruBotClient
 from trubot.distillation import GraphDistiller
 from trubot.health import ReadinessFile
@@ -22,6 +23,7 @@ from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningStore, LearningUnavailable
 from trubot.openai_responder import OpenAITruaxResponder
 from trubot.participation import ParticipationPolicy, ParticipationTracker
+from trubot.up_conditions import UPConditionsSkill
 
 logger = logging.getLogger(__name__)
 
@@ -48,6 +50,7 @@ def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> Tr
         budget=budget,
         max_retries=settings.openai_max_retries,
         purpose=spending_purpose,
+        context_tools=ContextTools((UPConditionsSkill(),)),
     )
     participation = ParticipationTracker(
         ParticipationPolicy(

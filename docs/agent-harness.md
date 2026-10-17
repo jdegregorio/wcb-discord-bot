@@ -1,5 +1,39 @@
 # Trubot agent harness
 
+## Selective public context,2.30.0
+
+Explicit current U.P. conditions questions load the read-only UPConditionsSkill.
+Only focus text selects capabilities; old conversation, memory and tool results
+cannot add capabilities. No descriptors or skill text enter irrelevant replies.
+The existing Responses/Luna request chooses whether one call is useful. Strict
+empty-object arguments, one-call batch validation and no parallel execution bound
+I/O. A continuation preserves response items and local conversation with store=False;
+there is no remote stored response, generic shell/web tool or framework dependency.
+No third request, transport retry or optional quality repair occurs for selected
+skills. Both provider attempts reserve/settle through the same purpose/ledger.
+Existing memory scope is rechecked before execution, before continuation and before
+publication. A planning draft is never published after protocol/continuation failure.
+
+Public collection uses four fixed NOAA/NWS endpoints, no redirects or private
+query payload, existing4MBcomplete-response limit,6secondper-request/8secondouter
+bound and no fetch retries. Only timestamped Kp/station-count and typed cloud/visibility
+fields are exposed; free-text source fields never become instructions. Individual
+outages remain independent unknowns. Kp start timestamps older than4hours and
+weather older than2hours are unavailable; incomplete/future/malformed observations
+cannot establish current conditions. Missing cloud/visibility remains unknown.
+These are public proxies, never local sightings, forecasts or human learning evidence.
+
+H90 matched3/3synthetic questions gain useful grounded content;5/5controls avoid tools.
+Plain-language refinement improves jargon/caveats with one residual caveat in3retakes.
+Current real feeds are partially stale/missing. General human fidelity, engagement
+and broad question coverage remain unmeasured. Direct explicit mode only for this
+first increment; follow-up, reaction and ambient modes do not select tools.
+
+Next is H91 requested images with a separate durable paid-side-effect transaction,
+then visual variety/wildlife and independently qualified abstract/humor utility.
+Do not expose the scheduled image generator as a generic untracked function.
+[Current evidence](trubot-evolution/evaluations/2026-10-17-context-tools-study.md).
+
 Current direction, 2026-10-17: the first scheduled visual skill is H89/2.29.1.
 It separates public evidence collection, deterministic opportunity detection,
 bounded contextual timing judgment, image generation and durable publication state.
