@@ -67,7 +67,8 @@ async def test_old_echo_gets_one_accounted_fresh_attempt(mode, monkeypatch):
     assert len(api.requests) == 2
     assert ledger.summary()["attempts"] == before + 2
     first, second = api.requests
-    assert first["input"] == second["input"]
+    assert first["input"] == second["input"][:-2]
+    assert second["input"][-2] == {"role": "assistant", "content": OLD}
     assert second["store"] is False
     assert second["model"] == first["model"]
     assert "earlier bot reply" in second["instructions"]
@@ -311,7 +312,7 @@ async def test_private_refresh_requires_current_packet(current, monkeypatch):
     check.assert_awaited_once_with()
     assert len(api.requests) == ledger.summary()["attempts"] == (2 if current else 1)
     if current:
-        assert api.requests[0]["input"] == api.requests[1]["input"]
+        assert api.requests[0]["input"] == api.requests[1]["input"][:-2]
 
 
 async def test_private_refresh_cancellation_precedes_extra_reservation(monkeypatch):

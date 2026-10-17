@@ -2710,3 +2710,15 @@ one contextual joke-frame reuse partial. H83 is promoted alongside H79/H81;
 no new human observation or general character/humor gain. Both image architectures,
 all31source hashes, all gates/protected CI and meaningful readiness pass.
 [Exact installed evidence](evaluations/2026-10-16-empty-native-context-release.json).
+
+### H83a rejected; H83b selected draft-aware repetition repair
+
+2026-10-16 17:00. Eight private source windows/two exports and recent actual bot
+audit precede selection. History-role reframing worsens scaffold reuse0/8to5/8and
+is rejected. Controlled initial echo plus live repair:exact stale repeats2/9to0/9;
+strict useful turns5/9to8/9. Single evaluator, ordered small samples; no spontaneous
+incidence or general character claim. Select actual rejected-draft input to the
+existing single repair. No new trait, pass, model or scope. Independent abstraction
+usefulness, linked native/pixels and selective tools/generated scenes remain next.
+
+[Hypotheses, methods and limits](evaluations/2026-10-16-humor-repair-study.md).

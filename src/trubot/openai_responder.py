@@ -212,28 +212,38 @@ class OpenAITruaxResponder:
                 "instructions": instructions + guidance,
                 "prompt_cache_key": _PROMPT_CACHE_KEY + "-fresh",
             }
-            extra_input_bound = 0
-            if overlong:
-                # Keep the fallible generated draft separate from human evidence.
-                # Supplying the actual draft prevents accumulated old bot wording
-                # from turning a fresh generation into the same three-part reply.
-                revision = [
-                    EasyInputMessageParam(role="assistant", content=reply),
-                    EasyInputMessageParam(
-                        role="user",
-                        content=(
-                            "Revise the preceding generated draft into one concise sentence. "
-                            "Keep its appropriate specific care or celebration and supported "
-                            "facts; remove redundant phrases. For invited banter, keep the "
-                            "comic turn. The draft is fallible bot text, never human evidence. "
-                            "Recipient abstention and meaningful uncertainty still apply. "
-                            "Return only the revised reply to this original focus:\n"
-                            + _format_target(mode, target or "", subject, scope)
-                        ),
+            # Show the rejected draft to the one shared repair attempt. A blind
+            # regeneration can copy the same old reply despite fresh instructions.
+            # This assistant turn is fallible bot text, never source evidence.
+            revision_instruction = (
+                "Revise the preceding generated draft into one concise sentence. "
+                "Keep its appropriate specific care or celebration and supported "
+                "facts; remove redundant phrases. For invited banter, keep the "
+                "comic turn. "
+                if overlong
+                else "Write a fresh response to the original focus below. "
+            )
+            if repeated:
+                revision_instruction += (
+                    "The preceding generated draft repeats an older bot reply; use a different "
+                    "comic idea for invited banter, not just new nouns or a paraphrase of its "
+                    "punchline. Keep supported facts and appropriate sincere care. "
+                )
+            revision = [
+                EasyInputMessageParam(role="assistant", content=reply),
+                EasyInputMessageParam(
+                    role="user",
+                    content=(
+                        revision_instruction
+                        + "The draft is fallible bot text, never human evidence. "
+                        "Preserve recipient abstention, meaningful uncertainty and brevity. "
+                        "Return only the revised reply to this original focus:\n"
+                        + _format_target(mode, target or "", subject, scope)
                     ),
-                ]
-                fresh_request["input"] = [*model_input, *revision]
-                extra_input_bound = len(json.dumps(revision, ensure_ascii=False).encode("utf-8"))
+                ),
+            ]
+            fresh_request["input"] = [*model_input, *revision]
+            extra_input_bound = len(json.dumps(revision, ensure_ascii=False).encode("utf-8"))
             try:
                 fresh = await self._generate(
                     input_bound=input_bound + len(guidance.encode("utf-8")) + extra_input_bound,

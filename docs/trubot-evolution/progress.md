@@ -4465,3 +4465,18 @@ then selective skills/tools and generated Michigan U.P. aurora/trail-camera scen
 with short natural captions/generated provenance. Material grounding/privacy or
 independently reproduced delivery failures can reorder. No general reliability or
 character completion claim. [Structured release evidence](evaluations/2026-10-16-empty-native-context-release.json).
+
+## 2026-10-16 17:00 Pacific - H83b draft-aware repetition repair
+
+Base0120a9dc85b30c0f9695f8b1c4dabb093261a71e; new managed worktree
+trubot-20261016-1700, branch feature/trubot-daily-20261016-1700. Primary checkout
+untouched; no unfinished evolution PR. Reverified pi5/aarch64/Ubuntu24.04.4 and
+healthy2.27.4. Confirmed private dev owner/two members/allowed writable general.
+
+Both planning phases select H83b after rejecting H83a. Matched live maintenance
+repair calls:exact stale repeats2/9to0/9,strict useful fresh turns5/9to8/9; one
+candidate partial. Initial draft injection is controlled, not live failure incidence.
+No general2-3xhumor or human-fidelity claim. New8regressions against untouched
+baseline6fail/2pass; candidate checks/release/installed validation pending.
+
+[Hypotheses, methods and limits](evaluations/2026-10-16-humor-repair-study.md).

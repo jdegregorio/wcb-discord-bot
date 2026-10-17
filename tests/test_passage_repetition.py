@@ -32,7 +32,7 @@ async def test_reused_passage_inside_changed_reply_gets_one_accounted_refresh(mo
     assert await r.reply(history(), mode=mode, safety_id="test", target=FOCUS) == FRESH
     assert len(api.requests) == 2
     assert ledger.summary()["attempts"] == before + 2
-    assert api.requests[0]["input"] == api.requests[1]["input"]
+    assert api.requests[0]["input"] == api.requests[1]["input"][:-2]
 
 
 def test_passage_normalizes_punctuation_case_and_apostrophes():
