@@ -37,6 +37,8 @@ class Settings:
     openai_api_key: str = field(repr=False)
     allowed_channel_ids: frozenset[int] = DEFAULT_ALLOWED_CHANNEL_IDS
     development_guild_id: int = DEFAULT_DEVELOPMENT_GUILD_ID
+    aurora_channel_id: int = 0
+    aurora_store_path: Path = Path("/var/lib/trubot/aurora.sqlite3")
     reaction_emoji_names: frozenset[str] = DEFAULT_REACTION_EMOJIS
     openai_model: str = "gpt-6-luna"
     openai_timeout_seconds: float = 45.0
@@ -77,6 +79,10 @@ class Settings:
 
         settings = cls(
             discord_token=_required(values, "DISCORD_TOKEN"),
+            aurora_channel_id=_integer(values, "TRUBOT_AURORA_CHANNEL_ID", 0),
+            aurora_store_path=Path(
+                values.get("TRUBOT_AURORA_STORE_PATH", "/var/lib/trubot/aurora.sqlite3")
+            ),
             openai_api_key=_required(values, "OPENAI_API_KEY"),
             allowed_channel_ids=allowed_channels,
             development_guild_id=_integer(
@@ -117,6 +123,9 @@ class Settings:
 
     def _validate(self) -> None:
         _at_least_one(self.allowed_channel_ids, "TRUBOT_ALLOWED_CHANNEL_IDS")
+        _at_least(self.aurora_channel_id, 0, "TRUBOT_AURORA_CHANNEL_ID")
+        if self.aurora_channel_id and self.aurora_channel_id not in self.allowed_channel_ids:
+            raise ConfigurationError("Aurora channel must already be allowed")
         _at_least(self.development_guild_id, 0, "TRUBOT_DEVELOPMENT_GUILD_ID")
         _at_least_one(self.reaction_emoji_names, "TRUBOT_REACTION_EMOJIS")
         _greater_than(self.openai_timeout_seconds, 0, "OPENAI_TIMEOUT_SECONDS")

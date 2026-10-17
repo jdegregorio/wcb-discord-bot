@@ -4786,3 +4786,24 @@ aurora/trail-camera sharing. H72/H74/H83a stay rejected;H83b/H84/H85 complete.
 Six fresh local01/05/09/13/17/21Sol/xhigh runs and notifications are unchanged.
 
 [Structured installed evidence](evaluations/2026-10-17-source-media-stability-release.json).
+
+
+## 2026-10-17 09:00 Pacific - H88/H89 aurora visual participation
+
+Base78a1eed9e8aeed7dbc28119de1b4eabca828d576; new managed worktree and unique
+feature/trubot-daily-20261017-0900 after fetch. Primary checkout untouched.
+Joe redirects roadmap to larger context architecture and visual features, beginning
+with U.P. aurora mornings. H88 verifies newest recent target ingestion/retrieval,
+three catch-up cursors and actual recent-recall gateway delivery. Broader group
+memory is still bounded/incomplete; third-person/internal-project language remains
+a voice limitation. No new private human abstraction is imported.
+
+H89 implements public observed-weather/activity detection, contextual timing gate,
+shared-ledger fixed image generation, durable once-per-night claims and authorized
+quiet morning publication. Actual public prior-night feeds: no qualifying opportunity,
+no automatic image call. Actual synthetic-positive preview:1536x1024,2,563,815bytes,
+inspected plausible U.P. shore/sky, no people/text/unsupported real event claim;
+USD0.04172,27.736seconds including feed test. Timing gate8/8syntheticcases succeeds,
+USD0.000223625/8requests. These are capability/guard tests, not engagement gains.
+Release, installed acceptance and exact identifiers remain pending in this entry
+until verified. [Study](evaluations/2026-10-17-aurora-feature-study.md).

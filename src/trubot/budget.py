@@ -18,6 +18,12 @@ RUNTIME_LIMIT = 18 * NANODOLLARS
 MAINTENANCE_LIMIT = 2 * NANODOLLARS
 PRICING_VERSION = "openai-standard-2026-10-06-cache-write-upper-bound"
 PRICED_MODEL = "gpt-6-luna"
+IMAGE_MODEL = "gpt-image-2"
+IMAGE_PRICING_VERSION = "openai-image-standard-2026-10-17"
+# Images API, text-only generation: USD5/M text input, USD30/M image output.
+IMAGE_INPUT_RATE = 5_000
+IMAGE_OUTPUT_RATE = 30_000
+IMAGE_OUTPUT_BOUND = 16_384
 # Per-token nanodollars. Uncached input includes the maximum cache-write rate.
 INPUT_RATE = 125
 CACHED_RATE = 10
@@ -162,6 +168,26 @@ class UsageLedger:
         if purpose not in {"runtime", "maintenance"}:
             raise BudgetUnavailable("Unknown spending purpose")
         amount = input_bound * INPUT_RATE + output_bound * OUTPUT_RATE
+        return self._reserve_cost(model, purpose, mode, PRICING_VERSION, amount)
+
+    def reserve_image(self, *, prompt_bytes: int, purpose: str = "runtime") -> Reservation:
+        """Price only the fixed medium,1536x1024,text-only single-image workflow.
+
+        The deliberately large output bound covers the documented medium estimate.
+        Unexpected usage halts the same ledger, exactly as for text generation.
+        """
+        if type(prompt_bytes) is not int or not 1 <= prompt_bytes <= 2_000:
+            raise BudgetUnavailable("Image prompt exceeds its priced bound")
+        if purpose not in {"runtime", "maintenance"}:
+            raise BudgetUnavailable("Unknown spending purpose")
+        amount = (prompt_bytes + 1024) * IMAGE_INPUT_RATE + IMAGE_OUTPUT_BOUND * IMAGE_OUTPUT_RATE
+        return self._reserve_cost(
+            IMAGE_MODEL, purpose, "aurora_image", IMAGE_PRICING_VERSION, amount
+        )
+
+    def _reserve_cost(
+        self, model: str, purpose: str, mode: str, pricing_version: str, amount: int
+    ) -> Reservation:
         reservation = Reservation(uuid4().hex, amount)
         with self._transaction() as db:
             month = self._month(db)
@@ -179,7 +205,7 @@ class UsageLedger:
                     purpose,
                     mode,
                     model,
-                    PRICING_VERSION,
+                    pricing_version,
                     amount,
                 ),
             )
@@ -212,15 +238,41 @@ class UsageLedger:
             + cached_input_tokens * CACHED_RATE
             + output_tokens * OUTPUT_RATE
         )
+        return self._settle_cost(reservation, cost, tokens, expected_model=PRICED_MODEL)
+
+    def settle_image(
+        self, reservation: Reservation, *, input_tokens: int, output_tokens: int
+    ) -> int:
+        """No cached pricing or reference-image inputs in this generation path."""
+        if any(type(n) is not int or n < 0 for n in (input_tokens, output_tokens)):
+            self.uncertain(reservation)
+            raise BudgetUnavailable("Invalid image token usage")
+        return self._settle_cost(
+            reservation,
+            input_tokens * IMAGE_INPUT_RATE + output_tokens * IMAGE_OUTPUT_RATE,
+            (input_tokens, 0, output_tokens),
+            expected_model=IMAGE_MODEL,
+        )
+
+    def _settle_cost(
+        self,
+        reservation: Reservation,
+        cost: int,
+        tokens: tuple[int, int, int],
+        *,
+        expected_model: str,
+    ) -> int:
         with self._transaction() as db:
             month = self._month(db)
             row = db.execute(
-                "SELECT status,reserved,charged FROM attempts WHERE id=?", (reservation.id,)
+                "SELECT status,reserved,charged,model FROM attempts WHERE id=?", (reservation.id,)
             ).fetchone()
             if row is None:
                 raise BudgetUnavailable("Reservation missing from usage ledger")
             if row[0] == "settled":
                 raise BudgetUnavailable("Reservation already settled")
+            if row[3] != expected_model:
+                raise BudgetUnavailable("Reservation pricing does not match the provider model")
             db.execute(
                 "UPDATE attempts SET status='settled',settled_month=?,charged=?,input_tokens=?,"
                 "cached_input_tokens=?,output_tokens=? WHERE id=?",

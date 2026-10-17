@@ -97,6 +97,18 @@ class ParticipationTracker:
             return None
         return AmbientEligibility(requester_user_id=state.recent[-1].user_id)
 
+    def scheduled_eligible(self, channel_id: int, at: datetime) -> bool:
+        """Explicitly authorized scheduled posts share ambient caps and cooldowns.
+
+        They need no recent group conversation. The caller verifies channel quiet.
+        """
+        now = _as_utc(at)
+        state = self._state(channel_id)
+        self._roll_day(state, now)
+        return self.policy.daily_limit > state.ambient_replies_today and (
+            state.last_reply_at is None or now - state.last_reply_at >= self.policy.min_interval
+        )
+
     def invalidate(self, channel_id: int) -> None:
         self._state(channel_id).revision += 1
 

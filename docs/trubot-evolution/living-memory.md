@@ -1,3 +1,13 @@
+# Current roadmap direction, 2026-10-17
+
+Joe has redirected the next increments toward architecture and visual features.
+H88 verified current recent target-message ingestion and bounded retrieval. This
+is not complete peer-discussion memory. Preserve existing graph/intake/source
+lifecycle and return with a coherent broader episode-context design, rather than
+more isolated quote/date patches. H89 aurora participation goes first; selective
+skills/tools and richer discussion context follow. The graph milestones below
+remain the long-term memory contract, not a fixed next-run priority.
+
 Current2026-10-17 05:00: H87a/2.28.1 selects ephemeral mandatory source-media
 metadata continuity for replies. It creates no graph capture or human observation.
 H85 complete; native automatic pattern gate stays CLOSED. Next qualified abstract
