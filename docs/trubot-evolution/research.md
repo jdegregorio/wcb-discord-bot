@@ -2765,3 +2765,14 @@ permission to fabricate personal actions. Other recall/care/humor/ownership/reci
 checks pass. No general fidelity gain/live abstract-memory contribution inferred.
 All source lifecycle/spending boundaries remain. Run25settled attempts/USD0.006158285
 estimated; one unchanged old unsettled. [Final evidence](evaluations/2026-10-16-reference-memory-release.json).
+
+
+## 2026-10-17 01:00 - H85 fresh native setup
+
+Both planning phases and acceptance precede source implementation. H85 synthetic
+learning comparison: 12 samples, false acceptance 4/4 to 0/4; literal controls
+2/2 each. Baseline actual-cycle regression reproduces omitted freshly verified
+setup. Select bounded anonymous projection into both passes; automatic native
+pattern gate remains closed. H86 natural source-recap voice remains exploratory,
+alongside H79/H81/H83. Native full history/pixels and H61 tools/generated outdoor
+sharing follow. No new trait. See [study](evaluations/2026-10-17-native-study-setup.md).

@@ -343,3 +343,31 @@ Actual gateway naturally exercises one repeated-draft repair. Estimated runUSD0.
 18/2/20guard unchanged. No general character/humor gain. H83a rejected; H83b complete
 for existing exact repetition repair. Wider contextual freshness/focal alignment
 and independently useful abstraction remain first. [Final evidence](evaluations/2026-10-16-humor-repair-release.json).
+
+
+## Fresh native study setup, 2.28.0
+
+The existing retained native dependencies are freshly read at the initial boundary,
+projected once as source-local anonymous speaker/position/reply rows, then frozen
+identically for extraction and independent review. Every existing pre-attempt and
+pre-commit source check remains. Original selected cohort and local fingerprints
+stay authoritative. Peer setup is context only, never authored support. Absent
+captures keep the explicit target-only gap; empty captures/media/oversized omissions
+remain honest gaps. Complete rows at most 600 UTF-8 bytes enter the existing measured
+14,000-byte extraction envelope; the adapter retains its 16,000-byte final bound.
+Raw peer text never enters graph/checkpoint/log payloads. Discord IDs are removed
+from provider setup rows; existing private dependency IDs stay local. Source-local
+anonymous links can point outside supplied context and do not prove complete coverage.
+
+No new Discord/provider request, study cadence, cohort version, source discovery,
+intake, schema, model or budget. Joe's explicit source-study authorization covers
+existing readable peer context through the current app-scoped provider. The automatic
+native pattern gate remains CLOSED even when fresh context is supplied. Contextual
+semantic qualification and independent held-out usefulness are separate next work;
+this does not populate a human abstraction or establish reply-quality improvement.
+Existing correction/delete/access/expiry/withdrawal and interpreted-with invalidation
+continue to govern memories and backups. Rollback is schema-compatible; do not restore
+source or spending state. Already accepted observations retain their dependency
+lifecycle, but older code resumes target-only future studies. Private validation
+receipts use existing app-volume smoke-tests, 0700/0600, seven-day manual retention
+and withdrawal cleanup; content-free references/results only.

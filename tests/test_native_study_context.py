@@ -62,15 +62,17 @@ async def setup(stores, *, text="This is a fictional dessert roleplay."):
     return distiller, client, responder, channel, focus, peer
 
 
-async def test_both_payloads_stay_target_only_and_local_dependency_is_retained(stores):
+async def test_both_payloads_receive_fresh_setup_and_local_dependency_is_retained(stores):
     distiller, client, responder, _, _, peer = await setup(stores)
     assert await distiller.cycle(client) == "accepted"
     packets = [c.kwargs["payload"]["sources"] for c in responder.study_json.await_args_list]
     assert packets[0] == packets[1]
     passage = packets[0][0]
-    assert passage["context_scope"] == "native_target_only_peer_setup_missing"
-    assert not passage["adjacent_context"]
-    assert peer.content not in json.dumps(packets)
+    assert passage["context_scope"] == "native_verified_bounded_human_setup"
+    assert passage["adjacent_context"][0]["text"] == peer.content
+    assert passage["adjacent_context"][0]["focus_replies_to_this"]
+    assert str(peer.id) not in json.dumps(packets)
+    assert '"speaker_id"' not in json.dumps(packets)
     assert peer.content not in graph_text(stores[1])
     item = stores[1].lookup("dessert", guild_id=77, now=NOW)[0]
     assert len(item["native_context"]) == 1
