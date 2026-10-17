@@ -125,3 +125,66 @@ All six feature gates pass: locked sync, formatting, lint, strict typing31module
 lint and incomplete mocked-metadata failures were corrected; no failure or flakiness
 accepted.25new regression cases, including22baseline reproductions. Release and
 installed acceptance follow; no production completion claim yet.
+
+
+## Final installed result
+
+[PR143](https://github.com/jdegregorio/wcb-discord-bot/pull/143) merged
+c2d8c23785b0be91ef62bae43a641b74d974e619 after exact tested head54d58dc and
+required CI39031455025. All six merged gates pass again:1,451tests,97.11%branch-
+inclusive coverage,31typed modules/build2.28.1. MainCI39031591210 and image
+39031718855 succeed. Immutable v2.28.1 tag resolves exactly to that tested merge;
+both AMD64 and ARM64 manifests exist. No protection bypass or reused release tag.
+
+Existing non-sudo locked app transaction on freshly reverified pi5/aarch64/
+Ubuntu24.04.4 deploys index30a9104be3d61a794f2483776647e6723578f488db5f77049230d706598b97cc.
+Healthy/Discord-ready/read-only,zero restarts,all31installed module hashes and
+both version values match. Prior2.28.0/index04150306 remains rollback target.
+No rollback, source/ledger restore, participation/intake/scope/model/schema/service/
+schedule/notification change. Release timer active/enabled; primary heartbeat
+survives each HTTP-only validation closure with distinct readiness before construction.
+
+Installed actual source/provider handlers:2/2eligible media-only trials post with
+equal original/final packets. A third attempted trial gains two real human setup
+rows between checks and correctly discards the draft. It is outside the locked
+media-only comparison, separately retained as substantive fail-closed evidence;
+do not describe it as a third successful delivery. No blanket guard relaxation.
+This correction does not solve nonempty optional-context loss or inspect replacement
+pixels, and cannot attribute the prior run's exact missing care message.
+
+Fresh owner UI/gateway:9probes/8posts,strict8/9. Care plus unmentioned follow-up,
+baseball, broad natural past recall, exact-date honesty, requester and fictional
+ownership, and confirmed recipient abstention pass. Invited humor is partial:
+a familiar tribute opening adds fitting scene-specific turns. No general fidelity
+or2-3xhumor gain. Eight reply latencies1.985-8.283seconds,median3.490; not causal
+performance evidence. Actual authenticated message references, not optimistic UI
+IDs, are retained privately. Development messages remain excluded from learning.
+
+Post league census matches3channels/latest100each/14days:5target8peer3olderbot,
+zero seven-day spontaneous bot posts/denied channels. Source census metadata uses
+four windows/one visual gap; held-out archive rubric separately uses two eligible
+catalog cases after one visual exclusion. Do not combine those as independent
+episodes or claim original pixels were inspected. No human trait is populated;
+automatic native patterns stay closed and one qualified value pattern remains.
+
+New-container observation:0errors/reply failures/source discards/disconnects/
+restarts,8posts,1recipient skip,3existing quality refreshes,2startup warnings.
+Short unmatched windows do not establish an error-rate gain. The separate
+captured-send installed trial's correct substantive discard is not a gateway error.
+
+Run41settled attempts,estimatedUSD0.0083419:27maintenance/USD0.00388163,
+14runtime/USD0.00446027. CoveredOctober2,230attempts/USD0.37645382;one unchanged
+old unsettled reservation,zero new unsettled. Existing18/2/20guard intact; not
+provider billing,pre-guard spending unknown. No added paid service or paid reply pass.
+13private content-free receipts use0700/0600, existing seven-day manual retention
+and withdrawal cleanup. Raw sources, generated answers and personal derivations from this run
+did not enter Git/releases/logs/smoke receipts. An automatically rejected raw-output
+audit was replaced safely; no remaining access blocker or approval bypass.
+
+H87a is complete for source-media presence continuity. Return first to qualified
+abstract applicability/emotion/H83semantic freshness/H86naturalness, then linked
+native/original pixels and H61selective skills/tools/generated Michigan U.P.
+aurora/trail-camera sharing. H72/H74/H83a stay rejected;H83b/H84/H85 complete.
+Six fresh local01/05/09/13/17/21Sol/xhigh runs and notifications are unchanged.
+
+[Structured installed evidence](2026-10-17-source-media-stability-release.json).

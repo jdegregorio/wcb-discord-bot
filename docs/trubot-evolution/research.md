@@ -2809,3 +2809,16 @@ Two authentic-answer-held-out catalog contexts show relevance2/2 but comic mecha
 No new human trait/general humor gain. Select bounded H87a correction, then return
 to qualified abstract applicability/emotion/H83semantic freshness/H86natural recall,
 linked native/original pixels, H61tools/generated U.P. scenes. Presence is not pixels.
+
+
+### H87a installed result and reprioritization
+
+2.28.1/PR143/index30a9104b is healthy on verified pi5;all31source hashes match.
+All six feature/merged gates and required PR/main/image CI pass:1,451tests,97.11%.
+Installed eligible media-only cases2/2post; one separate substantive setup change
+correctly discards. Normal owner gateway strict8/9:8posts/one abstention,one humor
+partial. No general character gain; next qualified abstract/emotional applicability
+and semantic comic freshness,linked native/original pixels,H61tools/generated U.P.
+scenes. Run41settled attempts/estimatedUSD0.0083419;18/2/20guard intact. See
+[full installed evidence](evaluations/2026-10-17-source-media-stability-release.json)
+and the study for baseline counts,uncertainty,privacy and original-pixel limits.

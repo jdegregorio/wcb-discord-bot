@@ -14,7 +14,7 @@ two injected optional losses and one naturally reversed metadata transition.
 Prototype3/3 and actual candidate3/3 post with matching original/final packets.
 These small ordered trials target transport, not spontaneous failure frequency.
 Fresh audit:3league channels/latest100each/14days,5target8peer3olderbot, zero
-seven-day bot posts. Two authenticated catalog-held-out setups with genuine answers
+seven-day bot posts. Two operator-attributed archive setups held out from generation with genuine answers
 withheld:relevance2/2, human comic mechanism0/2 in a content-free model rubric;
 one model evaluator and reused anchors limit inference. Original pixels uninspected.
 
@@ -61,3 +61,12 @@ runs and notifications remain unchanged. Release/installed outcome is recorded
 in progress and the study; no completion is inferred from a healthy container.
 
 [Hypotheses, experiments and limitations](docs/trubot-evolution/evaluations/2026-10-17-source-media-stability-study.md).
+
+
+Installed2.28.1/index30a9104b/revisionc2d8c23 is healthy,Discord-ready,read-only,
+zero restarts;all31module hashes match. Feature/merged six gates1,451tests/
+97.11%coverage and protected PR/main/image CI pass. Installed media-only2/2post;
+one substantive setup transition correctly discards. Normal gateway9probes/8posts,
+strict8/9,humor freshness partial; care/direct follow-up and natural recall pass.
+No general fidelity/humor gain. Run estimatedUSD0.0083419,coveredOctoberUSD0.37645382,
+18/2/20guard unchanged. Exact results/limits are in the study and progress.

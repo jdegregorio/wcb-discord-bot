@@ -1,0 +1,189 @@
+{
+  "schema": 1,
+  "run": "2026-10-17 05:00 America/Los_Angeles",
+  "hypothesis": "H87a",
+  "version": "2.28.1",
+  "base": "42f0d92a8bb023faef8ca36434db45f73878c845",
+  "tested_head": "54d58dc5f1d9b4b4f1872f9969e901693380be6c",
+  "merged_commit": "c2d8c23785b0be91ef62bae43a641b74d974e619",
+  "pull_request": "https://github.com/jdegregorio/wcb-discord-bot/pull/143",
+  "release": "https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.28.1",
+  "ci": {
+    "pr": 39031455025,
+    "merged_main": 39031591210,
+    "image": 39031718855,
+    "all_succeeded": true,
+    "admin_bypass": false
+  },
+  "image": {
+    "index": "sha256:30a9104be3d61a794f2483776647e6723578f488db5f77049230d706598b97cc",
+    "amd64": "sha256:e9313cfc052b157f0e47139f175f6cd0eeceba68d2ce988e89d96505878d1503",
+    "arm64": "sha256:5f0199fcee8eaf8df7fca2b5d0fed53701af5d4579e30b6f60c3ca1c28705a49"
+  },
+  "rollback": {
+    "version": "2.28.0",
+    "index": "sha256:041503066af2a3325ffb122333beda4f2416ecf6795b1f10b6869635fec57043",
+    "used": false
+  },
+  "quality": {
+    "all_six_feature_and_merged_gates": true,
+    "tests": 1451,
+    "coverage_percent": 97.11,
+    "typed_modules": 31,
+    "installed_modules_match": 31,
+    "new_regression_cases": 25,
+    "initial_baseline_regression_failures": 22,
+    "accepted_failures_or_flakiness": false
+  },
+  "research": {
+    "natural_packet_probes": 4,
+    "authored_sources_each": 5,
+    "natural_capture_provider_handlers": 2,
+    "natural_capture_handlers_posted": 2,
+    "baseline_initial": {
+      "trials": 3,
+      "posts": 0,
+      "injected_media_only_loss": 2,
+      "natural_reverse_media_availability": 1
+    },
+    "baseline_repeat": {
+      "trials": 3,
+      "posts": 0,
+      "injected_media_only_loss": 2,
+      "natural_reverse_media_availability": 1
+    },
+    "prototype": {
+      "trials": 3,
+      "posts": 3
+    },
+    "actual_candidate": {
+      "trials": 3,
+      "posts": 3
+    },
+    "single_question_repeated_ordered_arms": true,
+    "source_and_nonempty_setup_held_equal_in_media_comparison": true,
+    "initial_receipt_name_collision_corrected_by_separate_repeat": true,
+    "prior_run_exact_discard_cause_proven": false,
+    "normal_failure_frequency_established": false,
+    "general_fidelity_gain_established": false
+  },
+  "installed_handlers": {
+    "attempted": 3,
+    "media_only_eligible": 2,
+    "media_only_posts": 2,
+    "substantive_setup_changed": 1,
+    "substantive_change_correctly_discarded": 1,
+    "actual_provider_and_sources": true,
+    "sends_captured": true,
+    "distinct_readiness_before_construction": true,
+    "primary_readiness_survived": true
+  },
+  "audit": {
+    "allowed_league_channels": 3,
+    "latest_messages_each": 100,
+    "window_days": 14,
+    "target": 5,
+    "peer": 8,
+    "older_bot": 3,
+    "seven_day_bot": 0,
+    "denied": 0,
+    "metadata_source_windows": 4,
+    "metadata_windows_visual_gap": 1,
+    "eligible_grouped_corpus_blocks": 405,
+    "heldout_archive_cases": 2,
+    "heldout_selection_visual_exclusion": 1,
+    "original_pixels_inspected": 0,
+    "source_attribution": "approved exact Slack alias; native pinned human freshly authenticated",
+    "new_human_observation": false
+  },
+  "heldout": {
+    "authentic_answer_withheld": true,
+    "previously_catalogued_anchors": true,
+    "relevant": 2,
+    "brief_context_fit": 1,
+    "emotional_timing_fit": 1,
+    "human_comic_mechanism_fit": 0,
+    "invented_history": 0,
+    "mechanical_metadata": 0,
+    "evaluator": "one same-model structured content-free rubric; not independent human judgment"
+  },
+  "gateway": {
+    "owner_ui_probes": 9,
+    "posts": 8,
+    "strict_pass": 8,
+    "humor_partial": 1,
+    "care_direct_and_unmentioned_followup_pass": true,
+    "baseball_broad_past_exact_date_pass": true,
+    "fiction_and_requester_ownership_pass": true,
+    "recipient_abstention_confirmed": true,
+    "latency_seconds": {
+      "min": 1.985,
+      "median": 3.49,
+      "max": 8.283
+    },
+    "latency_causal_improvement_claim": false,
+    "test_messages_learned": false
+  },
+  "health": {
+    "host": "pi5",
+    "architecture": "aarch64",
+    "os": "Ubuntu 24.04.4",
+    "healthy": true,
+    "discord_ready": true,
+    "readonly_container": true,
+    "restarts": 0,
+    "errors": 0,
+    "reply_failures": 0,
+    "source_discards": 0,
+    "gateway_posts": 8,
+    "recipient_skips": 1,
+    "existing_quality_refreshes": 3,
+    "startup_warnings": 2,
+    "disconnects": 0,
+    "timer_active_enabled": true,
+    "short_unmatched_windows_not_error_rate_estimate": true
+  },
+  "cost": {
+    "run_attempts": 41,
+    "run_estimated_usd": 0.0083419,
+    "maintenance_attempts": 27,
+    "maintenance_estimated_usd": 0.00388163,
+    "runtime_attempts": 14,
+    "runtime_estimated_usd": 0.00446027,
+    "covered_october_attempts": 2230,
+    "covered_october_estimated_usd": 0.37645382,
+    "unsettled_preexisting": 1,
+    "new_unsettled": 0,
+    "monthly_runtime_maintenance_total_limits_usd": [
+      18,
+      2,
+      20
+    ],
+    "not_provider_billing": true,
+    "pre_guard_spend": "unknown"
+  },
+  "privacy": {
+    "private_content_free_receipts": 13,
+    "directory_mode": "0700",
+    "file_mode": "0600",
+    "retention": "existing manual seven-day and withdrawal cleanup",
+    "raw_output_audit_auto_review_rejected_before_execution": true,
+    "safer_content_free_and_bounded_private_rubrics_completed": true,
+    "credential_values_exposed": false,
+    "remaining_access_blocker": false,
+    "fallback_durable_capture": false,
+    "new_raw_or_derived_personal_content_in_git_releases_logs_or_receipts": false
+  },
+  "limitations": [
+    "One installed substantive-context transition safely discarded its draft; the correction addresses media-presence-only instability.",
+    "Presence metadata does not inspect pixels or detect replacement attachments/previews.",
+    "Small ordered repeated trials do not estimate spontaneous failure incidence or general reply quality.",
+    "Same-model held-out rubric has weak comic fit; gateway humor retains a familiar opening.",
+    "No new trait or general humor multiplier, full native/thread/visual history or automatic native pattern permission."
+  ],
+  "next": [
+    "Qualified abstract applicability/emotion, semantic comic freshness and natural recall.",
+    "Broader linked native peers/replies/threads and inspected original pixels.",
+    "Selective skills/tools and generated Michigan U.P. aurora/trail-camera sharing under the existing guard."
+  ]
+}
