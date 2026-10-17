@@ -4693,3 +4693,33 @@ Michigan U.P. aurora/trail-camera sharing. H72/H74/H83a remain rejected. Six fre
 local01/05/09/13/17/21Sol/xhigh runs and notifications remain unchanged.
 
 [Structured validation](evaluations/2026-10-17-native-study-release.json).
+
+
+## 2026-10-17 05:00 Pacific - H87a source media continuity
+
+Base42f0d92a8bb023faef8ca36434db45f73878c845; post-fetch new managed
+trubot-20261017-0500 checkout,feature/trubot-daily-20261017-0500. Primary untouched,
+no unfinished evolution PR or subagents. Both planning phases precede production
+implementation. Actual packet trace supplies an original/final media-warning-only
+mismatch with unchanged authored/context evidence. Initial baseline loses3/3drafts,
+prototype and actual candidate post3/3each.22initial regressions fail baseline.
+Selected2.28.1uses existing fresh mandatory source media metadata independently
+of optional neighborhoods; full captures alone persist graph context. No source/
+provider request, schema, service, model, permission or spending allowance added.
+
+Fresh audit3league channels/latest100each/14days:5target8peer3olderbot,zero fresh
+seven-day bot. Four source windows/one visual gap; two eligible catalog-held-outs
+with genuine answers withheld show relevant2/2 but comic mechanism0/2 in one model
+rubric. No general character/humor gain or human trait imported. H79/H81/H83/H86
+returns next, followed by linked native/original pixels and H61tools/generated
+U.P. aurora/trail-camera sharing. Source-media presence cannot inspect replacement
+pixels; substantive context loss still stops publication.
+
+A raw-message-output audit was automatically rejected before execution. Safer
+content-free metadata and bounded private provider rubrics completed the audit
+without raw disclosure; no approval bypass or remaining access blocker.
+Private refs/hashes/counts/rubric booleans use existing app-volume0700/0600 receipts,
+seven-day manual retention and withdrawal cleanup. Separate HTTP-only validation
+clients set readiness before construction; primary heartbeat survives closure.
+[Study and limitations](evaluations/2026-10-17-source-media-stability-study.md).
+Release, installed smoke outcomes and final cost follow after verification.

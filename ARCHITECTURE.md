@@ -1,3 +1,12 @@
+Current2.28.1/H87a: source-media presence comes from every existing mandatory
+fresh native source read before optional neighborhoods. Source-only fallbacks are
+ephemeral; full captures alone record graph context. Empty source-only warnings
+retain missing-setup uncertainty. Exact final packet, source/edit binding and all
+lifecycle checks remain. Presence changes stop publication even when optional
+reads fail. This does not inspect or fingerprint replacement pixels; no new
+provider/HTTP request, learning permission or schema. See the
+[study](docs/trubot-evolution/evaluations/2026-10-17-source-media-stability-study.md).
+
 # Architecture
 
 ## Draft-aware repetition repair (2.27.5)

@@ -43,7 +43,7 @@ from trubot.memory import (
     terms,
     years,
 )
-from trubot.native_context import NativeEpisode, collect_native_episode
+from trubot.native_context import NativeEpisode, collect_native_episode, source_media_episode
 from trubot.participation import (
     Observation,
     ParticipationTracker,
@@ -718,6 +718,11 @@ class TruBotClient(discord.Client):
                         refreshed_sources.append(
                             (source_channel, candidate.source["message_id"], refreshed)
                         )
+                        # Mandatory fresh source reads already contain media
+                        # presence. An optional neighborhood timeout must not
+                        # erase it, including for sources beyond the setup cap.
+                        if (source_episode := source_media_episode(refreshed)) is not None:
+                            native_episodes[candidate.source["message_id"]] = source_episode
                 verified.append(candidate)
             # Verify every selected source first. Optional setup must never spend
             # time that a later mandatory source refresh needs.
