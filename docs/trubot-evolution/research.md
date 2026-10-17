@@ -2790,3 +2790,22 @@ Original generation packet unavailable; link to that exact discard remains unpro
 Promote H87 normal-traffic/original-packet diagnosis before choosing a correction,
 without relaxing fresh source/media/lifecycle rules. Abstract/humor utility remains
 next, followed by linked native/pixels and H61tools/generated sharing. [Final evidence](evaluations/2026-10-17-native-study-release.json).
+
+
+## 2026-10-17 05:00 - H87a fresh source media continuity
+
+[Both planning phases, locked acceptance and comparison](evaluations/2026-10-17-source-media-stability-study.md).
+Original/final real handler trace isolates media-warning-only draft loss while
+five authored hashes and nonempty setup remain stable. Initial baseline0/3,
+prototype3/3,actual candidate3/3post; one baseline mismatch is naturally reversed
+metadata availability. Small ordered repeated single-condition transport trials,
+not normal failure incidence or reply-quality scores. All22initial new regressions
+fail baseline; candidate also checks media changes outside optional cap, ephemeral
+fallback and incomplete snapshots. Source/lifecycle/final equality remain.
+
+Fresh league audit3channels/100each/14days:5target8peer3olderbot,zero seven-day bot.
+Two authentic-answer-held-out catalog contexts show relevance2/2 but comic mechanism
+0/2 in a private content-free model rubric. One missing-visual window excluded.
+No new human trait/general humor gain. Select bounded H87a correction, then return
+to qualified abstract applicability/emotion/H83semantic freshness/H86natural recall,
+linked native/original pixels, H61tools/generated U.P. scenes. Presence is not pixels.

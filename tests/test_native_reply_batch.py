@@ -29,6 +29,7 @@ def setup(tmp_path):
     channel = fake_channel()
     selected = [message(channel, i, content=f"Baseball mascot proposal {i}.") for i in range(5)]
     for i, row in enumerate(selected):
+        row.attachments, row.embeds = [], []
         store.observe(source(i, content=row.content, created_at=row.created_at), now=NOW)
     requests = []
 

@@ -1,3 +1,11 @@
+Current2026-10-17 05:00: H87a/2.28.1 selects ephemeral mandatory source-media
+metadata continuity for replies. It creates no graph capture or human observation.
+H85 complete; native automatic pattern gate stays CLOSED. Next qualified abstract
+applicability/emotion/H83comic/H86naturalness utility, linked native/original pixels,
+then H61skills/tools/generated U.P. scenes. [Plan](plan.md) and
+[study](evaluations/2026-10-17-source-media-stability-study.md) supersede older priority
+snapshots. Release and actual installed outcome are recorded in progress.
+
 Current2026-10-16 21:00: H84/2.27.6 supplies a selected complete human Discord
 reply setup to existing memory retrieval for generic questions. Actual matched
 positive focus0/3to3/3,strict celebration2/3candidate. Qualified synthetic abstraction

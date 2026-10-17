@@ -1,5 +1,14 @@
 # Trubot
 
+## Fresh source media continuity (2.28.1)
+
+Mandatory fresh native source reads preserve media-presence warnings even when an
+optional neighborhood read times out. Supported drafts no longer depend on that
+metadata arriving through a second read. Changed media presence and substantive
+human setup still stop publication. Source-only metadata remains ephemeral and
+cannot become a captured learning episode. No extra Discord/provider request.
+See the [study](docs/trubot-evolution/evaluations/2026-10-17-source-media-stability-study.md).
+
 ## Fresh native learning context (2.28.0)
 
 Native memory studies now supply existing freshly checked human setup to both

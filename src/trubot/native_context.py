@@ -13,6 +13,16 @@ from trubot.learning import Identity, SourceMessage, _time
 
 # Context must be complete: silently clipped qualifications can reverse meaning.
 MAX_CONTEXT_BYTES = 600
+SOURCE_MEDIA_UNKNOWN = "source media metadata unavailable"
+SOURCE_MEDIA_UNSEEN = "source media pixels not retrieved; do not interpret image-dependent meaning"
+_SOURCE_MEDIA_GAPS = frozenset({SOURCE_MEDIA_UNKNOWN, SOURCE_MEDIA_UNSEEN})
+
+
+def source_media_gaps(message: discord.Message) -> tuple[str, ...]:
+    """Read only metadata on the already freshly verified authored source."""
+    if not hasattr(message, "attachments") or not hasattr(message, "embeds"):
+        return (SOURCE_MEDIA_UNKNOWN,)
+    return (SOURCE_MEDIA_UNSEEN,) if message.attachments or message.embeds else ()
 
 
 @dataclass(frozen=True, slots=True)
@@ -29,7 +39,27 @@ class NativeEpisode:
         return self.source_text == text and self.source_edited_at == edited_at
 
     def as_data(self) -> dict[str, Any]:
-        return {"human_messages": list(self.neighbors), "gaps": list(self.gaps)}
+        gaps = list(self.gaps)
+        if not self.neighbors and gaps and set(gaps) <= _SOURCE_MEDIA_GAPS:
+            # Source metadata does not prove that the neighborhood was read.
+            # Empty successful setup and absent optional setup share this
+            # conservative rendering, while source media warnings remain exact.
+            gaps.insert(0, "native setup and source media pixels not supplied")
+        return {"human_messages": list(self.neighbors), "gaps": gaps}
+
+
+def source_media_episode(message: discord.Message) -> NativeEpisode | None:
+    """Ephemeral fallback only; never a captured or durable human neighborhood."""
+    text, edited_at = getattr(message, "content", None), getattr(message, "edited_at", None)
+    if not isinstance(text, str) or (edited_at is not None and not isinstance(edited_at, datetime)):
+        # Incomplete metadata cannot supply a fabricated snapshot or timestamp.
+        return None
+    return NativeEpisode(
+        text[:4000],
+        _time(edited_at) if edited_at else None,
+        (),
+        source_media_gaps(message),
+    )
 
 
 def _human(
@@ -127,7 +157,7 @@ async def collect_native_episode(
         return None
     neighbors: dict[int, dict[str, Any]] = {}
     dependencies: dict[int, dict[str, Any]] = {}
-    gaps: list[str] = []
+    gaps = list(source_media_gaps(focus))
     oversized: set[int] = set()
 
     def admit(message: discord.Message) -> None:
@@ -139,10 +169,6 @@ async def collect_native_episode(
         else:
             neighbors[message.id] = row
 
-    if not hasattr(focus, "attachments") or not hasattr(focus, "embeds"):
-        gaps.append("source media metadata unavailable")
-    elif focus.attachments or focus.embeds:
-        gaps.append("source media pixels not retrieved; do not interpret image-dependent meaning")
     try:
         async for message in channel.history(limit=5, around=discord.Object(id=message_id)):
             if (

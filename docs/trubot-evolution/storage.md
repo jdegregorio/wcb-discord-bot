@@ -1132,3 +1132,23 @@ source or spending state. Already accepted observations retain their dependency
 lifecycle, but older code resumes target-only future studies. Private validation
 receipts use existing app-volume smoke-tests, 0700/0600, seven-day manual retention
 and withdrawal cleanup; content-free references/results only.
+
+
+## Fresh source media continuity,2.28.1
+
+All already verified native reply sources supply ephemeral source-media presence
+before optional neighborhood reads. These source-only fallbacks have no captured
+source/dependency metadata and never call record_native_context. Successful full
+captures retain existing graph recording, source binding and lifecycle. Empty
+media-only setup is rendered with conservative missing-setup uncertainty plus its
+exact source warning. Unknown media remains unknown; additions/removals or unknown
+transitions stop final publication even when setup reads time out. Presence does
+not inspect pixels or fingerprint a replacement attachment or preview.
+
+No new persistent source/peer data, schema, migration, paid pass or Discord read.
+Existing app volume/read-only container/tmp boundaries remain. Downgrade is schema
+compatible; do not restore source or spending stores. H85 and automatic native
+pattern gate are unchanged. Private content-free refs/hashes/counts/rubric booleans
+use app smoke-tests/2026-10-17-0500,0700/0600 and existing seven-day manual retention
+and withdrawal cleanup. Raw excerpts, generated answers and personal derivations
+must not be retained in smoke receipts or public notes.
