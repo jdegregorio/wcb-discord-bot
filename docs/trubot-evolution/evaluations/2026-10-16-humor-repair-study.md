@@ -65,7 +65,8 @@ six fresh local01/05/09/13/17/21Sol/xhigh runs remain. No new service or budget 
 
 ## Results and final choice before implementation
 
-H83a rejected:24accounted calls/six cases/two samples/arm. Of eight comic
+H83a rejected:24sampled replies/27accounted attempts including existing repairs,
+six cases/two samples/arm. Of eight comic
 outputs/arm, baseline0 and candidate5 reuse the distinctive prior scaffold by
 qualitative inspection. Care2/2 and recipient abstention2/2 each arm. No advantage
 justifies changing roles. First actual gateway probe is contextual and sufficiently
