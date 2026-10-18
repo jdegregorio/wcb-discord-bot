@@ -1,0 +1,141 @@
+{
+  "run": "2026-10-17 17:00 America/Los_Angeles",
+  "recorded_at": "2026-10-18T03:52:47.491551+00:00",
+  "base_sha": "7c5f6db74915dc0f31cf4e6a499e43a3ad3c47ef",
+  "feature_sha": "ef0a6c215fc14d6846a1634097304b3ef31739de",
+  "runtime_sha": "10ef1404c5a10109f6f7c8fed8e96b47d62b8754",
+  "version": "2.31.0",
+  "pr": 149,
+  "ci": {
+    "pr_quality": 39082112172,
+    "main_quality": 39082271280,
+    "images": 39082444481,
+    "all": "success",
+    "admin_bypass": false,
+    "server_branch_protection": false,
+    "project_checks_manually_honored": true
+  },
+  "quality": {
+    "tests": 1655,
+    "new_tests": 77,
+    "branch_coverage_percent": 97.11,
+    "typed_modules": 37,
+    "all_six_gates": "pass"
+  },
+  "deployment": {
+    "host": "pi5",
+    "architecture": "aarch64",
+    "os": "Ubuntu24.04.4",
+    "transaction": "pi-app deploy wcb-bot 2.31.0",
+    "index_digest": "sha256:0ceee253ba27ac8ea938ea6c171ebaf6c8681e4d9e2aaeac3fccb499ca91241a",
+    "arm64_digest": "sha256:17c6edd209417bbda7f5dfce0bae3587faf1b2a64751963951e728cdac6b7cb7",
+    "amd64_digest": "sha256:2ff2622c556cd04fdaed484f1cc3e09b5934b4a3406b81efa8823a537b6d5941",
+    "healthy": true,
+    "ready": true,
+    "read_only": true,
+    "restarts": 0,
+    "runtime_module_hash_matches": 37,
+    "rollback_used": false
+  },
+  "experiments": {
+    "matched_public_requests": 3,
+    "baseline_attachments": 0,
+    "candidate_actual_assets": 3,
+    "prototype_pixels_pass": 3,
+    "prototype_duplicate_suppression": 3,
+    "human_trait_added": false,
+    "general_character_gain_measured": false
+  },
+  "installed": {
+    "controlled_cases": 10,
+    "posts": 9,
+    "recipient_abstentions": 1,
+    "functional_pass": 10,
+    "strict_naturalness_pass": 9,
+    "voice_partials": [
+      "long_third_person_broad_recall"
+    ],
+    "actual_images": 1,
+    "image_bytes": 2267131,
+    "image_sha256": "464ae710ddc3731b9b77c29e4c0a312183e987a3e8eb33e24221cdba6673ddac",
+    "image_latency_seconds": 29.776,
+    "duplicate_process_posts": 0,
+    "duplicate_process_provider_attempts": 0,
+    "readiness_survives_validation_close": true,
+    "text_latency_seconds": {
+      "min": 1.844,
+      "median": 4.974,
+      "max": 7.114
+    },
+    "uncontrolled_development_exchanges_excluded": 1,
+    "live_daily_cap_exhausted": false
+  },
+  "audit": {
+    "source_channels": 3,
+    "latest_limit_per_channel": 100,
+    "days": 14,
+    "target_rows": 4,
+    "peer_rows": 6,
+    "older_bot_rows": 2,
+    "seven_day_spontaneous_bot_posts": 0,
+    "eligible_historical_grouped_blocks": 405,
+    "archive_context_windows": 4,
+    "exports": 1,
+    "adjacent_visual_gaps": 2,
+    "new_traits": 0,
+    "fresh_provider_human_heldout_comparison": false
+  },
+  "runtime_observation": {
+    "errors": 0,
+    "reply_failures": 0,
+    "source_discards": 0,
+    "normal_posts": 9,
+    "image_posts": 1,
+    "recipient_skips": 1,
+    "quality_repairs": 2,
+    "disconnects": 2,
+    "resumes": 2,
+    "resume_seconds": [
+      0.489,
+      0.273
+    ],
+    "conservative_graph_source_refresh_timeouts": 1,
+    "timeout_provider_requests": 0,
+    "not_an_error_rate_comparison": true
+  },
+  "cost": {
+    "new_settled_attempts": 24,
+    "window_estimated_usd": 0.17429243,
+    "includes_uncontrolled_exchange": true,
+    "maintenance_attempts": 6,
+    "maintenance_usd": 0.125568865,
+    "runtime_attempts": 18,
+    "runtime_usd": 0.048723565,
+    "four_images_usd": 0.16685,
+    "covered_month_attempts": 2306,
+    "covered_month_usd": 0.640949095,
+    "old_unsettled": 1,
+    "new_unsettled": 0,
+    "limits_usd": {
+      "runtime": 18,
+      "maintenance": 2,
+      "total": 20
+    },
+    "billing_verified": false,
+    "pre_guard_spend": "unknown"
+  },
+  "limitations": [
+    "small_manual_unblinded_capability_evaluation",
+    "no_general_fidelity_or_humor_gain",
+    "broad_recall_voice_partial",
+    "sparse_spontaneous_league_activity",
+    "no_original_Andrew_photo_comparison",
+    "live_cooldown_and_cap_are_fixture_covered",
+    "browser_export_stall_did_not_delay_bot_generation"
+  ],
+  "next": [
+    "H94 region-aware completed-night public context, unvalidated",
+    "H93 scene/caption breadth and generated wildlife",
+    "H92 qualified abstract emotional humor utility and needed native coverage"
+  ]
+}

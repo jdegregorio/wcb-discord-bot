@@ -4911,7 +4911,7 @@ protected release and installed acceptance remain pending at this entry.
 
 H91a prototype: same3public/syntheticrequests,baseline0/3attachments versus3/3actual
 candidatePNGassets;3/3duplicates suppressed. Pixels inspected3/3plausible/clean.
-Three maintenance imagesUSD0.12516,24.456-27.077seach; baseline text1.686-2.577s.
+Three maintenance imagesUSD0.12514,24.456-27.077seach; baseline text1.686-2.577s.
 No Andrew-photo fidelity or general character/engagement gain inferred.77new tests
 cover selection,normal modes,durable concurrent claims,source lifecycle and mutable
 Discord cache authorization. Final full gates and installed actual delivery remain.
@@ -4919,3 +4919,98 @@ Discord cache authorization. Final full gates and installed actual delivery rema
 Final caption-reviewed feature gates all pass:1,655tests/97.11%coverage/37typed
 modules/build2.31.0.77new tests; no accepted failure/flakiness. Protected release
 and actual installed private gateway image acceptance remain pending.
+
+
+### Completed installed H91a result
+
+2.31.0 is deployed and accepted. PR149 tested ef0a6c215fc14d6846a1634097304b3ef31739de,
+merge/release/runtime10ef1404c5a10109f6f7c8fed8e96b47d62b8754. PR/main Quality
+39082112172/39082271280 and AMD64/ARM64 Publish39082444481 all succeed. Every
+required local gate passes on feature and merged revisions:1,655tests,97.11%branch
+coverage,37typedmodules,2.31.0build. Repository API reports no classic branch
+protection or active rules; required project checks were manually honored before
+exact-tested-head ordinary merge, no admin/bypass/check configuration change.
+
+Reverified pi5/aarch64/Ubuntu24.04.4, existing app-scoped locked transaction. Running
+immutable indexsha256:0ceee253ba27ac8ea938ea6c171ebaf6c8681e4d9e2aaeac3fccb499ca91241a,
+ARM6417c6edd209417bbda7f5dfce0bae3587faf1b2a64751963951e728cdac6b7cb7,
+AMD642ff2622c556cd04fdaed484f1cc3e09b5934b4a3406b81efa8823a537b6d5941.
+All37actual installed package module hashes match tested source. Healthy/ready,
+read-only/zero restarts. New private operational store explicitly initialized once;
+no source/graph/spending restore, credential or unrelated service change. Previous
+immutable2.30.0/index9eee17858fafe97c31452df7d444a043688f00027a0bda4e3f4fb7eb0d82a84a
+remains the rollback boundary. No rollback was needed.
+
+Actual owner UI/gateway same image request: baseline0attachments, candidate1actual
+1536x1024PNG,2,267,131bytes,29.776seconds. Full pixels inspected: plausible generic
+Lake Superior rock/conifer shoreline and modest aurora, no people/text/watermark.
+Caption/provenance visibly render correctly. Separate process replays the original
+actual human request through the installed handler:0posts/0newproviderattempts.
+A distinct readiness path is set before application client construction; the main
+heartbeat survives client closure and normal gateway replies afterward. Current
+operational state is one posted request. Live cooldown/day exhaustion remains
+fixture-covered rather than artificially exhausted through Discord.
+
+Ten controlled installed cases:9posts/1confirmed recipient abstention; functional
+10/10, strict naturalness9/10under one manual evaluator. Image/provenance,care,
+unmentioned care follow-up,baseball,exact-date honesty,requester ownership,invited
+fictional humor and recipient restraint pass. Broad historical recall is grounded
+and avoids routine date metadata, but is long and third-person/source-recap style:
+one voice partial, a known unresolved H92/H86 limitation. No general human fidelity,
+engagement or humor multiplier is established. Eight normal text latencies1.844-7.114s,
+median4.974s; modality/context differ, no causal speed claim. One uncontrolled private
+development exchange is excluded from these ten cases and from Andrew evidence.
+
+Browser media export later stalled11942seconds and reset its tool session. No repeat
+browser export was attempted. The bot had already delivered the image in29.776seconds;
+a bounded authenticated read of its own attachment preserved pixels instead. Production
+was healthy on resume and no overlapping evolution PR/main change arrived. Validation
+harness-only membership/cache/async-iteration errors were corrected without extra paid
+image calls or test posts. No original/source images were transferred in this increment.
+
+Post census matches pre:3allowedsourcechannels/latest100/14days,4target/6peer/2olderbot,
+zero7day spontaneous bot posts. Four archive context windows/one export,2adjacent visual
+gaps excluded; no new human trait or fresh private provider-assisted held-out study.
+Recent spontaneous activity remains too sparse for a character-engagement conclusion.
+
+Observed new-container window:0errors/reply failures/source discards,9normalposts
+(includes1uncontrolleddevelopmentresponse),1imagepost,1recipient skip,2quality repairs,
+zero restarts. Two gateway disconnects resume in0.489/0.273seconds. Five warnings:
+2existingvoice-library notices,2disconnects,1conservative graph source-refresh timeout
+with0providerrequests. All recover/retain normal readiness; unequal observation windows
+are not error-rate comparisons. Six fresh daily local01/05/09/13/17/21Sol/xhigh runs
+and notifications unchanged.
+
+Observed run window:24new settled attempts,estimatedUSD0.17429243,including the one
+uncontrolled development exchange. Maintenance6attempts/USD0.125568865; runtime18/
+USD0.048723565. Four images totalUSD0.16685. CoveredOctober2,306attempts/USD0.640949095;
+one unchanged legacy unsettled reservation,zero new unsettled. Existing18/2/20guard,
+no new paid service/provider pool. Estimates are not provider billing and pre-guard
+spend remains unknown. Content-free private refs/pass/fail receipts remain0700/0600
+on the existing app volume with manual seven-day retention/withdrawal cleanup.
+
+## Roadmap change from installed evidence
+
+H91a is complete as an operational capability, not a measured personality gain.
+H94 is now the first research/implementation candidate: a spontaneous development
+request exposes the separate completed-night context gap. Current-only skill selection
+cannot answer it. Hypothesis: bounded region-aware previous-night public observations
+would support useful opportunity language so outdoor conversation does not end at an
+unhelpful capability disclaimer. Missing region, cloud data, dates and sightings must
+stay honest; an opportunity never proves an observed local sighting. This is unvalidated.
+Depend on decoupling public lookback from the morning publication window, typed source
+coverage and an explicit relevance/clarification boundary. Accept matched current/past/
+missing-region/outage/future and recipient controls, no paid image side effect, actual
+private gateway usefulness, bounded existing text ledger/cost/latency. A false sighting,
+unsupported temporal claim or useless extra call would reject it. Expected extra cost
+is a bounded text continuation/free NOAA-NWS reads, no service or new allowance.
+
+H93 scene/caption variety and generated trail-camera wildlife follows, with original
+sharing/pixel study and independent utility. H92qualified abstract/emotional/humor
+utility plus needed native coverage remains next; source-recap voice is still open.
+Retain rejected cohorts/closed native pattern gate, working recent intake, current
+scope/no DMs and withdrawal. A material grounding/privacy/budget regression can reorder.
+
+[PR149](https://github.com/jdegregorio/wcb-discord-bot/pull/149),
+[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.31.0),
+[image CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/39082444481).

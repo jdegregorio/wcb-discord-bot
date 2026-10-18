@@ -1,6 +1,6 @@
 # Trubot agent harness
 
-## Requested public-scene skill, 2.31.0 candidate
+## Requested public-scene skill, 2.31.0 deployed
 
 Direct human requests with a complete supported U.P. aurora grammar enter a separate
 paid-side-effect boundary before private memory retrieval. The selected closed region
@@ -21,7 +21,8 @@ cover process restart. No generated image bytes or request content persists in s
 The same fixed image adapter/18/2/20ledger applies, no new framework/service/model.
 A separate validation readiness path must be set before build_client construction.
 
-Current next work: H93 visual breadth/variation, then independently qualified H92
+Current next work: H94 completed-night regional context, then H93 visual breadth/variation
+and independently qualified H92
 abstract/emotional/humor utility and needed native coverage. The sections below record
 earlier increments; their historical next-step language is superseded by this order.
 [Evidence](trubot-evolution/evaluations/2026-10-17-requested-scenes-study.md).
@@ -140,3 +141,9 @@ one substantive setup transition correctly discards. Normal gateway9probes/8post
 strict8/9,humor freshness partial; care/direct follow-up and natural recall pass.
 No general fidelity/humor gain. Run estimatedUSD0.0083419,coveredOctoberUSD0.37645382,
 18/2/20guard unchanged. Exact results/limits are in the study and progress.
+
+
+Installed2.31.0 passes actual requested-image, provenance and new-process duplicate
+acceptance. All37runtime package hashes match tested release10ef140/index0ceee253;
+readiness survives validation client closure. H94 completed-night context remains
+unvalidated. [Full evidence](trubot-evolution/evaluations/2026-10-17-requested-scenes-release.json).

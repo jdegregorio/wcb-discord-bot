@@ -4,7 +4,7 @@ Current run: 2026-10-17 17:00 Pacific. Goal: a natural, adaptive league characte
 with useful context and worthwhile visual participation. Joe prioritizes larger
 context architecture and visual life over repeated isolated recall patches.
 
-## Current increment: requested aurora scenes, H91a / 2.31.0 candidate
+## Current increment: requested aurora scenes, H91a / 2.31.0 deployed
 
 A real owner/gateway request gets a capability disclaimer and text prompt on2.30.0,
 with no image. The new explicit public-scene skill supplies an actual generated
@@ -24,18 +24,28 @@ remain enabled. No new human trait or private provider audit is introduced.
 
 ## Ordered next increments
 
-1. H93 richer scene/caption variation and generated U.P. trail-camera wildlife.
+1. H94 region-aware completed-night public context. So outdoor questions can use
+   bounded relevant observations instead of a generic capability disclaimer. Evidence:
+   one uncontrolled development exchange, excluded from controlled tests. Unvalidated.
+   Depend on separating lookback from morning publishing, clear region/clarification,
+   typed temporal/cloud coverage and unchanged source/budget boundaries. Accept matched
+   current/past/missing-region/outage/future/recipient cases plus real private gateway;
+   never infer a local sighting from opportunity. Reject unsupported timing/sighting or
+   irrelevant calls. Confidence in gap high, remedy usefulness unresolved. Operating
+   impact: free NOAA/NWS plus bounded existing text continuation, no new allowance.
+
+2. H93 richer scene/caption variation and generated U.P. trail-camera wildlife.
    So requested and timely outdoor sharing has useful breadth. Depend on actual
    sharing-context/original-pixel study and honest generated origin. Accept relevant
    pictures, natural varied captions, no invented sighting/ownership and real gateway
    usefulness. Confidence in capability direction high; character/engagement value
    unvalidated. Expected image costUSD0.04-0.05, existing runtime budget only.
-2. H92/H79/H81/H83 independently qualified abstract/emotional/humor utility.
+3. H92/H79/H81/H83 independently qualified abstract/emotional/humor utility.
    So context guides warmth and comic turns. Depend on authenticated separate human
    supports/contrary cases, fresh approved contextual study and held-out benefit.
    Existing weak controls are contrary evidence; rejected H72/H74/H83a cohorts and
    closed native pattern gate remain. No extra paid service; bounded maintenance.
-3. Broader native peer/reply/thread discussion and original visual history when
+4. Broader native peer/reply/thread discussion and original visual history when
    acceptance demonstrates the coverage need. So missing setup does not distort
    abstraction or relevance. Preserve attribution, deletion/correction/withdrawal and
    spending. Full history remains incomplete; current recent target intake works.
@@ -45,3 +55,8 @@ these items. A rewrite is available if matched evidence shows a harness limit.
 First natural H89 opportunity remains a non-blocking observation. Literal quote/date
 repairs are secondary absent material regressions. Preserve current runtime scope,
 bot identity/no DMs, six fresh local01/05/09/13/17/21Sol/xhigh runs and notifications.
+
+H91a is complete: actual installed image and new-process duplicate checks pass;
+10controlledcases/9posts/1abstention, one broad-recall voice partial. Runtime index
+0ceee253/source10ef140 matches all37modules, healthy. No general character gain.
+See [final evidence](evaluations/2026-10-17-requested-scenes-release.json).
