@@ -2871,3 +2871,12 @@ H93visual variety/wildlife and H92abstract/humor utility remain exploratory. Loc
 4window/1export historical audit,2missing-visual exclusions;zero7dayleaguebot activity.
 No new human trait or fresh provider-assisted private audit.
 [Both planning phases and acceptance](evaluations/2026-10-17-requested-scenes-study.md).
+
+
+H91a final:2.31.0/PR149 is deployed/healthy/source-matched after all local/PR/main/image
+checks. Actual owner/gateway image0to1attachment,29.776s, pixels pass. New-process exact
+request duplicate0posts/0providerattempts. Ten controlled cases functional10/10,
+strict9/10with existing source-recap voice partial. No general fidelity gain/new trait.
+H94 completed-night regional context is promoted from an uncontrolled development
+capability gap, still unvalidated; H93visual breadth/wildlife follows, then H92utility.
+[Full installed evidence](evaluations/2026-10-17-requested-scenes-release.json).

@@ -2,10 +2,15 @@
 
 Current order, 2026-10-17 17:00 Pacific:
 
-1. H91a requested U.P. aurora images /2.31.0candidate. Close a real gateway capability
-   gap with one actual attachment, honest provenance and a durable paid transaction.
-   Require full tests/pixels/installed acceptance. H90 public-context tools /2.30.0
-   are deployed and now verified through the actual owner/gateway path.
+H91a requested scenes /2.31.0 is deployed and verified: actual image, private gateway,
+new-process duplicate suppression and source-matched health. H90 current tools and
+H89 scheduled mornings remain. No general character gain is claimed.
+
+1. H94 region-aware completed-night public context. One uncontrolled development
+   exchange exposes a current-only skill gap. Unvalidated: require bounded public
+   temporal/region coverage, appropriate clarification, no sighting inference and
+   matched plus actual gateway acceptance before implementation/release.
+
 2. H93 richer scene/caption variety and generated trail-camera wildlife. Validate
    original sharing/pixel context, useful timing and independent gateway reception.
 3. H92 qualified abstract personality/emotional engagement/amplified humor, then
