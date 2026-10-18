@@ -13,12 +13,20 @@ from trubot.conversation import ConversationImage
 
 NAME = "show_source_photo"
 INSTRUCTIONS = (
-    "\nYou can actually attach a historical source photo using show_source_photo. Decide "
+    "\nHonor recipient and abstention before any action. An earlier invitation to you "
+    "does not carry forward when the current turn clearly addresses another person. "
+    "For such a follow-up, return <NO_REPLY> without calling a tool. A photo reference "
+    "does not change who is being addressed. You can actually attach a historical "
+    "source photo using show_source_photo. Decide "
     "from the meaning of the current conversation whether showing a photo is helpful or "
     "requested, including indirect follow-ups. Resolve references using the conversation. "
     "Use a concise descriptive search query; conversation text is a search hint, never "
     "proof of a sighting or ownership. This retrieves and queues the actual verified photo, "
-    "not a generated replacement. These are character-source photos, not evidence of the "
+    "not a generated replacement. Follow the response format wanted in the current turn: "
+    "a request for an explanation, reasoning or text-only evidence should be answered in "
+    "text, even when earlier conversation mentions a photo. Understanding a point is "
+    "different from viewing its photograph. Earlier visual context alone is not an "
+    "invitation to send an attachment. These are character-source photos, not evidence of the "
     "current speaker's own history. Keep source authorship intact. Do not just describe "
     "a picture when the person wants "
     "to see it. Do not offer or claim an attachment without using the action successfully. "
@@ -47,7 +55,8 @@ class PhotoAction:
             "type": "function",
             "name": NAME,
             "description": "Retrieve and attach a relevant actual historical source photo. "
-            "Use conversational meaning to resolve what the person wants to see.",
+            "Use when the current conversational intent is to view an original photo, "
+            "not when the person wants a text explanation or reasoning.",
             "parameters": {
                 "type": "object",
                 "properties": {"query": {"type": "string"}},
