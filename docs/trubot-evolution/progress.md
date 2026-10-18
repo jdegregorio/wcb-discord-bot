@@ -5014,3 +5014,18 @@ scope/no DMs and withdrawal. A material grounding/privacy/budget regression can 
 [PR149](https://github.com/jdegregorio/wcb-discord-bot/pull/149),
 [release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.31.0),
 [image CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/39082444481).
+
+
+## 2026-10-17 21:00 - H94 selected
+
+Both planning phases and acceptance precede implementation. Fresh real owner/gateway
+reproduces missing completed-night regional context on2.31.0. Select bounded typed
+read-only lookback;H93visual breadth thenH92qualified abstract/humor remain next.
+No new human trait or private provider study. [Protocol](evaluations/2026-10-17-completed-night-study.md).
+
+H94finalfeature:matched3/3regionalutility versus0/3baseline. First missing-region
+failure fixed by instruction-only selection;retake12cases allfunctional,regional
+stock sighting caveats remain a naturalness partial. Midnight completed-night gap
+fixed/tested. Final six gates1710tests/97.18%/38modules/build2.32.0pass. No new trait
+or general fidelity gain. Actual release/deployment/private gateway still pending.
+Concurrent explicit outdoor-wakeup work remains separate;recheck/reconcile main.

@@ -16,14 +16,16 @@ from trubot.aurora import KP_URL, REGIONS, USER_AGENT, _fetch, _time
 from trubot.conversation import ReplyMode
 
 _REGION = re.compile(
-    r"\b(?:keweenaw|marquette|munising|upper peninsula|lake superior|u\.?p\.?)\b", re.I
+    r"\b(?:keweenaw|marquette|munising|upper peninsula|lake superior|u\.p\.?|(?-i:UP))\b", re.I
 )
 _TOPIC = re.compile(
     r"\b(?:aurora|northern[- ]lights|kp|cloud(?:s|y| cover)?|sky|weather|conditions)\b", re.I
 )
 _CURRENT = re.compile(r"\b(?:now|current(?:ly)?|latest|tonight|today|check|look up)\b", re.I)
 _PAST = re.compile(
-    r"\b(?:remember|recall|used to|last (?:night|week|year)|yesterday|19\d{2}|20\d{2})\b", re.I
+    r"\b(?:remember|recall|used to|last (?:night|week|year)|previous night|yesterday|"
+    r"19\d{2}|20\d{2})\b",
+    re.I,
 )
 _CREATIVE = re.compile(
     r"\b(?:imagine|imaginary|fictional|pretend|joke|draw|generate|paint)\b", re.I

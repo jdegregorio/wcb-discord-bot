@@ -21,7 +21,7 @@ class ContextSkill(Protocol):
 
     def applies(self, target: str, mode: ReplyMode) -> bool: ...
 
-    def definition(self) -> FunctionToolParam: ...
+    def definition(self) -> FunctionToolParam | None: ...
 
     async def read(self) -> dict[str, object]: ...
 
@@ -47,7 +47,12 @@ class ContextTools:
             raise ToolProtocolError("Exactly one selected context call permitted")
         call = calls[0]
         skill = next((s for s in selected if s.name == call.name), None)
-        if skill is None or call.status not in {None, "completed"} or not call.call_id:
+        if (
+            skill is None
+            or skill.definition() is None
+            or call.status not in {None, "completed"}
+            or not call.call_id
+        ):
             raise ToolProtocolError("Unapproved or incomplete context call")
         try:
             arguments = json.loads(call.arguments)

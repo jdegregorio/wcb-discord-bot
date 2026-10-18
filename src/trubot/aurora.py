@@ -58,6 +58,14 @@ def morning_window(now: datetime) -> tuple[datetime, datetime] | None:
     local = now.astimezone(EASTERN)
     if not 8 <= local.hour < 11:
         return None
+    return night_window(now)
+
+
+def night_window(now: datetime) -> tuple[datetime, datetime]:
+    """Previous local evening through this morning; may still be incomplete before06."""
+    if now.tzinfo is None:
+        raise ValueError("Timezone-aware clock required")
+    local = now.astimezone(EASTERN)
     end = datetime.combine(local.date(), datetime.min.time(), EASTERN).replace(hour=6)
     start = datetime.combine(local.date() - timedelta(days=1), datetime.min.time(), EASTERN)
     return start.replace(hour=18).astimezone(UTC), end.astimezone(UTC)

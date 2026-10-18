@@ -1,3 +1,15 @@
+# Current priority,2026-10-17 21:00 Pacific
+
+H94 completed-night regional public context is selected after real owner/gateway
+baseline reproduction and both planning phases. It extends useful read-only context,
+without image generation or a new human trait. Acceptance remains pending.
+Next H93 visual variety/trail-camera wildlife,then independently qualified H92
+abstract/emotional/amplified-humor utility and broader native discussion/pixels.
+Prior rejected cohorts/closed native pattern gate remain; scheduled mornings and
+requested scenes continue. Privacy,withdrawal,scope,18/2/20guard and cadence unchanged.
+[Evidence,dependencies,acceptance and uncertainty](evaluations/2026-10-17-completed-night-study.md).
+This current order supersedes historical next-step snapshots below.
+
 # Trubot evolution plan
 
 Current run: 2026-10-17 17:00 Pacific. Goal: a natural, adaptive league character

@@ -1,3 +1,13 @@
+# Last-night U.P. context (2.32.0)
+
+Ask directly, for example: `🤖 Were Marquette conditions favorable for northern
+lights last night?` Trubot can read bounded NOAA/NWS observations for Marquette,
+Munising and the Keweenaw at any hour after the local night ends. Questions without
+a location receive a brief clarification. These sampled observations can support a
+possible viewing window, never establish a witnessed sighting. Missing data remains
+unknown. Current conditions retain their existing route, and no picture is generated.
+See [the study](docs/trubot-evolution/evaluations/2026-10-17-completed-night-study.md).
+
 # Trubot
 
 ## Requested U.P. aurora scenes (2.31.0)

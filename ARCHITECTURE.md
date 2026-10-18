@@ -1,3 +1,16 @@
+# Completed-night context,2.32.0
+
+UPNightSkill uses the existing selected-tool transaction with fixed NOAA/NWS URLs,
+one execution and at most two accounted text calls. A separate instruction-only
+location skill has no function definition and cannot execute any context call.
+Capabilities are selected from the focused human question,never old conversation.
+night_window separates18-06America/Detroit evidence from scheduled publishing hours.
+Typed region summaries preserve partial activity,unknown clouds/visibility,ambiguous
+reports,sampled coverage and source times. Qualifying dark clear reports overlap one
+completed Kp>=5interval; this establishes only a possible window,never a sighting.
+No public query includes conversation,no schema/intake/image/budget/model change.
+Existing source/final checks govern replies. Rollback needs no data restore.
+
 ## Explicit requested scenes, 2.31.0
 
 `requested_scenes.py` selects a complete supported request and owns a private SQLite

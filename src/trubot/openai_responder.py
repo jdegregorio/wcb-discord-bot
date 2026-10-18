@@ -232,8 +232,9 @@ class OpenAITruaxResponder:
             safety_identifier=safety_id,
             store=False,
         )
-        if selected:
-            request["tools"] = [skill.definition() for skill in selected]
+        definitions = [definition for skill in selected if (definition := skill.definition())]
+        if definitions:
+            request["tools"] = definitions
             request["parallel_tool_calls"] = False
             input_bound += len(json.dumps(request["tools"]).encode()) + 1_024
         response = await self._generate(

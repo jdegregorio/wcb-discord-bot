@@ -25,6 +25,7 @@ from trubot.openai_responder import OpenAITruaxResponder
 from trubot.participation import ParticipationPolicy, ParticipationTracker
 from trubot.requested_scenes import RequestedScenes, SceneStore
 from trubot.up_conditions import UPConditionsSkill
+from trubot.up_night import UPNightLocationSkill, UPNightSkill
 
 logger = logging.getLogger(__name__)
 
@@ -51,7 +52,7 @@ def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> Tr
         budget=budget,
         max_retries=settings.openai_max_retries,
         purpose=spending_purpose,
-        context_tools=ContextTools((UPConditionsSkill(),)),
+        context_tools=ContextTools((UPConditionsSkill(), UPNightSkill(), UPNightLocationSkill())),
     )
     participation = ParticipationTracker(
         ParticipationPolicy(
