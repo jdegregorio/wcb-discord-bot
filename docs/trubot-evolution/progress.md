@@ -5029,3 +5029,20 @@ stock sighting caveats remain a naturalness partial. Midnight completed-night ga
 fixed/tested. Final six gates1710tests/97.18%/38modules/build2.32.0pass. No new trait
 or general fidelity gain. Actual release/deployment/private gateway still pending.
 Concurrent explicit outdoor-wakeup work remains separate;recheck/reconcile main.
+
+
+# 2026-10-18 01:00 Pacific - H94 completed-night release completed
+
+This run reconciles interrupted PR151 from the preceding scheduled run using a new managed worktree and freshly fetched base cb8f831. It carries tested 1bff82f forward, reproduces the actual gateway baseline, reruns both planning phases and final-code comparisons, then merges/releases/deploys2.32.0. No overlapping new behavior or primary-checkout edit.
+
+Fresh12 cases per arm:regional usefulness 0/3 baseline to 3/3 candidate;three contrary data cases and six controls pass,two positive caveat partials. One bounded maintenance character triage before and after usesfour human windows and eight development pairs;four flags each,insufficient evidence,no independent general fidelity conclusion. Recent spontaneous league activity remainszero seven-day bot posts. No new human trait or graph pattern.
+
+All six gates pass on feature and merged runtime:1,710 tests/97.18% coverage,38 typed modules,format/lint/build. PR151 exact-headCI39096413643 passed; ordinary merge 6d163f0cbcce0ea22ef672b69a4152c08edad54e matches the tested tree;mainCI39110236567 passes. Published immutable v2.32.0,imageCI39110423389 succeeds. Scoped pi5 transaction deploys index421b8994245d29b448cee33e87c10e6a9f948a3b499806511b3dcaf58edf8b9f,ARM64 f18528d5ba177923fe27963120eb0108ca66c07d69cf486b4f75c1c9c670600c,AMD64 02795b5907fb145804300ea574838bf495b3cf5f8b710ef051df3d4429d4acab. Previous 2.31.0/index0ceee253 remains rollback target; no rollback needed.
+
+All 38 installed module hashes match testedsource;read-only, healthy, Discord ready and zero restarts.11 actual owner/gateway cases yield10 posts/one correct abstention. Last-night and no-location acceptance pass,currentlookup/care/follow-up, baseball, broad recall, exact date, requester ownership, humor and recipient controls preserved. Two voice partials remain:unnecessary sighting caveat and third-person historical recap. No routine date caveat or invented exact date. Latency2.007-11.908s,median4.2585;no speed claim.
+
+New-container observed window:zero errors, failures or discards, two voice-library startup warnings, 10 replies, one recipient decline, one night read, one current read and zero images. Run-window 49 attempts/estimatedUSD 0.011290515,same USD 18/2/20 guard,two unchanged old unsettled reservations and zero new. Covered monthUSD 0.828387590,not billing,pre-guardunknown. No new service, schema, intake, model or schedule.
+
+Four unfinished H95 generated previews filled16 MB tmpfs; hash-preserved13,184,400 bytes outside Git and worktrees before removing only ephemeral copies. Separate uncommitted H95 source remains untouched and its 2.33.0 reservation retained. Roadmap now prioritizes reconciling that private-wakeup/seasonal-scene increment,then qualified H92 abstract/emotional/humor utility and necessary native/visual coverage.
+
+[Research,planning,actual validation and limitations](evaluations/2026-10-18-completed-night-release.md),[publicreceipt](evaluations/2026-10-18-completed-night-release.json),[PR151](https://github.com/jdegregorio/wcb-discord-bot/pull/151),[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.32.0). Final evidence merge/CI and this run's managed-worktree archival follow.

@@ -1,0 +1,149 @@
+{
+  "run": "2026-10-18 01:00 America/Los_Angeles",
+  "base_sha": "cb8f83179944d71b41f2e93136f9d1d5a203b1f7",
+  "tested_feature_sha": "1bff82fe7ac87f5799dcc6b2277e00877c28ebbf",
+  "runtime_merge_sha": "6d163f0cbcce0ea22ef672b69a4152c08edad54e",
+  "runtime_pr": 151,
+  "version": "2.32.0",
+  "pr_quality": 39096413643,
+  "main_quality": 39110236567,
+  "image_build": 39110423389,
+  "image_index": "sha256:421b8994245d29b448cee33e87c10e6a9f948a3b499806511b3dcaf58edf8b9f",
+  "image_arm64": "sha256:f18528d5ba177923fe27963120eb0108ca66c07d69cf486b4f75c1c9c670600c",
+  "image_amd64": "sha256:02795b5907fb145804300ea574838bf495b3cf5f8b710ef051df3d4429d4acab",
+  "previous_index": "sha256:0ceee253ba27ac8ea938ea6c171ebaf6c8681e4d9e2aaeac3fccb499ca91241a",
+  "health": {
+    "ready": true,
+    "healthy": true,
+    "restarts": 0,
+    "read_only": true,
+    "source_modules_match": 38
+  },
+  "gates": {
+    "feature_pass": true,
+    "merged_pass": true,
+    "tests": 1710,
+    "coverage_percent": 97.18
+  },
+  "matched": {
+    "cases_per_arm": 12,
+    "regional_useful_baseline": 0,
+    "regional_useful_candidate": 3,
+    "contrary_data_pass": 3,
+    "controls_pass": 6,
+    "positive_unnecessary_caveats": 2,
+    "independent_human_validation": false
+  },
+  "actual_gateway": {
+    "cases": 11,
+    "posts": 10,
+    "recipient_abstentions": 1,
+    "functional_pass": 11,
+    "voice_partials": [
+      "unnecessary_sighting_caveat",
+      "third_person_source_recap"
+    ],
+    "cases_metadata": [
+      {
+        "case": "completed_night",
+        "latency_seconds": 11.908,
+        "attachments": 0
+      },
+      {
+        "case": "missing_region",
+        "latency_seconds": 5.328,
+        "attachments": 0
+      },
+      {
+        "case": "current_conditions",
+        "latency_seconds": 4.311,
+        "attachments": 0
+      },
+      {
+        "case": "care",
+        "latency_seconds": 4.639,
+        "attachments": 0
+      },
+      {
+        "case": "care_followup",
+        "latency_seconds": 4.206,
+        "attachments": 0
+      },
+      {
+        "case": "baseball",
+        "latency_seconds": 4.896,
+        "attachments": 0
+      },
+      {
+        "case": "broad_recall",
+        "latency_seconds": 2.767,
+        "attachments": 0
+      },
+      {
+        "case": "exact_date",
+        "latency_seconds": 3.0,
+        "attachments": 0
+      },
+      {
+        "case": "requester_ownership",
+        "latency_seconds": 2.007,
+        "attachments": 0
+      },
+      {
+        "case": "invited_humor",
+        "latency_seconds": 3.751,
+        "attachments": 0
+      },
+      {
+        "case": "recipient_abstention",
+        "latency_seconds": null,
+        "attachments": 0
+      }
+    ]
+  },
+  "audit": {
+    "source_channel_count": 3,
+    "messages_per_channel_limit": 100,
+    "lookback_days": 14,
+    "target_recent": 4,
+    "peer_recent": 6,
+    "older_bot_recent": 2,
+    "spontaneous_bot_seven_days": 0,
+    "historical_target_grouped_blocks": 405,
+    "provider_human_windows_per_pass": 4,
+    "provider_development_pairs_per_pass": 8,
+    "pre_flagged_cases": 4,
+    "post_flagged_cases": 4,
+    "single_model_unblinded_triage_only": true,
+    "no_new_trait": true,
+    "general_fidelity_gain_measured": false
+  },
+  "cost": {
+    "estimate_not_billing": true,
+    "observed_run_delta_usd": 0.011290515,
+    "runtime_delta_usd": 0.007513045,
+    "maintenance_delta_usd": 0.00377747,
+    "attempt_delta": 49,
+    "covered_month_estimated_usd": 0.82838759,
+    "unchanged_prior_unsettled": 2,
+    "new_unsettled": 0,
+    "monthly_limit_usd": 20,
+    "maintenance_limit_usd": 2,
+    "runtime_limit_usd": 18,
+    "pre_guard_spend": "unknown"
+  },
+  "observed_new_container": {
+    "errors": 0,
+    "warnings": 2,
+    "reply_failures": 0,
+    "source_discards": 0,
+    "night_tool_reads": 1,
+    "current_tool_reads": 1,
+    "generated_replies": 10,
+    "recipient_declines": 1
+  },
+  "scope_change": false,
+  "new_store_or_service": false,
+  "rollback_required": false,
+  "private_receipts": "content-free refs/hashes/counts only; existing app-volume 0700/0600/manual seven-day and withdrawal cleanup"
+}
