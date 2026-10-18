@@ -102,3 +102,62 @@ Candidate covered-month ledger2470attempts/USD0.933866635estimate:runtime
 remains healthy2.33.0 after secondary clients close. Private additive tables are
 initialized; final idempotent migration adds the bounded gap table. No source or
 spending restoration. CI/release/deployment and actual gateway acceptance remain open.
+
+## H98d: semantic delivery follow-up after real user feedback
+
+Phase1: actual deployed source recall succeeds in first person, but Joe's subsequent
+request to see the picture gets another description and zero attachments. The
+handler's only text send explains the failure. Joe explicitly requires intuitive,
+general behavior rather than phrase matching. Hypothesis: a model-selected photo
+action with conversational search, actual pixels and an attachment publication
+boundary resolves indirect requests without unwanted photos during unrelated talk.
+Baseline: authenticated owner follow-up,zeroattachments. Acceptance before results:
+three semantic request contexts queue original pixels;date/refusal/care controls
+queue none;source/request/access changes block publication;actual owner follow-up
+contains a real attachment. No generated replacement,phrase grammar or catchphrase.
+Validate source content,caption naturalness and contextual appropriateness manually,
+not only tool-call counts. Broader human fidelity remains unmeasured.
+
+Two deterministic capture experiments also reproduce deletion and attachment edit
+*during* download retaining stale pixels. Fix canonical source tombstones before
+registration,freeze the attachment signature and reverify after capture,so correction
+and deletion remain authoritative through asynchronous I/O. Regression controls
+require no retained asset/profile in either ordering. No live human source deletion.
+
+Phase2: ship2.35.0 as the immediate coherent follow-up to2.34.0. Add a semantic source
+photo action to the existing bounded tool harness,with real source/recipient/request/
+permission checks. The model decides relevance from context. No new paid image call,
+service,intake or spending pool. At most one action and one caption continuation;
+only selected pixels remain in the continuation to preserve vision bounds. Keep
+abstract memory,visual coverage,human qualification and seasonal timing next. H96
+confirmation stays closed and H97 clarification unresolved. An actual semantic
+failure or source/privacy regression changes this priority again.
+
+### Semantic candidate results
+
+Initial provider continuation exposed optional-neighborhood timing drift. Photo
+freshness now compares mandatory source text,posting/edit metadata and actual
+pixel hashes,without loading unrelated voice examples or optional peer setup.
+Source edits,deletion,withdrawal and recipient access remain authoritative; a
+regression proves stable repeated source reads and rejects changed pixels. One
+prototype reservation stopped in the captured before-request source check before
+provider I/O; reconcile only that known zero-call reservation,never reset the ledger.
+
+Retake:3/3meaningfully different request contexts queue the verified original;
+3/3date/refusal/care controls queue no image. All use the same source pixels and
+model; intent is chosen by function calling with a free descriptive query,without
+a phrase classifier. Captions13-23words in positive cases,no third-person source
+narration. This small controlled result supports capability,not a general human
+voice gain. Actual deployed follow-up still required. Earlier2.34.0 actual source-
+framed lake picture delivered with4word caption and generated label;actual pixels
+inspected privately and preserve the fixed source-view anchors. Eight controlled
+2.34cases are functionally useful with a broad-year relevance partial;new user's
+show-photo follow-up is a separately reproduced delivery failure. One other actual
+source-context discard is observed,not hidden by container health.
+
+All six2.35.0 feature gates pass:1830tests,96.10%branchcoverage,41typed modules,
+locked sync/format/lint/build. Source capture races,semantic tool execution,
+actual handler attachment sends,current request/access/withdrawal/recipient
+controls and stable source-only freshness have explicit regressions. Provider
+fixtures now include the completed status/output fields required by tool-capable
+Responses replies. CI/release/installed attachment acceptance remain pending.

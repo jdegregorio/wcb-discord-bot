@@ -26,6 +26,9 @@ from trubot.conversation import ConversationImage, ConversationMessage, MemoryAu
 from trubot.memory_author import author_guidance, focused_author_guidance, memory_author_scope
 from trubot.outdoors import Forecast
 from trubot.personality import instructions_for
+from trubot.photo_action import INSTRUCTIONS as PHOTO_ACTION_INSTRUCTIONS
+from trubot.photo_action import NAME as PHOTO_ACTION_NAME
+from trubot.photo_action import PhotoAction
 from trubot.reply_brevity import BRIEF_REPLY_GUIDANCE, needs_brief_reply
 from trubot.reply_focus import preceding_human_turn
 from trubot.vision import IMAGE_TOKEN_BOUND, MAX_IMAGES
@@ -240,6 +243,7 @@ class OpenAITruaxResponder:
         safety_id: str,
         target: str | None = None,
         refresh_check: Callable[[], Awaitable[bool]] | None = None,
+        photo_action: PhotoAction | None = None,
     ) -> str | None:
         model_input: ResponseInputParam = [_message_input(message) for message in messages]
         scope = memory_author_scope(messages)
@@ -268,6 +272,8 @@ class OpenAITruaxResponder:
         instructions = instructions_for(mode) + author_guidance(scope)
         selected = self._context_tools.select(target, mode)
         instructions += "".join(skill.instructions for skill in selected)
+        if photo_action is not None:
+            instructions += PHOTO_ACTION_INSTRUCTIONS
         output_bound = (
             self._max_output_tokens
             if mode is ReplyMode.FOLLOW_UP
@@ -305,6 +311,8 @@ class OpenAITruaxResponder:
             store=False,
         )
         definitions = [definition for skill in selected if (definition := skill.definition())]
+        if photo_action is not None:
+            definitions.append(photo_action.definition())
         if definitions:
             request["tools"] = definitions
             request["parallel_tool_calls"] = False
@@ -314,9 +322,9 @@ class OpenAITruaxResponder:
             output_bound=output_bound,
             mode=mode,
             request=request,
-            retry_limit=0 if selected else None,
+            retry_limit=0 if selected or photo_action is not None else None,
         )
-        if selected and response.status != "completed":
+        if (selected or photo_action is not None) and response.status != "completed":
             raise ToolProtocolError("Incomplete selected-skill response")
         calls = [item for item in getattr(response, "output", ()) if item.type == "function_call"]
         if calls:
@@ -329,6 +337,7 @@ class OpenAITruaxResponder:
                 output_bound,
                 mode,
                 refresh_check,
+                photo_action,
             )
         reply = normalize_reply(response.output_text)
         if mode is ReplyMode.FOLLOW_UP and reply.casefold() == _NO_REPLY.casefold():
@@ -338,7 +347,7 @@ class OpenAITruaxResponder:
             raise EmptyResponseError("OpenAI returned an empty text response")
         repeated = _stale_bot_echo(reply, messages, target)
         overlong = needs_brief_reply(reply, messages, target)
-        if (repeated or overlong) and not selected:
+        if (repeated or overlong) and not selected and not (photo_action and photo_action.used):
             guidance = (_FRESH_REPLY_GUIDANCE if repeated else "") + (
                 BRIEF_REPLY_GUIDANCE if overlong else ""
             )
@@ -395,6 +404,9 @@ class OpenAITruaxResponder:
                 ),
             ]
             fresh_request["input"] = [*model_input, *revision]
+            fresh_request.pop("tools", None)
+            fresh_request.pop("parallel_tool_calls", None)
+            fresh_request["tool_choice"] = "none"
             extra_input_bound = len(json.dumps(revision, ensure_ascii=False).encode("utf-8"))
             try:
                 fresh = await self._generate(
@@ -432,20 +444,60 @@ class OpenAITruaxResponder:
         output_bound: int,
         mode: ReplyMode,
         refresh_check: Callable[[], Awaitable[bool]] | None,
+        photo_action: PhotoAction | None = None,
     ) -> Response:
-        if not selected or response.status != "completed":
+        if not (selected or photo_action is not None) or response.status != "completed":
             raise ToolProtocolError("Unselected or incomplete tool response")
         if refresh_check is not None and not await refresh_check():
             raise ToolProtocolError("Private context changed before tool continuation")
         calls = [item for item in response.output if item.type == "function_call"]
-        output = await self._context_tools.execute(calls, selected)
+        photo_message: list[EasyInputMessageParam] = []
+        photo_bound = 0
+        continuation_input = model_input
+        if len(calls) == 1 and calls[0].name == PHOTO_ACTION_NAME and photo_action is not None:
+            evidence = await photo_action.prepare(calls[0])
+            if evidence is None:
+                output = '{"photo_queued":false,"reason":"no suitable verified source photo"}'
+            else:
+                # The model sees the real pixels before writing its caption. Attachments
+                # are published later by Discord, after another source/request check.
+                output = '{"photo_queued":true,"kind":"actual historical source photo"}'
+                photo_message = [
+                    _message_input(ConversationMessage("user", evidence.text, evidence.images))
+                ]
+                # Keep just the selected photo pixels in the continuation. Earlier
+                # photos can otherwise double vision spending or confuse source binding.
+                rows: list[Any] = []
+                previous_images = 0
+                for item in model_input:
+                    row = cast(dict[str, Any], item)
+                    parts = row.get("content")
+                    if isinstance(parts, list):
+                        previous_images += sum(p.get("type") == "input_image" for p in parts)
+                        rows.append(
+                            {
+                                **row,
+                                "content": [p for p in parts if p.get("type") != "input_image"],
+                            }
+                        )
+                    else:
+                        rows.append(item)
+                continuation_input = cast(ResponseInputParam, rows)
+                photo_bound = (
+                    len(evidence.text.encode())
+                    + 512
+                    + max(0, len(evidence.images) - previous_images) * IMAGE_TOKEN_BOUND
+                )
+        else:
+            output = await self._context_tools.execute(calls, selected)
         # Preserve all response items, including reasoning, with store=False. No remote state.
         continuation = cast(
             ResponseInputParam,
             [
-                *model_input,
+                *continuation_input,
                 *(item.model_dump(exclude_none=True) for item in response.output),
                 {"type": "function_call_output", "call_id": calls[0].call_id, "output": output},
+                *photo_message,
             ],
         )
         extra = len(
@@ -459,13 +511,21 @@ class OpenAITruaxResponder:
         final_request.pop("tools", None)
         final_request.pop("parallel_tool_calls", None)
         final_request["tool_choice"] = "none"
+
+        async def continuation_current() -> bool:
+            return (refresh_check is None or await refresh_check()) and (
+                photo_action is None
+                or photo_action.evidence is None
+                or await photo_action.current()
+            )
+
         final = await self._generate(
-            input_bound=input_bound + extra,
+            input_bound=input_bound + extra + photo_bound,
             output_bound=output_bound,
             mode=mode,
             request=final_request,
             retry_limit=0,
-            before_request=(self._context_source_check(refresh_check) if refresh_check else None),
+            before_request=self._context_source_check(continuation_current),
         )
         if final.status != "completed" or any(
             item.type == "function_call" for item in final.output

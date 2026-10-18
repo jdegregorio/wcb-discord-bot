@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import base64
 import hashlib
 import io
 import json
@@ -56,6 +57,7 @@ from trubot.participation import (
     ParticipationTracker,
     SchedulingAction,
 )
+from trubot.photo_action import PhotoAction, PhotoEvidence
 from trubot.photos import PhotoMemory
 from trubot.recall_reference import quotation_unavailable, recall_quotation
 from trubot.reply_focus import memory_followup_query
@@ -90,6 +92,7 @@ class Responder(Protocol):
         safety_id: str,
         target: str | None = None,
         refresh_check: Callable[[], Awaitable[bool]] | None = None,
+        photo_action: PhotoAction | None = None,
     ) -> str | None: ...
 
     async def close(self) -> None: ...
@@ -736,6 +739,64 @@ class TruBotClient(discord.Client):
                         return False
                     return refreshed == memory
 
+                photo_action = None
+                if (
+                    anchor is not None
+                    and mode in {ReplyMode.DIRECT, ReplyMode.FOLLOW_UP}
+                    and self._learning is not None
+                ):
+                    # Model-selected action, with no phrase or keyword intent gate.
+                    frozen = SceneRequest(
+                        anchor.id,
+                        anchor.author.id,
+                        anchor.content,
+                        anchor.created_at,
+                        anchor.edited_at,
+                    )
+
+                    async def retrieve_photo(query: str) -> PhotoEvidence | None:
+                        if not await self._photo_request_current(
+                            channel, frozen, requester_user_id
+                        ):
+                            return None
+                        pixels: list[ConversationImage] = []
+                        evidence = await self._memory_context(
+                            channel,
+                            target,
+                            source_history,
+                            requester_user_id=requester_user_id,
+                            focus_author_user_id=frozen.author_id,
+                            visual_sink=pixels,
+                            visual_limit=1,
+                            retrieval_query=query,
+                            photo_recipient_user_id=requester_user_id,
+                        )
+                        if not pixels:
+                            return None
+
+                        async def current() -> bool:
+                            if not await self._photo_request_current(
+                                channel, frozen, requester_user_id
+                            ):
+                                return False
+                            refreshed_pixels: list[ConversationImage] = []
+                            refreshed = await self._memory_context(
+                                channel,
+                                target,
+                                source_history,
+                                requester_user_id=requester_user_id,
+                                focus_author_user_id=frozen.author_id,
+                                visual_sink=refreshed_pixels,
+                                visual_limit=1,
+                                retrieval_query=query,
+                                photo_recipient_user_id=requester_user_id,
+                            )
+                            return refreshed == evidence and refreshed_pixels == pixels
+
+                        return PhotoEvidence(evidence, tuple(pixels), current)
+
+                    photo_action = PhotoAction(retrieve_photo)
+
                 guild_id = channel.guild.id
                 async with channel.typing():
                     reply = await self._responder.reply(
@@ -744,6 +805,7 @@ class TruBotClient(discord.Client):
                         safety_id=safety_identifier(guild_id, requester_user_id),
                         target=target,
                         refresh_check=refresh_context_current if memory else None,
+                        **({"photo_action": photo_action} if photo_action is not None else {}),
                     )
                 if reply is None:
                     logger.info(
@@ -763,7 +825,32 @@ class TruBotClient(discord.Client):
                     )
                     return False
                 output = clamp_discord_message(reply)
-                await channel.send(output)
+                if photo_action is not None and photo_action.evidence is not None:
+                    if not await photo_action.current():
+                        logger.info("Discarded photo reply; source or request changed")
+                        return False
+                    if anchor is None:
+                        return False
+                    attachments = [
+                        discord.File(
+                            io.BytesIO(base64.b64decode(image.data_url.split(",", 1)[1])),
+                            filename=f"source-photo-{i + 1}.jpg",
+                            description="Photo shared earlier in the league.",
+                        )
+                        for i, image in enumerate(photo_action.evidence.images)
+                    ]
+                    try:
+                        await channel.send(
+                            output,
+                            files=attachments,
+                            allowed_mentions=discord.AllowedMentions.none(),
+                            nonce=anchor.id,
+                        )
+                    finally:
+                        for attachment in attachments:
+                            attachment.close()
+                else:
+                    await channel.send(output)
             except asyncio.CancelledError:
                 raise
             except BudgetError as error:
@@ -802,7 +889,47 @@ class TruBotClient(discord.Client):
             )
             return True
 
-    async def _scene_scope_current(self, channel: discord.TextChannel, requester: int) -> bool:
+    async def _photo_request_current(
+        self, channel: DiscordChannel, request: SceneRequest, requester: int
+    ) -> bool:
+        if not await self._scene_scope_current(channel, requester):
+            return False
+        try:
+            async with asyncio.timeout(6):
+                fresh_channel = await self.fetch_channel(channel.id)
+                if not isinstance(fresh_channel, (discord.TextChannel, discord.Thread)):
+                    return False
+                if (
+                    fresh_channel.guild.id != channel.guild.id
+                    or not await self._scene_scope_current(fresh_channel, requester)
+                ):
+                    return False
+                user = self.user
+                if user is None:
+                    return False
+                member = await fresh_channel.guild.fetch_member(user.id)
+                permissions = fresh_channel.permissions_for(member)
+                if not (
+                    permissions.view_channel
+                    and permissions.send_messages
+                    and permissions.attach_files
+                    and permissions.read_message_history
+                ):
+                    return False
+                fresh = await fresh_channel.fetch_message(request.message_id)
+                return (
+                    fresh.author.id == requester == request.author_id
+                    and not fresh.author.bot
+                    and fresh.webhook_id is None
+                    and fresh.content == request.content
+                    and fresh.created_at == request.created_at
+                    and fresh.edited_at == request.edited_at
+                    and timedelta(0) <= self._clock() - fresh.created_at <= MAX_REQUEST_AGE
+                )
+        except (discord.HTTPException, TimeoutError, LearningUnavailable):
+            return False
+
+    async def _scene_scope_current(self, channel: DiscordChannel, requester: int) -> bool:
         learning = self._learning
         if self._closing or learning is None or not learning.verified:
             return False
@@ -991,6 +1118,8 @@ class TruBotClient(discord.Client):
         focus_author_user_id: int | None = None,
         visual_sink: list[ConversationImage] | None = None,
         visual_limit: int = 2,
+        retrieval_query: str | None = None,
+        photo_recipient_user_id: int | None = None,
     ) -> str:
         learning, memory = self._learning, self._memory
         if learning is None or memory is None or not learning.verified:
@@ -1027,7 +1156,11 @@ class TruBotClient(discord.Client):
                 # Live human context stays available; no character source, graph
                 # abstraction or voice example is retrieved for this request.
                 return requester_context_unavailable()
-        query = memory_followup_query(request, history)
+        query = (
+            retrieval_query
+            if retrieval_query is not None
+            else memory_followup_query(request, history)
+        )
         lookup = recall_quotation(request, history)
         if lookup == "":
             return quotation_unavailable()
@@ -1117,7 +1250,9 @@ class TruBotClient(discord.Client):
                 verified.append(candidate)
             # Verify every selected source first. Optional setup must never spend
             # time that a later mandatory source refresh needs.
-            for source_channel, message_id, refreshed in refreshed_sources[:2]:
+            for source_channel, message_id, refreshed in (
+                refreshed_sources[:2] if retrieval_query is None else []
+            ):
                 remaining = verification_deadline - asyncio.get_running_loop().time()
                 if remaining <= 0:
                     break
@@ -1158,7 +1293,8 @@ class TruBotClient(discord.Client):
                 )
                 voice = (
                     ""
-                    if recent_recall(request)
+                    if retrieval_query is not None
+                    or recent_recall(request)
                     or lookup is not None
                     or not packet.allow_voice_examples
                     else await asyncio.to_thread(
@@ -1172,7 +1308,20 @@ class TruBotClient(discord.Client):
                     collector = ImageCollector()
                     collector.attempts = 2 - min(2, visual_limit)
                     evidence = []
-                    for _, message_id, source in refreshed_sources:
+                    for source_channel, message_id, source in refreshed_sources:
+                        if (
+                            photo_recipient_user_id is not None
+                            and channel.guild.id == source_guild_id
+                        ):
+                            try:
+                                recipient = await source_channel.guild.fetch_member(
+                                    photo_recipient_user_id
+                                )
+                                access = source_channel.permissions_for(recipient)
+                                if not (access.view_channel and access.read_message_history):
+                                    continue
+                            except discord.HTTPException:
+                                continue
                         pixels, _ = await collector.collect(source)
                         if pixels:
                             visual_sink.extend(pixels)
