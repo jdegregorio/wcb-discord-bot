@@ -15,7 +15,7 @@ _ACTIVITY_QUESTION = re.compile(
     r"(?:(?:actually|really|ever|recently|just) ){0,2}"
     r"(?:(?:been )?(?:doing|reading|watching|playing|traveling|travelling|hiking|camping)"
     r"|travel|traveled|travelled|visit|visited|go|gone|went|vacation|vacationed"
-    r"|hike|hiked|camp|camped|read|watch|watched|play|played|do|done"
+    r"|see|seen|spot|spotted|photograph|photographed|hike|hiked|camp|camped|read|watch|watched|play|played|do|done"
     r"|been (?:anywhere|on (?:a |any )?trips?)|(?:take|taken|took) (?:a |any )?trips?)\b",
     re.IGNORECASE,
 )
@@ -26,7 +26,13 @@ def activity_recall_subject(request: str) -> str | None:
     text = " ".join(request[:8000].casefold().removeprefix("🤖").strip().split())
     text = text.removeprefix("@trubot ")
     match = _ACTIVITY_QUESTION.match(text)
-    return match["subject"] if match else None
+    if match:
+        return match["subject"]
+    # Conversational subject omission still addresses the character. Restrict this
+    # to sightings, not external news, hypothetical advice or quoted source text.
+    if re.match(r"^(?:see|seen|spot|spotted) (?:anything|something)\b", text):
+        return "you"
+    return None
 
 
 _ROLLING = re.compile(

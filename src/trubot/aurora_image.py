@@ -6,7 +6,9 @@ import asyncio
 import base64
 import binascii
 import io
+from collections.abc import Awaitable, Callable
 from dataclasses import dataclass
+from typing import TYPE_CHECKING
 
 from openai import AsyncOpenAI
 from PIL import Image
@@ -14,12 +16,16 @@ from PIL import Image
 from trubot.aurora import REGIONS, Opportunity
 from trubot.budget import IMAGE_MODEL, BudgetUnavailable, UsageLedger
 
+if TYPE_CHECKING:
+    from trubot.photos import PhotoMemory, PhotoReference
+
 
 @dataclass(frozen=True, slots=True)
 class AuroraImage:
     data: bytes
     caption: str
     description: str
+    source_check: Callable[[], Awaitable[bool]] | None = None
 
 
 def image_prompt(opportunity: Opportunity) -> str:
@@ -42,9 +48,12 @@ def scene_prompt(region: str) -> str:
 
 
 class AuroraImageGenerator:
-    def __init__(self, client: AsyncOpenAI, ledger: UsageLedger) -> None:
+    def __init__(
+        self, client: AsyncOpenAI, ledger: UsageLedger, *, photos: PhotoMemory | None = None
+    ) -> None:
         self.client = client.with_options(max_retries=0, timeout=120.0)
         self.ledger = ledger
+        self.photos = photos
 
     async def generate(self, opportunity: Opportunity, *, purpose: str = "runtime") -> AuroraImage:
         image = await self._generate(image_prompt(opportunity), purpose=purpose)
@@ -59,7 +68,7 @@ class AuroraImageGenerator:
         )
 
     async def generate_requested(self, region: str, *, purpose: str = "runtime") -> AuroraImage:
-        if region in {"trail_camera", "woodpile", "lake_freeze", "lake_thaw"}:
+        if region in {"trail_camera", "woodpile", "lake_freeze", "lake_thaw", "lake_view"}:
             return await self.generate_life(region, purpose=purpose)
         image = await self._generate(scene_prompt(region), purpose=purpose)
         return AuroraImage(
@@ -76,6 +85,10 @@ class AuroraImageGenerator:
 
     async def generate_life(self, scene: str, *, purpose: str = "runtime") -> AuroraImage:
         subjects = {
+            "lake_view": (
+                "A quiet lake view from the shore, natural daylight and ordinary scenery.",
+                "Not a bad view.",
+            ),
             "trail_camera": (
                 "A candid trail-camera style view of a white-tailed deer at the edge of a "
                 "mixed conifer and birch forest, uneven ground, quiet natural daylight. "
@@ -110,40 +123,80 @@ class AuroraImageGenerator:
             "plausible scale and ecology, natural restrained colors. No text, watermark, "
             "real person's likeness or claim of documenting an actual event."
         )
-        data = await self._generate(prompt, purpose=purpose)
+        reference = await self.photos.reference(scene) if self.photos is not None else None
+        if reference is not None:
+            prompt += (
+                " Use the supplied photo as the composition reference. Preserve its exact "
+                "camera position, viewing direction, foreground/background layout and fixed "
+                "scene anchors. Create a new imagined moment with subtle natural variation. "
+                "For trail cameras preserve the original camera height and angle; wildlife "
+                "may change but the woods layout stays. The reference controls geography "
+                "and framing over generic prompt scenery. No new people or readable text."
+            )
+        data = await self._generate(prompt, purpose=purpose, reference=reference)
+
+        async def source_check() -> bool:
+            return reference is None or (
+                self.photos is not None and await self.photos.current(reference)
+            )
+
         return AuroraImage(
             data,
             caption + "\n-# AI-generated U.P. scene.",
-            f"AI-generated imagined U.P. {scene.replace('_', ' ')} scene. Not a real photo "
-            "or evidence of Andrew's activities, wildlife sightings or current lake conditions.",
+            f"AI-generated imagined {scene.replace('_', ' ')} scene. Not a real photo."
+            + (" Composition based on an authorized source photo." if reference else ""),
+            source_check if reference is not None else None,
         )
 
-    async def _generate(self, prompt: str, *, purpose: str) -> bytes:
+    async def _generate(
+        self, prompt: str, *, purpose: str, reference: PhotoReference | None = None
+    ) -> bytes:
         reservation = await asyncio.to_thread(
-            self.ledger.reserve_image, prompt_bytes=len(prompt.encode()), purpose=purpose
+            self.ledger.reserve_image,
+            prompt_bytes=len(prompt.encode()),
+            purpose=purpose,
+            image_tokens=80_000 if reference is not None else 0,
         )
         try:
-            response = await self.client.images.generate(
-                model=IMAGE_MODEL,
-                prompt=prompt,
-                n=1,
-                size="1536x1024",
-                quality="medium",
-                output_format="png",
-                background="opaque",
-            )
+            if reference is not None and (
+                self.photos is None or not await self.photos.current(reference)
+            ):
+                raise ValueError("Reference source changed before generation")
+            if reference is not None:
+                response = await self.client.images.edit(
+                    image=("reference.jpg", reference.data, "image/jpeg"),
+                    model=IMAGE_MODEL,
+                    prompt=prompt,
+                    n=1,
+                    size="1536x1024",
+                    quality="medium",
+                    output_format="png",
+                    background="opaque",
+                )
+            else:
+                response = await self.client.images.generate(
+                    model=IMAGE_MODEL,
+                    prompt=prompt,
+                    n=1,
+                    size="1536x1024",
+                    quality="medium",
+                    output_format="png",
+                    background="opaque",
+                )
             usage = response.usage
             if (
                 usage is None
-                or usage.input_tokens_details.image_tokens != 0
-                or usage.input_tokens_details.text_tokens != usage.input_tokens
+                or (reference is None and usage.input_tokens_details.image_tokens != 0)
+                or usage.input_tokens_details.text_tokens + usage.input_tokens_details.image_tokens
+                != usage.input_tokens
                 or usage.total_tokens != usage.input_tokens + usage.output_tokens
             ):
                 raise BudgetUnavailable("Image usage metadata unavailable or unsupported")
             await asyncio.to_thread(
                 self.ledger.settle_image,
                 reservation,
-                input_tokens=usage.input_tokens,
+                input_tokens=usage.input_tokens_details.text_tokens,
+                image_tokens=usage.input_tokens_details.image_tokens,
                 output_tokens=usage.output_tokens,
             )
         except BaseException:

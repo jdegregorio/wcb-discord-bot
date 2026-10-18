@@ -48,10 +48,15 @@ def trusted_image_url(url: str) -> bool:
 def image_urls(message: discord.Message) -> list[str]:
     urls: list[str] = []
     for attachment in getattr(message, "attachments", ()):
-        if attachment.size <= MAX_BYTES and (attachment.content_type or "").startswith("image/"):
+        if (
+            isinstance(getattr(attachment, "size", None), int)
+            and attachment.size <= MAX_BYTES
+            and isinstance(getattr(attachment, "content_type", None), str)
+            and attachment.content_type.startswith("image/")
+        ):
             urls.append(attachment.url)
     for embed in getattr(message, "embeds", ()):
-        for item in (embed.image, embed.thumbnail):
+        for item in (getattr(embed, "image", None), getattr(embed, "thumbnail", None)):
             if item and item.url:
                 urls.append(item.proxy_url or item.url)
     return list(dict.fromkeys(url for url in urls if trusted_image_url(url)))
@@ -111,8 +116,12 @@ class ImageCollector:
         urls = image_urls(message)
         # Unsupported/oversized attachments must remain visible as missing context.
         advertised = any(
-            (a.content_type or "").startswith("image/") for a in getattr(message, "attachments", ())
-        ) or any(e.image or e.thumbnail for e in getattr(message, "embeds", ()))
+            (getattr(a, "content_type", None) or "").startswith("image/")
+            for a in getattr(message, "attachments", ())
+        ) or any(
+            getattr(e, "image", None) or getattr(e, "thumbnail", None)
+            for e in getattr(message, "embeds", ())
+        )
         for url in urls:
             if url in self.seen:
                 continue

@@ -181,3 +181,8 @@ Installed2.31.0 passes actual requested-image, provenance and new-process duplic
 acceptance. All37runtime package hashes match tested release10ef140/index0ceee253;
 readiness survives validation client closure. H94 completed-night context remains
 unvalidated. [Full evidence](trubot-evolution/evaluations/2026-10-17-requested-scenes-release.json).
+
+
+H98 candidate adds source-bound historical pixels to the same responder, bounded
+private scene profiles on archives.sqlite3, and freshly checked source-frame edits.
+It does not open native abstract-pattern learning.

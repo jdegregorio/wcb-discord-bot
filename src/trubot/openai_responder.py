@@ -22,7 +22,7 @@ from openai.types.responses.response_create_params import ResponseCreateParamsNo
 from trubot.aurora import EASTERN
 from trubot.budget import NANODOLLARS, BudgetError, BudgetUnavailable, UsageLedger
 from trubot.context_tools import ContextSkill, ContextTools, ToolProtocolError
-from trubot.conversation import ConversationMessage, MemoryAuthorScope, ReplyMode
+from trubot.conversation import ConversationImage, ConversationMessage, MemoryAuthorScope, ReplyMode
 from trubot.memory_author import author_guidance, focused_author_guidance, memory_author_scope
 from trubot.outdoors import Forecast
 from trubot.personality import instructions_for
@@ -490,15 +490,18 @@ class OpenAITruaxResponder:
         payload: dict[str, Any],
         schema: dict[str, Any],
         name: str,
+        images: tuple[ConversationImage, ...] = (),
         source_check: Callable[[], Awaitable[None]] | None = None,
     ) -> dict[str, Any]:
         """One bounded maintenance attempt. No retries, tools, or stored response."""
         content = json.dumps(payload, ensure_ascii=False)
+        if len(images) > 1:
+            raise StudyContextExceeded("One study image allowed")
         size = study_request_size(instructions, payload, schema)
         if size > STUDY_MAX_BYTES:
             raise StudyContextExceeded("Study context exceeds its spending bound")
         response = await self._generate(
-            input_bound=size + 4096,
+            input_bound=size + 4096 + len(images) * IMAGE_TOKEN_BOUND,
             output_bound=1024,
             mode=ReplyMode.DIRECT,
             purpose="maintenance",
@@ -508,7 +511,7 @@ class OpenAITruaxResponder:
                 model=self._model,
                 service_tier="default",
                 instructions=instructions,
-                input=[{"role": "user", "content": content}],
+                input=[_message_input(ConversationMessage("user", content, images))],
                 reasoning={"effort": "none"},
                 text={
                     "verbosity": "low",
