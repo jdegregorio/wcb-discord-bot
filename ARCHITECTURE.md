@@ -11,6 +11,34 @@ completed Kp>=5interval; this establishes only a possible window,never a sightin
 No public query includes conversation,no schema/intake/image/budget/model change.
 Existing source/final checks govern replies. Rollback needs no data restore.
 
+## Private outdoor planning,2.33.0
+
+H95 separates durable wake claims, public forecast collection, a bounded private
+Luna planning turn, deterministic weekly/seasonal eligibility, emotional timing,
+paid image generation and nonce-bound Discord publication. A planning decision has
+no posting tool or private human evidence. It may choose20/60/240/480minute checks
+and whether to consider a picture. A four-hour fallback is committed before I/O;
+failed access/provider work cannot create a rapid retry loop. Only a fresh promising
+nighttime forecast permits intervals below60minutes. Forecasts do not authorize
+aurora pictures: H96 local confirmation is unavailable/unvalidated after camera403.
+Old opportunity-only autoaurora composition is retired; explicit requested aurora
+remains. Legacy collector/helpers preserve compatible prior diagnostics only.
+
+One seasonal attempt per rolling7days, initial7dayquietperiod and09:00-21:00Detroit
+window bound this first increment. No catch-up messages. Current source identity,
+withdrawal, fresh permissions, quiet time, shared cooldown, and a repeated ephemeral
+conversation fingerprint guard generation/send. Bounded recent bot history preserves
+cooldown after restart. Failed/deferred/uncertain attempts consume the weekly slot;
+nonce enforcement and durable claims stop automatic duplicate images, without a
+promise of exactly-once Discord delivery. Scene prompts accept only four closed
+fictional subjects; no personal corpus, arbitrary URL, tool instruction or human
+likeness enters the image request. All calls use the existing18/2/20ledger.
+
+Next: validate an accessible fresh local aurora confirmation source before event
+posting, then observational timing/variety and independently qualified abstract/
+emotional/humor utility. H94 last-night context is reconciled on current main. No new human trait or generic Internet/shell access.
+[Current study](docs/trubot-evolution/evaluations/2026-10-18-outdoor-checkins-release.md).
+
 ## Explicit requested scenes, 2.31.0
 
 `requested_scenes.py` selects a complete supported request and owns a private SQLite

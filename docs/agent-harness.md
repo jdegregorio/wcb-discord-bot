@@ -1,8 +1,34 @@
-# Current status, 2026-10-18 01:00 Pacific
+# Current status,2026-10-18 05:00Pacific
 
-H94 / 2.32.0 is deployed: direct completed-night regional public lookup plus an instruction-only no-location clarification. Fresh matched positives improve0/3 to 3/3 useful results; source/date/region gaps remain authoritative. Existing selective protocol permits one execution/two accounted model attempts, no image or new allowance. Real installed acceptance and caveat limitations are recorded in [this run](trubot-evolution/evaluations/2026-10-18-completed-night-release.md).
+H94/2.32.0 completed-night tools remain deployed. H95 private outdoor planning and rare fictional seasonal scenes are reconciled under final2.33.0 validation. Next order: accessible H96 confirmation research, H93 observational variety/timing, then independently qualified H92 abstract/emotional/humor utility and needed native/visual coverage. Earlier next-step descriptions below are historical. [Current protocol](trubot-evolution/evaluations/2026-10-18-outdoor-checkins-release.md).
 
-Current next work is unfinished H95 private wakeups/seasonal scenes withH93 variation, then independent H92 abstract/emotional/humor utility and needed native/visual coverage. H95 is isolated and unshipped; preserve its recovered previews. No new trait or general fidelity gain. Earlier next-step descriptions below are historical and superseded by this order.
+## Private outdoor planning,2.33.0
+
+H95 separates durable wake claims, public forecast collection, a bounded private
+Luna planning turn, deterministic weekly/seasonal eligibility, emotional timing,
+paid image generation and nonce-bound Discord publication. A planning decision has
+no posting tool or private human evidence. It may choose20/60/240/480minute checks
+and whether to consider a picture. A four-hour fallback is committed before I/O;
+failed access/provider work cannot create a rapid retry loop. Only a fresh promising
+nighttime forecast permits intervals below60minutes. Forecasts do not authorize
+aurora pictures: H96 local confirmation is unavailable/unvalidated after camera403.
+Old opportunity-only autoaurora composition is retired; explicit requested aurora
+remains. Legacy collector/helpers preserve compatible prior diagnostics only.
+
+One seasonal attempt per rolling7days, initial7dayquietperiod and09:00-21:00Detroit
+window bound this first increment. No catch-up messages. Current source identity,
+withdrawal, fresh permissions, quiet time, shared cooldown, and a repeated ephemeral
+conversation fingerprint guard generation/send. Bounded recent bot history preserves
+cooldown after restart. Failed/deferred/uncertain attempts consume the weekly slot;
+nonce enforcement and durable claims stop automatic duplicate images, without a
+promise of exactly-once Discord delivery. Scene prompts accept only four closed
+fictional subjects; no personal corpus, arbitrary URL, tool instruction or human
+likeness enters the image request. All calls use the existing18/2/20ledger.
+
+Next: validate an accessible fresh local aurora confirmation source before event
+posting, then observational timing/variety and independently qualified abstract/
+emotional/humor utility. H94 last-night context is reconciled on current main. No new human trait or generic Internet/shell access.
+[Current study](trubot-evolution/evaluations/2026-10-18-outdoor-checkins-release.md).
 
 # Trubot agent harness
 

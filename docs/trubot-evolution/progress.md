@@ -5046,3 +5046,19 @@ New-container observed window:zero errors, failures or discards, two voice-libra
 Four unfinished H95 generated previews filled16 MB tmpfs; hash-preserved13,184,400 bytes outside Git and worktrees before removing only ephemeral copies. Separate uncommitted H95 source remains untouched and its 2.33.0 reservation retained. Roadmap now prioritizes reconciling that private-wakeup/seasonal-scene increment,then qualified H92 abstract/emotional/humor utility and necessary native/visual coverage.
 
 [Research,planning,actual validation and limitations](evaluations/2026-10-18-completed-night-release.md),[publicreceipt](evaluations/2026-10-18-completed-night-release.json),[PR151](https://github.com/jdegregorio/wcb-discord-bot/pull/151),[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.32.0). [Evidence PR152](https://github.com/jdegregorio/wcb-discord-bot/pull/152) carries the final documentation merge and checks; the runtime remains the tested immutable release above.
+
+## 2026-10-17 human continuation: H95 outdoor autonomy
+
+New request promotes quiet self-scheduled check-ins and fictional seasonal visual
+life. Isolated basecb8f831, branchfeature/trubot-daily-20261017-2100, version2.33.0
+reserved separately from concurrent scheduled H94/2.32.0. Primary untouched.
+Camera403 leaves actual sighting confirmation unvalidated; automatic aurora is gated,
+requested aurora retained.63new regressions, three bounded public-signal plans and
+four actual generated scene previews pass. Full final gates/rebase/CI/release/real
+installed Discord acceptance remain pending. No fidelity gain/new trait claimed.
+[Study](evaluations/2026-10-17-outdoor-checkins-study.md).
+
+
+## 2026-10-18 05:00Pacific - H95 reconciliation selected
+
+Fresh authenticated baseline reproduces text-only seasonal request on2.32.0. Four recovered generated previews are reinspected. Fresh three-channel census has zero seven-day spontaneous bot posts; bounded four-human-window/eight-development-pair triage is insufficient for a character-gain conclusion. Both planning phases select enabling private wakeups/seasonal images with no new trait. Preserve H94 and finish H95 before overlapping work. H96 confirmation remains unvalidated/closed, then H93 timing/variety and independent H92 utility. [Protocol and final results](evaluations/2026-10-18-outdoor-checkins-release.md).
