@@ -78,3 +78,22 @@ privacy, source or ordinary-reply regression can change this order immediately.
 
 Implementation, all six gates, reconciliation with H98, CI/release/deployment,
 installed capture and real private owner/gateway regression tests pending.
+
+
+### Candidate and source checks
+
+21 targeted regressions pass, including two real synthetic original-byte captures
+with restart continuation before an unprocessed third photo, unchanged recent
+intake, current role/permission checks, empty-page access loss, source/scope guards,
+capacity, transport gaps, private process locking, withdrawal and content-free CLI
+failures. Format/lint/types pass on the initial base; final rebased gates remain.
+
+Private actual pixels from two of the omitted target posts were fetched through
+fresh authenticated source checks and inspected. A third examined attachment is
+rejected by the unchanged 4MB guard: metadata says 966,120 bytes, actual response
+length is 5,037,367. Another source's response differs from its smaller metadata but
+fits the bound; actual received bytes, source binding and hash remain authoritative.
+No capacity/byte/pixel guard was widened. One source gap is contrary evidence to
+recovering all seven candidates. Two successful pixel inspections prove available
+source material, not production capture, ownership, preferences or composition gains.
+Raw images stay in approved private temporary storage outside Git and smoke receipts.
