@@ -1,3 +1,18 @@
+# Conversational source-photo action,2.35.0
+
+Direct/follow-up turns can offer one strict model-selected source-photo action.
+A descriptive query uses existing private source retrieval; fresh actual pixels
+precede caption continuation. Publication rechecks source equality, current human
+request/age, requester access, attachment permissions and withdrawal. No phrase
+classifier,new provider,spending pool or intake scope. Tool-capable turns disable
+transport retries; one action/continuation bounds work on the existing ledger.
+
+Frozen capture signatures and early deletion suppression close asynchronous source
+edit/delete races on existing private archive tables. Source-photo delivery and
+fictional generated/reference-edited images remain distinct.13actual functional
+gateway controls pass; caption quality and general human fidelity remain qualified.
+[Current evidence](docs/trubot-evolution/evaluations/2026-10-18-semantic-photo-release.md).
+
 # Completed-night context,2.32.0
 
 UPNightSkill uses the existing selected-tool transaction with fixed NOAA/NWS URLs,
