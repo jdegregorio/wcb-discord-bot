@@ -128,7 +128,9 @@ class PhotoStore:
                 for row in db.execute("SELECT * FROM photo_profiles ORDER BY message DESC")
             ]
 
-    def register(self, episode: str, message: discord.Message, asset: str) -> None:
+    def register(
+        self, episode: str, message: discord.Message, asset: str, *, source_signature: str
+    ) -> None:
         identity = self.archives.learning.identity()
         with self.archives._transaction() as db:
             db.execute(
@@ -141,7 +143,7 @@ class PhotoStore:
                     message.channel.id,
                     message.id,
                     message.author.id,
-                    signature(message),
+                    source_signature,
                     asset,
                     _time(message.created_at),
                 ),
@@ -160,18 +162,23 @@ class PhotoStore:
             self.archives._remove_backups()
 
     def drop(self, channel: int, ids: list[int], *, deleted: bool, now: datetime) -> None:
+        identity = self.archives.learning.identity()
+        if channel not in identity.channel_ids:
+            return
         with self.archives._transaction() as db:
             for message_id in ids:
-                row = db.execute(
-                    "SELECT episode FROM photo_profiles WHERE channel=? AND message=?",
-                    (channel, message_id),
-                ).fetchone()
-                if row:
-                    if deleted:
-                        db.execute(
-                            "INSERT OR IGNORE INTO suppressions VALUES (?,?)", (row[0], _time(now))
-                        )
-                    db.execute("DELETE FROM visual_episodes WHERE digest=?", (row[0],))
+                # Suppress even before registration: deletion can race a download/import.
+                source = {
+                    "guild_id": identity.guild_id,
+                    "channel_id": channel,
+                    "message_id": message_id,
+                }
+                digest = hashlib.sha256(json.dumps(source, sort_keys=True).encode()).hexdigest()
+                if deleted:
+                    db.execute(
+                        "INSERT OR IGNORE INTO suppressions VALUES (?,?)", (digest, _time(now))
+                    )
+                db.execute("DELETE FROM visual_episodes WHERE digest=?", (digest,))
             db.execute("DELETE FROM assets WHERE digest NOT IN (SELECT asset FROM episode_assets)")
         self.archives._remove_backups()
 
@@ -254,6 +261,7 @@ class PhotoMemory:
     async def capture(self, message: discord.Message) -> bool:
         if not self.eligible(message) or not image_urls(message):
             return False
+        source_signature = signature(message)
         existing = next(
             (r for r in await asyncio.to_thread(self.store.rows) if r["message"] == message.id),
             None,
@@ -266,6 +274,8 @@ class PhotoMemory:
             return False
         attachment = attachments[0]
         raw = await download_image(attachment.url)
+        if signature(message) != source_signature:
+            raise LearningUnavailable("Photo changed during download")
         image = await asyncio.to_thread(decode_image, raw)
         asset = hashlib.sha256(raw).hexdigest()
         episode = {
@@ -303,7 +313,34 @@ class PhotoMemory:
             {asset: raw},
             now=self.learning.clock(),
         )
-        await asyncio.to_thread(self.store.register, digest, message, asset)
+        try:
+            if signature(message) != source_signature:
+                raise LearningUnavailable("Photo changed during import")
+            await asyncio.to_thread(
+                self.store.register, digest, message, asset, source_signature=source_signature
+            )
+            row = next(
+                (
+                    r
+                    for r in await asyncio.to_thread(self.store.rows)
+                    if r["episode"] == digest and r["signature"] == source_signature
+                ),
+                None,
+            )
+            if row is None:
+                # A full bounded store may intentionally evict this older source.
+                return False
+            if await self.fresh(row) is None:
+                raise LearningUnavailable("Photo changed before capture completion")
+        except LearningUnavailable:
+            await asyncio.to_thread(
+                self.store.drop,
+                message.channel.id,
+                [message.id],
+                deleted=False,
+                now=self.learning.clock(),
+            )
+            raise
         return True
 
     async def fresh(self, row: dict[str, Any]) -> discord.Message | None:

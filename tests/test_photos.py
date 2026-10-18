@@ -301,3 +301,23 @@ async def test_profile_correction_revokes_inflight_reference(photos):
     with memory.store.archives._transaction() as db:
         db.execute("UPDATE photo_profiles SET profile='{}'")
     assert not await memory.current(reference)
+
+
+@pytest.mark.parametrize("change", ["delete", "edit_attachment"])
+async def test_source_change_during_download_cannot_retain_stale_pixels(photos, change):
+    memory, channel, _, _ = photos
+    msg = attached(channel)
+    channel.fetch_message.return_value = msg
+
+    async def download(_url):
+        if change == "delete":
+            memory.store.drop(10, [msg.id], deleted=True, now=NOW)
+        else:
+            msg.attachments[0].id += 2
+            msg.content = "A replacement image."
+        return photo_bytes()
+
+    with patch("trubot.photos.download_image", download), pytest.raises(LearningUnavailable):
+        await memory.capture(msg)
+    assert memory.store.rows() == []
+    assert memory.store.archives.status()["image_assets"] == 0

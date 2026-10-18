@@ -186,3 +186,13 @@ unvalidated. [Full evidence](trubot-evolution/evaluations/2026-10-17-requested-s
 H98 candidate adds source-bound historical pixels to the same responder, bounded
 private scene profiles on archives.sqlite3, and freshly checked source-frame edits.
 It does not open native abstract-pattern learning.
+
+
+2.35.0 candidate exposes show_source_photo to the model for direct and follow-up
+turns with private learning scope. The model resolves conversational intent and
+constructs a descriptive query; no phrase list decides whether to attach. One
+function action can retrieve a freshly verified original photo and supply its
+pixels before the caption continuation. Discord sends the queued photo only
+after current source,request,recipient and attachment permissions pass. Missing
+evidence cannot queue an image. The ordinary responder and existing context tools
+remain available; at most one call/continuation,shared spending/vision bounds.

@@ -40,3 +40,20 @@ H98 human follow-up now takes first priority: first-person visual memory and ori
 frame reuse, then visual coverage/independent abstract utility and seasonal timing.
 H96 remains closed without qualified confirmation. See
 [H98 protocol](docs/trubot-evolution/evaluations/2026-10-18-photo-memory.md).
+
+
+## H98d current priority,2026-10-18 human follow-up
+
+First-person source pixels and original-frame generation are deployed as2.34.0,
+but an actual request to see a recalled photo still gets text only.2.35.0 adds a
+model-selected source-photo action to the existing harness,so indirect requests
+can produce actual attachments. Semantic intent is not a phrase grammar. Fresh
+source/pixel/request/recipient-permission checks constrain delivery.3positive/
+3negative provider cases pass;actual installed delivery remains pending. Also fix
+2reproduced asynchronous capture correction/deletion races. Both phases,criteria,
+results and limitations: [H98 study](docs/trubot-evolution/evaluations/2026-10-18-photo-memory.md).
+
+Then improve independent abstract/humor utility and original visual coverage/
+composition qualification,plus seasonal timing. Advance general model-guided tool
+use when contextual evidence supports it. H96confirmationclosed,H97unresolved.
+Same six-run schedule,Luna runtime,private sources and18/2/20spending guard.
