@@ -53,3 +53,5 @@ Observed new-container window:zero errors, reply failures, source discards or re
 H94 is complete as a useful public-context capability. Next reconcile the separately unfinished H95 private-wakeup/seasonal-scene work,then H92 independent abstract/emotional/humor utility and necessary wider coverage. Four recovered generated assets are preserved with matching hashes in this chat's visualization directory outside Git/worktrees. Source and active work from the other run remain untouched.
 
 [Machine-readable public evidence](2026-10-18-completed-night-release.json),[runtime PR151](https://github.com/jdegregorio/wcb-discord-bot/pull/151),[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.32.0),[image CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/39110423389).
+
+Final documentation is tracked by [PR152](https://github.com/jdegregorio/wcb-discord-bot/pull/152). Its checks and merge identify the evidence head; all runtime files remain identical to released6d163f0.

@@ -140,10 +140,12 @@
     "night_tool_reads": 1,
     "current_tool_reads": 1,
     "generated_replies": 10,
-    "recipient_declines": 1
+    "recipient_declines": 1,
+    "voice_library_warnings": 2
   },
   "scope_change": false,
   "new_store_or_service": false,
   "rollback_required": false,
-  "private_receipts": "content-free refs/hashes/counts only; existing app-volume 0700/0600/manual seven-day and withdrawal cleanup"
+  "private_receipts": "content-free refs/hashes/counts only; existing app-volume 0700/0600/manual seven-day and withdrawal cleanup",
+  "evidence_pr": 152
 }
