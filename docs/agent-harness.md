@@ -1,5 +1,31 @@
 # Trubot agent harness
 
+## Requested public-scene skill, 2.31.0 candidate
+
+Direct human requests with a complete supported U.P. aurora grammar enter a separate
+paid-side-effect boundary before private memory retrieval. The selected closed region
+is the only variable in the existing Images API prompt. No private conversation,
+source photo, model tool argument or retrieved memory can authorize or shape images.
+Unknown modifiers, quotes, negation and unsupported regions remain ordinary replies;
+follow-up, reaction and ambient modes cannot enter this path. Initial scope is guild
+text channels in the existing source-guild allowlist and owner-only allowed development.
+
+Content-free SceneStore claims commit before any provider I/O, share a global ten
+minute cooldown/three requested attempts per UTC day, and survive restart. Failed,
+blocked and ambiguous attempts never automatically retry. Requests must remain under
+five minutes old; operational hashes expire after35days. Fresh channel/member permissions,
+author/message/edit/attachment checks and current withdrawal/identity are checked before
+generation and publication. Frozen authorization resists Discord cached Message edits.
+Enforced request nonce covers Discord.py internal send retries; durable uncertain claims
+cover process restart. No generated image bytes or request content persists in state.
+The same fixed image adapter/18/2/20ledger applies, no new framework/service/model.
+A separate validation readiness path must be set before build_client construction.
+
+Current next work: H93 visual breadth/variation, then independently qualified H92
+abstract/emotional/humor utility and needed native coverage. The sections below record
+earlier increments; their historical next-step language is superseded by this order.
+[Evidence](trubot-evolution/evaluations/2026-10-17-requested-scenes-study.md).
+
 ## Selective public context,2.30.0
 
 Explicit current U.P. conditions questions load the read-only UPConditionsSkill.

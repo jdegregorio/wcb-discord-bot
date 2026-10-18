@@ -1,3 +1,15 @@
+## Explicit requested scenes, 2.31.0
+
+`requested_scenes.py` selects a complete supported request and owns a private SQLite
+paid-attempt claim. `discord_client.py` freezes the original human authorization,
+checks fresh scope/permissions/source state before and after generation, and publishes
+one nonce-bound attachment. It enters before private memory retrieval and uses only a
+closed public region. `aurora_image.py` shares its existing accounted rendering path
+with scheduled mornings. Failure/restart cannot reopen a paid claim; the unchanged
+spending ledger remains authoritative. No private raw prompt/image state is retained.
+The skill is separate from read-only ContextTools, so a model tool call cannot spend
+on an image. See the current [harness](docs/agent-harness.md) and evolution study.
+
 ## Selective public-context harness,2.30.0
 
 `ContextTools` selects small read-only capabilities from explicit focus text.

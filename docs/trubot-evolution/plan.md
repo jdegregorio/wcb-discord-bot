@@ -1,54 +1,47 @@
 # Trubot evolution plan
 
-Current run:2026-10-17 13:00 Pacific. Product goal: a natural, adaptive league
-character with useful context and things worth sharing. Joe's latest direction
-prioritizes architecture and visual life over repeated isolated memory patches.
+Current run: 2026-10-17 17:00 Pacific. Goal: a natural, adaptive league character
+with useful context and worthwhile visual participation. Joe prioritizes larger
+context architecture and visual life over repeated isolated recall patches.
 
-## Current increment: selective public-context harness,2.30.0
+## Current increment: requested aurora scenes, H91a / 2.31.0 candidate
 
-H90 reproduces a missing capability through actual owner/gateway conversation:
-current U.P. conditions questions cannot access live observations. The first
-read-only conversational skill selectively exposes fixed NOAA/NWS reads for explicit
-current questions about the Keweenaw, Marquette or Munising. Luna can choose one
-call and resume its reply. Ordinary conversation loads no tool/skill text; other
-modes retain their current routing. No generic browsing or paid side effect is exposed.
+A real owner/gateway request gets a capability disclaimer and text prompt on2.30.0,
+with no image. The new explicit public-scene skill supplies an actual generated
+U.P. aurora attachment with a short caption and generated-origin label. A complete
+request grammar selects Marquette, Munising or the Keweenaw; unsupported modifiers
+remain ordinary conversation. No model-generated tool call can authorize this paid
+side effect. Durable claims, global10minutecooldown/3perUTCday request cap, fresh
+request/author/edit/permission checks and withdrawal precede generation/publication.
+The existing18/2/20ledger remains. Tests and real pixels/gateway determine readiness;
+capability transport is separate from measured human fidelity or engagement.
 
-The same model, spending ledger, source lifecycle and Discord allowlist remain.
-H89/2.29.1 scheduled aurora mornings remain enabled. Read-only source lookup is
-an enabling capability; useful source-grounded replies are evaluated separately
-from general personality/engagement quality. Fresh public feeds can be stale or
-missing; unknown remains unknown. This run adds no derived human trait.
-
-[Evidence and acceptance](evaluations/2026-10-17-context-tools-study.md).
-Fresh census: three source channels/latest100/14days,5target/6peer/3olderbot,
-zero seven-day bot posts. Prior authenticated human studies remain the reference.
-A fresh private provider-assisted character audit was approval-rejected and not
-retried; local content-free census and synthetic/public experiments continue.
-No new human-held-out reply-quality result is claimed.
+Both planning phases, source coverage, uncertainty and predeclared acceptance are in
+[the study](evaluations/2026-10-17-requested-scenes-study.md). Prior H90/2.30.0 release/CI/deployment is reconciled;
+a fresh owner/gateway current-Marquette question successfully uses the installed
+public tool. No unfinished evolution PR overlaps this run. H89 scheduled mornings
+remain enabled. No new human trait or private provider audit is introduced.
 
 ## Ordered next increments
 
-1. H91 requested generated aurora scenes using the new harness. So a relevant
-   request can produce a useful visual without waiting for the morning detector.
-   Depend on durable per-request paid-attempt deduplication, withdrawal/current
-   permission checks, attachment publication and actual pixel/context acceptance.
-   Compare baseline and candidate on request ownership, ambiguous sends/restarts,
-   budget exhaustion, provenance, natural captions, failures, cost and latency.
-   High confidence in user value; side-effect design and quality remain unvalidated.
-2. H61/H89/H91 richer scene/caption variety, then generated U.P. trail-camera
-   wildlife. Require original sharing-context/pixel studies and real private Discord
-   acceptance. No invented source-photo ownership, sightings or human memories.
-3. H79/H81/H83 qualified abstract personality/emotional/humor utility and broader
-   peer/reply/thread discussion coverage when independent scenarios justify them.
-   Preserve rejected H72/H74/H83a cohorts and the closed native pattern gate.
-   A fresh approved private contextual audit and independent held-out benefit are
-   prerequisites to new personal patterns. Exact quote/date patches stay secondary.
+1. H93 richer scene/caption variation and generated U.P. trail-camera wildlife.
+   So requested and timely outdoor sharing has useful breadth. Depend on actual
+   sharing-context/original-pixel study and honest generated origin. Accept relevant
+   pictures, natural varied captions, no invented sighting/ownership and real gateway
+   usefulness. Confidence in capability direction high; character/engagement value
+   unvalidated. Expected image costUSD0.04-0.05, existing runtime budget only.
+2. H92/H79/H81/H83 independently qualified abstract/emotional/humor utility.
+   So context guides warmth and comic turns. Depend on authenticated separate human
+   supports/contrary cases, fresh approved contextual study and held-out benefit.
+   Existing weak controls are contrary evidence; rejected H72/H74/H83a cohorts and
+   closed native pattern gate remain. No extra paid service; bounded maintenance.
+3. Broader native peer/reply/thread discussion and original visual history when
+   acceptance demonstrates the coverage need. So missing setup does not distort
+   abstraction or relevance. Preserve attribution, deletion/correction/withdrawal and
+   spending. Full history remains incomplete; current recent target intake works.
 
-Read-only tools first follows the reproduced capability gap and Joe's direction.
-Grounding/privacy, material reply regressions or budget failures can reorder this
-list. A full agent rewrite remains available if matched evidence shows this small
-harness is limiting. Existing recent intake works; full peer history remains a gap,
-not an endless prerequisite to useful tools. H89's first natural qualifying night
-is a non-blocking observation. Preserve private evidence, bot identity, no DMs,
-current runtime scope, withdrawal and the USD18/2/20guard. Six fresh local
-01/05/09/13/17/21 Sol/xhigh runs and notification intent stay unchanged.
+Privacy, grounding, duplicate-spend, budget or ordinary reply regressions can reorder
+these items. A rewrite is available if matched evidence shows a harness limit.
+First natural H89 opportunity remains a non-blocking observation. Literal quote/date
+repairs are secondary absent material regressions. Preserve current runtime scope,
+bot identity/no DMs, six fresh local01/05/09/13/17/21Sol/xhigh runs and notifications.

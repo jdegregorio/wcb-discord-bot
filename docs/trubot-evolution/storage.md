@@ -1212,3 +1212,35 @@ The current run's private receipts use smoke-tests/2026-10-17-1300,0700/0600,
 existing manual seven-day retention/withdrawal cleanup,no raw source or answer text.
 Rollback2.29.1is schema-compatible;preserve source/spending state and existing aurora
 claims. Do not restore those databases to roll back this code-only capability.
+
+
+## Requested-scene operational claims, 2.31.0
+
+Explicitly initialize `requested-scenes.sqlite3` beside the configured learning file
+in the existing0700app volume with `trubot-scenes init --path <absolute-private-path>`.
+Default CLI path is `/var/lib/trubot/requested-scenes.sqlite3`; a custom learning path
+uses that file's directory in app composition. `trubot-scenes status --path ...`
+reports only outcome counts. Runtime opens existing private0600state with mode=rw;
+missing state/schema/ownership failures stop paid image attempts and do not initialize
+or reset any allowance. Initialization refuses existing files and symlink directories.
+
+Schema1 stores request/channel SHA256operation keys, claim timestamps and terminal
+outcomes. No raw account/message IDs, source text, request text, human abstractions,
+image prompts or generated image bytes are stored. Images are ephemeral until normal
+Discord publication. Global ten-minute cooldown and three requested attempts per UTC
+day count failed/blocked/uncertain attempts conservatively, across channels/processes.
+Claims older than35days are pruned on a new request; original requests older than five
+minutes cannot enter, including after restart. A limited request is also deduplicated.
+Scheduled morning timing/claims remain separate; both share the same USD18/2/20ledger.
+
+Withdrawal/current identity checks stop generation and publication. Operational hashes
+remain as duplicate-spend prevention, like the spending ledger; they contain no source
+corpus. Never reset/restore spending or operational claims on code rollback. This new
+file is not evidence/graph state and creates no personal-data backup. If it is missing,
+inspect why and explicitly initialize only a new deployment; uncertain claims stay
+closed. Normal corrections/deletion/access checks invalidate a pending source request.
+A send and final check cannot be atomic across Discord; nonce enforcement/durable
+claims prevent automatic repeats, not a false promise of exactly-once delivery.
+Rollback to2.30.0 ignores the new file and preserves both spending and source state.
+Private validation receipts remain content-free0700/0600with existing seven-day manual
+retention and withdrawal cleanup; preserve only references/pass/fail, not answer text.

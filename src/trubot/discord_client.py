@@ -54,6 +54,13 @@ from trubot.participation import (
 )
 from trubot.recall_reference import quotation_unavailable, recall_quotation
 from trubot.reply_focus import memory_followup_query
+from trubot.requested_scenes import (
+    MAX_REQUEST_AGE,
+    RequestedScenes,
+    SceneRequest,
+    operation_key,
+    requested_region,
+)
 from trubot.vision import ImageCollector
 from trubot.voice_memory import voice_context
 
@@ -99,6 +106,7 @@ class TruBotClient(discord.Client):
         learning: MessageIngestor | None = None,
         distiller: GraphDistiller | None = None,
         aurora: AuroraFeature | None = None,
+        scenes: RequestedScenes | None = None,
     ) -> None:
         super().__init__(intents=intents, allowed_mentions=allowed_mentions)
         self._settings = settings
@@ -115,6 +123,7 @@ class TruBotClient(discord.Client):
         self._distiller = distiller
         self._memory = ContextMemory(learning.store) if learning is not None else None
         self._learning_task: asyncio.Task[None] | None = None
+        self._scenes = scenes
         self._aurora = aurora
         self._aurora_task: asyncio.Task[None] | None = None
 
@@ -486,6 +495,18 @@ class TruBotClient(discord.Client):
         async with self._response_locks[channel.id]:
             request_at = self._clock()
             try:
+                region = (
+                    requested_region(anchor.content, bot_user_id=user.id)
+                    if mode is ReplyMode.DIRECT and anchor is not None
+                    else None
+                )
+                if (
+                    region
+                    and anchor is not None
+                    and self._scenes is not None
+                    and isinstance(channel, discord.TextChannel)
+                ):
+                    return await self._respond_scene(channel, anchor, region, requester_user_id)
                 images = ImageCollector()
                 focused = (
                     await visual_message(anchor, bot_user_id=user.id, images=images, target=True)
@@ -648,6 +669,135 @@ class TruBotClient(discord.Client):
                 len(output),
             )
             return True
+
+    async def _scene_scope_current(self, channel: discord.TextChannel, requester: int) -> bool:
+        learning = self._learning
+        if self._closing or learning is None or not learning.verified:
+            return False
+        try:
+            identity = await asyncio.to_thread(learning.store.identity)
+        except LearningUnavailable:
+            return False
+        if identity != learning.identity or channel.id not in self._settings.allowed_channel_ids:
+            return False
+        return channel.guild.id == identity.guild_id or (
+            bool(self._settings.development_guild_id)
+            and channel.guild.id == self._settings.development_guild_id
+            and requester == channel.guild.owner_id
+        )
+
+    async def _scene_request_current(
+        self, channel: discord.TextChannel, request: SceneRequest, requester: int
+    ) -> bool:
+        user = self.user
+        if user is None or not await self._scene_scope_current(channel, requester):
+            return False
+        try:
+            async with asyncio.timeout(6):
+                fresh_channel = await self.fetch_channel(channel.id)
+                if (
+                    not isinstance(fresh_channel, discord.TextChannel)
+                    or fresh_channel.guild.id != channel.guild.id
+                    or not await self._scene_scope_current(fresh_channel, requester)
+                ):
+                    return False
+                member = await fresh_channel.guild.fetch_member(user.id)
+                permissions = fresh_channel.permissions_for(member)
+                if not all(
+                    (
+                        permissions.view_channel,
+                        permissions.send_messages,
+                        permissions.attach_files,
+                        permissions.read_message_history,
+                    )
+                ):
+                    return False
+                fresh = await fresh_channel.fetch_message(request.message_id)
+                if (
+                    fresh.author.id != requester
+                    or request.author_id != requester
+                    or fresh.author.bot
+                    or fresh.webhook_id is not None
+                    or fresh.content != request.content
+                    or fresh.edited_at != request.edited_at
+                    or fresh.created_at != request.created_at
+                    or fresh.attachments
+                    or fresh.embeds
+                    or not timedelta(0) <= self._clock() - fresh.created_at <= MAX_REQUEST_AGE
+                    or not self._is_direct_trigger(fresh)
+                ):
+                    return False
+                return await self._scene_scope_current(fresh_channel, requester)
+        except (discord.HTTPException, TimeoutError, LearningUnavailable):
+            return False
+
+    async def _respond_scene(
+        self, channel: discord.TextChannel, anchor: discord.Message, region: str, requester: int
+    ) -> bool:
+        # Discord can update its cached Message in place during an edit. Freeze
+        # the authorization before the first await, so both checks use the original.
+        request = SceneRequest(
+            anchor.id, anchor.author.id, anchor.content, anchor.created_at, anchor.edited_at
+        )
+        feature = self._scenes
+        if feature is None or not await self._scene_scope_current(channel, requester):
+            return False
+        request_key = operation_key(channel.guild.id, channel.id, request.message_id)
+        async with channel.typing():
+            claim, image = await feature.prepare(
+                region,
+                request_key=request_key,
+                channel_key=operation_key(channel.guild.id, channel.id),
+                now=self._clock(),
+                before_generation=lambda: self._scene_request_current(channel, request, requester),
+            )
+            if claim in {"duplicate", "blocked"}:
+                return False
+            if image is None:
+                if not await self._scene_request_current(channel, request, requester):
+                    return False
+                await channel.send(
+                    "Give me a little time before another picture.",
+                    allowed_mentions=discord.AllowedMentions.none(),
+                    nonce=request.message_id,
+                )
+            else:
+                if not await self._scene_request_current(channel, request, requester):
+                    await asyncio.to_thread(feature.store.finish, request_key, "blocked")
+                    return False
+                # Commit before send. Discord.py also enforces nonce uniqueness for
+                # its internal transport retries. A new process never reopens this claim.
+                await asyncio.to_thread(feature.store.finish, request_key, "send_uncertain")
+                attachment = discord.File(
+                    io.BytesIO(image.data),
+                    filename="trubot-aurora-generated.png",
+                    description=image.description,
+                )
+                try:
+                    await channel.send(
+                        image.caption,
+                        file=attachment,
+                        nonce=request.message_id,
+                        allowed_mentions=discord.AllowedMentions.none(),
+                    )
+                except Exception as error:
+                    logger.warning(
+                        "Requested scene publication uncertain error_type=%s", type(error).__name__
+                    )
+                    return False
+                finally:
+                    attachment.close()
+                try:
+                    await asyncio.to_thread(feature.store.finish, request_key, "posted")
+                except LearningUnavailable:
+                    # Publication already succeeded. Keep the durable uncertain
+                    # claim and never send a second failure message or attachment.
+                    logger.warning("Requested scene posted; outcome receipt unavailable")
+        self._cancel_ambient(channel.id)
+        self._participation.record_reply(channel.id, self._clock(), ambient=False)
+        self._attention.activate(channel.id, self._clock())
+        logger.info("Posted requested scene response image=%s", image is not None)
+        return True
 
     async def _memory_author_scope(self, anchor: discord.Message | None) -> MemoryAuthorScope:
         learning = self._learning
