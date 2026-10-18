@@ -1,6 +1,8 @@
 # Current status,2026-10-18 05:00Pacific
 
-H94/2.32.0 completed-night tools remain deployed. H95 private outdoor planning and rare fictional seasonal scenes are reconciled under final2.33.0 validation. Next order: accessible H96 confirmation research, H93 observational variety/timing, then independently qualified H92 abstract/emotional/humor utility and needed native/visual coverage. Earlier next-step descriptions below are historical. [Current protocol](trubot-evolution/evaluations/2026-10-18-outdoor-checkins-release.md).
+H94/2.32.0 completed-night tools remain deployed. H95 private outdoor planning and rare fictional seasonal scenes are deployed as2.33.0 after final quiet-wake/image/restart acceptance. Next order: accessible H96 confirmation research, H93 observational variety/timing, then independently qualified H92 abstract/emotional/humor utility and needed native/visual coverage. Earlier next-step descriptions below are historical. [Current protocol](trubot-evolution/evaluations/2026-10-18-outdoor-checkins-release.md).
+
+One of12actual controls omits a required location clarification. H97 remains unresolved;3matched samples/arm clarify with identical request payloads. Source-recap and sighting-caveat voice limitations persist. No general fidelity gain is established.
 
 ## Private outdoor planning,2.33.0
 

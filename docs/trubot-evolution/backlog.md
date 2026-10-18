@@ -2,7 +2,7 @@
 
 Updated2026-10-18 05:00Pacific. [Evidence and protocol](evaluations/2026-10-18-outdoor-checkins-release.md).
 
-H95a/b is the selected increment under final validation. Reconcile and ship the interrupted private wake/seasonal-scene work before opening overlapping work. Acceptance includes quiet/restart claims, rare attempts, fresh permissions/withdrawal/context, actual pixels and real owner/gateway delivery. No general character gain is established.
+H95a/b is deployed as2.33.0 after completing the interrupted work. Actual quiet wake, generated woodpile attachment and exact-request restart suppression pass. Acceptance includes quiet/restart claims, rare attempts, fresh permissions/withdrawal/context, actual pixels and real owner/gateway delivery. No general character gain is established.
 
 1. H96 accessible local aurora confirmation, exploratory. So timely event pictures follow actual visibility. Evidence: Joe's confirmation requirement and NOAA forecast limits; prior camera403 is an access gap. Dependencies: an accessible fresh timestamp/location-bound observation plus positive/negative visual/report cases. Accept no forecast-as-sighting, real private gateway delivery and source outage abstention. Confidence in need high, feed utility unresolved; existing ledger only, no paid service. If no source qualifies, keep event publishing closed and advance the next useful item.
 
@@ -10,7 +10,14 @@ H95a/b is the selected increment under final validation. Reconcile and ship the 
 
 3. H92 independently qualified abstract/emotional/amplified-humor utility and needed native peer/reply/thread/original visual coverage. So supported episode mechanisms guide warm, brief and novel replies. Evidence: source-recap voice partial and insufficient contextual human comparisons. Dependencies: separate attributed supports/contrary cases, lifecycle checks and held-out usefulness. Accept semantic matched handler/gateway gains without invented beliefs, forced catchphrases or insensitive timing. Confidence unresolved; rejectedH72/H74/H83a and native automatic-pattern gate remain closed. Existing maintenance pool only; full history remains incomplete.
 
+## Additional research candidate
+
+H97 contextual no-location clarification reliability, unresolved. Evidence: one actual incomplete control in the final12; matched3samples/arm clarify with identical request payloads. So the shared tool harness reliably asks for missing context. Dependencies: reproduce the actual conversational setup with privacy-safe fixtures and compare baseline/candidate. Accept brief location clarification without extra context reads, invented observations or loss of natural ordinary replies. Disconfirm a proposed fix if exact cases remain incomplete. Confidence in the observed gap high, cause unresolved; no new service/allowance, possible saved provider turn if a justified deterministic harness boundary wins. Do not substitute another isolated prompt patch without evidence.
+
 ## Completed capabilities
+
+- H95a/b /2.33.0: quiet persistent planner and rare seasonal scenes, actual wake/image/restart acceptance. Confirmed aurora remains closed; broader character/weekly engagement unmeasured.
+
 
 - H94 /2.32.0: bounded completed-night regional NOAA/NWS tools and no-location clarification, source gaps intact; real gateway passes with caveat naturalness partial.
 - H91a /2.31.0: requested aurora attachments, generated provenance and persistent paid claim/cooldown/cap.
