@@ -1,14 +1,8 @@
-# Current priority,2026-10-17 21:00 Pacific
+# Current status, 2026-10-18 01:00 Pacific
 
-H94 completed-night regional public context is selected after real owner/gateway
-baseline reproduction and both planning phases. It extends useful read-only context,
-without image generation or a new human trait. Acceptance remains pending.
-Next H93 visual variety/trail-camera wildlife,then independently qualified H92
-abstract/emotional/amplified-humor utility and broader native discussion/pixels.
-Prior rejected cohorts/closed native pattern gate remain; scheduled mornings and
-requested scenes continue. Privacy,withdrawal,scope,18/2/20guard and cadence unchanged.
-[Evidence,dependencies,acceptance and uncertainty](trubot-evolution/evaluations/2026-10-17-completed-night-study.md).
-This current order supersedes historical next-step snapshots below.
+H94 / 2.32.0 is deployed: direct completed-night regional public lookup plus an instruction-only no-location clarification. Fresh matched positives improve0/3 to 3/3 useful results; source/date/region gaps remain authoritative. Existing selective protocol permits one execution/two accounted model attempts, no image or new allowance. Real installed acceptance and caveat limitations are recorded in [this run](trubot-evolution/evaluations/2026-10-18-completed-night-release.md).
+
+Current next work is unfinished H95 private wakeups/seasonal scenes withH93 variation, then independent H92 abstract/emotional/humor utility and needed native/visual coverage. H95 is isolated and unshipped; preserve its recovered previews. No new trait or general fidelity gain. Earlier next-step descriptions below are historical and superseded by this order.
 
 # Trubot agent harness
 
@@ -73,7 +67,7 @@ then visual variety/wildlife and independently qualified abstract/humor utility.
 Do not expose the scheduled image generator as a generic untracked function.
 [Current evidence](trubot-evolution/evaluations/2026-10-17-context-tools-study.md).
 
-Current direction, 2026-10-17: the first scheduled visual skill is H89/2.29.1.
+Current direction, 2026-10-17: the first scheduled visual skill is H89 / 2.29.1.
 It separates public evidence collection, deterministic opportunity detection,
 bounded contextual timing judgment, image generation and durable publication state.
 The existing reply/memory harness remains; this is a coherent extensibility step,
@@ -142,7 +136,7 @@ native study3/3synthetic cases pass; fresh real native projections2/2, no semant
 pattern permission. Normal owner gateway9probes/7posts:strict6/8unique, one humor
 partial, one initial care discard; exact care retry passes. Two human-held-out reply
 controls remain weak for the actual comic mechanism. No general fidelity gain.
-Run estimatedUSD0.00717635; coveredOctoberUSD0.36811192,18/2/20guard unchanged.
+Run estimatedUSD 0.00717635; coveredOctoberUSD 0.36811192,18/2/20guard unchanged.
 See the study's final evidence for limitations and the next diagnostic prerequisite.
 
 
@@ -151,7 +145,7 @@ zero restarts;all31module hashes match. Feature/merged six gates1,451tests/
 97.11%coverage and protected PR/main/image CI pass. Installed media-only2/2post;
 one substantive setup transition correctly discards. Normal gateway9probes/8posts,
 strict8/9,humor freshness partial; care/direct follow-up and natural recall pass.
-No general fidelity/humor gain. Run estimatedUSD0.0083419,coveredOctoberUSD0.37645382,
+No general fidelity/humor gain. Run estimatedUSD 0.0083419,coveredOctoberUSD 0.37645382,
 18/2/20guard unchanged. Exact results/limits are in the study and progress.
 
 

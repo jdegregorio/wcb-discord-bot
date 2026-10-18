@@ -2895,3 +2895,10 @@ stock sighting caveats remain a naturalness partial. Midnight completed-night ga
 fixed/tested. Final six gates1710tests/97.18%/38modules/build2.32.0pass. No new trait
 or general fidelity gain. Actual release/deployment/private gateway still pending.
 Concurrent explicit outdoor-wakeup work remains separate;recheck/reconcile main.
+
+
+## 2026-10-18 H94 final validation and roadmap reconciliation
+
+Fresh actual baseline still reproduces the completed-night capability gap. Final matched12 cases per arm improve regional useful observations0/3to3/3;three contrary data cases and six controls pass. Real installed11 cases give10 responses/one correct abstention,including changed lookup/clarification and normal memory/care/humor controls. Hypothesis supported as useful context; naturalness remains partial and broader fidelity unmeasured. Two bounded character triages,four human windows and eight development pairs per pass,flagfour cases each but supply insufficient comparable evidence for causal pre/post or a new trait.
+
+Both planning phases precede release selection. Finish interruptedH94 before overlapping work,then reconcile H95 private wakeups and seasonal scenes with H93 visual variety;independent H92 abstract/emotional/amplified humor and necessary coverage follow. Existing rejected cohorts and native pattern gate unchanged. No new operating pool, service or source intake. [Full method, contrary cases, counts, costs and limits](evaluations/2026-10-18-completed-night-release.md).

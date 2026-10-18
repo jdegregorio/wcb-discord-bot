@@ -1,61 +1,18 @@
-# Current priority,2026-10-17 21:00 Pacific
-
-H94 completed-night regional public context is selected after real owner/gateway
-baseline reproduction and both planning phases. It extends useful read-only context,
-without image generation or a new human trait. Acceptance remains pending.
-Next H93 visual variety/trail-camera wildlife,then independently qualified H92
-abstract/emotional/amplified-humor utility and broader native discussion/pixels.
-Prior rejected cohorts/closed native pattern gate remain; scheduled mornings and
-requested scenes continue. Privacy,withdrawal,scope,18/2/20guard and cadence unchanged.
-[Evidence,dependencies,acceptance and uncertainty](evaluations/2026-10-17-completed-night-study.md).
-This current order supersedes historical next-step snapshots below.
-
 # Prioritized Trubot backlog
 
-Updated 2026-10-17 17:00 Pacific. [Evidence and decision](evaluations/2026-10-17-requested-scenes-study.md).
+Updated 2026-10-18 01:00 Pacific. [Research,method,results and limitations](evaluations/2026-10-18-completed-night-release.md).
 
-1. H94 region-aware completed-night public context. So outdoor questions can use
-   bounded relevant observations instead of a generic capability disclaimer. Evidence:
-   one uncontrolled development exchange, excluded from controlled tests. Unvalidated.
-   Depend on separating lookback from morning publishing, clear region/clarification,
-   typed temporal/cloud coverage and unchanged source/budget boundaries. Accept matched
-   current/past/missing-region/outage/future/recipient cases plus real private gateway;
-   never infer a local sighting from opportunity. Reject unsupported timing/sighting or
-   irrelevant calls. Confidence in gap high, remedy usefulness unresolved. Operating
-   impact: free NOAA/NWS plus bounded existing text continuation, no new allowance.
+1. Reconcile H95 private outdoor wakeups and seasonal generated scenes, with H93 visual variety. So Trubot can quietly gather context and occasionally share useful U.P. life pictures. Evidence: the separate interrupted human-steered increment, its reproduced text-only scene request, and four recovered generated previews. Dependencies: rebase its uncommitted source on 2.32.0, inspect pixels, shared durable paid transaction, timing/quiet-hours/withdrawal gates, no forecast-as-sighting, restart and budget acceptance. Accept real owner/gateway seasonal image plus quiet no-image decisions, no duplicate attempt after restart and honest generated origin. Provider and gateway tests must establish usefulness separately from character fidelity. Confidence: requested capability high, engagement/voice value unvalidated. Operating impact: roughlyUSD 0.04-0.05 per image within existing allowance; no new service. Preserve recovered assets before cleanup. A missing accessible sighting-confirmation source keeps automatic aurora claims closed.
 
-2. H93 scene/caption variety, then generated trail-camera wildlife. User benefit:
-   useful outdoor visual breadth. Rationale: first requested-scene capability closes
-   a reproduced gap; general engagement remains unmeasured. Dependencies: original
-   source/context/pixel study, relevant timing and shared paid transaction. Acceptance:
-   actual pixels and private gateway, varied concise captions, no invented photo
-   ownership/sighting/biography, no unsolicited repetition. Validation: independent
-   contextual comparisons and source-separated human references. Confidence: direction
-   high, behavioral value unresolved. Operating estimateUSD0.04-0.05/image, same cap.
-3. H92 qualified abstract/emotional/humor utility. Benefit: better context-sensitive
-   care and comic mechanisms. Dependencies: separate authenticated supports/contrary
-   examples and independent held-out usefulness. Prior weak controls remain contrary;
-   rejected cohorts stay rejected and automatic native patterns stay closed. Accept
-   actual handler/gateway benefit without invented memories/catchphrase repetition.
-   Existing maintenance allowance only; operating benefit/cost unresolved.
-4. Broader attributed native peer/reply/thread and original visual history. Benefit:
-   better interpretation where missing setup affects the chosen acceptance scenario.
-   Dependencies: explicit bounded coverage/lifecycle design. Accept linked attribution,
-   access/correction/deletion/withdrawal, actual pixel inspection and useful retrieval;
-   incremental volume/latency measurements before expansion. Coverage is incomplete,
-   not an indefinite prerequisite to the tools/visual roadmap. No new paid service.
+2. H92 independently qualified abstract/emotional/amplified-humor utility. So relevant episode mechanisms guide warmth, brevity and novel jokes. Evidence: current source-recap/third-person recall partial, bounded triage flags and prior rejected cohorts. Dependencies: separate authenticated human supports/contrary cases, source freshness, context applicability and independent held-out usefulness. Accept semantic before/after gains in matched real handler/gateway cases without invented biography, compulsory catchphrases, insensitive timing or routine date metadata. Native automatic-pattern gate and rejectedH72/H74/H83a remain closed. Confidence: unresolved; single-model triage is not validation. Existing maintenance allowance only; operating benefit/cost unmeasured.
 
-Current H91a requested scenes /2.31.0 deployed: durable per-request paid claims,
-frozen authorization, fresh permission/withdrawal checks, conservative cooldown/cap,
-actual attachment/provenance acceptance. Full results belong in study/progress.
-H90/2.30.0 completed: protected PR/main/imageCI and healthy immutable deployment;
-fresh owner/gateway live observations now verified, reconciling the interrupted run.
-H89/2.29.1 scheduled mornings remain active; first natural opportunity is observation.
+3. Broader attributed native peer/reply/thread discussion and original visual history where chosen acceptance demonstrates the need. So missing setup does not distort memory and humor interpretation. Dependencies: bounded coverage/lifecycle design and actual pixels for image-dependent interpretation. Accept linked attribution, access/edit/delete/withdrawal handling, honest coverage gaps and useful retrieval with measured volume/latency. Current recent target intake works; full history is incomplete. No added paid service or assumed human trait.
 
-Material privacy/grounding/duplicate/budget regressions change this order. Preserve
-bot identity/current runtime scope and six fresh local01/05/09/13/17/21Sol/xhigh runs.
+## Completed capabilities
 
-H91a is complete: actual installed image and new-process duplicate checks pass;
-10controlledcases/9posts/1abstention, one broad-recall voice partial. Runtime index
-0ceee253/source10ef140 matches all37modules, healthy. No general character gain.
-See [final evidence](evaluations/2026-10-17-requested-scenes-release.json).
+- H94 / 2.32.0: bounded completed-night NOAA/NWS regional context, deterministic missing-location instruction selection, preserved current lookup and source/budget boundaries. Reconciles interrupted PR151. Functional improvement measured separately from naturalness partial; no new human trait.
+- H91a / 2.31.0: actual requested aurora attachment, generated provenance, persistent paid claims/cooldown/cap and source/permission/withdrawal checks.
+- H90 / 2.30.0: selective current public context tools with bounded accounted continuation.
+- H89 / 2.29.1: scheduled morning aurora capability. First natural qualifying opportunity remains unobserved. H95 may supersede opportunity-only automatic publishing after its own tested release; do not treat uncommitted work as deployed.
+
+Material grounding/privacy/spending regressions take priority. Preserve rejected pattern cohorts, closed native gate, working recent intake and the six-run schedule.

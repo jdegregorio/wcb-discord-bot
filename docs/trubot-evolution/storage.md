@@ -1244,3 +1244,18 @@ claims prevent automatic repeats, not a false promise of exactly-once delivery.
 Rollback to2.30.0 ignores the new file and preserves both spending and source state.
 Private validation receipts remain content-free0700/0600with existing seven-day manual
 retention and withdrawal cleanup; preserve only references/pass/fail, not answer text.
+
+## Completed-night public context, 2.32.0
+
+The read-only night skill adds no persistent store or migration. Typed NOAA/NWS
+observations are ephemeral and never enter human learning. Missing cloud fields,
+partial reports and unknown visibility remain explicit in the internal packet.
+The latest completed Detroit-time night is independent of morning publication.
+One selected execution and its existing model continuation share the same usage
+ledger. No image, allowance, source intake or participation change is added.
+Code rollback to 2.31.0 is data-compatible; preserve all source, operational and
+spending state. This run's content-free references, hashes and rubric flags use
+smoke-tests/2026-10-18-0100 under existing 0700/0600 permissions, manual seven-day
+retention and withdrawal cleanup. No raw exchange, answer or personal derivation
+is retained there. Four interrupted H95 generated previews were hash-preserved
+outside the container before its temporary filesystem was replaced.

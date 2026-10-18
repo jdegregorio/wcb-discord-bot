@@ -1,41 +1,11 @@
-# Current priority,2026-10-17 21:00 Pacific
-
-H94 completed-night regional public context is selected after real owner/gateway
-baseline reproduction and both planning phases. It extends useful read-only context,
-without image generation or a new human trait. Acceptance remains pending.
-Next H93 visual variety/trail-camera wildlife,then independently qualified H92
-abstract/emotional/amplified-humor utility and broader native discussion/pixels.
-Prior rejected cohorts/closed native pattern gate remain; scheduled mornings and
-requested scenes continue. Privacy,withdrawal,scope,18/2/20guard and cadence unchanged.
-[Evidence,dependencies,acceptance and uncertainty](docs/trubot-evolution/evaluations/2026-10-17-completed-night-study.md).
-This current order supersedes historical next-step snapshots below.
-
 # Trubot roadmap
 
-Current order, 2026-10-17 17:00 Pacific:
+Current order, 2026-10-18 01:00 Pacific. H94 / 2.32.0 completed-night lookups are deployed after finishing interrupted PR151. Fresh matched positives improve0/3 to 3/3 useful results; real installed observations and clarification work. Naturalness retains sighting caveats. No general character/engagement gain is claimed.
 
-H91a requested scenes /2.31.0 is deployed and verified: actual image, private gateway,
-new-process duplicate suppression and source-matched health. H90 current tools and
-H89 scheduled mornings remain. No general character gain is claimed.
+1. Reconcile unfinished H95 private outdoor planning and seasonal scenes, plusH93 variation/trail-camera wildlife. Rebase its isolated work on 2.32.0, inspect recovered pixels and pass quiet/no-image, paid-claim/restart, timing/budget and real gateway acceptance. Automatic aurora claims require a separately validated accessible confirmation source.
+2. H92 independently qualified abstract personality, emotional engagement and approved creative humor amplification. Use attributed separate human support/contrary contexts and held-out semantic benefit; current source-recap voice and weak controls remain open.
+3. Broader native peer/reply/thread and original visual coverage when measured acceptance requires it. Full history remains incomplete.
 
-1. H94 region-aware completed-night public context. One uncontrolled development
-   exchange exposes a current-only skill gap. Unvalidated: require bounded public
-   temporal/region coverage, appropriate clarification, no sighting inference and
-   matched plus actual gateway acceptance before implementation/release.
+Preserve bot identity/runtime scope/no DMs, source lifecycle/withdrawal,USD 20 monthly guard and six fresh local01/05/09/13/17/21Sol/xhigh runs. Rejected cohorts and automatic native-pattern gate stay closed. A rewrite remains available with evidence; literal quote/date work is secondary absent material regression.
 
-2. H93 richer scene/caption variety and generated trail-camera wildlife. Validate
-   original sharing/pixel context, useful timing and independent gateway reception.
-3. H92 qualified abstract personality/emotional engagement/amplified humor, then
-   broader native peer/reply/thread/original visual coverage where acceptance needs it.
-   Human attribution, contrary cases and held-out usefulness remain prerequisites.
-   No new trait is inferred from bot tests, public weather or generated pictures.
-
-H89 scheduled aurora mornings remain enabled; first natural opportunity is a
-non-blocking observation. Existing recent target intake works; full peer history is
-incomplete. Prior rejected cohorts stay rejected and native pattern gate stays closed.
-Literal quote/date repairs are secondary absent material grounding/privacy failures.
-An architectural rewrite remains available when matched evidence supports it.
-Preserve bot identity/current runtime scope/no DMs, source lifecycle/withdrawal,
-USD20monthlycap, six fresh local01/05/09/13/17/21Sol/xhigh runs and notifications.
-[Plan](docs/trubot-evolution/plan.md), [backlog](docs/trubot-evolution/backlog.md),
-[current study](docs/trubot-evolution/evaluations/2026-10-17-requested-scenes-study.md).
+[Plan](docs/trubot-evolution/plan.md),[backlog](docs/trubot-evolution/backlog.md),[current evidence](docs/trubot-evolution/evaluations/2026-10-18-completed-night-release.md).
