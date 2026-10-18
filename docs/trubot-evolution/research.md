@@ -2860,3 +2860,14 @@ H92 abstract/humor utility remains unresolved; prior rejected cohorts stay rejec
 Fresh private provider audit was auto-review rejected,not executed/retried;local
 content-free census substitutes coverage evidence only,not a fresh human-held-out
 quality result. [Predeclared method/results](evaluations/2026-10-17-context-tools-study.md).
+
+
+## H91a/H93/H92, 2026-10-17 17:00
+
+Real2.30.0owner/gateway reproduces missing requested-image capability,zero attachments.
+Prior H90 installed lookup acceptance recovered. Select H91a with predeclared matched
+controls,pixel inspection,durable paid claims and fresh permission/withdrawal checks.
+H93visual variety/wildlife and H92abstract/humor utility remain exploratory. Local-only
+4window/1export historical audit,2missing-visual exclusions;zero7dayleaguebot activity.
+No new human trait or fresh provider-assisted private audit.
+[Both planning phases and acceptance](evaluations/2026-10-17-requested-scenes-study.md).

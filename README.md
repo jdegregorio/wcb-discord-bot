@@ -1,5 +1,22 @@
 # Trubot
 
+## Requested U.P. aurora scenes (2.31.0)
+
+Ask directly, for example: `🤖 Generate an original northern-lights picture over
+Lake Superior near Marquette.` Trubot can create one generated scene near Marquette,
+Munising or the Keweenaw, with a short caption and clear generated-origin label.
+This is an imagined illustration. It does not establish a sighting or photo ownership.
+The first skill accepts simple complete scene requests; edits, reference photos,
+extra subjects and unsupported modifiers continue through ordinary conversation.
+
+Initialize private operational state once with `trubot-scenes init`. It lives beside
+learning state as `requested-scenes.sqlite3`. Missing/unsafe state prevents image calls.
+Requests share a ten-minute global cooldown, three requested attempts per UTC day and
+the existing monthly spending guard. Duplicate, failed or ambiguous requests never
+regenerate automatically. Existing scheduled mornings retain their own timing rules.
+See [the study](docs/trubot-evolution/evaluations/2026-10-17-requested-scenes-study.md)
+and [operations](docs/trubot-evolution/storage.md).
+
 ## Selective current U.P. context (2.30.0)
 
 Ask Trubot directly to check current sky conditions or northern-lights activity near

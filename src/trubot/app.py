@@ -23,6 +23,7 @@ from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningStore, LearningUnavailable
 from trubot.openai_responder import OpenAITruaxResponder
 from trubot.participation import ParticipationPolicy, ParticipationTracker
+from trubot.requested_scenes import RequestedScenes, SceneStore
 from trubot.up_conditions import UPConditionsSkill
 
 logger = logging.getLogger(__name__)
@@ -86,6 +87,11 @@ def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> Tr
             )
             if settings.aurora_channel_id
             else None
+        ),
+        scenes=RequestedScenes(
+            SceneStore(settings.learning_store_path.with_name("requested-scenes.sqlite3")),
+            AuroraImageGenerator(openai_client, budget),
+            spending_purpose,
         ),
         participation=participation,
         attention=attention,

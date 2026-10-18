@@ -11,7 +11,7 @@ from dataclasses import dataclass
 from openai import AsyncOpenAI
 from PIL import Image
 
-from trubot.aurora import Opportunity
+from trubot.aurora import REGIONS, Opportunity
 from trubot.budget import IMAGE_MODEL, BudgetUnavailable, UsageLedger
 
 
@@ -23,10 +23,16 @@ class AuroraImage:
 
 
 def image_prompt(opportunity: Opportunity) -> str:
+    return scene_prompt(opportunity.region)
+
+
+def scene_prompt(region: str) -> str:
+    if region not in {item.name for item in REGIONS}:
+        raise ValueError("Unapproved public scene region")
     # Only closed public region names enter the prompt. No human corpus or source photos.
     return (
         "Create an original photorealistic landscape illustration of northern lights over "
-        f"Michigan's Upper Peninsula near {opportunity.region}, looking north over Lake Superior. "
+        f"Michigan's Upper Peninsula near {region}, looking north over Lake Superior. "
         "A quiet rocky shoreline, dark conifers at the edge, realistic modest green aurora "
         "curtains near the northern horizon, clear stars and cold lake water. Natural long "
         "exposure appearance, restrained saturation, plausible geography and scale. No people, "
@@ -41,7 +47,32 @@ class AuroraImageGenerator:
         self.ledger = ledger
 
     async def generate(self, opportunity: Opportunity, *, purpose: str = "runtime") -> AuroraImage:
-        prompt = image_prompt(opportunity)
+        image = await self._generate(image_prompt(opportunity), purpose=purpose)
+        return AuroraImage(
+            image,
+            "Pretty good excuse to look north.\n"
+            "-# AI-generated U.P. scene inspired by favorable conditions near "
+            f"{opportunity.region} "
+            "last night. A viewing opportunity, not a confirmed sighting.",
+            "AI-generated illustration: green northern lights above Lake Superior, a rocky "
+            "Upper Peninsula shoreline and dark conifers. Not a photograph of last night.",
+        )
+
+    async def generate_requested(self, region: str, *, purpose: str = "runtime") -> AuroraImage:
+        image = await self._generate(scene_prompt(region), purpose=purpose)
+        return AuroraImage(
+            image,
+            {
+                "Marquette": "Lake Superior showing off.",
+                "Munising": "Would sit here for a while.",
+                "the Keweenaw": "Pretty good excuse to look north.",
+            }[region]
+            + f"\n-# AI-generated scene near {region}.",
+            f"AI-generated illustration of imagined northern lights over Lake Superior near "
+            f"{region}, with a rocky shoreline and dark conifers. Not a real photograph.",
+        )
+
+    async def _generate(self, prompt: str, *, purpose: str) -> bytes:
         reservation = await asyncio.to_thread(
             self.ledger.reserve_image, prompt_bytes=len(prompt.encode()), purpose=purpose
         )
@@ -88,12 +119,4 @@ class AuroraImageGenerator:
             if image.format != "PNG" or image.size != (1536, 1024):
                 raise ValueError("Unexpected generated image format")
             image.verify()
-        return AuroraImage(
-            data,
-            "Pretty good excuse to look north.\n"
-            "-# AI-generated U.P. scene inspired by favorable conditions near "
-            f"{opportunity.region} "
-            "last night. A viewing opportunity, not a confirmed sighting.",
-            "AI-generated illustration: green northern lights above Lake Superior, a rocky "
-            "Upper Peninsula shoreline and dark conifers. Not a photograph of last night.",
-        )
+        return data

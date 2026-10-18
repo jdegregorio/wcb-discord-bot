@@ -4885,3 +4885,37 @@ attempts/estimatedUSD0.003893375since census;legacyunsettled1unchanged,no fresh 
 
 Protected PR/main CI,immutable image publication,deployment and real private gateway
 acceptance pending. Full method/results in [study](evaluations/2026-10-17-context-tools-study.md).
+
+
+## 2026-10-17 17:00 Pacific: requested aurora scenes, H91a
+
+Base7c5f6db74915dc0f31cf4e6a499e43a3ad3c47ef; fetched main first, new managed
+worktree and unique feature/trubot-daily-20261017-1700. Primary dirty checkout untouched.
+Reconciled prior interrupted2.30.0run: PR148,PR/main/imageCI succeeded, immutable
+healthy production verified, and a fresh real owner/gateway current conditions answer
+uses the installed tool. Its remaining end-to-end regression controls follow this run.
+No overlapping evolution PR; eight dependency PRs remain separate.
+
+Both planning phases precede implementation. Real image request baseline returns a
+capability disclaimer/text prompt,zero attachments. Select H91a requested scenes with
+predeclared durable claims,source/permission/withdrawal,actual pixels and real gateway
+acceptance. H93visual breadth/variation is next; H92qualified abstract/humor utility
+and needed native coverage follow. No new human trait/private provider study.
+[Method and results](evaluations/2026-10-17-requested-scenes-study.md).
+
+All six initial local gates pass:1,651tests,97.11%branch-inclusive coverage,37typed
+modules,2.31.0build. Two new-test fixture mistakes (reserved parameter and field name)
+corrected before passing. No accepted test failure/flakiness. Pixel/provider comparisons,
+protected release and installed acceptance remain pending at this entry.
+
+
+H91a prototype: same3public/syntheticrequests,baseline0/3attachments versus3/3actual
+candidatePNGassets;3/3duplicates suppressed. Pixels inspected3/3plausible/clean.
+Three maintenance imagesUSD0.12516,24.456-27.077seach; baseline text1.686-2.577s.
+No Andrew-photo fidelity or general character/engagement gain inferred.77new tests
+cover selection,normal modes,durable concurrent claims,source lifecycle and mutable
+Discord cache authorization. Final full gates and installed actual delivery remain.
+
+Final caption-reviewed feature gates all pass:1,655tests/97.11%coverage/37typed
+modules/build2.31.0.77new tests; no accepted failure/flakiness. Protected release
+and actual installed private gateway image acceptance remain pending.
