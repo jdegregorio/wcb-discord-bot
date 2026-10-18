@@ -1,3 +1,24 @@
+# Current ordering, 2026-10-18 09:00 Pacific
+
+H98 semantic photo delivery and source-lifecycle race correction are active in the
+human follow-up and must finish before another release/deployment or owner UI
+validation. H99 follows as a justified original-view coverage increment: a bounded
+operator-only backward photo scan, independent of recent intake and provider studies.
+Evidence: seven omitted older target photo posts in a 549-message authenticated probe.
+Accept restart-safe descending checkpoints, current access/source/withdrawal, bounded
+original-byte capture and honest partial coverage. Dependencies: H98 lifecycle fix,
+existing private archives/photo memory. Confidence in coverage gap high; composition
+and character utility unvalidated. Zero direct provider cost; later studies keep
+existing pacing and 18/2/20 limits.
+
+Then qualify H93/H92 original-view/abstract/emotional/amplified-humor utility with
+independent held-outs, observe H93 timing/variety, and research H96 accessible local
+confirmation. Automatic aurora and native pattern gates remain closed; H97 context
+clarification remains unresolved. No schedule, model, notification or spending change.
+Earlier next-step text below is historical where superseded by this order.
+
+[H99 evidence and acceptance](docs/trubot-evolution/evaluations/2026-10-18-photo-history.md).
+
 # Trubot roadmap
 
 Current order,2026-10-18 human follow-up. H94/2.32.0 is deployed. H95 private outdoor planning and rare fictional seasonal scenes are deployed as2.33.0 with actual quiet-wake/image/restart acceptance. Automatic aurora requires a separately validated confirmation source. No general fidelity or engagement gain is claimed. One actual no-location clarification is incomplete; H97 tracks the unresolved contextual cause without an unvalidated patch.

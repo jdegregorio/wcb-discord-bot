@@ -1327,3 +1327,39 @@ Existing archive correction/deletion/withdrawal/recovery controls remain authori
 Photo transport/decode and denied-history gaps retain at most256content-free source
 references/reason classes; failed downloads advance rather than blocking future
 photos. Repair/retry is explicit operator work. No raw excerpts or URLs enter logs.
+
+## Operator original-photo history (H99 candidate)
+
+`trubot-photo-history init` explicitly adds `photo_history` to the existing private
+archives.sqlite3 under the source lock. It requires initialized photo memory and
+pins a separate backward cursor before the recent-intake floor. Reinitialization
+never advances or resets existing checkpoints. `scan --pages 1` is the default;
+1-6 pages, 100 messages/page and two candidate capture attempts/run are hard limits,
+with 90-second outer and bounded HTTP/download timeouts. `status` exposes counts,
+closed state labels and incomplete coverage, without source identifiers or text.
+
+A separate private nonblocking process lock keeps overlapping operator scans out;
+ordinary replies and recent learning remain available. Current pinned identity,
+guild roles, channel permissions and source checks govern each page/capture.
+A short/empty page needs another permission check before exhaustion. Denied pages
+remain open gaps. Failed downloads record content-free source gaps and advance;
+retry is explicit operator work. Capacity stops before an unprocessed candidate,
+rather than pretending that all history was captured. Checkpoints compare the prior
+cursor, descend only, and rotate channels fairly across restarts. No gateway,
+readiness heartbeat, provider call or Discord write belongs to this command.
+
+Only pinned-human first supported attachments from the existing configured source
+text channels enter existing photo memory. Its 128-photo limit, source-only context,
+original hashes, edit/delete/suppression, withdrawal and later fresh reference checks
+remain authoritative. Threads, additional attachments, peer episodes and complete
+historical retention are not supplied. No person or human preference is inferred
+from ingestion or a filename. Recovered profiles remain pending; existing four/day
+maintenance claims and shared 18/2/20 spending guard govern any later pixel studies.
+
+Checkpoints share archive backup/deletion/withdrawal behavior. The empty operational
+lock carries no personal content. Code rollback ignores the additive table; never
+restore source, spending or operational-claim state. This is explicit operator work,
+not a new bulk job in the runtime worker. Private content-free validation receipts
+use smoke-tests/2026-10-18-0900 with existing 0700/0600 permissions, seven-day manual
+retention and withdrawal cleanup. Original pixel study copies stay outside Git and
+receipt directories, in approved private temporary storage.

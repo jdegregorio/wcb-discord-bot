@@ -2941,3 +2941,20 @@ Candidate implementation, not yet released or validated. Then broaden original-v
 coverage/held-out frame utility within H93/H92, independently qualify abstract/humor
 benefit, and seasonal timing. H96 confirmation remains exploratory/closed; H97
 clarification unresolved. Existing privacy, learning and spending gates unchanged.
+
+## H99: original-photo backward coverage, 2026-10-18 09:00 Pacific
+
+[Predeclared protocol](evaluations/2026-10-18-photo-history.md). Authenticated bounded
+older-history probe: three source text channels, 549 messages, 46 target messages,
+nine target attachment-photo posts; seven absent from photo memory and outside the
+earliest-100 scan. Two already stored. No provider calls or Discord writes. H99a is
+justified enabling work: independent descending checkpoints, bounded operator-only
+capture through the existing source lifecycle. H99b composition/character utility
+remains exploratory. H98 semantic delivery/race correction in another active chat
+must complete first; no overlapping deployment or owner UI probes.
+
+Character triage: four attributed human windows/eight actual development pairs;
+eight flags, insufficient comparison context, no general gain or new human pattern.
+One small unmatched unblinded single-model triage is not a behavioral qualification.
+Keep independent abstract/emotional/amplified-humor utility and original-view studies
+open; preserve rejected candidates and the closed native automatic-pattern gate.

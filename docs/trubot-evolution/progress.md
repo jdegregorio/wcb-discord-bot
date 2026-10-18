@@ -5085,3 +5085,19 @@ Candidate implementation, not yet released or validated. Then broaden original-v
 coverage/held-out frame utility within H93/H92, independently qualify abstract/humor
 benefit, and seasonal timing. H96 confirmation remains exploratory/closed; H97
 clarification unresolved. Existing privacy, learning and spending gates unchanged.
+
+## 2026-10-18 09:00 Pacific: H99 original-photo history
+
+Fresh fetched base cb982e9f02ff6c9e7c3331c84bf0186dacd21cef; new managed worktree
+trubot-20261018-0900 and branch feature/trubot-daily-20261018-0900. Primary checkout
+untouched. Active H98 human follow-up owns semantic photo delivery and its race fix;
+this independent operator coverage increment waits for that release/validation.
+Production 2.34.0 healthy on reverified pi5/aarch64/Ubuntu 24.04.
+
+Both planning phases, audit limitations and acceptance are in the
+[H99 protocol](evaluations/2026-10-18-photo-history.md). Seven missing older target
+photo posts in a bounded 549-message probe justify resumable source recovery. No
+new personal trait, full-history claim or measured reply-quality gain. Candidate
+adds bounded backward private archive checkpoints without changing recent intake,
+provider cadence or participation. Feature/rebased gates, CI/release/deployment,
+installed recovery, actual owner/gateway controls and final evidence remain pending.

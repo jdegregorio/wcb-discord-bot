@@ -825,3 +825,14 @@ history read. Only the selected sources are refreshed; intake cursors and unsele
 messages are untouched. Missing IDs require exact reads; denied channels stop.
 The existing6s shared deadline and source/scope/withdrawal publication checks remain.
 This reduces repeated-read pressure without adding a model call or durable cache.
+
+
+## Operator recovery of older original photos
+
+After photo memory is initialized, run `trubot-photo-history init` once, then
+`trubot-photo-history scan --pages 1` for bounded resumable older-photo recovery.
+`status` reports coverage counts and open gaps. The command only reads existing
+source text channels, captures at most two pinned-human original photos per run,
+and makes no provider calls or Discord posts. The existing study allowance,
+128-photo limit and source correction/withdrawal controls apply. Broader history
+and reply-quality benefits remain unvalidated. See [H99](docs/trubot-evolution/evaluations/2026-10-18-photo-history.md).
