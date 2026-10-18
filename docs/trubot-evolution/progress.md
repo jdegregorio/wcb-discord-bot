@@ -4911,7 +4911,7 @@ protected release and installed acceptance remain pending at this entry.
 
 H91a prototype: same3public/syntheticrequests,baseline0/3attachments versus3/3actual
 candidatePNGassets;3/3duplicates suppressed. Pixels inspected3/3plausible/clean.
-Three maintenance imagesUSD0.12516,24.456-27.077seach; baseline text1.686-2.577s.
+Three maintenance imagesUSD0.12514,24.456-27.077seach; baseline text1.686-2.577s.
 No Andrew-photo fidelity or general character/engagement gain inferred.77new tests
 cover selection,normal modes,durable concurrent claims,source lifecycle and mutable
 Discord cache authorization. Final full gates and installed actual delivery remain.
@@ -4983,7 +4983,7 @@ and notifications unchanged.
 
 Observed run window:24new settled attempts,estimatedUSD0.17429243,including the one
 uncontrolled development exchange. Maintenance6attempts/USD0.125568865; runtime18/
-USD0.048723565. Four images totalUSD0.16688. CoveredOctober2,306attempts/USD0.640949095;
+USD0.048723565. Four images totalUSD0.16685. CoveredOctober2,306attempts/USD0.640949095;
 one unchanged legacy unsettled reservation,zero new unsettled. Existing18/2/20guard,
 no new paid service/provider pool. Estimates are not provider billing and pre-guard
 spend remains unknown. Content-free private refs/pass/fail receipts remain0700/0600

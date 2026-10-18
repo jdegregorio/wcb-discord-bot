@@ -128,7 +128,7 @@ rootfs failed before experiments/provider calls; switched to stdin extraction in
 existing writable ephemeral mount, no rootfs weakening. Three maintenance image calls
 plus three synthetic baseline text calls complete. Prototype ledger delta also includes
 one concurrent ordinary gateway care response:7settledattempts/USD0.125886825.
-Three image calls totalUSD0.12516. No new unsettled reservation; legacy1unchanged.
+Three image calls totalUSD0.12514. No new unsettled reservation; legacy1unchanged.
 CoveredOctoberafterprototypeUSD0.59447174/2,292attempts. Not provider billing; pre-guard
 spend unknown. SameUSD18runtime/2maintenance/20monthlyguard. Three requested images per
 day plus one possible scheduled morning estimate roughlyUSD5.01per30days at this sample
@@ -212,7 +212,7 @@ and notifications unchanged.
 
 Observed run window:24new settled attempts,estimatedUSD0.17429243,including the one
 uncontrolled development exchange. Maintenance6attempts/USD0.125568865; runtime18/
-USD0.048723565. Four images totalUSD0.16688. CoveredOctober2,306attempts/USD0.640949095;
+USD0.048723565. Four images totalUSD0.16685. CoveredOctober2,306attempts/USD0.640949095;
 one unchanged legacy unsettled reservation,zero new unsettled. Existing18/2/20guard,
 no new paid service/provider pool. Estimates are not provider billing and pre-guard
 spend remains unknown. Content-free private refs/pass/fail receipts remain0700/0600
