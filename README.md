@@ -1,3 +1,11 @@
+## Conversational source photos (2.35.0)
+
+Ask to see a recalled photo, including a short follow-up such as `Can I see?`.
+The model can retrieve the original, inspect its pixels and attach it with a short
+caption. Current source, requester, channel access and withdrawal checks apply.
+Missing photos remain unavailable. This does not create another source photograph
+or infer an exact capture date. [Validation](docs/trubot-evolution/evaluations/2026-10-18-semantic-photo-release.md).
+
 # Last-night U.P. context (2.32.0)
 
 Ask directly, for example: `🤖 Were Marquette conditions favorable for northern

@@ -5085,3 +5085,30 @@ Candidate implementation, not yet released or validated. Then broaden original-v
 coverage/held-out frame utility within H93/H92, independently qualify abstract/humor
 benefit, and seasonal timing. H96 confirmation remains exploratory/closed; H97
 clarification unresolved. Existing privacy, learning and spending gates unchanged.
+
+
+## H98d current priority,2026-10-18 human follow-up
+
+First-person source pixels and original-frame generation are deployed as2.34.0,
+but an actual request to see a recalled photo still gets text only.2.35.0 adds a
+model-selected source-photo action to the existing harness,so indirect requests
+can produce actual attachments. Semantic intent is not a phrase grammar. Fresh
+source/pixel/request/recipient-permission checks constrain delivery.3positive/
+3negative provider cases pass;actual installed delivery remains pending. Also fix
+2reproduced asynchronous capture correction/deletion races. Both phases,criteria,
+results and limitations: [H98 study](evaluations/2026-10-18-photo-memory.md).
+
+Then improve independent abstract/humor utility and original visual coverage/
+composition qualification,plus seasonal timing. Advance general model-guided tool
+use when contextual evidence supports it. H96confirmationclosed,H97unresolved.
+Same six-run schedule,Luna runtime,private sources and18/2/20spending guard.
+
+
+## 2026-10-18 13:00 H98d reconciliation
+
+Fresh base cb982e9f02ff6c9e7c3331c84bf0186dacd21cef in a new managed worktree.
+Production2.34.0healthy. Fresh actual owner/gateway reproduces text-only photo
+follow-up. Finish interrupted PR156 in isolation; retain independent H99/PR157draft.
+Both planning phases, bounded human/bot audit, falsifiable criteria, contrary cases,
+roadmap and validation limits: [current study](evaluations/2026-10-18-semantic-photo-release.md).
+No new persona trait/general fidelity gain. Release/install acceptance pending.

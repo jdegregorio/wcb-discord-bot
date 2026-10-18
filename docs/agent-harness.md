@@ -1,3 +1,41 @@
+# Current harness direction,2026-10-18 13:00Pacific
+
+Current2026-10-18 13:00Pacific: H98a-c is deployed as2.34.0. This run
+finishes the interrupted H98d semantic original-photo action and two reproduced
+capture lifecycle races as2.35.0. Actual baseline follow-up sends zero attachments.
+No new human trait or general fidelity gain is claimed. All older priority snapshots
+are historical; this order is authoritative. [Current evidence](trubot-evolution/evaluations/2026-10-18-semantic-photo-release.md).
+
+1. Finish H98d source-photo delivery, so indirect requests receive actual verified
+   images. Require semantic positive/negative comparisons, lifecycle regressions,
+   all gates/CI and inspected actual owner/gateway delivery. Existing private
+   retrieval/18/2/20guard; high diagnosis confidence, broad intent utility unmeasured.
+2. Rebase/integrate H99 draft PR157 older-photo recovery after2.35.0, so omitted
+   original views become available.21local cases and two private original-pixel
+   inspections support enabling work; installed bounded recovery and real Discord
+   acceptance remain required. Existing access/capture/maintenance limits unchanged.
+3. Independently qualify H92/H93 abstract/emotional/amplified-humor utility and
+   original-view composition. Require attributed support/contrary episodes, held-out
+   semantic review and actual private gateway controls. Confidence unresolved;
+   no automatic native-pattern gate change or new spending pool.
+4. H93 seasonal timing/caption variety needs longitudinal opportunities and
+   sensitive-context controls. H96 confirmation remains closed pending accessible
+   fresh location/time-bound positive/negative observations. H97 clarification
+   remains unresolved pending actual-context reproduction. Same operating guard.
+
+Privacy/grounding/delivery regressions can reorder work. Preserve bot identity,
+source lifecycle/withdrawal, no DMs, runtime allowlist, generated U.P./trail-camera
+scenes, selective tools and six fresh local01/05/09/13/17/21Sol/xhigh runs.
+
+The semantic photo action uses the existing Responses harness for direct/follow-up
+turns. Intent and search query are model-selected; source identity, current access,
+request edits/age, pixel equality and withdrawal constrain execution/publication.
+One action plus one continuation sees at most two normalized images. Source-only
+freshness omits optional voice/neighborhood reads. Separate photo-capture signatures
+and deletion suppression protect asynchronous source lifecycle. This is a candidate
+until installed acceptance. Historical skill descriptions below describe their
+original release boundaries;2.34.0 already permits eligible original-frame edits.
+
 # Current status,2026-10-18 05:00Pacific
 
 H94/2.32.0 completed-night tools remain deployed. H95 private outdoor planning and rare fictional seasonal scenes are deployed as2.33.0 after final quiet-wake/image/restart acceptance. Next order: accessible H96 confirmation research, H93 observational variety/timing, then independently qualified H92 abstract/emotional/humor utility and needed native/visual coverage. Earlier next-step descriptions below are historical. [Current protocol](trubot-evolution/evaluations/2026-10-18-outdoor-checkins-release.md).
@@ -186,3 +224,13 @@ unvalidated. [Full evidence](trubot-evolution/evaluations/2026-10-17-requested-s
 H98 candidate adds source-bound historical pixels to the same responder, bounded
 private scene profiles on archives.sqlite3, and freshly checked source-frame edits.
 It does not open native abstract-pattern learning.
+
+
+2.35.0 candidate exposes show_source_photo to the model for direct and follow-up
+turns with private learning scope. The model resolves conversational intent and
+constructs a descriptive query; no phrase list decides whether to attach. One
+function action can retrieve a freshly verified original photo and supply its
+pixels before the caption continuation. Discord sends the queued photo only
+after current source,request,recipient and attachment permissions pass. Missing
+evidence cannot queue an image. The ordinary responder and existing context tools
+remain available; at most one call/continuation,shared spending/vision bounds.

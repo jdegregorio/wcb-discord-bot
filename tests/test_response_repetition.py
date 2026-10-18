@@ -30,6 +30,8 @@ class SequenceAPI:
         if isinstance(output, BaseException):
             raise output
         return SimpleNamespace(
+            status="completed",
+            output=[],
             output_text=output,
             usage=SimpleNamespace(
                 input_tokens=1000,

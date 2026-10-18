@@ -1,5 +1,36 @@
 # Trubot roadmap
 
+Current2026-10-18 13:00Pacific: H98a-c is deployed as2.34.0. This run
+finishes the interrupted H98d semantic original-photo action and two reproduced
+capture lifecycle races as2.35.0. Actual baseline follow-up sends zero attachments.
+No new human trait or general fidelity gain is claimed. All older priority snapshots
+are historical; this order is authoritative. [Current evidence](docs/trubot-evolution/evaluations/2026-10-18-semantic-photo-release.md).
+
+1. Finish H98d source-photo delivery, so indirect requests receive actual verified
+   images. Require semantic positive/negative comparisons, lifecycle regressions,
+   all gates/CI and inspected actual owner/gateway delivery. Existing private
+   retrieval/18/2/20guard; high diagnosis confidence, broad intent utility unmeasured.
+2. Rebase/integrate H99 draft PR157 older-photo recovery after2.35.0, so omitted
+   original views become available.21local cases and two private original-pixel
+   inspections support enabling work; installed bounded recovery and real Discord
+   acceptance remain required. Existing access/capture/maintenance limits unchanged.
+3. Independently qualify H92/H93 abstract/emotional/amplified-humor utility and
+   original-view composition. Require attributed support/contrary episodes, held-out
+   semantic review and actual private gateway controls. Confidence unresolved;
+   no automatic native-pattern gate change or new spending pool.
+4. H93 seasonal timing/caption variety needs longitudinal opportunities and
+   sensitive-context controls. H96 confirmation remains closed pending accessible
+   fresh location/time-bound positive/negative observations. H97 clarification
+   remains unresolved pending actual-context reproduction. Same operating guard.
+
+Privacy/grounding/delivery regressions can reorder work. Preserve bot identity,
+source lifecycle/withdrawal, no DMs, runtime allowlist, generated U.P./trail-camera
+scenes, selective tools and six fresh local01/05/09/13/17/21Sol/xhigh runs.
+
+## Historical priority snapshots
+
+# Trubot roadmap
+
 Current order,2026-10-18 human follow-up. H94/2.32.0 is deployed. H95 private outdoor planning and rare fictional seasonal scenes are deployed as2.33.0 with actual quiet-wake/image/restart acceptance. Automatic aurora requires a separately validated confirmation source. No general fidelity or engagement gain is claimed. One actual no-location clarification is incomplete; H97 tracks the unresolved contextual cause without an unvalidated patch.
 
 1. H98 first-person visual memory and original-frame reuse, selected from Joe's actual
@@ -40,3 +71,20 @@ H98 human follow-up now takes first priority: first-person visual memory and ori
 frame reuse, then visual coverage/independent abstract utility and seasonal timing.
 H96 remains closed without qualified confirmation. See
 [H98 protocol](docs/trubot-evolution/evaluations/2026-10-18-photo-memory.md).
+
+
+## H98d current priority,2026-10-18 human follow-up
+
+First-person source pixels and original-frame generation are deployed as2.34.0,
+but an actual request to see a recalled photo still gets text only.2.35.0 adds a
+model-selected source-photo action to the existing harness,so indirect requests
+can produce actual attachments. Semantic intent is not a phrase grammar. Fresh
+source/pixel/request/recipient-permission checks constrain delivery.3positive/
+3negative provider cases pass;actual installed delivery remains pending. Also fix
+2reproduced asynchronous capture correction/deletion races. Both phases,criteria,
+results and limitations: [H98 study](docs/trubot-evolution/evaluations/2026-10-18-photo-memory.md).
+
+Then improve independent abstract/humor utility and original visual coverage/
+composition qualification,plus seasonal timing. Advance general model-guided tool
+use when contextual evidence supports it. H96confirmationclosed,H97unresolved.
+Same six-run schedule,Luna runtime,private sources and18/2/20spending guard.
