@@ -1,0 +1,172 @@
+{
+  "run": "2026-10-18-1300",
+  "recorded_at": "2026-10-18T20:29:11.063667+00:00",
+  "base_sha": "cb982e9f02ff6c9e7c3331c84bf0186dacd21cef",
+  "tested_head": "9529080eac4c348be5058713570bee5151012be3",
+  "release_commit": "041d529990fc5d9be6ae3d919b9089fab08876bf",
+  "runtime_pr": 158,
+  "superseded_pr": 156,
+  "pending_separate_draft": 157,
+  "release": "v2.35.0",
+  "pr_ci": 39161832322,
+  "main_ci": 39162007529,
+  "image_ci": 39162276560,
+  "deployed_index": "sha256:71579343cde118f3f3714cf18414bc1d7385331507897acdad3cb044bbf5aa44",
+  "previous_index": "sha256:48a89f3a13623dc54374b469fd6be20012a03f62a852b9f8b63f5ee2f5346de3",
+  "quality": {
+    "tests": 1830,
+    "coverage_percent": 96.1,
+    "typed_modules": 41,
+    "all_six_feature_and_merged_gates": true,
+    "installed_modules_equal": 41
+  },
+  "intent_experiments": {
+    "integrated_initial": {
+      "passed": 7,
+      "total": 8
+    },
+    "integrated_retake": {
+      "completed": 1,
+      "source_refresh_stop": 1
+    },
+    "final_fixed_source": {
+      "passed": 8,
+      "total": 8
+    },
+    "new_wording_fixed_source": {
+      "passed": 4,
+      "total": 4
+    },
+    "limitations": [
+      "small_single_model_unblinded",
+      "fixed_source_isolates_intent_not_arbitrary_query_search"
+    ]
+  },
+  "gateway": {
+    "controlled_cases": [
+      {
+        "case": "catch_up_photo",
+        "functional_pass": true,
+        "outcome": "source_attachment"
+      },
+      {
+        "case": "indirect_photo_followup",
+        "functional_pass": true,
+        "outcome": "source_attachment"
+      },
+      {
+        "case": "text_only_reasoning",
+        "functional_pass": true,
+        "outcome": "no_attachment"
+      },
+      {
+        "case": "other_recipient",
+        "functional_pass": true,
+        "outcome": "no_reply"
+      },
+      {
+        "case": "capture_date",
+        "functional_pass": true,
+        "outcome": "brief_uncertainty"
+      },
+      {
+        "case": "photo_refusal",
+        "functional_pass": true,
+        "outcome": "text_only"
+      },
+      {
+        "case": "care",
+        "functional_pass": true,
+        "outcome": "considerate_text"
+      },
+      {
+        "case": "baseball",
+        "functional_pass": true,
+        "outcome": "supported_direct_recall"
+      },
+      {
+        "case": "broad_year",
+        "functional_pass": true,
+        "outcome": "natural_recall_year_specific_relevance_unproven"
+      },
+      {
+        "case": "requester_history",
+        "functional_pass": true,
+        "outcome": "no_source_author_misattribution"
+      },
+      {
+        "case": "fictional_humor",
+        "functional_pass": true,
+        "outcome": "brief_invited_joke"
+      },
+      {
+        "case": "alternate_photo_wording",
+        "functional_pass": true,
+        "outcome": "source_attachment_caption_grounding_partial"
+      },
+      {
+        "case": "post_client_close_current_tool",
+        "functional_pass": true,
+        "outcome": "actual_gateway_no_attachment"
+      }
+    ],
+    "source_attachments": 3,
+    "attachments_equal_inspected_normalized_source": true,
+    "photo_seconds": [
+      17.222,
+      19.844,
+      19.662
+    ],
+    "baseline_same_two_cases_seconds": [
+      6.137,
+      7.93
+    ],
+    "final_sanity_seconds": 4.14,
+    "secondary_clients_closed_before_final_sanity": true
+  },
+  "audit": {
+    "human_windows_each": 4,
+    "development_posts_each": 16,
+    "sampled_bot_posts_each": 9,
+    "pre_peculiar_flags": 3,
+    "post_peculiar_flags": 0,
+    "pre_possible_overreach_flags": 4,
+    "post_possible_overreach_flags": 1,
+    "human_comparison_sufficient": false,
+    "spontaneous_seven_day_bot_posts_in_three_latest_100_source_pages": 0,
+    "new_human_traits": 0,
+    "limitations": [
+      "unmatched_bot_cohorts",
+      "truncated_context",
+      "single_model_unblinded",
+      "no_recent_reaction_or_ambient_sample",
+      "no_general_fidelity_or_humor_multiplier_claim"
+    ]
+  },
+  "cost": {
+    "estimated_run_usd": 0.02839632,
+    "run_ledger_records": 58,
+    "zero_provider_records": 1,
+    "new_unsettled": 0,
+    "old_unsettled": 2,
+    "covered_month_estimated_usd": 1.030795415,
+    "pre_guard_spend": "unknown",
+    "same_guard_usd": {
+      "runtime": 18,
+      "maintenance": 2,
+      "total": 20
+    }
+  },
+  "limits": [
+    "dynamic_source_refresh_availability_unresolved",
+    "one_caption_object_function_description_unverified_and_more_narrative_than_requested",
+    "specific_2020_relevance_unproven",
+    "no_general_character_or_engagement_gain"
+  ],
+  "next": [
+    "integrate_rebased_H99_draft_157_with_installed_acceptance",
+    "independent_abstract_emotional_amplified_humor_and_original_view_caption_qualification",
+    "longitudinal_seasonal_timing_variety",
+    "H96_confirmation_closed_H97_unresolved"
+  ]
+}

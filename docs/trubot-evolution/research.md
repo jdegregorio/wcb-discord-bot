@@ -2968,3 +2968,28 @@ follow-up. Finish interrupted PR156 in isolation; retain independent H99/PR157dr
 Both planning phases, bounded human/bot audit, falsifiable criteria, contrary cases,
 roadmap and validation limits: [current study](evaluations/2026-10-18-semantic-photo-release.md).
 No new persona trait/general fidelity gain. Release/install acceptance pending.
+
+
+## 2026-10-18 13:00 H98d shipped and installed
+
+PR158ordinary squash merge041d529 equals tested9529080; featureCI39161832322,
+mainCI39162007529,imageCI39162276560allpass. Immutable2.35.0index71579343cde118f3f3714cf18414bc1d7385331507897acdad3cb044bbf5aa44
+is healthy/read-only/0restarts on verifiedpi5,41matchingmodules.
+All6feature+mergedgates:1,830tests/96.10%/41typed modules/build2.35.0.
+
+13real owner/gateway functional checks pass,3actual normalized source attachments
+match inspected pixels; exact unmentioned follow-up improves0to1attachment.
+Photo latencies17.222/19.844/19.662s; final current-tool sanity4.140s after all
+secondary clients close. Caption grounding/format and specific2020relevance remain
+partial. Initial7/8integrated intent comparison,one safe source-refresh stop,
+final isolated8/8and new-wording4/4are distinguished. Two4human-window/16dev-post
+audits both find general human comparison insufficient; no trait/fidelity gain.
+Estimated runUSD0.028396320; covered monthUSD1.030795415,2unchanged old unsettled.
+Same18/2/20guard; no newservice/pool/guild intake or rollback.
+
+PR156superseded/closed, H99PR157stilldraft pending rebase/fullinstalled acceptance.
+Then independent abstract/emotional/amplified-humor and original-view caption/
+composition utility, seasonal timing. H96confirmationclosed,H97unresolved.
+Repeated source-refresh availability would reorder work before retrieval expansion.
+[Detailed evidence](evaluations/2026-10-18-semantic-photo-release.md) and
+[machine-readable results](evaluations/2026-10-18-semantic-photo-release.json).

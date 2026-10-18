@@ -1,3 +1,14 @@
+# Current memory direction,2026-10-18
+
+H98d/2.35.0deployed source-photo delivery builds on existing first-person visual
+memory and source-frame reuse; no new human observation/trait is introduced.
+Next integrate H99bounded older-photo recovery with installed qualification, then
+independently validate abstract/emotional/amplified-humor utility and original-view
+caption/composition. Native peer/reply/thread depth remains a coverage gap.
+Automatic native-pattern learning remains closed. [Current plan](plan.md) and
+[release evidence](evaluations/2026-10-18-semantic-photo-release.md) supersede older
+priority snapshots below; the graph/source lifecycle contract remains authoritative.
+
 # Current roadmap direction, 2026-10-17
 
 Joe has redirected the next increments toward architecture and visual features.

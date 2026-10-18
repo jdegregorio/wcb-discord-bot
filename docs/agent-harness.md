@@ -1,40 +1,41 @@
-# Current harness direction,2026-10-18 13:00Pacific
+# Current harness,2026-10-18 13:00Pacific
 
-Current2026-10-18 13:00Pacific: H98a-c is deployed as2.34.0. This run
-finishes the interrupted H98d semantic original-photo action and two reproduced
-capture lifecycle races as2.35.0. Actual baseline follow-up sends zero attachments.
-No new human trait or general fidelity gain is claimed. All older priority snapshots
-are historical; this order is authoritative. [Current evidence](trubot-evolution/evaluations/2026-10-18-semantic-photo-release.md).
+Current2026-10-18 13:00Pacific completion: H98d is deployed as2.35.0.
+The model can retrieve and attach verified source photos in conversation. All six
+feature/merged gates pass:1,830tests/96.10%,41typed modules; CI and immutable image
+pass.13actual owner/gateway scenarios pass functional checks,3source attachments
+match inspected pixels. Caption grounding/format and specific2020relevance remain
+partial; dynamic source-refresh availability remains unresolved. No general human
+fidelity, humor multiplier or engagement gain is claimed. [Evidence](trubot-evolution/evaluations/2026-10-18-semantic-photo-release.md).
 
-1. Finish H98d source-photo delivery, so indirect requests receive actual verified
-   images. Require semantic positive/negative comparisons, lifecycle regressions,
-   all gates/CI and inspected actual owner/gateway delivery. Existing private
-   retrieval/18/2/20guard; high diagnosis confidence, broad intent utility unmeasured.
-2. Rebase/integrate H99 draft PR157 older-photo recovery after2.35.0, so omitted
-   original views become available.21local cases and two private original-pixel
-   inspections support enabling work; installed bounded recovery and real Discord
-   acceptance remain required. Existing access/capture/maintenance limits unchanged.
-3. Independently qualify H92/H93 abstract/emotional/amplified-humor utility and
-   original-view composition. Require attributed support/contrary episodes, held-out
-   semantic review and actual private gateway controls. Confidence unresolved;
-   no automatic native-pattern gate change or new spending pool.
-4. H93 seasonal timing/caption variety needs longitudinal opportunities and
-   sensitive-context controls. H96 confirmation remains closed pending accessible
-   fresh location/time-bound positive/negative observations. H97 clarification
-   remains unresolved pending actual-context reproduction. Same operating guard.
+1. Integrate H99 draft PR157 after rebasing onto2.35.0, so omitted original views
+   become available through bounded resumable operator recovery.21initial local
+   cases/two private source inspections support enabling work. Require all gates,
+   installed recovery/source lifecycle and real Discord acceptance; same guard.
+2. Independently qualify H92/H93 abstract/emotional/amplified-humor utility and
+   original-view caption/composition. So relevant concepts and views support natural
+   varied engagement. Require attributed support/contrary episodes, independent
+   held-out semantic/pixel review, minimal captions when requested and actual
+   gateway controls. One live caption adds unverified object-function detail.
+   Confidence unresolved; no automatic native-pattern gate change/new spending pool.
+3. H93 seasonal timing/variety needs longitudinal natural opportunities and
+   sensitive-context restraint. H96confirmation remains closed pending accessible,
+   fresh location/time-bound positive/negative observations. H97clarification needs
+   actual-context reproduction. Same operating guard; no event sighting claims.
 
-Privacy/grounding/delivery regressions can reorder work. Preserve bot identity,
-source lifecycle/withdrawal, no DMs, runtime allowlist, generated U.P./trail-camera
-scenes, selective tools and six fresh local01/05/09/13/17/21Sol/xhigh runs.
+Material privacy/grounding/delivery regressions reorder work. Investigate repeated
+source-refresh availability failure before broadening retrieval; one study retake
+stopped safely, none of the installed scenarios discarded. Preserve bot identity,
+attribution/withdrawal, no DMs, runtime allowlist, generated U.P./trail-camera
+direction, selective tools and six fresh local01/05/09/13/17/21Sol/xhigh runs.
 
-The semantic photo action uses the existing Responses harness for direct/follow-up
-turns. Intent and search query are model-selected; source identity, current access,
-request edits/age, pixel equality and withdrawal constrain execution/publication.
-One action plus one continuation sees at most two normalized images. Source-only
-freshness omits optional voice/neighborhood reads. Separate photo-capture signatures
-and deletion suppression protect asynchronous source lifecycle. This is a candidate
-until installed acceptance. Historical skill descriptions below describe their
-original release boundaries;2.34.0 already permits eligible original-frame edits.
+The deployed source-photo action is offered in direct/follow-up turns with existing
+learning scope. The model chooses intent/query; fixed source,request/access/pixel/
+withdrawal checks constrain execution and publication. One action and one continuation,
+bounded images, no transport retry in tool-capable turns. Existing original-frame
+edits and generated provenance remain. Capture signatures and deletion suppression
+protect asynchronous source corrections. Older skill descriptions below record their
+original boundaries; this current status supersedes historical next-step language.
 
 # Current status,2026-10-18 05:00Pacific
 

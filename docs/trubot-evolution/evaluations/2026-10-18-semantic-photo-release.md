@@ -128,3 +128,98 @@ traceback/time window; the2old uncertain reservations remain intact.
 All six final feature gates pass: locked sync,format,lint,41typed modules,
 1,830tests/96.10%branch-inclusivecoverage and2.35.0source/wheel build. Broad semantic
 and naturalness reliability remain unmeasured; real installed acceptance pending.
+
+
+### Release and initial installed acceptance
+
+Four additional new-wording controls pass4/4with the same isolated intent protocol:
+2visual requests queue originals, text-only evidence and other-recipient controls
+queue none; the latter returns no reply. This supports bounded intent capability,
+not arbitrary-query retrieval reliability or independently measured human fidelity.
+
+PR158head9529080eac4c348be5058713570bee5151012be3 passes Quality39161832322.
+Ordinary squash merge041d529990fc5d9be6ae3d919b9089fab08876bf exactly equals the
+tested tree. All six merged gates pass again:1,830tests/96.10%,41typed modules,
+locked sync/format/lint/build. MainQuality39162007529 passes. New immutable
+[v2.35.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.35.0)
+and multiarchitecture ImageCI39162276560 pass for the same commit.
+
+Scoped pi-app deployment succeeds on freshly reverified pi5/aarch64/Ubuntu24.04.4,
+index71579343cde118f3f3714cf18414bc1d7385331507897acdad3cb044bbf5aa44.
+All41installed Python hashes match, revision041d529, read-only root, healthy Discord
+readiness,0restarts. Previous2.34.0/index48a89f3a13623dc54374b469fd6be20012a03f62a852b9f8b63f5ee2f5346de3
+is retained by the existing locked transaction. No state restore,new service,
+permission bypass,sudo or unrelated-app mutation. The release timer remains active/
+enabled. An early hash read occurred while the transaction still ran2.34.0;
+repeating after transaction completion matches the correct release, not a rollback.
+
+Actual authenticated owner/gateway same catch-up request:1source JPEG/17.222s.
+Exact unmentioned show-photo follow-up:1source JPEG/19.844s versus baseline zero
+attachments/7.930s. Both257,703byte delivered images match the privately inspected
+normalized source frame exactly. This is actual source delivery, not a generated
+substitute, and pixels were inspected. Hashes/message references remain private.
+Two corresponding baseline text requests had zero attachments,6.137s/7.930s.
+The live captions are brief and first-person; wording repeats a previous closing
+phrase, so do not claim varied character voice. Latency increases in these two
+observations; no population latency estimate is inferred.
+
+Initial installed negatives pass: text-only reasoning3.627s/no attachment,
+explicit-other-recipient no reply confirmed in UI and handler decline, exact date
+briefly unknown with no invented date/photo, explicit refusal describes visible
+content without attaching, and care stays considerate with no photo. Ordinary
+baseball recall stays direct and supported without stock source/date boilerplate.
+Further controls, final post audit, ledger and client-close sanity follow.
+
+
+### Final installed controls, audit and cost
+
+13actual controlled owner/gateway scenarios pass their functional checks:
+3source-photo deliveries,9text replies and1recipient abstention. All3attachments
+match the inspected normalized source pixels. Third-photo latency19.662s.
+The final current-conditions request succeeds4.140s after every secondary client
+closes, without a photo; no later Discord client is constructed. Its content-free
+references/timestamps come from authenticated browser DOM. Heartbeat remains healthy,
+read-only,0restarts. Source hash verification itself imports no Discord client.
+
+Semantic quality remains qualified: one photo caption assigns an unverified
+function to a visible object and narrates more than requested. Record visual
+grounding/response-format quality as partial, not a perfect-caption result.
+Broad historical recall is natural and avoids stock date boilerplate, but its
+specific2020relevance is unproven. Invited fictional humor remains brief and care
+is considerate; neither establishes a humor multiplier or human character gain.
+H98d1supports source delivery and limited intent discrimination; full caption-quality
+acceptance remains unresolved. H98d2's tested recipient abstention and H98d3's
+reproduced lifecycle regressions are supported within their stated coverage.
+
+Post audit repeats4attributed human windows with16recent development posts/9bot
+posts:0peculiar/1possible-overreach flag,0third-person/metadata-gap flags. Both pre
+and post model triages explicitly find the human comparison insufficient. Cohorts
+differ, source windows are truncated and one unblinded model screens both; the
+count change is not causal character improvement. Manual actual-pixel/caption review
+finds the unverified-detail partial above. Three source channels/latest100 each
+again contain0seven-day target/bot posts. No recent spontaneous direct, follow-up,
+reaction or ambient comparison is available. Development prose never becomes human
+learning evidence. No new human trait or graph observation is introduced.
+
+Final observed covered-run ledger:58settled records,estimated USD0.028396320,
+runtime USD0.011972360 andmaintenance USD0.016423960. One record is the proven
+zero-provider source check. Covered October2,562records/USD1.030795415estimate;
+2unchanged old unsettled,0new. Same18/2/20guard, no new pool/service,not billing;
+pre-guard spend remains unknown. No image generation charge in this run.
+
+Content-free private receipts remain in the existing app-scoped smoke-tests
+directory for this run under0700/0600 and its existing manual7day retention/
+withdrawal cleanup. Local preserved receipts/logs are outside the worktree.
+No raw source excerpts or derived answer text enters those receipts or public Git.
+Temporary normalized source/delivered-pixel copies are removed after hash comparison;
+canonical authorized source storage remains governed by existing lifecycle controls.
+
+Five-minute baseline and post snapshots each show0errors/discards/unhandled
+failures, with unequal activity exposure; this is no formal error-rate comparison.
+The final whole-installed window and closeout evidence are recorded with this run.
+No rollback is required. PR156is superseded/closed; H99/PR157remains a separate draft
+requiring rebase,all gates and installed recovery/real Discord qualification.
+Prioritize independent source/pixel caption calibration with abstract/emotional/
+amplified-humor utility after that enabling recovery; no unsupported trait promotion.
+If source-refresh availability repeats under normal traffic, investigate it before
+expanding memory scope. Keep H96confirmation closed and H97clarification unresolved.
