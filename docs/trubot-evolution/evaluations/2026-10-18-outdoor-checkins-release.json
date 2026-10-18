@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-18 05:00 America/Los_Angeles",
+  "base_sha": "c5c1d3a54e728038bf4a31bd8205a5495ecce8e1",
+  "runtime_pr": 153,
+  "tested_head": "31914241f32e810156dd59bab5029d47a1a10afe",
+  "merged_sha": "1a0a26e0acaf2832aac8354cf1a94489c63558d7",
+  "version": "2.33.0",
+  "ci": {
+    "pr": 39126481359,
+    "main": 39126757726,
+    "image": 39126981458,
+    "conclusion": "success"
+  },
+  "image": {
+    "index": "sha256:b7ba9f45a7e3878f8a51da26efce67451b7cf14f8331e204e4bcbf123781ddd8",
+    "platforms": {
+      "amd64": "sha256:d83878e768c537ba50fb708722eda46e93f5936f4db54fa765a60710f88fd29f",
+      "arm64": "sha256:7a30ac9bb84b199d39da1ba5b80e4f0fc7c734579e73eb6e26bf4dee5cc6f8e1"
+    },
+    "previous_version": "2.32.0",
+    "previous_index": "sha256:421b8994245d29b448cee33e87c10e6a9f948a3b499806511b3dcaf58edf8b9f"
+  },
+  "local_gates": {
+    "all_six_pass": true,
+    "tests": 1778,
+    "branch_coverage_percent": 97.21,
+    "typed_modules": 39,
+    "merged_tree_equals_tested": true
+  },
+  "production": {
+    "host_verified": true,
+    "healthy": true,
+    "discord_ready": true,
+    "read_only": true,
+    "restarts": 0,
+    "matched_python_modules": 39,
+    "new_journal_mode": "0600",
+    "quiet_wakes": 1,
+    "quiet_next_wake_utc": "2026-10-18T16:26:56.936373+00:00",
+    "automatic_aurora": "closed_unvalidated_confirmation"
+  },
+  "hypotheses": {
+    "H95a": "supported_enabling_capability",
+    "H95b": "supported_capability_with_only_woodpile_gateway_validation",
+    "H96": "unvalidated_no_qualified_confirmation_source",
+    "general_character_gain": "not_established",
+    "natural_weekly_engagement": "unobserved"
+  },
+  "experiments": {
+    "separate_processes": 4,
+    "successful_wake_claims": 1,
+    "provider_plans": 6,
+    "quiet_restart_cases": 6,
+    "timing_controls_passed": 8,
+    "timing_controls_total": 8,
+    "recovered_previews_inspected": 4,
+    "previous_run_four_image_cost_usd": 0.16656,
+    "baseline_actual_image_attachments": 0,
+    "candidate_actual_image_attachments": 1,
+    "duplicate_replay_provider_attempts": 0,
+    "duplicate_replay_posts": 0,
+    "clarification_synthetic_samples_per_arm": 3,
+    "clarification_questions_per_arm": [
+      3,
+      3
+    ],
+    "clarification_request_payloads_identical": true,
+    "live_clarification_failure_retained": true
+  },
+  "actual_gateway": {
+    "cases": [
+      {
+        "case": "woodpile_image",
+        "attachments": 1,
+        "latency_seconds": 32.574,
+        "functional_outcome": "pass"
+      },
+      {
+        "case": "care",
+        "attachments": 0,
+        "latency_seconds": 8.397,
+        "functional_outcome": "pass"
+      },
+      {
+        "case": "care_followup",
+        "attachments": 0,
+        "latency_seconds": 3.737,
+        "functional_outcome": "pass"
+      },
+      {
+        "case": "baseball",
+        "attachments": 0,
+        "latency_seconds": 5.441,
+        "functional_outcome": "pass"
+      },
+      {
+        "case": "broad_recall",
+        "attachments": 0,
+        "latency_seconds": 4.636,
+        "functional_outcome": "pass"
+      },
+      {
+        "case": "exact_date",
+        "attachments": 0,
+        "latency_seconds": 3.09,
+        "functional_outcome": "pass"
+      },
+      {
+        "case": "requester_ownership",
+        "attachments": 0,
+        "latency_seconds": 1.872,
+        "functional_outcome": "pass"
+      },
+      {
+        "case": "invited_humor",
+        "attachments": 0,
+        "latency_seconds": 3.738,
+        "functional_outcome": "pass"
+      },
+      {
+        "case": "recipient_abstention",
+        "attachments": 0,
+        "latency_seconds": null,
+        "functional_outcome": "pass"
+      },
+      {
+        "case": "completed_night",
+        "attachments": 0,
+        "latency_seconds": 11.016,
+        "functional_outcome": "pass"
+      },
+      {
+        "case": "missing_region",
+        "attachments": 0,
+        "latency_seconds": 4.952,
+        "functional_outcome": "incomplete_missing_clarification"
+      },
+      {
+        "case": "current_conditions",
+        "attachments": 0,
+        "latency_seconds": 4.815,
+        "functional_outcome": "pass"
+      }
+    ],
+    "functional_passes": 11,
+    "incomplete_controls": 1,
+    "posts": 11,
+    "abstentions": 1,
+    "text_latency_range_seconds": [
+      1.872,
+      11.016
+    ],
+    "text_latency_median_seconds": 4.7255,
+    "additional_final_sanity": {
+      "pass": true,
+      "latency_seconds": 6.22,
+      "heartbeat_survived": true,
+      "new_client_after_sanity": false
+    },
+    "voice_partials": [
+      "third_person_historical_source_recap",
+      "unnecessary_sighting_caveat"
+    ],
+    "additional_review_gaps": [
+      "verbose_generated_image_alt_provenance",
+      "care_naturalness_not_human_qualified"
+    ],
+    "general_gain_measured": false
+  },
+  "delivered_generated_asset": {
+    "bytes": 3190163,
+    "sha256": "e218a0e32cbb23e09570316759fd004683dbf0cd17790b5b4009e394d461f3a7",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "generated_provenance": true,
+    "caption_first_line_words": 5,
+    "latency_seconds": 32.574
+  },
+  "character_audits": {
+    "source_channels": 3,
+    "target_recent": 4,
+    "peer_recent": 6,
+    "older_bot_recent": 2,
+    "spontaneous_bot_seven_days": 0,
+    "historical_eligible_target_grouped_blocks": 405,
+    "human_windows_per_audit": 4,
+    "development_pairs_per_audit": 8,
+    "method": "single_model_unblinded_triage",
+    "pre_flags": 8,
+    "post_flags": 0,
+    "both_insufficient_evidence": true,
+    "cohorts_differ_no_causal_rate_comparison": true,
+    "new_human_traits": 0
+  },
+  "observed_logs": {
+    "at": "2026-10-18T12:41:40.047265+00:00",
+    "errors": 0,
+    "warnings": 3,
+    "response_failures": 0,
+    "source_discards": 0,
+    "normal_replies": 11,
+    "requested_scene_posts": 1,
+    "outdoor_posts": 0,
+    "recipient_declines": 1,
+    "context_reads": 3,
+    "night_reads": 1,
+    "current_reads": 2,
+    "error_types": [
+      "FileNotFoundError"
+    ]
+  },
+  "cost": {
+    "at": "2026-10-18T12:41:39.471240+00:00",
+    "run_attempts": 43,
+    "run_new_unsettled": 0,
+    "run_estimated_usd": 0.05109034,
+    "purpose_usd": {
+      "runtime": 0.049798665,
+      "maintenance": 0.001291675
+    },
+    "images": {
+      "attempts": 1,
+      "estimated_usd": 0.04163
+    },
+    "covered_month": {
+      "month": "2026-10",
+      "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+      "timezone": "UTC",
+      "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+      "estimated_usd": 0.87999676,
+      "runtime_usd": 0.30653162,
+      "maintenance_usd": 0.57346514,
+      "monthly_limit_usd": 20,
+      "runtime_limit_usd": 18,
+      "maintenance_limit_usd": 2,
+      "attempts": 2464,
+      "input_tokens": 7595624,
+      "cached_input_tokens": 4958926,
+      "output_tokens": 90917,
+      "unsettled_attempts": 2,
+      "pre_guard_spend": "unknown; not included"
+    }
+  },
+  "limitations": [
+    "No confirmed aurora source; automatic event publishing closed.",
+    "No natural weekly publication observed after initial quiet week.",
+    "Only woodpile exercised through actual owner gateway; other scenes have generated previews and handler fixtures.",
+    "One live clarification control incomplete despite identical synthetic payloads and successful small replays.",
+    "No independent human-held-out fidelity or humor multiplier result."
+  ]
+}

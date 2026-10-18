@@ -4,9 +4,11 @@ Updated2026-10-18 05:00Pacific. Goal: a natural adaptive league character with u
 
 ## Current increment
 
-H95 private outdoor check-ins and fictional seasonal scenes are selected for final validation and release as2.33.0. This run reconciles preserved unfinished work on current2.32.0, retaining H94 completed-night tools. Actual woodpile request still gets text only; four prior generated previews are recovered and inspected. A durable private planner separates waking from publishing; rare seasonal scenes reuse paid image claims, and automatic aurora stays closed pending confirmed local visibility.
+H95 private outdoor check-ins and fictional seasonal scenes are deployed as2.33.0 after final validation. This run reconciles preserved unfinished work on current2.32.0, retaining H94 completed-night tools. Matched actual woodpile request changes text-only baseline to one generated image; the private production wake stays quiet and new-process replay makes no extra payment/post. Four prior previews are recovered and inspected. A durable private planner separates waking from publishing; rare seasonal scenes reuse paid image claims, and automatic aurora stays closed pending confirmed local visibility.
 
 Both phases, falsifiable acceptance, fresh character audit and limitations are in [the current study](evaluations/2026-10-18-outdoor-checkins-release.md). This is enabling capability, not measured human fidelity or engagement. No new persona trait ships. Source-recap memory voice and public lookup caveats remain unresolved.
+
+The12real controls include one incomplete no-location clarification, plus source-recap/caveat voice limitations. Matched3samples/arm have identical requests and all clarify; the actual contextual gap remains unresolved as H97. No all-controls-pass claim.
 
 ## Ordered next increments
 

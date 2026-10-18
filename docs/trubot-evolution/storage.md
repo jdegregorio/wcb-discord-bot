@@ -1283,3 +1283,12 @@ aurora, which does not satisfy the new confirmation policy. If rollback is neces
 retain that policy limitation and disable scheduled images through tracked app config
 before resuming older code. No source/graph/spending state restore. Validation uses
 private content-free smoke-tests/2026-10-17-2100-h95,0700/0600,sevendaymanualcleanup.
+
+
+Activated2.33.0on2026-10-18: initializeoutdoors.sqlite3onceafterhealthydeployment,
+0600inexisting0700volume. One actualquietwake schedulesfuture4hours; no source,
+graph,spending or existing operational store reset. Content-free receipts are in
+smoke-tests/2026-10-18-0500,0700/0600,same manual seven-day/withdrawal cleanup.
+Generated output pixels are preserved outside Git/worktrees; only their hashes and
+flags enter receipts. No raw or derived human content added. Original interrupted
+H95checkout and recovered previews remain untouched. No rollback required.

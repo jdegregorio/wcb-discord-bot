@@ -1,6 +1,6 @@
 # Trubot roadmap
 
-Current order,2026-10-18 05:00Pacific. H94/2.32.0 is deployed. H95 private outdoor planning and rare fictional seasonal scenes are reconciled and selected for2.33.0 final validation. Automatic aurora requires a separately validated confirmation source. No general fidelity or engagement gain is claimed.
+Current order,2026-10-18 05:00Pacific. H94/2.32.0 is deployed. H95 private outdoor planning and rare fictional seasonal scenes are deployed as2.33.0 with actual quiet-wake/image/restart acceptance. Automatic aurora requires a separately validated confirmation source. No general fidelity or engagement gain is claimed. One actual no-location clarification is incomplete; H97 tracks the unresolved contextual cause without an unvalidated patch.
 
 1. H96 accessible local aurora confirmation, exploratory. So timely event pictures follow actual visibility. Evidence: Joe's confirmation requirement and NOAA forecast limits; prior camera403 is an access gap. Dependencies: an accessible fresh timestamp/location-bound observation plus positive/negative visual/report cases. Accept no forecast-as-sighting, real private gateway delivery and source outage abstention. Confidence in need high, feed utility unresolved; existing ledger only, no paid service. If no source qualifies, keep event publishing closed and advance the next useful item.
 
