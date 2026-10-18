@@ -2880,3 +2880,18 @@ strict9/10with existing source-recap voice partial. No general fidelity gain/new
 H94 completed-night regional context is promoted from an uncontrolled development
 capability gap, still unvalidated; H93visual breadth/wildlife follows, then H92utility.
 [Full installed evidence](evaluations/2026-10-17-requested-scenes-release.json).
+
+
+## 2026-10-17 21:00 - H94 selected
+
+Both planning phases and acceptance precede implementation. Fresh real owner/gateway
+reproduces missing completed-night regional context on2.31.0. Select bounded typed
+read-only lookback;H93visual breadth thenH92qualified abstract/humor remain next.
+No new human trait or private provider study. [Protocol](evaluations/2026-10-17-completed-night-study.md).
+
+H94finalfeature:matched3/3regionalutility versus0/3baseline. First missing-region
+failure fixed by instruction-only selection;retake12cases allfunctional,regional
+stock sighting caveats remain a naturalness partial. Midnight completed-night gap
+fixed/tested. Final six gates1710tests/97.18%/38modules/build2.32.0pass. No new trait
+or general fidelity gain. Actual release/deployment/private gateway still pending.
+Concurrent explicit outdoor-wakeup work remains separate;recheck/reconcile main.
