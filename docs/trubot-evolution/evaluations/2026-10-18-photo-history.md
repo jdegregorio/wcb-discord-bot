@@ -97,3 +97,8 @@ No capacity/byte/pixel guard was widened. One source gap is contrary evidence to
 recovering all seven candidates. Two successful pixel inspections prove available
 source material, not production capture, ownership, preferences or composition gains.
 Raw images stay in approved private temporary storage outside Git and smoke receipts.
+
+Initial-base six gates pass: locked sync, format, lint, 41 typed modules,
+1,827 tests/96.43% branch-inclusive coverage, and the 2.36.0 package build.
+This is not final release qualification: H98's active 2.35.0 correction must finish,
+then this branch must rebase, rerun required gates and complete installed acceptance.
