@@ -187,7 +187,7 @@ _RECENT_QUERY_WORDS = frozenset(
         "exchanges",
     ]
 )
-_RECENT_QUERY_WORDS |= WINDOW_WORDS
+_RECENT_QUERY_WORDS |= WINDOW_WORDS | {"see", "seen", "spot", "spotted", "anything", "cool"}
 
 
 def recent_recall(text: str) -> bool:
@@ -247,6 +247,9 @@ def requester_context_unavailable() -> str:
 
 
 def recent_terms(text: str) -> set[str]:
+    # A regional catch-up question can describe photo posts without repeating captions.
+    if re.search(r"\b(?:UP|U\.P\.?|(?i:upper peninsula)|(?i:(?:in|the) up))\b", text):
+        text += " outdoors camp game cam lake wildlife woods"
     words = re.findall(r"[a-z]{3,}", text.casefold())
     return terms(" ".join(word for word in words if word not in _RECENT_QUERY_WORDS))
 

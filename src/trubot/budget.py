@@ -19,9 +19,10 @@ MAINTENANCE_LIMIT = 2 * NANODOLLARS
 PRICING_VERSION = "openai-standard-2026-10-06-cache-write-upper-bound"
 PRICED_MODEL = "gpt-6-luna"
 IMAGE_MODEL = "gpt-image-2"
-IMAGE_PRICING_VERSION = "openai-image-standard-2026-10-17"
+IMAGE_PRICING_VERSION = "openai-image-standard-2026-10-18-reference-input"
 # Images API, text-only generation: USD5/M text input, USD30/M image output.
 IMAGE_INPUT_RATE = 5_000
+IMAGE_REFERENCE_RATE = 8_000
 IMAGE_OUTPUT_RATE = 30_000
 IMAGE_OUTPUT_BOUND = 16_384
 # Per-token nanodollars. Uncached input includes the maximum cache-write rate.
@@ -170,17 +171,25 @@ class UsageLedger:
         amount = input_bound * INPUT_RATE + output_bound * OUTPUT_RATE
         return self._reserve_cost(model, purpose, mode, PRICING_VERSION, amount)
 
-    def reserve_image(self, *, prompt_bytes: int, purpose: str = "runtime") -> Reservation:
-        """Price only the fixed medium,1536x1024,text-only single-image workflow.
+    def reserve_image(
+        self, *, prompt_bytes: int, purpose: str = "runtime", image_tokens: int = 0
+    ) -> Reservation:
+        """Price fixed medium,1536x1024 output with at most one bounded reference.
 
         The deliberately large output bound covers the documented medium estimate.
         Unexpected usage halts the same ledger, exactly as for text generation.
         """
+        if type(image_tokens) is not int or not 0 <= image_tokens <= 80_000:
+            raise BudgetUnavailable("Reference image exceeds its priced bound")
         if type(prompt_bytes) is not int or not 1 <= prompt_bytes <= 2_000:
             raise BudgetUnavailable("Image prompt exceeds its priced bound")
         if purpose not in {"runtime", "maintenance"}:
             raise BudgetUnavailable("Unknown spending purpose")
-        amount = (prompt_bytes + 1024) * IMAGE_INPUT_RATE + IMAGE_OUTPUT_BOUND * IMAGE_OUTPUT_RATE
+        amount = (
+            (prompt_bytes + 1024) * IMAGE_INPUT_RATE
+            + image_tokens * IMAGE_REFERENCE_RATE
+            + IMAGE_OUTPUT_BOUND * IMAGE_OUTPUT_RATE
+        )
         return self._reserve_cost(
             IMAGE_MODEL, purpose, "aurora_image", IMAGE_PRICING_VERSION, amount
         )
@@ -241,16 +250,23 @@ class UsageLedger:
         return self._settle_cost(reservation, cost, tokens, expected_model=PRICED_MODEL)
 
     def settle_image(
-        self, reservation: Reservation, *, input_tokens: int, output_tokens: int
+        self,
+        reservation: Reservation,
+        *,
+        input_tokens: int,
+        output_tokens: int,
+        image_tokens: int = 0,
     ) -> int:
-        """No cached pricing or reference-image inputs in this generation path."""
-        if any(type(n) is not int or n < 0 for n in (input_tokens, output_tokens)):
+        """Separate text and image input rates; no cached pricing assumed."""
+        if any(type(n) is not int or n < 0 for n in (input_tokens, output_tokens, image_tokens)):
             self.uncertain(reservation)
             raise BudgetUnavailable("Invalid image token usage")
         return self._settle_cost(
             reservation,
-            input_tokens * IMAGE_INPUT_RATE + output_tokens * IMAGE_OUTPUT_RATE,
-            (input_tokens, 0, output_tokens),
+            input_tokens * IMAGE_INPUT_RATE
+            + image_tokens * IMAGE_REFERENCE_RATE
+            + output_tokens * IMAGE_OUTPUT_RATE,
+            (input_tokens + image_tokens, 0, output_tokens),
             expected_model=IMAGE_MODEL,
         )
 

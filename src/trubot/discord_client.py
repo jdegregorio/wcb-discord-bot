@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import asyncio
+import hashlib
 import io
+import json
 import logging
 from collections import defaultdict
 from collections.abc import Awaitable, Callable, Sequence
@@ -20,6 +22,7 @@ from trubot.budget import BudgetError
 from trubot.config import Settings
 from trubot.conversation import (
     REFERENCE_PREFIX,
+    ConversationImage,
     ConversationMessage,
     MemoryAuthorScope,
     ReplyMode,
@@ -53,6 +56,7 @@ from trubot.participation import (
     ParticipationTracker,
     SchedulingAction,
 )
+from trubot.photos import PhotoMemory
 from trubot.recall_reference import quotation_unavailable, recall_quotation
 from trubot.reply_focus import memory_followup_query
 from trubot.requested_scenes import (
@@ -108,6 +112,7 @@ class TruBotClient(discord.Client):
         distiller: GraphDistiller | None = None,
         aurora: AuroraFeature | OutdoorFeature | None = None,
         scenes: RequestedScenes | None = None,
+        photos: PhotoMemory | None = None,
     ) -> None:
         super().__init__(intents=intents, allowed_mentions=allowed_mentions)
         self._settings = settings
@@ -124,6 +129,9 @@ class TruBotClient(discord.Client):
         self._distiller = distiller
         self._memory = ContextMemory(learning.store) if learning is not None else None
         self._learning_task: asyncio.Task[None] | None = None
+        self._photos = photos
+        if photos is not None:
+            photos.client = self
         self._scenes = scenes
         self._aurora = aurora
         self._aurora_task: asyncio.Task[None] | None = None
@@ -383,6 +391,9 @@ class TruBotClient(discord.Client):
             ):
                 await asyncio.to_thread(feature.store.finish, opportunity.morning, "deferred")
                 return False
+            if image.source_check is not None and not await image.source_check():
+                await asyncio.to_thread(feature.store.finish, opportunity.morning, "deferred")
+                return False
             # Commit before sending. An ambiguous send or crash must never duplicate a claim.
             await asyncio.to_thread(feature.store.finish, opportunity.morning, "send_uncertain")
             attachment = discord.File(
@@ -469,6 +480,14 @@ class TruBotClient(discord.Client):
                 await self._learning.cycle(self)
                 if self._distiller is not None:
                     await self._distiller.cycle(self)
+                if self._photos is not None:
+                    # Photo failures cannot revoke text-learning verification or stop replies.
+                    try:
+                        await self._photos.cycle(self)
+                    except Exception:
+                        logger.warning(
+                            "Photo memory paused: private state, source or budget unavailable"
+                        )
             except Exception:
                 # Transport/library failures must pause and retry, never kill the worker
                 # or expose exception payloads containing private source data.
@@ -482,6 +501,14 @@ class TruBotClient(discord.Client):
             return
         try:
             await learning.invalidate(payload.channel_id, [payload.message_id], deleted=False)
+            if self._photos is not None:
+                await asyncio.to_thread(
+                    self._photos.store.drop,
+                    payload.channel_id,
+                    [payload.message_id],
+                    deleted=False,
+                    now=self._clock(),
+                )
             channel = self.get_channel(payload.channel_id)
             if isinstance(channel, (discord.TextChannel, discord.Thread)):
                 await learning.refresh(channel, payload.message_id)
@@ -498,6 +525,10 @@ class TruBotClient(discord.Client):
         if self._learning is not None:
             try:
                 await self._learning.invalidate(channel_id, ids, deleted=True)
+                if self._photos is not None:
+                    await asyncio.to_thread(
+                        self._photos.store.drop, channel_id, ids, deleted=True, now=self._clock()
+                    )
             except LearningUnavailable:
                 logger.warning("Learning deletion pending: private state unavailable")
 
@@ -642,12 +673,16 @@ class TruBotClient(discord.Client):
                         and not anchor.author.bot
                     ]
                 source_history = list(history)
+                memory_pixels: list[ConversationImage] = []
+                memory_image_limit = max(0, 2 - sum(len(m.images) for m in history))
                 memory = await self._memory_context(
                     channel,
                     target,
                     history,
                     requester_user_id=requester_user_id,
                     focus_author_user_id=anchor.author.id if anchor is not None else None,
+                    visual_sink=memory_pixels,
+                    visual_limit=memory_image_limit,
                 )
                 memory_scope = None
                 if memory and self._learning is not None:
@@ -669,7 +704,11 @@ class TruBotClient(discord.Client):
                     history.insert(
                         position,
                         ConversationMessage(
-                            "user", memory, origin="memory", memory_author_scope=memory_scope
+                            "user",
+                            memory,
+                            tuple(memory_pixels),
+                            origin="memory",
+                            memory_author_scope=memory_scope,
                         ),
                     )
                 if not history and target is None:
@@ -686,6 +725,8 @@ class TruBotClient(discord.Client):
                             source_history,
                             requester_user_id=requester_user_id,
                             focus_author_user_id=anchor.author.id if anchor is not None else None,
+                            visual_sink=[] if memory_pixels else None,
+                            visual_limit=memory_image_limit,
                         )
                         if memory_scope is not None:
                             scope = await self._memory_author_scope(anchor)
@@ -856,6 +897,9 @@ class TruBotClient(discord.Client):
                 if not await self._scene_request_current(channel, request, requester):
                     await asyncio.to_thread(feature.store.finish, request_key, "blocked")
                     return False
+                if image.source_check is not None and not await image.source_check():
+                    await asyncio.to_thread(feature.store.finish, request_key, "blocked")
+                    return False
                 # Commit before send. Discord.py also enforces nonce uniqueness for
                 # its internal transport retries. A new process never reopens this claim.
                 await asyncio.to_thread(feature.store.finish, request_key, "send_uncertain")
@@ -945,6 +989,8 @@ class TruBotClient(discord.Client):
         *,
         requester_user_id: int | None = None,
         focus_author_user_id: int | None = None,
+        visual_sink: list[ConversationImage] | None = None,
+        visual_limit: int = 2,
     ) -> str:
         learning, memory = self._learning, self._memory
         if learning is None or memory is None or not learning.verified:
@@ -1120,6 +1166,34 @@ class TruBotClient(discord.Client):
                     )
                 )
                 recalled = packet.text
+                if visual_sink is not None and recalled and visual_limit:
+                    # Recheck source pixels as well as text on every continuation/send.
+                    # Historical media is bound to this exact source, never the current question.
+                    collector = ImageCollector()
+                    collector.attempts = 2 - min(2, visual_limit)
+                    evidence = []
+                    for _, message_id, source in refreshed_sources:
+                        pixels, _ = await collector.collect(source)
+                        if pixels:
+                            visual_sink.extend(pixels)
+                            evidence.append(
+                                {
+                                    "source_message_id": message_id,
+                                    "pixel_hashes": [
+                                        hashlib.sha256(p.data_url.encode()).hexdigest()
+                                        for p in pixels
+                                    ],
+                                }
+                            )
+                    if evidence:
+                        recalled += "\nVERIFIED HISTORICAL SOURCE PIXELS: " + json.dumps(evidence)
+                        recalled += (
+                            " Supplied images are the historical post's actual pixels. "
+                            "They supersede neighborhood flags about missing pixels. "
+                            "Describe visible content naturally in first person. "
+                            "The post date is posting time, not the camera capture date. "
+                            "Do not claim a sighting today or narrate retrieval machinery."
+                        )
                 if lookup is not None and not recalled:
                     return quotation_unavailable()
                 return "\n".join(part for part in (recalled, voice) if part)

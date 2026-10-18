@@ -22,6 +22,7 @@ from trubot.learning import LearningStore, LearningUnavailable
 from trubot.openai_responder import OpenAITruaxResponder
 from trubot.outdoors import OutdoorFeature, OutdoorStore
 from trubot.participation import ParticipationPolicy, ParticipationTracker
+from trubot.photos import PhotoMemory
 from trubot.requested_scenes import RequestedScenes, SceneStore
 from trubot.up_conditions import UPConditionsSkill
 from trubot.up_night import UPNightLocationSkill, UPNightSkill
@@ -78,13 +79,15 @@ def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> Tr
         )
     except LearningUnavailable:
         logger.warning("Learning paused: verified private state unavailable")
+    photos = PhotoMemory(learning, responder) if learning else None
+    images = AuroraImageGenerator(openai_client, budget, photos=photos)
     return TruBotClient(
         settings=settings,
         responder=responder,
         aurora=(
             OutdoorFeature(
                 OutdoorStore(settings.aurora_store_path.with_name("outdoors.sqlite3")),
-                AuroraImageGenerator(openai_client, budget),
+                images,
                 purpose=spending_purpose,
                 planner=responder.plan_outdoor_check,
             )
@@ -93,7 +96,7 @@ def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> Tr
         ),
         scenes=RequestedScenes(
             SceneStore(settings.learning_store_path.with_name("requested-scenes.sqlite3")),
-            AuroraImageGenerator(openai_client, budget),
+            images,
             spending_purpose,
         ),
         participation=participation,
@@ -101,6 +104,7 @@ def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> Tr
         readiness=readiness,
         intents=intents,
         learning=learning,
+        photos=photos,
         distiller=GraphDistiller(learning, responder, clock=learning.clock) if learning else None,
         allowed_mentions=discord.AllowedMentions.none(),
     )

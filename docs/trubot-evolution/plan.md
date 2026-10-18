@@ -1,21 +1,61 @@
 # Trubot evolution plan
 
-Updated2026-10-18 05:00Pacific. Goal: a natural adaptive league character with useful context, abstract episode memory and worthwhile visual participation.
+Updated2026-10-18 human follow-up. Goal: a natural adaptive league character with useful context, abstract episode memory and worthwhile visual participation.
 
 ## Current increment
 
-H95 private outdoor check-ins and fictional seasonal scenes are deployed as2.33.0 after final validation. This run reconciles preserved unfinished work on current2.32.0, retaining H94 completed-night tools. Matched actual woodpile request changes text-only baseline to one generated image; the private production wake stays quiet and new-process replay makes no extra payment/post. Four prior previews are recovered and inspected. A durable private planner separates waking from publishing; rare seasonal scenes reuse paid image claims, and automatic aurora stays closed pending confirmed local visibility.
+H98 first-person visual memory and original-frame reuse is the selected2.34.0
+follow-up. The reported actual catch-up failure is reproduced; one candidate
+replay now supplies original source pixels and a brief grounded first-person
+answer. Bounded private scene/framing memory and reference-image edits pass
+local gates; CI/release/deployment and real owner/gateway verification remain open.
+[Protocol and candidate results](evaluations/2026-10-18-photo-memory.md).
 
-Both phases, falsifiable acceptance, fresh character audit and limitations are in [the current study](evaluations/2026-10-18-outdoor-checkins-release.md). This is enabling capability, not measured human fidelity or engagement. No new persona trait ships. Source-recap memory voice and public lookup caveats remain unresolved.
-
-The12real controls include one incomplete no-location clarification, plus source-recap/caveat voice limitations. Matched3samples/arm have identical requests and all clarify; the actual contextual gap remains unresolved as H97. No all-controls-pass claim.
+H95 remains complete on2.33.0. Automatic aurora confirmation,H97clarification,
+broader visual coverage,independent abstract/humor utility and natural engagement
+remain unvalidated. No new human persona trend is inferred from this correction.
 
 ## Ordered next increments
 
-1. H96 accessible local aurora confirmation, exploratory. So timely event pictures follow actual visibility. Evidence: Joe's confirmation requirement and NOAA forecast limits; prior camera403 is an access gap. Dependencies: an accessible fresh timestamp/location-bound observation plus positive/negative visual/report cases. Accept no forecast-as-sighting, real private gateway delivery and source outage abstention. Confidence in need high, feed utility unresolved; existing ledger only, no paid service. If no source qualifies, keep event publishing closed and advance the next useful item.
+1. H98 first-person visual memory and original-frame reuse, selected from Joe's actual
+reported failure. So recall answers and generated views use visible source context
+from the character's own perspective. Dependencies: existing private archives and
+verified sources. Acceptance: same-case semantic fix, source-lifecycle controls,
+bounded ongoing capture/studies, genuine reference-image edit, inspected pixels and
+actual owner/gateway tests. Confidence in diagnosis high; broader utility/coverage
+unresolved. Existing18/2/20guard; four maintenance pixel studies/day maximum.
+[Protocol](evaluations/2026-10-18-photo-memory.md).
 
-2. H93 seasonal timing and scene/caption variety, exploratory after H95. So rare fictional outdoor sharing remains relevant and avoids repetition. Evidence: four inspected generated previews and a fixed caption per subject, no longitudinal engagement result. Dependencies: natural eligible opportunities, source-separated visual study and independent utility review. Accept varied plausible pixels, brief relevant captions, sensitive-moment restraint and no invented biography or weather. Confidence in capability high, character benefit unresolved; existing image allowance, aboutUSD0.04-0.05 per sampled image.
+2. H93/H92 original-view coverage and held-out composition utility, plus independent
+abstract/emotional/amplified-humor qualification. So relevant episodes and familiar
+views improve useful natural engagement. Dependencies: separately attributed human
+support/contrary cases and original pixels. Accept semantic held-out gains, varied
+brief contextually appropriate replies/pictures, no invented beliefs/events and no
+repetitive bits. Existing source and maintenance allowances; confidence unresolved.
+Automatic native pattern gate remains closed; no general fidelity gain established.
 
-3. H92 independently qualified abstract/emotional/amplified-humor utility and needed native peer/reply/thread/original visual coverage. So supported episode mechanisms guide warm, brief and novel replies. Evidence: source-recap voice partial and insufficient contextual human comparisons. Dependencies: separate attributed supports/contrary cases, lifecycle checks and held-out usefulness. Accept semantic matched handler/gateway gains without invented beliefs, forced catchphrases or insensitive timing. Confidence unresolved; rejectedH72/H74/H83a and native automatic-pattern gate remain closed. Existing maintenance pool only; full history remains incomplete.
+3. H93 longitudinal seasonal timing/caption variety. So rare sharing fits the
+conversation. Dependencies: natural eligible opportunities and independent review.
+Accept sensitive-moment restraint, plausible varied images and no invented current
+conditions. Existing image costs/claims only; engagement benefit unvalidated.
+
+4. H96 accessible local aurora confirmation. So timely event pictures follow actual
+visibility. Prior camera403 remains an access gap. Require fresh location/time-bound
+positive and negative observations plus actual gateway tests. Confidence in need
+high, qualified feed unresolved; no paid service. Keep automatic aurora closed
+until validated. H97 contextual location clarification remains an additional
+unresolved research candidate, requiring actual-context reproduction.
 
 Preserve bot identity, allowlist/no DMs, provenance/corrections/withdrawal,USD18runtime/2maintenance/20total guard and six fresh local01/05/09/13/17/21Sol/xhigh runs and notifications. Material grounding/privacy/spending or ordinary-reply regressions can reorder work. A larger harness change remains available when evidence supports it; isolated quote/date patches are secondary.
+
+
+## Active human follow-up: H98 visual character memory
+
+H98 is first: correct first-person source recall, load actual recalled-photo pixels,
+and add bounded attributed scene/framing memory with eligible original-frame image
+edits. So ordinary recall and generated pictures use the actual shared views.
+Evidence and predeclared acceptance: [H98 study](evaluations/2026-10-18-photo-memory.md).
+Candidate implementation, not yet released or validated. Then broaden original-view
+coverage/held-out frame utility within H93/H92, independently qualify abstract/humor
+benefit, and seasonal timing. H96 confirmation remains exploratory/closed; H97
+clarification unresolved. Existing privacy, learning and spending gates unchanged.

@@ -1,13 +1,42 @@
 # Trubot roadmap
 
-Current order,2026-10-18 05:00Pacific. H94/2.32.0 is deployed. H95 private outdoor planning and rare fictional seasonal scenes are deployed as2.33.0 with actual quiet-wake/image/restart acceptance. Automatic aurora requires a separately validated confirmation source. No general fidelity or engagement gain is claimed. One actual no-location clarification is incomplete; H97 tracks the unresolved contextual cause without an unvalidated patch.
+Current order,2026-10-18 human follow-up. H94/2.32.0 is deployed. H95 private outdoor planning and rare fictional seasonal scenes are deployed as2.33.0 with actual quiet-wake/image/restart acceptance. Automatic aurora requires a separately validated confirmation source. No general fidelity or engagement gain is claimed. One actual no-location clarification is incomplete; H97 tracks the unresolved contextual cause without an unvalidated patch.
 
-1. H96 accessible local aurora confirmation, exploratory. So timely event pictures follow actual visibility. Evidence: Joe's confirmation requirement and NOAA forecast limits; prior camera403 is an access gap. Dependencies: an accessible fresh timestamp/location-bound observation plus positive/negative visual/report cases. Accept no forecast-as-sighting, real private gateway delivery and source outage abstention. Confidence in need high, feed utility unresolved; existing ledger only, no paid service. If no source qualifies, keep event publishing closed and advance the next useful item.
+1. H98 first-person visual memory and original-frame reuse, selected from Joe's actual
+reported failure. So recall answers and generated views use visible source context
+from the character's own perspective. Dependencies: existing private archives and
+verified sources. Acceptance: same-case semantic fix, source-lifecycle controls,
+bounded ongoing capture/studies, genuine reference-image edit, inspected pixels and
+actual owner/gateway tests. Confidence in diagnosis high; broader utility/coverage
+unresolved. Existing18/2/20guard; four maintenance pixel studies/day maximum.
+[Protocol](docs/trubot-evolution/evaluations/2026-10-18-photo-memory.md).
 
-2. H93 seasonal timing and scene/caption variety, exploratory after H95. So rare fictional outdoor sharing remains relevant and avoids repetition. Evidence: four inspected generated previews and a fixed caption per subject, no longitudinal engagement result. Dependencies: natural eligible opportunities, source-separated visual study and independent utility review. Accept varied plausible pixels, brief relevant captions, sensitive-moment restraint and no invented biography or weather. Confidence in capability high, character benefit unresolved; existing image allowance, aboutUSD0.04-0.05 per sampled image.
+2. H93/H92 original-view coverage and held-out composition utility, plus independent
+abstract/emotional/amplified-humor qualification. So relevant episodes and familiar
+views improve useful natural engagement. Dependencies: separately attributed human
+support/contrary cases and original pixels. Accept semantic held-out gains, varied
+brief contextually appropriate replies/pictures, no invented beliefs/events and no
+repetitive bits. Existing source and maintenance allowances; confidence unresolved.
+Automatic native pattern gate remains closed; no general fidelity gain established.
 
-3. H92 independently qualified abstract/emotional/amplified-humor utility and needed native peer/reply/thread/original visual coverage. So supported episode mechanisms guide warm, brief and novel replies. Evidence: source-recap voice partial and insufficient contextual human comparisons. Dependencies: separate attributed supports/contrary cases, lifecycle checks and held-out usefulness. Accept semantic matched handler/gateway gains without invented beliefs, forced catchphrases or insensitive timing. Confidence unresolved; rejectedH72/H74/H83a and native automatic-pattern gate remain closed. Existing maintenance pool only; full history remains incomplete.
+3. H93 longitudinal seasonal timing/caption variety. So rare sharing fits the
+conversation. Dependencies: natural eligible opportunities and independent review.
+Accept sensitive-moment restraint, plausible varied images and no invented current
+conditions. Existing image costs/claims only; engagement benefit unvalidated.
+
+4. H96 accessible local aurora confirmation. So timely event pictures follow actual
+visibility. Prior camera403 remains an access gap. Require fresh location/time-bound
+positive and negative observations plus actual gateway tests. Confidence in need
+high, qualified feed unresolved; no paid service. Keep automatic aurora closed
+until validated. H97 contextual location clarification remains an additional
+unresolved research candidate, requiring actual-context reproduction.
 
 Preserve bot identity, allowlist/no DMs, provenance/corrections/withdrawal,USD18runtime/2maintenance/20total guard and six fresh local01/05/09/13/17/21Sol/xhigh runs and notifications. Material grounding/privacy/spending or ordinary-reply regressions can reorder work. A larger harness change remains available when evidence supports it; isolated quote/date patches are secondary.
 
 [Plan](docs/trubot-evolution/plan.md),[backlog](docs/trubot-evolution/backlog.md),[current evidence](docs/trubot-evolution/evaluations/2026-10-18-outdoor-checkins-release.md).
+
+
+H98 human follow-up now takes first priority: first-person visual memory and original
+frame reuse, then visual coverage/independent abstract utility and seasonal timing.
+H96 remains closed without qualified confirmation. See
+[H98 protocol](docs/trubot-evolution/evaluations/2026-10-18-photo-memory.md).

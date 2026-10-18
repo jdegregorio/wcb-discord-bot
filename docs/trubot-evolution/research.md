@@ -2929,3 +2929,15 @@ Actual private wake quiet/routine,next4hours; actual ownerwoodpile0to1PNG,32.574
 Finalpost-clientactualgatewaysanity passes6.220seconds;heartbeat survives,no subsequent Discordclient. Observed0errors/failures/discards/restarts,11normalposts/1image/1recipientdecline,3warnings(twoexistingvoice-library,onesafepre-initjournalwarning).43newsettledattempts/estimatedUSD0.051090340,oneimageUSD0.04163,same18/2/20guard,twooldunsettled/0new. CoveredmonthUSD0.879996760estimate,notbilling,preguardunknown. Pre/postfourhumanwindows/eightdevpairs triages insufficient,notcausal. Sourcecensuszero7daybotactivity. H95complete;H96confirmationunvalidatedclosed,thenH93timing/variety,H92independentutility/neededcoverage;H97additionalresearch. SixdailySol/xhighscheduleunchanged.
 
 [Full protocol,results,costs and limits](evaluations/2026-10-18-outdoor-checkins-release.md),[public receipt](evaluations/2026-10-18-outdoor-checkins-release.json),[runtime PR153](https://github.com/jdegregorio/wcb-discord-bot/pull/153),[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.33.0). Final evidence is carried in a separate documentation-only PR after these results; runtime bytes remain the tested release.
+
+
+## Active human follow-up: H98 visual character memory
+
+H98 is first: correct first-person source recall, load actual recalled-photo pixels,
+and add bounded attributed scene/framing memory with eligible original-frame image
+edits. So ordinary recall and generated pictures use the actual shared views.
+Evidence and predeclared acceptance: [H98 study](evaluations/2026-10-18-photo-memory.md).
+Candidate implementation, not yet released or validated. Then broaden original-view
+coverage/held-out frame utility within H93/H92, independently qualify abstract/humor
+benefit, and seasonal timing. H96 confirmation remains exploratory/closed; H97
+clarification unresolved. Existing privacy, learning and spending gates unchanged.

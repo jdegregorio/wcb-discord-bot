@@ -52,7 +52,7 @@ def requested_region(content: str, *, bot_user_id: int) -> str | None:
         life = re.fullmatch(
             r"(?:(?:can|could|would|will) you |please )?(?:generate|create|draw|make)(?: me| us)? "
             r"(?:an?|one) (?:(?:original|generated|ai[- ]generated) )?"
-            r"(?P<scene>trail[- ]camera|woodpile|lake freezing|lake thawing) "
+            r"(?P<scene>trail[- ]camera|woodpile|lake view|lake freezing|lake thawing) "
             r"(?:picture|image|scene|illustration) (?:in|of) (?:the )?"
             r"(?:u\.?p\.?|upper peninsula)[.!?]?",
             text,
@@ -63,6 +63,7 @@ def requested_region(content: str, *, bot_user_id: int) -> str | None:
                 "trail-camera": "trail_camera",
                 "trail camera": "trail_camera",
                 "woodpile": "woodpile",
+                "lake view": "lake_view",
                 "lake freezing": "lake_freeze",
                 "lake thawing": "lake_thaw",
             }.get(life["scene"].lower())

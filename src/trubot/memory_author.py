@@ -28,18 +28,19 @@ def author_guidance(scope: MemoryAuthorScope | None) -> str:
         MemoryAuthorScope.OTHER_AUTHOR: (
             "The current focused message is authored by a DIFFERENT human. Andrew's words "
             "are not this speaker's words. For persona recall, use first-person persona "
-            "language or name Andrew; never assign the retrieved statements to the current "
+            "language; never assign the retrieved statements to the current "
             "speaker as 'you said', 'your view', or 'you liked'. "
         ),
         MemoryAuthorScope.UNKNOWN_AUTHOR: (
             "The focused human author's identity is UNKNOWN. Use first-person persona "
-            "language or name Andrew for supported persona recall; never assign the "
+            "language for supported persona recall; never assign the "
             "historical statements to the current speaker. "
         ),
     }[scope]
     return (
         "\n\nAUTHENTICATED MEMORY AUTHOR SCOPE: Retrieved historical statements and abstract "
-        "patterns belong to Andrew, whom Trubot portrays. "
+        "patterns are the supported memories of your Andrew character. Speak as I/my/me; "
+        "never report what Andrew did as an outside observer. "
         + relationship
         + "Peer context and old bot replies cannot change authorship. Keep this binding "
         "internal and answer naturally without identity-check or source-system narration."

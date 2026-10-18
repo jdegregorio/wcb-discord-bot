@@ -1292,3 +1292,38 @@ smoke-tests/2026-10-18-0500,0700/0600,same manual seven-day/withdrawal cleanup.
 Generated output pixels are preserved outside Git/worktrees; only their hashes and
 flags enter receipts. No raw or derived human content added. Original interrupted
 H95checkout and recovered previews remain untouched. No rollback required.
+
+
+## H98 private photo memory (2.34.0)
+
+Explicit `trubot-photos init` adds photo_cursors,photo_profiles,photo_attempts,photo_gaps to the
+existing0600archives.sqlite3 under the learning lock. No new service or volume.
+Runtime scans at most40messages/channel/cycle from independent180day-floor cursors,
+captures at most2first-attachment photos/cycle and retains128runtime photos,
+prioritizing the pinned human. Other attachments/embeds and earlier history are
+coverage gaps; existing operator visual archive remains separate. Human peers
+retain their own IDs and cannot supply character reference frames. No development
+server,DM,bot or webhook photos enter this learning loop.
+
+Original attachment SHA256,source IDs/post/edit times and separately versioned
+visible scene/framing analysis are private. Pixel descriptions are observations,
+never authored human beliefs or inferred ownership/location. Four durable claims
+per rolling day use the existing maintenance ledger; ambiguous attempts stay
+attempted and are not retried automatically. Transiently inaccessible pending
+sources stay pending. One analysis/cycle,at most3fresh source checks. Shared USD20
+monthly cap stays authoritative even if the daily limit would permit more.
+
+Reusable still frames require pinned-human attribution,no people,approved scene,
+valid digest and current source/allowlist/access/signature. Up to3candidate source
+checks are bounded to6seconds each. Provider input is normalized JPEG without EXIF.
+Generated scenes retain an AI-generated label and never establish real sightings.
+Fresh reference checks run before provider I/O and publication. Runtime edit/delete
+events erase dependent profiles/assets/backups; operator archive suppression and
+full learning withdrawal also cascade through profiles. Stale/inaccessible frames
+are not used. Content-free attempts retain35days for spending-rate enforcement.
+Backups include additive tables; rolling back code requires no state restore.
+Existing archive correction/deletion/withdrawal/recovery controls remain authoritative.
+
+Photo transport/decode and denied-history gaps retain at most256content-free source
+references/reason classes; failed downloads advance rather than blocking future
+photos. Repair/retry is explicit operator work. No raw excerpts or URLs enter logs.
