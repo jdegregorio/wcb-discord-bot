@@ -10,6 +10,35 @@ See [the study](docs/trubot-evolution/evaluations/2026-10-17-completed-night-stu
 
 # Trubot
 
+## Quiet outdoor check-ins (2.33.0)
+
+Trubot can wake privately, read the public NOAA aurora forecast, and choose when to
+check again without posting. A bounded planning turn chooses 20 minutes to 8 hours;
+rapid checks require fresh promising nighttime activity. Restarts preserve the plan,
+missed wakes do not replay, and most checks produce no Discord message.
+
+Occasional generated U.P. scenes cover trail-camera deer, autumn wood preparation,
+small-lake freeze and spring thaw. Seasonal attempts are limited to one per rolling
+seven days, after an initial quiet week, between 09:00 and 21:00 America/Detroit. Quiet
+time, existing shared cooldown/caps, sensitive conversation, current permissions
+and withdrawal still gate images. Generated origin stays visible. No actual Andrew
+activity, wildlife sighting or current ice condition is implied.
+
+Initialize `trubot-outdoors init` once on the private app volume. The existing
+`TRUBOT_AURORA_CHANNEL_ID` opt-in/destination is retained; its store directory now
+also holds `outdoors.sqlite3`. `trubot-outdoors status` reports the next wake and
+content-free outcome counts. Missing state fails closed. The same USD 20 monthly guard applies.
+
+Automatic aurora pictures now require confirmed local visibility and remain closed
+until a fresh accessible observation source passes validation. The local camera
+endpoint returned403. Forecasts only change private wake timing; they never confirm
+a sighting. This supersedes the older opportunity-only morning feature below.
+Explicit requested aurora scenes still work. New complete requests also work, such
+as `🤖 Generate a woodpile picture in the UP.` or `🤖 Generate a trail-camera image
+in the Upper Peninsula.` The existing requested-image transaction/caps apply.
+
+[Evidence and limitations](docs/trubot-evolution/evaluations/2026-10-18-outdoor-checkins-release.md).
+
 ## Requested U.P. aurora scenes (2.31.0)
 
 Ask directly, for example: `🤖 Generate an original northern-lights picture over
@@ -36,7 +65,10 @@ observations, not guaranteed sightings or forecasts. Ordinary conversation loads
 extra tool context. No new service, credential or spending allowance is needed.
 See the [study](docs/trubot-evolution/evaluations/2026-10-17-context-tools-study.md).
 
-## U.P. aurora mornings (2.29.1)
+## Historical U.P. aurora mornings (2.29.1, superseded)
+
+In2.33.0 the quiet outdoor planner above replaces automatic opportunity-only
+publishing. The following describes the earlier capability for release history.
 
 An opt-in scheduled visual skill checks the previous night's observed NOAA activity
 and NWS local sky conditions. After a suitable night it can share one original

@@ -2902,3 +2902,19 @@ Concurrent explicit outdoor-wakeup work remains separate;recheck/reconcile main.
 Fresh actual baseline still reproduces the completed-night capability gap. Final matched12 cases per arm improve regional useful observations0/3to3/3;three contrary data cases and six controls pass. Real installed11 cases give10 responses/one correct abstention,including changed lookup/clarification and normal memory/care/humor controls. Hypothesis supported as useful context; naturalness remains partial and broader fidelity unmeasured. Two bounded character triages,four human windows and eight development pairs per pass,flagfour cases each but supply insufficient comparable evidence for causal pre/post or a new trait.
 
 Both planning phases precede release selection. Finish interruptedH94 before overlapping work,then reconcile H95 private wakeups and seasonal scenes with H93 visual variety;independent H92 abstract/emotional/amplified humor and necessary coverage follow. Existing rejected cohorts and native pattern gate unchanged. No new operating pool, service or source intake. [Full method, contrary cases, counts, costs and limits](evaluations/2026-10-18-completed-night-release.md).
+
+## H95/H96,2026-10-17 human steering
+
+H95 durable quiet planning plus weekly fictional seasonal images is the selected
+enabling increment. Actual baseline woodpile request has zero attachments. Three
+private public-signal plans and four generated scene previews pass bounded transport/
+pixel review;63new regressions pass. No new human trait/general engagement gain.
+H96 confirmation remains unvalidated: local camera403, forecasts cannot prove a
+sighting. Retire opportunity-only autoaurora, keep explicit requests. Concurrent H94
+last-night lookup is separate; rebase before release.
+[Both phases, criteria and results](evaluations/2026-10-17-outdoor-checkins-study.md).
+
+
+## 2026-10-18 05:00Pacific - H95 reconciliation selected
+
+Fresh authenticated baseline reproduces text-only seasonal request on2.32.0. Four recovered generated previews are reinspected. Fresh three-channel census has zero seven-day spontaneous bot posts; bounded four-human-window/eight-development-pair triage is insufficient for a character-gain conclusion. Both planning phases select enabling private wakeups/seasonal images with no new trait. Preserve H94 and finish H95 before overlapping work. H96 confirmation remains unvalidated/closed, then H93 timing/variety and independent H92 utility. [Protocol and final results](evaluations/2026-10-18-outdoor-checkins-release.md).

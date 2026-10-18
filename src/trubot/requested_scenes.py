@@ -49,7 +49,26 @@ def requested_region(content: str, *, bot_user_id: int) -> str | None:
             break
     match = _REQUEST.fullmatch(text)
     if match is None:
-        return None
+        life = re.fullmatch(
+            r"(?:(?:can|could|would|will) you |please )?(?:generate|create|draw|make)(?: me| us)? "
+            r"(?:an?|one) (?:(?:original|generated|ai[- ]generated) )?"
+            r"(?P<scene>trail[- ]camera|woodpile|lake freezing|lake thawing) "
+            r"(?:picture|image|scene|illustration) (?:in|of) (?:the )?"
+            r"(?:u\.?p\.?|upper peninsula)[.!?]?",
+            text,
+            re.I,
+        )
+        return (
+            {
+                "trail-camera": "trail_camera",
+                "trail camera": "trail_camera",
+                "woodpile": "woodpile",
+                "lake freezing": "lake_freeze",
+                "lake thawing": "lake_thaw",
+            }.get(life["scene"].lower())
+            if life
+            else None
+        )
     region = match["region"].casefold()
     return "the Keweenaw" if "keweenaw" in region else region.title()
 

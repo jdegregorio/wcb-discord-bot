@@ -10,8 +10,6 @@ from dotenv import load_dotenv
 from openai import AsyncOpenAI
 
 from trubot.attention import AttentionTracker
-from trubot.aurora import AuroraStore
-from trubot.aurora_feature import AuroraFeature
 from trubot.aurora_image import AuroraImageGenerator
 from trubot.budget import BudgetError, UsageLedger
 from trubot.config import ConfigurationError, Settings
@@ -22,6 +20,7 @@ from trubot.health import ReadinessFile
 from trubot.ingestion import MessageIngestor
 from trubot.learning import LearningStore, LearningUnavailable
 from trubot.openai_responder import OpenAITruaxResponder
+from trubot.outdoors import OutdoorFeature, OutdoorStore
 from trubot.participation import ParticipationPolicy, ParticipationTracker
 from trubot.requested_scenes import RequestedScenes, SceneStore
 from trubot.up_conditions import UPConditionsSkill
@@ -83,8 +82,11 @@ def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> Tr
         settings=settings,
         responder=responder,
         aurora=(
-            AuroraFeature(
-                AuroraStore(settings.aurora_store_path), AuroraImageGenerator(openai_client, budget)
+            OutdoorFeature(
+                OutdoorStore(settings.aurora_store_path.with_name("outdoors.sqlite3")),
+                AuroraImageGenerator(openai_client, budget),
+                purpose=spending_purpose,
+                planner=responder.plan_outdoor_check,
             )
             if settings.aurora_channel_id
             else None

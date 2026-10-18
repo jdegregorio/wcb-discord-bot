@@ -47,6 +47,7 @@ from trubot.memory import (
     years,
 )
 from trubot.native_context import NativeEpisode, collect_native_episode, source_media_episode
+from trubot.outdoors import OutdoorFeature, posting_window
 from trubot.participation import (
     Observation,
     ParticipationTracker,
@@ -105,7 +106,7 @@ class TruBotClient(discord.Client):
         sleeper: Sleeper = asyncio.sleep,
         learning: MessageIngestor | None = None,
         distiller: GraphDistiller | None = None,
-        aurora: AuroraFeature | None = None,
+        aurora: AuroraFeature | OutdoorFeature | None = None,
         scenes: RequestedScenes | None = None,
     ) -> None:
         super().__init__(intents=intents, allowed_mentions=allowed_mentions)
@@ -264,7 +265,7 @@ class TruBotClient(discord.Client):
 
     def _start_aurora(self) -> None:
         if self._aurora is not None and (self._aurora_task is None or self._aurora_task.done()):
-            self._aurora_task = asyncio.create_task(self._run_aurora(), name="aurora-morning")
+            self._aurora_task = asyncio.create_task(self._run_aurora(), name="outdoor-check-in")
 
     async def _stop_aurora(self) -> None:
         task, self._aurora_task = self._aurora_task, None
@@ -281,9 +282,9 @@ class TruBotClient(discord.Client):
                 raise
             except Exception as error:
                 logger.warning("Aurora cycle unavailable error_type=%s", type(error).__name__)
-            await asyncio.sleep(15 * 60)
+            await asyncio.sleep(60)
 
-    async def _aurora_channel_ready(self, channel: discord.TextChannel) -> bool:
+    async def _outdoor_scope_current(self, channel: discord.TextChannel) -> bool:
         learning = self._learning
         if self._closing or learning is None or not learning.verified:
             return False
@@ -294,14 +295,49 @@ class TruBotClient(discord.Client):
             or channel.id not in self._settings.allowed_channel_ids
         ):
             return False
-        now = self._clock()
-        if morning_window(now) is None or not self._participation.scheduled_eligible(
-            channel.id, now
-        ):
+        if isinstance(self._aurora, OutdoorFeature):
+            # Fetch current permissions at each I/O/publication boundary, not a stale cache.
+            fresh = await channel.guild.fetch_channel(channel.id)
+            member = await channel.guild.fetch_member(self.user.id) if self.user else None
+            if member is None or not isinstance(fresh, discord.TextChannel):
+                return False
+            permissions = fresh.permissions_for(member)
+            if not (
+                permissions.view_channel
+                and permissions.read_message_history
+                and permissions.send_messages
+                and permissions.attach_files
+            ):
+                return False
+        return True
+
+    async def _aurora_channel_ready(self, channel: discord.TextChannel) -> bool:
+        if not await self._outdoor_scope_current(channel):
             return False
-        # A morning image should not interrupt an active exchange or race a direct reply.
+        now = self._clock()
+        in_window = (
+            posting_window(now)
+            if isinstance(self._aurora, OutdoorFeature)
+            else morning_window(now) is not None
+        )
+        if not in_window or not self._participation.scheduled_eligible(channel.id, now):
+            return False
         async for message in channel.history(limit=1):
             if now - message.created_at < timedelta(seconds=self._settings.auto_delay_seconds):
+                return False
+        if isinstance(self._aurora, OutdoorFeature):
+            # The in-memory tracker can be empty after restart. Require a fully bounded
+            # recent history before treating the shared reply cooldown as clear.
+            recent = [
+                message
+                async for message in channel.history(
+                    limit=101,
+                    after=now - self._participation.policy.min_interval,
+                )
+            ]
+            if len(recent) > 100 or any(
+                self.user is not None and message.author.id == self.user.id for message in recent
+            ):
                 return False
         return True
 
@@ -310,10 +346,30 @@ class TruBotClient(discord.Client):
         channel = self.get_channel(self._settings.aurora_channel_id)
         if feature is None or not isinstance(channel, discord.TextChannel):
             return False
-        if not await self._aurora_channel_ready(channel):
+        if isinstance(feature, OutdoorFeature):
+            if not await asyncio.to_thread(feature.store.due, self._clock()):
+                return False
+        elif not await self._aurora_channel_ready(channel):
             return False
-        prepared = await feature.prepare(
-            now=self._clock(), before_generation=lambda: self._aurora_timing_ok(channel)
+
+        timing_stamp: tuple[tuple[int, str, str], ...] | None = None
+
+        async def before_generation() -> bool:
+            nonlocal timing_stamp
+            if isinstance(feature, OutdoorFeature):
+                if not await self._aurora_channel_ready(channel):
+                    return False
+                timing_stamp = await self._outdoor_context_stamp(channel)
+            return await self._aurora_timing_ok(channel)
+
+        prepared = (
+            await feature.prepare(
+                now=self._clock(),
+                before_generation=before_generation,
+                before_check=lambda: self._outdoor_scope_current(channel),
+            )
+            if isinstance(feature, OutdoorFeature)
+            else await feature.prepare(now=self._clock(), before_generation=before_generation)
         )
         if prepared is None:
             return False
@@ -322,24 +378,59 @@ class TruBotClient(discord.Client):
             if not await self._aurora_channel_ready(channel):
                 await asyncio.to_thread(feature.store.finish, opportunity.morning, "deferred")
                 return False
-            # Mark before sending. An ambiguous send or crash must never duplicate a morning.
+            if isinstance(feature, OutdoorFeature) and (
+                timing_stamp is None or timing_stamp != await self._outdoor_context_stamp(channel)
+            ):
+                await asyncio.to_thread(feature.store.finish, opportunity.morning, "deferred")
+                return False
+            # Commit before sending. An ambiguous send or crash must never duplicate a claim.
             await asyncio.to_thread(feature.store.finish, opportunity.morning, "send_uncertain")
             attachment = discord.File(
                 io.BytesIO(image.data),
-                filename="trubot-aurora-generated.png",
+                filename="trubot-outdoors-generated.png",
                 description=image.description,
             )
             try:
                 sent = await channel.send(
-                    image.caption, file=attachment, allowed_mentions=discord.AllowedMentions.none()
+                    image.caption,
+                    file=attachment,
+                    allowed_mentions=discord.AllowedMentions.none(),
+                    nonce=(
+                        int(opportunity.morning[:15], 16)
+                        if isinstance(feature, OutdoorFeature)
+                        else opportunity.morning
+                    ),
                 )
             finally:
                 attachment.close()
             await asyncio.to_thread(feature.store.finish, opportunity.morning, "posted", sent.id)
             self._cancel_ambient(channel.id)
             self._participation.record_reply(channel.id, self._clock(), ambient=True)
-            logger.info("Posted generated aurora scene")
+            logger.info("Posted generated outdoor scene")
             return True
+
+    async def _outdoor_context_stamp(
+        self, channel: discord.TextChannel
+    ) -> tuple[tuple[int, str, str], ...]:
+        # Ephemeral only. An edit/new sensitive exchange during generation invalidates timing.
+        rows = []
+        async for message in channel.history(
+            limit=10, after=self._clock() - timedelta(hours=6), oldest_first=False
+        ):
+            rows.append(
+                (
+                    message.id,
+                    str(message.edited_at),
+                    repr(
+                        (
+                            message.content,
+                            [(a.id, a.size) for a in message.attachments],
+                            [e.to_dict() for e in message.embeds],
+                        )
+                    ),
+                )
+            )
+        return tuple(rows)
 
     async def _aurora_timing_ok(self, channel: discord.TextChannel) -> bool:
         context = []
@@ -770,7 +861,7 @@ class TruBotClient(discord.Client):
                 await asyncio.to_thread(feature.store.finish, request_key, "send_uncertain")
                 attachment = discord.File(
                     io.BytesIO(image.data),
-                    filename="trubot-aurora-generated.png",
+                    filename="trubot-outdoors-generated.png",
                     description=image.description,
                 )
                 try:

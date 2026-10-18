@@ -1259,3 +1259,27 @@ smoke-tests/2026-10-18-0100 under existing 0700/0600 permissions, manual seven-d
 retention and withdrawal cleanup. No raw exchange, answer or personal derivation
 is retained there. Four interrupted H95 generated previews were hash-preserved
 outside the container before its temporary filesystem was replaced.
+
+
+## Outdoor operational journal,2.33.0
+
+Explicit `trubot-outdoors init` creates0600schema1outdoors.sqlite3 in the existing
+0700app volume, beside the configured aurora store. Missing/unsafe state fails closed;
+runtime never initializes or resets it. A singleton stores started/last/next UTC
+instants. Wakes store random claim keys, timestamps, closed reason codes, optional
+closed scene enum and outcome. No raw Discord identifiers, messages, free-text
+reflection, human observations, prompts, image bytes or private source data persists.
+A new wake atomically claims its slot and writes a four-hour safe fallback before
+any HTTP/provider call. One seasonal attempt per rolling7days includes failures,
+deferrals and uncertainty. Thirty-five-day pruning retains required cooldown data;
+old requests cannot be replayed through the wake path. Status is content-free.
+
+Withdrawal/current source identity stops all checking/planning/rendering/publication;
+operational journal/ledger remain as duplicate-spend guards. Corrections and deletion
+do not restore spent allowances. Backups may preserve these operational files with
+existing private app-volume controls; never restore or reset them for code rollback.
+Rollback2.32or2.31ignores this file but older2.31resumes opportunity-only morning
+aurora, which does not satisfy the new confirmation policy. If rollback is necessary,
+retain that policy limitation and disable scheduled images through tracked app config
+before resuming older code. No source/graph/spending state restore. Validation uses
+private content-free smoke-tests/2026-10-17-2100-h95,0700/0600,sevendaymanualcleanup.

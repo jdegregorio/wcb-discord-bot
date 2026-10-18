@@ -59,6 +59,8 @@ class AuroraImageGenerator:
         )
 
     async def generate_requested(self, region: str, *, purpose: str = "runtime") -> AuroraImage:
+        if region in {"trail_camera", "woodpile", "lake_freeze", "lake_thaw"}:
+            return await self.generate_life(region, purpose=purpose)
         image = await self._generate(scene_prompt(region), purpose=purpose)
         return AuroraImage(
             image,
@@ -70,6 +72,50 @@ class AuroraImageGenerator:
             + f"\n-# AI-generated scene near {region}.",
             f"AI-generated illustration of imagined northern lights over Lake Superior near "
             f"{region}, with a rocky shoreline and dark conifers. Not a real photograph.",
+        )
+
+    async def generate_life(self, scene: str, *, purpose: str = "runtime") -> AuroraImage:
+        subjects = {
+            "trail_camera": (
+                "A candid trail-camera style view of a white-tailed deer at the edge of a "
+                "mixed conifer and birch forest, uneven ground, quiet natural daylight. "
+                "No artificial antler exaggeration or camera timestamp.",
+                "Management finally showed up.",
+            ),
+            "woodpile": (
+                "A modest neatly stacked split hardwood pile beside a simple woodshed, "
+                "work gloves resting on a chopping block, autumn leaves and mixed conifers. "
+                "No people, running tools, dangerous action or luxury cabin.",
+                "Winter can take its time.",
+            ),
+            "lake_freeze": (
+                "A SMALL inland lake with thin new ice along a sheltered shoreline, dark "
+                "open water farther out, frosty reeds and conifers. Not Lake Superior "
+                "frozen solid. No people on ice or implication it is safe to walk on.",
+                "Lake's starting to get ideas.",
+            ),
+            "lake_thaw": (
+                "Spring breakup on a SMALL inland lake: broken shore ice, open water, "
+                "wet stones and conifers. Restrained early spring colors, no summer "
+                "flowers, people on ice or implausible icebergs.",
+                "About time.",
+            ),
+        }
+        if scene not in subjects:
+            raise ValueError("Unapproved outdoor scene")
+        subject, caption = subjects[scene]
+        prompt = (
+            "Create an original photorealistic illustration of an imagined everyday scene "
+            "in Michigan's Upper Peninsula. " + subject + " Ordinary imperfect composition, "
+            "plausible scale and ecology, natural restrained colors. No text, watermark, "
+            "real person's likeness or claim of documenting an actual event."
+        )
+        data = await self._generate(prompt, purpose=purpose)
+        return AuroraImage(
+            data,
+            caption + "\n-# AI-generated U.P. scene.",
+            f"AI-generated imagined U.P. {scene.replace('_', ' ')} scene. Not a real photo "
+            "or evidence of Andrew's activities, wildlife sightings or current lake conditions.",
         )
 
     async def _generate(self, prompt: str, *, purpose: str) -> bytes:
