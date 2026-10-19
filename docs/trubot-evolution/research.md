@@ -2993,3 +2993,16 @@ composition utility, seasonal timing. H96confirmationclosed,H97unresolved.
 Repeated source-refresh availability would reorder work before retrieval expansion.
 [Detailed evidence](evaluations/2026-10-18-semantic-photo-release.md) and
 [machine-readable results](evaluations/2026-10-18-semantic-photo-release.json).
+
+
+## H99a, 2026-10-18 17:00 fresh-main qualification
+
+Fresh bounded authenticated reproduction:549messages/46targetmessages/ninephoto
+posts,sevenomitted originals. Real owner/gateway older-photo request returns an
+honest unavailable answer and zeroattachments. Four attributed source windows and
+16actual development posts/tenbotposts supply a limited audit;general human
+comparison remains insufficient. Select resumed operator recovery as enabling work;
+no new trait or measured reply-quality benefit. Preserve independent abstract/
+emotional/amplified-humor and caption/recall qualification next. Both phases,
+falsifiable acceptance, contrary cases and final outcome in
+[evidence](evaluations/2026-10-18-photo-history-release.md).

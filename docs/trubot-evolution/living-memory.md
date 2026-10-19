@@ -1,3 +1,12 @@
+# Current memory direction, 2026-10-18 17:00 Pacific
+
+H99a bounded original-photo recovery is the selected enabling increment after
+H98d/2.35.0. It adds no human trait, graph observation or automatic-pattern
+permission. Independently qualified abstract/emotional/amplified-humor utility and
+original-view caption/composition/recall follow. The graph/source lifecycle and
+withdrawal contract remain authoritative. [Current plan](plan.md) and
+[protocol](evaluations/2026-10-18-photo-history-release.md) supersede dated priorities.
+
 # Current memory direction,2026-10-18
 
 H98d/2.35.0deployed source-photo delivery builds on existing first-person visual
