@@ -3062,3 +3062,16 @@ handler/model/source comparison: baseline0/3supported caption;focused availabili
 3/3with author binding retained. Scope removal is diagnostic,never shipped. Two
 incomplete validation-client cohorts are excluded and documented. Broader character
 utility remains unresolved. [Both phases,criteria,method and limitations](evaluations/2026-10-19-photo-handler-focus.md).
+
+
+## H104 completion and evaluator limits
+
+2.38.2is deployed. Final valid full-handler comparison0/3to3/3supported captions;
+three actual caption cases,restart,older-source explicit Reply and recipient
+ownership pass. Actual source pixels/hash pass. One source-specific model flag is
+manually resolved against authenticated original caption/pixels;two unmatched
+audit flags are not established regressions. Three receipt classification/order
+attempts are excluded;do not substitute a healthy container or count-only audit
+for source-specific acceptance. Broader character utility stays unresolved.
+Next H101/H92/H93independent caption/abstract/emotional/amplified-humor utility,
+then useful visual coverage and seasonal variety. [Full results](evaluations/2026-10-19-photo-handler-focus.md).

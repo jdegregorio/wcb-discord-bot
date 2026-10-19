@@ -1,3 +1,13 @@
+## Current-focus source inspection,2.38.2
+
+The current focus repeats scoped inspection availability after authenticated author
+binding and accounts for those bytes in the existing reservation. Other speakers'
+own-history requests receive no character-photo inspection capability;the existing
+callback check remains. No new source,storage,provider turn or permission. Same
+full-handler source/model comparison0/3to3/3supported captions;actual restart and
+explicit older-photo cases pass. Broader graph/abstract/humor utility remains next,
+with no new observation or automatic-pattern permission. [Current evidence](evaluations/2026-10-19-photo-handler-focus.md).
+
 Current correction:2.38.0 stored the source link but failed actual caption
 acceptance in the full live conversation. H103b/2.38.1 offers read-only inspection
 and its availability cue only for an existing scoped link selected before provider
