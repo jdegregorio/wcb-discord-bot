@@ -844,3 +844,16 @@ source text channels, captures at most two pinned-human original photos per run,
 and makes no provider calls or Discord posts. The existing study allowance,
 128-photo limit and source correction/withdrawal controls apply. Broader history
 and reply-quality benefits remain unvalidated. See [H99](docs/trubot-evolution/evaluations/2026-10-18-photo-history.md).
+
+
+## Recovered original photo recall
+
+The existing model-selected photo action also searches private recovered-photo
+records. It ranks the pinned human's source captions and completed pixel profiles,
+then freshly checks up to three candidates within eight seconds. One verified
+original image reaches the caption continuation. The fixed source, current
+recipient permissions, request and pixel hash must still match before publication.
+Pending captionless originals remain unsearchable until the existing bounded
+pixel-study cadence supplies a profile. Peer posts never become character photos.
+This makes supported older views reachable without expanding rolling text intake,
+learning scope, provider calls for indexing, or the spending allowance.

@@ -559,3 +559,21 @@ of recent source/photo intake. Private archive checkpoints, a separate job lock,
 current authenticated permissions, descending pagination and page/download limits
 recover omitted pinned-human originals through PhotoMemory's existing lifecycle.
 No gateway, provider call, automatic study or Discord publication is added.
+
+
+## Source-bound recovered photo retrieval (2.37.0)
+
+PhotoMemory.recall joins the captured original index to show_source_photo before
+the existing native text fallback. Candidate ranking uses attributed source
+captions and versioned ready pixel profiles; no provider extraction or graph write
+occurs. Search is bounded by the existing 128-photo store, three candidate checks
+and an eight-second outer deadline. Only a pinned-human source in the existing
+source channel scope is eligible. Bot and production recipient read permissions,
+source signature, original attachment identity and freshly downloaded SHA256 must
+match. The callback binds the selected row, including its profile lifecycle, and
+rechecks it before continuation/send. No cached pixels survive denied access.
+The handler retains owner-only development scope, current request checks and the
+requester-own-history boundary. The normal action/continuation/image/ledger bounds
+remain. No schema or migration is required. Rollback is code-only; do not restore
+source, spending or paid-operation claims. Unprofiled captionless sources remain
+an explicit gap; relevant pixel captions are not proof of broader character gain.

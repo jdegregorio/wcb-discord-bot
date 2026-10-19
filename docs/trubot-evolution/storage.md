@@ -1377,3 +1377,12 @@ manual seven-day retention and withdrawal cleanup. Temporary QA pixels were remo
 after inspection; canonical private originals remain. Never restore source, usage
 or operational-claim state on code rollback.
 [Evidence](evaluations/2026-10-18-photo-history-release.md).
+
+
+H100/2.37.0 candidate reads existing photo_profiles/visual_episodes for the existing
+source-photo action. No schema,migration,raw-source copy,indexing provider call or
+new retention state. The original source is freshly fetched and byte-hashed for
+selection/continuation/publication;denied reads cannot use cached pixels. Row/profile
+changes,correction,deletion and withdrawal revoke in-flight evidence. Existing
+archive retention,backups/deletion and seven-day private receipt cleanup apply.
+Rollback changes code only;never restore source,spending or operation claims.
