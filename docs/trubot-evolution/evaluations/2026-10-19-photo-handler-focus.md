@@ -157,7 +157,9 @@ Source-follow-up gateway latency14.089-24.663seconds in this small sample; ordin
 controls2.089-8.874seconds. Final distinct creative sanity after all validation
 clients close succeeds in4.215seconds. Latency is a visible cost, not a population
 benchmark; future batching/caching must preserve fresh source and final checks.
-No further provider turn,transport retry or spending pool was introduced.
+Correct recall exercises the existing optional continuation,so a formerly skipped
+inspection can consume two calls instead of one. The one-action/one-continuation
+ceiling,transport retry policy and spending pool are unchanged.
 
 ### Audit, evaluator disagreement and harness validity
 
@@ -199,7 +201,11 @@ Covered run estimate USD0.035745400; covered October USD1.127253655.
 Three preexisting uncertain reservations,zero new; pre-guard spending remains
 unknown. Existing18runtime/2maintenance/20total cap and four photo studies/day
 remain. The validation-only memory-pressure kill did not restart the main bot;
-subsequent clients ran sequentially and all used distinct ephemeral readiness paths.
+subsequent clients ran sequentially. Every readiness path was separate from the
+production heartbeat. Two overlapping exploratory replay cohorts reused a QA-only
+path;those login-only clients did not create a gateway heartbeat or affect the
+production file. Future validation helpers use a per-invocation UUID before
+construction. Final gateway/readiness checks follow all auxiliary client closures.
 
 Content-free refs,hashes,booleans and manual source-check receipt remain under the
 private app volume smoke-tests/2026-10-19-0500,0700directory/0600files,seven-day
