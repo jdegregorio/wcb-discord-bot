@@ -5328,7 +5328,7 @@ merged runtime already tested but not released. Both planning phases complete;
 H105 stays rejected, H106 narrow correction is shipped. All six current merged gates
 pass 1,943 tests/96.02%/43 typed modules/build 2.38.3. Prior protected runtime feature/
 main CI 39284768121/39286342656 pass; immutable image CI 39316245014 pass. Existing locked
-pi 5 transaction deploys index b14a4572daf0ddc97425ea810130ab2010558f4e8b4c67e778023393cd36a746;
+pi5 transaction deploys index b14a4572daf0ddc97425ea810130ab2010558f4e8b4c67e778023393cd36a746;
 43 installed hashes match, healthy/Discord-ready/read-only/zero restarts/OOM false,
 zero observed response/error/unhandled/continuity-warning counts. Prior 2.38.2 retained.
 No runtime changes beyond the exact protected merged commit, no rollback/data restore.
@@ -5356,4 +5356,6 @@ H96 confirmation remains closed; H97/H102 exploratory. Six-run schedule/model/no
 [public receipt](evaluations/2026-10-19-dialogue-release.json),
 [runtime PR 168](https://github.com/jdegregorio/wcb-discord-bot/pull/168),
 [release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.3).
-Evidence-only PR/checks/merge are recorded after completion.
+[Evidence-only PR169](https://github.com/jdegregorio/wcb-discord-bot/pull/169)
+carries this completed validation record. Protected required checks govern its
+merge; runtime source, tests and lock remain equal to the released commit.

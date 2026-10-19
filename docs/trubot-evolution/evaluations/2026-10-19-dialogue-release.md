@@ -75,7 +75,7 @@ H106 is completed as 2.38.3. Runtime PR 168 protected merge
 a4240355d50b0185d383c6adee34f2ae74b609b3 is unchanged. Required feature CI 39284768121
 and main CI 39286342656 passed before this run; all six local merged-runtime gates
 were independently repeated here. Immutable v2.38.3 image workflow 39316245014
-completed successfully before the scoped deployment. Verified pi 5/aarch 64/
+completed successfully before the scoped deployment. Verified pi5/aarch64/
 Ubuntu 24.04.4 transaction installs index
 b14a4572daf0ddc97425ea810130ab2010558f4e8b4c67e778023393cd36a746.
 All 43 installed modules match the tested source tree. Healthy, Discord-ready,
@@ -89,7 +89,7 @@ installation is direct speech. This stochastic pair is an observed presentation
 difference, not an isolated estimate of humor quality. A valid controlled comparison
 uses the same owner anchor, original pre-anchor channel context and a distinct
 synthetic initial three-part quoted draft. Baseline: zero provider repairs, quoted
-post, sentence_count1. Installed: exactly one maintenance-accounted actual provider
+post, sentence_count=1. Installed: exactly one maintenance-accounted actual provider
 repair, one direct sentence and no wrapper. No third attempt. First repeated control
 was confounded by the old identical synthetic bot draft and triggered repetition
 repair on baseline; exclude that result from causal comparison and retain its cost.
