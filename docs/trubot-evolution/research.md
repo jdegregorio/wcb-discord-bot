@@ -3053,3 +3053,12 @@ work. Neither defect has a controlled exact before/after causal attribution here
 Both planning phases, falsifiable hypotheses, predeclared criteria and real baseline
 are in [the study](evaluations/2026-10-19-photo-continuity.md). H103 is selected;
 H101/H92/H93 remain unresolved. No new personal observation is populated.
+
+
+## H104,2026-10-19 05:00 - full handler capability discovery
+
+Reconcile unfinished H103 before another overlapping behavior change. Valid full
+handler/model/source comparison: baseline0/3supported caption;focused availability
+3/3with author binding retained. Scope removal is diagnostic,never shipped. Two
+incomplete validation-client cohorts are excluded and documented. Broader character
+utility remains unresolved. [Both phases,criteria,method and limitations](evaluations/2026-10-19-photo-handler-focus.md).

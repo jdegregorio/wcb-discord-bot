@@ -250,11 +250,12 @@ class OpenAITruaxResponder:
         model_input: ResponseInputParam = [_message_input(message) for message in messages]
         scope = memory_author_scope(messages)
         subject = preceding_human_turn(messages) if target and mode is ReplyMode.FOLLOW_UP else ""
+        inspect_available = photo_action is not None and photo_action.inspect is not None
         if target:
             focused_input = _message_input(
                 ConversationMessage(
                     "user",
-                    _format_target(mode, target, subject, scope),
+                    _format_target(mode, target, subject, scope, inspect_available),
                     messages[-1].images if messages and messages[-1].content == target else (),
                 )
             )
@@ -291,7 +292,10 @@ class OpenAITruaxResponder:
         text_input = [{"role": m.role, "content": m.content} for m in messages]
         if target:
             text_input.append(
-                {"role": "user", "content": _format_target(mode, target, subject, scope)}
+                {
+                    "role": "user",
+                    "content": _format_target(mode, target, subject, scope, inspect_available),
+                }
             )
         input_bound = (
             len(
@@ -735,8 +739,13 @@ def _format_target(
     target: str,
     subject: str = "",
     scope: MemoryAuthorScope | None = None,
+    inspect_available: bool = False,
 ) -> str:
     target += focused_author_guidance(scope)
+    if inspect_available:
+        # Bind capability discovery to the current focus as well as the general
+        # policy. Author scope and text-search gaps cannot establish tool failure.
+        target += PHOTO_INSPECT_INSTRUCTIONS
     label = _TARGET_LABELS.get(mode, "CURRENT MESSAGE")
     if mode is ReplyMode.FOLLOW_UP:
         context = (

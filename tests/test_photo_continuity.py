@@ -265,7 +265,7 @@ async def test_handler_binds_reference_and_rejects_ineligible_inspection(kind):
 
     async def reply(messages, **kwargs):
         action = kwargs["photo_action"]
-        if kind == "cross_channel":
+        if kind in {"cross_channel", "own_history"}:
             assert action.inspect is None
         else:
             await action.prepare(call(name=INSPECT_NAME, arguments="{}"))
@@ -339,3 +339,53 @@ async def test_only_existing_inspection_capability_announces_source_availability
         photo_action=action,
     )
     assert (INSPECT_INSTRUCTIONS in provider.requests[0]["instructions"]) is available
+
+
+@pytest.mark.parametrize("available", [False, True])
+@pytest.mark.parametrize("visual_focus", [False, True])
+@pytest.mark.parametrize("scope", ["source_author", "other_author", "unknown_author"])
+async def test_current_focus_preserves_authorship_and_discovers_scoped_source(
+    private_test_ledger, available, visual_focus, scope
+):
+    from trubot.conversation import ConversationImage, MemoryAuthorScope
+    from trubot.memory_author import author_guidance
+    from trubot.photo_action import INSPECT_INSTRUCTIONS
+
+    binding = MemoryAuthorScope(scope)
+    target = "Friend: What was the original caption? Text only."
+    image = ConversationImage("data:image/png;base64,AAAA", "Synthetic focus image")
+    messages = [
+        ConversationMessage("user", "Friend: Show that bridge photo."),
+        ConversationMessage("assistant", "I cannot find its caption."),
+        ConversationMessage(
+            "user",
+            "A text search has no exact quotation.",
+            origin="memory",
+            memory_author_scope=binding,
+        ),
+    ]
+    if visual_focus:
+        messages.append(ConversationMessage("user", target, (image,), origin="focus"))
+    provider = Provider([response("A direct answer.")])
+    model = responder(provider, private_test_ledger, UPConditionsSkill())
+    await model.reply(
+        messages,
+        mode=ReplyMode.DIRECT,
+        safety_id="synthetic",
+        target=target,
+        photo_action=PhotoAction(AsyncMock(), AsyncMock() if available else None),
+    )
+    request = provider.requests[0]
+    focus = request["input"][-1]["content"]
+    text = focus[0]["text"] if isinstance(focus, list) else focus
+    assert target in text
+    assert author_guidance(binding) in text
+    assert (INSPECT_INSTRUCTIONS in text) is available
+    if available:
+        assert text.index(INSPECT_INSTRUCTIONS) > text.index(author_guidance(binding))
+    assert request["input"][1]["content"] == messages[1].content
+    assert request["input"][2]["content"] == messages[2].content
+    assert request["store"] is False
+    if visual_focus:
+        assert focus[-1]["image_url"] == image.data_url
+    assert len(provider.requests) == 1
