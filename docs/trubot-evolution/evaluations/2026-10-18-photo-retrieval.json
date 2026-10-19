@@ -1,0 +1,129 @@
+{
+  "run": "2026-10-18 21:00 America/Los_Angeles",
+  "hypothesis": "H100",
+  "base": "58f10f0bd6623f65b33ad79b24cb84d7212957aa",
+  "tested_head": "d7e2b85029915bb2e46db90402f8767e479c7858",
+  "merged_release_commit": "a593c4b9e85de77efea588b6e07418b04f4c44b5",
+  "pr": 162,
+  "version": "2.37.0",
+  "image_digest": "sha256:bf82457b1bb12886333ca9aec5edf8f8af6b2673b06cf18f912f7c0686fd5855",
+  "previous_image_digest": "sha256:3718d0f55db3cbc8236d18049d6cfa9ead2af6f1cec3de9d9e64dd27d91c6a70",
+  "ci": {
+    "feature": 39198019279,
+    "main": 39198198700,
+    "image": 39198434393
+  },
+  "gates": {
+    "all_six_feature_and_merged": true,
+    "tests": 1868,
+    "coverage_percent": 96.01,
+    "typed_modules": 42,
+    "installed_module_hash_matches": 42
+  },
+  "retrieval_probes": {
+    "matched_positive": 3,
+    "matched_negative": 3,
+    "candidate_pass": 6,
+    "installed_pass": 6,
+    "provider_calls": 0,
+    "discord_writes": 0,
+    "candidate_positive_seconds": [
+      1.820529,
+      1.84909,
+      1.724532
+    ],
+    "installed_positive_seconds": [
+      2.079522,
+      1.525999,
+      2.096494
+    ]
+  },
+  "real_gateway": {
+    "baseline_questions": 2,
+    "installed_questions": 9,
+    "changed_photo_cases_pass": 2,
+    "delivered_pixel_hash_matches": 2,
+    "delivered_bytes": [
+      255803,
+      257703
+    ],
+    "baseline_older_view_seconds": 29.02,
+    "installed_older_view_seconds": 32.433,
+    "profile_only_seconds": 18.066,
+    "controls": {
+      "installed_older_view": "pass",
+      "installed_profile_only": "pass",
+      "installed_unindexed": "pass",
+      "baseball": "pass",
+      "broad_year": "calendar_grounding_fail",
+      "capture_date": "source_caption_mismatch_no_fabricated_date",
+      "humor": "pass",
+      "care": "pass"
+    },
+    "final_sanity_seconds": 3.871,
+    "after_validation_clients_closed": true
+  },
+  "audit": {
+    "pre": {
+      "human_windows": 4,
+      "development_posts": 16,
+      "bot_posts": 8,
+      "peculiar": 0,
+      "third_person": 0,
+      "mechanical_gap": 0,
+      "factual_overreach": 0,
+      "comparison_sufficient": false
+    },
+    "post": {
+      "human_windows": 4,
+      "development_posts": 16,
+      "result": {
+        "sampled_bot_posts": 9,
+        "peculiar_posts": 0,
+        "third_person_posts": 1,
+        "mechanical_gap_posts": 1,
+        "factual_overreach_posts": 0,
+        "human_comparison_sufficient": false
+      }
+    },
+    "source_census": {
+      "channels": 3,
+      "latest_each": 100,
+      "seven_day_target_posts": 0,
+      "seven_day_bot_posts": 0
+    }
+  },
+  "cost": {
+    "run_estimated_usd": 0.0116568,
+    "covered_month_estimated_usd": 1.07423517,
+    "settled_run_records": 22,
+    "preexisting_uncertain": 3,
+    "new_uncertain": 0,
+    "limits_usd": {
+      "runtime": 18,
+      "maintenance": 2,
+      "total": 20
+    },
+    "pre_guard_spend": "unknown"
+  },
+  "health": {
+    "healthy": true,
+    "discord_ready": true,
+    "read_only": true,
+    "restarts": 0,
+    "final_five_minute_errors": 0,
+    "final_five_minute_unhandled": 0,
+    "rollback": false
+  },
+  "limitations": [
+    "captionless_pending_originals_unindexed",
+    "text_followup_can_select_another_source_caption",
+    "broad_year_recall_can_imply_unsupported_timing",
+    "no_controlled_causality_for_remaining_text_defects",
+    "small_operator_selected_unblinded_cohorts",
+    "text_audit_misses_pixel_and_calendar_grounding",
+    "spontaneous_reaction_ambient_activity_absent_in_bounded_recent_sample",
+    "no_general_character_humor_or_engagement_gain",
+    "full_native_peer_thread_visual_history_incomplete"
+  ]
+}

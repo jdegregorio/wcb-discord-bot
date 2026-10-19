@@ -1379,7 +1379,7 @@ or operational-claim state on code rollback.
 [Evidence](evaluations/2026-10-18-photo-history-release.md).
 
 
-H100/2.37.0 candidate reads existing photo_profiles/visual_episodes for the existing
+H100/2.37.0 deployed retrieval reads existing photo_profiles/visual_episodes for the existing
 source-photo action. No schema,migration,raw-source copy,indexing provider call or
 new retention state. The original source is freshly fetched and byte-hashed for
 selection/continuation/publication;denied reads cannot use cached pixels. Row/profile

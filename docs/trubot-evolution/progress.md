@@ -5204,3 +5204,36 @@ unavailable unindexed media and an incorrect seasonal photo. Six matched private
 source probes now pass3positive/3negative;all six local gates pass1,868tests/96.01%.
 CI/release/deployment/real installed acceptance remain pending. USD18/2/20guard
 and four pixel studies/day unchanged. [Protocol/results](evaluations/2026-10-18-photo-retrieval.md).
+
+
+## 2026-10-18 21:00 completion: 2.37.0 recovered originals
+
+PR #162 merged as a593c4b9e85de77efea588b6e07418b04f4c44b5, exactly the tested
+tree. Feature/main/image CI and all six local feature/merged gates pass: 1,868
+tests, 96.01% coverage, 42 typed modules. Immutable 2.37.0 index
+bf82457b1bb12886333ca9aec5edf8f8af6b2673b06cf18f912f7c0686fd5855 is deployed
+through the existing scoped transaction on verified pi5. Healthy, Discord-ready,
+read-only, zero restarts; all 42 installed module hashes match. No rollback.
+
+Both planning phases, six matched private source cases and two actual owner/gateway
+photo cases support H100's narrow retrieval correction. Wrong seasonal pixels before
+become the expected older original after; profile-only lookup also delivers the
+expected original. Actual delivered pixels/hashes pass. Two baseline/nine installed
+questions include natural baseball, humor, care, unindexed-photo abstention and
+public-context controls. Broad-year timing and wrong-source caption in a text
+follow-up remain open defects. Next H103 source continuity, then independent
+caption/abstract/emotional/amplified-humor utility; broader visual indexing/timing
+follows measured usefulness. No new trait, automatic pattern permission or general
+fidelity gain. Pre/post audits each use four human windows; both comparisons are
+insufficient. Recent spontaneous/reaction/ambient coverage remains sparse.
+
+Covered run estimate USD 0.011656800; covered October USD 1.074235170, three
+preexisting uncertain/zero new. Same 18/2/20 guard and four photo studies/day; no
+ledger reset. Final actual gateway sanity 3.871 seconds after all validation
+clients close, then healthy readiness and zero error/unhandled counts. Eight
+content-free private receipts are preserved outside the worktree; temporary QA
+pixels removed, canonical originals retained. Code rollback never restores source,
+usage or paid-operation claims. [Full results](evaluations/2026-10-18-photo-retrieval.md),
+[public JSON](evaluations/2026-10-18-photo-retrieval.json),
+[PR](https://github.com/jdegregorio/wcb-discord-bot/pull/162),
+[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.37.0).

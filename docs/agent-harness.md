@@ -1,26 +1,31 @@
-# Current harness, 2026-10-18 17:00 Pacific
+# Current harness, 2026-10-18 21:00 Pacific
 
-Current run: 2026-10-18 21:00 Pacific. H100 connects recovered originals to
-model-selected photo recall,so caption/profile-supported older views can actually
-be shown. Production2.36.0 remains the baseline; candidate validation is pending.
-[Hypotheses,criteria and roadmap decision](trubot-evolution/evaluations/2026-10-18-photo-retrieval.md).
+Current run: 2026-10-18 21:00 Pacific. H100 is deployed as 2.37.0. The exact
+older-view request now delivers the expected original, and profile-only recall
+also passes through the real owner/gateway flow. Both delivered pixel hashes and
+actual pixels pass. Six matched candidate and installed source probes pass; all
+six feature/merged gates, protected CI and image publishing pass (1,868 tests,
+96.01% coverage). Healthy, Discord-ready, read-only, zero restarts; 42 module hashes
+match. [Evidence and limitations](trubot-evolution/evaluations/2026-10-18-photo-retrieval.md).
 
-1. H100: source-bound photo retrieval. High-confidence architectural gap,limited
-   search coverage. Require matched old-photo and profile-only retrieval,actual
-   gateway attachments/pixels,privacy/lifecycle controls and full release gates.
-   Local search/bounded fresh reads; existing model,image and18/2/20budget bounds.
-2. H101/H92/H93: independently qualify caption,abstract,emotional and amplified-humor
-   utility with attributed support/contrary episodes and held-out semantic review.
-   No general fidelity gain established. Unindexed captionless photos are a concrete
-   coverage dependency; retain existing four pixel studies/day.
-3. H93: seasonal timing/variety longitudinally. Preserve generated U.P./trail-camera
-   scenes and selective tools. H96confirmation closed without a qualified feed;
-   H97clarification unresolved. Source-refresh/privacy regressions reorder work.
+1. H103: connect a successful photo action to subsequent text-source recall, so
+   follow-up questions use the same verified episode. One actual follow-up cites
+   another photo's caption; cause confidence high, solution/impact unresolved.
+   Require matched conversation replays, lifecycle/permission/withdrawal controls,
+   no extra attachment, and actual gateway acceptance. Existing store/ledger only.
+2. H101/H92/H93: independently qualify caption, abstract, emotional and amplified-
+   humor utility using attributed support/contrary cases and held-out semantic
+   review. H102 tracks unsupported broad-year self-placement as secondary grounding
+   work. The count-only audit missed manually observed grounding defects. No
+   general character or engagement gain is established.
+3. Broaden useful visual indexing and seasonal timing only after utility tests.
+   Captionless pending photos stay unindexed under the unchanged four studies/day.
+   Preserve generated U.P./trail-camera scenes and selective skills/tools. H96
+   confirmation stays closed without a qualified feed; H97 clarification unresolved.
 
-No new persona trait or automatic native-pattern permission. Preserve attribution,
-correction,withdrawal,allowlist/no DMs,six fresh01/05/09/13/17/21Sol/xhigh runs and
-notifications. Older snapshots below are historical.
-
+Material grounding/privacy/access failures reorder work. Preserve attribution,
+correction, withdrawal, allowlist/no DMs, USD 18/2/20 guard, six standalone local
+01/05/09/13/17/21 Sol/xhigh runs and notifications. Older snapshots below are historical.
 
 Current run: 2026-10-18 17:00 Pacific. H99a is deployed as 2.36.0.
 Operator recovery captured two omitted originals across 327 scanned messages, with

@@ -1,3 +1,16 @@
+# Current memory completion, 2026-10-18 21:00 Pacific
+
+H100/2.37.0 connects captured captions and ready pixel profiles to actual original-
+photo delivery. Two real gateway photo cases and six installed source probes pass.
+No new graph observation or human trait. Pending captionless originals remain
+unindexed; four studies/day and the native automatic-pattern gate stay unchanged.
+Next H103 connects verified photo-source context to subsequent text follow-ups,
+then independent caption/abstract/emotional/amplified-humor utility. H102 broad-year
+grounding remains secondary. Full peer/thread/visual coverage remains incomplete.
+[Plan](plan.md) and [evidence](evaluations/2026-10-18-photo-retrieval.md) supersede
+the historical priority snapshots below; source/correction/withdrawal state remains
+authoritative.
+
 # Current memory completion, 2026-10-18 17:00 Pacific
 
 H99a/2.36.0 is deployed: two omitted originals recovered with verified source
