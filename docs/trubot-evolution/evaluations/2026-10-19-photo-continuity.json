@@ -1,0 +1,32 @@
+{
+  "base": "6ee555a9fa4454ad3d11253b14513ed629f2e6b0",
+  "hypothesis": "H103",
+  "status": "candidate_validated_not_deployed",
+  "replays": {
+    "caption_cases": 3,
+    "baseline_supported": 0,
+    "candidate_supported": 3,
+    "unrelated_controls": 3,
+    "unrelated_photo_calls": 0,
+    "attachments_queued": 0,
+    "review": "single_unblinded_model_with_true_source_and_pixels"
+  },
+  "local": {
+    "tests": 1895,
+    "coverage_percent": 96.05,
+    "typed_modules": 42,
+    "gates_pass": 6
+  },
+  "limitations": [
+    "small_operator_selected_sample",
+    "callback_replay_not_persistent_send_test",
+    "no_general_character_gain",
+    "old_sends_and_native_fallback_unlinked",
+    "six_hour_expiry"
+  ],
+  "real_baseline": {
+    "owner_gateway": true,
+    "caption_unavailable_after_original_shown": true
+  },
+  "deployment": "pending"
+}

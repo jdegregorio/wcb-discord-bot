@@ -26,6 +26,7 @@ from trubot.conversation import ConversationImage, ConversationMessage, MemoryAu
 from trubot.memory_author import author_guidance, focused_author_guidance, memory_author_scope
 from trubot.outdoors import Forecast
 from trubot.personality import instructions_for
+from trubot.photo_action import INSPECT_NAME as PHOTO_INSPECT_NAME
 from trubot.photo_action import INSTRUCTIONS as PHOTO_ACTION_INSTRUCTIONS
 from trubot.photo_action import NAME as PHOTO_ACTION_NAME
 from trubot.photo_action import PhotoAction
@@ -312,7 +313,7 @@ class OpenAITruaxResponder:
         )
         definitions = [definition for skill in selected if (definition := skill.definition())]
         if photo_action is not None:
-            definitions.append(photo_action.definition())
+            definitions.extend(photo_action.definitions())
         if definitions:
             request["tools"] = definitions
             request["parallel_tool_calls"] = False
@@ -454,14 +455,24 @@ class OpenAITruaxResponder:
         photo_message: list[EasyInputMessageParam] = []
         photo_bound = 0
         continuation_input = model_input
-        if len(calls) == 1 and calls[0].name == PHOTO_ACTION_NAME and photo_action is not None:
+        if (
+            len(calls) == 1
+            and calls[0].name in {PHOTO_ACTION_NAME, PHOTO_INSPECT_NAME}
+            and photo_action is not None
+        ):
             evidence = await photo_action.prepare(calls[0])
             if evidence is None:
                 output = '{"photo_queued":false,"reason":"no suitable verified source photo"}'
             else:
                 # The model sees the real pixels before writing its caption. Attachments
                 # are published later by Discord, after another source/request check.
-                output = '{"photo_queued":true,"kind":"actual historical source photo"}'
+                output = json.dumps(
+                    {
+                        "photo_queued": not photo_action.inspected,
+                        "source_inspected": photo_action.inspected,
+                        "kind": "actual historical source photo",
+                    }
+                )
                 photo_message = [
                     _message_input(ConversationMessage("user", evidence.text, evidence.images))
                 ]

@@ -102,6 +102,14 @@ async def test_handler_sends_original_then_discards_changed_source(photos):
     client._learning, client._photos = memory.learning, memory
     target_channel = fake_channel()
     target_channel.guild.id = 77
+    target_channel.send.return_value = SimpleNamespace(
+        id=900,
+        guild=target_channel.guild,
+        channel=target_channel,
+        content="Here's the bridge.",
+        edited_at=None,
+        attachments=[],
+    )
     focus = fake_message(target_channel)
 
     async def reply(messages, **kwargs):
