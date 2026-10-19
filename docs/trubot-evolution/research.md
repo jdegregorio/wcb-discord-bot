@@ -3075,3 +3075,11 @@ attempts are excluded;do not substitute a healthy container or count-only audit
 for source-specific acceptance. Broader character utility stays unresolved.
 Next H101/H92/H93independent caption/abstract/emotional/amplified-humor utility,
 then useful visual coverage and seasonal variety. [Full results](evaluations/2026-10-19-photo-handler-focus.md).
+
+
+## 2026-10-19 09:00 H105 rejected; H106 selected
+
+Three valid H105 playful pairs lose before control completion; no rollout. H106
+whole-dialogue framing reproduces an ordinary cadence-check bypass in an actual
+gateway response. Preserve literal source artifacts and the shared one-repair
+boundary. [Both planning phases and exact limitations](evaluations/2026-10-19-abstract-banter-study.md).

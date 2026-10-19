@@ -1,3 +1,27 @@
+# Current priority, 2026-10-19 09:00 Pacific
+
+H105 abstract humor population is rejected: three completed paired reviews prefer
+baseline, exceeding the declared maximum one loss. No new trait is imported.
+H106 is selected from a real gateway presentation defect: a whole-response quote
+hides three ordinary sentences from the established brevity guard. Normalize only
+ordinary dialogue framing and preserve requested quotations/captions, so replies
+sound like direct speech and retain the existing bounded quality repair.
+[Both phases, criteria, exclusions and results](evaluations/2026-10-19-abstract-banter-study.md).
+
+1. Complete H106 with source/quotation/abstention controls, all gates and real installed
+   acceptance. Confidence high in structural reproduction; general fidelity unmeasured.
+   No new model/service/call allowance. Existing repair maximum and18/2/20guard.
+2. H92/H93/H101: qualify independent useful abstract/emotional/amplified-humor and
+   caption/composition context. Require attributed support, contrary episodes,
+   held-outs, meaningful paired gains and real gateway. Rejected candidates need
+   new causal evidence before retry. Broader utility remains unresolved.
+3. Broaden useful original-view coverage and seasonal variety after utility evidence.
+   Preserve generated U.P. aurora/trail-camera themes and selective context tools.
+   H96confirmationclosed without a qualified feed;H97/H102exploratory.
+
+Six local01/05/09/13/17/21Sol/xhigh runs,notifications,privacy/withdrawal/allowlists
+and spending guards unchanged. Older snapshots below are historical.
+
 # Current priority, 2026-10-19 05:00 Pacific - 2.38.2 complete
 
 H104 completes unfinished H103 source-bound follow-ups. Same31row handler/model/

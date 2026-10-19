@@ -5307,3 +5307,15 @@ No rollback/data restore. [Full evidence](evaluations/2026-10-19-photo-handler-f
 [public JSON](evaluations/2026-10-19-photo-handler-focus.json),
 [PR](https://github.com/jdegregorio/wcb-discord-bot/pull/166),
 [release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.2).
+
+## 2026-10-19 09:00 Pacific - H105 rejected; H106 selected
+
+Fresh managed worktree from fetchedc6ec561,feature/trubot-daily-20261019-0900;
+primary checkout untouched,no unfinished evolution PR. Both planning phases and
+excluded cohorts are in [the study](evaluations/2026-10-19-abstract-banter-study.md).
+Three valid abstract-humor pairs prefer baseline;no new personal observation is
+imported. Select actual quoted-dialogue framing/cadence correction2.38.3.
+Eight targeted regressions fail on baseline. Real private-server controlled handler
+posts demonstrate zero baseline repairs versus one candidate accounted repair and
+one direct sentence. Full gates/protected CI/release/installed acceptance pending.
+No new model/service/source/spending allowance or broader fidelity claim.

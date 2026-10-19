@@ -6,6 +6,7 @@ import re
 from collections.abc import Sequence
 
 from trubot.conversation import ConversationMessage
+from trubot.reply_presentation import dialogue_content, requested_quotation
 
 _WORD = re.compile(r"\w+(?:['\u2019]\w+)*")
 _QUOTED = re.compile(r'"[^"\n]*"|“[^”\n]*”')
@@ -38,6 +39,7 @@ def needs_brief_reply(
     """Recognize clear excess, preserving requested detail and literal references."""
     if (
         not target
+        or requested_quotation(target)
         or _EXPANDED_REQUEST.search(target)
         or any(message.origin == "reference" for message in messages)
     ):
@@ -47,7 +49,7 @@ def needs_brief_reply(
 
 def sentence_count(reply: str) -> int:
     """Count prose boundaries without treating quoted punctuation as prose sentences."""
-    text = _QUOTED.sub("quoted text", reply).strip()
+    text = _QUOTED.sub("quoted text", dialogue_content(reply)).strip()
     count = 0
     last_end = 0
     for end in _END.finditer(text):

@@ -1,3 +1,13 @@
+## Direct conversational replies (2.38.3)
+
+Ordinary replies shed an accidental outer dialogue quotation, so humor and care
+appear as direct speech. Quoted framing also cannot hide a long answer or an old
+bot echo from the existing bounded quality check. Requested quotations, original
+captions and embedded quoted excerpts retain their wording and punctuation.
+There is still at most one optional quality repair, with the same source and
+spending checks. No new human trait or general humor improvement is claimed.
+[Study and validation](docs/trubot-evolution/evaluations/2026-10-19-abstract-banter-study.md).
+
 ## Text follow-ups to shown source photos (2.38.2)
 
 After Trubot shows an indexed original, ask about its original caption, visible

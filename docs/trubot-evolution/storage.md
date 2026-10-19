@@ -1410,3 +1410,12 @@ selection/continuation/publication;denied reads cannot use cached pixels. Row/pr
 changes,correction,deletion and withdrawal revoke in-flight evidence. Existing
 archive retention,backups/deletion and seven-day private receipt cleanup apply.
 Rollback changes code only;never restore source,spending or operation claims.
+
+
+## Ordinary reply framing,2.38.3
+
+No source/graph/schema/storage migration or new human abstraction. H105 candidate
+and temporary private snapshots were rejected and removed. H106 changes only
+reply presentation and the established quality check. Existing private content-free
+research/smoke receipts use0700directories/0600files,seven-daymanualretention and
+withdrawal cleanup. Never reset usage/source/paid claims during code rollback.
