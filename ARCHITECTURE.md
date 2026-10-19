@@ -1,3 +1,14 @@
+## Ordinary reply presentation, 2.38.3
+
+A conservative presentation helper unwraps one complete double-quote pair on a
+focused ordinary reply. Explicit quotation, repetition and caption requests,
+embedded/multiple/unbalanced quotes and unfocused replies retain their text.
+Both initial generation and the existing optional repair use this boundary.
+Whole-utterance quotes expose their sentences to the brevity check; embedded
+source punctuation remains excluded. Prior bot dialogue receives the same
+normalization for echo checks. Source freshness, publication checks, abstention,
+usage accounting and the one-repair maximum remain authoritative.
+
 ## Current-focus source inspection,2.38.2
 
 The current focus repeats scoped inspection availability after authenticated author

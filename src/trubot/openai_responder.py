@@ -33,6 +33,7 @@ from trubot.photo_action import NAME as PHOTO_ACTION_NAME
 from trubot.photo_action import PhotoAction
 from trubot.reply_brevity import BRIEF_REPLY_GUIDANCE, needs_brief_reply
 from trubot.reply_focus import preceding_human_turn
+from trubot.reply_presentation import ordinary_reply
 from trubot.vision import IMAGE_TOKEN_BOUND, MAX_IMAGES
 
 logger = logging.getLogger(__name__)
@@ -347,7 +348,7 @@ class OpenAITruaxResponder:
                 refresh_check,
                 photo_action,
             )
-        reply = normalize_reply(response.output_text)
+        reply = normalize_reply(response.output_text, target=target)
         if mode is ReplyMode.FOLLOW_UP and reply.casefold() == _NO_REPLY.casefold():
             logger.info("Trubot declined follow-up candidate")
             return None
@@ -429,7 +430,7 @@ class OpenAITruaxResponder:
                 # failure must not turn a usable answer into an error or another call.
                 logger.warning("Optional reply-quality refresh unavailable; keeping draft")
             else:
-                candidate = normalize_reply(fresh.output_text)
+                candidate = normalize_reply(fresh.output_text, target=target)
                 if getattr(fresh, "status", "completed") != "completed" or not candidate:
                     logger.warning("Optional reply-quality refresh incomplete; keeping draft")
                 elif mode is ReplyMode.FOLLOW_UP and candidate.casefold() == _NO_REPLY.casefold():
@@ -702,7 +703,7 @@ def _stale_bot_echo(
     # This grants no factual authority; initial memory validation and the separate
     # length-repair path remain authoritative. Longer single tokens are not exempt.
     previous = [
-        normalize_reply(message.content)
+        normalize_reply(message.content, target=target)
         for message in messages
         if message.role == "assistant" and message.origin == "conversation"
     ]
@@ -761,9 +762,9 @@ def _format_target(
     return f"{label} - answer this now; earlier messages are context only:\n{target}"
 
 
-def normalize_reply(reply: str | None) -> str:
-    """Remove an accidental speaker label while preserving the authored line."""
+def normalize_reply(reply: str | None, *, target: str | None = None) -> str:
+    """Remove speaker/dialogue framing without changing requested source artifacts."""
 
     if not reply:
         return ""
-    return _SPEAKER_PREFIX.sub("", reply.strip(), count=1).strip()
+    return ordinary_reply(_SPEAKER_PREFIX.sub("", reply.strip(), count=1).strip(), target)
