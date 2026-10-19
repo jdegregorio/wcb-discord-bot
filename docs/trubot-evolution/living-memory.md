@@ -1,3 +1,13 @@
+# Current memory completion, 2026-10-18 17:00 Pacific
+
+H99a/2.36.0 is deployed: two omitted originals recovered with verified source
+hashes, pixels and resumable checkpoints. No new human trait or graph observation.
+Captured profiles remain pending and disconnected from ordinary photo retrieval.
+Qualify useful abstract, emotional, amplified-humor and visual episode context
+before more source expansion. Native automatic-pattern learning stays closed.
+[Current plan](plan.md) and [installed evidence](evaluations/2026-10-18-photo-history-release.md)
+supersede older priorities; the existing graph/source lifecycle remains authoritative.
+
 # Current memory direction, 2026-10-18 17:00 Pacific
 
 H99a bounded original-photo recovery is the selected enabling increment after
