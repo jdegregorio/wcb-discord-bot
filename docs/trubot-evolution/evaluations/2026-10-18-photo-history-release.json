@@ -1,0 +1,171 @@
+{
+  "run": "2026-10-18T17:00:00-07:00",
+  "hypothesis": "H99a",
+  "classification": "validated_enabling_work",
+  "base_sha": "337592bcf57e9c2ea7be76a57f57a83bb5df21ac",
+  "tested_head": "e774be1dc0d360e641f8f330f1b67f595e6963e7",
+  "merged_release_sha": "a60e6b7e1bf242f3a9b7d4fabfe2ea94d99099df",
+  "runtime_pr": 160,
+  "superseded_pr": 157,
+  "version": "2.36.0",
+  "image_index": "sha256:3718d0f55db3cbc8236d18049d6cfa9ead2af6f1cec3de9d9e64dd27d91c6a70",
+  "ci": {
+    "feature": 39179446616,
+    "main": 39179644436,
+    "multiarch_image": 39179814681,
+    "result": "success"
+  },
+  "quality": {
+    "required_gates": 6,
+    "feature_and_merged_main": "pass",
+    "tests": 1851,
+    "coverage_percent": 96.04,
+    "typed_modules": 42,
+    "installed_module_hashes_match": 42,
+    "targeted_photo_tests": 49
+  },
+  "baseline": {
+    "source_channels": 3,
+    "messages": 549,
+    "target_messages": 46,
+    "target_photo_posts": 9,
+    "omitted_photo_posts": 7,
+    "already_stored_photo_posts": 2,
+    "coverage": "bounded_sample_not_full_history"
+  },
+  "recovery": {
+    "new_originals": 2,
+    "total_profiles": 26,
+    "pending": 22,
+    "daily_study_attempts": 4,
+    "history": {
+      "channels": 4,
+      "states": {
+        "scanning": 3,
+        "out_of_scope": 1
+      },
+      "scanned": 327,
+      "captured": 2,
+      "gaps": 1,
+      "full_history": false,
+      "scope": "pinned_human_first_attachment_existing_text_channels"
+    },
+    "provider_calls": 0,
+    "discord_writes": 0
+  },
+  "installed_acceptance": {
+    "strictly_descending_checkpoints": true,
+    "restart_reinitialization_preserves_checkpoints": true,
+    "recent_photo_cursors_unchanged": true,
+    "independent_cli_process_blocked": true,
+    "blocked_child_exit": 2,
+    "blocked_child_changes_checkpoint": false,
+    "fresh_source_byte_hash_matches": 2,
+    "actual_recovered_originals_inspected": 2,
+    "received_byte_cap_gap_confirmed": true,
+    "temporary_pixel_qa_copies_removed": true
+  },
+  "actual_gateway": {
+    "baseline_questions": 1,
+    "post_release_questions": 8,
+    "baseline_older_photo_attachments": 0,
+    "installed_older_photo_attachments": 0,
+    "existing_photo_attachments": 1,
+    "delivered_attachment_bytes": 257703,
+    "delivered_hash_matches_prior_verified_pixels": true,
+    "existing_photo_caption": "partial_unverified_background_object_function",
+    "baseball_direct_control": "pass",
+    "exact_capture_date_restraint": "pass",
+    "broad_memory": "natural_no_stock_disclaimer_calendar_relevance_unresolved",
+    "contextual_humor": "adds_novel_turn_no_multiplier_claim",
+    "hypothetical_care": "brief_no_joke",
+    "final_public_context": "pass",
+    "final_latency_seconds": 3.88,
+    "final_after_all_secondary_clients_closed": true,
+    "dev_membership_verified": true,
+    "no_league_test_posts": true
+  },
+  "character_audits": {
+    "pre": {
+      "human_windows": 4,
+      "development_posts": 16,
+      "result": {
+        "sampled_bot_posts": 10,
+        "peculiar_posts": 1,
+        "third_person_posts": 1,
+        "mechanical_gap_posts": 0,
+        "factual_overreach_posts": 1,
+        "human_comparison_sufficient": false
+      }
+    },
+    "post": {
+      "human_windows": 4,
+      "development_posts": 16,
+      "result": {
+        "sampled_bot_posts": 8,
+        "peculiar_posts": 0,
+        "third_person_posts": 0,
+        "mechanical_gap_posts": 0,
+        "factual_overreach_posts": 0,
+        "human_comparison_sufficient": false
+      }
+    },
+    "seven_day_activity_in_latest_100_per_source_channel": {
+      "source_channels": 3,
+      "target_posts": 0,
+      "bot_posts": 0
+    },
+    "limitations": [
+      "small_unmatched_cohorts",
+      "unblinded_single_model",
+      "truncated_context",
+      "no_new_persona_trait",
+      "no_causal_general_fidelity_claim",
+      "text_audit_does_not_validate_image_caption",
+      "different_unmatched_bot_cohorts",
+      "no_general_fidelity_or_engagement_gain"
+    ]
+  },
+  "cost": {
+    "covered_run_estimated_usd": 0.006787585,
+    "covered_run_records": 16,
+    "maintenance_estimated_usd": 0.000686625,
+    "runtime_estimated_usd": 0.00610096,
+    "covered_month_estimated_usd": 1.05839612,
+    "covered_month_records": 2591,
+    "preexisting_uncertain": 3,
+    "new_uncertain": 0,
+    "runtime_guard_usd": 18,
+    "maintenance_guard_usd": 2,
+    "total_guard_usd": 20,
+    "billing_reconciled": false,
+    "pre_guard_spend_known": false
+  },
+  "final_health": {
+    "healthy": true,
+    "discord_ready": true,
+    "readonly": true,
+    "restarts": 0,
+    "timer_active_enabled": true,
+    "rollback": false
+  },
+  "final_five_minute_logs": {
+    "at": "2026-10-19T00:23:07.994448+00:00",
+    "window_seconds": 300,
+    "lines": 44,
+    "errors": 0,
+    "warnings": 0,
+    "normal_posts": 6,
+    "source_discards": 0,
+    "unhandled": 0,
+    "followup_declines": 0
+  },
+  "limitations": [
+    "captured_older_originals_not_connected_to_ordinary_photo_retrieval",
+    "pending_profiles_wait_existing_study_cadence",
+    "caption_grounding_and_calendar_relevance_remain_partial",
+    "source_refresh_availability_not_longitudinally_qualified",
+    "full_native_peer_thread_visual_history_incomplete",
+    "no_new_persona_trait_or_automatic_pattern_permission"
+  ]
+}

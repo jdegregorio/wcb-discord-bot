@@ -3006,3 +3006,20 @@ no new trait or measured reply-quality benefit. Preserve independent abstract/
 emotional/amplified-humor and caption/recall qualification next. Both phases,
 falsifiable acceptance, contrary cases and final outcome in
 [evidence](evaluations/2026-10-18-photo-history-release.md).
+
+
+## H99a supported enabling result, 2026-10-18 17:00
+
+Installed 2.36.0 recovers two omitted originals with fresh source hashes and pixels:
+327 scanned messages and one byte-limit gap. Restart, independent process locking
+and unchanged recent cursors pass. H99b ordinary recall/composition utility remains
+unvalidated: the same older-photo question returns zero attachments before and after.
+An existing delivered photo matches the verified pixels; caption grounding and
+broad-year relevance remain partial. Each audit uses four human windows and
+16 development posts, insufficient for a general human comparison. No new trait,
+general fidelity improvement or humor multiplier is claimed.
+
+Next: qualify useful abstract, emotional, humor and visual episode context. Prove
+the capture-to-retrieval connection before broader source recovery. Both phases,
+methods, CI, release, real gateway, costs and limitations are in
+[the evidence](evaluations/2026-10-18-photo-history-release.md).

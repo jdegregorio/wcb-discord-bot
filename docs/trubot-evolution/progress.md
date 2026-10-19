@@ -5147,3 +5147,46 @@ primary checkout. Fresh omitted-source reproduction and actual owner/gateway
 unavailable baseline confirmed.49targetedphoto/lifecycle regressions pass,42typed
 modules. Remaining gates/release/installacceptance pending.
 [Both planning phases and evidence](evaluations/2026-10-18-photo-history-release.md).
+
+
+## 2026-10-18 17:00 H99a shipped and installed
+
+PR #160 ordinarily squash-merged as a60e6b7e1bf242f3a9b7d4fabfe2ea94d99099df,
+with a tree identical to tested e774be1dc0d360e641f8f330f1b67f595e6963e7.
+Feature CI 39179446616, main CI 39179644436 and image CI 39179814681 pass.
+All six feature and merged-main local gates pass: 1,851 tests, 96.04% coverage,
+42 typed modules and the 2.36.0 package build. Immutable index
+3718d0f55db3cbc8236d18049d6cfa9ead2af6f1cec3de9d9e64dd27d91c6a70 is healthy,
+read-only and Discord-ready on verified pi5, with zero restarts and 42 matching
+module hashes. The existing timer installed it; the manual transaction confirmed
+it was current. PR #157 is superseded and closed; its branch/worktree remain.
+No rollback or unrelated service change.
+
+Three bounded operator invocations scanned 327 messages, captured two originals
+and recorded one byte-limit gap. Restart/reinitialization, an independent process
+lock, recent-cursor continuity and both fresh source/hash/pixel checks pass.
+There are 26 profiles, including 22 pending; four rolling-day study attempts remain.
+
+One baseline and eight installed real owner/gateway questions include a working
+existing-photo attachment and final cloud sanity in 3.880 seconds after all
+secondary clients close. Older-photo delivery remains unavailable, zero attachments
+before and after. Capture-to-retrieval, caption grounding and broad-year relevance
+remain explicit gaps. No general character/engagement gain or new trait is claimed.
+Pre/post audits each use four human windows and 16 development posts, insufficient
+for a qualified general comparison.
+
+Covered run: 16 settled records, USD 0.006787585 estimated. Covered October:
+2,591 records, USD 1.058396120 estimated, three preexisting uncertain and zero new.
+Same USD 18/2/20 guard; recovery makes no provider calls. Final five minutes have
+zero errors, warnings, discards or unhandled failures; two startup notices concern
+optional voice dependencies. Eleven private, content-free receipts and all gate,
+hash and cost evidence are preserved outside this worktree. Only this run's
+temporary pixel QA copies were removed. Schedule, model and notifications unchanged.
+
+Next: qualify useful abstract/emotional/amplified-humor and visual episode context,
+including proven older-original retrieval before more capture. H96 stays closed;
+H97 remains unresolved.
+[Full validation](evaluations/2026-10-18-photo-history-release.md),
+[public receipt](evaluations/2026-10-18-photo-history-release.json),
+[PR #160](https://github.com/jdegregorio/wcb-discord-bot/pull/160),
+[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.36.0).

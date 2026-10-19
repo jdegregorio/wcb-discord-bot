@@ -1,34 +1,42 @@
-# Current harness,2026-10-18 13:00Pacific
+# Current harness, 2026-10-18 17:00 Pacific
 
-Current 2026-10-18 17:00 Pacific run: H98d/2.35.0 is deployed. H99a is the
-selected enabling increment: bounded resumable operator recovery of older original
-photos on the existing private app volume. The fresh probe reproduces seven omitted
-pinned-human photo posts among 549 messages/46 target messages/nine photo posts.
-One real owner/gateway older-photo question confirms unavailable delivery. Recovery
-is not a measured character or reply-quality gain.
+Current run: 2026-10-18 17:00 Pacific. H99a is deployed as 2.36.0.
+Operator recovery captured two omitted originals across 327 scanned messages, with
+one confirmed received-byte gap. Restart checkpoints, an independent process lock,
+unchanged recent cursors and both fresh source hashes/pixels pass. All six feature
+and merged-main gates pass: 1,851 tests, 96.04% coverage and 42 typed modules.
+CI, the multiarch image and all 42 installed module hashes pass.
 
-1. Complete H99a reconciliation, all gates, release, installed bounded source/hash/
-   restart checks and real private Discord regression acceptance. Dependencies:
-   completed H98d capture lifecycle, verified pinned identity/current permissions,
-   existing archives. Confidence in omission high; broader benefit unresolved.
-   Zero direct provider calls; unchanged128-photo/four-studies-day/18-2-20guard.
-2. Independently qualify H92/H93 abstract/emotional/amplified-humor usefulness and
-   original-view caption/composition/recall. So episode concepts and views support
-   natural varied engagement. Require attributed support/contrary episodes, actual
-   pixels, independent held-outs and real gateway tests. Investigate the actual
-   awkward joke/visual narration without inventing human traits. Confidence remains
-   unresolved. No automatic native-pattern gate or spending-pool change.
-3. Observe seasonal timing/variety longitudinally. H96 aurora confirmation stays
-   closed without an accessible qualified positive/negative feed; H97 clarification
-   needs actual-context reproduction. Preserve generated U.P./trail-camera direction
-   and selectively loaded skills/tools.
+One baseline and eight installed owner/gateway questions verify operational
+controls. The same older-photo request still returns no attachment: capture is not
+connected to ordinary retrieval. Existing-photo delivery works, but caption grounding
+and broad-year relevance remain partial. There are 22 pending profiles under the
+existing study cadence. No general character or engagement gain, new human trait or
+automatic native-pattern permission is claimed. This is validated enabling work.
 
-Repeated source-refresh failures or material privacy/grounding/delivery regressions
-reorder this list. Preserve source correction/withdrawal, allowlist/no DMs and six
-standalone local01/05/09/13/17/21Sol/xhigh runs with existing notifications.
-The current order supersedes the dated historical snapshots below.
+1. H92/H93: qualify useful episode, abstract, emotional and amplified-humor context,
+   plus original-view caption, composition and recall. Do this so relevant human
+   concepts and views improve natural, varied engagement. H99b's capture-to-retrieval
+   gap is an explicit visual dependency: prove connected older-original recall in
+   a held-out replay and real gateway before broader recovery. Require attributed
+   support and contrary episodes, actual pixels, independent semantic review, brief
+   grounded captions and no invented beliefs or events. Confidence in the retrieval
+   gap is high; broader utility remains unresolved. Keep existing study and spending
+   limits. No new spending pool.
+2. H93: observe seasonal timing and variety longitudinally, including restraint in
+   sensitive moments. Preserve generated U.P./trail-camera scenes and selective
+   tools. Engagement benefit remains unvalidated. Health and ingestion cannot prove it.
+3. H96 confirmation remains closed without an accessible, qualified location/time
+   feed with positive and negative observations. H97 clarification needs reproduction
+   in its actual context. Architecture and harness changes remain eligible when
+   evidence supports them.
 
-[Current protocol](trubot-evolution/evaluations/2026-10-18-photo-history-release.md).
+Repeated source-refresh failures or material privacy, grounding or delivery
+regressions reorder this list. Preserve attribution, correction, withdrawal, the
+channel allowlist, no DMs, and the six standalone local 01/05/09/13/17/21 Sol/xhigh
+runs with existing notifications. This order supersedes dated snapshots below.
+
+[Evidence](trubot-evolution/evaluations/2026-10-18-photo-history-release.md).
 
 The deployed source-photo action is offered in direct/follow-up turns with existing
 learning scope. The model chooses intent/query; fixed source,request/access/pixel/

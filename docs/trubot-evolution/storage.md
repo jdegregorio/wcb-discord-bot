@@ -1329,7 +1329,7 @@ references/reason classes; failed downloads advance rather than blocking future
 photos. Repair/retry is explicit operator work. No raw excerpts or URLs enter logs.
 
 
-## Operator original-photo history (H99 candidate)
+## Operator original-photo history (H99, 2.36.0 deployed)
 
 `trubot-photo-history init` explicitly adds `photo_history` to the existing private
 archives.sqlite3 under the source lock. It requires initialized photo memory and
@@ -1361,6 +1361,19 @@ Checkpoints share archive backup/deletion/withdrawal behavior. The empty operati
 lock carries no personal content. Code rollback ignores the additive table; never
 restore source, spending or operational-claim state. This is explicit operator work,
 not a new bulk job in the runtime worker. Private content-free validation receipts
-use smoke-tests/2026-10-18-0900 with existing 0700/0600 permissions, seven-day manual
+use smoke-tests/2026-10-18-1700 with existing 0700/0600 permissions, seven-day manual
 retention and withdrawal cleanup. Original pixel study copies stay outside Git and
 receipt directories, in approved private temporary storage.
+
+
+Installed H99a captures two new originals: 327 scanned messages, one confirmed
+byte-limit gap, three source channels still scanning and one out-of-scope channel.
+Recent cursors and source lifecycle remain authoritative. Additive checkpoints
+survive reinitialization and an independent CLI process cannot enter the held lock.
+The 26 profiles include 22 pending under the unchanged four-studies/day bound.
+Captured profiles are not ordinary recall indices; older-photo delivery remains
+unavailable. Eleven content-free receipts retain existing 0700/0600 permissions,
+manual seven-day retention and withdrawal cleanup. Temporary QA pixels were removed
+after inspection; canonical private originals remain. Never restore source, usage
+or operational-claim state on code rollback.
+[Evidence](evaluations/2026-10-18-photo-history-release.md).

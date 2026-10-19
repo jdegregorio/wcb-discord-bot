@@ -73,18 +73,146 @@ remains incomplete.
 Implementation reconciliation, current-base gates, CI, release, installed capture
 and real Discord acceptance are pending. No release or quality gain is claimed.
 
-### Fresh baseline and current-base gates
+### Fresh baseline and quality gates
 
-Fresh authenticated probe reproduces549messages/46targetmessages/ninephoto posts:
-sevenoutsideearliest100andabsent,twoalreadycaptured.24existingprofiles,4ready/20pending.
-Existing four rolling-day pixel-study attempts are exhausted. No study cap or ledger
-reset is authorized by this recovery. Actual owner-authored snowplow-photo request
-gets an honest unavailable answer,zeroattachments. This is baseline delivery,not
-proof that operator capture alone wires broader recall. Two previously captured
-private originals are available for pixel checks; one earlier candidate exceeds
-the unchanged4MBreceived-bytecap. Source/photo/capturedates remain distinct.
+The fresh authenticated probe reproduces 549 messages, 46 target messages and nine
+target photo posts: seven omitted originals and two already captured. Initial photo
+state is 24 profiles, four ready and 20 pending. Four rolling-day study attempts
+are exhausted, verified with the runtime's timestamp comparison. No study or ledger
+reset. A real owner-authored older-photo request gets an honest unavailable answer
+and no attachment. Capture alone does not prove broader recall.
 
-All six current-base gates pass:locked sync,128filesformat/lint,42typedmodules,
-1,851tests/96.04%branch-inclusivecoverage,2.36.0sdist/wheel.49targetedphoto/recovery/
-lifecycle cases pass. Existing H98d source-signature/deletion suppression is unchanged.
-Required CI,immutableimage,installedrecoveryandrealsmoke remain pending.
+All six gates pass on both the feature and merged main: locked sync, format, lint,
+42 typed modules, 1,851 tests with 96.04% branch-inclusive coverage and a 2.36.0
+package build. The 49 targeted photo/recovery/lifecycle cases also pass. H98d's
+source-signature and deletion suppression code is unchanged.
+
+### Release and installed recovery
+
+[PR #160](https://github.com/jdegregorio/wcb-discord-bot/pull/160) ordinarily
+squash-merged as a60e6b7e1bf242f3a9b7d4fabfe2ea94d99099df. Its tree exactly
+matches tested e774be1dc0d360e641f8f330f1b67f595e6963e7. Feature Quality
+39179446616 and merged-main Quality 39179644436 pass. Superseded PR #157 is closed;
+its branch and older worktree remain preserved.
+
+[Immutable release 2.36.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.36.0)
+on that commit has successful multiarch image CI 39179814681. Verified pi5,
+aarch64, Ubuntu 24.04.4 runs index
+3718d0f55db3cbc8236d18049d6cfa9ead2af6f1cec3de9d9e64dd27d91c6a70. The container
+is read-only, healthy and Discord-ready with zero restarts; all 42 Python module
+hashes match. The existing enabled timer installed it before the manual scoped
+transaction, which reported it already current. Previous 2.35.0 index
+71579343cde118f3f3714cf18414bc1d7385331507897acdad3cb044bbf5aa44 is retained
+for rollback. No rollback or sudo was needed.
+
+Actual CLI initialization/status and three bounded operator invocations complete:
+
+| Invocation | Pages | Scanned | Captured | Gaps |
+| --- | ---: | ---: | ---: | ---: |
+| First | 1 | 27 | 1 | 1 |
+| Second | 2 | 200 | 0 | 0 |
+| Third | 1 | 100 | 1 | 0 |
+
+Already-stored candidates count against the same two-attempt bound. Fair channel
+rotation precedes the third invocation's return to the first checkpoint. Total:
+327 scanned, two new originals and one gap. Four checkpoint rows comprise three
+source channels still scanning and one channel excluded after authenticated guild
+checks. Denied reads are never called complete. Full history remains incomplete.
+
+Reinitialization preserves exact checkpoints and recent photo cursors stay identical.
+An independent installed CLI process exits 2 with a content-free error while its
+parent holds the job lock; it changes no checkpoint. Both captured originals match
+newly fetched, authenticated pinned-human source bytes and SHA256 hashes. Actual
+captured pixels were privately inspected. Received sizes are 1,148,324 and
+500,412 bytes. A fresh authenticated probe confirms the remaining capture gap is
+the unchanged 4 MiB received-byte guard. Rejected bytes are not retained.
+
+Profiles rise from 24 to 26, including 22 pending and four ready. Rolling study
+attempts remain four. Recovery makes no provider call, gateway connection or
+Discord write. No source, spending or study reset. The 49 synthetic regressions
+cover source lifecycle and withdrawal; real production withdrawal was not exercised.
+
+H99a enabling acceptance is supported. H99b composition/recall utility is not:
+the identical real older-photo question still returns no attachment. The new
+profile/archive path is disconnected from ordinary source-photo retrieval, and
+pending profiles cannot guide generation until existing studies qualify them.
+Successful capture is not a measured reply improvement.
+
+### Actual gateway controls and character audit
+
+One baseline and eight installed owner-authored questions exercise the real
+production gateway in the authenticated two-member development guild and its
+already allowed general channel. No league test posts or development learning.
+Installed controls produce a direct baseball answer without a metadata disclaimer,
+an existing source-photo attachment, brief exact-capture-date uncertainty, natural
+broad-year recall, a novel contextual Thomas Jones joke, a brief caring answer to
+an explicitly hypothetical loss, and a fresh public cloud-context reply. The same
+older-photo request remains unavailable. These are bounded controls, not a
+population-level score or proof of a humor multiplier.
+
+The delivered existing photo is 257,703 bytes and matches prior verified source
+pixels by hash; actual delivered pixels were inspected. Caption grounding remains
+partial: an unverified function is assigned to a background object. Broad recall
+has no stock date disclaimer, but a year in the remembered topic does not establish
+when the message was authored. Calendar relevance remains partial. These inherited
+limitations prevent a full recall/voice claim. This release changes no caption or
+date prompt.
+
+Each audit uses four attributed human windows and 16 recent development posts.
+The pre sample contains ten bot posts with one peculiar, third-person and possible
+overreach flag. The post sample contains eight bot posts with none of those flags.
+Both report insufficient human comparison. Different unmatched small cohorts,
+truncated context, an unblinded single model and absent recent spontaneous league,
+reaction and ambient activity prevent a causal comparison. The text-only audit
+cannot validate image-caption truth; separate pixel review finds the limitation
+above. No human pattern or graph observation is populated. Source digest, ordinal
+and line references stay private. Development and bot prose are never human evidence.
+Both source censuses cover the latest 100 messages in three channels and find no
+seven-day target or bot posts, not proof of full guild silence.
+
+Final actual public-context sanity completes in 3.880 seconds after all secondary
+Discord clients close. Content-free references and times are read through browser
+DOM; no Discord client is constructed afterward. Build-client validations set
+unique ephemeral HEALTH_READY_FILE paths before construction. The final heartbeat
+is healthy with zero restarts. Recovery's plain HTTP client never manages readiness.
+
+### Costs, privacy and next work
+
+The covered run has 16 settled records, estimated USD 0.006787585: two maintenance
+records/USD 0.000686625 and 14 runtime records/USD 0.006100960. Covered October:
+2,591 records/USD 1.058396120 estimated, three preexisting uncertain and zero new.
+The third old uncertain runtime reservation predates this run. These are ledger
+estimates, not reconciled billing; pre-guard spending is unknown. No reservation or
+ledger reset, image-generation charge, new service, model or spending pool. The
+USD 18 runtime/2 maintenance/20 total guard remains. Recovery has no provider charge.
+Four rolling-day pixel studies remain exhausted; pending profiles stay unqualified.
+
+Pre five-minute snapshot: zero errors, warnings, discards and unhandled failures;
+one normal post. Final snapshot: the same zero counts with six normal posts.
+Unequal traffic and windows prevent a formal error-rate comparison. Since-start
+warnings are two optional voice-library notices, PyNaCl and davey. No restart or
+unrelated service mutation. The release timer remains enabled and active.
+
+Approval review rejected printing the full deployment version environment file.
+That action was abandoned. Previously verified version/digest and non-secret helper
+source sufficed; no environment values were printed or needed. No work remains blocked.
+
+Eleven content-free receipts use app-private 0700/0600 permissions, existing manual
+seven-day retention and withdrawal cleanup. They retain only source/test references,
+hashes, counts and pass/fail metadata and are copied outside this worktree. Only
+this run's explicitly named temporary pixel QA copies were removed after inspection.
+Canonical authorized source storage and earlier artifacts/worktrees remain intact.
+No raw source, derived personal observation or answer text is committed or retained
+in smoke-test artifacts.
+
+Next: qualify useful abstract, emotional, amplified-humor and visual episode context.
+The proven capture-to-retrieval gap is an explicit dependency in that usefulness
+work. Prove an older original in a held-out replay and actual gateway before broader
+recovery. More ingestion cannot substitute for usefulness. H96 confirmation stays
+closed, H97 clarification remains unresolved, and seasonal engagement needs
+longitudinal observation. H99b remains unvalidated.
+
+[Runtime change](https://github.com/jdegregorio/wcb-discord-bot/pull/160),
+[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.36.0),
+[public results](2026-10-18-photo-history-release.json). Documentation-only evidence
+changes no runtime bytes and requires no additional release.
