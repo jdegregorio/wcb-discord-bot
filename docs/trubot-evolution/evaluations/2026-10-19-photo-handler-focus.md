@@ -127,3 +127,83 @@ requester-history test now proves the capability is absent, not merely denied
 inside a callback. Targeted74tests pass without suite-wide coverage enforcement;
 full-suite coverage above supplies the required gate. No unresolved test failure.
 Protected CI, merged checks, release and real installed acceptance remain required.
+
+
+## Release and actual installed outcome
+
+PR166merged normally as `9e00c2fcaf48df8ccffba1d9e2875563bf0284dd` with exact tested feature tree.
+RequiredQuality39249691039,mainQuality39250423064 and multiarch image39250755924
+all succeed. All six feature and merged gates pass1,912tests/96.00%/42typedmodules.
+Immutable [2.38.2](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.2)
+is deployed through the existing locked transaction on verified pi5/aarch64/
+Ubuntu24.04.4,index `5b11171134c1073932e4aa99f2792e9436ea17d75ea0669f8e970d5c7a5649ad`. All42installed module hashes match. No new schema,
+service,model,intake scope or spending allowance. Prior2.38.1index5ff459c0is retained
+for code rollback; never restore learning,withdrawal,usage or paid-operation claims.
+
+Eleven actual owner-authored questions and gateway replies in the confirmed private
+two-member development guild pass their applicable manual functional criteria.
+Three source-caption questions are supported: the pre-deployment link after restart,
+a newly shown second original, and an explicit Reply selecting the older original
+after the newer one. Ten text responses attach nothing; the one requested original
+attaches once and its delivered bytes match the source-checked image. Actual original
+pixels are inspected. Scene/date,baseball,hypothetical care,creative TJ humor,
+requester-owned history and broad past-memory controls remain grounded and direct.
+Exact capture date stays unknown without a routine disclaimer on ordinary recall.
+The current gateway baseline had already succeeded as older context aged out; the
+same31row handler replay supplies the controlled causal comparison, not the changed
+live conversation. No general character or engagement gain is established.
+
+Source-follow-up gateway latency14.089-24.663seconds in this small sample; ordinary
+controls2.089-8.874seconds. Final distinct creative sanity after all validation
+clients close succeeds in4.215seconds. Latency is a visible cost, not a population
+benchmark; future batching/caching must preserve fresh source and final checks.
+No further provider turn,transport retry or spending pool was introduced.
+
+### Audit, evaluator disagreement and harness validity
+
+Post audit repeats four attributed Slack windows and16development posts/eight bot
+posts. Its unmatched count review flags two suspected factual overreaches and has
+insufficient relevant human evidence. A diagnostic identifies needed source/pixel/
+preference/date context, not established defects. The corrected source-specific
+review grounds10/11actual answers; it flags one newly shown original's caption.
+Direct authenticated Discord inspection of that verified human's actual original
+caption,source pixels and nearby peer context supports the scene and authorship
+claims. Preserve this single-model disagreement,do not suppress it or promote the
+one episode into a trait. Peer reactions are context,not Andrew-authored evidence.
+The three actual original-caption cases pass their separate source-specific rubric.
+A requester-history answer properly withholds the character caption; the grader's
+original-caption metric is inapplicable to that ownership control. Human comparison
+is still insufficient for a general fidelity score or claimed humor multiplier.
+
+Two receipt attempts were excluded after an ordering error: Discord defaults to
+oldest-first when after is supplied,so reversing without an explicit ordering paired
+answers with later questions. Fix the validation client with oldest_first=False,
+chronological reversal and request-before-response assertions. A subsequent label
+collision confused I-history with you-history; correct its category before review.
+Final receipt has11distinct correctly paired cases. No production code or grounding
+rule is relaxed to accommodate a validation error. The earlier two incomplete
+handler cohorts and interrupted concurrent cohort remain excluded as documented.
+
+Both bounded300message source-channel censuses find zero seven-day target/bot
+posts. Recent spontaneous,reaction and ambient coverage is sparse,not evidence of
+complete silence. No new human trait,automatic native-pattern permission or graph
+coverage claim. H101/H92/H93require independent source-grounded caption,abstract,
+emotional and approved amplified-humor utility tests next. H102broader year
+relevance remains unresolved despite this passing ordinary-control sample.
+
+### Final operations and privacy
+
+Final healthy/Discord-ready/read-only state has zero restarts,OOMstate false and
+zero response/error/unhandled/source-continuity-warning counts since deployment.
+Covered run estimate USD0.035745400; covered October USD1.127253655.
+Three preexisting uncertain reservations,zero new; pre-guard spending remains
+unknown. Existing18runtime/2maintenance/20total cap and four photo studies/day
+remain. The validation-only memory-pressure kill did not restart the main bot;
+subsequent clients ran sequentially and all used distinct ephemeral readiness paths.
+
+Content-free refs,hashes,booleans and manual source-check receipt remain under the
+private app volume smoke-tests/2026-10-19-0500,0700directory/0600files,seven-day
+manual retention and withdrawal cleanup. No raw source,answer or derived personal
+observation is retained in smoke artifacts or public Git. Canonical source pixels
+remain private. Local gates/scripts live outside the managed worktree. Public
+[JSON evidence](2026-10-19-photo-handler-focus.json) contains only safe aggregates.

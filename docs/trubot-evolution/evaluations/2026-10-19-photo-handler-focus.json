@@ -1,0 +1,95 @@
+{
+  "version": "2.38.2",
+  "base": "734620a773ff79d29a0cc8424b08570b8e01a3b3",
+  "merged_commit": "9e00c2fcaf48df8ccffba1d9e2875563bf0284dd",
+  "pull_request": 166,
+  "required_ci": 39249691039,
+  "main_ci": 39250423064,
+  "image_ci": 39250755924,
+  "image_digest": "5b11171134c1073932e4aa99f2792e9436ea17d75ea0669f8e970d5c7a5649ad",
+  "quality": {
+    "all_six_feature_and_merged_gates": true,
+    "tests": 1912,
+    "coverage_percent": 96.0,
+    "typed_modules": 42,
+    "installed_module_hashes_match": 42
+  },
+  "research": {
+    "valid_full_handler_rows": 31,
+    "baseline_samples": 3,
+    "baseline_supported": 0,
+    "conditional_candidate_samples": 3,
+    "conditional_candidate_supported": 3,
+    "scope_removal_diagnostic_only": true,
+    "single_unblinded_model": true,
+    "excluded_incomplete_replay_cohorts": 2,
+    "interrupted_concurrent_cohort_excluded": true
+  },
+  "gateway": {
+    "confirmed_private_guild_and_owner": true,
+    "actual_cases": 11,
+    "caption_cases_supported": 3,
+    "text_only_responses": 10,
+    "new_original_attachments": 1,
+    "explicit_older_source_selected": true,
+    "pre_restart_link_retained": true,
+    "delivered_image_hash_matches_source_checked_image": true,
+    "actual_source_pixels_and_human_caption_inspected": true,
+    "semantic_grounding_passes": 10,
+    "manual_resolution_of_one_model_grounding_flag": true,
+    "requester_history_ownership_pass": true,
+    "caption_metric_not_applicable_to_requester_history": true,
+    "source_followup_latency_seconds": [
+      14.089,
+      19.416,
+      20.135,
+      24.663,
+      18.343
+    ],
+    "final_sanity_seconds": 4.215
+  },
+  "audit": {
+    "pre_human_context_windows": 4,
+    "post_human_context_windows": 4,
+    "additional_direct_native_episode": 1,
+    "pre_bot_posts": 7,
+    "post_bot_posts": 8,
+    "unmatched_post_suspected_overreach_flags": 2,
+    "general_human_comparison_sufficient": false,
+    "new_traits": 0,
+    "source_channel_messages_sampled_each": 100,
+    "source_channels": 3,
+    "seven_day_target_and_bot_posts_found": 0
+  },
+  "health": {
+    "healthy": true,
+    "oom_killed": false,
+    "restarts": 0,
+    "read_only": true,
+    "readiness": true,
+    "errors": 0,
+    "response_failures": 0,
+    "unhandled": 0,
+    "source_continuity_warnings": 0
+  },
+  "cost": {
+    "covered_run_estimated_usd": 0.0357454,
+    "covered_october_estimated_usd": 1.127253655,
+    "preexisting_unsettled_attempts": 3,
+    "new_unsettled_attempts": 0,
+    "monthly_guard_usd": 20,
+    "runtime_guard_usd": 18,
+    "maintenance_guard_usd": 2,
+    "pre_guard_spend_unknown": true
+  },
+  "limitations": [
+    "small_same_source_unblinded_replays",
+    "gateway_current_baseline_already_passed_after_older_context_aged_out",
+    "gateway_tests_validate_installation_not_isolated_causality",
+    "sparse_spontaneous_reaction_and_ambient_evidence",
+    "one_model_grounding_disagreement_manually_checked_against_authenticated_human_source_and_pixels",
+    "no_general_character_or_humor_multiplier_claim",
+    "six_hour_scoped_links_only",
+    "full_native_peer_thread_visual_and_abstract_utility_not_complete"
+  ]
+}

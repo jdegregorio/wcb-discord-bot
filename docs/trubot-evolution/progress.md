@@ -5276,3 +5276,34 @@ ages out;original failed full31row handler replay reproduces0/3. Focus-scoped
 capability context recovers3/3without weakening attribution. Existing source and
 18/2/20guard unchanged. Conditional candidate,full gates,release,real installed
 acceptance and final audit/cost remain required. [Study](evaluations/2026-10-19-photo-handler-focus.md).
+
+
+## 2026-10-19 05:00 completion - 2.38.2 focused photo-source recall
+
+PR166merged `9e00c2fcaf48df8ccffba1d9e2875563bf0284dd`;all six feature/merged gates pass1,912tests,
+96.00%coverage,42typedmodules. Quality39249691039/main39250423064/image39250755924
+succeed. Existing locked pi5transaction deploys immutableindex `5b11171134c1073932e4aa99f2792e9436ea17d75ea0669f8e970d5c7a5649ad`;
+all42modulehashesmatch. Healthy/Discord-ready/read-only,zero restarts/OOMfalse,
+zero response/error/unhandled/continuity-warning counts. Prior2.38.1retainedrollback.
+
+Both planning phases reconcile unfinished H103 with H104. Valid31row same-model/
+source replay0/3to3/3supported captions;authorship removal is rejected as production
+policy. Three real source-caption cases,restart continuity,explicit older-source
+selection and all11functional gateway criteria pass;ten text responses have no
+attachment,the one requested original matches source-checked pixels. Final distinct
+gateway sanity4.215seconds after all validation clients close. Source follow-ups
+14.089-24.663seconds,an explicit operating limitation. One model grounding flag is
+resolved manually against actual authenticated human caption/pixels;retain evaluator
+disagreement and excluded incomplete/mispaired cohorts. No new trait or general
+character improvement. Sparse spontaneous/reaction/ambient coverage;pre/post human
+comparisons insufficient. Next independently qualify H101/H92/H93caption/abstract/
+emotional/amplified-humor utility,then useful visual coverage/seasonal variety.
+
+Covered run USD0.035745400,covered October USD1.127253655;three
+preexisting uncertain/zero new. Existing18/2/20guard,study caps,learning/withdrawal
+and six-run schedule/notifications unchanged. Private content-free receipts persist
+outside the worktree;no raw evidence or answer text in public Git or smoke files.
+No rollback/data restore. [Full evidence](evaluations/2026-10-19-photo-handler-focus.md),
+[public JSON](evaluations/2026-10-19-photo-handler-focus.json),
+[PR](https://github.com/jdegregorio/wcb-discord-bot/pull/166),
+[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.2).

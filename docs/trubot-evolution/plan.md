@@ -1,26 +1,32 @@
-# Current priority, 2026-10-19 05:00 Pacific
+# Current priority, 2026-10-19 05:00 Pacific - 2.38.2 complete
 
-H104 completes the unfinished H103 source-bound follow-up correction on2.38.1.
-Actual full-handler replay reproduces0/3supported captions despite an available
-source. Scoped capability context at the current focus recovers3/3while preserving
-authenticated authorship. Candidate2.38.2requires conditional-code controls, all
-gates, protected CI, immutable release and installed owner/gateway acceptance.
+H104 completes unfinished H103 source-bound follow-ups. Same31row handler/model/
+source comparison improves0/3to3/3supported captions with author binding retained.
+Three actual source-caption cases pass,restart and explicit older-source selection
+pass,and all six feature/merged gates plus protected CI/image/deployment pass.
+Eleven actual functional gateway cases and final readiness pass. Single-model
+source-grounding disagreement was checked directly against authenticated human
+caption/pixels; no general character gain or new trait is claimed.
 [Evidence](evaluations/2026-10-19-photo-handler-focus.md).
 
-1. Complete H104, so photo follow-ups inspect their exact original rather than
-   repeat an unsupported text-search gap. High diagnosis confidence; broader
-   character utility unresolved. Existing source/access/withdrawal and18/2/20ledger.
-2. H101/H92/H93: independently qualify caption, abstract/emotional and approved
-   amplified-humor utility with attributed support/contrary episodes and held-outs.
-   Acceptance requires natural, grounded, varied responses and independent review.
-   Existing memory graph/private sources; no new operating service or allowance.
-3. Broaden useful original-view coverage and seasonal variety after utility tests.
-   Keep generated U.P. northern-lights/trail-camera scenes and selective tools.
-   H96automatic confirmation remains closed; H97clarification and H102year-grounding
-   remain research candidates. Material privacy/grounding regressions reorder work.
+1. H101/H92/H93: independently qualify useful captions and abstract/emotional/
+   approved amplified-humor episodes,so relevant concepts improve varied natural
+   engagement. Dependencies:attributed support/contrary episodes,original pixels,
+   held-outs and a source-grounded reviewer. Accept matched gains without invented
+   beliefs,unnecessary tools,repetitive bits or insensitive timing. Confidence in
+   broad utility remains unresolved;existing graph/private volume/18/2/20ledger.
+2. Broaden useful original-view coverage and seasonal variety only after utility
+   tests. Keep generated U.P. northern-lights/trail-camera scenes and selective
+   tools. Full native peer/thread/visual coverage remains incomplete. Existing four
+   photo studies/day;no new operating service or allowance.
+3. H96automatic confirmation remains closed without a qualified feed;H97clarification
+   and H102year-grounding remain research candidates. Source-follow-up latency
+   merits bounded study that preserves fresh final checks. Material privacy or
+   grounding regressions reorder work. Reopen H104 on reproduced wrong/skipped
+   source,revocation or requester ownership failures;do not repeat a passed increment.
 
 Six standalone local01/05/09/13/17/21Sol/xhigh runs and notifications unchanged.
-Older snapshots below are historical; this order supersedes unfinished status.
+Older snapshots below are historical;this result and order supersede their status.
 
 Current correction:2.38.0 stored the source link but failed actual caption
 acceptance in the full live conversation. H103b/2.38.1 offers read-only inspection
