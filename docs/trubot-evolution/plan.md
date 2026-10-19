@@ -1,33 +1,34 @@
 # Trubot evolution plan
 
-Current2026-10-18 13:00Pacific completion: H98d is deployed as2.35.0.
-The model can retrieve and attach verified source photos in conversation. All six
-feature/merged gates pass:1,830tests/96.10%,41typed modules; CI and immutable image
-pass.13actual owner/gateway scenarios pass functional checks,3source attachments
-match inspected pixels. Caption grounding/format and specific2020relevance remain
-partial; dynamic source-refresh availability remains unresolved. No general human
-fidelity, humor multiplier or engagement gain is claimed. [Evidence](evaluations/2026-10-18-semantic-photo-release.md).
+Current 2026-10-18 17:00 Pacific run: H98d/2.35.0 is deployed. H99a is the
+selected enabling increment: bounded resumable operator recovery of older original
+photos on the existing private app volume. The fresh probe reproduces seven omitted
+pinned-human photo posts among 549 messages/46 target messages/nine photo posts.
+One real owner/gateway older-photo question confirms unavailable delivery. Recovery
+is not a measured character or reply-quality gain.
 
-1. Integrate H99 draft PR157 after rebasing onto2.35.0, so omitted original views
-   become available through bounded resumable operator recovery.21initial local
-   cases/two private source inspections support enabling work. Require all gates,
-   installed recovery/source lifecycle and real Discord acceptance; same guard.
-2. Independently qualify H92/H93 abstract/emotional/amplified-humor utility and
-   original-view caption/composition. So relevant concepts and views support natural
-   varied engagement. Require attributed support/contrary episodes, independent
-   held-out semantic/pixel review, minimal captions when requested and actual
-   gateway controls. One live caption adds unverified object-function detail.
-   Confidence unresolved; no automatic native-pattern gate change/new spending pool.
-3. H93 seasonal timing/variety needs longitudinal natural opportunities and
-   sensitive-context restraint. H96confirmation remains closed pending accessible,
-   fresh location/time-bound positive/negative observations. H97clarification needs
-   actual-context reproduction. Same operating guard; no event sighting claims.
+1. Complete H99a reconciliation, all gates, release, installed bounded source/hash/
+   restart checks and real private Discord regression acceptance. Dependencies:
+   completed H98d capture lifecycle, verified pinned identity/current permissions,
+   existing archives. Confidence in omission high; broader benefit unresolved.
+   Zero direct provider calls; unchanged128-photo/four-studies-day/18-2-20guard.
+2. Independently qualify H92/H93 abstract/emotional/amplified-humor usefulness and
+   original-view caption/composition/recall. So episode concepts and views support
+   natural varied engagement. Require attributed support/contrary episodes, actual
+   pixels, independent held-outs and real gateway tests. Investigate the actual
+   awkward joke/visual narration without inventing human traits. Confidence remains
+   unresolved. No automatic native-pattern gate or spending-pool change.
+3. Observe seasonal timing/variety longitudinally. H96 aurora confirmation stays
+   closed without an accessible qualified positive/negative feed; H97 clarification
+   needs actual-context reproduction. Preserve generated U.P./trail-camera direction
+   and selectively loaded skills/tools.
 
-Material privacy/grounding/delivery regressions reorder work. Investigate repeated
-source-refresh availability failure before broadening retrieval; one study retake
-stopped safely, none of the installed scenarios discarded. Preserve bot identity,
-attribution/withdrawal, no DMs, runtime allowlist, generated U.P./trail-camera
-direction, selective tools and six fresh local01/05/09/13/17/21Sol/xhigh runs.
+Repeated source-refresh failures or material privacy/grounding/delivery regressions
+reorder this list. Preserve source correction/withdrawal, allowlist/no DMs and six
+standalone local01/05/09/13/17/21Sol/xhigh runs with existing notifications.
+The current order supersedes the dated historical snapshots below.
+
+[Current protocol](evaluations/2026-10-18-photo-history-release.md).
 
 ## Historical decision records
 

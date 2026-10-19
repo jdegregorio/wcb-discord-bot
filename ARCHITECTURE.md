@@ -552,3 +552,10 @@ human texts in six hours; oversized/unseen-media contexts defer. Model judgment 
 still err and bounded history is incomplete. Generated provenance and alt text are
 attached outside model generation. No personal source enters image prompts/state;
 this feature does not learn bot images or establish new human traits.
+
+
+`photo_history.py` supplies an explicit operator-only backward scan independent
+of recent source/photo intake. Private archive checkpoints, a separate job lock,
+current authenticated permissions, descending pagination and page/download limits
+recover omitted pinned-human originals through PhotoMemory's existing lifecycle.
+No gateway, provider call, automatic study or Discord publication is added.
