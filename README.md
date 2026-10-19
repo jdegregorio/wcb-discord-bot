@@ -1,9 +1,13 @@
-## Text follow-ups to shown source photos (2.38.1)
+## Text follow-ups to shown source photos (2.38.2)
 
 After Trubot shows an indexed original, ask about its original caption, visible
 scene or timing. A separate read-only action inspects that same verified source
 without attaching it again. Discord Reply selects a particular shown photo;
 otherwise the latest original shown to you in the channel is selected.
+
+Current-focus capability context prevents an earlier missing-caption answer from
+hiding an available source. Requests about another speaker's own history do not
+receive character-photo inspection.
 
 Links last six hours and survive bot restart. Missing, corrected, deleted or
 inaccessible sources stay unavailable. Bot captions never become human evidence,

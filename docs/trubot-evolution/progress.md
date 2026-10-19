@@ -5265,3 +5265,14 @@ all3candidate natural/grounded/no-mechanical checks pass in one unblinded review
 No extra source/provider scope or allowance. Five new capability tests pass;
 69targeted tests pass. All full quality/release/installed requirements are repeated
 for this immutable patch, not replaced by the earlier release's health.
+
+
+## 2026-10-19 05:00 Pacific - H104 full handler focus
+
+Fresh base734620a773ff79d29a0cc8424b08570b8e01a3b3,managed worktree and unique
+feature branch. Primary untouched. No open evolution PR;previous2.38.1deployed
+but caption acceptance unresolved. Actual current question passes after context
+ages out;original failed full31row handler replay reproduces0/3. Focus-scoped
+capability context recovers3/3without weakening attribution. Existing source and
+18/2/20guard unchanged. Conditional candidate,full gates,release,real installed
+acceptance and final audit/cost remain required. [Study](evaluations/2026-10-19-photo-handler-focus.md).

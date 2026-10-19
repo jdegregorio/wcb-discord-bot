@@ -1,3 +1,27 @@
+# Current priority, 2026-10-19 05:00 Pacific
+
+H104 completes the unfinished H103 source-bound follow-up correction on2.38.1.
+Actual full-handler replay reproduces0/3supported captions despite an available
+source. Scoped capability context at the current focus recovers3/3while preserving
+authenticated authorship. Candidate2.38.2requires conditional-code controls, all
+gates, protected CI, immutable release and installed owner/gateway acceptance.
+[Evidence](docs/trubot-evolution/evaluations/2026-10-19-photo-handler-focus.md).
+
+1. Complete H104, so photo follow-ups inspect their exact original rather than
+   repeat an unsupported text-search gap. High diagnosis confidence; broader
+   character utility unresolved. Existing source/access/withdrawal and18/2/20ledger.
+2. H101/H92/H93: independently qualify caption, abstract/emotional and approved
+   amplified-humor utility with attributed support/contrary episodes and held-outs.
+   Acceptance requires natural, grounded, varied responses and independent review.
+   Existing memory graph/private sources; no new operating service or allowance.
+3. Broaden useful original-view coverage and seasonal variety after utility tests.
+   Keep generated U.P. northern-lights/trail-camera scenes and selective tools.
+   H96automatic confirmation remains closed; H97clarification and H102year-grounding
+   remain research candidates. Material privacy/grounding regressions reorder work.
+
+Six standalone local01/05/09/13/17/21Sol/xhigh runs and notifications unchanged.
+Older snapshots below are historical; this order supersedes unfinished status.
+
 Current correction:2.38.0 stored the source link but failed actual caption
 acceptance in the full live conversation. H103b/2.38.1 offers read-only inspection
 and its availability cue only for an existing scoped link selected before provider

@@ -832,9 +832,19 @@ class TruBotClient(discord.Client):
                     # existence is a capability hint, never permission or human evidence.
                     shown = None
                     reference = getattr(anchor, "reference", None)
-                    if self._photos is not None and (
-                        not isinstance(reference, discord.MessageReference)
-                        or (reference.channel_id == channel.id and reference.message_id is not None)
+                    if (
+                        self._photos is not None
+                        and not (
+                            requester_recall(request)
+                            and frozen.author_id != self._learning.identity.user_id
+                        )
+                        and (
+                            not isinstance(reference, discord.MessageReference)
+                            or (
+                                reference.channel_id == channel.id
+                                and reference.message_id is not None
+                            )
+                        )
                     ):
                         with suppress(LearningUnavailable):
                             shown = await asyncio.to_thread(
