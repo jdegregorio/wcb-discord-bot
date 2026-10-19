@@ -26,6 +26,7 @@ from trubot.conversation import ConversationImage, ConversationMessage, MemoryAu
 from trubot.memory_author import author_guidance, focused_author_guidance, memory_author_scope
 from trubot.outdoors import Forecast
 from trubot.personality import instructions_for
+from trubot.photo_action import INSPECT_INSTRUCTIONS as PHOTO_INSPECT_INSTRUCTIONS
 from trubot.photo_action import INSPECT_NAME as PHOTO_INSPECT_NAME
 from trubot.photo_action import INSTRUCTIONS as PHOTO_ACTION_INSTRUCTIONS
 from trubot.photo_action import NAME as PHOTO_ACTION_NAME
@@ -275,6 +276,8 @@ class OpenAITruaxResponder:
         instructions += "".join(skill.instructions for skill in selected)
         if photo_action is not None:
             instructions += PHOTO_ACTION_INSTRUCTIONS
+            if photo_action.inspect is not None:
+                instructions += PHOTO_INSPECT_INSTRUCTIONS
         output_bound = (
             self._max_output_tokens
             if mode is ReplyMode.FOLLOW_UP

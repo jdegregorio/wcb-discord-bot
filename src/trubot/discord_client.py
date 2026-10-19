@@ -828,6 +828,28 @@ class TruBotClient(discord.Client):
 
                         return PhotoEvidence(evidence, tuple(pixels), current)
 
+                    # Select only an existing scoped link, before provider I/O. Source
+                    # existence is a capability hint, never permission or human evidence.
+                    shown = None
+                    reference = getattr(anchor, "reference", None)
+                    if self._photos is not None and (
+                        not isinstance(reference, discord.MessageReference)
+                        or (reference.channel_id == channel.id and reference.message_id is not None)
+                    ):
+                        with suppress(LearningUnavailable):
+                            shown = await asyncio.to_thread(
+                                self._photos.store.shown,
+                                channel.guild.id,
+                                channel.id,
+                                requester_user_id,
+                                now=self._clock(),
+                                sent=(
+                                    reference.message_id
+                                    if isinstance(reference, discord.MessageReference)
+                                    else None
+                                ),
+                            )
+
                     async def inspect_photo() -> PhotoEvidence | None:
                         if not await self._photo_request_current(
                             channel, frozen, requester_user_id, attachment=False
@@ -843,16 +865,12 @@ class TruBotClient(discord.Client):
                             )
                         ):
                             return None
-                        reference = getattr(anchor, "reference", None)
-                        selected = None
-                        if isinstance(reference, discord.MessageReference):
-                            if reference.channel_id != channel.id or reference.message_id is None:
-                                return None
-                            selected = reference.message_id
+                        if shown is None:
+                            return None
                         inspected = await photos.inspect_shown(
                             channel,
                             requester_user_id,
-                            sent=selected,
+                            sent=shown["sent"],
                             recipient=(
                                 requester_user_id
                                 if channel.guild.id == learning.identity.guild_id
@@ -873,7 +891,7 @@ class TruBotClient(discord.Client):
                         return PhotoEvidence(inspected.text, inspected.images, inspection_current)
 
                     photo_action = PhotoAction(
-                        retrieve_photo, inspect_photo if self._photos is not None else None
+                        retrieve_photo, inspect_photo if shown is not None else None
                     )
 
                 guild_id = channel.guild.id

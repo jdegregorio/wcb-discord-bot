@@ -1,4 +1,4 @@
-## Source-bound photo text continuity, 2.38.0
+## Source-bound photo text continuity, 2.38.1
 
 The existing one-action/one-continuation harness offers `inspect_shown_photo`
 alongside `show_source_photo` in direct/follow-up turns. The model decides whether

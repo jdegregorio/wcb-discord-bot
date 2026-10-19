@@ -1,3 +1,10 @@
+Current correction:2.38.0 stored the source link but failed actual caption
+acceptance in the full live conversation. H103b/2.38.1 offers read-only inspection
+and its availability cue only for an existing scoped link selected before provider
+I/O. Same full-context source/model replays improve0/3to3/3. Real installed acceptance
+and ordinary controls remain required. This supersedes earlier candidate status;
+no general character claim. Subsequent roadmap order remains unchanged.
+
 # Current roadmap, 2026-10-19 01:00 Pacific
 
 Current run: 2026-10-19 01:00 Pacific. H103 source-bound photo follow-ups is selected
