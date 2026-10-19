@@ -3,7 +3,7 @@
 import json
 from datetime import timedelta
 from types import SimpleNamespace
-from unittest.mock import AsyncMock, patch
+from unittest.mock import AsyncMock, Mock, patch
 
 import discord
 import pytest
@@ -215,7 +215,10 @@ async def test_handler_inspection_sends_only_text_and_discards_changed_source(ch
         (decode_image(photo_bytes()),),
         AsyncMock(side_effect=[True, not changed]),
     )
-    client._photos = SimpleNamespace(inspect_shown=AsyncMock(return_value=evidence))
+    client._photos = SimpleNamespace(
+        inspect_shown=AsyncMock(return_value=evidence),
+        store=SimpleNamespace(shown=Mock(return_value={"sent": 900})),
+    )
 
     async def reply(messages, **kwargs):
         action = kwargs["photo_action"]
@@ -250,7 +253,10 @@ async def test_handler_binds_reference_and_rejects_ineligible_inspection(kind):
     client._learning = SimpleNamespace(
         verified=True, identity=SimpleNamespace(user_id=42, guild_id=77)
     )
-    client._photos = SimpleNamespace(inspect_shown=AsyncMock(return_value=None))
+    client._photos = SimpleNamespace(
+        inspect_shown=AsyncMock(return_value=None),
+        store=SimpleNamespace(shown=Mock(return_value={"sent": 900})),
+    )
     channel = fake_channel()
     focus = fake_message(channel)
     focus.reference = discord.MessageReference(
@@ -258,7 +264,11 @@ async def test_handler_binds_reference_and_rejects_ineligible_inspection(kind):
     )
 
     async def reply(messages, **kwargs):
-        await kwargs["photo_action"].prepare(call(name=INSPECT_NAME, arguments="{}"))
+        action = kwargs["photo_action"]
+        if kind == "cross_channel":
+            assert action.inspect is None
+        else:
+            await action.prepare(call(name=INSPECT_NAME, arguments="{}"))
         return "Unavailable."
 
     model.reply = reply
@@ -282,3 +292,50 @@ async def test_handler_binds_reference_and_rejects_ineligible_inspection(kind):
         client._photos.inspect_shown.assert_not_awaited()
     client._learning = None
     await client.close()
+
+
+@pytest.mark.parametrize("binding", ["available", "missing", "unavailable"])
+async def test_source_inspection_capability_requires_an_existing_scoped_link(binding):
+    client, model, _, _ = make_client(clock=lambda: NOW)
+    client._learning = SimpleNamespace(verified=True)
+    lookup = Mock(return_value={"sent": 900} if binding == "available" else None)
+    if binding == "unavailable":
+        lookup.side_effect = LearningUnavailable("Unavailable")
+    client._photos = SimpleNamespace(store=SimpleNamespace(shown=lookup))
+    channel = fake_channel()
+    focus = fake_message(channel)
+
+    async def reply(messages, **kwargs):
+        action = kwargs["photo_action"]
+        assert (action.inspect is not None) is (binding == "available")
+        return "A reply."
+
+    model.reply = reply
+    with (
+        patch("trubot.discord_client.collect_history", AsyncMock(return_value=[])),
+        patch.object(client, "_memory_context", AsyncMock(return_value="")),
+    ):
+        assert await client._respond(
+            channel, mode=ReplyMode.DIRECT, requester_user_id=1, anchor=focus, target="A question."
+        )
+    lookup.assert_called_once_with(77, 10, 1, now=NOW, sent=None)
+    client._learning = None
+    await client.close()
+
+
+@pytest.mark.parametrize("available", [False, True])
+async def test_only_existing_inspection_capability_announces_source_availability(
+    private_test_ledger, available
+):
+    from trubot.photo_action import INSPECT_INSTRUCTIONS
+
+    provider = Provider([response("A direct answer.")])
+    model = responder(provider, private_test_ledger, UPConditionsSkill())
+    action = PhotoAction(AsyncMock(), AsyncMock() if available else None)
+    await model.reply(
+        [ConversationMessage("user", "A question.")],
+        mode=ReplyMode.DIRECT,
+        safety_id="test",
+        photo_action=action,
+    )
+    assert (INSPECT_INSTRUCTIONS in provider.requests[0]["instructions"]) is available

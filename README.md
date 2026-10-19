@@ -1,4 +1,4 @@
-## Text follow-ups to shown source photos (2.38.0)
+## Text follow-ups to shown source photos (2.38.1)
 
 After Trubot shows an indexed original, ask about its original caption, visible
 scene or timing. A separate read-only action inspects that same verified source

@@ -106,3 +106,40 @@ a substitute. Explicit Reply to a previous read-only text answer is unlinked too
 select the actual shown-photo post, or use the latest-photo path. Six-hour expiry
 is intentional. No automatic native-pattern gate,study cadence,source intake,
 persona trait,model,service or spending allowance is expanded.
+
+
+### Installed failure and full-context H103b correction
+
+2.38.0/PR164 merged b448a773443b014144284ce0801689dc845805ae; all six merged
+gates and mainQuality39220905685pass. Image39221253936pass; lockedPi transaction
+installs index3868f68b6c8a93c71d2027b343d316e092cb0ca50b7633f798ab9e2119e161a9.
+Healthy/read-only/zero restarts;42modulehashesmatch. Additive migration preserves
+all existing source counts,cursors,study claims and foreign keys.
+
+Actual matched owner/gateway acceptance FAILS: original photo shows and its link
+exists, but the same original-caption question still returns unavailable. The
+simplified six-case source-callback harness omitted earlier bot denials and the
+full native-memory packet. Candidate replay success did not establish installed
+quality. No privacy/error regression or harmful source publication is observed;
+keep the scoped correction active while completing the same increment.
+
+H103b: capability availability is missing from the initial model context, so a
+text-corpus unavailability result and prior bot denial suppress source inspection.
+Predeclared success: exact full-conversation replays should inspect the fixed source
+and recover its substantive original caption3/3, with no metadata narration or
+attachment. Disconfirm on skipped/wrong inspection or invented content. Experiment:
+29full-live conversation/memory rows, same source and model, three samples per arm.
+2.38.0:0/3inspect,0/3supported. Application availability cue:3/3inspect,3/3supported,
+all3natural/grounded/no-mechanical-disclaimer checks pass. One unblinded semantic
+model,one source; actual gateway and unrelated controls still required. Six replay
+answers are not retained; content-free refs/results remain private. No Discord
+posts from replay. The mechanism is supported in this bounded experiment.
+
+Select H103b within the same coherent source-continuity increment. Freeze the
+requester/channel/explicit-Reply or latest stored link before provider I/O; offer
+inspection and its availability cue only when that unexpired scoped link exists.
+The cue is not human evidence or fresh permission: source inspection still must
+verify current pixels/attribution/access/request/withdrawal before use or send.
+Missing/unsafe links retain ordinary behavior. No new schema,corpus,provider turn
+limit,study cadence or allowance. This is2.38.1, a new immutable patch release;
+never replace2.38.0. Broader roadmap order and all unresolved utility gaps remain.

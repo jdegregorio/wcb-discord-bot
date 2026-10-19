@@ -5254,3 +5254,14 @@ No new human trait, ingestion scope, study allowance or provider pool.
 Targeted92tests pass, including27new regressions. Formatting/lint/mypy pass;
 full gates, matched provider replay, CI/release/deployment, installed acceptance,
 post audit and final cost remain pending. No general character gain claimed.
+
+
+H103 installed2.38.0 acceptance fails despite a valid stored link. The simplified
+callback harness missed earlier bot denial and the full native-memory packet.
+H103b same-full-context experiment(29rows,one actual source,three samples/arm):
+0/3baseline inspection/supported caption to3/3with a scoped availability cue;
+all3candidate natural/grounded/no-mechanical checks pass in one unblinded review.
+2.38.1 also freezes selection before provider I/O and omits unavailable capabilities.
+No extra source/provider scope or allowance. Five new capability tests pass;
+69targeted tests pass. All full quality/release/installed requirements are repeated
+for this immutable patch, not replaced by the earlier release's health.

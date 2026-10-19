@@ -48,6 +48,16 @@ INSTRUCTIONS = (
 )
 
 
+INSPECT_INSTRUCTIONS = (
+    "\nFor this turn the application has a scoped association from the previously shown "
+    "original to its human source. For questions about that photo's original words or "
+    "details, use inspect_shown_photo before concluding the source is unavailable. A "
+    "text-corpus quotation lookup or an earlier bot denial does not establish that the "
+    "linked photo source is missing. The association itself is not evidence: read and "
+    "verify it with the inspection action. Keep this capability context private."
+)
+
+
 @dataclass(frozen=True)
 class PhotoEvidence:
     text: str = field(repr=False)

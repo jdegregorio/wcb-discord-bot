@@ -1,7 +1,7 @@
 {
   "base": "6ee555a9fa4454ad3d11253b14513ed629f2e6b0",
   "hypothesis": "H103",
-  "status": "candidate_validated_not_deployed",
+  "status": "2.38.0_installed_acceptance_failed_2.38.1_candidate",
   "replays": {
     "caption_cases": 3,
     "baseline_supported": 0,
@@ -28,5 +28,17 @@
     "owner_gateway": true,
     "caption_unavailable_after_original_shown": true
   },
-  "deployment": "pending"
+  "deployment": "2.38.0_healthy_but_caption_acceptance_failed",
+  "full_context_replay": {
+    "rows": 29,
+    "source_cases": 1,
+    "samples_per_arm": 3,
+    "baseline_supported": 0,
+    "candidate_supported": 3,
+    "mechanism": "scoped_capability_availability",
+    "limits": [
+      "single_unblinded_model",
+      "actual_gateway_still_required"
+    ]
+  }
 }
