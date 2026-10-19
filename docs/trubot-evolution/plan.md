@@ -1,5 +1,27 @@
 # Trubot evolution plan
 
+Current run: 2026-10-18 21:00 Pacific. H100 connects recovered originals to
+model-selected photo recall,so caption/profile-supported older views can actually
+be shown. Production2.36.0 remains the baseline; candidate validation is pending.
+[Hypotheses,criteria and roadmap decision](evaluations/2026-10-18-photo-retrieval.md).
+
+1. H100: source-bound photo retrieval. High-confidence architectural gap,limited
+   search coverage. Require matched old-photo and profile-only retrieval,actual
+   gateway attachments/pixels,privacy/lifecycle controls and full release gates.
+   Local search/bounded fresh reads; existing model,image and18/2/20budget bounds.
+2. H101/H92/H93: independently qualify caption,abstract,emotional and amplified-humor
+   utility with attributed support/contrary episodes and held-out semantic review.
+   No general fidelity gain established. Unindexed captionless photos are a concrete
+   coverage dependency; retain existing four pixel studies/day.
+3. H93: seasonal timing/variety longitudinally. Preserve generated U.P./trail-camera
+   scenes and selective tools. H96confirmation closed without a qualified feed;
+   H97clarification unresolved. Source-refresh/privacy regressions reorder work.
+
+No new persona trait or automatic native-pattern permission. Preserve attribution,
+correction,withdrawal,allowlist/no DMs,six fresh01/05/09/13/17/21Sol/xhigh runs and
+notifications. Older snapshots below are historical.
+
+
 Current run: 2026-10-18 17:00 Pacific. H99a is deployed as 2.36.0.
 Operator recovery captured two omitted originals across 327 scanned messages, with
 one confirmed received-byte gap. Restart checkpoints, an independent process lock,

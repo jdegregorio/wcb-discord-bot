@@ -5190,3 +5190,17 @@ H97 remains unresolved.
 [public receipt](evaluations/2026-10-18-photo-history-release.json),
 [PR #160](https://github.com/jdegregorio/wcb-discord-bot/pull/160),
 [release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.36.0).
+
+
+## 2026-10-18 21:00 Pacific: H100 candidate
+
+Both planning phases selected recovered-original photo recall before more ingestion.
+Fresh fetched base58f10f0bd6623f65b33ad79b24cb84d7212957aa,new managed worktree and
+unique feature branch. Primary checkout untouched;no overlapping evolution PR.
+Pre audit4human windows/16development posts/eight bot posts reports insufficient
+general comparison;three source-channel latest100censuses contain no seven-day
+target/bot activity. No new trait. Two actual owner/gateway baselines reproduce
+unavailable unindexed media and an incorrect seasonal photo. Six matched private
+source probes now pass3positive/3negative;all six local gates pass1,868tests/96.01%.
+CI/release/deployment/real installed acceptance remain pending. USD18/2/20guard
+and four pixel studies/day unchanged. [Protocol/results](evaluations/2026-10-18-photo-retrieval.md).

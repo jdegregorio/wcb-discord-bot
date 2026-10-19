@@ -3023,3 +3023,11 @@ Next: qualify useful abstract, emotional, humor and visual episode context. Prov
 the capture-to-retrieval connection before broader source recovery. Both phases,
 methods, CI, release, real gateway, costs and limitations are in
 [the evidence](evaluations/2026-10-18-photo-history-release.md).
+
+
+## H100/H101,2026-10-18 21:00 Pacific
+
+Both planning phases and predeclared retrieval/caption/abstract hypotheses are in
+[the H100 protocol](evaluations/2026-10-18-photo-retrieval.md). H100 is selected
+as a source-bound correction. Captionless pending photos remain unindexed;
+no study-cap reset or general character gain is claimed.

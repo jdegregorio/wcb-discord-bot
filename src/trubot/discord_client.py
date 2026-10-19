@@ -759,6 +759,35 @@ class TruBotClient(discord.Client):
                             channel, frozen, requester_user_id
                         ):
                             return None
+                        learning = self._learning
+                        if learning is None:
+                            return None
+                        if requester_recall((target or "").split(": ", 1)[-1]) and (
+                            frozen.author_id != learning.identity.user_id
+                        ):
+                            return None
+                        if self._photos is not None:
+                            recovered = await self._photos.recall(
+                                query,
+                                recipient=(
+                                    requester_user_id
+                                    if channel.guild.id == learning.identity.guild_id
+                                    else None
+                                ),
+                            )
+                            if recovered is not None:
+
+                                async def recovered_current() -> bool:
+                                    return (
+                                        await self._photo_request_current(
+                                            channel, frozen, requester_user_id
+                                        )
+                                        and await recovered.current()
+                                    )
+
+                                return PhotoEvidence(
+                                    recovered.text, recovered.images, recovered_current
+                                )
                         pixels: list[ConversationImage] = []
                         evidence = await self._memory_context(
                             channel,
