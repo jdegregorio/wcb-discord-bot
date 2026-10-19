@@ -1,0 +1,92 @@
+{
+  "run": "2026-10-19T13:00:00-07:00",
+  "hypothesis": "H106",
+  "result": "supported_narrow_correction_deployed",
+  "runtime_commit": "a4240355d50b0185d383c6adee34f2ae74b609b3",
+  "release": "v2.38.3",
+  "image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:b14a4572daf0ddc97425ea810130ab2010558f4e8b4c67e778023393cd36a746",
+  "runtime_pr": 168,
+  "image_ci": 39316245014,
+  "quality": {
+    "locked_sync": true,
+    "format": true,
+    "lint": true,
+    "typed_modules": 43,
+    "tests": 1943,
+    "coverage_percent": 96.02,
+    "build": "2.38.3",
+    "installed_modules_match": 43
+  },
+  "comparison": {
+    "same_owner_anchor_and_pre_anchor_context": true,
+    "controlled_initial_draft": true,
+    "baseline_repairs": 0,
+    "installed_repairs": 1,
+    "baseline_outer_quote": true,
+    "installed_outer_quote": false,
+    "installed_sentences": 1,
+    "confounded_old_echo_control_excluded": 1,
+    "independent_human_evaluator": false
+  },
+  "actual_gateway": {
+    "baseline_questions": 1,
+    "installed_questions": 14,
+    "installed_responses": 13,
+    "correct_recipient_abstentions": 1,
+    "source_attachments": 1,
+    "literal_controls": 3,
+    "final_seconds": 4.743,
+    "final_after_discord_validation_clients_close": true,
+    "source_caption_and_pixels_checked": true,
+    "baseball_support_messages_freshly_checked": 3,
+    "broad_year_calendar_quality": "unresolved",
+    "general_fidelity": "unmeasured"
+  },
+  "audits": {
+    "each_human_windows": 6,
+    "each_development_posts": 24,
+    "pre_bot_posts": 16,
+    "post_bot_posts": 13,
+    "pre_peculiar_flags": 8,
+    "post_peculiar_flags": 2,
+    "pre_factual_flags": 1,
+    "post_factual_flags": 2,
+    "general_human_comparison_sufficient": false,
+    "each_source_channel_pages": 3,
+    "messages_per_page": 100,
+    "seven_day_target_posts": 0,
+    "seven_day_bot_posts": 0,
+    "new_human_trait": false
+  },
+  "health": {
+    "healthy": true,
+    "readiness": true,
+    "oom_killed": false,
+    "restarts": 0,
+    "read_only": true,
+    "errors": 0,
+    "response_failures": 0,
+    "unhandled": 0,
+    "source_continuity_warnings": 0
+  },
+  "spending": {
+    "run_estimated_usd": 0.013182840000000001,
+    "maintenance_usd": 0.002241875,
+    "runtime_usd": 0.010940965,
+    "month_estimated_usd": 1.15902067,
+    "unsettled_before": 4,
+    "unsettled_after": 4,
+    "provider_billing": false
+  },
+  "private_receipts": "app_volume/smoke-tests/2026-10-19-1300",
+  "raw_source_or_answer_content_in_public_receipt": false,
+  "limitations": [
+    "small_unblinded_samples",
+    "sparse_spontaneous_activity",
+    "unresolved_year_relevance_and_emotional_inference",
+    "camera_authorship_not_established",
+    "source_followup_latency",
+    "no_general_humor_or_fidelity_gain"
+  ],
+  "evidence_pr": 169
+}

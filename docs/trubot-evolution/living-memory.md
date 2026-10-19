@@ -1,3 +1,15 @@
+# 2026-10-19 13:00 release completion
+
+H106 is deployed as 2.38.3; source/graph/withdrawal state is unchanged. H105
+population remains rejected. Existing graph status:553 episode nodes, 438 human-source
+nodes, 24 native-context nodes, 28 context-dependency nodes, one value, one preference,
+two claims, 1,071 edges and one accepted/three rejected studies. Counts are coverage,
+not useful character performance. No new personal observation is imported.
+Next independently qualify abstract/emotional/amplified-humor and caption/
+composition utility with held-outs and source lifecycle controls, then useful visual
+coverage/seasonal variety. Unknown-date year placement and camera authorship remain
+qualified. [Release evidence](evaluations/2026-10-19-dialogue-release.md).
+
 # 2026-10-19 09:00 qualification decision
 
 H105 new abstract-humor population is rejected after three valid paired losses.

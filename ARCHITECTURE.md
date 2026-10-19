@@ -9,6 +9,9 @@ source punctuation remains excluded. Prior bot dialogue receives the same
 normalization for echo checks. Source freshness, publication checks, abstention,
 usage accounting and the one-repair maximum remain authoritative.
 
+Installed 2.38.3 preserves the one-repair/source boundary and literal source text.
+[Actual gateway and release evidence](docs/trubot-evolution/evaluations/2026-10-19-dialogue-release.md).
+
 ## Current-focus source inspection,2.38.2
 
 The current focus repeats scoped inspection availability after authenticated author

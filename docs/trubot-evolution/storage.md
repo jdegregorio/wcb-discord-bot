@@ -1419,3 +1419,11 @@ and temporary private snapshots were rejected and removed. H106 changes only
 reply presentation and the established quality check. Existing private content-free
 research/smoke receipts use0700directories/0600files,seven-daymanualretention and
 withdrawal cleanup. Never reset usage/source/paid claims during code rollback.
+
+H106 installed qualification receipts use app-volume
+smoke-tests/2026-10-19-1300,0700 directory/0600 files, seven-day manual retention and
+withdrawal cleanup. Refs, hashes, booleans, timings and source-check outcomes only;
+no raw source/answer prose, duplicate pixels or screenshot. All Discord validation
+clients use UUID-isolated readiness paths; final metadata collection uses stateless
+bot REST without constructing another Discord client. No schema/graph/source
+migration or usage reset. Code rollback never restores source/usage/paid claims.

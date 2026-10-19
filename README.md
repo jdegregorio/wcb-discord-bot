@@ -6,7 +6,8 @@ bot echo from the existing bounded quality check. Requested quotations, original
 captions and embedded quoted excerpts retain their wording and punctuation.
 There is still at most one optional quality repair, with the same source and
 spending checks. No new human trait or general humor improvement is claimed.
-[Study and validation](docs/trubot-evolution/evaluations/2026-10-19-abstract-banter-study.md).
+[Study](docs/trubot-evolution/evaluations/2026-10-19-abstract-banter-study.md) and
+[installed validation](docs/trubot-evolution/evaluations/2026-10-19-dialogue-release.md).
 
 ## Text follow-ups to shown source photos (2.38.2)
 

@@ -5319,3 +5319,43 @@ Eight targeted regressions fail on baseline. Real private-server controlled hand
 posts demonstrate zero baseline repairs versus one candidate accounted repair and
 one direct sentence. Full gates/protected CI/release/installed acceptance pending.
 No new model/service/source/spending allowance or broader fidelity claim.
+
+## 2026-10-19 13:00 completion - 2.38.3 direct speech
+
+Fresh base a4240355d50b0185d383c6adee34f2ae74b609b3 in new managed worktree,
+feature/trubot-daily-20261019-1300; primary untouched. Reconciled unfinished PR 168:
+merged runtime already tested but not released. Both planning phases complete;
+H105 stays rejected, H106 narrow correction is shipped. All six current merged gates
+pass 1,943 tests/96.02%/43 typed modules/build 2.38.3. Prior protected runtime feature/
+main CI 39284768121/39286342656 pass; immutable image CI 39316245014 pass. Existing locked
+pi5 transaction deploys index b14a4572daf0ddc97425ea810130ab2010558f4e8b4c67e778023393cd36a746;
+43 installed hashes match, healthy/Discord-ready/read-only/zero restarts/OOM false,
+zero observed response/error/unhandled/continuity-warning counts. Prior 2.38.2 retained.
+No runtime changes beyond the exact protected merged commit, no rollback/data restore.
+
+Fresh owner baseline reproduces the quote wrapper. Matched controlled handler:
+zero repairs/quoted baseline to one accounted repair/one direct installed sentence.
+One old-draft echo control is excluded and fully charged. Fourteen installed actual
+owner cases include 13 responses/one correct recipient abstention. Literal short/long
+quotes and original caption remain intact; source original pixels/hash match,
+three fresh attributed baseball supports pass, requester history and missing photo
+abstain. Final actual gateway 4.743 seconds after all auxiliary Discord clients close;
+then stateless metadata reads and readiness pass. Calendar-year relevance, inferred
+emotional wording, camera authorship and source latency remain limitations.
+Pre/post six human windows/24 development posts each remain insufficient for general
+fidelity; post two automated flags are not independently established regressions.
+No new trait, automatic-pattern permission or general humor/fidelity claim.
+
+Covered run USD 0.013182840, covered October USD 1.159020670 estimate, four preexisting
+uncertain/zero new. Same 18/2/20 guard and four photo studies/day. Content-free private
+refs/hashes/booleans survive outside the worktree; no raw answers/source/screenshot
+in receipts. Next independent H92/H93/H101 abstract/emotional/amplified-humor and
+caption/composition utility, then useful original-view coverage/seasonal variety.
+H96 confirmation remains closed; H97/H102 exploratory. Six-run schedule/model/notifications unchanged.
+[Full methods/results](evaluations/2026-10-19-dialogue-release.md),
+[public receipt](evaluations/2026-10-19-dialogue-release.json),
+[runtime PR 168](https://github.com/jdegregorio/wcb-discord-bot/pull/168),
+[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.3).
+[Evidence-only PR169](https://github.com/jdegregorio/wcb-discord-bot/pull/169)
+carries this completed validation record. Protected required checks govern its
+merge; runtime source, tests and lock remain equal to the released commit.
