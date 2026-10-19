@@ -3031,3 +3031,18 @@ Both planning phases and predeclared retrieval/caption/abstract hypotheses are i
 [the H100 protocol](evaluations/2026-10-18-photo-retrieval.md). H100 is selected
 as a source-bound correction. Captionless pending photos remain unindexed;
 no study-cap reset or general character gain is claimed.
+
+
+## H100 completion; H102/H103 follow-up hypotheses
+
+H100 is supported for three matched private positive sources and two actual gateway
+photo cases. Three negative source probes abstain; no unindexed captionless-photo
+claim. H101 broad caption utility and H92/H93 character utility stay unresolved.
+H103: actual text follow-up cites another photo's caption because the ordinary
+text path does not reuse verified photo-action context. Next priority is a source-
+bound episode continuity increment with matched conversation/lifecycle/gateway
+acceptance, not another prompt patch. H102: broad year recall implies unsupported
+calendar self-placement; retain unknown-date authority internally and test natural
+grounded recall without mandatory disclaimers. This remains secondary grounding
+work. Neither defect has a controlled exact before/after causal attribution here.
+[Full methods, results and roadmap](evaluations/2026-10-18-photo-retrieval.md).
