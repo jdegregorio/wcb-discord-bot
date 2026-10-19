@@ -5237,3 +5237,20 @@ usage or paid-operation claims. [Full results](evaluations/2026-10-18-photo-retr
 [public JSON](evaluations/2026-10-18-photo-retrieval.json),
 [PR](https://github.com/jdegregorio/wcb-discord-bot/pull/162),
 [release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.37.0).
+
+
+## 2026-10-19 01:00 Pacific - H103 source-bound photo follow-ups
+
+New managed worktree from fetched6ee555a, branch
+feature/trubot-daily-20261019-0100. Primary checkout untouched; no unfinished
+evolution PR. Production baseline2.37.0 healthy, immutable indexbf82457b retained.
+Both planning phases and the actual owner/gateway failure are recorded in
+[the study](evaluations/2026-10-19-photo-continuity.md). The expected original
+shows, but its original caption cannot be recalled. Candidate2.38.0 adds bounded
+private send-to-source associations and read-only semantic inspection with no
+extra attachment. Source/recipient/request/correction/withdrawal remain binding.
+No new human trait, ingestion scope, study allowance or provider pool.
+
+Targeted92tests pass, including27new regressions. Formatting/lint/mypy pass;
+full gates, matched provider replay, CI/release/deployment, installed acceptance,
+post audit and final cost remain pending. No general character gain claimed.

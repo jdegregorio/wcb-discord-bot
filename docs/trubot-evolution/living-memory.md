@@ -1,3 +1,13 @@
+# Current memory increment, 2026-10-19 01:00 Pacific
+
+H103/2.38.0 candidate connects a shown indexed original to read-only text follow-ups
+using a bounded source association. No new human observation or automatic native
+pattern permission. Current source/correction/deletion/withdrawal and recipient
+checks remain authoritative. This addresses reproduced episode disconnection,
+not a general character or graph-coverage gain. Next independently qualify
+caption/abstract/emotional/amplified-humor utility, then useful visual coverage and
+seasonal variation. [Protocol](evaluations/2026-10-19-photo-continuity.md).
+
 # Current memory completion, 2026-10-18 21:00 Pacific
 
 H100/2.37.0 connects captured captions and ready pixel profiles to actual original-

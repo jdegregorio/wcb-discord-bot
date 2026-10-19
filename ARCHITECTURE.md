@@ -1,3 +1,32 @@
+## Source-bound photo text continuity, 2.38.0
+
+The existing one-action/one-continuation harness offers `inspect_shown_photo`
+alongside `show_source_photo` in direct/follow-up turns. The model decides whether
+the current question needs inspection. Strict empty arguments prevent a model
+from selecting an arbitrary source ID or query. Inspection never queues an
+attachment, searches another episode, generates images or learns from bot prose.
+
+A successful indexed-original send stores an operational association on the
+existing private archive: sent message ID/signature, guild/channel/requester,
+episode and full source-row hash, plus recording time. At most256 links remain;
+links expire after six hours and are lazily removed on access/write. Explicit
+operator photo initialization adds the table. No automatic source migration.
+Only the same requester/channel can select it; an explicit Discord Reply must
+match a stored sent message and never falls back to a different link. Otherwise
+the most recent link is selected. Fresh original source, attribution, permissions,
+attachment identity/raw hash, source-row/profile, sent-post signature and request
+checks govern continuation/publication. A source or shown-post change revokes use.
+Withdrawal guards every archive transaction and removes the archive/backups.
+Source deletion cascades the foreign key. No raw bot text or second image copy is
+stored. The regular memory packet remains separate and freshly checked.
+
+The legacy native-text photo fallback lacks an indexed-source handle; old sends
+are not retroactively linked. This bounded first increment supplies continuity
+for indexed originals, not arbitrary lifetime photo conversation. Model selection
+and sparse source coverage remain quality limits. The same Luna adapter, vision
+bounds and18/2/20ledger apply; inspection can consume the existing optional second
+provider turn, with no retry or third turn. No service or learning cadence change.
+
 # Conversational source-photo action,2.35.0
 
 Direct/follow-up turns can offer one strict model-selected source-photo action.

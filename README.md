@@ -1,3 +1,17 @@
+## Text follow-ups to shown source photos (2.38.0)
+
+After Trubot shows an indexed original, ask about its original caption, visible
+scene or timing. A separate read-only action inspects that same verified source
+without attaching it again. Discord Reply selects a particular shown photo;
+otherwise the latest original shown to you in the channel is selected.
+
+Links last six hours and survive bot restart. Missing, corrected, deleted or
+inaccessible sources stay unavailable. Bot captions never become human evidence,
+and a posting date never establishes when the camera took the picture. Existing
+allowlists, owner-only development access and the USD20 guard still apply.
+Older sends and the legacy native-text photo fallback have no new source link.
+[Validation](docs/trubot-evolution/evaluations/2026-10-19-photo-continuity.md).
+
 ## Conversational source photos (2.35.0)
 
 Ask to see a recalled photo, including a short follow-up such as `Can I see?`.

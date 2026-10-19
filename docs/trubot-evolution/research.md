@@ -3046,3 +3046,10 @@ calendar self-placement; retain unknown-date authority internally and test natur
 grounded recall without mandatory disclaimers. This remains secondary grounding
 work. Neither defect has a controlled exact before/after causal attribution here.
 [Full methods, results and roadmap](evaluations/2026-10-18-photo-retrieval.md).
+
+
+## 2026-10-19 01:00 - H103 source-bound follow-ups
+
+Both planning phases, falsifiable hypotheses, predeclared criteria and real baseline
+are in [the study](evaluations/2026-10-19-photo-continuity.md). H103 is selected;
+H101/H92/H93 remain unresolved. No new personal observation is populated.

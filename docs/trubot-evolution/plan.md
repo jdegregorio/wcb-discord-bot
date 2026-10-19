@@ -1,3 +1,24 @@
+# Current roadmap, 2026-10-19 01:00 Pacific
+
+Current run: 2026-10-19 01:00 Pacific. H103 source-bound photo follow-ups is selected
+from an actual owner/gateway failure: the original is shown, but its caption cannot
+be recalled. Save a bounded private source association and selectively inspect it
+so text follow-ups stay with the same verified episode. Require matched semantic
+replays, restart/expiry/recipient/source lifecycle controls, no extra attachment,
+all gates and actual installed gateway acceptance. Existing private volume and
+18/2/20 ledger only; no new human trait or automatic-pattern permission.
+
+1. Complete H103, then independently qualify H101 caption and H92/H93 abstract,
+   emotional and creatively amplified-humor usefulness. High confidence in source
+   disconnection; general character benefit remains unresolved.
+2. Broaden useful original-view indexing/coverage and seasonal variety only after
+   utility tests. Preserve generated U.P./trail-camera scenes and selective tools.
+3. H96 confirmation stays closed without a qualified feed; H97 clarification and
+   H102 temporal grounding remain research candidates. Material grounding/privacy/
+   access failures reorder work. Six-run schedule/model/notifications unchanged.
+
+[Protocol and evidence](evaluations/2026-10-19-photo-continuity.md).
+
 # Trubot evolution plan
 
 Current run: 2026-10-18 21:00 Pacific. H100 is deployed as 2.37.0. The exact

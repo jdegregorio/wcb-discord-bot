@@ -786,7 +786,11 @@ class TruBotClient(discord.Client):
                                     )
 
                                 return PhotoEvidence(
-                                    recovered.text, recovered.images, recovered_current
+                                    recovered.text,
+                                    recovered.images,
+                                    recovered_current,
+                                    recovered.source_episode,
+                                    recovered.source_stamp,
                                 )
                         pixels: list[ConversationImage] = []
                         evidence = await self._memory_context(
@@ -824,7 +828,53 @@ class TruBotClient(discord.Client):
 
                         return PhotoEvidence(evidence, tuple(pixels), current)
 
-                    photo_action = PhotoAction(retrieve_photo)
+                    async def inspect_photo() -> PhotoEvidence | None:
+                        if not await self._photo_request_current(
+                            channel, frozen, requester_user_id, attachment=False
+                        ):
+                            return None
+                        learning, photos = self._learning, self._photos
+                        if (
+                            learning is None
+                            or photos is None
+                            or (
+                                requester_recall(request)
+                                and frozen.author_id != learning.identity.user_id
+                            )
+                        ):
+                            return None
+                        reference = getattr(anchor, "reference", None)
+                        selected = None
+                        if isinstance(reference, discord.MessageReference):
+                            if reference.channel_id != channel.id or reference.message_id is None:
+                                return None
+                            selected = reference.message_id
+                        inspected = await photos.inspect_shown(
+                            channel,
+                            requester_user_id,
+                            sent=selected,
+                            recipient=(
+                                requester_user_id
+                                if channel.guild.id == learning.identity.guild_id
+                                else None
+                            ),
+                        )
+                        if inspected is None:
+                            return None
+
+                        async def inspection_current() -> bool:
+                            return (
+                                await self._photo_request_current(
+                                    channel, frozen, requester_user_id, attachment=False
+                                )
+                                and await inspected.current()
+                            )
+
+                        return PhotoEvidence(inspected.text, inspected.images, inspection_current)
+
+                    photo_action = PhotoAction(
+                        retrieve_photo, inspect_photo if self._photos is not None else None
+                    )
 
                 guild_id = channel.guild.id
                 async with channel.typing():
@@ -854,10 +904,18 @@ class TruBotClient(discord.Client):
                     )
                     return False
                 output = clamp_discord_message(reply)
-                if photo_action is not None and photo_action.evidence is not None:
-                    if not await photo_action.current():
-                        logger.info("Discarded photo reply; source or request changed")
-                        return False
+                if (
+                    photo_action is not None
+                    and photo_action.evidence is not None
+                    and not await photo_action.current()
+                ):
+                    logger.info("Discarded photo reply; source or request changed")
+                    return False
+                if (
+                    photo_action is not None
+                    and photo_action.evidence is not None
+                    and not photo_action.inspected
+                ):
                     if anchor is None:
                         return False
                     attachments = [
@@ -869,7 +927,7 @@ class TruBotClient(discord.Client):
                         for i, image in enumerate(photo_action.evidence.images)
                     ]
                     try:
-                        await channel.send(
+                        posted = await channel.send(
                             output,
                             files=attachments,
                             allowed_mentions=discord.AllowedMentions.none(),
@@ -878,6 +936,18 @@ class TruBotClient(discord.Client):
                     finally:
                         for attachment in attachments:
                             attachment.close()
+                    if self._photos is not None:
+                        try:
+                            await asyncio.to_thread(
+                                self._photos.store.remember_shown,
+                                photo_action.evidence,
+                                posted,
+                                requester_user_id,
+                                now=self._clock(),
+                            )
+                        except LearningUnavailable:
+                            # The post succeeded; unavailable continuity never sends again.
+                            logger.warning("Photo posted; source continuity unavailable")
                 else:
                     await channel.send(output)
             except asyncio.CancelledError:
@@ -919,7 +989,12 @@ class TruBotClient(discord.Client):
             return True
 
     async def _photo_request_current(
-        self, channel: DiscordChannel, request: SceneRequest, requester: int
+        self,
+        channel: DiscordChannel,
+        request: SceneRequest,
+        requester: int,
+        *,
+        attachment: bool = True,
     ) -> bool:
         if not await self._scene_scope_current(channel, requester):
             return False
@@ -941,7 +1016,7 @@ class TruBotClient(discord.Client):
                 if not (
                     permissions.view_channel
                     and permissions.send_messages
-                    and permissions.attach_files
+                    and (permissions.attach_files or not attachment)
                     and permissions.read_message_history
                 ):
                     return False

@@ -1,3 +1,27 @@
+## Shown-photo operational links, 2.38.0
+
+Run the released `trubot-photos init` once before enabling this runtime increment.
+The existing idempotent explicit migration creates `shown_photos` in archives.sqlite3
+without resetting photo cursors, study claims, learning, withdrawal or usage state.
+It uses the existing private app volume, learning lock, secure SQLite transactions
+and0700/0600storage. No new file, mount, service or provider credential.
+
+Links contain only source/output hashes, source episode, sent message ID,
+guild/channel/requester IDs and recording time. No raw source/answer/caption,
+derived personality observation or additional pixel copy. Six-hour logical expiry
+is authoritative even before the next lookup/write removes expired rows; the
+latest256 global links cap storage. Links survive restart. Withdrawal removes the
+archive and its documented backups; source deletion cascades. Fresh source, output,
+request and access checks block stale restored links. Do not restore the usage
+ledger or withdrawal marker to roll back. Older code ignores this additive table.
+
+If a send succeeds but link storage fails, log a content-free warning and do not
+repeat the Discord post. Missing schema/source/access produces an unavailable
+inspection, never search fallback. Old sends and legacy native-text photo fallback
+are unlinked. Use the existing operator archive correction/deletion/backup path.
+Validation receipts remain content-free under the existing seven-day manual
+retention and withdrawal cleanup. [Evidence](evaluations/2026-10-19-photo-continuity.md).
+
 # Private API usage state
 
 Production uses `/srv/app-data/wcb-bot/usage.sqlite3`, bind-mounted at
