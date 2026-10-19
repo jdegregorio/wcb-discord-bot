@@ -3083,3 +3083,16 @@ Three valid H105 playful pairs lose before control completion; no rollout. H106
 whole-dialogue framing reproduces an ordinary cadence-check bypass in an actual
 gateway response. Preserve literal source artifacts and the shared one-repair
 boundary. [Both planning phases and exact limitations](evaluations/2026-10-19-abstract-banter-study.md).
+
+## 2026-10-19 13:00 H106 installed qualification
+
+Complete the previous merged/unreleased increment before overlapping work. Fresh
+actual quote-wrapper failure and matched controlled same-anchor draft support the
+narrow correction; one old-echo-confounded control is excluded and charged.2.38.3
+passes protected CI, image deployment, all six merged gates and real installed
+literal/care/humor/source/recipient controls. Pre/post 6 human-window/24 development-post
+audits remain insufficient for general fidelity. Source-specific manual checks
+verify caption/pixels and existing baseball supports; year placement, inferred
+emotion and camera authorship stay uncertain. H105 remains rejected; no new trait.
+Both planning phases, predeclared criteria, counts, exclusions, costs and limits:
+[release study](evaluations/2026-10-19-dialogue-release.md).

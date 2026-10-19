@@ -1,26 +1,41 @@
-# Current priority, 2026-10-19 09:00 Pacific
+# Current priority, 2026-10-19 13:00 Pacific - 2.38.3 complete
 
-H105 abstract humor population is rejected: three completed paired reviews prefer
-baseline, exceeding the declared maximum one loss. No new trait is imported.
-H106 is selected from a real gateway presentation defect: a whole-response quote
-hides three ordinary sentences from the established brevity guard. Normalize only
-ordinary dialogue framing and preserve requested quotations/captions, so replies
-sound like direct speech and retain the existing bounded quality repair.
-[Both phases, criteria, exclusions and results](docs/trubot-evolution/evaluations/2026-10-19-abstract-banter-study.md).
+H106 ordinary dialogue presentation is released and installed. The fresh actual
+baseline reproduces whole-response quotes; the same controlled draft changes from
+zero repairs/quoted prose to one accounted repair/one direct sentence. Literal
+quotations and original captions remain intact. All six merged-runtime gates,
+protected CI, image publishing, 43 installed module hashes and real gateway controls
+pass. Fourteen installed owner-message cases include 13 responses and one correct
+recipient abstention. This completes the preceding unfinished increment.
+[Evidence and limitations](docs/trubot-evolution/evaluations/2026-10-19-dialogue-release.md).
 
-1. Complete H106 with source/quotation/abstention controls, all gates and real installed
-   acceptance. Confidence high in structural reproduction; general fidelity unmeasured.
-   No new model/service/call allowance. Existing repair maximum and18/2/20guard.
-2. H92/H93/H101: qualify independent useful abstract/emotional/amplified-humor and
-   caption/composition context. Require attributed support, contrary episodes,
-   held-outs, meaningful paired gains and real gateway. Rejected candidates need
-   new causal evidence before retry. Broader utility remains unresolved.
-3. Broaden useful original-view coverage and seasonal variety after utility evidence.
-   Preserve generated U.P. aurora/trail-camera themes and selective context tools.
-   H96confirmationclosed without a qualified feed;H97/H102exploratory.
+1. H92/H93/H101: independently qualify useful abstract, emotional, approved amplified-
+   humor and caption/composition context, so relevant concepts and original views
+   improve varied, warm engagement. H105 is rejected after three paired losses;
+   require new causal evidence before retry. Dependencies: attributed supports and
+   contrary episodes, held-out human setups, actual pixels and source-grounded review.
+   Accept meaningful matched gains without invented beliefs, insensitive timing,
+   repetitive bits or camera-ownership assumptions. Confidence in broad utility
+   unresolved; existing graph/private volume and 18/2/20 ledger. No new service/pool.
+2. Broaden useful original-view coverage and seasonal variety after demonstrated
+   utility. Preserve generated U.P. northern-lights/trail-camera scenes and selective
+   tools. Dependencies: qualified composition/recall utility and lifecycle checks.
+   Accept useful fresh grounded scenes, source correction/withdrawal and timing/
+   repetition controls. Full native peer/thread/visual coverage remains incomplete;
+   four photo studies/day unchanged. No proven general engagement gain.
+3. H96 automatic aurora confirmation stays closed without a qualified accessible
+   observation feed. H97 clarification/H102 calendar relevance and inferred-emotion
+   wording remain exploratory. Source-follow-up latency also merits bounded study.
+   Require matched actual-context reproductions and contrary cases before behavior
+   changes. Material grounding/privacy/access regressions reorder work; reopen
+   H106 on corrupted source artifacts, lost abstention or extra repair attempts.
 
-Six local01/05/09/13/17/21Sol/xhigh runs,notifications,privacy/withdrawal/allowlists
-and spending guards unchanged. Older snapshots below are historical.
+Post audit 6 human windows/24 development posts cannot establish general fidelity.
+Manual source-specific checks pass literal caption/pixels and existing baseball
+support; unknown-date year placement and camera authorship stay unresolved.
+No new human trait or automatic native-pattern permission. Preserve correction,
+withdrawal, allowlists, no DMs, USD 18/2/20 guard and six local 01/05/09/13/17/21 Sol/xhigh
+runs/notifications. Current order supersedes the historical snapshots below.
 
 # Current priority, 2026-10-19 05:00 Pacific - 2.38.2 complete
 

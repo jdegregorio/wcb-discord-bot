@@ -123,3 +123,10 @@ second gateway. All auxiliary clients close; main readiness survives.
 
 All six final feature gates pass: locked sync, format, lint, strict typing of43
 modules,1,943tests/96.02%branch-inclusivecoverage and2.38.3packagebuild.
+
+## Installed completion, 2026-10-19 13:00
+
+The next fresh run repeats all six merged-runtime gates and releases this exact
+protected runtime merge as immutable 2.38.3. Installed real gateway/literal/source/
+recipient controls and final readiness pass. H105 remains rejected; no new trait.
+[Complete release evidence and limitations](2026-10-19-dialogue-release.md).
