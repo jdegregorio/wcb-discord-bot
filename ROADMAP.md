@@ -1,3 +1,37 @@
+# Current priority, 2026-10-20 01:00 Pacific - explicit context follow-ups
+
+H107's broader inherited tool menu is rejected after unnecessary forecast and
+other-recipient reads. This run reconciles that unfinished experiment with H107b:
+complete public-sky questions retain their existing narrow tools during the current
+follow-up window. Actual baseline cannot perform a complete follow-up check.
+Six matched positive comparisons change from zero baseline reads to one correct
+candidate read, with all six candidate outputs passing bounded semantic review.
+All six controls avoid reads in both arms; the recipient control abstains.
+This is a bounded harness correction, not a new trait or general fidelity gain.
+Release and installed acceptance remain pending. Older snapshots below are historical.
+
+1. Complete H107b's protected release, deployed gateway acceptance and final audit.
+   Dependencies: all six gates, immutable multiarch image and source/recipient controls.
+   High confidence in the routing correction; general naturalness unmeasured.
+   Existing two-turn maximum and 18/2/20 guard; no new service, store or learning scope.
+2. Independently qualify H92/H93/H101 abstract emotional, approved amplified-humor
+   and original-view utility, so relevant concepts improve varied, warm engagement.
+   Require separate attributed supports/contrary episodes, held-out human setups,
+   actual pixels and source-grounded matched semantic gains. H105 remains rejected.
+   General benefit unresolved; existing private graph and maintenance allowance.
+3. Broaden useful native/visual episode coverage and seasonal variety after utility.
+   Preserve generated U.P. aurora/trail-camera scenes and selective tools. H96
+   automatic confirmation stays closed without a qualified feed. Short contextual
+   tool requests, H102 year placement and camera authorship remain research.
+   Require fresh source lifecycle, timing and repetition controls; no new paid pool.
+
+Pre audit six human windows/24 development posts is insufficient for general
+character comparison; spontaneous/reaction/ambient coverage remains sparse.
+No new personal observation or automatic native-pattern permission. Preserve
+withdrawal/corrections, allowlists/no DMs and six local 01/05/09/13/17/21 Sol/xhigh
+runs and notifications. Material grounding/privacy regressions reorder priorities.
+[Protocol, methods and limitations](docs/trubot-evolution/evaluations/2026-10-20-explicit-context-followups.md).
+
 # Current priority, 2026-10-19 13:00 Pacific - 2.38.3 complete
 
 H106 ordinary dialogue presentation is released and installed. The fresh actual

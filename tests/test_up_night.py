@@ -73,7 +73,8 @@ def feeds(**changes):
 def test_selective_explicit_last_night(text, expected):
     skill = UPNightSkill()
     assert skill.applies(text, ReplyMode.DIRECT) is expected
-    for mode in [ReplyMode.FOLLOW_UP, ReplyMode.AMBIENT, ReplyMode.REACTION]:
+    assert skill.applies(text, ReplyMode.FOLLOW_UP) is expected
+    for mode in [ReplyMode.AMBIENT, ReplyMode.REACTION]:
         assert not skill.applies(text, mode)
     assert len(ContextTools((UPConditionsSkill(), skill)).select(text, ReplyMode.DIRECT)) <= 1
 
@@ -284,7 +285,7 @@ async def test_missing_region_loads_instructions_without_executable_tools(tmp_pa
     question = "Were the northern lights visible last night?"
     assert skill.applies(question, ReplyMode.DIRECT)
     assert not skill.applies(QUESTION, ReplyMode.DIRECT)
-    assert not skill.applies(question, ReplyMode.FOLLOW_UP)
+    assert skill.applies(question, ReplyMode.FOLLOW_UP)
     provider = Provider([response("Where did you mean, Marquette or the Keweenaw?")])
     result = await responder(provider, UsageLedger(tmp_path / "usage.sqlite3"), skill).reply(
         [ConversationMessage("user", question)],

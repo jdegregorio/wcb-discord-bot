@@ -1,3 +1,12 @@
+# 2026-10-20 01:00 harness qualification
+
+H107b corrects explicit public-context follow-up routing without changing the graph
+or learning scope. The broader inherited menu is rejected after failed controls.
+No new personal observation or automatic native-pattern permission. Next qualify
+independent H92/H93/H101 abstract/emotional/amplified-humor and actual-view utility
+with supports, contrary episodes and held-outs. Counts remain coverage, not quality.
+[Methods](evaluations/2026-10-20-explicit-context-followups.md).
+
 # 2026-10-19 13:00 release completion
 
 H106 is deployed as 2.38.3; source/graph/withdrawal state is unchanged. H105

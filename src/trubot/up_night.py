@@ -209,7 +209,7 @@ class UPNightSkill:
 
     def applies(self, target: str, mode: ReplyMode) -> bool:
         return bool(
-            mode is ReplyMode.DIRECT
+            mode in {ReplyMode.DIRECT, ReplyMode.FOLLOW_UP}
             and len(target.encode()) <= 2_000
             and _LAST_NIGHT.search(target)
             and _TOPIC.search(target)
@@ -271,7 +271,7 @@ class UPNightLocationSkill:
 
     def applies(self, target: str, mode: ReplyMode) -> bool:
         return bool(
-            mode is ReplyMode.DIRECT
+            mode in {ReplyMode.DIRECT, ReplyMode.FOLLOW_UP}
             and len(target.encode()) <= 2_000
             and _LAST_NIGHT.search(target)
             and _TOPIC.search(target)

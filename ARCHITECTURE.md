@@ -1,3 +1,13 @@
+## Explicit public-context follow-ups, 2.38.4
+
+The current, completed-night and missing-location sky predicates accept direct and
+follow-up modes. The latest text must still pass the same complete-request
+selection. No history, bot text, reference or private memory selects these skills;
+no inherited tool catalog is introduced. The model may abstain without reading.
+Ambient/reaction routes remain closed. The existing one-call/two-provider-turn,
+no-retry, source-refresh, cancellation and spending boundaries are unchanged.
+[Qualification](docs/trubot-evolution/evaluations/2026-10-20-explicit-context-followups.md).
+
 ## Ordinary reply presentation, 2.38.3
 
 A conservative presentation helper unwraps one complete double-quote pair on a

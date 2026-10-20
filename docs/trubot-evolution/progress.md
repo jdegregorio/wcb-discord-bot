@@ -5359,3 +5359,17 @@ H96 confirmation remains closed; H97/H102 exploratory. Six-run schedule/model/no
 [Evidence-only PR169](https://github.com/jdegregorio/wcb-discord-bot/pull/169)
 carries this completed validation record. Protected required checks govern its
 merge; runtime source, tests and lock remain equal to the released commit.
+
+
+## 2026-10-20 01:00 Pacific - H107b explicit public-context follow-ups
+
+Fresh fetched base `faff5ab3d95226935f8b6b5bba9a0a888a9d8f34`, new managed worktree,
+feature/trubot-daily-20261020-0100. Primary untouched; no evolution PR. Reconciles
+uncommitted 17:00 H107 after its failed selectivity controls, without shipping it.
+Actual owner/gateway baseline cannot check a complete follow-up. Same handler,
+source scope/model/history comparison: six positives gain one correct read and
+supported natural answer, six controls stay read-free, recipient abstains. Seven
+regression checks fail on untouched baseline. All feature gates pass 1,951 tests,
+96.02% coverage, 43 typed modules and 2.38.4 package. No new trait or general
+fidelity gain. Protected CI, release, deployed acceptance/post-audit/cost pending.
+[Both phases and methods](evaluations/2026-10-20-explicit-context-followups.md).
