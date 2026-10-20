@@ -1387,7 +1387,7 @@ wheels = [
 
 [[package]]
 name = "wcb-trubot"
-version = "2.38.5"
+version = "2.38.6"
 source = { editable = "." }
 dependencies = [
     { name = "aiohttp" },

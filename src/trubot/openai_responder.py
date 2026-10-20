@@ -259,6 +259,7 @@ class OpenAITruaxResponder:
         mode: ReplyMode,
         safety_id: str,
         target: str | None = None,
+        requester_user_id: int | None = None,
         refresh_check: Callable[[], Awaitable[bool]] | None = None,
         photo_action: PhotoAction | None = None,
     ) -> str | None:
@@ -288,7 +289,9 @@ class OpenAITruaxResponder:
             len(messages),
         )
         instructions = instructions_for(mode) + author_guidance(scope)
-        selected = self._context_tools.select(target, mode)
+        selected = self._context_tools.select(
+            target, mode, messages=messages, requester_user_id=requester_user_id
+        )
         instructions += "".join(skill.instructions for skill in selected)
         if photo_action is not None:
             instructions += PHOTO_ACTION_INSTRUCTIONS

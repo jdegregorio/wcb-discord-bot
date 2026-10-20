@@ -1,3 +1,11 @@
+## Complete a location clarification (2.38.6)
+
+After Trubot asks where for an unlocated last-night sky or northern-lights question,
+answer `Marquette.`, `Munising.` or `The Keweenaw.`. The same requester can complete
+that immediate question using the existing fresh NOAA/NWS read. Unrelated,
+interrupted and already located questions keep their existing behavior.
+[Qualification and limitations](docs/trubot-evolution/evaluations/2026-10-20-location-clarification.md).
+
 ## Requested fresh jokes (2.38.5)
 
 An explicit request such as `Give me a different joke about that same scene` can

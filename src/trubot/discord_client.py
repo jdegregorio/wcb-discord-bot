@@ -91,6 +91,7 @@ class Responder(Protocol):
         mode: ReplyMode,
         safety_id: str,
         target: str | None = None,
+        requester_user_id: int | None = None,
         refresh_check: Callable[[], Awaitable[bool]] | None = None,
         photo_action: PhotoAction | None = None,
     ) -> str | None: ...
@@ -911,6 +912,7 @@ class TruBotClient(discord.Client):
                         mode=mode,
                         safety_id=safety_identifier(guild_id, requester_user_id),
                         target=target,
+                        requester_user_id=requester_user_id,
                         refresh_check=refresh_context_current if memory else None,
                         **({"photo_action": photo_action} if photo_action is not None else {}),
                     )

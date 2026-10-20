@@ -1,3 +1,31 @@
+# Current priority, 2026-10-20 09:00 Pacific - H110b qualified, release pending
+
+A real owner/gateway clarification loses its public-context capability when the
+owner supplies a bare location. The broader place-switch prototype is rejected
+after one grounding-review failure. H110b keeps only the same requester's immediate
+unlocated last-night question plus a supported location, so users can complete the
+conversation naturally. Six matched positives add six correct reads from zero, all16candidate semantic
+checks pass and ten controls stay read-free. Protected release and real installed
+acceptance remain required before completion. No new persona observation,
+model, source/intake scope, storage or service; same18/2/20spending guard.
+
+1. Finish H110b only if six matched positives and controls pass, then complete all
+   gates, protected CI/release/images and installed actual Discord clarification.
+2. Independently qualify useful H92/H93/H101 abstract emotional/amplified-humor and
+   original-view utility. Require separated authored supports, contrary episodes,
+   held-out human setups, original pixels and matched natural/grounded gains.
+   Earlier H105 remains rejected; general benefit and H111 remain unresolved.
+3. Broaden useful native linked/visual coverage and seasonal variety after utility.
+   Retain generated U.P. aurora/trail-camera themes and modern selective tools.
+   Full history stays incomplete; existing four photo studies/day, no new pool.
+4. Broader location switches, H96confirmed sightings and H102calendar placement stay
+   research. An unrelated-memory answer to a public sky question is unresolved.
+   Material grounding/privacy/delivery failures change priority again.
+
+Preserve source correction/withdrawal, allowlists/noDMs and six standalone local
+01/05/09/13/17/21Sol/xhigh runs/notifications. Older snapshots below are historical.
+[Study and actual status](evaluations/2026-10-20-location-clarification.md).
+
 # Current priority, 2026-10-20 05:00 Pacific - 2.38.5 complete
 
 H109 is released and installed. An explicit request for a different joke can now

@@ -9,7 +9,8 @@ from typing import Protocol
 
 from openai.types.responses import FunctionToolParam, ResponseFunctionToolCall
 
-from trubot.conversation import ReplyMode
+from trubot.context_focus import location_question
+from trubot.conversation import ConversationMessage, ReplyMode
 
 logger = logging.getLogger(__name__)
 MAX_TOOL_OUTPUT_BYTES = 6_000
@@ -36,8 +37,41 @@ class ContextTools:
         if len({skill.name for skill in skills}) != len(skills):
             raise ValueError("Context skill names must be unique")
 
-    def select(self, target: str | None, mode: ReplyMode) -> tuple[ContextSkill, ...]:
-        return tuple(skill for skill in self._skills if target and skill.applies(target, mode))
+    def select(
+        self,
+        target: str | None,
+        mode: ReplyMode,
+        *,
+        messages: Sequence[ConversationMessage] = (),
+        requester_user_id: int | None = None,
+    ) -> tuple[ContextSkill, ...]:
+        selected = tuple(skill for skill in self._skills if target and skill.applies(target, mode))
+        if selected:
+            return selected
+        resolved = location_question(
+            target, messages, mode=mode, requester_user_id=requester_user_id
+        )
+        if resolved is None:
+            return ()
+        # An unlocated last-night question may acquire its explicitly supplied
+        # location. Already located questions and other capabilities do not carry.
+        question = resolved.rsplit(" Location: ", 1)[0]
+        public = [
+            skill
+            for skill in self._skills
+            if skill.name in {"get_up_last_night", "clarify_up_night_location"}
+        ]
+        prior = [skill for skill in public if skill.applies(question, mode)]
+        candidates = [skill for skill in public if skill.applies(resolved, mode)]
+        if (
+            len(prior) != 1
+            or prior[0].name != "clarify_up_night_location"
+            or len(candidates) != 1
+            or candidates[0].name != "get_up_last_night"
+            or candidates[0].definition() is None
+        ):
+            return ()
+        return tuple(candidates)
 
     async def execute(
         self, calls: Sequence[ResponseFunctionToolCall], selected: Sequence[ContextSkill]

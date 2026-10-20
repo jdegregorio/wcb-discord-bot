@@ -1,0 +1,66 @@
+{
+  "pairs": 16,
+  "positive_pairs": 6,
+  "control_pairs": 10,
+  "positive_reads": {
+    "baseline": 0,
+    "candidate": 6
+  },
+  "candidate_all_semantic_pass": 16,
+  "baseline_all_semantic_pass": 12,
+  "no_control_reads": true,
+  "candidate_failures": [],
+  "baseline_failures": [
+    [
+      "night_clarify_a",
+      {
+        "natural": true,
+        "relevant": false,
+        "grounded": true,
+        "timing_appropriate": true,
+        "recipient_correct": true
+      }
+    ],
+    [
+      "night_clarify_f",
+      {
+        "natural": true,
+        "relevant": false,
+        "grounded": true,
+        "timing_appropriate": false,
+        "recipient_correct": true
+      }
+    ],
+    [
+      "located_current",
+      {
+        "natural": true,
+        "relevant": false,
+        "grounded": true,
+        "timing_appropriate": true,
+        "recipient_correct": true
+      }
+    ],
+    [
+      "creative",
+      {
+        "natural": true,
+        "relevant": false,
+        "grounded": true,
+        "timing_appropriate": false,
+        "recipient_correct": true
+      }
+    ]
+  ],
+  "review_retries": 0,
+  "excluded_initial_invalid_review_pairs": 1,
+  "additional_authenticated_human_holdouts": {
+    "pairs": 2,
+    "both_arms_contextual_fit_pass": 1,
+    "baseline_natural": 2,
+    "candidate_natural": 2,
+    "baseline_grounded": 1,
+    "candidate_grounded": 2,
+    "causal_gain_claimed": false
+  }
+}

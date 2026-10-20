@@ -1,3 +1,15 @@
+## Missing-location public context,2.38.6
+
+The transport passes the authenticated requester ID separately to the responder.
+A strict location-only focus may complete the same human's immediately preceding
+unlocated last-night question. Conversation origins, role/author attribution,
+complete bounded text and no images/references/intervening turns gate selection.
+Only clarify_up_night_location can transition to get_up_last_night. Bot prose is
+never a subject or observation source; current/already located questions cannot
+inherit tools. Latest complete requests retain their prior selection. Same one
+read/two-turn, no-retry, spending and source/publication boundaries.
+[Evidence](docs/trubot-evolution/evaluations/2026-10-20-location-clarification.md).
+
 ## Explicit comic novelty and immediate continuity,2.38.5
 
 An explicit request such as `Give me a different joke about that same scene` can
