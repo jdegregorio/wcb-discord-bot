@@ -1,0 +1,110 @@
+{
+  "run": "2026-10-20-0500",
+  "version": "2.38.5",
+  "base_sha": "f63158776aaf6571613ff8fece69866f2bb12335",
+  "release_sha": "ff667a5559686edd183af8edf76039282000be0b",
+  "pr": 173,
+  "feature_ci": 39420949359,
+  "main_ci": 39421258638,
+  "image_ci": 39421587577,
+  "digest": "sha256:e69cba34dba8967fe65b44d2f820a5d0f17015673f95bf1be9ed47e1f24d82c5",
+  "tests": 1983,
+  "coverage_percent": 96.02,
+  "typed_modules": 43,
+  "new_regressions": 32,
+  "focused_tests": 112,
+  "h108": {
+    "status": "rejected_for_rollout",
+    "opportunity_pairs": 6,
+    "candidate_wins": 2,
+    "baseline_wins": 1,
+    "ties": 3,
+    "required_wins": 3,
+    "all_generation_completed": true,
+    "care_candidate_published": false,
+    "same_memory_packets_asserted": false,
+    "causal_quality_claim": false
+  },
+  "h109": {
+    "synthetic_initial_draft_and_history": true,
+    "baseline_paid_repairs": 0,
+    "installed_paid_repairs": 1,
+    "installed_echo": false,
+    "semantic_checks": {
+      "candidate_new_comic_idea": true,
+      "candidate_fits_same_scene": true,
+      "candidate_natural_brief": true,
+      "no_invented_personal_fact": true,
+      "baseline_fails_novelty": true
+    },
+    "spontaneous_failure_rate_measured": false
+  },
+  "gateway": {
+    "owner_questions": 10,
+    "responses": 9,
+    "correct_abstentions": 1,
+    "semantic_checks": {
+      "fresh_joke_fits_same_scene": true,
+      "different_joke_adds_new_idea": true,
+      "natural_brief_no_machinery": true,
+      "care_is_sincere": true,
+      "celebration_is_fitting": true,
+      "baseball_supported_without_invented_strength": true,
+      "year_does_not_assert_unsupported_calendar_date": true,
+      "exact_date_honest": true,
+      "recipient_abstains": true
+    },
+    "literal_exact": true,
+    "first_eight_latency_seconds": [
+      2.027,
+      8.341
+    ],
+    "final_latency_seconds": 3.428,
+    "final_after_all_aux_clients_closed": true,
+    "source_supports": 3,
+    "full_year_grounding_review": false
+  },
+  "audits": {
+    "human_windows_per_phase": 6,
+    "development_posts_per_phase": 24,
+    "actual_bot_counts": [
+      12,
+      13
+    ],
+    "model_bot_counts": [
+      15,
+      15
+    ],
+    "post_adjudicated_messages": 13,
+    "post_self_third_person": 0,
+    "post_mechanical_storage": 0,
+    "general_human_comparison_sufficient": false,
+    "new_human_trait": false
+  },
+  "health": {
+    "healthy": true,
+    "oom_killed": false,
+    "restarts": 0,
+    "read_only": true,
+    "readiness": true,
+    "errors": 0,
+    "response_failures": 0,
+    "unhandled": 0,
+    "source_continuity_warnings": 0,
+    "private_source_discards": 0,
+    "quality_repairs": 1,
+    "declined_followups": 1
+  },
+  "cost": {
+    "settled_attempts": 53,
+    "maintenance_attempts": 38,
+    "runtime_attempts": 15,
+    "run_estimated_usd": 0.018014075,
+    "covered_month_estimated_usd": 1.250641585,
+    "old_unsettled": 6,
+    "new_unsettled": 0,
+    "pre_guard_spend": "unknown",
+    "provider_billing": false
+  },
+  "private_raw_retained_in_smoke_or_git": false
+}

@@ -5424,9 +5424,75 @@ f63158776aaf6571613ff8fece69866f2bb12335; primary untouched. Reconciled prior co
 rejected below its threshold; H109 explicit-new-joke echo defect reproduced through
 actual private production-handler sends with controlled history/draft. Candidate
 uses one existing accounted repair, preserves literal/reference/factual controls;
-112focused tests pass,32new regressions. All gates/release/deployment remain pending.
+112focused tests pass,32new regressions. All gates/release/deployment now complete; see installed evidence below.
 No new trait/general humor claim, model/service/store/scope expansion. See
 [complete evidence](evaluations/2026-10-20-requested-novelty.md) for final identifiers,
 immutable digest, installed acceptance, costs and limitations when available.
 
 Feature gates PASS: locked sync, format, lint,43typed modules,1,983tests/96.02%branch-inclusive coverage and2.38.5sdist/wheel. No accepted failure or flakiness.
+
+## Installed completion - v2.38.5
+
+[Runtime PR173](https://github.com/jdegregorio/wcb-discord-bot/pull/173) protected
+squash merge `ff667a5559686edd183af8edf76039282000be0b` is the immutable tested release.
+Feature CI39420949359, main CI39421258638 and image CI39421587577 succeed.
+All six feature and merged gates pass:1,983tests,96.02% branch-inclusive coverage,
+43typed modules and2.38.5sdist/wheel. No accepted test failure or flakiness.
+The existing pi5 app-scoped locked transaction installs index
+`e69cba34dba8967fe65b44d2f820a5d0f17015673f95bf1be9ed47e1f24d82c5`.
+All43 installed module hashes and OCI revision match. Healthy, Discord-ready,
+read-only, zero restarts/OOM false; zero observed errors, response failures,
+unhandled exceptions, source continuity warnings and private-source discards.
+Previous2.38.4/indexb07863bb44bf563a131e4dd0a65537c7ae5513bb26c8db4bf5ba295ddf7cc1e9
+remains the rollback boundary. No rollback, source/ledger/paid-claim restoration.
+Release discovery timer remains active/enabled. No unrelated service change.
+
+Installed controlled acceptance posts one different answer after exactly one paid
+maintenance repair,4.568seconds. Its semantic review passes all five checks, as did
+the staged candidate; baseline uses no repair and posts the identical latest joke.
+These share a synthetic initial draft/history and are not independent spontaneous
+quality samples. The original actual gateway path remains separately tested.
+
+Actual installed owner/gateway:10questions,9replies,one correct other-recipient
+abstention. The first nine-question cohort passes all nine semantic checks and
+exact literal repetition. Different-joke output uses a fresh fitting idea; care
+and sincere celebration fit. Three freshly authenticated native authored sources
+support the existing baseball preference, with no new observation or unsupported
+biographical strength. Broad-year wording and exact-date uncertainty pass the
+limited wording review; full year-content grounding/calendar relevance remains
+unresolved, not fixed by this increment. No routine storage/date disclaimer.
+Eight initial reply latencies2.027-8.341seconds,median3.768; no causal latency claim.
+Final actual owner/gateway sanity arrives in3.428seconds after every auxiliary
+Discord client closes. Subsequent collection uses stateless authenticated REST,
+ledger reads and health only; no later Discord client construction.
+
+Pre/post character audits:6 attributed human windows and24development posts each.
+Authenticated counts are12bot/12owner before and13bot/11owner after. The model
+incorrectly reports15bot in both, corrected against authenticated rows. Unmatched
+triage flags0peculiar/1factual-overreach in each and initially5third-person posts
+after. Per-message adjudication of all13actual post-audit bot messages finds0self-
+third-person and0mechanical-storage posts; fictional/other actors and requested
+quotations do not establish self-narration. This resolves that wording ambiguity,
+not a general human-style comparison or the factual-overreach flag. Three latest100
+league-channel pages per audit contain0seven-day target/bot posts; sparse bounded
+coverage is not silence. No new human trait, pixel interpretation, automatic native
+pattern permission or measured general fidelity/humor multiplier. The graph keeps
+553episodes,438human sources,24native contexts,28dependencies,1,071edges,one value,
+one preference,two claims and accepted1/rejected3studies.
+
+All53run ledger attempts settle:38maintenance/USD0.010850005 and15runtime/
+USD0.007164070, totalUSD0.018014075. Covered OctoberUSD1.250641585 estimate;
+pre-guard spend unknown, not provider billing. Six old unresolved reservations
+(one pending/five uncertain),zero new. Existing18runtime/2maintenance/20total guard,
+no new pool/model/service, no extra photo studies or paid infrastructure.
+
+Content-free receipts and metadata only use private app-volume
+smoke-tests/2026-10-20-0500, verified0700directory/0600files,sevendaymanualretention
+and withdrawal cleanup. Local QA scripts/logs/receipts live outside the managed
+worktree. No raw source/answer text, derived personal observation or screenshot is
+retained in smoke artifacts or public Git. Native/source learning and runtime
+allowlists/noDMs are unchanged. The primary checkout is untouched.
+
+[Immutable release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.5)
+and [content-free acceptance metrics](evaluations/2026-10-20-requested-novelty.json).
+Final documentation CI/merge and managed archive are recorded in automation memory.
