@@ -1256,7 +1256,11 @@ class TruBotClient(discord.Client):
         photo_recipient_user_id: int | None = None,
     ) -> str:
         learning, memory = self._learning, self._memory
-        if learning is None or memory is None or not learning.verified:
+        if learning is None or memory is None:
+            logger.info("Reply memory state=unavailable")
+            return ""
+        if not learning.verified:
+            logger.info("Reply memory state=identity_unverified")
             return ""
         source_guild_id = channel.guild.id
         if source_guild_id != learning.identity.guild_id:
@@ -1270,6 +1274,7 @@ class TruBotClient(discord.Client):
                 or requester_user_id is None
                 or requester_user_id != channel.guild.owner_id
             ):
+                logger.info("Reply memory state=scope_denied")
                 return ""
             source_guild_id = learning.identity.guild_id
         # Use the focused topic. Bot prose cannot establish personal evidence.
@@ -1479,7 +1484,18 @@ class TruBotClient(discord.Client):
                         )
                 if lookup is not None and not recalled:
                     return quotation_unavailable()
+                logger.info(
+                    "Reply memory state=assembled candidates=%d verified=%d native_contexts=%d "
+                    "packet=%s voice=%s pixels=%d",
+                    len(candidates),
+                    len(verified),
+                    len(native_episodes),
+                    bool(recalled),
+                    bool(voice),
+                    len(visual_sink) if visual_sink is not None else 0,
+                )
                 return "\n".join(part for part in (recalled, voice) if part)
+            logger.info("Reply memory state=identity_unverified")
             return ""
         except LearningUnavailable:
             logger.warning("Response memory unavailable; source verification required")

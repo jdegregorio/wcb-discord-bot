@@ -1,3 +1,34 @@
+# Current priority, 2026-10-20 13:00 Pacific
+
+H115 content-free reply-context diagnostics is the selected enabling increment.
+A replay client silently lacked pinned-member verification. The H113 context-
+isolation prototype is unqualified and removed: six empty-memory pairs are not
+full-memory evidence; two corrected verified pairs show no clarification gain and
+a third stops on changed source context. No freshness gate is bypassed. Three
+fresh actual initial questions clarify; no new behavioral or persona claim.
+
+1. H114/H92/H93/H101/H112: independently qualify useful abstract emotion, approved
+   amplified humor and original-view context, so supported concepts improve warm,
+   varied engagement. Dependencies: complete attributed supports, separated contrary
+   episodes, non-training held-outs, actual pixels when relevant and reliable
+   semantic adjudication. Accept matched usefulness without invented beliefs,
+   forced timing or repetitive bits. Confidence remains unresolved; no new native
+   pattern permission or population. Existing app volume and maintenance allowance.
+2. Broaden useful native linked/visual episode coverage and seasonal variety after
+   demonstrated utility. Preserve generated Michigan U.P. aurora/trail-camera scenes,
+   selective skills/tools, source lifecycle and four photo studies/day. Full history
+   remains incomplete; no additional service or spending pool.
+3. Reopen H113 only with pinned-member-verified full packets, stable fresh checks
+   and reliable case adjudication showing a baseline defect and a matched gain.
+   H105, broad H107 menus and H110 a stay rejected; H96 confirmation is closed without
+   a qualified feed; H102 calendar placement stays secondary. Material grounding,
+   privacy, delivery or source-lifecycle evidence changes this priority again.
+
+These priorities supersede the historical snapshots below. Same USD 18 runtime/
+2 maintenance/20 total guard, source correction/withdrawal, runtime allowlists/no DMs
+and six standalone local 01/05/09/13/17/21 Sol/xhigh runs with existing notifications.
+[Protocol, qualification and release evidence](trubot-evolution/evaluations/2026-10-20-context-diagnostics.md).
+
 # Current priority, 2026-10-20 09:00 Pacific - 2.38.6 deployed
 
 H110b is installed: the same requester can supply a bare supported place after an

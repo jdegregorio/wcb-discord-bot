@@ -32,6 +32,7 @@ from trubot.photo_action import INSTRUCTIONS as PHOTO_ACTION_INSTRUCTIONS
 from trubot.photo_action import NAME as PHOTO_ACTION_NAME
 from trubot.photo_action import PhotoAction
 from trubot.reply_brevity import BRIEF_REPLY_GUIDANCE, needs_brief_reply
+from trubot.reply_diagnostics import log_reply_context
 from trubot.reply_focus import preceding_human_turn
 from trubot.reply_presentation import ordinary_reply
 from trubot.vision import IMAGE_TOKEN_BOUND, MAX_IMAGES
@@ -291,6 +292,13 @@ class OpenAITruaxResponder:
         instructions = instructions_for(mode) + author_guidance(scope)
         selected = self._context_tools.select(
             target, mode, messages=messages, requester_user_id=requester_user_id
+        )
+        log_reply_context(
+            messages,
+            selected,
+            mode=mode,
+            photo_available=photo_action is not None,
+            inspection_available=inspect_available,
         )
         instructions += "".join(skill.instructions for skill in selected)
         if photo_action is not None:

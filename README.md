@@ -1,3 +1,12 @@
+## Reply-context diagnostics,2.38.7
+
+Runtime emits fixed states and aggregate counts for memory verification/assembly,
+selected context routes and photo-action availability. It retains no private text,
+source IDs, tool arguments or pixels and changes no model request or behavior.
+Existing rotated app logs only; no provider call, schema or service is added.
+These events enable valid character-quality research; they do not prove reply
+quality or publication. [Evidence](docs/trubot-evolution/evaluations/2026-10-20-context-diagnostics.md).
+
 ## Complete a location clarification (2.38.6)
 
 After Trubot asks where for an unlocated last-night sky or northern-lights question,
