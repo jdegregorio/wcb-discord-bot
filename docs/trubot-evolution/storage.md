@@ -1454,3 +1454,15 @@ withdrawal cleanup. No raw exchanges/derived personal observations/answers retai
 in these receipts. Set UUID-specific auxiliary readiness paths before construction;
 verify final real gateway after every client closes. Code rollback to2.38.4 is
 compatible; never restore learning, source, usage or paid-attempt state for rollback.
+
+
+## Location clarification,2.38.6
+
+No storage/schema/retention or learning-state change. Conversation-only selection
+uses authenticated requester metadata transiently; no raw user IDs enter provider
+input through this new parameter. Existing private content-free receipts use
+smoke-tests/2026-10-20-0900,0700directories/0600files, manual seven-day retention and
+withdrawal cleanup. No raw answers/sources/derived observations/screenshots retained
+there. UUID-isolated auxiliary readiness precedes construction; final actual gateway
+follows every auxiliary closure. Code rollback preserves all source, usage and
+paid-claim state. Same runtime18/maintenance2/total20 monthly guard.
