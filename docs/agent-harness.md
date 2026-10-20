@@ -1,30 +1,34 @@
-# Current priority, 2026-10-20 09:00 Pacific - H110b qualified, release pending
+# Current priority, 2026-10-20 09:00 Pacific - 2.38.6 deployed
 
-A real owner/gateway clarification loses its public-context capability when the
-owner supplies a bare location. The broader place-switch prototype is rejected
-after one grounding-review failure. H110b keeps only the same requester's immediate
-unlocated last-night question plus a supported location, so users can complete the
-conversation naturally. Six matched positives add six correct reads from zero, all16candidate semantic
-checks pass and ten controls stay read-free. Protected release and real installed
-acceptance remain required before completion. No new persona observation,
-model, source/intake scope, storage or service; same18/2/20spending guard.
+H110b is installed: the same requester can supply a bare supported place after an
+immediate unlocated last-night question. Six matched positive pairs add six correct
+reads from zero; all16candidate semantic reviews pass and ten controls remain
+read-free. Actual installed gateway verifies all three location completions,
+current context and existing reply controls. One of three initial questions still
+skips clarification (H113); broader place switching stays rejected. All six gates,
+protected CI/release/images and44installed hashes pass. Healthy/Discord-ready,
+zero observed errors/source discards/restarts. No general human fidelity gain.
 
-1. Finish H110b only if six matched positives and controls pass, then complete all
-   gates, protected CI/release/images and installed actual Discord clarification.
-2. Independently qualify useful H92/H93/H101 abstract emotional/amplified-humor and
-   original-view utility. Require separated authored supports, contrary episodes,
-   held-out human setups, original pixels and matched natural/grounded gains.
-   Earlier H105 remains rejected; general benefit and H111 remain unresolved.
+1. H113: qualify initial public-question focus/clarification isolation using full
+   actual source packets and matched replays, so irrelevant memory cannot hide an
+   available context path. Preserve recipient, source and learning boundaries;
+   require actual installed gateway acceptance. No unvalidated prompt/model change.
+2. Independently qualify H92/H93/H101/H112 abstract emotional/amplified-humor and
+   original-view utility with full attributed setup, separated supports, contrary
+   episodes, held-outs, actual pixels and matched semantic gains. Both arms miss
+   one of two held-out human contexts; no new trait/population. H105 stays rejected.
 3. Broaden useful native linked/visual coverage and seasonal variety after utility.
-   Retain generated U.P. aurora/trail-camera themes and modern selective tools.
-   Full history stays incomplete; existing four photo studies/day, no new pool.
-4. Broader location switches, H96confirmed sightings and H102calendar placement stay
-   research. An unrelated-memory answer to a public sky question is unresolved.
-   Material grounding/privacy/delivery failures change priority again.
+   Preserve generated U.P. aurora/trail-camera themes, selective tools and four
+   photo studies/day. Full history remains incomplete. Existing private volume.
+4. Broad place switches/H107menus remain rejected; H96confirmationclosed and
+   H102calendar placement stays research. Material grounding/privacy/delivery
+   evidence changes priority. Same18runtime/2maintenance/20total spending guard.
 
-Preserve source correction/withdrawal, allowlists/noDMs and six standalone local
-01/05/09/13/17/21Sol/xhigh runs/notifications. Older snapshots below are historical.
-[Study and actual status](trubot-evolution/evaluations/2026-10-20-location-clarification.md).
+Covered runUSD0.029363925;OctoberUSD1.282509885estimates, pre-guard spending unknown.
+Six old reservations,zero new. Preserve correction/withdrawal, allowlist/noDMs and
+six standalone local01/05/09/13/17/21Sol/xhigh runs/notifications. Older snapshots
+below are historical; initial-question success and full-year grounding stay open.
+[Complete evidence and limitations](trubot-evolution/evaluations/2026-10-20-location-clarification.md).
 
 # Current priority, 2026-10-20 05:00 Pacific - 2.38.5 complete
 

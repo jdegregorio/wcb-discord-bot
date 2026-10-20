@@ -5525,3 +5525,39 @@ model, source/intake scope, storage or service; same18/2/20spending guard.
 Preserve source correction/withdrawal, allowlists/noDMs and six standalone local
 01/05/09/13/17/21Sol/xhigh runs/notifications. Older snapshots below are historical.
 [Protocol, experimental results and release status](evaluations/2026-10-20-location-clarification.md).
+
+
+## 2026-10-20 09:00 installed completion
+
+H110b is installed: the same requester can supply a bare supported place after an
+immediate unlocated last-night question. Six matched positive pairs add six correct
+reads from zero; all16candidate semantic reviews pass and ten controls remain
+read-free. Actual installed gateway verifies all three location completions,
+current context and existing reply controls. One of three initial questions still
+skips clarification (H113); broader place switching stays rejected. All six gates,
+protected CI/release/images and44installed hashes pass. Healthy/Discord-ready,
+zero observed errors/source discards/restarts. No general human fidelity gain.
+
+1. H113: qualify initial public-question focus/clarification isolation using full
+   actual source packets and matched replays, so irrelevant memory cannot hide an
+   available context path. Preserve recipient, source and learning boundaries;
+   require actual installed gateway acceptance. No unvalidated prompt/model change.
+2. Independently qualify H92/H93/H101/H112 abstract emotional/amplified-humor and
+   original-view utility with full attributed setup, separated supports, contrary
+   episodes, held-outs, actual pixels and matched semantic gains. Both arms miss
+   one of two held-out human contexts; no new trait/population. H105 stays rejected.
+3. Broaden useful native linked/visual coverage and seasonal variety after utility.
+   Preserve generated U.P. aurora/trail-camera themes, selective tools and four
+   photo studies/day. Full history remains incomplete. Existing private volume.
+4. Broad place switches/H107menus remain rejected; H96confirmationclosed and
+   H102calendar placement stays research. Material grounding/privacy/delivery
+   evidence changes priority. Same18runtime/2maintenance/20total spending guard.
+
+Covered runUSD0.029363925;OctoberUSD1.282509885estimates, pre-guard spending unknown.
+Six old reservations,zero new. Preserve correction/withdrawal, allowlist/noDMs and
+six standalone local01/05/09/13/17/21Sol/xhigh runs/notifications. Older snapshots
+below are historical; initial-question success and full-year grounding stay open.
+[Runtime PR175](https://github.com/jdegregorio/wcb-discord-bot/pull/175), tested main
+`66202508f034a0b1d705fc8173719f6af50698c8`, immutable v2.38.6/index
+`3fd1ce39a97d02460aa383529d911e053bc226419a268d5c92626ac3dee2dadd`.
+[Full actual validation and qualification](evaluations/2026-10-20-location-clarification.md).
