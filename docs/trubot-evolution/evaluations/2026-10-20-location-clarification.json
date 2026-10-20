@@ -1,66 +1,242 @@
 {
-  "pairs": 16,
-  "positive_pairs": 6,
-  "control_pairs": 10,
-  "positive_reads": {
-    "baseline": 0,
-    "candidate": 6
+  "runtime_pr": 175,
+  "runtime_commit": "66202508f034a0b1d705fc8173719f6af50698c8",
+  "release": "v2.38.6",
+  "feature_ci": 39455788792,
+  "main_ci": 39456192637,
+  "image_ci": 39456478653,
+  "digest": "sha256:3fd1ce39a97d02460aa383529d911e053bc226419a268d5c92626ac3dee2dadd",
+  "engineering": {
+    "tests": 2037,
+    "coverage_percent": 96.05,
+    "typed_modules": 44,
+    "new_regressions": 54,
+    "all_six_gates": true
   },
-  "candidate_all_semantic_pass": 16,
-  "baseline_all_semantic_pass": 12,
-  "no_control_reads": true,
-  "candidate_failures": [],
-  "baseline_failures": [
-    [
-      "night_clarify_a",
+  "controlled_qualification": {
+    "pairs": 16,
+    "positive_pairs": 6,
+    "control_pairs": 10,
+    "positive_reads": {
+      "baseline": 0,
+      "candidate": 6
+    },
+    "candidate_all_semantic_pass": 16,
+    "baseline_all_semantic_pass": 12,
+    "no_control_reads": true,
+    "candidate_failures": [],
+    "baseline_failures": [
+      [
+        "night_clarify_a",
+        {
+          "natural": true,
+          "relevant": false,
+          "grounded": true,
+          "timing_appropriate": true,
+          "recipient_correct": true
+        }
+      ],
+      [
+        "night_clarify_f",
+        {
+          "natural": true,
+          "relevant": false,
+          "grounded": true,
+          "timing_appropriate": false,
+          "recipient_correct": true
+        }
+      ],
+      [
+        "located_current",
+        {
+          "natural": true,
+          "relevant": false,
+          "grounded": true,
+          "timing_appropriate": true,
+          "recipient_correct": true
+        }
+      ],
+      [
+        "creative",
+        {
+          "natural": true,
+          "relevant": false,
+          "grounded": true,
+          "timing_appropriate": false,
+          "recipient_correct": true
+        }
+      ]
+    ],
+    "review_retries": 0,
+    "excluded_initial_invalid_review_pairs": 1
+  },
+  "actual_gateway": {
+    "functional_questions": 16,
+    "functional_responses": 15,
+    "recipient_abstentions": 1,
+    "bare_location_answers_grounded": 3,
+    "initial_clarifications_pass": 2,
+    "initial_clarifications_total": 3,
+    "semantic_review": {
+      "current_answer_uses_fresh_observations": true,
+      "clarification_a_asks_place": true,
+      "clarification_b_asks_place": false,
+      "clarification_c_asks_place": true,
+      "marquette_answer_fits_public_reports": true,
+      "keweenaw_answer_fits_public_reports": true,
+      "munising_unknowns_not_invented": true,
+      "fresh_joke_fits_same_scene": true,
+      "different_joke_adds_new_idea": true,
+      "natural_brief_no_machinery": true,
+      "care_is_sincere": true,
+      "celebration_is_fitting": true,
+      "baseball_supported_without_invented_strength": true,
+      "year_does_not_assert_unsupported_calendar_date": true,
+      "exact_date_honest": true,
+      "recipient_abstains": true
+    },
+    "literal_repeat_exact": true,
+    "fresh_native_preference_supports": 3,
+    "full_year_grounding_verified": false,
+    "final_after_all_clients_closed": true,
+    "final_seconds": 4.111,
+    "total_questions": 17,
+    "total_responses": 16,
+    "min_seconds": 2.037,
+    "max_seconds": 11.644,
+    "median_seconds": 5.63
+  },
+  "health": {
+    "healthy": true,
+    "oom_killed": false,
+    "restarts": 0,
+    "read_only": true,
+    "revision": "66202508f034a0b1d705fc8173719f6af50698c8",
+    "started_at": "2026-10-20T16:22:47.249946741Z",
+    "readiness": true,
+    "errors": 0,
+    "response_failures": 0,
+    "unhandled": 0,
+    "source_continuity_warnings": 0,
+    "private_source_discards": 0,
+    "quality_repairs": 0,
+    "declined_followups": 1,
+    "public_context_reads": {
+      "get_up_conditions": 1,
+      "get_up_last_night": 3
+    }
+  },
+  "audit": {
+    "pre": {
+      "human_windows": 6,
+      "development_posts": 24,
+      "authenticated_post_counts": {
+        "bot": 13,
+        "operator": 11
+      },
+      "result": {
+        "sampled_bot_posts": 12,
+        "peculiar_posts": 2,
+        "third_person_posts": 0,
+        "mechanical_gap_posts": 0,
+        "factual_overreach_posts": 1,
+        "human_comparison_sufficient": false
+      },
+      "limitations": [
+        "small_unmatched_cohorts",
+        "unblinded_single_model",
+        "truncated_context",
+        "no_new_persona_trait",
+        "no_causal_general_fidelity_claim"
+      ],
+      "league_pages": 3,
+      "seven_day_target": 0,
+      "seven_day_bot": 0
+    },
+    "post": {
+      "human_windows": 6,
+      "development_posts": 24,
+      "authenticated_post_counts": {
+        "bot": 12,
+        "operator": 12
+      },
+      "result": {
+        "sampled_bot_posts": 14,
+        "peculiar_posts": 0,
+        "third_person_posts": 0,
+        "mechanical_gap_posts": 0,
+        "factual_overreach_posts": 0,
+        "human_comparison_sufficient": false
+      },
+      "limitations": [
+        "small_unmatched_cohorts",
+        "unblinded_single_model",
+        "truncated_context",
+        "no_new_persona_trait",
+        "no_causal_general_fidelity_claim"
+      ],
+      "league_pages": 3,
+      "seven_day_target": 0,
+      "seven_day_bot": 0
+    }
+  },
+  "cost": {
+    "at": "2026-10-20T16:31:15.624015+00:00",
+    "coverage_since": "2026-10-20T15:50:00+00:00",
+    "run": [
       {
-        "natural": true,
-        "relevant": false,
-        "grounded": true,
-        "timing_appropriate": true,
-        "recipient_correct": true
+        "purpose": "maintenance",
+        "status": "settled",
+        "attempts": 115,
+        "covered_usd": 0.01441621
+      },
+      {
+        "purpose": "runtime",
+        "status": "settled",
+        "attempts": 27,
+        "covered_usd": 0.014947715
       }
     ],
-    [
-      "night_clarify_f",
-      {
-        "natural": true,
-        "relevant": false,
-        "grounded": true,
-        "timing_appropriate": false,
-        "recipient_correct": true
-      }
+    "month": {
+      "month": "2026-10",
+      "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+      "timezone": "UTC",
+      "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+      "estimated_usd": 1.282509885,
+      "runtime_usd": 0.485218025,
+      "maintenance_usd": 0.79729186,
+      "monthly_limit_usd": 20,
+      "runtime_limit_usd": 18,
+      "maintenance_limit_usd": 2,
+      "attempts": 3240,
+      "input_tokens": 11032184,
+      "cached_input_tokens": 6650701,
+      "output_tokens": 126512,
+      "unsettled_attempts": 6,
+      "pre_guard_spend": "unknown; not included"
+    },
+    "unsettled_before": [
+      [
+        "pending",
+        1
+      ],
+      [
+        "uncertain",
+        5
+      ]
     ],
-    [
-      "located_current",
-      {
-        "natural": true,
-        "relevant": false,
-        "grounded": true,
-        "timing_appropriate": true,
-        "recipient_correct": true
-      }
-    ],
-    [
-      "creative",
-      {
-        "natural": true,
-        "relevant": false,
-        "grounded": true,
-        "timing_appropriate": false,
-        "recipient_correct": true
-      }
-    ]
-  ],
-  "review_retries": 0,
-  "excluded_initial_invalid_review_pairs": 1,
-  "additional_authenticated_human_holdouts": {
-    "pairs": 2,
-    "both_arms_contextual_fit_pass": 1,
-    "baseline_natural": 2,
-    "candidate_natural": 2,
-    "baseline_grounded": 1,
-    "candidate_grounded": 2,
-    "causal_gain_claimed": false
-  }
+    "not_provider_billing": true
+  },
+  "receipt_controls": {
+    "files": 14,
+    "directory_mode": "0o700",
+    "all_file_modes_0600": true,
+    "no_raw_text_keys": true,
+    "heldout_refs_separated": true,
+    "manual_retention_days": 7,
+    "withdrawal_cleanup": true
+  },
+  "general_fidelity_gain_claimed": false,
+  "new_human_trait": false,
+  "rollback": false
 }

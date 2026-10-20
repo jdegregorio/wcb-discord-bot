@@ -126,5 +126,101 @@ source/answer, private derived observation or screenshot in public Git or smoke
 receipts. Every auxiliary client gets a UUID readiness path before construction;
 final real gateway verification must follow all auxiliary closures.
 
-Required protected CI, immutable release/images, deployment and installed acceptance
-are recorded in the completion section after they actually pass.
+Protected CI, immutable release/images, deployment and actual installed continuation
+acceptance are complete below; the distinct initial-question limitation stays open.
+
+
+## Installed completion - v2.38.6
+
+[PR175](https://github.com/jdegregorio/wcb-discord-bot/pull/175) protected squash
+merge `66202508f034a0b1d705fc8173719f6af50698c8` is the tested immutable
+[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.6).
+Required feature CI39455788792, merged-main CI39456192637 and image CI39456478653
+succeed. All six gates pass in both the corrected fresh checkout and actual merged
+commit:2,037tests/96.05%branch-inclusive coverage,44typed modules and2.38.6build.
+The early prototype checkout is archived;18hash-preserved files matched before
+continued work in the correctly ordered checkout. Primary checkout untouched.
+
+Both image architectures verified before the existing locked non-sudo app deploy:
+index`3fd1ce39a97d02460aa383529d911e053bc226419a268d5c92626ac3dee2dadd`,
+ARM64`ec3e3fd05fe57a54f5bbffa605841c81fc97557fe316ebf90b8bd1fc2594d0bc`,
+AMD64`50ce284fbee1c1de7c1684f354a9773ba561838992ca5701846ee3a0502b2bc6`.
+Live target reverified pi5/aarch64/Ubuntu24.04and manifest. All44installed module
+hashes, internal/package version and OCI revision match. Healthy, Discord-ready,
+read-only, zero restarts/OOM false, zero observed errors/response failures/unhandled
+exceptions/source continuity warnings/private-source discards. Three completed-
+night and one current public read appear in content-free production counters.
+This short observation window is not a statistical error-rate comparison.
+Previous2.38.5/indexe69cba34dba8967fe65b44d2f820a5d0f17015673f95bf1be9ed47e1f24d82c5
+remains the rollback boundary; no rollback or source/usage/paid-claim restoration.
+The previous container had one source-discard during its lifetime; it is not erased
+or attributed to this release. Release timer remains active/enabled.
+
+Actual installed owner/gateway functional cohort:16questions,15answers,one correct
+other-recipient abstention. All three bare-location answers fit the freshly checked
+completed-night reports; missing measurements remain unknown. The initial question
+requests a location2/3times. One wording instead gives an inability answer, also
+seen in related pre-release unlocated questions. This is H113, an unresolved
+initial-intent/clarification issue; it is not repaired by the narrower continuation
+selector.15/16semantic review flags pass, plus exact requested repetition. Existing
+current context, fresh comic idea, care, celebration, source-supported baseball and
+exact-date uncertainty pass. Three fresh authenticated native authored sources
+support the existing particular preference; no new belief or strength is inferred.
+Broad-year review checks limited wording only; full content grounding/calendar
+relevance stays unresolved. Ordinary recall has no routine storage/date disclaimer.
+
+After both auxiliary review clients close, one final actual owner/gateway invited
+TJ scenario responds naturally in4.111seconds. No Discord client is constructed
+afterward; only stateless bot REST, local ledger/files and health reads follow.
+All17actual owner probes yield16answers and one recipient abstention. Latencies
+2.037-11.644seconds,median5.630; this small serial sample proves no latency gain.
+No general character, engagement or measured2-3xhumor gain is claimed.
+
+Pre/post audits each6attributed human windows/24development posts. Authenticated
+bot/owner counts13/11before and12/12after replace the model's incorrect12/14bot
+counts. Model triage flags two peculiar/one possible factual overreach before and
+zero after; these unmatched cohorts cannot establish improvement. Neither supports
+an adequate general human comparison. Three latest100league pages per audit remain
+zero seven-day Andrew/bot posts; no fresh spontaneous reaction/ambient coverage.
+For the two separated authenticated held-outs, each arm passes one of two
+contextual-fit reviews; fuller setup and independent human evaluation remain
+missing (H112).
+No new personal observation, pixel interpretation, native-pattern gate or graph
+population. Graph remains553episodes,438human sources,24native contexts,
+28dependencies,1,071edges,one value,one preference,two claims,accepted1/rejected3.
+
+All142run attempts settle:115maintenance/USD0.014416210and27runtime/
+USD0.014947715,totalUSD0.029363925. Covered OctoberUSD1.282509885estimate,not
+provider billing; pre-guard spending unknown. Six old unresolved reservations
+(one pending/five uncertain),zero new. Same18runtime/2maintenance/20total guard,
+four photo studies/day, no new pool, model or paid infrastructure.
+
+Fourteen existing JSON receipts checked0700directory/0600files and no raw-text
+keys; the fifteenth content-free receipt records that check. Same seven-day manual
+retention/withdrawal cleanup. Local QA directory is0700and files0600. No source/
+answer prose, derived personal observation or screenshot retained in smoke or public
+Git. Needed QA files are outside managed worktrees; canonical receipts remain on
+the existing persistent app volume. Final evidence CI/merge/archive go in automation
+memory. [Privacy-safe metrics](2026-10-20-location-clarification.json).
+
+## Revised next increments
+
+1. H113: qualify initial public-question intent/clarification isolation using the
+   actual full source packets and matched replays, so unrelated memory cannot hide
+   an available public context path. Require a reproduced causal mechanism, fitting
+   location questions, no recipient/source/learning regression and installed actual
+   gateway evidence. Existing model/volume/18/2/20guard; no unvalidated prompt change.
+2. H92/H93/H101/H112: study fuller attributed human episodes, contrary cases and
+   held-outs, then independently qualify useful abstract emotional/amplified-humor
+   and original-view context. No new population solely because capacity exists.
+3. Useful native linked/visual coverage and seasonal variety follow demonstrated
+   utility. Preserve generated Michigan U.P. aurora/trail-camera scenes, selective
+   tools, four photo studies/day and all source correction/withdrawal controls.
+4. Broader H110a/H107menus stay rejected; H96confirmation stays closed without a
+   qualified feed; H102calendar placement remains secondary research. New material
+   grounding/privacy/delivery evidence changes priorities again.
+
+H113 moves forward because one of three installed initial clarifications misses
+while all three location completions pass. The long-term abstract character goal
+remains; no stronger human evidence emerged to justify a new trait. Preserve six
+standalone local01/05/09/13/17/21Sol/xhigh runs and notifications.
