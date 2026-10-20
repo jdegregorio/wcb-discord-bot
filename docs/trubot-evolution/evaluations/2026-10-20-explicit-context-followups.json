@@ -28,21 +28,130 @@
   "pre_audit": {
     "human_windows": 6,
     "development_posts": 24,
-    "bot_posts": 11,
+    "bot_posts": 12,
     "peculiar_flags": 1,
     "human_comparison_sufficient": false,
     "source_channel_pages": 3,
     "messages_per_page": 100,
-    "seven_day_target_bot_posts": 0
+    "seven_day_target_bot_posts": 0,
+    "model_reported_bot_posts": 11
   },
   "general_character_gain": false,
   "new_personal_observations": 0,
-  "release_status": "pending",
+  "release_status": "deployed_verified",
   "limitations": [
     "single_unblinded_model_reviewer",
     "synthetic_weather",
     "short_ambiguous_followups_unresolved",
     "sparse_spontaneous_reaction_ambient_coverage",
     "no_human_heldout_weather_comparison"
-  ]
+  ],
+  "installed_quality_limits": [
+    "one_redundant_cloud_code",
+    "creative_entrance_not_a_humor_gain",
+    "broad_year_relevance_unresolved"
+  ],
+  "release": {
+    "revision": "c1db9a10b83ad125bb14dc1742e0b5773ef99892",
+    "version": "2.38.4",
+    "digest": "b07863bb44bf563a131e4dd0a65537c7ae5513bb26c8db4bf5ba295ddf7cc1e9",
+    "previous_version": "2.38.3",
+    "previous_digest": "b14a4572daf0ddc97425ea810130ab2010558f4e8b4c67e778023393cd36a746",
+    "runtime_pr": "https://github.com/jdegregorio/wcb-discord-bot/pull/170",
+    "feature_ci": 39391142339,
+    "main_ci": 39391503113,
+    "image_ci": 39391773156,
+    "module_hashes_match": 43,
+    "data_rollback": false
+  },
+  "installed_gateway": {
+    "owner_questions": 13,
+    "responses": 12,
+    "recipient_abstentions": 1,
+    "all_failure_notices_absent": true,
+    "all_outer_wrappers_absent": true,
+    "last_sanity_seconds": 3.9,
+    "after_auxiliary_clients_close": true
+  },
+  "post_audit": {
+    "human_windows": 6,
+    "development_posts": 24,
+    "result": {
+      "sampled_bot_posts": 15,
+      "peculiar_posts": 0,
+      "third_person_posts": 0,
+      "mechanical_gap_posts": 0,
+      "factual_overreach_posts": 1,
+      "human_comparison_sufficient": false
+    },
+    "limitations": [
+      "small_unmatched_cohorts",
+      "unblinded_single_model",
+      "truncated_context",
+      "no_new_persona_trait",
+      "no_causal_general_fidelity_claim"
+    ],
+    "authenticated_post_counts": {
+      "bot": 12,
+      "operator": 12,
+      "total": 24
+    },
+    "model_count_matches_authenticated": false
+  },
+  "source_check": {
+    "authenticated_native_supports": 3,
+    "review": {
+      "supported_preference": true,
+      "natural_direct_recall": true,
+      "no_invented_strength_or_current_activity": true,
+      "no_routine_metadata_disclaimer": true
+    },
+    "new_observation": false
+  },
+  "cost": {
+    "covered_run_usd": 0.02655814,
+    "covered_month_usd": 1.23262751,
+    "unsettled_before": [
+      [
+        "pending",
+        1
+      ],
+      [
+        "uncertain",
+        5
+      ]
+    ],
+    "month": {
+      "month": "2026-10",
+      "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+      "timezone": "UTC",
+      "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+      "estimated_usd": 1.23262751,
+      "runtime_usd": 0.462130865,
+      "maintenance_usd": 0.770496645,
+      "monthly_limit_usd": 20,
+      "runtime_limit_usd": 18,
+      "maintenance_limit_usd": 2,
+      "attempts": 3040,
+      "input_tokens": 10294795,
+      "cached_input_tokens": 6232751,
+      "output_tokens": 114966,
+      "unsettled_attempts": 6,
+      "pre_guard_spend": "unknown; not included"
+    }
+  },
+  "health": {
+    "at": "2026-10-20T08:23:12.744545+00:00",
+    "healthy": true,
+    "oom_killed": false,
+    "restarts": 0,
+    "read_only": true,
+    "revision": "c1db9a10b83ad125bb14dc1742e0b5773ef99892",
+    "started_at": "2026-10-20T08:15:49.025599033Z",
+    "readiness": true,
+    "errors": 0,
+    "response_failures": 0,
+    "unhandled": 0,
+    "source_continuity_warnings": 0
+  }
 }

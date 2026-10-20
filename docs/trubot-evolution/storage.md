@@ -1438,3 +1438,8 @@ smoke-tests/2026-10-20-0100 with 0700 directories/0600 files, existing seven-day
 manual retention and withdrawal cleanup. No answer/source excerpts or screenshots
 are retained in smoke receipts. Auxiliary clients use UUID-specific readiness paths
 before construction and close; the final gateway sanity follows their closure.
+
+Installed 2.38.4 source/usage/learning stores remain unchanged. Final content-free
+receipts and readiness survive auxiliary client closure; final sanity is followed
+only by stateless bot REST and health metadata reads. No raw answer/source/pixel or
+screenshot is stored in smoke receipts. No source/ledger/paid-claim rollback.

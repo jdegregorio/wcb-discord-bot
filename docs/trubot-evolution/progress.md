@@ -5373,3 +5373,45 @@ regression checks fail on untouched baseline. All feature gates pass 1,951 tests
 96.02% coverage, 43 typed modules and 2.38.4 package. No new trait or general
 fidelity gain. Protected CI, release, deployed acceptance/post-audit/cost pending.
 [Both phases and methods](evaluations/2026-10-20-explicit-context-followups.md).
+
+
+## Installed completion - 2.38.4
+
+PR 170 ordinary squash merge `c1db9a10b83ad125bb14dc1742e0b5773ef99892` is the tested release.
+Feature CI 39391142339 and merged-main CI 39391503113 succeed. All six feature and
+merged gates pass 1,951 tests/96.02% coverage/43 typed modules/build 2.38.4.
+Immutable image CI 39391773156 succeeds before deployment. The verified pi5/aarch64/
+Ubuntu 24.04.4 app transaction deploys index `b07863bb44bf563a131e4dd0a65537c7ae5513bb26c8db4bf5ba295ddf7cc1e9`. All 43 source
+hashes match, healthy/Discord-ready/read-only, zero restarts/OOM false and zero
+observed error/response-failure/unhandled/continuity-warning counts. Previous 2.38.3
+index b14a4572 is retained for rollback. No rollback/source/usage/claim restore.
+
+Actual owner/gateway installed sample: 13 questions, 12 responses and one
+correct other-recipient abstention. Changed current-place, completed-night and
+missing-location scenarios pass with the expected fresh-read/clarification routes.
+No unsupported forecast/place read; care, humor and source-backed baseball remain
+natural. Three fresh authenticated native sources support the existing preference;
+all four bounded source-review checks pass. No new human trait or observation.
+One current-condition answer redundantly included a cloud code after plain English;
+this remains a naturalness limitation. The creative entrance was fitting but does
+not establish a fresh comic turn or humor gain. Broad-year relevance/unknown-date
+inference remains an existing limitation and is not claimed fixed. Final actual gateway sanity follows all auxiliary client closures;
+stateless REST collection and final readiness then pass. Actual latencies and
+content-free private references are retained privately, no answer/source excerpts.
+
+Post audit: six human windows/24 development posts, 12 authenticated bot posts,
+zero peculiar flags and one factual-overreach triage flag; comparison remains insufficient. Three latest 100
+source-channel pages contain zero seven-day target/bot posts, a bounded sparse
+sample. Audit flags are unmatched triage, not causal fidelity evidence. Authenticated REST
+counts correct model-reported pre/post bot counts of 11/15 to 12/12. This reviewer
+count discrepancy further limits triage reliability; no model count is treated as
+a measured sample count. No matched
+held-out human weather comparison or measured humor/general character gain.
+
+Covered run estimate USD 0.026558140; covered October USD 1.232627510. Existing USD 18 runtime / 2 maintenance / 20 total guard unchanged. Pre-guard spending unknown; old uncertain
+reservations remain charged. Source/withdrawal/allowlists/no DMs and schedule unchanged.
+Full receipts use app-volume smoke-tests/2026-10-20-0100, 0700/0600, seven-day manual
+retention/withdrawal cleanup. Local QA logs/scripts are outside the managed tree.
+
+[Runtime PR 170](https://github.com/jdegregorio/wcb-discord-bot/pull/170),
+[immutable release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.4).

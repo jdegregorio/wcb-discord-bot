@@ -1,3 +1,11 @@
+# 2026-10-20 installed 2.38.4
+
+H107b is installed with actual gateway acceptance and fresh existing baseball
+supports verified. No graph/schema/population/intake change. The broad inherited
+menu remains rejected. Next H92/H93/H101 abstract emotional/amplified-humor and
+actual-view usefulness, with separated evidence, contrary cases and held-outs.
+[Complete evidence](evaluations/2026-10-20-explicit-context-followups.md).
+
 # 2026-10-20 01:00 harness qualification
 
 H107b corrects explicit public-context follow-up routing without changing the graph
