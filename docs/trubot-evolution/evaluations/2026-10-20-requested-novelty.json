@@ -55,7 +55,7 @@
       "recipient_abstains": true
     },
     "literal_exact": true,
-    "first_eight_latency_seconds": [
+    "first_eight_latency_range_seconds": [
       2.027,
       8.341
     ],
