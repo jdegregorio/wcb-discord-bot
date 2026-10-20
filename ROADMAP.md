@@ -1,35 +1,41 @@
-# Current priority, 2026-10-20 05:00 Pacific - H109 selected
+# Current priority, 2026-10-20 05:00 Pacific - 2.38.5 complete
 
-H108 low-reasoning humor comparison misses its declared threshold (two wins,
-one loss, three ties); no inference change is qualified by that evidence. H109
-reproduces the immediate-echo exemption after an explicit request for a different
-joke. The candidate reaches exactly one existing repair and posts fresh wording.
-Full gates, protected release and installed validation remain required.
+H109 is released and installed. An explicit request for a different joke can now
+check substantial wording from the immediate bot turn through the existing single
+repair. Controlled actual-handler baseline repeats with zero repairs; installed
+candidate uses one repair and a fresh fitting comic idea. Ten actual installed
+owner/gateway probes give nine replies and correct recipient abstention. All six
+feature/merged gates, protected CI, immutable image and43installed hashes pass.
+Healthy/ready,zero observed errors/source discards/restarts. No general humor gain
+or new human trait is claimed. H108 reasoning prototype misses its declared
+threshold (two wins,one loss,three ties); inference settings remain unchanged.
 
-1. Complete H109 so explicit fresh-banter requests can reach the existing repair.
-   Evidence: actual private handler fault injection, source/failure/quotation/
-   recipient regressions. Accept one repair, natural fitting new comic idea,
-   preserved controls, all gates and real installed tests. High confidence in
-   structural cause; no spontaneous failure-rate/general humor claim. No new
-   provider pass on unaffected answers; existing18/2/20guard, no service/schema.
-2. Independently qualify H92/H93/H101 abstract emotional, approved amplified-humor
-   and original-view utility, so remembered concepts improve varied engagement.
-   Dependencies: separated authored supports, contrary episodes, held-outs and
-   pixels where relevant. Accept matched semantic gains without invented traits,
-   copied punchlines, insensitive timing or control losses. Utility unresolved;
-   existing private graph and maintenance allowance. H105 remains rejected.
-3. Broaden useful native/visual coverage and seasonal variety after demonstrated
-   utility, with source lifecycle, timing and repetition controls. Full history
-   remains incomplete; existing four photo studies/day and20monthly guard.
-   Keep generated U.P. aurora/trail-camera themes and selective context tools.
-4. Short contextual tools, H96 confirmed sightings and H102 year placement remain
-   research. Reopen H108 only with stronger matched evidence and resolved delivery
-   variation. Material grounding/privacy regressions reorder priorities.
+1. Independently qualify H92/H93/H101 abstract emotional, approved amplified-humor
+   and original-view utility, so relevant concepts improve varied warm engagement.
+   Dependencies: separated authored supports, contrary episodes, held-out human
+   setups, actual pixels where relevant and matched source-grounded semantic gains.
+   Accept fresh fitting replies without invented beliefs, copied punchlines,
+   insensitive timing or lost controls. Broad utility remains unresolved; existing
+   graph/private volume and maintenance allowance. H105 remains rejected.
+2. Broaden useful native/visual coverage and seasonal variety after demonstrated
+   utility. Require source lifecycle, timing and repetition controls; full history
+   remains incomplete. Retain generated U.P. aurora/trail-camera themes and selective
+   tools; existing four photo studies/day and20monthly guard, no new service/pool.
+3. Short contextual tools, H96 confirmed sightings and H102 calendar placement
+   remain research. Reopen H108 only with stronger matched source/context evidence
+   and resolved delivery variation. Its one care send failed without captured
+   packets; do not assign that failure to reasoning or relax freshness. Trace
+   original/final packets content-free if it recurs. Material grounding/privacy/
+   delivery regressions reorder priorities. No native-pattern gate change.
 
-No new human observation or native-pattern permission. Sparse six-window/24post
-unmatched audit does not prove a character gain. Preserve source/withdrawal,
-allowlists/no DMs and six local01/05/09/13/17/21 Sol/xhigh standalone runs/notifications.
-[Study and completion evidence](docs/trubot-evolution/evaluations/2026-10-20-requested-novelty.md).
+Pre/post unmatched audits each6humanwindows/24devposts cannot establish general
+fidelity. Corrected authenticated bot counts12/13 replace model15/15. Per-message
+post adjudication finds0self-third-person and0mechanical-storage posts; one broad
+factual-overreach triage flag remains unresolved. Covered runUSD0.018014075,October
+USD1.250641585 estimates, pre-guard spending unknown. Preserve18/2/20guard,source
+correction/withdrawal,allowlists/noDMs and six local01/05/09/13/17/21Sol/xhigh
+standalone runs/notifications. Older snapshots below are historical.
+[Complete evidence](docs/trubot-evolution/evaluations/2026-10-20-requested-novelty.md).
 
 # Current priority, 2026-10-20 01:00 Pacific - 2.38.4 complete
 
