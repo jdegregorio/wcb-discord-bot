@@ -1,3 +1,13 @@
+## Requested fresh jokes (2.38.5)
+
+An explicit request such as `Give me a different joke about that same scene` can
+refresh an unchanged substantial punchline from the immediately preceding bot turn.
+This uses the existing maximum one accounted repair and source freshness checks.
+Requested quotations, reference wording, short factual continuity and ambiguous
+requests retain their previous treatment. No semantic-novelty or funniness guarantee;
+failed repairs keep the initial draft. Model, learning and participation are unchanged.
+[Study](docs/trubot-evolution/evaluations/2026-10-20-requested-novelty.md).
+
 ## Fresh public context in follow-ups (2.38.4)
 
 During an active conversation, a complete follow-up such as `And check current

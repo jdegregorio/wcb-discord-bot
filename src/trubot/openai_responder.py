@@ -53,6 +53,20 @@ _REUSE_REQUEST = re.compile(
     r"|\bwhat (?:exactly )?did you say\b",
     re.IGNORECASE,
 )
+# Only explicit requests for fresh comic wording override immediate continuity.
+# A new factual subject, quoted request or ambiguous "again" is not a novelty request.
+_NEW_JOKE_REQUEST = re.compile(
+    r"^(?:(?:please|and|ok|okay|well|then)[, ]+)*"
+    r"(?:(?:(?:can|could|would) you (?:please )?)?"
+    r"(?:(?:give|tell) (?:me|us) (?:a |one )?|try (?:a )?)"
+    r"(?:new|different|fresh|another) (?:short |one[- ]line )?"
+    r"(?:joke|punchline|quip)\b"
+    r"|another (?:short |one[- ]line )?(?:joke|punchline|quip)"
+    r"(?:,? please)?[.!?]*$)",
+    re.IGNORECASE,
+)
+
+
 _FRESH_REPLY_GUIDANCE = (
     "\n\nThe draft copied wording from an earlier bot reply. Give a fresh response to the current "
     "message instead of copying that earlier bot reply. For an offered playful setup, "
@@ -708,6 +722,12 @@ def _stale_bot_echo(
         if message.role == "assistant" and message.origin == "conversation"
     ]
     key = " ".join(reply.casefold().split())
+    if previous and _NEW_JOKE_REQUEST.match(target.split(": ", 1)[-1].removeprefix("🤖").strip()):
+        # A different joke cannot be the unchanged latest punchline. Keep the
+        # existing substantial-wording thresholds and single accounted repair.
+        latest = previous[-1]
+        if key == " ".join(latest.casefold().split()) or _passages(reply) & _passages(latest):
+            return True
     if len(previous) < 2 or key == " ".join(previous[-1].casefold().split()):
         return False
     if any(key == " ".join(old.casefold().split()) for old in previous[:-1]):

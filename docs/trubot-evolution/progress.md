@@ -5415,3 +5415,18 @@ retention/withdrawal cleanup. Local QA logs/scripts are outside the managed tree
 
 [Runtime PR 170](https://github.com/jdegregorio/wcb-discord-bot/pull/170),
 [immutable release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.4).
+
+## 2026-10-20 05:00 Pacific - H109 requested fresh banter
+
+New managed worktree/feature branch from fetched base
+f63158776aaf6571613ff8fece69866f2bb12335; primary untouched. Reconciled prior complete
+2.38.4 and rejected H105/H107. Both planning phases complete; H108 inference change
+rejected below its threshold; H109 explicit-new-joke echo defect reproduced through
+actual private production-handler sends with controlled history/draft. Candidate
+uses one existing accounted repair, preserves literal/reference/factual controls;
+112focused tests pass,32new regressions. All gates/release/deployment remain pending.
+No new trait/general humor claim, model/service/store/scope expansion. See
+[complete evidence](evaluations/2026-10-20-requested-novelty.md) for final identifiers,
+immutable digest, installed acceptance, costs and limitations when available.
+
+Feature gates PASS: locked sync, format, lint,43typed modules,1,983tests/96.02%branch-inclusive coverage and2.38.5sdist/wheel. No accepted failure or flakiness.

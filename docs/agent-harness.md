@@ -1,3 +1,36 @@
+# Current priority, 2026-10-20 05:00 Pacific - H109 selected
+
+H108 low-reasoning humor comparison misses its declared threshold (two wins,
+one loss, three ties); no inference change is qualified by that evidence. H109
+reproduces the immediate-echo exemption after an explicit request for a different
+joke. The candidate reaches exactly one existing repair and posts fresh wording.
+Full gates, protected release and installed validation remain required.
+
+1. Complete H109 so explicit fresh-banter requests can reach the existing repair.
+   Evidence: actual private handler fault injection, source/failure/quotation/
+   recipient regressions. Accept one repair, natural fitting new comic idea,
+   preserved controls, all gates and real installed tests. High confidence in
+   structural cause; no spontaneous failure-rate/general humor claim. No new
+   provider pass on unaffected answers; existing18/2/20guard, no service/schema.
+2. Independently qualify H92/H93/H101 abstract emotional, approved amplified-humor
+   and original-view utility, so remembered concepts improve varied engagement.
+   Dependencies: separated authored supports, contrary episodes, held-outs and
+   pixels where relevant. Accept matched semantic gains without invented traits,
+   copied punchlines, insensitive timing or control losses. Utility unresolved;
+   existing private graph and maintenance allowance. H105 remains rejected.
+3. Broaden useful native/visual coverage and seasonal variety after demonstrated
+   utility, with source lifecycle, timing and repetition controls. Full history
+   remains incomplete; existing four photo studies/day and20monthly guard.
+   Keep generated U.P. aurora/trail-camera themes and selective context tools.
+4. Short contextual tools, H96 confirmed sightings and H102 year placement remain
+   research. Reopen H108 only with stronger matched evidence and resolved delivery
+   variation. Material grounding/privacy regressions reorder priorities.
+
+No new human observation or native-pattern permission. Sparse six-window/24post
+unmatched audit does not prove a character gain. Preserve source/withdrawal,
+allowlists/no DMs and six local01/05/09/13/17/21 Sol/xhigh standalone runs/notifications.
+[Study and completion evidence](trubot-evolution/evaluations/2026-10-20-requested-novelty.md).
+
 # Current priority, 2026-10-20 01:00 Pacific - 2.38.4 complete
 
 H107b is released and installed. Complete public-context follow-ups now retain the

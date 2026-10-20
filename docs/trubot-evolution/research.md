@@ -3111,3 +3111,16 @@ H107b installed qualification is complete: actual fresh follow-up reads and cont
 pass. H107 remains rejected; no new trait/general character gain. Next independent
 H92/H93/H101 utility, then useful source/seasonal expansion. Full installed methods,
 counts, costs and limitations are in the linked H107b study.
+
+## 2026-10-20 05:00 H108 rejected; H109 selected
+
+Both phases precede implementation. Fresh source-grounded audit remains sparse;
+H108 none/180 versus low/512 produces2wins/1loss/3ties over six opportunities,
+missing the declared threshold. One care send fails; uncaptured changing packets
+prevent attribution. No inference rollout or general fidelity/humor claim.
+H109 actual private production-handler fault injection posts an unchanged latest
+punchline despite an explicit different-joke request; candidate reaches one existing
+accounted repair. Select that supported correction, then qualified abstract/emotional/
+amplified-humor and original-view utility, useful native/visual coverage and seasonal
+variety. No new trait, provider pool, service or intake scope. Preserve18/2/20guard,
+withdrawal and six standalone local runs. [Protocol, contrary cases and results](evaluations/2026-10-20-requested-novelty.md).
