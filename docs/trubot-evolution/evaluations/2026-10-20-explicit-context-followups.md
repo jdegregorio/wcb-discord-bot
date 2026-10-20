@@ -2,7 +2,10 @@
 
 Run: 2026-10-20 01:00 Pacific. New managed worktree and unique feature branch from
 fetched `faff5ab3d95226935f8b6b5bba9a0a888a9d8f34`. Primary checkout untouched.
-Production 2.38.3 healthy. No open evolution PR; three unrelated dependency PRs.
+Production 2.38.3 healthy. No open evolution PR. The initial dashboard showed three
+unrelated dependency PRs; it was not a complete open-PR census. A later full list
+shows eight dependency PRs, including a refreshed dependency group, and no competing
+evolution work. Dependencies remain outside this increment.
 
 ## Phase 1: evidence and predeclared hypotheses
 
