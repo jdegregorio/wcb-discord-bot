@@ -3106,3 +3106,8 @@ reads; all six controls avoid tools and recipient abstains. No new human trait,
 general character gain or abstract population. Sparse unmatched audit remains
 insufficient. Release/installed requirements remain open until recorded below.
 [Predeclared methods and limits](evaluations/2026-10-20-explicit-context-followups.md).
+
+H107b installed qualification is complete: actual fresh follow-up reads and controls
+pass. H107 remains rejected; no new trait/general character gain. Next independent
+H92/H93/H101 utility, then useful source/seasonal expansion. Full installed methods,
+counts, costs and limitations are in the linked H107b study.

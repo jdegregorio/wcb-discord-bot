@@ -1,36 +1,37 @@
-# Current priority, 2026-10-20 01:00 Pacific - explicit context follow-ups
+# Current priority, 2026-10-20 01:00 Pacific - 2.38.4 complete
 
-H107's broader inherited tool menu is rejected after unnecessary forecast and
-other-recipient reads. This run reconciles that unfinished experiment with H107b:
-complete public-sky questions retain their existing narrow tools during the current
-follow-up window. Actual baseline cannot perform a complete follow-up check.
-Six matched positive comparisons change from zero baseline reads to one correct
-candidate read, with all six candidate outputs passing bounded semantic review.
-All six controls avoid reads in both arms; the recipient control abstains.
-This is a bounded harness correction, not a new trait or general fidelity gain.
-Release and installed acceptance remain pending. Older snapshots below are historical.
+H107b is released and installed. Complete public-context follow-ups now retain the
+same narrow latest-question tools. Six matched positive pairs gain one correct
+fresh read from zero baseline reads; six controls stay read-free and recipient
+abstains. Actual installed owner/gateway checks verify the new current and last-
+night reads, clarification and ordinary controls. All six feature/merged gates,
+protected CI, immutable image and 43 installed module hashes pass. Healthy and
+Discord-ready, zero observed errors/restarts. This is a bounded harness correction,
+not a new human trait or general character gain. H107's broader inherited menu
+remains rejected; its old worktree is preserved. Older snapshots are historical.
 
-1. Complete H107b's protected release, deployed gateway acceptance and final audit.
-   Dependencies: all six gates, immutable multiarch image and source/recipient controls.
-   High confidence in the routing correction; general naturalness unmeasured.
-   Existing two-turn maximum and 18/2/20 guard; no new service, store or learning scope.
-2. Independently qualify H92/H93/H101 abstract emotional, approved amplified-humor
-   and original-view utility, so relevant concepts improve varied, warm engagement.
-   Require separate attributed supports/contrary episodes, held-out human setups,
-   actual pixels and source-grounded matched semantic gains. H105 remains rejected.
-   General benefit unresolved; existing private graph and maintenance allowance.
-3. Broaden useful native/visual episode coverage and seasonal variety after utility.
-   Preserve generated U.P. aurora/trail-camera scenes and selective tools. H96
-   automatic confirmation stays closed without a qualified feed. Short contextual
-   tool requests, H102 year placement and camera authorship remain research.
-   Require fresh source lifecycle, timing and repetition controls; no new paid pool.
+1. Independently qualify H92/H93/H101 abstract emotional, approved amplified-humor
+   and actual-view utility, so relevant concepts improve varied, warm engagement.
+   Require separated attributed supports/contrary episodes, held-out human setups,
+   actual pixels and source-grounded matched semantic gains. H105 stays rejected.
+   Benefit unresolved; existing graph/private volume and maintenance allowance.
+2. Broaden useful native/visual episode coverage and seasonal variety after measured
+   utility. Preserve generated U.P. aurora/trail-camera scenes and selective tools.
+   Require source lifecycle, timing and repetition controls; full coverage remains
+   incomplete. No new paid service or spending pool; four photo studies/day.
+3. Short contextual tool requests remain research after failed menu selectivity.
+   Require robust recipient/time gating and matched held-out gains before widening.
+   H96 confirmation stays closed without a qualified observation feed; H102 year
+   placement and camera-authorship language remain secondary. Material privacy or
+   grounding regressions reorder work. Existing one-read/two-turn and 18/2/20 guard.
 
-Pre audit six human windows/24 development posts is insufficient for general
-character comparison; spontaneous/reaction/ambient coverage remains sparse.
-No new personal observation or automatic native-pattern permission. Preserve
-withdrawal/corrections, allowlists/no DMs and six local 01/05/09/13/17/21 Sol/xhigh
-runs and notifications. Material grounding/privacy regressions reorder priorities.
-[Protocol, methods and limitations](trubot-evolution/evaluations/2026-10-20-explicit-context-followups.md).
+Pre/post audits each use six attributed human windows and 24 development posts,
+insufficient for a general human comparison. Recent spontaneous/reaction/ambient
+coverage is sparse. No new personal observation or native-pattern permission.
+Covered run USD 0.026558140; covered October USD 1.232627510, estimates with
+pre-guard spending unknown. Preserve correction/withdrawal, allowlists/no DMs and
+six local 01/05/09/13/17/21 Sol/xhigh standalone runs and notifications.
+[Complete evidence](trubot-evolution/evaluations/2026-10-20-explicit-context-followups.md).
 
 # Current priority, 2026-10-19 13:00 Pacific - 2.38.3 complete
 
