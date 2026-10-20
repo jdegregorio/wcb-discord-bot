@@ -1,3 +1,13 @@
+## Content-free runtime diagnostics, 2.38.7
+
+Verification/assembly states, fixed capability labels and aggregate context counts
+use existing private container logs with json-file rotation of three 10 MB files. No new state,
+raw source/answer text, personal derivation, source ID, URL, tool argument, pixel
+copy or credential. Unknown capability names are mapped to a fixed `other` label.
+Availability is not proof of execution, publication or character-quality improvement.
+Private QA receipts still use 0700/0600, seven-day manual retention and withdrawal
+cleanup. No source/learning/spending restoration is needed for code rollback.
+
 ## Shown-photo operational links, 2.38.0
 
 Run the released `trubot-photos init` once before enabling this runtime increment.
