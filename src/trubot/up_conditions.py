@@ -132,9 +132,9 @@ class UPConditionsSkill:
         self._clock = clock or (lambda: datetime.now(UTC))
 
     def applies(self, target: str, mode: ReplyMode) -> bool:
-        # Only explicit current questions load the skill. History never selects capabilities.
+        # Only complete current questions load the skill. History never selects capabilities.
         return bool(
-            mode is ReplyMode.DIRECT
+            mode in {ReplyMode.DIRECT, ReplyMode.FOLLOW_UP}
             and len(target.encode()) <= 2_000
             and _REGION.search(target)
             and _TOPIC.search(target)

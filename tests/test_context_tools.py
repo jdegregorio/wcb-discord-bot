@@ -96,7 +96,8 @@ def responder(
 def test_selective_loading(text: str, expected: bool) -> None:
     skill = UPConditionsSkill()
     assert skill.applies(text, ReplyMode.DIRECT) is expected
-    for mode in [ReplyMode.FOLLOW_UP, ReplyMode.REACTION, ReplyMode.AMBIENT]:
+    assert skill.applies(text, ReplyMode.FOLLOW_UP) is expected
+    for mode in [ReplyMode.REACTION, ReplyMode.AMBIENT]:
         assert not skill.applies(text, mode)
 
 

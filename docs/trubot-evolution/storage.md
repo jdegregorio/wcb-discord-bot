@@ -1427,3 +1427,14 @@ no raw source/answer prose, duplicate pixels or screenshot. All Discord validati
 clients use UUID-isolated readiness paths; final metadata collection uses stateless
 bot REST without constructing another Discord client. No schema/graph/source
 migration or usage reset. Code rollback never restores source/usage/paid claims.
+
+
+## Explicit context follow-ups, 2.38.4
+
+No storage/schema, raw evidence, graph observation, intake or source permission
+changes. Existing fixed public observations remain ephemeral and source checked.
+Private content-free study/gateway references and hashes use app-volume
+smoke-tests/2026-10-20-0100 with 0700 directories/0600 files, existing seven-day
+manual retention and withdrawal cleanup. No answer/source excerpts or screenshots
+are retained in smoke receipts. Auxiliary clients use UUID-specific readiness paths
+before construction and close; the final gateway sanity follows their closure.

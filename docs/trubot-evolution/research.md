@@ -3096,3 +3096,13 @@ verify caption/pixels and existing baseball supports; year placement, inferred
 emotion and camera authorship stay uncertain. H105 remains rejected; no new trait.
 Both planning phases, predeclared criteria, counts, exclusions, costs and limits:
 [release study](evaluations/2026-10-19-dialogue-release.md).
+
+
+## 2026-10-20 01:00 H107b - explicit context follow-ups
+
+Both planning phases reconcile the unfinished H107 menu, which failed selectivity.
+Narrow mode recovery gains six correct fresh reads/answers from zero baseline
+reads; all six controls avoid tools and recipient abstains. No new human trait,
+general character gain or abstract population. Sparse unmatched audit remains
+insufficient. Release/installed requirements remain open until recorded below.
+[Predeclared methods and limits](evaluations/2026-10-20-explicit-context-followups.md).

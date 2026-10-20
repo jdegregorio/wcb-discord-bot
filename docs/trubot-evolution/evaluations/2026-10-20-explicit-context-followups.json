@@ -1,0 +1,48 @@
+{
+  "hypothesis": "H107b",
+  "base": "faff5ab3d95226935f8b6b5bba9a0a888a9d8f34",
+  "version": "2.38.4",
+  "comparison": {
+    "pairs": 12,
+    "positive_pairs": 6,
+    "candidate_correct_reads": 6,
+    "baseline_correct_reads": 0,
+    "candidate_positive_semantic_pass": 6,
+    "baseline_positive_grounded": 3,
+    "controls": 6,
+    "candidate_control_reads": 0,
+    "baseline_control_reads": 0,
+    "both_recipient_abstain": true,
+    "actual_gateway": false,
+    "synthetic_observations": true,
+    "history_rows": 2,
+    "exclusions": 0
+  },
+  "local_gates": {
+    "passed": true,
+    "tests": 1951,
+    "coverage_percent": 96.02,
+    "typed_modules": 43,
+    "baseline_regression_failures": 7
+  },
+  "pre_audit": {
+    "human_windows": 6,
+    "development_posts": 24,
+    "bot_posts": 11,
+    "peculiar_flags": 1,
+    "human_comparison_sufficient": false,
+    "source_channel_pages": 3,
+    "messages_per_page": 100,
+    "seven_day_target_bot_posts": 0
+  },
+  "general_character_gain": false,
+  "new_personal_observations": 0,
+  "release_status": "pending",
+  "limitations": [
+    "single_unblinded_model_reviewer",
+    "synthetic_weather",
+    "short_ambiguous_followups_unresolved",
+    "sparse_spontaneous_reaction_ambient_coverage",
+    "no_human_heldout_weather_comparison"
+  ]
+}

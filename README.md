@@ -1,3 +1,12 @@
+## Fresh public context in follow-ups (2.38.4)
+
+During an active conversation, a complete follow-up such as `And check current
+Munising sky conditions now?` can use the same NOAA/NWS tools as a summoned question.
+Complete last-night questions and location clarification also retain their routes.
+A fresh read supplies the answer; an older bot answer is not current evidence.
+Short ambiguous follow-ups still lack contextual tool selection.
+[Validation](docs/trubot-evolution/evaluations/2026-10-20-explicit-context-followups.md).
+
 ## Direct conversational replies (2.38.3)
 
 Ordinary replies shed an accidental outer dialogue quotation, so humor and care
