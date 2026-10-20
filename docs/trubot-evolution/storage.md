@@ -1443,3 +1443,14 @@ Installed 2.38.4 source/usage/learning stores remain unchanged. Final content-fr
 receipts and readiness survive auxiliary client closure; final sanity is followed
 only by stateless bot REST and health metadata reads. No raw answer/source/pixel or
 screenshot is stored in smoke receipts. No source/ledger/paid-claim rollback.
+
+## Requested fresh jokes,2.38.5
+
+No storage/schema/retention change. Explicit novelty uses the existing one optional
+accounted reply repair. Source refresh/withdrawal and18runtime/2maintenance/20total
+guard remain. Private content-free experiment/smoke refs use app-volume
+smoke-tests/2026-10-20-0500,0700directories/0600files, seven-day manual retention and
+withdrawal cleanup. No raw exchanges/derived personal observations/answers retained
+in these receipts. Set UUID-specific auxiliary readiness paths before construction;
+verify final real gateway after every client closes. Code rollback to2.38.4 is
+compatible; never restore learning, source, usage or paid-attempt state for rollback.

@@ -1,3 +1,13 @@
+## Explicit comic novelty and immediate continuity,2.38.5
+
+An explicit request such as `Give me a different joke about that same scene` can
+refresh an unchanged substantial punchline from the immediately preceding bot turn.
+This uses the existing maximum one accounted repair and source freshness checks.
+Requested quotations, reference wording, short factual continuity and ambiguous
+requests retain their previous treatment. No semantic-novelty or funniness guarantee;
+failed repairs keep the initial draft. Model, learning and participation are unchanged.
+[Study](docs/trubot-evolution/evaluations/2026-10-20-requested-novelty.md).
+
 ## Explicit public-context follow-ups, 2.38.4
 
 The current, completed-night and missing-location sky predicates accept direct and
