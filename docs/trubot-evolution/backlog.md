@@ -1,3 +1,32 @@
+# Current priority, 2026-10-20 17:00 Pacific
+
+H116 isolates maintenance-client readiness automatically before construction. The
+installed baseline erases a disposable heartbeat on close; the actual live marker
+is preserved throughout reproduction. This is enabling reliability work so
+character studies cannot disturb gateway health. No reply-quality gain is claimed.
+
+1. Qualify H114/H92/H93/H101/H112 abstract emotional, approved amplified-humor and
+   original-view usefulness. Eight new attributed emotional-context windows do not
+   justify a new recurring trait. Require complete separated support, contrary
+   episodes, non-training held-outs, actual pixels when relevant, reliable semantic
+   adjudication and matched natural/grounded usefulness. Confidence unresolved;
+   existing private graph and maintenance allowance, no new population or gate.
+2. Broaden useful linked native/visual episodes and seasonal variety after utility.
+   Preserve generated Michigan U.P. aurora/trail-camera scenes, short natural
+   captions and selective skills/tools. Full history remains incomplete. Existing
+   four photo studies/day, app volume and USD 18/2/20 guard; no new service/pool.
+3. Reopen H113 only with authenticated full packets, stable fresh checks, reproduced
+   defects and matched benefit. H105, broader H107 and H110a remain rejected. H96
+   confirmation stays closed without a qualified feed; H102 dates stay secondary.
+   Material grounding/privacy/delivery/source failures change this order again.
+
+H116 takes precedence because a checked-in validation path can delete production
+readiness even without logging in. Next return to qualified character utility;
+additional diagnostics or architecture are justified only by a demonstrated gap.
+Preserve correction/withdrawal, runtime allowlists/no DMs, six standalone local
+01/05/09/13/17/21 Sol/xhigh runs and existing notifications. Earlier snapshots below
+are historical. [Protocol and evidence](evaluations/2026-10-20-maintenance-isolation.md).
+
 # Current priority, 2026-10-20 13:00 Pacific
 
 H115 content-free reply-context diagnostics is the selected enabling increment.

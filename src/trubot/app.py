@@ -3,7 +3,11 @@
 from __future__ import annotations
 
 import logging
+import tempfile
+from dataclasses import replace
 from datetime import timedelta
+from pathlib import Path
+from uuid import uuid4
 
 import discord
 from dotenv import load_dotenv
@@ -31,6 +35,14 @@ logger = logging.getLogger(__name__)
 
 
 def build_client(settings: Settings, *, spending_purpose: str = "runtime") -> TruBotClient:
+    # A maintenance client may close without ever starting a gateway. Its cleanup
+    # must never unlink the live process's heartbeat or another study's marker.
+    # Isolate before construction, including callers that use production Settings.
+    if spending_purpose == "maintenance":
+        settings = replace(
+            settings,
+            ready_file=Path(tempfile.gettempdir()) / f"trubot-maintenance-{uuid4().hex}.ready",
+        )
     intents = discord.Intents.none()
     intents.guilds = True
     intents.guild_messages = True

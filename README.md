@@ -1,3 +1,12 @@
+## Isolated maintenance readiness, 2.38.8
+
+Maintenance clients automatically receive a unique ephemeral heartbeat before
+construction, so closing an evaluation cannot clear the live bot's readiness or
+another study's marker. Existing source, generation and spending settings remain
+identical. Runtime heartbeat behavior is unchanged. This is a reliability correction
+for safe character research, with no measured reply-quality gain.
+[Evidence](docs/trubot-evolution/evaluations/2026-10-20-maintenance-isolation.md).
+
 ## Reply-context diagnostics,2.38.7
 
 Runtime emits fixed states and aggregate counts for memory verification/assembly,
