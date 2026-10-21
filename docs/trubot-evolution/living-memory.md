@@ -1,3 +1,12 @@
+# 2026-10-21 installed 2.38.11
+
+H122 preserves bounded, separately attributed conversational explanations for
+explicit correction recall. Actual owner/gateway acceptance passes; no graph/schema/
+population change or new human trait. Broader H121/H120 relation-preserving complete
+episodes and useful abstract emotion/humor qualification remain first; full history
+and unknown dates remain limited. [Current plan](plan.md) and
+[complete evidence](evaluations/2026-10-21-correction-context.md) govern priorities.
+
 # 2026-10-20 installed 2.38.4
 
 H107b is installed with actual gateway acceptance and fresh existing baseball

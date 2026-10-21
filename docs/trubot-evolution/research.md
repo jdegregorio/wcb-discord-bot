@@ -3344,3 +3344,17 @@ Phase2 selects this justified source-availability correction; broader H121/H120
 semantic qualification remains first afterward, then useful abstract humor/emotion
 and linked native/visual variety. No new trait, memory population or model change.
 [Method, limits and required installed acceptance](evaluations/2026-10-21-correction-context.md).
+
+
+H122 installed result: same failed owner/gateway correction now answers with the
+separately attributed explanation; a second phrasing passes but is not independent.
+Fourteen actual questions yield13answers/correct recipient abstention; actual
+post-source checks and final gateway after all auxiliary closures pass. Two
+additional held-out source windows verify projection only, no provider/reply gain.
+Post local six-case character review remains reference-limited, with one weak formal
+report-language candidate and repeated celebration wording across repeated dev
+prompts. Do not infer a new recurring human pattern. Keep these with H114 varied
+context qualification; H121/H120 broader relational/abstract utility stays first.
+No new trait/population, no private external scorer after rejection, no extra runtime
+provider pass. Full gates/CI/images/immutable install and cost/privacy evidence are
+recorded in the study. No full chronological recall or humor multiplier claim.

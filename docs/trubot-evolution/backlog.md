@@ -1,6 +1,6 @@
-# Current priority, 2026-10-21 - correction-context qualification
+# Current priority, 2026-10-21 - 2.38.11 installed
 
-H122 repairs a reproduced source-routing omission: explicit correction and
+H122 is installed after a reproduced source-routing omission: explicit correction and
 clarification recall can retain needed, separately attributed neighboring text.
 Five actual authored passages remain identical; seven context rows are restored
 with zero provider calls in handler comparison. Synthetic correction availability
@@ -32,8 +32,12 @@ H122 precedes broader qualification because a requested correction was removed
 before generation. Material grounding/privacy/delivery failures change this order.
 H96 sightings remain closed without a qualified feed; H102 dates stay secondary.
 Same18runtime/2maintenance/20total guard, source withdrawal, allowlists/no DMs, bot
-identity, six local01/05/09/13/17/21Sol/xhigh runs and notifications. Release and
-installed evidence must be completed in the [study](evaluations/2026-10-21-correction-context.md). Earlier snapshots below are historical.
+identity, six local01/05/09/13/17/21Sol/xhigh runs and notifications. Fourteen actual owner questions give13answers/correct recipient abstention; both
+correction phrasings pass. All six feature/merged gates, protected CI and images
+pass2,127tests/96.14%. Healthy/ready immutable2.38.11;46installed hashes match.
+Final gateway answers2.565seconds after all auxiliary clients close. Covered window
+USD0.012677365, OctoberUSD1.398074375estimates; no new unsettled attempts.
+Complete [installed evidence and limitations](evaluations/2026-10-21-correction-context.md). Earlier snapshots below are historical.
 
 # Current priority, 2026-10-21 05:00 Pacific - 2.38.10 installed
 
