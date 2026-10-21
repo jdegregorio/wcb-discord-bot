@@ -473,7 +473,7 @@
     }
   ],
   "pilot_pairs_excluded": 1,
-  "incomplete_attempts_excluded": 3,
+  "incomplete_attempts_excluded": 4,
   "heldout_cases": 2,
   "heldout_initial_requests_identical": true,
   "heldout_general_fidelity_qualified": false,
@@ -483,7 +483,7 @@
   "production_source_gate_changed": false,
   "experimental_exact_rereads_maximum": 3,
   "model_review_is_acceptance_oracle": false,
-  "release_status": "pending",
+  "release_status": "installed_verified",
   "feature_gates": {
     "locked_sync": true,
     "format": true,
@@ -494,5 +494,107 @@
     "tests": 2107,
     "branch_inclusive_coverage_percent": 96.14,
     "typed_modules": 46
+  },
+  "release": {
+    "version": "2.38.10",
+    "pr": 182,
+    "feature_commit": "1617d1805c046a6c7292bc6da5c765eb392612cb",
+    "merge_commit": "bf0ede0ce81c2efd3695c1203805e41b81349b08",
+    "pr_quality_run": 39599210103,
+    "main_quality_run": 39599582793,
+    "image_run": 39600006683,
+    "immutable_tag_verified": true,
+    "status": "installed_verified",
+    "index_digest": "sha256:e8a26da888415d251fe67b449e694eff2b1b2c684e5f7792d51900c70bab99c3",
+    "platforms": {
+      "amd64": "sha256:d4980351fb7b8639f187f4fbbba4cd0d5e9e556ba352d5d54476511550637cce",
+      "arm64": "sha256:05375b3060b3c0ef8512c63426ba174fde9e44da8515a7ae5973ed54b73d8c0f"
+    },
+    "previous_index_digest": "sha256:e94978696c312fad03b6bcb7e6643dabf7ed0e15817cc85c894f681a6ffd1b48",
+    "all_46_hashes_match": true
+  },
+  "merged_gates": {
+    "locked_sync": true,
+    "format": true,
+    "lint": true,
+    "mypy": true,
+    "pytest": true,
+    "build": true,
+    "tests": 2107,
+    "branch_inclusive_coverage_percent": 96.14,
+    "typed_modules": 46
+  },
+  "installed": {
+    "owner_probes": 13,
+    "gateway_answers": 12,
+    "correct_recipient_abstention": true,
+    "both_failed_questions_now_clarify": true,
+    "both_bare_locations_read_fresh_public_reports": true,
+    "actual_full_memory_available_then_filtered": true,
+    "current_report_pass": true,
+    "preference_supported_by_fresh_sources": 5,
+    "care_celebration_humor_and_fresh_joke_pass": true,
+    "ordinary_recall_wording_pass": true,
+    "exact_date_uncertainty_pass": true,
+    "year_relation_grounding_pass": false,
+    "calendar_placement_qualified": false,
+    "year_initial_request_unchanged": true,
+    "final_gateway_after_all_auxiliary_closures": true,
+    "final_gateway_seconds": 3.846,
+    "no_later_discord_client": true,
+    "latency_seconds_min": 2.387,
+    "latency_seconds_max": 12.108,
+    "latency_seconds_median": 4.1045,
+    "health": {
+      "healthy": true,
+      "readiness": true,
+      "errors": 0,
+      "response_failures": 0,
+      "restarts": 0,
+      "oom_killed": false,
+      "read_only": true,
+      "private_source_discards": 0
+    },
+    "general_fidelity_qualified": false
+  },
+  "audits": {
+    "human_windows_per_audit": 3,
+    "development_cases_per_audit": 4,
+    "pre_model_evidence_limited": 4,
+    "post_model_evidence_limited": 4,
+    "post_model_unsupported_flags": 2,
+    "manual_supported_preference_false_positive": true,
+    "manual_year_relation_failure_confirmed": true,
+    "league_cases": 1,
+    "league_model_evidence_limited": 1,
+    "seven_day_latest_100_pages": 3,
+    "seven_day_target_posts": 0,
+    "seven_day_bot_posts": 1,
+    "full_history": false
+  },
+  "spending": {
+    "run_settled_usd": 0.027748074999999997,
+    "run_uncertain_reserved_usd": 0.014014125,
+    "run_covered_total_usd": 0.0417622,
+    "month_estimated_usd": 1.38464426,
+    "new_uncertain_reservations": 1,
+    "old_unsettled": 6,
+    "monthly_guard_unchanged": true,
+    "provider_billing": false,
+    "pre_guard_spend": "unknown"
+  },
+  "receipt_privacy": {
+    "checked_files": 19,
+    "directory_0700": true,
+    "files_0600": true,
+    "no_forbidden_raw_fields": true,
+    "raw_retained": false,
+    "retention": "manual_seven_days_and_withdrawal_cleanup"
+  },
+  "next_hypothesis": "H121",
+  "all_completed_positive_pairs_including_pilot": {
+    "pairs": 7,
+    "baseline_location_questions": 5,
+    "candidate_location_questions": 7
   }
 }

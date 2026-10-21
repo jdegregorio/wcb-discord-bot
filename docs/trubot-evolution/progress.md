@@ -5647,3 +5647,29 @@ manual review; fallible reviewer/source instability limits retained. Eight new
 regressions. Full gates/protected CI/release/images/installed actual validation
 remain required. No new human trait or graph population; H120 abstract applicability
 remains unvalidated. [Complete protocol and evidence](evaluations/2026-10-21-clarification-focus.md).
+
+
+## 2026-10-21 05:00 installed completion
+
+PR182/bf0ede0/v2.38.10 is installed at indexe8a26da888415d251fe67b449e694eff2b1b2c684e5f7792d51900c70bab99c3.
+Both feature/merged six gates and protected PR/main/image CI pass;2,107tests/96.14%,
+46installed hashes match. Matched full-packet location questions improve4/6to6/6.
+Actual13owner probes give12answers/correct recipient abstention; both previously
+failed questions clarify and bare-place completions/current reads pass. Final
+main gateway answers3.846seconds after all auxiliary closures. Healthy/ready/
+read-only,zero errors/restarts/discards,release timer active/enabled.
+
+Post-audit case mapping and source adjudication confirm an independent historical
+relation fusion on an unchanged initial request; broad year content/calendar
+qualification fails/remains open. Five native supports resolve the other flagged
+preference case. No general fidelity/humor-multiplier claim or new graph observation.
+H121 relation-preserving grounding qualification now precedes H120/H114 useful
+abstractions, then useful linked native/visual coverage and seasonal variety.
+Graph unchanged; generated U.P. aurora/trail-camera and selective tools retained.
+
+Covered window80settled attempts/USD0.027748075+one uncertain reservation/
+USD0.014014125=USD0.041762200;October USD1.384644260
+estimates,pre-guard unknown. Six old plus one new unresolved, no clearing;18/2/20
+limits unchanged.19private receipts+privacyverification0700/0600/no rawfields,
+no source/answer/pixel persistence,seven-daymanualretention/withdrawalcleanup.
+Primary checkout untouched. [Full evidence and limitations](evaluations/2026-10-21-clarification-focus.md).

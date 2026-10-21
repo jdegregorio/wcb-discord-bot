@@ -3307,3 +3307,21 @@ applicability, with two expanded authentic windows and no new personal observati
 Phase2 selects the narrow H119 correction pending complete controls/release/actual
 installed acceptance, then useful qualified abstractions before broader coverage.
 [Hypotheses, method, results and limits](evaluations/2026-10-21-clarification-focus.md).
+
+
+## 2026-10-21 installed H119 and new H121 source-grounding priority
+
+Both actual missed questions now clarify and their bare-place answers use fresh
+public reports. Full incoming memory is verified before selective filtering.
+Thirteen owner probes give12answers/correct recipient abstention; final gateway
+responds after every auxiliary closure. Operational and narrow action acceptance
+pass, not general fidelity or complete broad-year grounding. Post case-level audit
+flags two claims: source adjudication resolves one supported-preference false
+positive and confirms one unsupported relation formed from separate source text.
+H121 qualified relation-preserving episodic/abstract memory or a bounded evidence
+check becomes first, with full episode support/contraries and held-outs. Initial
+provider requests on this historical route are exactly unchanged by H119, verified
+without new provider calls. Keep the narrow correction; leave H121 unvalidated until
+matched benefit. Then H120/H114 useful abstractions, followed by linked/visual
+coverage and seasonal variety. Same18/2/20guard, no new observation/population.
+[Complete installed outcome](evaluations/2026-10-21-clarification-focus.md).
