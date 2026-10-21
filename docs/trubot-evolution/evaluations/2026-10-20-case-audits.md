@@ -6,7 +6,7 @@ untouched. Production starts healthy on2.38.8.
 
 ## Phase 1: qualification before selection
 
-Six attributed human windows versus24actual development posts (12bot/12owner).
+Six attributed human windows versus24actual development posts (12bot/12 owner).
 Three latest100source-channel pages find zero seven-day human target posts and
 one bot post. Initial model triage flags zero problems and explicitly cannot
 qualify a general human comparison. This is sparse spontaneous coverage.
@@ -83,5 +83,97 @@ local counts match. All four have limited-reference flags, zero other concerns.
 The actual prior undercounted aggregate is rejected. Initial collection finds a
 partial-guild permission-calculation defect; fetching through the full
 authenticated development guild resolves it without changing permissions, with a
-regression. Final feature gates pass:locked sync,format,lint,46typedmodules,
-2,098tests/96.14%branch-inclusivecoverage and2.38.9wheel/sdist.
+regression. Final feature gates pass:locked sync,format,lint,46 typedmodules,
+2,098 tests/96.14% branch-inclusive coverage and2.38.9wheel/sdist.
+
+
+## Installed completion
+
+[PR180](https://github.com/jdegregorio/wcb-discord-bot/pull/180) merges through
+protection as`8df9783d6b1973b4509cefcf93667e1794f1e6ce`. FeatureCI39543230338,
+mainCI39543531300 and imageCI39543749421 pass. All six local gates pass on both
+feature and exact merged tree:2,098 tests,96.14% branch-inclusive coverage,46 typed
+modules and 2.38.9 sdist/wheel. No accepted failures or test flakiness.
+[Immutable v2.38.9](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.9).
+
+Verified pi5/aarch64/Ubuntu 24.04 and app manifest before the existing locked
+non-sudo pi-app transaction. Running immutable index
+`sha256:e94978696c312fad03b6bcb7e6643dabf7ed0e15817cc85c894f681a6ffd1b48`;
+ARM64`sha256:ed1545edad30ef5a7e0ae968a8e1c1b8efeed7e3a0619f2a0977db33583f596a`;
+AMD64`sha256:265ff74d3843544e463d6e4d708937c5fd112d68ba6f6a34ac212c8411b1a5d3`.
+All 46 installed source hashes/version/revision match the tested merge. Recorded
+previous2.38.8/index`sha256:bf7c4adf8fae4949d2c7bcb67d35aa0124eccdb1eb26947bc8b35de84a10a80e`
+remains available. No rollback, source/spending restoration or paid-claim change.
+
+The installed audit API reviews four actual development bot focuses against two
+attributed human windows and one league bot focus against two human windows.
+Every case returns with its private ordinal-to-message mapping. All five mark
+limited reference/context coverage, with zero other triage flags. Deterministic
+counts match all validated rows, and the actual previous undercounted aggregate
+is rejected. This proves audit coverage/validation conformance, not human-quality
+accuracy. Missing reply-target/pixel coverage remains explicit; sparse unmatched
+samples and one model cannot establish general fidelity. A natural-sounding bot
+reply can still fail a functional tool expectation, as the smoke control below
+demonstrates. No inferred human trait or automatic personality rollout follows.
+
+Reverified private development guild owner/membership (two members only), current
+history/send/attach permissions and allowed general channel before owner probes.
+Twelve installed actual owner probes produce eleven answers and one correct
+other-recipient abstention. Humor, requested fresh comic idea, hypothetical care,
+celebration, supported particular preference, ordinary recall wording and exact-
+date honesty pass semantic review/manual inspection. Five fresh authenticated
+human sources support the particular preference. Broad 2020 content/calendar
+grounding remains unresolved; that control checks natural wording only.
+
+The initial unlocated aurora question FAILS place clarification: a known H113
+control, reproduced again. The bare location follow-up nevertheless performs a
+fresh completed-night read and fits the returned reports. Current regional
+observations also use a fresh read and leave missing cloud values unknown.
+Eleven of twelve semantic review flags pass, with the clarification flag false.
+This is not a new generation-code change: all runtime reply/selection source
+files are byte-identical to2.38.8, apart from the version marker and new unused-
+by-runtime maintenance module. Do not call this a passing clarification cohort
+or infer a causal regression/improvement from stochastic unmatched replies.
+H113 still needs verified full packets and a matched validated correction.
+
+Final actual main-gateway probe is sent after every auxiliary client closes and
+answers in3.456 seconds. No production Discord client is constructed afterwards.
+Later evidence uses stateless Bot REST, SQLite/files and health only. Reply
+latencies1.953-10.556 seconds, median 4.224; no speed claim. A browser locator wait
+reports a deadline before the current-conditions answer becomes visible; actual
+Discord references confirm delivery in10.556 seconds, no dropped response.
+Controlled development messages are not spontaneous activity or human learning.
+
+Final observed health2026-10-21T04:31:51.430079+00:00:healthy,Discord-ready,
+read-only,zero restarts/OOM/errors/reply failures/unhandled exceptions/source
+continuity warnings/private discards. Three normal quality repairs and one
+declined follow-up. Release-check timer active/enabled. No rollback required.
+
+Graph unchanged:553 episodes,438 human-source nodes,24 native contexts,28 context
+dependencies,1,071 edges,one value,one preference,two claims;one accepted/three
+rejected studies. No new population or native-pattern permission. Full native
+linked history and visual coverage remain incomplete.
+
+Covered run: 58 settled attempts:39 maintenance/USD 0.01294727 and 19 runtime/
+USD 0.01074387, totalUSD 0.02369114. Covered OctoberUSD 1.341826435estimate,
+not provider billing; pre-guard spend unknown. Six old unresolved reservations
+(one pending/five uncertain),zero new. Existing18/2/20 guard and four photo
+studies/day remain; no new infrastructure, service, model or spending pool.
+
+Thirteen content-free private JSON receipts pass0700 directory/0600 file and
+forbidden-raw-field checks; a fourteenth records verification. Existing manual
+seven-day retention and withdrawal cleanup. Disposable source clone removal
+verified. Raw sources/answers, private personal derivations and screenshots are
+absent from public Git and smoke receipts. Local evidence copies/logs stay under
+/private/tmp/trubot-20261020-2100 outside the managed worktree. An initial local
+collector failed to quote the remote Python command and copied no receipts; it
+was corrected, all fourteen expected receipts copied and failures now stop it.
+Production data was unaffected.
+
+H118 is complete enabling work. H117 is rejected for rollout; H114/H92/H93/H101/
+H112 useful abstractions remain unqualified. H113 re-enters targeted qualification
+after this fresh actual failure, with its prior failed prototypes still rejected.
+Keep useful linked native/visual coverage, generated Michigan U.P. aurora/trail-
+camera variety and selective tool/skill context active. No general reply-quality
+gain, objective humor multiplier or complete digital-replica claim. Completion
+documentation CI/merge and worktree cleanup are recorded in automation memory.

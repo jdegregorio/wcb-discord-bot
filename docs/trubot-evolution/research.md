@@ -2382,7 +2382,7 @@ H66c final installed result:2.26.4/PR119/runtime57961c3 after all feature/merged
 gates and required CI/both images. Exact shipped prototype/31source hashes/versions
 match. Actual normal gateway11/12semantic passes, changed scenarios pass; historical
 peer stance remains open. No routine metadata disclaimer, new requester defect or
-general superiority/fidelity claim. Existing18/2/20guard; run75settled/USD0.008836085
+general superiority/fidelity claim. Existing18/2/20 guard; run75settled/USD0.008836085
 estimate, coveredOctoberUSD0.278936285/one unchanged old unsettled. Final study and
 structured result above record health, source/coverage gaps, privacy and roadmap.
 
@@ -2422,7 +2422,7 @@ Immutable [v2.26.5](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/
 index 5944b382f081339599aa71aa80a6983e82ceb9a934e14fe460d4142801aa660f;
 AMD64 3b40995472fb52f3f12920f4a624ec04d36a878be2c20a1cd10a6aa08b3c0f85;
 ARM64 8a53cde16e3a8fac7180dd70481296984ef1743ffbc83c88a82162cf2746d726.
-Existing scoped transaction on reverified pi5/aarch64/Ubuntu24.04.4: healthy/ready,
+Existing scoped transaction on reverified pi5/aarch64/Ubuntu 24.04.4: healthy/ready,
 zero restarts; 31 source hashes/internal/package/OCI versions and runtime revision match.
 Prior 2.26.4/index 86c625ae retained; no rollback or data restore. Installed ordinary
 packet equals the tested prototype; explicit context render equals baseline. Graph
@@ -2454,7 +2454,7 @@ posts and zero denied channels. Short installed logs: zero errors/reply failures
 disconnects/study pauses, two startup warnings; sparse activity cannot establish rates.
 Run: 38 settled attempts, estimated USD 0.00956934: 24 maintenance/USD 0.003917365 and
 14 runtime/USD 0.005651975 including baseline. Covered October estimate USD 0.288505625,
-1,816 attempts/one unchanged preexisting unsettled;18/2/20guard, not provider billing,
+1,816 attempts/one unchanged preexisting unsettled;18/2/20 guard, not provider billing,
 pre-guard unknown. No model, service, source population, native gate, pacing, intake,
 schedule or notification change. Private: 13 content-free receipt files, 0700/0600 verified,
 existing seven-day manual retention/withdrawal; no raw answers/sources/personal summaries.
@@ -2597,7 +2597,7 @@ private derived human observations are published or retained as smoke artifacts.
 
 Run49settled provider attempts, estimatedUSD0.010771165:25maintenance/USD0.00295236,
 24runtime/USD0.007818805. Covered OctoberUSD0.32880614/1,973attempts,one unchanged old
-unsettled reservation; no new unsettled attempt. Shared18/2/20guard unchanged, estimates
+unsettled reservation; no new unsettled attempt. Shared18/2/20 guard unchanged, estimates
 are not provider billing, pre-guard spending unknown, no new service. Private receipts
 use0700/0600 and existing seven-day manual retention/withdrawal cleanup. No development
 learning. Source snapshots/context metadata can refresh; no human abstraction is added.
@@ -2664,7 +2664,7 @@ credential exposure or bypass, no remaining access blocker.
 
 Run39settled attempts/USD0.00610377estimated:23maintenance/USD0.001460125,16runtime/
 USD0.004643645. Covered OctoberUSD0.339004915/2,021attempts/one unchanged old unsettled;
-no new unsettled,18/2/20guard intact, no paid service; not billing, pre-guard spend
+no new unsettled,18/2/20 guard intact, no paid service; not billing, pre-guard spend
 unknown. Container0errors/reply failures/disconnects/restarts,2startup warnings,
 1source discard/1recipient skip/2existing quality refreshes. Short windows do not
 establish a general rate comparison. H78b final-packet predictability reopens as a
@@ -2732,7 +2732,7 @@ freshness partial. Actual gateway naturally exercises one successful repetition
 repair. Broader semantic freshness/focal alignment remains unresolved; H83a is
 rejected and H83b is complete for the existing exact repair. No new human trait.
 
-Run73attempts/estimatedUSD0.009935115; existing18/2/20guard intact. No general
+Run73attempts/estimatedUSD0.009935115; existing18/2/20 guard intact. No general
 fidelity/humor multiplier or delivery-frequency claim. One missing pre-release care
 post remains unexplained; diagnostic retry passes. Source/lifecycle/privacy and
 six fresh daily Sol/xhigh runs/notifications remain. [Full evidence and limitations](evaluations/2026-10-16-humor-repair-release.json)
@@ -2819,7 +2819,7 @@ Installed eligible media-only cases2/2post; one separate substantive setup chang
 correctly discards. Normal owner gateway strict8/9:8posts/one abstention,one humor
 partial. No general character gain; next qualified abstract/emotional applicability
 and semantic comic freshness,linked native/original pixels,H61tools/generated U.P.
-scenes. Run41settled attempts/estimatedUSD0.0083419;18/2/20guard intact. See
+scenes. Run41settled attempts/estimatedUSD0.0083419;18/2/20 guard intact. See
 [full installed evidence](evaluations/2026-10-17-source-media-stability-release.json)
 and the study for baseline counts,uncertainty,privacy and original-pixel limits.
 
@@ -2926,7 +2926,7 @@ Reconciled interrupted H95 on freshc5c1d3a. PR153/tested3191424 ordinary merge1a
 
 Actual private wake quiet/routine,next4hours; actual ownerwoodpile0to1PNG,32.574seconds,generatedlabel,inspectedpixels. Exactrequest/newprocess replay0calls/0posts. Sixproviderplansquiet/restart-safe,eighttimingcontrols pass;fourseparateprocessesoneclaim. Twelveactualgatewaycases:11functional/oneincompleteclarification,11posts/onecorrectabstention. Thirdpersonhistoricalrecap/sightingcaveats remain. Sixsyntheticclarification replays3/arm allaskwherewithidenticalrequests;actualcontextgapH97 unresolved. No newhumantrait,generalfidelitygain,humormultiplier or naturalweeklyengagementresult.
 
-Finalpost-clientactualgatewaysanity passes6.220seconds;heartbeat survives,no subsequent Discordclient. Observed0errors/failures/discards/restarts,11normalposts/1image/1recipientdecline,3warnings(twoexistingvoice-library,onesafepre-initjournalwarning).43newsettledattempts/estimatedUSD0.051090340,oneimageUSD0.04163,same18/2/20guard,twooldunsettled/0new. CoveredmonthUSD0.879996760estimate,notbilling,preguardunknown. Pre/postfourhumanwindows/eightdevpairs triages insufficient,notcausal. Sourcecensuszero7daybotactivity. H95complete;H96confirmationunvalidatedclosed,thenH93timing/variety,H92independentutility/neededcoverage;H97additionalresearch. SixdailySol/xhighscheduleunchanged.
+Finalpost-clientactualgatewaysanity passes6.220seconds;heartbeat survives,no subsequent Discordclient. Observed0errors/failures/discards/restarts,11normalposts/1image/1recipientdecline,3warnings(twoexistingvoice-library,onesafepre-initjournalwarning).43newsettledattempts/estimatedUSD0.051090340,oneimageUSD0.04163,same18/2/20 guard,twooldunsettled/0new. CoveredmonthUSD0.879996760estimate,notbilling,preguardunknown. Pre/postfourhumanwindows/eightdevpairs triages insufficient,notcausal. Sourcecensuszero7daybotactivity. H95complete;H96confirmationunvalidatedclosed,thenH93timing/variety,H92independentutility/neededcoverage;H97additionalresearch. SixdailySol/xhighscheduleunchanged.
 
 [Full protocol,results,costs and limits](evaluations/2026-10-18-outdoor-checkins-release.md),[public receipt](evaluations/2026-10-18-outdoor-checkins-release.json),[runtime PR153](https://github.com/jdegregorio/wcb-discord-bot/pull/153),[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.33.0). Final evidence is carried in a separate documentation-only PR after these results; runtime bytes remain the tested release.
 
@@ -2985,7 +2985,7 @@ partial. Initial7/8integrated intent comparison,one safe source-refresh stop,
 final isolated8/8and new-wording4/4are distinguished. Two4human-window/16dev-post
 audits both find general human comparison insufficient; no trait/fidelity gain.
 Estimated runUSD0.028396320; covered monthUSD1.030795415,2unchanged old unsettled.
-Same18/2/20guard; no newservice/pool/guild intake or rollback.
+Same18/2/20 guard; no newservice/pool/guild intake or rollback.
 
 PR156superseded/closed, H99PR157stilldraft pending rebase/fullinstalled acceptance.
 Then independent abstract/emotional/amplified-humor and original-view caption/
@@ -3122,7 +3122,7 @@ H109 actual private production-handler fault injection posts an unchanged latest
 punchline despite an explicit different-joke request; candidate reaches one existing
 accounted repair. Select that supported correction, then qualified abstract/emotional/
 amplified-humor and original-view utility, useful native/visual coverage and seasonal
-variety. No new trait, provider pool, service or intake scope. Preserve18/2/20guard,
+variety. No new trait, provider pool, service or intake scope. Preserve18/2/20 guard,
 withdrawal and six standalone local runs. [Protocol, contrary cases and results](evaluations/2026-10-20-requested-novelty.md).
 
 ## H109 installed completion,2026-10-20 05:00
@@ -3134,7 +3134,7 @@ no inference/trait change. Original/final packet variation in its care-send fail
 remains unresolved. Corrected audit counts and per-message adjudication limit model
 triage claims. No general fidelity/2-3xhumor gain. Next independently useful abstract/
 emotional/humor/original-view context, then needed native/visual coverage and seasonal
-variety. Same18/2/20guard,six local runs and source/withdrawal boundaries.
+variety. Same18/2/20 guard,six local runs and source/withdrawal boundaries.
 [Full evidence](evaluations/2026-10-20-requested-novelty.md).
 
 
@@ -3242,7 +3242,7 @@ auxiliary closure takes2.353seconds;healthy/ready,zero observed errors/restarts.
 No measured character gain or new abstraction. H114 and post-audit unassigned
 triage flags remain unresolved; next independently qualify useful emotion,
 amplified humor and original-view context before broader coverage. Covered run
-USD0.012060320;OctoberUSD1.318135295 estimates,unchanged18/2/20guard,sixold/zeronew
+USD0.012060320;OctoberUSD1.318135295 estimates,unchanged18/2/20 guard,sixold/zeronew
 unsettled reservations. Primarycheckoutuntouched;privateevidencepreserved.
 [RuntimePR178](https://github.com/jdegregorio/wcb-discord-bot/pull/178),
 merge`cb9dbba6635a2af851da5986f3506d1ed2d45b4d`,
@@ -3254,7 +3254,7 @@ and[public acceptance metrics](evaluations/2026-10-20-maintenance-isolation.json
 ## 2026-10-20 21:00: H117 source qualification, H118 selected
 
 Before selection: production2.38.8 healthy; six archive human windows versus24
-actual development posts (12bot/12owner), three latest100 league pages with zero
+actual development posts (12bot/12 owner), three latest100 league pages with zero
 seven-day Andrew posts and one bot post. Small unmatched cohorts cannot qualify
 general fidelity. Twelve broad-rule windows plus twelve additional windows and
 three narrower complete-context windows inform H117; some overlap, so these are
@@ -3274,9 +3274,20 @@ attributed human reference roles, source checks before request and after review,
 privacy-safe receipts and unchanged runtime generation. Disconfirm if malformed
 cohort reviews already fail locally. Validate actual prior malformed result,
 synthetic provider/path failures, authenticated pre/post audits and real Discord.
-No model/harness migration is justified by current evidence. Same18/2/20guard.
+No model/harness migration is justified by current evidence. Same18/2/20 guard.
 
 Phase2: H118 as supported enabling prerequisite, then useful qualified abstractions
 and broader linked native/visual coverage. Keep generated U.P. aurora/trail-camera
 and selective skill/tool themes. Stronger source support and reliable matched gains
 would reopen H117; material grounding/privacy failures supersede this order.
+
+
+H118 installed result: exactfour development/one league case coverage and deterministic
+counts verified;all five reference-limited, zero other triage flags. Old undercounted
+aggregate rejected. Source/membership/lifecycle regression tests and actual owner
+flows complete. Enabling audit validity supported, character benefit unmeasured.
+H117 remains rejected;human held-out follow-through is not claimed after failed source
+qualification. H113 initial clarification fails again (other eleven semantic flags pass);
+move targeted full-packet/matched qualification ahead of broader history, without
+reviving failed prototypes. No generation, source, memory, model or spending change.
+See installed completion in the [evaluation](evaluations/2026-10-20-case-audits.md).

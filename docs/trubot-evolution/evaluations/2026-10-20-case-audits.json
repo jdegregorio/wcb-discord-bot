@@ -1,0 +1,154 @@
+{
+  "run": "2026-10-20 21:00 Pacific",
+  "base": "f1379e1a04af77b76f2f86f24573aef5fa2f159a",
+  "runtime_pr": 180,
+  "commit": "8df9783d6b1973b4509cefcf93667e1794f1e6ce",
+  "version": "2.38.9",
+  "ci": {
+    "feature": 39543230338,
+    "main": 39543531300,
+    "image": 39543749421,
+    "all_pass": true
+  },
+  "hypotheses": {
+    "H117": "rejected for rollout",
+    "H118": "supported enabling audit validity",
+    "H113": "known clarification failure reproduced; correction unqualified"
+  },
+  "gates": {
+    "tests": 2098,
+    "coverage_percent": 96.14,
+    "typed_modules": 46,
+    "all_six_feature_and_merged_pass": true
+  },
+  "installed": {
+    "image": {
+      "at": "2026-10-21T04:25:30.413837+00:00",
+      "tag": "2.38.9",
+      "index": "sha256:e94978696c312fad03b6bcb7e6643dabf7ed0e15817cc85c894f681a6ffd1b48",
+      "platforms": {
+        "amd64": "sha256:265ff74d3843544e463d6e4d708937c5fd112d68ba6f6a34ac212c8411b1a5d3",
+        "arm64": "sha256:ed1545edad30ef5a7e0ae968a8e1c1b8efeed7e3a0619f2a0977db33583f596a"
+      }
+    },
+    "hashes_match": true,
+    "modules": 46,
+    "health": {
+      "at": "2026-10-21T04:31:51.430079+00:00",
+      "image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:e94978696c312fad03b6bcb7e6643dabf7ed0e15817cc85c894f681a6ffd1b48",
+      "healthy": true,
+      "oom_killed": false,
+      "restarts": 0,
+      "read_only": true,
+      "revision": "8df9783d6b1973b4509cefcf93667e1794f1e6ce",
+      "started_at": "2026-10-21T04:26:25.545593002Z",
+      "readiness": true,
+      "errors": 0,
+      "response_failures": 0,
+      "unhandled": 0,
+      "source_continuity_warnings": 0,
+      "private_source_discards": 0,
+      "quality_repairs": 3,
+      "declined_followups": 1,
+      "diagnostic_events": 12,
+      "diagnostic_routes": {
+        "none": 9,
+        "up_location": 1,
+        "up_current": 1,
+        "up_last_night": 1,
+        "other": 0
+      },
+      "memory_states": {
+        "unavailable": 0,
+        "identity_unverified": 0,
+        "scope_denied": 0,
+        "assembled": 24
+      },
+      "public_context_reads": {
+        "get_up_conditions": 1,
+        "get_up_last_night": 1
+      }
+    }
+  },
+  "acceptance": {
+    "dev_audit_cases": 4,
+    "league_audit_cases": 1,
+    "reference_windows_per_audit": 2,
+    "all_audit_cases_returned": true,
+    "all_five_evidence_limited": true,
+    "other_triage_flags": 0,
+    "old_undercount_rejected": true,
+    "actual_gateway": {
+      "requests": 12,
+      "answers": 11,
+      "final_seconds": 3.456,
+      "median_seconds": 4.224,
+      "max_seconds": 10.556
+    },
+    "semantic_flags_passed": 11,
+    "semantic_flags_total": 12,
+    "initial_place_clarification_pass": false,
+    "fresh_current_and_night_reads_pass": true,
+    "preference_sources_fresh": 5,
+    "full_year_grounding": "unresolved",
+    "human_review": false,
+    "general_fidelity_gain": "unmeasured",
+    "new_persona_traits": 0
+  },
+  "cost": {
+    "at": "2026-10-21T04:31:53.170797+00:00",
+    "coverage_since": "2026-10-21T04:00:00+00:00",
+    "run": [
+      {
+        "purpose": "maintenance",
+        "status": "settled",
+        "attempts": 39,
+        "covered_usd": 0.01294727
+      },
+      {
+        "purpose": "runtime",
+        "status": "settled",
+        "attempts": 19,
+        "covered_usd": 0.01074387
+      }
+    ],
+    "month": {
+      "month": "2026-10",
+      "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+      "timezone": "UTC",
+      "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+      "estimated_usd": 1.341826435,
+      "runtime_usd": 0.51657965,
+      "maintenance_usd": 0.825246785,
+      "monthly_limit_usd": 20,
+      "runtime_limit_usd": 18,
+      "maintenance_limit_usd": 2,
+      "attempts": 3399,
+      "input_tokens": 11696998,
+      "cached_input_tokens": 6884881,
+      "output_tokens": 132803,
+      "unsettled_attempts": 6,
+      "pre_guard_spend": "unknown; not included"
+    },
+    "unsettled_before": [
+      [
+        "pending",
+        1
+      ],
+      [
+        "uncertain",
+        5
+      ]
+    ],
+    "not_provider_billing": true
+  },
+  "privacy": {
+    "checked_receipts": 13,
+    "verification_receipt": 1,
+    "raw_retained": false,
+    "directory_0700": true,
+    "files_0600": true,
+    "clone_removed": true,
+    "retention": "manual seven days and withdrawal cleanup"
+  }
+}

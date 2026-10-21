@@ -1805,7 +1805,7 @@ Do not infer all real smoke checks passed from the intermediate release.
   [main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38052640290)
   and [image build](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/38052710092) pass.
 - Immutable [v2.11.2](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.11.2)
-  targets that merged commit. Reverified pi5/aarch64/Ubuntu24.04.4 and app manifest;
+  targets that merged commit. Reverified pi5/aarch64/Ubuntu 24.04.4 and app manifest;
   locked pi-app transaction runs sha256:b6f33b3c98e5e1eb57dd37f793f1670b961d7bf13143bfa1e0934e751a8543c1.
   Version/OCI revision/all24 module hashes match. Previous healthy 2.11.1 digest
   607e9d8ecaee02111dbd64e41538b6dc95ae7f5ac73084fe371aca617e000bd3 remains
@@ -2247,7 +2247,7 @@ acceptance and release evidence follow after deployment.
   27 typed modules, wheel/sdist2.14.0. Dependency versions are unchanged.
 - Immutable [v2.14.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.14.0)
   targets the tested merge; image publish38124257650 succeeds for ARM64/AMD64.
-  Reverified pi5/aarch64/Ubuntu24.04.4, manifest, helper lock/rollback and secret
+  Reverified pi5/aarch64/Ubuntu 24.04.4, manifest, helper lock/rollback and secret
   permissions. Existing app transaction deploys without sudo or unrelated changes.
 - Running digest `sha256:759c6a15419811a5c2a52e164d65fced57b6b2c1602f51a7664141d2e683cf95`;
   previous healthy2.13.0 `sha256:3e4b32b1574253c3f0ba6acb412d0de070f13b2395a660ceed88d46c6c45fb5d`.
@@ -2308,7 +2308,7 @@ or real abstraction population. Full release/Discord evidence follows deployment
   All six gates before/after merge:647 tests,96.76% branch-inclusive coverage,
   27 typed modules,2.15.0 wheel/sdist; dependency versions unchanged.
 - Immutable [v2.15.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.15.0)
-  published both architectures. Reverified pi5/aarch64/Ubuntu24.04.4, helper,
+  published both architectures. Reverified pi5/aarch64/Ubuntu 24.04.4, helper,
   manifest and secret permissions. Release timer deploys through the existing
   transaction before the explicit app-scoped deploy command, which confirms it.
 - Digest `sha256:212d290fad5c46cf6984c9dbd6b52f6897eda2bc4b00b903c1de6dd7f0611717`;
@@ -2722,7 +2722,7 @@ identical to tested bdcf45b. PR CI 38223156007 and merged-main CI 38223490205 pa
 781 tests/96.84% coverage, 28 typed modules, 2.18.0 wheel/sdist. Immutable
 [v2.18.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.18.0) images
 38223665070 succeed for AMD64/ARM64 before the locked pi-app transaction. Reverified
-pi5/aarch64/Ubuntu24.04; running digest `sha256:f7f8612ae2ed84de7730d050e35f23c9b050c75fad86c80ad977d67d81cf38bb`, previous
+pi5/aarch64/Ubuntu 24.04; running digest `sha256:f7f8612ae2ed84de7730d050e35f23c9b050c75fad86c80ad977d67d81cf38bb`, previous
 healthy 2.17.2 `sha256:a78b82141d17bf07d43d828297ce02fde267e80a1aabf84d35ef84bd7356c7d2` retained. Package, OCI revision
 and all 28 installed source hashes match. Readiness healthy, zero restarts and no
 new errors/reply failures/disconnects/memory/learning/study pauses; two optional voice
@@ -2967,7 +2967,7 @@ Runtime [PR #90](https://github.com/jdegregorio/wcb-discord-bot/pull/90) merged
 734e381dc73ec41ed7d1331559dc3092ee6639ee, identical to tested feature tree. Required
 PR CI38325341793, merged-main CI38325501523 and images38325633646 pass. Immutable
 [v2.19.2](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.19.2)
-builds both amd64/arm64. Reverified pi5/aarch64/Ubuntu24.04.4; scoped locked pi-app
+builds both amd64/arm64. Reverified pi5/aarch64/Ubuntu 24.04.4; scoped locked pi-app
 transaction deploys sha256:e4ff71375b47226f2a8f617973d3ccd5d944fee6f30273725ec70c2946f155b1.
 OCI/package/29 source hashes match. Prior healthy2.19.1/053c845 remains rollback
 boundary. No schema migration or rollback. Main was rechecked through all six gates,
@@ -3109,7 +3109,7 @@ Both planning phases and locked criteria: [study](evaluations/2026-10-13-passage
 7b5661f636b8b4174f07b72b8305e37a90c3d605; PR 38368883700 / main 38369046594 / image
 38369227636 pass. All six gates repeated on merged main:868 tests/96.86%,29 modules
 and2.20.0 build. Immutable [2.20.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.20.0),
-both architectures inspected. Reverified pi5/aarch64/Ubuntu24.04.4, scoped locked
+both architectures inspected. Reverified pi5/aarch64/Ubuntu 24.04.4, scoped locked
 pi-app transaction deployed sha256:b83f3de51d1acbe9ea9b70d6d36735cc2107923102141917331320195bd806fb.
 OCI/package/29 hashes/readiness match,0 restarts. Compatible2.19.3 / c0e1921 rollback
 retained; no rollback/schema/intake/state/model/service change.
@@ -3289,7 +3289,7 @@ volume0700/0600; actual answer/raw source text is not retained in smoke records.
 4ab648a355f8466b9391bff5e2692d330d0b0e99. PR38429872141/main38430316576/image38430535875
 all successful; full six gates repeated on merged main930tests/97.00%/29modules/build2.21.0.
 [Immutable2.21.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.21.0)
-AMD64/ARM64 inspected. Reverified pi5/aarch64/Ubuntu24.04.4/helpermanifest/lock/permissions,
+AMD64/ARM64 inspected. Reverified pi5/aarch64/Ubuntu 24.04.4/helpermanifest/lock/permissions,
 scoped transaction deployed cfd8f29ea6c878fefffa9fdaac3c593d004332e0d5f29c2acdecffacf2070c10.
 OCI/package/module version/all29source hashes match tested runtime; healthy/ready/
 0restarts after separate installed client close. Previous2.20.1/8ed7cf7 retained.
@@ -3478,7 +3478,7 @@ build2.23.0. One mistyped merge-head SHA was rejected; retried with the verified
 unchanged tested SHA. No protection bypass, tag reuse or agent coauthor.
 
 [Immutable2.23.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.23.0),
-both architectures verified. Reverifiedpi5/aarch64/Ubuntu24.04.4/manifest/helper/locks/
+both architectures verified. Reverifiedpi5/aarch64/Ubuntu 24.04.4/manifest/helper/locks/
 rollback/group write access; sudo unavailable and unnecessary. Scoped helper deployed
 4cc40f2d0eeec0a03c9d55cd3bf329573061a06ab8862b72cb9d7c5feb662a77. OCIcommit/package/
 module/all30sourcehashes match tested release. Healthy/Discordready/zero restarts.
@@ -3605,7 +3605,7 @@ activitylimitsrates. Pre/post3intakes/latest100/14days7target12peer4olderbot0cur
 spontaneous; native34/439graphsources/554episodes/3legacyobservations/0patterns.
 Existing recall nowrecords6content-freecaptures/9dependencies, no newhumantrait.
 
-CoveredOctoberUSD0.226279000,1,506attempts/1preexistingunsettledreservation; run175
+Covered OctoberUSD0.226279000,1,506attempts/1preexistingunsettledreservation; run175
 settled/USD0.013332600 (163maintenance/USD0.008018325,12runtime/USD0.005314275).
 Finalgateway9/USD0.003774565. Estimatesnotbilling,pre-guardunknown,18/2/20unchanged,
 noaddedpaidservice. Privatecontent-free receipts0700/0600; trialoverrides/rawdiagnostic
@@ -3650,7 +3650,7 @@ Immutable [release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/
 index c75799ddee36c8804e96869590a1071dba5e828fbc99529692807fe26787c31b,
 AMD64 0665af8508f24a0061215af5251e8286fe1103e3eaa1f7c603bede60cedfce38,
 ARM64 404be40627e821ba66d094765b2232031d6d571a8b45f7a09ba25c6dcbb8308d.
-Verified pi5/aarch64/Ubuntu24.04, existing locked transaction, all31sourcehashes/OCI
+Verified pi5/aarch64/Ubuntu 24.04, existing locked transaction, all31sourcehashes/OCI
 commit, healthy/Discordready/0restarts. Prior good2.24.1/c2553b4 retained, no rollback.
 
 Six fresh normal gateway controls pass manual review: five posts/one recipient
@@ -3665,8 +3665,8 @@ failures/disconnects/study pauses,2startupSDKwarnings. Post-audit counts7target/
 4olderbot/0currentspontaneous; no development learning or source expansion.
 
 Run68settledrequests/USD0.009047595estimate (58maintenance/0.004649270,10runtime/
-0.004398325); installed8requests/0.003330700. CoveredOctober0.235326595/1574attempts/
-1unchangedpreexistingunsettled,18/2/20guard unchanged. Not billing; pre-guard unknown.
+0.004398325); installed8requests/0.003330700. Covered October0.235326595/1574attempts/
+1unchangedpreexistingunsettled,18/2/20 guard unchanged. Not billing; pre-guard unknown.
 Six historical context windows/one export/42block occurrences with possible overlap are
 mechanical source coverage, not independent semantic pattern evidence. Private exact
 refs/metrics0700/0600,seven-daymanualretention/withdrawalcleanup,no raw answer artifact.
@@ -3772,7 +3772,7 @@ all general recall acceptance is not claimed. Stock care/familiar humor remain.
 Postaudit7target12peer4olderbot0fresh/unavailable0,0errors/replyfailures/disconnects/
 studypauses/restarts/2SDKwarnings,one care recovery. Graph2claims1preference1value8native
 contexts12deps1039edges,34native sources unchanged. Run19settled/USD0.006362655estimate,
-coveredOctober0.250879475/1621attempts/one unchanged unsettled;18/2/20guard preserved.
+coveredOctober0.250879475/1621attempts/one unchanged unsettled;18/2/20 guard preserved.
 Private refs/counts0700/0600,7daymanualretention/withdrawal,no raw source/answers.
 [Final study](evaluations/2026-10-14-graph-selection-study.md) and
 [release/installed evidence](evaluations/2026-10-14-graph-selection-release.json).
@@ -3880,7 +3880,7 @@ New fetched-main managed worktree/basec795368, unique feature branch, primary
 untouched. Prior21:00task stopped after uncommitted repair/full gates:PR118released
 2.26.3, normal gateway supplied-focus failure caused existing-transaction rollback
 to2.26.2/index1f671727; stable latest returnedv2.26.2. Immutable tags preserved,
-no data restore. Current authenticated pi5/aarch64/Ubuntu24.04.4healthy; no overlap PR.
+no data restore. Current authenticated pi5/aarch64/Ubuntu 24.04.4healthy; no overlap PR.
 Previous public-result stale deployed status is superseded by current inspected
 container, private incomplete gateway receipt and last preceding task messages.
 
@@ -3907,7 +3907,7 @@ New immutable [release](https://github.com/jdegregorio/wcb-discord-bot/releases/
 index86c625aec390b318f875797a971796ddd68bd0085bfdf9c50e2a156c7113d280,
 AMD64f22b651f284a344b3cafcf99709950964f393355102b5427de02e0ef9b65c747,
 ARM64c43b2c2dc79b9fdf7c771f213d19623958422860dc48c31ccbd14d81e52cc201.
-Existing scoped transaction on reverified pi5/aarch64/Ubuntu24.04.4. Healthy,
+Existing scoped transaction on reverified pi5/aarch64/Ubuntu 24.04.4. Healthy,
 zero restarts; 31 source hashes/package/internal/OCI versions and revision match.
 Prior healthy2.26.2/index1f671727 retained; no current rollback/data restoration.
 
@@ -3923,7 +3923,7 @@ selective tools/generated Michigan U.P. scenes. No general fidelity gain claimed
 Post audit5target8peer3olderbot0fresh/0denied; sparse actual league activity limits
 character conclusions. Short logs0errors/replyfailures/disconnects/studypauses,
 2startupwarnings/0restarts. Run75settled requests estimateUSD0.008836085;
-coveredOctoberUSD0.278936285/1,778attempts/one unchanged old unsettled.18/2/20guard,
+coveredOctoberUSD0.278936285/1,778attempts/one unchanged old unsettled.18/2/20 guard,
 model, native gate, private scope, source lifecycle, schedule/notifications unchanged.
 Private refs/counts/hashes/grades0700/0600,seven-day manual retention/withdrawal;
 no raw answer/source or derived personal-summary artifact. Primary heartbeat and
@@ -3965,7 +3965,7 @@ Immutable [v2.26.5](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/
 index 5944b382f081339599aa71aa80a6983e82ceb9a934e14fe460d4142801aa660f;
 AMD64 3b40995472fb52f3f12920f4a624ec04d36a878be2c20a1cd10a6aa08b3c0f85;
 ARM64 8a53cde16e3a8fac7180dd70481296984ef1743ffbc83c88a82162cf2746d726.
-Existing scoped transaction on reverified pi5/aarch64/Ubuntu24.04.4: healthy/ready,
+Existing scoped transaction on reverified pi5/aarch64/Ubuntu 24.04.4: healthy/ready,
 zero restarts; 31 source hashes/internal/package/OCI versions and runtime revision match.
 Prior 2.26.4/index 86c625ae retained; no rollback or data restore. Installed ordinary
 packet equals the tested prototype; explicit context render equals baseline. Graph
@@ -3997,7 +3997,7 @@ posts and zero denied channels. Short installed logs: zero errors/reply failures
 disconnects/study pauses, two startup warnings; sparse activity cannot establish rates.
 Run: 38 settled attempts, estimated USD 0.00956934: 24 maintenance/USD 0.003917365 and
 14 runtime/USD 0.005651975 including baseline. Covered October estimate USD 0.288505625,
-1,816 attempts/one unchanged preexisting unsettled;18/2/20guard, not provider billing,
+1,816 attempts/one unchanged preexisting unsettled;18/2/20 guard, not provider billing,
 pre-guard unknown. No model, service, source population, native gate, pacing, intake,
 schedule or notification change. Private: 13 content-free receipt files, 0700/0600 verified,
 existing seven-day manual retention/withdrawal; no raw answers/sources/personal summaries.
@@ -4024,7 +4024,7 @@ focused source/graph/handler checks pass after updating the superseded expectati
 No failing/flaky gate accepted. Pre-release run26settled requests, estimated
 USD0.003472855:25maintenance/USD0.002908355and1runtime/USD0.0005645. Covered
 OctoberUSD0.29197848/1,842attempts/one unchanged old unsettled; estimates are not
-billing, pre-guard spending unknown, shared18/2/20guard unchanged. Required CI,
+billing, pre-guard spending unknown, shared18/2/20 guard unchanged. Required CI,
 merged-main gates, images/deployment/installed normal gateway remain pending.
 
 
@@ -4309,7 +4309,7 @@ private derived human observations are published or retained as smoke artifacts.
 
 Run49settled provider attempts, estimatedUSD0.010771165:25maintenance/USD0.00295236,
 24runtime/USD0.007818805. Covered OctoberUSD0.32880614/1,973attempts,one unchanged old
-unsettled reservation; no new unsettled attempt. Shared18/2/20guard unchanged, estimates
+unsettled reservation; no new unsettled attempt. Shared18/2/20 guard unchanged, estimates
 are not provider billing, pre-guard spending unknown, no new service. Private receipts
 use0700/0600 and existing seven-day manual retention/withdrawal cleanup. No development
 learning. Source snapshots/context metadata can refresh; no human abstraction is added.
@@ -4394,7 +4394,7 @@ credential exposure or bypass, no remaining access blocker.
 
 Run39settled attempts/USD0.00610377estimated:23maintenance/USD0.001460125,16runtime/
 USD0.004643645. Covered OctoberUSD0.339004915/2,021attempts/one unchanged old unsettled;
-no new unsettled,18/2/20guard intact, no paid service; not billing, pre-guard spend
+no new unsettled,18/2/20 guard intact, no paid service; not billing, pre-guard spend
 unknown. Container0errors/reply failures/disconnects/restarts,2startup warnings,
 1source discard/1recipient skip/2existing quality refreshes. Short windows do not
 establish a general rate comparison. H78b final-packet predictability reopens as a
@@ -4425,7 +4425,7 @@ owner gateway pending. Narrow transport acceptance is not general character gain
 PR135 protected CI38960061915 and non-admin exact-head merge succeed. Runtime
 9b1a2ad23c8a16c42d3fe564afe3f5723a61274a passes all six merged gates and main
 CI38960353640. Immutable v2.27.4/image38960561752 succeeds for both architectures.
-Scoped locked transaction on reverified pi5/aarch64/Ubuntu24.04.4 deploys index
+Scoped locked transaction on reverified pi5/aarch64/Ubuntu 24.04.4 deploys index
 35c68625672209a25e7d363859799f01425868bb99bb9f447dbee534c18956bc. Healthy, zero
 restarts;31installed source hashes/package versions/revision match. Prior2.27.3
 ff48a118 remains the rollback target. No rollback or source/spending database restore.
@@ -4450,7 +4450,7 @@ packet checks remain, including substantive optional setup changes.
 Run25settled attempts,estimatedUSD0.005837255:11maintenance/USD0.00124559 and
 14runtime/USD0.004591665. Covered OctoberUSD0.34484217/2,046attempts;one unchanged
 old unsettled reservation,no new unsettled attempt. Not provider billing; pre-guard
-spending unknown. Existing18/2/20guard/model/pacing/six fresh daily Sol/xhigh runs
+spending unknown. Existing18/2/20 guard/model/pacing/six fresh daily Sol/xhigh runs
 and notification preference remain; no new provider pass/schema/service or scope.
 Container window0errors/reply failures/source discards/disconnects/restarts,
 2startup warnings,1recipient skip,9posts,3existing quality refreshes. Short unmatched
@@ -4470,7 +4470,7 @@ character completion claim. [Structured release evidence](evaluations/2026-10-16
 
 Base0120a9dc85b30c0f9695f8b1c4dabb093261a71e; new managed worktree
 trubot-20261016-1700, branch feature/trubot-daily-20261016-1700. Primary checkout
-untouched; no unfinished evolution PR. Reverified pi5/aarch64/Ubuntu24.04.4 and
+untouched; no unfinished evolution PR. Reverified pi5/aarch64/Ubuntu 24.04.4 and
 healthy2.27.4. Confirmed private dev owner/two members/allowed writable general.
 
 Both planning phases select H83b after rejecting H83a. Matched live maintenance
@@ -4486,7 +4486,7 @@ baseline6fail/2pass; candidate checks/release/installed validation complete belo
 PR137 passes protected CI38985338232 and merges exact tested head non-admin as
 44f7c1143ce7d093bb1e9e816e7415395cba30c0. All six merged gates and main
 CI38985522844 pass. Immutable v2.27.5/image38985658582 succeeds for AMD64/ARM64.
-Reverified pi5/aarch64/Ubuntu24.04.4 uses the existing non-sudo locked app transaction
+Reverified pi5/aarch64/Ubuntu 24.04.4 uses the existing non-sudo locked app transaction
 and deploys indexd4bb2a3c. Healthy/zero restarts; all31source hashes/package versions/
 revision match. Prior2.27.4/index35c68625 remains rollback target. No rollback or
 source/spending-state restore; release timer remains active/enabled.
@@ -4512,7 +4512,7 @@ freshness, linked native/original pixels, selective tools/generated U.P. scenes.
 
 Run73settled attempts, estimatedUSD0.009935115:62maintenance/USD0.00612841 and
 11runtime/USD0.003806705. Covered OctoberUSD0.354777285/2,119attempts; one unchanged
-old unsettled reservation, no new unsettled attempt. Existing18/2/20guard intact;
+old unsettled reservation, no new unsettled attempt. Existing18/2/20 guard intact;
 not billing, pre-guard spending unknown. Added runtime input only on existing repair,
 no new provider pass/schema/model/service/scope. Logs since new container start:
 0errors/reply failures/source discards/disconnects/restarts,2startup warnings,
@@ -4530,7 +4530,7 @@ All six fresh local01/05/09/13/17/21Sol/xhigh runs and notifications remain unch
 
 Base478cfdd5ff39496418eaeee7598542ed9f934e1e. Post-fetch new managed worktree
 trubot-20261016-2100/feature/trubot-daily-20261016-2100. Primary checkout untouched;
-no unfinished evolution PR/subagents. Reverified healthy2.27.5 pi5/aarch64/Ubuntu24.04.4.
+no unfinished evolution PR/subagents. Reverified healthy2.27.5 pi5/aarch64/Ubuntu 24.04.4.
 Both planning phases precede selection; actual gateway and5new baseline regressions
 reproduce explicit reply subject loss. Matched real private handlers3samples/arm:
 current positive focus0/3to3/3,strict celebration2/3candidate. Existing actual graph
@@ -4569,7 +4569,7 @@ restraint pass; no routine metadata disclaimer. Installed exact subject binding 
 heartbeat after HTTP-only client closure pass. No new human observation.
 
 Run25settled attempts,estimatedUSD0.006158285; covered OctoberUSD0.36093557,
-existing18/2/20guard intact. One old unsettled reservation,no new unsettled attempt;
+existing18/2/20 guard intact. One old unsettled reservation,no new unsettled attempt;
 not provider billing and pre-guard spend unknown. New container0errors/reply failures/
 source discards/disconnects/restarts,2startup warnings and2existing quality repairs.
 Short unmatched windows do not establish a general error-rate gain. No general
@@ -4632,7 +4632,7 @@ modules, 2.28.0 build. Main CI39016510473 and image39016649123 pass. No accepted
 lint/type/test failures or flakiness. Initial typing/import issues were fixed locally.
 
 [Release 2.28.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.28.0)
-runs on reverified pi5/aarch64/Ubuntu24.04.4, healthy with zero restarts. Index
+runs on reverified pi5/aarch64/Ubuntu 24.04.4, healthy with zero restarts. Index
 041503066af2a3325ffb122333beda4f2416ecf6795b1f10b6869635fec57043; all31 installed
 module hashes and image revision match the tested merge. Existing non-sudo app-scoped
 locked transaction succeeded; prior2.27.6/index99e03a9f remains rollback target.
@@ -4679,11 +4679,11 @@ restarts,1source discard,7posts/1recipient skip/2existing quality repairs/2start
 warnings. Short unmatched windows do not establish an error-rate improvement.
 
 Run45settled attempts, estimatedUSD0.00717635:33maintenance/USD0.003306645,
-12runtime/USD0.003869705. CoveredOctoberUSD0.36811192/2,189attempts. One unchanged
-old unsettled reservation, zero new unsettled. Existing18/2/20guard intact; estimates
+12runtime/USD0.003869705. Covered OctoberUSD0.36811192/2,189attempts. One unchanged
+old unsettled reservation, zero new unsettled. Existing18/2/20 guard intact; estimates
 are not provider billing, pre-guard spend unknown. No added infrastructure/provider.
 Private content-free refs/hashes/counts/grades in app-volume smoke-tests/2026-10-17-0100,
-0700directory/0600files, existing seven-day manual retention/withdrawal cleanup.
+0700 directory/0600 files, existing seven-day manual retention/withdrawal cleanup.
 No new raw peer persistence, human trait, historical backfill or denied-access bypass.
 
 H85 is complete as a contextual learning increment. Next: bounded H87 publication
@@ -4771,8 +4771,8 @@ Short unmatched windows do not establish an error-rate gain. The separate
 captured-send installed trial's correct substantive discard is not a gateway error.
 
 Run41settled attempts,estimatedUSD0.0083419:27maintenance/USD0.00388163,
-14runtime/USD0.00446027. CoveredOctober2,230attempts/USD0.37645382;one unchanged
-old unsettled reservation,zero new unsettled. Existing18/2/20guard intact; not
+14runtime/USD0.00446027. Covered October2,230attempts/USD0.37645382;one unchanged
+old unsettled reservation,zero new unsettled. Existing18/2/20 guard intact; not
 provider billing,pre-guard spending unknown. No added paid service or paid reply pass.
 13private content-free receipts use0700/0600, existing seven-day manual retention
 and withdrawal cleanup. Raw sources, generated answers and personal derivations from this run
@@ -4839,7 +4839,7 @@ Post census5target/7peer/3olderbot/0fresh bot across3allowed latest100/14daywind
 Latest container0errors/failures/discards/disconnects/aurora failures/restarts,
 4normal posts/1recipient skip/2startup warnings. Short windows are not error rates.
 Run22settled attempts/estimatedUSD0.08630947; covered OctoberUSD0.46276329,
-2,252attempts/one unchanged old unsettled. Existing18/2/20guard; billing unverified.
+2,252attempts/one unchanged old unsettled. Existing18/2/20 guard; billing unverified.
 Seven private content-free receipts, no raw source/answer/derived personal text.
 Both planning phases and roadmap reconciliation are in the
 [study](evaluations/2026-10-17-aurora-feature-study.md) and
@@ -4931,7 +4931,7 @@ coverage,37typedmodules,2.31.0build. Repository API reports no classic branch
 protection or active rules; required project checks were manually honored before
 exact-tested-head ordinary merge, no admin/bypass/check configuration change.
 
-Reverified pi5/aarch64/Ubuntu24.04.4, existing app-scoped locked transaction. Running
+Reverified pi5/aarch64/Ubuntu 24.04.4, existing app-scoped locked transaction. Running
 immutable indexsha256:0ceee253ba27ac8ea938ea6c171ebaf6c8681e4d9e2aaeac3fccb499ca91241a,
 ARM6417c6edd209417bbda7f5dfce0bae3587faf1b2a64751963951e728cdac6b7cb7,
 AMD642ff2622c556cd04fdaed484f1cc3e09b5934b4a3406b81efa8823a537b6d5941.
@@ -4983,8 +4983,8 @@ and notifications unchanged.
 
 Observed run window:24new settled attempts,estimatedUSD0.17429243,including the one
 uncontrolled development exchange. Maintenance6attempts/USD0.125568865; runtime18/
-USD0.048723565. Four images totalUSD0.16685. CoveredOctober2,306attempts/USD0.640949095;
-one unchanged legacy unsettled reservation,zero new unsettled. Existing18/2/20guard,
+USD0.048723565. Four images totalUSD0.16685. Covered October2,306attempts/USD0.640949095;
+one unchanged legacy unsettled reservation,zero new unsettled. Existing18/2/20 guard,
 no new paid service/provider pool. Estimates are not provider billing and pre-guard
 spend remains unknown. Content-free private refs/pass/fail receipts remain0700/0600
 on the existing app volume with manual seven-day retention/withdrawal cleanup.
@@ -5070,7 +5070,7 @@ Reconciled interrupted H95 on freshc5c1d3a. PR153/tested3191424 ordinary merge1a
 
 Actual private wake quiet/routine,next4hours; actual ownerwoodpile0to1PNG,32.574seconds,generatedlabel,inspectedpixels. Exactrequest/newprocess replay0calls/0posts. Sixproviderplansquiet/restart-safe,eighttimingcontrols pass;fourseparateprocessesoneclaim. Twelveactualgatewaycases:11functional/oneincompleteclarification,11posts/onecorrectabstention. Thirdpersonhistoricalrecap/sightingcaveats remain. Sixsyntheticclarification replays3/arm allaskwherewithidenticalrequests;actualcontextgapH97 unresolved. No newhumantrait,generalfidelitygain,humormultiplier or naturalweeklyengagementresult.
 
-Finalpost-clientactualgatewaysanity passes6.220seconds;heartbeat survives,no subsequent Discordclient. Observed0errors/failures/discards/restarts,11normalposts/1image/1recipientdecline,3warnings(twoexistingvoice-library,onesafepre-initjournalwarning).43newsettledattempts/estimatedUSD0.051090340,oneimageUSD0.04163,same18/2/20guard,twooldunsettled/0new. CoveredmonthUSD0.879996760estimate,notbilling,preguardunknown. Pre/postfourhumanwindows/eightdevpairs triages insufficient,notcausal. Sourcecensuszero7daybotactivity. H95complete;H96confirmationunvalidatedclosed,thenH93timing/variety,H92independentutility/neededcoverage;H97additionalresearch. SixdailySol/xhighscheduleunchanged.
+Finalpost-clientactualgatewaysanity passes6.220seconds;heartbeat survives,no subsequent Discordclient. Observed0errors/failures/discards/restarts,11normalposts/1image/1recipientdecline,3warnings(twoexistingvoice-library,onesafepre-initjournalwarning).43newsettledattempts/estimatedUSD0.051090340,oneimageUSD0.04163,same18/2/20 guard,twooldunsettled/0new. CoveredmonthUSD0.879996760estimate,notbilling,preguardunknown. Pre/postfourhumanwindows/eightdevpairs triages insufficient,notcausal. Sourcecensuszero7daybotactivity. H95complete;H96confirmationunvalidatedclosed,thenH93timing/variety,H92independentutility/neededcoverage;H97additionalresearch. SixdailySol/xhighscheduleunchanged.
 
 [Full protocol,results,costs and limits](evaluations/2026-10-18-outdoor-checkins-release.md),[public receipt](evaluations/2026-10-18-outdoor-checkins-release.json),[runtime PR153](https://github.com/jdegregorio/wcb-discord-bot/pull/153),[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.33.0). Final evidence is carried in a separate documentation-only PR after these results; runtime bytes remain the tested release.
 
@@ -5129,7 +5129,7 @@ partial. Initial7/8integrated intent comparison,one safe source-refresh stop,
 final isolated8/8and new-wording4/4are distinguished. Two4human-window/16dev-post
 audits both find general human comparison insufficient; no trait/fidelity gain.
 Estimated runUSD0.028396320; covered monthUSD1.030795415,2unchanged old unsettled.
-Same18/2/20guard; no newservice/pool/guild intake or rollback.
+Same18/2/20 guard; no newservice/pool/guild intake or rollback.
 
 PR156superseded/closed, H99PR157stilldraft pending rebase/fullinstalled acceptance.
 Then independent abstract/emotional/amplified-humor and original-view caption/
@@ -5202,7 +5202,7 @@ general comparison;three source-channel latest100censuses contain no seven-day
 target/bot activity. No new trait. Two actual owner/gateway baselines reproduce
 unavailable unindexed media and an incorrect seasonal photo. Six matched private
 source probes now pass3positive/3negative;all six local gates pass1,868tests/96.01%.
-CI/release/deployment/real installed acceptance remain pending. USD18/2/20guard
+CI/release/deployment/real installed acceptance remain pending. USD18/2/20 guard
 and four pixel studies/day unchanged. [Protocol/results](evaluations/2026-10-18-photo-retrieval.md).
 
 
@@ -5274,7 +5274,7 @@ feature branch. Primary untouched. No open evolution PR;previous2.38.1deployed
 but caption acceptance unresolved. Actual current question passes after context
 ages out;original failed full31row handler replay reproduces0/3. Focus-scoped
 capability context recovers3/3without weakening attribution. Existing source and
-18/2/20guard unchanged. Conditional candidate,full gates,release,real installed
+18/2/20 guard unchanged. Conditional candidate,full gates,release,real installed
 acceptance and final audit/cost remain required. [Study](evaluations/2026-10-19-photo-handler-focus.md).
 
 
@@ -5300,7 +5300,7 @@ comparisons insufficient. Next independently qualify H101/H92/H93caption/abstrac
 emotional/amplified-humor utility,then useful visual coverage/seasonal variety.
 
 Covered run USD0.035745400,covered October USD1.127253655;three
-preexisting uncertain/zero new. Existing18/2/20guard,study caps,learning/withdrawal
+preexisting uncertain/zero new. Existing18/2/20 guard,study caps,learning/withdrawal
 and six-run schedule/notifications unchanged. Private content-free receipts persist
 outside the worktree;no raw evidence or answer text in public Git or smoke files.
 No rollback/data restore. [Full evidence](evaluations/2026-10-19-photo-handler-focus.md),
@@ -5467,7 +5467,7 @@ Discord client closes. Subsequent collection uses stateless authenticated REST,
 ledger reads and health only; no later Discord client construction.
 
 Pre/post character audits:6 attributed human windows and24development posts each.
-Authenticated counts are12bot/12owner before and13bot/11owner after. The model
+Authenticated counts are12bot/12 owner before and13bot/11owner after. The model
 incorrectly reports15bot in both, corrected against authenticated rows. Unmatched
 triage flags0peculiar/1factual-overreach in each and initially5third-person posts
 after. Per-message adjudication of all13actual post-audit bot messages finds0self-
@@ -5477,7 +5477,7 @@ not a general human-style comparison or the factual-overreach flag. Three latest
 league-channel pages per audit contain0seven-day target/bot posts; sparse bounded
 coverage is not silence. No new human trait, pixel interpretation, automatic native
 pattern permission or measured general fidelity/humor multiplier. The graph keeps
-553episodes,438human sources,24native contexts,28dependencies,1,071edges,one value,
+553 episodes,438human sources,24 native contexts,28dependencies,1,071 edges,one value,
 one preference,two claims and accepted1/rejected3studies.
 
 All53run ledger attempts settle:38maintenance/USD0.010850005 and15runtime/
@@ -5487,7 +5487,7 @@ pre-guard spend unknown, not provider billing. Six old unresolved reservations
 no new pool/model/service, no extra photo studies or paid infrastructure.
 
 Content-free receipts and metadata only use private app-volume
-smoke-tests/2026-10-20-0500, verified0700directory/0600files,sevendaymanualretention
+smoke-tests/2026-10-20-0500, verified0700 directory/0600 files,sevendaymanualretention
 and withdrawal cleanup. Local QA scripts/logs/receipts live outside the managed
 worktree. No raw source/answer text, derived personal observation or screenshot is
 retained in smoke artifacts or public Git. Native/source learning and runtime
@@ -5596,7 +5596,7 @@ auxiliary closure takes2.353seconds;healthy/ready,zero observed errors/restarts.
 No measured character gain or new abstraction. H114 and post-audit unassigned
 triage flags remain unresolved; next independently qualify useful emotion,
 amplified humor and original-view context before broader coverage. Covered run
-USD0.012060320;OctoberUSD1.318135295 estimates,unchanged18/2/20guard,sixold/zeronew
+USD0.012060320;OctoberUSD1.318135295 estimates,unchanged18/2/20 guard,sixold/zeronew
 unsettled reservations. Primarycheckoutuntouched;privateevidencepreserved.
 [RuntimePR178](https://github.com/jdegregorio/wcb-discord-bot/pull/178),
 merge`cb9dbba6635a2af851da5986f3506d1ed2d45b4d`,
@@ -5614,7 +5614,24 @@ research-validity correction. Forty-four focused regressions pass. Full gates,
 CI/release/deployment and actual installed audit/gateway acceptance pending.
 [Protocol and evidence](evaluations/2026-10-20-case-audits.md).
 
-Feature qualification:45new regressions; all six gates pass,2,098tests,96.14%
-coverage,46typedmodules,2.38.9packagebuild. Four actual candidate audit cases
+Feature qualification:45new regressions; all six gates pass,2,098 tests,96.14%
+coverage,46 typedmodules,2.38.9packagebuild. Four actual candidate audit cases
 return with exact mappings and limited-reference flags. Prior malformed aggregate
 rejected; no measured reply-quality gain. Protected CI/release/install pending.
+
+
+H118 installed completion:PR180/8df9783/v2.38.9,indexe94978696c31,all46hashes
+match. Feature/main/imageCI39543230338/39543531300/39543749421pass;all six
+feature/merged gates pass2,098 tests/96.14%,46 typedmodules. Strict actual
+audits return4dev/1league cases,all limited-reference flags and zero other flags;
+prior malformed aggregate rejected. Real12 ownerprobes11 answers+recipient
+abstention;11/12semanticflags pass. Initial clarification fails knownH113;
+completed-night/currentfreshreads and supported preference(5freshsources)pass.
+Year full grounding unresolved. Finalgateway3.456sec AFTER all auxiliaryclosures,
+no furtherproductionDiscordclients. Healthy/ready/read-only,zero errors/restarts/
+discards;timeractiveenabled. Previous2.38.8retained,no rollback/datarestore.
+Graphunchanged. RunUSD 0.02369114,OctoberUSD 1.341826435estimates,sixold/zero new
+unsettled;18/2/20 guard unchanged. Thirteen private0700/0600receipts plus verification,
+no rawcontent;clone removed. No new trait/generalfidelitygain. Nextqualified
+abstract utility, then H113matchedqualification and useful linked native/visual
+coverage. [Complete evidence](evaluations/2026-10-20-case-audits.md).
