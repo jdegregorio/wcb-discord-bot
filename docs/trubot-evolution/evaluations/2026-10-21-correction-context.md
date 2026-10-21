@@ -5,7 +5,7 @@
 Base `cd71e802140f8666d0893e232705f9f1b611e333`, new managed worktree and
 `feature/trubot-daily-20261021-0900`. Primary checkout untouched. Prior runtime
 PR182 and completion PR183 are merged; three open dependency PRs are separate.
-Production2.38.10 is healthy on the authenticated pi5/aarch64/Ubuntu24.04 target.
+Production 2.38.10 is healthy on the authenticated pi5/aarch64/Ubuntu24.04 target.
 Existing app credentials and the shared maintenance ledger are reused.
 
 H121 remains a confirmed intermittent relationship-grounding defect. Local review
@@ -22,7 +22,7 @@ review is authoritative for the specific failure above. Three latest100 league
 pages contain zero seven-day target posts and one bot post; this is incomplete
 coverage, not proof of silence. No missing pixels are interpreted.
 
-H121a proposed general relation-preservation wording. A13-pair synthetic pilot
+H121a proposed general relation-preservation wording. A 13-pair synthetic pilot
 shows no qualifying gain; it also produces an unsupported reassurance. Generic
 synthetic attribution differs from authenticated production binding. Reject this
 candidate; do not treat its outputs as human evidence or a validated correction.
@@ -55,9 +55,9 @@ controls. Broader semantic failures must be reported separately.
 Eight matched synthetic pairs use the real baseline/candidate memory renderers
 and existing responder, authenticated author-scope fixtures, two invented source
 episodes, alternating AB/BA order and four controls. No Discord login, private
-source read or external scoring. The correction appears in0/4baseline versus
-4/4candidate replies. One candidate adds an unsupported emotional interpretation;
-full factual precision is3/4, not4/4. Ordinary recall, existing context, care and
+source read or external scoring. The correction appears in0/4 baseline versus
+4/4 candidate replies. One candidate adds an unsupported emotional interpretation;
+full factual precision is3/4, not 4/4. Ordinary recall, existing context, care and
 fictional-humor controls pass narrow manual checks. This small unblinded study
 establishes useful context availability, not general fidelity, emotion accuracy,
 humor amplification or a robust solution to H121.
@@ -111,14 +111,100 @@ installed actual gateway acceptance, cost and final health are recorded below wh
 completed. No source/answer/pixel text is retained in private smoke receipts.
 
 
-Feature gates pass: locked sync, Ruff format/lint, mypy46modules,2,127tests,
-96.14%branch-inclusive coverage and2.38.11wheel/sdist. Twenty new regressions.
+Feature gates pass: locked sync, Ruff format/lint, mypy 46 modules,2,127 tests,
+96.14%branch-inclusive coverage and 2.38.11 wheel/sdist. Twenty new regressions.
 An initial full run caught a source/package version mismatch, fixed before the
 successful complete rerun. Four synthetic control payloads are separately verified
 byte-identical with zero provider calls; an earlier cross-module dataclass equality
 comparison was invalid and is not used as request-equivalence evidence.
 Pre-release health: healthy/ready/read-only,zero observed errors,restarts,OOM,
 response failures or source discards. October ledger estimateUSD1.390759820;
-43maintenance+4runtime settled attempts since20:00UTC coverUSD0.005362810.
+43 maintenance+4 runtime settled attempts since20:00UTC coverUSD0.005362810.
 Seven older unresolved reservations remain untouched; pre-guard spending unknown.
-These are ledger estimates, not provider billing.18/2/20limits unchanged.
+These are ledger estimates, not provider billing.18/2/20 limits unchanged.
+
+
+## Installed completion
+
+[PR184](https://github.com/jdegregorio/wcb-discord-bot/pull/184) normal protected
+squash merge `45ed900450fa50d5ec72cdae17bca52e88a2fd6b` is published as immutable
+[v2.38.11](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.11).
+[PR CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/39668730989),
+[main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/39669146607)
+and [image CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/39669481118)
+pass. Feature and merged-main six gates both pass 2,127 tests/96.14%,46 typed modules,
+locked dependencies and 2.38.11 wheel/sdist. Runtime/source/test trees are identical
+across the tested feature and merge. Local branch cleanup initially tried to switch
+to main already held by the primary checkout; it was refused after the remote merge.
+Detached verification preserved the user's checkout. The previous09:00 thread has
+systemError and no unfinished evolution PR or separate09:00 checkout was found.
+The unique branch suffix in this13:00 run is0900; it is an isolation identifier.
+
+pi5/aarch64/Ubuntu24.04 and the app manifest are reverified before the existing
+locked pi-app deployment. Running index `sha256:972c2e0d9d04cc9485bc02684a7d2cc8bf9cdbb0accf73b5af8b781c10ca6412`;
+ARM64 `sha256:1ffbb5f5e6a6aaffd0db1bc1ca7a32eb77192a9218b30ce9f029b94e64625742`;
+AMD64 `sha256:4b4795c647f80cae8c371ec4050fb4f5429c6e4f7fd29cbae82c946a67b26437`.
+All 46 installed module hashes and package versions match the tested merged commit.
+Previous 2.38.10/index e8a26da888415d251fe67b449e694eff2b1b2c684e5f7792d51900c70bab99c3
+is retained. No sudo, Pi rebuild, unrelated service change, rollback or data restore.
+
+Authenticated real owner UI and actual main-gateway messages in the confirmed
+private two-member development general complete 14 questions:13 answers and one
+correct recipient abstention. The exact previously failed correction question now
+returns the supplied clarification. A second phrasing also passes, after the first
+answer is already in conversation; these are not two independent matched trials.
+Ordinary authored recall, five freshly checked native preference supports, broad
+supported content without routine date/storage disclaimers, exact-date honesty,
+care, celebration, invited and fresh-follow-up humor pass narrow manual checks.
+Missing place asks where; the bare place reads fresh public completed-night reports
+and does not invent a sighting. Fresh NOAA/NWS values are checked locally. This run
+does not qualify unknown-date calendar placement or solve all relationship fusion.
+
+Installed provider-disabled handler proof still has five authored passages/seven
+context rows; the relevant peer explanation exactly matches current archive text,
+authorship is verified and optional voice examples remain suppressed. All auxiliary
+Discord clients close before the final actual gateway probe, which answers in
+2.565 seconds. No further production Discord client is
+constructed. Across the13actual answers: 2.005-
+7.188 seconds, median3.580;
+no latency improvement is claimed. Final20:32:23UTC health is healthy/ready/read-only,
+zero errors, response failures, restarts, OOM or source discards. One existing shared
+quality refresh is accounted. The release timer remains active/enabled.
+
+Two additional held-out attributed source windows, from distinct exports and
+separate ordinals, pass local baseline/candidate context projection checks without
+provider calls. They cover a rules clarification and a playful question, not two
+new persona traits or measured reply-quality gains. Source adjacency remains
+context, not proof of a reply relationship. Missing pixels are not interpreted.
+
+Post character audit manually inspects six actual development cases against three
+bounded human reference windows, plus the one sparse league bot window. All six
+character comparisons remain reference-limited. One formal public-report phrase is
+a weak mechanical-language candidate; repeated celebration wording appears across
+repeated development prompts. Neither establishes a spontaneous recurring trait.
+No new source-backed memory observation, graph population or humor multiplier is
+claimed. These observations stay with H114 contextual presentation qualification;
+require varied held-outs and relevant human episodes before changing behavior.
+
+The graph remains 553 episodes/438 human sources/24 native contexts/28 dependencies,
+1,071 edges, one value/one preference/two claims and one accepted/three rejected studies.
+Full native/visual history, unknown dates and broader source interpretation remain
+limited. The explicit correction-word predicate is bounded, not a semantic intent
+classifier; ordinary stance isolation is unchanged. H121/H120 complete-episode and
+abstract utility qualification remains first, then useful amplified humor/emotion,
+linked native/visual coverage and seasonal variety. H121a wording stays rejected.
+
+Covered 20:00 UTC run window: 43 settled maintenance attempts/USD 0.004031195 and
+21 settled runtime attempts/USD 0.008646170, total USD 0.012677365. This includes normal
+runtime activity. October estimate USD 1.398074375; pre-guard
+spending unknown, not provider billing. Seven older unresolved reservations
+(one pending/six uncertain) remain untouched; no new unsettled attempt. Same 18/2/20 guard,
+existing credentials and services. No extra runtime provider pass is introduced.
+
+Twenty-two private JSON receipts, including privacy verification, use 0700 directory/
+0600 files with seven-day manual retention and withdrawal cleanup. Strict scanning
+passes after renaming a numeric answer-count field that resembled a raw-answer
+field. No raw source, answer, pixel, screenshot or new personal observation is
+retained. Build artifacts and content-free QA are preserved outside the worktree.
+Schedule remains six local 01/05/09/13/17/21 standalone Sol/xhigh runs; notifications
+are unchanged. Runtime is verified; completion notes use a separate protected PR.

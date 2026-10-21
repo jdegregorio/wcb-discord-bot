@@ -1,3 +1,13 @@
+## Explicit correction-context recall, 2.38.11
+
+After verified materialization, factual recall that explicitly asks for corrections,
+clarifications, or what was corrected/clarified keeps the existing separately
+attributed Slack neighbors and complete-or-gap bounds. Optional voice examples stay
+suppressed. Other factual requests retain H69 peer-stance isolation; source text
+cannot choose this route. Native context, source lifecycle and publication equality
+checks are unchanged. No new instruction, schema, provider pass or learning scope.
+[Validation and limitations](docs/trubot-evolution/evaluations/2026-10-21-correction-context.md).
+
 ## Selected clarification context, 2.38.10
 
 Context skill selection precedes provider-input and author-scope construction.
@@ -582,7 +592,9 @@ character cap is unchanged; renderer completeness is not full original-source co
 
 ContextMemory projects ordinary factual recall after current source materialization
 and graph selection, before serialization. It omits Slack adjacent text/context gaps
-on that route and suppresses optional voice examples. Authored paragraphs, source
+on that route and suppresses optional voice examples. Explicit correction and
+clarification recall retain the separate bounded explanation while keeping voice
+examples suppressed. Authored paragraphs, source
 metadata and graph conflict scope remain whole. Focused context/joke/explanation/
 quote/evidence requests retain the existing setup; native episodes and abstract
 projection are unchanged. This adds no provider call, storage or prompt instruction.

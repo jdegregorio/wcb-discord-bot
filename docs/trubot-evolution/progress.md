@@ -5677,12 +5677,40 @@ Primary checkout untouched. [Full evidence and limitations](evaluations/2026-10-
 
 ## 2026-10-21: H122 explicit correction-context recall
 
-Basecd71e802; isolated feature/trubot-daily-20261021-0900. Prior182/183 complete.
+Base cd71e802; isolated feature/trubot-daily-20261021-0900. Prior182/183 complete.
 Real owner/gateway correction recall fails; actual provider-disabled packet
 comparison restores seven separately attributed context rows alongside five
-unchanged authored passages. Synthetic target availability0/4to4/4, full factual
+unchanged authored passages. Synthetic target availability0/4 to 4/4, full factual
 precision3/4; four controls pass narrowly. H121a rejected, private external scoring
 blocked and not retried. Select source-availability correction, leave broader
 relation/abstract utility unresolved. Six baseline regressions fail as expected;
 feature/merged gates, release/images, installed actual gateway and final evidence
 remain required. [Full evidence](evaluations/2026-10-21-correction-context.md).
+
+
+## 2026-10-21 13:00 installed completion
+
+H122/PR184/`45ed900450fa50d5ec72cdae17bca52e88a2fd6b`/v2.38.11 is installed at
+`sha256:972c2e0d9d04cc9485bc02684a7d2cc8bf9cdbb0accf73b5af8b781c10ca6412`. Both six-gate runs pass 2,127 tests/96.14%,46 modules;
+protected PR/main/imageCI39668730989/39669146607/39669481118pass. All 46 installed
+hashes match. Actual14 owner questions give 13 answers/correct recipient abstention,
+including the same failed correction question and a clarification variant. Final
+main-gateway2.565 seconds after all auxiliary closures; healthy/ready/read-only,
+zero errors/restarts/OOM/source discards; timer active/enabled. Previous 2.38.10
+retained, no rollback/data restore. User checkout untouched; CLI cleanup refusal
+was resolved with detached verification. Prior09:00 systemError has no overlapping PR.
+
+Source availability is supported: synthetic0/4 to 4/4correction content,3/4full
+precision, four unchanged control payloads, actual5 passages plus7restoredcontext
+rows and two new held-out projection windows. Broader H121 relations/emotion,
+unknown-date chronology, abstract utility and humor multiplier remain unqualified.
+Post six-case local audit has limited references and one weak formal-report flag;
+repeated development celebration wording is not a proven spontaneous pattern.
+No new persona observation or graph population. Next complete episodic/abstract
+qualification, then useful humor/emotion and linked visual/seasonal variety.
+
+Covered window64 settled attempts/USD 0.012677365; October USD 1.398074375 estimates,
+pre-guard unknown. Seven old/zero new unsettled;18/2/20 guard unchanged.22 private
+content-free receipts0700/0600 plus preserved build/QA artifacts; no raw source,
+answer, pixels, screenshots or private clone. Six-runSol/xhigh schedule and
+notifications unchanged. [Complete validation](evaluations/2026-10-21-correction-context.md).

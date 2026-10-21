@@ -3337,10 +3337,24 @@ A new actual explicit-correction question fails, and a provider-disabled full-ha
 capture proves five authored passages lost all adjacent explanation. H122 keeps
 bounded context only for explicit correction/clarification factual requests, while
 ordinary H69 stance isolation and voice suppression remain. Eight synthetic pairs
-improve correction availability0/4to4/4, with one unsupported emotional gloss and
+improve correction availability0/4 to 4/4, with one unsupported emotional gloss and
 thus3/4full precision; four narrow controls pass. Actual handler data comparison
 restores seven context rows with identical authored statements and no provider call.
 Phase2 selects this justified source-availability correction; broader H121/H120
 semantic qualification remains first afterward, then useful abstract humor/emotion
 and linked native/visual variety. No new trait, memory population or model change.
 [Method, limits and required installed acceptance](evaluations/2026-10-21-correction-context.md).
+
+
+H122 installed result: same failed owner/gateway correction now answers with the
+separately attributed explanation; a second phrasing passes but is not independent.
+Fourteen actual questions yield13 answers/correct recipient abstention; actual
+post-source checks and final gateway after all auxiliary closures pass. Two
+additional held-out source windows verify projection only, no provider/reply gain.
+Post local six-case character review remains reference-limited, with one weak formal
+report-language candidate and repeated celebration wording across repeated dev
+prompts. Do not infer a new recurring human pattern. Keep these with H114 varied
+context qualification; H121/H120 broader relational/abstract utility stays first.
+No new trait/population, no private external scorer after rejection, no extra runtime
+provider pass. Full gates/CI/images/immutable install and cost/privacy evidence are
+recorded in the study. No full chronological recall or humor multiplier claim.
