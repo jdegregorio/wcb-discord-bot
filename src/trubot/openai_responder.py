@@ -264,6 +264,14 @@ class OpenAITruaxResponder:
         refresh_check: Callable[[], Awaitable[bool]] | None = None,
         photo_action: PhotoAction | None = None,
     ) -> str | None:
+        selected = self._context_tools.select(
+            target, mode, messages=messages, requester_user_id=requester_user_id
+        )
+        if len(selected) == 1 and selected[0].name == "clarify_up_night_location":
+            # Historical pixels do not locate a new public observation request.
+            # Keep actual human context and any explicit visual/reference focus.
+            messages = tuple(message for message in messages if message.origin != "memory")
+            photo_action = None
         model_input: ResponseInputParam = [_message_input(message) for message in messages]
         scope = memory_author_scope(messages)
         subject = preceding_human_turn(messages) if target and mode is ReplyMode.FOLLOW_UP else ""
@@ -290,9 +298,6 @@ class OpenAITruaxResponder:
             len(messages),
         )
         instructions = instructions_for(mode) + author_guidance(scope)
-        selected = self._context_tools.select(
-            target, mode, messages=messages, requester_user_id=requester_user_id
-        )
         log_reply_context(
             messages,
             selected,
