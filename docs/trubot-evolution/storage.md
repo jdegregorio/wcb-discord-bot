@@ -1476,3 +1476,16 @@ withdrawal cleanup. No raw answers/sources/derived observations/screenshots reta
 there. UUID-isolated auxiliary readiness precedes construction; final actual gateway
 follows every auxiliary closure. Code rollback preserves all source, usage and
 paid-claim state. Same runtime18/maintenance2/total20 monthly guard.
+
+
+## Maintenance heartbeat isolation, 2.38.8
+
+build_client(..., spending_purpose="maintenance") replaces only the effective
+ready_file with a unique UUID path in the process temporary directory before any
+client construction. Original Settings and the runtime heartbeat are unchanged.
+Each maintenance client removes its own marker on close, including unstarted
+clients. No private content or durable state is stored there; a killed process may
+leave an empty ephemeral marker until normal /tmp cleanup. Existing usage/source/
+withdrawal state is neither copied nor reset. This replaces reliance on every
+maintenance script manually overriding HEALTH_READY_FILE. Custom auxiliary clients
+constructed outside build_client still need an isolated path before construction.

@@ -3219,3 +3219,15 @@ new I/O. H114 abstract emotion, approved amplified humor and original-view utili
 returns to first priority, requiring complete attributed support/contrary episodes,
 non-training held-outs and pixels. Source lifecycle and 18/2/20 guard remain.
 [Full hypotheses, method, contrary evidence and release status](evaluations/2026-10-20-context-diagnostics.md).
+
+
+## 2026-10-20 17:00 Pacific: H116 maintenance readiness isolation
+
+Prior PR177/2.38.7 is merged, built and installed; its missing final acceptance
+notes remain an explicit gap. Six-window/24-development-post audit and eight new
+emotional-context windows do not qualify a recurring trait. H114 stays unresolved.
+H116 reproduces maintenance close deleting a disposable live-heartbeat fixture;
+corrected baseline five failures/one runtime pass, candidate six passes and14focused
+checks. Select automatic isolation before construction so character studies cannot
+disturb live readiness. No model/source/budget change or measured fidelity gain.
+Full release/installed completion is recorded in the [study](evaluations/2026-10-20-maintenance-isolation.md).
