@@ -3337,7 +3337,7 @@ A new actual explicit-correction question fails, and a provider-disabled full-ha
 capture proves five authored passages lost all adjacent explanation. H122 keeps
 bounded context only for explicit correction/clarification factual requests, while
 ordinary H69 stance isolation and voice suppression remain. Eight synthetic pairs
-improve correction availability0/4to4/4, with one unsupported emotional gloss and
+improve correction availability0/4 to 4/4, with one unsupported emotional gloss and
 thus3/4full precision; four narrow controls pass. Actual handler data comparison
 restores seven context rows with identical authored statements and no provider call.
 Phase2 selects this justified source-availability correction; broader H121/H120
