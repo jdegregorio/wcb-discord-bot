@@ -71,7 +71,16 @@ def test_disabled_diagnostics_do_not_inspect_context():
         logger.setLevel(old_level)
 
 
-async def test_tracing_preserves_exact_provider_request_output_and_accounting(tmp_path, caplog):
+@pytest.mark.parametrize(
+    "target,retains_history,route",
+    [
+        ("Casey: How were sky conditions last night?", False, "up_location"),
+        ("Casey: What do you remember about that scene?", True, "none"),
+    ],
+)
+async def test_tracing_preserves_exact_provider_request_output_and_accounting(
+    tmp_path, caplog, target, retains_history, route
+):
     provider = Provider([response("Which location?"), response("Which location?")])
     ledger = UsageLedger(tmp_path / "usage.sqlite3")
     responder = OpenAITruaxResponder(
@@ -90,16 +99,16 @@ async def test_tracing_preserves_exact_provider_request_output_and_accounting(tm
                     messages,
                     mode=ReplyMode.DIRECT,
                     safety_id="synthetic",
-                    target="Casey: How were sky conditions last night?",
+                    target=target,
                     photo_action=PhotoAction(AsyncMock()),
                 )
             )
     assert answers == ["Which location?", "Which location?"]
     assert provider.requests[0] == provider.requests[1]
-    assert "PRIVATE_SENTINEL" in str(provider.requests[0])
-    assert "show_source_photo" in str(provider.requests[0])
+    assert ("PRIVATE_SENTINEL" in str(provider.requests[0])) is retains_history
+    assert ("show_source_photo" in str(provider.requests[0])) is retains_history
     assert "PRIVATE_SENTINEL" not in caplog.text
-    assert caplog.text.count("routes=up_location") == 1
+    assert caplog.text.count("routes=" + route) == 1
     assert ledger.summary()["attempts"] == 2
     assert ledger.summary()["unsettled_attempts"] == 0
 

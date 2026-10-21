@@ -1,3 +1,11 @@
+## Focused location clarification, 2.38.10
+
+Unlocated last-night sky questions use actual conversation to ask for the place,
+without unrelated historical memories or old photos in the generation context.
+After the same requester supplies a supported place, the existing fresh public
+conditions read can answer. Other recall and photo routes retain their behavior.
+[Qualification and validation](docs/trubot-evolution/evaluations/2026-10-21-clarification-focus.md).
+
 ## Case-level character audits, 2.38.9
 
 Private operator audits assign fixed triage flags to every sampled bot turn and

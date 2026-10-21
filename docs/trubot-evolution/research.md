@@ -3291,3 +3291,19 @@ qualification. H113 initial clarification fails again (other eleven semantic fla
 move targeted full-packet/matched qualification ahead of broader history, without
 reviving failed prototypes. No generation, source, memory, model or spending change.
 See installed completion in the [evaluation](evaluations/2026-10-20-case-audits.md).
+
+
+## 2026-10-21 05:00: H119 selected clarification focus, H120 unresolved
+
+Actual owner/gateway missing-location questions fail twice. Correct route is selected
+with unrelated historical text and two old images; prior isolation skips memory
+images. Six matched full-packet positives give manual4/6 baseline versus6/6candidate
+location questions. Some source checks fail on transient optional setup; bounded
+exact rereads are experimental only, with no weakened or changed production gate.
+Reviewer Boolean contradictions and invalid JSON remain explicit; held-out ordinary
+requests are identical and stochastic wording cannot establish general fidelity.
+H120 complete episode setup is an unresolved prerequisite for abstract-memory
+applicability, with two expanded authentic windows and no new personal observation.
+Phase2 selects the narrow H119 correction pending complete controls/release/actual
+installed acceptance, then useful qualified abstractions before broader coverage.
+[Hypotheses, method, results and limits](evaluations/2026-10-21-clarification-focus.md).

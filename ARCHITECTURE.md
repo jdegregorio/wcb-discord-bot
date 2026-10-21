@@ -1,3 +1,13 @@
+## Selected clarification context, 2.38.10
+
+Context skill selection precedes provider-input and author-scope construction.
+Exactly the unlocated completed-night clarification route omits application-owned
+historical memory, including its images, and historical photo actions. Actual
+conversation/reference/focus pixels and recipient restraint remain. Other routes
+retain their requests; source/publication checks and the spending guard stay in
+place. The handler still performs the initial historical lookup before filtering.
+[Evidence](docs/trubot-evolution/evaluations/2026-10-21-clarification-focus.md).
+
 ## Isolated maintenance readiness, 2.38.8
 
 Maintenance clients automatically receive a unique ephemeral heartbeat before

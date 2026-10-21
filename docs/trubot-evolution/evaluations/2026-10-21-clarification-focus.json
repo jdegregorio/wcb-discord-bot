@@ -1,0 +1,498 @@
+{
+  "protocol": "h119-clarification-focus-v1",
+  "base_sha": "5287da3629cc25e481e05d5da390b93a13ff7802",
+  "positive_pairs": 6,
+  "baseline_location_questions": 4,
+  "candidate_location_questions": 6,
+  "control_pairs": 6,
+  "controls_manual_pass": 6,
+  "unmodified_control_initial_requests_identical": 5,
+  "cases": [
+    {
+      "case": "location_1",
+      "memory_packets": 1,
+      "historical_images": 2,
+      "baseline_expected_action": false,
+      "candidate_expected_action": true,
+      "same_initial_request": false,
+      "rejected_experimental_refreshes": 0,
+      "model_triage": {
+        "baseline": {
+          "appropriate_action": false,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        },
+        "candidate": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        }
+      },
+      "arms": {
+        "baseline": {
+          "answered": true,
+          "reads": [],
+          "seconds": 4.72,
+          "calls": 1
+        },
+        "candidate": {
+          "answered": true,
+          "reads": [],
+          "seconds": 3.607,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case": "location_2",
+      "memory_packets": 1,
+      "historical_images": 2,
+      "baseline_expected_action": false,
+      "candidate_expected_action": true,
+      "same_initial_request": false,
+      "rejected_experimental_refreshes": 1,
+      "model_triage": {
+        "baseline": {
+          "appropriate_action": false,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        },
+        "candidate": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": false,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        }
+      },
+      "arms": {
+        "candidate": {
+          "answered": true,
+          "reads": [],
+          "seconds": 4.185,
+          "calls": 1
+        },
+        "baseline": {
+          "answered": true,
+          "reads": [],
+          "seconds": 3.758,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case": "location_3",
+      "memory_packets": 1,
+      "historical_images": 2,
+      "baseline_expected_action": true,
+      "candidate_expected_action": true,
+      "same_initial_request": false,
+      "rejected_experimental_refreshes": 2,
+      "model_triage": {
+        "baseline": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        },
+        "candidate": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        }
+      },
+      "arms": {
+        "baseline": {
+          "answered": true,
+          "reads": [],
+          "seconds": 5.479,
+          "calls": 1
+        },
+        "candidate": {
+          "answered": true,
+          "reads": [],
+          "seconds": 8.0,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case": "location_4",
+      "memory_packets": 1,
+      "historical_images": 2,
+      "baseline_expected_action": true,
+      "candidate_expected_action": true,
+      "same_initial_request": false,
+      "rejected_experimental_refreshes": 2,
+      "model_triage": {
+        "baseline": {
+          "appropriate_action": false,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        },
+        "candidate": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        }
+      },
+      "arms": {
+        "candidate": {
+          "answered": true,
+          "reads": [],
+          "seconds": 2.492,
+          "calls": 1
+        },
+        "baseline": {
+          "answered": true,
+          "reads": [],
+          "seconds": 3.797,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case": "location_5",
+      "memory_packets": 1,
+      "historical_images": 2,
+      "baseline_expected_action": true,
+      "candidate_expected_action": true,
+      "same_initial_request": false,
+      "rejected_experimental_refreshes": 2,
+      "model_triage": {
+        "baseline": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        },
+        "candidate": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        }
+      },
+      "arms": {
+        "baseline": {
+          "answered": true,
+          "reads": [],
+          "seconds": 4.154,
+          "calls": 1
+        },
+        "candidate": {
+          "answered": true,
+          "reads": [],
+          "seconds": 3.083,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case": "location_6",
+      "memory_packets": 1,
+      "historical_images": 2,
+      "baseline_expected_action": true,
+      "candidate_expected_action": true,
+      "same_initial_request": false,
+      "rejected_experimental_refreshes": 1,
+      "model_triage": {
+        "baseline": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        },
+        "candidate": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        }
+      },
+      "arms": {
+        "candidate": {
+          "answered": true,
+          "reads": [],
+          "seconds": 10.232,
+          "calls": 1
+        },
+        "baseline": {
+          "answered": true,
+          "reads": [],
+          "seconds": 3.796,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case": "current_conditions",
+      "memory_packets": 1,
+      "historical_images": 1,
+      "baseline_expected_action": true,
+      "candidate_expected_action": true,
+      "same_initial_request": true,
+      "rejected_experimental_refreshes": 2,
+      "model_triage": {
+        "baseline": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        },
+        "candidate": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        }
+      },
+      "arms": {
+        "baseline": {
+          "answered": true,
+          "reads": [
+            "get_up_conditions"
+          ],
+          "seconds": 9.806,
+          "calls": 2
+        },
+        "candidate": {
+          "answered": true,
+          "reads": [
+            "get_up_conditions"
+          ],
+          "seconds": 15.483,
+          "calls": 2
+        }
+      }
+    },
+    {
+      "case": "completed_night",
+      "memory_packets": 1,
+      "historical_images": 2,
+      "baseline_expected_action": true,
+      "candidate_expected_action": true,
+      "same_initial_request": true,
+      "rejected_experimental_refreshes": 1,
+      "model_triage": {
+        "baseline": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        },
+        "candidate": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        }
+      },
+      "arms": {
+        "candidate": {
+          "answered": true,
+          "reads": [
+            "get_up_last_night"
+          ],
+          "seconds": 11.521,
+          "calls": 2
+        },
+        "baseline": {
+          "answered": true,
+          "reads": [
+            "get_up_last_night"
+          ],
+          "seconds": 10.159,
+          "calls": 2
+        }
+      }
+    },
+    {
+      "case": "preference",
+      "memory_packets": 1,
+      "historical_images": 1,
+      "baseline_expected_action": true,
+      "candidate_expected_action": true,
+      "same_initial_request": true,
+      "rejected_experimental_refreshes": 0,
+      "model_triage": {
+        "baseline": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        },
+        "candidate": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        }
+      },
+      "arms": {
+        "baseline": {
+          "answered": true,
+          "reads": [],
+          "seconds": 6.38,
+          "calls": 1
+        },
+        "candidate": {
+          "answered": true,
+          "reads": [],
+          "seconds": 3.84,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case": "care",
+      "memory_packets": 1,
+      "historical_images": 2,
+      "baseline_expected_action": true,
+      "candidate_expected_action": true,
+      "same_initial_request": true,
+      "rejected_experimental_refreshes": 0,
+      "model_triage": {
+        "baseline": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        },
+        "candidate": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        }
+      },
+      "arms": {
+        "candidate": {
+          "answered": true,
+          "reads": [],
+          "seconds": 4.646,
+          "calls": 1
+        },
+        "baseline": {
+          "answered": true,
+          "reads": [],
+          "seconds": 3.862,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case": "invited_humor",
+      "memory_packets": 1,
+      "historical_images": 0,
+      "baseline_expected_action": true,
+      "candidate_expected_action": true,
+      "same_initial_request": true,
+      "rejected_experimental_refreshes": 0,
+      "model_triage": {
+        "review_unavailable": "StudyResponseInvalid"
+      },
+      "arms": {
+        "baseline": {
+          "answered": true,
+          "reads": [],
+          "seconds": 1.914,
+          "calls": 1
+        },
+        "candidate": {
+          "answered": true,
+          "reads": [],
+          "seconds": 2.046,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "case": "recipient",
+      "memory_packets": 1,
+      "historical_images": 2,
+      "baseline_expected_action": true,
+      "candidate_expected_action": true,
+      "same_initial_request": false,
+      "rejected_experimental_refreshes": 1,
+      "model_triage": {
+        "baseline": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        },
+        "candidate": {
+          "appropriate_action": true,
+          "natural_brief": true,
+          "grounded": true,
+          "recipient_correct": true,
+          "no_unrelated_memory_or_photo": true
+        }
+      },
+      "arms": {
+        "candidate": {
+          "answered": false,
+          "reads": [],
+          "seconds": 3.227,
+          "calls": 1
+        },
+        "baseline": {
+          "answered": false,
+          "reads": [],
+          "seconds": 4.279,
+          "calls": 1
+        }
+      }
+    }
+  ],
+  "pilot_pairs_excluded": 1,
+  "incomplete_attempts_excluded": 3,
+  "heldout_cases": 2,
+  "heldout_initial_requests_identical": true,
+  "heldout_general_fidelity_qualified": false,
+  "new_persona_observations": 0,
+  "actual_gateway_baseline_failures": 2,
+  "raw_retained": false,
+  "production_source_gate_changed": false,
+  "experimental_exact_rereads_maximum": 3,
+  "model_review_is_acceptance_oracle": false,
+  "release_status": "pending",
+  "feature_gates": {
+    "locked_sync": true,
+    "format": true,
+    "lint": true,
+    "mypy": true,
+    "pytest": true,
+    "build": true,
+    "tests": 2107,
+    "branch_inclusive_coverage_percent": 96.14,
+    "typed_modules": 46
+  }
+}
