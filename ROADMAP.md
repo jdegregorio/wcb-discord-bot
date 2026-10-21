@@ -1,35 +1,41 @@
-# Current priority, 2026-10-21 05:00 Pacific
+# Current priority, 2026-10-21 05:00 Pacific - 2.38.10 installed
 
-H119 corrects a twice-reproduced real missing-location failure by excluding
-irrelevant historical text/pixels and photo actions from the already selected
-clarification route. Six matched full-packet positives improve4/6 to6/6 by manual
-semantic review. Source instability/reviewer errors remain explicit limitations;
-controls and release/installed acceptance are recorded in the evidence below.
-No new trait, graph population, model, prompt policy or measured general fidelity.
+H119 is complete: matched full-packet clarification improves4/6to6/6; all six
+feature/merged gates and protected PR/main/image CI pass2,107tests/96.14%,46modules.
+Actual owner/gateway verifies both repaired questions and fresh bare-place
+completions, with full incoming memory correctly filtered. Healthy immutable
+2.38.10/indexe8a26da88841; final gateway responds after all auxiliary closures.
+No new trait, graph population or general fidelity gain. The post-audit confirms
+an independent historical relation-grounding failure on an unchanged request path.
 
-1. Complete H119 through full gates/protected CI/release and actual installed
-   owner/gateway clarification plus bare-place completion. Confidence in the narrow
-   action benefit is supported by matched positives; require controls/installed
-   success before completion. No new service or paid call; existing18/2/20guard.
-2. H120/H114/H92/H93/H101/H112: qualify abstract emotional, approved amplified-humor
-   and original-view usefulness with complete attributed support/contrary episodes,
-   actual pixels and independent held-outs. So abstract memories guide natural,
-   relevant warmth and humor. Earlier H117 remains rejected; no population or
-   native-pattern permission. Confidence unresolved; existing private graph and
-   maintenance allowance. Expand omitted setup before inferring a recurring trait.
-3. Broaden useful linked native/visual coverage and seasonal variety after utility.
-   So relevant episodes and familiar views improve engagement. Require source
+1. H121: qualify relation-preserving episodic/abstract projection or a bounded
+   answer-evidence check, so separate human statements cannot become unsupported
+   personal relationships. Evidence: one actual failed broad-recall case, five
+   historical candidates/three focused windows and identical baseline/candidate
+   initial requests. Dependencies: complete authenticated support/contrary episodes,
+   source lifecycle and private held-out expectations. Accept matched reduction
+   of unsupported bindings without sacrificing naturalness, care, fictional humor,
+   uncertainty or freshness. Defect confidence high; fix unvalidated. Existing
+   maintenance allowance; measure runtime impact before rollout within18/2/20guard.
+2. H120/H114/H92/H93/H101/H112: qualify useful abstract emotion, approved amplified
+   humor and original-view context, so memories guide relevant warmth and varied
+   humor. Need complete separated supports/contraries, actual pixels and independent
+   held-outs with matched natural/grounded benefit. H117 remains rejected, no new
+   trait/population or native-pattern permission. Confidence unresolved; existing
+   private graph and allowance. Complete omitted setup before inferring a pattern.
+3. Broaden useful linked native/visual coverage and seasonal variety after utility,
+   so relevant episodes and familiar views improve engagement. Require source
    lifecycle/permission/withdrawal and held-out semantic benefit. Full history is
    incomplete. Preserve generated Michigan U.P. aurora/trail-camera scenes, natural
-   captions, selective skills/tools and four photo studies/day, with existing costs.
+   captions, selective skills/tools and four photo studies/day with existing costs.
 
-Repeated actual clarification failures move H119 ahead of broader coverage; matched
-benefit supports this narrower correction where earlier image-skipping prototypes
-did not apply. Larger architecture changes remain eligible when evidence supports
-them. Material privacy/grounding/delivery failures reorder priorities. H96 confirmed
-sightings remain closed without a qualified feed; H102 dates stay secondary.
-Preserve source correction/withdrawal, allowlists/no DMs, bot identity and six
-standalone local01/05/09/13/17/21 Sol/xhigh runs and notifications. Earlier snapshots
+H121 rises because actual source adjudication establishes a concrete grounding
+failure. The supported H119 correction remains
+installed; other routes retain identical initial requests. Larger architecture
+changes remain eligible. Material privacy/grounding/delivery failures reorder work.
+H96 sightings remain closed without a qualified feed; H102 dates remain open.
+Preserve source correction/withdrawal, allowlists/noDMs, bot identity and six local
+01/05/09/13/17/21Sol/xhigh standalone runs and notifications. Earlier snapshots
 below are historical. [Evidence](docs/trubot-evolution/evaluations/2026-10-21-clarification-focus.md).
 
 # Current priority, 2026-10-20 21:00 Pacific - 2.38.9 installed
