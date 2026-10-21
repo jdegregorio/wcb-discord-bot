@@ -3249,3 +3249,34 @@ merge`cb9dbba6635a2af851da5986f3506d1ed2d45b4d`,
 [release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.8),
 [complete evidence and limitations](evaluations/2026-10-20-maintenance-isolation.md)
 and[public acceptance metrics](evaluations/2026-10-20-maintenance-isolation.json).
+
+
+## 2026-10-20 21:00: H117 source qualification, H118 selected
+
+Before selection: production2.38.8 healthy; six archive human windows versus24
+actual development posts (12bot/12owner), three latest100 league pages with zero
+seven-day Andrew posts and one bot post. Small unmatched cohorts cannot qualify
+general fidelity. Twelve broad-rule windows plus twelve additional windows and
+three narrower complete-context windows inform H117; some overlap, so these are
+window counts, not independent episodes or individual messages. No missing pixels
+are interpreted. Independent source review rejects the narrow proposed recurring
+humor mechanism despite accepting attribution, modest scope and contrary evidence.
+The candidate remains private/offline. An actual invited-rule gateway reply fits
+without the candidate. No production abstraction or native-pattern gate change.
+
+H118 hypothesis: exact per-case review with deterministic counts prevents known
+aggregate undercounting and unassigned flags, so future abstraction/humor research
+can scrutinize each actual mismatch. Prior run audit counts11of12botposts and
+post flags lack case assignments. Existing generic study JSON only checks object
+shape at decoding. Acceptance: exact sampled case keys, strict Boolean flags, no
+unknown/raw fields or model-written aggregate counts; complete bounded messages,
+attributed human reference roles, source checks before request and after review,
+privacy-safe receipts and unchanged runtime generation. Disconfirm if malformed
+cohort reviews already fail locally. Validate actual prior malformed result,
+synthetic provider/path failures, authenticated pre/post audits and real Discord.
+No model/harness migration is justified by current evidence. Same18/2/20guard.
+
+Phase2: H118 as supported enabling prerequisite, then useful qualified abstractions
+and broader linked native/visual coverage. Keep generated U.P. aurora/trail-camera
+and selective skill/tool themes. Stronger source support and reliable matched gains
+would reopen H117; material grounding/privacy failures supersede this order.

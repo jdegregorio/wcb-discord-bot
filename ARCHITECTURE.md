@@ -680,3 +680,25 @@ requester-own-history boundary. The normal action/continuation/image/ledger boun
 remain. No schema or migration is required. Rollback is code-only; do not restore
 source, spending or paid-operation claims. Unprofiled captionless sources remain
 an explicit gap; relevant pixel captions are not proof of broader character gain.
+
+
+## Case-level character research, 2.38.9
+
+`character_audit.audit_cases` measures complete bounded case/reference packets
+inside the existing16,000-byte maintenance envelope. The provider returns fixed
+Boolean flags keyed to application-assigned case ordinals. Local validation
+requires exact cohort/flag coverage and strict Boolean types; counts derive only
+from validated rows. No generated aggregate, prose rationale, replacement, raw
+source or personal interpretation enters the receipt. A caller-supplied current
+source check runs before provider work and after review; the adapter also retains
+its pre-attempt check. Normal replies never import this maintenance module.
+
+`inspect_channel` authenticates the pinned human again, intersects configured
+channels with source scope or reverified two-member private development scope,
+and reads the latest40posts. At most four bot focuses get two preceding/one
+following posts; one to six operator-selected historical references supply radius-
+one human context. Complete text up to6,000UTF-8bytes per message is required.
+No clipping or missing-pixel interpretation; adjacency/reply and visual gaps
+remain explicit. All selected conversational contents/media signatures and archive
+contexts are checked again. No gateway, readiness file, Discord write, learning
+write, schema migration, runtime prompt or new provider allowance is introduced.
