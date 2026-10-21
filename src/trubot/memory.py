@@ -716,10 +716,15 @@ class ContextMemory:
                 )
             ]
             observations = [item for item in observations if "abstraction" not in item]
-        authored_only = _authored_recall_request(request, quotation) and any(
+        authored_recall = _authored_recall_request(request, quotation) and any(
             item["source"]["kind"] == "slack" and item["text"] for item in evidence
         )
-        if authored_only:
+        correction_context = bool(
+            re.search(
+                r"\b(?:corrections?|clarifications?|corrected|clarified)\b", request[:8000], re.I
+            )
+        )
+        if authored_recall and not correction_context:
             # Adjacency is useful for interpreting an exchange, but its stances
             # must not compete with authored facts in an ordinary recall answer.
             # Source text, qualifications, provenance and conflicts remain whole.
@@ -765,7 +770,9 @@ class ContextMemory:
 
         return RenderedMemory(
             text,
-            allow_voice_examples=not authored_only
+            # A correction request keeps its separate peer explanation, but is
+            # still factual recall. Voice examples cannot supply another stance.
+            allow_voice_examples=not authored_recall
             and not bool(abstracts and guidance)
             and any(item["text"] for item in evidence),
         )

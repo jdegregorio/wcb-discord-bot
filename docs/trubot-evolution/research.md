@@ -3325,3 +3325,22 @@ without new provider calls. Keep the narrow correction; leave H121 unvalidated u
 matched benefit. Then H120/H114 useful abstractions, followed by linked/visual
 coverage and seasonal variety. Same18/2/20guard, no new observation/population.
 [Complete installed outcome](evaluations/2026-10-21-clarification-focus.md).
+
+
+## 2026-10-21: H121a rejected; H122 source-context correction
+
+Phase1 local attributed source review confirms intermittent relation fusion; three
+fresh actual recall probes pass narrowly. General wording fails synthetic
+qualification and is removed. External private transcript scoring is rejected by
+automatic approval review; no workaround or private external scorer is used.
+A new actual explicit-correction question fails, and a provider-disabled full-handler
+capture proves five authored passages lost all adjacent explanation. H122 keeps
+bounded context only for explicit correction/clarification factual requests, while
+ordinary H69 stance isolation and voice suppression remain. Eight synthetic pairs
+improve correction availability0/4to4/4, with one unsupported emotional gloss and
+thus3/4full precision; four narrow controls pass. Actual handler data comparison
+restores seven context rows with identical authored statements and no provider call.
+Phase2 selects this justified source-availability correction; broader H121/H120
+semantic qualification remains first afterward, then useful abstract humor/emotion
+and linked native/visual variety. No new trait, memory population or model change.
+[Method, limits and required installed acceptance](evaluations/2026-10-21-correction-context.md).

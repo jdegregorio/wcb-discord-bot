@@ -1,3 +1,12 @@
+## Explicit correction recall, 2.38.11
+
+Requests such as `What clarification do you remember about the reservation?`
+keep the bounded historical explanation beside the original statement, with
+speaker attribution preserved. Ordinary factual recall retains its peer-stance
+filter. This fixes missing context for explicit correction questions; broader
+relationship grounding remains under evaluation.
+[Qualification and limitations](docs/trubot-evolution/evaluations/2026-10-21-correction-context.md).
+
 ## Focused location clarification, 2.38.10
 
 Unlocated last-night sky questions use actual conversation to ask for the place,

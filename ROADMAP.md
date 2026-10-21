@@ -1,3 +1,40 @@
+# Current priority, 2026-10-21 - correction-context qualification
+
+H122 repairs a reproduced source-routing omission: explicit correction and
+clarification recall can retain needed, separately attributed neighboring text.
+Five actual authored passages remain identical; seven context rows are restored
+with zero provider calls in handler comparison. Synthetic correction availability
+improves0/4to4/4; one candidate emotional gloss limits full precision to3/4.
+Ordinary stance/context/care/humor controls pass narrowly. This is a justified
+source-availability correction, not a solution to intermittent H121 fusion.
+H121a general wording is rejected; private provider scoring was blocked, so
+qualification uses synthetic comparisons, local source review and real gateway
+acceptance. No new trait, graph population, model, schema or provider pass.
+
+1. H121/H120 complete episode and relation-grounding qualification, so useful
+   abstract recall preserves supported bindings and expressed uncertainty. Need
+   attributed supports/contraries, held-outs, source lifecycle and matched semantic
+   benefit, then actual gateway checks. Defect confidence high, solution unresolved;
+   existing private graph and maintenance allowance. Further architecture remains
+   eligible when demonstrated limits justify it.
+2. H114/H92/H93/H101/H112 useful abstract emotion, approved amplified humor and
+   original-view applicability, so warmth and jokes fit their context. Require
+   complete separated source setup, contrary cases, pixels where needed and
+   matched held-out utility. Confidence unresolved; H117 rejected, no new native
+   pattern permission or personal observation. Same storage and operating budget.
+3. Useful linked native/visual history and seasonal variety, so connected episodes
+   and familiar views improve engagement. Accept provenance/lifecycle/permission
+   continuity and measured conversational utility, with honest incomplete coverage.
+   Preserve generated Michigan U.P. aurora/trail-camera scenes, natural captions,
+   selective tools and four photo studies/day. No new service or spending pool.
+
+H122 precedes broader qualification because a requested correction was removed
+before generation. Material grounding/privacy/delivery failures change this order.
+H96 sightings remain closed without a qualified feed; H102 dates stay secondary.
+Same18runtime/2maintenance/20total guard, source withdrawal, allowlists/no DMs, bot
+identity, six local01/05/09/13/17/21Sol/xhigh runs and notifications. Release and
+installed evidence must be completed in the [study](docs/trubot-evolution/evaluations/2026-10-21-correction-context.md). Earlier snapshots below are historical.
+
 # Current priority, 2026-10-21 05:00 Pacific - 2.38.10 installed
 
 H119 is complete: matched full-packet clarification improves4/6to6/6; all six

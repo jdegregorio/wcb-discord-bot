@@ -5673,3 +5673,16 @@ estimates,pre-guard unknown. Six old plus one new unresolved, no clearing;18/2/2
 limits unchanged.19private receipts+privacyverification0700/0600/no rawfields,
 no source/answer/pixel persistence,seven-daymanualretention/withdrawalcleanup.
 Primary checkout untouched. [Full evidence and limitations](evaluations/2026-10-21-clarification-focus.md).
+
+
+## 2026-10-21: H122 explicit correction-context recall
+
+Basecd71e802; isolated feature/trubot-daily-20261021-0900. Prior182/183 complete.
+Real owner/gateway correction recall fails; actual provider-disabled packet
+comparison restores seven separately attributed context rows alongside five
+unchanged authored passages. Synthetic target availability0/4to4/4, full factual
+precision3/4; four controls pass narrowly. H121a rejected, private external scoring
+blocked and not retried. Select source-availability correction, leave broader
+relation/abstract utility unresolved. Six baseline regressions fail as expected;
+feature/merged gates, release/images, installed actual gateway and final evidence
+remain required. [Full evidence](evaluations/2026-10-21-correction-context.md).
