@@ -1,5 +1,13 @@
 # Current priority, 2026-10-20 17:00 Pacific
 
+Installed2.38.8 completion: all six feature/merged gates and protected PR/main/image
+CI pass;45installed hashes match. Actual lifecycle isolation preserves the live
+heartbeat, and12owner/gateway probes give11replies plus correct recipient abstention.
+Final main-gateway answer follows all auxiliary closures;healthy/ready,zero observed
+errors/restarts. No measured character gain or new trait. Post audit has unassigned
+triage flags; keep semantic adjudication and H114 usefulness unresolved. Covered run
+USD0.012060320,OctoberUSD1.318135295 estimates;18/2/20guard unchanged.
+
 H116 isolates maintenance-client readiness automatically before construction. The
 installed baseline erases a disposable heartbeat on close; the actual live marker
 is preserved throughout reproduction. This is enabling reliability work so
