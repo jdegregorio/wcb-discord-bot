@@ -1489,3 +1489,26 @@ leave an empty ephemeral marker until normal /tmp cleanup. Existing usage/source
 withdrawal state is neither copied nor reset. This replaces reliance on every
 maintenance script manually overriding HEALTH_READY_FILE. Custom auxiliary clients
 constructed outside build_client still need an isolated path before construction.
+
+
+## Case-level audit operation, 2.38.9
+
+`trubot.character_audit.inspect_channel` is the authenticated maintenance API.
+Use an existing maintenance-purpose client and ledger; supply configured channel
+allowlist, development guild ID and current private Slack digest/ordinal refs.
+It never starts a gateway or sends Discord messages. Maintenance construction
+automatically isolates readiness. Never turn development messages into learning.
+
+The returned content-free receipt includes local case ordinals, fixed flags and
+deterministic counts plus private message/source reference mappings. Store only
+these receipts under the existing app-volume smoke-tests directory with0700/0600,
+manual seven-day retention and withdrawal cleanup. Never store raw source/answer
+text, private interpretations or screenshots there. This run uses
+smoke-tests/2026-10-20-2100. The function does not persist or log its payload.
+Its low-level `audit_cases` interface requires a trusted current-source callback;
+a caller must establish attribution and permission before supplying human rows.
+
+These are small bounded, unmatched samples, no image pixels or fetched reply
+targets. Historical dates remain unknown. Each flag needs case review; no
+automatic persona change or human trait follows from a model judgment. Code-only
+rollback to2.38.8 removes this operator API; preserve source/spending/claim state.

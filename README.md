@@ -1,3 +1,13 @@
+## Case-level character audits, 2.38.9
+
+Private operator audits assign fixed triage flags to every sampled bot turn and
+derive counts locally. Missing cases, extra fields, non-Boolean flags, changed
+sources and oversized complete context stop the review. Authenticated channel
+reads retain runtime allowlists and the two-member development-server boundary.
+This enables inspectable character research; model triage does not establish
+human fidelity or alter normal replies.
+[Method and validation](docs/trubot-evolution/evaluations/2026-10-20-case-audits.md).
+
 ## Isolated maintenance readiness, 2.38.8
 
 Maintenance clients automatically receive a unique ephemeral heartbeat before

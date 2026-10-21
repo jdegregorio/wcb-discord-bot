@@ -5603,3 +5603,18 @@ merge`cb9dbba6635a2af851da5986f3506d1ed2d45b4d`,
 [release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.8),
 [complete evidence and limitations](evaluations/2026-10-20-maintenance-isolation.md)
 and[public acceptance metrics](evaluations/2026-10-20-maintenance-isolation.json).
+
+
+## 2026-10-20 21:00 Pacific: H118 case-level audit validity
+
+Basef1379e1; isolated feature/trubot-daily-20261020-2100. H117 source review rejects
+the proposed humor mechanism and six primary matched pairs miss declared benefit.
+No production population. Ship H118 exact per-case triage/counts as an observed
+research-validity correction. Forty-four focused regressions pass. Full gates,
+CI/release/deployment and actual installed audit/gateway acceptance pending.
+[Protocol and evidence](evaluations/2026-10-20-case-audits.md).
+
+Feature qualification:45new regressions; all six gates pass,2,098tests,96.14%
+coverage,46typedmodules,2.38.9packagebuild. Four actual candidate audit cases
+return with exact mappings and limited-reference flags. Prior malformed aggregate
+rejected; no measured reply-quality gain. Protected CI/release/install pending.
