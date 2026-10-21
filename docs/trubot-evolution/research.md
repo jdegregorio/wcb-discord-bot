@@ -3348,7 +3348,7 @@ and linked native/visual variety. No new trait, memory population or model chang
 
 H122 installed result: same failed owner/gateway correction now answers with the
 separately attributed explanation; a second phrasing passes but is not independent.
-Fourteen actual questions yield13answers/correct recipient abstention; actual
+Fourteen actual questions yield13 answers/correct recipient abstention; actual
 post-source checks and final gateway after all auxiliary closures pass. Two
 additional held-out source windows verify projection only, no provider/reply gain.
 Post local six-case character review remains reference-limited, with one weak formal
