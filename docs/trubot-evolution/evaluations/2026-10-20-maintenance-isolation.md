@@ -109,3 +109,92 @@ remain outside managed worktrees. Final completion evidence is appended below.
 Feature gates pass: locked all-groups sync, formatting, lint, strict typing of45
 modules,2,053tests/96.08%branch-inclusivecoverage and2.38.8sdist/wheel.
 No failures or flakiness are accepted. No source or usage schema changes.
+
+
+## Installed completion
+
+[Runtime PR178](https://github.com/jdegregorio/wcb-discord-bot/pull/178) is merged
+through protection as `cb9dbba6635a2af851da5986f3506d1ed2d45b4d`.
+Feature CI39519893797, main CI39520185050 and image CI39520404371 all pass.
+All six gates also pass on merged runtime:2,053tests,96.08%branch-inclusivecoverage,
+45typedmodules and2.38.8sdist/wheel.
+[Immutable release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.8).
+
+Verified pi5/aarch64/Ubuntu24.04 and current app manifest before the existing
+non-sudo locked pi-app transaction. Running immutable index
+`sha256:bf7c4adf8fae4949d2c7bcb67d35aa0124eccdb1eb26947bc8b35de84a10a80e`; ARM64 `sha256:4708aa106431ce616ad0583bedb5abad0a35452dac486d6270f88c0652d4bfde`;
+AMD64 `sha256:8f7f22b64cd19a4c4ea170c2573ffd07498f0c08642e30c3a994b53d6a7e29d1`. All45installed source hashes and version
+match the tested merge. Previous2.38.7/index
+`sha256:1ed6c21b9de20af5511b956bc49c644337681e2d6242fd71bfce26174139c16a`
+is retained for rollback. No source, usage or paid-claim restoration.
+
+Installed lifecycle acceptance passes: a disposable heartbeat survives maintenance
+construction/close, original settings stay identical, two maintenance clients have
+distinct paths, closing one preserves the other, both own markers are removed,
+and the real main heartbeat remains ready after all closures. Zero provider calls,
+Discord writes or additional gateway sessions in that lifecycle acceptance.
+
+Actual owner/gateway cohort in the reverified two-member development server:
+12requests,11answers and one correct other-recipient abstention. Fictional humor,
+requested new comic idea, hypothetical care, celebration, supported particular
+preference, natural broad-memory wording and exact-date honesty pass. Five fresh
+authenticated human sources support the particular preference; no new belief or
+strength is inferred. Broad-year full content/calendar grounding remains unresolved:
+that control tests wording only. Current public context, initial location
+clarification and bare-location completed-night read pass. The returned regional
+content agrees with fresh reports and does not invent a sighting. Twelve explicit
+semantic review flags pass; single-model review remains fallible.
+
+The final actual main-gateway probe is sent after all auxiliary clients close and
+answers in2.353seconds. No Discord client is constructed afterwards. Later evidence
+uses only stateless Bot REST, health/files and ledger reads. Installed reply
+latencies2.345-12.045seconds,median4.595; no performance gain is claimed. The one
+pre-release celebration probe also received fitting brief warmth. These controls
+are not spontaneous league engagement or Andrew learning evidence.
+
+Post audit repeats six human windows and24development posts (12bot/12owner), with
+the same sparse three-page league census. Triage flags two possible peculiar posts
+and three third-person references, versus one possible peculiar flag before. Those
+aggregate labels do not identify a self-narration defect; requested fictional
+subjects also use third person. Direct inspection of the smoke replies and their
+case review does not establish a new meaningful character mismatch. Keep the
+unassigned triage discrepancy unresolved rather than selecting another persona
+change or claiming a gain. Both cohorts are small, unmatched, partly truncated and
+reviewed by one model; pre audit also undercounts bot posts. The separate review of
+the one actual league post flags zero peculiar/mechanical/unsupported-personal or
+timing issues, still insufficient for a general character comparison.
+
+Two authenticated human held-outs are separated from the audit, eight new study
+anchors and static examples. Four generated answers pass natural brevity,
+contextual fit and factual restraint. Each pair has identical initial provider
+request hashes across baseline/release. The correction changes readiness only;
+these stochastic no-op controls show no causal character benefit. They are captured
+responses, not actual gateway tests, and do not qualify a human abstraction.
+
+Graph unchanged:553episodes,438human-source nodes,24native contexts,28dependencies,
+1,071edges,one value,one preference,two claims;one accepted/three rejected studies.
+No new human trait, graph population or native automatic-pattern permission.
+H116 is supported enabling reliability work. H114 usefulness and the unassigned
+triage discrepancy remain research; full native/visual history stays incomplete.
+
+Final observed health at2026-10-21T00:24:42.577724+00:00:healthy,Discord-ready,read-only,zero
+restarts/OOM/errors/reply failures/unhandled exceptions/source-continuity warnings
+or private-source discards. One normal quality repair and one declined follow-up
+are recorded. Timer remains active/enabled. No rollback was required.
+
+Covered run window:27settled attempts (10maintenance/USD0.002078505,
+17runtime/USD0.009981815),totalUSD0.012060320. CoveredOctoberUSD1.318135295,
+estimates rather than provider billing; pre-guard spending remains unknown.
+Six old unresolved reservations (one pending/five uncertain),zero new. Existing
+18runtime/2maintenance/20total guard, four photo studies/day and no paid infrastructure.
+
+Fourteen private content-free JSON receipts pass0700directory/0600file and forbidden
+raw-key checks; a fifteenth receipt records that verification. Existing manual
+seven-day retention and withdrawal cleanup apply. No source excerpts, generated
+answers, personal derivations or screenshots are persisted in smoke artifacts.
+A local receipt collector initially used the preceding run's QA directory; current
+receipts are moved to the correct run and11prior app-volume receipts restore the
+prior copies. No production source/state changed. Local QA evidence stays in
+/private/tmp/trubot-20261020-1700 outside the managed worktree, with private modes.
+Final documentation PR/CI and managed-worktree cleanup are recorded in automation
+memory. Primary checkout untouched.

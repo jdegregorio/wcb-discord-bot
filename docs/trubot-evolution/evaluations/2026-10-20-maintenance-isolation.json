@@ -1,0 +1,258 @@
+{
+  "run": "2026-10-20 17:00 Pacific",
+  "hypotheses": {
+    "H114": "unresolved; no population",
+    "H116": "supported enabling reliability correction"
+  },
+  "base": "8fb108149853f8b619ab1cc4e9a819504e5e50b2",
+  "feature": "087e7817c6dc1c449e8f963ced37bedb793f2523",
+  "runtime_merge": "cb9dbba6635a2af851da5986f3506d1ed2d45b4d",
+  "runtime_pr": 178,
+  "release": "v2.38.8",
+  "ci": {
+    "feature": 39519893797,
+    "main": 39520185050,
+    "image": 39520404371
+  },
+  "gates": {
+    "feature": "all six passed",
+    "merged": "all six passed",
+    "tests": 2053,
+    "branch_inclusive_coverage": 96.08,
+    "typed_modules": 45
+  },
+  "baseline_lifecycle": {
+    "failing": 5,
+    "runtime_control_passed": 1,
+    "production_heartbeat_untouched": true
+  },
+  "installed_lifecycle": {
+    "synthetic_heartbeat_preserved": true,
+    "maintenance_path_isolated": true,
+    "original_settings_unchanged": true,
+    "main_heartbeat_preserved": true,
+    "main_discord_ready": true,
+    "provider_calls": 0,
+    "discord_writes": 0,
+    "gateway_started": false,
+    "concurrent_client_survives": true,
+    "distinct_paths": true,
+    "own_paths_cleaned": true,
+    "main_discord_ready_after_all_closures": true
+  },
+  "image": {
+    "at": "2026-10-21T00:19:33.685609+00:00",
+    "tag": "2.38.8",
+    "index": "sha256:bf7c4adf8fae4949d2c7bcb67d35aa0124eccdb1eb26947bc8b35de84a10a80e",
+    "platforms": {
+      "amd64": "sha256:8f7f22b64cd19a4c4ea170c2573ffd07498f0c08642e30c3a994b53d6a7e29d1",
+      "arm64": "sha256:4708aa106431ce616ad0583bedb5abad0a35452dac486d6270f88c0652d4bfde"
+    }
+  },
+  "installed_hashes": {
+    "modules": 45,
+    "all_match": true
+  },
+  "gateway": {
+    "requests": 12,
+    "replies": 11,
+    "abstentions": 1,
+    "latency_seconds": {
+      "min": 2.345,
+      "max": 12.045,
+      "median": 4.595
+    },
+    "final_after_aux_closures": true,
+    "final_reply_seconds": 2.353,
+    "run_estimated_usd": 0.01206032,
+    "covered_month_usd": 1.318135295
+  },
+  "semantic_review": {
+    "clarification_asks_place": true,
+    "location_matches_fresh_reports": true,
+    "current_matches_fresh_reports": true,
+    "baseball_supported_without_invented_strength": true,
+    "ordinary_recall_has_no_stock_metadata_disclaimer": true,
+    "exact_date_does_not_fabricate": true,
+    "joke_fits_fictional_setup": true,
+    "different_joke_adds_idea": true,
+    "care_fits": true,
+    "celebration_fits": true,
+    "recipient_abstains": true,
+    "natural_brief_no_machinery": true
+  },
+  "pre_audit": {
+    "human_windows": 6,
+    "development_posts": 24,
+    "authenticated_post_counts": {
+      "bot": 12,
+      "operator": 12
+    },
+    "result": {
+      "sampled_bot_posts": 11,
+      "peculiar_posts": 1,
+      "third_person_posts": 0,
+      "mechanical_gap_posts": 0,
+      "factual_overreach_posts": 0,
+      "human_comparison_sufficient": false
+    },
+    "limitations": [
+      "small_unmatched_cohorts",
+      "unblinded_single_model",
+      "truncated_context",
+      "no_new_persona_trait",
+      "no_causal_general_fidelity_claim"
+    ]
+  },
+  "post_audit": {
+    "human_windows": 6,
+    "development_posts": 24,
+    "authenticated_post_counts": {
+      "bot": 12,
+      "operator": 12
+    },
+    "result": {
+      "sampled_bot_posts": 12,
+      "peculiar_posts": 2,
+      "third_person_posts": 3,
+      "mechanical_gap_posts": 0,
+      "factual_overreach_posts": 0,
+      "human_comparison_sufficient": false
+    },
+    "limitations": [
+      "small_unmatched_cohorts",
+      "unblinded_single_model",
+      "truncated_context",
+      "no_new_persona_trait",
+      "no_causal_general_fidelity_claim"
+    ]
+  },
+  "heldout": {
+    "cases": 2,
+    "both_arms_natural_fitting_restrained": true,
+    "identical_initial_requests": true,
+    "actual_gateway": false,
+    "no_causal_quality_claim": true
+  },
+  "graph_counts": {
+    "schema": 1,
+    "nodes": {
+      "captured_human": 11,
+      "claim": 2,
+      "concept": 4,
+      "episode": 553,
+      "human_source": 438,
+      "native_context": 24,
+      "native_context_dependency": 28,
+      "person": 1,
+      "preference": 1,
+      "value": 1,
+      "visual": 96
+    },
+    "edges": 1071,
+    "studies": {
+      "accepted": 1,
+      "rejected": 3
+    },
+    "study_vetoes": 0,
+    "checkpoints": 8
+  },
+  "health": {
+    "at": "2026-10-21T00:24:42.577724+00:00",
+    "image": "ghcr.io/jdegregorio/wcb-discord-bot@sha256:bf7c4adf8fae4949d2c7bcb67d35aa0124eccdb1eb26947bc8b35de84a10a80e",
+    "healthy": true,
+    "oom_killed": false,
+    "restarts": 0,
+    "read_only": true,
+    "revision": "cb9dbba6635a2af851da5986f3506d1ed2d45b4d",
+    "started_at": "2026-10-21T00:20:07.052362011Z",
+    "readiness": true,
+    "errors": 0,
+    "response_failures": 0,
+    "unhandled": 0,
+    "source_continuity_warnings": 0,
+    "private_source_discards": 0,
+    "quality_repairs": 1,
+    "declined_followups": 1,
+    "diagnostic_events": 12,
+    "diagnostic_routes": {
+      "none": 9,
+      "up_location": 1,
+      "up_current": 1,
+      "up_last_night": 1,
+      "other": 0
+    },
+    "memory_states": {
+      "unavailable": 0,
+      "identity_unverified": 0,
+      "scope_denied": 0,
+      "assembled": 22
+    },
+    "public_context_reads": {
+      "get_up_conditions": 1,
+      "get_up_last_night": 1
+    }
+  },
+  "cost": {
+    "run": [
+      {
+        "purpose": "maintenance",
+        "status": "settled",
+        "attempts": 10,
+        "covered_usd": 0.002078505
+      },
+      {
+        "purpose": "runtime",
+        "status": "settled",
+        "attempts": 17,
+        "covered_usd": 0.009981815
+      }
+    ],
+    "month": {
+      "month": "2026-10",
+      "coverage_start": "2026-10-06T08:13:17.114927+00:00",
+      "timezone": "UTC",
+      "pricing_version": "openai-standard-2026-10-06-cache-write-upper-bound",
+      "estimated_usd": 1.318135295,
+      "runtime_usd": 0.50583578,
+      "maintenance_usd": 0.812299515,
+      "monthly_limit_usd": 20,
+      "runtime_limit_usd": 18,
+      "maintenance_limit_usd": 2,
+      "attempts": 3341,
+      "input_tokens": 11443808,
+      "cached_input_tokens": 6803367,
+      "output_tokens": 129970,
+      "unsettled_attempts": 6,
+      "pre_guard_spend": "unknown; not included"
+    },
+    "unsettled_before": [
+      [
+        "pending",
+        1
+      ],
+      [
+        "uncertain",
+        5
+      ]
+    ],
+    "new_unsettled": 0,
+    "not_provider_billing": true
+  },
+  "privacy": {
+    "raw_retained": false,
+    "private_receipts_checked": 14,
+    "receipt_count": 15,
+    "private_modes": true,
+    "manual_retention_days": 7
+  },
+  "limitations": [
+    "no_measured_reply_quality_gain",
+    "small_unmatched_audits",
+    "unassigned_post_triage_flags",
+    "single_model_review",
+    "full_native_visual_history_incomplete",
+    "broad_year_full_grounding_unresolved",
+    "manual_custom_clients_outside_builder_still_need_isolated_readiness"
+  ]
+}

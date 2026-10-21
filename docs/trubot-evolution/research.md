@@ -3231,3 +3231,21 @@ corrected baseline five failures/one runtime pass, candidate six passes and14foc
 checks. Select automatic isolation before construction so character studies cannot
 disturb live readiness. No model/source/budget change or measured fidelity gain.
 Full release/installed completion is recorded in the [study](evaluations/2026-10-20-maintenance-isolation.md).
+
+
+## 2026-10-20 17:00 installed completion
+
+H116 is released and installed as2.38.8. All six feature/merged gates, protected
+PR/main/image CI,45module hashes, lifecycle isolation and12actual owner/gateway
+controls pass (11replies,one recipient abstention). Final main answer after every
+auxiliary closure takes2.353seconds;healthy/ready,zero observed errors/restarts.
+No measured character gain or new abstraction. H114 and post-audit unassigned
+triage flags remain unresolved; next independently qualify useful emotion,
+amplified humor and original-view context before broader coverage. Covered run
+USD0.012060320;OctoberUSD1.318135295 estimates,unchanged18/2/20guard,sixold/zeronew
+unsettled reservations. Primarycheckoutuntouched;privateevidencepreserved.
+[RuntimePR178](https://github.com/jdegregorio/wcb-discord-bot/pull/178),
+merge`cb9dbba6635a2af851da5986f3506d1ed2d45b4d`,
+[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.38.8),
+[complete evidence and limitations](evaluations/2026-10-20-maintenance-isolation.md)
+and[public acceptance metrics](evaluations/2026-10-20-maintenance-isolation.json).
