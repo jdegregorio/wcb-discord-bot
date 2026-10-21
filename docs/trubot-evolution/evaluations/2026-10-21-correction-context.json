@@ -1,0 +1,23 @@
+{
+  "protocol": "h122-correction-context-v1",
+  "base_sha": "cd71e802140f8666d0893e232705f9f1b611e333",
+  "synthetic_positive_pairs": 4,
+  "baseline_correction_available": 0,
+  "candidate_correction_available": 4,
+  "candidate_full_factual_precision": 3,
+  "synthetic_controls": 4,
+  "control_semantic_passes": 4,
+  "control_payloads_identical": 4,
+  "actual_handler_authored_passages": 5,
+  "actual_baseline_adjacent_rows": 0,
+  "actual_candidate_adjacent_rows": 7,
+  "actual_authored_text_identical": true,
+  "handler_probe_provider_calls": 0,
+  "private_external_scoring_executed": false,
+  "general_fidelity_qualified": false,
+  "new_persona_traits": 0,
+  "runtime_extra_provider_calls": 0,
+  "feature_tests": 2127,
+  "coverage_percent": 96.14,
+  "installed_acceptance": "pending"
+}
