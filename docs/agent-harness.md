@@ -1,28 +1,37 @@
-# Current priority, 2026-10-20 21:00 Pacific
+# Current priority, 2026-10-20 21:00 Pacific - 2.38.9 installed
 
-H117 narrow humor abstraction remains unqualified: independent source review
-rejects its proposed recurring mechanism. No production population is authorized
-by this experiment. The actual baseline invited-rule joke already fits its setup.
+H118 complete: protected PR/main/image CI and all six feature/merged gates pass
+(2,098 tests/96.14% coverage);46 installed hashes match. Exact per-case audits return
+four development/one league case with limited-evidence flags. Old undercount is rejected.
+Actual12 owner probes give11 answers/correct recipient abstention; initial location
+clarification fails known H113, while bare-location/current fresh reads pass.
+Final gateway responds after all auxiliary closures; healthy/ready,zero errors,
+restarts or discards. No measured character gain or new trait. Covered runUSD 0.02369114,
+OctoberUSD 1.341826435estimates;18/2/20 guard unchanged.
 
-1. H118: ship strict case-level character-audit review so every flag belongs to a
-   sampled bot turn and incomplete or malformed reviews cannot become counts.
-   Evidence: prior audit undercounts twelve bot posts as eleven and produces
-   unassigned flags. Accept exact cohort coverage, typed fixed flags, complete
-   bounded context, current source checks and content-free results. No behavioral
-   gain or new human trait is claimed. Existing maintenance ledger; no new service.
-2. H114/H92/H93/H101/H112: qualify useful abstract emotion, amplified humor and
-   original-view context using separated attributed support, contrary episodes,
-   human held-outs, pixels when relevant and matched semantic benefit. H117 needs
-   stronger support before another rollout attempt; plausible prose is insufficient.
+1. H114/H92/H93/H101/H112: qualify useful abstract emotion, approved amplified
+   humor and original-view context so replies become more faithful and varied.
+   Need separated attributed supports, contrary episodes, independent held-outs,
+   actual pixels where relevant and matched natural/grounded benefit. H117 narrow
+   interpretation is rejected for rollout; stronger human evidence must precede
+   another trial. Confidence unresolved; existing private graph/maintenance pool.
+2. H113 targeted qualification moves ahead of broader coverage after the new
+   actual missed clarification. Require verified full source packets, controlled
+   matched routing/response improvement and real owner/gateway acceptance. Prior
+   unsuccessful prototypes stay rejected; no unvalidated prompt/model change.
+   Existing diagnostics and case mappings enable study, not a claimed fix.
 3. Broaden useful linked native/visual coverage and seasonal variety after utility.
+   Accept supported connected episodes, honest gaps and correction/withdrawal
+   lifecycle; validate fresh-source/pixel and held-out conversational benefit.
    Retain generated Michigan U.P. aurora/trail-camera scenes and selective tools.
-   H113 requires verified full packets and matched benefit; H96 remains closed
-   without a qualified confirmation feed. Exact dates remain secondary.
+   Existing four photo studies/day, private volume and spending guard; no service.
 
-H118 is a demonstrated validity prerequisite, not a new prompt or model setting.
-Material grounding, privacy or delivery failures change this order. Preserve
-withdrawal, allowlists/no DMs, USD18 runtime/2 maintenance/20 total and six local
-01/05/09/13/17/21 standalone Sol/xhigh runs with existing notifications.
+H118 is enabling research validity. Source interpretation and reviewer judgments
+remain fallible. Material grounding/privacy/delivery failures change priority;
+measured matched benefit reopens a behavioral candidate. H96 confirmed sightings
+stay closed without a qualified feed; H102 dates remain secondary. Preserve
+allowlists/no DMs, source lifecycle, six local 01/05/09/13/17/21 Sol/xhigh standalone
+runs and notifications. [Evidence](trubot-evolution/evaluations/2026-10-20-case-audits.md). Earlier snapshots below are historical.
 
 # Current priority, 2026-10-20 17:00 Pacific
 
