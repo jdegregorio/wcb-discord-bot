@@ -3358,3 +3358,17 @@ context qualification; H121/H120 broader relational/abstract utility stays first
 No new trait/population, no private external scorer after rejection, no extra runtime
 provider pass. Full gates/CI/images/immutable install and cost/privacy evidence are
 recorded in the study. No full chronological recall or humor multiplier claim.
+
+
+## 2026-10-21 17:00 Pacific: H123 rejected, H124 selected
+
+Two phases complete before selection. H123 compares none/180, none/512 and low/512
+with identical attributed synthetic inputs and rotating order: every arm8/10factual,
+2/2narrow controls, no qualifying gain. Do not change reasoning or token ceilings.
+H124 is a reproduced completion-transaction defect: a real owner creative prompt
+fails with an unused photo offer; three actual synthetic initial turns hit the cap,
+one story returns partial. Revised candidate completes3/3 through one shared bounded
+rewrite. Hold-outs/gates/actual installed acceptance remain required. No new persona
+claim or graph population. Numeric source audit covers3attributed windows and14bot
+turns; detailed raw-output audit was rejected, so new full human semantic comparison
+is unavailable. [Full hypothesis fields, phase2 and limitations](evaluations/2026-10-21-complete-replies.md).

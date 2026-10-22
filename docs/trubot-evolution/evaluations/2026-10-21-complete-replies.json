@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-21",
+  "run": "1700",
+  "base": "8138a6fe5087a1754b69a84afb29ee3eec524fd7",
+  "candidate_version": "2.38.12",
+  "hypotheses": {
+    "H123": {
+      "status": "rejected",
+      "synthetic_requests": 36,
+      "factual_passes_per_arm": 8,
+      "factual_cases": 10,
+      "controls_per_arm": 2
+    },
+    "H124": {
+      "status": "qualified_candidate",
+      "baseline_api_initial_incomplete": 3,
+      "baseline_api_returned_partial": 1,
+      "baseline_gateway_generic_failures": 1,
+      "matched_revised_complete": 3,
+      "heldout_initial_incomplete": 3,
+      "heldout_complete_rewrites": 3,
+      "heldout_photo_actions": 0,
+      "earlier_confounded_photo_choice_attempts": 1,
+      "request_invariance_controls": 4
+    }
+  },
+  "new_personal_observations": 0,
+  "general_fidelity_qualified": false,
+  "private_semantic_audit_available": false,
+  "raw_content_retained": false,
+  "feature_gates": {
+    "all_six_pass": true,
+    "tests": 2170,
+    "coverage_percent": 96.15,
+    "new_tests": 43
+  }
+}

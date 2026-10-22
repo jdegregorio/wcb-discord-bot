@@ -34,7 +34,7 @@ from trubot.photo_action import PhotoAction
 from trubot.reply_brevity import BRIEF_REPLY_GUIDANCE, needs_brief_reply
 from trubot.reply_diagnostics import log_reply_context
 from trubot.reply_focus import preceding_human_turn
-from trubot.reply_presentation import ordinary_reply
+from trubot.reply_presentation import ordinary_reply, requested_quotation
 from trubot.vision import IMAGE_TOKEN_BOUND, MAX_IMAGES
 
 logger = logging.getLogger(__name__)
@@ -77,6 +77,16 @@ _FRESH_REPLY_GUIDANCE = (
 )
 
 
+_COMPLETE_REPLY_GUIDANCE = (
+    "\n\nThe previous attempt hit its output limit and is incomplete. "
+    "Rewrite a complete answer to the original focus in one or two brief sentences, "
+    "at most 45 words. Do not continue the cut-off text or try to meet an oversized "
+    "length request. Keep supported facts, uncertainty, specific care and invited "
+    "fictional humor. Do not invent memories or mention token limits, internal tools "
+    "or this revision. Return only the complete reply; preserve recipient abstention."
+)
+
+
 _TARGET_LABELS = {
     ReplyMode.DIRECT: "CURRENT MESSAGE",
     ReplyMode.FOLLOW_UP: "LATEST MESSAGE",
@@ -103,6 +113,10 @@ class StudyContextExceeded(ResponderError):
 
 class StudyResponseInvalid(ResponderError):
     """A study result is incomplete or cannot be decoded as an object."""
+
+
+class IncompleteReplyError(ResponderError):
+    """A provider turn is not complete enough to publish."""
 
 
 class EmptyResponseError(ResponderError):
@@ -363,9 +377,24 @@ class OpenAITruaxResponder:
             request=request,
             retry_limit=0 if selected or photo_action is not None else None,
         )
-        if (selected or photo_action is not None) and response.status != "completed":
-            raise ToolProtocolError("Incomplete selected-skill response")
         calls = [item for item in getattr(response, "output", ()) if item.type == "function_call"]
+        completed = getattr(response, "status", "completed") == "completed"
+        truncated = (
+            getattr(response, "status", "completed") == "incomplete"
+            and getattr(getattr(response, "incomplete_details", None), "reason", None)
+            == "max_output_tokens"
+        )
+        # An unused photo offer does not make ordinary text a tool transaction.
+        # Incomplete calls and selected public context still fail before any action.
+        if not completed and (
+            selected or calls or not truncated or (photo_action and photo_action.used)
+        ):
+            if selected or photo_action is not None or calls:
+                raise ToolProtocolError("Incomplete selected-skill response")
+            raise IncompleteReplyError("Provider reply did not complete")
+        if truncated and target and requested_quotation(target):
+            # A shorter rewrite must not replace a requested literal artifact.
+            raise IncompleteReplyError("Literal reply exceeded its output limit")
         if calls:
             response = await self._finish_context_call(
                 response,
@@ -379,16 +408,22 @@ class OpenAITruaxResponder:
                 photo_action,
             )
         reply = normalize_reply(response.output_text, target=target)
-        if mode is ReplyMode.FOLLOW_UP and reply.casefold() == _NO_REPLY.casefold():
+        if completed and mode is ReplyMode.FOLLOW_UP and reply.casefold() == _NO_REPLY.casefold():
             logger.info("Trubot declined follow-up candidate")
             return None
-        if not reply:
+        if not reply and not truncated:
             raise EmptyResponseError("OpenAI returned an empty text response")
         repeated = _stale_bot_echo(reply, messages, target)
         overlong = needs_brief_reply(reply, messages, target)
-        if (repeated or overlong) and not selected and not (photo_action and photo_action.used):
-            guidance = (_FRESH_REPLY_GUIDANCE if repeated else "") + (
-                BRIEF_REPLY_GUIDANCE if overlong else ""
+        if (
+            (repeated or overlong or truncated)
+            and not selected
+            and not (photo_action and photo_action.used)
+        ):
+            guidance = (
+                (_FRESH_REPLY_GUIDANCE if repeated else "")
+                + (BRIEF_REPLY_GUIDANCE if overlong else "")
+                + (_COMPLETE_REPLY_GUIDANCE if truncated else "")
             )
             refresh_allowed = (
                 await refresh_check()
@@ -397,15 +432,16 @@ class OpenAITruaxResponder:
             )
             if not refresh_allowed:
                 logger.info("Reply-quality refresh skipped; source context changed or unchecked")
-                return reply
+                return None if truncated else reply
             # One additional accounted attempt, never an unbounded joke-selection loop.
             # Keep the same context, source scope and model. Literal requests and the
             # immediate assistant turn remain eligible for deliberate repetition.
             logger.info(
-                "Refreshing reply quality mode=%s repeated=%s overlong=%s",
+                "Refreshing reply quality mode=%s repeated=%s overlong=%s truncated=%s",
                 mode.value,
                 repeated,
                 overlong,
+                truncated,
             )
             fresh_request: ResponseCreateParamsNonStreaming = {
                 **request,
@@ -429,8 +465,18 @@ class OpenAITruaxResponder:
                     "comic idea for invited banter, not just new nouns or a paraphrase of its "
                     "punchline. Keep supported facts and appropriate sincere care. "
                 )
-            revision = [
-                EasyInputMessageParam(role="assistant", content=reply),
+            if truncated:
+                revision_instruction = (
+                    "Answer the original topic below in at most 45 words and finish the thought. "
+                    "This shorter length supersedes any longer length in the original request. "
+                    "Start again from the original source context, not the incomplete draft. "
+                )
+            revision: list[EasyInputMessageParam] = [
+                *(
+                    [EasyInputMessageParam(role="assistant", content=reply)]
+                    if reply and not truncated
+                    else []
+                ),
                 EasyInputMessageParam(
                     role="user",
                     content=(
@@ -439,6 +485,12 @@ class OpenAITruaxResponder:
                         "Preserve recipient abstention, meaningful uncertainty and brevity. "
                         "Return only the revised reply to this original focus:\n"
                         + _format_target(mode, target or "", subject, scope)
+                        + (
+                            "\nFor this retry, answer that topic in at most 45 words, "
+                            "even if it requested a longer response. End with a complete thought."
+                            if truncated
+                            else ""
+                        )
                     ),
                 ),
             ]
@@ -456,17 +508,27 @@ class OpenAITruaxResponder:
                     retry_limit=0,
                 )
             except (APIError, BudgetError):
+                if truncated:
+                    # A partial turn is not a usable fallback. Preserve the error
+                    # category and its existing visible budget/failure handling.
+                    raise
                 # Fresh wording is optional. The first draft is already accounted;
                 # failure must not turn a usable answer into an error or another call.
                 logger.warning("Optional reply-quality refresh unavailable; keeping draft")
             else:
                 candidate = normalize_reply(fresh.output_text, target=target)
-                if getattr(fresh, "status", "completed") != "completed" or not candidate:
+                if (
+                    getattr(fresh, "status", "completed") != "completed"
+                    or not candidate
+                    or any(item.type == "function_call" for item in getattr(fresh, "output", ()))
+                ):
+                    if truncated:
+                        raise IncompleteReplyError("Reply completion rewrite did not complete")
                     logger.warning("Optional reply-quality refresh incomplete; keeping draft")
                 elif mode is ReplyMode.FOLLOW_UP and candidate.casefold() == _NO_REPLY.casefold():
                     logger.info("Trubot declined refreshed follow-up candidate")
                     return None
-                elif overlong and needs_brief_reply(candidate, messages, target):
+                elif not truncated and overlong and needs_brief_reply(candidate, messages, target):
                     logger.info("Optional brief reply still overlong; keeping original draft")
                 else:
                     reply = candidate
