@@ -1,3 +1,12 @@
+# 2026-10-21 complete-response qualification
+
+H124 adds one shared accounted completion rewrite for known output-limit ordinary
+text, with original context, freshness and final publication checks. Selected tool
+transactions, used actions and literal artifacts remain closed. H123 reasoning
+change is rejected. No graph/schema/source/learning change. H121/H120 abstractions
+and relation-grounding remain the next memory priority, with qualified private
+semantic review and matched held-outs. [Evidence](docs/trubot-evolution/evaluations/2026-10-21-complete-replies.md).
+
 ## Explicit correction-context recall, 2.38.11
 
 After verified materialization, factual recall that explicitly asks for corrections,

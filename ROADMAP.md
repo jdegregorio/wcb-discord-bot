@@ -1,3 +1,38 @@
+# Current priority, 2026-10-21 17:00 Pacific - 2.38.12 candidate
+
+H123 reasoning-only recall is rejected after36 synthetic requests: every arm8/10
+factual and2/2 narrow controls. H124 complete-response recovery is selected after a
+real owner/gateway creative request fails and an ordinary API story returns a cut-off
+fragment. One shared accounted rewrite uses original context with the same model,
+effort and output ceiling; incomplete calls/used actions, literal artifacts, source
+changes and failed recovery remain closed. Matched revised candidate3/3 and separate held-outs3/3 complete;
+all six feature gates pass2,170tests/96.15%. Protected CI/release and installed
+actual acceptance remain required.
+
+1. Complete H124 release/installed acceptance, so useful replies are complete.
+   No new source trait, graph/schema/population or base provider call. Existing
+   18runtime/2maintenance/20total guard. Reopen on action/source loss or error/cost
+   regressions.
+2. H121/H120 relation-preserving complete episodes and useful abstractions, so
+   supported memories retain connections, uncertainty and emotional context.
+   Need attributed support/contrary episodes, private semantic review, independent
+   held-outs and actual gateway benefit. Prior defect confidence high; solution
+   unqualified. H123 and H121a stay rejected. Existing graph/maintenance allowance.
+3. H114/H92/H93/H101/H112 abstract emotion, approved amplified humor and original
+   views, then useful linked native/visual coverage and seasonal variety. Require
+   matched utility, source lifecycle and actual pixels where relevant. Confidence
+   unresolved; no new trait or native-pattern permission. Preserve generated
+   Michigan U.P. aurora/trail-camera scenes, natural captions, selective tools and
+   four photo studies/day. H96 sightings closed; H102 date lookup secondary.
+
+The raw private transcript-output audit was rejected by automatic approval review;
+numeric-only local checks continue. New full human semantic comparison remains
+unavailable. Three attributed windows/14development bot turns/300league rows are
+limited coverage, not fidelity proof. Six local01/05/09/13/17/21 Sol/xhigh runs and
+notifications, attribution/correction/withdrawal, allowlists and no DMs remain.
+Full hypotheses, acceptance, dependencies, confidence and operating impact:
+[qualification record](docs/trubot-evolution/evaluations/2026-10-21-complete-replies.md). Older snapshots below are historical.
+
 # Current priority, 2026-10-21 - 2.38.11 installed
 
 H122 is installed after a reproduced source-routing omission: explicit correction and

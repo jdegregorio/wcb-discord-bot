@@ -1,3 +1,11 @@
+## Complete output-limited replies, 2.38.12
+
+A text reply cut off by its output ceiling can receive one brief, complete rewrite
+through the existing shared quality allowance. An unused photo action no longer
+prevents that recovery. Source checks, action boundaries and spending limits remain;
+failed recovery never publishes the fragment. Oversized literal quotations fail
+closed. [Qualification](docs/trubot-evolution/evaluations/2026-10-21-complete-replies.md).
+
 ## Explicit correction recall, 2.38.11
 
 Requests such as `What clarification do you remember about the reservation?`

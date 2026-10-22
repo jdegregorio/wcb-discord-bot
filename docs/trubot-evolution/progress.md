@@ -5714,3 +5714,22 @@ pre-guard unknown. Seven old/zero new unsettled;18/2/20 guard unchanged.22 priva
 content-free receipts0700/0600 plus preserved build/QA artifacts; no raw source,
 answer, pixels, screenshots or private clone. Six-runSol/xhigh schedule and
 notifications unchanged. [Complete validation](evaluations/2026-10-21-correction-context.md).
+
+
+## 2026-10-21 17:00 Pacific: H124 complete-response transaction
+
+Fetched base8138a6fe5087a1754b69a84afb29ee3eec524fd7; new managed worktree and unique
+feature branch, primary untouched. Previous184/185 complete. H123 reasoning pilot
+rejected after36 synthetic requests, no factual gain. H124 reproduces actual owner
+creative failure and one API fragment; revised matched candidate3/3complete.
+One shared accounted rewrite preserves sources/actions/budget and refuses incomplete
+fallback. No new human trait or graph state; private raw-output audit rejected,
+numeric-only local checks continue. Full gates, held-outs, protected CI, immutable
+release and actual installed acceptance remain required. [Protocol/results](evaluations/2026-10-21-complete-replies.md).
+
+
+H124 feature qualification: revised matched3/3 and separate held-out3/3complete;
+one earlier held-out fixture aborted on an initial photo action and is excluded
+from completion passes. Four initial-request invariance controls pass. All six gates
+pass2,170tests/96.15%,43new regressions and46typedmodules. No new source/trait or
+model/effort change. Protected merge/release/images/installed actual tests pending.
