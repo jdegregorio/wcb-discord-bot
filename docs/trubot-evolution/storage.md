@@ -1,3 +1,12 @@
+# Complete-reply recovery, 2.38.12
+
+Completion recovery uses the existing usage ledger and rotated content-free logs.
+There is no new schema, state file, service or allowance. The shared one-repair
+limit and source/withdrawal checks remain. Code rollback does not restore learning,
+withdrawal or spending state. Private run receipts retain only references, hashes,
+counts and pass/fail flags under existing 0700/0600 storage, seven-day manual
+retention and withdrawal cleanup. [Validation](evaluations/2026-10-21-complete-replies.md).
+
 ## Content-free runtime diagnostics, 2.38.7
 
 Verification/assembly states, fixed capability labels and aggregate context counts

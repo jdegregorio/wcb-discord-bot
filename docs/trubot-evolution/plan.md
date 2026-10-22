@@ -1,37 +1,44 @@
-# Current priority, 2026-10-21 17:00 Pacific - 2.38.12 candidate
+# Current priority, 2026-10-21 17:00 Pacific - 2.38.12 installed
 
-H123 reasoning-only recall is rejected after36 synthetic requests: every arm8/10
-factual and2/2 narrow controls. H124 complete-response recovery is selected after a
-real owner/gateway creative request fails and an ordinary API story returns a cut-off
-fragment. One shared accounted rewrite uses original context with the same model,
-effort and output ceiling; incomplete calls/used actions, literal artifacts, source
-changes and failed recovery remain closed. Matched revised candidate3/3 and separate held-outs3/3 complete;
-all six feature gates pass2,170tests/96.15%. Protected CI/release and installed
-actual acceptance remain required.
+H124 is complete: output-limited ordinary text can use one shared accounted rewrite;
+failed recovery never publishes a fragment. The same actual owner speech request
+now succeeds. Matched and separate held-out API cases each complete 3/3. All six
+feature/merged gates, protected CI and images pass: 2,170 tests, 96.15% coverage,
+43 new regressions. All 46 installed hashes match the immutable release. Real
+installed checks give 12 answers and one correct abstention across 13 owner turns;
+11/12 pre-final narrow criteria pass. Fresh humor reuses its previous comic mechanism.
+No general fidelity or humor-multiplier gain is claimed. H123 reasoning-only recall
+is rejected after no factual improvement; runtime model/effort/limits are unchanged.
 
-1. Complete H124 release/installed acceptance, so useful replies are complete.
-   No new source trait, graph/schema/population or base provider call. Existing
-   18runtime/2maintenance/20total guard. Reopen on action/source loss or error/cost
-   regressions.
-2. H121/H120 relation-preserving complete episodes and useful abstractions, so
-   supported memories retain connections, uncertainty and emotional context.
-   Need attributed support/contrary episodes, private semantic review, independent
-   held-outs and actual gateway benefit. Prior defect confidence high; solution
-   unqualified. H123 and H121a stay rejected. Existing graph/maintenance allowance.
-3. H114/H92/H93/H101/H112 abstract emotion, approved amplified humor and original
-   views, then useful linked native/visual coverage and seasonal variety. Require
-   matched utility, source lifecycle and actual pixels where relevant. Confidence
-   unresolved; no new trait or native-pattern permission. Preserve generated
+1. H121/H120 relation-preserving complete episodes and useful abstractions, so
+   supported memories retain connections, uncertainty and emotional context. Need
+   attributed support/contrary episodes, a qualified private semantic review path,
+   independent held-outs and actual gateway benefit. Prior defect confidence high;
+   solution unqualified. H123 and H121a remain rejected. Existing graph and shared
+   maintenance allowance; estimate runtime impact before rollout.
+2. H125 fresh comic mechanisms after explicit novelty requests, alongside useful
+   H114/H92/H93/H101/H112 abstract emotion, approved amplified humor and original
+   views. One actual same-scene follow-up changes words but repeats its comic idea;
+   this is not an Andrew trait. Need matched completed-turn baseline/candidate and
+   held-out semantic review, recipient/care/literal controls and bounded cost. Keep
+   the one shared repair limit. Confidence in the observed miss high, frequency and
+   solution unresolved. No new pattern population or native-pattern permission.
+3. Useful linked native/visual coverage and seasonal variety after measured utility,
+   so connected episodes and familiar views improve engagement. Need source lifecycle,
+   permissions, honest gaps and actual pixels where relevant. Preserve generated
    Michigan U.P. aurora/trail-camera scenes, natural captions, selective tools and
-   four photo studies/day. H96 sightings closed; H102 date lookup secondary.
+   four photo studies/day. H96 sightings stay closed; H102 date lookup is secondary.
 
-The raw private transcript-output audit was rejected by automatic approval review;
-numeric-only local checks continue. New full human semantic comparison remains
-unavailable. Three attributed windows/14development bot turns/300league rows are
-limited coverage, not fidelity proof. Six local01/05/09/13/17/21 Sol/xhigh runs and
-notifications, attribution/correction/withdrawal, allowlists and no DMs remain.
-Full hypotheses, acceptance, dependencies, confidence and operating impact:
-[qualification record](evaluations/2026-10-21-complete-replies.md). Older snapshots below are historical.
+Detailed new human semantic comparison remains unavailable after automatic review
+rejected private transcript output to logs. Numeric pre/post audits cover three
+attributed windows and 14 development bot turns each; 300 league rows contain zero
+seven-day target posts and one bot post. These counts do not prove character fidelity.
+Healthy/ready/read-only, zero errors/restarts/discards; final actual gateway answers
+6.391 seconds after every auxiliary client closes. Covered run USD 0.019809910,
+October USD 1.417884285 estimates, not billing; seven older unresolved reservations
+remain. Same 18/2/20 guard, source withdrawal, allowlists/no DMs, six local
+01/05/09/13/17/21 Sol/xhigh runs and notifications. [Complete evidence](evaluations/2026-10-21-complete-replies.md).
+Older snapshots below are historical.
 
 # Current priority, 2026-10-21 - 2.38.11 installed
 

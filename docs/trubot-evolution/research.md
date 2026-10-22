@@ -3372,3 +3372,15 @@ rewrite. Hold-outs/gates/actual installed acceptance remain required. No new per
 claim or graph population. Numeric source audit covers3attributed windows and14bot
 turns; detailed raw-output audit was rejected, so new full human semantic comparison
 is unavailable. [Full hypothesis fields, phase2 and limitations](evaluations/2026-10-21-complete-replies.md).
+
+
+H124 installed completion: all feature/merged gates, protected PR/main/image CI and
+46 installed hashes pass. Actual failed owner speech now completes. Thirteen owner
+questions yield 12 answers/correct recipient abstention;11/12 pre-final narrow criteria
+pass. H125 is one actual fresh-joke request that changes words but repeats its comic
+mechanism, outside the new truncation path. No general human fidelity, chronology
+or humor multiplier is qualified. Prioritize H121/H120 relation-grounded abstractions,
+then H125 alongside useful emotion/amplified humor/original views and linked coverage.
+Private semantic audit remains limited after raw-output rejection; numeric audits
+and synthetic/actual functional acceptance continue. No new human trait/population.
+[Complete H125 fields and installed evidence](evaluations/2026-10-21-complete-replies.md).
