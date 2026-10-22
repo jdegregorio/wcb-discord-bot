@@ -1,11 +1,13 @@
-# 2026-10-21 complete-response qualification
+# 2026-10-21 installed 2.38.12
 
-H124 adds one shared accounted completion rewrite for known output-limit ordinary
-text, with original context, freshness and final publication checks. Selected tool
-transactions, used actions and literal artifacts remain closed. H123 reasoning
-change is rejected. No graph/schema/source/learning change. H121/H120 abstractions
-and relation-grounding remain the next memory priority, with qualified private
-semantic review and matched held-outs. [Evidence](evaluations/2026-10-21-complete-replies.md).
+H124 completes output-limited ordinary text through the existing shared repair
+transaction, with source/action/literal boundaries intact. Actual owner/gateway
+acceptance and all gates pass; all 46 installed hashes match. No graph, schema,
+source population or human trait changes. H123 reasoning-only recall is rejected.
+H121/H120 relation-grounded abstractions remain first; H125 semantic comic novelty
+joins useful abstract emotion, approved amplified humor and original-view research.
+Raw private transcript output was blocked; new human semantic comparison remains
+limited. [Current qualification and limitations](evaluations/2026-10-21-complete-replies.md).
 
 # 2026-10-21 installed 2.38.11
 

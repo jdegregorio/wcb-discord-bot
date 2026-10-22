@@ -12,7 +12,7 @@
       "controls_per_arm": 2
     },
     "H124": {
-      "status": "qualified_candidate",
+      "status": "installed",
       "baseline_api_initial_incomplete": 3,
       "baseline_api_returned_partial": 1,
       "baseline_gateway_generic_failures": 1,
@@ -22,6 +22,12 @@
       "heldout_photo_actions": 0,
       "earlier_confounded_photo_choice_attempts": 1,
       "request_invariance_controls": 4
+    },
+    "H125": {
+      "status": "unresolved",
+      "actual_development_cases": 1,
+      "new_words_without_new_comic_mechanism": true,
+      "human_trait_evidence": false
     }
   },
   "new_personal_observations": 0,
@@ -33,5 +39,57 @@
     "tests": 2170,
     "coverage_percent": 96.15,
     "new_tests": 43
+  },
+  "release": {
+    "version": "2.38.12",
+    "pr": 186,
+    "merged_commit": "4ac6d3e77c9fcc3b8ed9f55ee97cf32700911013",
+    "index_digest": "sha256:e85a6c5c3eca8f68c7b08a711caf2c8604dc08bff8efc51f3205503c33148446",
+    "ci_runs": [
+      39699116898,
+      39699311537,
+      39699564047
+    ],
+    "all_installed_modules_match": 46
+  },
+  "installed": {
+    "actual_owner_gateway_questions": 13,
+    "actual_answers": 12,
+    "correct_recipient_abstentions": 1,
+    "installed_narrow_criteria_pass": 11,
+    "installed_narrow_criteria_total": 12,
+    "same_failed_speech_now_complete": true,
+    "story_complete": true,
+    "general_fidelity_qualified": false,
+    "calendar_grounding_qualified": false,
+    "all_auxiliary_closed_before_final": true,
+    "final_gateway_seconds": 6.391,
+    "latency_seconds": {
+      "min": 2.321,
+      "median": 6.156,
+      "max": 8.067
+    }
+  },
+  "final_health": {
+    "healthy": true,
+    "readiness": true,
+    "restarts": 0,
+    "errors": 0,
+    "response_failures": 0,
+    "private_source_discards": 0,
+    "completion_repairs": 1
+  },
+  "cost": {
+    "covered_usd": 0.01980991,
+    "month_estimate_usd": 1.417884285,
+    "new_unsettled_attempts": 0,
+    "pre_guard_unknown": true,
+    "not_provider_billing": true
+  },
+  "privacy": {
+    "scanned_files": 19,
+    "raw_retained": false,
+    "files_0600": true,
+    "directory_0700": true
   }
 }

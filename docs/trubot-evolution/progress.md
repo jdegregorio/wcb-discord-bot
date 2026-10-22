@@ -5724,12 +5724,49 @@ rejected after36 synthetic requests, no factual gain. H124 reproduces actual own
 creative failure and one API fragment; revised matched candidate3/3complete.
 One shared accounted rewrite preserves sources/actions/budget and refuses incomplete
 fallback. No new human trait or graph state; private raw-output audit rejected,
-numeric-only local checks continue. Full gates, held-outs, protected CI, immutable
-release and actual installed acceptance remain required. [Protocol/results](evaluations/2026-10-21-complete-replies.md).
+numeric-only local checks continue. At selection, full gates, held-outs and installed acceptance remained required;
+the completed outcome follows. [Protocol/results](evaluations/2026-10-21-complete-replies.md).
 
 
 H124 feature qualification: revised matched3/3 and separate held-out3/3complete;
 one earlier held-out fixture aborted on an initial photo action and is excluded
 from completion passes. Four initial-request invariance controls pass. All six gates
-pass2,170tests/96.15%,43new regressions and46typedmodules. No new source/trait or
-model/effort change. Protected merge/release/images/installed actual tests pending.
+pass2,170 tests/96.15%,43new regressions and46 typed modules. No new source/trait or
+model/effort change. Those release checks were pending at qualification; the installed outcome follows.
+
+
+## 2026-10-21 17:00 installed completion: 2.38.12
+
+PR 186, feature `63026f8`, protected squash `4ac6d3e`, immutable v2.38.12.
+PR/main/image CI 39699116898/39699311537/39699564047 pass. All six local feature
+and merged gates pass: 2,170 tests, 96.15% coverage, 46 typed modules and packages.
+Installed index `e85a6c5c3eca`; all 46 hashes and package versions match the release.
+Previous 2.38.11/index `972c2e0d9d04` remains in the helper's actual non-secret
+`/var/lib/pi-platform/versions/wcb-bot.env`. No rollback, data restore or schema change.
+
+Thirteen actual owner questions give 12 answers and correct recipient abstention.
+The same failed speech now completes. Story, natural recall language, exact-date
+honesty, care, celebration and fresh public-context completion pass narrow checks.
+Five existing native preference supports are freshly authenticated. Fresh humor
+changes words but repeats its comic mechanism: 11/12 pre-final narrow criteria pass.
+H125 remains open. One completion repair within four shared quality repairs; the
+novelty miss does not enter the new path. Final gateway: 6.391 seconds after all
+auxiliary clients close at 00:36:13 UTC. No production Discord client is built after
+that proof. Final 00:37:26 UTC: healthy, ready, read-only, zero errors, restarts, OOM,
+source discards or failures; release timer active/enabled. No broad fidelity,
+calendar placement or humor-multiplier claim. Graph counts remain unchanged.
+
+Automatic review rejected raw private transcript output. Numeric pre/post audits use
+three attributed windows, 14 development bot turns each and 300 league rows
+(zero seven-day target posts, one bot post). No new human trait or missing-pixel
+interpretation. Nineteen existing receipt JSONs pass the 00:38:50 UTC privacy scan,
+which writes its own receipt. Modes 0700/0600, no raw data, seven-day manual retention
+and withdrawal cleanup. Copies/scripts/logs/packages: `/private/tmp/trubot-20261021-1700`.
+
+Covered maintenance: 59 attempts/USD 0.007856640. Runtime: 21 attempts/USD 0.011953270.
+Total USD 0.019809910; October ledger estimate USD 1.417884285, not billing.
+Seven old/zero new unresolved attempts; pre-guard spend unknown. Same 18/2/20 guard.
+Next H121/H120 relation-grounded abstractions, H125 comic novelty alongside useful
+abstract emotion/humor/original views, then linked coverage and seasonal variety.
+H123 stays rejected. Six-run Sol/xhigh schedule and notifications remain unchanged.
+[Complete evidence and limitations](evaluations/2026-10-21-complete-replies.md).
