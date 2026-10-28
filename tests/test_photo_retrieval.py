@@ -1,6 +1,7 @@
 """Recovered originals reach the photo action with source lifecycle controls."""
 
 import base64
+import json
 from datetime import timedelta
 from types import SimpleNamespace
 from unittest.mock import AsyncMock, patch
@@ -115,7 +116,7 @@ async def test_handler_sends_original_then_discards_changed_source(photos):
     async def reply(messages, **kwargs):
         action = kwargs["photo_action"]
         assert await action.prepare(call(name=NAME, arguments='{"query":"stone bridge"}'))
-        return "Here's the bridge."
+        return action.decide(json.dumps({"attach": True, "reply": "Here's the bridge."}))
 
     responder.reply = reply
     with (

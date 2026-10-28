@@ -1,3 +1,21 @@
+# Current direction, 2026-10-25 run
+
+H127 / 2.38.13 makes retrieved photos provisional until the existing pixel
+continuation explicitly accepts them. A requested place with insufficient support
+must produce a brief natural absence/clarification, without an unrelated attachment.
+Inspection-only and unavailable-candidate text paths retain their behavior. Strict
+schema and local validation fail closed. Same one action/continuation, source and
+permission checks, spending ledger and bot identity; no new model or service.
+
+Next H126 ambiguity-aware archive context roles, then H121/H120 useful connected
+episodes/abstractions and H125 varied comic mechanisms with qualified private
+review and independent held-outs. Broader native/visual coverage follows utility.
+Keep generated Michigan U.P. aurora/trail-camera scenes and selective skills/tools.
+H96 sightings closed; exact dates secondary. Existing 18/2/20 budget, withdrawal,
+allowlists/no DMs, six local Sol/xhigh runs and notifications remain unchanged.
+Qualification and installed outcome are authoritative in the [study](docs/trubot-evolution/evaluations/2026-10-25-photo-acceptance.md).
+Older dated snapshots below are historical.
+
 # Current priority, 2026-10-21 17:00 Pacific - 2.38.12 installed
 
 H124 is complete: output-limited ordinary text can use one shared accounted rewrite;

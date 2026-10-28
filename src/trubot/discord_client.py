@@ -945,6 +945,7 @@ class TruBotClient(discord.Client):
                     photo_action is not None
                     and photo_action.evidence is not None
                     and not photo_action.inspected
+                    and photo_action.publish
                 ):
                     if anchor is None:
                         return False

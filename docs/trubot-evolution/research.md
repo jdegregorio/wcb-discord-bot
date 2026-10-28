@@ -3384,3 +3384,17 @@ then H125 alongside useful emotion/amplified humor/original views and linked cov
 Private semantic audit remains limited after raw-output rejection; numeric audits
 and synthetic/actual functional acceptance continue. No new human trait/population.
 [Complete H125 fields and installed evidence](evaluations/2026-10-21-complete-replies.md).
+
+
+## 2026-10-25 run: H126 ambiguity roles, H127 provisional photo acceptance
+
+Two phases precede selection: current production/activity/private-source census,
+code and unfinished-work review identify a potential archive-role promotion and
+an actual photo publication mismatch. H127 takes priority after a fresh real owner/
+gateway reproduction. Its corrected pre-fix handler fixture sends an attachment
+beside an explicit absence reply. Separate retrieval from the acceptance decision
+in the existing continuation, so mismatch recognition can prevent publication.
+H126 stays explicit enabling follow-up, then H121/H120 and H125 useful abstract,
+emotional, comic and visual context. No new personal observation or pattern gate.
+Preregistered cases, failed positives, harness limits, source coverage, final gates
+and actual installed outcomes belong to the [study](evaluations/2026-10-25-photo-acceptance.md).

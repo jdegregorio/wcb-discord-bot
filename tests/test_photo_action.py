@@ -34,7 +34,12 @@ async def test_model_action_includes_real_pixels_in_continuation_without_phrase_
     )
     retrieve = AsyncMock(return_value=evidence)
     action = PhotoAction(retrieve)
-    provider = Provider([response(calls=[photo_call()]), response("Here you go.")])
+    provider = Provider(
+        [
+            response(calls=[photo_call()]),
+            response(json.dumps({"attach": True, "reply": "Here you go."})),
+        ]
+    )
     model = responder(provider, private_test_ledger, UPConditionsSkill())
     text = await model.reply(
         [ConversationMessage("user", "Older source", (image,), origin="memory")],
@@ -137,7 +142,7 @@ async def test_actual_handler_sends_photo_and_rechecks_before_send(changed):
     async def reply(messages, **kwargs):
         action = kwargs["photo_action"]
         assert await action.prepare(photo_call())
-        return "Here you go."
+        return action.decide(json.dumps({"attach": True, "reply": "Here you go."}))
 
     fake.reply = reply
     with (

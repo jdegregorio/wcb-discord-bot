@@ -30,7 +30,8 @@ from trubot.photo_action import INSPECT_INSTRUCTIONS as PHOTO_INSPECT_INSTRUCTIO
 from trubot.photo_action import INSPECT_NAME as PHOTO_INSPECT_NAME
 from trubot.photo_action import INSTRUCTIONS as PHOTO_ACTION_INSTRUCTIONS
 from trubot.photo_action import NAME as PHOTO_ACTION_NAME
-from trubot.photo_action import PhotoAction
+from trubot.photo_action import PUBLICATION_INSTRUCTIONS as PHOTO_PUBLICATION_INSTRUCTIONS
+from trubot.photo_action import PhotoAction, publication_format
 from trubot.reply_brevity import BRIEF_REPLY_GUIDANCE, needs_brief_reply
 from trubot.reply_diagnostics import log_reply_context
 from trubot.reply_focus import preceding_human_turn
@@ -395,8 +396,9 @@ class OpenAITruaxResponder:
         if truncated and target and requested_quotation(target):
             # A shorter rewrite must not replace a requested literal artifact.
             raise IncompleteReplyError("Literal reply exceeded its output limit")
+        tool_reply = None
         if calls:
-            response = await self._finish_context_call(
+            response, tool_reply = await self._finish_context_call(
                 response,
                 selected,
                 request,
@@ -407,7 +409,9 @@ class OpenAITruaxResponder:
                 refresh_check,
                 photo_action,
             )
-        reply = normalize_reply(response.output_text, target=target)
+        reply = normalize_reply(
+            tool_reply if tool_reply is not None else response.output_text, target=target
+        )
         if completed and mode is ReplyMode.FOLLOW_UP and reply.casefold() == _NO_REPLY.casefold():
             logger.info("Trubot declined follow-up candidate")
             return None
@@ -546,7 +550,7 @@ class OpenAITruaxResponder:
         mode: ReplyMode,
         refresh_check: Callable[[], Awaitable[bool]] | None,
         photo_action: PhotoAction | None = None,
-    ) -> Response:
+    ) -> tuple[Response, str | None]:
         if not (selected or photo_action is not None) or response.status != "completed":
             raise ToolProtocolError("Unselected or incomplete tool response")
         if refresh_check is not None and not await refresh_check():
@@ -555,6 +559,7 @@ class OpenAITruaxResponder:
         photo_message: list[EasyInputMessageParam] = []
         photo_bound = 0
         continuation_input = model_input
+        publication = False
         if (
             len(calls) == 1
             and calls[0].name in {PHOTO_ACTION_NAME, PHOTO_INSPECT_NAME}
@@ -564,11 +569,13 @@ class OpenAITruaxResponder:
             if evidence is None:
                 output = '{"photo_queued":false,"reason":"no suitable verified source photo"}'
             else:
-                # The model sees the real pixels before writing its caption. Attachments
-                # are published later by Discord, after another source/request check.
+                # Retrieval is provisional. The existing continuation inspects pixels
+                # and explicitly decides whether this candidate meets the request.
+                publication = not photo_action.inspected
                 output = json.dumps(
                     {
-                        "photo_queued": not photo_action.inspected,
+                        "photo_queued": False,
+                        "candidate_available": not photo_action.inspected,
                         "source_inspected": photo_action.inspected,
                         "kind": "actual historical source photo",
                     }
@@ -622,6 +629,15 @@ class OpenAITruaxResponder:
         final_request.pop("tools", None)
         final_request.pop("parallel_tool_calls", None)
         final_request["tool_choice"] = "none"
+        if publication:
+            final_request["instructions"] = (
+                request.get("instructions") or ""
+            ) + PHOTO_PUBLICATION_INSTRUCTIONS
+            final_request["text"] = {"verbosity": "low", "format": publication_format()}
+            # Include structured decision framing in this same accounted attempt.
+            extra += len(PHOTO_PUBLICATION_INSTRUCTIONS.encode()) + len(
+                json.dumps(final_request["text"]).encode()
+            )
 
         async def continuation_current() -> bool:
             return (refresh_check is None or await refresh_check()) and (
@@ -642,7 +658,11 @@ class OpenAITruaxResponder:
             item.type == "function_call" for item in final.output
         ):
             raise ToolProtocolError("Incomplete or repeated tool continuation")
-        return final
+        return final, (
+            photo_action.decide(final.output_text)
+            if publication and photo_action is not None
+            else None
+        )
 
     @staticmethod
     def _context_source_check(
