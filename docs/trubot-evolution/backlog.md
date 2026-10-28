@@ -1,3 +1,45 @@
+# Current priority, 2026-10-25 run - photo publication candidate 2.38.13
+
+H127 separates provisional source-photo retrieval from publication. An actual owner
+request and fresh gateway repeat receive an unverified specific-place attachment,
+while the bot admits the mismatch/uncertainty. The corrected handler regression
+reproduces a photo sent beside an absence reply. A strict structured decision in
+the existing continuation lets the model reject after reading pixels. Discord only
+attaches explicitly accepted candidates; rejected evidence still receives freshness
+checks. No new provider turn, retry, service, model, schema or spending allowance.
+Qualification/release/installed acceptance are recorded in the linked study, with
+initial failed synthetic positives retained rather than counted as successes.
+
+1. Complete H127 qualification and installed acceptance so requested subjects govern
+   actual attachments. Require negative and positive API cases, independent held-outs,
+   lifecycle/protocol/accounting regressions, full gates and real owner/gateway tests.
+   Confidence in publication defect high; broader visual semantics remain fallible.
+   Impact: extra schema/framing inside the same two existing accounted attempts.
+2. H126 archive ambiguity roles: one real eligible anchor neighbors an ineligible
+   target block. Reply/distillation context currently labels by target alone. Fix
+   with eligible/ambiguous/peer/bot and lifecycle controls so quoted/preview words do
+   not become supported human beliefs. No persona inference yet; semantics unvalidated.
+   Existing storage and zero extra runtime API calls expected.
+3. H121/H120 relation-preserving episodes and useful abstractions, then H125 novel
+   comic mechanisms alongside useful emotional/visual context. Require attributed
+   supports/contraries, qualified private semantic review, independent held-outs and
+   actual gateway benefit. No native-pattern permission or human trait is added.
+4. Useful linked native/visual coverage and seasonal variety after demonstrated
+   utility. Preserve generated Michigan U.P. aurora/trail-camera scenes, natural
+   captions, selective tools and four photo studies/day. H96 sightings remain closed;
+   exact dates are secondary. Wider architecture/harness changes remain eligible.
+
+Fresh audit: three attributed historical windows, 28 development posts/13 bot turns,
+300 league posts with zero seven-day target and three bot posts. No full-turn
+duplicates/storage-word hits. Unequal grains, sparse reaction/ambient activity,
+missing pixels and unavailable new human semantic review prevent fidelity claims.
+No rejected private scorer is retried. Material privacy/grounding/delivery failures
+can reorder these priorities. Same source attribution/withdrawal, allowlists/no DMs,
+18/2/20 guard and six local 01/05/09/13/17/21 Sol/xhigh runs/notifications.
+
+[Hypotheses, method and actual outcomes](evaluations/2026-10-25-photo-acceptance.md).
+Older snapshots below are historical.
+
 # Current priority, 2026-10-21 17:00 Pacific - 2.38.12 installed
 
 H124 is complete: output-limited ordinary text can use one shared accounted rewrite;

@@ -5770,3 +5770,24 @@ Next H121/H120 relation-grounded abstractions, H125 comic novelty alongside usef
 abstract emotion/humor/original views, then linked coverage and seasonal variety.
 H123 stays rejected. Six-run Sol/xhigh schedule and notifications remain unchanged.
 [Complete evidence and limitations](evaluations/2026-10-21-complete-replies.md).
+
+
+## 2026-10-25 run: H127 provisional source-photo publication
+
+Fetched base bc9410a08f7fc1e5bdf8a82d904848c3200d9283. New managed worktree
+trubot-daily-20261025-0500 and unique feature branch isolate all source work. Primary
+checkout untouched. Two-phase research/reprioritization selects a reproduced photo
+action mismatch: an actual specific-place request receives a source image while
+the bot admits the place is unsupported. A fresh owner/gateway repeat reproduces it.
+The first synthetic handler harness has a missing fake attribute; corrected harness
+proves the actual pre-fix attachment transaction. Neither source identity nor unseen
+pixels establish a new Andrew trait. Fresh numeric audit reports sparse spontaneous
+coverage and keeps new human semantic comparison explicitly unqualified.
+
+Candidate 2.38.13 requires strict explicit acceptance after inspecting the retrieved
+candidate in the existing continuation. Pending/rejected candidates never attach;
+malformed/incomplete decisions fail closed, and rejected-source freshness remains.
+No extra provider turn, retry loop, model, graph/schema, service or spending pool.
+H126 archive ambiguity roles remains follow-up before H121/H120 and H125. Detailed
+methods, failures, final qualification/release and actual installed acceptance are
+in the [study](evaluations/2026-10-25-photo-acceptance.md).

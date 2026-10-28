@@ -1,3 +1,10 @@
+## Provisional photo acceptance, 2.38.13
+
+Source photos are inspected before attachment. The existing continuation explicitly
+accepts a relevant candidate or declines it with a brief natural answer. Unsupported
+specific places do not justify a similar-looking substitute. Source/permission checks
+and the existing spending guard remain. [Qualification](docs/trubot-evolution/evaluations/2026-10-25-photo-acceptance.md).
+
 ## Complete output-limited replies, 2.38.12
 
 A text reply cut off by its output ceiling can receive one brief, complete rewrite
