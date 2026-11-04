@@ -84,8 +84,9 @@ Removing the source or withdrawing learning after generation must prevent public
 Run identical cases on exact prior 2.38.13 and current 2.38.14 source. Accept only if all
 nine attribution assertions detect the old defect, all eleven current cases pass, and
 all six repository gates plus protected CI pass. Real owner/gateway smoke tests remain
-required and separate from captured handler sends. No API calls, private corpus copies,
-new service, runtime modification, version bump or duplicate release are introduced.
+required and separate from captured handler sends. The synthetic suite uses no provider calls or private corpus copies. Real gateway
+smoke tests use the existing runtime ledger. No new service, runtime modification,
+version bump or duplicate release is introduced.
 
 Select H129 as the unique increment after H126 ships concurrently. Confidence is high
 in the missing cross-route coverage; tests cannot establish model naturalness or fidelity.
@@ -150,7 +151,7 @@ is required for this tests/docs increment.
 Six own actual owner/gateway exchanges pass narrow criteria: baseline preference,
 synthetic quoted authorship, unsummoned preview follow-up, fictional care, fictional
 Thomas Jones humor and final preference check. Other actors' simultaneous tests are
-excluded. The final real response arrives in 7.099 seconds after every auxiliary
+excluded. The final real response arrives in 7.098 seconds after every auxiliary
 Discord client created by this run has closed. Plain HTTP maintenance uses a unique
 ephemeral readiness path before construction; no second gateway is started.
 Synthetic probes are not Andrew learning evidence. These real tests do not prove

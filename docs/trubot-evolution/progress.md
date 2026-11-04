@@ -5831,7 +5831,7 @@ Protected publication and final installed evidence remain required.
 
 H129 installed verification: all 46 runtime hashes/package versions match immutable
 2.38.14/index fd4783f64d9e; existing multiarch image CI 41784066810 succeeds. Six own
-actual owner/gateway checks pass narrowly, final 7.099 seconds after own auxiliary
+actual owner/gateway checks pass narrowly, final 7.098 seconds after own auxiliary
 clients close. Healthy/ready/read-only, zero restarts and zero checked errors/failures/
 discards. Private receipts retain refs/counts only, modes 0700/0600 and seven-day
 manual retention/withdrawal cleanup. Post local audit remains semantically limited
