@@ -3406,3 +3406,13 @@ Two-phase research selects the confirmed archive-context attribution boundary.
 Seven ineligible target blocks/one neighboring eligible anchor; packet roles promote
 uncertain context. H121/H120/H125 remain exploratory pending qualified semantic
 comparison. No new human trait or graph population. [Protocol](evaluations/2026-10-29-archive-roles.md).
+
+
+## 2026-11-03: H126 reconciled, H129 selected
+
+Both planning phases precede initial H126 selection. Concurrent PR 192 ships H126
+before this run publishes; the duplicate runtime candidate is preserved privately
+and superseded. H129 supplies actual incoming-event and publication regression gates
+without runtime changes. Private semantic audit is blocked pending specific approval;
+local counts and synthetic packets do not establish character fidelity. H121/H120
+and H125 remain open. [Protocol and outcomes](evaluations/2026-11-03-handler-authorship.md).

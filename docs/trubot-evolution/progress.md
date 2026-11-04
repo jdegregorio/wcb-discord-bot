@@ -5805,3 +5805,25 @@ checkpoint reset, provider turn or retrospective graph repair. H121/H120 relatio
 and abstract utility, H125 novel comic mechanisms/emotion, then useful linked native/
 visual coverage remain next. Real installed smoke/release/deployment pending.
 [Full hypothesis, limitations and results](evaluations/2026-10-29-archive-roles.md).
+
+
+## 2026-11-03: archive authorship event-route gate
+
+Initial base cbe136e; fresh managed worktree and feature/trubot-daily-20261103-2100.
+Concurrent PR 192 / 1b341de / 2.38.14 completes H126 while this run qualifies its
+candidate. Reconcile and advance this isolated worktree to 1b341de; primary untouched.
+Select unique H129 enabling test increment: actual direct, follow-up and reaction
+handlers retain full ambiguous historical context without verified authorship, and
+source removal/withdrawal after generation prevents publication. Eleven current
+cases pass; exact prior-source comparison, six gates, protected CI and real gateway
+acceptance follow. No runtime change or duplicate release. Semantic provider audit
+blocked by automatic approval review; no new persona or measured prose gain.
+[Full evidence](evaluations/2026-11-03-handler-authorship.md).
+
+
+H129 qualification: exact 2.38.13 source fails all nine attribution assertions while
+both invalidation controls pass; 2.38.14 passes all eleven. All six feature gates
+pass 2,220 tests / 96.17% coverage, 46 source modules and package build. Three own
+actual owner/gateway controls pass narrowly: quoted authorship, unsummoned preview
+follow-up and fictional grief. No model-quality gain or human trait is inferred.
+Protected publication and final installed evidence remain required.
