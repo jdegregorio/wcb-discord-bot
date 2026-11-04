@@ -135,3 +135,46 @@ pi5/aarch64; release timer active. Immutable index digest:
 sha256:fd4783f64d9e355e88baf2ecc4569a7856836e99e4fe5b2444a53dbd6952bfb9.
 No duplicate release or deployment transaction is needed for this tests/docs increment.
 Protected PR/main CI, final verification and precise cost limitations follow.
+
+
+## Installed acceptance and publication
+
+[PR 194](https://github.com/jdegregorio/wcb-discord-bot/pull/194) carries the unique
+H129 regression gate with codex and codex-automation labels. Feature commit dd988e7
+contains the initial tested change; final evidence is added before protected merge.
+Runtime remains the separately released PR 192 / 1b341de / v2.38.14. Its multiarch
+image workflow 41784066810 succeeded; all 46 installed source hashes and both package
+versions match. No runtime difference, new immutable tag or deployment transaction
+is required for this tests/docs increment.
+
+Six own actual owner/gateway exchanges pass narrow criteria: baseline preference,
+synthetic quoted authorship, unsummoned preview follow-up, fictional care, fictional
+Thomas Jones humor and final preference check. Other actors' simultaneous tests are
+excluded. The final real response arrives in 7.099 seconds after every auxiliary
+Discord client created by this run has closed. Plain HTTP maintenance uses a unique
+ephemeral readiness path before construction; no second gateway is started.
+Synthetic probes are not Andrew learning evidence. These real tests do not prove
+that the actual ambiguous historical neighbor was selected by every generated reply;
+the separate zero-provider installed packet probe verifies that boundary directly.
+No general fidelity, humor-multiplier or semantic recall-improvement claim is made.
+
+Post audit: same three selected attributed historical windows, 40 development rows /
+19 bot turns, and 300 league rows / 21 bot turns. The seven-day league sample contains
+two target and three bot posts. Zero full-turn duplicates or fixed storage-language
+markers; participation types, source semantics and unseen pixels remain unqualified.
+The sample is contaminated by simultaneous controlled tests and cannot establish
+spontaneous engagement quality. Private semantic audit remains blocked pending the
+specific private-egress approval. No rejected request is executed or rerouted.
+
+After real tests, pi5 reports healthy Discord readiness, zero restarts, read-only
+root filesystem, active release timer and zero error lines, response failures or
+source discards in the checked window starting 06:16:30 UTC. Six private smoke cases,
+source packet counts, hash checks and pre/post audit receipts contain only fixed
+metadata, counts and references; 0700 directory / 0600 files, seven-day manual retention
+and existing withdrawal cleanup. No transcript, answer text or pixels are retained.
+
+November ledger snapshot: USD 0.177698800 estimated, 64 attempts, eight unsettled
+reservations. The previous snapshot was USD 0.167503000 / 33 attempts / seven unsettled.
+These aggregate changes include concurrent runs and cannot be attributed to this run.
+No new allowance is created or unsettled reservation cleared. Existing USD 18 runtime /
+2 maintenance / 20 total guard remains; this test gate adds zero operating cost.

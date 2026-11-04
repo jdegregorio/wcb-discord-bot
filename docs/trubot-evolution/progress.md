@@ -5827,3 +5827,18 @@ pass 2,220 tests / 96.17% coverage, 46 source modules and package build. Three o
 actual owner/gateway controls pass narrowly: quoted authorship, unsummoned preview
 follow-up and fictional grief. No model-quality gain or human trait is inferred.
 Protected publication and final installed evidence remain required.
+
+
+H129 installed verification: all 46 runtime hashes/package versions match immutable
+2.38.14/index fd4783f64d9e; existing multiarch image CI 41784066810 succeeds. Six own
+actual owner/gateway checks pass narrowly, final 7.099 seconds after own auxiliary
+clients close. Healthy/ready/read-only, zero restarts and zero checked errors/failures/
+discards. Private receipts retain refs/counts only, modes 0700/0600 and seven-day
+manual retention/withdrawal cleanup. Post local audit remains semantically limited
+and contaminated by simultaneous controlled tests. November ledger estimate
+USD 0.177698800 / 64 attempts / eight unresolved includes concurrent activity; no
+per-run cost attribution. Same 18/2/20 guard. PR 194 contains this tests/docs gate;
+protected CI/merge evidence is linked there. Runtime release is PR 192 / 1b341de /
+v2.38.14; no duplicate tag/deployment. H121/H120 and H125 remain next, with separate
+short-novelty work owned by the concurrent run. Semantic provider audit awaits the
+specific private-data approval; no new trait or general prose improvement claimed.
