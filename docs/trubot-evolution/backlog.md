@@ -1,3 +1,24 @@
+# Current direction, 2026-11-03: handler authorship gate
+
+H126 shipped concurrently in PR 192 / immutable 2.38.14. This run reconciles that
+release and selects H129, a unique production-handler regression gate, so all three
+incoming event routes preserve uncertain authorship and source changes stop sends.
+Evidence: isolated parser/packet tests did not cover these historical event paths.
+Acceptance: identical old/current source comparisons, nine route/ambiguity cases,
+two publication lifecycle cases, all six gates, protected CI and actual owner/gateway
+controls. Confidence high in gate utility; semantic reply benefit unmeasured. No runtime
+change, duplicate release, provider call or operating cost. Private semantic audit
+remains blocked pending specific approval; local counts do not establish fidelity.
+
+Next H121/H120 useful connected abstractions with complete attributed supports and
+contraries, independent held-outs and qualified semantic review; H125 varied comic
+mechanisms and useful emotion; useful linked native/visual coverage and seasonal
+variety after demonstrated utility. Source lifecycle and withdrawal remain dependencies.
+Preserve the 18/2/20 guard, generated Michigan U.P. aurora/trail-camera scenes, natural
+captions, selective tools and six daily Sol/xhigh runs. New semantic evidence or material
+privacy/grounding failures change priority. [Protocol and results](evaluations/2026-11-03-handler-authorship.md).
+Earlier snapshots follow.
+
 # Current priority, 2026-11-03 21:12 Pacific
 
 H128a is the selected short-copy request correction. Explicit different-joke intent

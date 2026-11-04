@@ -5818,3 +5818,40 @@ stronger all-new-idea gate. Reject that prompt refinement and retain a narrower
 supported detector-order correction. Broader semantic novelty stays unresolved.
 [Full protocol and actual outcomes](evaluations/2026-11-03-short-novelty.md).
 Release and installed acceptance are recorded when complete.
+
+
+## 2026-11-03: archive authorship event-route gate
+
+Initial base cbe136e; fresh managed worktree and feature/trubot-daily-20261103-2100.
+Concurrent PR 192 / 1b341de / 2.38.14 completes H126 while this run qualifies its
+candidate. Reconcile and advance this isolated worktree to 1b341de; primary untouched.
+Select unique H129 enabling test increment: actual direct, follow-up and reaction
+handlers retain full ambiguous historical context without verified authorship, and
+source removal/withdrawal after generation prevents publication. Eleven current
+cases pass; exact prior-source comparison, six gates, protected CI and real gateway
+acceptance follow. No runtime change or duplicate release. Semantic provider audit
+blocked by automatic approval review; no new persona or measured prose gain.
+[Full evidence](evaluations/2026-11-03-handler-authorship.md).
+
+
+H129 qualification: exact 2.38.13 source fails all nine attribution assertions while
+both invalidation controls pass; 2.38.14 passes all eleven. All six feature gates
+pass 2,220 tests / 96.17% coverage, 46 source modules and package build. Three own
+actual owner/gateway controls pass narrowly: quoted authorship, unsummoned preview
+follow-up and fictional grief. No model-quality gain or human trait is inferred.
+Protected publication and final installed evidence remain required.
+
+
+H129 installed verification: all 46 runtime hashes/package versions match immutable
+2.38.14/index fd4783f64d9e; existing multiarch image CI 41784066810 succeeds. Six own
+actual owner/gateway checks pass narrowly, final 7.098 seconds after own auxiliary
+clients close. Healthy/ready/read-only, zero restarts and zero checked errors/failures/
+discards. Private receipts retain refs/counts only, modes 0700/0600 and seven-day
+manual retention/withdrawal cleanup. Post local audit remains semantically limited
+and contaminated by simultaneous controlled tests. November ledger estimate
+USD 0.177698800 / 64 attempts / eight unresolved includes concurrent activity; no
+per-run cost attribution. Same 18/2/20 guard. PR 194 contains this tests/docs gate;
+protected CI/merge evidence is linked there. Runtime release is PR 192 / 1b341de /
+v2.38.14; no duplicate tag/deployment. H121/H120 and H125 remain next, with separate
+short-novelty work owned by the concurrent run. Semantic provider audit awaits the
+specific private-data approval; no new trait or general prose improvement claimed.
