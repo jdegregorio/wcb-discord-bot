@@ -1,3 +1,10 @@
+## Short requested joke repairs, 2.38.15
+
+An explicit different-joke request can refresh an identical short punchline through
+the existing single accounted repair. Ordinary short answers and requested quotes
+retain their behavior. This detects exact reuse; semantic novelty and funniness
+remain fallible. [Qualification](docs/trubot-evolution/evaluations/2026-11-03-short-novelty.md).
+
 ## Authorship-aware archive context, 2.38.14
 
 Historical reply and study context preserves ambiguous quotation, preview and
