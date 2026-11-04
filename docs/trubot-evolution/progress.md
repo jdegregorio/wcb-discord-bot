@@ -5795,12 +5795,12 @@ in the [study](evaluations/2026-10-25-photo-acceptance.md).
 
 ## 2026-10-29 21:00 run, resumed 2026-11-04 UTC: H126
 
-Fetched basecbe136e; new managed worktree/feature branch isolates all source work.
+Fetched base cbe136e; new managed worktree/feature branch isolates all source work.
 PR188/2.38.13 already complete, stale automation memory reconciled. Four baseline
 attribution cases fail, all candidate cases pass. One actual affected source loses
-its false authored label while exact text/source/context remain; all405 eligible
-sources retain their classification.17new regressions; all six feature gates pass:
-2,209tests/96.17%,46modules,wheel/sdist. No new human trait, graph population,
+its false authored label while exact text/source/context remain; all 405 eligible
+sources retain their classification. 17 new regressions; all six feature gates pass:
+2,209 tests/96.17%,46 modules,wheel/sdist. No new human trait, graph population,
 checkpoint reset, provider turn or retrospective graph repair. H121/H120 relation
 and abstract utility, H125 novel comic mechanisms/emotion, then useful linked native/
 visual coverage remain next. Real installed smoke/release/deployment pending.
@@ -5818,3 +5818,29 @@ stronger all-new-idea gate. Reject that prompt refinement and retain a narrower
 supported detector-order correction. Broader semantic novelty stays unresolved.
 [Full protocol and actual outcomes](evaluations/2026-11-03-short-novelty.md).
 Release and installed acceptance are recorded when complete.
+
+
+## 2026-11-04 UTC: H126 installed completion
+
+PR 192/1b341dea951cec590e75c714b1d1f501e2e590a8/v2.38.14 is installed at
+sha256:fd4783f64d9e355e88baf2ecc4569a7856836e99e4fe5b2444a53dbd6952bfb9.
+Protected PR/main/image CI 41783462914/41783751698/41784066810 pass. Both six-gate
+runs pass 2,209 tests/96.17%,46 modules,wheel/sdist; all 46 installed hashes/package
+versions match. Previous2.38.13 retained; no migration, rollback, graph population,
+checkpoint reset or new provider turn. Primary checkout untouched.
+
+Actual-source attribution 1 false label to 0; all 405eligible blocks retained. Wider
+study radius touches 8 anchors with0 current derived supports. Seven own actual owner
+queries get 7 gateway replies; fresh 5/5 native baseball sources match. Narrow natural
+language, exact-date honesty, care and brief humor controls pass. Context/year full
+relation grounding unqualified, reservation correction recall unavailable in both
+baseline/release. Concurrent dev traffic excluded. No general fidelity/new trait.
+
+Post-audit: 3 historical windows / 15 rows,14 development bot turns,300 league rows / 3 recent target /
+3 bot posts; 0 exact duplicates / metadata hits. Final gateway4.722 seconds AFTER all
+auxiliary closures; no later Discord clients. Healthy/ready/read-only, 0 errors / discards /
+restarts/OOM; timer active/enabled. 7 private receipt JSONs pass content/mode checks.
+November USD 0.177698800estimate/8 unsettled,18/2/20 guard unchanged; concurrent activity
+prevents exact run-cost attribution. Next: H121/H120 connected abstract utility, H125 novel
+comic mechanisms/emotion, useful linked native/visual coverage and seasonal variety.
+[Complete qualification and limitations](evaluations/2026-10-29-archive-roles.md).

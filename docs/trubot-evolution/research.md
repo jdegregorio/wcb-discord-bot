@@ -3414,3 +3414,11 @@ Two-phase research selects the confirmed archive-context attribution boundary.
 Seven ineligible target blocks/one neighboring eligible anchor; packet roles promote
 uncertain context. H121/H120/H125 remain exploratory pending qualified semantic
 comparison. No new human trait or graph population. [Protocol](evaluations/2026-10-29-archive-roles.md).
+
+
+H126 installed conclusion,2026-11-04: supported authorship-boundary correction,
+not measured general reply fidelity. Wider study neighborhood touches 8 anchors,
+0 current derived supports. Matched boundary regressions, actual installed packet
+comparison and 7 real owner/gateway replies complete. Context/year relation grounding
+and reservation recall remain open; H121/H120/H125 remain next with qualified
+semantic evidence prerequisites. [Installed evidence](evaluations/2026-10-29-archive-roles.md).

@@ -1521,3 +1521,14 @@ These are small bounded, unmatched samples, no image pixels or fetched reply
 targets. Historical dates remain unknown. Each flag needs case review; no
 automatic persona change or human trait follows from a model judgment. Code-only
 rollback to2.38.8 removes this operator API; preserve source/spending/claim state.
+
+
+## Archive context roles,2.38.14
+
+No store/schema/retention migration, checkpoint cohort reset or graph population.
+Parser eligibility and complete source context govern both reply/study role labels.
+Private content-free receipts use existing app-volume
+smoke-tests/2026-10-29-2100 with 0700 directories/0600 JSON, seven-day manual retention,
+correction/withdrawal and recovery rules. No raw source/answer/pixel/screenshot is
+retained there. Candidate/installed comparison scripts are ephemeral; immutable
+2.38.13 remains the compatible rollback without restoring source or spending state.
