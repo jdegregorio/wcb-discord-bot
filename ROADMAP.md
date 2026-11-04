@@ -1,3 +1,41 @@
+# Current priority, 2026-11-03 21:12 Pacific
+
+H128a is the selected short-copy request correction. Explicit different-joke intent
+can invoke the existing single accounted repair even for an identical one-word or
+short punchline. Ordinary short factual answers, literal requests, source checks,
+recipient restraint and spending limits retain their behavior. The failed H128
+semantic-novelty trials remain failed; their prompt refinement is discarded. No
+new trait, prompt, model, graph/source population, participation rule or service.
+[Protocol, contrary evidence and results](docs/trubot-evolution/evaluations/2026-11-03-short-novelty.md).
+
+The independent H126 run merged and installed 2.38.14 while this run investigated
+humor. Reconcile that main revision before shipping 2.38.15; avoid overlapping its
+archive/distillation work. This run's exact-copy trials isolate a fixed synthetic
+first draft, not spontaneous frequency or a general character comparison.
+
+1. Complete H128a with held-outs, full gates, protected CI, immutable release/image,
+   deployment and actual owner/gateway acceptance. Benefit: a request for a fresh
+   short joke can receive the same repair already available to a copied long joke.
+   High confidence in detector ordering; semantic novelty remains unqualified.
+   Operating impact: at most one existing repair on an exact immediate short copy
+   under explicit novelty intent; no new spending pool, schema or service.
+2. H121/H120 useful connected episodes and abstractions, alongside H125 semantic
+   comic variety and useful emotional/visual context. Require attributed separated
+   supports/contraries, complete context, qualified private semantic review, matched
+   independent held-outs and real benefit. Current failed pun-family trials reject
+   a simple stronger repair instruction; further harness changes need new evidence.
+3. Broaden useful linked native/visual coverage and seasonal variety after utility.
+   Preserve generated Michigan U.P. northern-lights and trail-camera scenes, short
+   natural captions, selective skills/tools and four daily photo studies. H96
+   sightings remain closed without a qualified feed; exact dates are secondary.
+
+New census: three attributed human windows, 40 development rows/18 bot turns and
+300 league rows with two target/three bot posts in seven days. Numeric coverage
+and one successful fresh live joke case do not establish general fidelity. No new
+human observation or automatic native-pattern permission. Privacy/source lifecycle,
+withdrawal, allowlists/no DMs, 18/2/20 guard and six local 01/05/09/13/17/21 Sol/xhigh
+standalone runs and notifications remain unchanged. Older snapshots are historical.
+
 # Current priority, 2026-10-29: H126 archive attribution
 
 H127 /2.38.13 is merged and installed. H126 is the selected enabling correction:

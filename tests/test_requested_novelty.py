@@ -76,7 +76,9 @@ def test_only_conversation_bot_words_can_be_an_echo(origin):
 
 
 def test_short_factual_human_and_explicit_reference_continuity_stays_intact():
-    assert not _stale_bot_echo("White Sox", [ConversationMessage("assistant", "White Sox")], FOCUS)
+    assert not _stale_bot_echo(
+        "White Sox", [ConversationMessage("assistant", "White Sox")], "Casey: Which team was it?"
+    )
     assert not _stale_bot_echo(OLD, [ConversationMessage("user", OLD)], FOCUS)
     assert not _stale_bot_echo(
         OLD, [*history(), ConversationMessage("user", OLD, origin="reference")], FOCUS
