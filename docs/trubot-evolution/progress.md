@@ -5791,3 +5791,17 @@ No extra provider turn, retry loop, model, graph/schema, service or spending poo
 H126 archive ambiguity roles remains follow-up before H121/H120 and H125. Detailed
 methods, failures, final qualification/release and actual installed acceptance are
 in the [study](evaluations/2026-10-25-photo-acceptance.md).
+
+
+## 2026-10-29 21:00 run, resumed 2026-11-04 UTC: H126
+
+Fetched basecbe136e; new managed worktree/feature branch isolates all source work.
+PR188/2.38.13 already complete, stale automation memory reconciled. Four baseline
+attribution cases fail, all candidate cases pass. One actual affected source loses
+its false authored label while exact text/source/context remain; all405 eligible
+sources retain their classification.17new regressions; all six feature gates pass:
+2,209tests/96.17%,46modules,wheel/sdist. No new human trait, graph population,
+checkpoint reset, provider turn or retrospective graph repair. H121/H120 relation
+and abstract utility, H125 novel comic mechanisms/emotion, then useful linked native/
+visual coverage remain next. Real installed smoke/release/deployment pending.
+[Full hypothesis, limitations and results](evaluations/2026-10-29-archive-roles.md).

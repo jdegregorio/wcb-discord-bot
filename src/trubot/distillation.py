@@ -18,6 +18,7 @@ from uuid import uuid4
 import discord
 from openai import APIConnectionError, APIStatusError, APITimeoutError
 
+from trubot.archives import archive_context_role
 from trubot.budget import BudgetExceeded, BudgetUnavailable
 from trubot.episode_memory import (
     OBSERVATION_KINDS,
@@ -166,7 +167,9 @@ size or request budget; admitted context text is complete but the bounded neighb
 can still omit the real setup. Do not assume missing context is agreement or a reaction.
 Truncated passages may omit qualifications; reject
 interpretations that rely on missing text or image pixels. Context-only target blocks
-are not additional support.
+are not additional support. ambiguous_target_context_only identifies an alias-matched
+block whose quoted, preview or attachment words have uncertain authorship; do not
+attribute those words, beliefs or reactions to Andrew. System rows are not human words.
 Native packets without captured setup explicitly lack peer context. Fresh captured
 human setup is context only; local anonymous speaker keys apply within one source,
 not across sources. Explicit reply links identify retained targets; adjacency alone
@@ -546,11 +549,11 @@ class StudyStore:
                     if ref["kind"] == "slack" and archive is not None:
                         context = [
                             {
-                                "author_role": "verified_target_context_only"
-                                if r["target"]
-                                else "bot_context_only"
-                                if r["kind"] == "bot"
-                                else "other_speaker",
+                                "author_role": archive_context_role(
+                                    target=r["target"],
+                                    voice_eligible=r["voice_eligible"],
+                                    kind=r["kind"],
+                                ),
                                 "speaker_key": "target"
                                 if r["target"]
                                 else _hash([ref["document"], r["speaker"]])[:12],

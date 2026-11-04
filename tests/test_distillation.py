@@ -837,3 +837,49 @@ def test_ambiguous_reported_hypothetical_or_long_text_cannot_use_single_support(
     study = StudyStore(graph).prepare(now=NOW, channel_ids=frozenset({10}))
     with pytest.raises(LearningUnavailable):
         validate_proposal(single_report(study), study)
+
+
+@pytest.mark.parametrize(
+    "body,flag",
+    [
+        ("replied to a thread:\nI prefer vanilla.", "thread_quote_ambiguous"),
+        ("https://example.test/dessert\nI prefer vanilla.", "link_preview_ambiguous"),
+        ("Image from iOS\nI prefer vanilla.", "attachment_or_preview"),
+    ],
+)
+def test_ambiguous_slack_neighbor_never_receives_verified_authorship(stores, body, flag):
+    _, archive, graph = stores
+    archive.import_document(
+        (
+            "legacy.target\n  8:00 AM\nI order caramel after dinner.\n"
+            "legacy.target\n  8:01 AM\n" + body
+        ).encode(),
+        channel="synthetic",
+        target_alias="legacy.target",
+        alias_basis="Synthetic audit",
+        origin={"kind": "synthetic"},
+        now=NOW,
+    )
+    graph.populate(now=NOW)
+    assert graph.status()["nodes"]["human_source"] == 1
+    study = StudyStore(graph).prepare(now=NOW, channel_ids=frozenset({10}))
+    passage = study.passages[0]
+    assert passage["author_text"] == "I order caramel after dinner."
+    neighbor = passage["adjacent_context"][0]
+    assert neighbor["author_role"] == "ambiguous_target_context_only"
+    assert neighbor["speaker_key"] == "target"
+    assert flag in neighbor["flags"]
+    assert not neighbor["text_truncated"]
+    # Exact context words cannot be laundered into authored supports.
+    with pytest.raises(LearningUnavailable):
+        validate_proposal(
+            proposal(
+                study,
+                support_basis="explicit_self_report",
+                supports=[{"source": 0, "quote": "I prefer vanilla."}],
+            ),
+            study,
+        )
+    archive.remove_document(study.snapshots[0]["ref"]["document"], now=NOW)
+    with pytest.raises(LearningUnavailable):
+        StudyStore(graph).check(study, now=NOW)

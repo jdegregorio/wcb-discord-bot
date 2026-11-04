@@ -31,7 +31,12 @@ def test_correction_recall_keeps_complete_peer_explanation(tmp_path, question):
     assert evidence[0]["text"] == AUTHORED
     assert evidence[0]["source"] == selected[0].source
     assert evidence[0]["adjacent_context_only"] == [
-        {"author": "peer (not persona evidence)", "text": CORRECTION}
+        {
+            "author": "peer (not persona evidence)",
+            "author_role": "other_speaker",
+            "flags": ["adjacent_context_only", "calendar_date_unknown"],
+            "text": CORRECTION,
+        }
     ]
     assert not packet.allow_voice_examples
 

@@ -1,3 +1,11 @@
+## Authorship-aware archive context, 2.38.14
+
+Historical reply and study context preserves ambiguous quotation, preview and
+attachment roles, so an alias match alone does not present those words as Andrew's
+own. Eligible sources, neighboring context and lifecycle checks remain intact.
+This is an attribution correction; broader character quality remains under study.
+[Evidence](docs/trubot-evolution/evaluations/2026-10-29-archive-roles.md).
+
 ## Provisional photo acceptance, 2.38.13
 
 Source photos are inspected before attachment. The existing continuation explicitly
