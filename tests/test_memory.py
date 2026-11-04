@@ -65,6 +65,10 @@ def test_slack_context_is_separate_and_ambiguous_quotes_are_excluded(store):
     data = json.loads(memory.render(candidates).split("\n", 1)[1])
     assert data[0]["text"] == "Sox forever."
     assert data[0]["adjacent_context_only"][0]["author"] == "peer (not persona evidence)"
+    ambiguous = data[0]["adjacent_context_only"][1]
+    assert ambiguous["author"] == "ambiguous target block (not authored evidence)"
+    assert ambiguous["author_role"] == "ambiguous_target_context_only"
+    assert "thread_quote_ambiguous" in ambiguous["flags"]
     assert data[0]["source"]["start_line"] > 0
     archive.remove_document(candidates[0].source["document"], now=NOW)
     assert memory.render(candidates) == ""
@@ -343,3 +347,61 @@ def test_rolling_recall_intersects_retention_and_rejects_unknown_or_zero_amounts
     store.forget(now=NOW)
     with pytest.raises(LearningUnavailable):
         memory.candidates("Quote messages from the past week", guild_id=77, now=NOW)
+
+
+@pytest.mark.parametrize(
+    "speaker,body,author,role",
+    [
+        ("legacy.target", "Caramel is my choice.", "Andrew", "verified_target_context_only"),
+        (
+            "legacy.target",
+            "https://example.test/dessert\nVanilla!",
+            "ambiguous target block (not authored evidence)",
+            "ambiguous_target_context_only",
+        ),
+        (
+            "legacy.target",
+            "Image from iOS\nVanilla!",
+            "ambiguous target block (not authored evidence)",
+            "ambiguous_target_context_only",
+        ),
+        ("peer", "Vanilla!", "peer (not persona evidence)", "other_speaker"),
+        ("Slackbot", "Vanilla!", "bot (not persona evidence)", "bot_context_only"),
+        (
+            "legacy.target",
+            "joined #general",
+            "system (not persona evidence)",
+            "system_context_only",
+        ),
+    ],
+)
+def test_reply_context_preserves_complete_neighbor_and_parser_role(
+    store, speaker, body, author, role
+):
+    archive = ArchiveStore.initialize(store)
+    archive.import_document(
+        (
+            "legacy.target\n  8:00 AM\nI order caramel.\n" + speaker + "\n  8:01 AM\n" + body
+        ).encode(),
+        channel="general",
+        target_alias="legacy.target",
+        alias_basis="Synthetic audit",
+        origin={"kind": "synthetic"},
+        now=NOW,
+    )
+    memory = ContextMemory(store)
+    candidates = memory.candidates("caramel", guild_id=77, now=NOW)
+    data = json.loads(memory.render(candidates).split("\n", 1)[1])
+    anchor = next(row for row in data if row["text"] == "I order caramel.")
+    context = anchor["adjacent_context_only"]
+    assert len(context) == 1
+    assert context[0] == {
+        "author": author,
+        "author_role": role,
+        "flags": json.loads(archive.context(anchor["source"]["document"], 1)[1]["flags"]),
+        "text": body,
+    }
+    assert anchor["source"]["date"].startswith("unknown")
+    store.forget(now=NOW)
+    with pytest.raises(LearningUnavailable):
+        memory.render(candidates)

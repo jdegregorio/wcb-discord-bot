@@ -71,6 +71,21 @@ class ArchiveMessage:
     flags: tuple[str, ...]
 
 
+def archive_context_role(*, target: bool, voice_eligible: bool, kind: str) -> str:
+    """Preserve parser authorship eligibility for context, never additional support.
+
+    A matching alias identifies the enclosing block, not quoted/preview authorship.
+    Bot and system rows cannot become human evidence even with inconsistent flags.
+    """
+    if kind == "bot":
+        return "bot_context_only"
+    if kind != "message":
+        return "system_context_only"
+    if target:
+        return "verified_target_context_only" if voice_eligible else "ambiguous_target_context_only"
+    return "other_speaker"
+
+
 def parse_slack_export(raw: bytes, *, target_alias: str) -> list[ArchiveMessage]:
     """Parse copied Slack UI blocks, retaining raw bytes separately for reparsing.
 

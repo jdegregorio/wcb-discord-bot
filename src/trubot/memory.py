@@ -10,7 +10,7 @@ from datetime import UTC, datetime, timedelta
 from enum import StrEnum
 from typing import Any
 
-from trubot.archives import ArchiveStore
+from trubot.archives import ArchiveStore, archive_context_role
 from trubot.episode_memory import abstract_context, observation_sources
 from trubot.graph import GraphStore
 from trubot.learning import LearningStore, LearningUnavailable, _time
@@ -628,14 +628,27 @@ class ContextMemory:
                             "text": focus["content"],
                             "adjacent_context_only": [
                                 {
-                                    "author": "Andrew"
-                                    if r["target"]
-                                    else "bot (not persona evidence)"
-                                    if r["kind"] == "bot"
-                                    else "peer (not persona evidence)",
+                                    "author": {
+                                        "verified_target_context_only": "Andrew",
+                                        "ambiguous_target_context_only": (
+                                            "ambiguous target block (not authored evidence)"
+                                        ),
+                                        "bot_context_only": "bot (not persona evidence)",
+                                        "system_context_only": "system (not persona evidence)",
+                                        "other_speaker": "peer (not persona evidence)",
+                                    }[role],
+                                    "author_role": role,
+                                    "flags": json.loads(r["flags"]),
                                     "text": r["content"],
                                 }
                                 for r in complete_neighbors
+                                for role in [
+                                    archive_context_role(
+                                        target=r["target"],
+                                        voice_eligible=r["voice_eligible"],
+                                        kind=r["kind"],
+                                    )
+                                ]
                             ],
                             "context_gaps": [
                                 f"{omitted} adjacent context messages omitted for size; "

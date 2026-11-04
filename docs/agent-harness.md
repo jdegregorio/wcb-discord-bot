@@ -1,3 +1,38 @@
+# Current priority, 2026-10-29: H126 archive attribution
+
+H127 /2.38.13 is merged and installed. H126 is the selected enabling correction:
+preserve ambiguous archive context roles so quotes and previews are not presented
+as Andrew's authored words. Private census finds seven ineligible target blocks,
+one neighboring an eligible anchor; actual render/study code promotes its role.
+Require matched synthetic boundary/lifecycle regressions, private content-free
+packet comparison, six gates and actual development Discord acceptance. No new
+persona observation, graph population, provider turn or spending allowance.
+
+1. Complete H126 release and installed acceptance. High confidence in the packet
+   defect; broad reply-semantic improvement remains unmeasured. Existing stores,
+   checkpoint cohort and 18/2/20 guard; zero added API turns.
+2. H121/H120 useful connected relation-preserving episode/abstract memory. So
+   grounded values, emotional reactions and relationships guide natural replies.
+   Need complete attributed/contrary episodes, qualified private semantic review,
+   independent held-outs and real gateway benefit. Prior fusion confirmed, remedy
+   unresolved. Estimate token impact within existing budget before rollout.
+3. H125 novel comic mechanisms alongside useful emotional/original-view context.
+   So approved creative amplification stays brief, varied and appropriate. Require
+   matched full-turn/held-out semantic gains, care/recipient controls and actual
+   gateway tests. No human trait follows from bot prose; confidence unresolved.
+4. Useful linked native/visual coverage and seasonal variety after measured utility.
+   Keep generated Michigan U.P. aurora/trail-camera scenes and selective tools.
+   Need actual pixels, lifecycle/permission tests and honest gaps. H96 sightings
+   closed until qualified observation access; dates are secondary.
+
+Fresh numeric audit: three attributed windows,12 development bot turns,300 league
+rows with two recent target and two bot posts; no exact duplicates/storage hits.
+Sparse participation and unavailable new semantic comparison limit fidelity claims.
+Reprioritize if material privacy/grounding/delivery regressions occur. Same six
+local Sol/xhigh runs, notifications, withdrawal and channel boundaries.
+
+[Protocol and results](trubot-evolution/evaluations/2026-10-29-archive-roles.md). Older records below are historical.
+
 # Current direction, 2026-10-25 run
 
 H127 / 2.38.13 makes retrieved photos provisional until the existing pixel

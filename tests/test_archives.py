@@ -394,3 +394,24 @@ def test_visual_cli_imports_bytes_replays_and_suppresses(corpus, tmp_path, monke
     monkeypatch.setattr("sys.argv", [*base, "remove-visual", "--digest", digest])
     main()
     assert json.loads(capsys.readouterr().out)["status"]["image_assets"] == 0
+
+
+@pytest.mark.parametrize(
+    "target,eligible,kind,expected",
+    [
+        (True, True, "message", "verified_target_context_only"),
+        (True, False, "message", "ambiguous_target_context_only"),
+        (False, False, "message", "other_speaker"),
+        (False, True, "message", "other_speaker"),
+        (False, False, "bot", "bot_context_only"),
+        (True, True, "bot", "bot_context_only"),
+        (False, False, "system", "system_context_only"),
+        (True, True, "system", "system_context_only"),
+    ],
+)
+def test_archive_context_role_never_promotes_nonhuman_or_ambiguous_blocks(
+    target, eligible, kind, expected
+):
+    from trubot.archives import archive_context_role
+
+    assert archive_context_role(target=target, voice_eligible=eligible, kind=kind) == expected

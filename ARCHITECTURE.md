@@ -1,3 +1,12 @@
+# Archive context attribution, 2.38.14
+
+A shared parser-eligibility classifier labels archive neighbors in both reply and
+study packets. Alias-matched thread/preview/attachment blocks stay ambiguous context;
+bot and system rows never acquire human authorship. Complete text, flags, anonymous
+speaker continuity and source-lifecycle gates remain. No store/schema migration,
+checkpoint cohort reset, graph population or extra provider turn.
+[Qualification](docs/trubot-evolution/evaluations/2026-10-29-archive-roles.md).
+
 # 2026-10-21 installed 2.38.12
 
 H124 completes output-limited ordinary text through the existing shared repair

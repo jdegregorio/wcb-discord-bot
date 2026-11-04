@@ -3398,3 +3398,11 @@ H126 stays explicit enabling follow-up, then H121/H120 and H125 useful abstract,
 emotional, comic and visual context. No new personal observation or pattern gate.
 Preregistered cases, failed positives, harness limits, source coverage, final gates
 and actual installed outcomes belong to the [study](evaluations/2026-10-25-photo-acceptance.md).
+
+
+## 2026-10-29 H126
+
+Two-phase research selects the confirmed archive-context attribution boundary.
+Seven ineligible target blocks/one neighboring eligible anchor; packet roles promote
+uncertain context. H121/H120/H125 remain exploratory pending qualified semantic
+comparison. No new human trait or graph population. [Protocol](evaluations/2026-10-29-archive-roles.md).
