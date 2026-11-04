@@ -1,3 +1,11 @@
+# 2026-11-03: H128a short requested copies
+
+The combined semantic-novelty hypothesis fails two six-case trials. Reject its
+instruction refinement; split out the independently reproduced exact-copy boundary
+correction. Real live contrary case, full-handler baseline, method, limits and
+acceptance are in the [study](evaluations/2026-11-03-short-novelty.md).
+No general humor/fidelity gain or human trait is claimed.
+
 # Evolution research
 
 Public records contain methods, counts, categories and limitations. Raw exchanges,

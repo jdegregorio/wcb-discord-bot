@@ -5807,6 +5807,19 @@ visual coverage remain next. Real installed smoke/release/deployment pending.
 [Full hypothesis, limitations and results](evaluations/2026-10-29-archive-roles.md).
 
 
+## 2026-11-03 21:12 Pacific: H128a short requested novelty
+
+Base cbe136e; isolated managed worktree and feature/trubot-daily-20261103-2112.
+Primary checkout untouched. Independent H126 merges as1b341de/2.38.14; this run
+fast-forwards before qualification. Fresh actual joke/counterexample succeeds;
+full handler reproduces copied three-word punchlines escaping repair in direct
+and follow-up modes. Two six-case trials recover all exact copies but fail the
+stronger all-new-idea gate. Reject that prompt refinement and retain a narrower
+supported detector-order correction. Broader semantic novelty stays unresolved.
+[Full protocol and actual outcomes](evaluations/2026-11-03-short-novelty.md).
+Release and installed acceptance are recorded when complete.
+
+
 ## 2026-11-03: archive authorship event-route gate
 
 Initial base cbe136e; fresh managed worktree and feature/trubot-daily-20261103-2100.

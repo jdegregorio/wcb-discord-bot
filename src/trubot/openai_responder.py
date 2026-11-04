@@ -801,31 +801,32 @@ def _stale_bot_echo(
     """Recognize substantial old bot wording, preserving deliberate continuity."""
     if (
         not target
-        or len(reply) < 24
-        or (
-            len(reply) <= _SHORT_REPLY_CHARACTERS
-            and len(_WORD.findall(reply.replace("\u2019", "'"))) <= _SHORT_REPLY_WORDS
-        )
         or _REUSE_REQUEST.search(target)
         or any(message.origin == "reference" for message in messages)
     ):
         return False
-    # A few words can be a complete fact, acknowledgement or punchline. Cosmetic
-    # novelty is not worth another private-source check/provider attempt here.
-    # This grants no factual authority; initial memory validation and the separate
-    # length-repair path remain authoritative. Longer single tokens are not exempt.
     previous = [
         normalize_reply(message.content, target=target)
         for message in messages
         if message.role == "assistant" and message.origin == "conversation"
     ]
     key = " ".join(reply.casefold().split())
-    if previous and _NEW_JOKE_REQUEST.match(target.split(": ", 1)[-1].removeprefix("🤖").strip()):
-        # A different joke cannot be the unchanged latest punchline. Keep the
-        # existing substantial-wording thresholds and single accounted repair.
-        latest = previous[-1]
-        if key == " ".join(latest.casefold().split()) or _passages(reply) & _passages(latest):
-            return True
+    new_joke = bool(
+        previous and _NEW_JOKE_REQUEST.match(target.split(": ", 1)[-1].removeprefix("🤖").strip())
+    )
+    # An explicit different-joke request rejects an unchanged immediate answer,
+    # including a one-word punchline. This is exact reuse, never semantic grading.
+    if new_joke and key and key == " ".join(previous[-1].casefold().split()):
+        return True
+    # Ordinary short facts and acknowledgements retain their continuity exemption.
+    # Partial-overlap recovery still requires the existing substantial wording.
+    if len(reply) < 24 or (
+        len(reply) <= _SHORT_REPLY_CHARACTERS
+        and len(_WORD.findall(reply.replace("\u2019", "'"))) <= _SHORT_REPLY_WORDS
+    ):
+        return False
+    if new_joke and _passages(reply) & _passages(previous[-1]):
+        return True
     if len(previous) < 2 or key == " ".join(previous[-1].casefold().split()):
         return False
     if any(key == " ".join(old.casefold().split()) for old in previous[:-1]):

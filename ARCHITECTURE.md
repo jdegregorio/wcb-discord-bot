@@ -1,3 +1,11 @@
+## Short explicit-novelty boundary, 2.38.15
+
+Exact immediate bot reuse under supported explicit different-joke intent is checked
+before the short-answer exemption. Partial overlap retains its substantial-wording
+threshold. The same optional single repair, fresh source checks, recipient control
+and ledger apply. No semantic critic, new prompt or extra loop is introduced.
+[Evidence and limits](docs/trubot-evolution/evaluations/2026-11-03-short-novelty.md).
+
 # Archive context attribution, 2.38.14
 
 A shared parser-eligibility classifier labels archive neighbors in both reply and
