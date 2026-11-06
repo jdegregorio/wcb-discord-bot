@@ -1,4 +1,43 @@
-# Current priority, 2026-11-03 21:12 Pacific
+# Current priorities, reconciled 2026-11-04 UTC
+
+H126 is complete in the validated 2.38.14 release. Archive context preserves
+eligible, ambiguous target, peer, bot and system roles. One actual false authorship
+label becomes zero without losing source/context text; all 405 eligible blocks
+retain classification. The wider study radius touches eight anchors, with zero
+current derived nodes supported by them. No general fidelity gain is claimed.
+
+Both feature/merged six-gate runs pass: 2,209 tests, 96.17% coverage, 46 typed modules
+and packages. All installed hashes match the tested merge. Seven actual owner
+questions receive gateway replies. Natural recall language, exact-date honesty,
+care and short humor pass narrow controls. Reservation correction recall remains
+unavailable, and full context/year relation grounding remains unqualified.
+
+1. Finish the independent H128a cycle already in progress. PR193 merges the short
+   exact-copy repair for 2.38.15; that run owns its release and installed acceptance.
+   This record validates 2.38.14 only. Preserve newer verified releases. PR194 adds
+   independent handler attribution tests without changing runtime. Avoid overlap.
+2. H121/H120 useful relation-preserving episodes and abstract memory, so grounded
+   values, emotions and relationships guide natural replies. Require attributed
+   supports/contraries, complete setup, qualified private semantic review, matched
+   held-outs and actual gateway benefit. Prior fusion is confirmed; remedy remains
+   unresolved. Existing graph and budget; estimate operating impact before rollout.
+3. H125 varied comic mechanisms with useful emotion/original views, so approved
+   amplification stays brief and appropriate. Require semantic gains, care/recipient
+   controls and real gateway checks. Novel wording alone is insufficient. Keep the
+   shared repair and maintenance allowance; no new human trait or learning permission.
+4. Useful linked native/visual coverage and seasonal variety after measured utility.
+   Require actual pixels, permission/lifecycle checks and honest gaps. Preserve
+   generated Michigan U.P. aurora/trail-camera scenes and selective skills/tools.
+   H96 sightings stay closed without qualified observations; dates are secondary.
+
+Material privacy/grounding/delivery regressions can reorder work. Source withdrawal,
+allowlists/no DMs, the 18/2/20 guard, six local 01/05/09/13/17/21 Sol/xhigh standalone
+runs and notifications remain unchanged. Concurrent development traffic is excluded
+from this run's seven-probe count and limits wording-level causal conclusions.
+
+[Protocol and installed evidence](trubot-evolution/evaluations/2026-10-29-archive-roles.md). Older records below are historical.
+
+# Concurrent H128a decision record, 2026-11-03 21:12 Pacific
 
 H128a is the selected short-copy request correction. Explicit different-joke intent
 can invoke the existing single accounted repair even for an identical one-word or
@@ -36,40 +75,6 @@ human observation or automatic native-pattern permission. Privacy/source lifecyc
 withdrawal, allowlists/no DMs, 18/2/20 guard and six local 01/05/09/13/17/21 Sol/xhigh
 standalone runs and notifications remain unchanged. Older snapshots are historical.
 
-# Current priority, 2026-10-29: H126 archive attribution
-
-H127 /2.38.13 is merged and installed. H126 is the selected enabling correction:
-preserve ambiguous archive context roles so quotes and previews are not presented
-as Andrew's authored words. Private census finds seven ineligible target blocks,
-one neighboring an eligible anchor; actual render/study code promotes its role.
-Require matched synthetic boundary/lifecycle regressions, private content-free
-packet comparison, six gates and actual development Discord acceptance. No new
-persona observation, graph population, provider turn or spending allowance.
-
-1. Complete H126 release and installed acceptance. High confidence in the packet
-   defect; broad reply-semantic improvement remains unmeasured. Existing stores,
-   checkpoint cohort and 18/2/20 guard; zero added API turns.
-2. H121/H120 useful connected relation-preserving episode/abstract memory. So
-   grounded values, emotional reactions and relationships guide natural replies.
-   Need complete attributed/contrary episodes, qualified private semantic review,
-   independent held-outs and real gateway benefit. Prior fusion confirmed, remedy
-   unresolved. Estimate token impact within existing budget before rollout.
-3. H125 novel comic mechanisms alongside useful emotional/original-view context.
-   So approved creative amplification stays brief, varied and appropriate. Require
-   matched full-turn/held-out semantic gains, care/recipient controls and actual
-   gateway tests. No human trait follows from bot prose; confidence unresolved.
-4. Useful linked native/visual coverage and seasonal variety after measured utility.
-   Keep generated Michigan U.P. aurora/trail-camera scenes and selective tools.
-   Need actual pixels, lifecycle/permission tests and honest gaps. H96 sightings
-   closed until qualified observation access; dates are secondary.
-
-Fresh numeric audit: three attributed windows,12 development bot turns,300 league
-rows with two recent target and two bot posts; no exact duplicates/storage hits.
-Sparse participation and unavailable new semantic comparison limit fidelity claims.
-Reprioritize if material privacy/grounding/delivery regressions occur. Same six
-local Sol/xhigh runs, notifications, withdrawal and channel boundaries.
-
-[Protocol and results](trubot-evolution/evaluations/2026-10-29-archive-roles.md). Older records below are historical.
 
 # Current direction, 2026-10-25 run
 
