@@ -1,3 +1,13 @@
+# 2026-11-07 run: H129 completion and H129b lifecycle coverage
+
+Matched synthetic handler study: old2.38.13 fails9 attribution cases and passes6
+lifecycle controls; current2.38.15 passes15/15. No provider/source mutation or new
+human trait. Recover unfinishedPR194 and extend invalidation across all3routes,
+so future abstract-memory work retains authorship/withdrawal at publication.
+H121/H120 semantic utility and H125 mechanism novelty remain unresolved, requiring
+independent supports/contraries and held-outs. A local-only authenticated census
+supplies counts, not semantic fidelity. [Complete preregistration/results](evaluations/2026-11-07-handler-lifecycle.md).
+
 # 2026-11-03: H128a short requested copies
 
 The combined semantic-novelty hypothesis fails two six-case trials. Reject its
