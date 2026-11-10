@@ -5855,3 +5855,12 @@ role failures/six lifecycle passes versus15/15current. Six feature gates pass:
 2,244tests/96.18%,46typedmodules,wheel/sdist. No runtime version or source change;
 production2.38.15 is retained. Real smoke and protected publication remain pending.
 [Fresh protocol/results](evaluations/2026-11-07-handler-lifecycle.md).
+
+
+Resumed2026-11-09UTC: tested39f6e91 is pushed; current mainc831727e unchanged.
+Fresh actual Discord acceptance remains blocked by disconnected browser control,
+including unconfirmed Enterdispatch; do not merge or count other runs' messages.
+Safe actual production metadata verifieshealthy2.38.15/indexcb857fa67873,0restarts/OOM,
+read-only,release timeractive/enabled. No runtime change/deploy/rollback. November
+aggregateUSD0.192244750estimate/99attempts/13unsettled is not exact run cost; guard
+unchanged. Preserve this worktree/branch and real-smoke prerequisite.

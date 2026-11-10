@@ -79,3 +79,29 @@ Automatic review rejects a full version-environment-file print as potentially se
 that read is abandoned. Non-secret container metadata remains the safe health path.
 An initial safe-check approval attempt fails on transport, not policy. No credentials
 are printed, changed or copied; no denial is bypassed.
+
+## Resumed status, 2026-11-09 UTC
+
+Tested commit39f6e91de1a3ae6e9cf3b658f90fa3bf70a10582 is pushed on this run's
+unique feature branch. Current main remainsc831727e. Actual owner/gateway acceptance
+is still open: a later authenticated Chrome tab loads, but submitting the synthetic
+question fails before Enter dispatch can be confirmed; subsequent access reports a
+detached debugger. A draft or attempted send is not a successful smoke test. Other
+runs' visible messages are excluded. Do not merge until fresh acceptance passes.
+No token extraction, broadened intake, private source egress retry or league tests.
+
+Safe container metadata confirms2.38.15 at immutable
+sha256:cb857fa67873af5e4144208ec12b98a6cc0ad7afd823e5b12b56586b6d234a7e,
+healthy,zero restarts/OOM,read-only;release timeractive/enabled. The isolated audit
+never starts a gateway; heartbeat afterward exists(age11.7seconds). ItsSSH later
+resets after its content-free receipt is written. No final gateway proof is claimed.
+No runtime change, version bump, image publication, deploy, rollback or data restore.
+
+November census snapshot:USD0.192244750estimated/99attempts/13unsettled. Concurrent
+aggregate is not this run's cost or billing. No provider-assisted study in this run;
+USD18runtime/2maintenance/20totalguard stays intact,unsettled charges retained.
+Private count receipt uses existing0700/0600,sevendaymanualretention/withdrawal rules;
+no raw text,personal derivation,pixels or screenshot is retained. Local source-only
+scripts,baseline log,full gate log and packages:/private/tmp/trubot-20261107-1106.
+Approval-review transportdisconnects also interrupt publication attempts. Exact
+blocked steps remain reviewable; never represent an unexecuted command as success.
