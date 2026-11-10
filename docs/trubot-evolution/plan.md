@@ -1,3 +1,39 @@
+# Current priority, 2026-11-07 run resumed 2026-11-08 UTC
+
+H129 completion protects historical authorship and source invalidation through
+all incoming reply routes. Recover conflicted PR194 into a new isolated run,
+retain its nine attribution cases and expand removal/withdrawal coverage from
+two direct cases to six direct/follow-up/reaction cases. Exact 2.38.13 baseline:
+nine expected role failures/six passing lifecycle controls. Current source:
+15/15 pass; full gates pass 2,244 tests/96.18%,46 typed modules and packages.
+This tests/docs increment adds zero operating cost or runtime behavior; retain
+immutable production 2.38.15. Fresh real smoke/CI results are recorded separately.
+[Protocol and current results](evaluations/2026-11-07-handler-lifecycle.md).
+
+1. Complete this H129 publication and fresh real Discord validation. Confidence in
+   deterministic boundary coverage is high; no general character gain is claimed.
+2. H121/H120 useful relation-preserving episodes and abstractions, so grounded
+   values, emotions and relationships guide natural replies. Dependencies: complete
+   attributed support/contrary episodes, qualified private semantic review and
+   independent held-outs. Accept measured same-case and real gateway benefit with
+   lifecycle controls. Confidence in need high; remedy unresolved. Existing graph
+   and maintenance allowance; estimate operating impact before rollout.
+3. H125 varied comic mechanisms, emotional judgment and useful original views.
+   Accept independent semantic gains with brevity, care/recipient controls and
+   actual gateway benefit; novel wording is insufficient. Shared repair/maintenance
+   allowance only, no new human trait. Confidence in solution remains unresolved.
+4. Useful linked native/visual coverage and seasonal variety after demonstrated
+   utility. Require actual pixels, provenance/lifecycle and honest gaps. Preserve
+   generated Michigan U.P. northern-lights/trail-camera scenes, natural captions and
+   selective tools. H96 sightings stay closed until observations qualify.
+
+Finishing an existing conflicted gate takes precedence over overlapping runtime
+work; new semantic evidence or material privacy/grounding/delivery regressions
+can reorder priorities. Counts alone do not justify new traits or graph population.
+Source withdrawal, allowlist/no DMs, USD18runtime/2maintenance/20total guard, six
+local01/05/09/13/17/21Sol/xhigh standalone runs and notifications remain unchanged.
+Older snapshots below are historical.
+
 # Current priorities, reconciled 2026-11-04 UTC
 
 H126 is complete in the validated 2.38.14 release. Archive context preserves

@@ -5844,3 +5844,32 @@ November USD 0.177698800estimate/8 unsettled,18/2/20 guard unchanged; concurrent
 prevents exact run-cost attribution. Next: H121/H120 connected abstract utility, H125 novel
 comic mechanisms/emotion, useful linked native/visual coverage and seasonal variety.
 [Complete qualification and limitations](evaluations/2026-10-29-archive-roles.md).
+
+
+## 2026-11-07 run, resumed 2026-11-08 UTC: H129 completion
+
+Basec831727e38a185ad1dd7497dcd3f5993a11aa59f; fresh managed worktree and unique
+feature/trubot-daily-20261107-1106, primary untouched. Conflicted unfinishedPR194
+is recovered and strengthened with all-route source invalidation. Nine baseline
+role failures/six lifecycle passes versus15/15current. Six feature gates pass:
+2,244tests/96.18%,46typedmodules,wheel/sdist. No runtime version or source change;
+production2.38.15 is retained. Real smoke and protected publication remain pending.
+[Fresh protocol/results](evaluations/2026-11-07-handler-lifecycle.md).
+
+
+Resumed2026-11-09UTC: tested39f6e91 is pushed; current mainc831727e unchanged.
+Fresh actual Discord acceptance remains blocked by disconnected browser control,
+including unconfirmed Enterdispatch; do not merge or count other runs' messages.
+Safe actual production metadata verifieshealthy2.38.15/indexcb857fa67873,0restarts/OOM,
+read-only,release timeractive/enabled. No runtime change/deploy/rollback. November
+aggregateUSD0.192244750estimate/99attempts/13unsettled is not exact run cost; guard
+unchanged. Preserve this worktree/branch and real-smoke prerequisite.
+
+
+Publication: [draft PR196](https://github.com/jdegregorio/wcb-discord-bot/pull/196)
+carries this recovered/extended gate; tested source commit39f6e91, evidence commit
+de354e0. The [required quality check](https://github.com/jdegregorio/wcb-discord-bot/pull/196/checks)
+passes with no bypass. It remains unmerged pending fresh real Discord acceptance.
+PR194 is superseded; preserve its branch and original evidence. No release/image or
+production mutation is appropriate for this tests/docs increment. Retain the new
+managed worktree and exact acceptance prerequisite for the next run.
