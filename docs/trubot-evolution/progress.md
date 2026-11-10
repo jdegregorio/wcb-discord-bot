@@ -5864,3 +5864,12 @@ Safe actual production metadata verifieshealthy2.38.15/indexcb857fa67873,0restar
 read-only,release timeractive/enabled. No runtime change/deploy/rollback. November
 aggregateUSD0.192244750estimate/99attempts/13unsettled is not exact run cost; guard
 unchanged. Preserve this worktree/branch and real-smoke prerequisite.
+
+
+Publication: [draft PR196](https://github.com/jdegregorio/wcb-discord-bot/pull/196)
+carries this recovered/extended gate; tested source commit39f6e91, evidence commit
+de354e0. The [required quality check](https://github.com/jdegregorio/wcb-discord-bot/pull/196/checks)
+passes with no bypass. It remains unmerged pending fresh real Discord acceptance.
+PR194 is superseded; preserve its branch and original evidence. No release/image or
+production mutation is appropriate for this tests/docs increment. Retain the new
+managed worktree and exact acceptance prerequisite for the next run.

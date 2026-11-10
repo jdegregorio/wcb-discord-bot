@@ -105,3 +105,12 @@ no raw text,personal derivation,pixels or screenshot is retained. Local source-o
 scripts,baseline log,full gate log and packages:/private/tmp/trubot-20261107-1106.
 Approval-review transportdisconnects also interrupt publication attempts. Exact
 blocked steps remain reviewable; never represent an unexecuted command as success.
+
+
+Publication: [draft PR196](https://github.com/jdegregorio/wcb-discord-bot/pull/196)
+carries this recovered/extended gate; tested source commit39f6e91, evidence commit
+de354e0. The [required quality check](https://github.com/jdegregorio/wcb-discord-bot/pull/196/checks)
+passes with no bypass. It remains unmerged pending fresh real Discord acceptance.
+PR194 is superseded; preserve its branch and original evidence. No release/image or
+production mutation is appropriate for this tests/docs increment. Retain the new
+managed worktree and exact acceptance prerequisite for the next run.
