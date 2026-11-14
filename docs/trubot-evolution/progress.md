@@ -5903,3 +5903,29 @@ variety. Same six-run Sol/xhigh schedule and notifications.
 Final read-only production check after census closure: heartbeat age 41.0 seconds,
 health check exit 0, last 20 minutes / 20 log rows / zero ERRORs or tracebacks.
 Fresh gateway proof remains missing. Preserve this run's worktree and evidence.
+
+
+## 2026-11-14: supplemental isolated H129 live-handler evidence
+
+- New managed worktree trubot-daily-20261113-early and unique feature branch from
+  fetched c831727e; primary untouched. Recovered PR196 and incorporated concurrent
+  evidence-only 9170172. No duplicate PR/runtime improvement.
+- Fresh exact v2.38.13 baseline: nine intended role failures/six passing lifecycle
+  controls. Current full six gates pass 2,244 tests/96.18%,46 typed modules,packages.
+- Three actual private Discord answers from installed reaction-handler dispatch pass
+  synthetic attribution,care,humor controls (16/6/16 words;4.437/3.858/6.079seconds).
+  Dispatch is explicitly synthetic; no real owner reaction/main gateway is claimed.
+  Each confirms no development intake and unchanged learning-message count.
+- Browser navigation/snapshots fail on a blank tab and native Mac is locked. Fresh
+  owner/main-gateway acceptance stays OPEN; keep PR196 draft. No merge/release/deploy.
+- Authenticated pi5/aarch64/Ubuntu24.04.4: healthy read-only2.38.15,digestcb857fa67873,
+  zero restarts/OOM,timeractive/enabled. Final post-census heartbeat20.01seconds,health0;
+  last20minutes20logrows/0ERROR/0tracebacks. Postdev24botturns,0duplicates/markers.
+  In-app fallback has an empty Discord login; no owner session is available.
+- November after three maintenance smoke calls:USD0.263305485estimated/169attempts/
+  18unsettled. Observed aggregate increaseUSD0.000971960 is not an audited run cost.
+  Same18/2/20guard,source lifecycle/privacy,allowlists,noDMs,schedule/model/notifications.
+- Private content-free receipts retain0700/0600,sevendaymanual/withdrawalcleanup.
+  No new semantic human comparison,trait,graph population or general quality gain.
+  H121/H120 then H125 remain next; generatedUPscenes/selectivetools remain.
+- [Both planning phases, method and limitations](evaluations/2026-11-14-live-handler-smoke.md).

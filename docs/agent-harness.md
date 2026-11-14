@@ -11,6 +11,12 @@ change or duplicate release/deploy. New semantic fidelity remains unqualified.
 [Fresh phases, counts, limits and recovery prerequisite](docs/trubot-evolution/evaluations/2026-11-13-h129-reconciliation.md).
 
 
+Supplemental isolated run: 3/3 real Discord sends through the installed reaction
+handler pass synthetic attribution/care/humor checks, with no learning intake.
+These are labeled synthetic operator dispatches, not owner/main-gateway events.
+That acceptance gate remains open; preserve the draft and current priority order.
+[Methods, both planning phases and limits](trubot-evolution/evaluations/2026-11-14-live-handler-smoke.md).
+
 1. Complete this H129 publication and fresh real Discord validation. Confidence in
    deterministic boundary coverage is high; no general character gain is claimed.
 2. H121/H120 useful relation-preserving episodes and abstractions, so grounded

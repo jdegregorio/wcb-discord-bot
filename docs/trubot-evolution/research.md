@@ -3443,3 +3443,14 @@ not measured general reply fidelity. Wider study neighborhood touches 8 anchors,
 comparison and 7 real owner/gateway replies complete. Context/year relation grounding
 and reservation recall remain open; H121/H120/H125 remain next with qualified
 semantic evidence prerequisites. [Installed evidence](evaluations/2026-10-29-archive-roles.md).
+
+
+## 2026-11-14: supplemental H129 live-handler qualification
+
+New isolated run reproduces exact baseline nine intended failures/six controls;
+current full gates pass 2,244 tests/96.18%. Three real private Discord answers through
+the installed reaction handler pass synthetic attribution/care/humor controls with
+no learning intake. Explicit synthetic operator dispatch is not a human reaction or
+main gateway proof; owner/gateway acceptance remains open. No new human abstraction
+or semantic fidelity claim. H121/H120 then H125 priorities remain evidence-qualified.
+[Both phases, cost and limitations](evaluations/2026-11-14-live-handler-smoke.md).
