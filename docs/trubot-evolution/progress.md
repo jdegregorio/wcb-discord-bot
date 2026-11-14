@@ -5929,3 +5929,9 @@ Fresh gateway proof remains missing. Preserve this run's worktree and evidence.
   No new semantic human comparison,trait,graph population or general quality gain.
   H121/H120 then H125 remain next; generatedUPscenes/selectivetools remain.
 - [Both planning phases, method and limitations](evaluations/2026-11-14-live-handler-smoke.md).
+
+Supplemental evidence commit: `e4842a1` on [draft PR196](https://github.com/jdegregorio/wcb-discord-bot/pull/196).
+All 46 installed Python modules freshly match the tested source with zero mismatches.
+[Evidence quality run](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/43641603355)
+is separate from the still-open owner/main-gateway prerequisite. Runtime/source tree
+is unchanged from the feature gates; no merged revision, release or deployment is claimed.
