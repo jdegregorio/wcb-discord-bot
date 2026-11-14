@@ -1,14 +1,15 @@
-# Current priority, 2026-11-07 run resumed 2026-11-08 UTC
+# Current priority, reconciled 2026-11-14 UTC
 
-H129 completion protects historical authorship and source invalidation through
-all incoming reply routes. Recover conflicted PR194 into a new isolated run,
-retain its nine attribution cases and expand removal/withdrawal coverage from
-two direct cases to six direct/follow-up/reaction cases. Exact 2.38.13 baseline:
-nine expected role failures/six passing lifecycle controls. Current source:
-15/15 pass; full gates pass 2,244 tests/96.18%,46 typed modules and packages.
-This tests/docs increment adds zero operating cost or runtime behavior; retain
-immutable production 2.38.15. Fresh real smoke/CI results are recorded separately.
-[Protocol and current results](trubot-evolution/evaluations/2026-11-07-handler-lifecycle.md).
+H129 remains the single unfinished tests/docs gate in draft PR196. This run recovers
+its existing head in a fresh managed worktree. Fresh exact-source comparison:
+v2.38.13 has nine expected role failures/six lifecycle passes; current source passes
+all 15. All six feature gates pass: 2,244 tests / 96.18% coverage, 46 typed modules
+and packages.
+Fresh owner/gateway smoke is BLOCKED by browser control and missing authenticated
+fallback login. Keep the PR draft. Production 2.38.15 remains healthy; no runtime
+change or duplicate release/deploy. New semantic fidelity remains unqualified.
+[Fresh phases, counts, limits and recovery prerequisite](docs/trubot-evolution/evaluations/2026-11-13-h129-reconciliation.md).
+
 
 1. Complete this H129 publication and fresh real Discord validation. Confidence in
    deterministic boundary coverage is high; no general character gain is claimed.

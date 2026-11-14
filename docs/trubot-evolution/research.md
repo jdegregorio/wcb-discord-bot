@@ -1,3 +1,14 @@
+# 2026-11-13 run, reconciled 2026-11-14 UTC
+
+Fresh H129 baseline reproduces nine expected authorship failures and six lifecycle
+passes; current 15/15 pass and all six gates pass: 2,244 tests / 96.18% coverage.
+The selected enabling gate stays unmerged: real owner/gateway smoke is blocked by
+browser control/login. Numeric three-window / 40-development-row / 300-league-row
+census establishes coverage only. H121/H120 connected abstractions and H125
+semantic humor/emotion remain unqualified, with explicit disconfirmation and
+validation prerequisites. No new human trait, provider call, graph population or
+runtime change. [Both phases and results](evaluations/2026-11-13-h129-reconciliation.md).
+
 # 2026-11-07 run: H129 completion and H129b lifecycle coverage
 
 Matched synthetic handler study: old2.38.13 fails9 attribution cases and passes6

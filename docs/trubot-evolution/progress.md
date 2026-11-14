@@ -5873,3 +5873,33 @@ passes with no bypass. It remains unmerged pending fresh real Discord acceptance
 PR194 is superseded; preserve its branch and original evidence. No release/image or
 production mutation is appropriate for this tests/docs increment. Retain the new
 managed worktree and exact acceptance prerequisite for the next run.
+
+
+## 2026-11-13 run, resumed 2026-11-14 UTC: H129 reconciliation
+
+New managed worktree `trubot-daily-20261113-1309`; unique feature branch from fetched
+`c831727e38a185ad1dd7497dcd3f5993a11aa59f`. Recovered existing PR196 / 6e70048;
+primary untouched. Fresh exact 2.38.13 baseline: nine expected role failures and six
+lifecycle passes. Current 15/15 pass; all six feature gates pass: 2,244 tests / 96.18%
+coverage, 46 typed modules, wheel and sdist. Production remains immutable 2.38.15 /
+digest cb857fa67873, healthy/read-only, zero restarts/OOM, timer active/enabled.
+No runtime change, release/image/deploy or rollback.
+
+Fresh authenticated census: 4,299 blocks / 405 eligible / seven ambiguous / three
+windows; 40 development rows / 21 bot turns / zero duplicates or storage markers;
+300 league rows / 23 bot turns / one duplicate / zero storage markers. Seven-day
+league coverage: zero target / two bot posts. No semantic comparison, new trait or
+provider call. November estimate USD0.262333525 / 166 attempts / 18 unsettled; same
+18/2/20 guard. Concurrent aggregate is not this run's cost or an invoice.
+
+Fresh real Discord smoke remains OPEN: Chrome control fails before navigation,
+native Mac is locked, and in-app Discord requires owner login. No submitted probe,
+gateway answer or league post. PR remains draft until fresh real acceptance; no
+duplicate PR or runtime release. Next: H121/H120 connected abstractions, then H125
+semantic humor/emotion, then useful linked native/visual coverage and seasonal
+variety. Same six-run Sol/xhigh schedule and notifications.
+[Both phases, evidence and limitations](evaluations/2026-11-13-h129-reconciliation.md).
+
+Final read-only production check after census closure: heartbeat age 41.0 seconds,
+health check exit 0, last 20 minutes / 20 log rows / zero ERRORs or tracebacks.
+Fresh gateway proof remains missing. Preserve this run's worktree and evidence.
