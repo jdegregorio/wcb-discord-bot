@@ -209,7 +209,7 @@ def test_exact_sets_retain_source_scope_and_withdrawal(stores, failure):
     elif failure == "deleted":
         learning.invalidate(10, [BASE], deleted=True, now=NOW)
     elif failure == "truncated":
-        learning.observe(source(content="a" * 1001), now=NOW)
+        learning.observe(source(content="🎂" * 1001), now=NOW)
         graph.populate(now=NOW)
     else:
         learning.forget(now=NOW)

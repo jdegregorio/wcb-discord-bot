@@ -1,3 +1,9 @@
+## Complete selected memory studies
+
+Private operator-selected episode studies can retain complete authored blocks up to
+4,000 UTF-8 bytes while keeping the existing total request budget. Oversized sets
+stop intact. This enables contextual learning research; automatic sampling and
+ordinary replies retain their behavior. [Qualification](docs/trubot-evolution/evaluations/2026-11-18-complete-study-sources.md).
 ## Internal reply controls, 2.39.1
 
 An accidental participation marker in a direct or reaction answer receives one

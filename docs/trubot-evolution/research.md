@@ -1,3 +1,13 @@
+# 2026-11-18 complete selected study sources
+
+H-STUDY-FULLTEXT is a supported maintenance-input correction: exact selected
+sources can retain up to4,000 UTF-8 bytes under the unchanged request envelope.
+Nine exact-baseline availability failures become passes; four controls pass in
+both arms. Current private corpus has one newly eligible complete block. No
+new personal abstraction or measured reply-quality gain. H121/H120 then H125
+remain the behavioral priorities. Owner/gateway smoke is unavailable; synthetic
+handler evidence is reported separately. Full two-phase planning and release
+results: [protocol](evaluations/2026-11-18-complete-study-sources.md).
 # Reconciled release decision: 2.39.1
 
 Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent
