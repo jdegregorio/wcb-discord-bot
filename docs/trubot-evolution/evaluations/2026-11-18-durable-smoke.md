@@ -113,3 +113,41 @@ No source/graph state, checkpoints, runtime bytes/config, automatic job, release
 image, deployment or rollback is changed. Protected CI/merge, exact merged checks,
 final health, immutable production reference and final spending are recorded below
 when verified.
+
+
+## Publication and final production observations
+
+Tested implementation commit 293148ed35aaea5ad6f2c1a6a955f2c881ac82fc is published in
+[PR197](https://github.com/jdegregorio/wcb-discord-bot/pull/197), with `codex` and
+`codex-automation` labels. Its [required Quality run](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44470375673)
+passes. The PR is attached to this run. Protected merge and exact-merged verification
+follow this qualification; the PR records the authoritative publication state.
+
+Fresh pi5/aarch64/Ubuntu24.04 app inspection confirms healthy read-only 2.38.15 at
+`sha256:cb857fa67873af5e4144208ec12b98a6cc0ad7afd823e5b12b56586b6d234a7e`,
+zero restarts/OOM and enabled/active release timer. After the candidate clients close,
+healthcheck exits zero. A fresh heartbeat age of 55.59 seconds and a 20-minute window
+of 20 log rows / zero errors / zero tracebacks pass. Health is not gateway proof.
+An initial host command incorrectly assumes `python`; corrected `python3` works.
+An unbounded legacy census connection later resets; a separate bounded final census
+completes. No ambiguous command is counted as success and no test is blindly repeated.
+
+Post-census: 40 development rows, all bot-authored, eight exact duplicate full turns,
+zero fixed storage-language markers; 300 league rows / 26 bot turns / two duplicates,
+seven-day two target/four bot posts. Archive counts are unchanged. These samples mix
+concurrent controlled traffic and do not establish humor, cadence or spontaneous
+fidelity. A new semantic human comparison remains unvalidated pending transfer approval.
+
+November ledger snapshot: USD0.344353485 estimated, runtime0.208176350,
+maintenance0.136177135;238 attempts/21 unsettled. The 18/2/20 guard and unresolved
+reservations remain intact. Six fresh handler smoke executions occurred in this run
+(four ad hoc and two candidate-script); SDK retries/repairs and concurrent runs mean
+that is not an exact provider-call count or per-run invoice. The explicit same-ID
+replay adds no paid attempt in its observed unchanged ledger window. No new service,
+key, runtime release/image/deployment, data restore or rollback occurs.
+
+Concurrent PR196 has evolved into an internal-control-output runtime correction
+plus expanded H129 regression coverage; that run owns version2.38.16/release.
+PR198 independently owns exact response selection for character audits and its
+version/release. Their still-open scopes are not counted as this run's completion.
+This operator-only script does not collide with either runtime implementation.

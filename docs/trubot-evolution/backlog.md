@@ -7,10 +7,14 @@ active run owns that expanded H129 gate and publication. No H129 branch is modif
 This maintenance script is outside the runtime image; no duplicate version/release
 or deployment is appropriate. Ordinary reply behavior and source state are unchanged.
 
-1. Complete H130 validation/publication under its predefined fault, privacy, scope,
-   actual private Discord and replay criteria. Confidence in the interruption defect
-   is high. Existing app storage and maintenance allowance; no new service or budget.
-2. Finish H129 under its existing owner, then H121/H120 useful relation-preserving
+1. H130 implementation and qualification are complete in PR197: 19 new cases,
+   all six gates and real private Discord/non-sending replay checks pass. Protected
+   publication is tracked in that PR. Existing app storage and maintenance allowance;
+   no new service or budget. Ordinary reply behavior is unchanged.
+2. The preceding run owns PR196, now including a reproduced internal-control
+   output correction and expanded H129 boundaries. PR198 separately owns exact
+   response selection for operator audits. Preserve their tests, versions and
+   release ownership; neither is completed by this tool. Then H121/H120 useful relation-preserving
    episodes and abstract memory, so values, emotions and relationships guide natural
    replies. Require complete attributed support/contrary episodes, qualified private
    semantic review, independent held-outs, lifecycle checks and actual reply benefit.
