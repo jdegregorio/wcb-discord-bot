@@ -161,3 +161,8 @@ merged without dropping either change. Union resolution retains both public
 research records; runtime/package/lock advance to 2.39.1, superseding the earlier
 2.38.16 reservation. No tag was published or reused. Fresh full gates, protected
 CI, immutable image and installed acceptance are required on this combined source.
+
+All six combined feature gates pass: locked sync, formatting, lint, mypy 46 modules,
+2,320 tests / 96.12% coverage, and 2.39.1 wheel/sdist. The baseline responder in
+caa0050 is byte-identical to c831727, so the exact 22-failure/seven-control comparison
+still isolates this correction. No test failure or flakiness remains.

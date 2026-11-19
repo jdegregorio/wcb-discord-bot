@@ -1,5 +1,10 @@
 # Reconciled release decision: 2.39.1
 
+Fresh combined feature gates pass: locked sync, format, lint, mypy 46 modules,
+2,320 tests / 96.12% coverage, and 2.39.1 wheel/sdist. Both independent audit-capture
+work and the reply correction are preserved. Protected merge and installed outcome
+remain pending until verified; later release evidence belongs to PR196/v2.39.1.
+
 Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent
 2.39.0 focused-audit capability. Preserve it. PR196 publishes the control-marker
 correction as 2.39.1 after fresh combined gates, protected CI and installed tests.
