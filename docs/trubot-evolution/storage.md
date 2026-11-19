@@ -1,3 +1,14 @@
+# Reconciled release decision: 2.39.1
+
+Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent
+2.39.0 focused-audit capability. Preserve it. PR196 publishes the control-marker
+correction as 2.39.1 after fresh combined gates, protected CI and installed tests.
+Earlier 2.38.16 reservations and feature measurements are intermediate history.
+This run owns only the reply correction and its boundary coverage. No new trait,
+private semantic-transfer approval, source population or spending allowance.
+Then H121/H120 connected abstractions, H125 semantic humor/emotion and useful linked
+native/visual context remain the evidence-qualified direction. Older records follow.
+
 # 2.38.16 control-marker repair
 
 No storage/schema/source/graph migration. The existing maintenance/runtime ledger
@@ -7,6 +18,23 @@ smoke-tests/2026-11-18-0905 with existing 0700/0600, seven-day manual retention 
 withdrawal cleanup. Bot-authored development fixtures never enter learning.
 Auxiliary clients isolate readiness before construction and never start a gateway.
 Rollback to immutable 2.38.15 changes code only and preserves all application state.
+## Deliberate private audit selection, candidate2.39.0
+
+Supply `focus_message_ids` from trusted private response receipts to inspect one to
+four actual bot responses, including older responses outside the latest40 posts.
+The operator is responsible for distinguishing bot-authored test probes from actual
+replies. Each focus gets complete bounded same-channel setup. This is adjacency,
+not proof of replies; pixels and linked targets remain unavailable. Legacy omitted
+selection still samples latest40. No durable source/graph/schema/state migration.
+
+Receipts add fixed selection mode and per-case message counts to the existing
+private message/source mappings. Do not retain payload text, generated answers,
+private interpretations or screenshots. This run uses app-volume
+smoke-tests/2026-11-18-1700 with0700directories/0600files and existing seven-day
+manual retention, correction/withdrawal and recovery rules. Provider-disabled
+capture stubs are not semantic grades and their fabricated flag values are never
+retained as results. Maintenance readiness isolation and the existing ledger apply.
+Code rollback preserves all source/spending state; no normal reply behavior changes.
 
 # Complete-reply recovery, 2.38.12
 

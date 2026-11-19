@@ -1,10 +1,17 @@
-## Internal reply controls, 2.38.16
+## Internal reply controls, 2.39.1
 
 An accidental participation marker in a direct or reaction answer receives one
 source-checked repair through the existing shared allowance. Failed repairs never
 publish the marker. Optional participation remains silent, and explicit literal
 requests retain their requested text. No new memory, model or spending allowance.
 [Qualification](docs/trubot-evolution/evaluations/2026-11-18-development-boundaries.md).
+## Deliberate character-audit samples, candidate2.39.0
+
+Private operator studies can select exact recorded bot responses and their bounded
+nearby setup. This prevents newer bot-authored test inputs from replacing intended
+responses in matched experiments. Normal replies retain their behavior. This is
+research support, without a measured character-fidelity claim.
+[Qualification](docs/trubot-evolution/evaluations/2026-11-18-focused-audits.md).
 
 ## Short requested joke repairs, 2.38.15
 

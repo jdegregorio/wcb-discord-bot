@@ -152,3 +152,12 @@ All six final feature gates pass: 2,291 tests / 96.19%, 46 typed modules and bot
 Concurrent PR197 is an independent operator-only durable smoke runner; PR198 adds
 focused character-audit capture and reserves 2.39.0. Neither overlaps this responder
 change, and both explicitly preserve PR196 ownership. They remain separate.
+
+## Concurrent-main reconciliation
+
+PR198 merged as caa005078d9520a3580bea183e3bc56c9b116219 with the independent
+2.39.0 focused-audit capability while this PR waited for CI. Main is fetched and
+merged without dropping either change. Union resolution retains both public
+research records; runtime/package/lock advance to 2.39.1, superseding the earlier
+2.38.16 reservation. No tag was published or reused. Fresh full gates, protected
+CI, immutable image and installed acceptance are required on this combined source.

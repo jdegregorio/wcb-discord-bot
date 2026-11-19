@@ -1,3 +1,14 @@
+# Reconciled release decision: 2.39.1
+
+Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent
+2.39.0 focused-audit capability. Preserve it. PR196 publishes the control-marker
+correction as 2.39.1 after fresh combined gates, protected CI and installed tests.
+Earlier 2.38.16 reservations and feature measurements are intermediate history.
+This run owns only the reply correction and its boundary coverage. No new trait,
+private semantic-transfer approval, source population or spending allowance.
+Then H121/H120 connected abstractions, H125 semantic humor/emotion and useful linked
+native/visual context remain the evidence-qualified direction. Older records follow.
+
 # 2026-11-18 run: H130 control-marker publication correction
 
 Final feature qualification: 29/29 control cases; exact 2.38.15 has 22 expected
@@ -45,6 +56,19 @@ deployment and installed acceptance remain pending until independently verified.
 Next: H121/H120 useful connected abstractions with qualified semantic review,
 H125 semantic humor/emotion, then useful linked native/visual context. Preserve
 generated U.P. aurora/trail-camera scenes, selective tools and six scheduled runs.
+# 2026-11-18 17:00 run: H130b focused audits
+
+New managed worktree trubot-daily-20261118-1700, unique feature branch of the same
+name, basec831727e38a185ad1dd7497dcd3f5993a11aa59f. Primary untouched. Both planning
+phases complete in the [protocol](evaluations/2026-11-18-focused-audits.md).
+Candidate explicit focus selection passes74 focused tests including29 new controls;
+source/permission/withdrawal checks discard changed studies. Actual private
+synthetic care handler response and exact-answer audit capture pass,4.85seconds,
+10words,learning unchanged,no external audit provider call. This is an enabling
+increment, not measured reply-quality improvement or human/main-gateway proof.
+Full gates, protected publication and installed acceptance are recorded below as
+completed. Independently owned PR196/control-marker and smoke-recovery work remain
+separate. Runtime baseline2.38.15digestcb857fa67873healthy; no production change yet.
 
 # Run progress
 

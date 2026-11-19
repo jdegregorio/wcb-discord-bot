@@ -1,3 +1,14 @@
+# Reconciled release decision: 2.39.1
+
+Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent
+2.39.0 focused-audit capability. Preserve it. PR196 publishes the control-marker
+correction as 2.39.1 after fresh combined gates, protected CI and installed tests.
+Earlier 2.38.16 reservations and feature measurements are intermediate history.
+This run owns only the reply correction and its boundary coverage. No new trait,
+private semantic-transfer approval, source population or spending allowance.
+Then H121/H120 connected abstractions, H125 semantic humor/emotion and useful linked
+native/visual context remain the evidence-qualified direction. Older records follow.
+
 # H130 / H129c, 2026-11-18 run
 
 Both planning phases and fixed acceptance are in the
@@ -32,6 +43,16 @@ so future abstract-memory work retains authorship/withdrawal at publication.
 H121/H120 semantic utility and H125 mechanism novelty remain unresolved, requiring
 independent supports/contraries and held-outs. A local-only authenticated census
 supplies counts, not semantic fidelity. [Complete preregistration/results](evaluations/2026-11-07-handler-lifecycle.md).
+# 2026-11-18: H130 deliberate audit samples
+
+Phase1 confirms development-test saturation and reproduces inability to target an
+older response. H130b explicit response selection is enabling work so controlled
+inputs cannot silently replace intended answers. H130a reply-link expansion remains
+unvalidated after zero explicit references in the sampled four focuses per scope.
+No new semantic human observation or fidelity gain. Phase2 prioritizes this bounded
+operator API alongside independently owned H129/smoke recovery, then H121/H120,
+H125 and useful native/visual/seasonal coverage. Existing source and spending gates
+remain. [Predeclared protocol and actual results](evaluations/2026-11-18-focused-audits.md).
 
 # 2026-11-03: H128a short requested copies
 

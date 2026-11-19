@@ -1,3 +1,14 @@
+# Reconciled release decision: 2.39.1
+
+Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent
+2.39.0 focused-audit capability. Preserve it. PR196 publishes the control-marker
+correction as 2.39.1 after fresh combined gates, protected CI and installed tests.
+Earlier 2.38.16 reservations and feature measurements are intermediate history.
+This run owns only the reply correction and its boundary coverage. No new trait,
+private semantic-transfer approval, source population or spending allowance.
+Then H121/H120 connected abstractions, H125 semantic humor/emotion and useful linked
+native/visual context remain the evidence-qualified direction. Older records follow.
+
 # Current decision: H130, 2026-11-18 run
 
 Fresh actual Discord readback exposed internal control text in a direct memory
@@ -6,7 +17,7 @@ repair. It supersedes the tests-only scope of unfinished PR196; H129c adds 33
 cross-route archive/authorship/lifecycle/access controls. No new human trait or
 general fidelity gain. [Both phases and acceptance](evaluations/2026-11-18-development-boundaries.md).
 
-1. Finish H130 protected CI, immutable 2.38.16 image/deploy and installed acceptance.
+1. Finish H130 protected CI, immutable 2.39.1 image/deploy and installed acceptance.
    High confidence in reproduced protocol defect; existing shared repair only.
 2. H121/H120 useful connected abstractions: complete support/contrary episodes,
    qualified private semantic review and held-out plus real-development utility.
@@ -66,6 +77,41 @@ can reorder priorities. Counts alone do not justify new traits or graph populati
 Source withdrawal, allowlist/no DMs, USD18runtime/2maintenance/20total guard, six
 local01/05/09/13/17/21Sol/xhigh standalone runs and notifications remain unchanged.
 Older snapshots below are historical.
+# Current priorities, 2026-11-18 focused audit run
+
+H130b adds deliberate, bounded response selection to private character audits so
+synthetic bot inputs do not replace intended experimental answers. This is enabling
+research work; normal reply behavior and human fidelity are unchanged. H130a linked
+setup is unvalidated: this fresh sample has no explicit references. Historical
+coverage remains4,299 grouped blocks/405 eligible target/seven ambiguous target;
+three attributed windows are coverage, not new traits or semantic qualification.
+
+1. Complete H130b qualification, protected merge and immutable installation with
+   exact-focus/source/permission/withdrawal controls and actual private-handler tests.
+   High confidence in the selection defect; broader character benefit unresolved.
+   No normal-reply cost; bounded extra reads only for an explicit operator audit.
+2. Reconcile independently owned H129/control-marker repair and resumable smoke
+   recovery. Preserve their unique tests and publication ownership; avoid duplicates.
+3. H121/H120 useful relation-preserving episodes and abstractions, then H125 varied
+   comic mechanisms with emotion/recipient controls. Require attributed supports,
+   contrary cases, complete setup, qualified private semantic review and matched
+   held-outs plus real engagement. No new native-pattern permission or population.
+4. Useful linked native/visual coverage and seasonal variety after measured utility.
+   Preserve generated Michigan U.P. northern-lights/trail-camera scenes, short natural
+   captions and selective tools. H96 sightings remain closed without qualified feeds.
+
+Fresh development latest40 is entirely bot-authored test traffic, with eight exact
+repetitions. Latest300 league posts have26 bot posts; seven-day activity has two
+human-target/four bot posts. Do not infer style frequency or spontaneity from tests.
+Pixels, new semantic human comparison and route attribution remain gaps. Private
+external scoring rejection is respected. Chrome fails before Discord navigation;
+native Mac is locked. Authorized synthetic live-handler smoke is distinct from
+human/main-gateway proof. No general quality claim follows from health or counts.
+
+Existing provenance/corrections/withdrawal, allowlists/no DMs,18/2/20guard and six
+local01/05/09/13/17/21Sol/xhigh standalone runs/notifications remain authoritative.
+Grounding/privacy/delivery failures or contrary sample-validity evidence can reorder
+these priorities. [Protocol and results](evaluations/2026-11-18-focused-audits.md). Older snapshots are historical.
 
 # Current priorities, reconciled 2026-11-04 UTC
 

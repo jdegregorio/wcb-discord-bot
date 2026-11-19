@@ -1,3 +1,14 @@
+# Reconciled release decision: 2.39.1
+
+Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent
+2.39.0 focused-audit capability. Preserve it. PR196 publishes the control-marker
+correction as 2.39.1 after fresh combined gates, protected CI and installed tests.
+Earlier 2.38.16 reservations and feature measurements are intermediate history.
+This run owns only the reply correction and its boundary coverage. No new trait,
+private semantic-transfer approval, source population or spending allowance.
+Then H121/H120 connected abstractions, H125 semantic humor/emotion and useful linked
+native/visual context remain the evidence-qualified direction. Older records follow.
+
 # Current decision: H130, 2026-11-18 run
 
 A real development reply exposed internal abstention text in direct recall.
@@ -7,7 +18,7 @@ silent, with explicit literal requests preserved. H129c's 33 archive/authorship/
 lifecycle/access cases accompany this correction in the recovered PR196.
 [Both phases and acceptance](trubot-evolution/evaluations/2026-11-18-development-boundaries.md).
 
-Finish protected CI, immutable 2.38.16 release/image/deploy and installed acceptance.
+Finish protected CI, immutable 2.39.1 release/image/deploy and installed acceptance.
 Then prioritize H121/H120 useful connected abstractions, H125 semantic humor/emotion,
 and useful linked native/visual context. Complete supports/contraries, qualified
 private semantic review, held-outs, actual interaction utility and cost acceptance
@@ -63,6 +74,23 @@ can reorder priorities. Counts alone do not justify new traits or graph populati
 Source withdrawal, allowlist/no DMs, USD18runtime/2maintenance/20total guard, six
 local01/05/09/13/17/21Sol/xhigh standalone runs and notifications remain unchanged.
 Older snapshots below are historical.
+# Deliberate private audit sampling, candidate2.39.0
+
+`inspect_channel(..., focus_message_ids=(answer_id, ...))` accepts one to four
+unique bot response IDs from trusted private experiment receipts. Each exact focus
+receives bounded same-channel setup (two preceding/one following), complete text
+and existing separate attributed human windows. It cannot certify whether a bot
+post was a test input; the operator must select recorded response IDs. Omitted IDs
+retain legacy latest40 sampling. Fresh authenticated permissions, membership,
+source equality and withdrawal gate both review boundaries. No gateway, Discord
+write, learning, normal-reply context or extra provider turn is introduced.
+
+H130b enables valid matched studies, without semantic fidelity claims. Current
+priority is deliberate sampling and independently owned H129/smoke recovery, then
+H121/H120 useful abstractions, H125 emotional/amplified-humor qualification, useful
+linked visual/native coverage and seasonal variety. Preserve generated U.P. scenes,
+selective tools, source lifecycle and the existing18/2/20guard.
+[Evidence](trubot-evolution/evaluations/2026-11-18-focused-audits.md).
 
 # Current priorities, reconciled 2026-11-04 UTC
 
