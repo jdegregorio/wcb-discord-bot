@@ -1,0 +1,85 @@
+# H130: deliberate character-audit samples
+
+Base c831727e38a185ad1dd7497dcd3f5993a11aa59f. New managed worktree and
+feature/trubot-daily-20261118-1700; primary checkout untouched. PR196 and interrupted
+smoke receipt work have independent active owners. Do not duplicate them.
+
+## Phase 1: evidence and falsifiable hypotheses
+
+Fresh authenticated census verifies the pinned human and private two-member
+development guild, with allowed writable general channel. Historical coverage is
+4,299 grouped blocks, 405 eligible target blocks, seven ambiguous target blocks and
+three bounded attributed windows. These are coverage counts, not individual message
+counts or a new semantic human comparison. Development latest40 contains40 bot
+posts, eight repeated full turns and no human setup. League latest300 contains26
+bot posts; seven-day activity has two target and four bot posts. Zero fixed storage
+language matches does not prove naturalness. Reaction/ambient route classification,
+actual pixels and fresh private semantic comparison remain gaps. No new Andrew
+trait or derived observation is proposed; bot probes are never human evidence.
+
+H130a (unvalidated): reply-linked setup may improve interpretation of an audit.
+The four latest bot focuses per scope contain zero explicit references, so this
+sample supplies no evidence of benefit. Do not ship speculative reply-link expansion.
+Prerequisite: a real missing-link case with complete attributed source setup and
+matched interpretation review. Existing H121/H120 relation fusion remains recorded
+in prior source-adjudicated studies, not newly reproduced by this count-only census.
+
+H130b (selected enabling hypothesis): latest-bot selection can grade bot-authored
+synthetic probes or miss the intended response entirely. The API always chooses
+the last four bot rows among40, and accepts no exact response selection. This
+prevents valid matched studies when development traffic interleaves or exceeds40.
+Add bounded explicit focus selection with per-focus nearby setup, so character
+experiments can assess the actual selected responses without mixing test inputs
+and model outputs. This changes research validity, not normal reply behavior.
+
+Baseline: a requested older response cannot be selected; a newer fixture occupies
+its focus. Predeclared acceptance: exact one-to-four distinct genuine bot messages
+in the authenticated allowed channel, including one older than the latest40; retain
+two preceding/one following messages and explicit gaps in coverage. Reject unknown,
+non-bot, webhook, cross-channel/guild, duplicate, Boolean and oversized selections.
+Fresh permission, private membership, source equality and withdrawal checks must
+discard changed samples before/after review. Complete text is never clipped. The
+legacy latest selection remains compatible. Receipts contain only fixed grades,
+coverage and private reference maps; no raw exchanges or interpretations.
+
+Validation: first reproduce with the existing authenticated inspection interface
+and provider-disabled capture; use synthetic held-outs for scope, freshness and
+context boundaries, then the real private Discord channel with explicitly labeled
+bot-authored probes, unmocked installed handlers/provider/send/readback and a
+provider-disabled audit capture of the exact answer. This is an authorized
+development harness, never a human/main-gateway event. Chrome currently fails
+before navigation with undefined timeoutMs and native Mac is locked. Do not claim
+fresh owner/gateway proof. Prior private external scoring rejection is respected;
+do not reroute a private semantic audit. Human fidelity remains unqualified.
+
+Disconfirm if explicit sampling still grades the fixture, loses qualifications,
+weakens freshness/scope, or changes legacy selection. Bounded audit input failures
+must stop before provider use. Cost baseline: November aggregate USD0.342437275
+estimated,233attempts/21unsettled,18runtime/2maintenance/20total limits unchanged.
+This is neither this run's cost nor an invoice. No new service or spending pool.
+
+## Phase 2: roadmap decision
+
+1. Complete H130b as enabling work, independently of PR196. High confidence in the
+   reproducible selection defect; semantic benefit unresolved. Dependencies:
+   existing authenticated operator API and maintenance ledger. Acceptance and
+   validation above; zero normal-reply calls, at most four selected focus reads and
+   four bounded neighborhood reads per audit plus existing freshness checks.
+2. Finish independently owned H129 regression qualification and interrupted-smoke
+   recovery without competing publication. Existing runtime2.38.15 stays authoritative.
+3. H121/H120 relation-preserving episodes and useful abstractions, then H125 semantic
+   comic variety with emotional/recipient controls. Require attributed supports and
+   contrary episodes, complete setup, qualified private semantic review, matched
+   held-outs and actual useful engagement. Neither numeric coverage nor ingestion
+   establishes fidelity. Existing graph, one shared repair and maintenance guard.
+4. Useful linked native/visual coverage and seasonal variety after utility. Preserve
+   generated Michigan U.P. northern-lights/trail-camera scenes, short natural captions
+   and selective skills/tools. H96 sightings remain closed without qualified feeds.
+
+H130b moves ahead as a prerequisite for deliberate matched audit samples after
+observed development-test saturation. New grounding/privacy/delivery regressions
+or evidence that explicit selection does not solve sample contamination reorder it.
+No source population, model, persona, participation or learning-scope change. Keep
+six local01/05/09/13/17/21Sol/xhigh standalone runs and notification preferences.
+
+Results, engineering and installed evidence are recorded below as completed.
