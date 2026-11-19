@@ -1,3 +1,48 @@
+# Reconciled release decision: 2.39.1
+
+Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent
+2.39.0 focused-audit capability. Preserve it. PR196 publishes the control-marker
+correction as 2.39.1 after fresh combined gates, protected CI and installed tests.
+Earlier 2.38.16 reservations and feature measurements are intermediate history.
+This run owns only the reply correction and its boundary coverage. No new trait,
+private semantic-transfer approval, source population or spending allowance.
+Then H121/H120 connected abstractions, H125 semantic humor/emotion and useful linked
+native/visual context remain the evidence-qualified direction. Older records follow.
+
+# H130 / H129c, 2026-11-18 run
+
+Both planning phases and fixed acceptance are in the
+[run protocol](evaluations/2026-11-18-development-boundaries.md).
+A fresh installed-handler/real-Discord test exposed an internal abstention marker
+published as a direct recall answer. H130 addresses that reproduced output defect
+with the existing single source-checked, accounted repair. Exact 2.38.15 source
+fails 22 of 29 adapter/handler controls; the candidate passes 29/29. This is protocol
+correctness, not a learned preference or measured general character improvement.
+H129c extends the unfinished PR196 boundary gate to owner-only development recall:
+33/33 current cases pass; exact 2.38.13 fails the expected 18 authorship cases and
+passes 15 lifecycle/access controls. No private semantic-egress retry or new trait.
+Protected CI, immutable release and installed acceptance remain pending here.
+
+# 2026-11-13 run, reconciled 2026-11-14 UTC
+
+Fresh H129 baseline reproduces nine expected authorship failures and six lifecycle
+passes; current 15/15 pass and all six gates pass: 2,244 tests / 96.18% coverage.
+The selected enabling gate stays unmerged: real owner/gateway smoke is blocked by
+browser control/login. Numeric three-window / 40-development-row / 300-league-row
+census establishes coverage only. H121/H120 connected abstractions and H125
+semantic humor/emotion remain unqualified, with explicit disconfirmation and
+validation prerequisites. No new human trait, provider call, graph population or
+runtime change. [Both phases and results](evaluations/2026-11-13-h129-reconciliation.md).
+
+# 2026-11-07 run: H129 completion and H129b lifecycle coverage
+
+Matched synthetic handler study: old2.38.13 fails9 attribution cases and passes6
+lifecycle controls; current2.38.15 passes15/15. No provider/source mutation or new
+human trait. Recover unfinishedPR194 and extend invalidation across all3routes,
+so future abstract-memory work retains authorship/withdrawal at publication.
+H121/H120 semantic utility and H125 mechanism novelty remain unresolved, requiring
+independent supports/contraries and held-outs. A local-only authenticated census
+supplies counts, not semantic fidelity. [Complete preregistration/results](evaluations/2026-11-07-handler-lifecycle.md).
 # 2026-11-18: H130 deliberate audit samples
 
 Phase1 confirms development-test saturation and reproduces inability to target an
@@ -3433,3 +3478,14 @@ not measured general reply fidelity. Wider study neighborhood touches 8 anchors,
 comparison and 7 real owner/gateway replies complete. Context/year relation grounding
 and reservation recall remain open; H121/H120/H125 remain next with qualified
 semantic evidence prerequisites. [Installed evidence](evaluations/2026-10-29-archive-roles.md).
+
+
+## 2026-11-14: supplemental H129 live-handler qualification
+
+New isolated run reproduces exact baseline nine intended failures/six controls;
+current full gates pass 2,244 tests/96.18%. Three real private Discord answers through
+the installed reaction handler pass synthetic attribution/care/humor controls with
+no learning intake. Explicit synthetic operator dispatch is not a human reaction or
+main gateway proof; owner/gateway acceptance remains open. No new human abstraction
+or semantic fidelity claim. H121/H120 then H125 priorities remain evidence-qualified.
+[Both phases, cost and limitations](evaluations/2026-11-14-live-handler-smoke.md).

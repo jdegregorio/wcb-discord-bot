@@ -46,6 +46,12 @@ _SPEAKER_PREFIX = re.compile(
 )
 _PROMPT_CACHE_KEY = "wcb-trubot-personality-v12"
 _NO_REPLY = "<NO_REPLY>"
+_LITERAL_CONTROL_REQUEST = re.compile(
+    r"^(?:please )?(?:repeat|quote|say|print|return|output) "
+    r'(?:exactly |literally )?["“`]?<NO_REPLY>["”`]?'
+    r"(?: verbatim)?[.!?]?$",
+    re.IGNORECASE,
+)
 _PASSAGE_WORDS = 12
 _SHORT_REPLY_WORDS = 5
 _SHORT_REPLY_CHARACTERS = 60
@@ -75,6 +81,15 @@ _FRESH_REPLY_GUIDANCE = (
     "add a relevant comic turn. For sincere news or distress, keep emotional care. "
     "Keep supported facts, uncertainty and recipient restraint authoritative. "
     "Do not invent personal history to make the wording different."
+)
+
+
+_CONTROL_REPLY_GUIDANCE = (
+    "\n\nThe previous attempt was an internal participation marker, not a reply. "
+    "You were explicitly addressed. Answer the original focus directly in one or two "
+    "brief sentences using the supplied evidence. If evidence is insufficient, say so "
+    "naturally without inventing facts. Return conversational speech, never a control "
+    "marker or an explanation of this repair."
 )
 
 
@@ -412,15 +427,29 @@ class OpenAITruaxResponder:
         reply = normalize_reply(
             tool_reply if tool_reply is not None else response.output_text, target=target
         )
-        if completed and mode is ReplyMode.FOLLOW_UP and reply.casefold() == _NO_REPLY.casefold():
-            logger.info("Trubot declined follow-up candidate")
+        literal_control = bool(
+            mode in {ReplyMode.DIRECT, ReplyMode.REACTION}
+            and target
+            and _LITERAL_CONTROL_REQUEST.fullmatch(
+                target.split(": ", 1)[-1].removeprefix("🤖").strip()
+            )
+        )
+
+        def control_reply(text: str) -> bool:
+            return text.casefold() == _NO_REPLY.casefold() and not literal_control
+
+        control = completed and control_reply(reply)
+        if control and mode in {ReplyMode.FOLLOW_UP, ReplyMode.AMBIENT}:
+            logger.info("Trubot declined optional participation")
             return None
+        if control and (selected or (photo_action and photo_action.used)):
+            raise EmptyResponseError("Tool response returned a participation marker")
         if not reply and not truncated:
             raise EmptyResponseError("OpenAI returned an empty text response")
         repeated = _stale_bot_echo(reply, messages, target)
         overlong = needs_brief_reply(reply, messages, target)
         if (
-            (repeated or overlong or truncated)
+            (repeated or overlong or truncated or control)
             and not selected
             and not (photo_action and photo_action.used)
         ):
@@ -428,6 +457,7 @@ class OpenAITruaxResponder:
                 (_FRESH_REPLY_GUIDANCE if repeated else "")
                 + (BRIEF_REPLY_GUIDANCE if overlong else "")
                 + (_COMPLETE_REPLY_GUIDANCE if truncated else "")
+                + (_CONTROL_REPLY_GUIDANCE if control else "")
             )
             refresh_allowed = (
                 await refresh_check()
@@ -436,7 +466,7 @@ class OpenAITruaxResponder:
             )
             if not refresh_allowed:
                 logger.info("Reply-quality refresh skipped; source context changed or unchecked")
-                return None if truncated else reply
+                return None if truncated or control else reply
             # One additional accounted attempt, never an unbounded joke-selection loop.
             # Keep the same context, source scope and model. Literal requests and the
             # immediate assistant turn remain eligible for deliberate repetition.
@@ -469,6 +499,11 @@ class OpenAITruaxResponder:
                     "comic idea for invited banter, not just new nouns or a paraphrase of its "
                     "punchline. Keep supported facts and appropriate sincere care. "
                 )
+            if control:
+                revision_instruction = (
+                    "Answer the original focus below directly with a brief natural reply. "
+                    "The previous participation marker is not an answer or human evidence. "
+                )
             if truncated:
                 revision_instruction = (
                     "Answer the original topic below in at most 45 words and finish the thought. "
@@ -478,7 +513,7 @@ class OpenAITruaxResponder:
             revision: list[EasyInputMessageParam] = [
                 *(
                     [EasyInputMessageParam(role="assistant", content=reply)]
-                    if reply and not truncated
+                    if reply and not (truncated or control)
                     else []
                 ),
                 EasyInputMessageParam(
@@ -512,7 +547,7 @@ class OpenAITruaxResponder:
                     retry_limit=0,
                 )
             except (APIError, BudgetError):
-                if truncated:
+                if truncated or control:
                     # A partial turn is not a usable fallback. Preserve the error
                     # category and its existing visible budget/failure handling.
                     raise
@@ -526,12 +561,16 @@ class OpenAITruaxResponder:
                     or not candidate
                     or any(item.type == "function_call" for item in getattr(fresh, "output", ()))
                 ):
-                    if truncated:
-                        raise IncompleteReplyError("Reply completion rewrite did not complete")
+                    if truncated or control:
+                        raise IncompleteReplyError("Required reply rewrite did not complete")
                     logger.warning("Optional reply-quality refresh incomplete; keeping draft")
-                elif mode is ReplyMode.FOLLOW_UP and candidate.casefold() == _NO_REPLY.casefold():
-                    logger.info("Trubot declined refreshed follow-up candidate")
-                    return None
+                elif control_reply(candidate):
+                    if mode in {ReplyMode.FOLLOW_UP, ReplyMode.AMBIENT}:
+                        logger.info("Trubot declined refreshed optional participation")
+                        return None
+                    if truncated or control:
+                        raise EmptyResponseError("Required rewrite returned a participation marker")
+                    logger.info("Optional reply-quality refresh returned control; keeping draft")
                 elif not truncated and overlong and needs_brief_reply(candidate, messages, target):
                     logger.info("Optional brief reply still overlong; keeping original draft")
                 else:

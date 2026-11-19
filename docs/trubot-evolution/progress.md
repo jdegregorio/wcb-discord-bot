@@ -1,3 +1,66 @@
+# Reconciled release decision: 2.39.1
+
+Fresh combined feature gates pass: locked sync, format, lint, mypy 46 modules,
+2,320 tests / 96.12% coverage, and 2.39.1 wheel/sdist. Both independent audit-capture
+work and the reply correction are preserved. Protected merge and installed outcome
+remain pending until verified; later release evidence belongs to PR196/v2.39.1.
+
+Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent
+2.39.0 focused-audit capability. Preserve it. PR196 publishes the control-marker
+correction as 2.39.1 after fresh combined gates, protected CI and installed tests.
+Earlier 2.38.16 reservations and feature measurements are intermediate history.
+This run owns only the reply correction and its boundary coverage. No new trait,
+private semantic-transfer approval, source population or spending allowance.
+Then H121/H120 connected abstractions, H125 semantic humor/emotion and useful linked
+native/visual context remain the evidence-qualified direction. Older records follow.
+
+# 2026-11-18 run: H130 control-marker publication correction
+
+Final feature qualification: 29/29 control cases; exact 2.38.15 has 22 expected
+failures / seven controls pass. Corrective mentions do not authorize literal marker
+output. All six gates pass: 2,291 tests / 96.19%, 46 typed modules, wheel/sdist.
+Earlier 22-case figures below are intermediate measurements.
+
+New managed worktree trubot-daily-20261118-0905, unique matching feature branch,
+fetched base c831727e38a185ad1dd7497dcd3f5993a11aa59f. Recovered existing PR196 at
+69462ad without changing the primary checkout. No duplicate PR. Both phases,
+falsifiable acceptance and priority revision are in the
+[protocol](evaluations/2026-11-18-development-boundaries.md).
+
+The private-development harness produced seven actual installed-handler Discord
+answers, with unchanged learning counts: three correct synthetic attribution
+rejections, a direct recall control-marker defect, broad-year prose, care and humor
+delivery. Raw answer/source text is not retained in receipts. Synthetic owner
+envelopes and reaction dispatches are explicitly not human or main-gateway events.
+Browser control fails, the Mac is locked and the fallback has no owner login.
+The authorized harness alternative replaces the overly narrow earlier planning
+prerequisite; main-gateway proof remains an explicit coverage gap.
+
+H130 takes priority because of the observed mechanical output. One existing
+accounted/source-checked repair handles accidental direct/reaction control output;
+failed repairs cannot publish it. Selected tools cannot acquire another provider
+call. Optional participation remains silent; requested literal text is preserved.
+Exact 2.38.15 baseline: 20 failures / two controls pass. Candidate: 22/22 controls,
+including actual incoming handlers. Recovered/expanded H129c: 33/33 pass; exact
+2.38.13 has 18 expected role failures / 15 lifecycle/access passes. The first full
+runtime gate caught a package-version mismatch; corrected before release checks.
+
+Production before change: healthy read-only 2.38.15, 46/46 installed module hashes
+match, digest cb857fa67873af5e4144208ec12b98a6cc0ad7afd823e5b12b56586b6d234a7e,
+zero restarts/OOM, release timer active/enabled. After auxiliary closure healthcheck
+passes and heartbeat age is 9.62 seconds; 20-minute logs have zero errors/tracebacks.
+Pre-smoke ledger USD0.337420550 estimate, post USD0.342437275 / 233 attempts /
+21 unsettled; the nine maintenance attempts use the existing ledger. Concurrent
+aggregate is not an invoice. USD18/2/20 guard unchanged. Private content-free
+receipts use app smoke-tests/2026-11-18-0905, 0700/0600, seven-day manual retention
+and withdrawal cleanup. No schema, source, graph, key or allowance change.
+
+PR196 will carry the final runtime correction and boundary coverage. Version
+2.38.16 is reserved for the tested merged runtime; protected CI, image publication,
+deployment and installed acceptance remain pending until independently verified.
+Next: H121/H120 useful connected abstractions with qualified semantic review,
+H125 semantic humor/emotion, then useful linked native/visual context. Preserve
+generated U.P. aurora/trail-camera scenes, selective tools and six scheduled runs.
 # 2026-11-18 17:00 run: H130b focused audits
 
 New managed worktree trubot-daily-20261118-1700, unique feature branch of the same
@@ -5858,3 +5921,94 @@ November USD 0.177698800estimate/8 unsettled,18/2/20 guard unchanged; concurrent
 prevents exact run-cost attribution. Next: H121/H120 connected abstract utility, H125 novel
 comic mechanisms/emotion, useful linked native/visual coverage and seasonal variety.
 [Complete qualification and limitations](evaluations/2026-10-29-archive-roles.md).
+
+
+## 2026-11-07 run, resumed 2026-11-08 UTC: H129 completion
+
+Basec831727e38a185ad1dd7497dcd3f5993a11aa59f; fresh managed worktree and unique
+feature/trubot-daily-20261107-1106, primary untouched. Conflicted unfinishedPR194
+is recovered and strengthened with all-route source invalidation. Nine baseline
+role failures/six lifecycle passes versus15/15current. Six feature gates pass:
+2,244tests/96.18%,46typedmodules,wheel/sdist. No runtime version or source change;
+production2.38.15 is retained. Real smoke and protected publication remain pending.
+[Fresh protocol/results](evaluations/2026-11-07-handler-lifecycle.md).
+
+
+Resumed2026-11-09UTC: tested39f6e91 is pushed; current mainc831727e unchanged.
+Fresh actual Discord acceptance remains blocked by disconnected browser control,
+including unconfirmed Enterdispatch; do not merge or count other runs' messages.
+Safe actual production metadata verifieshealthy2.38.15/indexcb857fa67873,0restarts/OOM,
+read-only,release timeractive/enabled. No runtime change/deploy/rollback. November
+aggregateUSD0.192244750estimate/99attempts/13unsettled is not exact run cost; guard
+unchanged. Preserve this worktree/branch and real-smoke prerequisite.
+
+
+Publication: [draft PR196](https://github.com/jdegregorio/wcb-discord-bot/pull/196)
+carries this recovered/extended gate; tested source commit39f6e91, evidence commit
+de354e0. The [required quality check](https://github.com/jdegregorio/wcb-discord-bot/pull/196/checks)
+passes with no bypass. It remains unmerged pending fresh real Discord acceptance.
+PR194 is superseded; preserve its branch and original evidence. No release/image or
+production mutation is appropriate for this tests/docs increment. Retain the new
+managed worktree and exact acceptance prerequisite for the next run.
+
+
+## 2026-11-13 run, resumed 2026-11-14 UTC: H129 reconciliation
+
+New managed worktree `trubot-daily-20261113-1309`; unique feature branch from fetched
+`c831727e38a185ad1dd7497dcd3f5993a11aa59f`. Recovered existing PR196 / 6e70048;
+primary untouched. Fresh exact 2.38.13 baseline: nine expected role failures and six
+lifecycle passes. Current 15/15 pass; all six feature gates pass: 2,244 tests / 96.18%
+coverage, 46 typed modules, wheel and sdist. Production remains immutable 2.38.15 /
+digest cb857fa67873, healthy/read-only, zero restarts/OOM, timer active/enabled.
+No runtime change, release/image/deploy or rollback.
+
+Fresh authenticated census: 4,299 blocks / 405 eligible / seven ambiguous / three
+windows; 40 development rows / 21 bot turns / zero duplicates or storage markers;
+300 league rows / 23 bot turns / one duplicate / zero storage markers. Seven-day
+league coverage: zero target / two bot posts. No semantic comparison, new trait or
+provider call. November estimate USD0.262333525 / 166 attempts / 18 unsettled; same
+18/2/20 guard. Concurrent aggregate is not this run's cost or an invoice.
+
+Fresh real Discord smoke remains OPEN: Chrome control fails before navigation,
+native Mac is locked, and in-app Discord requires owner login. No submitted probe,
+gateway answer or league post. PR remains draft until fresh real acceptance; no
+duplicate PR or runtime release. Next: H121/H120 connected abstractions, then H125
+semantic humor/emotion, then useful linked native/visual coverage and seasonal
+variety. Same six-run Sol/xhigh schedule and notifications.
+[Both phases, evidence and limitations](evaluations/2026-11-13-h129-reconciliation.md).
+
+Final read-only production check after census closure: heartbeat age 41.0 seconds,
+health check exit 0, last 20 minutes / 20 log rows / zero ERRORs or tracebacks.
+Fresh gateway proof remains missing. Preserve this run's worktree and evidence.
+
+
+## 2026-11-14: supplemental isolated H129 live-handler evidence
+
+- New managed worktree trubot-daily-20261113-early and unique feature branch from
+  fetched c831727e; primary untouched. Recovered PR196 and incorporated concurrent
+  evidence-only 9170172. No duplicate PR/runtime improvement.
+- Fresh exact v2.38.13 baseline: nine intended role failures/six passing lifecycle
+  controls. Current full six gates pass 2,244 tests/96.18%,46 typed modules,packages.
+- Three actual private Discord answers from installed reaction-handler dispatch pass
+  synthetic attribution,care,humor controls (16/6/16 words;4.437/3.858/6.079seconds).
+  Dispatch is explicitly synthetic; no real owner reaction/main gateway is claimed.
+  Each confirms no development intake and unchanged learning-message count.
+- Browser navigation/snapshots fail on a blank tab and native Mac is locked. Fresh
+  owner/main-gateway acceptance stays OPEN; keep PR196 draft. No merge/release/deploy.
+- Authenticated pi5/aarch64/Ubuntu24.04.4: healthy read-only2.38.15,digestcb857fa67873,
+  zero restarts/OOM,timeractive/enabled. Final post-census heartbeat20.01seconds,health0;
+  last20minutes20logrows/0ERROR/0tracebacks. Postdev24botturns,0duplicates/markers.
+  In-app fallback has an empty Discord login; no owner session is available.
+- November after three maintenance smoke calls:USD0.263305485estimated/169attempts/
+  18unsettled. Observed aggregate increaseUSD0.000971960 is not an audited run cost.
+  Same18/2/20guard,source lifecycle/privacy,allowlists,noDMs,schedule/model/notifications.
+- Private content-free receipts retain0700/0600,sevendaymanual/withdrawalcleanup.
+  No new semantic human comparison,trait,graph population or general quality gain.
+  H121/H120 then H125 remain next; generatedUPscenes/selectivetools remain.
+- [Both planning phases, method and limitations](evaluations/2026-11-14-live-handler-smoke.md).
+
+Supplemental evidence commit: `e4842a1` on [draft PR196](https://github.com/jdegregorio/wcb-discord-bot/pull/196).
+All 46 installed Python modules freshly match the tested source with zero mismatches.
+[Evidence quality run](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/43641603355)
+is separate from the still-open owner/main-gateway prerequisite. Runtime/source tree
+is unchanged from the feature gates; no merged revision, release or deployment is claimed.

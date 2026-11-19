@@ -1,3 +1,80 @@
+# Reconciled release decision: 2.39.1
+
+Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent
+2.39.0 focused-audit capability. Preserve it. PR196 publishes the control-marker
+correction as 2.39.1 after fresh combined gates, protected CI and installed tests.
+Earlier 2.38.16 reservations and feature measurements are intermediate history.
+This run owns only the reply correction and its boundary coverage. No new trait,
+private semantic-transfer approval, source population or spending allowance.
+Then H121/H120 connected abstractions, H125 semantic humor/emotion and useful linked
+native/visual context remain the evidence-qualified direction. Older records follow.
+
+# Current decision: H130, 2026-11-18 run
+
+Actual direct-memory readback exposed an internal participation marker. Correct
+that publication defect before new abstract learning, through the existing single
+accounted/source-checked repair. Existing PR196 now carries this coherent runtime
+correction and H129c's 33 archive boundary controls.
+[Both planning phases and acceptance](docs/trubot-evolution/evaluations/2026-11-18-development-boundaries.md).
+
+1. Complete H130 protected CI, immutable 2.39.1 release/image/deploy and actual
+   private-Discord acceptance. High defect confidence; same shared repair budget.
+2. H121/H120 useful connected abstractions with complete attributed supports and
+   contraries, qualified private semantic review, held-outs and demonstrated utility.
+3. H125 varied comic mechanisms, emotional judgment and useful original views,
+   validated semantically with brevity, care and recipient controls.
+4. Useful linked native/visual coverage and seasonal variety after pixel review,
+   lifecycle checks and measured benefit. Preserve generated U.P. aurora/trail-camera
+   scenes, natural captions and selective tools. H96 sightings remain closed.
+
+The authorized same-handler development harness supplies real sends/readback when
+owner UI is unavailable; synthetic dispatch never proves human/main-gateway events.
+No new trait or general fidelity gain follows. New semantic evidence or material
+regressions can reorder work. Existing graph/maintenance allowance, USD18/2/20,
+allowlists/no DMs, withdrawal and six scheduled runs remain. Older snapshots follow.
+
+# Current priority, reconciled 2026-11-14 UTC
+
+H129 remains the single unfinished tests/docs gate in draft PR196. This run recovers
+its existing head in a fresh managed worktree. Fresh exact-source comparison:
+v2.38.13 has nine expected role failures/six lifecycle passes; current source passes
+all 15. All six feature gates pass: 2,244 tests / 96.18% coverage, 46 typed modules
+and packages.
+Fresh owner/gateway smoke is BLOCKED by browser control and missing authenticated
+fallback login. Keep the PR draft. Production 2.38.15 remains healthy; no runtime
+change or duplicate release/deploy. New semantic fidelity remains unqualified.
+[Fresh phases, counts, limits and recovery prerequisite](docs/trubot-evolution/evaluations/2026-11-13-h129-reconciliation.md).
+
+
+Supplemental isolated run: 3/3 real Discord sends through the installed reaction
+handler pass synthetic attribution/care/humor checks, with no learning intake.
+These are labeled synthetic operator dispatches, not owner/main-gateway events.
+That acceptance gate remains open; preserve the draft and current priority order.
+[Methods, both planning phases and limits](docs/trubot-evolution/evaluations/2026-11-14-live-handler-smoke.md).
+
+1. Complete this H129 publication and fresh real Discord validation. Confidence in
+   deterministic boundary coverage is high; no general character gain is claimed.
+2. H121/H120 useful relation-preserving episodes and abstractions, so grounded
+   values, emotions and relationships guide natural replies. Dependencies: complete
+   attributed support/contrary episodes, qualified private semantic review and
+   independent held-outs. Accept measured same-case and real gateway benefit with
+   lifecycle controls. Confidence in need high; remedy unresolved. Existing graph
+   and maintenance allowance; estimate operating impact before rollout.
+3. H125 varied comic mechanisms, emotional judgment and useful original views.
+   Accept independent semantic gains with brevity, care/recipient controls and
+   actual gateway benefit; novel wording is insufficient. Shared repair/maintenance
+   allowance only, no new human trait. Confidence in solution remains unresolved.
+4. Useful linked native/visual coverage and seasonal variety after demonstrated
+   utility. Require actual pixels, provenance/lifecycle and honest gaps. Preserve
+   generated Michigan U.P. northern-lights/trail-camera scenes, natural captions and
+   selective tools. H96 sightings stay closed until observations qualify.
+
+Finishing an existing conflicted gate takes precedence over overlapping runtime
+work; new semantic evidence or material privacy/grounding/delivery regressions
+can reorder priorities. Counts alone do not justify new traits or graph population.
+Source withdrawal, allowlist/no DMs, USD18runtime/2maintenance/20total guard, six
+local01/05/09/13/17/21Sol/xhigh standalone runs and notifications remain unchanged.
+Older snapshots below are historical.
 # Current priorities, 2026-11-18 focused audit run
 
 H130b adds deliberate, bounded response selection to private character audits so
