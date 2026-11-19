@@ -6154,25 +6154,44 @@ U.P. aurora/trail-camera scenes, short captions, selective skills/tools and clos
 unqualified sightings. No model, cadence, privacy, source scope or budget changes.
 
 
-## 2026-11-19 09:00 Pacific: H134 candidate
+## 2026-11-19 09:00 Pacific: H134 released
 
-New managed worktree/unique feature branch from fetched
-`639477564a7c2c5bf4398ea179c7681aeea3608c`; primary untouched. Reconciled completed
-2.40.1 and independently owned unfinishedPR197. Both planning phases select the
-reproduced bot-text attribution loss, so text reactions retain the existing
-bot-source context status used by images. Human provider input is byte-identical;
-no new human trait, graph population or semantic fidelity gain. H133 fresh care
-baseline passes; its cause remains unresolved. H121/H120 connected abstractions
-stays the next learning architecture priority, then H125 semantic humor/emotion
-and useful linked native/visual context. GeneratedUPscenes/selectivetools remain.
+New managed worktree and unique branch from fetched
+`639477564a7c2c5bf4398ea179c7681aeea3608c`; primary untouched. Both planning phases
+select a reproduced attribution inconsistency: bot text loses the source label
+retained for images. Baseline has five intended regression failures/one human pass;
+candidate passes 99 focused tests, including six new tests. Human-text provider input
+is byte-identical. No persona policy, trait, graph population or source scope change.
 
-Baseline five intended regression failures/one human pass; candidate99focusedpass,
-including six new tests. All six feature gates PASS2,358tests/96.14%,46typedmodules,
-wheel/sdist2.40.2. Actual private baseline/candidate synthetic reaction cohorts each
-have three send/readbacks: preference rejection,direct care,brief requested humor.
-Source labels absent3/3baseline,retained3/3candidate; no learning intake/count change.
-Narrow synthetic semantic controls pass in both arms, no measured empathy/humor gain.
-Owner/main-gateway test remains open after Chrome failure,lockedMac and emptyIABlogin.
-Auxiliary clients closed; production2.40.1healthy/read-only,zero restarts/OOM,
-health0,timeractive/enabled. [Full methods and limitations](evaluations/2026-11-19-bot-text-focus.md).
-Publication/exactmergedgates/release/image/deploy and installed acceptance pending.
+[PR203](https://github.com/jdegregorio/wcb-discord-bot/pull/203) merges normally at
+`5385a135cf737832d45d62cd1f6a866a4ab94a52` after required CI. All six feature and exact
+merged gates pass: 2,358 tests, 96.14% coverage, 46 typed modules, wheel/sdist.
+Main CI44578168422 and multi-architecture image workflow44578655841 pass.
+Immutable [v2.40.2](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.40.2)
+is actually running healthy on Pi5 at
+`sha256:e47cb7df27138c64cd54fbee29606749a3d68acc49b8e805a2642cd13cf3bbf6`.
+All 46 installed hashes match. Previous 2.40.1 remains available; no rollback.
+
+Nine actual private Discord synthetic handler/send-readback probes span three arms.
+Bot attribution is absent 3/3 baseline and retained 3/3 candidate plus 3/3 installed.
+Development intake is false and learning counts unchanged. Installed preference
+rejection and direct care pass narrow review; requested humor is brief/on-topic,
+but naturalness is partial because of a strained analogy. No measured fidelity gain.
+H133 care baseline now passes; cause remains unresolved. Owner/main-gateway tests
+remain open: Chrome fails, Mac is locked and fresh in-app fallback requires login.
+No tokens or league chatter. Private references remain outside Git.
+
+After all auxiliary clients close: health exit0, heartbeat2.8 seconds old, healthy/
+read-only, zero restarts/OOM; 20-minute new-container query11rows/zeroERROR/Traceback;
+timer active/enabled. Twenty content-free receipts pass 0700/0600 checks, with existing
+seven-day manual retention and withdrawal cleanup. Fresh graph has one claim and
+zero qualified abstractions; numeric counts are not semantic qualification.
+November aggregateUSD0.354998645 estimated/270attempts/21unsettled, same18/2/20 guard.
+Observed movementUSD0.003123930 is not audited run cost or an invoice.
+
+Next is H121/H120 useful connected abstractions with complete support/contrary episodes,
+qualified private semantic review, independent held-outs and actual utility. Then H125
+semantic humor/emotion and useful native/visual/seasonal context. Generated U.P. scenes,
+natural captions, selective tools and the closed unqualified-sighting gate remain.
+PR197 stays independent; six-run schedule/model/notifications remain unchanged.
+[Complete methods, evidence and limits](evaluations/2026-11-19-bot-text-focus.md).

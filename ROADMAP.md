@@ -1,32 +1,33 @@
-# Current decision: bot-text focus attribution, 2026-11-19 09:00 run
+# Current decision: bot-text attribution released, 2026-11-19
 
-H134 corrects a reproduced handler boundary: plain-text bot reaction targets lose
-the existing bot-source label that image targets retain. Preserve the complete
-conversion once, based on authenticated bot status, so generated words retain their
-evidence status even with a human-like display name. Ordinary human provider input
-is byte-identical. This is a grounding correction, not a new human trait or measured
-empathy/humor gain. H133 care baseline now passes; its cause remains unresolved.
-PR197 remains independently owned. H132 is already deployed as2.40.1.
+H134 is deployed as immutable 2.40.2. Plain-text bot reaction targets now retain the
+existing source label used by images, even with a human-like display name. The
+complete focus enters generation once. Human-text provider input is byte-identical.
+Installed attribution passes 3/3; all 46 module hashes and health checks pass.
+Preference and direct care pass narrow review; installed humor naturalness is partial.
+No new trait, abstraction population or general fidelity gain is claimed. H133 care
+baseline now passes; its prior cause remains unresolved. PR197 stays independent.
 
-1. Complete H134 protected publication and installed validation. Confidence high
-   in reproduced attribution loss; existing handler/responder and same spending guard.
-2. H121/H120 useful relation-preserving abstractions. Require complete attributed
-   support/contrary episodes, qualified private semantic review, independent held-outs
-   and actual useful replies. Need confidence high; semantic remedy unresolved.
-3. H125 semantic comic variety with emotion, original views and recipient restraint.
-   Require mechanism-level novelty, naturalness and care controls; repeated synthetic
-   tests and exact-word novelty do not establish funniness or human fidelity.
-4. Useful linked native/visual coverage and seasonal variety after actual pixels,
-   lifecycle checks and measured utility. Keep generated Michigan U.P. aurora and
-   trail-camera scenes, short natural captions and selective skills/tools. Automatic
-   sightings remain closed until observations qualify.
+1. H121/H120 useful relation-preserving abstractions. Require complete attributed
+   support/contrary episodes, qualified private semantic review, independent held-outs,
+   actual useful replies and lifecycle controls. Confidence in need is high; the
+   remedy remains unresolved. Use the existing app graph and maintenance allowance.
+2. H125 semantic comic variety, emotion and useful original views, with warmth,
+   brevity and recipient restraint. Require mechanism-level novelty and held-out
+   naturalness; word novelty alone is insufficient. Existing repair/budget only.
+3. Useful linked native/visual coverage and seasonal variety after actual pixels,
+   lifecycle checks and demonstrated utility. Keep generated Michigan U.P. aurora
+   and trail-camera scenes, short natural captions and selective skills/tools.
+   Automatic sightings stay closed pending qualified observations. Estimate cost
+   before expansion; preserve current source and participation scope.
 
-H134 adds no provider turn, model/policy, schema, graph population or service. Keep
-allowlists/no DMs, withdrawal and USD18runtime/2maintenance/20total guard, six local
-01/05/09/13/17/21 Sol/xhigh runs and notifications. New material defects or independently
-measured semantic benefit can reorder work. Owner/main-gateway verification is open.
+H134 adds no provider turn, policy/model, schema, source population or service.
+Maintain withdrawal, allowlists/no DMs, USD 18 runtime / 2 maintenance / 20 total,
+six local 01/05/09/13/17/21 Sol/xhigh runs and notification preferences. New material
+defects or independent semantic benefit can reorder work. Owner/main-gateway
+verification remains open because browser control fails and the fallback needs login.
 
-[Both phases and validation](docs/trubot-evolution/evaluations/2026-11-19-bot-text-focus.md). Older records below are historical.
+[Both phases and installed evidence](docs/trubot-evolution/evaluations/2026-11-19-bot-text-focus.md). Older records below are historical.
 
 # Reconciled release decision: 2.39.1
 
