@@ -5,7 +5,7 @@ Both planning phases and fixed acceptance are in the
 A fresh installed-handler/real-Discord test exposed an internal abstention marker
 published as a direct recall answer. H130 addresses that reproduced output defect
 with the existing single source-checked, accounted repair. Exact 2.38.15 source
-fails 20 of 22 adapter/handler controls; the candidate passes 22/22. This is protocol
+fails 22 of 29 adapter/handler controls; the candidate passes 29/29. This is protocol
 correctness, not a learned preference or measured general character improvement.
 H129c extends the unfinished PR196 boundary gate to owner-only development recall:
 33/33 current cases pass; exact 2.38.13 fails the expected 18 authorship cases and

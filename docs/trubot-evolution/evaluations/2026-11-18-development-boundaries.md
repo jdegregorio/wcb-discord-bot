@@ -137,3 +137,18 @@ full relation grounding and general humor/fidelity remain unqualified.
 
 Protected PR/main CI, immutable release/image, deployment and changed installed
 acceptance follow. Do not count those pending steps as completed.
+
+### Literal-request review and final feature result
+
+Review found that merely mentioning the marker alongside a quotation request could
+allow accidental control output. Tighten the literal exception to an explicit
+whole-request repeat/quote/print instruction. Two corrective-mention held-outs and
+six direct/reaction literal controls prevent that regression. Final exact 2.38.15
+comparison: 22 expected failures / seven controls pass. Current 29/29 pass.
+All six final feature gates pass: 2,291 tests / 96.19%, 46 typed modules and both
+2.38.16 packages. No unresolved failure or flaky rerun. The earlier 22-case and
+2,284-test measurements above are intermediate results, not final totals.
+
+Concurrent PR197 is an independent operator-only durable smoke runner; PR198 adds
+focused character-audit capture and reserves 2.39.0. Neither overlaps this responder
+change, and both explicitly preserve PR196 ownership. They remain separate.

@@ -70,16 +70,34 @@ async def test_optional_quality_repair_cannot_replace_usable_draft_with_control(
     assert len(api.requests) == 2
 
 
-async def test_explicit_literal_control_request_is_preserved(monkeypatch):
+@pytest.mark.parametrize("mode", [ReplyMode.DIRECT, ReplyMode.REACTION])
+@pytest.mark.parametrize(
+    "target",
+    [
+        "Casey: Repeat <NO_REPLY> verbatim.",
+        'Casey: Quote "<NO_REPLY>".',
+        "Casey: 🤖 Please print exactly <NO_REPLY>.",
+    ],
+)
+async def test_explicit_literal_control_request_is_preserved(mode, target, monkeypatch):
     api = SequenceAPI(MARKER)
     r, _ = responder(api, monkeypatch)
-    assert (
-        await r.reply(
-            [], mode=ReplyMode.DIRECT, target="Casey: Repeat <NO_REPLY> verbatim.", safety_id="test"
-        )
-        == MARKER
-    )
+    assert await r.reply([], mode=mode, target=target, safety_id="test") == MARKER
     assert len(api.requests) == 1
+
+
+@pytest.mark.parametrize(
+    "target",
+    [
+        "Casey: Quote the dessert preference, not <NO_REPLY>.",
+        "Casey: Please do not repeat <NO_REPLY>.",
+    ],
+)
+async def test_mentioning_control_is_not_a_literal_output_request(target, monkeypatch):
+    api = SequenceAPI(MARKER, ANSWER)
+    r, _ = responder(api, monkeypatch)
+    assert await r.reply([], mode=ReplyMode.DIRECT, target=target, safety_id="test") == ANSWER
+    assert len(api.requests) == 2
 
 
 async def test_unused_photo_offer_allows_control_repair_without_using_action(monkeypatch):

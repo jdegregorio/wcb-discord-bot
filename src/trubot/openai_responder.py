@@ -46,6 +46,12 @@ _SPEAKER_PREFIX = re.compile(
 )
 _PROMPT_CACHE_KEY = "wcb-trubot-personality-v12"
 _NO_REPLY = "<NO_REPLY>"
+_LITERAL_CONTROL_REQUEST = re.compile(
+    r"^(?:please )?(?:repeat|quote|say|print|return|output) "
+    r'(?:exactly |literally )?["“`]?<NO_REPLY>["”`]?'
+    r"(?: verbatim)?[.!?]?$",
+    re.IGNORECASE,
+)
 _PASSAGE_WORDS = 12
 _SHORT_REPLY_WORDS = 5
 _SHORT_REPLY_CHARACTERS = 60
@@ -424,8 +430,9 @@ class OpenAITruaxResponder:
         literal_control = bool(
             mode in {ReplyMode.DIRECT, ReplyMode.REACTION}
             and target
-            and _NO_REPLY.casefold() in target.casefold()
-            and requested_quotation(target)
+            and _LITERAL_CONTROL_REQUEST.fullmatch(
+                target.split(": ", 1)[-1].removeprefix("🤖").strip()
+            )
         )
 
         def control_reply(text: str) -> bool:

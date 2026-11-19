@@ -1,5 +1,10 @@
 # 2026-11-18 run: H130 control-marker publication correction
 
+Final feature qualification: 29/29 control cases; exact 2.38.15 has 22 expected
+failures / seven controls pass. Corrective mentions do not authorize literal marker
+output. All six gates pass: 2,291 tests / 96.19%, 46 typed modules, wheel/sdist.
+Earlier 22-case figures below are intermediate measurements.
+
 New managed worktree trubot-daily-20261118-0905, unique matching feature branch,
 fetched base c831727e38a185ad1dd7497dcd3f5993a11aa59f. Recovered existing PR196 at
 69462ad without changing the primary checkout. No duplicate PR. Both phases,
