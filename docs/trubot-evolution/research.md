@@ -1,3 +1,11 @@
+# 2026-11-19 09:00: H134 bot-text focus attribution
+
+Actual installed reaction capture loses bot-source attribution on plain text.
+Baseline regressions:fivefail/onepass; candidate:sixpass within99totalpass.
+H133 care baseline now passes, so its consistent-defect explanation is unresolved.
+H121/H120 semantic abstract utility remains unvalidated; no new trait or population.
+[Hypotheses, acceptance, both phases and outcomes](evaluations/2026-11-19-bot-text-focus.md).
+
 # 2026-11-18 complete selected study sources
 
 H-STUDY-FULLTEXT is a supported maintenance-input correction: exact selected

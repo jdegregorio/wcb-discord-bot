@@ -1,3 +1,10 @@
+## Bot authorship in text reactions, 2.40.2
+
+Text reaction targets retain the same authenticated bot-source label as images.
+Generated words remain context, including when the bot displays a human name.
+The complete focus enters generation once; ordinary human text stays compatible.
+[Qualification](docs/trubot-evolution/evaluations/2026-11-19-bot-text-focus.md).
+
 ## Whole captured setup for selected studies
 
 Private operators can add `--require-context-text` to an exact `trubot-study

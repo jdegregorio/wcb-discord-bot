@@ -651,9 +651,13 @@ class TruBotClient(discord.Client):
                 if reference_context is not None:
                     history.append(reference_context)
                 if focused is not None and (
-                    focused.images or "image pixels unavailable" in focused.content
+                    focused.images
+                    or "image pixels unavailable" in focused.content
+                    or (anchor is not None and anchor.author.bot)
                 ):
-                    # Keep the focus last so the adapter retains its image parts.
+                    # Keep bot-source attribution for text too. A display name cannot
+                    # make a bot-authored reaction target human evidence. The adapter
+                    # replaces this last focus instead of duplicating the target.
                     history.append(
                         ConversationMessage(
                             focused.role,
