@@ -87,3 +87,19 @@ Pre-run November ledger estimate USD0.344353485, 238 attempts/21 unsettled;
 this concurrent aggregate is not run cost or an invoice. No new spending allowance.
 Feature/merged gates, CI, release, image, installed checks, private synthetic smoke
 and final health are recorded below as completed; pending work is not a pass.
+
+
+Feature qualification after integrating main caa0050: all six gates PASS,
+2,271 tests/96.11% coverage, 46 typed modules, wheel/sdist. The prior source is
+2.39.0 from independent PR198; this increment uses2.39.1. An initial attempted
+version substitution expected2.38.16 and stopped at its assertion without edits;
+the actual base version was inspected before the correct bump. Final release
+version gates will be rerun. No hidden version mismatch is accepted.
+
+Fresh pre-release actual Discord synthetic reaction handler: exactly one send and
+readback,10 words/4.244seconds, unchanged learning count and excluded development
+intake. This is an automated narrow attribution/control check, not a semantic
+fidelity judgment or owner/main-gateway proof. No answer text retained. Isolated
+maintenance client closed. Existing private content-free receipts under
+smoke-tests/2026-11-18-2114 use0700/0600 and seven-day manual retention/withdrawal.
+November aggregate after that maintenance call:USD0.344827985,239attempts/21unsettled.
