@@ -1,3 +1,12 @@
+# 2026-11-18: H130 durable operator smoke attempts
+
+A real SSH interruption has a completed private answer receipt; blindly repeating
+ad hoc scripts can duplicate paid calls or test chatter. An independent durable
+claim/send-observer tool is selected while the earlier active run owns PR196.
+Predefined fault, privacy, private-scope, real-send and no-replay criteria are in the
+[research record](evaluations/2026-11-18-durable-smoke.md). Fresh human semantic audit
+is blocked by explicit transfer review; no trait or general fidelity gain is claimed.
+
 # 2026-11-03: H128a short requested copies
 
 The combined semantic-novelty hypothesis fails two six-case trials. Reject its

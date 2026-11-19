@@ -1,3 +1,39 @@
+# Current priorities, 2026-11-18 run
+
+H130 adds a source-controlled operator smoke runner with durable content-free
+claims and exact Discord-send references, so interrupted experiments cannot
+silently replay paid work or test chatter. It is independent of PR196: the preceding
+active run owns that expanded H129 gate and publication. No H129 branch is modified.
+This maintenance script is outside the runtime image; no duplicate version/release
+or deployment is appropriate. Ordinary reply behavior and source state are unchanged.
+
+1. Complete H130 validation/publication under its predefined fault, privacy, scope,
+   actual private Discord and replay criteria. Confidence in the interruption defect
+   is high. Existing app storage and maintenance allowance; no new service or budget.
+2. Finish H129 under its existing owner, then H121/H120 useful relation-preserving
+   episodes and abstract memory, so values, emotions and relationships guide natural
+   replies. Require complete attributed support/contrary episodes, qualified private
+   semantic review, independent held-outs, lifecycle checks and actual reply benefit.
+   Need is supported; solution remains unresolved. Existing graph/ledger only;
+   estimate operating cost before rollout.
+3. H125 semantic comic variety, emotional judgment and useful original views.
+   Require independent semantic gains, brevity, care/recipient controls and actual
+   conversation benefit. Wording novelty is insufficient. Shared repair/maintenance
+   allowance only; no new human trait or automatic native-pattern permission.
+4. Useful linked native/visual coverage and seasonal variety after demonstrated
+   utility. Require actual pixels, provenance/lifecycle controls and honest gaps.
+   Preserve generated Michigan U.P. aurora/trail-camera scenes, short natural captions
+   and selective tools. H96 sightings stay closed until observations qualify.
+
+Fresh audit supplies numeric coverage only; private human transcript transfer to
+Codex is awaiting explicit destination approval after automatic-review rejection.
+No new semantic fidelity, human trait or humor superiority is claimed. Material
+privacy/grounding failures or contrary semantic evidence can reorder priorities.
+Preserve withdrawal, allowlists/no DMs, USD18/2/20 guard, six local
+01/05/09/13/17/21 Sol/xhigh runs and existing notifications. Older records are history.
+
+[Evidence, both phases and limitations](docs/trubot-evolution/evaluations/2026-11-18-durable-smoke.md).
+
 # Current priorities, reconciled 2026-11-04 UTC
 
 H126 is complete in the validated 2.38.14 release. Archive context preserves

@@ -5844,3 +5844,36 @@ November USD 0.177698800estimate/8 unsettled,18/2/20 guard unchanged; concurrent
 prevents exact run-cost attribution. Next: H121/H120 connected abstract utility, H125 novel
 comic mechanisms/emotion, useful linked native/visual coverage and seasonal variety.
 [Complete qualification and limitations](evaluations/2026-10-29-archive-roles.md).
+
+
+## 2026-11-18 run: H130 durable private Discord smoke
+
+Base c831727e38a185ad1dd7497dcd3f5993a11aa59f; new managed worktree
+trubot-daily-20261118-1310. Initial isolated branch recovers existing PR196; read-only
+coordination then establishes that the preceding active run owns its expanded gate.
+Independent feature/trubot-daily-20261118-1310-smoke starts from the fetched main.
+No primary-checkout change or overlapping PR196 publication.
+
+Selected enabling increment: source-controlled operator runner commits a claim
+before I/O and exact successful send references before terminal output. Reusing
+any claimed run/case never constructs a client or repeats a paid/posting attempt.
+Private scope, installed handlers/transport, withdrawal, maintenance ledger and
+pre-construction readiness isolation remain authoritative. It adds no runtime module,
+version, image, service, schema or automatic participation. No duplicate release or
+deployment is needed for this operator script outside the image.
+
+19 new regressions pass; a reproduced CLI logging side effect is fixed, and all six
+feature gates pass with 2,248 tests / 96.18%, 46 typed modules and packages. Two actual
+candidate-script Discord turns and exact-ID non-sending repeats confirm one answer
+per fresh attempt, exact readback, closed clients and no development learning. One
+replay also shows unchanged global provider attempts/spend and receipt bytes/mtime.
+These synthetic dispatches do not prove owner/main-gateway behavior or character
+semantics. Fresh raw-human comparison is blocked by automatic transfer review;
+approval pending, no rejected transfer retried. No trait or fidelity gain claimed.
+
+Both phases, baseline interruption, fault outcomes, public coverage counts, cost and
+publication/final health evidence are in the [study](evaluations/2026-11-18-durable-smoke.md).
+H129 stays with its existing owner, then H121/H120 useful connected abstractions,
+H125 semantic humor/emotion, and useful linked native/visual coverage/seasonal variety.
+Generated U.P./trail-camera scenes and selective tools remain. Six-run Sol/xhigh
+schedule, notification preference, allowlists/no DMs and USD18/2/20 guard unchanged.
