@@ -71,8 +71,9 @@ benchmark. No provider call was used for these comparisons.
    H96 sightings stay closed without qualified observations. Exact dates stay secondary.
 
 This prioritization changes on a material privacy/grounding/delivery regression or
-contrary utility evidence. The older PR196 handler gate is still draft/open and is
-not modified or duplicated. Concurrent PR198 audit selection is merged independently;
+contrary utility evidence. At selection, PR196 was the older draft handler gate. It has since been
+repurposed by its owning run into the control-marker repair. It is not modified
+or duplicated here. Concurrent PR198 audit selection is merged independently;
 PR197 smoke-receipt work and the control-marker repair belong to other runs.
 No new service, permission, schema, source backup, retention policy or learning scope.
 Same runtime18/maintenance2/total20 monthly guard, six standalone local
@@ -103,3 +104,10 @@ fidelity judgment or owner/main-gateway proof. No answer text retained. Isolated
 maintenance client closed. Existing private content-free receipts under
 smoke-tests/2026-11-18-2114 use0700/0600 and seven-day manual retention/withdrawal.
 November aggregate after that maintenance call:USD0.344827985,239attempts/21unsettled.
+
+Final2.39.1 feature gates PASS:2,271 tests/96.11%,46typedmodules,format/lint,locked
+sync,wheel/sdist. Source changes are13lines in the trusted selector, plus regression
+coverage and version metadata. PR199 is attached with codex/codex-automation labels.
+The installed acceptance script passes locally on disposable synthetic stores, with
+zero provider calls or production learning writes. Pre-smoke finalhealth:healthy,
+heartbeat1.46seconds,healthcheck0,20logrows/0errors/0tracebacks in20minutes.
