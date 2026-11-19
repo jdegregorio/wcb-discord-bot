@@ -1,20 +1,20 @@
 # Current priorities, 2026-11-18 run
 
-H130 adds a source-controlled operator smoke runner with durable content-free
+H131 adds a source-controlled operator smoke runner with durable content-free
 claims and exact Discord-send references, so interrupted experiments cannot
 silently replay paid work or test chatter. It is independent of PR196: the preceding
 active run owns that expanded H129 gate and publication. No H129 branch is modified.
 This maintenance script is outside the runtime image; no duplicate version/release
 or deployment is appropriate. Ordinary reply behavior and source state are unchanged.
 
-1. H130 implementation and qualification are complete in PR197: 19 new cases,
+1. H131 implementation and qualification are complete in PR197: 19 new cases,
    all six gates and real private Discord/non-sending replay checks pass. Protected
    publication is tracked in that PR. Existing app storage and maintenance allowance;
    no new service or budget. Ordinary reply behavior is unchanged.
 2. The preceding run owns PR196, now including a reproduced internal-control
-   output correction and expanded H129 boundaries. PR198 separately owns exact
-   response selection for operator audits. Preserve their tests, versions and
-   release ownership; neither is completed by this tool. Then H121/H120 useful relation-preserving
+   output correction and expanded H129 boundaries. PR198 has merged exact response
+   selection for operator audits as caa0050, source version2.39.0. Preserve its
+   runtime changes and separate release ownership; this tool does not deploy them. Then H121/H120 useful relation-preserving
    episodes and abstract memory, so values, emotions and relationships guide natural
    replies. Require complete attributed support/contrary episodes, qualified private
    semantic review, independent held-outs, lifecycle checks and actual reply benefit.
@@ -37,6 +37,42 @@ Preserve withdrawal, allowlists/no DMs, USD18/2/20 guard, six local
 01/05/09/13/17/21 Sol/xhigh runs and existing notifications. Older records are history.
 
 [Evidence, both phases and limitations](docs/trubot-evolution/evaluations/2026-11-18-durable-smoke.md).
+
+# Current priorities, 2026-11-18 focused audit run
+
+H130b adds deliberate, bounded response selection to private character audits so
+synthetic bot inputs do not replace intended experimental answers. This is enabling
+research work; normal reply behavior and human fidelity are unchanged. H130a linked
+setup is unvalidated: this fresh sample has no explicit references. Historical
+coverage remains4,299 grouped blocks/405 eligible target/seven ambiguous target;
+three attributed windows are coverage, not new traits or semantic qualification.
+
+1. Complete H130b qualification, protected merge and immutable installation with
+   exact-focus/source/permission/withdrawal controls and actual private-handler tests.
+   High confidence in the selection defect; broader character benefit unresolved.
+   No normal-reply cost; bounded extra reads only for an explicit operator audit.
+2. Reconcile independently owned H129/control-marker repair and resumable smoke
+   recovery. Preserve their unique tests and publication ownership; avoid duplicates.
+3. H121/H120 useful relation-preserving episodes and abstractions, then H125 varied
+   comic mechanisms with emotion/recipient controls. Require attributed supports,
+   contrary cases, complete setup, qualified private semantic review and matched
+   held-outs plus real engagement. No new native-pattern permission or population.
+4. Useful linked native/visual coverage and seasonal variety after measured utility.
+   Preserve generated Michigan U.P. northern-lights/trail-camera scenes, short natural
+   captions and selective tools. H96 sightings remain closed without qualified feeds.
+
+Fresh development latest40 is entirely bot-authored test traffic, with eight exact
+repetitions. Latest300 league posts have26 bot posts; seven-day activity has two
+human-target/four bot posts. Do not infer style frequency or spontaneity from tests.
+Pixels, new semantic human comparison and route attribution remain gaps. Private
+external scoring rejection is respected. Chrome fails before Discord navigation;
+native Mac is locked. Authorized synthetic live-handler smoke is distinct from
+human/main-gateway proof. No general quality claim follows from health or counts.
+
+Existing provenance/corrections/withdrawal, allowlists/no DMs,18/2/20guard and six
+local01/05/09/13/17/21Sol/xhigh standalone runs/notifications remain authoritative.
+Grounding/privacy/delivery failures or contrary sample-validity evidence can reorder
+these priorities. [Protocol and results](docs/trubot-evolution/evaluations/2026-11-18-focused-audits.md). Older snapshots are historical.
 
 # Current priorities, reconciled 2026-11-04 UTC
 

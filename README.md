@@ -4,7 +4,15 @@ The private-development runner records an attempt before network work and each
 confirmed Discord send before returning. Reusing a run ID reads its receipt without
 another probe or paid call. It exercises the installed handler with labeled synthetic
 fixtures; transport success does not grade character quality or prove owner/gateway
-behavior. [Operation and privacy](docs/trubot-evolution/storage.md#durable-operator-discord-smoke-h130).
+behavior. [Operation and privacy](docs/trubot-evolution/storage.md#durable-operator-discord-smoke-h131).
+
+## Deliberate character-audit samples, candidate2.39.0
+
+Private operator studies can select exact recorded bot responses and their bounded
+nearby setup. This prevents newer bot-authored test inputs from replacing intended
+responses in matched experiments. Normal replies retain their behavior. This is
+research support, without a measured character-fidelity claim.
+[Qualification](docs/trubot-evolution/evaluations/2026-11-18-focused-audits.md).
 
 ## Short requested joke repairs, 2.38.15
 

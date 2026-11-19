@@ -1,4 +1,4 @@
-# 2026-11-18: H130 durable operator smoke attempts
+# 2026-11-18: H131 durable operator smoke attempts
 
 A real SSH interruption has a completed private answer receipt; blindly repeating
 ad hoc scripts can duplicate paid calls or test chatter. An independent durable
@@ -6,6 +6,17 @@ claim/send-observer tool is selected while the earlier active run owns PR196.
 Predefined fault, privacy, private-scope, real-send and no-replay criteria are in the
 [research record](evaluations/2026-11-18-durable-smoke.md). Fresh human semantic audit
 is blocked by explicit transfer review; no trait or general fidelity gain is claimed.
+
+# 2026-11-18: H130 deliberate audit samples
+
+Phase1 confirms development-test saturation and reproduces inability to target an
+older response. H130b explicit response selection is enabling work so controlled
+inputs cannot silently replace intended answers. H130a reply-link expansion remains
+unvalidated after zero explicit references in the sampled four focuses per scope.
+No new semantic human observation or fidelity gain. Phase2 prioritizes this bounded
+operator API alongside independently owned H129/smoke recovery, then H121/H120,
+H125 and useful native/visual/seasonal coverage. Existing source and spending gates
+remain. [Predeclared protocol and actual results](evaluations/2026-11-18-focused-audits.md).
 
 # 2026-11-03: H128a short requested copies
 

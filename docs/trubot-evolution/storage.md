@@ -1,3 +1,21 @@
+## Deliberate private audit selection, candidate2.39.0
+
+Supply `focus_message_ids` from trusted private response receipts to inspect one to
+four actual bot responses, including older responses outside the latest40 posts.
+The operator is responsible for distinguishing bot-authored test probes from actual
+replies. Each focus gets complete bounded same-channel setup. This is adjacency,
+not proof of replies; pixels and linked targets remain unavailable. Legacy omitted
+selection still samples latest40. No durable source/graph/schema/state migration.
+
+Receipts add fixed selection mode and per-case message counts to the existing
+private message/source mappings. Do not retain payload text, generated answers,
+private interpretations or screenshots. This run uses app-volume
+smoke-tests/2026-11-18-1700 with0700directories/0600files and existing seven-day
+manual retention, correction/withdrawal and recovery rules. Provider-disabled
+capture stubs are not semantic grades and their fabricated flag values are never
+retained as results. Maintenance readiness isolation and the existing ledger apply.
+Code rollback preserves all source/spending state; no normal reply behavior changes.
+
 # Complete-reply recovery, 2.38.12
 
 Completion recovery uses the existing usage ledger and rotated content-free logs.
@@ -1534,7 +1552,7 @@ retained there. Candidate/installed comparison scripts are ephemeral; immutable
 2.38.13 remains the compatible rollback without restoring source or spending state.
 
 
-## Durable operator Discord smoke, H130
+## Durable operator Discord smoke, H131
 
 `scripts/discord_smoke.py` is an operator script, outside the installed runtime image.
 Stream the reviewed script into the existing container with its app-scoped environment:

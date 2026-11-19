@@ -1,3 +1,17 @@
+# 2026-11-18 17:00 run: H130b focused audits
+
+New managed worktree trubot-daily-20261118-1700, unique feature branch of the same
+name, basec831727e38a185ad1dd7497dcd3f5993a11aa59f. Primary untouched. Both planning
+phases complete in the [protocol](evaluations/2026-11-18-focused-audits.md).
+Candidate explicit focus selection passes74 focused tests including29 new controls;
+source/permission/withdrawal checks discard changed studies. Actual private
+synthetic care handler response and exact-answer audit capture pass,4.85seconds,
+10words,learning unchanged,no external audit provider call. This is an enabling
+increment, not measured reply-quality improvement or human/main-gateway proof.
+Full gates, protected publication and installed acceptance are recorded below as
+completed. Independently owned PR196/control-marker and smoke-recovery work remain
+separate. Runtime baseline2.38.15digestcb857fa67873healthy; no production change yet.
+
 # Run progress
 
 ## 2026-10-05: emotional judgment
@@ -5846,7 +5860,7 @@ comic mechanisms/emotion, useful linked native/visual coverage and seasonal vari
 [Complete qualification and limitations](evaluations/2026-10-29-archive-roles.md).
 
 
-## 2026-11-18 run: H130 durable private Discord smoke
+## 2026-11-18 run: H131 durable private Discord smoke
 
 Base c831727e38a185ad1dd7497dcd3f5993a11aa59f; new managed worktree
 trubot-daily-20261118-1310. Initial isolated branch recovers existing PR196; read-only
@@ -5879,7 +5893,7 @@ Generated U.P./trail-camera scenes and selective tools remain. Six-run Sol/xhigh
 schedule, notification preference, allowlists/no DMs and USD18/2/20 guard unchanged.
 
 
-H130 publication: tested293148ed35aaea5ad6f2c1a6a955f2c881ac82fc,
+H131 publication: tested293148ed35aaea5ad6f2c1a6a955f2c881ac82fc,
 [PR197](https://github.com/jdegregorio/wcb-discord-bot/pull/197),
 [required Quality PASS](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44470375673).
 PR metadata records protected merge and final publication state. Installed2.38.15

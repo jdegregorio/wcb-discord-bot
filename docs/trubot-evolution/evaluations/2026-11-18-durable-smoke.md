@@ -1,4 +1,4 @@
-# H130: durable private Discord smoke receipts
+# H131: durable private Discord smoke receipts
 
 ## Phase 1: evidence and hypotheses
 
@@ -13,7 +13,7 @@ lifecycle passes; current recovered source passes all 2,244 tests. This confirms
 the gate's value, but duplicates neither the active run's expanded cases nor its
 publication. H129 remains owned by that run.
 
-H130 hypothesis: an operator runner that commits a private claim before any I/O
+H131 hypothesis: an operator runner that commits a private claim before any I/O
 and records successful Discord sends before returning can prevent duplicate smoke
 attempts after an SSH interruption, so character experiments remain bounded,
 accounted and reviewable. The current ad hoc script writes only a final receipt.
@@ -59,7 +59,7 @@ technology or provider/model configuration is evaluated.
 
 ## Phase 2: decision and roadmap
 
-Select H130 as independent operator enabling work, while the preceding run owns
+Select H131 as independent operator enabling work, while the preceding run owns
 H129. Confidence is high in the reproduced interruption and duplicate-risk boundary;
 no improvement in ordinary replies is claimed. A source-controlled maintenance
 script uses the existing installed app, private app volume and 18/2/20 ledger.
@@ -151,3 +151,13 @@ plus expanded H129 regression coverage; that run owns version2.38.16/release.
 PR198 independently owns exact response selection for character audits and its
 version/release. Their still-open scopes are not counted as this run's completion.
 This operator-only script does not collide with either runtime implementation.
+
+
+Concurrent merge reconciliation: PR198 merges as caa0050 while this PR finishes.
+Its version2.39.0 and all runtime/audit changes are retained. Both planning phases
+had independently selected the provisional H130 label; this run is now H131 to
+avoid conflating durable smoke with deliberate audit sampling. Prior private smoke
+run IDs retain their immutable original operational labels. Only documentation
+conflicted; the operator script has no runtime overlap. Required gates are rerun
+on the integrated source before protected merge. PR198 release/deployment remains
+under that run's ownership; no older version is restored or republished here.

@@ -1,20 +1,20 @@
 # Current priorities, 2026-11-18 run
 
-H130 adds a source-controlled operator smoke runner with durable content-free
+H131 adds a source-controlled operator smoke runner with durable content-free
 claims and exact Discord-send references, so interrupted experiments cannot
 silently replay paid work or test chatter. It is independent of PR196: the preceding
 active run owns that expanded H129 gate and publication. No H129 branch is modified.
 This maintenance script is outside the runtime image; no duplicate version/release
 or deployment is appropriate. Ordinary reply behavior and source state are unchanged.
 
-1. H130 implementation and qualification are complete in PR197: 19 new cases,
+1. H131 implementation and qualification are complete in PR197: 19 new cases,
    all six gates and real private Discord/non-sending replay checks pass. Protected
    publication is tracked in that PR. Existing app storage and maintenance allowance;
    no new service or budget. Ordinary reply behavior is unchanged.
 2. The preceding run owns PR196, now including a reproduced internal-control
-   output correction and expanded H129 boundaries. PR198 separately owns exact
-   response selection for operator audits. Preserve their tests, versions and
-   release ownership; neither is completed by this tool. Then H121/H120 useful relation-preserving
+   output correction and expanded H129 boundaries. PR198 has merged exact response
+   selection for operator audits as caa0050, source version2.39.0. Preserve its
+   runtime changes and separate release ownership; this tool does not deploy them. Then H121/H120 useful relation-preserving
    episodes and abstract memory, so values, emotions and relationships guide natural
    replies. Require complete attributed support/contrary episodes, qualified private
    semantic review, independent held-outs, lifecycle checks and actual reply benefit.
@@ -37,6 +37,24 @@ Preserve withdrawal, allowlists/no DMs, USD18/2/20 guard, six local
 01/05/09/13/17/21 Sol/xhigh runs and existing notifications. Older records are history.
 
 [Evidence, both phases and limitations](trubot-evolution/evaluations/2026-11-18-durable-smoke.md).
+
+# Deliberate private audit sampling, candidate2.39.0
+
+`inspect_channel(..., focus_message_ids=(answer_id, ...))` accepts one to four
+unique bot response IDs from trusted private experiment receipts. Each exact focus
+receives bounded same-channel setup (two preceding/one following), complete text
+and existing separate attributed human windows. It cannot certify whether a bot
+post was a test input; the operator must select recorded response IDs. Omitted IDs
+retain legacy latest40 sampling. Fresh authenticated permissions, membership,
+source equality and withdrawal gate both review boundaries. No gateway, Discord
+write, learning, normal-reply context or extra provider turn is introduced.
+
+H130b enables valid matched studies, without semantic fidelity claims. Current
+priority is deliberate sampling and independently owned H129/smoke recovery, then
+H121/H120 useful abstractions, H125 emotional/amplified-humor qualification, useful
+linked visual/native coverage and seasonal variety. Preserve generated U.P. scenes,
+selective tools, source lifecycle and the existing18/2/20guard.
+[Evidence](trubot-evolution/evaluations/2026-11-18-focused-audits.md).
 
 # Current priorities, reconciled 2026-11-04 UTC
 
