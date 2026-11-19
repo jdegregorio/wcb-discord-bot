@@ -111,3 +111,8 @@ coverage and version metadata. PR199 is attached with codex/codex-automation lab
 The installed acceptance script passes locally on disposable synthetic stores, with
 zero provider calls or production learning writes. Pre-smoke finalhealth:healthy,
 heartbeat1.46seconds,healthcheck0,20logrows/0errors/0tracebacks in20minutes.
+
+A concurrent runtime correction now also targets2.39.1. To avoid reusing its
+immutable version, this selected-study capability moves to2.40.0. Prior2.39.1
+candidate gates remain evidence for identical source logic, not final-version
+qualification. Final2.40.0 and merged-main gates must pass before release.
