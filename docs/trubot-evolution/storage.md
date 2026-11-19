@@ -1574,7 +1574,7 @@ Claims live beside learning in `smoke-tests/<run-id>/<case>.json`, under private
 0700 directories/0600 files. An exclusive fsynced claim precedes all network work.
 Successful probe and answer IDs/hashes/counts commit before control returns from the
 real send. Exact answer readback avoids selecting another concurrent test's response.
-An interrupted or failed claim is consumed permanently: rerunning the same ID/case
+An interrupted or failed claim is consumed while its receipt is retained: rerunning the same ID/case
 only reads its receipt and never creates a client, provider attempt or new probe.
 Unknown delivery remains uncertain; never delete a claim to force a retry. Resolve
 its exact references first. A deliberate new test needs a new operational run ID.
@@ -1588,6 +1588,7 @@ After any run, check the production heartbeat, readiness and relevant errors sep
 
 These references use the existing seven-day manual smoke retention and withdrawal
 cleanup policy. Remove expired content-free receipts/staging files under that policy,
-never the separate usage ledger. Status/new work fail closed after learning withdrawal.
+never the separate usage ledger. Manual receipt deletion ends its replay protection;
+never reuse a retired run ID. Status/new work fail closed after learning withdrawal.
 Keep access private and preserve only needed content-free evidence before archiving
 worktrees. No source, graph, schema, runtime config or recovery-volume change is needed.

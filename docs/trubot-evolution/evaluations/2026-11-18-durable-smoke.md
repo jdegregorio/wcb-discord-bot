@@ -186,3 +186,21 @@ an identical completed receipt with no new client. All candidate fixture authors
 remain bots, synthetic dispatch remains explicit, dev learning is rejected and
 counts unchanged, and every runner auxiliary closes. Earlier counts above describe
 their respective revisions. No new character-semantic or owner/gateway claim.
+
+
+Latest shared-production verification,2026-11-19T08:26Z: the independent PR198
+run has deployed2.39.0. This is not an H131 deployment. Exact immutable digest
+sha256:1db2710f367a1aa16e39441d7a3533515f4f0fefdf4f728cb202f31a17b0cf08
+is healthy/read-only,0restarts/OOMfalse;all46installedmodulehashesmatchthe
+retained2.39.0source. After the final runner closes, heartbeat37.19seconds,
+healthcheck0,16logrows/20minutes/0errors/0tracebacks. November ledger estimate
+USD0.345275445(runtime0.208176350,maintenance0.137099095),241attempts/21unsettled;
+18/2/20limits unchanged. Concurrent aggregate is not an invoice or audited run cost.
+Earlier2.38.15 snapshots above describe their observation times, not current state.
+No further auxiliary Discord client is needed after this final health evidence.
+
+Replay protection is explicitly bounded by retained receipts and the existing
+seven-day manual retention. Manual deletion ends that protection; operators must
+never reuse retired IDs or delete an ambiguous claim to force a retry. This is a
+process-interruption recovery tool, not indefinite exactly-once delivery. No extra
+storage service or permanent personal/tombstone archive is introduced.

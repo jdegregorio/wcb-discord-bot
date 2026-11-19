@@ -1,7 +1,7 @@
 ## Durable operator smoke tests
 
 The private-development runner records an attempt before network work and each
-confirmed Discord send before returning. Reusing a run ID reads its receipt without
+confirmed Discord send before returning. Reusing a retained run ID reads its receipt without
 another probe or paid call. It exercises the installed handler with labeled synthetic
 fixtures; transport success does not grade character quality or prove owner/gateway
 behavior. [Operation and privacy](docs/trubot-evolution/storage.md#durable-operator-discord-smoke-h131).
