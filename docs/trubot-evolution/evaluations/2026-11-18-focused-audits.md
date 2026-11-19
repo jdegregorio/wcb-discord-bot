@@ -83,3 +83,40 @@ No source population, model, persona, participation or learning-scope change. Ke
 six local01/05/09/13/17/21Sol/xhigh standalone runs and notification preferences.
 
 Results, engineering and installed evidence are recorded below as completed.
+
+
+## Candidate qualification
+
+The initial exact-focus regression fails on baseline because the API cannot select
+an exact response. Candidate passes 74 audit tests, including 29 new selection,
+complete-setup, scope and lifecycle controls. Existing latest sampling remains
+compatible. Permissions are read through full guild/channel roles at every review
+boundary. Selections are copied before awaits and overlapping snapshots must agree.
+
+Actual same-response comparison: baseline selects four newer focuses and misses
+the requested older response (0/1); candidate selects it (1/1), with four context
+rows. This is selection correctness, not semantic quality. One attributed historical
+window and provider-disabled captures are used; no external semantic scoring or
+fabricated audit grades are retained.
+
+Actual private development smoke: one labeled bot-authored fictional care probe
+runs through the installed unmocked reaction handler/provider/send/readback. One
+brief appropriate answer, 10 words / 4.853 seconds, is actually read. Candidate audit
+capture selects that exact answer with actual probe setup (three rows). Pinned
+identity and two-member private membership/allowed writable general verified;
+development intake false and learning message count unchanged. Auxiliary readiness
+is isolated before construction and client closes. This is an authorized synthetic
+handler dispatch, not a human question/reaction or main-gateway event. No league post.
+Do not substitute this narrow control for a fresh Andrew semantic comparison.
+
+All six candidate gates pass: locked sync, formatting, lint, 46 typed modules,
+2,258 tests / 96.11% coverage, wheel/sdist. Version 2.39.0 adds the operator capability;
+normal reply prompts/model/configuration, participation, graph/source population,
+schemas, withdrawal and spending state remain unchanged. Zero audit provider calls;
+one maintenance runtime smoke request uses the existing allowance. Concurrent
+aggregate after smoke is USD 0.344313860 estimated / 237 attempts / 21 unsettled,
+not a run invoice or isolated cost measurement. The 18/2/20 guard is unchanged.
+Content-free private receipts follow storage.md retention and withdrawal rules.
+
+Publication, exact-merged gates, image/digest and installed acceptance remain pending
+until verified below. No general fidelity gain is claimed.
