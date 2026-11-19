@@ -202,10 +202,20 @@ async def scope(client, settings):
         raise ValueError("Private smoke membership changed")
     owner = await dev.fetch_member(dev.owner_id)
     bot = await dev.fetch_member(client.user.id)
-    if owner.bot or not bot.bot or owner.id == learning.identity.user_id:
+    if (
+        owner.bot
+        or not bot.bot
+        or owner.id != dev.owner_id
+        or bot.id != client.user.id
+        or owner.id == learning.identity.user_id
+    ):
         raise ValueError("Private smoke membership unavailable")
     channel = await dev.fetch_channel(CHANNEL)
-    if not isinstance(channel, discord.TextChannel) or channel.guild.id != GUILD:
+    if (
+        not isinstance(channel, discord.TextChannel)
+        or channel.id != CHANNEL
+        or channel.guild.id != GUILD
+    ):
         raise ValueError("Private smoke channel unavailable")
     permissions = channel.permissions_for(bot)
     if not (
@@ -242,12 +252,12 @@ async def run(settings, receipt):
 
         async def observed_send(channel_id, *args, **kwargs):
             nonlocal persistence_failed
+            if int(channel_id) != CHANNEL:
+                raise ValueError("Unexpected smoke destination")
             data = await original(channel_id, *args, **kwargs)
             # Observe the real transport response. Recording must never raise into
             # the handler and provoke its visible-error fallback after a real send.
             try:
-                if int(channel_id) != CHANNEL:
-                    raise ValueError("Unexpected smoke destination")
                 if record["state"] == "probe_sending":
                     record["probe_id"] = int(data["id"])
                 else:

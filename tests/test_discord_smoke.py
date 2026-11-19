@@ -56,7 +56,7 @@ def harness(tmp_path, smoke, monkeypatch):
     learning.accepts = MagicMock(return_value=False)
     client = SimpleNamespace(
         _learning=learning,
-        user=bot,
+        user=SimpleNamespace(id=bot.id, bot=True),
         login=AsyncMock(),
         close=AsyncMock(),
         _connection=SimpleNamespace(_add_guild=MagicMock()),
@@ -188,7 +188,18 @@ async def test_receipt_failure_after_real_send_cannot_trigger_handler_fallback(
 
 
 @pytest.mark.parametrize(
-    "defect", ["guild", "members", "owner", "permissions", "learning", "allowlist"]
+    "defect",
+    [
+        "guild",
+        "members",
+        "owner",
+        "owner_id",
+        "bot_id",
+        "channel_id",
+        "permissions",
+        "learning",
+        "allowlist",
+    ],
 )
 async def test_scope_failure_closes_client_before_any_discord_write(harness, defect):
     h = harness
@@ -198,6 +209,12 @@ async def test_scope_failure_closes_client_before_any_discord_write(harness, def
         h.guild.approximate_member_count = 3
     elif defect == "owner":
         h.owner.bot = True
+    elif defect == "owner_id":
+        h.owner.id = 123
+    elif defect == "bot_id":
+        h.bot.id = 123
+    elif defect == "channel_id":
+        h.channel.id += 1
     elif defect == "permissions":
         h.channel.permissions_for.return_value.send_messages = False
     elif defect == "learning":
@@ -269,3 +286,17 @@ def test_cli_failure_never_prints_private_exception_body(harness, monkeypatch, c
     assert h.smoke.main() == 1
     assert logging.root.manager.disable == before
     assert json.loads(capsys.readouterr().out) == {"error": "smoke_unavailable"}
+
+
+async def test_handler_cannot_send_to_another_destination(harness):
+    h = harness
+
+    async def wrong_destination(_payload):
+        await h.client.http.send_message(999, text="must never reach Discord")
+
+    h.client.on_raw_reaction_add.side_effect = wrong_destination
+    result = await h.smoke.run(h.settings, h.receipt)
+    assert result["state"] == "uncertain"
+    # The only actual transport call is the labeled private development probe.
+    assert h.client.http.send_message.await_count == 1
+    assert len(h.posted) == 1

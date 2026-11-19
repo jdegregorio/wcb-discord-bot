@@ -7,7 +7,7 @@ active run owns that expanded H129 gate and publication. No H129 branch is modif
 This maintenance script is outside the runtime image; no duplicate version/release
 or deployment is appropriate. Ordinary reply behavior and source state are unchanged.
 
-1. H131 implementation and qualification are complete in PR197: 19 new cases,
+1. H131 implementation and qualification are complete in PR197: 23 new cases,
    all six gates and real private Discord/non-sending replay checks pass. Protected
    publication is tracked in that PR. Existing app storage and maintenance allowance;
    no new service or budget. Ordinary reply behavior is unchanged.

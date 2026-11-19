@@ -5917,3 +5917,16 @@ deployment belongs to H131. [PR197 checks](https://github.com/jdegregorio/wcb-di
 record the required final-head and protected-main outcomes. Exact merged checks and
 worktree archival follow protected publication; content-free automation memory
 retains the final immutable merge identity and run artifacts.
+
+
+Final H131 recipient qualification: four added negative probes first fail for
+mismatched owner/bot/channel identities and a cross-destination transport call.
+Exact identity checks and a pre-transport destination guard close all four gaps.
+The observer still cannot raise a receipt-write error after a real send into the
+handler's fallback. All23runnercases and all six integrated gates pass:
+2,281tests/96.11%,46typedmodules,2.39.0wheel/sdist. A third fresh candidate-script
+Discord execution returns one exact-readback answer; its same-ID repeat returns
+an identical completed receipt with no new client. All candidate fixture authors
+remain bots, synthetic dispatch remains explicit, dev learning is rejected and
+counts unchanged, and every runner auxiliary closes. Earlier counts above describe
+their respective revisions. No new character-semantic or owner/gateway claim.
