@@ -1,12 +1,40 @@
-# 2026-11-19run1300: H135 study verification deadline
+# 2026-11-19 run 1300: 2.40.3 study verification deployed
 
-New managed worktree/basef006e261; primary untouched. Both planning phases select
-source-count-sized verification while retaining each source's limits and complete
-freshness/pacing controls. Exact baseline2expected failures/1control pass;
-candidate3/3. Actual six-source timing probes support cumulative deadline loss;
-one individually over-four-second uncaptured read remains correctly unavailable.
-No provider research calls, new trait, abstraction or measured fidelity claim.
-Release/installed validation pending. [Full evidence](evaluations/2026-11-19-study-verification-budget.md).
+H135 ships through [PR205](https://github.com/jdegregorio/wcb-discord-bot/pull/205),
+merged f718ed538456bef7af6d1587e6e5ffb155fcdd02 after CI 44622353826. Exact merged
+six gates and main CI 44622841257 pass: 2,361 tests, 96.14% coverage, 46 modules and
+wheel/sdist. Immutable [v2.40.3](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.40.3)
+and amd64/arm64 image CI 44623308161 succeed. Actually running healthy on Pi5 at
+`sha256:0e6f6bea1af5ed7e3a13a7589a14d827a7d3c2212328688c81de65dcc5d8c0ad`;
+46/46 installed hashes match. Previous 2.40.2/e47cb7df2713 retained; no rollback.
+
+Base f006e261 in a NEW managed worktree and unique branch; primary untouched.
+Both planning phases select cohort-sized verification with unchanged per-source
+limits, four complete freshness boundaries, pacing and allowance. Baseline has two
+expected failures/one refusal pass. Candidate/installed pass. Actual-source injected
+latency replay stops baseline at 6.104 seconds; candidate 15.035 / installed 14.889
+complete initial and repeated fresh checks with zero provider calls or Discord writes.
+Temporary graph replays return an intentional empty proposal and are removed;
+production graph/checkpoints/spending are unchanged. No source population or fidelity gain.
+
+Three actual private Discord handler sends/readbacks retain attribution and exclude
+learning. Fictional preference control passes; care FAILS (off-target clarification),
+humor is brief/on-topic with weak payoff, quality PARTIAL. Synthetic bot fixtures and
+owner dispatch are not human/main-gateway events. Owner UI still fails or needs login.
+H133 recipient/focus controls now explicitly gate H121/H120 utility; H125 semantic
+humor/emotion follows, then useful linked native/visual/seasonal context. Generated
+U.P. scenes/selective tools and closed sightings gate remain. PR197 stays independent.
+
+After auxiliaries close: main health 0, heartbeat 35.63s, healthy/read-only, zero
+restarts/OOM, new-container 20-minute query: 11 log rows/zero ERRORs/tracebacks/study timeouts,
+timer active/enabled. Short observed health is not gateway or long-run error-rate proof.
+November USD 0.355903605 estimated, 274 attempts/21 unsettled, 18/2/20 guard unchanged.
+Three own maintenance reply attempts; zero provider studies/audits/scorers, new service
+or key. Private content-free receipts use 0700/0600 and existing seven-day manual/
+withdrawal cleanup. Source/answer/personal prose and pixels stay out of receipts/Git.
+
+[Full hypotheses, contrary cases, both phases, release and limitations](evaluations/2026-11-19-study-verification-budget.md).
+Older run records follow.
 
 # 2026-11-18 complete selected study sources
 
