@@ -5893,23 +5893,23 @@ Generated U.P./trail-camera scenes and selective tools remain. Six-run Sol/xhigh
 schedule, notification preference, allowlists/no DMs and USD18/2/20 guard unchanged.
 
 
-H131 publication: tested293148ed35aaea5ad6f2c1a6a955f2c881ac82fc,
+H131 publication: tested 293148ed35aaea5ad6f2c1a6a955f2c881ac82fc,
 [PR197](https://github.com/jdegregorio/wcb-discord-bot/pull/197),
 [required Quality PASS](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44470375673).
-PR metadata records protected merge and final publication state. Installed2.38.15
-immutable digestcb857fa67873af5e4144208ec12b98a6cc0ad7afd823e5b12b56586b6d234a7e
+PR metadata records protected merge and final publication state. Installed 2.38.15
+immutable digest cb857fa67873af5e4144208ec12b98a6cc0ad7afd823e5b12b56586b6d234a7e
 remains unchanged; no release/image/deployment belongs to this operator-only increment.
-Final post-client health0/heartbeat55.59seconds/20-minute0errors0tracebacks.
+Final post-client health exit 0; heartbeat 55.59 seconds; no errors or tracebacks in 20 minutes.
 Bounded post-audit completes after an older census SSH reset. November estimate
-USD0.344353485/238attempts/21unsettled;18/2/20guard unchanged,not run billing.
+USD 0.344353485 / 238 attempts / 21 unsettled; 18/2/20 guard unchanged, not run billing.
 Concurrent PR196 now owns an actual internal-control-output correction plus H129;
 PR198 owns exact operator-audit selection. Their release/deployment status remains
 with their runs. New source/trait/graph population and general fidelity remain unclaimed.
 
 
-Integrated H131 qualification on47c2aef6d9c45bfe57316274e4e337aa7b2f177e:
-all six gates PASS after retaining PR198/caa0050. Pytest2,277pass/96.11%,
-mypy46modules,locked sync,format,lint,2.39.0wheel/sdist. There are zero differences
+Integrated H131 qualification on 47c2aef6d9c45bfe57316274e4e337aa7b2f177e:
+all six gates PASS after retaining PR198/caa0050. Pytest 2,277 pass / 96.11%,
+mypy 46 modules, locked sync, format, lint and 2.39.0 wheel/sdist. There are zero differences
 from merged main in src,version,lockfile or Dockerfile; this run still adds only
 the operator script/tests/docs. The real candidate script's bytes are unchanged
 from its two actual private Discord/replay qualifications. No runtime release or
@@ -5923,8 +5923,8 @@ Final H131 recipient qualification: four added negative probes first fail for
 mismatched owner/bot/channel identities and a cross-destination transport call.
 Exact identity checks and a pre-transport destination guard close all four gaps.
 The observer still cannot raise a receipt-write error after a real send into the
-handler's fallback. All23runnercases and all six integrated gates pass:
-2,281tests/96.11%,46typedmodules,2.39.0wheel/sdist. A third fresh candidate-script
+handler's fallback. All 23 runner cases and all six integrated gates pass:
+2,281 tests / 96.11%, 46 typed modules, 2.39.0 wheel/sdist. A third fresh candidate-script
 Discord execution returns one exact-readback answer; its same-ID repeat returns
 an identical completed receipt with no new client. All candidate fixture authors
 remain bots, synthetic dispatch remains explicit, dev learning is rejected and
@@ -5933,14 +5933,14 @@ their respective revisions. No new character-semantic or owner/gateway claim.
 
 
 Latest shared-production verification,2026-11-19T08:26Z: the independent PR198
-run has deployed2.39.0. This is not an H131 deployment. Exact immutable digest
+run has deployed 2.39.0. This is not an H131 deployment. Exact immutable digest
 sha256:1db2710f367a1aa16e39441d7a3533515f4f0fefdf4f728cb202f31a17b0cf08
-is healthy/read-only,0restarts/OOMfalse;all46installedmodulehashesmatchthe
-retained2.39.0source. After the final runner closes, heartbeat37.19seconds,
-healthcheck0,16logrows/20minutes/0errors/0tracebacks. November ledger estimate
-USD0.345275445(runtime0.208176350,maintenance0.137099095),241attempts/21unsettled;
-18/2/20limits unchanged. Concurrent aggregate is not an invoice or audited run cost.
-Earlier2.38.15 snapshots above describe their observation times, not current state.
+is healthy and read-only, with 0 restarts and OOM false;all 46 installed module hashes match the
+retained 2.39.0 source. After the final runner closes, heartbeat age 37.19 seconds,
+healthcheck exit 0; 16 log rows in 20 minutes, 0 errors and 0 tracebacks. November ledger estimate
+USD 0.345275445 (runtime 0.208176350, maintenance 0.137099095), 241 attempts and 21 unsettled;
+18/2/20 limits unchanged. Concurrent aggregate is not an invoice or audited run cost.
+Earlier 2.38.15 snapshots above describe their observation times, not current state.
 No further auxiliary Discord client is needed after this final health evidence.
 
 Replay protection is explicitly bounded by retained receipts and the existing

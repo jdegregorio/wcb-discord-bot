@@ -125,7 +125,7 @@ follow this qualification; the PR records the authoritative publication state.
 
 Fresh pi5/aarch64/Ubuntu24.04 app inspection confirms healthy read-only 2.38.15 at
 `sha256:cb857fa67873af5e4144208ec12b98a6cc0ad7afd823e5b12b56586b6d234a7e`,
-zero restarts/OOM and enabled/active release timer. After the candidate clients close,
+zero restarts and OOM false and enabled/active release timer. After the candidate clients close,
 healthcheck exits zero. A fresh heartbeat age of 55.59 seconds and a 20-minute window
 of 20 log rows / zero errors / zero tracebacks pass. Health is not gateway proof.
 An initial host command incorrectly assumes `python`; corrected `python3` works.
@@ -138,8 +138,8 @@ seven-day two target/four bot posts. Archive counts are unchanged. These samples
 concurrent controlled traffic and do not establish humor, cadence or spontaneous
 fidelity. A new semantic human comparison remains unvalidated pending transfer approval.
 
-November ledger snapshot: USD0.344353485 estimated, runtime0.208176350,
-maintenance0.136177135;238 attempts/21 unsettled. The 18/2/20 guard and unresolved
+November ledger snapshot: USD 0.344353485 estimated, runtime 0.208176350,
+maintenance 0.136177135; 238 attempts / 21 unsettled. The 18/2/20 guard and unresolved
 reservations remain intact. Six fresh handler smoke executions occurred in this run
 (four ad hoc and two candidate-script); SDK retries/repairs and concurrent runs mean
 that is not an exact provider-call count or per-run invoice. The explicit same-ID
@@ -147,14 +147,14 @@ replay adds no paid attempt in its observed unchanged ledger window. No new serv
 key, runtime release/image/deployment, data restore or rollback occurs.
 
 Concurrent PR196 has evolved into an internal-control-output runtime correction
-plus expanded H129 regression coverage; that run owns version2.38.16/release.
+plus expanded H129 regression coverage; that run owns version 2.38.16/release.
 PR198 independently owns exact response selection for character audits and its
 version/release. Their still-open scopes are not counted as this run's completion.
 This operator-only script does not collide with either runtime implementation.
 
 
 Concurrent merge reconciliation: PR198 merges as caa0050 while this PR finishes.
-Its version2.39.0 and all runtime/audit changes are retained. Both planning phases
+Its version 2.39.0 and all runtime/audit changes are retained. Both planning phases
 had independently selected the provisional H130 label; this run is now H131 to
 avoid conflating durable smoke with deliberate audit sampling. Prior private smoke
 run IDs retain their immutable original operational labels. Only documentation
@@ -163,9 +163,9 @@ on the integrated source before protected merge. PR198 release/deployment remain
 under that run's ownership; no older version is restored or republished here.
 
 
-Integrated H131 qualification on47c2aef6d9c45bfe57316274e4e337aa7b2f177e:
-all six gates PASS after retaining PR198/caa0050. Pytest2,277pass/96.11%,
-mypy46modules,locked sync,format,lint,2.39.0wheel/sdist. There are zero differences
+Integrated H131 qualification on 47c2aef6d9c45bfe57316274e4e337aa7b2f177e:
+all six gates PASS after retaining PR198/caa0050. Pytest 2,277 pass / 96.11%,
+mypy 46 modules, locked sync, format, lint and 2.39.0 wheel/sdist. There are zero differences
 from merged main in src,version,lockfile or Dockerfile; this run still adds only
 the operator script/tests/docs. The real candidate script's bytes are unchanged
 from its two actual private Discord/replay qualifications. No runtime release or
@@ -179,8 +179,8 @@ Final H131 recipient qualification: four added negative probes first fail for
 mismatched owner/bot/channel identities and a cross-destination transport call.
 Exact identity checks and a pre-transport destination guard close all four gaps.
 The observer still cannot raise a receipt-write error after a real send into the
-handler's fallback. All23runnercases and all six integrated gates pass:
-2,281tests/96.11%,46typedmodules,2.39.0wheel/sdist. A third fresh candidate-script
+handler's fallback. All 23 runner cases and all six integrated gates pass:
+2,281 tests / 96.11%, 46 typed modules, 2.39.0 wheel/sdist. A third fresh candidate-script
 Discord execution returns one exact-readback answer; its same-ID repeat returns
 an identical completed receipt with no new client. All candidate fixture authors
 remain bots, synthetic dispatch remains explicit, dev learning is rejected and
@@ -189,14 +189,14 @@ their respective revisions. No new character-semantic or owner/gateway claim.
 
 
 Latest shared-production verification,2026-11-19T08:26Z: the independent PR198
-run has deployed2.39.0. This is not an H131 deployment. Exact immutable digest
+run has deployed 2.39.0. This is not an H131 deployment. Exact immutable digest
 sha256:1db2710f367a1aa16e39441d7a3533515f4f0fefdf4f728cb202f31a17b0cf08
-is healthy/read-only,0restarts/OOMfalse;all46installedmodulehashesmatchthe
-retained2.39.0source. After the final runner closes, heartbeat37.19seconds,
-healthcheck0,16logrows/20minutes/0errors/0tracebacks. November ledger estimate
-USD0.345275445(runtime0.208176350,maintenance0.137099095),241attempts/21unsettled;
-18/2/20limits unchanged. Concurrent aggregate is not an invoice or audited run cost.
-Earlier2.38.15 snapshots above describe their observation times, not current state.
+is healthy and read-only, with 0 restarts and OOM false;all 46 installed module hashes match the
+retained 2.39.0 source. After the final runner closes, heartbeat age 37.19 seconds,
+healthcheck exit 0; 16 log rows in 20 minutes, 0 errors and 0 tracebacks. November ledger estimate
+USD 0.345275445 (runtime 0.208176350, maintenance 0.137099095), 241 attempts and 21 unsettled;
+18/2/20 limits unchanged. Concurrent aggregate is not an invoice or audited run cost.
+Earlier 2.38.15 snapshots above describe their observation times, not current state.
 No further auxiliary Discord client is needed after this final health evidence.
 
 Replay protection is explicitly bounded by retained receipts and the existing
