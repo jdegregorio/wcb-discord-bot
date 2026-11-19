@@ -1,26 +1,32 @@
-# Current decision: bounded study cohorts, 2026-11-19 run1300
+# Current decision: study cohort correction deployed, 2026-11-19
 
-H135 corrects a reproduced maintenance deadline defect: healthy serial source
-checks can exceed one shared six-second budget. Keep each source's existing limit
-and allow six seconds per native source, maximum36seconds. Historical-only checks
-retain six seconds. No new model/trait/source population or fidelity claim.
-[Both planning phases and acceptance](docs/trubot-evolution/evaluations/2026-11-19-study-verification-budget.md).
+H135 is released as immutable 2.40.3. Healthy serial source checks receive a cohort
+budget sized to native source count; individual limits, complete freshness checks,
+pacing and spending remain. Exact baseline has two expected failures/one control
+pass; candidate and installed live latency fault replays pass. All six feature and
+merged gates pass (2,361 tests), and all 46 installed source hashes match.
+Care is off target; humor is brief/on-topic with weak payoff. No semantic fidelity
+gain, new trait or abstraction population is claimed. PR197 remains independent.
+[Both phases, evidence and limitations](docs/trubot-evolution/evaluations/2026-11-19-study-verification-budget.md).
 
-1. Finish H135 quality gates, protected release and installed acceptance.
-2. H121/H120 useful connected abstractions: complete support/contrary episodes,
-   qualified private semantic review, independent held-outs and actual utility.
-   Confidence in need high; remedy unresolved. Existing graph/maintenance allowance.
-3. H125 semantic humor/emotion/original views with warmth, brevity and recipient
-   restraint; require mechanism-level novelty and held-out naturalness.
-4. Useful linked native/visual/seasonal context after actual pixels and utility.
-   Preserve generated Michigan U.P. aurora/trail-camera scenes, natural captions
-   and selective tools; automatic sightings stay closed.
+1. H121/H120 useful relation-preserving abstractions, now explicitly gated on H133
+   matched recipient/focus controls after fresh care failure. Require complete
+   attributed support/contrary episodes, qualified private semantic review,
+   independent held-outs and actual useful replies. Need supported; remedy unresolved.
+   Existing graph and maintenance allowance only. Reject fused relations or diverted care.
+2. H125 semantic comic variety, emotion and useful original views with warmth,
+   brevity and recipient restraint. Require mechanism-level novelty and held-out
+   naturalness; wording novelty alone is insufficient. Existing repair/budget only.
+3. Useful linked native/visual/seasonal context after actual pixels, lifecycle checks
+   and utility. Keep generated Michigan U.P. aurora/trail-camera scenes, natural
+   captions and selective skills/tools. Automatic sightings remain closed.
 
-No source/participation expansion, provider pass, service or spending pool. More
-studies may complete within existing USD18runtime/2maintenance/20total bounds.
-Six local01/05/09/13/17/21Sol/xhigh runs/notifications remain. PR197 is independent.
-Owner/main-gateway verification remains open. New semantic evidence or material
-regressions can reorder work. Older entries below are historical.
+No new provider pass, model, schema, access scope, service or spending pool. More
+studies may complete within existing USD 18 runtime / 2 maintenance / 20 total.
+Owner/main-gateway verification remains open because browser control/login is
+unavailable. Six local 01/05/09/13/17/21 Sol/xhigh runs and notifications remain.
+New semantic evidence or material regressions can reorder priorities. Older entries
+below are historical snapshots.
 
 # Current decision: bot-text attribution released, 2026-11-19
 

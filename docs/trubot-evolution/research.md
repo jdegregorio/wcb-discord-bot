@@ -1,11 +1,12 @@
-# H135 source-cohort deadline, 2026-11-19run1300
+# H135 complete source cohorts, 2026-11-19 run1300
 
-The installed six-source verifier has valid individual reads with cumulative
-passes6.670/6.877seconds. Exact-baseline timer replay fails two healthy cohorts;
-candidate passes, preserving stalled-source refusal and pacing. Supported enabling
-correction; no human trait, graph population or measured reply-quality gain.
-H121/H120 semantic abstraction and H125 comic/emotional utility remain unresolved.
-[Both phases, hypotheses, contrary case and limits](evaluations/2026-11-19-study-verification-budget.md).
+Released 2.40.3 corrects deterministic cumulative source timeout loss. Exact-baseline
+replays fail two healthy cohorts; candidate and installed source fault replays pass,
+retaining individual refusal limits and pacing. All six gates and installed hashes pass.
+This enables learning reliability, without a new human abstraction or reply-quality gain.
+Fresh synthetic care FAILS; humor has weak payoff. H133 matched focus/recipient controls
+now explicitly gate H121/H120 utility; H125 semantic amplification remains unresolved.
+[Both phases, sample counts, methods, release and limits](evaluations/2026-11-19-study-verification-budget.md).
 
 # 2026-11-19 09:00: H134 bot-text focus attribution
 
