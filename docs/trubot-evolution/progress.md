@@ -1,3 +1,46 @@
+# 2026-11-18 run: H130 control-marker publication correction
+
+New managed worktree trubot-daily-20261118-0905, unique matching feature branch,
+fetched base c831727e38a185ad1dd7497dcd3f5993a11aa59f. Recovered existing PR196 at
+69462ad without changing the primary checkout. No duplicate PR. Both phases,
+falsifiable acceptance and priority revision are in the
+[protocol](evaluations/2026-11-18-development-boundaries.md).
+
+The private-development harness produced seven actual installed-handler Discord
+answers, with unchanged learning counts: three correct synthetic attribution
+rejections, a direct recall control-marker defect, broad-year prose, care and humor
+delivery. Raw answer/source text is not retained in receipts. Synthetic owner
+envelopes and reaction dispatches are explicitly not human or main-gateway events.
+Browser control fails, the Mac is locked and the fallback has no owner login.
+The authorized harness alternative replaces the overly narrow earlier planning
+prerequisite; main-gateway proof remains an explicit coverage gap.
+
+H130 takes priority because of the observed mechanical output. One existing
+accounted/source-checked repair handles accidental direct/reaction control output;
+failed repairs cannot publish it. Selected tools cannot acquire another provider
+call. Optional participation remains silent; requested literal text is preserved.
+Exact 2.38.15 baseline: 20 failures / two controls pass. Candidate: 22/22 controls,
+including actual incoming handlers. Recovered/expanded H129c: 33/33 pass; exact
+2.38.13 has 18 expected role failures / 15 lifecycle/access passes. The first full
+runtime gate caught a package-version mismatch; corrected before release checks.
+
+Production before change: healthy read-only 2.38.15, 46/46 installed module hashes
+match, digest cb857fa67873af5e4144208ec12b98a6cc0ad7afd823e5b12b56586b6d234a7e,
+zero restarts/OOM, release timer active/enabled. After auxiliary closure healthcheck
+passes and heartbeat age is 9.62 seconds; 20-minute logs have zero errors/tracebacks.
+Pre-smoke ledger USD0.337420550 estimate, post USD0.342437275 / 233 attempts /
+21 unsettled; the nine maintenance attempts use the existing ledger. Concurrent
+aggregate is not an invoice. USD18/2/20 guard unchanged. Private content-free
+receipts use app smoke-tests/2026-11-18-0905, 0700/0600, seven-day manual retention
+and withdrawal cleanup. No schema, source, graph, key or allowance change.
+
+PR196 will carry the final runtime correction and boundary coverage. Version
+2.38.16 is reserved for the tested merged runtime; protected CI, image publication,
+deployment and installed acceptance remain pending until independently verified.
+Next: H121/H120 useful connected abstractions with qualified semantic review,
+H125 semantic humor/emotion, then useful linked native/visual context. Preserve
+generated U.P. aurora/trail-camera scenes, selective tools and six scheduled runs.
+
 # Run progress
 
 ## 2026-10-05: emotional judgment

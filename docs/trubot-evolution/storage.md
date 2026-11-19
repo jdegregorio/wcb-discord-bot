@@ -1,3 +1,13 @@
+# 2.38.16 control-marker repair
+
+No storage/schema/source/graph migration. The existing maintenance/runtime ledger
+accounts for the one shared reply repair; never restore or reset it on rollback.
+Private content-free test references/hashes/flags use
+smoke-tests/2026-11-18-0905 with existing 0700/0600, seven-day manual retention and
+withdrawal cleanup. Bot-authored development fixtures never enter learning.
+Auxiliary clients isolate readiness before construction and never start a gateway.
+Rollback to immutable 2.38.15 changes code only and preserves all application state.
+
 # Complete-reply recovery, 2.38.12
 
 Completion recovery uses the existing usage ledger and rotated content-free logs.

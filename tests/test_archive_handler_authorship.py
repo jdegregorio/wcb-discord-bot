@@ -1,6 +1,7 @@
 """Historical authorship must survive the actual incoming-event/publication path."""
 
 import hashlib
+from dataclasses import replace
 from types import SimpleNamespace
 from unittest.mock import patch
 
@@ -14,7 +15,7 @@ from trubot.learning import LearningStore
 from trubot.memory import ContextMemory
 
 
-def harness(tmp_path, body):
+def harness(tmp_path, body, scope="source"):
     store = LearningStore.initialize(tmp_path / "learning.sqlite3", AUDIT, now=NOW)
     archive = ArchiveStore.initialize(store)
     raw = (
@@ -33,6 +34,10 @@ def harness(tmp_path, body):
     learning.verified = True
     client._learning, client._memory = learning, ContextMemory(store)
     channel = fake_channel()
+    if scope == "development":
+        client._settings = replace(client._settings, development_guild_id=99)
+        channel.guild = SimpleNamespace(id=99, owner_id=1)
+    assert learning.accepts(channel) is (scope == "source")
 
     async def history(**_kwargs):
         yield message_for_history("Synthetic setup about dessert.", author_id=1)
@@ -47,6 +52,7 @@ def harness(tmp_path, body):
 
 
 @pytest.mark.asyncio
+@pytest.mark.parametrize("scope", ["source", "development"])
 @pytest.mark.parametrize("mode", ["direct", "followup", "reaction"])
 @pytest.mark.parametrize(
     "body,flag",
@@ -56,8 +62,10 @@ def harness(tmp_path, body):
         ("Image from iOS\nI prefer vanilla.", "attachment_or_preview"),
     ],
 )
-async def test_incoming_events_preserve_ambiguous_historical_authorship(tmp_path, mode, body, flag):
-    client, responder, channel, message, store, _, _ = harness(tmp_path, body)
+async def test_incoming_events_preserve_ambiguous_historical_authorship(
+    tmp_path, scope, mode, body, flag
+):
+    client, responder, channel, message, store, _, _ = harness(tmp_path, body, scope)
     try:
         with patch.object(client, "get_channel", return_value=channel):
             if mode == "reaction":
@@ -88,10 +96,11 @@ async def test_incoming_events_preserve_ambiguous_historical_authorship(tmp_path
 
 @pytest.mark.asyncio
 @pytest.mark.parametrize("change", ["source_removed", "withdrawal"])
+@pytest.mark.parametrize("scope", ["source", "development"])
 @pytest.mark.parametrize("mode", ["direct", "followup", "reaction"])
-async def test_changed_historical_evidence_stops_handler_publication(tmp_path, change, mode):
+async def test_changed_historical_evidence_stops_handler_publication(tmp_path, scope, change, mode):
     client, responder, channel, message, store, archive, digest = harness(
-        tmp_path, "replied to a thread:\nI prefer vanilla."
+        tmp_path, "replied to a thread:\nI prefer vanilla.", scope
     )
     original = responder.reply
 
@@ -122,5 +131,36 @@ async def test_changed_historical_evidence_stops_handler_publication(tmp_path, c
                 await client.on_message(message)
         assert len(responder.calls) == 1
         channel.send.assert_not_awaited()
+    finally:
+        await client.close()
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize("mode", ["direct", "followup", "reaction"])
+async def test_nonowner_development_events_do_not_receive_private_archive(tmp_path, mode):
+    client, responder, channel, message, store, _, _ = harness(
+        tmp_path, "replied to a thread:\nI prefer vanilla.", "development"
+    )
+    message.author = SimpleNamespace(id=2, bot=False, display_name="Visitor")
+    try:
+        with patch.object(client, "get_channel", return_value=channel):
+            if mode == "reaction":
+                await client.on_raw_reaction_add(
+                    SimpleNamespace(
+                        channel_id=10,
+                        user_id=2,
+                        message_id=message.id,
+                        emoji=SimpleNamespace(name="🍆"),
+                        member=SimpleNamespace(bot=False),
+                    )
+                )
+            else:
+                if mode == "followup":
+                    message.content = message.clean_content = message.content.removeprefix("🤖 ")
+                await client.on_message(message)
+        assert len(responder.calls) == 1
+        assert all(m.origin != "memory" for m in responder.calls[0][0])
+        channel.send.assert_awaited_once_with("Hot")
+        assert store.status()["messages"] == 0
     finally:
         await client.close()

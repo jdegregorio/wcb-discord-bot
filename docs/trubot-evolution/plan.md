@@ -1,3 +1,29 @@
+# Current decision: H130, 2026-11-18 run
+
+Fresh actual Discord readback exposed internal control text in a direct memory
+answer. H130 corrects publication through one existing accounted/source-checked
+repair. It supersedes the tests-only scope of unfinished PR196; H129c adds 33
+cross-route archive/authorship/lifecycle/access controls. No new human trait or
+general fidelity gain. [Both phases and acceptance](evaluations/2026-11-18-development-boundaries.md).
+
+1. Finish H130 protected CI, immutable 2.38.16 image/deploy and installed acceptance.
+   High confidence in reproduced protocol defect; existing shared repair only.
+2. H121/H120 useful connected abstractions: complete support/contrary episodes,
+   qualified private semantic review and held-out plus real-development utility.
+   Need is supported; solution unresolved. Existing graph/maintenance budget only.
+3. H125 varied comic mechanisms/emotional judgment: independent semantic gains,
+   care/recipient controls and brevity; wording novelty alone is insufficient.
+4. Useful linked native/visual context and seasonal variety after demonstrated
+   benefit, actual pixels and lifecycle checks. Generated U.P. scenes/selective tools
+   remain; H96 sightings stay closed. Estimate cost before each rollout.
+
+Joe's authorized same-handler development harness provides actual Discord sends
+and readback while owner UI is unavailable. Never label synthetic dispatch as a
+human event or main-gateway proof. Qualified semantic/private-egress review remains
+unresolved. New semantic evidence or material regressions can reorder priorities.
+Allowlist/no DMs, withdrawal, USD18/2/20 guard and six-run schedule remain unchanged.
+Older entries below are historical snapshots.
+
 # Current priority, reconciled 2026-11-14 UTC
 
 H129 remains the single unfinished tests/docs gate in draft PR196. This run recovers

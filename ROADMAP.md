@@ -1,3 +1,27 @@
+# Current decision: H130, 2026-11-18 run
+
+Actual direct-memory readback exposed an internal participation marker. Correct
+that publication defect before new abstract learning, through the existing single
+accounted/source-checked repair. Existing PR196 now carries this coherent runtime
+correction and H129c's 33 archive boundary controls.
+[Both planning phases and acceptance](docs/trubot-evolution/evaluations/2026-11-18-development-boundaries.md).
+
+1. Complete H130 protected CI, immutable 2.38.16 release/image/deploy and actual
+   private-Discord acceptance. High defect confidence; same shared repair budget.
+2. H121/H120 useful connected abstractions with complete attributed supports and
+   contraries, qualified private semantic review, held-outs and demonstrated utility.
+3. H125 varied comic mechanisms, emotional judgment and useful original views,
+   validated semantically with brevity, care and recipient controls.
+4. Useful linked native/visual coverage and seasonal variety after pixel review,
+   lifecycle checks and measured benefit. Preserve generated U.P. aurora/trail-camera
+   scenes, natural captions and selective tools. H96 sightings remain closed.
+
+The authorized same-handler development harness supplies real sends/readback when
+owner UI is unavailable; synthetic dispatch never proves human/main-gateway events.
+No new trait or general fidelity gain follows. New semantic evidence or material
+regressions can reorder work. Existing graph/maintenance allowance, USD18/2/20,
+allowlists/no DMs, withdrawal and six scheduled runs remain. Older snapshots follow.
+
 # Current priority, reconciled 2026-11-14 UTC
 
 H129 remains the single unfinished tests/docs gate in draft PR196. This run recovers

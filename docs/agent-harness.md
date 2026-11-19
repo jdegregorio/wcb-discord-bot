@@ -1,3 +1,26 @@
+# Current decision: H130, 2026-11-18 run
+
+A real development reply exposed internal abstention text in direct recall.
+H130 uses one existing accounted/source-checked repair; failed repairs cannot
+publish protocol text or add a third tool call. Follow-up/ambient abstention stays
+silent, with explicit literal requests preserved. H129c's 33 archive/authorship/
+lifecycle/access cases accompany this correction in the recovered PR196.
+[Both phases and acceptance](trubot-evolution/evaluations/2026-11-18-development-boundaries.md).
+
+Finish protected CI, immutable 2.38.16 release/image/deploy and installed acceptance.
+Then prioritize H121/H120 useful connected abstractions, H125 semantic humor/emotion,
+and useful linked native/visual context. Complete supports/contraries, qualified
+private semantic review, held-outs, actual interaction utility and cost acceptance
+remain prerequisites. No new trait or general fidelity claim. Generated U.P. scenes,
+natural captions, selective skills/tools and closed H96 sightings remain.
+
+Joe's authorized development-only same-handler harness verifies real Discord sends
+and readback with labeled bot fixtures, synthetic operator envelopes, isolated
+readiness and zero learning intake. It never proves owner/main-gateway events.
+Use this permitted alternative while browser/login is unavailable. Source checks,
+withdrawal, runtime allowlist/no DMs, USD18/2/20 guard and six-run cadence remain.
+Older entries below are historical snapshots.
+
 # Current priority, reconciled 2026-11-14 UTC
 
 H129 remains the single unfinished tests/docs gate in draft PR196. This run recovers

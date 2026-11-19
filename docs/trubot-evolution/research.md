@@ -1,3 +1,17 @@
+# H130 / H129c, 2026-11-18 run
+
+Both planning phases and fixed acceptance are in the
+[run protocol](evaluations/2026-11-18-development-boundaries.md).
+A fresh installed-handler/real-Discord test exposed an internal abstention marker
+published as a direct recall answer. H130 addresses that reproduced output defect
+with the existing single source-checked, accounted repair. Exact 2.38.15 source
+fails 20 of 22 adapter/handler controls; the candidate passes 22/22. This is protocol
+correctness, not a learned preference or measured general character improvement.
+H129c extends the unfinished PR196 boundary gate to owner-only development recall:
+33/33 current cases pass; exact 2.38.13 fails the expected 18 authorship cases and
+passes 15 lifecycle/access controls. No private semantic-egress retry or new trait.
+Protected CI, immutable release and installed acceptance remain pending here.
+
 # 2026-11-13 run, reconciled 2026-11-14 UTC
 
 Fresh H129 baseline reproduces nine expected authorship failures and six lifecycle

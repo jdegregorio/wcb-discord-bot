@@ -1,3 +1,28 @@
+# Current decision: H130, 2026-11-18 run
+
+H130 now precedes the unfinished PR196 enabling gate because actual direct recall
+published internal control text. Fix that publication boundary with the existing
+single accounted/source-checked repair; include H129c's 33 cross-route scope and
+lifecycle controls. [Both phases and acceptance](evaluations/2026-11-18-development-boundaries.md).
+
+1. Complete H130: protected CI, immutable 2.38.16 image/deployment and actual private
+   Discord no-marker controls. High defect confidence; at most one existing repair.
+2. H121/H120 connected abstraction utility: require complete attributed supports,
+   contraries, qualified semantic review, independent held-outs and real-development
+   benefit. Source availability is not quality. Existing graph/maintenance allowance.
+3. H125 semantic humor/emotion: require new comic mechanisms with care, recipient
+   restraint and brevity. No trait or humor multiplier is established by one joke.
+4. Useful linked native/visual context and seasonal variety: require actual pixels,
+   lifecycle checks and measured utility. Preserve generated U.P. scenes, short
+   captions and selective tools; H96 sightings remain closed.
+
+Use Joe's expressly authorized same-handler development harness while owner UI is
+unavailable; keep synthetic dispatch distinct from human/main-gateway proof.
+Qualified private semantic review remains a prerequisite for new abstractions.
+New semantic evidence or material regressions can change this order. Preserve
+allowlist/no DMs, withdrawal, USD18/2/20 guard and six standalone scheduled runs.
+Older entries below are historical snapshots.
+
 # Current priority, reconciled 2026-11-14 UTC
 
 H129 remains the single unfinished tests/docs gate in draft PR196. This run recovers

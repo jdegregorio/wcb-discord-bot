@@ -1,3 +1,11 @@
+## Internal reply controls, 2.38.16
+
+An accidental participation marker in a direct or reaction answer receives one
+source-checked repair through the existing shared allowance. Failed repairs never
+publish the marker. Optional participation remains silent, and explicit literal
+requests retain their requested text. No new memory, model or spending allowance.
+[Qualification](docs/trubot-evolution/evaluations/2026-11-18-development-boundaries.md).
+
 ## Short requested joke repairs, 2.38.15
 
 An explicit different-joke request can refresh an identical short punchline through
