@@ -1,3 +1,27 @@
+# Current decision: bounded study cohorts, 2026-11-19 run1300
+
+H135 corrects a reproduced maintenance deadline defect: healthy serial source
+checks can exceed one shared six-second budget. Keep each source's existing limit
+and allow six seconds per native source, maximum36seconds. Historical-only checks
+retain six seconds. No new model/trait/source population or fidelity claim.
+[Both planning phases and acceptance](trubot-evolution/evaluations/2026-11-19-study-verification-budget.md).
+
+1. Finish H135 quality gates, protected release and installed acceptance.
+2. H121/H120 useful connected abstractions: complete support/contrary episodes,
+   qualified private semantic review, independent held-outs and actual utility.
+   Confidence in need high; remedy unresolved. Existing graph/maintenance allowance.
+3. H125 semantic humor/emotion/original views with warmth, brevity and recipient
+   restraint; require mechanism-level novelty and held-out naturalness.
+4. Useful linked native/visual/seasonal context after actual pixels and utility.
+   Preserve generated Michigan U.P. aurora/trail-camera scenes, natural captions
+   and selective tools; automatic sightings stay closed.
+
+No source/participation expansion, provider pass, service or spending pool. More
+studies may complete within existing USD18runtime/2maintenance/20total bounds.
+Six local01/05/09/13/17/21Sol/xhigh runs/notifications remain. PR197 is independent.
+Owner/main-gateway verification remains open. New semantic evidence or material
+regressions can reorder work. Older entries below are historical.
+
 # Current decision: bot-text attribution released, 2026-11-19
 
 H134 is deployed as immutable 2.40.2. Plain-text bot reaction targets now retain the
