@@ -350,7 +350,7 @@ def test_operator_command_errors_do_not_echo_private_exception(tmp_path, monkeyp
     path.chmod(0o600)
     monkeypatch.setattr("sys.argv", ["trubot-study", "--episodes", str(path)])
 
-    async def fail(_refs):
+    async def fail(_refs, *, require_context_text=False):
         raise RuntimeError("private source and credential")
 
     monkeypatch.setattr(study, "run", fail)
@@ -373,7 +373,7 @@ def test_operator_command_honestly_reports_not_completed(tmp_path, monkeypatch, 
     path.chmod(0o600)
     monkeypatch.setattr("sys.argv", ["trubot-study", "--episodes", str(path)])
 
-    async def incomplete(_refs):
+    async def incomplete(_refs, *, require_context_text=False):
         return {"completed": False, "accepted": False}
 
     monkeypatch.setattr(study, "run", incomplete)

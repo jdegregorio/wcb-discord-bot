@@ -1,3 +1,25 @@
+# Required captured context text, 2.40.1
+
+Run `trubot-study --episodes <private-manifest> --require-context-text` to require
+all currently captured nearby text rows. Only trusted exact source sets can use
+this mode. Each complete row may use 4,000 UTF-8 bytes; all sources and context
+must fit the same 14,000-byte extraction envelope, leaving existing review headroom
+under the 16,000-byte adapter bound. Rows/sources are never dropped to fit. Initial
+archive size failure creates no lease or provider call. A later native setup
+failure keeps the already acquired pacing lease and still makes no provider call.
+Known native collector size omissions also stop; its existing 600-byte capture
+bound is not expanded. Missing pixels, bounded adjacency, unavailable full history
+and unknown dates remain explicit gaps, never complete-conversation guarantees.
+
+Default optional studies retain their previous row packing. Both passes use the
+same frozen selected packet; normal source rechecks, retirement, correction,
+withdrawal, retention, native-pattern gate and USD2 maintenance/USD20 shared ledger
+remain. No new schema, derived population, service or automatic study replay.
+Rollback is schema-compatible; never restore sources or spending state for rollback.
+Private count-only receipts for this run live in app-volume smoke-tests/2026-11-19-0458,
+0700 directories/0600 files, existing seven-day manual retention and withdrawal cleanup.
+No raw transcripts, inferred personal observations, answers or pixels are retained.
+
 # Complete operator-selected study text
 
 Trusted exact `trubot-study --episodes` sets may contain complete authored text

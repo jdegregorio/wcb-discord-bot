@@ -1,28 +1,36 @@
-# Current priorities, 2026-11-18 complete selected study sources
+# Current decision: complete captured study text, 2026-11-19
 
-H-STUDY-FULLTEXT expands only trusted exact episode studies to 4,000 UTF-8 bytes
-per authored block, retaining complete text and the same total request envelope.
-The baseline rejects one current eligible historical block; candidate qualification
-keeps late qualifications through both passes. This enables abstract-memory research,
-with no new trait, graph population or measured reply-quality claim. Automatic
-sampling, source lifecycle, pacing/cohort, native-pattern boundary and budget remain.
+H132 adds opt-in `trubot-study --require-context-text` for exact operator episode
+sets. All captured nearby text must fit whole (4,000 UTF-8 bytes per row, existing
+14,000-byte extraction envelope), or the study stops before provider work. Known
+upstream size gaps stop too. This enables contextual study; it does not establish
+new Andrew traits, populate abstractions or measure reply-quality improvement.
 
-1. Complete this maintenance increment through gates, protected CI, immutable release,
-   deployment and installed source/Discord checks. PR198 audit selection and PR196
-   participation-control repair are merged and preserved. PR197 receipts are independent.
-2. H121/H120 useful relation-preserving episodes and abstractions, requiring attributed
-   support/contraries, complete setup, independent held-outs and actual useful replies.
-3. H125 semantic comic variety with useful emotion and original views, then useful
-   linked native/visual coverage and seasonal variety. Keep generated Michigan U.P.
-   aurora/trail-camera scenes, natural captions, selective skills/tools. H96 stays closed.
+1. Qualify and deliver H132 plus merged unreleased complete-authored-source support
+   as 2.40.1. Preserve 2.39.1 reply controls. PR197 smoke recovery is independent.
+2. H121/H120 useful relation-preserving abstractions. Require complete attributed
+   support/contrary episodes, qualified private semantic review, independent held-outs
+   and actual useful replies. Need confidence high; semantic remedy unresolved.
+3. H125 semantic comic variety with emotion, original views and recipient restraint.
+   Require mechanism-level novelty, naturalness and care controls; repeated synthetic
+   tests and exact-word novelty do not establish funniness or human fidelity.
+4. Useful linked native/visual coverage and seasonal variety, after actual pixels,
+   lifecycle checks and measured utility. Keep generated Michigan U.P. aurora and
+   trail-camera scenes, short natural captions and selectively loaded skills/tools.
+   Automatic sightings remain closed until observations qualify.
 
-Evidence: zero active abstractions; sparse recent human league activity; numeric
-coverage is not a semantic character audit. One block's newly available full text
-is not an established pattern. Same 18/2/20 guard, no DMs, allowlists, withdrawal,
-six local 01/05/09/13/17/21 Sol/xhigh standalone runs and notifications.
+Fresh count-only coverage: 48/405 eligible historical anchors have 52 nearby passages
+lost to the old optional 600-byte bound. Matched pure packet probes retain all 52
+with zero provider calls. Every one-source packet fits; larger sets may correctly
+stop. Source availability is validated enabling work, not semantic learning.
+Normal replies, automatic studies/native-pattern gate, source allowlists/no DMs,
+withdrawal and USD18 runtime/2 maintenance/20 total guard retain their boundaries.
+Only opt-in maintenance input can increase within the same envelope and ledger.
+New material defects or independently measured semantic benefit can reorder work.
+Keep six local 01/05/09/13/17/21 Sol/xhigh runs and notification preferences.
 
-[Hypotheses, method, contrary cases and actual results](evaluations/2026-11-18-complete-study-sources.md).
-Older records below are historical.
+[Locked hypotheses, results and limitations](evaluations/2026-11-19-complete-context-text.md). Older records below are historical.
+
 # Reconciled release decision: 2.39.1
 
 Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent

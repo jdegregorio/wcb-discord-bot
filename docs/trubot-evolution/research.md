@@ -3512,3 +3512,20 @@ no learning intake. Explicit synthetic operator dispatch is not a human reaction
 main gateway proof; owner/gateway acceptance remains open. No new human abstraction
 or semantic fidelity claim. H121/H120 then H125 priorities remain evidence-qualified.
 [Both phases, cost and limitations](evaluations/2026-11-14-live-handler-smoke.md).
+
+
+## 2026-11-19: H132 complete captured text admission
+
+Both planning phases precede implementation in the [locked protocol](evaluations/2026-11-19-complete-context-text.md).
+Baseline loses an 805-byte invented roleplay qualification (zero rows retained/one
+omitted). Candidate retains the entire qualification identically in both passes;
+a stubbed independent reviewer can reject the unsupported preference. This proves
+packet delivery and rejection plumbing, not actual model inference. Private pure
+packet probes: 48 affected anchors/52 adjacency occurrences, baseline zero retained
+long rows/candidate 52, all 48 one-source sets fit, zero provider calls. Nineteen
+new admission, CLI, attribution, source/withdrawal and native freshness regressions.
+Full candidate six gates pass 2,352 tests/96.14%,46 modules,packages. Initial native
+test exposed upstream 600-byte omissions; strict mode now refuses that known size
+gap. No native capture expansion. Prior private semantic transfer restrictions
+remain; fresh semantic human comparison/new trait/population/fidelity are unqualified.
+H121/H120 useful abstractions then H125 semantic humor/emotion remain next.

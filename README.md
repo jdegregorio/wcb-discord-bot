@@ -1,3 +1,11 @@
+## Whole captured setup for selected studies
+
+Private operators can add `--require-context-text` to an exact `trubot-study
+--episodes` set. Captured nearby text is retained whole within existing request
+bounds or the study stops before provider work. This supports contextual memory
+research; it does not change normal replies or establish new character traits.
+[Qualification](docs/trubot-evolution/evaluations/2026-11-19-complete-context-text.md).
+
 ## Complete selected memory studies
 
 Private operator-selected episode studies can retain complete authored blocks up to
