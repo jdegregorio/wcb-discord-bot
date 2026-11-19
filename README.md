@@ -5,7 +5,7 @@ source-checked repair through the existing shared allowance. Failed repairs neve
 publish the marker. Optional participation remains silent, and explicit literal
 requests retain their requested text. No new memory, model or spending allowance.
 [Qualification](docs/trubot-evolution/evaluations/2026-11-18-development-boundaries.md).
-## Deliberate character-audit samples, candidate2.39.0
+## Deliberate character-audit samples, 2.39.0
 
 Private operator studies can select exact recorded bot responses and their bounded
 nearby setup. This prevents newer bot-authored test inputs from replacing intended

@@ -120,3 +120,40 @@ Content-free private receipts follow storage.md retention and withdrawal rules.
 
 Publication, exact-merged gates, image/digest and installed acceptance remain pending
 until verified below. No general fidelity gain is claimed.
+
+
+## Protected publication and installed acceptance
+
+PR198 merged at caa005078d9520a3580bea183e3bc56c9b116219 after required CI success.
+All six exact-merged gates pass with2,258tests/96.11%coverage. Immutablev2.39.0 at
+that commit publishes both image architectures in successful run44486098694.
+Authenticated pi5/aarch64/Ubuntu24.04.4 deployment uses the existing app lock,
+pull-before-replace, health wait and rollback transaction. Actually running digest
+sha256:1db2710f367a1aa16e39441d7a3533515f4f0fefdf4f728cb202f31a17b0cf08;
+all46source hashes match. Healthy/read-only,0restarts/OOM,health exit0,heartbeat30.16s
+after auxiliary closure,timeractive/enabled;20min11logrows/zeroERROR/Traceback.
+
+One fresh installed labeled synthetic care probe receives one actual brief,
+appropriate reply (10words/5.021seconds). Installed exact-answer audit capture
+selects it and actual probe setup (three rows), with zero audit-provider calls.
+Private membership/scope verified,developmentintakefalse,learning unchanged,
+maintenanceclientclosed. Total own real handler probes:two including candidate.
+These are actual Discord messages and unmocked production handlers/provider/sends,
+not a human/main-gateway event. Fresh IAB fallback confirms empty login fields;
+Chrome navigation fails and Mac is locked. Owner/main-gateway check remains open.
+No token extraction, league chatter or external private semantic scoring.
+
+Post audit is count-only: same4,299/405/seven/three source coverage;development
+latest40allbot/seven repeats;league300/26bot,seven-daytwo target/fourbot. No new
+human characteristic or semantic judgment follows. Narrow care naturalness passes
+manual agent review on two synthetic responses only. No general fidelity claim.
+NovemberaggregateUSD0.345168965estimate/240attempts/21unsettled;18/2/20unchanged,
+no newservice or normalreplycall. No rollback necessary;prior2.38.15 preserved.
+
+H130b is supported as research-enabling selection correctness, not a measured
+reply-quality gain. H130a remains unvalidated. Retire H130b implementation from
+active priorities; independently owned control-marker/smoke recovery, then useful
+H121/H120 abstractions,H125semantic/emotional humor and useful native/visual/seasonal
+coverage remain. Existing source privacy,provenance,withdrawal,schedule and model
+requirements remain. Exact private refs/content-free receipts follow storage.md;
+no rawsource,generatedanswer,pixels or private interpretations are retained there.

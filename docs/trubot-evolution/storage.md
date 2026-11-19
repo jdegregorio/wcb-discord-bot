@@ -18,7 +18,7 @@ smoke-tests/2026-11-18-0905 with existing 0700/0600, seven-day manual retention 
 withdrawal cleanup. Bot-authored development fixtures never enter learning.
 Auxiliary clients isolate readiness before construction and never start a gateway.
 Rollback to immutable 2.38.15 changes code only and preserves all application state.
-## Deliberate private audit selection, candidate2.39.0
+## Deliberate private audit selection, 2.39.0
 
 Supply `focus_message_ids` from trusted private response receipts to inspect one to
 four actual bot responses, including older responses outside the latest40 posts.

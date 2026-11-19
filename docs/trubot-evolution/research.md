@@ -43,6 +43,19 @@ so future abstract-memory work retains authorship/withdrawal at publication.
 H121/H120 semantic utility and H125 mechanism novelty remain unresolved, requiring
 independent supports/contraries and held-outs. A local-only authenticated census
 supplies counts, not semantic fidelity. [Complete preregistration/results](evaluations/2026-11-07-handler-lifecycle.md).
+# H130b installed result, 2026-11-19
+
+Exact-response audit selection passes actual older-response and fresh installed
+answer captures plus29new lifecycle/scope controls. Two real synthetic care-handler
+responses pass narrow naturalness review. This validates enabling sample selection,
+not semantic human fidelity. Zero audit-provider calls; fabricated capture flags
+are not grades. Owner/main-gateway check stays open at empty Discord login; no
+private external scoring after its earlier rejection. H130a missing-link utility
+remains unvalidated. H130b leaves active work; prioritize independently owned
+control-marker/smoke recovery, then H121/H120 useful abstractions,H125semantic
+humor/emotion and useful native/visual/seasonal coverage. Existing guard and source
+lifecycle remain. [Complete installed evidence](evaluations/2026-11-18-focused-audits.md).
+
 # 2026-11-18: H130 deliberate audit samples
 
 Phase1 confirms development-test saturation and reproduces inability to target an
