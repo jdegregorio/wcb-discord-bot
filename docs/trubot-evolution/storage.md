@@ -1,3 +1,13 @@
+# Complete operator-selected study text
+
+Trusted exact `trubot-study --episodes` sets may contain complete authored text
+through4,000 UTF-8 bytes per source. Oversized sources or complete packets fail
+before acquiring a study lease; source sets are never silently clipped or dropped.
+The existing14,000-byte extraction envelope/16,000-byte adapter gate, review
+headroom, private manifests, pacing, retirement, correction/withdrawal and retention
+remain. Automatic sampling and single-anchor discovery keep1,000-byte fragments
+with explicit truncation flags. No schema or storage migration, checkpoint replay,
+provider pool or source copy. Code rollback preserves source/usage/operation state.
 # Reconciled release decision: 2.39.1
 
 Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent

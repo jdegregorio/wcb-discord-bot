@@ -269,6 +269,9 @@ class StudySelection:
 # final 16,000-byte gate for unusually large priors; never drop a contradiction.
 _CONTEXT_ENVELOPE = STUDY_MAX_BYTES - 2_000
 _CONTEXT_ROW_BYTES = 600
+# Exact operator-selected episodes can retain a longer complete authored block.
+# Automatic sampling and single-anchor topic discovery keep their existing bound.
+_EXACT_SOURCE_BYTES = 4_000
 
 
 def _fit_context(study: Study, *, require_all_sources: bool = False) -> Study:
@@ -468,8 +471,14 @@ class StudyStore:
                             (ref["document"], ref["ordinal"]),
                         ).fetchone()[0]
                     snapshots.append(current)
-                    truncated.append(len(content.encode("utf-8")) > 1000)
-                    bodies.append(content.encode("utf-8")[:1000].decode("utf-8", errors="ignore"))
+                    bound = (
+                        _EXACT_SOURCE_BYTES
+                        if requested is not None and _key(ref) in requested
+                        else 1000
+                    )
+                    encoded = content.encode("utf-8")
+                    truncated.append(len(encoded) > bound)
+                    bodies.append(encoded[:bound].decode("utf-8", errors="ignore"))
                 order = sorted(
                     range(len(snapshots)),
                     key=lambda i: (

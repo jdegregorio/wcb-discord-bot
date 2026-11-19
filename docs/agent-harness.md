@@ -1,3 +1,28 @@
+# Current priorities, 2026-11-18 complete selected study sources
+
+H-STUDY-FULLTEXT expands only trusted exact episode studies to 4,000 UTF-8 bytes
+per authored block, retaining complete text and the same total request envelope.
+The baseline rejects one current eligible historical block; candidate qualification
+keeps late qualifications through both passes. This enables abstract-memory research,
+with no new trait, graph population or measured reply-quality claim. Automatic
+sampling, source lifecycle, pacing/cohort, native-pattern boundary and budget remain.
+
+1. Complete this maintenance increment through gates, protected CI, immutable release,
+   deployment and installed source/Discord checks. PR198 audit selection is independent;
+   do not overwrite PR197, the marker repair or draft PR196's unfinished acceptance.
+2. H121/H120 useful relation-preserving episodes and abstractions, requiring attributed
+   support/contraries, complete setup, independent held-outs and actual useful replies.
+3. H125 semantic comic variety with useful emotion and original views, then useful
+   linked native/visual coverage and seasonal variety. Keep generated Michigan U.P.
+   aurora/trail-camera scenes, natural captions, selective skills/tools. H96 stays closed.
+
+Evidence: zero active abstractions; sparse recent human league activity; numeric
+coverage is not a semantic character audit. One block's newly available full text
+is not an established pattern. Same 18/2/20 guard, no DMs, allowlists, withdrawal,
+six local 01/05/09/13/17/21 Sol/xhigh standalone runs and notifications.
+
+[Hypotheses, method, contrary cases and actual results](trubot-evolution/evaluations/2026-11-18-complete-study-sources.md).
+Older records below are historical.
 # Reconciled release decision: 2.39.1
 
 Main now includes PR198 / caa005078d9520a3580bea183e3bc56c9b116219, the independent
