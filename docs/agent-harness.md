@@ -6,15 +6,19 @@ sets. All captured nearby text must fit whole (4,000 UTF-8 bytes per row, existi
 upstream size gaps stop too. This enables contextual study; it does not establish
 new Andrew traits, populate abstractions or measure reply-quality improvement.
 
-1. Qualify and deliver H132 plus merged unreleased complete-authored-source support
-   as 2.40.1. Preserve 2.39.1 reply controls. PR197 smoke recovery is independent.
-2. H121/H120 useful relation-preserving abstractions. Require complete attributed
+H132 is deployed as immutable 2.40.1, with complete-authored-source support and
+preserved reply controls. Installed module/study/packet checks pass. Actual private
+qualification/humor controls pass narrowly; care is partial (evaluative opener).
+H133 matched recipient/focus diagnosis must separate synthetic-harness effects from
+ordinary gateway behavior before any behavioral fix. PR197 remains independent.
+
+1. H121/H120 useful relation-preserving abstractions. Require complete attributed
    support/contrary episodes, qualified private semantic review, independent held-outs
    and actual useful replies. Need confidence high; semantic remedy unresolved.
-3. H125 semantic comic variety with emotion, original views and recipient restraint.
+2. H125 semantic comic variety with emotion, original views and recipient restraint.
    Require mechanism-level novelty, naturalness and care controls; repeated synthetic
    tests and exact-word novelty do not establish funniness or human fidelity.
-4. Useful linked native/visual coverage and seasonal variety, after actual pixels,
+3. Useful linked native/visual coverage and seasonal variety, after actual pixels,
    lifecycle checks and measured utility. Keep generated Michigan U.P. aurora and
    trail-camera scenes, short natural captions and selectively loaded skills/tools.
    Automatic sightings remain closed until observations qualify.
