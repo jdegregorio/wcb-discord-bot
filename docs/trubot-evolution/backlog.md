@@ -1,39 +1,32 @@
-# Current decision: complete captured study text, 2026-11-19
+# Current decision: bot-text focus attribution, 2026-11-19 09:00 run
 
-H132 adds opt-in `trubot-study --require-context-text` for exact operator episode
-sets. All captured nearby text must fit whole (4,000 UTF-8 bytes per row, existing
-14,000-byte extraction envelope), or the study stops before provider work. Known
-upstream size gaps stop too. This enables contextual study; it does not establish
-new Andrew traits, populate abstractions or measure reply-quality improvement.
+H134 corrects a reproduced handler boundary: plain-text bot reaction targets lose
+the existing bot-source label that image targets retain. Preserve the complete
+conversion once, based on authenticated bot status, so generated words retain their
+evidence status even with a human-like display name. Ordinary human provider input
+is byte-identical. This is a grounding correction, not a new human trait or measured
+empathy/humor gain. H133 care baseline now passes; its cause remains unresolved.
+PR197 remains independently owned. H132 is already deployed as2.40.1.
 
-H132 is deployed as immutable 2.40.1, with complete-authored-source support and
-preserved reply controls. Installed module/study/packet checks pass. Actual private
-qualification/humor controls pass narrowly; care is partial (evaluative opener).
-H133 matched recipient/focus diagnosis must separate synthetic-harness effects from
-ordinary gateway behavior before any behavioral fix. PR197 remains independent.
-
-1. H121/H120 useful relation-preserving abstractions. Require complete attributed
+1. Complete H134 protected publication and installed validation. Confidence high
+   in reproduced attribution loss; existing handler/responder and same spending guard.
+2. H121/H120 useful relation-preserving abstractions. Require complete attributed
    support/contrary episodes, qualified private semantic review, independent held-outs
    and actual useful replies. Need confidence high; semantic remedy unresolved.
-2. H125 semantic comic variety with emotion, original views and recipient restraint.
+3. H125 semantic comic variety with emotion, original views and recipient restraint.
    Require mechanism-level novelty, naturalness and care controls; repeated synthetic
    tests and exact-word novelty do not establish funniness or human fidelity.
-3. Useful linked native/visual coverage and seasonal variety, after actual pixels,
+4. Useful linked native/visual coverage and seasonal variety after actual pixels,
    lifecycle checks and measured utility. Keep generated Michigan U.P. aurora and
-   trail-camera scenes, short natural captions and selectively loaded skills/tools.
-   Automatic sightings remain closed until observations qualify.
+   trail-camera scenes, short natural captions and selective skills/tools. Automatic
+   sightings remain closed until observations qualify.
 
-Fresh count-only coverage: 48/405 eligible historical anchors have 52 nearby passages
-lost to the old optional 600-byte bound. Matched pure packet probes retain all 52
-with zero provider calls. Every one-source packet fits; larger sets may correctly
-stop. Source availability is validated enabling work, not semantic learning.
-Normal replies, automatic studies/native-pattern gate, source allowlists/no DMs,
-withdrawal and USD18 runtime/2 maintenance/20 total guard retain their boundaries.
-Only opt-in maintenance input can increase within the same envelope and ledger.
-New material defects or independently measured semantic benefit can reorder work.
-Keep six local 01/05/09/13/17/21 Sol/xhigh runs and notification preferences.
+H134 adds no provider turn, model/policy, schema, graph population or service. Keep
+allowlists/no DMs, withdrawal and USD18runtime/2maintenance/20total guard, six local
+01/05/09/13/17/21 Sol/xhigh runs and notifications. New material defects or independently
+measured semantic benefit can reorder work. Owner/main-gateway verification is open.
 
-[Locked hypotheses, results and limitations](evaluations/2026-11-19-complete-context-text.md). Older records below are historical.
+[Both phases and validation](evaluations/2026-11-19-bot-text-focus.md). Older records below are historical.
 
 # Reconciled release decision: 2.39.1
 

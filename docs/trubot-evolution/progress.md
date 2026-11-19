@@ -6152,3 +6152,27 @@ recipient/focus controls before behavioral rollout; H125 semantic comic variety 
 emotion/original views; useful native/visual/seasonal coverage. Preserve generated
 U.P. aurora/trail-camera scenes, short captions, selective skills/tools and closed
 unqualified sightings. No model, cadence, privacy, source scope or budget changes.
+
+
+## 2026-11-19 09:00 Pacific: H134 candidate
+
+New managed worktree/unique feature branch from fetched
+`639477564a7c2c5bf4398ea179c7681aeea3608c`; primary untouched. Reconciled completed
+2.40.1 and independently owned unfinishedPR197. Both planning phases select the
+reproduced bot-text attribution loss, so text reactions retain the existing
+bot-source context status used by images. Human provider input is byte-identical;
+no new human trait, graph population or semantic fidelity gain. H133 fresh care
+baseline passes; its cause remains unresolved. H121/H120 connected abstractions
+stays the next learning architecture priority, then H125 semantic humor/emotion
+and useful linked native/visual context. GeneratedUPscenes/selectivetools remain.
+
+Baseline five intended regression failures/one human pass; candidate99focusedpass,
+including six new tests. All six feature gates PASS2,358tests/96.14%,46typedmodules,
+wheel/sdist2.40.2. Actual private baseline/candidate synthetic reaction cohorts each
+have three send/readbacks: preference rejection,direct care,brief requested humor.
+Source labels absent3/3baseline,retained3/3candidate; no learning intake/count change.
+Narrow synthetic semantic controls pass in both arms, no measured empathy/humor gain.
+Owner/main-gateway test remains open after Chrome failure,lockedMac and emptyIABlogin.
+Auxiliary clients closed; production2.40.1healthy/read-only,zero restarts/OOM,
+health0,timeractive/enabled. [Full methods and limitations](evaluations/2026-11-19-bot-text-focus.md).
+Publication/exactmergedgates/release/image/deploy and installed acceptance pending.
