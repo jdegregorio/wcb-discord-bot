@@ -47,6 +47,7 @@ async def execute_study(
     refs: list[dict[str, Any]],
     *,
     clock: Callable[[], datetime],
+    require_context_text: bool = False,
 ) -> dict[str, Any]:
     """Authenticate the pinned source member, without a gateway or Discord writes."""
     _episode_keys(refs)
@@ -72,10 +73,13 @@ async def execute_study(
             guild._add_channel(channel)
     _ensure_identity(ingestor)
     distiller = GraphDistiller(ingestor, responder, clock=clock)
-    outcome = await distiller.cycle(client, episode_refs=refs)
+    outcome = await distiller.cycle(
+        client, episode_refs=refs, require_context_text=require_context_text
+    )
     # Use this cycle's receipt, never another process's recent checkpoint.
     return {
         "selected_sources": len(refs),
+        "required_context_text": require_context_text,
         "completed": outcome is not None,
         "outcome": outcome or "not_completed",
         "accepted": outcome == "accepted",
@@ -91,7 +95,7 @@ def _ensure_identity(ingestor: MessageIngestor) -> None:
         raise LearningUnavailable("Source identity changed during study")
 
 
-async def run(refs: list[dict[str, Any]]) -> dict[str, Any]:
+async def run(refs: list[dict[str, Any]], *, require_context_text: bool = False) -> dict[str, Any]:
     settings = Settings.from_env()
     learning = LearningStore(
         settings.learning_store_path, retention_days=settings.learning_retention_days
@@ -120,16 +124,29 @@ async def run(refs: list[dict[str, Any]]) -> dict[str, Any]:
         _ensure_identity(ingestor)
         await client.login(settings.discord_token)
         return await execute_study(
-            client, ingestor, responder, refs, clock=lambda: datetime.now(UTC)
+            client,
+            ingestor,
+            responder,
+            refs,
+            clock=lambda: datetime.now(UTC),
+            require_context_text=require_context_text,
         )
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Study a complete private reviewed episode set")
     parser.add_argument("--episodes", type=Path, required=True)
+    parser.add_argument(
+        "--require-context-text",
+        action="store_true",
+        help="Keep every captured nearby text row whole or stop before provider work; "
+        "does not supply missing history or image pixels",
+    )
     args = parser.parse_args()
     try:
-        result = asyncio.run(run(read_episode_refs(args.episodes)))
+        result = asyncio.run(
+            run(read_episode_refs(args.episodes), require_context_text=args.require_context_text)
+        )
         print(json.dumps(result))
         if not result["completed"]:
             parser.exit(

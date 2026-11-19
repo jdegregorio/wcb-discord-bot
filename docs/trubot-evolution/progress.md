@@ -6068,3 +6068,20 @@ All 46 installed Python modules freshly match the tested source with zero mismat
 [Evidence quality run](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/43641603355)
 is separate from the still-open owner/main-gateway prerequisite. Runtime/source tree
 is unchanged from the feature gates; no merged revision, release or deployment is claimed.
+
+
+## 2026-11-19 04:58 Pacific: H132 candidate qualification
+
+New managed worktree/unique feature branch from fetched `2ead42723fb5075c32d24602e1c8b891eb8dd45e`;
+primary untouched. Reconciled completed PR196/198/199 and incomplete 2.40.0 release;
+PR197 is independently owned. Select required captured study text so contextual
+learning can retain complete nearby qualifications or stop before provider work.
+Both planning phases, baseline/candidate methods and limitations are in the
+[evaluation](evaluations/2026-11-19-complete-context-text.md). Private pure packet
+availability improves zero to 52 retained long rows across 48 affected anchors,
+zero provider calls; no semantic fidelity or new trait claim. All six candidate
+gates pass 2,352tests/96.14%,46typedmodules/packages. Actual installed pre-release
+private synthetic care handler posts one 10-word answer in 9.506 seconds, no learning
+intake; synthetic dispatch is not an owner/main-gateway event. Browser inventory
+fails request-header policy loading, leaving owner/main-gateway verification open.
+Publication, exact merged gates, image, installed acceptance and final health pending.

@@ -274,7 +274,9 @@ _CONTEXT_ROW_BYTES = 600
 _EXACT_SOURCE_BYTES = 4_000
 
 
-def _fit_context(study: Study, *, require_all_sources: bool = False) -> Study:
+def _fit_context(
+    study: Study, *, require_all_sources: bool = False, require_context_text: bool = False
+) -> Study:
     """Keep whole anonymous context rows, balanced across the admitted sources."""
     pools = [p["adjacent_context"] for p in study.passages]
     passages = [
@@ -286,6 +288,24 @@ def _fit_context(study: Study, *, require_all_sources: bool = False) -> Study:
     def size() -> int:
         packet = Study(study.token, snapshots, passages, study.native_context)
         return study_request_size(_EXTRACT, {"sources": passages}, extraction_schema(packet))
+
+    if require_context_text:
+        # Deliberate studies can require all captured setup text. Never certify a
+        # previously packed subset or imply missing pixels/full history exist.
+        if any(
+            p.get("context_omitted", 0)
+            or any("omitted for size" in gap for gap in p.get("context_gaps", []))
+            or any(row.get("text_truncated", False) for row in pool)
+            or any(len(row["text"].encode("utf-8")) > _EXACT_SOURCE_BYTES for row in pool)
+            for p, pool in zip(study.passages, pools, strict=True)
+        ):
+            raise StudyContextExceeded("Complete captured context text exceeds the row bound")
+        for passage, pool in zip(passages, pools, strict=True):
+            passage["adjacent_context"] = sorted(pool, key=lambda row: row["offset"])
+            passage["context_omitted"] = 0
+        if size() > _CONTEXT_ENVELOPE:
+            raise StudyContextExceeded("Complete captured context text exceeds the request bound")
+        return Study(study.token, snapshots, passages, study.native_context)
 
     # Only related candidates are removed, before any proposal exists. Keep the
     # anchor and source_index ordering intact, and never shorten authored support.
@@ -416,9 +436,14 @@ class StudyStore:
         channel_ids: frozenset[int],
         anchor_ref: dict[str, Any] | None = None,
         episode_refs: list[dict[str, Any]] | None = None,
+        require_context_text: bool = False,
     ) -> Study | None:
         return self.select(
-            now=now, channel_ids=channel_ids, anchor_ref=anchor_ref, episode_refs=episode_refs
+            now=now,
+            channel_ids=channel_ids,
+            anchor_ref=anchor_ref,
+            episode_refs=episode_refs,
+            require_context_text=require_context_text,
         ).study
 
     def select(
@@ -428,7 +453,10 @@ class StudyStore:
         channel_ids: frozenset[int],
         anchor_ref: dict[str, Any] | None = None,
         episode_refs: list[dict[str, Any]] | None = None,
+        require_context_text: bool = False,
     ) -> StudySelection:
+        if require_context_text and episode_refs is None:
+            raise LearningUnavailable("Complete context text requires exact episode selectors")
         if episode_refs is not None and anchor_ref is not None:
             raise LearningUnavailable("Choose one trusted study selector")
         requested = _episode_keys(episode_refs) if episode_refs is not None else None
@@ -600,6 +628,7 @@ class StudyStore:
             study = _fit_context(
                 Study(token, [snapshots[i] for i in selected], passages),
                 require_all_sources=exact is not None,
+                require_context_text=require_context_text,
             )
             db.execute(
                 "INSERT OR REPLACE INTO checkpoints VALUES ('distillation', ?)",
@@ -857,6 +886,7 @@ class GraphDistiller:
         *,
         anchor_ref: dict[str, Any] | None = None,
         episode_refs: list[dict[str, Any]] | None = None,
+        require_context_text: bool = False,
     ) -> Literal["accepted", "rejected", "insufficient"] | None:
         if not self.ingestor.verified:
             logger.debug("Graph study skipped reason=verification_pending")
@@ -894,6 +924,7 @@ class GraphDistiller:
                 channel_ids=self.ingestor.channel_ids,
                 anchor_ref=anchor_ref,
                 episode_refs=episode_refs,
+                require_context_text=require_context_text,
             )
             selected_study = selection.study
             if selected_study is None:
@@ -1011,6 +1042,7 @@ class GraphDistiller:
                         ],
                     ),
                     require_all_sources=True,
+                    require_context_text=require_context_text,
                 )
             stage = "extraction"
             requests += 1
