@@ -209,10 +209,34 @@ async def inspect_channel(
     allowed_channel_ids: frozenset[int],
     refs: list[dict[str, Any]],
     limit: int = 4,
+    focus_message_ids: Sequence[int] | None = None,
 ) -> dict[str, Any]:
-    """Authenticated operator path; never starts a gateway or writes to Discord."""
-    if client.user is None or not 1 <= limit <= 4 or not 1 <= len(refs) <= 6:
+    """Read-only operator path; explicit focuses keep fixtures out of matched audits.
+
+    The caller selects actual response IDs from private experiment receipts. Bot
+    authorship alone cannot distinguish a synthetic input from a generated reply.
+    Unspecified selection retains the latest-bot sampling behavior.
+    """
+    if (
+        client.user is None
+        or type(limit) is not int
+        or not 1 <= limit <= 4
+        or not 1 <= len(refs) <= 6
+    ):
         raise CharacterAuditUnavailable("Bounded audit selection required")
+    if focus_message_ids is not None and (
+        not isinstance(focus_message_ids, (tuple, list))
+        or not 1 <= len(focus_message_ids) <= limit
+        or any(
+            type(identifier) is not int or not 0 < identifier < 2**64
+            for identifier in focus_message_ids
+        )
+        or len(set(focus_message_ids)) != len(focus_message_ids)
+    ):
+        raise CharacterAuditUnavailable("Distinct bounded bot focus IDs required")
+    if focus_message_ids is not None:
+        focus_message_ids = tuple(focus_message_ids)
+    bot_id = client.user.id
     if any(ref.get("kind") != "slack" for ref in refs):
         raise CharacterAuditUnavailable("Historical audit references required")
     _ensure_identity(ingestor)
@@ -269,18 +293,10 @@ async def inspect_channel(
         )
         for window in windows
     ]
-    rows = [row async for row in channel.history(limit=40)]
-    rows.reverse()
-    selected = [
-        i
-        for i, row in enumerate(rows)
-        if row.author.id == client.user.id and row.webhook_id is None
-    ][-limit:]
-    if not selected:
-        raise CharacterAuditUnavailable("Recent bot focus required")
-    cases, mappings, snapshots = [], [], {}
-    for i in selected:
-        neighbors = rows[max(0, i - 2) : i + 2]
+    samples = await _samples(channel, client.user.id, limit, focus_message_ids)
+    cases, mappings = [], []
+    snapshots: dict[int, tuple[Any, ...]] = {}
+    for focus, neighbors in samples:
         cases.append(
             AuditCase(
                 tuple(
@@ -296,28 +312,51 @@ async def inspect_channel(
                     )
                     for row in neighbors
                 ),
-                neighbors.index(rows[i]),
+                neighbors.index(focus),
                 development,
             )
         )
-        mappings.append({"channel_id": channel.id, "message_id": rows[i].id})
-        snapshots.update({row.id: _message_stamp(row) for row in neighbors})
+        mappings.append({"channel_id": channel.id, "message_id": focus.id})
+        for row in neighbors:
+            if not _same_channel(row, channel):
+                raise CharacterAuditUnavailable("Audit conversation scope changed")
+            stamp = _message_stamp(row)
+            if row.id in snapshots and snapshots[row.id] != stamp:
+                raise CharacterAuditUnavailable("Current conversation changed")
+            snapshots[row.id] = stamp
 
     async def current() -> None:
         _ensure_identity(ingestor)
         await ingestor.verify_member(client)
+        fresh_guild = await client.fetch_guild(channel.guild.id, with_counts=True)
+        if fresh_guild.id != channel.guild.id:
+            raise CharacterAuditUnavailable("Audit conversation scope changed")
+        fresh_bot = await fresh_guild.fetch_member(bot_id)
         if development:
-            fresh_dev = await client.fetch_guild(development_guild_id, with_counts=True)
             if (
-                fresh_dev.approximate_member_count != 2
-                or fresh_dev.owner_id != channel.guild.owner_id
+                fresh_guild.approximate_member_count != 2
+                or fresh_guild.owner_id is None
+                or fresh_guild.owner_id != channel.guild.owner_id
+                or not fresh_bot.bot
             ):
                 raise CharacterAuditUnavailable("Private development membership changed")
+            fresh_owner = await fresh_guild.fetch_member(fresh_guild.owner_id)
+            if fresh_owner.bot:
+                raise CharacterAuditUnavailable("Private development membership changed")
+        fresh_channel = await fresh_guild.fetch_channel(channel.id)
+        if (
+            not isinstance(fresh_channel, discord.TextChannel)
+            or fresh_channel.guild.id != channel.guild.id
+            or fresh_channel.id != channel.id
+            or not fresh_channel.permissions_for(fresh_bot).view_channel
+            or not fresh_channel.permissions_for(fresh_bot).read_message_history
+        ):
+            raise CharacterAuditUnavailable("Current channel history permission required")
         for ref, window in zip(refs, windows, strict=True):
             if archive.context(ref["document"], ref["ordinal"], radius=1) != window:
                 raise CharacterAuditUnavailable("Historical context changed")
         for identifier, stamp in snapshots.items():
-            if _message_stamp(await channel.fetch_message(identifier)) != stamp:
+            if _message_stamp(await fresh_channel.fetch_message(identifier)) != stamp:
                 raise CharacterAuditUnavailable("Current conversation changed")
         _ensure_identity(ingestor)
 
@@ -329,13 +368,84 @@ async def inspect_channel(
         "source_refs": refs,
         "gateway_started": False,
         "discord_writes": 0,
-        "coverage": "latest40posts;two preceding/one following;no reply-target fetch or pixels",
+        "selection": "explicit_bot_turns" if focus_message_ids is not None else "latest_bot_turns",
+        "context_message_counts": {
+            f"case_{i}": len(neighbors) for i, (_, neighbors) in enumerate(samples, 1)
+        },
+        "coverage": (
+            "explicit focuses;bounded adjacency;two preceding/one following;"
+            if focus_message_ids is not None
+            else "latest40posts;two preceding/one following;"
+        )
+        + "setup may be missing;no reply-target fetch or pixels",
     }
+
+
+def _same_channel(message: discord.Message, channel: discord.TextChannel) -> bool:
+    return (
+        message.channel.id == channel.id
+        and message.guild is not None
+        and message.guild.id == channel.guild.id
+    )
+
+
+async def _samples(
+    channel: discord.TextChannel,
+    bot_id: int,
+    limit: int,
+    focus_message_ids: Sequence[int] | None,
+) -> list[tuple[discord.Message, list[discord.Message]]]:
+    if focus_message_ids is None:
+        rows = [row async for row in channel.history(limit=40)]
+        rows.reverse()
+        samples = [
+            (row, rows[max(0, i - 2) : i + 2])
+            for i, row in enumerate(rows)
+            if row.author.id == bot_id and row.webhook_id is None
+        ][-limit:]
+        if not samples:
+            raise CharacterAuditUnavailable("Recent bot focus required")
+        return samples
+    samples = []
+    try:
+        for identifier in focus_message_ids:
+            focus = await channel.fetch_message(identifier)
+            if (
+                focus.id != identifier
+                or focus.author.id != bot_id
+                or not focus.author.bot
+                or focus.webhook_id is not None
+                or not _same_channel(focus, channel)
+            ):
+                raise CharacterAuditUnavailable("Selected bot focus unavailable")
+            rows = [
+                row async for row in channel.history(limit=5, around=discord.Object(id=identifier))
+            ]
+            if any(not _same_channel(row, channel) for row in rows) or len(
+                {row.id for row in rows}
+            ) != len(rows):
+                raise CharacterAuditUnavailable("Audit conversation scope changed")
+            if any(
+                row.id == identifier and _message_stamp(row) != _message_stamp(focus)
+                for row in rows
+            ):
+                raise CharacterAuditUnavailable("Current conversation changed")
+            before = sorted((row for row in rows if row.id < identifier), key=lambda row: row.id)[
+                -2:
+            ]
+            after = sorted((row for row in rows if row.id > identifier), key=lambda row: row.id)[:1]
+            samples.append((focus, [*before, focus, *after]))
+    except Exception:
+        raise CharacterAuditUnavailable("Selected audit conversation unavailable") from None
+    return samples
 
 
 def _message_stamp(message: discord.Message) -> tuple[Any, ...]:
     """Full ephemeral content equality, never included in receipts or logs."""
     return (
+        message.id,
+        message.channel.id,
+        message.guild.id if message.guild else None,
         message.content,
         message.author.id,
         message.author.bot,

@@ -205,6 +205,7 @@ def inspection():
     def message(identifier, author, bot, content):
         return SimpleNamespace(
             id=identifier,
+            channel=channel,
             guild=guild,
             author=SimpleNamespace(id=author, bot=bot),
             content=content,
@@ -222,7 +223,8 @@ def inspection():
     ]
 
     async def history(**kwargs):
-        assert kwargs == {"limit": 40}
+        if kwargs != {"limit": 40}:
+            assert kwargs["limit"] == 5 and kwargs["around"].id == 2
         for row in reversed(rows):
             yield row
 
@@ -386,5 +388,183 @@ async def test_private_permissions_use_full_authenticated_guild_roles(inspection
     i.client.fetch_channel.return_value = partial
     receipt = await i.call()
     assert receipt["reviewed_cases"] == 1
-    i.guild.fetch_channel.assert_awaited_once_with(10)
+    assert i.guild.fetch_channel.await_count == 3
+    assert all(call.args == (10,) for call in i.guild.fetch_channel.await_args_list)
     partial.history.assert_not_called()
+
+
+async def test_explicit_focus_ignores_newer_bot_fixtures_and_reads_older_complete_setup(inspection):
+    from copy import deepcopy
+
+    i = inspection
+    older = deepcopy(i.rows)
+    for row in older:
+        row.channel, row.guild = i.channel, i.guild
+    older[0].id, older[1].id, older[2].id = 11, 12, 13
+    older[0].content = "Complete setup, including the final qualification."
+    i.rows[1].id = 999
+    i.rows[1].content = "A newer bot-authored synthetic test input."
+    reads = []
+
+    async def history(**kwargs):
+        reads.append(kwargs)
+        assert kwargs["limit"] == 5 and kwargs["around"].id == 12
+        for row in reversed(older):
+            yield row
+
+    i.channel.history = history
+    i.channel.fetch_message.side_effect = lambda identifier: next(
+        row for row in older + i.rows if row.id == identifier
+    )
+    i.kwargs["focus_message_ids"] = (12,)
+    receipt = await i.call()
+    assert receipt["message_refs"]["case_1"]["message_id"] == 12
+    assert receipt["selection"] == "explicit_bot_turns"
+    assert len(reads) == 1
+    case = i.responder.study_json.call_args.kwargs["payload"]["cases"]["case_1"]
+    assert case["focus"] == 1
+    assert case["messages"][0]["text"].endswith("the final qualification.")
+    assert all("newer bot-authored" not in row["text"] for row in case["messages"])
+
+
+@pytest.mark.parametrize(
+    "selection",
+    [(), (2,) * 2, (1, 2, 3, 4, 5), (True,), ("2",), (0,), (-1,), (2**64,), "2", 2, {2}],
+)
+async def test_invalid_explicit_selection_stops_before_discord_and_provider(inspection, selection):
+    i = inspection
+    i.kwargs["focus_message_ids"] = selection
+    with pytest.raises(CharacterAuditUnavailable):
+        await i.call()
+    i.client.fetch_guild.assert_not_awaited()
+    i.responder.study_json.assert_not_awaited()
+
+
+@pytest.mark.parametrize("fault", ["human", "webhook", "wrong_id", "channel", "guild", "missing"])
+async def test_selected_focus_must_be_an_actual_bot_message_in_this_channel(inspection, fault):
+    from copy import copy
+
+    i = inspection
+    focus = copy(i.rows[1])
+    i.kwargs["focus_message_ids"] = (2,)
+    if fault == "human":
+        focus.author = copy(focus.author)
+        focus.author.bot = False
+    elif fault == "webhook":
+        focus.webhook_id = 7
+    elif fault == "wrong_id":
+        focus.id = 8
+    elif fault in {"channel", "guild"}:
+        value = copy(getattr(focus, fault))
+        value.id = 77
+        setattr(focus, fault, value)
+    else:
+        i.channel.fetch_message.side_effect = RuntimeError("PRIVATE_SENTINEL")
+    if fault != "missing":
+        i.channel.fetch_message.side_effect = None
+        i.channel.fetch_message.return_value = focus
+    with pytest.raises(CharacterAuditUnavailable) as error:
+        await i.call()
+    assert "PRIVATE_SENTINEL" not in str(error.value)
+    assert error.value.__suppress_context__
+    i.responder.study_json.assert_not_awaited()
+
+
+async def test_explicit_context_keeps_only_two_before_one_after_in_time_order(inspection):
+    from copy import copy
+
+    i = inspection
+    rows = []
+    for identifier in range(1, 6):
+        row = copy(i.rows[1])
+        row.id, row.content = identifier, f"Complete message {identifier}."
+        rows.append(row)
+    i.kwargs["focus_message_ids"] = [3, 2]
+
+    async def history(**kwargs):
+        for row in reversed(rows):
+            yield row
+
+    i.channel.history = history
+    i.channel.fetch_message.side_effect = lambda identifier: rows[identifier - 1]
+    i.responder.study_json.return_value = review()
+    receipt = await i.call()
+    assert [r["message_id"] for r in receipt["message_refs"].values()] == [3, 2]
+    assert receipt["context_message_counts"] == {"case_1": 4, "case_2": 3}
+    cases = i.responder.study_json.call_args.kwargs["payload"]["cases"]
+    assert [r["text"] for r in cases["case_1"]["messages"]] == [
+        f"Complete message {n}." for n in (1, 2, 3, 4)
+    ]
+    assert [r["text"] for r in cases["case_2"]["messages"]] == [
+        f"Complete message {n}." for n in (1, 2, 3)
+    ]
+
+
+@pytest.mark.parametrize("fault", ["changed_focus", "foreign_setup", "duplicate", "oversized"])
+async def test_incomplete_or_changed_selected_context_stops_review(inspection, fault):
+    from copy import copy
+
+    i = inspection
+    i.kwargs["focus_message_ids"] = (2,)
+    rows = [copy(row) for row in i.rows]
+    if fault == "changed_focus":
+        rows[1].content = "A different final qualification."
+    elif fault == "foreign_setup":
+        rows[0].guild = copy(rows[0].guild)
+        rows[0].guild.id = 90
+    elif fault == "duplicate":
+        rows.append(rows[0])
+    else:
+        rows[0].content = "x" * 6001
+
+    async def history(**kwargs):
+        for row in reversed(rows):
+            yield row
+
+    i.channel.history = history
+    with pytest.raises(CharacterAuditUnavailable):
+        await i.call()
+    i.responder.study_json.assert_not_awaited()
+
+
+@pytest.mark.parametrize("stage", ["before", "after"])
+async def test_fresh_permission_loss_discards_selected_review(inspection, stage):
+    from copy import copy
+
+    i = inspection
+    i.kwargs["focus_message_ids"] = (2,)
+    revoked = copy(i.channel)
+    revoked.permissions_for = lambda member: type(
+        "Permissions", (), {"view_channel": True, "read_message_history": False}
+    )()
+    i.guild.fetch_channel.side_effect = (
+        [i.channel, revoked] if stage == "before" else [i.channel, i.channel, revoked]
+    )
+    with pytest.raises(CharacterAuditUnavailable):
+        await i.call()
+    assert i.responder.study_json.await_count == (0 if stage == "before" else 1)
+
+
+@pytest.mark.parametrize("fault", ["edit", "delete", "withdrawal", "reference_scope"])
+async def test_selected_source_change_during_review_never_returns_grades(inspection, fault):
+    from types import SimpleNamespace
+
+    i = inspection
+    i.kwargs["focus_message_ids"] = (2,)
+
+    async def review_then_change(**kwargs):
+        if fault == "edit":
+            i.rows[0].content = "Changed setup after review."
+        elif fault == "delete":
+            i.channel.fetch_message.side_effect = RuntimeError("PRIVATE_SENTINEL")
+        elif fault == "withdrawal":
+            i.ingestor.store.identity.return_value = None
+        else:
+            i.rows[1].guild = SimpleNamespace(id=90)
+        return {"case_1": dict.fromkeys(FLAGS, False)}
+
+    i.responder.study_json.side_effect = review_then_change
+    with pytest.raises(CharacterAuditUnavailable) as error:
+        await i.call()
+    assert "PRIVATE_SENTINEL" not in str(error.value)
+    i.responder.study_json.assert_awaited_once()

@@ -1,3 +1,39 @@
+# Current priorities, 2026-11-18 focused audit run
+
+H130b adds deliberate, bounded response selection to private character audits so
+synthetic bot inputs do not replace intended experimental answers. This is enabling
+research work; normal reply behavior and human fidelity are unchanged. H130a linked
+setup is unvalidated: this fresh sample has no explicit references. Historical
+coverage remains4,299 grouped blocks/405 eligible target/seven ambiguous target;
+three attributed windows are coverage, not new traits or semantic qualification.
+
+1. Complete H130b qualification, protected merge and immutable installation with
+   exact-focus/source/permission/withdrawal controls and actual private-handler tests.
+   High confidence in the selection defect; broader character benefit unresolved.
+   No normal-reply cost; bounded extra reads only for an explicit operator audit.
+2. Reconcile independently owned H129/control-marker repair and resumable smoke
+   recovery. Preserve their unique tests and publication ownership; avoid duplicates.
+3. H121/H120 useful relation-preserving episodes and abstractions, then H125 varied
+   comic mechanisms with emotion/recipient controls. Require attributed supports,
+   contrary cases, complete setup, qualified private semantic review and matched
+   held-outs plus real engagement. No new native-pattern permission or population.
+4. Useful linked native/visual coverage and seasonal variety after measured utility.
+   Preserve generated Michigan U.P. northern-lights/trail-camera scenes, short natural
+   captions and selective tools. H96 sightings remain closed without qualified feeds.
+
+Fresh development latest40 is entirely bot-authored test traffic, with eight exact
+repetitions. Latest300 league posts have26 bot posts; seven-day activity has two
+human-target/four bot posts. Do not infer style frequency or spontaneity from tests.
+Pixels, new semantic human comparison and route attribution remain gaps. Private
+external scoring rejection is respected. Chrome fails before Discord navigation;
+native Mac is locked. Authorized synthetic live-handler smoke is distinct from
+human/main-gateway proof. No general quality claim follows from health or counts.
+
+Existing provenance/corrections/withdrawal, allowlists/no DMs,18/2/20guard and six
+local01/05/09/13/17/21Sol/xhigh standalone runs/notifications remain authoritative.
+Grounding/privacy/delivery failures or contrary sample-validity evidence can reorder
+these priorities. [Protocol and results](evaluations/2026-11-18-focused-audits.md). Older snapshots are historical.
+
 # Current priorities, reconciled 2026-11-04 UTC
 
 H126 is complete in the validated 2.38.14 release. Archive context preserves

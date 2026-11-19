@@ -1,3 +1,11 @@
+## Deliberate character-audit samples, candidate2.39.0
+
+Private operator studies can select exact recorded bot responses and their bounded
+nearby setup. This prevents newer bot-authored test inputs from replacing intended
+responses in matched experiments. Normal replies retain their behavior. This is
+research support, without a measured character-fidelity claim.
+[Qualification](docs/trubot-evolution/evaluations/2026-11-18-focused-audits.md).
+
 ## Short requested joke repairs, 2.38.15
 
 An explicit different-joke request can refresh an identical short punchline through

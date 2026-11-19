@@ -1,3 +1,14 @@
+# 2026-11-18: H130 deliberate audit samples
+
+Phase1 confirms development-test saturation and reproduces inability to target an
+older response. H130b explicit response selection is enabling work so controlled
+inputs cannot silently replace intended answers. H130a reply-link expansion remains
+unvalidated after zero explicit references in the sampled four focuses per scope.
+No new semantic human observation or fidelity gain. Phase2 prioritizes this bounded
+operator API alongside independently owned H129/smoke recovery, then H121/H120,
+H125 and useful native/visual/seasonal coverage. Existing source and spending gates
+remain. [Predeclared protocol and actual results](evaluations/2026-11-18-focused-audits.md).
+
 # 2026-11-03: H128a short requested copies
 
 The combined semantic-novelty hypothesis fails two six-case trials. Reject its

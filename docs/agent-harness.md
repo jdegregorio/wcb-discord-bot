@@ -1,3 +1,21 @@
+# Deliberate private audit sampling, candidate2.39.0
+
+`inspect_channel(..., focus_message_ids=(answer_id, ...))` accepts one to four
+unique bot response IDs from trusted private experiment receipts. Each exact focus
+receives bounded same-channel setup (two preceding/one following), complete text
+and existing separate attributed human windows. It cannot certify whether a bot
+post was a test input; the operator must select recorded response IDs. Omitted IDs
+retain legacy latest40 sampling. Fresh authenticated permissions, membership,
+source equality and withdrawal gate both review boundaries. No gateway, Discord
+write, learning, normal-reply context or extra provider turn is introduced.
+
+H130b enables valid matched studies, without semantic fidelity claims. Current
+priority is deliberate sampling and independently owned H129/smoke recovery, then
+H121/H120 useful abstractions, H125 emotional/amplified-humor qualification, useful
+linked visual/native coverage and seasonal variety. Preserve generated U.P. scenes,
+selective tools, source lifecycle and the existing18/2/20guard.
+[Evidence](trubot-evolution/evaluations/2026-11-18-focused-audits.md).
+
 # Current priorities, reconciled 2026-11-04 UTC
 
 H126 is complete in the validated 2.38.14 release. Archive context preserves
