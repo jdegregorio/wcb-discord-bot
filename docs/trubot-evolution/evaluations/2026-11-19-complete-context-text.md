@@ -55,3 +55,70 @@ runs, notification preference, allowlists/no DMs, privacy, withdrawal and USD18/
 ## Results
 
 Pending qualification; baseline/candidate and installed outcomes recorded below.
+
+
+## Installed completion, 2026-11-19
+
+[PR201](https://github.com/jdegregorio/wcb-discord-bot/pull/201) merged normally at
+`97fffdb9b78d3c349c27874c4e35bf2b0bfe1516` after required
+[CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44534451606).
+All six exact merged gates pass: 2,352 tests/96.14%,46 typed modules,wheel/sdist;
+[main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44534884116)
+also passes. Immutable [v2.40.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.40.1)
+points at that commit. The [amd64/arm64 image build](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44535212436)
+passes before locked Pi5 deployment. Actual running digest:
+`sha256:0691804b855dde9bbd01b324c33ddc166574bf423ce6c9d4b2383b8bcb0b51d6`.
+All 46 installed module hashes match. Previous 2.39.1/digest `ee9bdb6d9604` remains
+the rollback boundary; no rollback was required. No source/spending state was restored.
+
+Installed disposable synthetic study: full 805-byte setup in two identical packets,
+proposed preference rejected, known omissions refused, no provider calls, stores
+erased. Installed private pure packet comparison again retains all 52 long rows
+across all 48 affected anchors. Installed CLI exposes the opt-in flag. This is
+validated maintenance evidence availability; no actual model-semantic study or new
+personal abstraction/population/fidelity gain is claimed. Graph status freshly
+confirms one claim/zero abstraction nodes, two insufficient/six rejected studies.
+
+Actual private-development synthetic reaction-handler sends/readbacks: fictional
+preference rejection 11 words/4.000 seconds; care 12 words/4.671 seconds; requested
+humor 19 words/3.954 seconds. Scope/membership verified fresh, learning intake false,
+learning count unchanged, all auxiliary clients closed. Narrow one-agent review:
+qualification rejection and requested on-topic humor pass, no visible storage
+language. Care is PARTIAL: sympathetic content begins by evaluating an earlier
+response rather than speaking directly to the fictional manager. Do not count it
+as a naturalness pass. These are bot-authored probes/synthetic owner dispatches,
+not human messages, owner reactions or main-gateway events. Real transport/provider
+and production handlers are unmocked. The study acceptance itself uses installed
+maintenance code, not a new gateway study command. Browser inventory fails policy
+loading and Chrome creation fails undefined timeoutMs before any owner probe.
+Owner/main-gateway verification remains open; no user tokens were extracted.
+
+H133 is a new exploratory recipient/focus control, not a shipped behavioral change:
+observed evaluative care opener in one bot-heavy synthetic context; cause unresolved.
+Hypothesis: role/history contamination can turn a direct supportive answer into
+feedback on a prior answer. Expected benefit is direct emotional engagement, so a
+manager receives support instead of commentary. Acceptance: reproduce on matched
+same-context baseline/candidate and independent care setups; preserve sincere tone,
+brevity, recipient abstention, humor and source boundaries. Disconfirm if the cause
+is harness-only or repeated matched baselines do not reproduce it. Next experiment
+must separate synthetic-envelope effects from ordinary gateway behavior before
+changing runtime. One post sample with different context cannot establish a causal
+regression from this maintenance-only change. Fresh human comparison is still missing.
+
+Post audit repeats the same bounded structural coverage, 40/40 bot development rows,
+nine duplicates and no fixed storage-language matches; league 300/26bot/two duplicate
+turns, seven-day two target/four bot. Counts alone are not naturalness judgments.
+After ALL auxiliary closure, health exits0, main heartbeat exists/17.9seconds old,
+read-only/zero restarts/OOMfalse; last20minutes11logrows/zeroERROR/Traceback. Timer
+active/enabled. November ledger USD0.351874715 estimated,257attempts,21unsettled;
+USD0.208215975 runtime/0.143658740 maintenance,18/2/20guard unchanged. Observed
+aggregate increase USD0.002348065 is not an audited run cost or invoice. Four own
+synthetic reply smokes, zero private-provider audits or study-provider calls; no new
+service or normal-reply request. Content-free private receipts retain app-volume
+0700/0600 and existing seven-day manual retention/withdrawal cleanup.
+
+Next: useful qualified H121/H120 relation-preserving abstractions, with H133 matched
+recipient/focus controls before behavioral rollout; H125 semantic comic variety and
+emotion/original views; useful native/visual/seasonal coverage. Preserve generated
+U.P. aurora/trail-camera scenes, short captions, selective skills/tools and closed
+unqualified sightings. No model, cadence, privacy, source scope or budget changes.

@@ -3529,3 +3529,12 @@ test exposed upstream 600-byte omissions; strict mode now refuses that known siz
 gap. No native capture expansion. Prior private semantic transfer restrictions
 remain; fresh semantic human comparison/new trait/population/fidelity are unqualified.
 H121/H120 useful abstractions then H125 semantic humor/emotion remain next.
+
+
+H132 installed qualification is complete on v2.40.1/digest0691804b855d. Both exact
+merged gates and image workflow pass; installed 46-module hashes and two-pass synthetic
+study/48-anchor packet probes pass. Actual private fictional-preference/humor replies
+pass narrowly; care is PARTIAL due to an evaluative opener. New exploratory H133 must
+separate bot-heavy harness contamination from ordinary gateway behavior with matched
+baselines before a runtime correction. No semantic human comparison/new trait/fidelity
+claim. Complete release, spending, health and limitations are in the H132 evaluation.
