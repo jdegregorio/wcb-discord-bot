@@ -960,7 +960,12 @@ class GraphDistiller:
                 # Local snapshots cannot detect a missed gateway edit during a
                 # provider call. Reread the original cohort before each of two
                 # maintenance attempts, then before the locked commit.
-                async with asyncio.timeout(6):
+                # A complete cohort may contain six native sources, each with its
+                # own bounded fresh read. One source's allowance must not become
+                # the deadline for the whole serial cohort. Historical-only
+                # validation retains the original six-second bound.
+                native_count = sum(s["ref"]["kind"] == "discord" for s in study.snapshots)
+                async with asyncio.timeout(6 * max(1, native_count)):
                     for snapshot in study.snapshots:
                         stage = "source_validation"
                         if (

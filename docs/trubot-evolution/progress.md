@@ -1,3 +1,13 @@
+# 2026-11-19run1300: H135 study verification deadline
+
+New managed worktree/basef006e261; primary untouched. Both planning phases select
+source-count-sized verification while retaining each source's limits and complete
+freshness/pacing controls. Exact baseline2expected failures/1control pass;
+candidate3/3. Actual six-source timing probes support cumulative deadline loss;
+one individually over-four-second uncaptured read remains correctly unavailable.
+No provider research calls, new trait, abstraction or measured fidelity claim.
+Release/installed validation pending. [Full evidence](evaluations/2026-11-19-study-verification-budget.md).
+
 # 2026-11-18 complete selected study sources
 
 H-STUDY-FULLTEXT is a supported maintenance-input correction: exact selected

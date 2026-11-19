@@ -1,3 +1,12 @@
+# H135 source-cohort deadline, 2026-11-19run1300
+
+The installed six-source verifier has valid individual reads with cumulative
+passes6.670/6.877seconds. Exact-baseline timer replay fails two healthy cohorts;
+candidate passes, preserving stalled-source refusal and pacing. Supported enabling
+correction; no human trait, graph population or measured reply-quality gain.
+H121/H120 semantic abstraction and H125 comic/emotional utility remain unresolved.
+[Both phases, hypotheses, contrary case and limits](evaluations/2026-11-19-study-verification-budget.md).
+
 # 2026-11-19 09:00: H134 bot-text focus attribution
 
 Installed handler capture reproduces plain-text bot-source attribution loss.

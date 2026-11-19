@@ -1,3 +1,11 @@
+## Complete bounded learning checks,2.40.3
+
+A study cohort gets a deadline sized to its native source count while every
+individual source keeps its existing timeout and freshness checks. This prevents
+healthy serial checks from sharing one source's six-second allowance. Learning
+pacing, independent review and the monthly spending guard remain authoritative.
+[Qualification](docs/trubot-evolution/evaluations/2026-11-19-study-verification-budget.md).
+
 ## Bot authorship in text reactions, 2.40.2
 
 Text reaction targets retain the same authenticated bot-source label as images.
