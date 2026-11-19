@@ -61,6 +61,52 @@ deployment and installed acceptance remain pending until independently verified.
 Next: H121/H120 useful connected abstractions with qualified semantic review,
 H125 semantic humor/emotion, then useful linked native/visual context. Preserve
 generated U.P. aurora/trail-camera scenes, selective tools and six scheduled runs.
+# H130b deployed and verified, 2026-11-19
+
+[PR198](https://github.com/jdegregorio/wcb-discord-bot/pull/198) merged normally after
+required Quality passed on bbbbe4f41ee5977909a9ab81b122706f27f56838. Tested merged commit
+caa005078d9520a3580bea183e3bc56c9b116219 also passes all six gates: 2,258 tests,
+96.11% coverage, 46 typed modules and packages. [Release v2.39.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.39.0)
+is immutable at that merge; [multi-architecture build44486098694](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44486098694)
+succeeds before the existing locked pi-app transaction deploys it.
+
+Installed digest:
+`sha256:1db2710f367a1aa16e39441d7a3533515f4f0fefdf4f728cb202f31a17b0cf08`.
+All46installed hashes match the tested release. Confirmed pi5/aarch64/Ubuntu24.04.4,
+healthy/read-only, zero restarts/OOM, heartbeat present age30.16seconds after all
+auxiliary closure, health command exit0 and release timer active/enabled. Previous
+healthy release2.38.15/digestcb857fa67873 retained through the transaction; no rollback.
+The sampled post-install20minute log window has11rows/zeroERROR/zeroTraceback.
+
+Selection correctness: one actual older response beyond latest40 is missed by
+baseline and selected with four context rows by candidate. One actual pre-install
+and one installed private synthetic care response pass narrow agent review;
+10words each,4.853/5.021seconds. Installed exact-answer audit capture retains the
+actual probe setup; zero audit provider calls. Pinned identity/private two-member
+allowed writable general verified. Development intake false and learning count
+unchanged. Neither a human event nor main-gateway response is claimed. Chrome
+fails before navigation, native Maclocked and IAB shows empty login credentials.
+No fresh semantic Andrew comparison, pixels, new trait, graph population or general
+fidelity gain. Provider-disabled capture flags are stubs and are never saved as grades.
+
+Post census:4,299grouped blocks/405eligible/sevenambiguous/threebounded windows;
+40development bot posts/seven exact repeats;300league posts/26bot,seven-daytwo target/
+fourbot. No fixed storage-language matches. Unequal grains, test saturation and
+sparse spontaneous activity limit interpretation. November ledger aggregate
+USD0.345168965estimated,240attempts/21unsettled,runtime0.208176350/
+maintenance0.136992615;18/2/20guard unchanged. This run makes two maintenance runtime
+smoke requests, zero audit/scorer calls and adds no ongoing normal-reply cost or
+service. Aggregate movement is not a precise run cost or invoice.
+
+[Both planning phases, acceptance and evidence](evaluations/2026-11-18-focused-audits.md)
+reconcile plan/backlog/ROADMAP/harness. Next: independently owned control-marker/
+smoke recovery, H121/H120 useful abstractions, H125 semantic humor/emotion, useful
+linked visual/native coverage and seasonal variety. Generated U.P. scenes and
+selective tools remain. Six-run schedule/model/notifications unchanged. Private
+content-free refs use app smoke-tests/2026-11-18-1700,0700/0600,seven-daymanual and
+correction/withdrawal cleanup. Scripts/gates/receipts are preserved privately before
+managed worktree cleanup. Earlier candidate notes below are historical.
+
 # 2026-11-18 17:00 run: H130b focused audits
 
 New managed worktree trubot-daily-20261118-1700, unique feature branch of the same

@@ -76,41 +76,42 @@ can reorder priorities. Counts alone do not justify new traits or graph populati
 Source withdrawal, allowlist/no DMs, USD18runtime/2maintenance/20total guard, six
 local01/05/09/13/17/21Sol/xhigh standalone runs and notifications remain unchanged.
 Older snapshots below are historical.
-# Current priorities, 2026-11-18 focused audit run
+# H130b completion record: deliberate audit samples, 2026-11-19
 
-H130b adds deliberate, bounded response selection to private character audits so
-synthetic bot inputs do not replace intended experimental answers. This is enabling
-research work; normal reply behavior and human fidelity are unchanged. H130a linked
-setup is unvalidated: this fresh sample has no explicit references. Historical
-coverage remains4,299 grouped blocks/405 eligible target/seven ambiguous target;
-three attributed windows are coverage, not new traits or semantic qualification.
+Version 2.39.0 was installed and verified from tested merged commit
+caa005078d9520a3580bea183e3bc56c9b116219 through
+[PR198](https://github.com/jdegregorio/wcb-discord-bot/pull/198). Deliberate response
+selection and fresh permission/source/withdrawal controls are validated enabling
+work. Normal replies and broader character fidelity are unchanged. The same older
+actual Discord response is missed by baseline sampling and selected by the candidate;
+installed exact-answer capture also passes. No fabricated capture flags are grades.
 
-1. Complete H130b qualification, protected merge and immutable installation with
-   exact-focus/source/permission/withdrawal controls and actual private-handler tests.
-   High confidence in the selection defect; broader character benefit unresolved.
-   No normal-reply cost; bounded extra reads only for an explicit operator audit.
-2. Reconcile independently owned H129/control-marker repair and resumable smoke
-   recovery. Preserve their unique tests and publication ownership; avoid duplicates.
-3. H121/H120 useful relation-preserving episodes and abstractions, then H125 varied
-   comic mechanisms with emotion/recipient controls. Require attributed supports,
-   contrary cases, complete setup, qualified private semantic review and matched
-   held-outs plus real engagement. No new native-pattern permission or population.
-4. Useful linked native/visual coverage and seasonal variety after measured utility.
+1. Complete independently owned H129/control-marker repair and resumable smoke
+   recovery. A reported visible control marker is a material delivery defect; its
+   owner retains reproduction/repair/qualification. Preserve new main/version2.39.0
+   when reconciling those releases. Do not duplicate their PRs or reuse release tags.
+2. H121/H120 useful relation-preserving episodes and abstractions, then H125 semantic
+   comic variety with emotion/recipient controls. Dependencies: attributed supports,
+   contrary episodes, complete setup and qualified private semantic review. Require
+   matched held-outs and actual useful engagement before behavioral rollout. Confidence
+   in prior relation-fusion defect high; useful remedy and semantic benefit unresolved.
+   Existing graph and maintenance allowance; estimate operating cost before rollout.
+3. Useful linked native/visual coverage and seasonal variety after measured utility.
    Preserve generated Michigan U.P. northern-lights/trail-camera scenes, short natural
-   captions and selective tools. H96 sightings remain closed without qualified feeds.
+   captions and selective skills/tools. Require actual pixels, lifecycle/permissions,
+   honest gaps and held-out utility. H96 sightings remain closed without qualified
+   observations; H130a linked-audit setup remains unvalidated after zero sample links.
 
-Fresh development latest40 is entirely bot-authored test traffic, with eight exact
-repetitions. Latest300 league posts have26 bot posts; seven-day activity has two
-human-target/four bot posts. Do not infer style frequency or spontaneity from tests.
-Pixels, new semantic human comparison and route attribution remain gaps. Private
-external scoring rejection is respected. Chrome fails before Discord navigation;
-native Mac is locked. Authorized synthetic live-handler smoke is distinct from
-human/main-gateway proof. No general quality claim follows from health or counts.
+The audit sample problem is corrected, so H130b leaves the active implementation
+queue. New privacy/grounding/delivery failures or failed matched experiments can
+reorder priorities. No new human trait or source/graph population. Fresh semantic
+Andrew comparison, pixels and human/main-gateway proof remain unavailable; IAB reaches
+an empty login form, Chrome fails before navigation and native Mac is locked.
+Authorized actual synthetic-handler Discord tests are reported separately.
 
-Existing provenance/corrections/withdrawal, allowlists/no DMs,18/2/20guard and six
-local01/05/09/13/17/21Sol/xhigh standalone runs/notifications remain authoritative.
-Grounding/privacy/delivery failures or contrary sample-validity evidence can reorder
-these priorities. [Protocol and results](evaluations/2026-11-18-focused-audits.md). Older snapshots are historical.
+Keep provenance/corrections/withdrawal, allowlists/no DMs, the 18/2/20 spending guard,
+six local01/05/09/13/17/21Sol/xhigh standalone runs and notification preferences.
+[Protocol and installed evidence](evaluations/2026-11-18-focused-audits.md). Older candidate snapshots below are historical.
 
 # Current priorities, reconciled 2026-11-04 UTC
 

@@ -74,7 +74,7 @@ can reorder priorities. Counts alone do not justify new traits or graph populati
 Source withdrawal, allowlist/no DMs, USD18runtime/2maintenance/20total guard, six
 local01/05/09/13/17/21Sol/xhigh standalone runs and notifications remain unchanged.
 Older snapshots below are historical.
-# Deliberate private audit sampling, candidate2.39.0
+# Deliberate private audit sampling, 2.39.0
 
 `inspect_channel(..., focus_message_ids=(answer_id, ...))` accepts one to four
 unique bot response IDs from trusted private experiment receipts. Each exact focus
