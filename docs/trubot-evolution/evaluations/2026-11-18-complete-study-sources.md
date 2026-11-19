@@ -116,3 +116,8 @@ A concurrent runtime correction now also targets2.39.1. To avoid reusing its
 immutable version, this selected-study capability moves to2.40.0. Prior2.39.1
 candidate gates remain evidence for identical source logic, not final-version
 qualification. Final2.40.0 and merged-main gates must pass before release.
+
+Protected merge initially refused because independent PR196 advanced main to46b67b9.
+Rebased this increment onto that merged2.39.1 runtime correction, preserving its
+source/tests and both documentation records. This run remains2.40.0. New combined
+feature gates and CI are required; no old-head success substitutes for them.

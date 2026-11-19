@@ -8,8 +8,8 @@ with no new trait, graph population or measured reply-quality claim. Automatic
 sampling, source lifecycle, pacing/cohort, native-pattern boundary and budget remain.
 
 1. Complete this maintenance increment through gates, protected CI, immutable release,
-   deployment and installed source/Discord checks. PR198 audit selection is independent;
-   do not overwrite PR197, the marker repair or draft PR196's unfinished acceptance.
+   deployment and installed source/Discord checks. PR198 audit selection and PR196
+   participation-control repair are merged and preserved. PR197 receipts are independent.
 2. H121/H120 useful relation-preserving episodes and abstractions, requiring attributed
    support/contraries, complete setup, independent held-outs and actual useful replies.
 3. H125 semantic comic variety with useful emotion and original views, then useful
