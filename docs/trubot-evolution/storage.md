@@ -1,3 +1,12 @@
+# H134 installed2.40.2, 2026-11-19
+
+Bot-text focus attribution is corrected without graph/schema/population or source
+scope changes. All46installedhashes match tested merge5385a13. Graphoneclaim,
+zeroqualifiedabstractions; useful relation-preserving abstraction utility is next.
+Content-free private receipts smoke-tests/2026-11-19-0900 retain0700/0600 and existing
+manual7day/withdrawalcleanup. Rollback preserves source and spending state.
+[Installed evidence and limitations](evaluations/2026-11-19-bot-text-focus.md).
+
 # Required captured context text, 2.40.1
 
 Run `trubot-study --episodes <private-manifest> --require-context-text` to require

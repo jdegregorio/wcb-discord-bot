@@ -2,6 +2,8 @@
 
 Actual installed reaction capture loses bot-source attribution on plain text.
 Baseline regressions:fivefail/onepass; candidate:sixpass within99totalpass.
+H134 is installed2.40.2/PR203: attribution3/3, all46sourcehashes and health pass.
+Installed care/preference controls pass; humor naturalness partial, no fidelitygain.
 H133 care baseline now passes, so its consistent-defect explanation is unresolved.
 H121/H120 semantic abstract utility remains unvalidated; no new trait or population.
 [Hypotheses, acceptance, both phases and outcomes](evaluations/2026-11-19-bot-text-focus.md).

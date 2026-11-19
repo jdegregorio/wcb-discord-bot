@@ -1,6 +1,6 @@
 # Current decision: bot-text focus attribution, 2026-11-19 09:00 run
 
-H134 corrects a reproduced handler boundary: plain-text bot reaction targets lose
+H134 is deployed as immutable2.40.2 and corrects a reproduced handler boundary: plain-text bot reaction targets lose
 the existing bot-source label that image targets retain. Preserve the complete
 conversion once, based on authenticated bot status, so generated words retain their
 evidence status even with a human-like display name. Ordinary human provider input
@@ -8,15 +8,13 @@ is byte-identical. This is a grounding correction, not a new human trait or meas
 empathy/humor gain. H133 care baseline now passes; its cause remains unresolved.
 PR197 remains independently owned. H132 is already deployed as2.40.1.
 
-1. Complete H134 protected publication and installed validation. Confidence high
-   in reproduced attribution loss; existing handler/responder and same spending guard.
-2. H121/H120 useful relation-preserving abstractions. Require complete attributed
+1. H121/H120 useful relation-preserving abstractions. Require complete attributed
    support/contrary episodes, qualified private semantic review, independent held-outs
    and actual useful replies. Need confidence high; semantic remedy unresolved.
-3. H125 semantic comic variety with emotion, original views and recipient restraint.
+2. H125 semantic comic variety with emotion, original views and recipient restraint.
    Require mechanism-level novelty, naturalness and care controls; repeated synthetic
    tests and exact-word novelty do not establish funniness or human fidelity.
-4. Useful linked native/visual coverage and seasonal variety after actual pixels,
+3. Useful linked native/visual coverage and seasonal variety after actual pixels,
    lifecycle checks and measured utility. Keep generated Michigan U.P. aurora and
    trail-camera scenes, short natural captions and selective skills/tools. Automatic
    sightings remain closed until observations qualify.
@@ -24,7 +22,8 @@ PR197 remains independently owned. H132 is already deployed as2.40.1.
 H134 adds no provider turn, model/policy, schema, graph population or service. Keep
 allowlists/no DMs, withdrawal and USD18runtime/2maintenance/20total guard, six local
 01/05/09/13/17/21 Sol/xhigh runs and notifications. New material defects or independently
-measured semantic benefit can reorder work. Owner/main-gateway verification is open.
+measured semantic benefit can reorder work. Installed attribution3/3 and source/health checks pass. Care and preference controls pass;
+installed humor naturalness is partial. Owner/main-gateway verification is open.
 
 [Both phases and validation](evaluations/2026-11-19-bot-text-focus.md). Older records below are historical.
 
