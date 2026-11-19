@@ -1,11 +1,11 @@
-# H134 installed2.40.2, 2026-11-19
+# H134 installed 2.40.2, 2026-11-19
 
 Bot-text focus attribution is corrected without graph/schema/population or source
-scope changes. All46installedhashes match tested merge5385a13. Graphoneclaim,
-zeroqualifiedabstractions; useful relation-preserving abstraction utility is next.
-Content-free private receipts smoke-tests/2026-11-19-0900 retain0700/0600 and existing
-manual7day/withdrawalcleanup. Rollback preserves source and spending state.
-[Installed evidence and limitations](evaluations/2026-11-19-bot-text-focus.md).
+scope changes. All 46 installed hashes match tested merge5385a13. The graph retains
+one claim and zero qualified abstractions; useful connected abstractions is next.
+Content-free receipts in smoke-tests/2026-11-19-0900 retain 0700/0600 permissions
+and existing seven-day manual retention/withdrawal cleanup. Rollback preserves
+source and spending state. [Evidence and limits](evaluations/2026-11-19-bot-text-focus.md).
 
 # 2026-10-21 installed 2.38.12
 

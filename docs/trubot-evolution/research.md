@@ -1,12 +1,13 @@
 # 2026-11-19 09:00: H134 bot-text focus attribution
 
-Actual installed reaction capture loses bot-source attribution on plain text.
-Baseline regressions:fivefail/onepass; candidate:sixpass within99totalpass.
-H134 is installed2.40.2/PR203: attribution3/3, all46sourcehashes and health pass.
-Installed care/preference controls pass; humor naturalness partial, no fidelitygain.
-H133 care baseline now passes, so its consistent-defect explanation is unresolved.
-H121/H120 semantic abstract utility remains unvalidated; no new trait or population.
-[Hypotheses, acceptance, both phases and outcomes](evaluations/2026-11-19-bot-text-focus.md).
+Installed handler capture reproduces plain-text bot-source attribution loss.
+Baseline: five intended regression failures and one human compatibility pass.
+Candidate: six new cases pass within 99 focused tests. Installed 2.40.2/PR203
+passes attribution3/3 and all 46 source hashes/health checks. Care and preference
+controls pass; humor naturalness is partial. H133's care baseline now passes,
+leaving its prior cause unresolved. H121/H120 semantic abstract utility remains
+unvalidated. No new human trait, graph population or general fidelity claim.
+[Both planning phases and installed outcome](evaluations/2026-11-19-bot-text-focus.md).
 
 # 2026-11-18 complete selected study sources
 
