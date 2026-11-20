@@ -1,3 +1,11 @@
+# H131 completed, 2026-11-19 17:00 run
+
+Protected PR197/main CI and all six exact merged gates pass, 2,386 tests.
+Three real private synthetic sends and retained-ID repeats pass; actual private
+app-volume hard exit is consumed with zero provider usage. This is enabling
+recovery, not measured fidelity. H133 has five direct-care passes and one third-person PARTIAL; the prior off-target
+failure does not recur. Humor remains partial. No new trait or abstraction. [Final evidence and roadmap](evaluations/2026-11-19-smoke-recovery.md).
+
 # 2026-11-19 17:00: H133 contrary controls and H131 recovery
 
 Two fictional care setups, three matched framing/history arms each: six caring
