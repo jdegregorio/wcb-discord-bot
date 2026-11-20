@@ -1,3 +1,12 @@
+## Durable private Discord smoke attempts
+
+Operators can run `scripts/discord_smoke.py` inside the existing app container.
+Each run/case claims a private receipt before network work and records exact send
+references. Reusing a retained ID reads its receipt without another client, paid
+call or post. Fixed fictional fixtures and verified private-development routing
+keep test data out of learning. Replay protection ends when receipts are removed;
+never reuse retired IDs. [Operations and limitations](docs/trubot-evolution/evaluations/2026-11-19-smoke-recovery.md).
+
 ## Complete bounded learning checks,2.40.3
 
 A study cohort gets a deadline sized to its native source count while every

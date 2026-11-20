@@ -1,3 +1,11 @@
+# 2026-11-19 17:00: H133 contrary controls and H131 recovery
+
+Two fictional care setups, three matched framing/history arms each: six caring
+answers, including two actual private Discord handler sends. The prior off-target
+failure does not reproduce consistently, so no behavioral patch qualifies. Recover
+unfinished durable-smoke PR197 instead of duplicating work. No new human trait or
+abstraction. [Both phases, methods, counts and limitations](evaluations/2026-11-19-smoke-recovery.md).
+
 # H135 complete source cohorts, 2026-11-19 run1300
 
 Released 2.40.3 corrects deterministic cumulative source timeout loss. Exact-baseline

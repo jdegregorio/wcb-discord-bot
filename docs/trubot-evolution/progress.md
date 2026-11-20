@@ -1,3 +1,13 @@
+# 2026-11-19 17:00 run: durable smoke recovery in qualification
+
+New managed worktree `trubot-daily-20261119-1700`, unique feature branch,
+base `c0c64ae9a62c7425171b5ec14e486d7b5f5bdb6a`; primary checkout untouched.
+Recover inactive PR197 / exact old head `6bd31899c6a5a2ec982729cc7aea1424b4a7b1b8`
+with current main's runtime and later documentation preserved. Both planning
+phases and fresh contrary care evidence precede selection. No new trait,
+semantic-fidelity gain or source population. Protected merge and installed
+acceptance are pending. [Protocol](evaluations/2026-11-19-smoke-recovery.md).
+
 # 2026-11-19 run 1300: 2.40.3 study verification deployed
 
 H135 ships through [PR205](https://github.com/jdegregorio/wcb-discord-bot/pull/205),
