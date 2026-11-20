@@ -1,7 +1,7 @@
 # Current decision: H136 deployed, 2026-11-19 21:00
 
-H136 ships as immutable2.41.0 after protectedPR208, exact-merged six gates,
-2,417tests/96.13%coverage, mainCI and amd64/arm64 image publication. All46installed
+H136 ships as immutable 2.41.0 after protected PR208, exact-merged six gates,
+2,417 tests / 96.13% coverage, main CI and amd64/arm64 image publication. All 46 installed
 hashes match; healthy/read-only and no short-window errors. Same-ID actual fictional
 Discord collection restores the distant target/link with zero provider calls.
 Care/attribution pass narrow synthetic review; comic payoff remains PARTIAL.
@@ -22,8 +22,8 @@ This is evidence capture, not a new trait, abstract population or measured fidel
 
 Material privacy/grounding/delivery defects or qualified semantic gains reorder
 work. Owner/main-gateway remains open at browser/login blockers. Preserve
-attribution, withdrawal, allowlist/no DMs, USD18/2/20 guard, six local
-01/05/09/13/17/21Sol/xhigh runs and notifications. Older entries are historical.
+attribution, withdrawal, allowlist/no DMs, USD 18/2/20 guard, six local
+01/05/09/13/17/21 Sol/xhigh runs and notifications. Older entries are historical.
 
 # Current decision: linked audit setup, 2026-11-19 21:00
 

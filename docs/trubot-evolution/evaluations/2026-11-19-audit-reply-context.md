@@ -125,16 +125,16 @@ source scoring, source corpus or qualified abstraction population change.
 without protection bypass, as `7116a542e039eb1e1fb1fd006c51cb0224e291c0`.
 [Required feature CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44681865208)
 and [main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44682165461)
-pass. The exact merged tree equals tested feature0c7cb03. All six exact-merged
-gates pass again: 2,417 tests,96.13%coverage,46typed modules and2.41.0 packages.
+pass. The exact merged tree equals tested feature 0c7cb03. All six exact-merged
+gates pass again: 2,417 tests, 96.13% coverage, 46 typed modules and 2.41.0 packages.
 [Immutable release v2.41.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.41.0)
 and its [amd64/arm64 image workflow](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44682415037)
 are published successfully.
 
-Reverified pi5/aarch64/Ubuntu24.04 immediately before the app-scoped transaction.
-The existing helper deployed2.41.0 as
+Reverified pi5 / aarch64 / Ubuntu 24.04 immediately before the app-scoped transaction.
+The existing helper deployed 2.41.0 as
 `sha256:a78db49ab7b222dc45afd9e66d145dd2f140c0ab68b595c198b7f6c73b925380`.
-Previous2.40.3/0e6f6bea1af5 is retained; no rollback was needed. All46 installed
+Previous 2.40.3 / 0e6f6bea1af5 is retained; no rollback was needed. All 46 installed
 module hashes match the tested merged release. No migration, source/spending
 restore, permission expansion, new service, key or ordinary reply policy.
 
@@ -145,8 +145,8 @@ change is disclosed above. Actual target text is fetched through the authenticat
 same-channel API and fresh stamps match; no private human text is transferred for
 this fixture. This proves contextual evidence availability, not semantic quality.
 
-Three installed real handler/send/readback cases each post exactly once: care9
-words, attribution9, humor15. Care is direct and sincere; copied-preview preference
+Three installed real handler/send/readback cases each post exactly once: care 9
+words, attribution 9, humor 15. Care is direct and sincere; copied-preview preference
 attribution is rejected. Humor is brief and on topic but the payoff is weak, so
 naturalness/comic utility remains PARTIAL. One unblinded agent's narrow synthetic
 review is not independent human validation. Pre-release care and installed care
@@ -156,31 +156,31 @@ reply probes use fixed fictional bot-authored inputs and synthetic owner dispatc
 not human-authored questions or main-gateway events. Development learning counts
 remain unchanged and all auxiliary clients close with isolated readiness.
 
-After closure, production healthcheck exits0, heartbeat age18.55seconds, healthy/
-read-only, zero restarts and OOM false. The new-container20-minute query has11log
-rows,0ERRORs/0tracebacks; its actual observation window is only a few minutes.
+After closure, production healthcheck exits 0, heartbeat age 18.55 seconds, healthy/
+read-only, zero restarts and OOM false. The 20-minute new-container query has 11 log
+rows, 0 ERRORs and 0 tracebacks; its actual observation window is only a few minutes.
 Timer active/enabled. This is operational health, not gateway proof or a measured
 long-run error-rate improvement. Owner/main-gateway remains open at the documented
 Chrome-control, locked-Mac and empty-login blockers.
 
-Post count-only census retains4,299grouped/405eligible/7ambiguous historical blocks,
-three windows; league300/26bot,seven-day2target/4bot. Development latest40allbot
-contains14duplicate full turns. Latestfour focuses per scope again have zero
+Post count-only census retains 4,299 grouped / 405 eligible / 7 ambiguous historical blocks,
+three windows; league 300 rows / 26 bot turns, seven-day 2 target / 4 bot turns. Development latest 40 rows, all bot-authored,
+contain 14 duplicate full turns. Latest four focuses per scope again have zero
 reply references; no spontaneous frequency gain follows. Pinned human and private
-two-member guild/allowedgeneral are freshly authenticated. Graph has one claim,
-zero qualified abstractions,555episodes/440human-source nodes and21native captures.
+two-member guild and allowed general channel are freshly authenticated. Graph has one claim,
+zero qualified abstractions, 555 episodes, 440 human-source nodes and 21 native captures.
 These are coverage counts, not fresh human semantic comparison, complete history,
 new traits or abstract population. No missing image pixels were interpreted.
 
-November ledger estimate USD0.361219685:runtime0.208374600/maintenance0.152845085,
-290attempts/22unsettled. Four own maintenance reply attempts correspond to aggregate
-maintenance movement USD0.000939940; one runtime attempt is outside this maintenance
+November ledger estimate USD 0.361219685: runtime 0.208374600 / maintenance 0.152845085,
+290 attempts / 22 unsettled. Four own maintenance reply attempts correspond to aggregate
+maintenance movement USD 0.000939940; one runtime attempt is outside this maintenance
 work. These are application estimates, not an audited run invoice. The source
 census, synthetic collector comparison and health checks make zero provider calls.
-USD18/2/20 guard remains, with no new spending pool or normal reply attempt.
+USD 18/2/20 guard remains, with no new spending pool or normal reply attempt.
 
 Content-free private receipts use smoke-tests/2026-11-19-2100 and the two distinct
-daily-20261119-2100 baseline/installed directories. Existing0700/0600,seven-day
+daily-20261119-2100 baseline/installed directories. Existing 0700/0600, seven-day
 manual retention and withdrawal cleanup apply. Exact smoke IDs remain private;
 no source/answer prose, personal interpretation, pixels or screenshots are retained
 in receipts, Git or preserved artifacts. Scripts/gate logs/content-free receipts
@@ -196,4 +196,4 @@ from authorized existing app-scoped extraction without rerouting a rejected acti
 No new abstraction is justified by this collector repair. Keep approved creative
 amplification separate from human traits, generated Michigan U.P. aurora/trail-camera
 scenes, short natural captions and selective tools. Sightings remain closed.
-Six local01/05/09/13/17/21Sol/xhigh runs and notifications are unchanged.
+Six local 01/05/09/13/17/21 Sol/xhigh runs and notifications are unchanged.
