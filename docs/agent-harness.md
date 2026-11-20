@@ -1,3 +1,15 @@
+# Current deployed order, 2026-11-19 21:00
+
+H136 / 2.41.0 scoped audit reply setup is deployed and verified. Next qualify
+H121/H120 relation-preserving abstracts, H125 semantic comic/emotional utility,
+then useful linked native/visual/seasonal context. Care/attribution pass narrow
+synthetic review; humor payoff remains PARTIAL. No new trait, abstract population
+or general fidelity gain. Preserve generated Michigan U.P. aurora/trail-camera
+scenes, natural captions, selective tools, source/withdrawal/permission rules,
+USD 18/2/20 guard and six local 01/05/09/13/17/21 Sol/xhigh runs/notifications.
+Owner/gateway and fresh private human semantic review remain open.
+[Both phases, release and installed evidence](trubot-evolution/evaluations/2026-11-19-audit-reply-context.md). Older entries are historical.
+
 # Current order, 2026-11-19 21:00
 
 H136 adds bounded same-channel reply setup to character audits. Then qualify

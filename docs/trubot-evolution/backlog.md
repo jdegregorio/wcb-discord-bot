@@ -1,3 +1,30 @@
+# Current decision: H136 deployed, 2026-11-19 21:00
+
+H136 ships as immutable 2.41.0 after protected PR208, exact-merged six gates,
+2,417 tests / 96.13% coverage, main CI and amd64/arm64 image publication. All 46 installed
+hashes match; healthy/read-only and no short-window errors. Same-ID actual fictional
+Discord collection restores the distant target/link with zero provider calls.
+Care/attribution pass narrow synthetic review; comic payoff remains PARTIAL.
+This is evidence capture, not a new trait, abstract population or measured fidelity.
+[Both phases, release and installed evidence](evaluations/2026-11-19-audit-reply-context.md).
+
+1. H121/H120 useful relation-preserving abstractions, so supported values, emotions
+   and relationships guide natural replies. Require complete attributed supports/
+   contraries, qualified private review, independent held-outs, care/recipient
+   controls and actual useful replies. Existing graph/maintenance budget; remedy
+   remains unvalidated. Source fusion or routine metadata disclaimers fail.
+2. H125 semantic comic/emotional utility with warmth, brevity, recipient restraint
+   and mechanism-level variety. Approved amplification is creative policy, not a
+   human trait or measured multiplier. Existing repair/ledger; utility unresolved.
+3. Useful linked native/visual/seasonal context after actual pixels, provenance,
+   lifecycle and utility. Keep generated Michigan U.P. aurora/trail-camera scenes,
+   natural captions and selective tools; automatic sightings remain closed.
+
+Material privacy/grounding/delivery defects or qualified semantic gains reorder
+work. Owner/main-gateway remains open at browser/login blockers. Preserve
+attribution, withdrawal, allowlist/no DMs, USD 18/2/20 guard, six local
+01/05/09/13/17/21 Sol/xhigh runs and notifications. Older entries are historical.
+
 # Current decision: linked audit setup, 2026-11-19 21:00
 
 H136 preserves one same-channel reply hop and anonymous links in character audits,

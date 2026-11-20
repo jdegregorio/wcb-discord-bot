@@ -1,3 +1,37 @@
+# Completed run 2026-11-19 21:00: H136 / 2.41.0
+
+Shipped scoped reply-target setup for character audits through
+[PR208](https://github.com/jdegregorio/wcb-discord-bot/pull/208), merge
+7116a542e039eb1e1fb1fd006c51cb0224e291c0 and immutable
+[release v2.41.0](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.41.0).
+Feature CI44681865208, main CI44682165461 and image CI44682415037 pass.
+Exact feature and merged six gates pass: 2,417 tests, 96.13% coverage, 46 modules
+and package builds. Actually running healthy/read-only at
+sha256:a78db49ab7b222dc45afd9e66d145dd2f140c0ab68b595c198b7f6c73b925380;
+all 46 installed hashes match. Previous 2.40.3 / 0e6f6bea1af5 retained; no rollback.
+
+Actual fictional Discord target/link capture improves absent to retained on the
+same IDs, with zero provider calls; 31 new regression controls pass. Four actual
+reply handler/send/readbacks (one baseline / three installed) preserve learning
+counts and readiness isolation. Care/attribution pass narrow review; humor payoff
+is PARTIAL. This is not human/main-gateway proof or general fidelity.
+Final health exits 0, heartbeat 18.55 seconds, zero restarts/OOM false, and the
+short new-container window has 11 log rows / 0 errors / 0 tracebacks. Timer active/enabled.
+November estimate USD 0.361219685 / 290 attempts / 22 unsettled. Four own maintenance
+replies correspond to aggregate maintenance movement USD 0.000939940. The USD 18/2/20
+guard remains. No new trait, abstract population, model/service/key/schema or
+normal-reply policy.
+
+Both planning phases, current coverage, approval restriction and recovery evidence,
+limitations and next H121/H120, H125, native/visual/seasonal order are in the
+[study](evaluations/2026-11-19-audit-reply-context.md). Initial count-only census
+rejection was resolved with local proof of no provider code; denied external
+private scoring was never rerouted. Fresh human semantic/pixel review and owner/
+gateway remain open. Preserve creative amplification, generated U.P. scenes,
+selective tools, six standalone local 01/05/09/13/17/21 Sol/xhigh runs/notifications.
+Primary untouched; content-free receipts/scripts/gates preserved before archival.
+
+
 # Run 2026-11-19 21:00: H136 linked audit setup
 
 Fresh fetched base91fb795, new managed worktree and unique branch; primary untouched.
