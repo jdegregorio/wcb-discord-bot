@@ -6,8 +6,9 @@ pass; actual app-volume hard exit preserves a non-replayed claim. Runtime stays
 healthy 2.40.3, all 46 module hashes match. No new trait, abstraction or measured
 character gain. [Both phases, results and limits](trubot-evolution/evaluations/2026-11-19-smoke-recovery.md).
 
-Fresh H133 controls supply care in all six framing/history comparisons; prior
-intermittent cause remains unresolved. Current humor is on topic but strained.
+Fresh H133 controls have five direct-care passes and one third-person PARTIAL.
+The earlier off-target failure does not recur; its cause remains unresolved.
+Current humor is on topic but strained.
 Owner/main-gateway and qualified private semantic-source review remain open.
 
 1. H121/H120 useful relation-preserving abstractions, so supported concepts guide

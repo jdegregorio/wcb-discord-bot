@@ -18,8 +18,9 @@ fictional setups compared with actual handler history, isolated reaction and
 isolated direct mode, using unchanged responder/model and existing maintenance
 ledger. Define success as brief direct sincere care without off-target questions,
 jokes or invented memories; failure in all arms refutes a history-specific cause.
-Six replies all provide care; one warm reply addresses the fictional manager in
-third person. No fresh off-target failure, so cause remains unresolved and no
+All six contain care, but only five meet the direct-recipient criterion. One warm
+reply uses third person and is PARTIAL. No fresh off-target failure, so cause remains
+unresolved and no
 behavioral patch qualifies. Two actual handler/Discord sends and four extra model
 comparisons; fixed synthetic inputs, not Andrew evidence or main-gateway proof.
 Sequential, unblinded, tiny cohort with no general emotional-fidelity claim.
@@ -94,8 +95,8 @@ for handoff. Synthetic dispatch is not an actual human event or gateway test.
 The operator script is excluded from the Docker image. Runtime source, dependency,
 workflow and version trees equal tested production 2.40.3. No new immutable runtime
 release, image or container replacement is appropriate to this operator-only scope.
-Protected PR197 merge and exact-merged verification are the remaining publication
-gates. Existing code rollback must never restore source, spending or paid-attempt state.
+At this candidate stage, protected PR197 merge and exact-merged verification were
+the remaining publication gates; their completed results follow below. Existing code rollback must never restore source, spending or paid-attempt state.
 
 ## Completed protected publication and final verification
 
@@ -133,16 +134,16 @@ These counts are not semantic or complete history. Reaction/ambient classificati
 fresh actual human comparison and pixel analysis remain gaps; prior private raw
 transfer/scoring restriction is respected. No new trait or source/graph population.
 
-November ledger is USD0.357823120 estimated:
+November ledger is USD 0.357823120 estimated:
 runtime 0.208295225/maintenance 0.149527895,
 283 attempts/21 unsettled. Own nine maintenance reply attempts correspond to aggregate
-movement USD0.001919515, an estimate rather than an audited run invoice. Repeats and
+movement USD 0.001919515, an estimate rather than an audited run invoice. Repeats and
 hard-exit qualification add zero provider attempts. The 18/2/20 guard, existing sources,
 allowlist/no DMs, withdrawal and six local 01/05/09/13/17/21 Sol/xhigh cadence remain.
 No new key, model, service, spending pool or normal-reply request.
 
 Content-free receipts use app-volume `smoke-tests/daily-20261119-1700`,
-`daily-20261119-1700-interrupted` and `2026-11-19-1700`,0700 directories/0600 files,
+`daily-20261119-1700-interrupted` and `2026-11-19-1700`, 0700 directories/0600 files,
 with existing seven-day manual retention and withdrawal cleanup. Retained-ID
 protection ends on receipt deletion; never reuse retired IDs. Scripts, gate logs,
 source verification and structured run metadata are preserved in approved local
