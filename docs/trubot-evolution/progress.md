@@ -1,3 +1,69 @@
+# 2026-11-19 17:00 run: H131 completed
+
+## Completed protected publication and final verification
+
+[PR197](https://github.com/jdegregorio/wcb-discord-bot/pull/197) merged normally,
+without admin bypass, as `6678f608f2d2bfd77253fd22fd8b60c1f052a535`.
+[Required feature CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44654327104)
+and [main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44654596212)
+pass. The exact merged tree equals tested feature `f5b4122f61403334fa853dcd4e5268bce296cc5c`;
+all six merged gates also pass: 2,386 tests, 96.14% coverage, 46 typed modules,
+locked dependencies and 2.40.3 wheel/sdist.
+
+The exact merged runner reads all three retained successful cases with identical
+receipts and no additional paid call/post. A real child process on the actual private
+app volume commits a claim then exits immediately with code 19, without cleanup.
+A second process returns the retained claimed state/code 2 with no probe ID and
+unchanged aggregate provider usage. This is abrupt-process recovery evidence,
+not a human/main-gateway event or a new semantic answer.
+
+Production stays on immutable 2.40.3 at
+`sha256:0e6f6bea1af5ed7e3a13a7589a14d827a7d3c2212328688c81de65dcc5d8c0ad`;
+all 46 installed module hashes match current source. No runtime/version/dependency/
+workflow change, release, image build, redeploy or rollback belongs to this operator
+increment. The read-only container is healthy, zero restarts/OOM false; final
+healthcheck exits 0 and heartbeat age is 58.48 seconds after all
+auxiliary clients close. The final 20-minute sample has 20 log rows,
+0 ERRORs and 0 tracebacks; timer is active/enabled.
+This is short-window operational evidence, not gateway proof or a long-run error rate.
+
+Post census retains 4,299 grouped/405 eligible/7 ambiguous historical blocks, 3 bounded
+windows; latest 300 league has 26 bot turns, seven-day 2 target/4 bot. Development latest 40
+is entirely bot-authored, 16 duplicate full turns. No fixed storage-language markers.
+Pinned human and private guild/allowed general are freshly authenticated. Graph remains
+one claim/zero qualified abstractions, 555 episodes/440 human-source nodes, 21 native captures.
+These counts are not semantic or complete history. Reaction/ambient classification,
+fresh actual human comparison and pixel analysis remain gaps; prior private raw
+transfer/scoring restriction is respected. No new trait or source/graph population.
+
+November ledger is USD0.357823120 estimated:
+runtime 0.208295225/maintenance 0.149527895,
+283 attempts/21 unsettled. Own nine maintenance reply attempts correspond to aggregate
+movement USD0.001919515, an estimate rather than an audited run invoice. Repeats and
+hard-exit qualification add zero provider attempts. The 18/2/20 guard, existing sources,
+allowlist/no DMs, withdrawal and six local 01/05/09/13/17/21 Sol/xhigh cadence remain.
+No new key, model, service, spending pool or normal-reply request.
+
+Content-free receipts use app-volume `smoke-tests/daily-20261119-1700`,
+`daily-20261119-1700-interrupted` and `2026-11-19-1700`,0700 directories/0600 files,
+with existing seven-day manual retention and withdrawal cleanup. Retained-ID
+protection ends on receipt deletion; never reuse retired IDs. Scripts, gate logs,
+source verification and structured run metadata are preserved in approved local
+automation storage before archiving this run's worktree. No raw source/answer,
+personal interpretation, image or screenshot is retained in those artifacts.
+
+H131 leaves the active queue as verified enabling work. Next H121/H120 useful
+connected abstractions, then H125 semantic comic/emotional utility, then useful
+linked native/visual/seasonal context. Require attributed support/contrary episodes,
+qualified private semantic review, independent held-outs, care/recipient controls,
+actual pixels where relevant and real useful replies. Joe's approved two-to-three-
+times comic amplification remains a creative policy, separate from real human
+traits or a measured multiplier. Keep generated Michigan U.P. aurora/trail-camera
+scenes, short natural captions and selective tools; automatic sightings stay closed.
+H133's intermittent cause and H125's weak payoff remain unresolved, not patched by
+this operational improvement. Owner/main-gateway proof remains open at the documented
+browser/login blockers. New material defects or qualified semantic gains reorder work.
+
 # 2026-11-19 17:00 run: durable smoke recovery in qualification
 
 New managed worktree `trubot-daily-20261119-1700`, unique feature branch,
