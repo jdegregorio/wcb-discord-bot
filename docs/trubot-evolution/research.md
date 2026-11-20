@@ -3605,3 +3605,26 @@ specificity on the owning relationship before connected neighbors. Nine new cont
 pass, including abstract conditions, complete conflicts and bounded work. H121/H120
 and H125 remain unresolved; no fresh private semantic study or human trait is claimed.
 [Both phases, disconfirmation criteria and validation](evaluations/2026-11-20-relevant-graph-memory.md).
+
+## 2026-11-20 installed H137 and renewed H133 priority
+
+H137 / 2.41.1 is deployed after protected PR210, all six exact-merged gates,
+2,426 tests and successful main/image CI. Nine base regressions fail, candidate
+passes, and actual installed fictional graph retains matching evidence. Baseline
+answer guesses correctly without support; candidate naturalness is partial and
+installed recall is direct, so causal answer-quality benefit remains unqualified.
+
+Fresh real synthetic care FAILS with an off-target clarification, recurring H133.
+Fixed request routes to ordinary content locally; no quotation lookup is selected.
+Exact base/current graph lookups on that request are both empty. This rules out
+changed graph results in this control, not every contextual cause. Mechanism
+hypothesis: stale conversation/quotation context can divert the current care focus.
+Before another behavioral change, compare fixed histories and isolated current
+focus on the same cases, with independent care/recipient held-outs and genuine
+quotation controls. Require direct sincere care without clarification, unsupported
+personal claims, or loss of evidence lookup; disconfirm on byte-identical focused
+input with no contextual effect or no held-out benefit. Existing maintenance ledger.
+Raise H133 investigation before H121/H120 population; then H125 semantic comic/
+emotional utility and useful native/visual/seasonal context. No new human trait,
+qualified abstraction, model or prompt change is justified by this recurrence.
+[Full results and limitations](evaluations/2026-11-20-relevant-graph-memory.md).

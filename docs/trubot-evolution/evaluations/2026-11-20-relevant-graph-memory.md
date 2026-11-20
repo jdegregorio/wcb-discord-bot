@@ -131,3 +131,90 @@ rows / zero errors or tracebacks. Timer active/enabled. Graph still has one clai
 zero qualified abstractions, 555 episodes, 440 human sources and 21 native captures.
 November application estimate is USD 0.364877020, runtime 0.208374600 / maintenance
 0.156502420, 294 attempts / 23 unsettled. This is not an audited provider invoice.
+
+## Completed release and installed qualification
+
+[PR210](https://github.com/jdegregorio/wcb-discord-bot/pull/210) merges normally,
+without protection bypass, as `c75fc194451754b6b29feab8f683258d0aefd0f3`.
+[Feature CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44711078949)
+and [main CI](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44711539209)
+pass. Merged tree equals candidate8916b2b. All six exact-merged gates also pass:
+2,426 tests, 96.13% coverage, 46 typed modules, 2.41.1 wheel/sdist.
+[Immutable v2.41.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.41.1)
+points to that commit; its [amd64/arm64 image build](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44711932570)
+passes before deployment.
+
+Reverified pi5 / aarch64 / Ubuntu24.04 immediately before the existing app-scoped
+locked transaction. Running healthy immutable
+`sha256:a1225a7babc06250e3ac7b719ff34e095a13249fc7eac3d3021e7784394228ef`.
+Previous 2.41.0 / a78db49ab7b2 retained; no rollback. All 46 installed source hashes
+match. No schema/data migration, source/spending restore, permission expansion,
+new service/key, ordinary reply prompt/model change or extra runtime provider turn.
+
+Installed real private Discord fictional-memory projection retains matching
+observation, four observations total, and produces a brief direct supported answer
+(six words), passing narrow unblinded synthetic review. The baseline's correct guess
+and candidate's unwanted hedge remain disclosed above. This establishes retrieval
+availability, not causal answer-accuracy or human-fidelity improvement. The fixture
+adapter replaces only memory assembly with a disposable entirely fictional store;
+real human fresh reads remain untested by this adapter, covered by regressions.
+It never populates production human state or establishes an Andrew trait.
+
+Three additional installed actual handler/send/readback controls: care FAILS
+(off-target clarification, seven words), attribution PASS (11 words), humor PARTIAL
+(brief/on-topic but weak comic payoff, 15 words). Seven total actual reply probes
+in this run include pre-release humor, baseline/candidate/installed memory and the
+three installed controls. All are fixed fictional bot-authored inputs and synthetic
+owner dispatch, not owner-authored messages or main-gateway events. No retake is
+used to manufacture a pass. Each sends once, preserves development intake exclusion
+and learning counts, closes its auxiliary client and isolates readiness before
+construction. Owner/gateway stays open at the documented browser/login blockers.
+
+H133 care is a recurring pre-release symptom, not a newly proven H137 regression.
+A zero-provider read-only comparison of exact-base/current graph lookup on the same
+fixed care, attribution and humor requests yields identical empty results for all
+three. Local care routing selects ordinary content and no quotation lookup. These
+controls rule out changed graph output in these cases; full contextual cause remains
+unresolved. No rollback is warranted by a demonstrated change regression. Do not
+claim emotional care passes or the defect is fixed. H133 matched focus/context
+investigation is now the first prerequisite before abstract population, with
+independent held-outs, sincere recipient care and genuine quotation controls.
+No additional behavioral assumption is shipped on this evidence.
+
+After all auxiliaries close, healthcheck exits0, heartbeat age2.13seconds,
+healthy/read-only, zero restarts/OOMfalse, timer active/enabled. New-container
+20-minute query has11logrows/zeroERRORs/zeroTracebacks; its actual observation window
+is only a few minutes. This is short-window operational health, not gateway proof
+or a measured long-run error-rate change.
+
+Post count-only census retains4,299 grouped/405 eligible/seven ambiguous blocks,
+three attributed windows; league300/26bot, seven-day2target/4bot. Development latest40
+is allbot/14duplicatefullturns, zero fixed storage-language matches. These counts do
+not negate the observed care failure/hedge or qualify human voice. Graph remains
+one claim/zero qualified abstractions,555episodes/440human sources,21native captures.
+No fresh private human semantic comparison or missing-pixel interpretation occurred.
+The previously denied external private scoring path is not rerouted.
+
+November application estimate USD0.365844940: runtime0.208374600 /
+maintenance0.157470340,298attempts/23unsettled. Eight aggregate maintenance attempts
+since the prior completion correspond to USD0.004625255 movement; seven actual
+reply probes can use the existing accounted single repair. This is not an audited
+provider invoice or independently attributed per-request bill. Source census,
+lookup controls, deterministic regressions and health add zero provider calls.
+USD18/2/20 guard remains; no new pool/service or normal-reply turn is added.
+
+Content-free exact references/receipts use smoke-tests/2026-11-20-0100,
+daily-20261120-0100, and distinct baseline/candidate/installed suffixes. Existing
+0700/0600, manual seven-day retention and withdrawal cleanup apply. Scripts,
+checks and content-free receipts are preserved in approved automation storage
+before archival. No source/answer prose, personal interpretation, pixels or
+screenshots are retained in receipts, Git or preserved artifacts.
+
+H137 leaves the queue as a verified retrieval correction. Next H133 care/focus,
+then H121/H120 useful relation-preserving abstractions, H125 comic/emotional utility,
+and useful linked native/visual/seasonal context. Require complete attributed
+supports/contraries, qualified private review, independent held-outs and actual
+useful natural replies. Preserve approved creative amplification separately from
+human traits, generated Michigan U.P. aurora/trail-camera scenes, short natural
+captions and selective tools. Sightings stay closed without qualified observations.
+Six standalone local01/05/09/13/17/21 Sol/xhigh runs and notifications are unchanged.
