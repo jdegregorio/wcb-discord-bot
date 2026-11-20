@@ -1,3 +1,13 @@
+# Operator-only controlled Discord checks, 2026-11-20
+
+H138 records live generation-history count/hash by default and supports explicit
+`--context isolated` in the auxiliary smoke process. This replaces only that
+process's generation-history collector for its exact verified probe/channel, then
+restores it. Normal gateway replies, target fetches, source/memory rechecks,
+learning scope and provider configuration remain unchanged. A controlled synthetic
+handler/send/readback is not an owner/main-gateway event or fidelity measurement.
+[Both phases and operational limits](trubot-evolution/evaluations/2026-11-20-controlled-smoke-context.md).
+
 # Current decision: H137 deployed, 2026-11-20 01:00
 
 H137 ships as immutable 2.41.1 through protected PR210, exact-merged six gates,

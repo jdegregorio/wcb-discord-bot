@@ -1,3 +1,12 @@
+## Controlled private Discord smoke context
+
+`scripts/discord_smoke.py` keeps live history by default and records its count and
+fingerprint. `--context isolated` deliberately supplies no generation history in
+that auxiliary process. Use distinct run IDs for modes; retained IDs never replay
+or change mode. These synthetic checks use real private Discord sends and production
+handlers, while controlled history is explicitly a harness substitution.
+[Operations and evidence](docs/trubot-evolution/evaluations/2026-11-20-controlled-smoke-context.md).
+
 ## Relevant connected memories, 2.41.1
 
 Graph recall ranks observations whose own reviewed aliases match the question before

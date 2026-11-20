@@ -14,7 +14,9 @@ import discord
 import pytest
 from test_learning import AUDIT, NOW
 
+import trubot.discord_client as runtime
 from trubot.config import Settings
+from trubot.conversation import ConversationImage, ConversationMessage
 from trubot.learning import LearningStore, LearningUnavailable
 
 
@@ -85,8 +87,15 @@ def harness(tmp_path, smoke, monkeypatch):
     channel.send = AsyncMock(side_effect=send)
     channel.fetch_message = AsyncMock(side_effect=lambda identifier: posted[identifier])
 
+    prior = [ConversationMessage("assistant", "private previous generated answer")]
+    original_history = AsyncMock(return_value=prior)
+    monkeypatch.setattr(runtime, "collect_history", original_history)
+
     async def handler(payload):
         assert payload.member is owner
+        client.supplied_history = await runtime.collect_history(
+            channel, before=posted[payload.message_id]
+        )
         await channel.send("Synthetic answer only.")
 
     client.on_raw_reaction_add = AsyncMock(side_effect=handler)
@@ -348,3 +357,164 @@ os._exit(19)
     h.build.assert_not_called()
     h.channel.send.assert_not_awaited()
     assert h.settings.ready_file.read_text() == "production heartbeat"
+
+
+@pytest.mark.parametrize("mode", ["live", "isolated"])
+async def test_controlled_history_is_explicit_scoped_and_content_free(harness, mode):
+    h = harness
+    receipt = h.smoke.Receipt(h.store, "controlled", "care", context_mode=mode)
+    result = await h.smoke.run(h.settings, receipt)
+    assert result["transport_pass"] and result["context_mode"] == mode
+    assert result["history_rows"] == (1 if mode == "live" else 0)
+    assert len(result["history_sha256"]) == 64
+    assert h.client.supplied_history == (h.prior if mode == "live" else [])
+    assert h.original_history.await_count == (1 if mode == "live" else 0)
+    assert runtime.collect_history is h.original_history
+    assert "private previous" not in receipt.path.read_text()
+    assert not result["main_gateway_tested"] and not result["human_authored_question"]
+    assert result["learning_count_unchanged"] and result["auxiliary_closed"]
+
+
+async def test_context_mode_cannot_change_a_retained_attempt(harness):
+    h = harness
+    h.receipt.claim()
+    other = h.smoke.Receipt(h.store, "synthetic-run", "attribution", context_mode="isolated")
+    with pytest.raises(ValueError):
+        await h.smoke.run(h.settings, other)
+    h.build.assert_not_called()
+    h.channel.send.assert_not_awaited()
+
+
+def test_legacy_receipts_are_live_only(harness):
+    h = harness
+    record, _ = h.receipt.claim()
+    record.pop("context_mode", None)
+    h.receipt.save(record)
+    assert h.receipt.read() == record
+    isolated = h.smoke.Receipt(h.store, "synthetic-run", "attribution", context_mode="isolated")
+    with pytest.raises(ValueError):
+        isolated.read()
+
+
+@pytest.mark.parametrize(
+    "field,value", [("context_mode", "unknown"), ("history_rows", -1), ("history_sha256", "bad")]
+)
+def test_invalid_context_receipts_fail_closed(harness, field, value):
+    h = harness
+    record, _ = h.receipt.claim()
+    record[field] = value
+    h.receipt.save(record)
+    with pytest.raises(ValueError):
+        h.receipt.read()
+
+
+@pytest.mark.parametrize("defect", ["channel", "anchor", "repeat", "cancel"])
+async def test_context_wrapper_restores_after_scope_failures_and_cancellation(harness, defect):
+    h = harness
+    receipt = h.smoke.Receipt(h.store, "scope-control", "care", context_mode="isolated")
+
+    async def handler(payload):
+        channel = SimpleNamespace(id=h.smoke.CHANNEL) if defect == "channel" else h.channel
+        anchor = SimpleNamespace(id=999) if defect == "anchor" else h.posted[payload.message_id]
+        await runtime.collect_history(channel, before=anchor)
+        if defect == "repeat":
+            await runtime.collect_history(channel, before=anchor)
+        if defect == "cancel":
+            raise asyncio.CancelledError
+
+    h.client.on_raw_reaction_add.side_effect = handler
+    result = await h.smoke.run(h.settings, receipt)
+    assert result["state"] == "uncertain" and not result["transport_pass"]
+    assert runtime.collect_history is h.original_history
+    h.original_history.assert_not_awaited()
+    assert h.client.close.await_count == 1
+
+
+async def test_context_capture_failure_cannot_claim_a_valid_experiment(harness, monkeypatch):
+    h = harness
+    original_save = h.receipt.save
+
+    def save(record):
+        if "history_rows" in record and "answer_id" not in record:
+            raise OSError("private receipt unavailable")
+        original_save(record)
+
+    monkeypatch.setattr(h.receipt, "save", save)
+    result = await h.smoke.run(h.settings, h.receipt)
+    assert result["state"] == "uncertain" and not result["transport_pass"]
+    assert result["response_count"] == 1
+    assert runtime.collect_history is h.original_history
+    assert "private receipt unavailable" not in h.receipt.path.read_text()
+
+
+async def test_history_change_has_a_different_fingerprint_without_retaining_text(harness):
+    h = harness
+    first = await h.smoke.run(h.settings, h.receipt)
+    h.prior.append(ConversationMessage("assistant", "another private response"))
+    other = h.smoke.Receipt(h.store, "another-context", "care")
+    second = await h.smoke.run(h.settings, other)
+    assert first["history_sha256"] != second["history_sha256"]
+    assert (first["history_rows"], second["history_rows"]) == (1, 2)
+    assert "another private" not in other.path.read_text()
+
+
+def test_unknown_context_mode_is_rejected_before_claim(harness):
+    h = harness
+    with pytest.raises(ValueError):
+        h.smoke.Receipt(h.store, "unknown-context", "care", context_mode="unknown")
+    assert not (h.store.path.parent / "smoke-tests" / "unknown-context").exists()
+
+
+async def test_live_history_failure_restores_without_changing_or_retrying_context(harness):
+    h = harness
+    h.original_history.side_effect = TimeoutError("private history failure")
+    result = await h.smoke.run(h.settings, h.receipt)
+    assert result["state"] == "uncertain" and not result["transport_pass"]
+    assert "history_rows" not in result
+    assert runtime.collect_history is h.original_history
+    assert h.original_history.await_count == 1
+    assert len(h.posted) == 1
+    assert "private history failure" not in h.receipt.path.read_text()
+
+
+async def test_retained_isolated_attempt_reads_without_context_or_network_work(harness):
+    h = harness
+    receipt = h.smoke.Receipt(h.store, "isolated-replay", "care", context_mode="isolated")
+    first = await h.smoke.run(h.settings, receipt)
+    assert first["transport_pass"]
+    h.build.reset_mock()
+    h.channel.send.reset_mock()
+    assert await h.smoke.run(h.settings, receipt) == first
+    h.build.assert_not_called()
+    h.channel.send.assert_not_awaited()
+    h.original_history.assert_not_awaited()
+    assert runtime.collect_history is h.original_history
+
+
+async def test_live_context_fingerprint_covers_pixels_without_retaining_them(harness):
+    h = harness
+    h.prior[:] = [
+        ConversationMessage(
+            "user",
+            "private caption",
+            (
+                ConversationImage(
+                    "data:image/png;base64,PRIVATEPIXELS", "private image description"
+                ),
+            ),
+            author_user_id=42,
+        )
+    ]
+    first = await h.smoke.run(h.settings, h.receipt)
+    h.prior[0] = ConversationMessage(
+        "user",
+        "private caption",
+        (ConversationImage("data:image/png;base64,CHANGEDPIXELS", "private image description"),),
+        author_user_id=42,
+    )
+    other = h.smoke.Receipt(h.store, "changed-pixels", "care")
+    second = await h.smoke.run(h.settings, other)
+    assert first["history_sha256"] != second["history_sha256"]
+    for path in (h.receipt.path, other.path):
+        raw = path.read_text()
+        assert all(value not in raw for value in ("PIXELS", "private caption", "description"))

@@ -22,6 +22,7 @@ from uuid import uuid4
 
 import discord
 
+import trubot.discord_client as runtime
 from trubot.app import build_client
 from trubot.config import Settings
 from trubot.learning import LearningStore, _private
@@ -64,7 +65,7 @@ FLAGS = {
     "learning_count_unchanged",
     "transport_pass",
 }
-COUNTS = {"response_count", "answer_words"}
+COUNTS = {"response_count", "answer_words", "history_rows"}
 IDS = {"probe_id", "answer_id"}
 FIELDS = (
     FLAGS
@@ -78,6 +79,8 @@ FIELDS = (
         "created_at",
         "updated_at",
         "response_sha256",
+        "history_sha256",
+        "context_mode",
     }
 )
 
@@ -95,9 +98,12 @@ def sync_directory(path):
 
 
 class Receipt:
-    def __init__(self, learning, run_id, case):
+    def __init__(self, learning, run_id, case, *, context_mode="live"):
         if not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,63}", run_id) or case not in CASES:
             raise ValueError("Invalid smoke identity")
+        if context_mode not in {"live", "isolated"}:
+            raise ValueError("Invalid smoke context")
+        self.context_mode = context_mode
         self.learning = learning
         self.run_id, self.case = run_id, case
         self.directory = learning.path.parent / "smoke-tests" / run_id
@@ -116,6 +122,7 @@ class Receipt:
             or result.get("run_id") != self.run_id
             or result.get("case") != self.case
             or result.get("state") not in STATES
+            or result.get("context_mode", "live") != self.context_mode
         ):
             raise ValueError("Invalid smoke receipt")
         for key, value in result.items():
@@ -125,7 +132,9 @@ class Receipt:
                 raise ValueError("Invalid smoke count")
             if key in {"created_at", "updated_at"} and datetime.fromisoformat(value).tzinfo is None:
                 raise ValueError("Missing smoke timezone")
-            if key == "response_sha256" and not re.fullmatch(r"[a-f0-9]{64}", value):
+            if key in {"response_sha256", "history_sha256"} and not re.fullmatch(
+                r"[a-f0-9]{64}", value
+            ):
                 raise ValueError("Invalid smoke digest")
         return result
 
@@ -139,6 +148,7 @@ class Receipt:
         _private(self.directory)
         initial = {
             "schema": 1,
+            "context_mode": self.context_mode,
             "run_id": self.run_id,
             "case": self.case,
             "state": "claimed",
@@ -235,6 +245,7 @@ async def run(settings, receipt):
         return record  # Never construct a client or retry a previously claimed attempt.
     client = None
     original = None
+    original_history = None
     persistence_failed = False
     try:
         isolated = replace(
@@ -286,15 +297,63 @@ async def run(settings, receipt):
         record["state"] = "dispatching"
         receipt.save(record)
         receipt.learning.identity()
-        await client.on_raw_reaction_add(
-            SimpleNamespace(
-                channel_id=CHANNEL,
-                user_id=owner.id,
-                message_id=probe.id,
-                emoji=SimpleNamespace(name="🍆"),
-                member=owner,
+        # This auxiliary process controls only generation history. Authenticated
+        # scope, target fetch, memory/source refresh and actual transport stay real.
+        # Never install this wrapper in the main gateway process.
+        original_history = runtime.collect_history
+
+        async def observed_history(history_channel, *args, **kwargs):
+            nonlocal persistence_failed
+            if (
+                history_channel is not channel
+                or getattr(kwargs.get("before"), "id", None) != probe.id
+                or "history_rows" in record
+            ):
+                raise ValueError("Unexpected smoke history scope")
+            rows = (
+                await original_history(history_channel, *args, **kwargs)
+                if receipt.context_mode == "live"
+                else []
             )
-        )
+            # Hash complete context in memory only. No source/answer text or pixels
+            # enter the receipt; a hash identifies input, never grades its quality.
+            packet = [
+                {
+                    "role": row.role,
+                    "content": row.content,
+                    "origin": row.origin,
+                    "author_user_id": row.author_user_id,
+                    "images": [
+                        {"description": image.description, "data_url": image.data_url}
+                        for image in row.images
+                    ],
+                }
+                for row in rows
+            ]
+            record["history_rows"] = len(rows)
+            record["history_sha256"] = hashlib.sha256(
+                json.dumps(packet, sort_keys=True, ensure_ascii=False).encode()
+            ).hexdigest()
+            try:
+                receipt.save(record)
+            except Exception:
+                persistence_failed = True
+            return rows
+
+        runtime.collect_history = observed_history
+        try:
+            await client.on_raw_reaction_add(
+                SimpleNamespace(
+                    channel_id=CHANNEL,
+                    user_id=owner.id,
+                    message_id=probe.id,
+                    emoji=SimpleNamespace(name="🍆"),
+                    member=owner,
+                )
+            )
+        finally:
+            runtime.collect_history = original_history
+            original_history = None
         # Fetch the exact observed send, rather than guessing from concurrent history.
         answer = await channel.fetch_message(record["answer_id"])
         if (
@@ -304,7 +363,9 @@ async def run(settings, receipt):
         ):
             raise ValueError("Smoke readback unavailable")
         record["learning_count_unchanged"] = client._learning.store.status()["messages"] == before
-        record["transport_pass"] = record["response_count"] == 1 and not persistence_failed
+        record["transport_pass"] = (
+            record["response_count"] == 1 and "history_rows" in record and not persistence_failed
+        )
         record["state"] = "completed" if record["transport_pass"] else "uncertain"
     except BaseException:
         record["state"] = (
@@ -314,6 +375,8 @@ async def run(settings, receipt):
         )
         record["transport_pass"] = False
     finally:
+        if original_history is not None:
+            runtime.collect_history = original_history
         if client is not None:
             if original is not None:
                 client.http.send_message = original
@@ -335,10 +398,21 @@ def _main():
     parser.add_argument("action", choices=("run", "status"))
     parser.add_argument("--run-id", required=True)
     parser.add_argument("--case", choices=tuple(CASES), required=True)
+    parser.add_argument(
+        "--context",
+        choices=("live", "isolated"),
+        default="live",
+        help="Live channel history (default), or no generation history in this auxiliary process.",
+    )
     args = parser.parse_args()
     try:
         settings = Settings.from_env()
-        receipt = Receipt(LearningStore(settings.learning_store_path), args.run_id, args.case)
+        receipt = Receipt(
+            LearningStore(settings.learning_store_path),
+            args.run_id,
+            args.case,
+            context_mode=args.context,
+        )
         result = (
             receipt.read()
             if args.action == "status"
