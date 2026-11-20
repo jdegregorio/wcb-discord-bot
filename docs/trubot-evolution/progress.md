@@ -6392,3 +6392,24 @@ semantic humor/emotion and useful native/visual/seasonal context. Generated U.P.
 natural captions, selective tools and the closed unqualified-sighting gate remain.
 PR197 stays independent; six-run schedule/model/notifications remain unchanged.
 [Complete methods, evidence and limits](evaluations/2026-11-19-bot-text-focus.md).
+
+
+## 2026-11-20 05:00: controlled Discord smoke context
+
+New managed worktree/unique branch from fetched3665dfd; primary untouched. H133
+pre-release actual care again includes off-target commentary, but10care outputs
+across5fixedpairedcomparisons are direct, so no runtime behavioral patch qualifies.
+H138 supplies explicit live/isolated history and private content-free count/hash
+receipts, mode-bound retained IDs and wrapper restoration. No normal source/model/
+version/dependency/workflow change or new trait/graph population. Both phases and
+acceptance are in the [evaluation](evaluations/2026-11-20-controlled-smoke-context.md).
+Four candidate actual private synthetic handler/send-readbacks pass the new context
+controls; direct care/attribution pass narrow review and humor payoff is partial.
+Production remains healthy immutable2.41.1/digesta1225a7babc0; no new runtime
+release/image/deployment is called for. Protected publication/exactmergedgates and
+postmerge private Discord/health qualification follow below. Owner/main-gateway
+is open at Chrome timeoutMs/Maclocked/freshin-applogin. No private human semantic
+comparison or fidelity gain is claimed. Next use controlled H133held-outs then
+qualified H121/H120relationalabstractions, H125comic/emotion and useful linked
+native/visual/seasonal context; same generatedUPscenes/selectivetools/18/2/20guard
+and six-runSol/xhighschedule. No prior denied private scoring path is rerouted.

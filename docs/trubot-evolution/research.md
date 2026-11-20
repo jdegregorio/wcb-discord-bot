@@ -1,3 +1,13 @@
+# 2026-11-20 05:00: H133 unresolved, H138 controlled context
+
+An actual live fictional care probe includes off-target commentary. Eighteen
+bounded responder trials across two studies include ten care answers, all direct,
+so the proposed stale-history mechanism is unvalidated. Ship a justified operator
+increment: explicit live/isolated history, content-free hashes/counts and immutable
+receipt modes, so later comparisons can report the context they actually used.
+No normal reply change, qualified human abstraction or measured fidelity gain.
+[Hypotheses, predeclared criteria, contrary cases and results](evaluations/2026-11-20-controlled-smoke-context.md).
+
 ## H136 installed completion, 2026-11-19 21:00
 
 Immutable 2.41.0 / PR208 is deployed healthy; exact feature/merged six gates and

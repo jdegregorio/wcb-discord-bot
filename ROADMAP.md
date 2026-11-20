@@ -1,3 +1,34 @@
+# Current decision: controlled character checks, 2026-11-20 05:00
+
+H138 adds explicit live/isolated generation history to the private operator smoke
+runner, with content-free context fingerprints and immutable retained attempt
+modes. This is enabling research tooling, not a runtime personality correction.
+H133 care remains unresolved: an actual live probe evaluates an earlier reply,
+but ten care outputs across five fixed paired comparisons are direct and caring.
+No new trait, graph population or measured Andrew-fidelity gain is established.
+[Both phases, acceptance and results](docs/trubot-evolution/evaluations/2026-11-20-controlled-smoke-context.md).
+
+1. Use H138 controls to qualify H133 recipient/focus behavior across independent
+   held-outs and real private Discord. A mode/hash identifies context, not quality;
+   isolate history only in the auxiliary operator process. Do not change normal
+   replies from an unreproduced causal assumption. Existing maintenance allowance.
+2. H121/H120 useful relation-preserving abstractions, requiring complete attributed
+   supports/contraries, qualified private semantic review, independent held-outs,
+   recipient controls and useful natural replies. Existing graph; utility unresolved.
+3. H125 semantic comic/emotional variety with warmth, brevity and timing. Approved
+   amplification is creative policy, not evidence of human habits or a measured
+   multiplier. Existing shared repair/ledger; funniness remains unresolved.
+4. Useful linked native/visual/seasonal context after actual pixels and lifecycle/
+   utility qualification. Preserve generated Michigan U.P. aurora/trail-camera
+   scenes, short captions and selective tools. Unqualified sightings stay closed.
+
+New source/grounding/privacy defects or qualified semantic gains can reorder work.
+Use the current tools for substantive studies before adding further audit machinery.
+Preserve withdrawal, allowlist/no DMs, USD18/2/20 guard, six local01/05/09/13/17/21
+Sol/xhigh runs and notifications. Owner/main-gateway and fresh human semantic
+comparison remain open at documented browser/login and source-review boundaries.
+Older entries below are historical.
+
 # Current decision: H137 deployed, 2026-11-20 01:00
 
 H137 ships as immutable 2.41.1 through protected PR210, exact-merged six gates,
