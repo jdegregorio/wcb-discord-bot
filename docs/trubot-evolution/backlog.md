@@ -1,3 +1,30 @@
+# Current decision: linked audit setup, 2026-11-19 21:00
+
+H136 preserves one same-channel reply hop and anonymous links in character audits,
+so known conversational setup is not mistaken for nearby unrelated text. Real
+synthetic Discord baseline loses the target/link; candidate retains both. New
+scope, freshness and boundedness controls pass. This is evidence availability,
+not measured fidelity, a new trait or qualified abstraction population.
+[Both planning phases, acceptance and results](evaluations/2026-11-19-audit-reply-context.md).
+
+1. Finish H136 protected publication and installed qualification. High confidence
+   in the reproduced collector gap; recent eight focuses had no references, so
+   frequency and semantic benefit remain unknown. Existing maintenance budget only.
+2. H121/H120 useful relation-preserving abstractions: complete attributed supports
+   and contraries, qualified private review, independent held-outs, care/recipient
+   controls and actual utility. Existing graph; remedy remains unvalidated.
+3. H125 semantic comic/emotional utility with brevity, warmth, recipient restraint
+   and mechanism-level variety. Approved amplification is creative policy, not a
+   human trait. Existing repair and ledger; broader benefit remains unresolved.
+4. Useful linked native/visual/seasonal context after actual pixels, lifecycle and
+   utility. Preserve generated Michigan U.P. aurora/trail-camera scenes, natural
+   captions and selective tools. Automatic sightings remain closed.
+
+Material privacy/grounding/delivery defects or qualified semantic gains reorder
+work. Owner/main-gateway remains open at browser/login blockers. Preserve
+attribution, withdrawal, allowlist/no DMs, USD18/2/20 guard, six local
+01/05/09/13/17/21 Sol/xhigh runs and notifications. Older entries are historical.
+
 # Current decision: durable smoke recovery complete, 2026-11-19
 
 H131 / PR197 merged at 6678f60 after required CI. All six exact merged gates pass
