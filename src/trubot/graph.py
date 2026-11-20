@@ -625,6 +625,7 @@ class GraphStore:
             # Legacy relationships retain the node index they previously used.
             matched: dict[str, int] = {}
             owners: dict[str, list[tuple[int, str]]] = {}
+            direct: dict[str, dict[str, int]] = {}
             for row in db.execute(
                 "SELECT origin,target,json_extract(evidence,'$.aliases') AS aliases FROM edges "
                 "WHERE relation IN ('about','exemplifies')"
@@ -641,6 +642,7 @@ class GraphStore:
                     specificity = max(lengths)
                     matched[row["target"]] = max(matched.get(row["target"], 0), specificity)
                     owners.setdefault(row["target"], []).append((specificity, row["origin"]))
+                    direct.setdefault(row["origin"], {})[row["target"]] = specificity
             if not matched:
                 return []
             # Rank before bounding source validation. Graph growth must not favor
@@ -660,6 +662,12 @@ class GraphStore:
             ranked = sorted(
                 candidates,
                 key=lambda key: (
+                    # A concept's other neighbors cannot borrow the matching
+                    # observation's relevance and crowd its evidence out. Keep
+                    # connected context after direct matches, with the same
+                    # whole-conflict, source and validation bounds below.
+                    -max(direct.get(key, {}).values(), default=0),
+                    -len(direct.get(key, {})),
                     -max(matched[topic] for topic in candidates[key][1]),
                     -len(candidates[key][1]),
                     key,

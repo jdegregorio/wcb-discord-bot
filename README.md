@@ -1,3 +1,11 @@
+## Relevant connected memories, 2.41.1
+
+Graph recall ranks observations whose own reviewed aliases match the question before
+other shared-concept neighbors. Connected context and complete disagreement groups
+retain their existing source, freshness and size bounds. This fixes evidence crowding
+as memory grows; it does not qualify a new personality trait.
+[Qualification](docs/trubot-evolution/evaluations/2026-11-20-relevant-graph-memory.md).
+
 ## Linked conversational setup for character audits, 2.41.0
 
 Operator audits retain one bounded same-channel reply hop with anonymous links and

@@ -1,3 +1,11 @@
+# Run 2026-11-20 01:00: H137 relevant graph memory
+
+Fetched base73fa148, new managed worktree/feature branch; primary untouched.
+Both phases select reproduced relevance ownership before broader abstract population.
+Five baseline lookup/handler failures become passes; nine new controls pass. No new
+trait, graph population or general fidelity claim. Publication/installed gates pending.
+[Research and acceptance](evaluations/2026-11-20-relevant-graph-memory.md).
+
 # Completed run 2026-11-19 21:00: H136 / 2.41.0
 
 Shipped scoped reply-target setup for character audits through

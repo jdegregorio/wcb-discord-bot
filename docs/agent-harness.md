@@ -1,3 +1,14 @@
+# Current decision: H137 relevant graph memory, 2026-11-20 01:00
+
+H137 fixes reproduced shared-concept crowding: the observation whose own aliases
+match ranks before connected neighbors, so supported recall survives graph growth.
+Five initial baseline failures become passes; complete conflicts, abstract conditions
+and source/validation bounds remain. Release and installed verification are pending.
+[Both phases and acceptance](trubot-evolution/evaluations/2026-11-20-relevant-graph-memory.md).
+
+Next H121/H120, H125, then useful native/visual/seasonal context. No model, API,
+service, schema, spending or participation change. Older decisions are historical.
+
 # Current deployed order, 2026-11-19 21:00
 
 H136 / 2.41.0 scoped audit reply setup is deployed and verified. Next qualify
