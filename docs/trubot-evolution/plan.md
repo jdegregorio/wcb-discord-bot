@@ -1,3 +1,34 @@
+# Current decision: finish durable smoke recovery, 2026-11-19 17:00
+
+Recover unfinished H131 / PR197 from its inactive owner into a fresh managed
+worktree on current main. Exclusive private claims prevent repeat paid/send work
+after an interrupted character experiment. Revalidate all gates, exact Discord
+readback, retained-ID no-replay, scope, withdrawal and final heartbeat. This is an
+operator tool outside the runtime image; preserve deployed 2.40.3 without a duplicate
+release. [Both phases and acceptance](evaluations/2026-11-19-smoke-recovery.md).
+
+Fresh H133 controls: two fictional care setups across channel-history reaction,
+isolated reaction and isolated direct modes give care in all six answers. This
+contrary evidence leaves the intermittent cause unresolved; no prompt patch.
+No new qualified abstraction, trait or measured fidelity gain. Private source
+transfer/scoring and owner/main-gateway evidence remain open prerequisites.
+
+1. Finish H131 protected merge and exact merged verification, so interrupted
+   studies do not multiply paid calls or test chatter. Confidence high in replay
+   protection while receipts remain; existing app volume/18/2/20 allowance only.
+2. H121/H120 useful relation-preserving abstractions. Require complete attributed
+   supports/contraries, qualified private semantic review, independent held-outs,
+   care/recipient controls and real useful replies. Need supported, remedy unresolved.
+3. H125 semantic comic variety/emotion and useful linked native/visual/seasonal
+   context. Require mechanism-level novelty, warmth, brevity, actual pixels and
+   utility with lifecycle coverage. Keep generated Michigan U.P. aurora/trail-camera
+   scenes, natural captions and selective tools; automatic sightings stay closed.
+
+New reproduced grounding/privacy/delivery defects or qualified semantic gains can
+change priorities. Source attribution, correction/withdrawal, allowlist/no DMs,
+USD18/2/20 guard, six local 01/05/09/13/17/21 Sol/xhigh runs and notifications remain.
+Older entries below record their observation times.
+
 # Current decision: study cohort correction deployed, 2026-11-19
 
 H135 is released as immutable 2.40.3. Healthy serial source checks receive a cohort

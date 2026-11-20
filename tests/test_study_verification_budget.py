@@ -1,6 +1,6 @@
 """Slow healthy sources must retain full-cohort freshness without quota resets."""
 
-import asyncio
+from contextlib import asynccontextmanager
 from datetime import timedelta
 
 import pytest
@@ -26,21 +26,42 @@ def seed_sources(stores, count):
     return [{"kind": "discord", "message_id": source(i).id} for i in range(count)]
 
 
-def scaled_limits(monkeypatch):
-    timeout = asyncio.timeout
-    # Accelerate the actual nested deadlines equally in both source revisions.
-    monkeypatch.setattr(asyncio, "timeout", lambda seconds: timeout(seconds / 10))
+class LogicalDeadlines:
+    """Exercise nested allowances without depending on host scheduling latency."""
+
+    def __init__(self):
+        self.elapsed = 0
+        self.deadlines = []
+
+    @asynccontextmanager
+    async def timeout(self, seconds):
+        self.deadlines.append(self.elapsed + seconds)
+        try:
+            yield
+        finally:
+            self.deadlines.pop()
+
+    def advance(self, seconds):
+        self.elapsed += seconds
+        if any(self.elapsed >= end for end in self.deadlines):
+            raise TimeoutError
+
+
+def logical_deadlines(monkeypatch):
+    clock = LogicalDeadlines()
+    monkeypatch.setattr("trubot.distillation.asyncio.timeout", clock.timeout)
+    return clock
 
 
 @pytest.mark.parametrize("count", [2, 6])
 async def test_healthy_cohort_can_take_longer_than_one_source_budget(stores, monkeypatch, count):
     refs = seed_sources(stores, count)
     distiller, client, responder, channel = worker(stores)
-    scaled_limits(monkeypatch)
+    clock = logical_deadlines(monkeypatch)
     fetch = channel.fetch_message.side_effect
 
     async def slow_current(identifier):
-        await asyncio.sleep(0.32)
+        clock.advance(3.2)
         return fetch(identifier)
 
     channel.fetch_message.side_effect = slow_current
@@ -68,10 +89,10 @@ async def test_healthy_cohort_can_take_longer_than_one_source_budget(stores, mon
 async def test_one_source_cannot_spend_the_whole_cohort_allowance(stores, monkeypatch, caplog):
     refs = seed_sources(stores, 6)
     distiller, client, responder, channel = worker(stores)
-    scaled_limits(monkeypatch)
+    clock = logical_deadlines(monkeypatch)
 
     async def stalled(identifier):
-        await asyncio.sleep(1)
+        clock.advance(5)
 
     channel.fetch_message.side_effect = stalled
     assert await distiller.cycle(client, episode_refs=refs) is None
