@@ -1,3 +1,9 @@
+## Linked conversational setup for character audits, 2.41.0
+
+Operator audits retain one bounded same-channel reply hop with anonymous links and
+explicit missing-setup gaps. Fresh source/access checks and existing byte limits
+remain authoritative. No normal reply or learning-policy change. [Qualification](docs/trubot-evolution/evaluations/2026-11-19-audit-reply-context.md).
+
 ## Durable private Discord smoke attempts
 
 Operators can run `scripts/discord_smoke.py` inside the existing app container.

@@ -1,3 +1,14 @@
+## 2026-11-19 21:00: H136 linked audit setup
+
+Both planning phases and preregistered criteria are in the [study](evaluations/2026-11-19-audit-reply-context.md).
+Baseline actual fictional Discord context loses the target/link; candidate retains
+both without a provider call. Recent eight focuses have no references, so actual
+frequency/semantic effect remain unresolved. This is enabling evidence capture,
+not a trait, abstraction population or reply-quality gain. H121/H120, H125 and
+useful native/visual/seasonal utility remain next, with existing privacy/source/
+spending gates. Initial census approval rejection was resolved with local proof
+of no provider code; no private scoring restriction was bypassed.
+
 # H131 completed, 2026-11-19 17:00 run
 
 Protected PR197/main CI and all six exact merged gates pass, 2,386 tests.

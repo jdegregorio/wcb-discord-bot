@@ -1,3 +1,13 @@
+# Audit reply context, 2.41.0
+
+Reply targets and anonymous links exist only in the ephemeral bounded audit packet.
+No schema, source/graph population or backup migration. Private receipts add only
+fixed linked/gap counts; message refs retain existing private handling. This run's
+content-free fixtures/results use smoke-tests/2026-11-19-2100 and existing
+0700/0600, seven-day manual retention and withdrawal cleanup. No raw transcripts,
+answers, personal interpretation or pixels persist in receipts. Code rollback
+preserves source, withdrawal and spending state.
+
 # H134 installed 2.40.2, 2026-11-19
 
 Bot-text focus attribution is corrected without graph/schema/population or source

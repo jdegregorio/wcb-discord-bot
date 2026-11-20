@@ -1,3 +1,14 @@
+# Current order, 2026-11-19 21:00
+
+H136 adds bounded same-channel reply setup to character audits. Then qualify
+H121/H120 relation-preserving abstracts, H125 semantic humor/emotion and useful
+native/visual/seasonal context. This does not qualify a new trait or general
+fidelity gain. Preserve generated Michigan U.P. aurora/trail-camera scenes,
+natural captions, selective tools, source/withdrawal/permission rules, USD18/2/20
+guard and six local 01/05/09/13/17/21 Sol/xhigh runs. Owner/gateway remains open at
+browser/login blockers. [Both phases and evidence](trubot-evolution/evaluations/2026-11-19-audit-reply-context.md).
+Older decisions below retain their historical status.
+
 # Current decision: durable smoke recovery complete, 2026-11-19
 
 H131 / PR197 merged at 6678f60 after required CI. All six exact merged gates pass

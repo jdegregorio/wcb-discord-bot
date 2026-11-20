@@ -1,3 +1,9 @@
+## Linked conversational setup for character audits, 2.41.0
+
+Operator audits retain one bounded same-channel reply hop with anonymous links and
+explicit missing-setup gaps. Fresh source/access checks and existing byte limits
+remain authoritative. No normal reply or learning-policy change. [Qualification](docs/trubot-evolution/evaluations/2026-11-19-audit-reply-context.md).
+
 ## Bot authorship in text reactions, 2.40.2
 
 Text reaction targets retain the same authenticated bot-source label as images.
