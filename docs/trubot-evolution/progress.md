@@ -1,10 +1,41 @@
-# Run 2026-11-20 01:00: H137 relevant graph memory
+# Completed run 2026-11-20 01:00: H137 / 2.41.1
 
-Fetched base73fa148, new managed worktree/feature branch; primary untouched.
-Both phases select reproduced relevance ownership before broader abstract population.
-Five baseline lookup/handler failures become passes; nine new controls pass. No new
-trait, graph population or general fidelity claim. Publication/installed gates pending.
-[Research and acceptance](evaluations/2026-11-20-relevant-graph-memory.md).
+Shipped relevant shared-concept recall through
+[PR210](https://github.com/jdegregorio/wcb-discord-bot/pull/210), merge
+c75fc194451754b6b29feab8f683258d0aefd0f3 and immutable
+[release v2.41.1](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.41.1).
+Feature CI44711078949, main CI44711539209 and image CI44711932570 pass.
+All six candidate and exact-merged gates pass: 2,426 tests, 96.13% coverage,
+46 typed modules and package builds. Running healthy/read-only at
+sha256:a1225a7babc06250e3ac7b719ff34e095a13249fc7eac3d3021e7784394228ef;
+all 46 installed hashes match. Previous 2.41.0 / a78db49ab7b2 retained, no rollback.
+
+Nine exact-base lookup/handler regressions become passes. Actual fictional private
+Discord matching evidence changes absent to present in candidate and installed
+projection. Baseline guesses correctly without matching support; candidate adds an
+unwanted hedge; installed answer is direct. No causal accuracy or general fidelity
+gain is claimed. Seven actual synthetic handler/send/readbacks retain learning counts,
+readiness isolation and exact durable receipts. Installed care FAILS with off-target
+clarification; attribution PASS; humor PARTIAL/weak payoff. No retakes. Source
+refresh for the disposable fictional-memory adapter is synthetic; real freshness
+is covered by regressions, not that adapter. Owner/main-gateway remains open.
+
+Both planning phases, coverage, limits and installed qualification are in the
+[study](evaluations/2026-11-20-relevant-graph-memory.md). H133 care investigation now
+precedes H121/H120 useful abstractions, H125 semantic comic/emotional utility and
+useful native/visual/seasonal context. Exact-base/current graph results are empty
+for the fixed care request, but its broader cause remains unresolved. No new trait,
+qualified abstraction, schema, model, service, key or operating allowance.
+
+After all auxiliaries close, health exits 0, heartbeat age 2.13 seconds, zero
+restarts/OOM false, 11 short-window log rows / zero errors or tracebacks. Timer
+active/enabled. November estimate USD 0.365844940, runtime 0.208374600 / maintenance
+0.157470340, 298 attempts / 23 unsettled. Aggregate maintenance movement since the
+previous completion is USD 0.004625255, not an audited run invoice. USD18/2/20 remains.
+Private content-free receipts/scripts/gates are preserved in approved automation
+storage before clean worktree archival. Primary checkout untouched; six local
+01/05/09/13/17/21 Sol/xhigh runs, notifications, generated U.P. scenes and selective
+tools remain. Fresh human semantic/pixel qualification remains open.
 
 # Completed run 2026-11-19 21:00: H136 / 2.41.0
 

@@ -1,15 +1,37 @@
-# Current decision: H137 relevant graph memory, 2026-11-20 01:00
+# Current decision: H137 deployed, 2026-11-20 01:00
 
-H137 fixes reproduced shared-concept crowding: the observation whose own aliases
-match ranks before connected neighbors, so supported recall survives graph growth.
-Five initial baseline failures become passes; complete conflicts, abstract conditions
-and source/validation bounds remain. Release and installed verification are pending.
-[Both phases and acceptance](docs/trubot-evolution/evaluations/2026-11-20-relevant-graph-memory.md).
+H137 ships as immutable 2.41.1 through protected PR210, exact-merged six gates,
+2,426 tests / 96.13% coverage and successful main/image CI. All 46 installed hashes
+match; healthy/read-only at a1225a7babc0, no short-window errors. Nine base lookup/
+handler failures become passes; real fictional Discord matching evidence changes
+absent to present. Installed recall is direct, attribution passes, care fails and
+comic payoff is PARTIAL. No new trait, abstraction population or general fidelity.
+[Both phases, release and qualification](docs/trubot-evolution/evaluations/2026-11-20-relevant-graph-memory.md).
 
-Next H121/H120 useful abstractions, H125 semantic comic/emotional utility, then useful
-native/visual/seasonal context. Existing privacy, source, withdrawal and spending rules
-apply. Six local standalone runs and generated U.P. scenes/selective tools remain.
-Older decisions below are historical.
+1. H133 care/focus investigation before population: fresh actual synthetic care
+   again gives an off-target clarification. Both exact-base/current lookup results
+   are empty for that request; cause remains unresolved. Compare matched fixed
+   histories and independent held-outs, preserve attribution/quotation controls,
+   then verify direct sincere care through actual private Discord. Existing
+   responder/maintenance allowance; no unsupported prompt patch. High confidence
+   in the symptom, unresolved mechanism and production frequency.
+2. H121/H120 useful relation-preserving abstractions with complete attributed supports/
+   contraries, qualified private review, independent held-outs and H133 recipient/
+   care controls. Existing graph; remedy and actual utility remain unvalidated.
+   Require natural grounded replies without routine metadata hedges.
+3. H125 semantic comic/emotional utility with warmth, brevity and mechanism-level
+   variety. Existing repair/ledger; creative amplification is separate from human
+   traits, and wording novelty alone fails. Utility remains unresolved.
+4. Useful linked native/visual/seasonal context after actual pixels, lifecycle and
+   utility. Keep generated Michigan U.P. aurora/trail-camera scenes, natural captions
+   and selective tools; automatic sightings stay closed.
+
+H137 leaves the queue as a verified retrieval correction. Fresh care failure raises
+H133 ahead of population; a supported mechanism or qualified semantic benefit can
+reorder work. Private source semantic comparison and owner/gateway remain open at
+documented review/browser/login boundaries. Preserve withdrawal, allowlist/no DMs,
+USD 18/2/20 guard, six local 01/05/09/13/17/21 Sol/xhigh runs and notifications.
+Older entries below are historical.
 
 # Current deployed order, 2026-11-19 21:00
 
