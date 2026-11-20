@@ -174,7 +174,7 @@ Production before change: healthy read-only 2.38.15, 46/46 installed module hash
 match, digest cb857fa67873af5e4144208ec12b98a6cc0ad7afd823e5b12b56586b6d234a7e,
 zero restarts/OOM, release timer active/enabled. After auxiliary closure healthcheck
 passes and heartbeat age is 9.62 seconds; 20-minute logs have zero errors/tracebacks.
-Pre-smoke ledger USD 0.337420550 estimate, post USD 0.342437275 / 233 attempts /
+Pre-smoke ledger USD0.337420550 estimate, post USD0.342437275 / 233 attempts /
 21 unsettled; the nine maintenance attempts use the existing ledger. Concurrent
 aggregate is not an invoice. USD18/2/20 guard unchanged. Private content-free
 receipts use app smoke-tests/2026-11-18-0905, 0700/0600, seven-day manual retention
@@ -218,7 +218,7 @@ Post census:4,299grouped blocks/405eligible/sevenambiguous/threebounded windows;
 40development bot posts/seven exact repeats;300league posts/26bot,seven-daytwo target/
 fourbot. No fixed storage-language matches. Unequal grains, test saturation and
 sparse spontaneous activity limit interpretation. November ledger aggregate
-USD 0.345168965estimated,240attempts/21unsettled,runtime0.208176350/
+USD0.345168965estimated,240attempts/21unsettled,runtime0.208176350/
 maintenance0.136992615;18/2/20guard unchanged. This run makes two maintenance runtime
 smoke requests, zero audit/scorer calls and adds no ongoing normal-reply cost or
 service. Aggregate movement is not a precise run cost or invoice.
@@ -2086,7 +2086,7 @@ Do not infer all real smoke checks passed from the intermediate release.
   pauses;8 learning batches/8 replies/zero completed studies. Short window only.
   Identity/withdrawal/native34/archive16docs4299blocks405eligible and graph439
   human sources/554episodes/96visuals/1011edges unchanged; no development learning.
-- Tracked estimate USD 0.073770205 (runtime0.03356511, maintenance0.040205095);
+- Tracked estimate USD0.073770205 (runtime0.03356511, maintenance0.040205095);
   observed run delta0.008543245.24 maintenance research calls cost0.00256807,
   plus21 actual replies (3before/10intermediate/8final).334 settled/zero unsettled;
   1037674input/546483cached/13813output tokens. Existing18/2/20caps and pacing
@@ -2515,7 +2515,7 @@ acceptance and release evidence follow after deployment.
 - Source/graph counts unchanged:34 native;16 archives/4299 blocks/405 eligible;
   115 visual episodes/96 assets;439 graph sources/554 episodes/1011 edges,
   one claim/one preference/zero abstractions. No real human observation populated.
-- Tracked October estimateUSD 0.099331455 (runtime0.047684835,
+- Tracked October estimateUSD0.099331455 (runtime0.047684835,
   maintenance0.05164662),491 settled/zero unsettled. Run delta0.004857205;
   twelve synthetic research calls0.001875455. Existing USD18/2/20 caps preserved;
   no new recurring call or paid infrastructure. Billing/pre-guard spend unknown.
@@ -2576,7 +2576,7 @@ or real abstraction population. Full release/Discord evidence follows deployment
 - Production source counts unchanged:34 native,16 exports/4299 blocks/405 eligible,
   115 visual episodes/96 assets,439 graph sources/554 episodes/1011 edges,
   one claim/one preference/zero abstractions. No human pattern populated.
-- Tracked OctoberUSD 0.10355339(runtime0.05015061,maintenance0.05340278),505 settled,
+- Tracked OctoberUSD0.10355339(runtime0.05015061,maintenance0.05340278),505 settled,
   zero unsettled. Run delta0.004221935;five research calls0.001026135. Existing
   USD18/2/20 caps, no added service or recurring request. Provider billing and
   pre-guard October spend remain unknown.
@@ -2957,7 +2957,7 @@ atomic replacements/conflicts/backups/withdrawal and conditional/timing versus e
 quotation paths. The first clone failure identified an ordinary-question raw-punchline
 path and was corrected before population. Current production remains healthy 2.17.2,
 immutable digest a78b82141d17bf07d43d828297ce02fde267e80a1aabf84d35ef84bd7356c7d2.
-Initial October estimate USD 0.1508092, zero unsettled; all research so far is offline,
+Initial October estimate USD0.1508092, zero unsettled; all research so far is offline,
 actual gateway baselines use the existing runtime ledger. Release and actual candidate
 acceptance are pending; do not treat proposed population as deployed.
 
@@ -3028,7 +3028,7 @@ Matched 16-request invented-source comparison: semantic 7/8 baseline, 8/8 candid
 no off-topic source reuse in six candidate negatives versus one in six baseline.
 Actual isolated owner-message baseline admits irrelevant voice data; candidate and
 normal gateway acceptance remain pending. No new human trait or general quality claim.
-Research USD 0.000734410 through existing maintenance allowance; no added recurring
+Research USD0.000734410 through existing maintenance allowance; no added recurring
 request, model, service, study pacing, source intake or participation change.
 
 ### 05:00 final runtime rollout and measured outcome
@@ -3062,9 +3062,9 @@ league activity. Same Codex evaluator, no independent human review or original p
 Matched invented comparison 7/8 to 8/8, one off-topic source reuse removed in the tiny
 sample. Full methods and limits are in selective-voice-study.md and release.json.
 
-Tracked October USD 0.161571360 (runtime0.075279115/maintenance0.086292245), 1,106
-settled/zero unsettled. Run USD 0.005495930 across 32 attempts; maintenance delta
-USD 0.001188275, 16 research calls USD 0.000734410. Existing USD18/2/20 caps, no added
+Tracked October USD0.161571360 (runtime0.075279115/maintenance0.086292245), 1,106
+settled/zero unsettled. Run USD0.005495930 across 32 attempts; maintenance delta
+USD0.001188275, 16 research calls USD0.000734410. Existing USD18/2/20 caps, no added
 recurring request/service. Provider billing and pre-guard spending remain unknown.
 
 Private evidence on existing app volume, 0700/0600, manual seven-day retention and
@@ -3125,11 +3125,11 @@ abstraction or general fidelity/humor gain. Native 34, archive 16 / 4,299 blocks
 run: graph 439 sources / 554 episodes / 1,015 edges, two claims/one preference/zero patterns.
 The old failed pattern remains retired. Human abstractions remain the next priority.
 
-Tracked October estimate USD 0.168895595, runtime0.079035765
+Tracked October estimate USD0.168895595, runtime0.079035765
 and maintenance0.089859830; 1149 settled/zero unsettled.
-Run delta USD 0.007324235 over 43 attempts: runtime
+Run delta USD0.007324235 over 43 attempts: runtime
 0.003756650/maintenance0.003567585. Includes
-24 research requests (USD 0.002187370), five controlled maintenance probes, two
+24 research requests (USD0.002187370), five controlled maintenance probes, two
 existing autonomous study calls and 12 gateway attempts including one optional
 repeat recovery. Existing USD18/2/20 caps; no fresh ledger, added recurring call
 or paid service. Provider billing and pre-guard spend remain unknown.
@@ -3247,8 +3247,8 @@ Persistent counts unchanged: native34, archive16/4299 grouped blocks/412 target/
 eligible; visual115/96 assets; graph439 sources/554 episodes/1015 edges/two claims/
 one preference/zero patterns. No candidate override remained during installed tests.
 
-October ledger estimate USD 0.183547290, runtime0.085950445/maintenance0.097596845;
-1245 settled/zero unsettled. Run delta USD 0.007216365 over29 attempts, runtime0.004255825/
+October ledger estimate USD0.183547290, runtime0.085950445/maintenance0.097596845;
+1245 settled/zero unsettled. Run delta USD0.007216365 over29 attempts, runtime0.004255825/
 maintenance0.002960540:14 research requests, three real controlled maintenance probes,
 12 runtime attempts including baseline and abstention. Existing USD18/2/20 caps;
 no fresh ledger, paid service or added recurring request. Billing/pre-guard cost unknown.
@@ -3471,8 +3471,8 @@ Postaudit unchanged3channels/latest100/14days:7target/12peers/4olderbot/0spontan
 405eligible grouped blocks/15exports mechanical only. Private source/graph counts and
 zero activepatterns unchanged. At12:30UTC0errors/replyfailures/disconnects/studypauses/
 restarts;2Discordclient warnings/0memoryverification warnings. Monthly ledger estimate
-USD 0.198290225(runtime0.098401445/maintenance0.09988878),1290settled/0unsettled. Run
-USD 0.003855725/11attempts(8runtime includingabstention,3maintenance). USD18/2/20caps,
+USD0.198290225(runtime0.098401445/maintenance0.09988878),1290settled/0unsettled. Run
+USD0.003855725/11attempts(8runtime includingabstention,3maintenance). USD18/2/20caps,
 no newservice/ledger/call policy, billing/preguardunknown. Candidate override removed
 by container replacement; disposable DBs deleted. Contentfree private refs/helpercode
 0700/0600 at smoke-tests/2026-10-13-0500 retain existing7daymanual policy/withdrawal.
@@ -3526,7 +3526,7 @@ remains unexecuted. No measured general fidelity or 2-3x humor gain.
 
 PR/required CI/tested merge/immutable release/both images/pi5 deployment/installed
 acceptance and fresh normal gateway controls remain the final release steps and will
-be recorded after verification. Pre-run covered October estimateUSD 0.198290225,1290
+be recorded after verification. Pre-run covered October estimateUSD0.198290225,1290
 settled/zero unsettled; USD18/2/20 guard unchanged, billing and pre-guard spend unknown.
 Private artifacts keep only references/flags and public fixture code in existing app
 volume0700/0600; actual answer/raw source text is not retained in smoke records.
@@ -3562,8 +3562,8 @@ new original-pixel or provider private audit, prior specific approval gap unexec
 Postrollout0errors/replyfailures/disconnects/restarts/memorywarnings;2discord.client
 warnings. Sparse activity prevents a general error-rate or character-quality estimate.
 
-October estimateUSD 0.20082361(runtime0.100326035/maintenance0.100497575),1298settled/
-0unsettled. RunUSD 0.002533385 across8attempts:3maintenance/5runtime(one abstention).
+October estimateUSD0.20082361(runtime0.100326035/maintenance0.100497575),1298settled/
+0unsettled. RunUSD0.002533385 across8attempts:3maintenance/5runtime(one abstention).
 USD18/2/20 unchanged; no added service/reads/provider requests. Estimates not billing;
 pre-guard spend unknown. Private refs/flags/public fixture code in app-volume
 smoke-tests/2026-10-13-0900,0700/0600, existing seven-day manual retention/withdrawal.
@@ -3603,7 +3603,7 @@ care21words/three sentences and stock preface remain H22/H39 gaps, TJ relevant n
 fiction, baseball/recent natural and source-topic available, recent quotations match
 viewed human sources. Broad past answer52words/two sentences/no metadata caveat;
 no independent historical semantic quality grade or calendar-date proof. No new trait.
-Covered estimateUSD 0.20456879/1309settled/zero unsettled, runUSD 0.00374518/11attempts,
+Covered estimateUSD0.20456879/1309settled/zero unsettled, runUSD0.00374518/11attempts,
 3maintenance/8runtime including abstention/one optional refresh. Guard18/2/20 unchanged.
 
 Three live background cycles1checked/1unavailable motivated additional matched probes:
@@ -3643,8 +3643,8 @@ Four actual background cycles2checked/0unavailable; zero errors/replyfailures/me
 warnings/disconnects/restarts, two Discord startup warnings. Sparse activity limits
 rate conclusions. No original-pixel interpretation or human-held-out pattern benchmark.
 
-Covered October estimateUSD 0.207282965(runtime0.10578422/maintenance0.101498745),1,316
-settled/zero unsettled. RunUSD 0.006459355/18attempts:4maintenance/14runtime, including
+Covered October estimateUSD0.207282965(runtime0.10578422/maintenance0.101498745),1,316
+settled/zero unsettled. RunUSD0.006459355/18attempts:4maintenance/14runtime, including
 two recipient abstentions and one optional refresh. Guard18/2/20 unchanged; zero provider
 calls from source experiments/feature, zero paid additions; billing/pre-guard unknown.
 [Content-free release evidence](evaluations/2026-10-13-native-freshness-release.json).
@@ -3715,7 +3715,7 @@ reauthenticated; both block obsolete invented memories and actual answers are di
 current-source replies. Previous run ended at account usage limit after these tests,
 not at a product failure. Its missing fresh gateway controls are not retroactively
 claimed; this run performs fresh controls after its own release. Covered ledger at
-run startUSD 0.20793597/1320settled/0unsettled; includes prior four maintenance probes.
+run startUSD0.20793597/1320settled/0unsettled; includes prior four maintenance probes.
 
 ### H58a released and verified
 
@@ -3767,8 +3767,8 @@ so far; new-study correctness is demonstrated by invented handler acceptance onl
 Observed post-release0errors/replyfailures/memorywarnings/disconnects/studypauses/
 restarts;2startup Discord warnings. The early worker counter used the wrong label,
 corrected before reporting two actual successful cycles. Sparse league activity limits
-rate/fidelity claims. October covered estimateUSD 0.210867275(runtime0.107923395/
-maintenance0.10294388),1330settled/0unsettled. RunUSD 0.002931305/10attempts:4maintenance
+rate/fidelity claims. October covered estimateUSD0.210867275(runtime0.107923395/
+maintenance0.10294388),1330settled/0unsettled. RunUSD0.002931305/10attempts:4maintenance
 replies/6runtime including recipient abstention. Guard18/2/20 unchanged, no new service,
 not provider billing; pre-guard spending unknown. Specific semantic peer-context transfer
 approval remains pending after automatic review rejection; local-only correction complete.
@@ -3800,9 +3800,9 @@ and H48/H55b qualification stay open. Candidate2.24.0 awaits gates, tested merge
 immutable release/images/scoped deployment and fresh actual Discord acceptance.
 
 Feature six gatesPASS:1,051tests/96.87%branchcoverage/31typedmodules/build2.24.0.
-Line-length lint failure corrected and complete gates rerun. TrialUSD 0.004066880
-maintenance/78settledattempts, plus actual baseline questionUSD 0.000599750;
-coveredOctoberUSD 0.217613030/onepreexistingunsettledreservation. Estimates, not
+Line-length lint failure corrected and complete gates rerun. TrialUSD0.004066880
+maintenance/78settledattempts, plus actual baseline questionUSD0.000599750;
+coveredOctoberUSD0.217613030/onepreexistingunsettledreservation. Estimates, not
 billing; pre-guardspendunknown. Release and installed acceptance still pending.
 
 
@@ -3853,9 +3853,9 @@ activitylimitsrates. Pre/post3intakes/latest100/14days7target12peer4olderbot0cur
 spontaneous; native34/439graphsources/554episodes/3legacyobservations/0patterns.
 Existing recall nowrecords6content-freecaptures/9dependencies, no newhumantrait.
 
-Covered OctoberUSD 0.226279000,1,506attempts/1preexistingunsettledreservation; run175
-settled/USD 0.013332600 (163maintenance/USD 0.008018325,12runtime/USD 0.005314275).
-Finalgateway9/USD 0.003774565. Estimatesnotbilling,pre-guardunknown,18/2/20unchanged,
+Covered OctoberUSD0.226279000,1,506attempts/1preexistingunsettledreservation; run175
+settled/USD0.013332600 (163maintenance/USD0.008018325,12runtime/USD0.005314275).
+Finalgateway9/USD0.003774565. Estimatesnotbilling,pre-guardunknown,18/2/20unchanged,
 noaddedpaidservice. Privatecontent-free receipts0700/0600; trialoverrides/rawdiagnostic
 stagingerased, no sourcestate/withdrawal/usage restore. NewH60shortfactualrechecklatency
 hypothesis remainsunvalidated; qualifiedH48/H55babstractpopulation/legacyreviewstays
@@ -3912,7 +3912,7 @@ disclaimer, source/author/recipient regression observed. Short window has0errors
 failures/disconnects/study pauses,2startupSDKwarnings. Post-audit counts7target/12peer/
 4olderbot/0currentspontaneous; no development learning or source expansion.
 
-Run68settledrequests/USD 0.009047595estimate (58maintenance/0.004649270,10runtime/
+Run68settledrequests/USD0.009047595estimate (58maintenance/0.004649270,10runtime/
 0.004398325); installed8requests/0.003330700. Covered October0.235326595/1574attempts/
 1unchangedpreexistingunsettled,18/2/20 guard unchanged. Not billing; pre-guard unknown.
 Six historical context windows/one export/42block occurrences with possible overlap are
@@ -4019,7 +4019,7 @@ all general recall acceptance is not claimed. Stock care/familiar humor remain.
 
 Postaudit7target12peer4olderbot0fresh/unavailable0,0errors/replyfailures/disconnects/
 studypauses/restarts/2SDKwarnings,one care recovery. Graph2claims1preference1value8native
-contexts12deps1039edges,34native sources unchanged. Run19settled/USD 0.006362655estimate,
+contexts12deps1039edges,34native sources unchanged. Run19settled/USD0.006362655estimate,
 coveredOctober0.250879475/1621attempts/one unchanged unsettled;18/2/20 guard preserved.
 Private refs/counts0700/0600,7daymanualretention/withdrawal,no raw source/answers.
 [Final study](evaluations/2026-10-14-graph-selection-study.md) and
@@ -4100,8 +4100,8 @@ no general fidelity/funniness gain. No release rollback can fix unchanged routes
 
 Post audit5target/10peer/3olderbot/zero fresh/zero denied; one visual episode
 excluded without pixels. Zero observed errors/reply failures/disconnects/study
-pauses, two startup warnings, short sparse window. Covered OctoberUSD 0.261375345/
-1,655attempts/one unchanged unsettled. Run34settled/USD 0.01049587, shared18/2/20
+pauses, two startup warnings, short sparse window. Covered OctoberUSD0.261375345/
+1,655attempts/one unchanged unsettled. Run34settled/USD0.01049587, shared18/2/20
 guard; estimates not billing, pre-guard unknown.
 
 Private refs/counts/hashes/grades retained under app-volume0700/0600 and existing
@@ -4170,8 +4170,8 @@ selective tools/generated Michigan U.P. scenes. No general fidelity gain claimed
 
 Post audit5target8peer3olderbot0fresh/0denied; sparse actual league activity limits
 character conclusions. Short logs0errors/replyfailures/disconnects/studypauses,
-2startupwarnings/0restarts. Run75settled requests estimateUSD 0.008836085;
-coveredOctoberUSD 0.278936285/1,778attempts/one unchanged old unsettled.18/2/20 guard,
+2startupwarnings/0restarts. Run75settled requests estimateUSD0.008836085;
+coveredOctoberUSD0.278936285/1,778attempts/one unchanged old unsettled.18/2/20 guard,
 model, native gate, private scope, source lifecycle, schedule/notifications unchanged.
 Private refs/counts/hashes/grades0700/0600,seven-day manual retention/withdrawal;
 no raw answer/source or derived personal-summary artifact. Primary heartbeat and
@@ -4270,8 +4270,8 @@ All six final feature gates pass: locked sync, formatting, lint, strict typing o
 31 modules,1,189tests/96.98%branch coverage and both2.26.6build artifacts. The272
 focused source/graph/handler checks pass after updating the superseded expectations.
 No failing/flaky gate accepted. Pre-release run26settled requests, estimated
-USD 0.003472855:25maintenance/USD 0.002908355and1runtime/USD 0.0005645. Covered
-OctoberUSD 0.29197848/1,842attempts/one unchanged old unsettled; estimates are not
+USD0.003472855:25maintenance/USD0.002908355and1runtime/USD0.0005645. Covered
+OctoberUSD0.29197848/1,842attempts/one unchanged old unsettled; estimates are not
 billing, pre-guard spending unknown, shared18/2/20 guard unchanged. Required CI,
 merged-main gates, images/deployment/installed normal gateway remain pending.
 
@@ -4394,7 +4394,7 @@ original provider input uncaptured. Date inference remains open, not a new graph
 qualification assumption. Modest TJ humor/care and recipient abstention pass, no
 measured funniness multiplier. H72 final conservative6/7each versus preliminary
 candidate7/7; rejection unchanged, no rollout. Post league activity remains sparse.
-Run33settled attempts/USD 0.01034458estimated; covered OctoberUSD 0.305951295,
+Run33settled attempts/USD0.01034458estimated; covered OctoberUSD0.305951295,
 1,885attempts/one unchanged old unsettled. No errors/restarts in the short installed
 window, two startup warnings, no rollback. Sixteen content-free private files0700/0600,
 seven-day manual retention/withdrawal. Source/derived data stay private, no new
@@ -4555,8 +4555,8 @@ one-evaluator limits, source-held-out weakness and earlier ownership failure are
 retained above and in private content-free receipts; no raw answer/source text or
 private derived human observations are published or retained as smoke artifacts.
 
-Run49settled provider attempts, estimatedUSD 0.010771165:25maintenance/USD 0.00295236,
-24runtime/USD 0.007818805. Covered OctoberUSD 0.32880614/1,973attempts,one unchanged old
+Run49settled provider attempts, estimatedUSD0.010771165:25maintenance/USD0.00295236,
+24runtime/USD0.007818805. Covered OctoberUSD0.32880614/1,973attempts,one unchanged old
 unsettled reservation; no new unsettled attempt. Shared18/2/20 guard unchanged, estimates
 are not provider billing, pre-guard spending unknown, no new service. Private receipts
 use0700/0600 and existing seven-day manual retention/withdrawal cleanup. No development
@@ -4640,8 +4640,8 @@ observations retained in smoke artifacts or Git. One unsafe environment-file rea
 automatically rejected; safe container metadata inspection completed the work without
 credential exposure or bypass, no remaining access blocker.
 
-Run39settled attempts/USD 0.00610377estimated:23maintenance/USD 0.001460125,16runtime/
-USD 0.004643645. Covered OctoberUSD 0.339004915/2,021attempts/one unchanged old unsettled;
+Run39settled attempts/USD0.00610377estimated:23maintenance/USD0.001460125,16runtime/
+USD0.004643645. Covered OctoberUSD0.339004915/2,021attempts/one unchanged old unsettled;
 no new unsettled,18/2/20 guard intact, no paid service; not billing, pre-guard spend
 unknown. Container0errors/reply failures/disconnects/restarts,2startup warnings,
 1source discard/1recipient skip/2existing quality refreshes. Short windows do not
@@ -4695,8 +4695,8 @@ and withdrawal cleanup; no raw sources, generated replies or personal derivation
 enter Git or smoke receipts. Main source/author/access/withdrawal and exact final
 packet checks remain, including substantive optional setup changes.
 
-Run25settled attempts,estimatedUSD 0.005837255:11maintenance/USD 0.00124559 and
-14runtime/USD 0.004591665. Covered OctoberUSD 0.34484217/2,046attempts;one unchanged
+Run25settled attempts,estimatedUSD0.005837255:11maintenance/USD0.00124559 and
+14runtime/USD0.004591665. Covered OctoberUSD0.34484217/2,046attempts;one unchanged
 old unsettled reservation,no new unsettled attempt. Not provider billing; pre-guard
 spending unknown. Existing18/2/20 guard/model/pacing/six fresh daily Sol/xhigh runs
 and notification preference remain; no new provider pass/schema/service or scope.
@@ -4758,8 +4758,8 @@ H83a role reframing is rejected; H83b is complete for the existing repair path.
 Next remains H79/H81 useful qualified abstractions and H83 focal-target/semantic
 freshness, linked native/original pixels, selective tools/generated U.P. scenes.
 
-Run73settled attempts, estimatedUSD 0.009935115:62maintenance/USD 0.00612841 and
-11runtime/USD 0.003806705. Covered OctoberUSD 0.354777285/2,119attempts; one unchanged
+Run73settled attempts, estimatedUSD0.009935115:62maintenance/USD0.00612841 and
+11runtime/USD0.003806705. Covered OctoberUSD0.354777285/2,119attempts; one unchanged
 old unsettled reservation, no new unsettled attempt. Existing18/2/20 guard intact;
 not billing, pre-guard spending unknown. Added runtime input only on existing repair,
 no new provider pass/schema/model/service/scope. Logs since new container start:
@@ -4816,7 +4816,7 @@ is grounded but remains a third-person recap. Preference/date/care/humor/ownersh
 restraint pass; no routine metadata disclaimer. Installed exact subject binding and
 heartbeat after HTTP-only client closure pass. No new human observation.
 
-Run25settled attempts,estimatedUSD 0.006158285; covered OctoberUSD 0.36093557,
+Run25settled attempts,estimatedUSD0.006158285; covered OctoberUSD0.36093557,
 existing18/2/20 guard intact. One old unsettled reservation,no new unsettled attempt;
 not provider billing and pre-guard spend unknown. New container0errors/reply failures/
 source discards/disconnects/restarts,2startup warnings and2existing quality repairs.
@@ -4835,8 +4835,8 @@ pixels uninspected. No new human observation; one retained value node. Next rema
 qualified useful abstraction/emotion/contextual humor, now including source-recap
 voice distance, linked native/original pixels, H61tools/generated U.P. scenes.
 
-13maintenance/USD 0.00143673 and12runtime/USD 0.004721555 settled attempts. Covered
-October2,144attempts/USD 0.36093557;old unsettled reservation predates this run,no new
+13maintenance/USD0.00143673 and12runtime/USD0.004721555 settled attempts. Covered
+October2,144attempts/USD0.36093557;old unsettled reservation predates this run,no new
 unsettled. Guard18/2/20unchanged; estimates not billing,pre-guard spending unknown.
 Private14content-free receipts under app smoke-tests/2026-10-16-2100 use0700/0600,
 existing seven-day manual retention/withdrawal cleanup. Raw exchanges/answers,
@@ -4926,8 +4926,8 @@ zero seven-day bot posts. New container window:0errors/reply exceptions/disconne
 restarts,1source discard,7posts/1recipient skip/2existing quality repairs/2startup
 warnings. Short unmatched windows do not establish an error-rate improvement.
 
-Run45settled attempts, estimatedUSD 0.00717635:33maintenance/USD 0.003306645,
-12runtime/USD 0.003869705. Covered OctoberUSD 0.36811192/2,189attempts. One unchanged
+Run45settled attempts, estimatedUSD0.00717635:33maintenance/USD0.003306645,
+12runtime/USD0.003869705. Covered OctoberUSD0.36811192/2,189attempts. One unchanged
 old unsettled reservation, zero new unsettled. Existing18/2/20 guard intact; estimates
 are not provider billing, pre-guard spend unknown. No added infrastructure/provider.
 Private content-free refs/hashes/counts/grades in app-volume smoke-tests/2026-10-17-0100,
@@ -5018,8 +5018,8 @@ restarts,8posts,1recipient skip,3existing quality refreshes,2startup warnings.
 Short unmatched windows do not establish an error-rate gain. The separate
 captured-send installed trial's correct substantive discard is not a gateway error.
 
-Run41settled attempts,estimatedUSD 0.0083419:27maintenance/USD 0.00388163,
-14runtime/USD 0.00446027. Covered October2,230attempts/USD 0.37645382;one unchanged
+Run41settled attempts,estimatedUSD0.0083419:27maintenance/USD0.00388163,
+14runtime/USD0.00446027. Covered October2,230attempts/USD0.37645382;one unchanged
 old unsettled reservation,zero new unsettled. Existing18/2/20 guard intact; not
 provider billing,pre-guard spending unknown. No added paid service or paid reply pass.
 13private content-free receipts use0700/0600, existing seven-day manual retention
@@ -5051,8 +5051,8 @@ shared-ledger fixed image generation, durable once-per-night claims and authoriz
 quiet morning publication. Actual public prior-night feeds: no qualifying opportunity,
 no automatic image call. Actual synthetic-positive preview:1536x1024,2,563,815bytes,
 inspected plausible U.P. shore/sky, no people/text/unsupported real event claim;
-USD 0.04172,27.736seconds including feed test. Timing gate8/8syntheticcases succeeds,
-USD 0.000223625/8requests. These are capability/guard tests, not engagement gains.
+USD0.04172,27.736seconds including feed test. Timing gate8/8syntheticcases succeeds,
+USD0.000223625/8requests. These are capability/guard tests, not engagement gains.
 Release, installed acceptance and exact identifiers remain pending in this entry
 until verified. [Study](evaluations/2026-10-17-aurora-feature-study.md).
 
@@ -5086,7 +5086,7 @@ Two human-held-out normal-reply controls remain comic-mechanism0/2, no new trait
 Post census5target/7peer/3olderbot/0fresh bot across3allowed latest100/14daywindows.
 Latest container0errors/failures/discards/disconnects/aurora failures/restarts,
 4normal posts/1recipient skip/2startup warnings. Short windows are not error rates.
-Run22settled attempts/estimatedUSD 0.08630947; covered OctoberUSD 0.46276329,
+Run22settled attempts/estimatedUSD0.08630947; covered OctoberUSD0.46276329,
 2,252attempts/one unchanged old unsettled. Existing18/2/20 guard; billing unverified.
 Seven private content-free receipts, no raw source/answer/derived personal text.
 Both planning phases and roadmap reconciliation are in the
@@ -5129,7 +5129,7 @@ No measured general character/humor gain;fresh private held-outs remain open.
 Actual public feeds expose real stale/missing coverage rather than inventing current
 conditions. All six local gates pass:1,578tests/96.99%coverage,36typedmodules,build2.30.0.
 Initial fixture/version errors corrected,no accepted failure/flakiness.30accounted
-attempts/estimatedUSD 0.003893375since census;legacyunsettled1unchanged,no fresh pool.
+attempts/estimatedUSD0.003893375since census;legacyunsettled1unchanged,no fresh pool.
 
 Protected PR/main CI,immutable image publication,deployment and real private gateway
 acceptance pending. Full method/results in [study](evaluations/2026-10-17-context-tools-study.md).
@@ -5159,7 +5159,7 @@ protected release and installed acceptance remain pending at this entry.
 
 H91a prototype: same3public/syntheticrequests,baseline0/3attachments versus3/3actual
 candidatePNGassets;3/3duplicates suppressed. Pixels inspected3/3plausible/clean.
-Three maintenance imagesUSD 0.12514,24.456-27.077seach; baseline text1.686-2.577s.
+Three maintenance imagesUSD0.12514,24.456-27.077seach; baseline text1.686-2.577s.
 No Andrew-photo fidelity or general character/engagement gain inferred.77new tests
 cover selection,normal modes,durable concurrent claims,source lifecycle and mutable
 Discord cache authorization. Final full gates and installed actual delivery remain.
@@ -5229,9 +5229,9 @@ with0providerrequests. All recover/retain normal readiness; unequal observation 
 are not error-rate comparisons. Six fresh daily local01/05/09/13/17/21Sol/xhigh runs
 and notifications unchanged.
 
-Observed run window:24new settled attempts,estimatedUSD 0.17429243,including the one
-uncontrolled development exchange. Maintenance6attempts/USD 0.125568865; runtime18/
-USD 0.048723565. Four images totalUSD 0.16685. Covered October2,306attempts/USD 0.640949095;
+Observed run window:24new settled attempts,estimatedUSD0.17429243,including the one
+uncontrolled development exchange. Maintenance6attempts/USD0.125568865; runtime18/
+USD0.048723565. Four images totalUSD0.16685. Covered October2,306attempts/USD0.640949095;
 one unchanged legacy unsettled reservation,zero new unsettled. Existing18/2/20 guard,
 no new paid service/provider pool. Estimates are not provider billing and pre-guard
 spend remains unknown. Content-free private refs/pass/fail receipts remain0700/0600
@@ -5318,7 +5318,7 @@ Reconciled interrupted H95 on freshc5c1d3a. PR153/tested3191424 ordinary merge1a
 
 Actual private wake quiet/routine,next4hours; actual ownerwoodpile0to1PNG,32.574seconds,generatedlabel,inspectedpixels. Exactrequest/newprocess replay0calls/0posts. Sixproviderplansquiet/restart-safe,eighttimingcontrols pass;fourseparateprocessesoneclaim. Twelveactualgatewaycases:11functional/oneincompleteclarification,11posts/onecorrectabstention. Thirdpersonhistoricalrecap/sightingcaveats remain. Sixsyntheticclarification replays3/arm allaskwherewithidenticalrequests;actualcontextgapH97 unresolved. No newhumantrait,generalfidelitygain,humormultiplier or naturalweeklyengagementresult.
 
-Finalpost-clientactualgatewaysanity passes6.220seconds;heartbeat survives,no subsequent Discordclient. Observed0errors/failures/discards/restarts,11normalposts/1image/1recipientdecline,3warnings(twoexistingvoice-library,onesafepre-initjournalwarning).43newsettledattempts/estimatedUSD 0.051090340,oneimageUSD 0.04163,same18/2/20 guard,twooldunsettled/0new. CoveredmonthUSD 0.879996760estimate,notbilling,preguardunknown. Pre/postfourhumanwindows/eightdevpairs triages insufficient,notcausal. Sourcecensuszero7daybotactivity. H95complete;H96confirmationunvalidatedclosed,thenH93timing/variety,H92independentutility/neededcoverage;H97additionalresearch. SixdailySol/xhighscheduleunchanged.
+Finalpost-clientactualgatewaysanity passes6.220seconds;heartbeat survives,no subsequent Discordclient. Observed0errors/failures/discards/restarts,11normalposts/1image/1recipientdecline,3warnings(twoexistingvoice-library,onesafepre-initjournalwarning).43newsettledattempts/estimatedUSD0.051090340,oneimageUSD0.04163,same18/2/20 guard,twooldunsettled/0new. CoveredmonthUSD0.879996760estimate,notbilling,preguardunknown. Pre/postfourhumanwindows/eightdevpairs triages insufficient,notcausal. Sourcecensuszero7daybotactivity. H95complete;H96confirmationunvalidatedclosed,thenH93timing/variety,H92independentutility/neededcoverage;H97additionalresearch. SixdailySol/xhighscheduleunchanged.
 
 [Full protocol,results,costs and limits](evaluations/2026-10-18-outdoor-checkins-release.md),[public receipt](evaluations/2026-10-18-outdoor-checkins-release.json),[runtime PR153](https://github.com/jdegregorio/wcb-discord-bot/pull/153),[release](https://github.com/jdegregorio/wcb-discord-bot/releases/tag/v2.33.0). Final evidence is carried in a separate documentation-only PR after these results; runtime bytes remain the tested release.
 
@@ -5376,7 +5376,7 @@ secondary clients close. Caption grounding/format and specific2020relevance rema
 partial. Initial7/8integrated intent comparison,one safe source-refresh stop,
 final isolated8/8and new-wording4/4are distinguished. Two4human-window/16dev-post
 audits both find general human comparison insufficient; no trait/fidelity gain.
-Estimated runUSD 0.028396320; covered monthUSD1.030795415,2unchanged old unsettled.
+Estimated runUSD0.028396320; covered monthUSD1.030795415,2unchanged old unsettled.
 Same18/2/20 guard; no newservice/pool/guild intake or rollback.
 
 PR156superseded/closed, H99PR157stilldraft pending rebase/fullinstalled acceptance.
@@ -5547,7 +5547,7 @@ character improvement. Sparse spontaneous/reaction/ambient coverage;pre/post hum
 comparisons insufficient. Next independently qualify H101/H92/H93caption/abstract/
 emotional/amplified-humor utility,then useful visual coverage/seasonal variety.
 
-Covered run USD 0.035745400,covered October USD1.127253655;three
+Covered run USD0.035745400,covered October USD1.127253655;three
 preexisting uncertain/zero new. Existing18/2/20 guard,study caps,learning/withdrawal
 and six-run schedule/notifications unchanged. Private content-free receipts persist
 outside the worktree;no raw evidence or answer text in public Git or smoke files.
@@ -5728,8 +5728,8 @@ pattern permission or measured general fidelity/humor multiplier. The graph keep
 553 episodes,438human sources,24 native contexts,28dependencies,1,071 edges,one value,
 one preference,two claims and accepted1/rejected3studies.
 
-All53run ledger attempts settle:38maintenance/USD 0.010850005 and15runtime/
-USD 0.007164070, totalUSD 0.018014075. Covered OctoberUSD1.250641585 estimate;
+All53run ledger attempts settle:38maintenance/USD0.010850005 and15runtime/
+USD0.007164070, totalUSD0.018014075. Covered OctoberUSD1.250641585 estimate;
 pre-guard spend unknown, not provider billing. Six old unresolved reservations
 (one pending/five uncertain),zero new. Existing18runtime/2maintenance/20total guard,
 no new pool/model/service, no extra photo studies or paid infrastructure.
@@ -5801,7 +5801,7 @@ zero observed errors/source discards/restarts. No general human fidelity gain.
    H102calendar placement stays research. Material grounding/privacy/delivery
    evidence changes priority. Same18runtime/2maintenance/20total spending guard.
 
-Covered runUSD 0.029363925;OctoberUSD1.282509885estimates, pre-guard spending unknown.
+Covered runUSD0.029363925;OctoberUSD1.282509885estimates, pre-guard spending unknown.
 Six old reservations,zero new. Preserve correction/withdrawal, allowlist/noDMs and
 six standalone local01/05/09/13/17/21Sol/xhigh runs/notifications. Older snapshots
 below are historical; initial-question success and full-year grounding stay open.
@@ -5844,7 +5844,7 @@ auxiliary closure takes2.353seconds;healthy/ready,zero observed errors/restarts.
 No measured character gain or new abstraction. H114 and post-audit unassigned
 triage flags remain unresolved; next independently qualify useful emotion,
 amplified humor and original-view context before broader coverage. Covered run
-USD 0.012060320;OctoberUSD1.318135295 estimates,unchanged18/2/20 guard,sixold/zeronew
+USD0.012060320;OctoberUSD1.318135295 estimates,unchanged18/2/20 guard,sixold/zeronew
 unsettled reservations. Primarycheckoutuntouched;privateevidencepreserved.
 [RuntimePR178](https://github.com/jdegregorio/wcb-discord-bot/pull/178),
 merge`cb9dbba6635a2af851da5986f3506d1ed2d45b4d`,
@@ -5915,8 +5915,8 @@ H121 relation-preserving grounding qualification now precedes H120/H114 useful
 abstractions, then useful linked native/visual coverage and seasonal variety.
 Graph unchanged; generated U.P. aurora/trail-camera and selective tools retained.
 
-Covered window80settled attempts/USD 0.027748075+one uncertain reservation/
-USD 0.014014125=USD 0.041762200;October USD1.384644260
+Covered window80settled attempts/USD0.027748075+one uncertain reservation/
+USD0.014014125=USD0.041762200;October USD1.384644260
 estimates,pre-guard unknown. Six old plus one new unresolved, no clearing;18/2/20
 limits unchanged.19private receipts+privacyverification0700/0600/no rawfields,
 no source/answer/pixel persistence,seven-daymanualretention/withdrawalcleanup.
@@ -6110,7 +6110,7 @@ Fresh actual Discord acceptance remains blocked by disconnected browser control,
 including unconfirmed Enterdispatch; do not merge or count other runs' messages.
 Safe actual production metadata verifieshealthy2.38.15/indexcb857fa67873,0restarts/OOM,
 read-only,release timeractive/enabled. No runtime change/deploy/rollback. November
-aggregateUSD 0.192244750estimate/99attempts/13unsettled is not exact run cost; guard
+aggregateUSD0.192244750estimate/99attempts/13unsettled is not exact run cost; guard
 unchanged. Preserve this worktree/branch and real-smoke prerequisite.
 
 
@@ -6137,7 +6137,7 @@ Fresh authenticated census: 4,299 blocks / 405 eligible / seven ambiguous / thre
 windows; 40 development rows / 21 bot turns / zero duplicates or storage markers;
 300 league rows / 23 bot turns / one duplicate / zero storage markers. Seven-day
 league coverage: zero target / two bot posts. No semantic comparison, new trait or
-provider call. November estimate USD 0.262333525 / 166 attempts / 18 unsettled; same
+provider call. November estimate USD0.262333525 / 166 attempts / 18 unsettled; same
 18/2/20 guard. Concurrent aggregate is not this run's cost or an invoice.
 
 Fresh real Discord smoke remains OPEN: Chrome control fails before navigation,
@@ -6170,8 +6170,8 @@ Fresh gateway proof remains missing. Preserve this run's worktree and evidence.
   zero restarts/OOM,timeractive/enabled. Final post-census heartbeat20.01seconds,health0;
   last20minutes20logrows/0ERROR/0tracebacks. Postdev24botturns,0duplicates/markers.
   In-app fallback has an empty Discord login; no owner session is available.
-- November after three maintenance smoke calls:USD 0.263305485estimated/169attempts/
-  18unsettled. Observed aggregate increaseUSD 0.000971960 is not an audited run cost.
+- November after three maintenance smoke calls:USD0.263305485estimated/169attempts/
+  18unsettled. Observed aggregate increaseUSD0.000971960 is not an audited run cost.
   Same18/2/20guard,source lifecycle/privacy,allowlists,noDMs,schedule/model/notifications.
 - Private content-free receipts retain0700/0600,sevendaymanual/withdrawalcleanup.
   No new semantic human comparison,trait,graph population or general quality gain.
@@ -6255,9 +6255,9 @@ nine duplicates and no fixed storage-language matches; league 300/26bot/two dupl
 turns, seven-day two target/four bot. Counts alone are not naturalness judgments.
 After ALL auxiliary closure, health exits0, main heartbeat exists/17.9seconds old,
 read-only/zero restarts/OOMfalse; last20minutes11logrows/zeroERROR/Traceback. Timer
-active/enabled. November ledger USD 0.351874715 estimated,257attempts,21unsettled;
-USD 0.208215975 runtime/0.143658740 maintenance,18/2/20guard unchanged. Observed
-aggregate increase USD 0.002348065 is not an audited run cost or invoice. Four own
+active/enabled. November ledger USD0.351874715 estimated,257attempts,21unsettled;
+USD0.208215975 runtime/0.143658740 maintenance,18/2/20guard unchanged. Observed
+aggregate increase USD0.002348065 is not an audited run cost or invoice. Four own
 synthetic reply smokes, zero private-provider audits or study-provider calls; no new
 service or normal-reply request. Content-free private receipts retain app-volume
 0700/0600 and existing seven-day manual retention/withdrawal cleanup.
@@ -6301,8 +6301,8 @@ read-only, zero restarts/OOM; 20-minute new-container query11rows/zeroERROR/Trac
 timer active/enabled. Twenty content-free receipts pass 0700/0600 checks, with existing
 seven-day manual retention and withdrawal cleanup. Fresh graph has one claim and
 zero qualified abstractions; numeric counts are not semantic qualification.
-November aggregateUSD 0.354998645 estimated/270attempts/21unsettled, same18/2/20 guard.
-Observed movementUSD 0.003123930 is not audited run cost or an invoice.
+November aggregateUSD0.354998645 estimated/270attempts/21unsettled, same18/2/20 guard.
+Observed movementUSD0.003123930 is not audited run cost or an invoice.
 
 Next is H121/H120 useful connected abstractions with complete support/contrary episodes,
 qualified private semantic review, independent held-outs and actual utility. Then H125
