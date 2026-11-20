@@ -6396,20 +6396,45 @@ PR197 stays independent; six-run schedule/model/notifications remain unchanged.
 
 ## 2026-11-20 05:00: controlled Discord smoke context
 
-New managed worktree/unique branch from fetched3665dfd; primary untouched. H133
-pre-release actual care again includes off-target commentary, but10care outputs
-across5fixedpairedcomparisons are direct, so no runtime behavioral patch qualifies.
+New managed worktree/unique branch from fetched 3665dfd; primary untouched. H133
+pre-release actual care again includes off-target commentary, but 10 care outputs
+across five fixed paired comparisons are direct, so no runtime behavioral patch qualifies.
 H138 supplies explicit live/isolated history and private content-free count/hash
 receipts, mode-bound retained IDs and wrapper restoration. No normal source/model/
 version/dependency/workflow change or new trait/graph population. Both phases and
 acceptance are in the [evaluation](evaluations/2026-11-20-controlled-smoke-context.md).
 Four candidate actual private synthetic handler/send-readbacks pass the new context
 controls; direct care/attribution pass narrow review and humor payoff is partial.
-Production remains healthy immutable2.41.1/digesta1225a7babc0; no new runtime
+Production remains healthy immutable2.41.1/digest a1225a7babc0; no new runtime
 release/image/deployment is called for. Protected publication/exactmergedgates and
 postmerge private Discord/health qualification follow below. Owner/main-gateway
 is open at Chrome timeoutMs/Maclocked/freshin-applogin. No private human semantic
-comparison or fidelity gain is claimed. Next use controlled H133held-outs then
-qualified H121/H120relationalabstractions, H125comic/emotion and useful linked
-native/visual/seasonal context; same generatedUPscenes/selectivetools/18/2/20guard
-and six-runSol/xhighschedule. No prior denied private scoring path is rerouted.
+comparison or fidelity gain is claimed. Next use controlled H133 held-outs then
+qualified H121/H120 relational abstractions, H125 comic/emotion and useful linked
+native/visual/seasonal context; same generated U.P. scenes, selective tools and 18/2/20 guard
+and six-run Sol/xhigh schedule. No prior denied private scoring path is rerouted.
+
+
+### H138 publication and verification completed
+
+[PR212](https://github.com/jdegregorio/wcb-discord-bot/pull/212) merged normally at
+f48a062613aa3d04182e6f6dcc54a8e2aa247c5d after required CI44747026726; merged tree
+matches candidate a539ca4. All six exact merged gates PASS: 2,443 tests / 96.13%, 46 typed modules /
+packages; main CI44747375973 PASS. Four merged-script actual private synthetic
+handler/send-readbacks confirm live 24 history rows versus isolated 0; care/attribution
+pass narrow review and comic payoff remains PARTIAL. Nine total real response probes
+include the pre-change care failure;18 additional fictional responder trials supply
+contrary evidence to the unvalidated context-cause hypothesis. No retakes to select
+preferred replies. Owner/main-gateway and new private human semantic comparison
+remain open. See the [full study](evaluations/2026-11-20-controlled-smoke-context.md).
+
+This script-only increment changes no normal application source, version, dependency,
+build or workflow, so no release/image/deployment is needed. Production remains
+healthy read-only 2.41.1 at sha256:a1225a7babc06250e3ac7b719ff34e095a13249fc7eac3d3021e7784394228ef.
+All 46 installed hashes match; after auxiliary closure: health 0 / heartbeat 8.35 seconds / 0 restarts /
+OOM false, 22 short-window log rows / 0 ERROR or Traceback, timer active/enabled. No rollback.
+November USD 0.368567670 estimate, 327 attempts / 23 unsettled; aggregate increase 0.002722730
+is not an audited per-run bill. Guard 18/2/20 unchanged. Nine own content-free receipts
+pass 0700/0600 / field allowlist; seven-day manual retention / withdrawal cleanup applies.
+Keep private scripts/results/packages/receipts in approved automation storage before
+managed-worktree archive. No raw human text / answer prose / personal inference / pixels retained.

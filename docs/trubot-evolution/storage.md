@@ -1,3 +1,15 @@
+# Controlled operator smoke context, 2026-11-20
+
+H138 adds optional `context_mode`, `history_rows` and `history_sha256` fields to the
+existing private receipt schema. Modes bind before network work; legacy receipts
+mean live history. Reusing retained IDs reads only and cannot relabel/replay an
+attempt. A fingerprint covers bounded channel-history text/pixels transiently,
+then retains only its hash. It is not a full-model-input fingerprint or quality
+score. Normal state/schema/source/graph/backup/withdrawal/spending is unchanged.
+Own receipts use daily-20261120-0500-* under existing0700/0600, manual seven-day
+retention and withdrawal cleanup. Code rollback preserves source and usage state.
+[Operations, exact merged qualification and limits](evaluations/2026-11-20-controlled-smoke-context.md).
+
 # Audit reply context, 2.41.0
 
 Reply targets and anonymous links exist only in the ephemeral bounded audit packet.

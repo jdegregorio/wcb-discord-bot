@@ -1,8 +1,8 @@
 # Current decision: controlled character checks, 2026-11-20 05:00
 
-H138 adds explicit live/isolated generation history to the private operator smoke
-runner, with content-free context fingerprints and immutable retained attempt
-modes. This is enabling research tooling, not a runtime personality correction.
+H138 ships through protected PR212, exact-merged six gates (2,443tests/96.13%)
+and successful main CI. Real merged-script checks verify live24historyrows versus
+isolated0. It adds explicit modes, private context fingerprints and mode-bound receipts. This is enabling research tooling, not a runtime personality correction.
 H133 care remains unresolved: an actual live probe evaluates an earlier reply,
 but ten care outputs across five fixed paired comparisons are direct and caring.
 No new trait, graph population or measured Andrew-fidelity gain is established.

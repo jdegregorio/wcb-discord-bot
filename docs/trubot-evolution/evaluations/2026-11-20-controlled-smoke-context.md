@@ -5,17 +5,18 @@
 Fetched base `3665dfd3815be5639317e5974f92046f55c2cc31`; unique managed
 `trubot-daily-20261120-0500` worktree/feature branch, primary untouched. No open
 evolution PR or unfinished run was found; three dependency PRs remain separate.
-Pi5 identity, aarch64/Ubuntu24.04 and installed2.41.1/digesta1225a7babc0 verified.
-All46 installed module hashes match. Read README, architecture, harness, roadmap,
+Pi5 identity, aarch64/Ubuntu 24.04 and installed 2.41.1 / digest a1225a7babc0 verified.
+All 46 installed module hashes match. Read README, architecture, harness, roadmap,
 evolution/research/storage/living-memory notes and current implementation.
 
-Authenticated fresh count-only coverage:4,299 grouped archive blocks,405 eligible
-and7 ambiguous target blocks,3 attributed context windows;48 anchors have601-4000
-byte captured neighbors. These are availability counts, not a semantic study.
-League300rows/26bot, seven-day2target/4bot; development40rows/allbot/14duplicate
-full turns. The latest4botfocuses per scope have0replyreferences. Stable human
-identity and private two-member development scope verified. Graph555episodes/
-440human sources/1claim/0qualified abstractions;21native captures across node kinds.
+Authenticated fresh count-only coverage: 4,299 grouped archive blocks, 405 eligible
+and 7 ambiguous target blocks, 3 attributed context windows. Forty-eight anchors
+have captured neighbors of 601-4,000 bytes. These are availability counts, not a semantic study.
+The league sample has 300 rows / 26 bot turns, with 2 target and 4 bot messages
+in seven days. Development has 40 rows, all bot-authored, with 14 duplicate full
+turns. The latest four bot focuses per scope have no reply references. Stable human
+identity and private two-member development scope verified. The graph has 555 episodes,
+440 human sources, 1 claim and no qualified abstractions; native/visual coverage remains bounded.
 No new private human semantic/pixel interpretation or persona trait is asserted.
 Prior external private scoring rejection is not rerouted. Complete source review
 with exact data/recipient/retention bounds remains a prerequisite for population.
@@ -31,12 +32,12 @@ quotation continuity and brief invited humor. Contrary evidence: equivalent dire
 care under distracting history would weaken the mechanism. Validation uses only
 fixed fictional material, same installed model/responder/maintenance ledger.
 
-StudyA:6cases x2arms (empty history versus fixed prior quotation and unlocated-sky
-question),12outputs;3carecases x2 all caring/direct. Celebration stays on topic;
+Study A: six cases, two arms (empty history versus fixed prior quotation and unlocated-sky
+question), 12 outputs. All six outputs across three care cases are caring/direct. Celebration stays on topic;
 quotation correctly needs its earlier source and is recovered only with context;
-humor remains on topic but weak. StudyB:3cases x2arms,6outputs, using the exact
-pre-probe's frozen14row authenticated all-bot history versus empty history.
-Two care cases x2 and celebration x2 pass narrow one-agent review. Thus10care
+humor remains on topic but weak. Study B: three cases, two arms, six outputs, using the exact
+pre-probe's frozen 14-row authenticated all-bot history versus empty history.
+Two care cases and a celebration in each arm pass narrow one-agent review. Thus 10 care
 outputs/five pairs pass; no robust causal failure in those trials. No repeated
 retakes or solely keyword scoring. This is contrary evidence to a simple causal
 claim, not a cure or a measured human-fidelity result. History after the actual
@@ -73,7 +74,7 @@ machinery for those studies. Maintain generated U.P. aurora/trail-camera scenes,
 short captions and selectively loaded tools; closed unqualified-sighting policy.
 A material source/privacy regression or qualified semantic gain changes priority.
 Operating impact: no extra normal reply call; deliberate operator trials share
-USD2maintenance/USD20total guard (USD18runtime). Six-run schedule/model unchanged.
+USD 2 maintenance / USD 20 total guard (USD 18 runtime). Six-run schedule/model unchanged.
 
 ## Implementation and operational use
 
@@ -90,36 +91,91 @@ the mode before network work; old receipts are live-only and never replay.
 Use a unique never-reused run ID per mode and retain the same fixed case:
 `python scripts/discord_smoke.py run --run-id <unique> --case care --context isolated`.
 Run in the existing app-scoped environment via the authorized operator path.
-`status` requires the matching mode. Existing0700/0600, seven-day manual retention
+`status` requires the matching mode. Existing 0700/0600, seven-day manual retention
 and withdrawal cleanup apply. Do not delete uncertain receipts to retry or infer
 quality from hashes. Private app receipts use daily-20261120-0500-*; no source or
 answer prose, personal observations or pixels enter retained artifacts/Git.
 
 ## Candidate and merged qualification
 
-Candidate all six required gates pass:2,443tests/96.13%coverage,46typedmodules,
-wheel/sdist. Exact-base full smoke suite:13fail/29pass (13fail/4pass among17newcontrols); candidate42smoke
-controls pass, including prior scope/replay/hard-exit cases and17newcontrols.
+Candidate all six required gates pass: 2,443 tests / 96.13% coverage, 46 typed modules,
+wheel/sdist. Exact-base full smoke suite: 13 fail / 29 pass (13 fail / 4 pass among 17 new controls); candidate 42 smoke
+controls pass, including prior scope/replay/hard-exit cases and 17 new controls.
 No normal application source, dependency, version, Dockerfile or workflow changes;
 therefore no new runtime release/image/deployment is appropriate for this script-only
 increment. Production remains the separately tested immutable2.41.1.
 
-Candidate real handler/send/readbacks: live care records16historyrows, isolated
-care/attribution/humor each record0 and the empty-packet digest. All four pass
+Candidate real handler/send/readbacks: live care records 16 history rows, isolated
+care/attribution/humor each record 0 and the empty-packet digest. All four pass
 transport, unchanged learning count, development intake exclusion, isolated
 readiness and auxiliary closure. Narrow one-agent review: both care answers are
-direct/sincere (10and11words), attribution correctly rejects the copied-preview
-inference (15words), humor is brief/on-topic (15words) with limited comic payoff.
+direct/sincere (10 and 11 words), attribution correctly rejects the copied-preview
+inference (15 words), humor is brief/on-topic (15 words) with limited comic payoff.
 No causal care improvement follows because no runtime behavior changed and the
 baseline is intermittent. No repetition is used to select a preferred reply.
-Chrome fails undefined timeoutMs before navigation; nativeMac is locked; fresh
+Chrome fails undefined timeoutMs before navigation; native Mac is locked; fresh
 in-app fallback shows an empty Discord login and is marked for handoff. No owner
 message, reaction or main-gateway event is claimed; no user token is accessed.
 
 Baseline invocation initially omitted the repository async test configuration;
 those setup failures are invalid and excluded. Corrected `-c pyproject.toml`
-replay has13intendedfeaturefailures/29passes. Candidate42/42passes. Seventeen
+replay has 13 intended feature failures / 29 passes. Candidate 42/42 passes. Seventeen
 new controls include live delegation, isolated no-read, changed text/pixels,
 legacy receipts, mode immutability, retained replay, wrong channel/anchor/repeated
 collection, cancellation and receipt/collector failures. Current normal application
 source/dependencies/build/workflows are byte-identical to fetched main.
+
+## Shipped operator increment and post-merge verification
+
+[PR212](https://github.com/jdegregorio/wcb-discord-bot/pull/212) merges normally at
+`f48a062613aa3d04182e6f6dcc54a8e2aa247c5d`, after required
+[CI44747026726](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44747026726).
+Merged tree equals candidate a539ca4. All six exact-merged gates pass: 2,443 tests,
+96.13% coverage, 46 typed modules, wheel/sdist.
+[MainCI44747375973](https://github.com/jdegregorio/wcb-discord-bot/actions/runs/44747375973)
+passes. No source/dependency/version/build/workflow change and no new immutable
+runtime release/image/deployment; normal runtime remains2.41.1. No rollback needed.
+
+Four post-merge actual synthetic handler/Discord send/readbacks pass transport and
+context boundaries: live care 24 history rows, isolated care/attribution/humor 0 rows.
+Care is direct/sincere (8 and 9 words); attribution rejects the preview inference
+(14 words); requested humor is brief/on-topic (15 words), comic payoff PARTIAL.
+Nine total actual response probes in this run include the pre-change care failure.
+All inputs are labeled fictional/bot-authored, with synthetic owner dispatch; no
+owner-authored message, actual owner reaction or main-gateway event is claimed.
+History is intentionally substituted only in isolated mode. Learning count remains
+unchanged, development intake is excluded, readiness isolated before construction
+and all auxiliary clients close. A retained isolated attempt reads the identical
+receipt without constructing a client or posting again. No semantic human fidelity
+or causal care improvement is established. No reply is rerun to select a better one.
+
+After ALL auxiliaries close, immutable runtime 2.41.1 remains at
+`sha256:a1225a7babc06250e3ac7b719ff34e095a13249fc7eac3d3021e7784394228ef`.
+All 46installed hashes match, healthcheck exit 0, heartbeat 8.35 seconds, healthy/read-only,
+zero restarts/OOMfalse,22short-windowlogrows/zeroERROR/Traceback, timeractive/enabled.
+This is operational health, not gateway proof or a measured long-run error-rate gain.
+Graph source/derived counts remain unchanged. Nine private receipts verify 0700/0600
+and an exact content-free field allowlist; existing seven-day manual retention and
+withdrawal cleanup apply. No source/answer text, private interpretation or pixels
+are preserved in run artifacts/Git. Browser/login blockers remain as above.
+
+November estimated application usage USD 0.368567670: runtime 0.208414225 /
+maintenance 0.160153445, 327 attempts / 23 unsettled. Aggregate movement since start is
+USD 0.002722730 and 29 aggregate attempts, including independent runtime activity; it is not an independently
+attributed run invoice. This run made 18 fictional responder trials and 9 actual reply
+probes, with the existing single repair available. Count audits, deterministic
+regressions, replay inspection and health use 0 provider calls. Same USD 18/2/20 guard;
+no new pool/service, normal-reply pass or paid image request.
+
+The supported result is controlled private Discord research, not a newly qualified
+human trait or graph abstraction. Next use current tools for independent H133
+recipient/focus controls and qualified H121/H120 relational abstractions, then H125
+semantic comic/emotional utility and useful native/visual/seasonal context. Keep
+attributed supports/contraries, source lifecycle, provenance, actual pixels where
+needed and natural held-out utility. Generated U.P. scenes / selective tools / closed
+unqualified sightings and the six-run Sol/xhigh schedule remain unchanged.
+
+Post count-only census confirms unchanged archive/graph and league coverage.
+Development remains 40 bot-authored rows, now with 18 duplicate full turns; latest
+four focuses per scope still have no reply references. These counts do not judge
+naturalness, spontaneous participation or an Andrew trait.
