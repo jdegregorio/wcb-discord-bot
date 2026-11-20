@@ -1,3 +1,29 @@
+# Current decision: H137 relevant graph memory, 2026-11-20 01:00
+
+H137 fixes reproduced shared-concept crowding: the observation whose own aliases
+match ranks before connected neighbors, so supported recall survives graph growth.
+Five initial baseline failures become passes; complete conflicts, abstract conditions
+and source/validation bounds remain. Release and installed verification are pending.
+[Both phases and acceptance](evaluations/2026-11-20-relevant-graph-memory.md).
+
+1. Complete H137 publication and installed qualification. High confidence in the
+   reproduced availability defect; production collision frequency is unmeasured.
+   Existing graph, no new model/provider pass/schema or operating allowance.
+2. H121/H120 useful relation-preserving abstractions with complete attributed supports/
+   contraries, qualified private review, independent held-outs and care/recipient
+   controls. Remedy unresolved; no qualified abstraction is added by H137.
+3. H125 semantic comic/emotional utility with warmth, brevity and mechanism-level
+   variety. Fresh synthetic humor has weak payoff; creative amplification remains
+   separate from human traits. Existing maintenance budget only.
+4. Useful linked native/visual/seasonal context after actual pixels, lifecycle and
+   utility. Keep generated Michigan U.P. aurora/trail-camera scenes, natural captions
+   and selective tools; automatic sightings stay closed.
+
+Material privacy/grounding/delivery defects or qualified semantic gains can reorder
+work. Fresh human semantic comparison and owner/gateway remain open at documented
+review/browser/login boundaries. Preserve withdrawal, allowlist/no DMs, USD 18/2/20,
+six local 01/05/09/13/17/21 Sol/xhigh runs and notifications. Older entries are historical.
+
 # Current decision: H136 deployed, 2026-11-19 21:00
 
 H136 ships as immutable 2.41.0 after protected PR208, exact-merged six gates,

@@ -3596,3 +3596,12 @@ pass narrowly; care is PARTIAL due to an evaluative opener. New exploratory H133
 separate bot-heavy harness contamination from ordinary gateway behavior with matched
 baselines before a runtime correction. No semantic human comparison/new trait/fidelity
 claim. Complete release, spending, health and limitations are in the H132 evaluation.
+
+## 2026-11-20 01:00: H137 relevance ownership
+
+Five fixed fictional lookup/handler regressions fail before runtime edits. Ranking
+shared concepts currently displaces the matching observation. H137 retains match
+specificity on the owning relationship before connected neighbors. Nine new controls
+pass, including abstract conditions, complete conflicts and bounded work. H121/H120
+and H125 remain unresolved; no fresh private semantic study or human trait is claimed.
+[Both phases, disconfirmation criteria and validation](evaluations/2026-11-20-relevant-graph-memory.md).
